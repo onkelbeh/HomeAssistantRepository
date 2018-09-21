@@ -1,0 +1,34 @@
+--- etc/rancid.conf.sample.in	2017-01-11 07:59:52.000000000 +1100
++++ etc/rancid.conf.sample.in	2017-02-03 09:44:00.685664867 +1100
+@@ -67,7 +67,10 @@
+ #ACLFILTERSEQ=YES; export FILTERSEQ
+ #
+ # if ACLSORT is NO, access-lists will NOT be sorted.
+-#ACLSORT=YES; export ACLSORT
++#
++#Gentoo - changing default to NO because access-list order matters in most instances
++#and many people expect to use rancid as a backup system
++ACLSORT=NO; export ACLSORT
+ #
+ # if NOPIPE is set, temp files will be used instead of a cmd pipe during
+ # collection from the router(s).
+@@ -75,11 +78,17 @@
+ #
+ # FILTER_PWDS determines which passwords are filtered from configs by the
+ # value set (NO | YES | ALL).  see rancid.conf(5).
+-#FILTER_PWDS=YES; export FILTER_PWDS
++#
++#Gentoo - changing default to ALL; diffs are emailed and even the most secure
++#password hashes on most routers are easily brute-forceable with modern systems
++FILTER_PWDS=ALL; export FILTER_PWDS
+ #
+ # if NOCOMMSTR is set to YES, snmp community strings will be stripped from the
+ # configs.
+-#NOCOMMSTR=YES; export NOCOMMSTR
++#
++#Gentoo - changing default to YES; diffs are emailed and SNMP communities
++#can be just as dangerous as passwords
++NOCOMMSTR=YES; export NOCOMMSTR
+ #
+ # FILTER_OSC determines if oscillating data such as keys, passwords, etc are
+ # filtered from configs by the value set (NO | YES).  FILTER_PWDS may override

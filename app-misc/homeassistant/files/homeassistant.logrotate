@@ -1,0 +1,13 @@
+# logrotate script for homeassistant
+
+/var/log/homeassistant/stdout.log /var/log/homeassistant/server.log {
+        daily
+        missingok
+        copytruncate
+        rotate 9
+        compress
+        notifempty
+        su root root
+        olddir /var/log/homeassistant/old
+}
+

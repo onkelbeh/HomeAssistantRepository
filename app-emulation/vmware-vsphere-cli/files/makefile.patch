@@ -1,0 +1,48 @@
+diff --git a/Makefile.PL b/Makefile.PL
+index 046e794..429dc42 100644
+--- a/Makefile.PL
++++ b/Makefile.PL
+@@ -81,43 +81,5 @@ WriteMakefile(
+    # /usr/bin/perl, and attempt to find a reasonable spot if you
+    # are running some other perl.
+    #
+-   macro              => {
+-     # vmware apps
+-     INST_VMWARE_APPS => 'apps',
+-     DEST_VMWARE_APPS => (
+-       $Config{perlpath} eq '/usr/bin/perl' ? 
+-         '/usr/lib/vmware-viperl/apps' :
+-         '$(INSTALLSITESCRIPT)/apps'
+-     ),
+-     # vmware docs
+-     INST_VMWARE_DOC => 'doc',
+-     DEST_VMWARE_DOC => (
+-       $Config{perlpath} eq '/usr/bin/perl' ? 
+-         '/usr/share/doc/vmware-viperl/doc' :
+-         '$(SITEPREFIX)/doc'
+-     ),
+-   },
+ );
+ 
+-#
+-# Additional targets for installing apps and doc.
+-#
+-sub MY::postamble {
+-  return <<'MAKE';
+-install :: install_vmware_apps install_vmware_doc
+-	$(NOECHO) $(NOOP)
+-
+-install_vmware_apps :
+-	$(NOECHO) $(MOD_INSTALL) \
+-		$(INST_VMWARE_APPS) $(DEST_VMWARE_APPS)
+-
+-install_vmware_doc :
+-	$(NOECHO) $(MOD_INSTALL) \
+-		$(INST_VMWARE_DOC) $(DEST_VMWARE_DOC)
+-
+-clean ::
+-	$(RM_RF) VMware WSMan
+-
+-MAKE
+-}
+-
