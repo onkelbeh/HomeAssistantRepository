@@ -28,25 +28,43 @@ DEPEND="
 	>=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
 	>=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
 	>=dev-python/bcrypt-3.1.4[${PYTHON_USEDEP}]
-	>=dev-python/boto3-1.9.16[${PYTHON_USEDEP}]
+	>=dev-python/boto3-1.9.35[${PYTHON_USEDEP}]
+	>=dev-python/botocore-1.12.35[${PYTHON_USEDEP}]
 	>=dev-python/beautifulsoup-4.5.1[${PYTHON_USEDEP}]
-	>=dev-python/certifi-2018.4.16[${PYTHON_USEDEP}]
+	>=dev-python/certifi-2018.10.15[${PYTHON_USEDEP}]
 	>=dev-python/chardet-3.0.4[${PYTHON_USEDEP}]
 	>=dev-python/colorlog-3.1.4[${PYTHON_USEDEP}]
+	>=dev-python/coverage-4.5.1[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-2.3.1[${PYTHON_USEDEP}]
-	>=dev-python/idna-ssl-1.0.1[${PYTHON_USEDEP}]
+	>=dev-python/distro-1.3.0[${PYTHON_USEDEP}]
+	>=dev-python/docutils-0.14[${PYTHON_USEDEP}]
+	>=dev-python/ecdsa-0.13[${PYTHON_USEDEP}]
+	>=dev-python/future-0.17.1[${PYTHON_USEDEP}]
+	>=dev-python/idna-ssl-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/idna-2.7[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.10[${PYTHON_USEDEP}]
+	>=dev-python/lxml-4.2.5[${PYTHON_USEDEP}]
+	>=dev-python/nose-1.3.7[${PYTHON_USEDEP}]
 	>=dev-python/paho-mqtt-1.4.0[${PYTHON_USEDEP}]
 	>=dev-python/pip-9.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2018.04[${PYTHON_USEDEP}]
+	>=dev-python/pycryptodome-3.7.0[${PYTHON_USEDEP}]
+	>=dev-python/python-dateutil-2.7.5[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-3.13[${PYTHON_USEDEP}]
+	>=dev-python/pyotp-2.2.6-r1[${PYTHON_USEDEP}]
+	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
+	>=dev-python/netdisco-2.2.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.20.0[${PYTHON_USEDEP}]
+	>=dev-python/ruamel-yaml-0.15.72[${PYTHON_USEDEP}]
+	>=dev-python/sqlalchemy-1.2.11[${PYTHON_USEDEP}]
 	>=dev-python/typing-3.6.2-r1[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.22[${PYTHON_USEDEP}]
+	>=dev-python/urllib3-1.24[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-serialize-2.0.0[${PYTHON_USEDEP}]
+	>=dev-python/vobject-0.9.6.1[${PYTHON_USEDEP}]
 	>=dev-python/websocket-client-0.40.0[${PYTHON_USEDEP}]
-	>=dev-python/yarl-1.1.1[${PYTHON_USEDEP}]
+	>=dev-python/xmltodict-0.11.0[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.2.6[${PYTHON_USEDEP}]
 	atv? ( >=dev-python/pyatv-0.3.9[${PYTHON_USEDEP}] )
 	musiccast? ( >=dev-python/pymusiccast-0.1.6[${PYTHON_USEDEP}] )
 	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
@@ -55,9 +73,11 @@ DEPEND="
 	tradfri? ( >=dev-python/pytradfri-4.1.0[${PYTHON_USEDEP}]
 		 sys-devel/autoconf )
 	wemo? ( >=dev-python/pywemo-0.4.25[${PYTHON_USEDEP}] )
+	>=dev-python/zeroconf-0.21.3[${PYTHON_USEDEP}]
 	dev-db/sqlite
 	dev-libs/libfastjson
 	dev-libs/openssl
+	>=media-libs/mutagen-1.41.1
 "
 
 RDEPEND="
