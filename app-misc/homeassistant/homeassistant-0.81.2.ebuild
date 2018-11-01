@@ -16,7 +16,7 @@ RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="atv hs100 maint tradfri wemo mysql musiccast"
+IUSE="atv hs100 maint tradfri wemo mysql musiccast samsungtv"
 
 DEPEND="
 	${PYTHON_DEPS}
@@ -49,6 +49,7 @@ DEPEND="
 	>=dev-python/yarl-1.1.1[${PYTHON_USEDEP}]
 	atv? ( >=dev-python/pyatv-0.3.9[${PYTHON_USEDEP}] )
 	musiccast? ( >=dev-python/pymusiccast-0.1.6[${PYTHON_USEDEP}] )
+	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyhs100-0.3.0[${PYTHON_USEDEP}] )
 	tradfri? ( >=dev-python/pytradfri-4.1.0[${PYTHON_USEDEP}]
