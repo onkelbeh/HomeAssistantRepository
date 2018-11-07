@@ -29,9 +29,9 @@ DEPEND="${RDEPEND}
 	test? ( >=dev-python/nose-1.0[${PYTHON_USEDEP}] )"
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-1.14.5-no-hardcode-blas.patch
+	# "${FILESDIR}"/${PN}-1.14.5-no-hardcode-blas.patch
 	# backport a fix for py3.7 test failures
-	"${FILESDIR}"/numpy-1.14.5-py37.patch
+	# "${FILESDIR}"/numpy-1.14.5-py37.patch
 )
 
 src_unpack() {
