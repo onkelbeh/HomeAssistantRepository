@@ -23,7 +23,7 @@ DEPEND="
 	!app-misc/homeassistant-bin
 	>=dev-python/aiohttp-3.4.4[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
-	>=dev-python/astral-1.6.1[${PYTHON_USEDEP}]
+	>=dev-python/astral-1.7.1[${PYTHON_USEDEP}]
 	>=dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 	>=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
 	>=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
