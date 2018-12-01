@@ -1,5 +1,4 @@
 # Copyright 1999-2018 Gentoo Foundation
-# Ebuild (C)2018 OnkelBeh
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
