@@ -19,16 +19,20 @@ The following libs are still installed in "site-packages", because i couldn't ge
 * warrant-0.6.1
 
 Most of my devices are connected via Mosquitto. Along MQTT i am actively using (and therefore testing) the following platforms/components:
-* Samsung (currently _not_ working due to Samungs newest firmware 'improvements')
+* Samsung (currently _not_ working anymore due to Samsungs newest firmware 'improvements', had to switch to "ping" for status detection)
 * Sonoff/Tasmota (mostly via MQTT)
-* Yamaha RXV
-* Tradfri (can't wait for their shutters)
+* a couple of OneWire and I2C Sensors (mostly via MQTT)
+* some more HC-SR501 PIR Sensors (via Tasmota/MQTT)
+* Yamaha RXV (4 devices)
+* Tradfri (4 devices, can't wait for their shutters)
 * Sonos (had many, sold most of them, only two boxes left)
 * Calandar (connected to a locally run ownCloud, not in this Repository)
-* Kodi on Raspberry (OSMC)
-* Enigma on Dreambox
-* Hyperion (very cool)
-* EQ3-Max! (i accendently bought some, so i have to use them)
+* Kodi on Raspberry (3, all with OSMC)
+* Enigma on Dreambox (2 left)
+* Hyperion with APA102 (very cool)
+* EQ3-Max! (i accendently bought some, so i have to use them, 8 devices and a cube)
+* Axis Camera (1, more to come)
+* yr.no weather (best forecast you can get for low money)
 
 If you have questions or suggestions don't hesitate to contact me..
 
