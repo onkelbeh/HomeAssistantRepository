@@ -7,7 +7,7 @@ https://www.home-assistant.io/
 
 This is a fork of "https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin" which seems unmaintained to me.
 
-This is my attempt to make installation on gentoo as fast and easy as possible.
+This is my attempt to make installation on Gentoo as fast and easy as possible.
 
 I decided to run Home Assistant on a dedicated box, now Home Assistant is running in a virtual X64 here. I assigned 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA) to it. Recorder writes to a separate mariadb machine (530 MB today). Main broker is mosquitto-1.5.3, no inside SSL.
 
