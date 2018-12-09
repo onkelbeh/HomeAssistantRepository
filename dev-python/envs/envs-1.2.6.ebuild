@@ -13,7 +13,7 @@ SRC_URI="https://files.pythonhosted.org/packages/34/f5/5277e967127581e5a63dca21d
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="alpha amd64 ~arm arm64 hppa ~ia64 ~mips ppc ppc64 s390 ~sparc x86 ~amd64-fbsd ~amd64-linux ~x86-linux"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sparc x86 ~amd64-fbsd ~amd64-linux ~x86-linux"
 IUSE="test"
 
 DEPEND="
