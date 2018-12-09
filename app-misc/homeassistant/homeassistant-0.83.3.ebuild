@@ -15,7 +15,7 @@ RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="atv hs100 maint tradfri wemo mysql musiccast samsungtv sonos"
+IUSE="atv hs100 dropbox tradfri wemo mysql musiccast samsungtv sonos ssl"
 
 DEPEND="
 	${PYTHON_DEPS}
@@ -91,16 +91,16 @@ DEPEND="
 	>=dev-python/zeroconf-0.21.3[${PYTHON_USEDEP}]
 	dev-db/sqlite
 	dev-libs/libfastjson
-	dev-libs/openssl
 	>=media-libs/mutagen-1.41.1
+	ssl? ( 	dev-libs/openssl
+	        app-crypt/certbot
+		net-proxy/haproxy )
 "
 
 RDEPEND="
 	${DEPEND}
 	app-admin/logrotate
-	maint? (
-		app-crypt/certbot
-		app-crypt/ssl-cert-check
+	dropbox? (
 		net-misc/dropbox-uploader
 	)
 "
