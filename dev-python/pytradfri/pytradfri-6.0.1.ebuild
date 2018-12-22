@@ -23,6 +23,7 @@ DEPEND="
 	>=dev-python/aiocoap-0.4_alpha1[${PYTHON_USEDEP}]
 	>=dev-python/dtlssocket-0.1.4[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/setuptools[${PYTHON_USEDEP}]
 	${RDEPEND}
 "
 

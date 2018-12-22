@@ -15,7 +15,7 @@ RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="atv hs100 dropbox tradfri wemo mysql musiccast samsungtv sonos ssl"
+IUSE="atv hs100 dropbox tradfri wemo mysql musiccast samsungtv sonos ssl firetv"
 
 DEPEND="
 	${PYTHON_DEPS}
@@ -95,6 +95,11 @@ DEPEND="
 	ssl? ( 	dev-libs/openssl
 	        app-crypt/certbot
 		net-proxy/haproxy )
+	firetv? ( =dev-python/firetv-1.0.7[${PYTHON_USEDEP}] )
+	>=dev-python/jsonrpc-async-0.6[${PYTHON_USEDEP}]
+	>=dev-python/pyjwt-1.6.4[${PYTHON_USEDEP}]
+	>=dev-libs/xerces-c-3.1.4-r1
+	>=dev-libs/xml-security-c-1.7.3
 "
 
 RDEPEND="
