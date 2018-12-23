@@ -47,10 +47,10 @@ sync-uri = https://git.in.edevau.net/onkelbeh/HomeAssistantRepository.git
 auto-sync = yes
 sync-rsync-verify-metamanifest = no
 ```
-Sync it and install it
+Sync it and install it (as root)
 ```sh
-# emerge --sync
-# emerge -tav app-misc/homeassistant
+$ emerge --sync
+$ emerge -tav app-misc/homeassistant
 ```
 Let me know if any initial depencies are missing. Additional information can be found at (https://wiki.gentoo.org/wiki//etc/portage/repos.conf)
 
@@ -79,8 +79,9 @@ I decided to run Home Assistant on a dedicated box, now Home Assistant is runnin
 I have **no** Google, Amazon or Apple involved in my privacy (at least in this case), neither am I planning to do so.
 
 * Tried to get all Python installed systemwide under Gentoo's package management and keeping "/etc/homeassistant/deps" as small as possible.
-* Be aware that all dependent libraries as marked as stable here as soon as they compile and run some minutes within my local box. Further (ouside HA) dependencies execpt portage are not tested!
-* Since i use Gentoo mostly on servers i do _not_ use systemd. I prefer an own profile based on "amd64/17.0/no-multilib", with python-3.6.5 set as default target.
+* Be aware that all dependent libraries (could be) as marked as stable here as soon as they compile and run some minutes within my local box. Further (ouside HA) dependencies execpt portage are not tested!
+* Since i use Gentoo mostly on servers i do **not** use systemd.
+* I prefer an own profile based on "amd64/17.0/no-multilib", with python-3.6.5 set as default target, will try 3.7 as soon it is marked as stable in portage.
 
 ### Licenses
 All work on these components is released under the Licenses they came from, which could be (as my grep told me), you can find the appropriate License in the ebuild files:
