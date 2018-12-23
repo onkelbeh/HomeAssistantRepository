@@ -5,27 +5,7 @@ https://www.home-assistant.io/
 
 "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server."
 
-This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. But it's not perfect, the following libs are still installed in "site-packages", because i couldn't get them to work, include or compile in Portage so far, _any_ help is appreciated:
-* caldav-0.5.0
-* maxcube
-* warrant-0.6.1
-
-Most of my devices are connected via Mosquitto. Along MQTT i am actively using (and therefore testing) the following platforms/components:
-* Samsung (currently _not_ working anymore due to Samsungs newest firmware 'improvements', had to switch to "ping" for status detection)
-* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota)
-* a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
-* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy)
-* some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
-* Yamaha RXV (4 devices)
-* Tradfri (4 devices now, can't wait for their shutters to arrive in early 2019)
-* Sonos (had many, sold most of them, because they destroyed a formerly very cool gui, only two boxes left)
-* Calendar (connected to a locally run ownCloud, OC not in this Repository) (https://owncloud.org/)
-* Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
-* Enigma2 on Dreambox (2 left) (http://wiki.blue-panel.com/index.php/Enigma2)
-* Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
-* EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube)
-* Axis Camera (1, more to come)
-* yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
+This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. But it's not perfect, some libs are still installed in "site-packages", because i couldn't get them to work, include or compile in Portage so far, _any_ help is appreciated.
 
 If you have questions or suggestions don't hesitate to contact me...
 
@@ -52,7 +32,7 @@ Sync it and install it (as root)
 $ emerge --sync
 $ emerge -tav app-misc/homeassistant
 ```
-Let me know if any initial depencies are missing. Additional information can be found at (https://wiki.gentoo.org/wiki//etc/portage/repos.conf)
+Let me know if any initial depencies are missing. I test fresh installs once in a blue moon. Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
 
 ### Todos
 - Add more libraries:
@@ -74,7 +54,24 @@ Let me know if any initial depencies are missing. Additional information can be 
 
 ### some Background...
 
-I decided to run Home Assistant on a dedicated box, now Home Assistant is running in a virtual X64 here. I assigned 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA) to it. Recorder writes to a separate mariadb machine (530 MB today). Main broker is mosquitto-1.5.3, no inside SSL.
+I decided to run Home Assistant on a dedicated box, now Home Assistant is running in a virtual X64 here. I assigned 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA) to it. Recorder writes to a separate mariadb machine (530 MB today).
+
+Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.5.3), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
+* Samsung (currently _not_ working anymore due to Samsungs newest firmware 'improvements', had to switch to "ping" for status detection)
+* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota)
+* a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
+* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy)
+* some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
+* Yamaha RXV (4 devices)
+* Tradfri (4 devices now, can't wait for their shutters to arrive in early 2019)
+* Sonos (had many, sold most of them, because they destroyed a formerly very cool gui, only two boxes left)
+* Calendar (connected to a locally run ownCloud, OC not in this Repository) (https://owncloud.org/)
+* Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
+* Enigma2 on Dreambox (2 left) (http://wiki.blue-panel.com/index.php/Enigma2)
+* Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
+* EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube)
+* Axis Camera (1, more to come)
+* yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
 I have **no** Google, Amazon or Apple involved in my privacy (at least in this case), neither am I planning to do so.
 
