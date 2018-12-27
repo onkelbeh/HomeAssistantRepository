@@ -2,6 +2,7 @@ Home Assistant Gentoo Overlay
 =============================
 
 https://www.home-assistant.io/
+https://github.com/home-assistant/home-assistant
 
 "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server."
 
@@ -18,7 +19,7 @@ If you have questions or suggestions don't hesitate to contact me...
 
 #### Installation is pretty easy:
 
-First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`:
+First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because i _always_ have more than one repo active by default:
 ```
 [HomeAssistantRepository]
 location = /usr/portage/homeassistant
