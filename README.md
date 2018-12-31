@@ -46,7 +46,7 @@ Let me know if any initial depencies are missing. I test fresh installs once in 
   ~~- user-agents~~
   ~~- ifaddr~~
   ~~- libusb1~~
-  - adb-homeassistant
+  ~~- adb-homeassistant~~
   - firetv
   - envs
 - Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo.

@@ -9,8 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="A pure python implementation of the Android ADB and Fastboot protocols"
 HOMEPAGE="https://github.com/google/python-adb"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.zip"
-SRC_URI="https://files.pythonhosted.org/packages/54/82/cb640008d741b15e0206d5a6b36ba7304b9c0a821c1e8bdd7165680a8e34/adb-homeassistant-1.3.1.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 
