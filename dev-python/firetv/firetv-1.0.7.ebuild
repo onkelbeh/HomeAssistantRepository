@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Communicate with an Amazon Fire TV device via ADB over a network."
 HOMEPAGE="https://github.com/happyleavesaoc/python-firetv/"
-SRC_URI="https://files.pythonhosted.org/packages/1d/12/e3787d5c8d9096ace333973d7f0a7a4918587ef9fa152819bee98162896c/firetv-1.0.7.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
