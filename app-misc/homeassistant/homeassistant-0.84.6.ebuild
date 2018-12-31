@@ -75,6 +75,7 @@ DEPEND="
 	>=dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-serialize-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/vobject-0.9.6.1[${PYTHON_USEDEP}]
+	=dev-python/warrant-0.6.1[${PYTHON_USEDEP}]
 	>=dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}]
 	>=dev-python/websocket-client-0.40.0[${PYTHON_USEDEP}]
 	>=dev-python/xmltodict-0.11.0[${PYTHON_USEDEP}]

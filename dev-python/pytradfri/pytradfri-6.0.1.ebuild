@@ -7,7 +7,7 @@ PYTHON_COMPAT=(python3_{5,6})
 
 inherit eutils distutils-r1
 
-DESCRIPTION="Control/observe IKEA Trådfri devices"
+DESCRIPTION="Control/observe IKEA Tradfri devices"
 HOMEPAGE="https://github.com/ggravlingen/pytradfri"
 SRC_URI="https://github.com/ggravlingen/pytradfri/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
@@ -22,7 +22,6 @@ RDEPEND="
 DEPEND="
 	>=dev-python/aiocoap-0.4_alpha1[${PYTHON_USEDEP}]
 	>=dev-python/dtlssocket-0.1.4[${PYTHON_USEDEP}]
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	${RDEPEND}
 "
