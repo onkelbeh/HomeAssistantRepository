@@ -12,7 +12,8 @@ HOMEPAGE="https://github.com/google/python-adb"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.zip"
 SRC_URI="https://files.pythonhosted.org/packages/54/82/cb640008d741b15e0206d5a6b36ba7304b9c0a821c1e8bdd7165680a8e34/adb-homeassistant-1.3.1.tar.gz"
 
-LICENSE="Apache"
+LICENSE="Apache-2.0"
+
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-fbsd ~amd64-linux ~x86-linux"
 IUSE="test"

@@ -13,7 +13,7 @@ DESCRIPTION="Python class to integrate Boto3's Cognito client so it is easy to l
 HOMEPAGE="https://github.com/capless/warrant https://pypi.org/project/warrant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache License 2.0"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

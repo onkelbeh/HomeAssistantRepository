@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python2_7 python3_{4,5,6} )
 inherit distutils-r1
 
 DESCRIPTION="Easy, clean, reliable Python 2/3 compatibility"
-HOMEPAGE="http://python-future.org/"
+HOMEPAGE="https://python-future.org/"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python2_7 python3_{4,5,6} pypy )
 inherit distutils-r1
 
 DESCRIPTION="Python package for parsing and generating vCard and vCalendar files"
-HOMEPAGE="http://eventable.github.io/vobject/
+HOMEPAGE="https://eventable.github.io/vobject/
 	https://pypi.org/project/vobject/
 	https://github.com/eventable/vobject"
 SRC_URI="https://github.com/eventable/vobject/archive/${PV}.tar.gz -> ${P}.tar.gz"

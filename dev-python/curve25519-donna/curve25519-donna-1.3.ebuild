@@ -12,7 +12,7 @@ HOMEPAGE="https://github.com/agl/curve25519-donna"
 SRC_URI="https://github.com/agl/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 RESTRICT="mirror"
 
-LICENSE="curve25519-donna"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
