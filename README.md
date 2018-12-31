@@ -44,8 +44,8 @@ Let me know if any initial depencies are missing. I test fresh installs once in 
 - Find out why `SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"` is not working in some cases and fix it in:
   ~~- rxv~~
   ~~- user-agents~~
-  - ifaddr
-  - libusb1
+  ~~- ifaddr~~
+  ~~- libusb1~~
   - adb-homeassistant
   - firetv
   - envs
