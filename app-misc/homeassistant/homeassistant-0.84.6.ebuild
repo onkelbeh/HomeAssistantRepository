@@ -1,7 +1,7 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 
 PYTHON_COMPAT=( python3_6 )
 
@@ -17,8 +17,7 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE="atv hs100 dropbox tradfri wemo mysql musiccast samsungtv sonos ssl firetv"
 
-DEPEND="
-	${PYTHON_DEPS}
+DEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
 	>=dev-python/aiohttp-3.4.4[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
@@ -93,7 +92,7 @@ DEPEND="
 	dev-db/sqlite
 	dev-libs/libfastjson
 	>=media-libs/mutagen-1.41.1
-	ssl? ( 	dev-libs/openssl
+	ssl? ( 	dev-libs/openssl:0
 	        app-crypt/certbot
 		net-proxy/haproxy )
 	firetv? ( =dev-python/firetv-1.0.7[${PYTHON_USEDEP}] )
@@ -103,8 +102,7 @@ DEPEND="
 	>=dev-libs/xml-security-c-1.7.3
 "
 
-RDEPEND="
-	${DEPEND}
+RDEPEND="${DEPEND}
 	app-admin/logrotate
 	dropbox? (
 		net-misc/dropbox-uploader
@@ -115,20 +113,12 @@ INSTALL_DIR="/opt/${PN}"
 
 DISABLE_AUTOFORMATTING=1
 DOC_CONTENTS="
- The HA interface listens on port 8123 - this _will_ take a minute or two to appear
-
- hass configuration is in: /etc/${MY_PN}
- daemon command line arguments are configured in: /etc/conf.d/${MY_PN}
-
- logging is to: /var/log/${MY_PN}/{server,errors,stdout}.log
-
- The sqlite db is by default in: /etc/${MY_PN}
- To move it after ${MY_PN} has run once and while ${MY_PN} is stopped:
-   - add /etc/${MY_PN}/recorder.yaml to /etc/${MY_PN}/configuration.yaml
-   - mv /etc/${MY_PN}/home-assistant_v2.db /var/db/${MY_PN}
-
- support thread at:
-	https://community.home-assistant.io/t/gentoo-homeassistant-0-59-2-ebuild/35577
+The HA interface listens on port 8123
+hass configuration is in: /etc/${MY_PN}
+daemon command line arguments are configured in: /etc/conf.d/${MY_PN}
+logging is to: /var/log/${MY_PN}/{server,errors,stdout}.log
+The sqlite db is by default in: /etc/${MY_PN}
+support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
 S="${WORKDIR}/home-assistant-${PV}"

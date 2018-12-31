@@ -76,7 +76,7 @@ DEPEND="
 	>=dev-python/zeroconf-0.21.3[${PYTHON_USEDEP}]
 	dev-db/sqlite
 	dev-libs/libfastjson
-	dev-libs/openssl
+	dev-libs/openssl:0
 	>=media-libs/mutagen-1.41.1
 "
 

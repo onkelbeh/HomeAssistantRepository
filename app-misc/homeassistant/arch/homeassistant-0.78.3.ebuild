@@ -52,7 +52,7 @@ DEPEND="
 	wemo? ( >=dev-python/pywemo-0.4.25[${PYTHON_USEDEP}] )
 	dev-db/sqlite
 	dev-libs/libfastjson
-	dev-libs/openssl
+	dev-libs/openssl:0
 "
 
 RDEPEND="

@@ -39,7 +39,7 @@ DEPEND="
 	>=dev-python/pytz-2018.04[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-3.13[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.19.1-r1[${PYTHON_USEDEP}]
-	>=dev-python/typing-3.6.2-r1[${PYTHON_USEDEP}]
+	>=dev-python/typing-3.5.3.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.22[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-serialize-2.0.0[${PYTHON_USEDEP}]
@@ -49,12 +49,11 @@ DEPEND="
 	musiccast? ( >=dev-python/pymusiccast-0.1.6[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyhs100-0.3.0[${PYTHON_USEDEP}] )
-	tradfri? ( >=dev-python/pytradfri-4.1.0[${PYTHON_USEDEP}]
-		 sys-devel/autoconf )
+	tradfri? ( >=dev-python/pytradfri-4.1.0[${PYTHON_USEDEP}] )
 	wemo? ( >=dev-python/pywemo-0.4.25[${PYTHON_USEDEP}] )
 	dev-db/sqlite
 	dev-libs/libfastjson
-	dev-libs/openssl
+	dev-libs/openssl:0
 "
 
 RDEPEND="

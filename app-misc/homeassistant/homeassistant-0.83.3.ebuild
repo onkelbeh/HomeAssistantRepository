@@ -92,7 +92,7 @@ DEPEND="
 	dev-db/sqlite
 	dev-libs/libfastjson
 	>=media-libs/mutagen-1.41.1
-	ssl? ( 	dev-libs/openssl
+	ssl? ( 	dev-libs/openssl:0
 	        app-crypt/certbot
 		net-proxy/haproxy )
 "
