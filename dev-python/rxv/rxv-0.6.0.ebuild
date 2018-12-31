@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Automation Library for Yamaha RX-V473, RX-V573, RX-V673, RX-V773 receivers"
 HOMEPAGE="https://github.com/wuub/rxv"
-SRC_URI="https://files.pythonhosted.org/packages/67/01/f2c35d41cbef0e236122572da177d4684fa0a924e521538c194b020729dc/rxv-0.6.0.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
