@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="A library to identify devices (phones, tablets) and their capabilities by parsing (browser/HTTP) user agent strings"
 HOMEPAGE="https://github.com/selwin/python-user-agents"
-SRC_URI="https://files.pythonhosted.org/packages/be/ff/886a1e2570784ee63b1c4b0fd77037b84087ffe7b7b45f9751285418be34/user-agents-1.1.0.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

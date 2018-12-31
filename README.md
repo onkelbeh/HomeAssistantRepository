@@ -42,8 +42,8 @@ Let me know if any initial depencies are missing. I test fresh installs once in 
   - caldav-0.5.0 (also refuses to compile at my box)
   - and other frequently used modules i currently do not use
 - Find out why `SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"` is not working in some cases and fix it in:
-  - rxv
-  - user-agents
+  ~~- rxv~~
+  ~~- user-agents~~
   - ifaddr
   - libusb1
   - adb-homeassistant
