@@ -8,8 +8,8 @@ PYTHON_COMPAT=( python2_7 python3_{4,5,6} )
 inherit distutils-r1
 
 DESCRIPTION="Easy access of environment variables from Python with support for strings, booleans, list, tuples, and dicts."
-HOMEPAGE="https://github.com/bjinwright/envs"
-SRC_URI="https://files.pythonhosted.org/packages/34/f5/5277e967127581e5a63dca21dd42b43ab5d21ddd03cad0459649ee3c210a/envs-1.2.6.tar.gz"
+HOMEPAGE="https://github.com/bjinwright/envs https://pypi.org/project/envs/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

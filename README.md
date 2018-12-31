@@ -48,7 +48,7 @@ Let me know if any initial depencies are missing. I test fresh installs once in 
   ~~- libusb1~~
   ~~- adb-homeassistant~~
   ~~- firetv~~
-  - envs
+  ~~- envs~~
 - Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo.
 - Write an installation page for the home-assistant.io Documentation an get it added.
 - Convince more people to not run Home Assistant with Docker (see https://xkcd.com/1988/)
