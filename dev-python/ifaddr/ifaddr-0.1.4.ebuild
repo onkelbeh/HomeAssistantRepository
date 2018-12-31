@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Enumerates all IP addresses on all network adapters of the system."
 HOMEPAGE="https://github.com/pydron/ifaddr"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.zip"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.zip"
 
 LICENSE="MIT"
 SLOT="0"
