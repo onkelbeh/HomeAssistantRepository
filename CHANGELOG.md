@@ -1,3 +1,4 @@
+2018-12-31 warrant-0.6.1 added, compiles now with a patch
 2018-12-27 aiohttp-3.5.1 upgrade
 2018-12-23 colorlog-4.0.2 upgrade
 	   adb-homeassistant-1.3.1 update
