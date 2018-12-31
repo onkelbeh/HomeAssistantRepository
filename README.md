@@ -42,14 +42,15 @@ Let me know if any initial depencies are missing. I test fresh installs once in 
   - caldav-0.5.0 (also refuses to compile at my box)
   - and other frequently used modules i currently do not use
 - Find out why `SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"` is not working in some cases and fix it in:
-  ~~- rxv~~
-  ~~- user-agents~~
-  ~~- ifaddr~~
-  ~~- libusb1~~
-  ~~- adb-homeassistant~~
-  ~~- firetv~~
-  ~~- envs~~
+  - ~~rxv~~
+  - ~~user-agents~~
+  - ~~ifaddr~~
+  - ~~libusb1~~
+  - ~~adb-homeassistant~~
+  - ~~firetv~~
+  - ~~envs~~
 - Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo.
+- try/test this all with Python 3.7
 - Write an installation page for the home-assistant.io Documentation an get it added.
 - Convince more people to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
