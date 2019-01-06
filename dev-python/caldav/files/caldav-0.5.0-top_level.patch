@@ -1,0 +1,18 @@
+diff -Naru a/work/caldav-0.5.0/caldav.egg-info/top_level.txt b/work/caldav-0.5.0/caldav.egg-info/top_level.txt
+--- a/work/caldav-0.5.0/caldav.egg-info/top_level.txt   2019-01-06 13:14:23.445373170 +0100
++++ b/work/caldav-0.5.0/caldav.egg-info/top_level.txt   2019-01-06 13:20:55.883817215 +0100
+@@ -1,2 +1,1 @@
+-tests
+ caldav
+diff -Naru a/work/caldav-0.5.0/setup.py caldav-0.5.0/work/caldav-0.5.0/setup.py
+--- a/work/caldav-0.5.0/setup.py	2017-01-23 17:31:46.000000000 +0100
++++ b/work/caldav-0.5.0/setup.py	2019-01-06 13:34:56.981921027 +0100
+@@ -24,7 +24,7 @@
+         author_email='cyril@hippie.io',
+         url='http://bitbucket.org/cyrilrbt/caldav',
+         license='GPL',
+-        packages=find_packages(exclude="tests"),
++        packages=find_packages(exclude=('tests',)),
+         include_package_data=True,
+         zip_safe=False,
+         install_requires=['vobject', 'lxml', 'nose', 'coverage', 'requests', 'six'],
