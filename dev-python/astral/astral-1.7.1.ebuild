@@ -3,7 +3,8 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( pypy3 python2_7 python3_{4,5,6} )
+PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} pypy pypy3 )
+
 inherit distutils-r1
 
 DESCRIPTION="Calculations for the position of the sun and moon."
