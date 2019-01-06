@@ -38,8 +38,8 @@ Let me know if any initial depencies are missing. I test fresh installs once in 
 ### Todos
 - **If it moves, compile it** :-)
 - Add more libraries:
-  - ~~warrant-0.6.1 (still does not compile)~~ now compiles, dirty hack, patch needed.
-  - caldav-0.5.0 (also refuses to compile at my box)
+  - ~~warrant-0.6.1 (still does not compile)~~ now compiles, dirty hack, patch added.
+  - ~~caldav-0.5.0 (also refuses to compile at my box)~~ patch added, now excludes 'test' correctly and compiles on my box
   - and other frequently used modules i currently do not use
 - Find out why `SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"` is not working in some cases and fix it in:
   - ~~rxv~~
