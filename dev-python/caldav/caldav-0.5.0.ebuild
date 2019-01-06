@@ -4,7 +4,7 @@
 
 EAPI=5
 
-PYTHON_COMPAT=( python2_7 python3_{3,4,5} pypy pypy3 )
+PYTHON_COMPAT=( python3_{6,7} )
 
 inherit distutils-r1
 
@@ -17,7 +17,14 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=""
+RDEPEND="
+	dev-python/vobject[${PYTHON_USEDEP}]
+	dev-python/lxml[${PYTHON_USEDEP}]
+	dev-python/nose[${PYTHON_USEDEP}]
+	dev-python/coverage[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/six[${PYTHON_USEDEP}]
+	"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -25,6 +32,10 @@ DEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
+PATCHES=(
+        "${FILESDIR}"/${P}-top_level.patch
+	)
+	
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
