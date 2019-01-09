@@ -11,7 +11,7 @@ MY_P=${P/_beta/b}
 MY_PV=${PV/_beta/b}
 
 DESCRIPTION="Open-source home automation platform running on Python 3.6"
-HOMEPAGE="https://home-assistant.io"
+HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistantRepository"
 SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
 RESTRICT="mirror"
 
