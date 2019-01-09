@@ -21,6 +21,7 @@ CDEPEND="
 	>=dev-python/attrs-17.3.0[${PYTHON_USEDEP}]
 	dev-python/chardet[${PYTHON_USEDEP}]
 	>=dev-python/multidict-4.0.0[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-3.6.5[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.0[${PYTHON_USEDEP}]
 	dev-python/idna-ssl[${PYTHON_USEDEP}]
 "
