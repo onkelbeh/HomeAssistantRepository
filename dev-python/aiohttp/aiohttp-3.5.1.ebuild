@@ -48,7 +48,6 @@ DEPEND="
 RDEPEND="${CDEPEND}"
 
 DOCS=( CHANGES.rst CONTRIBUTING.rst CONTRIBUTORS.txt HISTORY.rst README.rst )
-PATCHES=( "${FILESDIR}"/${PN}-3.0.5-tests.patch )
 
 python_prepare_all() {
 	# skip failing tests until cause is determined
