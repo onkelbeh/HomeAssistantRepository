@@ -1,3 +1,21 @@
+2019-01-10 final 0.85.0-r1 release and some opts
+	did a new compile test on emty box, now works from scratch
+	add sample files for /etc/portage:
+	- use mariadb client without db
+	- fix dependency block with mysql
+	- add repos.conf sample
+	fix adb python targets
+	fix pywemo targets
+	fix pyHS100 targets
+	fix fix pyHS100 dependency case
+	homeassistant-0.85.0 logdir will now be created
+	async_timeout-3.0.1 fix
+	ua-parser-0.8.0 fix
+	v0.85.0 release 10.1.2019 (sorry, does not compile on empty box if python 2.7 is still installed)
+	add new pytest, pyhomematic, keyring (experimental), aioesphomeapi ebuilds
+	warrant-0.6.1 update PYTHON_TARGETS
+	aiocoap-0.4_alpha3 add missing encoding (Umlaut breaks setup.py)
+
 2019-01-09 0.85.0_beta1
 	homeassistant-0.85.0_beta1 added
 	bump beautifulsoup-4.7.1

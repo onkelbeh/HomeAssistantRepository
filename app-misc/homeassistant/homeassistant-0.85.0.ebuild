@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="atv hs100 dropbox tradfri wemo mysql musiccast rxv samsungtv sonos ssl firetv maxcube"
+IUSE="atv hs100 dropbox tradfri wemo +mysql musiccast rxv samsungtv sonos +ssl firetv maxcube +frontend"
 
 DEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -106,6 +106,7 @@ DEPEND="${PYTHON_DEPS}
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf )
 	wemo? ( >=dev-python/pywemo-0.4.38[${PYTHON_USEDEP}] )
+	frontend? ( =app-misc/home-assistant-frontend-20190109.0 )
 "
 
 RDEPEND="${DEPEND}

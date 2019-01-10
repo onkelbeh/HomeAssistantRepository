@@ -6,7 +6,7 @@ https://github.com/home-assistant/home-assistant
 
 "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server."
 
-This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. But it's not perfect, some libs are still installed in "site-packages", because i couldn't get them to work, include or compile in Portage so far, _any_ help is appreciated.
+This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. .
 
 If you have questions or suggestions don't hesitate to contact me...
 
@@ -15,7 +15,6 @@ If you have questions or suggestions don't hesitate to contact me...
 | ------ | ------ | ------ |
 | Main | https://git.edevau.net/onkelbeh/HomeAssistantRepository | https://git.edevau.net/onkelbeh/HomeAssistantRepository.git |
 | Mirror | https://github.com/onkelbeh/HomeAssistantRepository |  https://github.com/onkelbeh/HomeAssistantRepository.git |
-
 
 #### Installation is pretty easy:
 
@@ -33,22 +32,12 @@ Sync it and install it (as root)
 $ emerge --sync
 $ emerge -tav app-misc/homeassistant
 ```
-Let me know if any initial depencies are missing. I test fresh installs once in a blue moon. Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
+Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
+Let me know if any initial depencies are missing. I test fresh installs once in a blue moon, last completed compile test was Jan 10 2019 with v0.85.0-r1.
 
 ### Todos
 - **If it moves, compile it** :-)
 - Add more libraries:
-  - ~~warrant-0.6.1 (still does not compile)~~ now compiles, dirty hack, patch added.
-  - ~~caldav-0.5.0 (also refuses to compile at my box)~~ patch added, now excludes 'test' correctly and compiles on my box
-  - and other frequently used modules i currently do not use
-- Find out why `SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"` is not working in some cases and fix it in:
-  - ~~rxv~~
-  - ~~user-agents~~
-  - ~~ifaddr~~
-  - ~~libusb1~~
-  - ~~adb-homeassistant~~
-  - ~~firetv~~
-  - ~~envs~~
 - Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo.
 - try/test this all with Python 3.7
 - Write an installation page for the home-assistant.io Documentation an get it added.
