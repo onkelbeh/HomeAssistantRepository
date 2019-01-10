@@ -153,6 +153,9 @@ python_install_all() {
 	keepdir "/etc/${PN}"
 	fowners -R "${PN}:${PN}" "/etc/${PN}"
 
+	keepdir "/var/log/${PN}"
+	fowners -R "${PN}:${PN}" "/var/log/${PN}"
+
 	newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
 	newinitd "${FILESDIR}/${PN}.init.d" "${PN}"
 
