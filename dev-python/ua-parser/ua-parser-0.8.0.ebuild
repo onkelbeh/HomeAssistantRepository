@@ -1,27 +1,31 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Id$
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6} )
+PYTHON_COMPAT=( python3_{6,7} )
 
 inherit distutils-r1
 
 DESCRIPTION="Python port of Browserscope's user agent parser"
-HOMEPAGE="https://github.com/ua-parser/uap-python"
-SRC_URI="https://files.pythonhosted.org/packages/b0/02/94ea43fc432fb112fbb62a89855317c41c210fb5239a2ed9b94ecb63024f/ua-parser-0.8.0.tar.gz"
+HOMEPAGE="https://github.com/ua-parser/uap-python https://pypi.org/project/ua-parser/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="LICENSE.txt"
 SLOT="0"
-KEYWORDS="alpha amd64 ~arm arm64 hppa ~ia64 ~mips ppc ppc64 s390 ~sparc x86 ~amd64-fbsd ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-DEPEND="
+RDEPEND=""
+DEPEND="${REDEPEND}
+	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
+		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-	)
-"
+	)"
 
 python_test() {
-	py.test -v || die "Tests failed under ${EPYTHON}"
+	nosetests --verbose || die
+	py.test -v -v || die
 }
