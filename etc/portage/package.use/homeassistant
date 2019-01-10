@@ -1,0 +1,3 @@
+app-misc/homeassistant ssl atv firetv hs100 maxcube musiccast mysql rxv samsungtv sonos tradfri wemo
+dev-python/sqlalchemy mysql sqlite
+dev-lang/python sqlite
