@@ -32,6 +32,6 @@ S="${WORKDIR}/${PN}-${MY_PV}"
 
 src_prepare() {
 	      rm -rf tests  # FIXME
-
+	      eapply "${FILESDIR}/aiocoap-0.4a1-no-umlaut.patch"
 	      eapply_user
 	      }
