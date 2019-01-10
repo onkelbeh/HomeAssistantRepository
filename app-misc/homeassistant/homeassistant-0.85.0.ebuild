@@ -93,7 +93,7 @@ DEPEND="${PYTHON_DEPS}
 	>=media-libs/mutagen-1.41.1
 	atv? ( >=dev-python/pyatv-0.3.12[${PYTHON_USEDEP}] )
 	firetv? ( =dev-python/firetv-1.0.7[${PYTHON_USEDEP}] )
-	hs100? ( >=dev-python/pyhs100-0.3.0[${PYTHON_USEDEP}] )
+	hs100? ( >=dev-python/pyHS100-0.3.0[${PYTHON_USEDEP}] )
 	maxcube? ( =dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
 	musiccast? ( >=dev-python/pymusiccast-0.1.6[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
