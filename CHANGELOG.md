@@ -1,3 +1,9 @@
+2019-01-11 Release 0.85.1
+	update ruamel-yaml-0.15.85
+	update mutagen-1.42.0
+	update keyring-17.1.1
+	update home-assistant-frontend-20190109.1
+
 2019-01-10 final 0.85.0-r2 release and some more opts
 	added home-assistant-frontend-20190109.0
 	did a new compile test on a fresh empty box from scratch, now works good, compiling in a ramdisk adds ~4GB to the snapshot.
