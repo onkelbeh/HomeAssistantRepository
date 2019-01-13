@@ -1,4 +1,8 @@
 2019-01-13 some new ebuilds
+	pydocstyle-3.0.0 added
+	pytest-cov-2.6.1 added
+	mypy-0.650 added
+	pytest-4.1.0 update
 	last aioesphomeapi-1.3.0 added (1.4.1 too new)
 	pyunifi-2.16 added
 	pylast-3.0.0 added
