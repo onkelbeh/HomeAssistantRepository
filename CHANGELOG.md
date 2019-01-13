@@ -1,3 +1,8 @@
+2019-01-13 some new ebuilds
+	last aioesphomeapi-1.3.0 added (1.4.1 too new)
+	pyunifi-2.16 added
+	pylast-3.0.0 added
+
 2019-01-12 esphomeyaml (python2_7)
 	add tzlocal-1.4 for esphomeyaml
 	add python2_7 compatibility in colorlog-4.0.2.ebuild for esphomeyaml
