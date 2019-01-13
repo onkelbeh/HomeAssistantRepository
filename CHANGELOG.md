@@ -1,3 +1,8 @@
+2019-01-12 esphomeyaml (python2_7)
+	add tzlocal-1.4 for esphomeyaml
+	add python2_7 compatibility in colorlog-4.0.2.ebuild for esphomeyaml
+	add esphomeyaml-1.10.0
+
 2019-01-11 Release 0.85.1
 	update ruamel-yaml-0.15.85
 	update mutagen-1.42.0
