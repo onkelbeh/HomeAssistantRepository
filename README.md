@@ -8,6 +8,8 @@ https://github.com/home-assistant/home-assistant
 
 This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. .
 
+Aside from Home Assistant there are some related ebuilds I use with my Home Assistant.
+
 If you have questions or suggestions don't hesitate to contact me...
 
 #### You will find this Repository at

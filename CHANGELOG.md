@@ -1,3 +1,7 @@
+2019-01-15 new lib
+	abodepy-0.15.0 added (requires very old lomond-0.1.14)
+	lomond-0.1.14 added
+
 2019-01-13 some new ebuilds
 	pydocstyle-3.0.0 added
 	pytest-cov-2.6.1 added
