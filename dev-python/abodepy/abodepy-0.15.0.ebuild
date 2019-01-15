@@ -39,18 +39,18 @@ python_test() {
 DOCS=( CHANGES.rst  LICENSE  README.rst )
 
 python_prepare_all() {
-        distutils-r1_python_prepare_all
+		     distutils-r1_python_prepare_all
 }
 
 python_compile_all() {
-        use doc && emake -C docs html
+		     use doc && emake -C docs html
 }
 
 python_test() {
-        esetup.py test
+	      esetup.py test
 }
 
 python_install_all() {
-        use doc && local HTML_DOCS=( docs/_build/html/. )
-        distutils-r1_python_install_all
+		     use doc && local HTML_DOCS=( docs/_build/html/. )
+		     distutils-r1_python_install_all
 }

@@ -9,7 +9,7 @@ PYTHON_COMPAT=( python3_{5,6} )
 inherit distutils-r1
 
 DESCRIPTION="RestrictedPython provides a restricted execution environment for Python, e.g. for running untrusted code."
-HOMEPAGE="http://pypi.python.org/pypi/RestrictedPython https://pypi.org/project/RestrictedPython/"
+HOMEPAGE="https://pypi.python.org/pypi/RestrictedPython https://pypi.org/project/RestrictedPython/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.zip"
 
 LICENSE="ZPL 2.1"
