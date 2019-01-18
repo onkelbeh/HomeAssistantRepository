@@ -1,14 +1,19 @@
 Home Assistant Gentoo Overlay
 =============================
 
+Home Assistant without Docker & Virtual Environments
+----------------------------------------------------
+
 https://www.home-assistant.io/
 https://github.com/home-assistant/home-assistant
 
-"Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server."
+"Open source home automation that puts local control and privacy first."
 
-This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. .
+This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it now has ~170 ebuilds listed.
 
-Aside from Home Assistant there are some related ebuilds I use with my Home Assistant.
+Aside from Home Assistant there are some related ebuilds I use with my Home Assistant:
+ * esphomeyaml
+ * platformio
 
 If you have questions or suggestions don't hesitate to contact me...
 
@@ -39,15 +44,15 @@ Let me know if any initial depencies are missing. I test fresh installs once in 
 
 ### Todos
 - **If it moves, compile it** :-)
-- Add more libraries:
-- Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo.
 - try/test this all with Python 3.7
+- Add libraries if i need it or someone asks for
+- Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo.
 - Write an installation page for the home-assistant.io Documentation an get it added.
 - Convince more people to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
 ### some Background...
 
-I decided to run Home Assistant on a dedicated box, now Home Assistant is running in a virtual X64 here. I assigned 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA) to it. Recorder writes to a separate mariadb machine (530 MB today).
+I decided to run Home Assistant on a dedicated box, now Home Assistant is running in a virtual X64 here. I assigned 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA) to it. Recorder writes to a separate mariadb machine, had to limit it due to performance issues (had 530 MB, it's 30MB today, with approx. 20k events recorded).
 
 Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.5.3), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
 * Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota)
@@ -73,7 +78,7 @@ Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
 * Axis Camera (1, more to come)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
-I have **no** Google, Amazon or Apple involved in my privacy (at least in this case), neither am I planning to do so.
+I have **no** Google, Amazon or Apple involved in my privacy (at least in this case) and I am not planning to let them in.
 
 * Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` as small as possible.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Ouside HA dependencies execpt portage are not tested.
@@ -81,14 +86,29 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 * I prefer an own profile based on "amd64/17.0/no-multilib", with python-3.6.5 set as default target, also 2.7 is installed on my test server, will try 3.7 as soon it is marked as stable in portage.
 
 ### Licenses
-All work on these components is released under the Licenses they came from, which could be (as my grep told me), you can find the appropriate License in the ebuild files:
-- Apache-2.0
-- Apache-2.0 BSD
-- BSD
-- BSD-2 Unlicense
-- EPL-1.0
-- GPL-2
-- LGPL-2.1
-- MIT
-- MPL-2.0
-- PSF-2
+All work on these components is released under the Licenses they came from, which could be (as my grep told me), you can find the appropriate License in the ebuild files and in the sources:
+ - "Apache-2.0"
+ - "( Apache-2.0 BSD )"
+ - "Apache License 2.0"
+ - "Apache license version 2.0"
+ - "BSD"
+ - "BSD-2"
+ - "BSD-2 Unlicense"
+ - "CC0-1.0"
+ - "EPL-1.0"
+ - "GPL"
+ - "GPL-2"
+ - "GPL3"
+ - "GPLv3"
+ - "GPLv3+"
+ - "LGPL-2.1"
+ - "MIT"
+ - "MIT License"
+ - "PSF"
+ - "PSF-2"
+ - "The MIT License (MIT)"
+ - "ZPL 2.1"
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -88,14 +88,14 @@ DEPEND="${PYTHON_DEPS}
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyhs100-0.3.0[${PYTHON_USEDEP}] )
 	tradfri? ( >=dev-python/pytradfri-4.1.0[${PYTHON_USEDEP}]
-		 sys-devel/autoconf )
+		 sys-devel/autoconf:2.69 )
 	wemo? ( >=dev-python/pywemo-0.4.25[${PYTHON_USEDEP}] )
 	>=dev-python/zeroconf-0.21.3[${PYTHON_USEDEP}]
 	dev-db/sqlite
 	dev-libs/libfastjson
 	>=media-libs/mutagen-1.41.1
 	ssl? ( 	dev-libs/openssl:0
-	        app-crypt/certbot
+			app-crypt/certbot
 		net-proxy/haproxy )
 	firetv? ( =dev-python/firetv-1.0.7[${PYTHON_USEDEP}] )
 	maxcube? ( =dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )

@@ -1,3 +1,19 @@
+2019-01-18 0.86.0_beta0
+	changed/added some missing/wrong licenses
+	added much more python3_7 TARGETS
+	removed lots of old CVS tags
+	README.md updated
+        pyjwt Digest verification corrected
+	pyjwt license corrected
+	pyunifi license corrected
+	click > 6 for platformio did not work
+	esphomeyaml moved
+	pynuki added
+	move esphomeyaml to dev-embedded
+	allow click > 6 for platformio (experimental)
+	(tag: v0.86.0_beta0) homeassistant-0.86.0_beta0 added
+	aiohttp-3.5.4 added
+
 2019-01-15 new lib
 	abodepy-0.15.0 added (requires very old lomond-0.1.14)
 	lomond-0.1.14 added

@@ -1,8 +1,7 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
-EAPI=5
+EAPI=6
 
 PYTHON_COMPAT=( python3_{6,7} )
 
@@ -32,10 +31,8 @@ DEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-PATCHES=(
-        "${FILESDIR}"/${P}-top_level.patch
-	)
-	
+PATCHES=( "${FILESDIR}"/${P}-top_level.patch )
+
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die

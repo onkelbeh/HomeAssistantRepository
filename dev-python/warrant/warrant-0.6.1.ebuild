@@ -1,9 +1,7 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors Ebuild created b@edevau.net 31.12.2018
 # Distributed under the terms of the GNU General Public License v2
-# Ebuild created b@edevau.net 31.12.2018
-# $Id$
 
-EAPI=5
+EAPI=6
 
 PYTHON_COMPAT=( python3_{5,6,7} )
 
@@ -33,9 +31,7 @@ DEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-PATCHES=(
-        "${FILESDIR}"/${P}-requirements.patch
-)
+PATCHES=( "${FILESDIR}"/${P}-requirements.patch )
 
 python_test() {
 	nosetests --verbose || die

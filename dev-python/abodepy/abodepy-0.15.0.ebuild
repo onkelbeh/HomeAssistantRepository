@@ -1,6 +1,5 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 
@@ -39,18 +38,18 @@ python_test() {
 DOCS=( CHANGES.rst  LICENSE  README.rst )
 
 python_prepare_all() {
-		     distutils-r1_python_prepare_all
+			 distutils-r1_python_prepare_all
 }
 
 python_compile_all() {
-		     use doc && emake -C docs html
+			 use doc && emake -C docs html
 }
 
 python_test() {
-	      esetup.py test
+		  esetup.py test
 }
 
 python_install_all() {
-		     use doc && local HTML_DOCS=( docs/_build/html/. )
-		     distutils-r1_python_install_all
+			 use doc && local HTML_DOCS=( docs/_build/html/. )
+			 distutils-r1_python_install_all
 }
