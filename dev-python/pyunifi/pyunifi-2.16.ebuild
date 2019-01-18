@@ -12,7 +12,7 @@ DESCRIPTION="API for Ubiquity Networks UniFi controller"
 HOMEPAGE="https://github.com/finish06/unifi-api https://pypi.org/project/pyunifi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
