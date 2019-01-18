@@ -13,7 +13,7 @@ DESCRIPTION="JSON Web Token implementation in Python"
 HOMEPAGE="https://github.com/progrium/pyjwt https://pypi.org/project/PyJWT/"
 SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_PN}-${PV}.tar.gz"
 
-LICENSE=" MIT"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 x86"
 IUSE="test"
