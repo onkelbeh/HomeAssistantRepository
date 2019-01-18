@@ -23,6 +23,7 @@ RDEPEND="${DEPEND}
 	<dev-python/arrow-1[${PYTHON_USEDEP}]
 	<dev-python/bottle-0.13[${PYTHON_USEDEP}]
 	>=dev-python/click-5[${PYTHON_USEDEP}]
+	<dev-python/click-6[${PYTHON_USEDEP}]
 	dev-python/colorama[${PYTHON_USEDEP}]
 	<dev-python/lockfile-0.13[${PYTHON_USEDEP}]
 	>=dev-python/lockfile-0.9.1[${PYTHON_USEDEP}]
