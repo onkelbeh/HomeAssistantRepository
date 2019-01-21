@@ -17,7 +17,7 @@ RESTRICT="mirror"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYRDS="amd64"
+KEYWORDS="amd64"
 IUSE="atv hs100 dropbox tradfri wemo +mysql musiccast rxv samsungtv sonos +ssl firetv maxcube +frontend"
 
 DEPEND="${PYTHON_DEPS}
@@ -124,10 +124,10 @@ INSTALL_DIR="/opt/${PN}"
 DISABLE_AUTOFORMATTING=1
 DOC_CONTENTS="
 The HA interface listens on port 8123
-hass configuration is in: /etc/${MY_PN}
-daemon command line arguments are configured in: /etc/conf.d/${MY_PN}
-logging is to: /var/log/${MY_PN}/{server,errors,stdout}.log
-The sqlite db is by default in: /etc/${MY_PN}
+hass configuration is in: /etc/${PN}
+daemon command line arguments are configured in: /etc/conf.d/${PN}
+logging is to: /var/log/${PN}/{server,errors,stdout}.log
+The sqlite db is by default in: /etc/${PN}
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
@@ -162,6 +162,9 @@ python_install_all() {
 
 	newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
 	newinitd "${FILESDIR}/${PN}.init.d" "${PN}"
+
+	insinto /etc/logrotate.d
+	newins "${FILESDIR}/${PN}.logrotate" "${PN}"
 
 	readme.gentoo_create_doc
 }
