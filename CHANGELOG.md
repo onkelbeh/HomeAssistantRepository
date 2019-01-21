@@ -1,3 +1,10 @@
+2019-01-21 v0.86.0_beta2
+	bump pysonos-0.0.6
+	bump aioesphomeapi-1.4.2
+	homeassistant-0.86.0_beta2
+	frontend-20190120.0 and
+	frontend-20190121.0
+
 2019-01-18 0.86.0_beta0
 	changed/added some missing/wrong licenses
 	added much more python3_7 TARGETS
