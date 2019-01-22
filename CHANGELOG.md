@@ -1,3 +1,6 @@
+2019-01-22 v0.86.0_beta3
+	homeassistant-0.86.0_beta3
+
 2019-01-21 v0.86.0_beta2
 	bump pysonos-0.0.6
 	bump aioesphomeapi-1.4.2
