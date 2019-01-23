@@ -17,7 +17,7 @@ RESTRICT="mirror"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE="atv hs100 dropbox tradfri wemo mysql musiccast rxv samsungtv sonos ssl firetv maxcube"
 
 DEPEND="${PYTHON_DEPS}
