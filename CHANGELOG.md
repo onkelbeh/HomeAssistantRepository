@@ -1,6 +1,12 @@
+2019-01-25 Release v0.86.2
+	homeassistant-0.86.2
+
+2019-01-23 Release v0.86.1
+	homeassistant-0.86.1
+
 2019-01-23 v0.86.0_beta3
 	homeassistant-0.86.0_beta3
-	with frontend-20190121.1
+        with frontend-20190121.1
 	change older Beta's to BETA
 
 2019-01-21 v0.86.0_beta2
