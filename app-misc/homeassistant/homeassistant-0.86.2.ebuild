@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="atv hs100 dropbox tradfri wemo +mysql musiccast rxv samsungtv sonos +ssl firetv maxcube +frontend"
+IUSE="asuswrt atv dropbox firetv +frontend homematic haproxy hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl tradfri wemo"
 
 DEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -110,6 +110,10 @@ DEPEND="${PYTHON_DEPS}
 		 sys-devel/autoconf:2.69 )
 	wemo? ( >=dev-python/pywemo-0.4.38[${PYTHON_USEDEP}] )
 	frontend? ( =app-misc/home-assistant-frontend-20190121.1 )
+	haproxy? ( net-proxy/haproxy )
+	homematic? ( dev-python/pyhomematic[${PYTHON_USEDEP}] )
+	asuswrt? ( dev-python/aioasuswrt[${PYTHON_USEDEP}] )
+	qnap? ( dev-python/qnapstats[${PYTHON_USEDEP}] )
 "
 
 RDEPEND="${DEPEND}

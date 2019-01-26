@@ -1,3 +1,10 @@
+2019-01-26 Compile from Scratch Test
+	compile homeassistant-0.86.2 with all use flags set,
+	had to fix all paths in 2 patches (warrant-0.6.1 and caldav-0.5.0)
+	added haproxy dependecy
+	added asuswrt qnap and homematic dependency
+	removed default for mysql use flag
+
 2019-01-25 Release v0.86.2
 	homeassistant-0.86.2
 

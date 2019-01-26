@@ -40,7 +40,7 @@ $ emerge --sync
 $ emerge -tav app-misc/homeassistant
 ```
 Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
-Let me know if any initial depencies are missing. I test fresh installs once in a blue moon, last good compile test was Jan 10th, 2019 with v0.85.0-r2.
+Let me know if any initial depencies are missing, last good (full) compile test was Jan 26th, 2019 with v0.86.2
 
 ### Todos
 - **If it moves, compile it** :-)
@@ -52,7 +52,7 @@ Let me know if any initial depencies are missing. I test fresh installs once in 
 
 ### some Background...
 
-I decided to run Home Assistant on a dedicated box, now Home Assistant is running in a virtual X64 here. I assigned 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA) to it. Recorder writes to a separate mariadb machine, had to limit it due to performance issues (had 530 MB, it's 30MB today, with approx. 20k events recorded).
+I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine.
 
 Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.5.3), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
 * Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota)
