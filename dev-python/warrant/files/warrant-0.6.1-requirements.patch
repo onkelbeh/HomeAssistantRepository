@@ -1,15 +1,13 @@
-Datei warrant-0.6.1.old/.ipc_in ist ein FIFO, während Datei warrant-0.6.1/.ipc_in ein FIFO ist.
-Datei warrant-0.6.1.old/.ipc_out ist ein FIFO, während Datei warrant-0.6.1/.ipc_out ein FIFO ist.
-diff -Naru warrant-0.6.1.old/work/warrant-0.6.1/requirements_test.txt warrant-0.6.1/work/warrant-0.6.1/requirements_test.txt
---- requirements_test.txt	1970-01-01 01:00:00.000000000 +0100
-+++ requirements_test.txt	2018-12-31 12:00:14.156399118 +0100
+diff --git a/requirements_test.txt b/requirements_test.txt
+--- a/requirements_test.txt
++++ b/requirements_test.txt
 @@ -0,0 +1,3 @@
 +mock>=2.0.0
 +nose
 +coverage
-diff -Naru warrant-0.6.1.old/work/warrant-0.6.1/requirements.txt warrant-0.6.1/work/warrant-0.6.1/requirements.txt
---- requirements.txt	1970-01-01 01:00:00.000000000 +0100
-+++ requirements.txt	2018-12-31 11:59:40.446035015 +0100
+diff --git a/requirements.txt b/requirements.txt
+--- a/requirements.txt
++++ b/requirements.txt
 @@ -0,0 +1,4 @@
 +boto3>=1.4.3
 +envs>=0.3.0
