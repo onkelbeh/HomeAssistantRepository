@@ -1,7 +1,9 @@
 2019-01-27 Release homeassistant-0.86.3
-	CO2Signal added.
+	removed useless dropbox use flag
+	tested compilation of homeassistant-0.86.3 with all use flags set on an empty box with python-3.6.5 without problems
+	CO2Signal added
 	adb-homeassistant PYTHON_COMPAT7
-	blinkpy added.
+	blinkpy added
 	Upgrade astral to 1.8 (#20459)
 	Upgrade sqlalchemy to 1.2.16 (#20474)
 	Upgrade psutil to 5.5.0 (#20462)

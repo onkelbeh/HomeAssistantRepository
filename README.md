@@ -40,7 +40,7 @@ $ emerge --sync
 $ emerge -tav app-misc/homeassistant
 ```
 Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
-Let me know if any initial depencies are missing, last good (full) compile test was Jan 26th, 2019 with v0.86.2
+Let me know if any initial depencies are missing, last good (full) compile test was Jan 27th, 2019 with v0.86.3
 
 ### Todos
 - **If it moves, compile it** :-)
