@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="asuswrt atv dropbox firetv +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl tradfri wemo"
+IUSE="asuswrt atv firetv +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl tradfri wemo"
 
 DEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -117,9 +117,6 @@ DEPEND="${PYTHON_DEPS}
 
 RDEPEND="${DEPEND}
 	app-admin/logrotate
-	dropbox? (
-		net-misc/dropbox-uploader
-	)
 "
 
 INSTALL_DIR="/opt/${PN}"
