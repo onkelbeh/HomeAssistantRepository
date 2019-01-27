@@ -1,3 +1,18 @@
+2019-01-27 Release homeassistant-0.86.3
+	CO2Signal added.
+	adb-homeassistant PYTHON_COMPAT7
+	blinkpy added.
+	Upgrade astral to 1.8 (#20459)
+	Upgrade sqlalchemy to 1.2.16 (#20474)
+	Upgrade psutil to 5.5.0 (#20462)
+	small dep changes in homeassistant-0.86.2.ebuild
+	adjust warrant-0.6.1 patch
+	adjust caldav-0.5.0-top_level.patch
+	qnapstats-0.3.0 added
+	Update pyhomematic to 0.1.55
+	ioasuswrt-1.1.18 (with dep) added
+	Upgrade numpy to 1.16.0
+
 2019-01-26 Compile from Scratch Test
 	compile homeassistant-0.86.2 with all use flags set,
 	had to fix all paths in 2 patches (warrant-0.6.1 and caldav-0.5.0)
