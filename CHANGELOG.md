@@ -1,3 +1,6 @@
+2019-01-29 Release homeassistant-0.86.4
+	bump homeassistant-0.86.4, no other changes
+
 2019-01-27 Release homeassistant-0.86.3
 	removed useless dropbox use flag
 	tested compilation of homeassistant-0.86.3 with all use flags set on an empty box with python-3.6.5 without problems
