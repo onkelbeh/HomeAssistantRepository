@@ -10,7 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Api wrapper for Asuswrt https://www.asus.com/ASUSWRT/"
 HOMEPAGE="https://github.com/kennedyshead/aioasuswrt https://pypi.org/project/aioasuswrt/"
 #SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
-SRC_URI="https://github.com/kennedyshead/aioasuswrt/archive/V1.1.18.tar.gz"
+SRC_URI="https://github.com/kennedyshead/aioasuswrt/archive/V${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
