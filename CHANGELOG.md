@@ -1,5 +1,10 @@
+2019-01-30 Added some Ebuilds
+	pymodbus-2.1.0 and 1.5.0 added
+
 2019-01-29 Release homeassistant-0.86.4
 	bump homeassistant-0.86.4, no other changes
+	added variable version for SRC_URI to aioasuswrt
+	Upgrade aioasuswrt-1.1.20
 
 2019-01-27 Release homeassistant-0.86.3
 	removed useless dropbox use flag
