@@ -1,5 +1,6 @@
 2019-01-30 Added some Ebuilds
 	pymodbus-2.1.0 and 1.5.0 added
+	async-upnp-client0.14.3 and required python-didl-lite added
 
 2019-01-29 Release homeassistant-0.86.4
 	bump homeassistant-0.86.4, no other changes
