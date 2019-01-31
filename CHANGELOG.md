@@ -1,3 +1,6 @@
+2019-01-30 v0.87.0_beta0
+	add homeassistant-0.87.0_beta0.ebuild
+
 2019-01-30 Added some Ebuilds
 	pymodbus-2.1.0 and 1.5.0 added
 	async-upnp-client0.14.3 and required python-didl-lite added
