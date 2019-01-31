@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="atv hs100 dropbox tradfri wemo +mysql musiccast rxv samsungtv sonos +ssl firetv maxcube +frontend"
+IUSE="asuswrt atv firetv +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl tradfri wemo"
 
 DEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -26,9 +26,9 @@ DEPEND="${PYTHON_DEPS}
 	dev-libs/libfastjson
 	>=dev-libs/xerces-c-3.1.4-r1
 	>=dev-libs/xml-security-c-1.7.3
-	=dev-python/aiohttp-3.5.1[${PYTHON_USEDEP}]
+	=dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
-	=dev-python/astral-1.7.1[${PYTHON_USEDEP}]
+	=dev-python/astral-1.8[${PYTHON_USEDEP}]
 	=dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 	=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
 	=dev-python/bcrypt-3.1.5[${PYTHON_USEDEP}]
@@ -102,21 +102,21 @@ DEPEND="${PYTHON_DEPS}
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	rxv? ( =dev-python/rxv-0.5.1[${PYTHON_USEDEP}] )
 	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
-	sonos? ( >=dev-python/pysonos-0.0.5[${PYTHON_USEDEP}] )
+	sonos? ( >=dev-python/pysonos-0.0.6[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
-		net-proxy/haproxy )
+			net-proxy/haproxy )
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
 	wemo? ( >=dev-python/pywemo-0.4.38[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190109.1 )
+	frontend? ( =app-misc/home-assistant-frontend-20190130.1 )
+	homematic? ( dev-python/pyhomematic[${PYTHON_USEDEP}] )
+	asuswrt? ( dev-python/aioasuswrt[${PYTHON_USEDEP}] )
+	qnap? ( dev-python/qnapstats[${PYTHON_USEDEP}] )
 "
 
 RDEPEND="${DEPEND}
 	app-admin/logrotate
-	dropbox? (
-		net-misc/dropbox-uploader
-	)
 "
 
 INSTALL_DIR="/opt/${PN}"
@@ -124,10 +124,10 @@ INSTALL_DIR="/opt/${PN}"
 DISABLE_AUTOFORMATTING=1
 DOC_CONTENTS="
 The HA interface listens on port 8123
-hass configuration is in: /etc/${MY_PN}
-daemon command line arguments are configured in: /etc/conf.d/${MY_PN}
-logging is to: /var/log/${MY_PN}/{server,errors,stdout}.log
-The sqlite db is by default in: /etc/${MY_PN}
+hass configuration is in: /etc/${PN}
+daemon command line arguments are configured in: /etc/conf.d/${PN}
+logging is to: /var/log/${PN}/{server,errors,stdout}.log
+The sqlite db is by default in: /etc/${PN}
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
@@ -162,6 +162,9 @@ python_install_all() {
 
 	newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
 	newinitd "${FILESDIR}/${PN}.init.d" "${PN}"
+
+	insinto /etc/logrotate.d
+	newins "${FILESDIR}/${PN}.logrotate" "${PN}"
 
 	readme.gentoo_create_doc
 }
