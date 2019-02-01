@@ -1,5 +1,15 @@
+2019-02-01 v0.87.0_beta0
+	blinkpy-0.12.1 added
+
 2019-01-30 v0.87.0_beta0
 	add homeassistant-0.87.0_beta0.ebuild
+	frontend-20190130.1
+	async-upnp-client-0.14.3 added
+	pymodbus added
+	experiments with docs:
+	- sphinx-1.8.3 (dependecy problems)
+	- sphinx-autodoc-typehints-1.6.0 added (dependecy problems)
+	- sphinx-autodoc-annotation-1.0-r1 added (dependecy problems)
 
 2019-01-30 Added some Ebuilds
 	pymodbus-2.1.0 and 1.5.0 added
