@@ -1,3 +1,6 @@
+2019-02-01 v0.87.0_beta1
+	bump frontend to20190201.0
+
 2019-02-01 v0.87.0_beta0
 	blinkpy-0.12.1 added
 
