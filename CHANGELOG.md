@@ -2,6 +2,7 @@
 	add homeassistant-0.87.0_beta5.ebuild
 	bump frontend to20190203.0
 	add ha-ffmpeg-1.11
+	add speedtest-cli-2.0.2
 
 2019-02-03 v0.87.0_beta4
 	add homeassistant-0.87.0_beta4.ebuild

@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="asuswrt atv firetv +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl tradfri wemo"
+IUSE="asuswrt atv firetv +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl speedtest tradfri wemo"
 
 DEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -113,6 +113,7 @@ DEPEND="${PYTHON_DEPS}
 	homematic? ( dev-python/pyhomematic[${PYTHON_USEDEP}] )
 	asuswrt? ( dev-python/aioasuswrt[${PYTHON_USEDEP}] )
 	qnap? ( dev-python/qnapstats[${PYTHON_USEDEP}] )
+	speedtest? ( =net-analyzer/speedtest-cli-2.0.2[${PYTHON_USEDEP}] )
 "
 
 RDEPEND="${DEPEND}
