@@ -1,3 +1,7 @@
+2019-02-04 v0.87.0_beta5
+	add homeassistant-0.87.0_beta5.ebuild
+	bump frontend to20190203.0
+
 2019-02-03 v0.87.0_beta4
 	add homeassistant-0.87.0_beta4.ebuild
 	add rxv-0.6.0 (unsued)
