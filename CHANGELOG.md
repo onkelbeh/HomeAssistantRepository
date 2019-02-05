@@ -1,3 +1,7 @@
+2019-02-05 v0.87.0_beta5
+	add async-upnp-client-0.14.4
+	add flake8-3.7.5
+
 2019-02-04 v0.87.0_beta5
 	add homeassistant-0.87.0_beta5.ebuild
 	bump frontend to20190203.0
