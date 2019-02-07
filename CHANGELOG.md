@@ -2,6 +2,7 @@
 	* bump homeassistant-0.87.0
 	* astral-1.9.2 added
 	* PySwitchmate-0.4.5 added
+	* distro-1.4.0 added
 
 2019-02-06 homeassistant-0.87.0_beta6
 	* homeassistant-0.87.0_beta6
