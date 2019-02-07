@@ -1,3 +1,6 @@
+2019-02-07 homeassistant-0.87.0
+* bump homeassistant-0.87.0
+
 2019-02-06 homeassistant-0.87.0_beta6
 * homeassistant-0.87.0_beta6
 * WazeRouteCalculator-0.6 added
