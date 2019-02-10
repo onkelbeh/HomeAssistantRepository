@@ -1,3 +1,6 @@
+2019-02-10 homeassistant-0.87.1
+	* bump homeassistant-0.87.1
+
 2019-02-07 homeassistant-0.87.0
 	* bump homeassistant-0.87.0
 	* astral-1.9.2 added
