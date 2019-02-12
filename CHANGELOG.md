@@ -1,3 +1,13 @@
+2019-02-12 div Updates
+	* Update pyHS100 to 0.3.4
+	* bump aioesphomeapi-1.5.0
+	* bump ruamel-yaml-0.15.87
+	* add zm-py-0.3.3
+	* add slixmpp-1.4.2
+	* add ebusdpy-0.0.16
+	* add PyGithub-1.43.5
+	* add more useflags (denon & zoneminder)
+
 2019-02-10 homeassistant-0.87.1
 	* bump homeassistant-0.87.1
 
