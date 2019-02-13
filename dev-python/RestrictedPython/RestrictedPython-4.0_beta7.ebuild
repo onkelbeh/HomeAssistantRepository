@@ -7,13 +7,12 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
-MY_PN="RestrictedPython"
-MY_P="${MY_PN}-4.0b7"
+MY_P=${P/_beta/b}
+MY_PV=${PV/_beta/b}
 
 DESCRIPTION="RestrictedPython provides a restricted execution environment for Python, e.g. for running untrusted code."
 HOMEPAGE="https://pypi.python.org/pypi/RestrictedPython https://pypi.org/project/RestrictedPython/"
-#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
-SRC_URI="https://github.com/zopefoundation/RestrictedPython/archive/4.0b7.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
 
 LICENSE="ZPL 2.1"
 SLOT="0"
