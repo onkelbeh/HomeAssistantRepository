@@ -9,10 +9,10 @@ https://github.com/home-assistant/home-assistant
 
 "Open source home automation that puts local control and privacy first."
 
-This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it now has ~170 ebuilds listed.
+This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now > 200 ebuilds listed.
 
 Aside from Home Assistant there are some related ebuilds I use with my Home Assistant:
- * esphomeyaml
+ * esphome
  * platformio
 
 If you have questions or suggestions don't hesitate to contact me...
@@ -28,7 +28,7 @@ If you have questions or suggestions don't hesitate to contact me...
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because i _always_ have more than one repo active by default:
 ```
 [HomeAssistantRepository]
-location = /usr/portage/homeassistant
+location = /usr/[local/]portage/homeassistant
 sync-type = git
 sync-uri = https://git.in.edevau.net/onkelbeh/HomeAssistantRepository.git
 auto-sync = yes
@@ -68,7 +68,7 @@ Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
 * some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
 * Yamaha RXV (4 devices)
 * SamsungTV (partly _not_ working anymore due to Samsungs newest firmware 'improvements')
-* Tradfri (4 devices now, can't wait for their shutters to arrive in early 2019)
+* Tradfri (4 devices now, can't wait for their shutters, now these are delayed due to software problems, 'til April 2019)
 * Sonos (had many, sold most of them, because they destroyed a formerly very cool gui, only two boxes left)
 * Calendar (connected to a locally run ownCloud, OC not in this Repository) (https://owncloud.org/)
 * Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
