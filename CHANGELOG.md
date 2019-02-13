@@ -4,6 +4,7 @@
 	* add CO2Signal-0.4.2
 	* add PyChromecast-2.5.0
 	* add aioharmony-0.1.7
+	* add home-assistant-frontend==20190212.0, remove 20190120.0 - 20190130.0
 
 2019-02-12 div Updates
 	* Update pyHS100 to 0.3.4
