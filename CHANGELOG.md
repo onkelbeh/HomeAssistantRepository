@@ -9,6 +9,7 @@
 	* add home-assistant-frontend==20190212.0, remove 20190120.0 - 20190130.0
 	* add cryptography-2.5
 	* add pyatmo-1.8
+	* add pyarlo-0.2.3
 
 2019-02-12 div Updates
 	* Update pyHS100 to 0.3.4
