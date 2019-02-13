@@ -8,6 +8,7 @@
 	* fixed SRC_URI handling for RestrictedPython, and added 4.0_beta8
 	* add home-assistant-frontend==20190212.0, remove 20190120.0 - 20190130.0
 	* add cryptography-2.5
+	* add pyatmo-1.8
 
 2019-02-12 div Updates
 	* Update pyHS100 to 0.3.4
