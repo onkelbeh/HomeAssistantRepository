@@ -1,5 +1,5 @@
 # Copyright 1999-2019 Gentoo Authors Andreas Billmeier b (at) edevau.net
-# Distributed under the terms of the GNU General Public License v2
+# Distributed under the terms of the GNU General Public License v3.0
 
 EAPI="7"
 
@@ -15,7 +15,7 @@ HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistan
 SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
 RESTRICT="mirror"
 
-LICENSE="Apache-2.0"
+LICENSE=""
 SLOT="0"
 KEYWORDS="amd64"
 IUSE="asuswrt atv denonavr firetv +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl speedtest tradfri wemo zoneminder"

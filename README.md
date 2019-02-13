@@ -87,7 +87,7 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 
 ### Licenses
 
-The Repository itself is released under MIT License, all work on the depending components under the Licenses they came from, which could be (as my grep told me):
+The Repository itself is released under GNU General Public License v3.0, all work on the depending components under the Licenses they came from, which could be (as my grep told me):
 
  - "Apache-2.0"
  - "( Apache-2.0 BSD )"

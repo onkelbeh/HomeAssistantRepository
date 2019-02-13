@@ -11,6 +11,7 @@
 	* add pyarlo-0.2.3
 	* and somebody renamed esphomeyaml to esphome, renamed and hacked a fix for archived SRC_URIs
 	* add platformio-core 3.6.3 & 3.6.4
+	* change License to GNU General Public License v3.0
 
 2019-02-12 div Updates
 	* Update pyHS100 to 0.3.4
