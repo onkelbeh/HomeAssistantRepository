@@ -4,12 +4,12 @@
 	* add CO2Signal-0.4.2
 	* add PyChromecast-2.5.0
 	* add aioharmony-0.1.7
-	* add home-assistant-frontend==20190212.0, remove 20190120.0 - 20190130.0
+	* bump home-assistant-frontend==20190212.0, remove 20190120.0 - 20190130.0
 	* fixed SRC_URI handling for RestrictedPython, and added 4.0_beta8
-	* add home-assistant-frontend==20190212.0, remove 20190120.0 - 20190130.0
-	* add cryptography-2.5
+	* bump cryptography-2.5
 	* add pyatmo-1.8
 	* add pyarlo-0.2.3
+	* and somebody renamed esphomeyaml to esphome, renamed and hacked a fix for archived SRC_URIs
 
 2019-02-12 div Updates
 	* Update pyHS100 to 0.3.4
