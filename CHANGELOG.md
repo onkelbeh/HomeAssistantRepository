@@ -3,6 +3,7 @@
 	* add aioambient-0.1.1
 	* add CO2Signal-0.4.2
 	* add PyChromecast-2.5.0
+	* add aioharmony-0.1.7
 
 2019-02-12 div Updates
 	* Update pyHS100 to 0.3.4
