@@ -2,6 +2,7 @@
 	* bump home-assistant-frontend==20190213.0, remove 20190201
 	* Upgrade ruamel.yaml to 0.15.88, remove 0.15.72-80
 	* add pypoint-1.0.7-8
+	* add meteofrance-0.3.4
 
 2019-02-12 div Updates
 	* Update sqlalchemy-1.2.17, remove sqlalchemy-1.2.11

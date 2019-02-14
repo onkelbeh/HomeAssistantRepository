@@ -1,5 +1,5 @@
-# Copyright 1999-2019 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
+# Copyright 1999-2019 Gentoo Authors Andreas Billmeier b (at) edevau.net
+# Distributed under the terms of the GNU General Public License v3.0
 
 EAPI="7"
 
@@ -15,10 +15,10 @@ HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistan
 SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
 RESTRICT="mirror"
 
-LICENSE="Apache-2.0"
+LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="asuswrt atv firetv +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl tradfri wemo"
+IUSE="asuswrt atv denonavr firetv +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl speedtest tradfri wemo zoneminder"
 
 DEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -101,6 +101,7 @@ DEPEND="${PYTHON_DEPS}
 	musiccast? ( >=dev-python/pymusiccast-0.1.6[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	rxv? ( =dev-python/rxv-0.5.1[${PYTHON_USEDEP}] )
+	denonavr? ( =dev-python/denonavr-0.7.8[${PYTHON_USEDEP}] )
 	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
 	sonos? ( >=dev-python/pysonos-0.0.6[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
@@ -109,10 +110,12 @@ DEPEND="${PYTHON_DEPS}
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
 	wemo? ( >=dev-python/pywemo-0.4.38[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190201.0 )
+	frontend? ( =app-misc/home-assistant-frontend-20190203.0 )
 	homematic? ( dev-python/pyhomematic[${PYTHON_USEDEP}] )
 	asuswrt? ( dev-python/aioasuswrt[${PYTHON_USEDEP}] )
 	qnap? ( dev-python/qnapstats[${PYTHON_USEDEP}] )
+	speedtest? ( =net-analyzer/speedtest-cli-2.0.2[${PYTHON_USEDEP}] )
+	zoneminder? ( =dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 "
 
 RDEPEND="${DEPEND}
