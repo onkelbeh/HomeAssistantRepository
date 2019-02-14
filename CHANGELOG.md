@@ -1,4 +1,7 @@
 2019-02-12 div Updates
+	* bump home-assistant-frontend==20190213.0, remove 20190201
+
+2019-02-12 div Updates
 	* Update sqlalchemy-1.2.17, remove sqlalchemy-1.2.11
 	* add aioambient-0.1.1
 	* add CO2Signal-0.4.2
