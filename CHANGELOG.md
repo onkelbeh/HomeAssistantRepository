@@ -3,6 +3,14 @@
 	* Upgrade ruamel.yaml to 0.15.88, remove 0.15.72-80
 	* add pypoint-1.0.7-8
 	* add meteofrance-0.3.4
+	* add 0.88.0_beta0, with new deps:
+		- astral-1.9.2
+		- cryptography-2.5
+		- RestrictedPython-4.0_beta8
+		- ruamel-yaml-0.15.88
+		- setuptools-40.8.0-
+		- rxv-0.6.0
+		- home-assistant-frontend-20190213.0
 
 2019-02-12 div Updates
 	* Update sqlalchemy-1.2.17, remove sqlalchemy-1.2.11

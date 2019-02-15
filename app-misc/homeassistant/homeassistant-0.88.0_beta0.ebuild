@@ -28,7 +28,7 @@ DEPEND="${PYTHON_DEPS}
 	>=dev-libs/xml-security-c-1.7.3
 	=dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
-	=dev-python/astral-1.8[${PYTHON_USEDEP}]
+	=dev-python/astral-1.9.2[${PYTHON_USEDEP}]
 	=dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 	=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
 	=dev-python/bcrypt-3.1.5[${PYTHON_USEDEP}]
@@ -41,7 +41,7 @@ DEPEND="${PYTHON_DEPS}
 	>=dev-python/chardet-3.0.4[${PYTHON_USEDEP}]
 	=dev-python/colorlog-4.0.2[${PYTHON_USEDEP}]
 	>=dev-python/coverage-4.5.2[${PYTHON_USEDEP}]
-	=dev-python/cryptography-2.3.1[${PYTHON_USEDEP}]
+	=dev-python/cryptography-2.5[${PYTHON_USEDEP}]
 	>=dev-python/distro-1.3.0[${PYTHON_USEDEP}]
 	>=dev-python/docutils-0.14[${PYTHON_USEDEP}]
 	>=dev-python/ecdsa-0.13[${PYTHON_USEDEP}]
@@ -76,9 +76,9 @@ DEPEND="${PYTHON_DEPS}
 	>=dev-python/pytz-2018.07[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-3.13[${PYTHON_USEDEP}]
 	=dev-python/requests-2.21.0-r1[${PYTHON_USEDEP}]
-	=dev-python/RestrictedPython-4.0_beta_pre7[${PYTHON_USEDEP}]
-	=dev-python/ruamel-yaml-0.15.85[${PYTHON_USEDEP}]
-	=dev-python/setuptools-40.6.3[${PYTHON_USEDEP}]
+	=dev-python/RestrictedPython-4.0_beta8[${PYTHON_USEDEP}]
+	=dev-python/ruamel-yaml-0.15.88[${PYTHON_USEDEP}]
+	=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
 	>=dev-python/sqlalchemy-1.2.15[${PYTHON_USEDEP}]
 	>=dev-python/typing-3.6.4-r1[${PYTHON_USEDEP}]
 	>=dev-python/ua-parser-0.8.0[${PYTHON_USEDEP}]
@@ -100,7 +100,7 @@ DEPEND="${PYTHON_DEPS}
 	maxcube? ( =dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
 	musiccast? ( >=dev-python/pymusiccast-0.1.6[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
-	rxv? ( =dev-python/rxv-0.5.1[${PYTHON_USEDEP}] )
+	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}] )
 	denonavr? ( =dev-python/denonavr-0.7.8[${PYTHON_USEDEP}] )
 	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
 	sonos? ( >=dev-python/pysonos-0.0.6[${PYTHON_USEDEP}] )
@@ -110,7 +110,7 @@ DEPEND="${PYTHON_DEPS}
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
 	wemo? ( >=dev-python/pywemo-0.4.38[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190203.0 )
+	frontend? ( =app-misc/home-assistant-frontend-20190213.0 )
 	homematic? ( dev-python/pyhomematic[${PYTHON_USEDEP}] )
 	asuswrt? ( dev-python/aioasuswrt[${PYTHON_USEDEP}] )
 	qnap? ( dev-python/qnapstats[${PYTHON_USEDEP}] )
