@@ -6,6 +6,7 @@
 	* add pyHik
 	* add pycarwings2
 	* add pydanfossair
+	* bump pypoint-1.1.1
 
 2019-02-12 div Updates
 	* bump home-assistant-frontend==20190213.0, remove 20190201
@@ -17,7 +18,7 @@
 		- cryptography-2.5
 		- RestrictedPython-4.0_beta8
 		- ruamel-yaml-0.15.88
-		- setuptools-40.8.0-
+		- setuptools-40.8.0
 		- rxv-0.6.0
 		- home-assistant-frontend-20190213.0
 	* removed some older aiohttp ebuilds
