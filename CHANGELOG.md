@@ -5,6 +5,7 @@
 	* update aioambient-0.1.2
 	* add pyHik
 	* add pycarwings2
+	* add pydanfossair
 
 2019-02-12 div Updates
 	* bump home-assistant-frontend==20190213.0, remove 20190201
