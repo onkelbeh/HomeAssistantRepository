@@ -4,6 +4,7 @@
 	* update PyChromecast-2.5.1
 	* update aioambient-0.1.2
 	* add pyHik
+	* add pycarwings2
 
 2019-02-12 div Updates
 	* bump home-assistant-frontend==20190213.0, remove 20190201
