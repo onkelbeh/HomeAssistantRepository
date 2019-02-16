@@ -7,6 +7,7 @@
 	* add pycarwings2
 	* add pydanfossair
 	* bump pypoint-1.1.1
+	* add pysmartthings
 
 2019-02-12 div Updates
 	* bump home-assistant-frontend==20190213.0, remove 20190201
