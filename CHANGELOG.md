@@ -1,3 +1,7 @@
+2019-02-12 homeassistant-0.88.0_beta1
+	* update homeassistant-0.88.0_beta1
+	* update home-assistant-frontend-20190215.0
+
 2019-02-12 div Updates
 	* bump home-assistant-frontend==20190213.0, remove 20190201
 	* Upgrade ruamel.yaml to 0.15.88, remove 0.15.72-80
@@ -11,6 +15,7 @@
 		- setuptools-40.8.0-
 		- rxv-0.6.0
 		- home-assistant-frontend-20190213.0
+	* removed some older aiohttp ebuilds
 
 2019-02-12 div Updates
 	* Update sqlalchemy-1.2.17, remove sqlalchemy-1.2.11
