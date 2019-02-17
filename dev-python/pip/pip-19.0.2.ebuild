@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -23,18 +23,18 @@ RESTRICT="test"
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}"
 
-python_prepare_all() {
-	local PATCHES=(
-		"${FILESDIR}/${PN}-10.0.1-disable-version-check.patch"
-	)
-	if ! use vanilla; then
-		PATCHES+=( "${FILESDIR}/pip-10.0.1-disable-system-install.patch" )
-	fi
-	distutils-r1_python_prepare_all
-}
+#python_prepare_all() {
+#	local PATCHES=(
+#		"${FILESDIR}/${PN}-10.0.1-disable-version-check.patch"
+#	)
+#	if ! use vanilla; then
+#		PATCHES+=( "${FILESDIR}/pip-10.0.1-disable-system-install.patch" )
+#	fi
+#	distutils-r1_python_prepare_all
+#}
 
 python_install_all() {
-	local DOCS=( AUTHORS.txt docs/*.rst )
+	local DOCS=( AUTHORS.txt docs/man/commands/*.rst )
 	distutils-r1_python_install_all
 
 	COMPLETION="${T}"/completion.tmp
