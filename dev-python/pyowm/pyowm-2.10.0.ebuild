@@ -21,11 +21,10 @@ RDEPEND="dev-python/coverage[${PYTHON_USEDEP}]
 		 >=dev-python/pip-18.0[${PYTHON_USEDEP}]
 		 dev-python/pytest[${PYTHON_USEDEP}]
 		 dev-python/recommonmark[${PYTHON_USEDEP}]
-		 dev-python/Sphinx[${PYTHON_USEDEP}]
-		 =dev-python/sphinx-readable-theme-1.3.0[${PYTHON_USEDEP}]
+		 dev-python/sphinx[${PYTHON_USEDEP}]
 		 dev-python/tox[${PYTHON_USEDEP}]
 		 dev-python/tox-travis[${PYTHON_USEDEP}]
-		 dev-python/virutalenv[${PYTHON_USEDEP}]
+		 dev-python/virtualenv[${PYTHON_USEDEP}]
 		 dev-python/twine[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
