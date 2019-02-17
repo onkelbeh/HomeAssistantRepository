@@ -1,5 +1,6 @@
 2019-02-16 home-assistant-frontend-20190216.0
 	* update home-assistant-frontend-20190216.0
+	* update PyChromecast-2.5.2
 
 2019-02-16 homeassistant-0.88.0_beta1
 	* update homeassistant-0.88.0_beta1
