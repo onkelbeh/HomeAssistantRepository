@@ -1,4 +1,4 @@
-2019-02-12 homeassistant-0.88.0_beta1
+2019-02-16 homeassistant-0.88.0_beta1
 	* update homeassistant-0.88.0_beta1
 	* update home-assistant-frontend-20190215.0
 	* update PyChromecast-2.5.1
@@ -9,7 +9,7 @@
 	* bump pypoint-1.1.1
 	* add pysmartthings
 
-2019-02-12 div Updates
+2019-02-15 div Updates
 	* bump home-assistant-frontend==20190213.0, remove 20190201
 	* Upgrade ruamel.yaml to 0.15.88, remove 0.15.72-80
 	* add pypoint-1.0.7-8
@@ -24,7 +24,7 @@
 		- home-assistant-frontend-20190213.0
 	* removed some older aiohttp ebuilds
 
-2019-02-12 div Updates
+2019-02-13 div Updates
 	* Update sqlalchemy-1.2.17, remove sqlalchemy-1.2.11
 	* add aioambient-0.1.1
 	* add CO2Signal-0.4.2
