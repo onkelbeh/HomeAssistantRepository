@@ -137,7 +137,7 @@ DEPEND="${RDEPEND}
 				=dev-python/pytest-sugar-0.9.2[${PYTHON_USEDEP}]
 				=dev-python/pytest-timeout-1.3.3[${PYTHON_USEDEP}]
 				=dev-python/pytest-4.2.1[${PYTHON_USEDEP}]
-				=dev-python/requests_mock-1.5.2[${PYTHON_USEDEP}]
+				=dev-python/requests-mock-1.5.2[${PYTHON_USEDEP}]
 				dev-python/nose[${PYTHON_USEDEP}]
 				dev-python/coverage[${PYTHON_USEDEP}]
 			   )"

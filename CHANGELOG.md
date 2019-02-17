@@ -9,17 +9,22 @@
 	* add thermoworks_smoke-0.1.8
 	* remove pysmartthings (talks to much)
 	* expand dependencies for
-	  - aioambient-0.1.2 deps
-	  - lakeside
-	  - konnected
-	  - powm
-	  - PyChromecast
-	  - coveralls-1.5.1
+		- aioambient-0.1.2 deps
+		- lakeside
+		- konnected
+		- powm
+		- PyChromecast
+		- coveralls-1.5.1
 	* pyowm-2.10.0 works
 	* add pip-19.0.2 (now works)
 	* expand PYTHON_COMPAT for vanilla sphinx compatibility
 	* add dev-python/tox-travis
 	* add coveralls-1.5.1
+	* complete requirements_test.txt
+		- add mock-open-1.3.1
+		- add mypy-0.650
+		- add pytest-sugar-0.9.2
+	* add new USE flag 'test'
 
 2019-02-16 homeassistant-0.88.0_beta1
 	* update homeassistant-0.88.0_beta1
