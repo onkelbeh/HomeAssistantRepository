@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v3.0
 
 EAPI=6
@@ -16,7 +16,17 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=""
+RDEPEND="dev-python/coverage[${PYTHON_USEDEP}]
+		 dev-python/coveralls[${PYTHON_USEDEP}]
+		 >=dev-python/pip-18.0[${PYTHON_USEDEP}]
+		 dev-python/pytest[${PYTHON_USEDEP}]
+		 dev-python/recommonmark[${PYTHON_USEDEP}]
+		 dev-python/Sphinx[${PYTHON_USEDEP}]
+		 =dev-python/sphinx-readable-theme-1.3.0[${PYTHON_USEDEP}]
+		 dev-python/tox[${PYTHON_USEDEP}]
+		 dev-python/tox-travis[${PYTHON_USEDEP}]
+		 dev-python/virutalenv[${PYTHON_USEDEP}]
+		 dev-python/twine[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
