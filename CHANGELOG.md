@@ -3,6 +3,7 @@
 	* update PyChromecast-2.5.2
 	* add konnected
 	* add lakeside-0.12
+	* add pyotp-2.2.7
 
 2019-02-16 homeassistant-0.88.0_beta1
 	* update homeassistant-0.88.0_beta1
