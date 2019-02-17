@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v3.0
 
 EAPI=6
@@ -16,7 +16,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=""
+RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]
+		 >=dev-python/protobuf-python-3.0.0[${PYTHON_USEDEP}]
+		 >=dev-python/zeroconf-0.17.7[${PYTHON_USEDEP}]
+		 >=dev-python/casttube-0.2.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
