@@ -5,4 +5,7 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <use>
+    <flag name="server">create user and install init-script to run ESPHome Dashboard</flag>
+  </use>
 </pkgmetadata>
