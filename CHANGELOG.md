@@ -5,6 +5,7 @@
 	* add lakeside-0.12
 	* add pyotp-2.2.7
 	* add pyowlet-1.0.2
+	* add pyowm-2.10.0
 
 2019-02-16 homeassistant-0.88.0_beta1
 	* update homeassistant-0.88.0_beta1
