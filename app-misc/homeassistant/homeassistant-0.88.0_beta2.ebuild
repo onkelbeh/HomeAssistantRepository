@@ -66,6 +66,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
 	=dev-python/pillow-5.4.1[${PYTHON_USEDEP}]
 	>=dev-python/psutil-5.4.8[${PYTHON_USEDEP}]
+	>=dev-python/PyChromecast-2.5.2[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.7.2[${PYTHON_USEDEP}]
 	=dev-python/pyjwt-1.6.4[${PYTHON_USEDEP}]
 	>=dev-python/pyotp-2.2.6-r1[${PYTHON_USEDEP}]
