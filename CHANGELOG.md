@@ -1,3 +1,13 @@
+2019-02-18 home-assistant-frontend-20190216.0
+	* add pyblackbird-0.5
+	* add PyDispatcher-2.0.5
+	* add pydeconz-52
+	* bump psutil-5.5.1
+	* add pyEight-0.1.1
+	* bump sqlalchemy-1.2.18
+	* add youtube_dl-2019.2.18
+	* voluptuous-serialize-2.1.0
+
 2019-02-16 home-assistant-frontend-20190216.0
 	* update home-assistant-frontend-20190216.0
 	* update PyChromecast-2.5.2
