@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">pydeconz</remote-id>
+    <maintainer status="unknown">
+      <email>Kane610@users.noreply.github.com</email>
+      <name>Robert Svensson</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
