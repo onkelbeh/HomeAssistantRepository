@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">youtube_dl</remote-id>
+    <maintainer status="unknown">
+      <email>dstftw@gmail.com</email>
+      <name>Sergey M.</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
