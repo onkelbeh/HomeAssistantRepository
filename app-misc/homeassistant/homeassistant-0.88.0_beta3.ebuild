@@ -82,7 +82,7 @@ RDEPEND="${PYTHON_DEPS}
 	=dev-python/RestrictedPython-4.0_beta8[${PYTHON_USEDEP}]
 	=dev-python/ruamel-yaml-0.15.88[${PYTHON_USEDEP}]
 	=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
-	>=dev-python/sqlalchemy-1.2.15[${PYTHON_USEDEP}]
+	=dev-python/sqlalchemy-1.2.17[${PYTHON_USEDEP}]
 	>=dev-python/typing-3.6.4-r1[${PYTHON_USEDEP}]
 	>=dev-python/ua-parser-0.8.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.24.1[${PYTHON_USEDEP}]
@@ -113,7 +113,7 @@ RDEPEND="${PYTHON_DEPS}
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
 	wemo? ( >=dev-python/pywemo-0.4.38[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190216.0 )
+	frontend? ( =app-misc/home-assistant-frontend-20190218.0 )
 	homematic? ( dev-python/pyhomematic[${PYTHON_USEDEP}] )
 	asuswrt? ( dev-python/aioasuswrt[${PYTHON_USEDEP}] )
 	qnap? ( dev-python/qnapstats[${PYTHON_USEDEP}] )
