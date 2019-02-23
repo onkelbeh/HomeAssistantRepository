@@ -1,3 +1,20 @@
+2019-02-23 homeassistant-0.88.1 released
+	* add apcaccess-0.0.13
+	* add tplink-0.2.3
+	* add anthemav==1.1.9
+	* release 0.88.0
+	* update pyhomematic-0.1.56
+	* upgrade opensensemap-api-0.1.4
+	* Bump zigpy
+	* homeassistant-0.88.0_beta4
+	* update frontend-20190219.0
+	* update aioharmony-0.1.8
+	* upgrade numpy-1.16.1
+	* (tag: v0.88.0_beta3) add frontend-20190218.0
+	* homeassistant-0.88.0_beta3
+	* add aiohue
+	* add aioimaplib
+
 2019-02-18 home-assistant-frontend-20190216.0
 	* add pyblackbird-0.5
 	* add PyDispatcher-2.0.5
