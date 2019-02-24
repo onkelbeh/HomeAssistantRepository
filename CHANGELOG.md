@@ -1,3 +1,11 @@
+2019-02-24 update requirements
+	* add pyvlx-0.2.9
+	* openwrt-luci-rpc-1.0.5 added
+	* pySDCP-1 added
+	* nessclient-0.9.10 added
+	* shodan-1.11.1 added
+	* iperf3 added
+
 2019-02-23 homeassistant-0.88.1 released
 	* add apcaccess-0.0.13
 	* add tplink-0.2.3
