@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">nessclient</remote-id>
+    <maintainer status="unknown">
+      <email>nick@nickwhyte.com</email>
+      <name>Nick Whyte</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
