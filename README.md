@@ -11,8 +11,8 @@ https://github.com/home-assistant/home-assistant
 
 This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now > 200 ebuilds listed.
 
-Aside from Home Assistant there are some related ebuilds I use with my Home Assistant:
- * esphome
+Aside from Home Assistant it contains some related ebuilds I use with my Home Assistant:
+ * esphome (soon i'll throw away Tasmota...)
  * platformio
 
 If you have questions or suggestions don't hesitate to contact me...
@@ -40,7 +40,7 @@ $ emerge --sync
 $ emerge -tav app-misc/homeassistant
 ```
 Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
-Let me know if any initial depencies are missing, last good (full) compile test was Jan 27th, 2019 with v0.86.3
+Let me know if any initial depencies are missing, since i do not use all of the components myself, last good (full) compile test was Jan 27th, 2019 with v0.86.3
 
 ### Todos
 - **If it moves, compile it** :-)
@@ -89,10 +89,8 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 
 The Repository itself is released under GNU General Public License v3.0, all work on the depending components under the Licenses they came from, which could be (as my grep told me):
 
- - "Apache-2.0"
- - "( Apache-2.0 BSD )"
+ - "Apache-2.0 BSD"
  - "Apache License 2.0"
- - "Apache license version 2.0"
  - "BSD"
  - "BSD-2"
  - "BSD-2 Unlicense"
@@ -100,12 +98,9 @@ The Repository itself is released under GNU General Public License v3.0, all wor
  - "EPL-1.0"
  - "GPL"
  - "GPL-2"
- - "GPL3"
  - "GPLv3"
  - "GPLv3+"
  - "LGPL-2.1"
- - "MIT"
- - "MIT License"
  - "PSF"
  - "PSF-2"
  - "The MIT License (MIT)"
