@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="asuswrt atv denonavr firetv +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl speedtest test tradfri wemo zoneminder"
+IUSE="asuswrt atv denonavr esphome firetv +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl speedtest test tradfri wemo zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -98,6 +98,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/zeroconf-0.21.3[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.42.0
 	atv? ( >=dev-python/pyatv-0.3.12[${PYTHON_USEDEP}] )
+	esphome? ( =dev-python/aioesphomeapi-1.6.0[${PYTHON_USEDEP}] )
 	firetv? ( =dev-python/firetv-1.0.7[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyHS100-0.3.0[${PYTHON_USEDEP}] )
 	maxcube? ( =dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
