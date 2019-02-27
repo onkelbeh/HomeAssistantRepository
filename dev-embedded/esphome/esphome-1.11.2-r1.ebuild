@@ -30,6 +30,7 @@ DEPEND="${REDEPEND}
 	>=dev-python/typing-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
+	server? ( >=dev-python/ifaddr-0.1.6 )
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
@@ -65,7 +66,7 @@ python_install_all() {
 		fowners -R "${PN}:${PN}" "/var/log/${PN}"
 
 		newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
-		newinitd "${FILESDIR}/${PN}.init.d" "${PN}"
+		newinitd "${FILESDIR}/${PN}.init.d-r1" "${PN}"
 
 		readme.gentoo_create_doc
 	fi
