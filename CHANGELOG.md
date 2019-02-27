@@ -1,3 +1,19 @@
+2019-02-27 update requirements
+	* astral-1.10.1 upgraded
+	* pylgtv-0.1.9 added
+	* upgrade bcrypt-3.1.6
+	* water_heater.econet component added
+	* add homeassistant.components.reddit.sensor
+	* add PyXiaomiGateway
+	* add toonapilib component
+	* update firetv component
+	* add aioesphomeapi-1.6.0 & it's use flag
+	* add pylinky-0.3.0
+	* add pysonos-0.0.7
+	* add WazeRouteCalculator-0.9
+	* add nessclient-0.9.13
+	* add (old) shodan-1.11.0.ebuild
+
 2019-02-24 update requirements
 	* add pyvlx-0.2.9
 	* openwrt-luci-rpc-1.0.5 added
