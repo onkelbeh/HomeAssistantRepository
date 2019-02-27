@@ -9,7 +9,7 @@ https://github.com/home-assistant/home-assistant
 
 "Open source home automation that puts local control and privacy first."
 
-This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now > 200 ebuilds listed.
+This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now > 260 ebuilds in > 160 packages listed.
 
 Aside from Home Assistant it contains some related ebuilds I use with my Home Assistant:
  * esphome (soon i'll throw away Tasmota...)
