@@ -1,3 +1,29 @@
+2019-03-30 update requirements
+	* add simplisafe-python
+	* add python-velbus
+	* bump pyhomematic-0.1.57
+	* add pyvesync_v2
+	* bump blinkpy-0.13.1
+	* bump PyXiaomiGateway
+	* PyMata added
+	* add PyNaCl
+	* add pyxeoma
+	* bump zigpy-deconz
+	* add regenmaschine
+	* add python-mystrom
+	* bump numpy-1.16.2
+	* firetv small changes
+	* bump opensensemap-api
+	* add pyflunearyou2
+	* add py17track
+	* add pypollencom
+	* add pyoppleio
+	* add pyopenuv2
+	* add ihcsdk
+	* bump home-assistant-frontend-20190228.0
+	* add pyTibber-0.9.6
+	* bump aioambient-0.1.3
+
 2019-02-27 update requirements
 	* astral-1.10.1 upgraded
 	* pylgtv-0.1.9 added
