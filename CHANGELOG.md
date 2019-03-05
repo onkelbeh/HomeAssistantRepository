@@ -1,3 +1,11 @@
+2019-03-05 new 0.89.0_beta2
+	* release 0.89.0_beta2
+	* bump frontend-20190303.0
+	* add websocket-client-0.54.0
+	* add homematicip
+	* bump aioasuswrt-1.1.21
+	* bump pysonos-0.0.8
+
 2019-03-30 update requirements
 	* add simplisafe-python
 	* add python-velbus
