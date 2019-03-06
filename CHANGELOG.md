@@ -1,3 +1,7 @@
+2019-03-05 new 0.89.0_beta3
+	* release 0.89.0_beta3
+	* bump frontend-20190305.0
+
 2019-03-05 new 0.89.0_beta2
 	* release 0.89.0_beta2
 	* bump frontend-20190303.0
