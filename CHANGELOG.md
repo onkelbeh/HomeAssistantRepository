@@ -1,3 +1,16 @@
+20190315 new 0.90.0_beta0
+	* (tag: v0.90.0_beta0) homeassistant-0.90.0_beta0
+	* frontend-20190312.0
+	* Bump nessclient version to 0.9.14
+	* Bump PyXiaomiGateway
+	* bump frontend
+	* bump netdisco-2.4.0
+	* add enigma2.media_player
+	* homeassistant-0.89.2
+	* fixed bug #679916, 'bad<C3><83>' chars substituted
+	* (tag: v0.89.1) Release 0.89.1
+	* (tag: v0.89.0) Release homeassistant-0.89.0
+
 2019-03-05 new 0.89.0_beta3
 	* release 0.89.0_beta3
 	* bump frontend-20190305.0
