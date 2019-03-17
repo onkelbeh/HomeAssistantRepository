@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Authors
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -30,7 +30,7 @@ DEPEND="
 "
 RDEPEND="${CDEPEND}"
 
-PATCHES=( "${FILESDIR}/s3transfer-0.1.13-tests.patch" )
+#PATCHES=( "${FILESDIR}/s3transfer-0.1.13-tests.patch" )
 python_test() {
 	nosetests -v tests/unit/ tests/functional/ || die "tests failed under ${EPYTHON}"
 }
