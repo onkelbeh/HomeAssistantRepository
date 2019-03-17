@@ -53,10 +53,12 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/pycparser-2.19[${PYTHON_USEDEP}]
 	>=dev-python/pyopenssl-19.0.0[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.8.0[${PYTHON_USEDEP}]
+	>=dev-python/pbr-5.1.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
 	>=dev-python/snitun-0.13[${PYTHON_USEDEP}]
 	>=dev-python/pyrfc3339-1.1[${PYTHON_USEDEP}]
+	=dev-python/hass-nabucasa-0.7[${PYTHON_USEDEP}]
 
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	=dev-python/beautifulsoup-4.6.3[${PYTHON_USEDEP}]
