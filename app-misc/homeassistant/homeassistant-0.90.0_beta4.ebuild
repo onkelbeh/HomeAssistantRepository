@@ -130,7 +130,7 @@ RDEPEND="${PYTHON_DEPS}
 	frontend? ( =app-misc/home-assistant-frontend-20190316.0 )
 	homematic? ( =dev-python/pyhomematic-0.1.58[${PYTHON_USEDEP}] )
 	asuswrt? ( =dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
-	qnap? ( =dev-python/qnapstats-0.2.7[${PYTHON_USEDEP}] )
+	qnap? ( =dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
 	speedtest? ( =net-analyzer/speedtest-cli-2.0.2[${PYTHON_USEDEP}] )
 	zoneminder? ( =dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 "
