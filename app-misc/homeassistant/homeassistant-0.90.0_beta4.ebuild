@@ -46,6 +46,8 @@ RDEPEND="${PYTHON_DEPS}
 	=dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]
 	=dev-python/voluptuous-serialize-2.1.0[${PYTHON_USEDEP}]
 
+	>=dev-python/acme-0.32.0[${PYTHON_USEDEP}]
+
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	=dev-python/beautifulsoup-4.7.1[${PYTHON_USEDEP}]
 	=dev-python/blinkpy-0.13.1[${PYTHON_USEDEP}]
