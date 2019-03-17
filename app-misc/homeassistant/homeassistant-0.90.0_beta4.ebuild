@@ -46,7 +46,7 @@ RDEPEND="${PYTHON_DEPS}
 	=dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]
 	=dev-python/voluptuous-serialize-2.1.0[${PYTHON_USEDEP}]
 
-	>=dev-python/acme-0.32.0[${PYTHON_USEDEP}]
+	>=app-crypt/acme-0.32.0[${PYTHON_USEDEP}]
 	>=dev-python/asn1crypto-0.24.0[${PYTHON_USEDEP}]
 	>=dev-python/cffi-1.12.2[${PYTHON_USEDEP}]
 	>=dev-python/jmespath-0.9.4[${PYTHON_USEDEP}]
