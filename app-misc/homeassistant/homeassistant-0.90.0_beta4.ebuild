@@ -32,7 +32,7 @@ RDEPEND="${PYTHON_DEPS}
 	=dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 	=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
 	=dev-python/bcrypt-3.1.6[${PYTHON_USEDEP}]
-	>=dev-python/certifi-2018.04.16[${PYTHON_USEDEP}]
+	>=dev-python/certifi-2019.3.9[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.10[${PYTHON_USEDEP}]
 	=dev-python/pyjwt-1.6.4[${PYTHON_USEDEP}]
 	=dev-python/cryptography-2.5[${PYTHON_USEDEP}]
@@ -47,9 +47,11 @@ RDEPEND="${PYTHON_DEPS}
 	=dev-python/voluptuous-serialize-2.1.0[${PYTHON_USEDEP}]
 
 	>=dev-python/acme-0.32.0[${PYTHON_USEDEP}]
+	>=dev-python/asn1crypto-0.24.0[${PYTHON_USEDEP}]
+	>=dev-python/cffi-1.12.2[${PYTHON_USEDEP}]
 
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
-	=dev-python/beautifulsoup-4.7.1[${PYTHON_USEDEP}]
+	=dev-python/beautifulsoup-4.6.3[${PYTHON_USEDEP}]
 	=dev-python/blinkpy-0.13.1[${PYTHON_USEDEP}]
 	>=dev-python/boto3-1.9.57[${PYTHON_USEDEP}]
 	>=dev-python/botocore-1.12.57[${PYTHON_USEDEP}]
