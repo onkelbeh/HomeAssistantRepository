@@ -56,6 +56,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
 	>=dev-python/snitun-0.13[${PYTHON_USEDEP}]
+	>=dev-python/pyrfc3339-1.1[${PYTHON_USEDEP}]
 
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	=dev-python/beautifulsoup-4.6.3[${PYTHON_USEDEP}]
