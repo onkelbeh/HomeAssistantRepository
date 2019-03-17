@@ -38,7 +38,7 @@ RDEPEND="${PYTHON_DEPS}
 	=dev-python/cryptography-2.5[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
 	=dev-python/python-slugify-1.2.6[${PYTHON_USEDEP}]
-	>=dev-python/pytz-2018.07[${PYTHON_USEDEP}]
+	>=dev-python/pytz-2018.9[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-3.13[${PYTHON_USEDEP}]
 	<dev-python/pyyaml-4[${PYTHON_USEDEP}]
 	=dev-python/requests-2.21.0-r1[${PYTHON_USEDEP}]
