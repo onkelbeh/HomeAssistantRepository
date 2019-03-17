@@ -1,8 +1,6 @@
-Use system's CA certificate store
-
---- a/certifi/core.py
-+++ b/certifi/core.py
-@@ -19,9 +19,7 @@ class DeprecatedBundleWarning(DeprecationWarning):
+--- certifi-2019.3.9/certifi/core.py	2019-03-09 03:45:40.000000000 -0800
++++ certifi-2019.3.9/certifi/core.py	2019-03-14 12:06:38.534298960 -0700
+@@ -10,6 +10,4 @@
  
  
  def where():
@@ -10,6 +8,3 @@ Use system's CA certificate store
 -
 -    return os.path.join(f, 'cacert.pem')
 +    return "@GENTOO_PORTAGE_EPREFIX@/etc/ssl/certs/ca-certificates.crt"
- 
- 
- def old_where():
