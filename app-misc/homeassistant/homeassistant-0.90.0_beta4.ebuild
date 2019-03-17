@@ -52,6 +52,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/jmespath-0.9.4[${PYTHON_USEDEP}]
 	>=dev-python/pycparser-2.19[${PYTHON_USEDEP}]
 	>=dev-python/pyOpenSSL-19.0.0[${PYTHON_USEDEP}]
+	>=dev-python/python-dateutil-2.8.0[${PYTHON_USEDEP}]
 
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	=dev-python/beautifulsoup-4.6.3[${PYTHON_USEDEP}]
