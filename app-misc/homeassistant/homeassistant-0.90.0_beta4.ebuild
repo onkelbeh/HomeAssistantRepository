@@ -49,6 +49,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/acme-0.32.0[${PYTHON_USEDEP}]
 	>=dev-python/asn1crypto-0.24.0[${PYTHON_USEDEP}]
 	>=dev-python/cffi-1.12.2[${PYTHON_USEDEP}]
+	>=dev-python/jmespath-0.9.4[${PYTHON_USEDEP}]
 
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	=dev-python/beautifulsoup-4.6.3[${PYTHON_USEDEP}]
