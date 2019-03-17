@@ -54,6 +54,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/pyOpenSSL-19.0.0[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.8.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
+	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
 
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	=dev-python/beautifulsoup-4.6.3[${PYTHON_USEDEP}]
