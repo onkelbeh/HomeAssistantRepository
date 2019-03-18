@@ -7,13 +7,17 @@ PYTHON_COMPAT=( python2_7 )
 
 inherit user readme.gentoo-r1 distutils-r1
 
+MY_P=${P/_beta/b}
+MY_PV=${PV/_beta/b}
+
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
 HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+
+SRC_URI="https://github.com/esphome/esphome/archive/v${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="server test"
 
 RDEPEND=""
@@ -30,6 +34,8 @@ DEPEND="${REDEPEND}
 	>=dev-python/typing-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
+	>=dev-python/ifaddr-0.1.6[${PYTHON_USEDEP}]
+	server? ( >=dev-python/ifaddr-0.1.6 )
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
@@ -43,6 +49,8 @@ dashboard command line arguments are configured in: /etc/conf.d/${PN}
 logging is to: /var/log/${PN}/{dashboard,warnings}.log
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
+
+S="${WORKDIR}/${MY_P}"
 
 DOCS="README.md"
 
@@ -65,7 +73,7 @@ python_install_all() {
 		fowners -R "${PN}:${PN}" "/var/log/${PN}"
 
 		newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
-		newinitd "${FILESDIR}/${PN}.init.d" "${PN}"
+		newinitd "${FILESDIR}/${PN}.init.d-r1" "${PN}"
 
 		readme.gentoo_create_doc
 	fi
