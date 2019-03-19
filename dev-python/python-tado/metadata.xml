@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">python-tado</remote-id>
+    <maintainer status="unknown">
+      <email>chrism0dwk@gmail.com, w.malgadey@gmail.com</email>
+      <name>chrism0dwk, w.malgadey</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
