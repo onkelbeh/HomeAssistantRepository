@@ -17,12 +17,13 @@ KEYWORDS="~amd64 ~arm ~arm64 ~ia64 ~ppc ~ppc64 ~x86 ~amd64-fbsd ~amd64-linux ~x8
 IUSE="test"
 
 DEPEND="
-	>=dev-python/setuptools_scm-1.15.7[${PYTHON_USEDEP}]
+	=dev-python/setuptools_scm-1.15.7[${PYTHON_USEDEP}]
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
-		dev-python/ipaddress[${PYTHON_USEDEP}]
 	)
 "
+RDEPEND="
+	dev-python/ipaddress[${PYTHON_USEDEP}]"
 
 # Many tests fail, even on a regular tox run on a upstream clone
 RESTRICT="test"
