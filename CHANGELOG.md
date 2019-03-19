@@ -1,4 +1,8 @@
 2019-03-15 new 0.90.0_beta6, alotta new deps
+	* extend aioasuswrt deps
+	* fix warrant for pip10
+	* fix aioasuswrt-1.1.21
+	* add a patch for unnecessary wakeonlan-1.1.6 setuptools-scm version restriction
 	* bump snitun-0.15
 	* fix wakeonlan-1.1.6 compile error (setuptools)
 	* add python-tado
