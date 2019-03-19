@@ -21,6 +21,8 @@ DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	dev-python/setuptools-markdown[${PYTHON_USEDEP}]
+	dev-python/pypandoc[${PYTHON_USEDEP}]
+	>=dev-python/wheel-0.25.0[${PYTHON_USEDEP}]
 	=dev-python/asyncssh-1.15.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
