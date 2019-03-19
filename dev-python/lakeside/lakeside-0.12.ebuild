@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python API for controlling Eufy LED bulbs"
-HOMEPAGE="http://github.com/google/python-lakeside https://pypi.org/project/lakeside/"
+HOMEPAGE="https://github.com/google/python-lakeside https://pypi.org/project/lakeside/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE=""

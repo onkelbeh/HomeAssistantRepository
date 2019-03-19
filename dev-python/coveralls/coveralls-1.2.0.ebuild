@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Show coverage stats online via coveralls.io"
-HOMEPAGE="http://github.com/coveralls-clients/coveralls-python https://pypi.org/project/coveralls/"
+HOMEPAGE="https://github.com/coveralls-clients/coveralls-python https://pypi.org/project/coveralls/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

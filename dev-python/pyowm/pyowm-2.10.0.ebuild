@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="A Python wrapper around OpenWeatherMap web APIs"
-HOMEPAGE="http://github.com/csparpa/pyowm https://pypi.org/project/pyowm/"
+HOMEPAGE="httpsx://github.com/csparpa/pyowm https://pypi.org/project/pyowm/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

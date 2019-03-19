@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v3.0
 
 EAPI=6
@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Library implementing a ZigBee stack"
-HOMEPAGE="http://github.com/zigpy/zigpy https://pypi.org/project/zigpy-homeassistant/"
+HOMEPAGE="https://github.com/zigpy/zigpy https://pypi.org/project/zigpy-homeassistant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3.0"

@@ -12,7 +12,7 @@ DESCRIPTION="Async UPnP Client"
 HOMEPAGE="https://github.com/StevenLooman/async_upnp_client https://pypi.org/project/async-upnp-client/"
 SRC_URI="https://github.com/StevenLooman/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="http://www.apache.org/licenses/LICENSE-2.0"
+LICENSE="https://www.apache.org/licenses/LICENSE-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

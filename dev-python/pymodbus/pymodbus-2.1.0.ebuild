@@ -1,5 +1,5 @@
 # Copyright 1999-2019 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
+# Distributed under the terms of the GNU General Public License v3.0
 
 EAPI=6
 
@@ -18,12 +18,11 @@ IUSE="test"
 
 RDEPEND="
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
-	=dev-python/six-1.11.0[${PYTHON_USEDEP}]
+	~dev-python/six-1.11.0[${PYTHON_USEDEP}]
 	>=dev-python/coverage-4.4[${PYTHON_USEDEP}]
-	=dev-python/mock-2.0.0[${PYTHON_USEDEP}]
+	~dev-python/mock-2.0.0[${PYTHON_USEDEP}]
 	=dev-python/nose-1.3.7-r3[${PYTHON_USEDEP}]
-	=dev-python/pep8-1.7.0[${PYTHON_USEDEP}]
-	"
+	~dev-python/pep8-1.7.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
