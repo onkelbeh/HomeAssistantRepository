@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="Api wrapper for Asuswrt https://www.asus.com/ASUSWRT/"
-HOMEPAGE="https://github.com/kennedyshead/aioasuswrt https://pypi.org/project/aioasuswrt/"
+DESCRIPTION="Use Markdown for your project description"
+HOMEPAGE="https://github.com/msabramo/setuptools-markdown https://pypi.org/project/setuptools-markdown/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,9 +19,6 @@ IUSE="test"
 RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/pytest-runner[${PYTHON_USEDEP}]
-	dev-python/setuptools-markdown[${PYTHON_USEDEP}]
-	=dev-python/asyncssh-1.15.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
