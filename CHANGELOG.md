@@ -1,3 +1,60 @@
+2019-03-15 new 0.90.0_beta6, alotta new deps
+	* bump snitun-0.15
+	* fix wakeonlan-1.1.6 compile error (setuptools)
+	* add python-tado
+	* bump aioesphomeapi-1.7.0
+	* Update Hass-NabuCasa 0.8
+	* bump frontend-20190319.0
+	* bump youtube_dl-2019.3.18
+	* esphome bump 1.12.0
+	* new esphome-1.12.0_beta3
+	* add hass-nabucasa-0.7 and pbr-5.1.3
+	* bump s3transfer-0.2.0
+	* bump s3transfer-0.2.0
+	* bump pyrfc3339-1.1
+	* removed pycparser dupe
+	* remove vobject-0.9.6.1 dupe
+	* set 2_7 target back on in botocore-1.12.115
+	* jmespath-0.9.4 replaced
+	* repl python-dateutil-2.8.0
+	* update boto3/botocore
+	* removed pyOpenSSL dupe
+	* fix certifi-2019.3.9 (thx to salfter)
+	* cffi revdeps fixed
+	* botocore -2_7
+	* remove dupes
+	* simplify vobject
+	* reduce COMPAT cffi
+	* replace requests-toolbelt-0.9.1
+	* websocket-client-0.54.0 without pypy
+	* relink acme-0.32.0
+	* fix qnapstats
+	* fix acme manifest
+	* snitun-0.13 added
+	* add six-1.12.0
+	* add requests-toolbelt-0.9.1
+	* bump pytz-2018.9
+	* add python-dateutil-2.8.0
+	* add pyOpenSSL-19.0.0
+	* add pycryptodome-3.7.3
+	* add pycparser-2.19
+	* add jmespath-0.9.4
+	* add certifi-2019.3.9 & cffi-1.12.2
+	* add asn1crypto-0.24.0
+	* add acme-0.32.0
+	* bump envs-1.3
+	* netdisco-2.5.0 bump
+	* make the betas beta!
+	* add ciscomobilityexpress api
+	* finally rename firetv to androidtv
+	* bump pyhomematic-0.1.58
+	* add quantum-gateway-0.0.5
+	* bump anthemav-1.1.10
+	* firetv is now androidtv
+	* upgrade ruamel-yaml-0.15.89
+	* add new betas -0.90.0_beta4, frontend -20190316.0
+	* esphome: rewrite for beta support & 1.12.0_beta1
+
 20190315 new 0.90.0_beta0
 	* (tag: v0.90.0_beta0) homeassistant-0.90.0_beta0
 	* frontend-20190312.0
