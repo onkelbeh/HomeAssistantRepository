@@ -61,7 +61,7 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/hass-nabucasa-0.10[${PYTHON_USEDEP}]
 
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
-	~dev-python/beautifulsoup-4.7.1[${PYTHON_USEDEP}]
+	~dev-python/beautifulsoup-4.6.3[${PYTHON_USEDEP}]
 	~dev-python/blinkpy-0.13.1[${PYTHON_USEDEP}]
 	>=dev-python/boto3-1.9.116[${PYTHON_USEDEP}]
 	>=dev-python/botocore-1.12.115[${PYTHON_USEDEP}]
