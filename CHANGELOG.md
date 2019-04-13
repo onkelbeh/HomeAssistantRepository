@@ -1,3 +1,60 @@
+2019-04-13 last months changes
+	b18ee0d bump home-assistant-frontend-20190410.0
+	992b52a pyyaml-5.1 now in main repo
+	e56267d homematicip-0.10.7
+	34fe523 pytz-2019.1
+	2ec0470 ruamel-yaml-0.15.91
+	3921d37 youtube_dl-2019.4.7
+	f8ce1e5 pyhaversion-2.0.3
+	df090df pyhaversion-2.2.0
+	22840dc pysonos-0.0.10
+	22c5c05 pysonos-0.0.9
+	cf6f2c0 aioesphomeapi-2.0.0
+	ed15b91 openwebifpy-3.1.1
+	72fc3e0 aioambient-0.3.0
+	962df91 homeassistant-pyozw-0.1.4
+	538eeb4 pure-python-adb-homeassistant-0.1.6
+	42e5751 fix forgotten Manifest
+	15d7f57 try to get androidtv working, still does not
+	5292d30 bump cryptography-2.6.1
+	c9d1f24 bump PyJWT-1.7.1
+	094132f add req older pywebpush
+	f1a37f0 add librouteros
+	5e3c2ec bump enigma openwebifpy
+	c2ca8da add pywebpush
+	4120d26 bump aioambient-0.2.0
+	a6a651c aioharmony-0.1.11
+	f347508 bump pyTibber-0.10.1
+	bb9321d add pyheos
+	ba1ff33 bump frontend 20190331.0
+	360a869 add lightify
+	31b6627 fix frontend dep
+	24969db bump PyChromecast
+	33e11b2 try pure-python ADB
+	73894ec bump homeassistant 0.90.2
+	9af5537 androidtv-0.0.14
+	98d4249 sqlalchemy-1.3.0
+	ba6c1e7 bump frontend
+	83aa763 ha-ffmpeg-2.0
+	10e94df homeassistant-pyozw-0.1.
+	1b66e9b bump zigpy
+	510c3fe pylinky-0.3.3
+	b32dc36 bellows-homeassistant-0.7.2
+	eb047b6 async-upnp-client-0.14.7
+	53284ab bump nabucasa-0.11
+	89067d4 Merge pull request #2 from evadim/master
+	660bb78 (tag: v0.90.1) homeassistant-0.90.1
+	3a3d41f homeassistant-0.90.1 test build
+	0b81c23 bump frontend-20190321.0
+	5bf4e23 bump hass-nabucasa-0.10
+	accc309 bump esphome 1.12 deps
+	6c06e49 v0.90.0_beta7
+	05a6f1d bump frontend-20190319.1
+	64cf088 cleanup
+	9d3320f Merge branch 'master' of https://git.edevau.net/onkelbeh/HomeAssistantRepository
+	6ec8b6b removed older ebuilds
+	925bd00 new platformio-3.6.5, forbid pyserial-3.3, License updated
+
 2019-03-15 new 0.90.0_beta6, alotta new deps
 	* extend aioasuswrt deps
 	* fix warrant for pip10

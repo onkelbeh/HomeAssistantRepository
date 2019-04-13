@@ -17,8 +17,8 @@ RESTRICT="mirror"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64"
-IUSE="androidtv asuswrt atv denonavr esphome +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl speedtest test tradfri wemo zoneminder"
+KEYWORDS="amd64"
+IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube musiccast mysql qnap rxv samsungtv sonos ssl speedtest test tradfri wemo zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -42,7 +42,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/pyyaml-3.13[${PYTHON_USEDEP}]
 	<dev-python/pyyaml-4[${PYTHON_USEDEP}]
 	=dev-python/requests-2.21.0-r1[${PYTHON_USEDEP}]
-	~dev-python/ruamel-yaml-0.15.88[${PYTHON_USEDEP}]
+	~dev-python/ruamel-yaml-0.15.89[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.1.0[${PYTHON_USEDEP}]
 
@@ -58,7 +58,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
 	~dev-python/snitun-0.15[${PYTHON_USEDEP}]
 	>=dev-python/pyrfc3339-1.1[${PYTHON_USEDEP}]
-	~dev-python/hass-nabucasa-0.8[${PYTHON_USEDEP}]
+	~dev-python/hass-nabucasa-0.11[${PYTHON_USEDEP}]
 
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/beautifulsoup-4.6.3[${PYTHON_USEDEP}]
@@ -100,7 +100,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/python-jose-cryptodome-1.3.2[${PYTHON_USEDEP}]
 	=dev-python/RestrictedPython-4.0_beta8[${PYTHON_USEDEP}]
 	~dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
-	~dev-python/sqlalchemy-1.2.18[${PYTHON_USEDEP}]
+	~dev-python/sqlalchemy-1.3.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-3.6.4-r1[${PYTHON_USEDEP}]
 	>=dev-python/ua-parser-0.8.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.24.1[${PYTHON_USEDEP}]
@@ -115,12 +115,14 @@ RDEPEND="${PYTHON_DEPS}
 	>=media-libs/mutagen-1.42.0
 	atv? ( >=dev-python/pyatv-0.3.12[${PYTHON_USEDEP}] )
 	esphome? ( ~dev-python/aioesphomeapi-1.6.0[${PYTHON_USEDEP}] )
-	androidtv? ( ~dev-python/androidtv-0.0.12[${PYTHON_USEDEP}] )
+	enigma? ( ~dev-python/openwebifpy-3.1.0[${PYTHON_USEDEP}] )
+	androidtv? ( ~dev-python/androidtv-0.0.14[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyHS100-0.3.4[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
 	musiccast? ( >=dev-python/pymusiccast-0.1.6[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
-	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}] )
+	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
+			dev-python/defusedxml[${PYTHON_USEDEP}] )
 	denonavr? ( ~dev-python/denonavr-0.7.8[${PYTHON_USEDEP}] )
 	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
 	sonos? ( >=dev-python/pysonos-0.0.8[${PYTHON_USEDEP}] )
@@ -130,7 +132,7 @@ RDEPEND="${PYTHON_DEPS}
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190319.1 )
+	frontend? ( =app-misc/home-assistant-frontend-20190331.0 )
 	homematic? ( ~dev-python/pyhomematic-0.1.58[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
