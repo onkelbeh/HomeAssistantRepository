@@ -1,3 +1,23 @@
+2019-04-18 homeassistant-0.92.0_beta1 & homeassistant-0.91.4
+	* finally add homeassistant-0.92.0_beta1
+	* bump frontend-20190417.0
+	* fix rsa-4.0
+	* add hbmqtt-0.9.4 and fix it's bad 'tests' installation
+	* bump androidtv-0.0.15
+	* add transitions-0.6.9
+	* bump caldav-0.6.1
+	* bump netdisco-2.6.0
+	* add pyasn1-0.4.5
+	* add urllib3-1.24.2
+	* add user-agents-2.0
+	* add websockets-7.0
+	* bump python-slugify-3.0.2
+	* add text-unidecode-1.2
+	* bump python-slugify-3.0.2
+	* add text-unidecode-1.2
+	(tag: v0.91.4, origin/master, origin/HEAD, github/master) homeassistant-0.91.4
+	(tag: v0.91.3) v0.91.3
+
 2019-04-13 last months changes
 	b18ee0d bump home-assistant-frontend-20190410.0
 	992b52a pyyaml-5.1 now in main repo
