@@ -9,11 +9,13 @@ https://github.com/home-assistant/home-assistant
 
 "Open source home automation that puts local control and privacy first."
 
-This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now > 260 ebuilds in > 160 packages listed.
+This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now > 394 ebuilds in > 215 packages listed.
 
 Aside from Home Assistant it contains some related ebuilds I use with my Home Assistant:
  * esphome (soon i'll throw away Tasmota...)
  * platformio
+
+Currently it is not possible to use esphome on the same machine with homeassistant, caused by '''dev-python/pyyaml'''. esphome only runs with 5.1, homassitant insists on 3.13
 
 If you have questions or suggestions don't hesitate to contact me...
 
@@ -38,6 +40,12 @@ Sync it and install it (as root)
 ```sh
 $ emerge --sync
 $ emerge -tav app-misc/homeassistant
+```
+Make sure you have a proper locale setting. I use
+```sh
+$ cat /etc/locale.gen
+de_DE ISO-8859-1
+de_DE@euro UTF-8
 ```
 Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
 Let me know if any initial depencies are missing, since i do not use all of the components myself, last good (full) compile test was March 19th, 2019 with v0.90.0_beta6
