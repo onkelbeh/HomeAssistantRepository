@@ -15,7 +15,7 @@ Aside from Home Assistant it contains some related ebuilds I use with my Home As
  * esphome (soon i'll throw away Tasmota...)
  * platformio
 
-Currently it is not possible to use esphome on the same machine with homeassistant, caused by '''dev-python/pyyaml'''. esphome only runs with 5.1, homassitant insists on 3.13
+Currently it is not possible to use esphome on the same machine with homeassistant, caused by `dev-python/pyyaml`. esphome only runs with `5.1`, homassitant insists on `3.13`.
 
 If you have questions or suggestions don't hesitate to contact me...
 
