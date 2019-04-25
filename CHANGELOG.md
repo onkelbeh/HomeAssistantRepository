@@ -1,3 +1,22 @@
+2019-04-25 homeassistant/homeassistant-0.92.0.ebuild
+	* add homeassistant-0.92.0.ebuild
+	* bump frontend-20190424.0
+
+2019-04-21 some modules
+	* Add Orange Pi GPIO platform
+	* add zha-quirks
+	* add pyotp-2.2.6
+	* Bump zigpy and zigpy-xbee
+	* Bump zigpy-deconz
+	* bump pyheos-0.4.0
+	* bump hass-nabucasa-0.12
+	* bump pyHS100-0.3.5
+	* add axis
+	* bump pyatmo
+
+2019-04-20 homeassistant-0.92.0_beta2
+	* bump 0.92.0_beta2
+
 2019-04-18 homeassistant-0.92.0_beta1 & homeassistant-0.91.4
 	* finally add homeassistant-0.92.0_beta1
 	* bump frontend-20190417.0

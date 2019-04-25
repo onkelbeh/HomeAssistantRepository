@@ -17,7 +17,7 @@ RESTRICT="mirror"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri wemo zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
@@ -139,7 +139,7 @@ RDEPEND="${PYTHON_DEPS}
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190417.0 )
+	frontend? ( =app-misc/home-assistant-frontend-20190424.0 )
 	homematic? ( ~dev-python/pyhomematic-0.1.58[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
