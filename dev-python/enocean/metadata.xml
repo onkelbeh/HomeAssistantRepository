@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">enocean</remote-id>
+    <maintainer status="unknown">
+      <email>kipenroskaposti@gmail.com</email>
+      <name>Kimmo Huoman</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
