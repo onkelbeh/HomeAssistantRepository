@@ -1,6 +1,13 @@
 2019-04-25 homeassistant/homeassistant-0.92.0.ebuild
 	* add homeassistant-0.92.0.ebuild
 	* bump frontend-20190424.0
+	* bump pyheos-0.4.1
+	* add pyubee-0.6
+	* add enocean-0.50.1
+	* bump ruamel-yaml-0.15.94
+	* bump youtube_dl-2019.4.17
+	* bump attrs-19.1.0
+	* bump aioesphomeapi-2.0.1
 
 2019-04-21 some modules
 	* Add Orange Pi GPIO platform
