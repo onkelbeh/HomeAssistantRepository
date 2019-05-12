@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">bimmer-connected</remote-id>
+    <maintainer status="unknown">
+      <email>m1n3rva@gmx.net</email>
+      <name>m1n3rva</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
