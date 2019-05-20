@@ -1,3 +1,66 @@
+2019-05-20 homeassistant-0.93.1
+	* add support for MikroTik RouterOS API
+	* add pycrypto dependency
+	* bump homeassistant-0.93.1
+	* release 0.93.0
+	* bump 0.93.0_beta4 & frontend-20190514.0
+	* add aiodns
+	* bump geniushub-client-0.4.6
+	* add meteoalertapi
+	* pysmartthings-0.6.8.ebuild
+	* add Wink API
+	* bump zha-quirks
+	* add sendgrid-6.0.5
+	* bump pyheos
+	* bump components.zha
+	* bump WazeRouteCalculator
+	* manifest
+	* set ~homeassistant-0.93.0_beta2
+	* bump pyvlx-0.2.11
+	* BMW Connected Drive (does not yet compile)
+	* add bizkaibus2
+	* spotcrime-1.0.4
+	* add tapsaff-0.2.1
+	* add slacker
+	* add shodan-1.13.0
+	* pydeconz-58
+	* PySwitchbot-0.6.2
+	* add home-assistant-frontend-20190502.0
+	* bump pyTibber-0.10.3
+	* homeassistant-0.93.0_beta2
+	* cryptography-2.6.1 now in main repo
+	* bump home-assistant-frontend-20190510.0
+	* add speedtest-cli-2.1.1
+	* add defusedxml-0.6.0
+	* remove olds
+	* bump zeroconf-0.22.0
+	* bump sqlalchemy-1.3.3
+	* bump psutil-5.6.2
+	* bump numpy-1.16.3
+	* homeassistant-0.92.2
+	* add pymyq-1.2.1
+	* add pyvesync-v2-0.9.7
+	* bump pyheos-0.5.1
+	* add hangups==0.4.9
+	* add bomradarloop-0.1.3
+	* added Ambiclimate
+	* pyeconet-0.0.11
+	* bump youtube_dl-2019.4.30
+	* bump pydanfossair-0.1.0
+	* added PyEssent
+	* bump pysonos-0.0.12
+	* add RPi.GPIO-0.6.5
+	* bump PyXiaomiGateway
+	* bump pydeconz
+	* add geniushub-client
+	* add py-nextbus-0.1.2
+	* add homeassistant.components.amcrest
+	* bump PyChromecast-3.2.1
+	* bump pysonos-0.0.11
+	* bump frontend 20190427.0
+	* homeassistant-0.92.1
+	* bump pyheos-0.4.1
+	
 2019-04-25 homeassistant/homeassistant-0.92.0.ebuild
 	* add homeassistant-0.92.0.ebuild
 	* bump frontend-20190424.0
