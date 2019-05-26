@@ -11,7 +11,7 @@ DESCRIPTION="The most basic Text::Unidecode port"
 HOMEPAGE="https://github.com/kmike/text-unidecode/ https://pypi.org/project/text-unidecode/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Artistic License"
+LICENSE="Artistic-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
