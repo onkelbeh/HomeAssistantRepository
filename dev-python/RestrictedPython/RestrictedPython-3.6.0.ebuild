@@ -11,7 +11,7 @@ DESCRIPTION="RestrictedPython provides a restricted execution environment for Py
 HOMEPAGE="https://pypi.python.org/pypi/RestrictedPython https://pypi.org/project/RestrictedPython/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.zip"
 
-LICENSE="ZPL 2.1"
+LICENSE="ZPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
