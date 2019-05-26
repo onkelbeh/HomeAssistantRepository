@@ -12,7 +12,7 @@ HOMEPAGE="https://github.com/goodfield/python-maxcube-api.git https://pypi.org/p
 #SRC_URI="https://github.com/hackercowboy/python-maxcube-api/archive/v0.1.0.tar.gz"
 EGIT_REPO_URI="https://github.com/hackercowboy/python-maxcube-api.git"
 
-LICENSE="The MIT License (MIT)"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
