@@ -11,7 +11,7 @@ DESCRIPTION="Home Assistant cloud integration by Nabu Casa, inc."
 HOMEPAGE="https://www.nabucasa.com/ https://pypi.org/project/hass-nabucasa/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL v3"
+LICENSE="GPL-3.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
