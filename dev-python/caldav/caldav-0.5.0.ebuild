@@ -11,7 +11,7 @@ DESCRIPTION="CalDAV (RFC4791) client library"
 HOMEPAGE="https://bitbucket.org/cyrilrbt/caldav https://pypi.org/project/caldav/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL"
+LICENSE="GPL-1.0-or-later"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
