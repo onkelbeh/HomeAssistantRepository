@@ -1,3 +1,49 @@
+2019-06-02 Home Assistant 0.94.0_beta4
+	* remove displaced adguardhome
+	* fix importlib-metadata dependency
+	* homeassistant-0.94.0_beta4
+	* add zipp-0.5.1
+	* allow newer dev-python/requests (experimental)
+	* add components.mcp23017
+	* add pypck
+	* blink motion detection
+	* add solax
+	* bump pyatmo
+	* add google_travel_time
+	* add gpiozero
+	* bump geniushub-client-0.4.11
+	* add importlib-metadata
+	* bump pydeconz
+	* bump PyEssent
+	* bump pubnubsub-handler
+	* add pyruter
+	* add pyrepetier
+	* bump pysonos
+	* bump broadlink
+	* bump pyTibber
+	* bump nabucasa
+	* add fitbit
+	* bump axis-24
+	* bump adguardhome
+	* ZHA requirements version bump
+	* bump PyChromecast
+	* python-velbus bumped
+	* add adguardhome
+	* bump various frontend
+	* Merged pull request #3 from evadim/master (esphome to 1.13)
+	* (tag: v0.93.2) 0.93.2
+	* update license strings
+	* fix some License Strings
+	* add geniushub-client-0.4.9
+	* axis-23
+	* pyloopenergy-0.1.3
+	* pydaikin-1.4.5
+	* broadlink-0.10
+	* bump requests-2.22.0
+	* cumulate CHANGELOG.md
+	* add metadata.xml 4 librouteros
+	* add support for MikroTik RouterOS API
+
 2019-05-20 homeassistant-0.93.1
 	* add support for MikroTik RouterOS API
 	* add pycrypto dependency
