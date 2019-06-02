@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">solax</remote-id>
+    <maintainer status="unknown">
+      <email>me@robinwr.com</email>
+      <name>Robin Wohlers-Reichel</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
