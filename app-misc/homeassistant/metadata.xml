@@ -28,7 +28,9 @@
     <flag name="speedtest">spedtest.net support</flag>
     <flag name="test">internal and devel use</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
+    <flag name="vera">add support for Vera Z-Wave Controller</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
+    <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
     <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
   </use>
 </pkgmetadata>

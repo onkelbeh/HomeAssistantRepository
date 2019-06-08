@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri wemo zoneminder"
+IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri vera wemo zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -117,10 +117,10 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/websocket-client-0.54.0[${PYTHON_USEDEP}]
 	~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.3.0[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.22.0[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.23.0[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.42.0
 	atv? ( >=dev-python/pyatv-0.3.12[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-2.0.1[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-2.1.0[${PYTHON_USEDEP}] )
 	enigma? ( ~dev-python/openwebifpy-3.1.1[${PYTHON_USEDEP}] )
 	androidtv? ( ~dev-python/androidtv-0.0.15[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyHS100-0.3.5[${PYTHON_USEDEP}] )
@@ -141,11 +141,12 @@ RDEPEND="${PYTHON_DEPS}
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190601.0 )
+	frontend? ( =app-misc/home-assistant-frontend-20190604.0 )
 	homematic? ( ~dev-python/pyhomematic-0.1.58[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
 	speedtest? ( ~net-analyzer/speedtest-cli-2.1.1[${PYTHON_USEDEP}] )
+	vera? ( ~dev-python/pyvera-0.2.45[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 "
 
