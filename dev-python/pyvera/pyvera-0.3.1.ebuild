@@ -19,10 +19,13 @@ IUSE="test"
 RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
+
+PATCHES=( "${FILESDIR}"/${P}-top_level.patch )
 
 python_test() {
 	nosetests --verbose || die
