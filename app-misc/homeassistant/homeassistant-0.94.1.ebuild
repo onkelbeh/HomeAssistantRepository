@@ -17,7 +17,7 @@ RESTRICT="mirror"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri vera wemo wink zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
