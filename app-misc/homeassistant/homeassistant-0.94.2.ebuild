@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri wemo zoneminder"
+IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri vera wemo wink zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -33,6 +33,7 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/attrs-19.1.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.6[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2019.3.9[${PYTHON_USEDEP}]
+	~dev-python/importlib-metadata-0.15[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.10[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
 	~dev-python/cryptography-2.6.1[${PYTHON_USEDEP}]
@@ -42,7 +43,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/pytz-2019.1[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-3.13[${PYTHON_USEDEP}]
 	<dev-python/pyyaml-4[${PYTHON_USEDEP}]
-	=dev-python/requests-2.21.0-r1[${PYTHON_USEDEP}]
+	=dev-python/requests-2.22.0[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.94[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.1.0[${PYTHON_USEDEP}]
@@ -59,12 +60,12 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
 	~dev-python/snitun-0.15[${PYTHON_USEDEP}]
 	>=dev-python/pyrfc3339-1.1[${PYTHON_USEDEP}]
-	~dev-python/hass-nabucasa-0.11[${PYTHON_USEDEP}]
+	~dev-python/hass-nabucasa-0.13[${PYTHON_USEDEP}]
 
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/beautifulsoup-4.7.1[${PYTHON_USEDEP}]
-	~dev-python/blinkpy-0.13.1[${PYTHON_USEDEP}]
-	>=dev-python/boto3-1.9.116[${PYTHON_USEDEP}]
+	~dev-python/blinkpy-0.14.0[${PYTHON_USEDEP}]
+	>=dev-python/boto3-1.9.16[${PYTHON_USEDEP}]
 	>=dev-python/botocore-1.12.115[${PYTHON_USEDEP}]
 	~dev-python/caldav-0.6.1[${PYTHON_USEDEP}]
 	>=dev-python/cdu-0.1.3[${PYTHON_USEDEP}]
@@ -94,7 +95,7 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/pillow-5.4.1[${PYTHON_USEDEP}]
 	>=dev-python/psutil-5.6.2[${PYTHON_USEDEP}]
 	>=dev-python/PyChromecast-3.2.1[${PYTHON_USEDEP}]
-	>=dev-python/pycryptodome-3.7.3[${PYTHON_USEDEP}]
+	|| ( >=dev-python/pycryptodome-3.7.3[${PYTHON_USEDEP}] dev-python/pycrypto[${PYTHON_USEDEP}] )
 	>=dev-python/pyotp-2.2.7[${PYTHON_USEDEP}]
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
 	~dev-python/pysnmp-4.4.9[${PYTHON_USEDEP}]
@@ -116,14 +117,15 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/websocket-client-0.54.0[${PYTHON_USEDEP}]
 	~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.3.0[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.22.0[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.23.0[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.42.0
 	atv? ( >=dev-python/pyatv-0.3.12[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-2.0.1[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-2.1.0[${PYTHON_USEDEP}] )
 	enigma? ( ~dev-python/openwebifpy-3.1.1[${PYTHON_USEDEP}] )
 	androidtv? ( ~dev-python/androidtv-0.0.15[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyHS100-0.3.5[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
+	mikrotik? ( ~dev-python/librouteros-2.2.0[${PYTHON_USEDEP}] )
 	musiccast? ( >=dev-python/pymusiccast-0.1.6[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	mqtt? ( ~dev-python/hbmqtt-0.9.4[${PYTHON_USEDEP}]
@@ -138,12 +140,14 @@ RDEPEND="${PYTHON_DEPS}
 			net-proxy/haproxy )
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
-	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190514.0 )
+	frontend? ( =app-misc/home-assistant-frontend-20190604.0 )
 	homematic? ( ~dev-python/pyhomematic-0.1.58[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
 	speedtest? ( ~net-analyzer/speedtest-cli-2.1.1[${PYTHON_USEDEP}] )
+	vera? ( ~dev-python/pyvera-0.2.45[${PYTHON_USEDEP}] )
+	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
+	wink? ( ~dev-python/pubnubsub-handler-1.0.7[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 "
 
