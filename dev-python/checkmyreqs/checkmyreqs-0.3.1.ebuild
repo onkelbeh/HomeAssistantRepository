@@ -19,10 +19,13 @@ IUSE="test"
 RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/blessings[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
+
+PATCHES=( "${FILESDIR}"/${P}-no_test.patch )
 
 python_test() {
 	nosetests --verbose || die
