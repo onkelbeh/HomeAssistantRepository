@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri vera wemo wink zoneminder"
+IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri vera wemo wink zoneminder z-wave"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -57,7 +57,6 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/pbr-5.1.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
-	~dev-python/snitun-0.15[${PYTHON_USEDEP}]
 	>=dev-python/pyrfc3339-1.1[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.15[${PYTHON_USEDEP}]
 
@@ -148,6 +147,9 @@ RDEPEND="${PYTHON_DEPS}
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.7[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
+	z-wave? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
+			  ~dev-python/pydispatcher-2.0.5[${PYTHON_USEDEP}]
+			  ~dev-python/cffi-1.12.2[${PYTHON_USEDEP}] )
 "
 
 DEPEND="${RDEPEND}
