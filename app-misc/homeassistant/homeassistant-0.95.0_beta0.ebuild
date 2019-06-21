@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri vera wemo wink zoneminder z-wave"
+IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube miio mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri vera wemo wink zoneminder z-wave"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -123,6 +123,7 @@ RDEPEND="${PYTHON_DEPS}
 	androidtv? ( ~dev-python/androidtv-0.0.16[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyHS100-0.3.5[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
+	miio? ( ~dev-python/python-miio-0.4.5[${PYTHON_USEDEP}] )
 	mikrotik? ( ~dev-python/librouteros-2.2.0[${PYTHON_USEDEP}] )
 	musiccast? ( >=dev-python/pymusiccast-0.1.6[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
