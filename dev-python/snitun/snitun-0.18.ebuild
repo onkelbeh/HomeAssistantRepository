@@ -7,17 +7,16 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="A SoCo fork with fixes for Home Assistant."
-HOMEPAGE="https://github.com/amelchio/pysonos https://pypi.org/project/pysonos/"
+DESCRIPTION="SNI proxy with TCP multiplexer"
+HOMEPAGE="https://www.nabucasa.com/ https://pypi.org/project/snitun/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="GPL-3.0-only"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/mock[${PYTHON_USEDEP}]
-		 dev-python/ipaddress[${PYTHON_USEDEP}]"
+RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

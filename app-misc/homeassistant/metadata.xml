@@ -33,5 +33,6 @@
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
     <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
+    <flag name="z-wave">Support for Z-Wave Devices (uncomplete)</flag>
   </use>
 </pkgmetadata>

@@ -15,7 +15,7 @@ Aside from Home Assistant it contains some related ebuilds I use with my Home As
  * esphome (soon i'll throw away Tasmota...)
  * platformio
 
-Currently it is not possible to use esphome on the same machine with homeassistant, caused by `dev-python/pyyaml`. esphome only runs with `5.1`, homassitant insists on `3.13`.
+Since `homeassistant-0.95.0_beta0` `esphome-1.13.6` can be run again in the same environment with homeassistant, homeassistant does not insist on `dev-python/pyyaml-3.13` anymore.
 
 If you have questions or suggestions don't hesitate to contact me...
 
@@ -63,6 +63,11 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine.
 
 Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.5.6), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
+* some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave.
+  - in the vm run `socat pty,link=/dev/ttyUSB0,raw,user=homeassistant,group=dialout,mode=777 tcp:172.16.3.199:3333`
+  - at the usbport run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
+* a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
+* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy)
 * Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota)
   * Sonoff S20
   * Sonoff Pow R2
@@ -71,8 +76,6 @@ Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
   * Sonoff RF Bridge with remote Swiches 
   * Sonoff Touch
   * Sonoff Basic (not working well with Tasmota)
-* a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
-* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy)
 * some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
 * Yamaha RXV (4 devices)
 * SamsungTV (partly _not_ working anymore due to Samsungs newest firmware 'improvements')
