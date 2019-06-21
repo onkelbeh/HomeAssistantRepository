@@ -63,6 +63,9 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine.
 
 Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.5.6), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
+* some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave.
+* a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
+* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy)
 * Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota)
   * Sonoff S20
   * Sonoff Pow R2
@@ -71,8 +74,6 @@ Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
   * Sonoff RF Bridge with remote Swiches 
   * Sonoff Touch
   * Sonoff Basic (not working well with Tasmota)
-* a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
-* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy)
 * some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
 * Yamaha RXV (4 devices)
 * SamsungTV (partly _not_ working anymore due to Samsungs newest firmware 'improvements')
