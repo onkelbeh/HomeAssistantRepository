@@ -1,3 +1,119 @@
+2019-06-22 homeassistant 0.95.0_beta1
+	* homeassistant 0.95.0_beta1
+	* update/add all components for zha
+	  - bump bellows-homeassistant-0.8.1
+	  - add click-log-0.3.2.ebuild
+	  - add crccheck-0.6.ebuild
+	  - add pure-pcapy3-1.0.1.ebuild
+	  - add pyserial-asyncio-0.4.ebuild
+	  - bump zigpy-deconz-0.1.6.ebuild
+	* add BlinkStick & pyusb
+	* bump blinkpy-0.14.1
+	* add pysmartapp
+	* bump pysmartthings-0.6.9
+	* add getmac
+	* add python-twitch-client
+	* add python-telegram-bot
+	* add python-telnet-vlc
+	* bump frontend 20190620.0
+	* addvenstarcolortouch
+	* add volkszaehler
+	* add vigilancemeteo
+	* forward Xiaomi patch from zhtengw:master to the newer releases
+	* Merge pull request #4 from zhtengw/master (Xioami miio Support as dependecy)
+	* Merge branch 'master' into master
+	* ser2net advice added
+	* esphome & homeassistant works again
+	* bump esphome to 1.13.6
+	* OpenZWave added to README.md
+
+2019-06-21
+
+	0.95.0 now runs with a newer pyyaml-5.1, so esphome can be run in the same environment again.
+
+	ser2net advice added to README.md
+	esphome & homeassistant works again
+	bump esphome to 1.13.6
+	OpenZWave added to README.md
+	fix nabucasa-0.15 deps
+	homeassistant-0.95.0_beta0 snitun dep moved 2 nabucasa
+	bump snitun 0.18
+	update homeassistant-0.95.0_beta0, started to integrate OpenZWave (yet incomplete)
+	add older solaredge-local-0.1.4 (still in requirements_all)
+	bump pysonos 0.0.16
+	bump frontend-20190619.0
+	update & bmp geopy from main repo (untested)
+	bump aioesphomeapi-2.2.0
+	update hass-nabucasa-0.15
+	update geniushub-client-0.4.12
+	update androidtv-0.0.16
+	update pysonos-0.0.15
+	bump Ambiclimate-0.2.0
+	bump aioambient-0.3.1
+	pydispatcher now is in main Repo
+	fix checkmyreqs
+	remove tests from checkmyreqs
+	add checkmyreqs
+	add aioswitcher
+	bump meteoalertapi-0.1.5
+	add deluge-client
+	bump nessclient-0.9.15
+	bump pyatmo-2.0.0
+	bump frontend-20190614.0
+
+2019-06-14
+
+	bump adguardhome-0.2.1
+	bump hass-nabucasa-0.14
+	bump toonapilib-3.2.4
+	bump zigpy-homeassistant-0.5.0
+	bump pyvera-0.3.2 with more elegant no_test patch
+
+2019-06-12
+
+	add pymediaroom
+	add pymitv
+	add pymfy
+	bump pyubee-0.7
+	update ambiclimate-0.1.3
+	update ambiclimate-0.1.3
+	bump broadlink-0.11.1
+	homeassistant-0.94.2
+
+2019-06-09
+
+	homeassistant-0.94.1
+	homeassistant-0.94.0
+	simplisafe-python-3.4.2
+	add denonavr
+	add solaredge-local, uplink (fixed test) & uplink-protobuf
+	add rflink-0.0.46
+	bump meteoalertapi-0.1.3
+	remove pyvera's test package
+	bump pydeconz-60
+	bump amcrest-1.5.3
+	bump pubnubsub-handler-1.0.7
+	bump pyhomematic-0.1.59
+	bump axis-25
+	add life360-4.0.0
+	bump regenmaschine-1.5.1
+	bump ruamel-yaml-0.15.97
+	bump pypck-0.6.1
+	add pysmarty
+	add streamlabswater-1.0.1
+	bump youtube_dl-2019.5.20.ebuild
+	bump youtube_dl-2019.5.11.ebuild
+	bump meteofrance-0.3.7
+	bump zeroconf-0.23.0
+	frontend-20190604.0
+	pyvera 0.3.1
+
+2019-06-04
+
+	bump aioesphomeapi-2.1.0
+	add components.unifi
+	Updated frontend to 20190602.0
+
 2019-06-02 Home Assistant 0.94.0_beta4
 	* remove displaced adguardhome
 	* fix importlib-metadata dependency
