@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">python-telegram-bot</remote-id>
+    <maintainer status="unknown">
+      <email>devs@python-telegram-bot.org</email>
+      <name>Leandro Toledo</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
