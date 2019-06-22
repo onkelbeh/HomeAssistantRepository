@@ -15,10 +15,16 @@ Aside from Home Assistant it contains some related ebuilds I use with my Home As
  * esphome (soon i'll throw away Tasmota...)
  * platformio
 
-Since `homeassistant-0.95.0_beta0` `esphome-1.13.6` can be run again in the same environment with homeassistant, homeassistant does not insist on `dev-python/pyyaml-3.13` anymore.
+Since homeassistant-0.95.0_beta0 `esphome-1.13.6` can be run again in the same environment with homeassistant, because homeassistant does not insist on `dev-python/pyyaml-3.13` anymore.
 
-If you have questions or suggestions don't hesitate to contact me...
+If you have questions or suggestions don't hesitate to contact me, anyhelp is very welcome.
 
+Currently there's work to build a package for:
+ - homeassistant-pyozw-0.1.4
+ - open-zwave-hass-0.1.4
+ - python-openzwave
+They mix up python code with some c++, currently i have no idea how to handle that.
+ 
 #### You will find this Repository at
 | Location | Web | Clone me here |
 | ------ | ------ | ------ |
@@ -64,8 +70,8 @@ I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older
 
 Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.5.6), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
 * some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave.
-  - in the vm run `socat pty,link=/dev/ttyUSB0,raw,user=homeassistant,group=dialout,mode=777 tcp:172.16.3.199:3333`
-  - at the usbport run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
+  - in the vm run `socat pty,link=/dev/ttyUSB0,raw,user=homeassistant,group=dialout,mode=777 tcp:[ip of usbhost]:3333`
+  - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
 * a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
 * ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy)
 * Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota)
@@ -78,23 +84,23 @@ Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
   * Sonoff Basic (not working well with Tasmota)
 * some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
 * Yamaha RXV (4 devices)
-* SamsungTV (partly _not_ working anymore due to Samsungs newest firmware 'improvements')
-* Tradfri (4 devices now, can't wait for their shutters, now these are delayed due to software problems, 'til April 2019)
+* SamsungTV (partly _not_ working anymore due to Samsungs newest firmware 'improvements', at least i can read it's status for controlling lights & the shutters)
+* Tradfri (4 devices now, can't wait for their shutters, now these are delayed due to software problems, 'til April 2019, ha-ha, they still can't be bought, guess jalousiescout is very happy about it)
 * Sonos (had many, sold most of them, because they destroyed a formerly very cool gui, only two boxes left)
 * Calendar (connected to a locally run ownCloud, OC not in this Repository) (https://owncloud.org/)
 * Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
 * Enigma2 on Dreambox (2 left) (http://wiki.blue-panel.com/index.php/Enigma2)
 * Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
 * EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube)
-* Axis Camera (1, more to come)
+* Axis Camera (1, a few more to come sometimes)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
 I have **no** Google, Amazon or Apple involved in my privacy (at least in this case) and I am not planning to let them in.
 
 * Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` as small as possible.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Ouside HA dependencies execpt portage are not tested.
-* Since i use Gentoo mostly on servers i do not use systemd.
-* I prefer an own profile based on "amd64/17.0/no-multilib", with python-3.6.5 set as default target, also 2.7 is installed on my test server, will try 3.7 as soon it is marked as stable in portage.
+* Since i use Gentoo mostly on servers i do not use systemd, even the most important reason to run gentoo is that you are NOT forced to run this crap.
+* I prefer an own profile based on "amd64/17.0/no-multilib", with python-3.6.5 set as default target (plannig to upgrade to 3.6.8 soon), also 2.7.15 is installed on my test server, will try 3.7.x as soon it is marked as stable in portage.
 
 ### Licenses
 
