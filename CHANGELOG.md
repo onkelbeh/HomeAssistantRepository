@@ -1,3 +1,21 @@
+20190-06-24 homeassistant-0.95.0_beta2
+	* bump homeassistant-0.95.0_beta2
+	* add dark sky use flag
+	* add missing cacerts.patch for certifi-2019.6.16
+	* update requests-2.22.0 dependencies
+	* add python-forecastio-1.4.0
+	* add responses-0.10.6
+	* bump certifi-2019.6.16
+	* bump urllib3-1.25.3
+	* bump zigpy-homeassistant-0.6.1
+	* bump zha-quirks-0.0.15
+	* bump solax-0.1.0
+	* bump pypck-0.6.2
+	* bump youtube_dl-2019.6.8
+	* bump pyatmo-2.0.1
+	* bump async-upnp-client-0.14.10
+	* unlock blinkpy's dateutil version
+
 2019-06-22 homeassistant 0.95.0_beta1
 	* homeassistant 0.95.0_beta1
 	* update/add all components for zha
