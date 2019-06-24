@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">python-forecastio</remote-id>
+    <maintainer status="unknown">
+      <email>zeev.gil@gmail.com</email>
+      <name>Ze'ev Gilovitz</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
