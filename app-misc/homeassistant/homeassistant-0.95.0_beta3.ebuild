@@ -134,7 +134,7 @@ RDEPEND="${PYTHON_DEPS}
 	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
 	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
-	sonos? ( >=dev-python/pysonos-0.0.16[${PYTHON_USEDEP}] )
+	sonos? ( >=dev-python/pysonos-0.0.17[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
 			net-proxy/haproxy )
@@ -151,7 +151,7 @@ RDEPEND="${PYTHON_DEPS}
 	zoneminder? ( ~dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 	zigbee? ( ~dev-python/zigpy-deconz-0.1.6[${PYTHON_USEDEP}]
 			  ~dev-python/zigpy-homeassistant-0.6.1[${PYTHON_USEDEP}]
-			  ~dev-python/bellows-homeassistant-0.8.1[${PYTHON_USEDEP}] )
+			  ~dev-python/bellows-homeassistant-0.8.2[${PYTHON_USEDEP}] )
 	z-wave? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
 			  ~dev-python/pydispatcher-2.0.5[${PYTHON_USEDEP}]
 			  ~dev-python/cffi-1.12.2[${PYTHON_USEDEP}] )
