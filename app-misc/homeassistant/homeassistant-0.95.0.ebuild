@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="androidtv asuswrt atv denonavr esphome enigma +frontend homematic hs100 maxcube miio mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri vera wemo wink zoneminder zigbee z-wave"
+IUSE="androidtv asuswrt atv darksky denonavr esphome enigma +frontend homematic hs100 maxcube miio mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri vera wemo wink zoneminder zigbee z-wave"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -32,7 +32,7 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 	~dev-python/attrs-19.1.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.6[${PYTHON_USEDEP}]
-	>=dev-python/certifi-2019.3.9[${PYTHON_USEDEP}]
+	>=dev-python/certifi-2019.6.16[${PYTHON_USEDEP}]
 	~dev-python/importlib-metadata-0.15[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.10[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
@@ -106,7 +106,7 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/transitions-0.6.9[${PYTHON_USEDEP}]
 	~dev-python/tzlocal-1.5.1[${PYTHON_USEDEP}]
 	>=dev-python/ua-parser-0.8.0[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.24.2[${PYTHON_USEDEP}]
+	>=dev-python/urllib3-1.25.3[${PYTHON_USEDEP}]
 	>=dev-python/user-agents-2.0[${PYTHON_USEDEP}]
 	>=dev-python/vobject-0.9.6.1[${PYTHON_USEDEP}]
 	>=dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}]
@@ -118,9 +118,11 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/zeroconf-0.23.0[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.42.0
 	atv? ( >=dev-python/pyatv-0.3.12[${PYTHON_USEDEP}] )
+	androidtv? ( ~dev-python/androidtv-0.0.16[${PYTHON_USEDEP}] )
+	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
+	denonavr? ( ~dev-python/denonavr-0.7.9[${PYTHON_USEDEP}] )
 	esphome? ( ~dev-python/aioesphomeapi-2.2.0[${PYTHON_USEDEP}] )
 	enigma? ( ~dev-python/openwebifpy-3.1.1[${PYTHON_USEDEP}] )
-	androidtv? ( ~dev-python/androidtv-0.0.16[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyHS100-0.3.5[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
 	miio? ( ~dev-python/python-miio-0.4.5[${PYTHON_USEDEP}] )
@@ -131,7 +133,6 @@ RDEPEND="${PYTHON_DEPS}
 			app-misc/mosquitto )
 	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
-	denonavr? ( ~dev-python/denonavr-0.7.9[${PYTHON_USEDEP}] )
 	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
 	sonos? ( >=dev-python/pysonos-0.0.16[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
@@ -139,7 +140,7 @@ RDEPEND="${PYTHON_DEPS}
 			net-proxy/haproxy )
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
-	frontend? ( =app-misc/home-assistant-frontend-20190620.0 )
+	frontend? ( =app-misc/home-assistant-frontend-20190626.0 )
 	homematic? ( ~dev-python/pyhomematic-0.1.59[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
@@ -149,6 +150,7 @@ RDEPEND="${PYTHON_DEPS}
 	wink? ( ~dev-python/pubnubsub-handler-1.0.7[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 	zigbee? ( ~dev-python/zigpy-deconz-0.1.6[${PYTHON_USEDEP}]
+			  ~dev-python/zigpy-homeassistant-0.6.1[${PYTHON_USEDEP}]
 			  ~dev-python/bellows-homeassistant-0.8.1[${PYTHON_USEDEP}] )
 	z-wave? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
 			  ~dev-python/pydispatcher-2.0.5[${PYTHON_USEDEP}]
