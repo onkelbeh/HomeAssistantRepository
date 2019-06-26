@@ -43,7 +43,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/pytz-2019.1[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-5.1[${PYTHON_USEDEP}]
 	=dev-python/requests-2.22.0[${PYTHON_USEDEP}]
-	~dev-python/ruamel-yaml-0.15.94[${PYTHON_USEDEP}]
+	~dev-python/ruamel-yaml-0.15.97[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.1.0[${PYTHON_USEDEP}]
 
