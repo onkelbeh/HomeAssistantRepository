@@ -17,7 +17,7 @@ RESTRICT="mirror"
 
 LICENSE=""
 SLOT="0"
-#KEYWORDS="~amd64"
+KEYWORDS="~amd64"
 IUSE="androidtv asuswrt atv darksky denonavr esphome enigma +frontend homematic hs100 maxcube miio mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest test tradfri vera wemo wink zoneminder zigbee z-wave"
 
 RDEPEND="${PYTHON_DEPS}
@@ -140,7 +140,7 @@ RDEPEND="${PYTHON_DEPS}
 			net-proxy/haproxy )
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
-	frontend? ( =app-misc/home-assistant-frontend-20190620.0 )
+	frontend? ( =app-misc/home-assistant-frontend-20190624.1 )
 	homematic? ( ~dev-python/pyhomematic-0.1.59[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
