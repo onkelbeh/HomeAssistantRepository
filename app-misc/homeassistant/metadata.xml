@@ -14,6 +14,7 @@
     <flag name="enigma">Support for Enigma2 boxes</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="frontend">Install Home Assistant frontend</flag>
+    <flag name="fronius">add Support for Fronius Symo JSON Api</flag>
     <flag name="homematic">An API for the homematicip cloud</flag>
     <flag name="hs100">Interface for TPLink Stuff</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
