@@ -1,4 +1,39 @@
-20190-06-24 homeassistant-0.95.0_beta2
+2019-07-01 misc python ebuilds
+	* bump pytest-4.6.3 & -5.0.0
+	* bump androidtv-0.0.17
+	* bump frontend-20190630.0
+	* add bcrypt-3.1.7
+	* bump importlib-metadata-0.18
+	* bump youtube_dl-2019.6.27
+	* add praw-6.3.1
+	* bump psutil-5.6.3
+	* add Jinja2-2.10.1
+	* add PyFronius
+	* bump PyYAML-5.1.1
+	* (tag: v0.95.4) homeassistant-0.95.4
+	* bump numpy-1.16.4
+	* bump SQLAlchemy-1.3.5
+	* add luftdaten-0.6.1
+	* bump frontend-20190627.0
+	* (tag: v0.95.2) homeassistant-0.95.2
+	* bump zha-quirks-0.0.17
+	* (tag: v0.95.1) bump homeassistant-0.95.1
+	* bump pubnubsub-handler-1.0.8
+	* (tag: v0.95.0) homeassistant-0.95.0
+	* homeassistant-0.95.0
+	* update platformio-3.6.7
+	* bump frontend-20190626.0
+	* add GitPython-2.1.11
+	* fix some deps in 0.95.0_beta3 and 0.95.0_beta4
+	* (tag: v0.95.0_beta4) re-add fixed homeassistant-0.95.0_beta4
+	* bump frontend-20190624.0 & 1
+	* bump pyatmo-2.1.0
+	* (tag: v0.95.0_beta3) update homeassistant-0.95.0_beta3
+	* bump homeassistant-0.95.0_beta3 (beta4 is unusable)
+	* bump bellows-homeassistant-0.8.2
+	* bump pysonos-0.0.17
+
+2019-06-24 homeassistant-0.95.0_beta2
 	* bump homeassistant-0.95.0_beta2
 	* add dark sky use flag
 	* add missing cacerts.patch for certifi-2019.6.16
