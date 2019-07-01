@@ -74,8 +74,7 @@ Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
   - in the vm run `socat pty,link=/dev/ttyUSB0,raw,user=homeassistant,group=dialout,mode=777 tcp:[ip of usbhost]:3333`
   - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
 * a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
-* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy)
-  This stuff is really cool, a bit complicated to get it started (mostly with DNS), but very easy to deploy lots of ESP devices. It's integration in Home Assistant works easy on reacts very fast on state changes.
+* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy), really cool stuff, a bit complicated to get it started (mostly with DNS), but then lots of ESP devices are very easy to deploy. It's integration in Home Assistant is easy and reacts fast on state changes.
 * Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota)
   * Sonoff S20
   * Sonoff Pow R2
