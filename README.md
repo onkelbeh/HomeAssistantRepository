@@ -25,7 +25,7 @@ Currently there's work to build a package for:
  - python-openzwave
 
 They mix up python code with some c++, currently i have no idea how to handle that.
- 
+
 #### You will find this Repository at
 | Location | Web | Clone me here |
 | ------ | ------ | ------ |
@@ -75,12 +75,13 @@ Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
   - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
 * a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
 * ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy)
+  This stuff is really cool, a bit complicated to get it started (mostly with DNS), but very easy to deploy lots of ESP devices. It's integration in Home Assistant works easy on reacts very fast on state changes.
 * Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota)
   * Sonoff S20
   * Sonoff Pow R2
   * Sonoff 4ch
   * Sonoff Dual
-  * Sonoff RF Bridge with remote Swiches 
+  * Sonoff RF Bridge with remote Swiches
   * Sonoff Touch
   * Sonoff Basic (not working well with Tasmota)
 * some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
