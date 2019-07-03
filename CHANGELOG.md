@@ -1,3 +1,9 @@
+2019-07-02 waiting for a new release...
+	* bump frontend-20190702.0
+	* add python-pushover-0.4
+	* bump pysonos-0.0.18
+	* bump life360-4.0.1
+
 2019-07-01 misc python ebuilds
 	* bump pytest-4.6.3 & -5.0.0
 	* bump androidtv-0.0.17
