@@ -12,7 +12,7 @@ https://github.com/home-assistant/home-assistant
 This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now > 525 ebuilds in > 250 packages listed.
 
 Aside from Home Assistant it contains some related ebuilds I use with my Home Assistant:
- * esphome (soon i'll throw away Tasmota...)
+ * esphome (soon i'll throw away Tasmota...), really cool stuff, a bit complicated to get it started (mostly with DNS), but then lots of ESP devices are very easy to deploy. It's integration in Home Assistant is easy and reacts fast on state changes. I begin to love it's Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors will have a unique name all over the system, and names can be changed very easily.
  * platformio
 
 Since homeassistant-0.95.0_beta0 `esphome-1.13.6` can be run again in the same environment with homeassistant, because homeassistant does not insist on `dev-python/pyyaml-3.13` anymore.
@@ -74,15 +74,15 @@ Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
   - in the vm run `socat pty,link=/dev/ttyUSB0,raw,user=homeassistant,group=dialout,mode=777 tcp:[ip of usbhost]:3333`
   - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
 * a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
-* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy), really cool stuff, a bit complicated to get it started (mostly with DNS), but then lots of ESP devices are very easy to deploy. It's integration in Home Assistant is easy and reacts fast on state changes.
-* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota)
+* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy). I formerly used it to avoid some serious design problems in Tasmota, but since i use ESPHome, these devices live only until they will be touched next time, they will be replaced eith ESPHome.
+* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a davice has to be touched, it's firmware will be replaced with ESPHome.
   * Sonoff S20
   * Sonoff Pow R2
   * Sonoff 4ch
   * Sonoff Dual
   * Sonoff RF Bridge with remote Swiches
   * Sonoff Touch
-  * Sonoff Basic (not working well with Tasmota)
+  * Sonoff Basic (not working well with Tasmota in newer versions)
 * some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
 * Yamaha RXV (4 devices)
 * SamsungTV (partly _not_ working anymore due to Samsungs newest firmware 'improvements', at least i can read it's status for controlling lights & the shutters)
