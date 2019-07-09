@@ -7,10 +7,10 @@
   </maintainer>
   <herd>python</herd>
   <upstream>
-    <remote-id type="pypi">pytest-cov</remote-id>
+    <remote-id type="pypi">requests-mock</remote-id>
     <maintainer status="unknown">
-      <email>marc.schlaich@gmail.com</email>
-      <name>Marc Schlaich</name>
+      <email>jamielennox@gmail.com</email>
+      <name>Jamie Lennox</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
