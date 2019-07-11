@@ -26,7 +26,7 @@ S="${WORKDIR}/${MY_P}"
 
 PATCHES=(
 	# bug #659348
-	"${FILESDIR}/${PN}-5.1-cve-2017-18342.patch"
+	"${FILESDIR}/${PN}-${PV}-cve-2017-18342.patch"
 )
 
 python_configure_all() {
