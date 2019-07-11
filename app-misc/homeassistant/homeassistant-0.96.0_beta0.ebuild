@@ -141,7 +141,7 @@ RDEPEND="${PYTHON_DEPS}
 			net-proxy/haproxy )
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
-	frontend? ( =app-misc/home-assistant-frontend-20190626.0 )
+	frontend? ( =app-misc/home-assistant-frontend-20190710.0 )
 	fronius? ( ~dev-python/PyFronius-0.4.6 )
 	homematic? ( ~dev-python/pyhomematic-0.1.59[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
