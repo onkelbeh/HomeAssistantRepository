@@ -29,6 +29,7 @@
     <flag name="sonos">Sonos Media Player Support</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="speedtest">spedtest.net support</flag>
+    <flag name="sma">add Support for SMA Solar WebConnect</flag>
     <flag name="test">internal and devel use</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
     <flag name="vera">add support for Vera Z-Wave Controller</flag>
