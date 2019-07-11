@@ -128,7 +128,8 @@ RDEPEND="${PYTHON_DEPS}
 	miio? ( ~dev-python/python-miio-0.4.5[${PYTHON_USEDEP}] )
 	mikrotik? ( ~dev-python/librouteros-2.2.0[${PYTHON_USEDEP}] )
 	musiccast? ( >=dev-python/pymusiccast-0.1.6[${PYTHON_USEDEP}] )
-	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
+	mysql? ( || ( dev-python/mysqlclient[${PYTHON_USEDEP}]
+			 dev-python/mysql-python[${PYTHON_USEDEP}] ) )
 	mqtt? ( ~dev-python/hbmqtt-0.9.4[${PYTHON_USEDEP}]
 			app-misc/mosquitto )
 	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
