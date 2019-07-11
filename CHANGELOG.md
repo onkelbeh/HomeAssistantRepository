@@ -1,3 +1,33 @@
+2019-07-11 homeassistant-0.96.0_beta0
+	* fix pyyaml-5.1.1 patch name
+	* update homeassistant-0.96.0_beta0
+	* bump python-velbus-2.0.27
+	* add aiowwlln-1.0.0
+	* bump frontend-20190710.0
+	* add pysma-0.3.
+	* bump solax-0.1.1
+	* update all zigbee stuff
+	* bump youtube_dl-2019.7.2
+	* update README.md, honor ESPhome better :-)
+	* add aionotion-1.1.0
+	* add Honeywell Support
+	* bump homematicip-0.10.9
+	* add aurorapy-0.2.6
+	* bump frontend 20190705.0
+	* evohomeclient-0.3.3
+	* add insteonplm
+	* add hdate-0.8.8
+	* bump pySwitchmate
+	* upgrade pytest to 5.0.1 with dependencies
+	* add sleepyq-0.7
+	* bump mypy-0.7x
+	* add tuyaha-0.0.1
+	* bump cryptography-2.7
+	* bump pyatmo-2.1.1
+	* bump pyHik-0.2.3
+	* bump pysonos-0.0.19
+	* bump androidtv-0.0.18
+
 2019-07-02 waiting for a new release...
 	* bump frontend-20190702.0
 	* add python-pushover-0.4
