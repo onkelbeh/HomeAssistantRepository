@@ -135,13 +135,13 @@ RDEPEND="${PYTHON_DEPS}
 	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
 	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
-	sonos? ( >=dev-python/pysonos-0.0.19[${PYTHON_USEDEP}] )
+	sonos? ( >=dev-python/pysonos-0.0.20[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
 			net-proxy/haproxy )
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
-	frontend? ( =app-misc/home-assistant-frontend-20190710.0 )
+	frontend? ( =app-misc/home-assistant-frontend-20190712.0 )
 	fronius? ( ~dev-python/PyFronius-0.4.6 )
 	homematic? ( ~dev-python/pyhomematic-0.1.59[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
