@@ -1,10 +1,26 @@
+2019-07-14 homeassistant-0.96.0_beta2
+	* add vsure-1.5.3
+	* add twentemilieu-0.1.0
+	* add uvcclient
+	* add total-connect-client-0.28
+	* bump youtube_dl-2019.7.12
+	* bump flake8
+	* add forgotten frontend digest
+	* bump homeassistant-0.96.0_beta2
+	* bump frontend-20190712.0
+	* bump homeassistant-0.96.0_beta1
+	* update platformio-4.0.0
+	* add xknx-0.11.1
+	* bump pysonos-0.0.20
+	* add more elegant patch filename from matoro
+
 2019-07-11 homeassistant-0.96.0_beta0
 	* fix pyyaml-5.1.1 patch name
 	* update homeassistant-0.96.0_beta0
 	* bump python-velbus-2.0.27
 	* add aiowwlln-1.0.0
 	* bump frontend-20190710.0
-	* add pysma-0.3.
+	* add pysma-0.3.x
 	* bump solax-0.1.1
 	* update all zigbee stuff
 	* bump youtube_dl-2019.7.2
