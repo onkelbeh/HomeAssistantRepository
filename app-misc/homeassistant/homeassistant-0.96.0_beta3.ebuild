@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="androidtv asuswrt atv darksky denonavr esphome enigma +frontend fronius homematic hs100 maxcube miio mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest sma test tradfri vera wemo wink zoneminder zigbee z-wave"
+IUSE="androidtv asuswrt atv darksky denonavr esphome enigma +frontend fronius growl homematic hs100 maxcube miio mikrotik musiccast mysql mqtt qnap rxv samsungtv sonos ssl speedtest sma test tradfri vera wemo wink zoneminder zigbee z-wave"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -123,6 +123,7 @@ RDEPEND="${PYTHON_DEPS}
 	denonavr? ( ~dev-python/denonavr-0.7.9[${PYTHON_USEDEP}] )
 	esphome? ( ~dev-python/aioesphomeapi-2.2.0[${PYTHON_USEDEP}] )
 	enigma? ( ~dev-python/openwebifpy-3.1.1[${PYTHON_USEDEP}] )
+	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyHS100-0.3.5[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
 	miio? ( ~dev-python/python-miio-0.4.5[${PYTHON_USEDEP}] )
