@@ -1,3 +1,36 @@
+2019-07-16 homeassistant-0.96.0_beta3
+	* sort some lists for 0.96.0_beta3 and make mgorny happy ;-)
+	* bump frontend-20190715.0
+	* add my socat start skript (for the ZWaveMe UZB1 Stick)
+	* add pyiss, Space Station Locator
+	* add limitlessled-1.1.3
+	* add lightwave-0.17
+	* add libpurecool-0.5.0 (components.dyson)
+	* hole-0.[3-4].0 added
+	* Growl Notification
+	* Growl Notification
+	* add fiblary3==0.1.7
+	* add DoorBirdPy-2.0.8
+	* add discord.py-1.2.[2-3]
+	* homeassistant-0.96.0_beta3
+	* bump pyhaversion-3.0.2
+	* add ciscosparkapi
+	* bump ciscomobilityexpress
+	* add blockchain 1.4.4
+	* add PyQRCode
+	* bump pyhomematic-0.1.60
+	* add bluetooth_tracker
+	* update CHANGELOG.md
+	* add vsure-1.5.3
+	* add twentemilieu-0.1.0
+	* add uvcclient
+	* add total-connect-client-0.28
+	* bump youtube_dl-2019.7.12
+	* bump flake8
+	* add forgotten frontend digest
+	* bump homeassistant-0.96.0_beta2
+	* bump frontend-20190712.0
+	
 2019-07-14 homeassistant-0.96.0_beta2
 	* add vsure-1.5.3
 	* add twentemilieu-0.1.0

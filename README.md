@@ -12,7 +12,7 @@ https://github.com/home-assistant/home-assistant
 This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now > 633 ebuilds in > 350 packages listed.
 
 Aside from Home Assistant it contains some related ebuilds I use with my Home Assistant:
- * esphome (soon i'll throw away Tasmota...), really cool stuff, a bit complicated to get it started (mostly with DNS), but then lots of ESP devices are very easy to deploy. It's integration in Home Assistant is easy and reacts fast on state changes. I begin to love it's Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors will have a unique name all over the system, and names can be changed very easily.
+ * esphome (soon i'll throw away Tasmota...), thanks to Otto Winter for his fabulous idea and great work (https://github.com/esphome/esphome), really cool stuff, a bit complicated to get it started (mostly with DNS, it uses a weird *.local architecture), but as soon you got it running, a lot of ESP devices are very easy to deploy. It's integration in Home Assistant is easy and reacts fast on state changes. I begin to love it's Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors will have a unique name all over the system, and names can be changed very easily.
  * platformio
 
 Since homeassistant-0.95.0_beta0 `esphome-1.13.6` can be run again in the same environment with homeassistant, because homeassistant does not insist on `dev-python/pyyaml-3.13` anymore.
@@ -69,13 +69,14 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 
 I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine.
 
-Most of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.5.6), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
+Most of my devices are still connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.5.6), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
 * some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave.
   - in the vm run `socat pty,link=/dev/ttyUSB0,raw,user=homeassistant,group=dialout,mode=777 tcp:[ip of usbhost]:3333`
   - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
-* a bunch of OneWire and I2C Sensors (mostly all via MQTT) and
-* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy). I formerly used it to avoid some serious design problems in Tasmota, but since i use ESPHome, these devices live only until they will be touched next time, they will be replaced eith ESPHome.
-* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a davice has to be touched, it's firmware will be replaced with ESPHome.
+* a bunch of OneWire and I2C Sensors (mostly via MQTT) and
+* ESPHome - see description above - (https://esphome.io/ & https://github.com/esphome/esphome/)
+* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy/). I formerly used it to avoid some serious design problems in Tasmota, but since i use ESPHome, these devices live only until they will be touched next time, they will be replaced with ESPHome.
+* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a davice has to be touched, it's firmware will soon be replaced with Otto Winter's ESPHome.
   * Sonoff S20
   * Sonoff Pow R2
   * Sonoff 4ch
