@@ -20,7 +20,7 @@ RDEPEND="~dev-python/appdirs-1.4.3[${PYTHON_USEDEP}]
 		 ~dev-python/packaging-19.0[${PYTHON_USEDEP}]
 		 ~dev-python/pyparsing-2.4.0[${PYTHON_USEDEP}]
 		 ~dev-python/requests-2.22.0[${PYTHON_USEDEP}]
-		 ~dev-python/six-1.11.0[${PYTHON_USEDEP}]"
+		 >=dev-python/six-1.11.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
