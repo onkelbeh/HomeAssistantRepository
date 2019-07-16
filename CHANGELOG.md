@@ -1,3 +1,15 @@
+2019-07-17 homeassistant-0.96.0_beta4
+	* homeassistant-0.96.0_beta4
+	* remove olds
+	* bump youtube_dl-2019.7.16
+	* bump pysonos-0.0.21
+	* add pyeverlights-0.1.0
+	* add components.fortigate pyfgt==0.5.1
+	* bump pynuki-1.3.3, update it's deps, bump packaging-19.0
+	* bump luftdaten-0.6.2 & add it's deps
+	* add Mastodon.py-1.4.5
+	* bump ruamel-yaml-0.15.99
+
 2019-07-16 homeassistant-0.96.0_beta3
 	* sort some lists for 0.96.0_beta3 and make mgorny happy ;-)
 	* bump frontend-20190715.0
@@ -13,6 +25,8 @@
 	* add DoorBirdPy-2.0.8
 	* add discord.py-1.2.[2-3]
 	* homeassistant-0.96.0_beta3
+
+2019-07-15 homeassistant-0.96.0_beta2
 	* bump pyhaversion-3.0.2
 	* add ciscosparkapi
 	* bump ciscomobilityexpress
