@@ -6,38 +6,38 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <use>
+    <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="asuswrt">Api wrapper for Asuswrt</flag>
     <flag name="atv">Library for controlling an Apple TV</flag>
-    <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="darksky">Library for using dark sky weather data</flag>
     <flag name="denonavr">Automation Library for Denon AVR receivers</flag>
-    <flag name="esphome">Support for esphome sensors, covers and switches</flag>
     <flag name="enigma">Support for Enigma2 boxes</flag>
-    <flag name="frontend">Install Home Assistant frontend</flag>
+    <flag name="esphome">Support for esphome sensors, covers and switches</flag>
     <flag name="fronius">add Support for Fronius Symo JSON Api</flag>
+    <flag name="frontend">Install Home Assistant frontend</flag>
     <flag name="growl">add Support for Growl Notification Transport Protocol</flag>
     <flag name="homematic">An API for the homematicip cloud</flag>
     <flag name="hs100">Interface for TPLink Stuff</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="miio">add support for Xiaomi smart appliances</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
+    <flag name="mqtt">install MQTT Broker and dependencies</flag>
     <flag name="musiccast">add support for Yamaha MusicCast devices</flag>
     <flag name="mysql">install MySQL Libraries for use with HomeAssistant</flag>
-    <flag name="mqtt">install MQTT Broker and dependencies</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="rxv">Library for Yamaha RX-* Receivers</flag>
     <flag name="samsungtv">Support for Samasung TV Sets</flag>
-    <flag name="sonos">Sonos Media Player Support</flag>
-    <flag name="ssl">include support for haproxy</flag>
-    <flag name="speedtest">spedtest.net support</flag>
     <flag name="sma">add Support for SMA Solar WebConnect</flag>
+    <flag name="sonos">Sonos Media Player Support</flag>
+    <flag name="speedtest">spedtest.net support</flag>
+    <flag name="ssl">include support for haproxy</flag>
     <flag name="test">internal and devel use</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
     <flag name="vera">add support for Vera Z-Wave Controller</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
-    <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
     <flag name="zigbee">Support for ZHA/deconz based Zigbee/ZNet Devices</flag>
+    <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
     <flag name="z-wave">Support for Z-Wave Devices (uncomplete)</flag>
   </use>
 </pkgmetadata>
