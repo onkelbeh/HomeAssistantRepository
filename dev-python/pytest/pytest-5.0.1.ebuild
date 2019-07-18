@@ -30,6 +30,7 @@ RDEPEND="
 	<dev-python/pluggy-1
 	>=dev-python/py-${PY_VER}[${PYTHON_USEDEP}]
 	>=dev-python/setuptools-40[${PYTHON_USEDEP}]
+	dev-python/packaging[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 	dev-python/wcwidth[${PYTHON_USEDEP}]
 	virtual/python-funcsigs[${PYTHON_USEDEP}]"
