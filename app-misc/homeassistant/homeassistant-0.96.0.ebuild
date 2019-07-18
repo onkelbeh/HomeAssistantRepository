@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="androidtv asuswrt atv darksky denonavr enigma esphome fronius +frontend growl homematic hs100 maxcube miio mikrotik mqtt musiccast +mysql qnap rxv samsungtv sma sonos speedtest ssl test tradfri vera wemo wink zigbee zoneminder z-wave"
+IUSE="androidtv asuswrt atv darksky denonavr enigma esphome fronius +frontend growl homematic hs100 maxcube miio mikrotik mqtt musiccast +mysql qnap rxv samsungtv sma sonos speedtest ssl test tradfri vera wemo wink wwlln zigbee zoneminder z-wave"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -153,6 +153,7 @@ RDEPEND="${PYTHON_DEPS}
 	vera? ( ~dev-python/pyvera-0.3.2[${PYTHON_USEDEP}] )
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.8[${PYTHON_USEDEP}] )
+	wwlln? ( ~dev-python/aiowwlln-1.0.0[${PYTHON_USEDEP}] )
 	zigbee? ( ~dev-python/zigpy-deconz-0.2.1[${PYTHON_USEDEP}]
 			  ~dev-python/zigpy-homeassistant-0.6.1[${PYTHON_USEDEP}]
 			  ~dev-python/bellows-homeassistant-0.8.1[${PYTHON_USEDEP}]

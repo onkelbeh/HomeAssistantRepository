@@ -67,7 +67,7 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 
 ### some Background...
 
-I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine.
+I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine, currently 10.3.16 without problems.
 
 Most of my devices are still connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.5.6), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
 * some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave.
@@ -101,7 +101,7 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 
 * Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` as small as possible.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Ouside HA dependencies execpt portage are not tested.
-* Since i use Gentoo mostly on servers i do not use systemd, even the most important reason to run gentoo is that you are NOT forced to run this crap.
+* Since i use Gentoo mostly on servers i do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this crap.
 * I prefer an own profile based on "amd64/17.0/no-multilib", with python-3.6.5 set as default target (plannig to upgrade to 3.6.8 soon), also 2.7.15 is installed on my test server, will try 3.7.x as soon it is marked as stable in portage.
 
 ### Licenses

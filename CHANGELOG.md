@@ -1,3 +1,8 @@
+2019-07-18 homeassistant-0.96.0
+	* homeassistant-0.96.0
+	* bump frontend-20190717.1
+	* bump mypy-0.720
+
 2019-07-17 homeassistant-0.96.0_beta4
 	* homeassistant-0.96.0_beta4
 	* remove olds
