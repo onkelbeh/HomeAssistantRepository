@@ -1,3 +1,13 @@
+2019-07-18 homeassistant-0.96.0-r1
+	* Merge branch 'master' of matoro/HomeAssistantRepository into master
+	  - dev-python/pytest: add dev-python/packaging dep
+	* add ujson dependency for aiocache
+	* homeassistant-0.96.0-r1 (with working z-wave stack)
+	* add (fixed) homeassistant-pyozw, it now compiles, short hack in unpack routine
+	* add aiowwlln-1.0.0 aiocache dependency
+	* add aiocache-0.10.1
+	* support for World Wide Lightning Location Network
+
 2019-07-18 homeassistant-0.96.0
 	* homeassistant-0.96.0
 	* bump frontend-20190717.1
