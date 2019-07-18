@@ -20,9 +20,9 @@ Since homeassistant-0.95.0_beta0 `esphome-1.13.6` can be run again in the same e
 If you have questions or suggestions don't hesitate to contact me, anyhelp is very welcome.
 
 Currently there's work to build a package for:
- - homeassistant-pyozw-0.1.4
- - open-zwave-hass-0.1.4
- - python-openzwave
+ - ~~homeassistant-pyozw-0.1.4~~ (now compiles with a short unpack hack)
+ - ~~open-zwave-hass-0.1.4~~ (not needed anymore)
+ - ~~python-openzwave~~ (not needed anymore)
 
 They mix up python code with some c++, currently i have no idea how to handle that.
 
