@@ -7,12 +7,13 @@ PYTHON_COMPAT=( python3_{6,7} )
 
 inherit distutils-r1
 
-MY_P=${PN/-/_}-${PV}
+MY_PN=${PN/-/_}
+MY_P=${MY_PN}-${PV}
 
 DESCRIPTION="python_openzwave is a python wrapper for the openzwave c++ library."
-HOMEPAGE="https://home-assistant.io/ https://pypi.org/project/homeassistant-pyozw/"
-#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.zip"
+HOMEPAGE="https://home-assistant.io/ https://pypi.org/project/homeassistant-pyozw/ http://www.openzwave.net/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.zip -> ${P}.zip
+		 https://raw.githubusercontent.com/home-assistant/python-openzwave/hass/archives/open-zwave-hass-${PV}.zip"
 
 LICENSE="GPLv3+"
 SLOT="0"
@@ -26,6 +27,14 @@ DEPEND="${REDEPEND}
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
+
+S=${WORKDIR}/${MY_PN}
+
+src_unpack() {
+	unpack ${A}
+	mkdir ${MY_PN}/openzwave-embed
+	mv open-zwave-hass ${MY_PN}/openzwave-embed/
+}
 
 python_test() {
 	nosetests --verbose || die
