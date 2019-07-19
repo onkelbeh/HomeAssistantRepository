@@ -1,3 +1,7 @@
+2019-07-19 homeassistant-0.96.1
+	* homeassistant-0.96.1
+	* bump frontend-20190718.0
+
 2019-07-18 homeassistant-0.96.0-r1
 	* Merge branch 'master' of matoro/HomeAssistantRepository into master
 	  - dev-python/pytest: add dev-python/packaging dep
