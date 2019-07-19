@@ -25,11 +25,11 @@ RDEPEND="
 	>=dev-python/atomicwrites-1.0[${PYTHON_USEDEP}]
 	>=dev-python/attrs-17.4.0[${PYTHON_USEDEP}]
 	>=dev-python/more-itertools-4.0.0[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep 'dev-python/pathlib2[${PYTHON_USEDEP}]' python2_7 python3_5 )
-	>=dev-python/pluggy-0.11[${PYTHON_USEDEP}]
+	$(python_gen_cond_dep '>=dev-python/pathlib2-2.2.0[${PYTHON_USEDEP}]' python2_7 python3_5 )
+	>=dev-python/pluggy-0.12[${PYTHON_USEDEP}]
 	<dev-python/pluggy-1
+	>=dev-python/importlib_metadata-0.12[${PYTHON_USEDEP}]
 	>=dev-python/py-${PY_VER}[${PYTHON_USEDEP}]
-	>=dev-python/setuptools-40[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 	dev-python/wcwidth[${PYTHON_USEDEP}]
@@ -37,6 +37,8 @@ RDEPEND="
 
 # flake cause a number of tests to fail
 DEPEND="${RDEPEND}
+	>=dev-python/setuptools-40[${PYTHON_USEDEP}]
+	dev-python/setuptools_scm[${PYTHON_USEDEP}]
 	test? (
 		>=dev-python/hypothesis-3.56[${PYTHON_USEDEP}]
 		dev-python/nose[${PYTHON_USEDEP}]
