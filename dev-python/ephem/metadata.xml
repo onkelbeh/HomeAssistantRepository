@@ -7,10 +7,10 @@
   </maintainer>
   <herd>python</herd>
   <upstream>
-    <remote-id type="pypi">Jinja2</remote-id>
+    <remote-id type="pypi">ephem</remote-id>
     <maintainer status="unknown">
-      <email>armin.ronacher@active-4.com</email>
-      <name>Armin Ronacher</name>
+      <email>brandon@rhodesmill.org</email>
+      <name>Brandon Rhodes</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
