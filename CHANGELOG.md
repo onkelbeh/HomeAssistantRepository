@@ -1,3 +1,19 @@
+2019-07-20 homeassistant-0.96.2
+	* update homeassistant-0.96.2
+	* bump frontend-20190719.0
+	* pyhaversion add deps, exclude tests folder
+	* home-assistant-cli experiments:
+	  - add app-misc/home-assistant-cli (with git version)
+	  - add regex
+	  - add jsonpath-rw-1.4.0
+	  - add jdatetime-3.4.0
+	  - add ephem-3.7.6.0
+	  - add dateparser-0.7.1
+	  - add convertdate-2.1.3
+	  - upgrade to click-7.0 and make sure it hits all rebuilds ( -> platformio-4.0.0 )
+	* ruamel-yaml-0.15.97 is in main repo now, removed.
+	* update CHANGELOG.md
+
 2019-07-19 homeassistant-0.96.1
 	* homeassistant-0.96.1
 	* bump frontend-20190718.0
@@ -63,7 +79,7 @@
 	* add forgotten frontend digest
 	* bump homeassistant-0.96.0_beta2
 	* bump frontend-20190712.0
-	
+
 2019-07-14 homeassistant-0.96.0_beta2
 	* add vsure-1.5.3
 	* add twentemilieu-0.1.0
@@ -199,9 +215,7 @@
 	* OpenZWave added to README.md
 
 2019-06-21
-
 	0.95.0 now runs with a newer pyyaml-5.1, so esphome can be run in the same environment again.
-
 	ser2net advice added to README.md
 	esphome & homeassistant works again
 	bump esphome to 1.13.6
@@ -233,7 +247,6 @@
 	bump frontend-20190614.0
 
 2019-06-14
-
 	bump adguardhome-0.2.1
 	bump hass-nabucasa-0.14
 	bump toonapilib-3.2.4
@@ -241,7 +254,6 @@
 	bump pyvera-0.3.2 with more elegant no_test patch
 
 2019-06-12
-
 	add pymediaroom
 	add pymitv
 	add pymfy
@@ -252,35 +264,33 @@
 	homeassistant-0.94.2
 
 2019-06-09
-
-	homeassistant-0.94.1
-	homeassistant-0.94.0
-	simplisafe-python-3.4.2
-	add denonavr
-	add solaredge-local, uplink (fixed test) & uplink-protobuf
-	add rflink-0.0.46
-	bump meteoalertapi-0.1.3
-	remove pyvera's test package
-	bump pydeconz-60
-	bump amcrest-1.5.3
-	bump pubnubsub-handler-1.0.7
-	bump pyhomematic-0.1.59
-	bump axis-25
-	add life360-4.0.0
-	bump regenmaschine-1.5.1
-	bump ruamel-yaml-0.15.97
-	bump pypck-0.6.1
-	add pysmarty
-	add streamlabswater-1.0.1
-	bump youtube_dl-2019.5.20.ebuild
-	bump youtube_dl-2019.5.11.ebuild
-	bump meteofrance-0.3.7
-	bump zeroconf-0.23.0
-	frontend-20190604.0
-	pyvera 0.3.1
+	* homeassistant-0.94.1
+	* homeassistant-0.94.0
+	* simplisafe-python-3.4.2
+	* add denonavr
+	* add solaredge-local, uplink (fixed test) & uplink-protobuf
+	* add rflink-0.0.46
+	* bump meteoalertapi-0.1.3
+	* remove pyvera's test package
+	* bump pydeconz-60
+	* bump amcrest-1.5.3
+	* bump pubnubsub-handler-1.0.7
+	* bump pyhomematic-0.1.59
+	* bump axis-25
+	* add life360-4.0.0
+	* bump regenmaschine-1.5.1
+	* bump ruamel-yaml-0.15.97
+	* bump pypck-0.6.1
+	* add pysmarty
+	* add streamlabswater-1.0.1
+	* bump youtube_dl-2019.5.20.ebuild
+	* bump youtube_dl-2019.5.11.ebuild
+	* bump meteofrance-0.3.7
+	* bump zeroconf-0.23.0
+	* frontend-20190604.0
+	* pyvera 0.3.1
 
 2019-06-04
-
 	bump aioesphomeapi-2.1.0
 	add components.unifi
 	Updated frontend to 20190602.0
