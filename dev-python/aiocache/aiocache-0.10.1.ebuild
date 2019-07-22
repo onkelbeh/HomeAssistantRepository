@@ -16,7 +16,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/ujson[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/ujson[${PYTHON_USEDEP}]
+		 >=dev-python/aioredis-0.3.3[${PYTHON_USEDEP}]
+		 >=dev-python/aiomcache-0.5.2[${PYTHON_USEDEP}]
+		 >=dev-python/msgpack-0.5.5[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
