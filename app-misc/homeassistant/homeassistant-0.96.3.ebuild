@@ -156,8 +156,8 @@ RDEPEND="${PYTHON_DEPS}
 	wink? ( ~dev-python/pubnubsub-handler-1.0.8[${PYTHON_USEDEP}] )
 	wwlln? ( ~dev-python/aiowwlln-1.0.0[${PYTHON_USEDEP}] )
 	zigbee? ( ~dev-python/zigpy-deconz-0.2.1[${PYTHON_USEDEP}]
-			  ~dev-python/zigpy-homeassistant-0.6.1[${PYTHON_USEDEP}]
-			  ~dev-python/bellows-homeassistant-0.8.1[${PYTHON_USEDEP}]
+			  ~dev-python/zigpy-homeassistant-0.7.0[${PYTHON_USEDEP}]
+			  ~dev-python/bellows-homeassistant-0.8.2[${PYTHON_USEDEP}]
 			  ~dev-python/zha-quirks-0.0.19[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 	z-wave? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
