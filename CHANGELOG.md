@@ -1,4 +1,5 @@
 2019-07-22 homeassistant-0.96.3
+	* begin signing commits with GPG Key 3F74F05AED8CF84D
 	* update homeassistant-0.96.3
 	* bump frontend-20190721.0
 	* bump geniushub-client-0.4.15
