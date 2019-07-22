@@ -1,5 +1,13 @@
-2019-07-22 homeassistant-0.96.3
-	* begin signing commits with GPG Key 3F74F05AED8CF84D
+	2019-07-22 homeassistant-0.96.3
+	* begin signing with PGP Key 3F74F05AED8CF84D
+	* update aiocache-0.10.1 deps
+	  - add aiomcache-0.6.0
+  	  - add msgpack-0.6.1
+  	  - update aioredis-1.2.0 deps
+  	  - bump hiredis-1.0.0
+	* add aresponses-1.1.1
+	* bump frontend-20190721.1, fix manifest
+	* update Zigbee deps
 	* update homeassistant-0.96.3
 	* bump frontend-20190721.0
 	* bump geniushub-client-0.4.15
@@ -421,7 +429,7 @@
 	* bump frontend 20190427.0
 	* homeassistant-0.92.1
 	* bump pyheos-0.4.1
-	
+
 2019-04-25 homeassistant/homeassistant-0.92.0.ebuild
 	* add homeassistant-0.92.0.ebuild
 	* bump frontend-20190424.0
