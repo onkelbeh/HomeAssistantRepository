@@ -1,3 +1,20 @@
+2019-07-22 homeassistant-0.96.3
+	* update homeassistant-0.96.3
+	* bump frontend-20190721.0
+	* bump geniushub-client-0.4.15
+	* update zha-quirks-0.0.19
+	* bump frontend-20190720.0
+	* bump ruamel-yaml-0.15.100
+	* add locationsharinglib-4.0.2
+	* add openwebifpy RDEPEND
+	* update openwrt-luci-rpc-1.1.0
+	* add pybotvac-0.0.15
+	* add dweepy-0.3.0
+	* update simplisafe-python-4.0.[0,1]
+	* add snapcast-2.0.10
+	* Merge branch 'master' of matoro/HomeAssistantRepository:
+	  - dev-python/{pluggy,pytest,packaging}: fix circular deps
+
 2019-07-20 homeassistant-0.96.2
 	* update homeassistant-0.96.2
 	* bump frontend-20190719.0

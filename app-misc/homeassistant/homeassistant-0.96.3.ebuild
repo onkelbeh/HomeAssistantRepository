@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="androidtv asuswrt atv darksky denonavr enigma esphome fronius +frontend growl homematic hs100 maxcube miio mikrotik mqtt musiccast +mysql qnap rxv samsungtv sma sonos speedtest ssl test tradfri vera wemo wink zigbee zoneminder z-wave"
+IUSE="androidtv asuswrt atv darksky denonavr enigma esphome fronius +frontend growl homematic hs100 maxcube miio mikrotik mqtt musiccast +mysql qnap rxv samsungtv sma sonos speedtest ssl test tradfri vera wemo wink wwlln zigbee zoneminder z-wave"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -89,6 +89,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/PyChromecast-3.2.2[${PYTHON_USEDEP}]
 	>=dev-python/pycparser-2.19[${PYTHON_USEDEP}]
 	|| ( >=dev-python/pycryptodome-3.7.3[${PYTHON_USEDEP}] dev-python/pycrypto[${PYTHON_USEDEP}] )
+	~dev-python/pyhaversion-3.0.2[${PYTHON_USEDEP}]
 	>=dev-python/pyopenssl-19.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pyotp-2.2.7[${PYTHON_USEDEP}]
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
@@ -126,7 +127,7 @@ RDEPEND="${PYTHON_DEPS}
 	enigma? ( ~dev-python/openwebifpy-3.1.1[${PYTHON_USEDEP}] )
 	esphome? ( ~dev-python/aioesphomeapi-2.2.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6 )
-	frontend? ( =app-misc/home-assistant-frontend-20190717.1 )
+	frontend? ( =app-misc/home-assistant-frontend-20190721.0 )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.60[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyHS100-0.3.5[${PYTHON_USEDEP}] )
@@ -153,12 +154,14 @@ RDEPEND="${PYTHON_DEPS}
 	vera? ( ~dev-python/pyvera-0.3.2[${PYTHON_USEDEP}] )
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.8[${PYTHON_USEDEP}] )
+	wwlln? ( ~dev-python/aiowwlln-1.0.0[${PYTHON_USEDEP}] )
 	zigbee? ( ~dev-python/zigpy-deconz-0.2.1[${PYTHON_USEDEP}]
 			  ~dev-python/zigpy-homeassistant-0.6.1[${PYTHON_USEDEP}]
 			  ~dev-python/bellows-homeassistant-0.8.1[${PYTHON_USEDEP}]
-			  ~dev-python/zha-quirks-0.0.18[${PYTHON_USEDEP}] )
+			  ~dev-python/zha-quirks-0.0.19[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 	z-wave? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
+			  ~dev-python/homeassistant-pyozw-0.1.4[${PYTHON_USEDEP}]
 			  ~dev-python/pydispatcher-2.0.5[${PYTHON_USEDEP}]
 			  ~dev-python/cffi-1.12.2[${PYTHON_USEDEP}] )
 "
