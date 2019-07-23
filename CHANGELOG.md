@@ -1,4 +1,14 @@
-	2019-07-22 homeassistant-0.96.3
+2019-07-23
+	* add pyvesync-1.1.0
+	* add vallox-websocket-api-2.[0,2].0
+	* add python-hpilo-3.9
+	* add python-hpilo-4.3
+	* bump pyatmo-2.1.2
+	* bump pysonos-0.0.22
+	* begin GPG signing
+	* add msgpack-0.6.1
+
+2019-07-22 homeassistant-0.96.3
 	* begin signing with PGP Key 3F74F05AED8CF84D
 	* update aiocache-0.10.1 deps
 	  - add aiomcache-0.6.0
