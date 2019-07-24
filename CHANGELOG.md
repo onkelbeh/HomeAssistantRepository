@@ -1,3 +1,12 @@
+2019-07-24 homeassistant-0.96.4
+	* bump geniushub-client-0.5.0
+	* bump cleaned pydaikin-1.6.1
+	* bump ZHA bellows-homeassistant-0.9.0
+	* Fortinet FortiGate Tracker fortiosapi-1.0.1
+	* Add Elgato Avea integration avea-1.2.8
+	* homeassistant-0.96.4
+	* fix forgotten pysonos manifest
+
 2019-07-23
 	* add pyvesync-1.1.0
 	* add vallox-websocket-api-2.[0,2].0
