@@ -16,7 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=""
+RDEPEND=">=dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
+		 >=dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
