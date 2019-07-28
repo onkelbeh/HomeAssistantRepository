@@ -219,6 +219,10 @@ src_prepare() {
 		-i "setup.py" \
 		-i homeassistant/package_constraints.txt
 
+	if use mqtt ; then
+	   sed sed -i -e 's/# need mosquitto/need mosquitto/g' "${FILESDIR}/${PN}.init.d"
+	fi
+
 	eapply_user
 }
 

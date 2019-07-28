@@ -25,6 +25,8 @@ pidfile=/run/homeassistant.pid
 
 depend() {
     need net
+    # need socat-zwave
+    # need mosquitto
     after bootmisc
 }
 
