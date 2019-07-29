@@ -16,7 +16,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=""
+RDEPEND=">=dev-python/gql-0.1.0[${PYTHON_USEDEP}]
+		 >=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
+		 >=dev-python/async_timeout-1.4.0[${PYTHON_USEDEP}]
+		 >=dev-python/websockets-6.0[${PYTHON_USEDEP}]
+		 dev-python/pytz[${PYTHON_USEDEP}]
+		 dev-python/python-dateutil[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
