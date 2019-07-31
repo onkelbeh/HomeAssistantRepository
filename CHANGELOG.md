@@ -1,3 +1,27 @@
+2019-07-21 div updates
+	* add roku-3.0
+	* update insteonplm-0.16.5
+	* bump simplisafe-python-4.2.0
+	* add python-ecobee-api-0.0.21
+	* add holidays-0.9.11
+	* add pylutron-0.2.2
+	* bump pypck-0.6.3
+	* add eternalegypt-0.0.8
+	* bump pydeconz-62
+	* bump pyTibber-0.11.6
+	* add huawei-lte-api-1.2.0
+	* add evdev-1.2.0
+	* bump ciscomobilityexpress-0.3.1
+	* if used, start mosquitto before hass in 0.96.5 (fixed)
+	* add pydelijn-0.5.1
+	* add PyDispatcher-2.0.5
+	* add elkm1-lib-0.7.15
+	* add emulated-roku-0.1.8
+	* bump solax-0.1.2
+	* add eliqonline-1.2.2
+	* bump aiounifi-7
+	* homeassistant-0.96.5
+
 2019-07-24 homeassistant-0.96.4
 	* bump geniushub-client-0.5.0
 	* bump cleaned pydaikin-1.6.1
@@ -7,7 +31,7 @@
 	* homeassistant-0.96.4
 	* fix forgotten pysonos manifest
 
-2019-07-23
+2019-07-23 div updates
 	* add pyvesync-1.1.0
 	* add vallox-websocket-api-2.[0,2].0
 	* add python-hpilo-3.9
