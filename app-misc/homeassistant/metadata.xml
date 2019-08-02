@@ -9,7 +9,9 @@
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="asuswrt">Api wrapper for Asuswrt</flag>
     <flag name="atv">Library for controlling an Apple TV</flag>
+    <flag name="buienradar">use buienradar weather data</flag>
     <flag name="cli">install Home Assistant Cli hass-cli (lots of modules required)</flag>
+    <flag name="ciscomobilityexpress">install ciscomobilityexpress support</flag>
     <flag name="darksky">use dark sky weather data</flag>
     <flag name="daikin">Daikin wireless controllers</flag>
     <flag name="denonavr">Automation Library for Denon AVR receivers</flag>
@@ -37,6 +39,7 @@
     <flag name="ssl">include support for haproxy</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
+    <flag name="unify">talk with a Ubiquiti Unify Controller</flag>
     <flag name="vera">add support for Vera Z-Wave Controller</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
