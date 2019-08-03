@@ -19,11 +19,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="doc test"
 
-RDEPEND=""
+RDEPEND="=dev-python/lomond-0.1.14[${PYTHON_USEDEP}]
+		 >=dev-python/requests-2.12.4[${PYTHON_USEDEP}]
+		 >=dev-python/colorlog-3.0.1[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
-	=dev-python/lomond-0.1.14[${PYTHON_USEDEP}]
-	>=dev-python/requests-2.12.4[${PYTHON_USEDEP}]
-	>=dev-python/colorlog-3.0.1[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
