@@ -47,6 +47,7 @@
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
     <flag name="wwlln">install support for World Wide Lightning Location Network</flag>
+    <flag name="xknx">Asynchronous Library for the KNX protocol</flag>
     <flag name="zigbee">Support for ZHA/deconz based Zigbee/ZNet Devices</flag>
     <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
     <flag name="z-wave">Support for Z-Wave Devices (uncomplete)</flag>
