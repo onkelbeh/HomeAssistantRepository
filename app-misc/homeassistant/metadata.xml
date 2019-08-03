@@ -7,8 +7,10 @@
   </maintainer>
   <use>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
+    <flag name="abode">Library for the Abode alarm API</flag>
     <flag name="asuswrt">Api wrapper for Asuswrt</flag>
     <flag name="atv">Library for controlling an Apple TV</flag>
+    <flag name="avea">Library for Elgato Avea bulbs</flag>
     <flag name="buienradar">use buienradar weather data</flag>
     <flag name="cli">install Home Assistant Cli hass-cli (lots of modules required)</flag>
     <flag name="ciscomobilityexpress">install ciscomobilityexpress support</flag>

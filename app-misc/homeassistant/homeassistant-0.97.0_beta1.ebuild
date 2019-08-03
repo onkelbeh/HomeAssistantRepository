@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="androidtv asuswrt atv buienradar cli ciscomobilityexpress daikin darksky denonavr enigma esphome fronius +frontend growl homematic hpilo hs100 hue maxcube miio mikrotik mqtt musiccast +mysql qnap rxv samsungtv sma sonos speedtest ssl test tradfri unify vera wemo wink wwlln z-wave zigbee zoneminder"
+IUSE="abode androidtv asuswrt atv avea buienradar cli ciscomobilityexpress daikin darksky denonavr enigma esphome fronius +frontend growl homematic hpilo hs100 hue maxcube miio mikrotik mqtt musiccast +mysql qnap rxv samsungtv sma sonos speedtest ssl test tradfri unify vera wemo wink wwlln z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -119,9 +119,11 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/zeroconf-0.23.0[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.42.0
 
+	abode? ( ~dev-python/abodepy-0.15.0[${PYTHON_USEDEP}] )
 	androidtv? ( ~dev-python/androidtv-0.0.18[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	atv? ( >=dev-python/pyatv-0.3.12[${PYTHON_USEDEP}] )
+	avea? ( =dev-python/avea-1.2.8[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.1[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli )
 	ciscomobilityexpress? ( ~dev-python/ciscomobilityexpress-0.3.1[${PYTHON_USEDEP}] )
