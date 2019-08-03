@@ -19,6 +19,7 @@
     <flag name="denonavr">Automation Library for Denon AVR receivers</flag>
     <flag name="enigma">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
+    <flag name="everlights">Library for controlling an EverLights lighting system</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
     <flag name="frontend">keep Home Assistant frontend out of virtualenv</flag>
     <flag name="growl">add Growl Notification Transport Protocol</flag>

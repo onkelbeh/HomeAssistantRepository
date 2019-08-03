@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="abode androidtv asuswrt atv avea buienradar cli ciscomobilityexpress daikin darksky denonavr enigma esphome fronius +frontend growl homematic hpilo hs100 hue maxcube miio mikrotik mqtt musiccast +mysql qnap rxv samsungtv sma sonos speedtest ssl test tradfri unify vera wemo wink wwlln z-wave zigbee zoneminder"
+IUSE="abode androidtv asuswrt atv avea buienradar cli ciscomobilityexpress daikin darksky denonavr enigma esphome everlights fronius +frontend growl homematic hpilo hs100 hue maxcube miio mikrotik mqtt musiccast +mysql qnap rxv samsungtv sma sonos speedtest ssl test tradfri unify vera wemo wink wwlln z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -125,7 +125,7 @@ RDEPEND="${PYTHON_DEPS}
 	atv? ( >=dev-python/pyatv-0.3.12[${PYTHON_USEDEP}] )
 	avea? ( =dev-python/avea-1.2.8[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.1[${PYTHON_USEDEP}] )
-	cli? ( app-misc/home-assistant-cli )
+	cli? ( app-misc/home-assistant-cli[${PYTHON_USEDEP}] )
 	ciscomobilityexpress? ( ~dev-python/ciscomobilityexpress-0.3.1[${PYTHON_USEDEP}] )
 	daikin? ( ~dev-python/pydaikin-1.6.1[${PYTHON_USEDEP}] )
 	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
@@ -133,8 +133,9 @@ RDEPEND="${PYTHON_DEPS}
 	enigma? ( ~dev-python/openwebifpy-3.1.1[${PYTHON_USEDEP}] )
 	esphome? ( dev-embedded/esphome
 			   ~dev-python/aioesphomeapi-2.2.0[${PYTHON_USEDEP}] )
-	fronius? ( ~dev-python/PyFronius-0.4.6 )
-	frontend? ( =app-misc/home-assistant-frontend-20190801.0 )
+	everlights? ( ~dev-python/pyeverlights-0.1.0[${PYTHON_USEDEP}] )
+	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
+	frontend? ( =app-misc/home-assistant-frontend-20190801.0[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	hpilo? ( ~dev-python/python-hpilo-4.3[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.60[${PYTHON_USEDEP}] )
