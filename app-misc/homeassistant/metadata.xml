@@ -34,9 +34,11 @@
     <flag name="musiccast">add support for Yamaha MusicCast devices</flag>
     <flag name="mysql">install MySQL Libraries for use with HomeAssistant</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
+    <flag name="roku">add support for Roku players</flag>
     <flag name="rxv">Library for Yamaha RX-* Receivers</flag>
-    <flag name="samsungtv">Support for Samasung TV Sets</flag>
+    <flag name="samsungtv">Support for Samsung TV Sets</flag>
     <flag name="sma">add Support for SMA Solar WebConnect</flag>
+    <flag name="socat">Install socat & socat-zwave startscript</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
     <flag name="speedtest">spedtest.net support</flag>
     <flag name="ssl">include support for haproxy</flag>
