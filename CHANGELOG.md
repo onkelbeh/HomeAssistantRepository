@@ -1,3 +1,30 @@
+2019-08-05 homeassistant-0.97.0_beta2
+	* update homeassistant-0.97.0_beta2
+	* bump roku-3.1 (w/ useflag)
+	* bump frontend to 20190804.0
+	* bump haanna-0.10.1
+	* add useflag xknx, Asynchronous Library for the KNX protocol
+	* add useflag everlights, fix PYTHON_USEDEP
+	* add useflags for abode & avea
+	* fix abodepy-0.15.0 deps
+	* disable non-working sed in ebuild
+	* add homekit-python-0.15.0 and 2 unmet deps
+	* add habitipy-0.3.0
+	* add haanna-0.10.0
+	* update homematicip-0.10.10
+	* fix ed25519-1.4 Filesize
+	* update manifest
+	* 0.97.0_beta1
+	* add vincenty-0.1.4
+	* bump zha-quirks-0.0.20
+	* bump hass-nabucasa-0.16
+	* bump aiounifi-9
+	* bump frontend-20190801.0
+	* add buienradar-1.0.1
+	* bump aiounifi-8
+	* add aiokafka-0.5.2
+	* bump frontend-20190731.0
+
 2019-07-21 div updates
 	* add roku-3.0
 	* update insteonplm-0.16.5
