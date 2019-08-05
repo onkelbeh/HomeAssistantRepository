@@ -55,7 +55,7 @@ de_DE ISO-8859-1
 de_DE@euro UTF-8
 ```
 Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
-Let me know if any initial depencies are missing, since i do not use all of the components myself, last good (full) compile test was March 19th, 2019 with v0.90.0_beta6
+Let me know if any initial depencies are missing, since i do not use all of the components myself, last good (full) compile test was August 3rd, 2019 with v0.97.0_beta1, while changing gentoo's profile to 17.1.
 
 ### Todos
 - **If it moves, compile it** :-)
@@ -102,7 +102,7 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 * Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` as small as possible.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Ouside HA dependencies execpt portage are not tested.
 * Since i use Gentoo mostly on servers i do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this crap.
-* I prefer an own profile based on "amd64/17.0/no-multilib", with python-3.6.5 set as default target (plannig to upgrade to 3.6.8 soon), also 2.7.15 is installed on my test server, will try 3.7.x as soon it is marked as stable in portage.
+* I prefer an own profile based on "amd64/17.1/no-multilib", with python-3.6.5 set as default target (plannig to upgrade to 3.6.8 ~~soon~~), also 2.7.15 is installed on my test server, will try 3.7.x as soon it is marked as stable in portage.
 
 ### Licenses
 
