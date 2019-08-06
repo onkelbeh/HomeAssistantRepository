@@ -18,7 +18,7 @@ RESTRICT="mirror"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="abode androidtv asuswrt atv avea buienradar cli ciscomobilityexpress daikin darksky denonavr enigma esphome everlights fronius +frontend growl homematic hpilo hs100 hue maxcube miio mikrotik mqtt musiccast +mysql qnap rxv samsungtv sma sonos speedtest ssl test tradfri unify vera wemo wink wwlln xknx z-wave zigbee zoneminder"
+IUSE="abode androidtv asuswrt atv aurora avea buienradar cli ciscomobilityexpress daikin darksky denonavr enigma esphome everlights envoy fronius +frontend growl homekit homematic homematicip hpilo hs100 hue maxcube miio mikrotik mqtt musiccast +mysql qnap roku rxv samsungtv sma socat sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink wwlln xknx z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -123,6 +123,7 @@ RDEPEND="${PYTHON_DEPS}
 	androidtv? ( ~dev-python/androidtv-0.0.18[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	atv? ( >=dev-python/pyatv-0.3.12[${PYTHON_USEDEP}] )
+	aurora? ( ~dev-python/aurorapy-0.2.6[${PYTHON_USEDEP}] )
 	avea? ( =dev-python/avea-1.2.8[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.1[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli[${PYTHON_USEDEP}] )
@@ -134,11 +135,14 @@ RDEPEND="${PYTHON_DEPS}
 	esphome? ( dev-embedded/esphome
 			   ~dev-python/aioesphomeapi-2.2.0[${PYTHON_USEDEP}] )
 	everlights? ( ~dev-python/pyeverlights-0.1.0[${PYTHON_USEDEP}] )
+	envoy? ( ~dev-python/envoy-reader-0.8.6[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190801.0[${PYTHON_USEDEP}] )
+	frontend? ( =app-misc/home-assistant-frontend-20190805.0[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	hpilo? ( ~dev-python/python-hpilo-4.3[${PYTHON_USEDEP}] )
+	homekit? ( ~dev-python/homekit-python-0.15.0[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.60[${PYTHON_USEDEP}] )
+	homematicip? ( ~dev-python/homematicip-0.10.10[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyHS100-0.3.5[${PYTHON_USEDEP}] )
 	hue? ( ~dev-python/aiohue-1.9.1[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
@@ -151,18 +155,22 @@ RDEPEND="${PYTHON_DEPS}
 			 dev-python/mysql-python[${PYTHON_USEDEP}] )
 			 virtual/mysql )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
+	roku? ( ~dev-python/roku-3.1[${PYTHON_USEDEP}] )
 	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
 	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
 	sma? ( ~dev-python/pysma-0.3.2[${PYTHON_USEDEP}] )
+	socat? ( net-misc/socat )
 	sonos? ( >=dev-python/pysonos-0.0.22[${PYTHON_USEDEP}] )
+	shodan? ( ~dev-python/shodan-1.13.0[${PYTHON_USEDEP}] )
 	speedtest? ( ~net-analyzer/speedtest-cli-2.1.1[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
 			net-proxy/haproxy )
 	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
 		 sys-devel/autoconf:2.69 )
-	unify? ( ~dev-python/aiounify-9[${PYTHON_USEDEP}] )
+	ubee? ( ~dev-python/pyubee-0.7[${PYTHON_USEDEP}] )
+	unify? ( ~dev-python/aiounify-10[${PYTHON_USEDEP}] )
 	vera? ( ~dev-python/pyvera-0.3.2[${PYTHON_USEDEP}] )
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.8[${PYTHON_USEDEP}] )
@@ -226,10 +234,6 @@ src_prepare() {
 		-i "setup.py" \
 		-i homeassistant/package_constraints.txt
 
-	#if use mqtt ; then
-	#   sed -i -e 's/# need mosquitto/need mosquitto/g' "${FILESDIR}/${PN}.init.d"
-	#fi
-
 	eapply_user
 }
 
@@ -248,12 +252,24 @@ python_install_all() {
 	newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
 	newinitd "${FILESDIR}/${PN}.init.d" "${PN}"
 
+	if use socat ; then
+	   newinitd "${FILESDIR}/socat-zwave.init.d" "socat-zwave"
+	fi
+
 	insinto /etc/logrotate.d
 	newins "${FILESDIR}/${PN}.logrotate" "${PN}"
 
+	dobin "${FILESDIR}/hasstest"
 	readme.gentoo_create_doc
 }
 
 pkg_postinst() {
 	readme.gentoo_print_elog
+	if use mqtt ; then
+	   sed -i -e 's/# need mosquitto/need mosquitto/g' "/etc/init.d/${PN}"
+	fi
+	if use socat ; then
+	   sed -i -e 's/# need socat-zwave/need socat-zwave/g' "/etc/init.d/${PN}"
+	fi
+
 }

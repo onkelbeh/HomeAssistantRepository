@@ -10,6 +10,7 @@
     <flag name="abode">Library for the Abode alarm API</flag>
     <flag name="asuswrt">Api wrapper for Asuswrt</flag>
     <flag name="atv">Library for controlling an Apple TV</flag>
+    <flag name="aurora">Support for Power-One Aurora inverters</flag>
     <flag name="avea">Library for Elgato Avea bulbs</flag>
     <flag name="buienradar">use buienradar weather data</flag>
     <flag name="cli">install Home Assistant Cli hass-cli (lots of modules required)</flag>
@@ -20,11 +21,14 @@
     <flag name="enigma">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
     <flag name="everlights">Library for controlling an EverLights lighting system</flag>
+    <flag name="envoy">Reads electricity production and consumption from an Enphase Envoy</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
     <flag name="frontend">keep Home Assistant frontend out of virtualenv</flag>
     <flag name="growl">add Growl Notification Transport Protocol</flag>
     <flag name="hpilo">HP Integrated Lights out XML interface</flag>
+    <flag name="homekit">works as both HomeKit controller and accessory</flag>
     <flag name="homematic">An API for the homematicip cloud</flag>
+    <flag name="homematicip">A python wrapper for the homematicIP REST API (Access Point Based)</flag>
     <flag name="hs100">Interface for TPLink Stuff</flag>
     <flag name="hue">talk to Philips Hue</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
@@ -40,10 +44,12 @@
     <flag name="sma">add Support for SMA Solar WebConnect</flag>
     <flag name="socat">Install socat & socat-zwave startscript</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
+    <flag name="shodan">Shodan is a search engine for Internet-connected devices</flag>
     <flag name="speedtest">spedtest.net support</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
+    <flag name="ubee">getting stats from Ubee routers</flag>
     <flag name="unify">talk with a Ubiquiti Unify Controller</flag>
     <flag name="vera">add support for Vera Z-Wave Controller</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
