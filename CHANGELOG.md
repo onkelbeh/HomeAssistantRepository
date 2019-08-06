@@ -1,3 +1,16 @@
+2019-08-06 homeassistant-0.97.0_beta3
+	* add new 0.97.0_beta3 core dependencies
+	* add immutables-0.9
+	* update 0.97.0_beta3
+	* bump frontend-20190805.0
+	* add zigpy-zigate-0.1.0
+	* add envirophat-1.0.1
+	* add contextvars-2.4
+	* bump androidtv-0.0.21
+	* bump pure-python-adb-homeassistant-0.1.7 (dev0)
+	* bump aiounifi-10
+	* add envoy-reader-0.8.6 and requests-async-0.6.2
+
 2019-08-05 homeassistant-0.97.0_beta2
 	* update homeassistant-0.97.0_beta2
 	* bump roku-3.1 (w/ useflag)
