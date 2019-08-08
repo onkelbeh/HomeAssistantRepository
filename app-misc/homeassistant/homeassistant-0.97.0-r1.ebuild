@@ -260,7 +260,7 @@ python_install_all() {
 	fi
 
 	if use mqtt ; then
-		sed -i -e 's/# need mosquitto/need mosquitto/g' "${D}/etc/init.d/${PN}"
+		sed -i -e 's/# need mosquitto/need mosquitto/g' "${D}/etc/init.d/${PN}" || die
 	fi
 
 	insinto /etc/logrotate.d

@@ -42,7 +42,7 @@
     <flag name="rxv">Library for Yamaha RX-* Receivers</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
     <flag name="sma">add Support for SMA Solar WebConnect</flag>
-    <flag name="socat">Install socat & socat-zwave startscript</flag>
+    <flag name="socat">Install socat and socat-zwave startscript</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
     <flag name="shodan">Shodan is a search engine for Internet-connected devices</flag>
     <flag name="speedtest">spedtest.net support</flag>
