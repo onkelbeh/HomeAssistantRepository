@@ -12,8 +12,10 @@ https://github.com/home-assistant/home-assistant
 This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now > 633 ebuilds in > 350 packages listed.
 
 Aside from Home Assistant it contains some related ebuilds I use with my Home Assistant:
- * esphome (soon i'll throw away Tasmota...), thanks to Otto Winter for his fabulous idea and great work (https://github.com/esphome/esphome), really cool stuff, a bit complicated to get it started (mostly with DNS, it uses a weird *.local architecture), but as soon you got it running, a lot of ESP devices are very easy to deploy. It's integration in Home Assistant is easy and reacts fast on state changes. I begin to love it's Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors will have a unique name all over the system, and names can be changed very easily.
- * platformio
+
+ * esphome (soon i'll throw away Tasmota...), thanks to Otto Winter for his fabulous idea and great work (https://github.com/esphome/esphome), really cool stuff, a bit complicated to get it started (mostly with DNS, it uses a weird *.local architecture, imho for mDNS, too complex for me to run it across Vlans), but as soon you got it running, a lot of ESP devices are very easy to deploy. It's integration in Home Assistant is easy and reacts fast on state changes. I begin to love it's Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors will have a unique name all over the system, and names can be changed very easily. In the meantime i migrated all my Magichome Controllers, very happy with it, and i have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with Tasmota.
+
+ * platformio (needed for ESPHome)
 
 Since homeassistant-0.95.0_beta0 `esphome-1.13.6` can be run again in the same environment with homeassistant, because homeassistant does not insist on `dev-python/pyyaml-3.13` anymore.
 
@@ -101,8 +103,8 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 
 * Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` as small as possible.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Ouside HA dependencies execpt portage are not tested.
-* Since i use Gentoo mostly on servers i do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this crap.
-* I prefer an own profile based on "amd64/17.1/no-multilib", with python-3.6.5 set as default target (plannig to upgrade to 3.6.8 ~~soon~~), also 2.7.15 is installed on my test server, will try 3.7.x as soon it is marked as stable in portage.
+* Since i use Gentoo mostly on servers i do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this incredible crap.
+* I prefer an own profile based on "amd64/17.1/no-multilib", with python-3.6.5 set as default target (planning to upgrade to 3.6.8 ~~soon~~), also 2.7.15 is installed on my test server (used for platfomio and ESPHome), will try 3.7.x as soon it is marked as stable in portage.
 
 ### Licenses
 
