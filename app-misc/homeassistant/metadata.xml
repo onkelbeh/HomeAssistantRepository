@@ -9,6 +9,7 @@
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="abode">Library for the Abode alarm API</flag>
     <flag name="asuswrt">Api wrapper for Asuswrt</flag>
+    <flag name="atmo">Access to Netatmo weather station data</flag>
     <flag name="atv">Library for controlling an Apple TV</flag>
     <flag name="aurora">Support for Power-One Aurora inverters</flag>
     <flag name="avea">Library for Elgato Avea bulbs</flag>
