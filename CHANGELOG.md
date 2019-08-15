@@ -1,3 +1,34 @@
+2019-08-15 div updates
+	* bump aioambient-0.3.2
+	* add aioautomatic-0.6.5
+	* bump simplisafe-python-4.3.0
+	* add pyspcwebgw-0.4.0
+	* bump pysonos-0.0.23
+	* add liffylights-0.9.4
+	* add libsoundtouch
+	* bump life360-4.1.1
+	* bump androidtv-0.0.23
+	* add PySyncThru-0.4.{3,4}
+	* bump zigpy-homeassistant-0.7.1
+	* bump frontend-20190811.0
+	* bump aiounifi-11
+
+2019-08-12 homeassistant-0.97.2
+	* (tag: v0.97.2) update homeassistant-0.97.2
+	* bump pyatmo-2.2.1
+	* androidtv-0.0.22 bump
+	* (tag: v0.97.1) homeassistant-0.97.1
+	* add incomfort-client-0.3.1
+	* bump librouteros-2.3.0
+	* bump pyvera-0.3.3
+	* bump ciscomobilityexpress-0.3.3
+	* fix https://bugs.gentoo.org/691778
+	* Merge branch 'master' of https://github.com/onkelbeh/HomeAssistantRepository
+	* new initrd patch
+	* homeassistant-0.97.0
+	* remove olds
+	* Release 0.97.0
+
 2019-08-06 homeassistant-0.97.0_beta3
 	* add new 0.97.0_beta3 core dependencies
 	* add immutables-0.9
