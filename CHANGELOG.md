@@ -1,3 +1,37 @@
+2019-08-18 div updates
+	* remove backup file
+	* did a manifest-check
+	* fix dev-python/pypandoc
+	* bump Adafruit-Blinka-2.3.1
+	* add pre-commit-1.18.2
+	* fix importlib-metadata manifest
+	* add sisyphus-control-2.2.1
+	* bump numpy-1.17.0
+	* update hole-0.5.0
+	* update voluptuous-serialize-2.2.0
+	* bump hdate-0.9.0
+	* add python-etherscan-api-0.0.3
+	* bump bimmer-connected-0.5.6
+	* add python-eq3bt-0.1.11
+	* bump pyyaml-5.1.2
+	* bump voluptuous-0.11.
+	* bump python-slugify-3.0.3
+	* add pyiqvia-0.2.1
+	* bump numpy-1.17.0, cleanup dupes
+	* add simplepush-1.1.4
+	* bump shodan-1.15.0
+	* bump RestrictedPython-4.0
+	* bump sqlalchemy-1.3.7 & cleanup dupes
+	* bump pytz-2019.2
+	* bump Mastodon-py-1.4.6
+	* add yeelightsunflower-0.0.10
+	* add zengge-0.2
+	* bump youtube_dl-2019.8.13
+	* bump pyvera-0.3.4
+	* update eternalegypt-0.0.9
+	* fix metadata.xml
+	* mutagen-1.42.0 now in main repo
+
 2019-08-15 div updates
 	* bump aioambient-0.3.2
 	* add aioautomatic-0.6.5
