@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">GitPython</remote-id>
+    <docs>https://pythonhosted.org/GitPython/</docs>
+    <maintainer status="unknown">
+      <email>byronimo@gmail.com, mtrier@gmail.com</email>
+      <name>Sebastian Thiel, Michael Trier</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

@@ -1,8 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <maintainer type="project">
+  <maintainer>
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">RestrictedPython</remote-id>
+    <maintainer status="unknown">
+      <email>zope-dev@zope.org</email>
+      <name>Zope Foundation and Contributors</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>

@@ -1,3 +1,520 @@
+2019-08-18 div updates
+	* remove backup file
+	* did a manifest-check
+	* fix dev-python/pypandoc
+	* bump Adafruit-Blinka-2.3.1
+	* add pre-commit-1.18.2
+	* fix importlib-metadata manifest
+	* add sisyphus-control-2.2.1
+	* bump numpy-1.17.0
+	* update hole-0.5.0
+	* update voluptuous-serialize-2.2.0
+	* bump hdate-0.9.0
+	* add python-etherscan-api-0.0.3
+	* bump bimmer-connected-0.5.6
+	* add python-eq3bt-0.1.11
+	* bump pyyaml-5.1.2
+	* bump voluptuous-0.11.
+	* bump python-slugify-3.0.3
+	* add pyiqvia-0.2.1
+	* bump numpy-1.17.0, cleanup dupes
+	* add simplepush-1.1.4
+	* bump shodan-1.15.0
+	* bump RestrictedPython-4.0
+	* bump sqlalchemy-1.3.7 & cleanup dupes
+	* bump pytz-2019.2
+	* bump Mastodon-py-1.4.6
+	* add yeelightsunflower-0.0.10
+	* add zengge-0.2
+	* bump youtube_dl-2019.8.13
+	* bump pyvera-0.3.4
+	* update eternalegypt-0.0.9
+	* fix metadata.xml
+	* mutagen-1.42.0 now in main repo
+
+2019-08-15 div updates
+	* bump aioambient-0.3.2
+	* add aioautomatic-0.6.5
+	* bump simplisafe-python-4.3.0
+	* add pyspcwebgw-0.4.0
+	* bump pysonos-0.0.23
+	* add liffylights-0.9.4
+	* add libsoundtouch
+	* bump life360-4.1.1
+	* bump androidtv-0.0.23
+	* add PySyncThru-0.4.{3,4}
+	* bump zigpy-homeassistant-0.7.1
+	* bump frontend-20190811.0
+	* bump aiounifi-11
+
+2019-08-12 homeassistant-0.97.2
+	* (tag: v0.97.2) update homeassistant-0.97.2
+	* bump pyatmo-2.2.1
+	* androidtv-0.0.22 bump
+	* (tag: v0.97.1) homeassistant-0.97.1
+	* add incomfort-client-0.3.1
+	* bump librouteros-2.3.0
+	* bump pyvera-0.3.3
+	* bump ciscomobilityexpress-0.3.3
+	* fix https://bugs.gentoo.org/691778
+	* Merge branch 'master' of https://github.com/onkelbeh/HomeAssistantRepository
+	* new initrd patch
+	* homeassistant-0.97.0
+	* remove olds
+	* Release 0.97.0
+
+2019-08-06 homeassistant-0.97.0_beta3
+	* add new 0.97.0_beta3 core dependencies
+	* add immutables-0.9
+	* update 0.97.0_beta3
+	* bump frontend-20190805.0
+	* add zigpy-zigate-0.1.0
+	* add envirophat-1.0.1
+	* add contextvars-2.4
+	* bump androidtv-0.0.21
+	* bump pure-python-adb-homeassistant-0.1.7 (dev0)
+	* bump aiounifi-10
+	* add envoy-reader-0.8.6 and requests-async-0.6.2
+
+2019-08-05 homeassistant-0.97.0_beta2
+	* update homeassistant-0.97.0_beta2
+	* bump roku-3.1 (w/ useflag)
+	* bump frontend to 20190804.0
+	* bump haanna-0.10.1
+	* add useflag xknx, Asynchronous Library for the KNX protocol
+	* add useflag everlights, fix PYTHON_USEDEP
+	* add useflags for abode & avea
+	* fix abodepy-0.15.0 deps
+	* disable non-working sed in ebuild
+	* add homekit-python-0.15.0 and 2 unmet deps
+	* add habitipy-0.3.0
+	* add haanna-0.10.0
+	* update homematicip-0.10.10
+	* fix ed25519-1.4 Filesize
+	* update manifest
+	* 0.97.0_beta1
+	* add vincenty-0.1.4
+	* bump zha-quirks-0.0.20
+	* bump hass-nabucasa-0.16
+	* bump aiounifi-9
+	* bump frontend-20190801.0
+	* add buienradar-1.0.1
+	* bump aiounifi-8
+	* add aiokafka-0.5.2
+	* bump frontend-20190731.0
+
+2019-07-21 div updates
+	* add roku-3.0
+	* update insteonplm-0.16.5
+	* bump simplisafe-python-4.2.0
+	* add python-ecobee-api-0.0.21
+	* add holidays-0.9.11
+	* add pylutron-0.2.2
+	* bump pypck-0.6.3
+	* add eternalegypt-0.0.8
+	* bump pydeconz-62
+	* bump pyTibber-0.11.6
+	* add huawei-lte-api-1.2.0
+	* add evdev-1.2.0
+	* bump ciscomobilityexpress-0.3.1
+	* if used, start mosquitto before hass in 0.96.5 (fixed)
+	* add pydelijn-0.5.1
+	* add PyDispatcher-2.0.5
+	* add elkm1-lib-0.7.15
+	* add emulated-roku-0.1.8
+	* bump solax-0.1.2
+	* add eliqonline-1.2.2
+	* bump aiounifi-7
+	* homeassistant-0.96.5
+
+2019-07-24 homeassistant-0.96.4
+	* bump geniushub-client-0.5.0
+	* bump cleaned pydaikin-1.6.1
+	* bump ZHA bellows-homeassistant-0.9.0
+	* Fortinet FortiGate Tracker fortiosapi-1.0.1
+	* Add Elgato Avea integration avea-1.2.8
+	* homeassistant-0.96.4
+	* fix forgotten pysonos manifest
+
+2019-07-23 div updates
+	* add pyvesync-1.1.0
+	* add vallox-websocket-api-2.[0,2].0
+	* add python-hpilo-3.9
+	* add python-hpilo-4.3
+	* bump pyatmo-2.1.2
+	* bump pysonos-0.0.22
+	* begin GPG signing
+	* add msgpack-0.6.1
+
+2019-07-22 homeassistant-0.96.3
+	* begin signing with PGP Key 3F74F05AED8CF84D
+	* update aiocache-0.10.1 deps
+	  - add aiomcache-0.6.0
+  	  - add msgpack-0.6.1
+  	  - update aioredis-1.2.0 deps
+  	  - bump hiredis-1.0.0
+	* add aresponses-1.1.1
+	* bump frontend-20190721.1, fix manifest
+	* update Zigbee deps
+	* update homeassistant-0.96.3
+	* bump frontend-20190721.0
+	* bump geniushub-client-0.4.15
+	* update zha-quirks-0.0.19
+	* bump frontend-20190720.0
+	* bump ruamel-yaml-0.15.100
+	* add locationsharinglib-4.0.2
+	* add openwebifpy RDEPEND
+	* update openwrt-luci-rpc-1.1.0
+	* add pybotvac-0.0.15
+	* add dweepy-0.3.0
+	* update simplisafe-python-4.0.[0,1]
+	* add snapcast-2.0.10
+	* Merge branch 'master' of matoro/HomeAssistantRepository:
+	  - dev-python/{pluggy,pytest,packaging}: fix circular deps
+
+2019-07-20 homeassistant-0.96.2
+	* update homeassistant-0.96.2
+	* bump frontend-20190719.0
+	* pyhaversion add deps, exclude tests folder
+	* home-assistant-cli experiments:
+	  - add app-misc/home-assistant-cli (with git version)
+	  - add regex
+	  - add jsonpath-rw-1.4.0
+	  - add jdatetime-3.4.0
+	  - add ephem-3.7.6.0
+	  - add dateparser-0.7.1
+	  - add convertdate-2.1.3
+	  - upgrade to click-7.0 and make sure it hits all rebuilds ( -> platformio-4.0.0 )
+	* ruamel-yaml-0.15.97 is in main repo now, removed.
+	* update CHANGELOG.md
+
+2019-07-19 homeassistant-0.96.1
+	* homeassistant-0.96.1
+	* bump frontend-20190718.0
+
+2019-07-18 homeassistant-0.96.0-r1
+	* Merge branch 'master' of matoro/HomeAssistantRepository into master
+	  - dev-python/pytest: add dev-python/packaging dep
+	* add ujson dependency for aiocache
+	* homeassistant-0.96.0-r1 (with working z-wave stack)
+	* add (fixed) homeassistant-pyozw, it now compiles, short hack in unpack routine
+	* add aiowwlln-1.0.0 aiocache dependency
+	* add aiocache-0.10.1
+	* support for World Wide Lightning Location Network
+
+2019-07-18 homeassistant-0.96.0
+	* homeassistant-0.96.0
+	* bump frontend-20190717.1
+	* bump mypy-0.720
+
+2019-07-17 homeassistant-0.96.0_beta4
+	* homeassistant-0.96.0_beta4
+	* remove olds
+	* bump youtube_dl-2019.7.16
+	* bump pysonos-0.0.21
+	* add pyeverlights-0.1.0
+	* add components.fortigate pyfgt==0.5.1
+	* bump pynuki-1.3.3, update it's deps, bump packaging-19.0
+	* bump luftdaten-0.6.2 & add it's deps
+	* add Mastodon.py-1.4.5
+	* bump ruamel-yaml-0.15.99
+
+2019-07-16 homeassistant-0.96.0_beta3
+	* sort some lists for 0.96.0_beta3 and make mgorny happy ;-)
+	* bump frontend-20190715.0
+	* add my socat start skript (for the ZWaveMe UZB1 Stick)
+	* add pyiss, Space Station Locator
+	* add limitlessled-1.1.3
+	* add lightwave-0.17
+	* add libpurecool-0.5.0 (components.dyson)
+	* hole-0.[3-4].0 added
+	* Growl Notification
+	* Growl Notification
+	* add fiblary3==0.1.7
+	* add DoorBirdPy-2.0.8
+	* add discord.py-1.2.[2-3]
+	* homeassistant-0.96.0_beta3
+
+2019-07-15 homeassistant-0.96.0_beta2
+	* bump pyhaversion-3.0.2
+	* add ciscosparkapi
+	* bump ciscomobilityexpress
+	* add blockchain 1.4.4
+	* add PyQRCode
+	* bump pyhomematic-0.1.60
+	* add bluetooth_tracker
+	* update CHANGELOG.md
+	* add vsure-1.5.3
+	* add twentemilieu-0.1.0
+	* add uvcclient
+	* add total-connect-client-0.28
+	* bump youtube_dl-2019.7.12
+	* bump flake8
+	* add forgotten frontend digest
+	* bump homeassistant-0.96.0_beta2
+	* bump frontend-20190712.0
+
+2019-07-14 homeassistant-0.96.0_beta2
+	* add vsure-1.5.3
+	* add twentemilieu-0.1.0
+	* add uvcclient
+	* add total-connect-client-0.28
+	* bump youtube_dl-2019.7.12
+	* bump flake8
+	* add forgotten frontend digest
+	* bump homeassistant-0.96.0_beta2
+	* bump frontend-20190712.0
+	* bump homeassistant-0.96.0_beta1
+	* update platformio-4.0.0
+	* add xknx-0.11.1
+	* bump pysonos-0.0.20
+	* add more elegant patch filename from matoro
+
+2019-07-11 homeassistant-0.96.0_beta0
+	* fix pyyaml-5.1.1 patch name
+	* update homeassistant-0.96.0_beta0
+	* bump python-velbus-2.0.27
+	* add aiowwlln-1.0.0
+	* bump frontend-20190710.0
+	* add pysma-0.3.x
+	* bump solax-0.1.1
+	* update all zigbee stuff
+	* bump youtube_dl-2019.7.2
+	* update README.md, honor ESPhome better :-)
+	* add aionotion-1.1.0
+	* add Honeywell Support
+	* bump homematicip-0.10.9
+	* add aurorapy-0.2.6
+	* bump frontend 20190705.0
+	* evohomeclient-0.3.3
+	* add insteonplm
+	* add hdate-0.8.8
+	* bump pySwitchmate
+	* upgrade pytest to 5.0.1 with dependencies
+	* add sleepyq-0.7
+	* bump mypy-0.7x
+	* add tuyaha-0.0.1
+	* bump cryptography-2.7
+	* bump pyatmo-2.1.1
+	* bump pyHik-0.2.3
+	* bump pysonos-0.0.19
+	* bump androidtv-0.0.18
+
+2019-07-02 waiting for a new release...
+	* bump frontend-20190702.0
+	* add python-pushover-0.4
+	* bump pysonos-0.0.18
+	* bump life360-4.0.1
+
+2019-07-01 misc python ebuilds
+	* bump pytest-4.6.3 & -5.0.0
+	* bump androidtv-0.0.17
+	* bump frontend-20190630.0
+	* add bcrypt-3.1.7
+	* bump importlib-metadata-0.18
+	* bump youtube_dl-2019.6.27
+	* add praw-6.3.1
+	* bump psutil-5.6.3
+	* add Jinja2-2.10.1
+	* add PyFronius
+	* bump PyYAML-5.1.1
+	* (tag: v0.95.4) homeassistant-0.95.4
+	* bump numpy-1.16.4
+	* bump SQLAlchemy-1.3.5
+	* add luftdaten-0.6.1
+	* bump frontend-20190627.0
+	* (tag: v0.95.2) homeassistant-0.95.2
+	* bump zha-quirks-0.0.17
+	* (tag: v0.95.1) bump homeassistant-0.95.1
+	* bump pubnubsub-handler-1.0.8
+	* (tag: v0.95.0) homeassistant-0.95.0
+	* homeassistant-0.95.0
+	* update platformio-3.6.7
+	* bump frontend-20190626.0
+	* add GitPython-2.1.11
+	* fix some deps in 0.95.0_beta3 and 0.95.0_beta4
+	* (tag: v0.95.0_beta4) re-add fixed homeassistant-0.95.0_beta4
+	* bump frontend-20190624.0 & 1
+	* bump pyatmo-2.1.0
+	* (tag: v0.95.0_beta3) update homeassistant-0.95.0_beta3
+	* bump homeassistant-0.95.0_beta3 (beta4 is unusable)
+	* bump bellows-homeassistant-0.8.2
+	* bump pysonos-0.0.17
+
+2019-06-24 homeassistant-0.95.0_beta2
+	* bump homeassistant-0.95.0_beta2
+	* add dark sky use flag
+	* add missing cacerts.patch for certifi-2019.6.16
+	* update requests-2.22.0 dependencies
+	* add python-forecastio-1.4.0
+	* add responses-0.10.6
+	* bump certifi-2019.6.16
+	* bump urllib3-1.25.3
+	* bump zigpy-homeassistant-0.6.1
+	* bump zha-quirks-0.0.15
+	* bump solax-0.1.0
+	* bump pypck-0.6.2
+	* bump youtube_dl-2019.6.8
+	* bump pyatmo-2.0.1
+	* bump async-upnp-client-0.14.10
+	* unlock blinkpy's dateutil version
+
+2019-06-22 homeassistant 0.95.0_beta1
+	* homeassistant 0.95.0_beta1
+	* update/add all components for zha
+	  - bump bellows-homeassistant-0.8.1
+	  - add click-log-0.3.2.ebuild
+	  - add crccheck-0.6.ebuild
+	  - add pure-pcapy3-1.0.1.ebuild
+	  - add pyserial-asyncio-0.4.ebuild
+	  - bump zigpy-deconz-0.1.6.ebuild
+	* add BlinkStick & pyusb
+	* bump blinkpy-0.14.1
+	* add pysmartapp
+	* bump pysmartthings-0.6.9
+	* add getmac
+	* add python-twitch-client
+	* add python-telegram-bot
+	* add python-telnet-vlc
+	* bump frontend 20190620.0
+	* addvenstarcolortouch
+	* add volkszaehler
+	* add vigilancemeteo
+	* forward Xiaomi patch from zhtengw:master to the newer releases
+	* Merge pull request #4 from zhtengw/master (Xioami miio Support as dependecy)
+	* Merge branch 'master' into master
+	* ser2net advice added
+	* esphome & homeassistant works again
+	* bump esphome to 1.13.6
+	* OpenZWave added to README.md
+
+2019-06-21
+	0.95.0 now runs with a newer pyyaml-5.1, so esphome can be run in the same environment again.
+	ser2net advice added to README.md
+	esphome & homeassistant works again
+	bump esphome to 1.13.6
+	OpenZWave added to README.md
+	fix nabucasa-0.15 deps
+	homeassistant-0.95.0_beta0 snitun dep moved 2 nabucasa
+	bump snitun 0.18
+	update homeassistant-0.95.0_beta0, started to integrate OpenZWave (yet incomplete)
+	add older solaredge-local-0.1.4 (still in requirements_all)
+	bump pysonos 0.0.16
+	bump frontend-20190619.0
+	update & bmp geopy from main repo (untested)
+	bump aioesphomeapi-2.2.0
+	update hass-nabucasa-0.15
+	update geniushub-client-0.4.12
+	update androidtv-0.0.16
+	update pysonos-0.0.15
+	bump Ambiclimate-0.2.0
+	bump aioambient-0.3.1
+	pydispatcher now is in main Repo
+	fix checkmyreqs
+	remove tests from checkmyreqs
+	add checkmyreqs
+	add aioswitcher
+	bump meteoalertapi-0.1.5
+	add deluge-client
+	bump nessclient-0.9.15
+	bump pyatmo-2.0.0
+	bump frontend-20190614.0
+
+2019-06-14
+	bump adguardhome-0.2.1
+	bump hass-nabucasa-0.14
+	bump toonapilib-3.2.4
+	bump zigpy-homeassistant-0.5.0
+	bump pyvera-0.3.2 with more elegant no_test patch
+
+2019-06-12
+	add pymediaroom
+	add pymitv
+	add pymfy
+	bump pyubee-0.7
+	update ambiclimate-0.1.3
+	update ambiclimate-0.1.3
+	bump broadlink-0.11.1
+	homeassistant-0.94.2
+
+2019-06-09
+	* homeassistant-0.94.1
+	* homeassistant-0.94.0
+	* simplisafe-python-3.4.2
+	* add denonavr
+	* add solaredge-local, uplink (fixed test) & uplink-protobuf
+	* add rflink-0.0.46
+	* bump meteoalertapi-0.1.3
+	* remove pyvera's test package
+	* bump pydeconz-60
+	* bump amcrest-1.5.3
+	* bump pubnubsub-handler-1.0.7
+	* bump pyhomematic-0.1.59
+	* bump axis-25
+	* add life360-4.0.0
+	* bump regenmaschine-1.5.1
+	* bump ruamel-yaml-0.15.97
+	* bump pypck-0.6.1
+	* add pysmarty
+	* add streamlabswater-1.0.1
+	* bump youtube_dl-2019.5.20.ebuild
+	* bump youtube_dl-2019.5.11.ebuild
+	* bump meteofrance-0.3.7
+	* bump zeroconf-0.23.0
+	* frontend-20190604.0
+	* pyvera 0.3.1
+
+2019-06-04
+	bump aioesphomeapi-2.1.0
+	add components.unifi
+	Updated frontend to 20190602.0
+
+2019-06-02 Home Assistant 0.94.0_beta4
+	* remove displaced adguardhome
+	* fix importlib-metadata dependency
+	* homeassistant-0.94.0_beta4
+	* add zipp-0.5.1
+	* allow newer dev-python/requests (experimental)
+	* add components.mcp23017
+	* add pypck
+	* blink motion detection
+	* add solax
+	* bump pyatmo
+	* add google_travel_time
+	* add gpiozero
+	* bump geniushub-client-0.4.11
+	* add importlib-metadata
+	* bump pydeconz
+	* bump PyEssent
+	* bump pubnubsub-handler
+	* add pyruter
+	* add pyrepetier
+	* bump pysonos
+	* bump broadlink
+	* bump pyTibber
+	* bump nabucasa
+	* add fitbit
+	* bump axis-24
+	* bump adguardhome
+	* ZHA requirements version bump
+	* bump PyChromecast
+	* python-velbus bumped
+	* add adguardhome
+	* bump various frontend
+	* Merged pull request #3 from evadim/master (esphome to 1.13)
+	* (tag: v0.93.2) 0.93.2
+	* update license strings
+	* fix some License Strings
+	* add geniushub-client-0.4.9
+	* axis-23
+	* pyloopenergy-0.1.3
+	* pydaikin-1.4.5
+	* broadlink-0.10
+	* bump requests-2.22.0
+	* cumulate CHANGELOG.md
+	* add metadata.xml 4 librouteros
+	* add support for MikroTik RouterOS API
+
 2019-05-20 homeassistant-0.93.1
 	* add support for MikroTik RouterOS API
 	* add pycrypto dependency
@@ -60,7 +577,7 @@
 	* bump frontend 20190427.0
 	* homeassistant-0.92.1
 	* bump pyheos-0.4.1
-	
+
 2019-04-25 homeassistant/homeassistant-0.92.0.ebuild
 	* add homeassistant-0.92.0.ebuild
 	* bump frontend-20190424.0
