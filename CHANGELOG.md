@@ -1,4 +1,9 @@
 2019-08-20 div updates
+	* bump geniushub-client
+	* add pylacrosse
+	* add (currently used) pyrainbird-0.1.6
+	* add pyrainbird-0.2.1
+	* bump frontend-20190820.0
 	* bump pysma-0.3.4
 	* add & bump tensorflow-1.13.2
 	* add keba-kecontact-0.2.0
