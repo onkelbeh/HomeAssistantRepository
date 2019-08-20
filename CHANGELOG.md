@@ -1,3 +1,11 @@
+2019-08-20 div updates
+	* bump pysma-0.3.4
+	* add & bump tensorflow-1.13.2
+	* add keba-kecontact-0.2.0
+	* bump hass-nabucasa-0.17
+	* add older python-eq3bt-0.1.9
+	* bump PyXiaomiGateway-0.12.4
+
 2019-08-18 div updates
 	* remove backup file
 	* did a manifest-check
