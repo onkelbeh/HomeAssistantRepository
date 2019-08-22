@@ -1,7 +1,7 @@
-# Copyright 1999-2019 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
+# Copyright 1999-2019 Gentoo Authors Andreas Billmeier b (at) edevau.net
+# Distributed under the terms of the GNU General Public License v3.0
 
-EAPI=6
+EAPI="7"
 
 PYTHON_COMPAT=( python3_{5,6,7} )
 
@@ -16,13 +16,15 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=">=dev-python/requests-2.20.0[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]
+		 >=dev-python/requests-2.20.0[${PYTHON_USEDEP}]
+		 >=dev-python/python-slugify-3.0.2[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	~dev-python/testtools-2.3.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		=dev-python/testtools-2.3.0[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
