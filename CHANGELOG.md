@@ -1,3 +1,17 @@
+2019-08-22 homeassistant-0.98.0_beta0
+	* bump pyyaml-5.1.2
+	* allow voluptuous > 0.11.1
+	* fix numpy-1.17.0 PYTHON_COMPAT > 3.5
+	* loosen blinkpy-0.14.1 deps
+	* bump beautifulsoup-4.8.0
+	* bump frontend-20190821.0
+	* homeassistant-0.98.0_beta0
+	* bump pytest-5.1.1
+	* Upgrade pydocstyle to 4.0.1
+	* bump bimmer-connected-0.6.0
+	* bump zigpy/zha/bellows deps
+	* bump frontend-20190820.1
+
 2019-08-20 div updates
 	* bump geniushub-client
 	* add pylacrosse
