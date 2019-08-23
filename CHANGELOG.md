@@ -1,4 +1,7 @@
 2019-08-22 homeassistant-0.98.0_beta0
+	* bump frontend-20190822.0
+
+2019-08-22 homeassistant-0.98.0_beta0
 	* bump pyyaml-5.1.2
 	* allow voluptuous > 0.11.1
 	* fix numpy-1.17.0 PYTHON_COMPAT > 3.5
