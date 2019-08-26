@@ -26,6 +26,7 @@
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
     <flag name="frontend">keep Home Assistant frontend out of virtualenv</flag>
     <flag name="growl">add Growl Notification Transport Protocol</flag>
+    <flag name="heos">controlling HEOS devices through the HEOS CLI Protocol</flag>
     <flag name="hpilo">HP Integrated Lights out XML interface</flag>
     <flag name="homekit">works as both HomeKit controller and accessory</flag>
     <flag name="homematic">An API for the homematicip cloud</flag>
