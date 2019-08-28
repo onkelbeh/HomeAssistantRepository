@@ -1,3 +1,17 @@
+2019-08-28 too lazy to push 0.98.0_beta2
+	* bump pyatv-0.3.13
+	* bump packaging-19.1
+	* bump huawei-lte-api-1.3.0
+	* homeassistant-0.98.0_beta2
+	* bump frontend-20190805.0
+	* bump zha-quirks-0.0.22
+	* bump pyheos-0.6.0
+	* bump Ambiclimate-0.2.1
+	* add pynws-0.7.4
+	* bump androidtv-0.0.24
+	* home-assistant-0.98.0b1
+	* bump frontend-20190822.0
+
 2019-08-22 homeassistant-0.98.0_beta0
 	* bump frontend-20190822.0
 
