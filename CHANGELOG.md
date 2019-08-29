@@ -1,3 +1,6 @@
+2019-08-29 homeassistant-0.98.0
+	* bump homeassistant-0.98.0
+
 2019-08-28 too lazy to push 0.98.0_beta2
 	* bump pyatv-0.3.13
 	* bump packaging-19.1
