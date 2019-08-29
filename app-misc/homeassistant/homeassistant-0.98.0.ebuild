@@ -17,8 +17,8 @@ RESTRICT="mirror"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64"
-IUSE="abode androidtv asuswrt atmo atv aurora avea buienradar cli ciscomobilityexpress daikin darksky denonavr enigma esphome everlights envoy fronius +frontend growl homekit homematic homematicip hpilo hs100 hue maxcube miio mikrotik mqtt musiccast +mysql qnap roku rxv samsungtv sma socat sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink wwlln xknx z-wave zigbee zoneminder"
+KEYWORDS="amd64"
+IUSE="abode androidtv asuswrt atmo atv aurora avea buienradar cli ciscomobilityexpress daikin darksky denonavr enigma esphome everlights envoy fronius +frontend growl heos homekit homematic homematicip hpilo hs100 hue maxcube miio mikrotik mqtt musiccast +mysql qnap roku rxv samsungtv sma socat sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink wwlln xknx z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -122,7 +122,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=media-libs/mutagen-1.42.0
 
 	abode? ( ~dev-python/abodepy-0.15.0[${PYTHON_USEDEP}] )
-	androidtv? ( ~dev-python/androidtv-0.0.23[${PYTHON_USEDEP}] )
+	androidtv? ( ~dev-python/androidtv-0.0.24[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	atmo? ( ~dev-python/pyatmo-2.2.1[${PYTHON_USEDEP}] )
 	atv? ( >=dev-python/pyatv-0.3.12[${PYTHON_USEDEP}] )
@@ -140,8 +140,9 @@ RDEPEND="${PYTHON_DEPS}
 	everlights? ( ~dev-python/pyeverlights-0.1.0[${PYTHON_USEDEP}] )
 	envoy? ( ~dev-python/envoy-reader-0.8.6[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190821.0[${PYTHON_USEDEP}] )
+	frontend? ( =app-misc/home-assistant-frontend-20190828.0[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
+	heos? ( ~dev-python/pyheos-0.6.0[${PYTHON_USEDEP}] )
 	hpilo? ( ~dev-python/python-hpilo-4.3[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/homekit-python-0.15.0[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.60[${PYTHON_USEDEP}] )
@@ -182,7 +183,7 @@ RDEPEND="${PYTHON_DEPS}
 	zigbee? ( ~dev-python/zigpy-deconz-0.2.2[${PYTHON_USEDEP}]
 			  ~dev-python/zigpy-homeassistant-0.7.1[${PYTHON_USEDEP}]
 			  ~dev-python/bellows-homeassistant-0.9.1[${PYTHON_USEDEP}]
-			  ~dev-python/zha-quirks-0.0.21[${PYTHON_USEDEP}] )
+			  ~dev-python/zha-quirks-0.0.22[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 	z-wave? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
 			  ~dev-python/homeassistant-pyozw-0.1.4[${PYTHON_USEDEP}]
