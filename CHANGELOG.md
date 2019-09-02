@@ -1,3 +1,9 @@
+2019-09-02 homeassistant-0.98.2
+	* bump homeassistant-0.98.2
+
+2019-08-31 homeassistant-0.98.1
+	* bump homeassistant-0.98.1
+
 2019-08-29 homeassistant-0.98.0
 	* bump homeassistant-0.98.0
 
