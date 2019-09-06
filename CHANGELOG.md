@@ -1,3 +1,18 @@
+2019-09-06 homeassistant-0.98.3
+	* add pyAtome-0.1.1
+	* bump frontend-20190904.0
+	* bump numpy-1.17.1
+	* add goslide-api
+	* add PyISY-1.1.2
+	* bump pylinky-0.4.0
+	* bump zigpy-zigate-0.2.0
+	* bump locationsharinglib-4.1.0
+	* bump androidtv-0.0.24
+	* bump denonavr-0.7.10
+	* update homeassistant-0.98.3
+	* update pyhaversion-3.1.0
+	* update aioharmony-0.1.13
+
 2019-09-02 homeassistant-0.98.2
 	* bump homeassistant-0.98.2
 
