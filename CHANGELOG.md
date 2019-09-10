@@ -1,3 +1,16 @@
+2019-09-10 homeassistant-0.98.5
+	* add (old) geniushub-client-0.6.7
+	* add iaqualink-0.2.9
+	* add PyViCare-0.1.1
+	* bump aiowwlln-2.0.1
+	* bump androidtv-0.0.27
+	* bump ZHA
+	* bump geniushub-client-0.6.11
+	* bump async-upnp-client-0.14.11
+	* add growattServer-0.0.1
+	* homeassistant-0.98.5
+	* homeassistant-0.98.4
+
 2019-09-06 homeassistant-0.98.3
 	* add pyAtome-0.1.1
 	* bump frontend-20190904.0
