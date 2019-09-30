@@ -102,7 +102,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/python-jose-cryptodome-1.3.2[${PYTHON_USEDEP}]
 	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
 	=dev-python/RestrictedPython-4.0[${PYTHON_USEDEP}]
-	~dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
+	>=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-1.3.8[${PYTHON_USEDEP}]
 	~dev-python/transitions-0.6.9[${PYTHON_USEDEP}]
@@ -140,7 +140,7 @@ RDEPEND="${PYTHON_DEPS}
 	everlights? ( ~dev-python/pyeverlights-0.1.0[${PYTHON_USEDEP}] )
 	envoy? ( ~dev-python/envoy-reader-0.8.6[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20190919.0[${PYTHON_USEDEP}] )
+	frontend? ( =app-misc/home-assistant-frontend-20190919.1[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
 	heos? ( ~dev-python/pyheos-0.6.0[${PYTHON_USEDEP}] )
@@ -184,6 +184,7 @@ RDEPEND="${PYTHON_DEPS}
 	zigbee? ( ~dev-python/zigpy-deconz-0.3.0[${PYTHON_USEDEP}]
 			  ~dev-python/zigpy-homeassistant-0.8.0[${PYTHON_USEDEP}]
 			  ~dev-python/bellows-homeassistant-0.9.1[${PYTHON_USEDEP}]
+			  ~dev-python/zigpy-zigate-0.3.1[${PYTHON_USEDEP}]
 			  ~dev-python/zha-quirks-0.0.23[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 	z-wave? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
