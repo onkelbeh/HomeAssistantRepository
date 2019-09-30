@@ -1,3 +1,20 @@
+2019-09-30 homeassistant-0.99.3
+	* some more experimental esphome (without python2.7)
+	  - bump platformio-4.0.3
+	  - bump semantic_version-2.8.2
+	  - bump tabulate-0.8.5
+	  - bump pyelftools-0.25
+	* update repo location in README.md
+	* (github/master) spread klowe0100's patch
+	* homeassistant-0.99.3
+	* bump frontend-20190919.1
+	* bump zigpy-zigate-0.3.1
+	* Add klowe0100' Idea (merge pull request #5 from klowe0100/esphome-python3 uncleanly):
+	  - ebuild for latest esphome mainline dev branch
+	  - Bump platformio (4.0.1) to remove python2 dependency
+	  - Update version specifier to unblock installation
+	  - Fix minor but blocking typo
+
 2019-09-21 homeassistant-0.99.2
 	* update homeassistant-0.99.2
 	* bump zigpy-homeassistant-0.8.0
