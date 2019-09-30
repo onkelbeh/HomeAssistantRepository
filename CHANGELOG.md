@@ -1,3 +1,20 @@
+2019-09-21 homeassistant-0.99.2
+	* update homeassistant-0.99.2
+	* bump zigpy-homeassistant-0.8.0
+	* bump frontend-20190919.0
+	* update homeassistant-0.99.1
+	* add pyobihai-1.1.0
+	* bump pytradfri-6.3.1
+	* update homeassistant-0.99.0
+	* bump zha-quirks-0.0.23
+	* bump youtube_dl-2019.9.1
+	* bump sqlalchemy-1.3.8
+	* bump PyChromecast-4.0.1
+	* bump pyTibber-0.11.72
+	* add libpyvivotek-0.2.1
+	* geniushub-client-0.6.13
+	* bump frontend-20190918.1
+
 2019-09-10 homeassistant-0.98.5
 	* add (old) geniushub-client-0.6.7
 	* add iaqualink-0.2.9
