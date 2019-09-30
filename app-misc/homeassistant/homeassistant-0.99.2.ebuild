@@ -102,7 +102,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/python-jose-cryptodome-1.3.2[${PYTHON_USEDEP}]
 	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
 	=dev-python/RestrictedPython-4.0[${PYTHON_USEDEP}]
-	~dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
+	>=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-1.3.8[${PYTHON_USEDEP}]
 	~dev-python/transitions-0.6.9[${PYTHON_USEDEP}]

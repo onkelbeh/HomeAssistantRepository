@@ -3,17 +3,23 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_6 )
+PYTHON_COMPAT=( python3_{6,7} )
 
 inherit user readme.gentoo-r1 distutils-r1
 
-MY_P=${P/_beta/b}
-MY_PV=${PV/_beta/b}
+if [[ ${PV} == *9999* ]]; then
+    inherit git-r3
+fi
+
+# MY_P=${P/_beta/b}
+# MY_PV=${PV/_beta/b}
 
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
 HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
 
-SRC_URI="https://github.com/esphome/esphome/archive/v${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
+# SRC_URI="https://github.com/esphome/esphome/archive/dev.zip"
+EGIT_REPO_URI="https://github.com/esphome/esphome.git"
+EGIT_BRANCH="dev"
 
 LICENSE="MIT"
 SLOT="0"
@@ -50,7 +56,7 @@ logging is to: /var/log/${PN}/{dashboard,warnings}.log
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
-S="${WORKDIR}/${MY_P}"
+S="${WORKDIR}/${P}/"
 
 DOCS="README.md"
 
