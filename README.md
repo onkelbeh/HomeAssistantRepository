@@ -39,7 +39,7 @@ They mix up python code with some c++, currently i have no idea how to handle th
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because i _always_ have more than one repo active by default:
 ```
 [HomeAssistantRepository]
-location = /usr/local/portage/homeassistant
+location = /usr/portage/homeassistant
 sync-type = git
 sync-uri = https://git.edevau.net/onkelbeh/HomeAssistantRepository.git
 auto-sync = yes
