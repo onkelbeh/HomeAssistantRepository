@@ -3,23 +3,17 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_{6,7} )
+PYTHON_COMPAT=( python3_6 )
 
 inherit user readme.gentoo-r1 distutils-r1
 
-if [[ ${PV} == *9999* ]]; then
-	inherit git-r3
-fi
-
-# MY_P=${P/_beta/b}
-# MY_PV=${PV/_beta/b}
+MY_P=${P/_beta/b}
+MY_PV=${PV/_beta/b}
 
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
 HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
 
-# SRC_URI="https://github.com/esphome/esphome/archive/dev.zip"
-EGIT_REPO_URI="https://github.com/esphome/esphome.git"
-EGIT_BRANCH="dev"
+SRC_URI="https://github.com/esphome/esphome/archive/v${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -38,7 +32,8 @@ DEPEND="${REDEPEND}
 	>=www-servers/tornado-5.1.1[${PYTHON_USEDEP}]
 	>=dev-embedded/esptool-2.6[${PYTHON_USEDEP}]
 	>=dev-python/typing-3.6.6[${PYTHON_USEDEP}]
-	<dev-python/protobuf-3.8[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-python-3.7[${PYTHON_USEDEP}]
+	<dev-python/protobuf-python-3.8[${PYTHON_USEDEP}]
 	<dev-python/protobuf-3.8[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	>=dev-python/ifaddr-0.1.6[${PYTHON_USEDEP}]
@@ -57,7 +52,7 @@ logging is to: /var/log/${PN}/{dashboard,warnings}.log
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
-S="${WORKDIR}/${P}/"
+S="${WORKDIR}/${MY_P}"
 
 DOCS="README.md"
 

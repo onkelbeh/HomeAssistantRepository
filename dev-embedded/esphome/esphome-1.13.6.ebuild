@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_6 )
+PYTHON_COMPAT=( python2_7 )
 
 inherit user readme.gentoo-r1 distutils-r1
 
@@ -25,7 +25,7 @@ DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=dev-python/tzlocal-1.5.1[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]
-	>=dev-embedded/platformio-4.0.1
+	>=dev-embedded/platformio-3.6.5
 	>=dev-python/pyyaml-5.1[${PYTHON_USEDEP}]
 	>=dev-python/paho-mqtt-1.3.1[${PYTHON_USEDEP}]
 	>=dev-python/colorlog-3.1.2[${PYTHON_USEDEP}]
