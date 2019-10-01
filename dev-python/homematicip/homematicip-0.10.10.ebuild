@@ -16,12 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=">=dev-python/requests-2.4.3[${PYTHON_USEDEP}]
-		 >=dev-python/websocket-client-0.54.0[${PYTHON_USEDEP}]
-		 dev-python/async_timeout[${PYTHON_USEDEP}]
-		 dev-python/websockets[${PYTHON_USEDEP}]
-		 >=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
-		 dev-python/aenum[${PYTHON_USEDEP}]"
+RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
