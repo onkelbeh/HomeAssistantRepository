@@ -1,3 +1,13 @@
+2019-10-02 div python modules updated
+	* add pysaj-0.0.9
+	* bump incomfort-client-0.3.5
+	* bump pytest-5.2.0
+	* add plexauth-0.0.4
+	* add PlexAPI-3.1.0
+	* bump meteoalertapi-0.1.6
+	* bump attrs-19.2.0
+	* bump python-ecobee-api-0.1.3
+
 2019-10-01 div python modules updated
 	* bump python-ecobee-api-0.1.2
 	* bump zigpy-zigate-0.4.0
