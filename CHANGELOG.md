@@ -1,3 +1,31 @@
+2019-10-01 div python modules updated
+	* bump python-ecobee-api-0.1.2
+	* bump zigpy-zigate-0.4.0
+	* bump zha-quirks-0.0.25
+	* bump homematicip-0.10.11
+	* bump pyotp-2.3.0
+	* bump sendgrid-6.1.0
+	* bump pylutron-0.2.5
+	* bump requests-mock-1.7.0
+	* bump shodan-1.17.0
+	* bump iperf3-0.1.11
+	* bump pytest-5.1.3
+	* bump python-slugify-3.0.4
+	* add python-whois-0.7.2
+	* bump importlib-metadata-0.23
+	* bump pynws-0.8.1
+	* bump simplisafe-python-5.0.1
+	* bump aiowwlln-2.0.2
+	* bump openwrt-luci-rpc-1.1.1
+	* add python-izone-1.1.1
+	* add influxdb-5.2.3
+	* bump RestrictedPython-5.0
+	* bump aiohttp-3.6.1
+	* bump solax-0.2.2
+	* bump pre-commit-1.18.3
+	* bump aiohttp-3.6.0
+	* bump pytest-5.1.2
+
 2019-09-30 homeassistant-0.99.3
 	* some more experimental esphome (without python2.7)
 	  - bump platformio-4.0.3
