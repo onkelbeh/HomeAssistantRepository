@@ -1,3 +1,21 @@
+2019-10-03 homeassistant-0.100.0_beta0
+	* bump bellows-homeassistant-0.10.0
+	* bump hass-nabucasa-0.22
+	* bump xknx-0.11.2
+	* bump gpiozero-1.5.1
+	* bump zigpy-deconz-0.5.0
+	* bump home-assistant-frontend-20191002.0
+	* bump voluptuous-serialize-2.3.0
+	* bump geniushub-client-0.6.26
+	* bump boto3-1.9.233
+	* bump pyvera-0.3.6
+	* add adb-shell-0.0.3
+	* bump androidtv-0.0.29
+	* bump shodan-1.19.0
+	* bump python-ecobee-api-0.1.4
+	* add pysoma-0.0.10
+	* bump zha-quirks-0.0.26
+
 2019-10-02 div python modules updated
 	* add pysaj-0.0.9
 	* bump incomfort-client-0.3.5

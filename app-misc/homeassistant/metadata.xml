@@ -25,6 +25,7 @@
     <flag name="envoy">Reads electricity production and consumption from an Enphase Envoy</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
     <flag name="frontend">keep Home Assistant frontend out of virtualenv</flag>
+    <flag name="gpiozero">interface to GPIO devices on a Raspberry Pi</flag>
     <flag name="growl">add Growl Notification Transport Protocol</flag>
     <flag name="harmony">Logitech Harmony support</flag>
     <flag name="heos">controlling HEOS devices through the HEOS CLI Protocol</flag>
@@ -40,6 +41,7 @@
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
     <flag name="musiccast">add support for Yamaha MusicCast devices</flag>
     <flag name="mysql">install MySQL Libraries for use with HomeAssistant</flag>
+    <flag name="openwrt">fetch connected devices from your OpenWrt</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="roku">add support for Roku players</flag>
     <flag name="rxv">Library for Yamaha RX-* Receivers</flag>
