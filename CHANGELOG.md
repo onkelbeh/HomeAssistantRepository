@@ -1,3 +1,8 @@
+2019-10-05 DIV MODULES ADDED
+	* add airly-0.0.2
+	* add connect-box-0.2.5
+	* add pyotgw-0.5_beta0
+
 2019-10-03 homeassistant-0.100.0_beta0
 	* bump bellows-homeassistant-0.10.0
 	* bump hass-nabucasa-0.22
