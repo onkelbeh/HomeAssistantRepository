@@ -18,7 +18,8 @@ IUSE="test"
 
 RDEPEND="dev-python/rsa[${PYTHON_USEDEP}]
 		 >=dev-python/pure-python-adb-homeassistant-0.1.7[${PYTHON_USEDEP}]
-		 >=dev-python/adb-homeassistant-1.3.2[${PYTHON_USEDEP}]"
+		 >=dev-python/adb-shell-0.0.4[${PYTHON_USEDEP}]
+		 dev-python/pyasn1[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
