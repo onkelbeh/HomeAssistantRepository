@@ -1,3 +1,24 @@
+2019-10-09 go ahead
+	* hack some home-assistant-cli-9999 deps good again
+	* bump frontend-20191002.1
+	* remove old homeassistant ebuild to match already deleted frontends
+	* bump SQLAlchemy-1.3.9
+	* bump certifi-2019.9.11
+	* bump pytz-2019.3
+	* bump ruamel-yaml-0.16.5
+	* bump text-unidecode-1.3
+	* allow newer aiohttp
+	* bump homeassistant-0.100.0_beta2
+	* add todoist-python-8.0.2
+	* bump astroid-2.3.1
+	* bump pylint-2.4.2
+	* bump pybotvac-0.0.16
+	* homeassistant-0.100.0_beta1
+	* python-miio-0.4.6
+	* update androidtv-0.0.30
+	* bump adb-shell-0.0.4
+	* add pyhiveapi-0.2.19.3
+
 2019-10-05 DIV MODULES ADDED
 	* add airly-0.0.2
 	* add connect-box-0.2.5
