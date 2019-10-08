@@ -21,7 +21,7 @@ SLOT="0"
 KEYWORDS="amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
 		 ~dev-python/click-log-0.3.2[${PYTHON_USEDEP}]
 		 ~dev-python/click-7.0[${PYTHON_USEDEP}]
 		 ~dev-python/dateparser-0.7.1[${PYTHON_USEDEP}]
