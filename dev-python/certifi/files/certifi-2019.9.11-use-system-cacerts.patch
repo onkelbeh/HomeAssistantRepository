@@ -1,0 +1,10 @@
+--- certifi-2019.3.9/certifi/core.py	2019-03-09 03:45:40.000000000 -0800
++++ certifi-2019.3.9/certifi/core.py	2019-03-14 12:06:38.534298960 -0700
+@@ -10,6 +10,4 @@
+ 
+ 
+ def where():
+-    f = os.path.dirname(__file__)
+-
+-    return os.path.join(f, 'cacert.pem')
++    return "@GENTOO_PORTAGE_EPREFIX@/etc/ssl/certs/ca-certificates.crt"
