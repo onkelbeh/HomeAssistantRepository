@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND=">=dev-python/unidecode-0.04.16[${PYTHON_USEDEP}]
-		 ~dev-python/text-unidecode-1.2[${PYTHON_USEDEP}]"
+		 ~dev-python/text-unidecode-1.3[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
