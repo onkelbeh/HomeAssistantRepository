@@ -22,7 +22,7 @@ IUSE="abode androidtv asuswrt atmo atv aurora avea buienradar cli ciscomobilitye
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
-
+	>=dev-lang/python-3.6.1
 	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
@@ -122,8 +122,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=media-libs/mutagen-1.42.0
 
 	abode? ( ~dev-python/abodepy-0.15.0[${PYTHON_USEDEP}] )
-	androidtv? ( ~dev-python/androidtv-0.0.29[${PYTHON_USEDEP}]
-				 ~dev-python/adb-shell-0.0.3[${PYTHON_USEDEP}] )
+	androidtv? ( ~dev-python/androidtv-0.0.30[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	atmo? ( ~dev-python/pyatmo-2.2.1[${PYTHON_USEDEP}] )
 	atv? ( >=dev-python/pyatv-0.3.13[${PYTHON_USEDEP}] )
@@ -141,7 +140,7 @@ RDEPEND="${PYTHON_DEPS}
 	everlights? ( ~dev-python/pyeverlights-0.1.0[${PYTHON_USEDEP}] )
 	envoy? ( ~dev-python/envoy-reader-0.8.6[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20191002.0[${PYTHON_USEDEP}] )
+	frontend? ( =app-misc/home-assistant-frontend-20191002.2[${PYTHON_USEDEP}] )
 	gpiozero? ( ~dev-python/gpiozero-1.5.1[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
@@ -188,7 +187,7 @@ RDEPEND="${PYTHON_DEPS}
 			  ~dev-python/zigpy-homeassistant-0.9.0[${PYTHON_USEDEP}]
 			  ~dev-python/zigpy-xbee-homeassistant-0.5.0[${PYTHON_USEDEP}]
 			  ~dev-python/bellows-homeassistant-0.10.0[${PYTHON_USEDEP}]
-			  ~dev-python/zigpy-zigate-0.4.0[${PYTHON_USEDEP}]
+			  ~dev-python/zigpy-zigate-0.4.1[${PYTHON_USEDEP}]
 			  ~dev-python/zha-quirks-0.0.26[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.3.3[${PYTHON_USEDEP}] )
 	z-wave? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
