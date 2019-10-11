@@ -1,3 +1,41 @@
+2019-10-11 some integrations updated
+	* bump PyMata-2.20
+	* add PyRMVtransport-0.2.9
+	* bump python-slugify-3.0.6
+	* bump sqlalchemy-1.3.10
+	* bump aiohttp-3.6.2
+	* add python-songpal-0.11.1
+	* add nokia-1.2.0
+	* bump av-6.2.0
+	* add av-6.1.2
+	* bump broadlink-0.12.0
+	* add (old) datadog-0.15.0
+	* add datadog-0.30.0
+	* add directpy-0.6
+	* add minio-4.0.9 & minio-5.0.1
+	* add nuheat-0.3.0
+	* add pmsensor-0.4
+	* bump pydeconz-64
+	* add pyfido-2.1.1
+	* add pyfritzhome-0.4.[0,2]
+	* add pyfttt-0.3.2
+	* add pykira-0.1.1
+	* add pytraccar-0.9.0
+	* add stringcase-1.2.0
+	* add (older) tplink-0.2.1
+	* add (older) websockets-6.0
+	* add yahooweather-0.10
+	* bump zigpy-xbee-homeassistant-0.5.0
+	* remove beta tags from 0.100.1
+
+2019-10-10 homeassistant-0.100.1
+	* homeassistant-0.100.1
+	* remove old homeassistant ebuilds
+	* bump zigpy-zigate-0.4.1
+	* frontend-20191002.2
+	* homeassistant-0.100.0_beta3
+	* bump beautifulsoup-4.8.1
+	
 2019-10-09 go ahead
 	* hack some home-assistant-cli-9999 deps good again
 	* bump frontend-20191002.1
