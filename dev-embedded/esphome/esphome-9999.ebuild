@@ -38,7 +38,7 @@ DEPEND="${REDEPEND}
 	>=www-servers/tornado-5.1.1[${PYTHON_USEDEP}]
 	>=dev-embedded/esptool-2.6[${PYTHON_USEDEP}]
 	>=dev-python/typing-3.6.6[${PYTHON_USEDEP}]
-	<dev-python/protobuf-3.8[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-3.7[${PYTHON_USEDEP}]
 	<dev-python/protobuf-3.8[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	>=dev-python/ifaddr-0.1.6[${PYTHON_USEDEP}]
