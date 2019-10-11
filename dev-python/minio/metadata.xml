@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">minio</remote-id>
+    <maintainer status="unknown">
+      <email>dev@min.io</email>
+      <name>MinIO, Inc.</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
