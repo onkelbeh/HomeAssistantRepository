@@ -59,6 +59,7 @@
     <flag name="vera">add support for Vera Z-Wave Controller</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
+    <flag name="withings">add support for Withings Health API</flag>
     <flag name="wwlln">install support for World Wide Lightning Location Network</flag>
     <flag name="xknx">Asynchronous Library for the KNX protocol</flag>
     <flag name="zigbee">Support for ZHA/deconz based Zigbee/ZNet Devices</flag>
