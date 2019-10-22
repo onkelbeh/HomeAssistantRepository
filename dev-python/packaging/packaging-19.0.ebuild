@@ -27,10 +27,6 @@ DEPEND="
 	)
 "
 
-PATCHES=(
-	"${FILESDIR}/${PN}-16.8-distutils.patch"
-)
-
 python_test() {
 	py.test --capture=no --strict -v || die
 }
