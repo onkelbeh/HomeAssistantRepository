@@ -1,3 +1,35 @@
+2019-10-22 homeassistant-0.100.3
+	* bump homeassistant-0.100.3
+	* bump evohomeclient-0.3.4
+	* bump openwrt-luci-rpc-1.1.2
+	* bump pybotvac-0.0.17
+	* bump pysonos-0.0.24
+	* bump adguardhome-0.3.0
+	* bump abodepy-0.16.6
+	* bump abodepy-0.16.5
+	* bump mypy-0.740
+	* bump homematicip-0.10.13
+	* bump astroid-2.3.2
+	* bump pylint-2.4.3
+	* bump keyring-19.2.0
+	* add pymochad-0.2.0
+	* bump pymfy-0.6.0
+	* bump cryptography-2.8
+	* bump numpy-1.17.3
+	* bump clearpasspy-1.1.3
+	* add clearpasspy-1.0.2
+	* bump hdate-0.9.1
+	* bump geniushub-client-0.6.28
+	* bump androidtv-0.0.32
+	* bump adb-shell-0.0.7
+	* bump RPi-GPIO-0.7.0
+	* bump youtube_dl-2019.10.16
+	* bump pyatmo-2.3.2
+	* bump homeassistant-0.100.2
+	* fix a esphome-1.13.6-r1 dep
+	* bump pyHik-0.2.4
+	* add protobuf dep
+
 2019-10-11 some integrations updated
 	* bump PyMata-2.20
 	* add PyRMVtransport-0.2.9
