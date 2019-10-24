@@ -1,3 +1,47 @@
+2019-10-25 homeassistant-0.101.0_beta1
+	* update homeassistant-0.101.0_beta1
+	* bump aioesphomeapi-2.4.2
+	* use beta flag in homeassistant-0.101.0_beta0
+	* esphome: use new ebuild version for git
+	* bump esphome-1.14.0_beta3
+	* sort iuse on cryptography-2.8
+	* use https:// for Homepage in some more ebuilds
+	* fix dev-python/pyobihai Manifest
+	* fix dev-python/packaging Manifest
+	* update esphome-1.14.0_beta2
+	* bump esptool-2.7
+	* bump protobuf-python-3.10.0
+	* bump protobuf-3.10.0
+	* bump protobuf-3.10.0
+	* bump tzlocal-2.0.0
+	* bump esphome-1.14.0_beta1
+	* bump twilio-6.32.0
+	* add pystride
+	* add sunwatcher-0.2.1
+	* bump PySyncThru-0.5.0
+	* bump pyhomematic-0.1.61
+	* bump plexauth-0.0.5
+	* bump OPi-GPIO-0.4.0
+	* bump Mastodon-py-1.5.0
+	* homeassistant-0.101.0_beta0
+	* bump frontend-20191023.0
+	* androidtv-0.0.32.ebuild fix adb-shell==0.0.7
+	* bump zigpy-homeassistant-0.10.0
+	* bump zigpy-zigate-0.5.0
+	* bump zigpy-xbee-homeassistant-0.6.0
+	* bump zigpy-homeassistant-0.9.0
+	* bump zigpy-deconz-0.6.0
+	* add aiofreepybox-0.0.8
+	* bump aioesphomeapi-2.4.0
+	* bump discord-py-1.2.4
+	* bump teslajsonpy-0.1.0
+	* add teslajsonpy-0.0.26
+	* add glances_api
+	* bump youtube_dl-2019.10.22
+	* bump pymyq-2.0.0
+	* Merge branch 'master' of matoro/HomeAssistantRepository into master
+	  - dev-python/packaging: remove no longer relevant patches
+
 2019-10-22 homeassistant-0.100.3
 	* bump homeassistant-0.100.3
 	* bump evohomeclient-0.3.4
