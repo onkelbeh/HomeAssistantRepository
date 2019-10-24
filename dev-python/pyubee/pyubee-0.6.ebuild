@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Simple library for getting stats from Ubee routers."
-HOMEPAGE="http://github.com/mzdrale/pyubee https://pypi.org/project/pyubee/"
+HOMEPAGE="https://github.com/mzdrale/pyubee https://pypi.org/project/pyubee/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE=""
