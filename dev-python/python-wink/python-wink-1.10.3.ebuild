@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Access Wink devices via the Wink API"
-HOMEPAGE="http://github.com/python-wink/python-wink https://pypi.org/project/python-wink/"
+HOMEPAGE="https://github.com/python-wink/python-wink https://pypi.org/project/python-wink/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
