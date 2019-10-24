@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="A library which communicates with ZiGate radios for zigpy"
-HOMEPAGE="http://github.com/doudz/zigpy-zigate https://pypi.org/project/zigpy-zigate/"
+HOMEPAGE="https://github.com/doudz/zigpy-zigate https://pypi.org/project/zigpy-zigate/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3.0"
