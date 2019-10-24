@@ -62,6 +62,7 @@
     <flag name="withings">add support for Withings Health API</flag>
     <flag name="wwlln">install support for World Wide Lightning Location Network</flag>
     <flag name="xknx">Asynchronous Library for the KNX protocol</flag>
+    <flag name="youtube">support for youtube_dl</flag>
     <flag name="zigbee">Support for ZHA/deconz based Zigbee/ZNet Devices</flag>
     <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
     <flag name="z-wave">Support for Z-Wave Devices (uncomplete)</flag>
