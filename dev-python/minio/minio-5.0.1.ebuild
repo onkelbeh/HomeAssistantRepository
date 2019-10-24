@@ -11,7 +11,7 @@ DESCRIPTION="MinIO Python Library for Amazon S3 Compatible Cloud Storage for Pyt
 HOMEPAGE="https://github.com/minio/minio-py https://pypi.org/project/minio/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache License 2.0"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
