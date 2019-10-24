@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="iLO automation from python or shell"
-HOMEPAGE="http://github.com/seveas/python-hpilo https://pypi.org/project/python-hpilo/"
+HOMEPAGE="https://github.com/seveas/python-hpilo https://pypi.org/project/python-hpilo/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE=""
