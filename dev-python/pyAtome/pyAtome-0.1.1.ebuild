@@ -11,7 +11,7 @@ DESCRIPTION="Get your energy consumption from Atome Linky device"
 HOMEPAGE="http://github.com/baqs/pyAtome/ https://pypi.org/project/pyAtome/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache Software License"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

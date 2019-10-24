@@ -11,7 +11,7 @@ DESCRIPTION="A robust and significantly extended implementation of JSONPath for 
 HOMEPAGE="https://github.com/kennknowles/python-jsonpath-rw https://pypi.org/project/jsonpath-rw/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache 2.0"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
