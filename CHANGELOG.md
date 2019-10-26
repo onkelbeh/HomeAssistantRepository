@@ -1,3 +1,15 @@
+2019-10-26 homeassistant-0.101.0_beta2
+	* bump huawei-lte-api-1.4.3
+	* remove olds: hass-nabucasa
+	* bump hass-nabucasa-0.23
+	* bump pytradfri-6.4.0
+	* bump python-slugify-4.0.0
+	* bump homeassistant-0.101.0_beta2
+	* clean up old frontends
+	* add plexwebsocket-0.0.1
+	* add pycsspeechtts-1.0.3
+	* bump frontend-20191025.0
+
 2019-10-25 homeassistant-0.101.0_beta1
 	* update homeassistant-0.101.0_beta1
 	* bump aioesphomeapi-2.4.2
