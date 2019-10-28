@@ -1,3 +1,14 @@
+2019-10-28 homeassistant-0.101.0_beta3
+	* bump homeassistant-0.101.0_beta3
+	* bump PlexAPI-3.2.0 and (older) PlexAPI-3.0.6
+	* bump avea-1.4
+	* bump python-miio-0.4.7
+	* bump plexwebsocket-0.0.3
+	* bump praw-6.4.0
+	* add unifiled
+	* add spiderpy
+	* add speedtest-cli-2.1.2
+
 2019-10-26 homeassistant-0.101.0_beta2
 	* bump huawei-lte-api-1.4.3
 	* remove olds: hass-nabucasa
