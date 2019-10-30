@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python2_7 python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{5,6,7} )
 PYTHON_REQ_USE="threads(+)"
 
 FORTRAN_NEEDED=lapack
@@ -39,9 +39,9 @@ BDEPEND="app-arch/unzip
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-PATCHES=(
-	"${FILESDIR}"/${PN}-1.15.4-no-hardcode-blas.patch
-)
+#PATCHES=(
+#	"${FILESDIR}"/${PN}-1.15.4-no-hardcode-blas.patch
+#)
 
 src_unpack() {
 	default
