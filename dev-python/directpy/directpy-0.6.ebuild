@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="A python library for interacting with DirecTV receivers"
-HOMEPAGE="http://github.com/sentry07/DirectPy https://pypi.org/project/directpy/"
+HOMEPAGE="https://github.com/sentry07/DirectPy https://pypi.org/project/directpy/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
