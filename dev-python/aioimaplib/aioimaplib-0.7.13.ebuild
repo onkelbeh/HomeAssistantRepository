@@ -11,7 +11,7 @@ DESCRIPTION="Python asyncio IMAP4rev1 client library"
 HOMEPAGE="https://github.com/bamthomas/aioimaplib https://pypi.org/project/aioimaplib/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL-3.0"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

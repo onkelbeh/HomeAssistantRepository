@@ -11,7 +11,7 @@ DESCRIPTION="API for Minut Point"
 HOMEPAGE="https://github.com/fredrike/pypoint https://pypi.org/project/pypoint/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

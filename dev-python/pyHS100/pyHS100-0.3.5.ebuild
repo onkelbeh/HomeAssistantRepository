@@ -11,7 +11,7 @@ DESCRIPTION="Interface for TPLink HS1xx plugs, HS2xx wall switches & LB1xx bulbs
 HOMEPAGE="https://github.com/GadgetReactor/pyHS100 https://pypi.org/project/pyHS100/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPLv3"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

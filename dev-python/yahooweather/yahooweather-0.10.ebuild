@@ -11,7 +11,7 @@ DESCRIPTION="a Python module that provides an interface to the Yahoo! Weather RS
 HOMEPAGE="https://github.com/pvizeli/yahooweather https://pypi.org/project/yahooweather/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD License"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

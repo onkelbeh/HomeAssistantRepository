@@ -11,7 +11,7 @@ DESCRIPTION="PRAW, an acronym for Python Reddit API Wrapper, is a python package
 HOMEPAGE="https://praw.readthedocs.org/ https://pypi.org/project/praw/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Simplified BSD License"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

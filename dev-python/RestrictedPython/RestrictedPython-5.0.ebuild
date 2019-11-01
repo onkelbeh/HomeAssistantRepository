@@ -14,7 +14,7 @@ DESCRIPTION="RestrictedPython is a defined subset of the Python language which a
 HOMEPAGE="https://pypi.python.org/pypi/RestrictedPython https://pypi.org/project/RestrictedPython/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
 
-LICENSE="ZPL 2.1"
+LICENSE="ZPL"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

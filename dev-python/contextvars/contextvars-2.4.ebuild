@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="PEP 567 Backport"
-HOMEPAGE="http://github.com/MagicStack/contextvars https://pypi.org/project/contextvars/"
+HOMEPAGE="https://github.com/MagicStack/contextvars https://pypi.org/project/contextvars/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"

@@ -11,7 +11,7 @@ DESCRIPTION="A library to control or get information about VLC using Telnet"
 HOMEPAGE="https://github.com/rodripf/python-telnet-vlc https://pypi.org/project/python-telnet-vlc/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

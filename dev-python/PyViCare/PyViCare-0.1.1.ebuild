@@ -11,7 +11,7 @@ DESCRIPTION="Library to communicate with the Viessmann ViCare API"
 HOMEPAGE="https://github.com/somm15/PyViCare https://pypi.org/project/PyViCare/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

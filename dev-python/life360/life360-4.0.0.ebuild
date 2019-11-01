@@ -11,7 +11,7 @@ DESCRIPTION="Life360 Communications Module"
 HOMEPAGE="https://github.com/pnbruckner/life360 https://pypi.org/project/life360/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

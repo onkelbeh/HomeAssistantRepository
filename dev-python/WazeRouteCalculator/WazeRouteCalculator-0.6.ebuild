@@ -12,7 +12,7 @@ DESCRIPTION="Calculate actual route time and distance with waze api."
 HOMEPAGE="https://github.com/kovacsbalu/WazeRouteCalculator https://pypi.org/project/WazeRouteCalculator/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GNU GPL v3"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

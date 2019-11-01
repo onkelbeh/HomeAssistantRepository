@@ -11,7 +11,7 @@ DESCRIPTION="Simple, lightweight, scalable Python API wrapper for the Cisco Spar
 HOMEPAGE="https://github.com/CiscoDevNet/ciscosparkapi https://pypi.org/project/ciscosparkapi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT; Copyright (c) 2016-2018 Cisco and/or its affiliates."
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

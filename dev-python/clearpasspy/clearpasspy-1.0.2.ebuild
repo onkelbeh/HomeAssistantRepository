@@ -11,7 +11,7 @@ DESCRIPTION="ClearPass API Python Library"
 HOMEPAGE="https://github.com/zemerick1/clearpasspy https://pypi.org/project/clearpasspy/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

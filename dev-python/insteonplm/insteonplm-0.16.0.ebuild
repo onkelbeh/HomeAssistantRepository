@@ -11,7 +11,7 @@ DESCRIPTION="Python API for controlling Insteon PowerLinc Modems"
 HOMEPAGE="https://github.com/nugget/python-insteonplm https://pypi.org/project/insteonplm/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT License"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

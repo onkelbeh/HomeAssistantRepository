@@ -13,7 +13,7 @@ HOMEPAGE="https://github.com/python/typing/blob/master/typing_extensions/README.
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
 #SRC_URI="https://files.pythonhosted.org/packages/fc/e6/3d2f306b12f01bde2861d67458d32c673e206d6fcc255537bf452db8f80c/typing_extensions-3.6.6.tar.gz -> ${P}.tar.gz"
 
-LICENSE="Python-2.0"
+LICENSE="PSF-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

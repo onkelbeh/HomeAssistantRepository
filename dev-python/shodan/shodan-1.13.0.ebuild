@@ -11,7 +11,7 @@ DESCRIPTION="Python library and command-line utility for Shodan (https://develop
 HOMEPAGE="https://github.com/achillean/shodan-python/tree/master https://pypi.org/project/shodan/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

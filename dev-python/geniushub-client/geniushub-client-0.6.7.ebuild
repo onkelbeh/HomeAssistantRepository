@@ -11,7 +11,7 @@ DESCRIPTION="A aiohttp-based client for Genius Hub systems"
 HOMEPAGE="https://github.com/zxdavb/geniushub-client https://pypi.org/project/geniushub-client/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

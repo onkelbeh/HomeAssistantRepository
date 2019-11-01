@@ -11,7 +11,7 @@ DESCRIPTION="Library to communicate with SAJ inverters"
 HOMEPAGE="https://github.com/fredericvl/pysaj https://pypi.org/project/pysaj/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

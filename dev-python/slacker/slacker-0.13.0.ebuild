@@ -11,7 +11,7 @@ DESCRIPTION="Slack API client"
 HOMEPAGE="http://github.com/os/slacker/ https://pypi.org/project/slacker/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="http://www.apache.org/licenses/LICENSE-2.0"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

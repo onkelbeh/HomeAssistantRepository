@@ -11,7 +11,7 @@ DESCRIPTION="Module to interact with Cisco Mobility Express APIs to fetch connec
 HOMEPAGE="https://github.com/fbradyirl/ciscomobilityexpress https://pypi.org/project/ciscomobilityexpress/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT license"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

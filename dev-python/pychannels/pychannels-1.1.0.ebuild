@@ -11,7 +11,7 @@ DESCRIPTION="API client for the Channels app - https://getchannels.com"
 HOMEPAGE="https://github.com/fancybits/pychannels https://pypi.org/project/pychannels/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="The MIT License"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
