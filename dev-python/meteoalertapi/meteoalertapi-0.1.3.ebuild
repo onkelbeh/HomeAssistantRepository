@@ -11,7 +11,7 @@ DESCRIPTION="A small api to get alerting messages from extreme weather in Europe
 HOMEPAGE="https://github.com/rolfberkenbosch/meteoalarm-api https://pypi.org/project/meteoalertapi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

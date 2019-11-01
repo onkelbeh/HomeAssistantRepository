@@ -11,7 +11,7 @@ DESCRIPTION="Eliq Online API Library"
 HOMEPAGE="https://github.com/6d66/eliq/ https://pypi.org/project/eliqonline/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

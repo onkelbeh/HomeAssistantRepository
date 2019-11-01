@@ -11,7 +11,7 @@ DESCRIPTION="Solax inverter API client"
 HOMEPAGE="https://github.com/squishykid/solax https://pypi.org/project/solax/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

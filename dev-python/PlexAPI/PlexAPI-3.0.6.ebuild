@@ -11,7 +11,7 @@ DESCRIPTION="Python bindings for the Plex API."
 HOMEPAGE="https://github.com/pkkid/python-plexapi https://pypi.org/project/PlexAPI/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

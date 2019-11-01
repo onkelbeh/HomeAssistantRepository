@@ -11,7 +11,7 @@ DESCRIPTION="Provides an API for requesting information from taps-aff.co.uk"
 HOMEPAGE="https://github.com/bazwilliams/python-taps-aff https://pypi.org/project/tapsaff/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

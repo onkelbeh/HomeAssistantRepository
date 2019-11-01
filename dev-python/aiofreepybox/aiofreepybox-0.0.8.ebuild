@@ -11,7 +11,7 @@ DESCRIPTION="Provides asynchronous authentication and access to Freebox servers"
 HOMEPAGE="https://github.com/stilllman/aiofreepybox/tree/aiofreepybox https://pypi.org/project/aiofreepybox/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

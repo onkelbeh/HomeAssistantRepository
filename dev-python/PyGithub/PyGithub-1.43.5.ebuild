@@ -11,7 +11,7 @@ DESCRIPTION="Use the full Github API v3"
 HOMEPAGE="http://pygithub.readthedocs.io/en/latest/ https://pypi.org/project/PyGithub/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="LGPL"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

@@ -14,7 +14,7 @@ SRC_URI="https://github.com/wildfoundry/dataplicity-lomond/archive/v${PV}.tar.gz
 MY_PN="lomond"
 MY_P="${MY_PN}-${PV/_beta/b}"
 
-LICENSE=""
+LICENSE="BSD-4"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
