@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Library implementing EZSP"
-HOMEPAGE="http://github.com/zigpy/bellows https://pypi.org/project/bellows-homeassistant/"
+HOMEPAGE="https://github.com/zigpy/bellows https://pypi.org/project/bellows-homeassistant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3.0"
