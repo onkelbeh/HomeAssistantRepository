@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="A remote control client for Ubiquiti's UVC NVR"
-HOMEPAGE="http://github.org/kk7ds/uvcclient https://pypi.org/project/uvcclient/"
+HOMEPAGE="https://github.com/kk7ds/uvcclient https://pypi.org/project/uvcclient/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE=""
