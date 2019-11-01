@@ -14,7 +14,7 @@ DESCRIPTION="API wrapper to communicate locally with SolarEdge Inverters"
 HOMEPAGE="https://github.com/drobtravels/solaredge-local https://pypi.org/project/solaredge-local/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="MIT License"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

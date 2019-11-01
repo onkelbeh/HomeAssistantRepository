@@ -11,7 +11,7 @@ DESCRIPTION="A library that handling with ffmpeg for home-assistant"
 HOMEPAGE="https://github.com/pvizeli/ha-ffmpeg https://pypi.org/project/ha-ffmpeg/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD License"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

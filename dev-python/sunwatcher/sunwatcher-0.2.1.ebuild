@@ -11,7 +11,7 @@ DESCRIPTION="Binding to SolarLog HTTP API"
 HOMEPAGE="https://bitbucket.org/Lavode/sunwatcher https://pypi.org/project/sunwatcher/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache License 2.0"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

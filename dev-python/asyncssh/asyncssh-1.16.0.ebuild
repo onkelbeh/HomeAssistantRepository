@@ -11,7 +11,7 @@ DESCRIPTION="AsyncSSH: Asynchronous SSHv2 client and server library"
 HOMEPAGE="http://asyncssh.timeheart.net https://pypi.org/project/asyncssh/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Eclipse Public License v2.0"
+LICENSE="ECL-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

@@ -11,7 +11,7 @@ DESCRIPTION="Pure Python reimplementation of pcapy. This package is API compatib
 HOMEPAGE="http://bitbucket.org/viraptor/pure-pcapy/overview https://pypi.org/project/pure-pcapy3/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Simplified BSD"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

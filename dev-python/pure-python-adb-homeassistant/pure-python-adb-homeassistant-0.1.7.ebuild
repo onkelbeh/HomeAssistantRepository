@@ -11,7 +11,7 @@ DESCRIPTION="Pure python implementation of the adb client"
 HOMEPAGE="https://github.com/Swind/pure-python-adb https://pypi.org/project/pure-python-adb-homeassistant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.dev0.tar.gz"
 
-LICENSE="MIT license"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

@@ -11,7 +11,7 @@ DESCRIPTION="PyTado from chrism0dwk, modfied by w.malgadey"
 HOMEPAGE="https://github.com/wmalgadey/PyTado https://pypi.org/project/python-tado/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL3"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

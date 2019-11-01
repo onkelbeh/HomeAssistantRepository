@@ -11,7 +11,7 @@ DESCRIPTION="Library for the Nokia Health API"
 HOMEPAGE="https://github.com/orcasgit/python-nokia https://pypi.org/project/nokia/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT License"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

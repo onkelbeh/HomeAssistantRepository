@@ -11,7 +11,7 @@ DESCRIPTION="Pure python implementation of the adb client"
 HOMEPAGE="https://github.com/Swind/pure-python-adb https://pypi.org/project/pure-python-adb/"
 SRC_URI="https://github.com/Swind/pure-python-adb/archive/v${PVR}-dev.tar.gz -> ${P}.tar.gz"
 
-LICENSE="MIT license"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

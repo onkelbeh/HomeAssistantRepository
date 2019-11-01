@@ -11,7 +11,7 @@ DESCRIPTION="Bindings to the Linux input handling subsystem"
 HOMEPAGE="https://github.com/gvalkov/python-evdev https://pypi.org/project/evdev/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Revised BSD License"
+LICENSE="BSD-4"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

@@ -11,7 +11,7 @@ DESCRIPTION="A thin Python Wrapper for the Dark Sky (formerly Forecast.io) weath
 HOMEPAGE="http://zeevgilovitz.com/python-forecast.io/ https://pypi.org/project/python-forecastio/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD 2-clause"
+LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

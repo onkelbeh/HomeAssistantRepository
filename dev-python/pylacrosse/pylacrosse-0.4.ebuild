@@ -11,7 +11,7 @@ DESCRIPTION="LaCrosse sensor library"
 HOMEPAGE="http://github.com/hthiery/python-lacrosse https://pypi.org/project/pylacrosse/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="LGPLv2+"
+LICENSE="LGPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

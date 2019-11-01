@@ -11,7 +11,7 @@ DESCRIPTION="Python wrapper implementation for Amcrest cameras."
 HOMEPAGE="http://github.com/tchellomello/python-amcrest https://pypi.org/project/amcrest/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPLv2"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

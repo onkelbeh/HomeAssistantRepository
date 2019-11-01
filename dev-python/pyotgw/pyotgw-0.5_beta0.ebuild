@@ -13,7 +13,7 @@ DESCRIPTION="A library to interface with the opentherm gateway through serial or
 HOMEPAGE="https://github.com/mvn23/pyotgw https://pypi.org/project/pyotgw/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPLv3+"
+LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
