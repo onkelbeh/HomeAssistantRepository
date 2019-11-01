@@ -26,9 +26,6 @@ DEPEND="${RDEPEND}
 	test? (
 		>=dev-python/fs-0.5[${PYTHON_USEDEP}]
 		<dev-python/fs-2[${PYTHON_USEDEP}]
-		dev-python/gdata[$(python_gen_usedep 'python2*')]
-		dev-python/keyczar[$(python_gen_usedep 'python2*')]
-		dev-python/pycrypto[$(python_gen_usedep 'python*')]
 		>=dev-python/pytest-2.8[${PYTHON_USEDEP}]
 	)"
 
