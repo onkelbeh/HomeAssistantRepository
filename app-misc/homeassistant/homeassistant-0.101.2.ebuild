@@ -105,7 +105,7 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/sqlalchemy-1.3.10[${PYTHON_USEDEP}]
 	~dev-python/transitions-0.6.9[${PYTHON_USEDEP}]
 	>=dev-python/typing-3.6.4-r1[${PYTHON_USEDEP}]
-	~dev-python/tzlocal-1.5.1[${PYTHON_USEDEP}]
+	>=dev-python/tzlocal-1.5.1[${PYTHON_USEDEP}]
 	>=dev-python/ua-parser-0.8.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.25.3[${PYTHON_USEDEP}]
 	>=dev-python/user-agents-2.0[${PYTHON_USEDEP}]
