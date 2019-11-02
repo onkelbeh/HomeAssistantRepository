@@ -11,7 +11,7 @@ DESCRIPTION="Python implementation of MikroTik RouterOS API"
 HOMEPAGE="https://github.com/luqasz/librouteros https://pypi.org/project/librouteros/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL-2.0-only"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

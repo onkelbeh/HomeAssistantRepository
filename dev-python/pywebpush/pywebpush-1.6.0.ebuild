@@ -11,7 +11,7 @@ DESCRIPTION="WebPush publication library"
 HOMEPAGE="https://github.com/web-push-libs/pywebpush https://pypi.org/project/pywebpush/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MPL2"
+LICENSE="MPL-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

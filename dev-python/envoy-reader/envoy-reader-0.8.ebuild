@@ -12,7 +12,7 @@ DESCRIPTION="A program to read from an Enphase Envoy on the local network"
 HOMEPAGE="https://github.com/jesserizzo/envoy_reader https://pypi.org/project/envoy-reader/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

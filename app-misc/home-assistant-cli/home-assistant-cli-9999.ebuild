@@ -21,15 +21,15 @@ SLOT="0"
 KEYWORDS="amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
 		 ~dev-python/click-log-0.3.2[${PYTHON_USEDEP}]
 		 ~dev-python/click-7.0[${PYTHON_USEDEP}]
 		 ~dev-python/dateparser-0.7.1[${PYTHON_USEDEP}]
 		 >=dev-python/jinja-2.10[${PYTHON_USEDEP}]
 		 ~dev-python/jsonpath-rw-1.4.0[${PYTHON_USEDEP}]
 		 ~dev-python/netdisco-2.6.0[${PYTHON_USEDEP}]
-		 ~dev-python/regex-2019.04.14[${PYTHON_USEDEP}]
-		 >=dev-python/ruamel-yaml-0.15.96[${PYTHON_USEDEP}]
+		 ~dev-python/regex-2019.08.19[${PYTHON_USEDEP}]
+		 >=dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 		 ~dev-python/requests-2.22.0[${PYTHON_USEDEP}]
 		 ~dev-python/tabulate-0.8.3[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
@@ -57,7 +57,7 @@ DEPEND="${REDEPEND}
 src_prepare() {
 	eapply_user
 	cd "${S}"
-	sed -i -e "s/'ruamel.yaml==0.15.96'/'ruamel.yaml>=0.15.96'/" setup.py || die "Sed version helper failed!"
+	sed -i -e "s/'ruamel.yaml>=0.16.5,<0.17'/'ruamel.yaml>=0.15.96'/" setup.py || die "Sed version helper failed!"
 }
 
 python_test() {

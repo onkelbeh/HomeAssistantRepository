@@ -11,7 +11,7 @@ DESCRIPTION="Python API for controlling Zengge LED bulbs"
 HOMEPAGE="http://github.com/mjg59/python-zengge https://pypi.org/project/zengge/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

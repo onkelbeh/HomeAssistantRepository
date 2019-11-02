@@ -11,7 +11,7 @@ DESCRIPTION="Python modules to use Fortigate APIs"
 HOMEPAGE="https://github.com/fortinet-solutions-cse/fortiosapi https://pypi.org/project/fortiosapi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

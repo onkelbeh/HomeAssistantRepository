@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="This project implements the apcaccess tool in pure Python and provides"
-HOMEPAGE=" https://pypi.org/project/apcaccess/"
+HOMEPAGE="https://pypi.org/project/apcaccess/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE=""

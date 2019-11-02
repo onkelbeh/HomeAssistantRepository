@@ -13,7 +13,7 @@ DESCRIPTION="Query a Quantum Gateway"
 HOMEPAGE="https://github.com/cisasteelersfan/quantum_gateway https://pypi.org/project/quantum-gateway/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

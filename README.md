@@ -39,9 +39,9 @@ They mix up python code with some c++, currently i have no idea how to handle th
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because i _always_ have more than one repo active by default:
 ```
 [HomeAssistantRepository]
-location = /usr/[local/]portage/homeassistant
+location = /usr/portage/homeassistant
 sync-type = git
-sync-uri = https://git.in.edevau.net/onkelbeh/HomeAssistantRepository.git
+sync-uri = https://git.edevau.net/onkelbeh/HomeAssistantRepository.git
 auto-sync = yes
 sync-rsync-verify-metamanifest = no
 ```
@@ -111,7 +111,7 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 The Repository itself is released under GNU General Public License v3.0, all work on the depending components under the Licenses they came from, which could be (as my grep told me):
 
  - "Apache-2.0 BSD"
- - "Apache License 2.0"
+ - "Apache-2.0"
  - "BSD"
  - "BSD-2"
  - "BSD-2 Unlicense"

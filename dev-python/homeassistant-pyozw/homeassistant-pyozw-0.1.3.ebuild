@@ -15,7 +15,7 @@ HOMEPAGE="https://home-assistant.io/ https://pypi.org/project/homeassistant-pyoz
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.zip -> ${P}.zip
 		 https://raw.githubusercontent.com/home-assistant/python-openzwave/hass/archives/open-zwave-hass-${PV}.zip"
 
-LICENSE="GPLv3+"
+LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

@@ -14,7 +14,7 @@ DESCRIPTION="HomeKit Python"
 HOMEPAGE="https://github.com/jlusiardi/homekit_python https://pypi.org/project/homekit/"
 SRC_URI="https://github.com/jlusiardi/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE=""
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

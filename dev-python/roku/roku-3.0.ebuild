@@ -11,7 +11,7 @@ DESCRIPTION="Client for the Roku media player"
 HOMEPAGE="https://github.com/jcarbaugh/python-roku https://pypi.org/project/roku/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD License"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

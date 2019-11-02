@@ -11,7 +11,7 @@ DESCRIPTION="DIDL-Lite (Digital Item Declaration Language) tools for Python"
 HOMEPAGE=" https://pypi.org/project/python-didl-lite/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

@@ -11,7 +11,7 @@ DESCRIPTION="Growl Notification Transport Protocol for Python"
 HOMEPAGE="http://github.com/kfdm/gntp/ https://pypi.org/project/gntp/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="UNKNOWN"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

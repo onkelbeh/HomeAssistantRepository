@@ -1,3 +1,337 @@
+2019-10-28 homeassistant-0.101.0_beta3
+	* bump homeassistant-0.101.0_beta3
+	* bump PlexAPI-3.2.0 and (older) PlexAPI-3.0.6
+	* bump avea-1.4
+	* bump python-miio-0.4.7
+	* bump plexwebsocket-0.0.3
+	* bump praw-6.4.0
+	* add unifiled
+	* add spiderpy
+	* add speedtest-cli-2.1.2
+
+2019-10-26 homeassistant-0.101.0_beta2
+	* bump huawei-lte-api-1.4.3
+	* remove olds: hass-nabucasa
+	* bump hass-nabucasa-0.23
+	* bump pytradfri-6.4.0
+	* bump python-slugify-4.0.0
+	* bump homeassistant-0.101.0_beta2
+	* clean up old frontends
+	* add plexwebsocket-0.0.1
+	* add pycsspeechtts-1.0.3
+	* bump frontend-20191025.0
+
+2019-10-25 homeassistant-0.101.0_beta1
+	* update homeassistant-0.101.0_beta1
+	* bump aioesphomeapi-2.4.2
+	* use beta flag in homeassistant-0.101.0_beta0
+	* esphome: use new ebuild version for git
+	* bump esphome-1.14.0_beta3
+	* sort iuse on cryptography-2.8
+	* use https:// for Homepage in some more ebuilds
+	* fix dev-python/pyobihai Manifest
+	* fix dev-python/packaging Manifest
+	* update esphome-1.14.0_beta2
+	* bump esptool-2.7
+	* bump protobuf-python-3.10.0
+	* bump protobuf-3.10.0
+	* bump protobuf-3.10.0
+	* bump tzlocal-2.0.0
+	* bump esphome-1.14.0_beta1
+	* bump twilio-6.32.0
+	* add pystride
+	* add sunwatcher-0.2.1
+	* bump PySyncThru-0.5.0
+	* bump pyhomematic-0.1.61
+	* bump plexauth-0.0.5
+	* bump OPi-GPIO-0.4.0
+	* bump Mastodon-py-1.5.0
+	* homeassistant-0.101.0_beta0
+	* bump frontend-20191023.0
+	* androidtv-0.0.32.ebuild fix adb-shell==0.0.7
+	* bump zigpy-homeassistant-0.10.0
+	* bump zigpy-zigate-0.5.0
+	* bump zigpy-xbee-homeassistant-0.6.0
+	* bump zigpy-homeassistant-0.9.0
+	* bump zigpy-deconz-0.6.0
+	* add aiofreepybox-0.0.8
+	* bump aioesphomeapi-2.4.0
+	* bump discord-py-1.2.4
+	* bump teslajsonpy-0.1.0
+	* add teslajsonpy-0.0.26
+	* add glances_api
+	* bump youtube_dl-2019.10.22
+	* bump pymyq-2.0.0
+	* Merge branch 'master' of matoro/HomeAssistantRepository into master
+	  - dev-python/packaging: remove no longer relevant patches
+
+2019-10-22 homeassistant-0.100.3
+	* bump homeassistant-0.100.3
+	* bump evohomeclient-0.3.4
+	* bump openwrt-luci-rpc-1.1.2
+	* bump pybotvac-0.0.17
+	* bump pysonos-0.0.24
+	* bump adguardhome-0.3.0
+	* bump abodepy-0.16.6
+	* bump abodepy-0.16.5
+	* bump mypy-0.740
+	* bump homematicip-0.10.13
+	* bump astroid-2.3.2
+	* bump pylint-2.4.3
+	* bump keyring-19.2.0
+	* add pymochad-0.2.0
+	* bump pymfy-0.6.0
+	* bump cryptography-2.8
+	* bump numpy-1.17.3
+	* bump clearpasspy-1.1.3
+	* add clearpasspy-1.0.2
+	* bump hdate-0.9.1
+	* bump geniushub-client-0.6.28
+	* bump androidtv-0.0.32
+	* bump adb-shell-0.0.7
+	* bump RPi-GPIO-0.7.0
+	* bump youtube_dl-2019.10.16
+	* bump pyatmo-2.3.2
+	* bump homeassistant-0.100.2
+	* fix a esphome-1.13.6-r1 dep
+	* bump pyHik-0.2.4
+	* add protobuf dep
+
+2019-10-11 some integrations updated
+	* bump PyMata-2.20
+	* add PyRMVtransport-0.2.9
+	* bump python-slugify-3.0.6
+	* bump sqlalchemy-1.3.10
+	* bump aiohttp-3.6.2
+	* add python-songpal-0.11.1
+	* add nokia-1.2.0
+	* bump av-6.2.0
+	* add av-6.1.2
+	* bump broadlink-0.12.0
+	* add (old) datadog-0.15.0
+	* add datadog-0.30.0
+	* add directpy-0.6
+	* add minio-4.0.9 & minio-5.0.1
+	* add nuheat-0.3.0
+	* add pmsensor-0.4
+	* bump pydeconz-64
+	* add pyfido-2.1.1
+	* add pyfritzhome-0.4.[0,2]
+	* add pyfttt-0.3.2
+	* add pykira-0.1.1
+	* add pytraccar-0.9.0
+	* add stringcase-1.2.0
+	* add (older) tplink-0.2.1
+	* add (older) websockets-6.0
+	* add yahooweather-0.10
+	* bump zigpy-xbee-homeassistant-0.5.0
+	* remove beta tags from 0.100.1
+
+2019-10-10 homeassistant-0.100.1
+	* homeassistant-0.100.1
+	* remove old homeassistant ebuilds
+	* bump zigpy-zigate-0.4.1
+	* frontend-20191002.2
+	* homeassistant-0.100.0_beta3
+	* bump beautifulsoup-4.8.1
+	
+2019-10-09 go ahead
+	* hack some home-assistant-cli-9999 deps good again
+	* bump frontend-20191002.1
+	* remove old homeassistant ebuild to match already deleted frontends
+	* bump SQLAlchemy-1.3.9
+	* bump certifi-2019.9.11
+	* bump pytz-2019.3
+	* bump ruamel-yaml-0.16.5
+	* bump text-unidecode-1.3
+	* allow newer aiohttp
+	* bump homeassistant-0.100.0_beta2
+	* add todoist-python-8.0.2
+	* bump astroid-2.3.1
+	* bump pylint-2.4.2
+	* bump pybotvac-0.0.16
+	* homeassistant-0.100.0_beta1
+	* python-miio-0.4.6
+	* update androidtv-0.0.30
+	* bump adb-shell-0.0.4
+	* add pyhiveapi-0.2.19.3
+
+2019-10-05 DIV MODULES ADDED
+	* add airly-0.0.2
+	* add connect-box-0.2.5
+	* add pyotgw-0.5_beta0
+
+2019-10-03 homeassistant-0.100.0_beta0
+	* bump bellows-homeassistant-0.10.0
+	* bump hass-nabucasa-0.22
+	* bump xknx-0.11.2
+	* bump gpiozero-1.5.1
+	* bump zigpy-deconz-0.5.0
+	* bump home-assistant-frontend-20191002.0
+	* bump voluptuous-serialize-2.3.0
+	* bump geniushub-client-0.6.26
+	* bump boto3-1.9.233
+	* bump pyvera-0.3.6
+	* add adb-shell-0.0.3
+	* bump androidtv-0.0.29
+	* bump shodan-1.19.0
+	* bump python-ecobee-api-0.1.4
+	* add pysoma-0.0.10
+	* bump zha-quirks-0.0.26
+
+2019-10-02 div python modules updated
+	* add pysaj-0.0.9
+	* bump incomfort-client-0.3.5
+	* bump pytest-5.2.0
+	* add plexauth-0.0.4
+	* add PlexAPI-3.1.0
+	* bump meteoalertapi-0.1.6
+	* bump attrs-19.2.0
+	* bump python-ecobee-api-0.1.3
+
+2019-10-01 div python modules updated
+	* bump python-ecobee-api-0.1.2
+	* bump zigpy-zigate-0.4.0
+	* bump zha-quirks-0.0.25
+	* bump homematicip-0.10.11
+	* bump pyotp-2.3.0
+	* bump sendgrid-6.1.0
+	* bump pylutron-0.2.5
+	* bump requests-mock-1.7.0
+	* bump shodan-1.17.0
+	* bump iperf3-0.1.11
+	* bump pytest-5.1.3
+	* bump python-slugify-3.0.4
+	* add python-whois-0.7.2
+	* bump importlib-metadata-0.23
+	* bump pynws-0.8.1
+	* bump simplisafe-python-5.0.1
+	* bump aiowwlln-2.0.2
+	* bump openwrt-luci-rpc-1.1.1
+	* add python-izone-1.1.1
+	* add influxdb-5.2.3
+	* bump RestrictedPython-5.0
+	* bump aiohttp-3.6.1
+	* bump solax-0.2.2
+	* bump pre-commit-1.18.3
+	* bump aiohttp-3.6.0
+	* bump pytest-5.1.2
+
+2019-09-30 homeassistant-0.99.3
+	* some more experimental esphome (without python2.7)
+	  - bump platformio-4.0.3
+	  - bump semantic_version-2.8.2
+	  - bump tabulate-0.8.5
+	  - bump pyelftools-0.25
+	* update repo location in README.md
+	* (github/master) spread klowe0100's patch
+	* homeassistant-0.99.3
+	* bump frontend-20190919.1
+	* bump zigpy-zigate-0.3.1
+	* Add klowe0100' Idea (merge pull request #5 from klowe0100/esphome-python3 uncleanly):
+	  - ebuild for latest esphome mainline dev branch
+	  - Bump platformio (4.0.1) to remove python2 dependency
+	  - Update version specifier to unblock installation
+	  - Fix minor but blocking typo
+
+2019-09-21 homeassistant-0.99.2
+	* update homeassistant-0.99.2
+	* bump zigpy-homeassistant-0.8.0
+	* bump frontend-20190919.0
+	* update homeassistant-0.99.1
+	* add pyobihai-1.1.0
+	* bump pytradfri-6.3.1
+	* update homeassistant-0.99.0
+	* bump zha-quirks-0.0.23
+	* bump youtube_dl-2019.9.1
+	* bump sqlalchemy-1.3.8
+	* bump PyChromecast-4.0.1
+	* bump pyTibber-0.11.72
+	* add libpyvivotek-0.2.1
+	* geniushub-client-0.6.13
+	* bump frontend-20190918.1
+
+2019-09-10 homeassistant-0.98.5
+	* add (old) geniushub-client-0.6.7
+	* add iaqualink-0.2.9
+	* add PyViCare-0.1.1
+	* bump aiowwlln-2.0.1
+	* bump androidtv-0.0.27
+	* bump ZHA
+	* bump geniushub-client-0.6.11
+	* bump async-upnp-client-0.14.11
+	* add growattServer-0.0.1
+	* homeassistant-0.98.5
+	* homeassistant-0.98.4
+
+2019-09-06 homeassistant-0.98.3
+	* add pyAtome-0.1.1
+	* bump frontend-20190904.0
+	* bump numpy-1.17.1
+	* add goslide-api
+	* add PyISY-1.1.2
+	* bump pylinky-0.4.0
+	* bump zigpy-zigate-0.2.0
+	* bump locationsharinglib-4.1.0
+	* bump androidtv-0.0.24
+	* bump denonavr-0.7.10
+	* update homeassistant-0.98.3
+	* update pyhaversion-3.1.0
+	* update aioharmony-0.1.13
+
+2019-09-02 homeassistant-0.98.2
+	* bump homeassistant-0.98.2
+
+2019-08-31 homeassistant-0.98.1
+	* bump homeassistant-0.98.1
+
+2019-08-29 homeassistant-0.98.0
+	* bump homeassistant-0.98.0
+
+2019-08-28 too lazy to push 0.98.0_beta2
+	* bump pyatv-0.3.13
+	* bump packaging-19.1
+	* bump huawei-lte-api-1.3.0
+	* homeassistant-0.98.0_beta2
+	* bump frontend-20190805.0
+	* bump zha-quirks-0.0.22
+	* bump pyheos-0.6.0
+	* bump Ambiclimate-0.2.1
+	* add pynws-0.7.4
+	* bump androidtv-0.0.24
+	* home-assistant-0.98.0b1
+	* bump frontend-20190822.0
+
+2019-08-22 homeassistant-0.98.0_beta0
+	* bump frontend-20190822.0
+
+2019-08-22 homeassistant-0.98.0_beta0
+	* bump pyyaml-5.1.2
+	* allow voluptuous > 0.11.1
+	* fix numpy-1.17.0 PYTHON_COMPAT > 3.5
+	* loosen blinkpy-0.14.1 deps
+	* bump beautifulsoup-4.8.0
+	* bump frontend-20190821.0
+	* homeassistant-0.98.0_beta0
+	* bump pytest-5.1.1
+	* Upgrade pydocstyle to 4.0.1
+	* bump bimmer-connected-0.6.0
+	* bump zigpy/zha/bellows deps
+	* bump frontend-20190820.1
+
+2019-08-20 div updates
+	* bump geniushub-client
+	* add pylacrosse
+	* add (currently used) pyrainbird-0.1.6
+	* add pyrainbird-0.2.1
+	* bump frontend-20190820.0
+	* bump pysma-0.3.4
+	* add & bump tensorflow-1.13.2
+	* add keba-kecontact-0.2.0
+	* bump hass-nabucasa-0.17
+	* add older python-eq3bt-0.1.9
+	* bump PyXiaomiGateway-0.12.4
+
 2019-08-18 div updates
 	* remove backup file
 	* did a manifest-check

@@ -12,7 +12,7 @@ DESCRIPTION="A package to access the co2signal API"
 HOMEPAGE="https://github.com/danielsjf/CO2Signal https://pypi.org/project/CO2Signal/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Creative Commons Attribution-Noncommercial-Share Alike license"
+LICENSE="CC-BY-NC-SA-4.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
