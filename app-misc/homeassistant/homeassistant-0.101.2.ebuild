@@ -27,7 +27,6 @@ RDEPEND="${PYTHON_DEPS}
 	dev-db/sqlite
 	dev-libs/libfastjson
 	>=dev-libs/xerces-c-3.1.4-r1
-	>=dev-libs/xml-security-c-1.7.3
 	~dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 	~dev-python/astral-1.10.1[${PYTHON_USEDEP}]
 	~dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
