@@ -133,8 +133,7 @@ RDEPEND="${PYTHON_DEPS}
 	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
 	denonavr? ( ~dev-python/denonavr-0.7.10[${PYTHON_USEDEP}] )
 	enigma? ( ~dev-python/openwebifpy-3.1.1[${PYTHON_USEDEP}] )
-	esphome? ( dev-embedded/esphome
-			   ~dev-python/aioesphomeapi-2.4.2[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-2.4.2[${PYTHON_USEDEP}] )
 	everlights? ( ~dev-python/pyeverlights-0.1.0[${PYTHON_USEDEP}] )
 	envoy? ( ~dev-python/envoy-reader-0.8.6[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
