@@ -3,14 +3,15 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_7 )
+PYTHON_COMPAT=( python3_{6,7} )
 
-inherit python-single-r1 user readme.gentoo-r1 eutils # distutils-r1
+#inherit python-single-r1 user readme.gentoo-r1 eutils # distutils-r1
+inherit user readme.gentoo-r1 eutils distutils-r1
 
 MY_P=${P/_beta/b}
 MY_PV=${PV/_beta/b}
 
-DESCRIPTION="Open-source home automation platform running on Python 3.6"
+DESCRIPTION="Open-source home automation platform running on Python on 3.7 (and 3.6 for a short time)"
 HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistantRepository"
 SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
 RESTRICT="mirror"
@@ -22,7 +23,7 @@ IUSE="abode androidtv asuswrt atmo atv aurora avea buienradar cli ciscomobilitye
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
-	>=dev-lang/python-3.6.1
+	>=dev-lang/python-3.7.5-r1
 	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
@@ -44,7 +45,7 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/python-slugify-3.0.6[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-5.1.2[${PYTHON_USEDEP}]
-	=dev-python/requests-2.22.0[${PYTHON_USEDEP}]
+	=dev-python/requests-2.22.0-r1[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.3.0[${PYTHON_USEDEP}]
@@ -55,7 +56,6 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/beautifulsoup-4.8.1[${PYTHON_USEDEP}]
 	~dev-python/blinkpy-0.14.2[${PYTHON_USEDEP}]
 	>=dev-python/boto3-1.9.233[${PYTHON_USEDEP}]
-	>=dev-python/botocore-1.12.115[${PYTHON_USEDEP}]
 	~dev-python/caldav-0.6.1[${PYTHON_USEDEP}]
 	>=dev-python/cdu-0.1.3[${PYTHON_USEDEP}]
 	~dev-python/cffi-1.12.2[${PYTHON_USEDEP}]
@@ -93,7 +93,7 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/pyhaversion-3.1.0[${PYTHON_USEDEP}]
 	>=dev-python/pyopenssl-19.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pyotp-2.3.0[${PYTHON_USEDEP}]
-	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
+	>=dev-python/PyQRCode-1.2.1[${PYTHON_USEDEP}]
 	>=dev-python/pyrfc3339-1.1[${PYTHON_USEDEP}]
 	~dev-python/pysnmp-4.4.11[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.8.0[${PYTHON_USEDEP}]
@@ -108,7 +108,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/tzlocal-1.5.1[${PYTHON_USEDEP}]
 	>=dev-python/ua-parser-0.8.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.25.3[${PYTHON_USEDEP}]
-	>=dev-python/user-agents-2.0[${PYTHON_USEDEP}]
+	=dev-python/user-agents-2.0-r1[${PYTHON_USEDEP}]
 	>=dev-python/vobject-0.9.6.1[${PYTHON_USEDEP}]
 	>=dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}]
 	=dev-python/warrant-0.6.1-r1[${PYTHON_USEDEP}]
