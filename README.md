@@ -11,7 +11,7 @@ https://github.com/home-assistant/home-assistant
 
 This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1069 ebuilds in > 700 packages listed.
 
-[Python 3.7 Mogration](https://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/master/python3_7.md).
+[Python 3.7 Migration](https://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/master/python3_7.md).
 
 Aside from Home Assistant it contains some related ebuilds I use with my Home Assistant:
 
@@ -51,8 +51,7 @@ $ cat /etc/locale.gen
 de_DE ISO-8859-1
 de_DE@euro UTF-8
 ```
-
-Take a look at [Python 3.7 Mogration](https://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/master/python3_7.md).
+Take a look at [Python 3.7 Migration](https://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/master/python3_7.md).
 
 Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
 Let me know if any initial depencies are missing, since i do not use all of the components myself, last good (full) compile test was August 3rd, 2019 with v0.97.0_beta1, while changing gentoo's profile to 17.1.
