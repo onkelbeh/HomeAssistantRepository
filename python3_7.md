@@ -1,11 +1,11 @@
 # Python 3.7 Support
 
 ## Why?
-Home assistant drops support for Python 3.6 on the first release after December 15, 2019:
+Home assistant will drop support for Python 3.6 with the first release after December 15, 2019:
 https://github.com/home-assistant/home-assistant/pull/27680
 https://github.com/home-assistant/architecture/blob/master/adr/0002-minimum-supported-python-version.md.
 
-This code is already merged in the [dev branch](https://github.com/home-assistant/home-assistant/pull/27680/commits/a5eca20845e6825682d1b01c1be3c9c245b311e1)
+This code is already merged in the [dev branch](https://github.com/home-assistant/home-assistant/pull/27680/commits/a5eca20845e6825682d1b01c1be3c9c245b311e1):
 
     if sys.version_info[:3] < (3, 7, 0):
       msg = (
