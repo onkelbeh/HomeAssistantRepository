@@ -33,4 +33,38 @@ Except a very few packages, unstable ebuilds are supporting Python 3.7, i have m
 After some experiments, i decided to compile the required modules **only for Python 3.7**. You will find my *current* package.use from the dev branch here: [package.use](https://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/python37dev/etc/portage/package.use). I have a dedicated box for Home Assistant, so this list looks clean, no bigger hacks. It will get more complicated if you have to compile some of the modules for other Python versions.
 
 ## Migration
-My production box is still running Python 3.6. Will try to **Uprade** these days.
+was easier as i thought.
+- unlock Python 3.7 code in /etc/portage/profile/use.stable.mask (see example)
+      -python_targets_python3_7
+      -python_single_target_python3_7
+- take [package.accept_keywords](https://git.edevau.net/onkel\
+beh/HomeAssistantRepository/raw/branch/python37dev/etc/portage/package.accept_keywords/99_homeassistant) and [package.use](http\
+s://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/python37dev/etc/portage/package.use) from my dev box and copy it to `/etc/portage`
+- install Python 3.7, run `eselect python` to put Python 3.7 on postition 2
+- start `emerge --ask --changed-use --deep @world`
+- already installed packages could require 2.7 and 3.6 targets, OK, i had to allow 18 of them, we'll clean this up later:
+
+    >=dev-python/asn1crypto-0.24.0 python_targets_python2_7 python_targets_python3_6
+    >=dev-python/async_timeout-3.0.1 python_targets_python3_6
+    =dev-python/attrs-19.2.0 python_targets_python2_7 python_targets_python3_6
+    >=dev-python/cffi-1.12.2 python_targets_python2_7 python_targets_python3_6
+    >=dev-python/chardet-3.0.4 python_targets_python3_6
+    >=dev-python/cryptography-2.8 python_targets_python2_7 python_targets_python3_6
+    >=dev-python/future-0.17.1 python_targets_python2_7 python_targets_python3_6
+    >=dev-python/idna-2.8 python_targets_python3_6
+    >=dev-python/idna-ssl-1.1.0 python_targets_python3_6
+    >=dev-python/lxml-4.3.3 python_targets_python2_7 python_targets_python3_6
+    >=dev-python/multidict-4.5.2 python_targets_python3_6
+    >=dev-python/pbr-5.1.3 python_targets_python2_7 python_targets_python3_6
+    >=dev-python/pycparser-2.19 python_targets_python3_6 python_targets_python2_7
+    >=dev-python/pyyaml-5.1.2 python_targets_python2_7 python_targets_python3_6
+    >=dev-python/six-1.12.0 python_targets_python2_7 python_targets_python3_6
+    >=dev-python/yarl-1.3.0 python_targets_python3_6
+    >=dev-python/zope-interface-4.6.0 python_targets_python2_7 python_targets_python3_6
+
+- portage does not know in which slots python modules are already installed, some could still be missing in Python 3.7's site-packages, install them manually (after compile errors), in my case i had to install:
+  - pyyaml
+  - setuptools
+  - setuptools_scm
+- restart `emerge --ask --changed-use --deep @world` after adding the missing tools and libraries
+- Once all packages are updated, you can remove the older targets in `package.use` and run another upgrade to remove support for Python 3.6.
