@@ -101,11 +101,13 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 * Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` as small as possible.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Ouside HA dependencies execpt portage are not tested.
 * Since i use Gentoo mostly on servers i do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this incredible crap.
-* I prefer an own profile based on "amd64/17.1/no-multilib", with python-3.6.5 set as default target (planning to upgrade to 3.6.8 ~~soon~~), also 2.7.15 is installed on my test server (used for platfomio and ESPHome), will try 3.7.x as soon it is marked as stable in portage.
+* I prefer an own profile based on "amd64/17.1/no-multilib"
+* python-3.6.9 is set as default target, also 2.7.16 is installed on my test server.
+* Due to Home Assitant's architecture strategies we cannot wait any longer for a stable Python 3.7: [Python 3.7 Migration](https://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/master/python3_7.md)
 
 ### Licenses
 
-The Repository itself is released under GNU General Public License v3.0, all work on the depending components under the Licenses they came from, which could be (as my grep told me):
+The Repository itself is released under GPL-3, all work on the depending components under the Licenses they came from, which could be (as my grep told me):
 
 - "Artistic-2"
 - "BSD"
@@ -116,7 +118,6 @@ The Repository itself is released under GNU General Public License v3.0, all wor
 - "CC-BY-NC-SA-4.0"
 - "ECL-2.0"
 - "EPL-1.0"
-- 'GPL',
 - "GPL-1"
 - "GPL-2"
 - "GPL-2+"
@@ -127,8 +128,6 @@ The Repository itself is released under GNU General Public License v3.0, all wor
 - "LGPL-2.1"
 - "LGPL-3"
 - "LGPL-3+"
-- "LGPLv3"
-- "LGPLv3+"
 - "MIT"
 - "MPL-2.0"
 - "PSF-2"
