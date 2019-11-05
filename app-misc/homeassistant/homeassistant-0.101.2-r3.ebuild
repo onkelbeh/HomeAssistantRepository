@@ -23,7 +23,7 @@ IUSE="abode androidtv asuswrt atmo atv aurora avea buienradar cli ciscomobilitye
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
-	>=dev-lang/python-3.7.5-r1
+	>=dev-lang/python-3.6.5
 	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
