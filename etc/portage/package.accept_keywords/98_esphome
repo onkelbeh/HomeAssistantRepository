@@ -1,0 +1,16 @@
+=dev-embedded/esphome-1.14.1-r1 ~amd64
+=dev-embedded/esptool-2.7-r1 ~amd64
+=dev-embedded/platformio-4.0.3-r2
+=dev-python/bottle-0.12.16 ~amd64
+=dev-python/colorama-0.3.9-r1 ~amd64
+=dev-python/lockfile-0.12.2-r1 ~amd64
+=www-servers/tornado-5.1.1 ~amd64
+=dev-python/twisted-18.7.0 ~amd64
+=dev-python/automat-0.7.0 ~amd64
+=dev-python/constantly-15.1.0-r1 ~amd64
+=dev-python/hyperlink-18.0.0 ~amd64
+=dev-python/incremental-17.5.0 ~amd64
+=dev-python/pyhamcrest-1.9.0-r1 ~amd64
+=dev-python/service_identity-17.0.0-r1 ~amd64
+=dev-python/m2r-0.1.14 ~amd64
+=dev-python/pycurl-7.43.0.3 ~amd64
