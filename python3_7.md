@@ -35,8 +35,10 @@ After some experiments, i decided to compile the required modules **only for Pyt
 ## Migration
 was easier as i thought.
 - unlock Python 3.7 code in /etc/portage/profile/use.stable.mask (see example)
+
 `      -python_targets_python3_7
       -python_single_target_python3_7`
+
 - take [package.accept_keywords](https://git.edevau.net/onkel\
 beh/HomeAssistantRepository/raw/branch/python37dev/etc/portage/package.accept_keywords/99_homeassistant) and [package.use](http\
 s://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/python37dev/etc/portage/package.use) from my dev box and copy it to `/etc/portage`
@@ -44,7 +46,8 @@ s://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/python37dev/etc/p
 - start `emerge --ask --changed-use --deep @world`
 - already installed packages could require 2.7 and 3.6 targets, OK, i had to allow 18 of them, we'll clean this up later:
 
-`   >=dev-python/asn1crypto-0.24.0 python_targets_python2_7 python_targets_python3_6
+`   /etc/portage/package.use/99_local:
+    >=dev-python/asn1crypto-0.24.0 python_targets_python2_7 python_targets_python3_6
     >=dev-python/async_timeout-3.0.1 python_targets_python3_6
     =dev-python/attrs-19.2.0 python_targets_python2_7 python_targets_python3_6
     >=dev-python/cffi-1.12.2 python_targets_python2_7 python_targets_python3_6
