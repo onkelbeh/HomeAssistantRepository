@@ -1,3 +1,62 @@
+2019-11-06 homeassistant-0.101.3
+	* homeassistant-0.101.3
+	* Python 3.7 update (4x)
+	* update/fix zipp-0.5.1 dep
+	* allow Python 3.6 again for tests
+	* update/fix ua-parser-0.8.0 dep
+	* delete obsolete releases
+	* update README.md
+	* update license list
+	* update Python 3.7 notes
+	* add Python 3.7 notes, fix Typo
+	* Add Python 3.7 migration notes
+	* Merge branch 'python37dev' of https://git.edevau.net/onkelbeh/HomeAssistantRepository
+	* homeassistant-0.101.2-r2 (from python3_7 tree)
+	* now it runs on Python 3.7
+	* add PyMetno
+	* use newer s3transfer
+	* repoman needs pyyaml-5.1.2[python2_7]
+	* unmask python_37
+	* start experimenting with python-single-r1.eclass
+	* colorama-0.3.9-r1 ist with python3_7 support
+	* nose-1.3.7-r3 needs dev-python/coverage[python_targets_python2_7]
+	* app-crypt/acme needs requests-toolbelt-0.3.0[python_targets_python2_7]
+	* dev-python/botocore needs jmespath[python_targets_python2_7]
+	* decouple dev-embedded/esphome from homeassistant
+	* certbot needs pytz-2019.3 in python2_7
+	* pyrfc3339 in main repo
+	* open >=dev-python/tzlocal-1.5.1
+	* remove blocked xml-security-c
+	* homeassistant-0.101.2
+	* bump hdate-0.9.2
+	* Merge branch 'python37dev' of onkelbeh/HomeAssistantRepository into master
+	* update Manifests for all changed packages
+	* fix some typos
+	* Add missing license strings as far as possible
+	* Fix Bad URL from Pypi (2x)
+	* align license strings to /usr/portage/gentoo/licenses
+	* drop support for obsolete python versions
+	* add SSL Homepage (4x)
+	* add correct license in ebuild
+	* remove old cvs header (4x)
+	* homeassistant-0.101.1
+	* bump iaqualink-0.3.0
+	* add aionotify-0.2.0
+	* downgrade evdev-0.6.1
+	* downgrade evdev-0.6.2
+	* downgrade evdev-1.1.2
+	* add PySocks-1.7.1
+	* pysaj-0.0.13
+	* bump incomfort-client-0.4.0
+	* bump pytest-5.2.2
+	* bump youtube_dl-2019.10.29
+	* bump pre-commit-1.20.0
+	* bump pymyq-2.0.1
+	* change numpy-1.17.3-r1 COMPAT, Python version >= 3.5 required
+	* bump blinkpy-0.14.2
+	* bump homeassistant-0.101.0
+	* rebuild frontend Manifest
+
 2019-10-28 homeassistant-0.101.0_beta3
 	* bump homeassistant-0.101.0_beta3
 	* bump PlexAPI-3.2.0 and (older) PlexAPI-3.0.6
