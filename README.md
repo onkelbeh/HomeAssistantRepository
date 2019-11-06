@@ -66,6 +66,13 @@ USE_PYTHON="3.7 3.6 2.7"
 PYTHON_TARGETS="python3_7"
 PYTHON_SINGLE_TARGET="python3_7"
 ```
+Unmask Python 3.7 code in /etc/portage/profile/use.stable.mask:
+```sh
+-python_targets_python3_7
+-python_single_target_python3_7
+```
+Run `eselect python` to put Python 3.7 on postition 1
+
 Install it (as root)
 ```sh
 $ emerge -tav app-misc/homeassistant
@@ -88,6 +95,12 @@ USE_PYTHON="3.7 3.6 2.7"
 PYTHON_TARGETS="python3_7 python3_6"
 PYTHON_SINGLE_TARGET="python3_7"
 ```
+Unmask Python 3.7 code in /etc/portage/profile/use.stable.mask:
+```sh
+-python_targets_python3_7
+-python_single_target_python3_7
+```
+Run `eselect python` to put Python 3.7 on postition 1
 
 Run the Update:
 ```sh
