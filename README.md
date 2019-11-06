@@ -19,13 +19,13 @@ Aside from Home Assistant it contains some related ebuilds I use with my Home As
 
 Since homeassistant-0.95.0_beta0 `esphome-1.13.6` can be run again in the same environment with homeassistant, because homeassistant does not insist on `dev-python/pyyaml-3.13` anymore.
 
-esphome-1.14.1 wit platformio-4.0.3-r2 can be run on Python 3.7
+**esphome-1.14.1 with platformio-4.0.3-r2 can now be run on Python 3.7**
 
-
-If you have questions or suggestions don't hesitate to contact me, anyhelp is very welcome.
+If you have questions or suggestions don't hesitate to contact me, any help is very welcome.
 
 ## Git Server & Mirrors
 You will find this Repository at
+
 | Location | Web | Clone me here |
 | ------ | ------ | ------ |
 | Main | https://git.edevau.net/onkelbeh/HomeAssistantRepository | https://git.edevau.net/onkelbeh/HomeAssistantRepository.git |
@@ -38,8 +38,7 @@ Home assistant will drop support for Python 3.6 with the first release after Dec
 - https://github.com/home-assistant/home-assistant/pull/27680
 - https://github.com/home-assistant/architecture/blob/master/adr/0002-minimum-supported-python-version.md
 
-First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your gentoo repo, which is at `/usr/portage/gentoo` in my boxes, becaus\
-e i _always_ have more than one repo active by default:
+First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because i _always_ have more than one repo active by default:
 ```
 [HomeAssistantRepository]
 location = /usr/portage/homeassistant
@@ -73,8 +72,7 @@ $ emerge -tav app-misc/homeassistant
 $ rc-update add homeassistant
 ```
 ## Upgrading to Python 3.7
-Take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy\
- it to your `/etc/portage`, a lot of unstable ebuilds are needed, because some of the stable versions do *not* support Python 3.7. These files reflect some modules i use, adjust them to your needs.
+Take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`, a lot of unstable ebuilds are needed, because some of the stable versions do *not* support Python 3.7. These files reflect some modules i use, adjust them to your needs.
 
 Make sure your system is up to date:
 ```sh
@@ -93,9 +91,9 @@ PYTHON_SINGLE_TARGET="python3_7"
 
 Run the Update:
 ```sh
-# emerge --depclean
-# emerge -1vUD @world
-# emerge --depclean
+$ emerge --depclean
+$ emerge -1vUD @world
+$ emerge --depclean
 ```
 
 Edit your `/etc/portage/make.conf` to remove old Python Targets:
@@ -107,9 +105,9 @@ PYTHON_SINGLE_TARGET="python3_7"
 Run the Update again:
 
 ```sh
-# emerge --depclean
-# emerge -1vUD @world
-# emerge --depclean
+$ emerge --depclean
+$ emerge -1vUD @world
+$ emerge --depclean
 ```
 I had a lot of dependencies portage didn't respect, in some cases it seems not to know in which Python's site-packages modules are already installed. Install them manually (after compile errors). Once all packages are updated, you can remove the older targets in `package.use` and run another upgrade to remove support for Python 3.6.
 
@@ -118,7 +116,7 @@ Tools that might help:
 $ eix --installed-with-use python_targets_python3_6
 ```
 
-If you are clean, feel free to remove Python 3.6 (which i dod not yet).
+If you are clean, feel free to remove Python 3.6 (which i did not yet).
 
 
 ## Installation on Python 3.6 (deprecated)
@@ -152,7 +150,7 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 
 ## Todos
 - **If it moves, compile it** :-)
-- try/test this all with Python 3.7
+- remove support for Python 3.6 mid December
 - Add libraries if i need it or someone asks for
 - Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo.
 - Write an installation page for the home-assistant.io Documentation an get it added.
@@ -193,12 +191,13 @@ Most of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 ## Privacy
 I have **no** Google, Amazon or Apple involved in my privacy (at least in this case) and I am not planning to let them in.
 
-* Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` as small as possible.
+## Some thoughts
+* Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` non-existant or at least as small as possible.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Ouside HA dependencies execpt portage are not tested.
-* Since i use Gentoo mostly on servers i do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this incredible crap.
+* Since i use Gentoo mostly on servers i do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this icredible crap.
 * I prefer an own profile based on "amd64/17.1/no-multilib"
-* python-3.6.9 is set as default target, also 2.7.16 is installed on my test server.
-* Due to Home Assitant's architecture strategies we cannot wait any longer for a stable Python 3.7: [Python 3.7 Migration](https://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/master/python3_7.md)
+* python-3.7.5-r1 is set as default target, also 2.7.16 and 3.6.9 (not used anymore) are installed on my test server.
+* Due to Home Assitant's architecture strategies we could not wait any longer for a stable Python 3.7, so don't blame me if it's a lot of work. Python 3.6 would have been supported until Jan 2022.
 
 ## Licenses
 
