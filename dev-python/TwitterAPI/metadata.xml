@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">TwitterAPI</remote-id>
+    <docs>https://pythonhosted.org/TwitterAPI/</docs>
+    <maintainer status="unknown">
+      <email>boxnumber03@gmail.com</email>
+      <name>geduldig</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
