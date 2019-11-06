@@ -162,7 +162,7 @@ RDEPEND="${PYTHON_DEPS}
 	roku? ( ~dev-python/roku-3.1[${PYTHON_USEDEP}] )
 	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
-	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
+	samsungtv? ( =dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
 	sma? ( ~dev-python/pysma-0.3.4[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
 	sonos? ( >=dev-python/pysonos-0.0.24[${PYTHON_USEDEP}] )

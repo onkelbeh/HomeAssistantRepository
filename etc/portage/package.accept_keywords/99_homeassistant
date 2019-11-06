@@ -1,9 +1,6 @@
 =app-crypt/acme-0.32.0 ~amd64
 =app-crypt/certbot-0.29.1 ~amd64
-=app-misc/esphomeyaml-1.10.1 ~amd64
 =app-portage/gemato-14.3 ~amd64
-=dev-embedded/esphome-9999 ~amd64
-=dev-embedded/esptool-2.7 ~amd64
 =dev-embedded/platformio-4.0.3 ~amd64
 =dev-lang/python-3.7.5-r1 ~amd64
 =dev-libs/xml-security-c-2.0.2-r1 ~amd64
@@ -31,11 +28,11 @@
 =dev-python/astral-1.10.1 ~amd64
 =dev-python/async_timeout-3.0.0 ~amd64
 =dev-python/async-upnp-client-0.14.3 ~amd64
-=dev-python/attrs-19.2.0 ~amd64
 ~dev-python/attrs-19.2.0-r1 ~amd64
 =dev-python/bcrypt-3.1.7 ~amd64
 =dev-python/beautifulsoup-4.8.1 ~amd64
 =dev-python/bimmer-connected-0.5.3 ~amd64
+=dev-python/blessings-1.7 ~amd64
 =dev-python/blinkpy-0.14.2 ~amd64
 ~dev-python/boto3-1.9.233 ~amd64
 =dev-python/botocore-1.12.115 ~amd64
@@ -57,8 +54,7 @@
 =dev-python/coverage-4.5.2-r1 ~amd64
 =dev-python/cryptography-2.8 ~amd64
 =dev-python/curve25519-donna-1.3 ~amd64
-=dev-python/cython-0.29.13 ~amd64
-=dev-python/cython-0.29.1 ~amd64
+=dev-python/cython-0.29.14 ~amd64
 =dev-python/dateparser-0.7.1 ~amd64
 =dev-python/discord-py-1.2.2 ~amd64
 =dev-python/distro-1.4.0 ~amd64
@@ -100,12 +96,13 @@
 =dev-python/libusb1-1.7 ~amd64
 =dev-python/lomond-0.1.14 ~amd64
 =dev-python/lxml-4.3.3 ~amd64
+=dev-python/mako-1.0.7 ~amd64
 ~dev-python/markupsafe-1.0 ~amd64
 =dev-python/Mastodon-py-1.4.5 ~amd64
 =dev-python/maxcube-api-0.1.0 ~amd64
 =dev-python/multidict-4.5.2 ~amd64
 =dev-python/netdisco-2.6.0 ~amd64
-=dev-python/numpy-1.17.3-r1 ~amd64
+~dev-python/numpy-1.17.3 ~amd64
 =dev-python/openwebifpy-3.1.1 ~amd64
 =dev-python/open-zwave-hass-0.1.4 ~amd64
 =dev-python/OPi-GPIO-0.3.6 ~amd64
@@ -126,7 +123,6 @@
 =dev-python/PyChromecast-4.0.1 ~amd64
 =dev-python/pycparser-2.19 ~amd64
 =dev-python/pycryptodome-3.7.3 ~amd64
-=dev-python/pydispatcher-2.0.5-r1 ~amd64
 =dev-python/pydispatcher-2.1.2 ~amd64
 =dev-python/pyelftools-0.25 ~amd64
 =dev-python/PyFronius-0.4.6 ~amd64
@@ -142,6 +138,8 @@
 =dev-python/pyotp-2.3.0 ~amd64
 =dev-python/pypandoc-1.4 ~amd64
 =dev-python/pyparsing-2.4.0 ~amd64
+=dev-python/pypy3-7.2.0-r1 ~amd64
+=dev-python/pypy-7.2.0 ~amd64
 =dev-python/PyQRCode-1.2.1 ~amd64
 =dev-python/pyrsistent-0.14.4 ~amd64
 =dev-python/pyserial-3.4 ~amd64
@@ -172,7 +170,7 @@
 =dev-python/RPi-GPIO-0.6.5 ~amd64
 =dev-python/rsa-4.0 ~amd64
 =dev-python/ruamel-yaml-0.15.100 ~amd64
-=dev-python/samsungctl-0.8.0_beta0 ~amd64
+=dev-python/samsungctl-0.7.1 ~amd64
 =dev-python/semantic_version-2.8.2 ~amd64
 =dev-python/setuptools-41.5.1 ~amd64
 =dev-python/setuptools_scm-1.15.7 ~amd64
@@ -196,7 +194,6 @@ dev-python/sphinx_rtd_theme ~amd64
 =dev-python/tellduslive-0.10.10 ~amd64
 =dev-python/text-unidecode-1.3 ~amd64
 =dev-python/toml-0.10.0 ~amd64
-=dev-python/toml-0.9.6 ~amd64
 =dev-python/total-connect-client-0.28 ~amd64
 =dev-python/tox-3.12.1 ~amd64
 =dev-python/tox-travis-0.11 ~amd64
@@ -228,4 +225,6 @@ dev-python/sphinx_rtd_theme ~amd64
 ~dev-python/zope-interface-4.6.0 ~amd64
 =media-libs/mutagen-1.42.0 ~amd64
 =sys-apps/portage-2.3.78-r2 ~amd64
+=virtual/pypy3-7.2.0 ~amd64
+=virtual/pypy-7.2.0 ~amd64
 =www-servers/tornado-5.1.1 ~amd64

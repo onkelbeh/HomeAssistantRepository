@@ -1,4 +1,4 @@
-=dev-embedded/esphome-1.14.1-r1 ~amd64
+=dev-embedded/esphome-1.14.1 ~amd64
 =dev-embedded/esptool-2.7-r1 ~amd64
 =dev-embedded/platformio-4.0.3-r2
 =dev-python/bottle-0.12.16 ~amd64
