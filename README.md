@@ -73,7 +73,7 @@ Unmask Python 3.7 code in `/etc/portage/profile/use.stable.mask`:
 -python_targets_python3_7
 -python_single_target_python3_7
 ```
-Run `eselect python` to put Python 3.7 on postition 1
+Run `eselect python` to put Python 3.7 on position 1
 
 Install it (as root)
 ```sh
@@ -102,7 +102,7 @@ Unmask Python 3.7 code in `/etc/portage/profile/use.stable.mask`:
 -python_targets_python3_7
 -python_single_target_python3_7
 ```
-Run `eselect python` to put Python 3.7 on postition 1
+Run `eselect python` to put Python 3.7 on position 1
 
 Run the Update:
 ```sh
@@ -183,7 +183,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 * a bunch of OneWire and I2C Sensors (mostly via MQTT) and
 * ESPHome - see description above - (https://esphome.io/ & https://github.com/esphome/esphome/)
 * ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy/). I formerly used it to avoid some serious design problems in Tasmota, but since i use ESPHome, these devices live only until they will be touched next time, they will be replaced with ESPHome.
-* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a davice has to be touched, it's firmware will soon be replaced with Otto Winter's ESPHome.
+* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a device has to be touched, it's firmware will be replaced with Otto Winter's ESPHome.
   * Sonoff S20
   * Sonoff Pow R2
   * Sonoff 4ch

@@ -1,4 +1,12 @@
 2019-11-06 homeassistant-0.101.3
+	* improved README.md
+	* new Python 3.7 Status
+	* update /etc/portage sample files
+	* esptool-2.7 allow Python 3.7
+	* platformio-4.0.3 help Python 3.7
+	* bump esptool-2.8, OK for Python 3.7
+	* Merge pull request #6 from evadim/master
+	* CHANGELOG.md
 	* homeassistant-0.101.3
 	* Python 3.7 update (4x)
 	* update/fix zipp-0.5.1 dep
