@@ -7,7 +7,7 @@
   </maintainer>
   <herd>python</herd>
   <upstream>
-    <remote-id type="pypi">xknx</remote-id>
+    <remote-id type="pypi">aiodns</remote-id>
     <maintainer status="unknown">
       <email>s@saghul.net</email>
       <name>SaÃºl Ibarra CorretgÃ©</name>
