@@ -1,3 +1,34 @@
+2019-11-07 some modules from dev tree
+	* fix imageio for Python 3.7
+	* bump ratelimit-2.2.1
+	* bump requests-futures-1.0.0
+	* add requests-futures-0.9.7
+	* bump env-canada-0.0.30
+	* add env-canada-0.0.29
+	* bump imageio-2.6.1
+	* bump imageio-2.3.0
+	* bump pymfy-0.6.1
+	* bump youtube_dl-2019.11.5
+	* bump adb-shell-0.0.8
+	* bump pytile-3.0.1
+	* add pytile-3.0.0
+	* downgrade habitipy-0.2
+	* bump haanna-0.13.
+	* bump pyephember-0.3.1
+	* bump aioasuswrt-1.1.22
+	* bump geniushub-client-0.6.30
+	* bump jinja-2.10.3
+	* bump paho-mqtt-1.5.0
+	* bump TwitterAPI-2.5.10
+	* add TwitterAPI-2.5.9
+	* bump Pillow-6.2.1
+	* add Pillow-6.2.0
+	* bump pyEight-0.1.2
+	* bump pysnmp-4.4.12
+	* add pysnmp-4.4.11
+	* bump attrs-19.3.0
+	* add thingspeak-1.0.0
+
 2019-11-06 homeassistant-0.101.3
 	* improved README.md
 	* new Python 3.7 Status
@@ -6,7 +37,7 @@
 	* platformio-4.0.3 help Python 3.7
 	* bump esptool-2.8, OK for Python 3.7
 	* Merge pull request #6 from evadim/master
-	* CHANGELOG.md
+	* update CHANGELOG.md
 	* homeassistant-0.101.3
 	* Python 3.7 update (4x)
 	* update/fix zipp-0.5.1 dep
