@@ -161,12 +161,12 @@ de_DE@euro UTF-8
 ```
 
 Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
-Let me know if any initial depencies are missing, since i do not use all of the components myself, last good (full) compile test was August 3rd, 2019 with v0.97.0_beta1, while changing gentoo's profile to 17.1.
-
+Let me know if any initial depencies are missing, since i do not use all of the components myself, last good (full) compile test was November, 2019 with v0.101.3, while upgrading my production box to Python 3.7.
 
 ## Todos
 - If it moves, compile it :-)
-- remove support for Python 3.6 in the mid of December
+- Remove support for Python 3.6 in the mid of December
+- Add support for Python 3.8 in a new dev branch
 - Add libraries if i need it or someone asks for
 - Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo.
 - Write an installation page for the home-assistant.io Documentation an get it added.
@@ -182,7 +182,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
   - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
 * a bunch of OneWire and I2C Sensors (mostly via MQTT) and
 * ESPHome - see description above - (https://esphome.io/ & https://github.com/esphome/esphome/)
-* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy/). I formerly used it to avoid some serious design problems in Tasmota, but since i use ESPHome, these devices live only until they will be touched next time, they will be replaced with ESPHome.
+* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy/). I formerly used it to avoid some serious design problems in Tasmota, but since i use ESPHome, these devices live only until they have to be touched for some reason, their firmware will get replaced with ESPHome.
 * Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a device has to be touched, it's firmware will be replaced with Otto Winter's ESPHome.
   * Sonoff S20
   * Sonoff Pow R2
@@ -202,7 +202,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 * Enigma2 on Dreambox (2 left) (http://wiki.blue-panel.com/index.php/Enigma2)
 * Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
 * EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube)
-* Axis Camera (1, a few more to come sometimes)
+* Axis Camera (1, a few more to come)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
 ## Privacy
