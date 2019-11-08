@@ -28,10 +28,10 @@ S="${WORKDIR}/paho.mqtt.python-${PV}"
 
 RESTRICT="test" #659106
 
-src_prepare() {
-	eapply "${FILESDIR}/${P}-strip-test-dependency.patch"
-	default
-}
+#src_prepare() {
+#	eapply "${FILESDIR}/${P}-strip-test-dependency.patch"
+#	default
+#}
 
 python_test() {
 	esetup.py test

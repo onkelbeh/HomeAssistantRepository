@@ -1,3 +1,11 @@
+2019-11-08 some modules from dev tree
+	* paho-mqtt: remove obsolete patch
+
+2019-11-08 some modules from dev tree
+	* add wled-0.1.0
+	* add cattrs-0.9.0
+	* bump plexwebsocket-0.0.4
+
 2019-11-07 some modules from dev tree
 	* fix imageio for Python 3.7
 	* bump ratelimit-2.2.1
