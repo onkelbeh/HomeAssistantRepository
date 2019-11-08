@@ -2,6 +2,7 @@
 	* paho-mqtt: remove obsolete patch
 	* bump hass-nabucasa-0.29
 	* bump home-assistant-frontend-20191108.0
+	* bump zha-quirks-0.0.27
 
 2019-11-08 some modules from dev tree
 	* add wled-0.1.0
