@@ -1,5 +1,6 @@
 2019-11-09 again modules from dev tree
 	* bump abodepy-0.16.7
+	* add smbus-cffi-0.5.1
 
 2019-11-08 some modules from dev tree
 	* paho-mqtt: remove obsolete patch
