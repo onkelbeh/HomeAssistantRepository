@@ -7,6 +7,7 @@
 	  - apply a temporary hack for opencv-3.4.1 (https://bugs.gentoo.org/699730)
 	  - remove dev-python/Pillow, we already use only the one from gentoo main repo
 	* bump pyatmo-2.3.3
+	* bump zm-py-0.4.0
 
 2019-11-09 again modules from dev tree
 	* bump abodepy-0.16.7
