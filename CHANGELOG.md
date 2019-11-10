@@ -1,6 +1,7 @@
 2019-11-10 new modules from dev tree
 	* bump simplisafe-python-5.1.0
 	* bump bimmer_connected-0.6.2
+	* add (older) haanna-0.12.3 for a test
 
 2019-11-09 again modules from dev tree
 	* bump abodepy-0.16.7
