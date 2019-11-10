@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <use>
+    <flag name="opencv">Use opencv for map generation</flag>
+    <flag name="pillow">Use pillow for map generation</flag>
+    <flag name="mqtt">Use paho mqtt client for communication</flag>
+  </use>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">roombapy</remote-id>
+    <maintainer status="unknown">
+      <email>nick.waterton@med.ge.com</email>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

@@ -2,7 +2,10 @@
 	* bump simplisafe-python-5.1.0
 	* bump bimmer_connected-0.6.2
 	* add (older) haanna-0.12.3 for a test
-	* remove dev-python/Pillow, we use the one from the main repo
+	* add dev-python/roombapy/roombapy-1.3.1
+	  - add scikit-build-0.10.0
+	  - apply a temporary hack for opencv-3.4.1 (https://bugs.gentoo.org/699730)
+	  - remove dev-python/Pillow, we already use only the one from gentoo main repo
 
 2019-11-09 again modules from dev tree
 	* bump abodepy-0.16.7
