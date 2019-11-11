@@ -211,7 +211,7 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 ## Some thoughts
 * Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` non-existant or at least as small as possible.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Ouside HA dependencies execpt portage are not tested.
-* Since i use Gentoo mostly on servers i do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this icredible crap.
+* Since i use Gentoo mostly on servers i do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this incredible crap.
 * I prefer an own profile based on "amd64/17.1/no-multilib"
 * python-3.7.5-r1 is set as default target, also 2.7.16 and 3.6.9 (not used anymore) are installed on my test server.
 * Due to Home Assitant's architecture strategies we could not wait any longer for a stable Python 3.7, so don't blame me if it's a lot of work. Python 3.6 would have been supported until Jan 2022.
