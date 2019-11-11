@@ -6,6 +6,11 @@
 	* cryptography: update manifest, reduce platforms
 	* bimmer-connected: add missing keywords
 	* BlinkStick: found License
+	* PyGithub: fix License String
+	* pyarlo: fix License String
+	* python-telegram-bot: fix License String
+	* smbus-cffi: fix License String
+	* thingspeak: fix License String
 
 2019-11-10 new modules from dev tree
 	* bump simplisafe-python-5.1.0

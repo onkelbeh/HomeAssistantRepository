@@ -11,7 +11,7 @@ DESCRIPTION="We have made you a wrapper you can't refuse"
 HOMEPAGE="https://python-telegram-bot.org/ https://pypi.org/project/python-telegram-bot/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="LGPLv3"
+LICENSE="LGPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
