@@ -4,6 +4,7 @@
 	* gpiozero: add missing description strings
 	* pyhaversion: add missing description strings
 	* cryptography: update manifest, reduce platforms
+	* bimmer-connected: add missing keywords
 
 2019-11-10 new modules from dev tree
 	* bump simplisafe-python-5.1.0
