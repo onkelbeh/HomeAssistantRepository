@@ -11,7 +11,7 @@ DESCRIPTION="A client for Honeywell's US-based cloud devices"
 HOMEPAGE="https://github.com/kk7ds/somecomfort https://pypi.org/project/somecomfort/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="UNKNOWN"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

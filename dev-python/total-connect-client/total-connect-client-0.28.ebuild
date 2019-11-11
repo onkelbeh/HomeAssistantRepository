@@ -13,12 +13,12 @@ DESCRIPTION="Interact with Total Connect 2 alarm systems"
 HOMEPAGE="https://github.com/craigjmidwinter/total-connect-client https://pypi.org/project/total-connect-client/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 
-LICENSE=""
+LICENSE="UNKNOWN"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=""
+RDEPEND="dev-python/zeep[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

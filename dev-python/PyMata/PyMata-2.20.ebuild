@@ -11,7 +11,7 @@ DESCRIPTION="A Python Protocol Abstraction Library For Arduino Firmata"
 HOMEPAGE="https://github.com/MrYsLab/PyMata https://pypi.org/project/PyMata/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="AGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

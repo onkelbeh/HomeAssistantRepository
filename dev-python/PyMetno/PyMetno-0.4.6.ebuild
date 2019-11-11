@@ -11,7 +11,7 @@ DESCRIPTION="A library to communicate with the met.no api"
 HOMEPAGE="https://github.com/Danielhiversen/pyMetno/ https://pypi.org/project/PyMetno/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

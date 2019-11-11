@@ -11,7 +11,7 @@ DESCRIPTION="This Python module allows SMBus access through the I2C /dev interfa
 HOMEPAGE="https://github.com/bivab/smbus-cffi https://pypi.org/project/smbus-cffi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPLv2"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

@@ -11,6 +11,18 @@
 	* python-telegram-bot: fix License String
 	* smbus-cffi: fix License String
 	* thingspeak: fix License String
+	* searched and partly updated licenses for:
+	  -PyMata
+	  -PyMetno
+	  -adb-shell
+	  -apcaccess
+	  -pyvlx
+	  -somecomfort
+	  -total-connect-client
+	  -uvcclient
+	* pylutron-0.2.5 Python Compatibility for 3.5 removed
+	* rename CHANGELOG.txt
+	* coveralls Python Compatibility for 3.5 removed
 
 2019-11-10 new modules from dev tree
 	* bump simplisafe-python-5.1.0
