@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION=""
+DESCRIPTION="A python module to the newest version number of Home Assistant."
 HOMEPAGE="https://github.com/ludeeus/pyhaversion https://pypi.org/project/pyhaversion/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
