@@ -3,11 +3,11 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION=""
+DESCRIPTION="A simple interface to GPIO devices with Raspberry Pi."
 HOMEPAGE="https://github.com/RPi-Distro/python-gpiozero https://pypi.org/project/gpiozero/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
