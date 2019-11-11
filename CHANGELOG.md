@@ -1,5 +1,6 @@
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
+	* aioesphomeapi: add missing description strings
 
 2019-11-10 new modules from dev tree
 	* bump simplisafe-python-5.1.0

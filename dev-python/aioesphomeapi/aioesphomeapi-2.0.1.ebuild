@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION=""
+DESCRIPTION="ESPHome Native API Component for Home Assistant"
 HOMEPAGE="https://esphome.io/ https://pypi.org/project/aioesphomeapi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
