@@ -5,6 +5,7 @@
 	* pyhaversion: add missing description strings
 	* cryptography: update manifest, reduce platforms
 	* bimmer-connected: add missing keywords
+	* BlinkStick: found License
 
 2019-11-10 new modules from dev tree
 	* bump simplisafe-python-5.1.0

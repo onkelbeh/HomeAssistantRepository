@@ -11,7 +11,7 @@ DESCRIPTION="Python package to control BlinkStick USB devices."
 HOMEPAGE="http://pypi.python.org/pypi/BlinkStick/ https://pypi.org/project/BlinkStick/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="LICENSE.txt"
+LICENSE="NEWLIB"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
