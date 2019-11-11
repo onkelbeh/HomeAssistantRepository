@@ -23,6 +23,7 @@
 	* pylutron-0.2.5 Python Compatibility for 3.5 removed
 	* rename CHANGELOG.txt
 	* coveralls Python Compatibility for 3.5 removed
+	* bump esphome-1.14.2, remove double ifaddr dependency
 
 2019-11-10 new modules from dev tree
 	* bump simplisafe-python-5.1.0
