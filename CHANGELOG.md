@@ -1,3 +1,6 @@
+2019-11-11 new modules from dev tree
+	* bump plexwebsocket-0.0.5
+
 2019-11-10 new modules from dev tree
 	* bump simplisafe-python-5.1.0
 	* bump bimmer_connected-0.6.2
