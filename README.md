@@ -133,7 +133,17 @@ $ diff <(equery h python_targets_python3_6) <(equery h python_targets_python3_7)
 ```
 
 If you are clean, feel free to remove Python 3.6 (which i did not yet).
-
+It was not possible to remove Python 2.7 yet:
+```sh
+dev-lang/python-2.7.16 pulled in by:
+  app-crypt/gcr-3.28.1 requires >=dev-lang/python-2.7.5-r2:2.7
+  dev-libs/libxml2-2.9.9-r1 requires >=dev-lang/python-2.7.5-r2:2.7[xml]
+  dev-libs/libxslt-1.1.33-r1 requires >=dev-lang/python-2.7.5-r2:2.7[xml]
+  dev-python/backports-1.0 requires >=dev-lang/python-2.7.5-r2:2.7
+  dev-python/backports-functools-lru-cache-1.4-r1 requires >=dev-lang/python-2.7.5-r2:2.7
+  dev-util/ninja-1.8.2 requires >=dev-lang/python-2.7.5-r2:2.7
+  sys-devel/llvm-8.0.1 requires >=dev-lang/python-2.7.5-r2:2.7
+```
 
 ## Installation on Python 3.6 (deprecated)
 
