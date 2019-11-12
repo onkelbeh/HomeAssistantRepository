@@ -1,5 +1,6 @@
 2019-11-11 new modules from dev tree
 	* aiodns & aionotify, fix checksums in manifest
+	* update bellows-homeassistant-0.11.0
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
