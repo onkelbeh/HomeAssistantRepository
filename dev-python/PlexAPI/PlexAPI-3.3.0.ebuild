@@ -1,5 +1,5 @@
-# Copyright 1999-2019 Gentoo Authors Andreas Billmeier b (at) edevau.net
-# Distributed under the terms of the GNU General Public License v3.0
+# Copyright 1999-2019 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
 

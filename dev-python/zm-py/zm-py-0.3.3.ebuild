@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Foundation (W)2019 Andreas Billmeier b@edevau.net
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6

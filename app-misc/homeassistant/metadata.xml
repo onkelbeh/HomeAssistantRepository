@@ -6,8 +6,9 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <use>
-    <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="abode">Library for the Abode alarm API</flag>
+    <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
+    <flag name="ambiclimate">communicate with Ambiclimate</flag>
     <flag name="asuswrt">Api wrapper for Asuswrt</flag>
     <flag name="atmo">Access to Netatmo weather station data</flag>
     <flag name="atv">Library for controlling an Apple TV</flag>
@@ -42,12 +43,14 @@
     <flag name="musiccast">add support for Yamaha MusicCast devices</flag>
     <flag name="mysql">install MySQL Libraries for use with HomeAssistant</flag>
     <flag name="openwrt">fetch connected devices from your OpenWrt</flag>
+    <flag name="plex">Python bindings for the Plex API</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="roku">add support for Roku players</flag>
     <flag name="rxv">Library for Yamaha RX-* Receivers</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
     <flag name="sma">add Support for SMA Solar WebConnect</flag>
     <flag name="socat">Install socat and socat-zwave startscript</flag>
+    <flag name="somfy">Somfy devices via their online service</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
     <flag name="shodan">Shodan is a search engine for Internet-connected devices</flag>
     <flag name="speedtest">spedtest.net support</flag>

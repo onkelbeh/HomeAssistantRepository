@@ -1,5 +1,5 @@
-# Copyright 1999-2019 Gentoo Authors Andreas Billmeier b (at) edevau.net
-# Distributed under the terms of the GNU General Public License v3.0
+# Copyright 1999-2019 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
 
@@ -9,7 +9,8 @@ inherit distutils-r1
 
 DESCRIPTION="PyTado from chrism0dwk, modfied by w.malgadey"
 HOMEPAGE="https://github.com/wmalgadey/PyTado https://pypi.org/project/python-tado/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/wmalgadey/PyTado/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
