@@ -31,6 +31,7 @@
 	      - sleepyq
 	      - transitions
 	      - zengge
+	* add discogs-client-2.2.1
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
