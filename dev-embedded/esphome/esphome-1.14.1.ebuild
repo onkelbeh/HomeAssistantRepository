@@ -19,7 +19,6 @@ else
 	S="${WORKDIR}/${MY_P}/"
 fi
 
-
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
 HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
 

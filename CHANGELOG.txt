@@ -34,6 +34,8 @@
 	* add discogs-client-2.2.1
 	* bump discogs-client-2.2.2
 	* remove bad UTF character from pytile-3.0.x and add missing dependency
+	* esphome: remove olds and
+	* esphome-1.14.1: "Useless blank line on line: 22"
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
