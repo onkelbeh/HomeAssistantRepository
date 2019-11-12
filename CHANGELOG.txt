@@ -3,6 +3,7 @@
 	* update bellows-homeassistant-0.11.0
 	* update zigpy-deconz-0.7.0
 	* update zigpy-homeassistant-0.11.0
+	* update zigpy-xbee-homeassistant-0.7.0
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
