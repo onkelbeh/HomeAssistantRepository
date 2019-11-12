@@ -51,6 +51,7 @@
 	* fix RDEPEND for aioesphomeapi-2.4.2
 	* bump aioesphomeapi-2.5.0
 	* fix cryptography metadata
+	* fix geopy manifest
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
