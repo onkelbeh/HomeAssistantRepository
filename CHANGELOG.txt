@@ -39,6 +39,7 @@
 	* align all ebuild headers to https://devmanual.gentoo.org/ebuild-writing/file-format/index.html
 	* Change copyright years to "1999-2019"
 	* remove all stale CVS keywords "# $Id$"
+	* replace stale "Gentoo Foundation" copright notices with the current one
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
