@@ -37,6 +37,7 @@
 	* esphome: remove olds and
 	* esphome-1.14.1: "Useless blank line on line: 22"
 	* align all ebuild headers to https://devmanual.gentoo.org/ebuild-writing/file-format/index.html
+	* Change copyright years to "1999-2019"
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
