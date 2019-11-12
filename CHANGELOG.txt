@@ -46,7 +46,8 @@
 	    - total-connect-client
 	* update license information for adb-shell
 	* remove unneeded sys-devel/autoconf RDEPEND from (older) ebuilds
-	* add correct license for app-misc/homeassistant
+	* add correct license for app-misc/homeassistant (Apache-2.0)
+	* add correct license for dev-python/aioesphomeapi-2.4.2 (MIT)
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
