@@ -172,8 +172,7 @@ RDEPEND="${PYTHON_DEPS}
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
 			net-proxy/haproxy )
-	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}]
-		 sys-devel/autoconf:2.69 )
+	tradfri? ( >=dev-python/pytradfri-6.0.1[${PYTHON_USEDEP}] )
 	ubee? ( ~dev-python/pyubee-0.7[${PYTHON_USEDEP}] )
 	unify? ( ~dev-python/aiounify-11[${PYTHON_USEDEP}] )
 	vera? ( ~dev-python/pyvera-0.3.4[${PYTHON_USEDEP}] )

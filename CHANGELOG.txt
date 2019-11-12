@@ -45,6 +45,7 @@
 	    - somecomfort
 	    - total-connect-client
 	* update license information for adb-shell
+	* remove unneeded sys-devel/autoconf RDEPEND from (older) ebuilds 
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
