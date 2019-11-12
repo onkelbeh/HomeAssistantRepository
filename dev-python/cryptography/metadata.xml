@@ -4,12 +4,13 @@
   <maintainer type="project">
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
-    <use>
-      <flag name="idna">enable support for the old, deprecated IDNA specification (RFC 3490)</flag>
-    </use>
     <upstream>
       <remote-id type="pypi">cryptography</remote-id>
       <remote-id type="github">pyca/cryptography</remote-id>
     </upstream>
   </maintainer>
+  <use>
+    <flag name="idna">enable support for the old, deprecated IDNA specification (RFC 3490)</flag>
+    <flag name="libressl">use libressl instead of openssl</flag>
+  </use>
 </pkgmetadata>

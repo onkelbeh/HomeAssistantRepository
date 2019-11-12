@@ -50,6 +50,7 @@
 	* add correct license for dev-python/aioesphomeapi-2.4.2 (MIT)
 	* fix RDEPEND for aioesphomeapi-2.4.2
 	* bump aioesphomeapi-2.5.0
+	* fix cryptography metadata
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
