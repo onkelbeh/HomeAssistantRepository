@@ -5,6 +5,7 @@
 	* update zigpy-homeassistant-0.11.0
 	* update zigpy-xbee-homeassistant-0.7.0
 	* update pyserial-asyncio-0.4-r1
+	* update zha-quirks-0.0.27-r1
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
