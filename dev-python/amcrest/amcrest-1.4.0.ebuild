@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python wrapper implementation for Amcrest cameras."
-HOMEPAGE="http://github.com/tchellomello/python-amcrest https://pypi.org/project/amcrest/"
+HOMEPAGE="https://github.com/tchellomello/python-amcrest https://pypi.org/project/amcrest/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-2"

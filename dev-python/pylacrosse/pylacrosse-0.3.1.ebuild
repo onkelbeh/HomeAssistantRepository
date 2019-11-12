@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="LaCrosse sensor library"
-HOMEPAGE="http://github.com/hthiery/python-lacrosse https://pypi.org/project/pylacrosse/"
+HOMEPAGE="https://github.com/hthiery/python-lacrosse https://pypi.org/project/pylacrosse/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-2+"

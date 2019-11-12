@@ -10,7 +10,7 @@ inherit distutils-r1
 MY_PN=${PN//-/.}
 
 DESCRIPTION="A module to control Raspberry Pi GPIO channels"
-HOMEPAGE="http://sourceforge.net/projects/raspberry-gpio-python/ https://pypi.org/project/RPi.GPIO/"
+HOMEPAGE="https://sourceforge.net/projects/raspberry-gpio-python/ https://pypi.org/project/RPi.GPIO/"
 SRC_URI="mirror://pypi/${P:0:1}/${MY_PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"

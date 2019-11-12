@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="SleepIQ API for Python"
-HOMEPAGE="http://github.com/technicalpickles/sleepyq https://pypi.org/project/sleepyq/"
+HOMEPAGE="https://github.com/technicalpickles/sleepyq https://pypi.org/project/sleepyq/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

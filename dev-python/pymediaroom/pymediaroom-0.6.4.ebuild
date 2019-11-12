@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Remote control your Mediaroom Set-up-box"
-HOMEPAGE="http://github.com/dgomes/pymediaroom https://pypi.org/project/pymediaroom/"
+HOMEPAGE="https://github.com/dgomes/pymediaroom https://pypi.org/project/pymediaroom/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

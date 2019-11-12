@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Get your energy consumption from Atome Linky device"
-HOMEPAGE="http://github.com/baqs/pyAtome/ https://pypi.org/project/pyAtome/"
+HOMEPAGE="https://github.com/baqs/pyAtome/ https://pypi.org/project/pyAtome/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

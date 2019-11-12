@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python package to control BlinkStick USB devices."
-HOMEPAGE="http://pypi.python.org/pypi/BlinkStick/ https://pypi.org/project/BlinkStick/"
+HOMEPAGE="https://pypi.python.org/pypi/BlinkStick/ https://pypi.org/project/BlinkStick/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="NEWLIB"

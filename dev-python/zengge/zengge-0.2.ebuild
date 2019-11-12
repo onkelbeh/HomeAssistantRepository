@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python API for controlling Zengge LED bulbs"
-HOMEPAGE="http://github.com/mjg59/python-zengge https://pypi.org/project/zengge/"
+HOMEPAGE="https://github.com/mjg59/python-zengge https://pypi.org/project/zengge/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

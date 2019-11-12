@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Access Loop Energy energy monitors via Socket.IO API"
-HOMEPAGE="http://github.com/pavoni/pyloopenergy https://pypi.org/project/pyloopenergy/"
+HOMEPAGE="https://github.com/pavoni/pyloopenergy https://pypi.org/project/pyloopenergy/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="A lightweight, object-oriented Python state machine implementation."
-HOMEPAGE="http://github.com/pytransitions/transitions https://pypi.org/project/transitions/"
+HOMEPAGE="https://github.com/pytransitions/transitions https://pypi.org/project/transitions/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

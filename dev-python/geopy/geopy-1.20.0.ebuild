@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python{2_7,3_5,3_6} )
 inherit distutils-r1
 
 DESCRIPTION="A Geocoding Toolbox for Python"
-HOMEPAGE="http://www.geopy.org/ https://github.com/geopy/geopy"
+HOMEPAGE="https://www.geopy.org/ https://github.com/geopy/geopy"
 SRC_URI="https://github.com/${PN}/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 IUSE="test doc timezone yahoo"
@@ -36,7 +36,7 @@ python_prepare_all() {
 		local PYTHON_DOC_VERSION="${PYTHON_DOC_ATOM#dev-python/python-docs-}"
 		local PYTHON_DOC="/usr/share/doc/python-docs-${PYTHON_DOC_VERSION}/html"
 		local PYTHON_DOC_INVENTORY="${PYTHON_DOC}/objects.inv"
-		sed -i "s|'http://docs.python.org/': None|'${PYTHON_DOC}': '${PYTHON_DOC_INVENTORY}'|" docs/conf.py || die
+		sed -i "s|'https://docs.python.org/': None|'${PYTHON_DOC}': '${PYTHON_DOC_INVENTORY}'|" docs/conf.py || die
 	fi
 
 	distutils-r1_python_prepare_all

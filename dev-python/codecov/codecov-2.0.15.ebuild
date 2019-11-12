@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Hosted coverage reports for Github, Bitbucket and Gitlab"
-HOMEPAGE="http://github.com/codecov/codecov-python https://pypi.org/project/codecov/"
+HOMEPAGE="https://github.com/codecov/codecov-python https://pypi.org/project/codecov/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"

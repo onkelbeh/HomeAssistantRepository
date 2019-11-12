@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Slack API client"
-HOMEPAGE="http://github.com/os/slacker/ https://pypi.org/project/slacker/"
+HOMEPAGE="https://github.com/os/slacker/ https://pypi.org/project/slacker/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Growl Notification Transport Protocol for Python"
-HOMEPAGE="http://github.com/kfdm/gntp/ https://pypi.org/project/gntp/"
+HOMEPAGE="https://github.com/kfdm/gntp/ https://pypi.org/project/gntp/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

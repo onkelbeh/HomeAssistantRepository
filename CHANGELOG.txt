@@ -8,6 +8,29 @@
 	* update zha-quirks-0.0.27-r1
 	* update PlexAPI-3.3.0
 	* add dependency for plexauth-0.0.5-r1
+	* fix uri.https for all ebuilds in
+	      - BlinkStick
+	      - PyRMVtransport
+	      - RPi-GPIO
+	      - aiodns
+	      - amcrest
+	      - bellows-homeassistant
+	      - broadlink
+	      - codecov
+	      - geopy
+	      - gntp
+	      - pyAtome
+	      - pyeconet
+	      - pyfido
+	      - pyfritzhome
+	      - pylacrosse
+	      - pyloopenergy
+	      - pylutron
+	      - pymediaroom
+	      - slacker
+	      - sleepyq
+	      - transitions
+	      - zengge
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
