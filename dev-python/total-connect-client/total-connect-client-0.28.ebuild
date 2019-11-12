@@ -13,7 +13,9 @@ DESCRIPTION="Interact with Total Connect 2 alarm systems"
 HOMEPAGE="https://github.com/craigjmidwinter/total-connect-client https://pypi.org/project/total-connect-client/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="UNKNOWN"
+LICENSE="all-rights-reserved"
+RESTRICT="bindist mirror"
+
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

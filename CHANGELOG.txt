@@ -40,6 +40,11 @@
 	* Change copyright years to "1999-2019"
 	* remove all stale CVS keywords "# $Id$"
 	* replace stale "Gentoo Foundation" copright notices with the current one
+	* update packages with unknown licenses to https://devmanual.gentoo.org/general-concepts/licenses/index.html
+	    - adb-shell
+	    - somecomfort
+	    - total-connect-client
+	    
 
 2019-11-11 new modules from dev tree
 	* bump plexwebsocket-0.0.5
