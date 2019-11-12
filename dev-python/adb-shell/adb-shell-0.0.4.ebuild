@@ -9,12 +9,10 @@ inherit distutils-r1
 MY_P=${PN/-/_}-${PV}
 
 DESCRIPTION="ADB shell functionality"
-HOMEPAGE=" https://pypi.org/project/adb-shell/"
+HOMEPAGE="https://github.com/JeffLIrion/adb_shell https://pypi.org/project/adb-shell/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="all-rights-reserved"
-RESTRICT="bindist mirror"
-
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
