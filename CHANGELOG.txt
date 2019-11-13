@@ -6,6 +6,7 @@
 	* (re-)add withings-api-2.1.3
 	* bump zha-quirks-0.0.28
 	* homeassistant-0.101.3-r2 RDEPENDs fixed
+	* bump pyotgw-0.5_beta1
 
 2019-11-11 new modules from dev tree
 	* aiodns & aionotify, fix checksums in manifest
