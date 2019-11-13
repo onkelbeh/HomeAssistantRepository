@@ -1,5 +1,6 @@
 2019-11-12
 	* update pypoint-1.1.2
+	* update async-upnp-client-0.14.12
 
 2019-11-11 new modules from dev tree
 	* aiodns & aionotify, fix checksums in manifest
