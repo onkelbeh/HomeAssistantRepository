@@ -118,7 +118,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/zeroconf-0.23.0[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.42.0
 
-	abode? ( ~dev-python/abodepy-0.15.0[${PYTHON_USEDEP}] )
+	abode? ( ~dev-python/abodepy-0.16.6[${PYTHON_USEDEP}] )
 	androidtv? ( ~dev-python/androidtv-0.0.32[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.21[${PYTHON_USEDEP}] )
 	atmo? ( ~dev-python/pyatmo-2.3.2[${PYTHON_USEDEP}] )
