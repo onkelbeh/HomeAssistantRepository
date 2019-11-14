@@ -1,5 +1,6 @@
 2019-11-14
 	* add MIT License to total-connect-client
+	* remove requests-toolbelt-0.9.1.ebuild
 
 2019-11-12 homeassistant-0.102.0_beta0.ebuild
 	* update pypoint-1.1.2
