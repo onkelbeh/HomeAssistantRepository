@@ -1,3 +1,6 @@
+2019-11-14
+	* add MIT License to total-connect-client
+
 2019-11-12 homeassistant-0.102.0_beta0.ebuild
 	* update pypoint-1.1.2
 	* update async-upnp-client-0.14.12
