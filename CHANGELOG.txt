@@ -4,6 +4,7 @@
 	* update simplisafe-python-5.2.0
 	* bump frontend to 20191114.0
 	* update homeassistant-0.102.0_beta1
+	* total-connect-client add PYTHON_COMPAT 3.8
 
 2019-11-12 homeassistant-0.102.0_beta0.ebuild
 	* update pypoint-1.1.2
