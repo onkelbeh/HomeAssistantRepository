@@ -6,6 +6,7 @@
 	* update botocore-1.12.252
 	* update boto3-1.9.252
 	* add ipify-1.0.0
+	* update pytest-5.2.3
 
 2019-11-14 homeassistant-0.102.0_beta1
 	* add MIT License to total-connect-client
