@@ -1,3 +1,6 @@
+2019-11-15
+	* add aiobotocore-0.10.1
+
 2019-11-14 homeassistant-0.102.0_beta1
 	* add MIT License to total-connect-client
 	* remove requests-toolbelt-0.9.1.ebuild
