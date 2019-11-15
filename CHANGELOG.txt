@@ -3,6 +3,7 @@
 	* update teslajsonpy-0.2.0
 	* bump aiobotocore-0.10.2
 	* bump aiobotocore-0.10.4
+	* update botocore-1.12.252
 
 2019-11-14 homeassistant-0.102.0_beta1
 	* add MIT License to total-connect-client
