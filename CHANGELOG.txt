@@ -8,6 +8,7 @@
 	* add ipify-1.0.0
 	* update pytest-5.2.3
 	* add python-blockchain-api
+	* add hkavr-0.0.5
 
 2019-11-14 homeassistant-0.102.0_beta1
 	* add MIT License to total-connect-client
