@@ -10,6 +10,7 @@
 	* add pycomfoconnect-0.3
 	* add alpha-vantage-2.1.2
 	* update shodan-1.19.1
+	* add sharp_aquos_rc-0.4
 
 2019-11-15
 	* add aiobotocore-0.10.1
