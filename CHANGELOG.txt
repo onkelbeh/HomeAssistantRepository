@@ -5,6 +5,7 @@
 	* bump pylint-2.4.4
 	* bump astroid-2.3.3
 	* add pyombi-0.1.{5,10}
+	* bump pyobihai-1.2.0
 
 2019-11-15
 	* add aiobotocore-0.10.1
