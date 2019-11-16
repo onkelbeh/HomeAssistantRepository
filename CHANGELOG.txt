@@ -1,3 +1,6 @@
+2019-11-16
+	* bump frontend-20191115.0
+
 2019-11-15
 	* add aiobotocore-0.10.1
 	* update teslajsonpy-0.2.0
