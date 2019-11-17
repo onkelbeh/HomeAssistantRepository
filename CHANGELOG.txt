@@ -1,11 +1,12 @@
 2019-11-17 add new use flags
-	   * axis: communicating with devices from Axis Communications
-	   * bitcoin: displays various details about the Bitcoin network
-	   * blockchain: displays Bitcoin wallet balances from blockchain.info
-	   * enocean: Support for Enocean devices
-	   * hkavr allows you to control Harman Kardon Network Receivers
-	   * influxdb:transfer sensor data to a local InfluxDB database
-	   * maxcube_hack: apply temporary dirty Patch for broken maxcube-api implementation https://github.com/home-assistant/home-assistant/issues/28811
+	* axis: communicating with devices from Axis Communications
+	* bitcoin: displays various details about the Bitcoin network
+	* blockchain: displays Bitcoin wallet balances from blockchain.info
+	* enocean: Support for Enocean devices
+	* hkavr allows you to control Harman Kardon Network Receivers
+	* influxdb:transfer sensor data to a local InfluxDB database
+	* maxcube_hack: apply temporary dirty Patch for broken maxcube-api implementation https://github.com/home-assistant/home-assistant/issues/28811
+	* add pure-python-adb-0.2.2
 
 2019-11-16
 	* bump frontend-20191115.0
