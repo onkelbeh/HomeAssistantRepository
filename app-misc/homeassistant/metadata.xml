@@ -14,6 +14,9 @@
     <flag name="atv">Library for controlling an Apple TV</flag>
     <flag name="aurora">Support for Power-One Aurora inverters</flag>
     <flag name="avea">Library for Elgato Avea bulbs</flag>
+    <flag name="axis">communicating with devices from Axis Communications</flag>
+    <flag name="bitcoin">displays various details about the Bitcoin network</flag>
+    <flag name="blockchain">displays Bitcoin wallet balances from blockchain.info</flag>
     <flag name="buienradar">use buienradar weather data</flag>
     <flag name="cli">install Home Assistant Cli hass-cli (lots of modules required)</flag>
     <flag name="ciscomobilityexpress">install ciscomobilityexpress support</flag>
@@ -25,6 +28,7 @@
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
     <flag name="everlights">Library for controlling an EverLights lighting system</flag>
     <flag name="envoy">Reads electricity production and consumption from an Enphase Envoy</flag>
+    <flag name="enocean">Support for Enocean devices</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
     <flag name="frontend">keep Home Assistant frontend out of virtualenv</flag>
     <flag name="gpiozero">interface to GPIO devices on a Raspberry Pi</flag>
@@ -32,13 +36,16 @@
     <flag name="harmony">Logitech Harmony support</flag>
     <flag name="heos">controlling HEOS devices through the HEOS CLI Protocol</flag>
     <flag name="hpilo">HP Integrated Lights out XML interface</flag>
+    <flag name="hkavr">allows you to control Harman Kardon Network Receivers</flag>
     <flag name="homekit">works as both HomeKit controller and accessory</flag>
     <flag name="homematic">An API for the homematicip cloud</flag>
     <flag name="homematicip">A python wrapper for the homematicIP REST API (Access Point Based)</flag>
     <flag name="hs100">Interface for TPLink Stuff</flag>
     <flag name="hue">talk to Philips Hue</flag>
     <flag name="incomfort">client for Intergas InComfort/InTouch Lan2RF systems</flag>
+    <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
+    <flag name="maxcube_hack">apply Patch for https://github.com/home-assistant/home-assistant/issues/28811</flag>
     <flag name="miio">add support for Xiaomi smart appliances</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
     <flag name="mqtt">install MQTT Broker and dependencies</flag>

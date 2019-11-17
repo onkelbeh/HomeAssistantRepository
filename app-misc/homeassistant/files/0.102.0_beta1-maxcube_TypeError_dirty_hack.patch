@@ -1,0 +1,28 @@
+diff --git a/homeassistant/components/maxcube/binary_sensor.py b/homeassistant/components/maxcube/binary_sensor.py
+index 639b670..8a02649 100644
+--- a/homeassistant/components/maxcube/binary_sensor.py
++++ b/homeassistant/components/maxcube/binary_sensor.py
+@@ -17,7 +17,8 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
+             name = "{} {}".format(cube.room_by_id(device.room_id).name, device.name)
+ 
+             # Only add Window Shutters
+-            if cube.is_windowshutter(device):
++            # if cube.is_windowhutter(device):
++            if device.type == 4:
+                 devices.append(MaxCubeShutter(handler, name, device.rf_address))
+ 
+     if devices:
+diff --git a/homeassistant/components/maxcube/climate.py b/homeassistant/components/maxcube/climate.py
+index e09dfc2..40df857 100644
+--- a/homeassistant/components/maxcube/climate.py
++++ b/homeassistant/components/maxcube/climate.py
+@@ -36,7 +36,8 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
+         for device in cube.devices:
+             name = "{} {}".format(cube.room_by_id(device.room_id).name, device.name)
+ 
+-            if cube.is_thermostat(device) or cube.is_wallthermostat(device):
++            # if cube.is_thermostat(device) or cube.is_wallthermostat(device):
++            if device.type == 3 or device.type == 1:
+                 devices.append(MaxCubeClimate(handler, name, device.rf_address))
+ 
+     if devices:
