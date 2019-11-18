@@ -42,7 +42,6 @@ DEPEND="${REDEPEND}
 	>=dev-python/typing-3.6.6[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-3.10.0[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
-	>=dev-python/ifaddr-0.1.6[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	server? ( >=dev-python/ifaddr-0.1.6 )
 	test? (

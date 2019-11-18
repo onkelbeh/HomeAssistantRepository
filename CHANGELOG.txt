@@ -1,6 +1,7 @@
 2019-11-18
 	* update pyatmo-3.0.1
 	* bump aioesphomeapi-2.6.0
+	* copy current ebuild to esphome-9999
 
 2019-11-17 add new use flags
 	* axis: communicating with devices from Axis Communications
