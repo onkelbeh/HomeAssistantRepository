@@ -25,7 +25,7 @@ RDEPEND="
 	>=dev-python/botocore-1.12.252[${PYTHON_USEDEP}]
 	<dev-python/botocore-1.13.0[${PYTHON_USEDEP}]
 	>=dev-python/jmespath-0.7.1[${PYTHON_USEDEP}]
-	>=dev-python/jmespath-1.0.0[${PYTHON_USEDEP}]
+	<dev-python/jmespath-1.0.0[${PYTHON_USEDEP}]
 	>=dev-python/s3transfer-0.2.0[${PYTHON_USEDEP}]
 	<dev-python/s3transfer-0.3.0[${PYTHON_USEDEP}]
 "
