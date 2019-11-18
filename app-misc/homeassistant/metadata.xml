@@ -37,6 +37,7 @@
     <flag name="heos">controlling HEOS devices through the HEOS CLI Protocol</flag>
     <flag name="hpilo">HP Integrated Lights out XML interface</flag>
     <flag name="hkavr">allows you to control Harman Kardon Network Receivers</flag>
+    <flag name="holidays">generating country, province and state specific sets of holidays on the fly</flag>
     <flag name="homekit">works as both HomeKit controller and accessory</flag>
     <flag name="homematic">An API for the homematicip cloud</flag>
     <flag name="homematicip">A python wrapper for the homematicIP REST API (Access Point Based)</flag>

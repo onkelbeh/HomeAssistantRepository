@@ -1,4 +1,4 @@
-2019-11-18
+2019-11-18 homeassistant-0.102.0_beta2
 	* update pyatmo-3.0.1
 	* bump aioesphomeapi-2.6.0
 	* copy current ebuild to esphome-9999
@@ -8,6 +8,7 @@
 	* bump frontend-20191118.0
 	* bump roombapy-1.4.1
 	* add rova-0.1.0
+	* update homeassistant-0.102.0_beta2
 
 2019-11-17 add new use flags
 	* axis: communicating with devices from Axis Communications
