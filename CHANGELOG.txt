@@ -10,6 +10,8 @@
 	* add rova-0.1.0
 	* update homeassistant-0.102.0_beta2
 	* fix typo in boto3-1.9.252.ebuild
+	* add missing 0.102.0_beta2-maxcube_TypeError_dirty_hack.patch
+	* update homeassistant-0.102.0_beta2
 
 2019-11-17 add new use flags
 	* axis: communicating with devices from Axis Communications

@@ -25,8 +25,8 @@ RDEPEND="
 	dev-python/jmespath[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.1[${PYTHON_USEDEP}]
 	<dev-python/python-dateutil-2.8.1[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.20[${PYTHON_USEDEP}]
-	<dev-python/urllib3-1.24[${PYTHON_USEDEP}]"
+	>=dev-python/urllib3-1.20[${PYTHON_USEDEP}]"
+	# <dev-python/urllib3-1.24[${PYTHON_USEDEP}]"
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	doc? (
