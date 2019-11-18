@@ -3,6 +3,7 @@
 	* bump aioesphomeapi-2.6.0
 	* copy current ebuild to esphome-9999
 	* update esphome-1.14.3
+	* bump libpyvivotek
 
 2019-11-17 add new use flags
 	* axis: communicating with devices from Axis Communications
