@@ -175,6 +175,8 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 
 ## Todos
 - If it moves, compile it :-)
+- Publish my Home Assistant Configuration
+- Publish my ESPHome Configurations
 - Remove support for Python 3.6 in the mid of December
 - Add support for Python 3.8 in a new dev branch
 - Add libraries if i need it or someone asks for
@@ -216,7 +218,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 * Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
 * Enigma2 on Dreambox (2 left) (http://wiki.blue-panel.com/index.php/Enigma2)
 * Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
-* EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube). Currently the integration 'maxcube-api' is broken, added a hack to keep them running, just add 'maxcube_hack' use flag to homeassistant, then the patch will be applied before installation.
+* EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` use flag to homeassistant, then the patch will be applied before installation.
 * Axis Camera (1, a few more to come)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
