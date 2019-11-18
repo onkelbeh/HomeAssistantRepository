@@ -1,3 +1,6 @@
+2019-11-18
+	* update pyatmo-3.0.1
+
 2019-11-17 add new use flags
 	* axis: communicating with devices from Axis Communications
 	* bitcoin: displays various details about the Bitcoin network
