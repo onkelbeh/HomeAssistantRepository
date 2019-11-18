@@ -15,7 +15,8 @@ if [[ ${PV} == *9999* ]]; then
 else
 	MY_P=${P/_beta/b}
 	MY_PV=${PV/_beta/b}
-	SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+	# SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 	S="${WORKDIR}/${MY_P}/"
 fi
 
@@ -37,13 +38,13 @@ DEPEND="${REDEPEND}
 	>=dev-python/pyyaml-5.1.2[${PYTHON_USEDEP}]
 	>=dev-python/paho-mqtt-1.4.0[${PYTHON_USEDEP}]
 	>=dev-python/colorlog-4.0.2[${PYTHON_USEDEP}]
-	>=www-servers/tornado-5.1.1[${PYTHON_USEDEP}]
 	~dev-embedded/esptool-2.7[${PYTHON_USEDEP}]
 	>=dev-python/typing-3.6.6[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-3.10.0[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
-	server? ( >=dev-python/ifaddr-0.1.6 )
+	server? ( >=dev-python/ifaddr-0.1.6
+			>=www-servers/tornado-5.1.1[${PYTHON_USEDEP}] )
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

@@ -3,13 +3,26 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 )
+PYTHON_COMPAT=( python3_{6,7} )
 
 inherit user readme.gentoo-r1 distutils-r1
 
+if [[ ${PV} == *9999* ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/esphome/esphome.git"
+	EGIT_BRANCH="dev"
+	S="${WORKDIR}/${P}/"
+else
+	MY_P=${P/_beta/b}
+	MY_PV=${PV/_beta/b}
+	# SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+	S="${WORKDIR}/${MY_P}/"
+fi
+
+
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
 HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,18 +32,19 @@ IUSE="server test"
 RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	>=dev-python/tzlocal-1.4[${PYTHON_USEDEP}]
-	>=dev-python/voluptuous-0.11.1[${PYTHON_USEDEP}]
-	>=dev-embedded/platformio-3.5.3
-	>=dev-python/pyyaml-3.12[${PYTHON_USEDEP}]
-	>=dev-python/paho-mqtt-1.3.1[${PYTHON_USEDEP}]
-	>=dev-python/colorlog-3.1.2[${PYTHON_USEDEP}]
-	>=www-servers/tornado-5.0.0[${PYTHON_USEDEP}]
-	>=dev-embedded/esptool-2.3.1[${PYTHON_USEDEP}]
-	>=dev-python/typing-3.0.0[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-3.4[${PYTHON_USEDEP}]
+	>=dev-python/tzlocal-2.0.0[${PYTHON_USEDEP}]
+	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
+	>=dev-embedded/platformio-4.0.3
+	>=dev-python/pyyaml-5.1.2[${PYTHON_USEDEP}]
+	>=dev-python/paho-mqtt-1.4.0[${PYTHON_USEDEP}]
+	>=dev-python/colorlog-4.0.2[${PYTHON_USEDEP}]
+	~dev-embedded/esptool-2.7[${PYTHON_USEDEP}]
+	>=dev-python/typing-3.6.6[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-python-3.10.0[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
-	server? ( >=dev-python/ifaddr-0.1.6 )
+	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
+	server? ( >=dev-python/ifaddr-0.1.6
+			>=www-servers/tornado-5.1.1[${PYTHON_USEDEP}] )
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
