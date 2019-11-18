@@ -218,7 +218,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 * Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
 * Enigma2 on Dreambox (2 left) (http://wiki.blue-panel.com/index.php/Enigma2)
 * Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
-* EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` use flag to homeassistant, then the patch will be applied before installation.
+* EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` use flag to homeassistant, then the patch will be applied before installation. Recently i saw some other interesting soft for this hardware. Perhaps i'll try one of these, and forget about `maxcube-api`.
 * Axis Camera (1, a few more to come)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
