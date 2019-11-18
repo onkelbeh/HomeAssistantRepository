@@ -54,7 +54,8 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/asn1crypto-0.24.0[${PYTHON_USEDEP}]
 	~dev-python/beautifulsoup-4.8.1[${PYTHON_USEDEP}]
 	~dev-python/blinkpy-0.14.2[${PYTHON_USEDEP}]
-	>=dev-python/boto3-1.9.233[${PYTHON_USEDEP}]
+	~dev-python/boto3-1.9.252[${PYTHON_USEDEP}]
+	~dev-python/aiobotocore-0.10.4[${PYTHON_USEDEP}]
 	~dev-python/caldav-0.6.1[${PYTHON_USEDEP}]
 	>=dev-python/cdu-0.1.3[${PYTHON_USEDEP}]
 	~dev-python/cffi-1.12.2[${PYTHON_USEDEP}]
@@ -123,7 +124,7 @@ RDEPEND="${PYTHON_DEPS}
 	androidtv? ( ~dev-python/androidtv-0.0.32[${PYTHON_USEDEP}]
 			   ~dev-python/adb-shell-0.0.8[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.22[${PYTHON_USEDEP}] )
-	atmo? ( ~dev-python/pyatmo-2.3.2[${PYTHON_USEDEP}] )
+	atmo? ( ~dev-python/pyatmo-3.0.1[${PYTHON_USEDEP}] )
 	atv? ( >=dev-python/pyatv-0.3.13[${PYTHON_USEDEP}] )
 	aurora? ( ~dev-python/aurorapy-0.2.6[${PYTHON_USEDEP}] )
 	avea? ( ~dev-python/avea-1.4[${PYTHON_USEDEP}] )
@@ -143,7 +144,7 @@ RDEPEND="${PYTHON_DEPS}
 	enocean? ( ~dev-python/enocean-0.50.0[${PYTHON_USEDEP}] )
 	envoy? ( ~dev-python/envoy-reader-0.8.6[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( ~app-misc/home-assistant-frontend-20191114.0[${PYTHON_USEDEP}] )
+	frontend? ( ~app-misc/home-assistant-frontend-20191118.0[${PYTHON_USEDEP}] )
 	gpiozero? ( ~dev-python/gpiozero-1.5.1[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
