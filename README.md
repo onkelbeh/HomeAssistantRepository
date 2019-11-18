@@ -182,6 +182,10 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 - Write an installation page for the home-assistant.io Documentation an get it added.
 - Convince more people to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
+## experiments are in progress:
+* grafana
+* influxdb
+
 ## some Background...
 
 I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine, currently 10.3.16 without problems.
@@ -201,6 +205,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
   * Sonoff RF Bridge with remote Swiches
   * Sonoff Touch
   * Sonoff Basic (not working well with Tasmota in newer versions)
+  The Sonoff Pow will stay with Tasmota for a while, because i have no good implementation of an energy monitor in ESPHome.
 * some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
 * Yamaha RXV (4 devices)
 * SamsungTV (partly _not_ working anymore due to Samsungs newest firmware 'improvements', at least i can read it's status for controlling lights & the shutters)
@@ -211,7 +216,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 * Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
 * Enigma2 on Dreambox (2 left) (http://wiki.blue-panel.com/index.php/Enigma2)
 * Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
-* EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube)
+* EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube). Currently the integration 'maxcube-api' is broken, added a hack to keep them running, just add 'maxcube_hack' use flag to homeassistant, then the patch will be applied before installation.
 * Axis Camera (1, a few more to come)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
