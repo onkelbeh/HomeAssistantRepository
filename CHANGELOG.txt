@@ -6,6 +6,7 @@
 	* bump libpyvivotek
 	* bump sphinx-2.1.2
 	* bump frontend-20191118.0
+	* bump roombapy-1.4.1
 
 2019-11-17 add new use flags
 	* axis: communicating with devices from Axis Communications
