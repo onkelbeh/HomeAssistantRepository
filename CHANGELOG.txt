@@ -2,6 +2,7 @@
 	* add pyversasense-0.0.6
 	* bump frontend-20191119.0
 	* add pyRFXtrx-0.24.0
+	* bump pytest-5.3.0
 
 2019-11-18 homeassistant-0.102.0_beta2
 	* update pyatmo-3.0.1
