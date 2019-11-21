@@ -18,7 +18,7 @@ SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.g
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="abode ambiclimate androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs enigma enocean esphome everlights envoy fronius +frontend gpiozero growl harmony heos hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik mqtt musiccast +mysql openwrt plex qnap roku rxv samsungtv sma socat somfy sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink withings wled wwlln xknx youtube z-wave zigbee zoneminder"
+IUSE="abode ambiclimate androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs enigma enocean esphome everlights envoy fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik mqtt musiccast +mysql openwrt plex qnap roku rxv samsungtv sma socat somfy sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink withings wled wwlln xknx youtube z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -149,6 +149,7 @@ RDEPEND="${PYTHON_DEPS}
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
 	heos? ( ~dev-python/pyheos-0.6.0[${PYTHON_USEDEP}] )
+	here? ( ~dev-python/herepy-0.6.3.1[${PYTHON_USEDEP}] )
 	hpilo? ( ~dev-python/python-hpilo-4.3[${PYTHON_USEDEP}] )
 	hkavr? ( ~dev-python/hkavr-0.0.5[${PYTHON_USEDEP}] )
 	holidays? ( ~dev-python/holidays-0.9.11[${PYTHON_USEDEP}] )

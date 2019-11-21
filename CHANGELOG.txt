@@ -1,5 +1,6 @@
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
+	* add herepy-0.6.3.1 & herepy-0.6.3.3
 
 2019-11-20 homeassistant-0.102.0_beta3
 	* add pyversasense-0.0.6

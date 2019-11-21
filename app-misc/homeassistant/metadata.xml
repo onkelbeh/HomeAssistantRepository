@@ -35,6 +35,7 @@
     <flag name="growl">add Growl Notification Transport Protocol</flag>
     <flag name="harmony">Logitech Harmony support</flag>
     <flag name="heos">controlling HEOS devices through the HEOS CLI Protocol</flag>
+    <flag name="here">here_travel_time sensor provides travel time from the HERE Routing API</flag>
     <flag name="hpilo">HP Integrated Lights out XML interface</flag>
     <flag name="hkavr">allows you to control Harman Kardon Network Receivers</flag>
     <flag name="holidays">generating country, province and state specific sets of holidays on the fly</flag>
