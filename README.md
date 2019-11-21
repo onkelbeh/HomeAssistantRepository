@@ -237,35 +237,36 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 
 ## Licenses
 
-The Repository itself is released under GPL-3, all work on the depending components under the Licenses they came from, which could be (as my grep told me):
+The Repository itself is released under GPL-3, all work on the depending components under the Licenses they came from, which could be (as my grep told me on Nov 15th):
 
-2x "AGPL-3"
-181x "Apache-2.0"
-2x "Artistic-2"
-127x "BSD"
-6x "BSD-2
-4x "BSD-2 Unlicense"
-7x "BSD-4"
-4x "CC0-1.0"
-2x "CC-BY-NC-SA-4.0"
-2x "ECL-2.0"
-8x "EPL-1.0"
-135x 'GPL',
-  2x "GPL-1"
-  26x "GPL-2"
-  94x "GPL-3"
-  12x "GPL-3+"
-4x "LGPL-2+"
-8x "LGPL-2.1"
-10x "LGPL-3"
-4x "LGPL-3+"
-576x "MIT"
-6x "MPL-2.0"
-1x "NEWLIB"
-9x "PSF-2"
-2x "PSF-2.4"
-2x "public-domain"
-12x "Unlicense"
-5x "ZPL"
+| Count | License |
+| ------ | ------ |
+|2x |AGPL-3|
+|181x |Apache-2.0|
+|2x |Artistic-2|
+|127x |BSD|
+|6x |BSD-2
+|4x |BSD-2 Unlicense|
+|7x |BSD-4|
+|4x |CC0-1.0|
+|2x |CC-BY-NC-SA-4.0|
+|2x |ECL-2.0|
+|8x |EPL-1.0|
+|2x |GPL-1|
+|26x |GPL-2|
+|94x |GPL-3|
+|12x |GPL-3+|
+|4x |LGPL-2+|
+|8x |LGPL-2.1|
+|10x |LGPL-3|
+|4x |LGPL-3+|
+|576x |MIT|
+|6x |MPL-2.0|
+|1x |NEWLIB|
+|9x |PSF-2|
+|2x |PSF-2.4|
+|2x |public-domain|
+|12x |Unlicense|
+|5x |ZPL|
 
 I did my best to keep these clean, thanks to @matoro for help. Some packages have no license published. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
