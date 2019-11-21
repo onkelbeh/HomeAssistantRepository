@@ -19,11 +19,11 @@ Thanks to @evadim and @klowe0100 for improving the ebuild and helping to keep it
 
  * platformio (needed for ESPHome)
 
-Since homeassistant-0.95.0_beta0 `esphome-1.13.6` can be run again in the same environment with homeassistant, because homeassistant does not insist on `dev-python/pyyaml-3.13` anymore.
+Since homeassistant-0.95.0_beta0 `esphome-1.13.6` can be run again in the same environment with homeassistant, because homeassistant does not insist on `dev-python/pyyaml-3.13` anymore and
 
-**esphome-1.14.1 with platformio-4.0.3-r2 can now be run without problems on Python 3.7.**
+since esphome-1.14.1 with platformio-4.0.3-r2 ESPHome can now be run without problems on Python 3.7.
 
-If you have questions or suggestions don't hesitate to contact me, any help is very welcome.
+If you have questions or suggestions don't hesitate to contact me, any help is **very** welcome.
 
 ## Git Server & Mirrors
 You will find this Repository at
@@ -59,7 +59,7 @@ $ cat /etc/locale.gen
 de_DE ISO-8859-1
 de_DE@euro UTF-8
 ```
-It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`, a lot of unstable ebuilds are needed, because some of the stable versions do *not* support Python 3.7.
+It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`, a lot of main repo's unstable ebuilds are needed, because some of the stable versions do *not* support Python 3.7.
 
 Edit your `/etc/portage/make.conf` to set the new Python Targets:
 ```sh
@@ -208,6 +208,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
   * Sonoff Touch
   * Sonoff Basic (not working well with Tasmota in newer versions)
   The Sonoff Pow will stay with Tasmota for a while, because i have no good implementation of an energy monitor in ESPHome.
+* experimenting with Shelly Devices
 * some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
 * Yamaha RXV (4 devices)
 * SamsungTV (partly _not_ working anymore due to Samsungs newest firmware 'improvements', at least i can read it's status for controlling lights & the shutters)
@@ -238,30 +239,33 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 
 The Repository itself is released under GPL-3, all work on the depending components under the Licenses they came from, which could be (as my grep told me):
 
-- "Artistic-2"
-- "BSD"
-- "BSD-2"
-- "BSD-2 Unlicense"
-- "BSD-4"
-- "CC0-1.0"
-- "CC-BY-NC-SA-4.0"
-- "ECL-2.0"
-- "EPL-1.0"
-- "GPL-1"
-- "GPL-2"
-- "GPL-2+"
-- "GPL-3"
-- "GPL-3+"
-- "LGPL"
-- "LGPL-2+"
-- "LGPL-2.1"
-- "LGPL-3"
-- "LGPL-3+"
-- "MIT"
-- "MPL-2.0"
-- "PSF-2"
-- "PSF-2.4"
-- "Unlicense"
-- "ZPL"
+2x "AGPL-3"
+181x "Apache-2.0"
+2x "Artistic-2"
+127x "BSD"
+6x "BSD-2
+4x "BSD-2 Unlicense"
+7x "BSD-4"
+4x "CC0-1.0"
+2x "CC-BY-NC-SA-4.0"
+2x "ECL-2.0"
+8x "EPL-1.0"
+135x 'GPL',
+  2x "GPL-1"
+  26x "GPL-2"
+  94x "GPL-3"
+  12x "GPL-3+"
+4x "LGPL-2+"
+8x "LGPL-2.1"
+10x "LGPL-3"
+4x "LGPL-3+"
+576x "MIT"
+6x "MPL-2.0"
+1x "NEWLIB"
+9x "PSF-2"
+2x "PSF-2.4"
+2x "public-domain"
+12x "Unlicense"
+5x "ZPL"
 
 I did my best to keep these clean, thanks to @matoro for help. Some packages have no license published. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
