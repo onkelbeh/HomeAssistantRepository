@@ -90,6 +90,7 @@
 	* add freesms-0.1.2
 	* add fritzconnection-0.8.4
 	* add fritzhome-1.0.5, downgrade to fritzhome-1.0.4
+	* add afsapi-0.0.4
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
