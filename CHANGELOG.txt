@@ -8,6 +8,7 @@
 	* remove annoying version number from maxcube_TypeError_dirty_hack.patch
 	* fix pyversasense license string
 	* fix ipify license string
+	* add rova license string
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
