@@ -104,6 +104,7 @@
 	* add pygogogate2-0.2.1
 	* add greeneye-monitor-1.0.1
 	* add gstreamer-player-1.1.2
+	* add pygtfs-0.1.5
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
