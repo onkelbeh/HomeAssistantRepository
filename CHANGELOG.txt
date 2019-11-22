@@ -60,6 +60,7 @@
 	* add dovado-0.4.1
 	* dsmr-parser-0.14 and PyCRC-1.21 added
 	* add pydukeenergy-0.0.6
+	* add pyebox-1.1.4
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
