@@ -64,6 +64,7 @@
 	* add ecoaliface-0.4.0
 	* add pycountry-convert (for sucks)
 	* add sleekxmppfs-1.3.4 (for sucks), sucks cannot be added, there's no proper release.
+	* add eebrightbox-0.0.4
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
