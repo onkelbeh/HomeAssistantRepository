@@ -79,6 +79,7 @@
 	* add fastdotcom-0.0.3
 	* add fints-2.2.0, mt_940-4.19.0, sepaxml-2.2.0
 	* add fixerio-1.0.0_alpha0 & fixerio-0.1.1
+	* add ritassist-0.9.3 & ciso8601-2.1.2
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
