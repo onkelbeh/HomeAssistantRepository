@@ -54,6 +54,7 @@
 	* add dlipower-1.0.176
 	* downgrade to directpy-0.5
 	* add face_recognition-1.2.3 & face_recognition_models-0.3.0
+	* add dlib-19.18.0
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
