@@ -50,6 +50,7 @@
 	* added decora-wifi-1.4
 	* add schiene-0.23
 	* add (deprecated) Adafruit-DHT-1.4.0 and Adafruit-DHT-1.4.1
+	* add python-digitalocean-1.13.2
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
