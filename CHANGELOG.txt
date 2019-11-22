@@ -66,6 +66,15 @@
 	* add sleekxmppfs-1.3.4 (for sucks), sucks cannot be added, there's no proper release.
 	* add eebrightbox-0.0.4
 	* downgrade to envirophat-0.0.6
+	* add beacontools-1.3.1
+	* add pyedimax-0.2.1
+	* add pythonegardia-1.0.40
+	* add pyEmby-1.6
+	* add enturclient-0.2.0
+	* add pyenvisalink-4.0
+	* add epson-projector-0.1.3
+	* bump PyEssent-0.13
+	* add evohome-async-0.3.4_beta1
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
@@ -81,14 +90,6 @@
 	* fix LICENSE string of dev-python/aiobotocore
 	* rename (again) unused home-assistant-frontend-20191119.1 to current home-assistant-frontend-20191119.2
 	* bump homeassistant-0.102.0_beta3
-	* add beacontools-1.3.1
-	* add pyedimax-0.2.1
-	* add pythonegardia-1.0.40
-	* add pyEmby-1.6
-	* add enturclient-0.2.0
-	* add pyenvisalink-4.0
-	* add epson-projector-0.1.3
-	* bump PyEssent-0.13
 
 2019-11-18 homeassistant-0.102.0_beta2
 	* update pyatmo-3.0.1
