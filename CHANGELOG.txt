@@ -35,6 +35,8 @@
 	* add braviarc-homeassistant-0.3.7
 	* add brottsplatskartan-1.0.5 & brottsplatskartan-0.0.1
 	* add brunt-0.1.3
+	* py-canary-0.5.0 added
+	* add csrmesh-0.9.0
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
