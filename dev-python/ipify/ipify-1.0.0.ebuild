@@ -11,7 +11,7 @@ DESCRIPTION="The official client library for ipify: A Simple IP Address API."
 HOMEPAGE="https://github.com/rdegges/python-ipify https://pypi.org/project/ipify/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="UNLICENSE"
+LICENSE="Unlicense"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
