@@ -11,6 +11,7 @@
 	* add rova license string
 	* downgrade pyserial-3.1.1 from main repo for acer_projector
 	* add pyaftership-0.1.2
+	* add alarmdecoder-1.13.4 alarmdecoder-1.13.2
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
