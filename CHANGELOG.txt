@@ -21,6 +21,7 @@
 	* add apprise-0.8.1
 	* add aqualogic-1.0
 	* downgrade sharp_aquos_rc-0.3.2
+	* arcam-fmj-0.4.3 & aionursery-0.3.0
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
