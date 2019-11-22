@@ -39,6 +39,7 @@
 	* add csrmesh-0.9.0
 	* downgrade to pychannels-1.0.0
 	* downgrade to ciscosparkapi-0.4.2
+	* add python-clementine-remote-1.0.1 & python-clementine-remote-1.0.3
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
