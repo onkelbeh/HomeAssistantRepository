@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">apns2</remote-id>
+    <maintainer status="unknown">
+      <email>me@pr0ger.prg</email>
+      <name>Sergey Petrov</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

@@ -17,6 +17,7 @@
 	* asmog-0.0.6 added
 	* add pydroid-ipcam-0.8 & pydroid-ipcam-1.1
 	* add anel-pwrctrl-homeassistant-0.0.1
+	* add apns2 (incomplete missing 'older' depencies)
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
