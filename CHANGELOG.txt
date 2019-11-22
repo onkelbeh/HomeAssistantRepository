@@ -93,6 +93,7 @@
 	* add afsapi-0.0.4
 	* add pyfnip-0.2
 	* add python-gc100-1.0.3_alpha0
+	* add gearbest-parser-1.0.7
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
