@@ -9,6 +9,7 @@
 	* fix pyversasense license string
 	* fix ipify license string
 	* add rova license string
+	* downgrade pyserial-3.1.1 from main repo for acer_projector
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
