@@ -31,6 +31,8 @@
 	* downgrade bizkaibus-0.1.1
 	* blinkt-0.1.0 & blinkt-0.1.2.ebuild added
 	* add pygatt-4.0.5 & enum-compat-0.0.3
+	* add bme680-1.0.5
+	* add braviarc-homeassistant-0.3.7
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
