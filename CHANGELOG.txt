@@ -46,6 +46,7 @@
 	* add coinmarketcap-5.0.3
 	* add pycoolmasternet-0.0.4 & pycoolmasternet-0.2.4
 	* crimereports-1.0.1 added
+	* decora-0.6 added
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
