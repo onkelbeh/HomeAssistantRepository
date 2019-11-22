@@ -48,6 +48,7 @@
 	* crimereports-1.0.1 added
 	* decora-0.6 added
 	* added decora-wifi-1.4
+	* add schiene-0.23
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
