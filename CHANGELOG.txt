@@ -28,6 +28,7 @@
 	* add python-awair-0.0.4
 	* baidu-aip added
 	* add i2csense-0.0.4
+	* downgrade bizkaibus-0.1.1
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
