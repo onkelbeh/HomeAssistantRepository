@@ -88,6 +88,7 @@
 	* downgrade to fortiosapi-0.10.8
 	* libpyfoscam-1.1 added
 	* add freesms-0.1.2
+	* add fritzconnection-0.8.4
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
