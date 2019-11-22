@@ -45,6 +45,7 @@
 	* bump requests-cache-0.4.13 & requests-cache-0.5.0 from main repo
 	* add coinmarketcap-5.0.3
 	* add pycoolmasternet-0.0.4 & pycoolmasternet-0.2.4
+	* crimereports-1.0.1 added
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
