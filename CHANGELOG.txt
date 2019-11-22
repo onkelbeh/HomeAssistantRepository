@@ -79,6 +79,7 @@
 	* fix LICENSE string of dev-python/aiobotocore
 	* rename (again) unused home-assistant-frontend-20191119.1 to current home-assistant-frontend-20191119.2
 	* bump homeassistant-0.102.0_beta3
+	* add beacontools-1.3.1
 
 2019-11-18 homeassistant-0.102.0_beta2
 	* update pyatmo-3.0.1
