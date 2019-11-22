@@ -260,7 +260,7 @@ src_prepare() {
 
 	# https://github.com/home-assistant/home-assistant/issues/28811
 	if use maxcube_hack ; then
-	   eapply "${FILESDIR}/${PV}-maxcube_TypeError_dirty_hack.patch"
+	   eapply "${FILESDIR}/maxcube_TypeError_dirty_hack.patch"
 	fi
 
 	eapply_user
