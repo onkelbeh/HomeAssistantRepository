@@ -14,6 +14,7 @@
 	* add alarmdecoder-1.13.4 alarmdecoder-1.13.2
 	* downgrade to alpha-vantage-2.1.1
 	* add pyads-3.0.7 & pyads-3.1.2
+	* asmog-0.0.6 added
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
