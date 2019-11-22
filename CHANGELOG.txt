@@ -57,6 +57,7 @@
 	* add dlib-19.18.0
 	* add pizzapi-0.0.3 and pizzapi-0.0.6
 	* add pydoods-1.0.2
+	* add dovado-0.4.1
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
