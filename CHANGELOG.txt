@@ -83,6 +83,7 @@
 	* add pyflexit-0.3
 	* bump pyflunearyou-1.0.3
 	* add flux-led-0.22
+	* add foobot_async-0.3.1
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
