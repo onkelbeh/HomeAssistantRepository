@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">decora-wifi</remote-id>
+    <maintainer status="unknown">
+      <email>tlyakhov@gmail.com</email>
+      <name>Tim Lyakhovetskiy</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
