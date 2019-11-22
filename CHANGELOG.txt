@@ -82,6 +82,7 @@
 	* add ritassist-0.9.3 & ciso8601-2.1.2
 	* add pyflexit-0.3
 	* bump pyflunearyou-1.0.3
+	* add flux-led-0.22
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
