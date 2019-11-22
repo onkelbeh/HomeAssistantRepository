@@ -1,5 +1,6 @@
 2019-11-21 homeassistant-0.102.1
 	* bump homeassistant-0.102.1
+	* bump frontend-20191119.5, remove olds
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
