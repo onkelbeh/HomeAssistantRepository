@@ -98,6 +98,7 @@
 	* add geojson-client-0.4, geojson-2.5.0 and haversine-2.1.2
 	* add georss-client-0.9 and georss-generic-client-0.2
 	* add aio-geojson-client-0.11 and aio-geojson-geonetnz-quakes-0.11
+	* add python-gitlab-1.13.0 & python-gitlab-1.6.0
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
