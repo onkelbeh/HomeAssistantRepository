@@ -101,6 +101,7 @@
 	* add python-gitlab-1.13.0 & python-gitlab-1.6.0
 	* add gitterpy-0.1.7
 	* add Pysher-1.0.4, bump autobahn-18.7.1 from main repo, add txaio-18.7.1 and txaio-18.8.1
+	* add pygogogate2-0.2.1
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
