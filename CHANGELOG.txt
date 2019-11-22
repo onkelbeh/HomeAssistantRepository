@@ -75,6 +75,7 @@
 	* add epson-projector-0.1.3
 	* bump PyEssent-0.13
 	* add evohome-async-0.3.4_beta1
+	* python-family-hub-local-0.0.2
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
