@@ -37,6 +37,7 @@
 	* add brunt-0.1.3
 	* py-canary-0.5.0 added
 	* add csrmesh-0.9.0
+	* downgrade to pychannels-1.0.0
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
