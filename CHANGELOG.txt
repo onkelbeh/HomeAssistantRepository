@@ -84,6 +84,7 @@
 	* add pyedimax-0.2.1
 	* add pythonegardia-1.0.40
 	* add pyEmby-1.6
+	* add enturclient-0.2.0
 
 2019-11-18 homeassistant-0.102.0_beta2
 	* update pyatmo-3.0.1
