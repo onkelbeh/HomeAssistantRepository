@@ -62,6 +62,7 @@
 	* add pydukeenergy-0.0.6
 	* add pyebox-1.1.4
 	* add ecoaliface-0.4.0
+	* add pycountry-convert (for sucks)
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
