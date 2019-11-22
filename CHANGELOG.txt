@@ -88,6 +88,7 @@
 	* add enturclient-0.2.0
 	* add pyenvisalink-4.0
 	* add epson-projector-0.1.3
+	* bump PyEssent-0.13
 
 2019-11-18 homeassistant-0.102.0_beta2
 	* update pyatmo-3.0.1
