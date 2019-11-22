@@ -2,6 +2,7 @@
 	* bump homeassistant-0.102.1
 	* bump frontend-20191119.5, remove olds
 	* bump pyatmo-3.1.0, remove olds
+	* bump vsure-1.5.4
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
