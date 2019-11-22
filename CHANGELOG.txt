@@ -49,6 +49,7 @@
 	* decora-0.6 added
 	* added decora-wifi-1.4
 	* add schiene-0.23
+	* add (deprecated) Adafruit-DHT-1.4.0 and Adafruit-DHT-1.4.1
 
 2019-11-21 homeassistant-0.102.0
 	* bump homeassistant-0.102.0
