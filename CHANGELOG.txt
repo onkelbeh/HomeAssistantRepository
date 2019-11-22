@@ -117,6 +117,9 @@
 	* fix LICENSE string of dev-python/aiobotocore
 	* rename (again) unused home-assistant-frontend-20191119.1 to current home-assistant-frontend-20191119.2
 	* bump homeassistant-0.102.0_beta3
+	* downgrade to some old fashioned google libraries:
+	  - oauth2client-4.0.0
+	  - google-api-python-client-1.6.4
 
 2019-11-18 homeassistant-0.102.0_beta2
 	* update pyatmo-3.0.1
