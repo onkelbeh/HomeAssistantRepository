@@ -3,22 +3,20 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python modules to use Fortigate APIs"
-HOMEPAGE="https://github.com/fortinet-solutions-cse/fortiosapi https://pypi.org/project/fortiosapi/"
+DESCRIPTION="Ordered YAML: drop-in replacement for PyYAML which preserves dict ordering"
+HOMEPAGE="https://github.com/wimglenn/oyaml https://pypi.org/project/oyaml/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/paramiko[${PYTHON_USEDEP}]
-	dev-python/oyaml[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/pyyaml[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
