@@ -1,5 +1,5 @@
 2019-11-22 (reverse added today)
-	*
+	* add pwmled-1.4.1, Adafruit-PCA9685-1.0.1, python-singleton-0.1.2
 	* add rocketchat-API-0.6.35
 	* add python-ripple-api-0.0.3
 	* add ring-doorbell-0.2.3
