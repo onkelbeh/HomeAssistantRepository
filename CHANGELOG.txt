@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add georss-qld-bushfire-alert-client-0.3
 	* add pushetta-1.0.15
 	* bump ptvsd-4.2.8
 	* add pyps4-2ndscreen-1.0.3
