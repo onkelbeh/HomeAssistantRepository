@@ -1,4 +1,5 @@
 2019-11-22 (reverse added today)
+	* add my own hdate-0.9.3
 	* add my own lupupy-0.0.17
 	* add lupupy-0.0.18
 	* add my own python-juicenet-0.1.6
