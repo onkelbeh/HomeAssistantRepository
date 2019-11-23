@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add pynello-2.0.3
 	* add nsapi-2.7.4
 	* add pynanoleaf-0.0.5
 	* add nad_receiver-0.0.11
