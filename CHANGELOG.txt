@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* added (my own) release of pyowlet-1.0.3
 	* add orvibo-1.1.1
 	* add oru-0.1.10
 	* add openhomedevice-0.6.3
