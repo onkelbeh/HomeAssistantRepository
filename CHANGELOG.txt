@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add piglow-1.2.5
 	* add ha-philipsjs-0.0.8
 	* add pencompy-0.0.4
 	* add panasonic-viera-0.3.4
