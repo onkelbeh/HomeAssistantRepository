@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">pypjlink2</remote-id>
+    <maintainer status="unknown">
+      <email>pypjlink@mm.st</email>
+      <name>Peter Ward &lt;peteraward@gmail.com&gt;, Gaetano Guerriero &lt;gaetano.guerriero@spacespa.it&gt;, Benoit Louy &lt;pypjlink@mm.st&gt;</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
