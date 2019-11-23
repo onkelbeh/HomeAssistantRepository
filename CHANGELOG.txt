@@ -1,5 +1,7 @@
 2019-11-22 (reverse added today)
 	*
+	* add python-nmap-0.6.1
+	* update pycarwings2-2.9
 	* add niluclient-0.1.2
 	* add niko-home-control-0.2.2 and nclib-0.8.3
 	* add py-nextbusnext-0.1.4
