@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add netdata-0.1.2
 	* add python-nest-4.1.0 and sseclient-py-1.7
 	* add pynello-2.0.3
 	* add nsapi-2.7.4
