@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add panacotta-0.1
 	* added (my own) release of pyowlet-1.0.3
 	* add orvibo-1.1.1
 	* add oru-0.1.10
