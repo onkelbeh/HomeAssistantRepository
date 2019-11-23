@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add pynzbgetapi-0.2.0
 	* add pynx584-0.5
 	* add pynut2-2.1.2
 	* downgrade to nuimo-0.1.0
