@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add python-nest-4.1.0 and sseclient-py-1.7
 	* add pynello-2.0.3
 	* add nsapi-2.7.4
 	* add pynanoleaf-0.0.5
