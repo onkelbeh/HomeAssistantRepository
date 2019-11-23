@@ -1,4 +1,5 @@
 2019-11-22
+	* add rfk101py-0.0.1
 	* add pyicloud-0.9.1
 	* add pyialarm-0.3
 	* add Hydrawiser-0.1.1
