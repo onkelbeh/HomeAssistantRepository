@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add mycroftapi-2.0 (Homepage dead and License missing)
 	* add mychevy-1.2.0
 	* add pymsteams-0.1.12
 	* add python-mpd2-1.0.0
