@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add pymsteams-0.1.12
 	* add python-mpd2-1.0.0
 	* add motorparts-1.1.0
 	* add pymonoprice-0.3
