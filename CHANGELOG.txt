@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add plumlightpad-0.0.11
 	* add pypjlink2-1.2.0
 	* add pilight-0.1.1
 	* add piglow-1.2.5
