@@ -1,4 +1,5 @@
 2019-11-22
+	* add temescal-0.1.tar.gz
 	* add pylgnetcast-homeassistant-0.2.0
 	* add pylaunches-0.2.0
 	* update pylast-3.1.0
