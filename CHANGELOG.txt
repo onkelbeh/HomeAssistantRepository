@@ -1,4 +1,5 @@
 2019-11-22
+	* add pyirishrail-0.0.2
 	* add pyipma-1.2.1
 	* add PyOTA-2.1.0, phx-filters-2.0.2, phx-class-registry-3.0.5
 	* add georss-ign-sismologia-client-0.2
