@@ -1,4 +1,5 @@
 2019-11-22
+	* add aiopvapi-1.6.14
 	* bump aiohue-1.9.2
 	* add url-normalize-1.4.1 and poetry-0.12.17
 	* add horimote-0.4.1
