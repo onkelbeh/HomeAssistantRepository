@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add motorparts-1.1.0
 	* add pymonoprice-0.3
 	* add basicmodem-0.7
 	* add mitemp-bt-0.0.3 and btlewrap-0.0.8
