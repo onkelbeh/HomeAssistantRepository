@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add messagebird-1.5.0
 	* add py-melissa-climate-2.1.3
 	* add matrix-client-0.3.2 and matrix-client-0.2.0
 	* add magicseaweed-1.0.3
