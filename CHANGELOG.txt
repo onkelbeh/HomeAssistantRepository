@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add millheater-0.3.4
 	* downgrade to bluepy-1.1.4 for miflora==0.4.0
 	* add mficlient-0.3.0
 	* add datapoint-0.9.5 and datapoint-0.4.3
