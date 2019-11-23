@@ -1,4 +1,5 @@
 2019-11-22 (reverse added today)
+	* add my own python-juicenet-0.1.6
 	* add rpi-rf-0.9.7
 	* add pifacecommon-4.2.2
 	* add pwmled-1.4.1, Adafruit-PCA9685-1.0.1, python-singleton-0.1.2
