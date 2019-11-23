@@ -1,4 +1,5 @@
 2019-11-22
+	* add PyUserInput-0.1.11
 	* add ndms2-client-0.0.10
 	* add kaiterra-async-client-0.0.2
 	* add python-join-api-0.0.4
