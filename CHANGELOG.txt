@@ -1,4 +1,5 @@
-2019-11-22
+2019-11-22 (reverse added today)
+	* add python-lirc-1.2.3
 	* add linode-api-4.1.9_beta1
 	* downgrade to lightwave-0.15
 	* add aiolifx-0.6.7, bump bitstring-3.1.5-r1 from main repo for compatibility
