@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add oemthermostat-1.1
 	* add oasatelematics-0.3
 	* add pynzbgetapi-0.2.0
 	* add pynx584-0.5
