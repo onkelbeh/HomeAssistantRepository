@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add radiotherm-2.0.0
 	* add RachioPy-0.1.3
 	* add pyqwikswitch-0.94
 	* add georss-qld-bushfire-alert-client-0.3
