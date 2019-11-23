@@ -1,4 +1,5 @@
 2019-11-22
+	* add pyhomeworks-0.0.6
 	* add HAP-python-2.6.0 and tlslite-ng-0.7.5
 	* add hlk-sw16-0.0.7
 
