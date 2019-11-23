@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add pynetio-0.1.9.1
 	* bump eternalegypt-0.0.10
 	* add pynetgear-0.6.1
 	* add netdata-0.1.2

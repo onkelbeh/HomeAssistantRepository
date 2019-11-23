@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">pynetio</remote-id>
+    <maintainer status="unknown">
+      <email>joseph.piron@gmail.com</email>
+      <name>Joseph Piron (Joseph Piron)</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
