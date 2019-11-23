@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add oru-0.1.10
 	* add openhomedevice-0.6.3
 	* add openevsewifi-0.4
 	* add onvif-zeep-async-0.2.0
