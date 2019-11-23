@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add pyrail-0.0.3
 	* add python-nmap-0.6.1
 	* update pycarwings2-2.9
 	* add niluclient-0.1.2
