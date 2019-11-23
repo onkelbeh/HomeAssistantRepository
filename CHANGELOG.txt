@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add ring-doorbell-0.2.3
 	* downgrade to pyRFXtrx-0.23.0
 	* add RtmAPI-0.7.2
 	* add rjpl-0.3.5
