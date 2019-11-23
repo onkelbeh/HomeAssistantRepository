@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add openevsewifi-0.4
 	* add onvif-zeep-async-0.2.0
 	* add oemthermostat-1.1
 	* add oasatelematics-0.3
