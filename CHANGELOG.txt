@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add raincloudy-0.0.7
 	* bump pyrainbird-0.4.1
 	* add radiotherm-2.0.0
 	* add RachioPy-0.1.3
