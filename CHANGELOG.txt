@@ -1,4 +1,6 @@
 2019-11-22 (reverse added today)
+	* add my own lupupy-0.0.17
+	* add lupupy-0.0.18
 	* add my own python-juicenet-0.1.6
 	* add rpi-rf-0.9.7
 	* add pifacecommon-4.2.2
