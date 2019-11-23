@@ -1,4 +1,6 @@
 2019-11-22 (reverse added today)
+	*
+	* bump luftdaten-0.6.3
 	* add logi-circle-0.2.2
 	* add london-tube-status-0.2
 	* add liveboxplaytv-2.0.2, wikipedia-1.4.0, pyteleloisirs-3.{5,6}
