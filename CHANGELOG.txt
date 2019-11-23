@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add rjpl-0.3.5
 	* fix pylaunches/Manifest
 	* add pyrecswitch-1.0.2
 	* add recollect-waste-1.0.1
