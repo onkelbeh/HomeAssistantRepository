@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add pynanoleaf-0.0.5
 	* add nad_receiver-0.0.11
 	* add mbddns-0.1.2
 	* add pymysensors-0.18.0 and get-mac-0.8.1
