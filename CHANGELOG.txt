@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add nsw-fuel-api-client-1.0.10
 	* add py-noaa-1.0
 	* add pyrail-0.0.3
 	* add python-nmap-0.6.1
