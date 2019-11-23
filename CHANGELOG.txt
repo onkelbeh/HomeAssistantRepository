@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add mficlient-0.3.0
 	* add datapoint-0.9.5 and datapoint-0.4.3
 	* add messagebird-1.5.0
 	* add py-melissa-climate-2.1.3
