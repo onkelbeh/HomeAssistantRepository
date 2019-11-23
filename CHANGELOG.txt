@@ -1,4 +1,5 @@
 2019-11-22
+	* add pyitachip2ir-0.0.7
 	* add prayer_times_calculator-0.0.3
 	* add pyirishrail-0.0.2
 	* add pyipma-1.2.1
