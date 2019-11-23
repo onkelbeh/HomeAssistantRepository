@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* downgrade to nuimo-0.1.0
 	* add nuimo-0.3.6
 	* add nsw-fuel-api-client-1.0.10
 	* add py-noaa-1.0
