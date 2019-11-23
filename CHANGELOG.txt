@@ -1,4 +1,5 @@
 2019-11-22
+	* add pylaunches-0.2.0
 	* update pylast-3.1.0
 	* add lmnotify-0.0.6
 	* update pylacrosse-0.4
