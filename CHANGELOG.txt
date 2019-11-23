@@ -1,4 +1,5 @@
 2019-11-22
+	* add pykwb-0.0.10
 	* bump konnected-0.1.5
 	* add kiwiki-client-0.1.1
 	* add PyUserInput-0.1.11
