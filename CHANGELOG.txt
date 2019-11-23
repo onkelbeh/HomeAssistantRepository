@@ -1,5 +1,6 @@
 2019-11-22
-	* hlk-sw16-0.0.7
+	* add HAP-python-2.6.0 and tlslite-ng-0.7.5
+	* add hlk-sw16-0.0.7
 
 2019-11-21 homeassistant-0.102.1
 	* bump homeassistant-0.102.1
