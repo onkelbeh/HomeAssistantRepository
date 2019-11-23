@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add proliphix-0.5.0
 	* add prezzibenzina-py-1.1.4
 	* add pocketcasts-0.1
 	* add plumlightpad-0.0.11
