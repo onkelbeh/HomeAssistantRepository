@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">datapoint</remote-id>
+    <maintainer status="unknown">
+      <email>emlyn.je.price@gmail.com</email>
+      <name>Emlyn Price</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
