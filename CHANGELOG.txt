@@ -1,4 +1,5 @@
 2019-11-22
+	* add (old) iglo-1.2.5
 	* add pypca-0.0.6 (only current release in tar.gz)
 	* add rfk101py-0.0.1
 	* add pyicloud-0.9.1
