@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add eagle200-reader-0.2.2
 	* add raincloudy-0.0.7
 	* bump pyrainbird-0.4.1
 	* add radiotherm-2.0.0
