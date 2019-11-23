@@ -1,5 +1,6 @@
 2019-11-22 (reverse added today)
 	*
+	* add recollect-waste-1.0.1
 	* add raspyrfm-client-1.2.8
 	* add raspihats-2.3.0
 	* add eagle200-reader-0.2.2
