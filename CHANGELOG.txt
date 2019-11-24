@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* add pytrackr-0.0.5
 	* add tp-connected-0.0.4, Js2Py-0.66, pyjsparser-2.7.1
 	* add VL53L1X2-0.1.5 and smbus2-0.3.0
 	* add tikteck-0.4, dg to todoist-python-8.0.0
