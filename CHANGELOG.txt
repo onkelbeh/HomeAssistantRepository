@@ -10,7 +10,7 @@
 	* add proxmoxer-1.0.3, PyFlume-0.2.1
 	* add python-vlc, pyW800rf32, waqiasync-1.0.0
 	* update PyViCare-0.1.2
-	* dg to vsure-1.5.2, libpyfoscam-1.0
+	* dg to vsure-1.5.2, libpyfoscam-1.0, lmnotify-0.0.4
 	* add vtjp-0.1.14, pyvizio-0.0.7
 	* bump venstarcolortouch-0.9 and my own release of vultr-1.0.2
 	* add my own release of uscisstatus-0.1.1
