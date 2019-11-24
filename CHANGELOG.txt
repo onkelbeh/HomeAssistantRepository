@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* dg oru-0.1.9
 	* dg openhomedevice-0.4.2
 	* dg pynx584-0.4
 	* dg py-noaa-0.3.0
