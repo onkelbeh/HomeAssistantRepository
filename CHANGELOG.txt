@@ -1,7 +1,7 @@
 2019-11 23 (reverse added today)
 	* update PyViCare-0.1.2
 	* dg to vsure-1.5.2
-	* add vtjp-0.1.14
+	* add vtjp-0.1.14, pyvizio-0.0.7
 	* bump venstarcolortouch-0.9
 	* add my own release of uscisstatus-0.1.1
 	* add upcloud-api-0.4.3
