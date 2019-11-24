@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* bump tuyaha-0.0.4
 	* add PyTransportNSW-0.1.1, TravisPy-0.3.5
 	* add pytrackr-0.0.5, pytrafikverket-0.1.5.9
 	* add tp-connected-0.0.4, Js2Py-0.66, pyjsparser-2.7.1
