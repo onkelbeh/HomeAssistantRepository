@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* add pybbox-0.0.5_alpha0
 	* add Adafruit_BBIO-1.0.0 and Adafruit_BBIO-1.1.1
 	* dg to pyairvisual-3.0.1
 	* add pyairvisual-3.0.3
