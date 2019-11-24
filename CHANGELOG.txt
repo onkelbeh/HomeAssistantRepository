@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* add n26-0.2.7, n26-2.2.0
 	* add PyMVGLive-1.1.4
 	* dg to messagebird-1.2.0, mitemp-bt-0.0.1
 	* dg to py-melissa-climate-2.0.0
