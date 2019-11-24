@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* bump venstarcolortouch-0.9
 	* add my own release of uscisstatus-0.1.1
 	* add upcloud-api-0.4.3
 	* bump tuyaha-0.0.4
