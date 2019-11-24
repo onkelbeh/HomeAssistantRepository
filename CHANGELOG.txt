@@ -1,4 +1,6 @@
 2019-11 23 (reverse added today)
+	* dg to pykwb-0.0.8
+	* downgrade to PyOTA-2.0.5
 	* add my own release of iglo-1.2.7
 	* add hikvision-0.4, hikvision-1.2
 	* add greenwavereality-0.5.1
