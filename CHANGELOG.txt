@@ -1,5 +1,5 @@
 2019-11 23 (reverse added today)
-	* add clx-sdk-xms-1.0.0
+	* add clx-sdk-xms-1.0.0, skybellpy-0.4.0
 	* add Adafruit-GPIO-1.0.3, Adafruit-PureIO-0.2.3, Adafruit-SHT31-1.0.2
 	* dg pysesame2-1.0.1
 	* dg eagle200-reader-0.2.1, raspihats-2.2.3, rocketchat-API-0.6.1
