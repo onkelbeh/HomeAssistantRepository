@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* add pysesame2-1.0.2
 	* add pysensibo-1.0.3
 	* sense-energy-0.7.0
 	* add scsgate-0.1.0
