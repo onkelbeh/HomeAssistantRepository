@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* accumulate a 'repaired' gps3-0.33.3
 	* add my own Pysher-1.0.1
 	* dg to pygogogate2-0.1.1
 	* dg to fints-1.0.1
