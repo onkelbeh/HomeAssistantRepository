@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* add xfinity-gateway-0.0.4
 	* add wirelesstagpy-0.4.0, wunderpy2-0.1.6, xboxapi-0.1.1
 	* add ibm-watson and ibm-cloud-sdk-core
 	* add ibmiotf-0.3.4 and ibmiotf-0.4.0
