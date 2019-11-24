@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="dev-python/fuzzywuzzy[${PYTHON_USEDEP}]
-	dev-python/python-Levenshtein[${PYTHON_USEDEP}]
+	dev-python/python-levenshtein[${PYTHON_USEDEP}]
 	>=dev-python/pyteleloisirs-3.3[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/wikipedia[${PYTHON_USEDEP}]"
