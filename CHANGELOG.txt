@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* add webexteamssdk-1.2
 	* add btsmarthub-devicelist-0.2.0
 	* add bthomehub5-devicelist
 	* add beewi-smartclim-0.0.7
