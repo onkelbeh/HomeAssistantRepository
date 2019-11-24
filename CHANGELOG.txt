@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* add tellcore-net-0.4, tellcore-py-1.1.3
 	* add pytautulli-0.5.0.ebuild & pytautulli-0.5.1.ebuild
 	* add tahoma-api-0.0.14, tank_utility-1.4.0
 	* bump python-tado-0.2.9
