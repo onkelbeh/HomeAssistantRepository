@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* bump shodan-1.20.0
 	* add proxmoxer-1.0.3, PyFlume-0.2.1
 	* add python-vlc, pyW800rf32, waqiasync-1.0.0
 	* update PyViCare-0.1.2
