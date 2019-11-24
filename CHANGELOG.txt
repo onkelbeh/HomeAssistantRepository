@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* bump python-juicenet-0.1.6 (own release)
 	* bump mutagen-1.43.0 from main repo
 	* bump frontend-20191119.6
 	* bump shodan-1.20.0, zeroconf-0.24.0, ndms2-client-0.0.11
