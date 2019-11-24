@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* fix pushetta/Manifest
 	* dg to pyedimax-0.1
 	* dg to beacontools-1.2.3
 	* dg to dsmr-parser-0.12
