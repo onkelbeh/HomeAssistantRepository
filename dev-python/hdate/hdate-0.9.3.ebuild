@@ -12,8 +12,8 @@ HOMEPAGE="https://github.com/royi1000/py-libhdate https://pypi.org/project/hdate
 
 # No Archive on PyPi for 0.9.0
 #SRC_URI="https://github.com/royi1000/py-libhdate/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI="https://github.com/onkelbeh/py-libhdate/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+#SRC_URI="https://github.com/onkelbeh/py-libhdate/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"

@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* hdate-9.3.0 Source back on Pypi again
 	* add ziggo-mediabox-xl-1.1.0
 	* add xbee-helper-0.0.7 with XBee-2.3.2
 	* add pyzabbix-0.7.5, zhong-hong-hvac-1.0.9
