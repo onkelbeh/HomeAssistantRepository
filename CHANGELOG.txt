@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* dg to pygogogate2-0.1.1
 	* dg to fints-1.0.1
 	* add feedparser-homeassistant-5.2.2 and sgmllib3k-1.0.0
 	* add epsonprinter-0.0.9
