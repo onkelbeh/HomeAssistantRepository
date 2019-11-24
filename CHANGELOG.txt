@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* add epsonprinter-0.0.9
 	* add my own release of pypca-0.0.5
 	* fix pushetta/Manifest
 	* dg to pyedimax-0.1
