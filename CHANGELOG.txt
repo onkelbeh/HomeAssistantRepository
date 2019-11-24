@@ -1,5 +1,5 @@
 2019-11 23 (reverse added today)
-	* add steamodd-4.22
+	* add steamodd-4.22, pystiebeleltron-0.0.1
 	* add spotipy-homeassistant-2.4.4, starlingbank-3.1
 	* update python-songpal-0.11.2
 	* add socialbladeclient-0.2, solaredge-0.0.2, somfy-mylink-synergy-1.0.6
