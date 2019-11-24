@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* bump python-tado-0.2.9
 	* add py-synology-0.3.0, python-synology-0.2.0, synology-srm-0.1.2
 	* add python_opendata_transport-0.1.4
 	* add pysupla-0.0.3, swisshydrodata-0.0.3
