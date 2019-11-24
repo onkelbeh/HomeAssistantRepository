@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <herd>python</herd>
+  <upstream>
+    <remote-id type="pypi">ya-ma</remote-id>
+    <maintainer status="unknown">
+      <email>rishatik92@gmail.com</email>
+      <name>Askarov Rishat Ramilovich</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
