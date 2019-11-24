@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* add upcloud-api-0.4.3
 	* bump tuyaha-0.0.4
 	* add PyTransportNSW-0.1.1, TravisPy-0.3.5
 	* add pytrackr-0.0.5, pytrafikverket-0.1.5.9
