@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* dg pynx584-0.4
 	* dg py-noaa-0.3.0
 	* add my own release of niko-home-control-0.2.1
 	* dg to pynello-2.0.2
