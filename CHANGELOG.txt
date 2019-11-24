@@ -1,6 +1,6 @@
 2019-11 23 (reverse added today)
 	* bump frontend-20191119.6
-	* bump shodan-1.20.0, zeroconf-0.24.0
+	* bump shodan-1.20.0, zeroconf-0.24.0, ndms2-client-0.0.11
 	* add proxmoxer-1.0.3, PyFlume-0.2.1
 	* add python-vlc, pyW800rf32, waqiasync-1.0.0
 	* update PyViCare-0.1.2
