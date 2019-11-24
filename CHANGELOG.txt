@@ -1,4 +1,5 @@
-2019-11-23 (reverse added today)
+2019-11 23 (reverse added today)
+	* add pysabnzbd-1.1.0
 	* add russound-rio-0.1.7.ebuild
 	* add russound-0.1.9
 
