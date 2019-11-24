@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* bump youtube_dl-2019.11.22
 	* bump pypca-0.0.7, now back on pypi
 	* bump python-juicenet-0.1.6 (own release)
 	* bump mutagen-1.43.0 from main repo
