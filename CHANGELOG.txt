@@ -1,5 +1,5 @@
 2019-11 23 (reverse added today)
-	* add pyzabbix-0.7.5
+	* add pyzabbix-0.7.5, zhong-hong-hvac-1.0.9
 	* add ya-ma-0.3.8, yeelight-0.5.0, YesssSMS-0.4.2
 	* add xfinity-gateway-0.0.4, yalesmartalarmclient-0.1.6
 	* add wirelesstagpy-0.4.0, wunderpy2-0.1.6, xboxapi-0.1.1
