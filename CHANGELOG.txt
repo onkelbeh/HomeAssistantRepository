@@ -1,5 +1,5 @@
 2019-11 23 (reverse added today)
-	* add ya-ma-0.3.8
+	* add ya-ma-0.3.8, yeelight-0.5.0
 	* add xfinity-gateway-0.0.4, yalesmartalarmclient-0.1.6
 	* add wirelesstagpy-0.4.0, wunderpy2-0.1.6, xboxapi-0.1.1
 	* add ibm-watson and ibm-cloud-sdk-core
