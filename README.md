@@ -8,7 +8,7 @@ https://github.com/home-assistant/home-assistant
 "Open source home automation that puts local control and privacy first."
 
 ## Source
-This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1069 ebuilds in > 700 packages listed.
+This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so i putted it on my gitea, and was caught by surprise of several hundred pageviews in the very first days. Try to keep it close to the official releases, might get slower during summer. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages listed.
 
 ## ESPHome
 Aside from Home Assistant it contains some related ebuilds I use with my Home Assistant:
@@ -242,31 +242,28 @@ The Repository itself is released under GPL-3, all work on the depending compone
 | Count | License |
 | ------ | ------ |
 |2x |AGPL-3|
-|181x |Apache-2.0|
+|250x |Apache-2.0|
 |2x |Artistic-2|
-|127x |BSD|
-|6x |BSD-2
-|4x |BSD-2 Unlicense|
-|7x |BSD-4|
+|288x |BSD|
 |4x |CC0-1.0|
 |2x |CC-BY-NC-SA-4.0|
 |2x |ECL-2.0|
 |8x |EPL-1.0|
 |2x |GPL-1|
-|26x |GPL-2|
-|94x |GPL-3|
+|36x |GPL-2|
+|162x |GPL-3|
 |12x |GPL-3+|
 |4x |LGPL-2+|
 |8x |LGPL-2.1|
 |10x |LGPL-3|
 |4x |LGPL-3+|
-|576x |MIT|
+|1001x |MIT|
 |6x |MPL-2.0|
 |1x |NEWLIB|
 |9x |PSF-2|
 |2x |PSF-2.4|
-|2x |public-domain|
+|3x |public-domain|
 |12x |Unlicense|
 |5x |ZPL|
 
-I did my best to keep these clean, thanks to @matoro for help. Some packages have no license published. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
+I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise i took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages have no license published, Authors are asked for clarification. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
