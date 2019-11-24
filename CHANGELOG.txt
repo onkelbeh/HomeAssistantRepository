@@ -1,5 +1,5 @@
 2019-11 23 (reverse added today)
-	* add tikteck-0.4
+	* add tikteck-0.4, dg to todoist-python-8.0.0
 	* add pytfiac-0.4, tellsticknet-0.1.2, pythinkingcleaner-0.0.3
 	* add tensorflow-1.13.2.ebuild, tensorflow-2.0.0.ebuild
 	* add tellcore-net-0.4, tellcore-py-1.1.3, temperusb-1.5.3
