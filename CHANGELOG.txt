@@ -1,5 +1,5 @@
 2019-11 23 (reverse added today)
-	* dg proliphix-0.4.1, pyps4-2ndscreen-1.0.1
+	* dg proliphix-0.4.1, pyps4-2ndscreen-1.0.1, pyqwikswitch-0.93
 	* dg oru-0.1.9, panasonic-viera-0.3.2, pencompy-0.0.3, piglow-1.2.4
 	* dg openhomedevice-0.4.2
 	* dg pynx584-0.4
