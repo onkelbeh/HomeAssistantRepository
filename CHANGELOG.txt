@@ -1,3 +1,6 @@
+2019-11-23 (reverse added today)
+	* add russound-rio-0.1.7.ebuild
+
 2019-11-22 (reverse added today)
 	* add my own hdate-0.9.3
 	* add my own lupupy-0.0.17
