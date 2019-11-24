@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* dg to steamodd-4.21
 	* add pifacedigitalio-3.0.5
 	* add aiolifx-effects-0.2.2, miflora
 	* add pyflic-homeassistant-0.4, python-qbittorrent-0.3.1
