@@ -1,4 +1,5 @@
 2019-11 23 (reverse added today)
+	* add ibmiotf-0.3.4 and ibmiotf-0.4.0
 	* dg to steamodd-4.21, py-synology-0.2.0, pywemo-0.4.34, synology-srm-0.0.7
 	* dg tellcore-py-1.1.2, vultr-0.1.2
 	* add pifacedigitalio-3.0.5, pytouchline-0.7, waterfurnace-1.1.0
