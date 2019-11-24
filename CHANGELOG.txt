@@ -1,5 +1,5 @@
 2019-11 23 (reverse added today)
-	* add spotipy-homeassistant-2.4.4
+	* add spotipy-homeassistant-2.4.4, starlingbank-3.1
 	* update python-songpal-0.11.2
 	* add socialbladeclient-0.2, solaredge-0.0.2, somfy-mylink-synergy-1.0.6
 	* add SmartHab-0.20, smhi-pkg-1.0.10, python-sochain-api-0.0.2
