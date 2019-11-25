@@ -97,7 +97,7 @@ $ emerge -tav app-misc/homeassistant
 $ rc-update add homeassistant
 ```
 ## Upgrading to Python 3.7
-Take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`, a lot of unstable ebuilds are needed, because some of the stable versions do *not* support Python 3.7. These files reflect some modules i use, adjust them to your needs.
+Take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`, a lot of unstable ebuilds are needed, because some of the stable versions do *not* support Python 3.7. These files reflect some modules I use, adjust them to your needs.
 
 Make sure your system is up to date:
 ```sh
@@ -165,7 +165,7 @@ dev-lang/python-2.7.16 pulled in by:
 
 Installation is pretty easy:
 
-First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because i _always_ have more than one repo active by default:
+First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default:
 ```
 [HomeAssistantRepository]
 location = /usr/portage/homeassistant
@@ -187,7 +187,7 @@ de_DE@euro UTF-8
 ```
 
 Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
-Let me know if any initial depencies are missing, since i do not use all of the components myself, last good (full) compile test was November, 2019 with v0.101.3, while upgrading my production box to Python 3.7.
+Let me know if any initial depencies are missing, since I do not use all of the components myself, last good (full) compile test was November, 2019 with v0.101.3, while upgrading my production box to Python 3.7.
 
 ## Todos
 - If it moves, compile it :-)
@@ -196,7 +196,7 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 - Publish my ESPHome Configurations
 - Remove support for Python 3.6 in the mid of December
 - Add support for Python 3.8 in a new dev branch
-- Add libraries if i need it or someone asks for
+- Add libraries if I need it or someone asks for
 - Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo.
 - Write an installation page for the home-assistant.io Documentation an get it added.
 - Convince more people to not run Home Assistant with Docker (see https://xkcd.com/1988/)
@@ -208,7 +208,7 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 ## some Background...
 I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine, currently 10.3.20 without problems.
 
-Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.6.7), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
+Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.org/), I use the stable version coming with the original distribution (1.6.7), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT I am actively using (and therefore testing) the following platforms/components:
 * some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. I would not buy the Fibaro stuff again, because of their weird firmware policy. You need to have their expensive gateway to make an update. The cheap chinese stuff would do it better.
   - in the vm run `socat pty,link=/dev/ttyUSB0,raw,user=homeassistant,group=dialout,mode=777 tcp:[ip of usbhost]:3333`
   - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
@@ -223,7 +223,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
   * Sonoff RF Bridge with remote Swiches
   * Sonoff Touch
   * Sonoff Basic (not working well with Tasmota in newer versions)
-  The Sonoff Pow will stay with Tasmota for a while, because i have no good implementation of an energy monitor in ESPHome.
+  The Sonoff Pow will stay with Tasmota for a while, because I have no good implementation of an energy monitor in ESPHome.
 * Experimenting with Shelly Devices
 * Some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
 * Yamaha RXV (4 devices)
@@ -281,6 +281,6 @@ The repository itself is released under GPL-3, all work on the depending compone
 |12x |Unlicense|
 |5x |ZPL|
 
-I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise i took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
+I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
 
 Last update of this text: 25.11.2019
