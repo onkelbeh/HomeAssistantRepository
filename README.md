@@ -8,22 +8,22 @@ https://github.com/home-assistant/home-assistant
 "Open source home automation that puts local control and privacy first."
 
 ## Source
-Once this was a fork of `https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin`, which seemed unmaintained to me. First I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise of several hundred pageviews in the very first days. I'll do my best to keep it close to the official releases, might get slower during summers. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages are on file. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year.
+Once this was a fork of `https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin`, which seemed unmaintained to me. First I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise of several hundred page views in the very first days. I'll do my best to keep it close to the official releases, might get slower during summers. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages are on file. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year.
 
 ## Nearly all Home Assistant Components are now included
-Except some modules with uncorrectable errors (e.g. hard drive crashes, lost sources or some other unbelievable mess) nearly all possible integrations for Home Assistant and their stated dependcies are **now** included as ebuilds, based on the *most accurate* integrations list from `/usr/lib/python3.7/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all deps strict as they have deen declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule. Whether it makes sense to run Gentoo on an Raspberry Pi (some components are amde for it) is another question.
+Except some modules with uncorrectable errors (e.g. hard drive crashes, lost sources or some other unbelievable mess) nearly all possible integrations for Home Assistant and their stated dependcies are **now** included as ebuilds, based on the *most accurate* integrations list from `/usr/lib/python3.7/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all deps strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule. Whether it makes sense to run Gentoo on a Raspberry Pi (some components are made only for it) is another question.
 
 ## Authors welcome
-If you are Author of a integration / component or other stuff related to Home Assistant and you want your component added, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on Github are OK, but a Pypi tar.gz release would be preferred, because this could take use of Gentoo's mirror system. Most of the other integrations do both. I can **not** add packages only available in wheels format.
+If you are Author of a integration / component or other stuff related to Home Assistant and you want your component added, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on Github are OK, but a Pypi tar.gz release would be preferred, because this could take use of Gentoo's mirror system. Most of the other integrations do both. I can**not** add packages only available in wheels format.
 
 ## Missing older release tags
-Some packages with missing or hidden older releases have been [cloned](https://github.com/onkelbeh?tab=repositories) after the originating author has been queried and notified. Some cases still require verfication. No changes except adding the missing release tags have been made. As soon as an other usable release will be available, I'll swap the `SRC_URI` back to Pypi, the original Github or wherever it came from.
-`dg` in Changelog means that a package has been downgraded to an older required release although a newer version already has been available. In many cases the most recent version has been added, too. You should take a look after upgrading, if `/etc/homeassistant/deps/` is not empty, possibly the wrong (mostly too new) version of a component or a library is installed. `package.accept_keywords` and `--autounmask=y` is your friend. Please drop me a [note](https://github.com/onkelbeh/HomeAssistantRepository/issues) if you find a wrong dependency.
+Some packages with missing or hidden older releases have been [cloned](https://github.com/onkelbeh?tab=repositories) after the originating author has been queried and notified. Some cases still require verification. No changes except adding the missing release tags have been made. As soon as another usable release will be available, I'll swap the `SRC_URI` back to Pypi, the original Github or wherever it came from.
+`dg` in change log means that a package has been downgraded to an older required release although a newer version already has been available. In many cases the most recent version has been added, too. You should take a look after upgrading, if `/etc/homeassistant/deps/` is not empty, possibly the wrong (mostly too new) version of a component or a library is installed. `package.accept_keywords` and `--autounmask=y` is your friend. Please drop me a [note](https://github.com/onkelbeh/HomeAssistantRepository/issues) if you find a wrong dependency.
 
 ## ESPHome
 Aside from Home Assistant this repo contains ebuilds I use with my Home Assistant, some have to be mentioned::
 
- * `esphome` (soon i'll throw away Tasmota...), thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, a bit complicated to get it started (mostly with DNS, it uses a weird *.local architecture, imho for mDNS, too complex for me to run it across Vlans), but as soon you got it running, a lot of ESP devices are very easy to deploy. It's integration in Home Assistant is easy and reacts fast on state changes. I begin to love it's Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors will have a unique name all over the system, and names can be changed very easily. In the meantime i migrated all my Magichome Controllers, very happy with it, and i have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with Tasmota.
+ * `esphome` (soon I'll throw away Tasmota...), thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, a bit complicated to get it started (mostly with DNS, it uses a weird *.local architecture, imho for mDNS, too complex for me to run it across Vlans), but as soon you got it running, a lot of ESP devices are very easy to deploy. Its integration in Home Assistant is easy and reacts fast on state changes. I begin to love its Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors will have a unique name all over the system, and names can be changed very easily. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with Tasmota.
 
 Thanks to @evadim and @klowe0100 for improving the ebuild and helping to keep it updated.
 
@@ -56,7 +56,7 @@ Many of the modules/components/libraries do **not** have compatibility for Pytho
 Python 3.8 appeared on Gentoo Linux on Nov 11th, 2019, I just have started do very first experiments on a box with Python 3.8 installed. Afaics this will take some time, no need to hurry.
 
 ## Installation on Python 3.7
-First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because i _always_ have more than one repo active by default:
+First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default:
 ```
 [HomeAssistantRepository]
 location = /usr/portage/homeassistant
@@ -191,7 +191,7 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 
 ## Todos
 - If it moves, compile it :-)
-- map more, perhaps all important components to use flags
+- Map more, perhaps all important components to use flags
 - Publish my Home Assistant Configuration
 - Publish my ESPHome Configurations
 - Remove support for Python 3.6 in the mid of December
@@ -214,7 +214,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
   - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
 * a bunch of OneWire and I2C Sensors (mostly via MQTT) and
 * ESPHome - see description above - (https://esphome.io/ & https://github.com/esphome/esphome/)
-* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy/). I formerly used it to avoid some serious design problems in Tasmota, but since i use ESPHome, these devices live only until they have to be touched for some reason, their firmware will get replaced with ESPHome.
+* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy/). I formerly used it to avoid some serious design problems in Tasmota, but since I use ESPHome, these devices live only until they have to be touched for some reason, their firmware will get replaced with ESPHome.
 * Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a device has to be touched, it's firmware will be replaced with Otto Winter's ESPHome.
   * Sonoff S20
   * Sonoff Pow R2
@@ -224,18 +224,18 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
   * Sonoff Touch
   * Sonoff Basic (not working well with Tasmota in newer versions)
   The Sonoff Pow will stay with Tasmota for a while, because i have no good implementation of an energy monitor in ESPHome.
-* experimenting with Shelly Devices
-* some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
+* Experimenting with Shelly Devices
+* Some more HC-SR501 PIR Sensors (via ESPEasy, Tasmota & MQTT)
 * Yamaha RXV (4 devices)
-* SamsungTV (partly _not_ working anymore due to Samsungs newest firmware 'improvements', at least i can read it's status for controlling lights & the shutters)
+* SamsungTV (partly _not_ working anymore due to Samsung's newest firmware 'improvements', at least I can read it's status for controlling lights & the shutters)
 * Some Tradfri lights
 * 4 IKEA Shutters, finally they can now be bought. A bit expensive, but nice and easy to install.
-* Sonos (had many, sold most of them, because they destroyed a formerly very cool gui, only two boxes left)
+* Sonos (had many, sold most of them, because they destroyed a formerly very cool Gui, only two boxes left)
 * Calendar (connected to a locally run ownCloud, OC not in this Repository) (https://owncloud.org/)
 * Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
 * Enigma2 on Dreambox (2 left) (http://wiki.blue-panel.com/index.php/Enigma2)
 * Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
-* EQ3-Max! (i accendently bought some, so i have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` use flag to homeassistant, then the patch will be applied before installation. Recently i saw some other interesting soft for this hardware. Perhaps i'll try one of these, and forget about `maxcube-api`.
+* EQ3-Max! (I accindently bought some, so I have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` use flag to homeassistant, then the patch will be applied before installation. Recently I saw some other interesting soft for this hardware. Perhaps I'll try one of these, and forget about `maxcube-api`.
 * Axis Camera (1, a few more to come)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
@@ -244,11 +244,11 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 
 ## Some thoughts
 * Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` non-existant or at least as small as possible.
-* Be aware that all dependent libraries could be marked as stable here as soon as they compile. Ouside HA dependencies execpt portage are not tested.
-* Since i use Gentoo mostly on servers i do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this incredible crap.
+* Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies execpt portage are not tested.
+* Since I use Gentoo mostly on servers, I do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this incredible crap.
 * I prefer an own profile based on "amd64/17.1/no-multilib"
 * python-3.7.5-r1 is set as default target, also 2.7.16 and 3.6.9 (not used anymore) are installed on my test server.
-* Due to Home Assitant's architecture strategies we could not wait any longer for a stable Python 3.7, so don't blame me if it's a lot of work. Python 3.6 would have been supported until Jan 2022.
+* Due to Home Assistant's architecture strategies we could not wait any longer for a stable Python 3.7, so don't blame me if it's a lot of work. Python 3.6 would have been supported until Jan 2022.
 * I will do no tests anymore with Python 3.6
 
 ## Licenses
@@ -281,6 +281,6 @@ The repository itself is released under GPL-3, all work on the depending compone
 |12x |Unlicense|
 |5x |ZPL|
 
-I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise i took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published, Authors have been asked for clarification, some still did not repond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
+I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise i took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
 
 Last update of this text: 25.11.2019
