@@ -1,4 +1,7 @@
-2019-11 23 (reverse added today)
+2019-11-25 homeassistant-0.102.2
+	* update homeassistant-0.102.2
+
+2019-11-23 (reverse added today)
 	* hdate-9.3.0 Source back on Pypi again
 	* add ziggo-mediabox-xl-1.1.0
 	* add xbee-helper-0.0.7 with XBee-2.3.2
