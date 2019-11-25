@@ -8,17 +8,17 @@ https://github.com/home-assistant/home-assistant
 "Open source home automation that puts local control and privacy first."
 
 ## Source
-This was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise of several hundred pageviews in the very first days. I'll do my best to keep it close to the official releases, might get slower during summers. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages listed. As long as we do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year..
+Once this was fork of https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin which seemed unmaintained to me, at first I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise of several hundred pageviews in the very first days. I'll do my best to keep it close to the official releases, might get slower during summers. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages listed. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year, because...
 
 ## Nearly all Home Assistant Components are now included
-Except some modules with uncorrectable errors (e.g. lost sources or some other unbelievable mess) nearly all possible integrations for Home Assistant and their stated dependcies are **now** included as ebuilds, based on the *most accurate* integrations list from `/usr/lib/python3.7/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all deps strict as they have deen declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule.
+Except some modules with uncorrectable errors (e.g. lost sources or some other unbelievable mess) nearly all possible integrations for Home Assistant and their stated dependcies are **now** included as ebuilds, based on the *most accurate* integrations list from `/usr/lib/python3.7/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all deps strict as they have deen declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule. Whether it makes sense to run Gentoo on an Raspberry Pi (some components are amde for it) is another question.
 
-If you are Author of a integration / component or other stuff related to Home Assistant and you want your component added, please file a pull request, or just drop me a note.
-
-For adding a component, I need a release file in tar.gz or zip format. Tagged releases on Github are OK, but a Pypi tar.gz release would be preferred, because this could take use of Gentoo's mirror system. Most of the other integrations do both. I can **not** add packages only available in wheels format.
+## Authors welcome
+If you are Author of a integration / component or other stuff related to Home Assistant and you want your component added, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on Github are OK, but a Pypi tar.gz release would be preferred, because this could take use of Gentoo's mirror system. Most of the other integrations do both. I can **not** add packages only available in wheels format.
 
 ## Missing older release tags
-Some packages with missing or hidden older releases have been [cloned](https://github.com/onkelbeh?tab=repositories). No changes except adding the missing release tags have been made. `dg` in Changelog means that a package has been downgraded to an older required release although a newer version already has been available. In many cases the most recent version has been added, too. You should take a look after upgrading, if `/etc/homeassistant/deps/` is not empty, possibly the wrong version of a component or a library is installed. Please drop me a [note](https://github.com/onkelbeh/HomeAssistantRepository/issues) if you find a wrong dependency.
+Some packages with missing or hidden older releases have been [cloned](https://github.com/onkelbeh?tab=repositories) after the originating author has been queried and notified. No changes except adding the missing release tags have been made. As soon as an other usable release is available, I will swap the `SRC_URI` back to Pypi, the original Github or wherever it came from.
+`dg` in Changelog means that a package has been downgraded to an older required release although a newer version already has been available. In many cases the most recent version has been added, too. You should take a look after upgrading, if `/etc/homeassistant/deps/` is not empty, possibly the wrong version of a component or a library is installed. Please drop me a [note](https://github.com/onkelbeh/HomeAssistantRepository/issues) if you find a wrong dependency.
 
 ## ESPHome
 Aside from Home Assistant it contains some related ebuilds I use with my Home Assistant:
@@ -43,7 +43,7 @@ You will find this Repository at
 | Main | https://git.edevau.net/onkelbeh/HomeAssistantRepository | https://git.edevau.net/onkelbeh/HomeAssistantRepository.git |
 | Mirror | https://github.com/onkelbeh/HomeAssistantRepository |  https://github.com/onkelbeh/HomeAssistantRepository.git |
 
-Sure, you can file **issues** and **pull requests** on both sites.
+Sure, you can submit **issues** and **pull requests** on both sites.
 
 ## Python 3.7
 Home assistant will drop support for Python 3.6 with the first release after December 15, 2019:
@@ -140,7 +140,7 @@ $ emerge --depclean
 $ emerge -1vUD @world
 $ emerge --depclean
 ```
-I had a lot of dependencies portage didn't respect, in some cases it seems not to know in which Python's site-packages modules are already installed. Install them manually (after compile errors). Once all packages are updated, you can remove the older targets in `package.use` and run another upgrade to remove support for Python 3.6.
+I had a lot of dependencies `portage` didn't respect, in some cases it seems not to know in which Python's site-packages modules are already installed. Install them manually (after compile errors). Once all packages are updated, you can remove the older python targets in `package.use` and run another upgrade to remove now obsolete support for Python 3.6. This will save hard disk space an compile time.
 
 Tools that might help to clean up:
 ```sh
@@ -148,7 +148,7 @@ $ eix --installed-with-use python_targets_python3_6
 $ diff <(equery h python_targets_python3_6) <(equery h python_targets_python3_7)
 ```
 
-If you are clean, feel free to remove Python 3.6 (which i did not yet).
+If you are clean, feel free to remove Python 3.6. My productive box runs without Python 3.6.
 It was not possible to remove Python 2.7 yet:
 ```sh
 dev-lang/python-2.7.16 pulled in by:
@@ -202,15 +202,14 @@ Let me know if any initial depencies are missing, since i do not use all of the 
 - Convince more people to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
 ## experiments are in progress:
-* grafana
-* influxdb
+* grafana with influxdb
+* remote IOS authentification with [haproxy](https://www.haproxy.org) and client certificates.
 
 ## some Background...
-
-I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine, currently 10.3.16 without problems.
+I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine, currently 10.3.20 without problems.
 
 Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.org/), i use the stable version coming with the original distribution (1.6.7), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT i am actively using (and therefore testing) the following platforms/components:
-* some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. I would not by the Fibaro stuff anymore, because of their firmware policy. You need to have their expensive gateway to make an update. The cheap chinese stuff would do it better.
+* some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. I would not buy the Fibaro stuff again, because of their weird firmware policy. You need to have their expensive gateway to make an update. The cheap chinese stuff would do it better.
   - in the vm run `socat pty,link=/dev/ttyUSB0,raw,user=homeassistant,group=dialout,mode=777 tcp:[ip of usbhost]:3333`
   - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
 * a bunch of OneWire and I2C Sensors (mostly via MQTT) and
@@ -253,8 +252,7 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 * I will do no tests anymore with Python 3.6
 
 ## Licenses
-
-The Repository itself is released under GPL-3, all work on the depending components under the Licenses they came from, which could be (as my grep told me on Nov 15th):
+The repository itself is released under GPL-3, all work on the depending components under the licenses they came from, which could be (as my grep told me on Nov 20th):
 
 | Count | License |
 | ------ | ------ |
@@ -283,4 +281,6 @@ The Repository itself is released under GPL-3, all work on the depending compone
 |12x |Unlicense|
 |5x |ZPL|
 
-I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise i took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages have no license published, Authors are asked for clarification. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
+I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise i took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published, Authors have been asked for clarification, some still did not repond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
+
+Last update of this text: 25.11.2019
