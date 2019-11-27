@@ -1,3 +1,7 @@
+2019-11-27 div updates
+	* bump huawei-lte-api-1.4.4
+	* bump apprise-0.8.2
+
 2019-11-26 div updates
 	* skybellpy-0.5.0.ebuild back on Pypi
 	* tensorflow should be in sci-libs
