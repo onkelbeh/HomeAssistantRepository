@@ -2,6 +2,7 @@
 	* bump plexwebsocket-0.0.6
 	* update pymfy-0.7.1
 	* bump hass-nabucasa-0.30
+	* bump flake8-3.7.9
 
 2019-11-27 div updates
 	* bump huawei-lte-api-1.4.4
