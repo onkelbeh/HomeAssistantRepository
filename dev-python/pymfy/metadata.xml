@@ -8,5 +8,9 @@
   <herd>python</herd>
   <upstream>
     <remote-id type="pypi">pymfy</remote-id>
+    <maintainer status="unknown">
+      <email>thibaud.etienne@umontpellier.fr</email>
+      <name>ETIENNE Thibaut</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>
