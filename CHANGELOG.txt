@@ -1,3 +1,6 @@
+2019-11-28
+	* bump plexwebsocket-0.0.6
+
 2019-11-27 div updates
 	* bump huawei-lte-api-1.4.4
 	* bump apprise-0.8.2
