@@ -53,7 +53,7 @@ Home assistant will drop support for Python 3.6 with the first release after Dec
 Many of the modules/components/libraries do **not** have compatibility for Python 3.7 advertised, and many of the components have **not** been tested here, but all compile without errors on their own. Please report an issue [here](https://github.com/onkelbeh/HomeAssistantRepository/issues) or my [private git server](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues) if you encounter any problems.
 
 ## Python 3.8
-Python 3.8 appeared on Gentoo Linux on Nov 11th, 2019, I just have started do very first experiments on a box with Python 3.8 installed. Afaics this will take some time, no need to hurry.
+Python 3.8 appeared on Gentoo Linux on Nov 11th, 2019, I just have started to very first experiments on a box with Python 3.8 installed. Afaics this will take some time, no need to hurry.
 
 ## Installation on Python 3.7
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default:
