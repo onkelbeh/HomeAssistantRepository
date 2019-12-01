@@ -886,8 +886,6 @@ The sqlite db is by default in: /etc/${PN}
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
-S="${WORKDIR}/home-assistant-${MY_PV}"
-
 DOCS="README.rst"
 
 pkg_setup() {
