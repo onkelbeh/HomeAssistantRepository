@@ -51,7 +51,7 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/cffi-1.12.2[${PYTHON_USEDEP}]
 	>=dev-python/chardet-3.0.4[${PYTHON_USEDEP}]
 	~dev-python/colorlog-4.0.2[${PYTHON_USEDEP}]
-	~dev-python/contextvars-2.4[${PYTHON_USEDEP}]
+	~dev-python/contextvars-2.4[$(python_gen_usedep python3_6)]
 	>=dev-python/coverage-4.5.2[${PYTHON_USEDEP}]
 	~dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 	>=dev-python/distro-1.4.0[${PYTHON_USEDEP}]

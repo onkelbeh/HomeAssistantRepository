@@ -33,7 +33,7 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2019.9.11[${PYTHON_USEDEP}]
-	~dev-python/contextvars-2.4[${PYTHON_USEDEP}]
+	~dev-python/contextvars-2.4[$(python_gen_usedep python3_6)]
 	~dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 	>=dev-python/immutables-0.9[${PYTHON_USEDEP}]
 	~dev-python/importlib-metadata-0.23[${PYTHON_USEDEP}]
