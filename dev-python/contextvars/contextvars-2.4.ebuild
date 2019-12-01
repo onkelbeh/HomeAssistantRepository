@@ -3,7 +3,8 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+# don not install on 3.6 or later!
+PYTHON_COMPAT=( python3_{5,6} )
 
 inherit distutils-r1
 
