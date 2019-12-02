@@ -8,10 +8,12 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="a library to communicate with Mycroft API"
-HOMEPAGE="https://github.com/Geeked-Out-Solutions/mycroft_api.git https://pypi.org/project/mycroftapi/"
+HOMEPAGE="https://github.com/StuartJMackintosh/mycroftapi https://pypi.org/project/mycroftapi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="all-rights-reserved"
+RESTRICT="mirror"
+
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
