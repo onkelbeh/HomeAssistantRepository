@@ -6,6 +6,7 @@
 	* add license to pyaftership-0.1.2
 	* fix uri.https (111 cases)
 	* fix 2 illegal UTF chars in DESCRIPTION
+	* align 5 license strings
 
 2019-12-01
 	* remove (wrong) double S="${WORKDIR}/home-assistant-${MY_PV}" in dev ebuild

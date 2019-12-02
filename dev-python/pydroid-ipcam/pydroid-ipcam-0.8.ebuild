@@ -11,7 +11,7 @@ DESCRIPTION="A asyncio library for handling android ipcam"
 HOMEPAGE="https://github.com/pvizeli/pydroid-ipcam https://pypi.org/project/pydroid-ipcam/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD License"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
