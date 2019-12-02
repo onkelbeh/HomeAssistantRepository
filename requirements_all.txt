@@ -1,4 +1,7 @@
 homeassistant
+esphome==1.14.3
+esptool==2.8
+platformio-core==4.1.0
 abodepy==0.16.7
 Adafruit_BBIO==1.0.0
 Adafruit-Blinka==1.2.1
