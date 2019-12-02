@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Lightweight Python API for CoolMasterNet HVAC bridges"
-HOMEPAGE="http://github.com/koreth/pycoolmasternet https://pypi.org/project/pycoolmasternet/"
+HOMEPAGE="https://github.com/koreth/pycoolmasternet https://pypi.org/project/pycoolmasternet/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

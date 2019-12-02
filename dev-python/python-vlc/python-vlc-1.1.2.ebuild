@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="VLC bindings for python."
-HOMEPAGE="http://wiki.videolan.org/PythonBinding https://pypi.org/project/python-vlc/"
+HOMEPAGE="https://wiki.videolan.org/PythonBinding https://pypi.org/project/python-vlc/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-2.1+"

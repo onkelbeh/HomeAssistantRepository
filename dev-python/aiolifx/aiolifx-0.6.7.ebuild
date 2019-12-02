@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="API for local communication with LIFX devices over a LAN with asyncio."
-HOMEPAGE="http://github.com/frawau/aiolifx https://pypi.org/project/aiolifx/"
+HOMEPAGE="https://github.com/frawau/aiolifx https://pypi.org/project/aiolifx/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

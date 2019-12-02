@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="NX584/NX8E Interface Library and Server"
-HOMEPAGE="http://github.com/kk7ds/pynx584 https://pypi.org/project/pynx584/"
+HOMEPAGE="https://github.com/kk7ds/pynx584 https://pypi.org/project/pynx584/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="all-rights-reserved"

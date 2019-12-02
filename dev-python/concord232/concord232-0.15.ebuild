@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="GE Concord 4 RS232 Serial Interface Library and Server"
-HOMEPAGE="http://github.com/JasonCarter80/concord232 https://pypi.org/project/concord232/"
+HOMEPAGE="https://github.com/JasonCarter80/concord232 https://pypi.org/project/concord232/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="all-rights-reserved"

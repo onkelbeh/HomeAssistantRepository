@@ -9,7 +9,7 @@ inherit distutils-r1
 
 MY_PN=${PN/-/_}
 DESCRIPTION="Python API for controlling Leviton Decora Smart WiFi switches"
-HOMEPAGE="http://github.com/tlyakhov/python-decora_wifi https://pypi.org/project/decora-wifi/"
+HOMEPAGE="https://github.com/tlyakhov/python-decora_wifi https://pypi.org/project/decora-wifi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"

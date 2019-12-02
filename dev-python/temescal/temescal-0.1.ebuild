@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python API for controlling LG speakers"
-HOMEPAGE="http://github.com/google/python-temescal https://pypi.org/project/temescal/"
+HOMEPAGE="https://github.com/google/python-temescal https://pypi.org/project/temescal/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"

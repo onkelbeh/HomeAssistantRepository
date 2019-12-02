@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python library for driving the Pimoroni BME680 Breakout"
-HOMEPAGE="http://www.pimoroni.com https://pypi.org/project/bme680/"
+HOMEPAGE="https://www.pimoroni.com https://pypi.org/project/bme680/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

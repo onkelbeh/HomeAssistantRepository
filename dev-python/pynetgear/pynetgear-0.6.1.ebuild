@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Access Netgear routers using their SOAP API"
-HOMEPAGE="http://github.com/MatMaul/pynetgear https://pypi.org/project/pynetgear/"
+HOMEPAGE="https://github.com/MatMaul/pynetgear https://pypi.org/project/pynetgear/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

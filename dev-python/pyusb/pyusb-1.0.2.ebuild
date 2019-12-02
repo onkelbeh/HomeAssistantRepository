@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python USB access module"
-HOMEPAGE="http://walac.github.io/pyusb https://pypi.org/project/pyusb/"
+HOMEPAGE="https://walac.github.io/pyusb https://pypi.org/project/pyusb/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"

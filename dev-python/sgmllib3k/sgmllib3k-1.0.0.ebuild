@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Py3k port of sgmllib."
-HOMEPAGE="http://hg.hardcoded.net/sgmllib https://pypi.org/project/sgmllib3k/"
+HOMEPAGE="https://hg.hardcoded.net/sgmllib https://pypi.org/project/sgmllib3k/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"

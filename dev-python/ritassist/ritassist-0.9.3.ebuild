@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="RitAssist API Access"
-HOMEPAGE="http://github.com/depl0y/ritassist-py https://pypi.org/project/ritassist/"
+HOMEPAGE="https://github.com/depl0y/ritassist-py https://pypi.org/project/ritassist/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

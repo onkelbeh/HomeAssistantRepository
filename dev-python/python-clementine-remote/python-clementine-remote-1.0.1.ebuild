@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python library and CLI for the Clementine Music Player remote protocol."
-HOMEPAGE="http://github.com/jjmontesl/python-clementine-remote https://pypi.org/project/python-clementine-remote/"
+HOMEPAGE="https://github.com/jjmontesl/python-clementine-remote https://pypi.org/project/python-clementine-remote/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"

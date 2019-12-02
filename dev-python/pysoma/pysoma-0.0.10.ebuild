@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="A simple package for controlling SOMA devices"
-HOMEPAGE="http://wazombi.com https://pypi.org/project/pysoma/"
+HOMEPAGE="https://wazombi.com https://pypi.org/project/pysoma/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

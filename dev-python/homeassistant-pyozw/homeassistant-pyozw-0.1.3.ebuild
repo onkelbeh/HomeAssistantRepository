@@ -11,7 +11,7 @@ MY_PN=${PN/-/_}
 MY_P=${MY_PN}-${PV}
 
 DESCRIPTION="python_openzwave is a python wrapper for the openzwave c++ library."
-HOMEPAGE="https://home-assistant.io/ https://pypi.org/project/homeassistant-pyozw/ http://www.openzwave.net/"
+HOMEPAGE="https://home-assistant.io/ https://pypi.org/project/homeassistant-pyozw/ https://www.openzwave.net/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.zip -> ${P}.zip
 		 https://raw.githubusercontent.com/home-assistant/python-openzwave/hass/archives/open-zwave-hass-${PV}.zip"
 

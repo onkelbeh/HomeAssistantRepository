@@ -9,7 +9,7 @@ inherit distutils-r1
 MY_P=${PN/-/_}-${PV}
 
 DESCRIPTION="Read metadata from Python packages"
-HOMEPAGE="http://importlib-metadata.readthedocs.io/ https://pypi.org/project/importlib-metadata/"
+HOMEPAGE="https://importlib-metadata.readthedocs.io/ https://pypi.org/project/importlib-metadata/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
 
 LICENSE="Apache-2.0"

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Get your EBox consumption (wwww.ebox.ca)"
-HOMEPAGE="http://github.com/titilambert/pyebox https://pypi.org/project/pyebox/"
+HOMEPAGE="https://github.com/titilambert/pyebox https://pypi.org/project/pyebox/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"

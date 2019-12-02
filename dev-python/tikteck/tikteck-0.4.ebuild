@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python API for controlling Tikteck LED bulbs"
-HOMEPAGE="http://github.com/mjg59/python-tikteck https://pypi.org/project/tikteck/"
+HOMEPAGE="https://github.com/mjg59/python-tikteck https://pypi.org/project/tikteck/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

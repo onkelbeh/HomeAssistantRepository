@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="This is a python class to use nmap and access scan results from python3"
-HOMEPAGE="http://xael.org/pages/python-nmap-en.html https://pypi.org/project/python-nmap/"
+HOMEPAGE="https://xael.org/pages/python-nmap-en.html https://pypi.org/project/python-nmap/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"

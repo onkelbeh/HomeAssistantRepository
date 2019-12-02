@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Tahoma Api - Python connect to Tahoma REST API"
-HOMEPAGE="http://github.com/philklei/tahoma-api/ https://pypi.org/project/tahoma-api/"
+HOMEPAGE="https://github.com/philklei/tahoma-api/ https://pypi.org/project/tahoma-api/"
 MY_PN=${PN/-/_}
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"

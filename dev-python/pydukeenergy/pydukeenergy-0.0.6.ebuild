@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Interface to the unofficial Duke Energy API"
-HOMEPAGE="http://github.com/w1ll1am23/pyduke-energy https://pypi.org/project/pydukeenergy/"
+HOMEPAGE="https://github.com/w1ll1am23/pyduke-energy https://pypi.org/project/pydukeenergy/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

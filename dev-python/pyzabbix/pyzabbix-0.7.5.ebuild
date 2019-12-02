@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Zabbix API Python interface"
-HOMEPAGE="http://github.com/lukecyca/pyzabbix https://pypi.org/project/pyzabbix/"
+HOMEPAGE="https://github.com/lukecyca/pyzabbix https://pypi.org/project/pyzabbix/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-3"

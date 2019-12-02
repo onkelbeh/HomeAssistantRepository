@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="A remote control client for Ubiquiti's mFi system"
-HOMEPAGE="http://github.org/kk7ds/mficlient https://pypi.org/project/mficlient/"
+HOMEPAGE="https://github.org/kk7ds/mficlient https://pypi.org/project/mficlient/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="all-rights-reserved"

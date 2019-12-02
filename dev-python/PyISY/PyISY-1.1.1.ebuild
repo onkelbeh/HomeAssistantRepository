@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python module to talk to ISY994 from UDI."
-HOMEPAGE="http://automic.us/projects/pyisy https://pypi.org/project/PyISY/"
+HOMEPAGE="https://automic.us/projects/pyisy https://pypi.org/project/PyISY/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Python wrapper for FutureNow IP relay/dimmer units"
-HOMEPAGE="http://github.com/juhaniemi/pyfnip https://pypi.org/project/pyfnip/"
+HOMEPAGE="https://github.com/juhaniemi/pyfnip https://pypi.org/project/pyfnip/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

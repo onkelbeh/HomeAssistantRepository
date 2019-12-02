@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Social Blade Unofficial Client"
-HOMEPAGE="http://github.com/meauxt/socialbladeclient https://pypi.org/project/socialbladeclient/"
+HOMEPAGE="https://github.com/meauxt/socialbladeclient https://pypi.org/project/socialbladeclient/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

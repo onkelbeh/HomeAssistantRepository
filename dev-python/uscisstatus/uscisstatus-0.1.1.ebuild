@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="USCIS Status Checker"
-HOMEPAGE="http://github.com/meauxt/uscisstatus https://pypi.org/project/uscisstatus/"
+HOMEPAGE="https://github.com/meauxt/uscisstatus https://pypi.org/project/uscisstatus/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 SRC_URI="https://github.com/onkelbeh/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 

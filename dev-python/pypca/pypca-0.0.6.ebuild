@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="A python cli for PCA 301 smart plugs."
-HOMEPAGE="http://www.github.com/majuss/pypca https://pypi.org/project/pypca/"
+HOMEPAGE="https://www.github.com/majuss/pypca https://pypi.org/project/pypca/"
 #SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 SRC_URI="https://github.com/majuss/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 

@@ -4,6 +4,7 @@
 	* add missing dovado license
 	* substitute missing license in mycroftapi-2.0
 	* add license to pyaftership-0.1.2
+	* fix uri.https (111 cases)
 
 2019-12-01
 	* remove (wrong) double S="${WORKDIR}/home-assistant-${MY_PV}" in dev ebuild

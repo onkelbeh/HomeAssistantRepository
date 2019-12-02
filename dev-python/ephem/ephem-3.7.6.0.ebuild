@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Compute positions of the planets and stars"
-HOMEPAGE="http://rhodesmill.org/pyephem/ https://pypi.org/project/ephem/"
+HOMEPAGE="https://rhodesmill.org/pyephem/ https://pypi.org/project/ephem/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-3"

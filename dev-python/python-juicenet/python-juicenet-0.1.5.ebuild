@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Read and control Juicenet/Juicepoint/Juicebox based EVSE devices"
-HOMEPAGE="http://github.com/jesserockz/python-juicenet https://pypi.org/project/python-juicenet/"
+HOMEPAGE="https://github.com/jesserockz/python-juicenet https://pypi.org/project/python-juicenet/"
 #SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 SRC_URI="https://github.com/onkelbeh/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 

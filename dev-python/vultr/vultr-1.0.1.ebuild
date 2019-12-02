@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Vultr.com API Client"
-HOMEPAGE="http://github.com/spry-group/python-vultr https://pypi.org/project/vultr/"
+HOMEPAGE="https://github.com/spry-group/python-vultr https://pypi.org/project/vultr/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
