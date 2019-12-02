@@ -1,3 +1,6 @@
+2019-12-02
+	* add sucks-0.9.4
+
 2019-12-01
 	* remove (wrong) double S="${WORKDIR}/home-assistant-${MY_PV}" in dev ebuild
 	* update androidtv-0.0.34, fix deps and deps of deps
