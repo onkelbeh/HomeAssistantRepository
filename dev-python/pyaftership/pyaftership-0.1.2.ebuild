@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION=""
+DESCRIPTION="A module to get information pending parcels."
 HOMEPAGE="https://github.com/ludeeus/pyaftership https://pypi.org/project/pyaftership/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

@@ -8,6 +8,7 @@
 	* fix 2 illegal UTF chars in DESCRIPTION
 	* align 5 license strings
 	* add discogs-client license "all-rights-reserved"
+	* add 4 missing DESCRIPTION
 
 2019-12-01
 	* remove (wrong) double S="${WORKDIR}/home-assistant-${MY_PV}" in dev ebuild

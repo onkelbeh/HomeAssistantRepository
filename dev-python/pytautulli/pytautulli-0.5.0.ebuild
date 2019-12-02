@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION=""
+DESCRIPTION="A python module to get information from Tautulli."
 HOMEPAGE="https://github.com/ludeeus/pytautulli https://pypi.org/project/pytautulli/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
