@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python API and command line tool for talking to the Nest™ Thermostat"
+DESCRIPTION="Python API and command line tool for talking to the Nest Thermostat"
 HOMEPAGE="https://github.com/jkoelker/python-nest/ https://pypi.org/project/python-nest/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
