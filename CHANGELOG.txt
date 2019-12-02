@@ -3,6 +3,7 @@
 	* add atenpdu-0.3.0 / atenpdu-0.3.1
 	* add missing dovado license
 	* substitute missing license in mycroftapi-2.0
+	* add license to pyaftership-0.1.2
 
 2019-12-01
 	* remove (wrong) double S="${WORKDIR}/home-assistant-${MY_PV}" in dev ebuild
