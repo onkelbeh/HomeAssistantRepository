@@ -1,3 +1,6 @@
+2019-12-03
+	* bump heatmiserV3-1.1.18
+
 2019-12-02
 	* add sucks-0.9.4
 	* add atenpdu-0.3.0 / atenpdu-0.3.1
