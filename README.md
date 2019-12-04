@@ -140,7 +140,7 @@ $ emerge --depclean
 $ emerge -1vUD @world
 $ emerge --depclean
 ```
-I had a lot of dependencies `portage` didn't respect, in some cases it seems not to know in which Python's site-packages modules are already installed. Install them manually (after compile errors). Once all packages are updated, you can remove the older python targets in `package.use` and run another upgrade to remove now obsolete support for Python 3.6. This will save hard disk space an compile time.
+I had a lot of dependencies `portage` didn't respect, in some cases it seems not to know in which Python's site-packages modules are already installed. Install them manually (after compile errors). Once all packages are updated, you can remove the older python targets in `package.use` and run another upgrade to remove now obsolete support for Python 3.6. This will save hard disk space and compile time.
 
 Tools that might help to clean up:
 ```sh
@@ -187,7 +187,7 @@ de_DE@euro UTF-8
 ```
 
 Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
-Let me know if any initial depencies are missing, since I do not use all of the components myself, last good (full) compile test was November, 2019 with v0.101.3, while upgrading my production box to Python 3.7.
+Please let me know if any initial depencies are missing, since I do only use some of the components myself. From time to time a fresh compile test on an empty box is run to catch general faults, last good (full) compile test was December 2019 with `v0.102.3`.
 
 ## Todos
 - If it moves, compile it :-)
@@ -197,7 +197,7 @@ Let me know if any initial depencies are missing, since I do not use all of the 
 - Remove support for Python 3.6 in the mid of December
 - Add support for Python 3.8 in a new dev branch
 - Add libraries if I need it or someone asks for
-- Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo.
+- Create a mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo. A very early version of it was used to create the `v9999` dev ebuild with nearly all components framed into USE flags.
 - Write an installation page for the home-assistant.io Documentation an get it added.
 - Convince more people to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
