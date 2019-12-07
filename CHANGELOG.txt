@@ -1,6 +1,8 @@
 2019-12-05
 	* bump pyhomematic-0.1.62
 	* bump georss-generic-client-0.3 and georss-client-0.10
+	* needed pytest-5.3.1 already is in main repo
+	* certifi-2019.9.11 is in main repo, dupe removed
 
 2019-12-05
 	* bump eternalegypt-0.0.11
