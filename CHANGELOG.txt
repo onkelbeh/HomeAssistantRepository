@@ -1,5 +1,6 @@
 2019-12-05
 	* bump pyhomematic-0.1.62
+	* bump georss-generic-client-0.3 and georss-client-0.10
 
 2019-12-05
 	* bump eternalegypt-0.0.11
