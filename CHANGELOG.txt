@@ -1,5 +1,9 @@
 2019-12-05
+	* bump pyhomematic-0.1.62
+
+2019-12-05
 	* bump eternalegypt-0.0.11
+	* update homeassistant-0.103.0_beta0
 
 2019-12-04
 	* bump enturclient-0.2.1
