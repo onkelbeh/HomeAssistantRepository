@@ -7,6 +7,7 @@
 	* add pysignalclirestapi-0.1.4
 	* bump homeassistant-pyozw-0.1.7
 	* add Signal API useflag
+	* bump home-assistant-frontend-20191204.1
 
 2019-12-05
 	* bump pyhomematic-0.1.62
