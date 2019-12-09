@@ -59,6 +59,7 @@
     <flag name="roku">add support for Roku players</flag>
     <flag name="rxv">Library for Yamaha RX-* Receivers</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
+    <flag name="signal">add Support for Moxie's Signal API</flag>
     <flag name="sma">add Support for SMA Solar WebConnect</flag>
     <flag name="socat">Install socat and socat-zwave startscript</flag>
     <flag name="somfy">Somfy devices via their online service</flag>

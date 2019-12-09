@@ -18,7 +18,7 @@ SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.g
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="abode ambiclimate androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs enigma enocean esphome everlights envoy fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik mqtt musiccast +mysql openwrt plex qnap roku rxv samsungtv sma socat somfy sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
+IUSE="abode ambiclimate androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs enigma enocean esphome everlights envoy fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik mqtt musiccast +mysql openwrt plex qnap roku rxv samsungtv signal sma socat somfy sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -177,6 +177,7 @@ RDEPEND="${PYTHON_DEPS}
 	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
 	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
+	signal? ( ~dev-python/pysignalclirestapi-0.1.4[${PYTHON_USEDEP}] )
 	sma? ( ~dev-python/pysma-0.3.4[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
 	somfy? ( ~dev-python/pymfy-0.7.1[${PYTHON_USEDEP}] )
