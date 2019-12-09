@@ -5,6 +5,7 @@
 	* add pyintesishome-1.5
 	* bump pyvera-0.3.7
 	* add pysignalclirestapi-0.1.4
+	* bump homeassistant-pyozw-0.1.7
 
 2019-12-05
 	* bump pyhomematic-0.1.62
