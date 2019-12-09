@@ -4,6 +4,7 @@
 	* bump keyrings_alt-3.2.0
 	* add pyintesishome-1.5
 	* bump pyvera-0.3.7
+	* add pysignalclirestapi-0.1.4
 
 2019-12-05
 	* bump pyhomematic-0.1.62
