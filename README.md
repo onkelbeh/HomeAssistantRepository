@@ -11,7 +11,7 @@ https://github.com/home-assistant/home-assistant
 Once this was a fork of `https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin`, which seemed unmaintained to me. First I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise of several hundred page views in the very first days. I'll do my best to keep it close to the official releases, might get slower during summers. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages are on file. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year.
 
 ## Nearly all Home Assistant Components are now included
-Except some modules with uncorrectable errors (e.g. hard drive crashes, lost sources or some other unbelievable mess) nearly all possible integrations for Home Assistant and their stated dependcies are **now** included as ebuilds, based on the *most accurate* integrations list from `/usr/lib/python3.7/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all deps strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule. Whether it makes sense to run Gentoo on a Raspberry Pi (some components are made only for it) is another question.
+Except some modules with uncorrectable errors (e.g. hard drive crashes, lost sources or some other unbelievable mess) nearly all possible integrations for Home Assistant and their stated dependcies are included as ebuilds, based on the *most accurate* integrations list from `/usr/lib/python3.7/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all deps strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule. Whether it makes sense to run Gentoo on a Raspberry Pi (some components are made only for it) is another question.
 
 ## Authors welcome
 If you are Author of a integration / component or other stuff related to Home Assistant and you want your component added, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on Github are OK, but a Pypi `sdist` tar.gz source release would be preferred, because I can automatically merge it and it uses Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. And make sure you have a proper license assigned.
@@ -29,7 +29,7 @@ Thanks to @evadim and @klowe0100 for improving the ebuild and helping to keep it
 
  * `platformio` (needed for ESPHome)
 
-Since `homeassistant-0.95.0_beta0` `esphome-1.13.6` can be run again in the same environment with homeassistant, because homeassistant does not insist on `dev-python/pyyaml-3.13` anymore and
+Since `homeassistant-0.95.0_beta0` `esphome-1.13.6` can be run again in the same environment with home assistant, because home assistant does not insist on `dev-python/pyyaml-3.13` anymore and
 
 `esphome>=1.14.1` with `platformio-4.0.3-r2` ESPHome can now be run without problems on Python 3.7.
 
@@ -187,7 +187,7 @@ de_DE@euro UTF-8
 ```
 
 Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
-Please let me know if any initial depencies are missing, since I do only use some of the components myself. From time to time a fresh compile test on an empty box is run to catch general faults, last good (full) compile test was December 2019 with `v0.102.3`.
+Please let me know if any initial dependencies are missing, since I do only use some of the components myself. From time to time a fresh compile test on an empty box is run to catch general faults, last good (full) compile test was December 2019 with `v0.102.3`.
 
 ## Todos
 - If it moves, compile it :-)
@@ -203,7 +203,7 @@ Please let me know if any initial depencies are missing, since I do only use som
 
 ## experiments are in progress:
 * grafana with influxdb
-* remote IOS authentification with [haproxy](https://www.haproxy.org) and client certificates.
+* remote IOS authentication with [haproxy](https://www.haproxy.org) and client certificates.
 
 ## some Background...
 I have Home Assistant running on a virtual X64 box, 4GB RAM, 4 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 10GB Disk from a small FC SAN (HP MSA). Recorder writes to a separate mariadb machine, currently 10.3.20 without problems.
@@ -235,7 +235,7 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 * Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
 * Enigma2 on Dreambox (2 left) (http://wiki.blue-panel.com/index.php/Enigma2)
 * Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
-* EQ3-Max! (I accindently bought some, so I have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` use flag to homeassistant, then the patch will be applied before installation. Recently I saw some other interesting soft for this hardware. Perhaps I'll try one of these, and forget about `maxcube-api`.
+* EQ3-Max! (I accidently bought some, so I have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` use flag to home assistant, then the patch will be applied before installation. Recently I saw some other interesting soft for this hardware. Perhaps I'll try one of these, and forget about `maxcube-api`.
 * Axis Camera (1, a few more to come)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
@@ -243,9 +243,9 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 I have **no** Google, Amazon or Apple involved in my privacy (at least in this case) and I am not planning to let them in.
 
 ## Some thoughts
-* Tried to get all Python installed systemwide under Gentoo's package management and keeping `/etc/homeassistant/deps` non-existant or at least as small as possible.
+* Tried to get all Python installed system wide under Gentoo's package management and keeping `/etc/homeassistant/deps` non-existant or at least as small as possible.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies execpt portage are not tested.
-* Since I use Gentoo mostly on servers, I do not use systemd, the most important reason to run gentoo is that you are NOT forced to run this incredible crap.
+* Since I use Gentoo mostly on servers, I do not use systemd, the most important reason to run Gentoo is that you are NOT forced to run this incredible crap.
 * I prefer an own profile based on "amd64/17.1/no-multilib"
 * python-3.7.5-r1 is set as default target, also 2.7.16 and 3.6.9 (not used anymore) are installed on my test server.
 * Due to Home Assistant's architecture strategies we could not wait any longer for a stable Python 3.7, so don't blame me if it's a lot of work. Python 3.6 would have been supported until Jan 2022.
@@ -283,4 +283,4 @@ The repository itself is released under GPL-3, all work on the depending compone
 
 I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
 
-Last update of this text: 25.11.2019
+Last update of this text: 10.12.2019
