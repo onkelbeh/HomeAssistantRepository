@@ -1,3 +1,6 @@
+2019-12-10
+	* bump roku-4.0.0
+
 2019-12-09
 	* bump pyyaml-5.2.0
 	* bump keyring-19.3.0
