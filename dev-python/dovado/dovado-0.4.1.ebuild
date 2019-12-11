@@ -11,7 +11,7 @@ DESCRIPTION="Communicate with Dovado router"
 HOMEPAGE="https://github.com/molobrakos/dovado https://pypi.org/project/dovado/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="all-rights.reserved"
+LICENSE="all-rights-reserved"
 RESTRICT="mirror"
 
 SLOT="0"
