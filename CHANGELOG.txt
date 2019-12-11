@@ -1,5 +1,9 @@
 2019-12-11 homeassistant-0.103.0
 	* homeassistant-0.103.0
+	* update license for pysignalclirestapi
+	* update license information for uvcclient
+	* fix typo in LICENSE
+	* update README.md
 
 2019-12-10 homeassistant-0.103.0_beta1
 	* bump roku-4.0.0
