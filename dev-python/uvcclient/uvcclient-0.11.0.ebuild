@@ -11,7 +11,9 @@ DESCRIPTION="A remote control client for Ubiquiti's UVC NVR"
 HOMEPAGE="https://github.com/kk7ds/uvcclient https://pypi.org/project/uvcclient/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="UNKNOWN"
+LICENSE="all-rights-reserved"
+RESTRICT="mirror"
+
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
