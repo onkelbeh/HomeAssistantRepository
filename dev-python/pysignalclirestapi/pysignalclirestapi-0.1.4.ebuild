@@ -11,7 +11,7 @@ DESCRIPTION="Small python library for the Signal Cli REST API"
 HOMEPAGE="https://github.com/bbernhard/pysignalclirestapi https://pypi.org/project/pysignalclirestapi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
