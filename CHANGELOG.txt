@@ -1,3 +1,6 @@
+2019-12-12 fail2ban
+	* patch fail2ban for Python 3.7
+
 2019-12-11 homeassistant-0.103.0
 	* homeassistant-0.103.0
 	* update license for pysignalclirestapi
