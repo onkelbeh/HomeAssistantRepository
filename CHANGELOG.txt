@@ -1,6 +1,7 @@
 2019-12-12 
 	* bump sphinx-2.2.2
 	* bump sphinx-autodoc-typehints-1.10.3
+	* bump tahoma-api-0.0.16
 
 2019-12-12 fail2ban
 	* patch fail2ban for Python 3.7
