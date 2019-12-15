@@ -4,6 +4,7 @@
 	* bump tahoma-api-0.0.16
 	* bump androidtv-0.0.35
 	* bump PyFlume-0.2.4
+	* bump venstarcolortouch-0.12
 
 2019-12-12 fail2ban
 	* patch fail2ban for Python 3.7
