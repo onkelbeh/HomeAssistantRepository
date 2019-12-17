@@ -4,6 +4,8 @@
 	* bump pytest-5.3.2
 	* bump aiohue-1.10.1
 	* update zeroconf-0.24.1
+	* bump adb-shell-0.1.0
+	* bump androidtv-0.0.36
 
 2019-12-12 
 	* bump sphinx-2.2.2
