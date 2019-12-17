@@ -1,3 +1,6 @@
+2019-12-17
+	* bump herepy-2.0.0
+
 2019-12-12 
 	* bump sphinx-2.2.2
 	* bump sphinx-autodoc-typehints-1.10.3
