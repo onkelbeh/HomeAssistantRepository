@@ -6,6 +6,7 @@
 	* update zeroconf-0.24.1
 	* bump adb-shell-0.1.0
 	* bump androidtv-0.0.36
+	* update keyring-20.0.0
 
 2019-12-12 
 	* bump sphinx-2.2.2
