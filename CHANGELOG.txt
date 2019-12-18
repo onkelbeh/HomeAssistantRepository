@@ -1,3 +1,6 @@
+2019-12-18
+	* bump envoy-reader-0.10.0
+
 2019-12-17
 	* bump herepy-2.0.0
 	* bump shodan-1.21.0
@@ -8,6 +11,7 @@
 	* bump androidtv-0.0.36
 	* update keyring-20.0.0
 	* update keyrings_alt-3.4.0
+	* update deps in dev-ebuild, drop old use flag names, replace all with component names
 
 2019-12-12 
 	* bump sphinx-2.2.2
