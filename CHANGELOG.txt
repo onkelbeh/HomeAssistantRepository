@@ -1,3 +1,6 @@
+2019-12-21
+	* bump simplisafe-python-5.3.6
+
 2019-12-18
 	* bump envoy-reader-0.10.0
 
