@@ -307,7 +307,7 @@ RDEPEND="${PYTHON_DEPS}
 	fleetgo? ( ~dev-python/ritassist-0.9.2[${PYTHON_USEDEP}] )
 	flexit? ( ~dev-python/pyflexit-0.3[${PYTHON_USEDEP}] )
 	flic? ( ~dev-python/pyflic-homeassistant-0.4[${PYTHON_USEDEP}] )
-	flume? ( ~dev-python/PyFlume-0.2.1[${PYTHON_USEDEP}] )
+	flume? ( ~dev-python/PyFlume-0.2.4[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-1.0.3[${PYTHON_USEDEP}] )
 	flux_led? ( ~dev-python/flux-led-0.22[${PYTHON_USEDEP}] )
 	folder_watcher? ( ~dev-python/watchdog-0.8.3[${PYTHON_USEDEP}] )
@@ -643,7 +643,7 @@ RDEPEND="${PYTHON_DEPS}
 	sht31? ( ~dev-python/Adafruit-GPIO-1.0.3[${PYTHON_USEDEP}]
 		   ~dev-python/Adafruit-SHT31-1.0.2[${PYTHON_USEDEP}] )
 	simplepush? ( ~dev-python/simplepush-1.1.4[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-5.3.5[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-5.3.6[${PYTHON_USEDEP}] )
 	sinch? ( ~dev-python/clx-sdk-xms-1.0.0[${PYTHON_USEDEP}] )
 	sisyphus? ( ~dev-python/sisyphus-control-2.2.1[${PYTHON_USEDEP}] )
 	skybeacon? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )

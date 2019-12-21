@@ -9,6 +9,7 @@
     <flag name="abode">Library for the Abode alarm API</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="ambiclimate">communicate with Ambiclimate</flag>
+    <flag name="ambient_station">retrieves local weather information from Ambient Weather</flag>
     <flag name="asuswrt">Api wrapper for Asuswrt</flag>
     <flag name="atmo">Access to Netatmo weather station data</flag>
     <flag name="atv">Library for controlling an Apple TV</flag>
@@ -29,6 +30,8 @@
     <flag name="everlights">Library for controlling an EverLights lighting system</flag>
     <flag name="envoy">Reads electricity production and consumption from an Enphase Envoy</flag>
     <flag name="enocean">Support for Enocean devices</flag>
+    <flag name="flume">monitors the real-time status of your home water meter</flag>
+    <flag name="flunearyou">allows users in the US to get information from Flu Near You</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
     <flag name="frontend">keep Home Assistant frontend out of virtualenv</flag>
     <flag name="gpiozero">interface to GPIO devices on a Raspberry Pi</flag>
@@ -65,6 +68,7 @@
     <flag name="somfy">Somfy devices via their online service</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
     <flag name="shodan">Shodan is a search engine for Internet-connected devices</flag>
+    <flag name="simplisafe">integrates SimpliSafe home security (V2 and V3) systems</flag>
     <flag name="speedtest">spedtest.net support</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="test">internal and developer use</flag>
