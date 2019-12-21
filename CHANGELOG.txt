@@ -1,6 +1,10 @@
-2019-12-21
-	* homeassistant-0.103.2
-	* homeassistant-0.103.1 (no frontend/web)
+2019-12-21 homeassistant-0.103.3
+	* homeassistant-0.103.3, new use flags
+	* update dev ebuild
+	* remove unneeded old frontends
+	* homeassistant-0.103.2, new use flags
+	* remove some older main ebuild
+	* homeassistant-0.103.1 (unuseable, no frontend/web)
 	* bump mypy-0.761
 	* bump ring-doorbell-0.2.5
 	* bump starlingbank-3.2

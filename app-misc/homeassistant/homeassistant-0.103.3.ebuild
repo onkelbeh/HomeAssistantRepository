@@ -17,8 +17,8 @@ SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.g
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="abode ambiclimate androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs enigma enocean esphome everlights envoy fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik mqtt musiccast +mysql openwrt plex qnap roku rxv samsungtv signal sma socat somfy sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
+KEYWORDS="amd64 x86 amd64-linux x86-linux"
+IUSE="abode ambiclimate ambient_station androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik +mqtt musiccast +mysql openwrt plex qnap +recorder ring roku rxv samsungtv signal sma socat somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unify vera wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
@@ -100,7 +100,6 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 	>=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
-	~dev-python/sqlalchemy-1.3.11[${PYTHON_USEDEP}]
 	~dev-python/transitions-0.6.9[${PYTHON_USEDEP}]
 	>=dev-python/typing-3.6.4-r1[${PYTHON_USEDEP}]
 	>=dev-python/tzlocal-1.5.1[${PYTHON_USEDEP}]
@@ -121,6 +120,7 @@ RDEPEND="${PYTHON_DEPS}
 
 	abode? ( ~dev-python/abodepy-0.16.7[${PYTHON_USEDEP}] )
 	ambiclimate? ( ~dev-python/Ambiclimate-0.2.1[${PYTHON_USEDEP}] )
+	ambient_station? ( ~dev-python/aioambient-0.3.2[${PYTHON_USEDEP}] )
 	androidtv? ( ~dev-python/androidtv-0.0.34[${PYTHON_USEDEP}]
 			   ~dev-python/adb-shell-0.0.8[${PYTHON_USEDEP}] )
 	asuswrt? ( ~dev-python/aioasuswrt-1.1.22[${PYTHON_USEDEP}] )
@@ -143,8 +143,10 @@ RDEPEND="${PYTHON_DEPS}
 	everlights? ( ~dev-python/pyeverlights-0.1.0[${PYTHON_USEDEP}] )
 	enocean? ( ~dev-python/enocean-0.50.0[${PYTHON_USEDEP}] )
 	envoy? ( ~dev-python/envoy-reader-0.8.6[${PYTHON_USEDEP}] )
+	flume? ( ~dev-python/PyFlume-0.2.4[${PYTHON_USEDEP}] )
+	flunearyou? ( ~dev-python/pyflunearyou-1.0.3[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( ~app-misc/home-assistant-frontend-20191204.0[${PYTHON_USEDEP}] )
+	frontend? ( ~app-misc/home-assistant-frontend-20191204.1[${PYTHON_USEDEP}] )
 	gpiozero? ( ~dev-python/gpiozero-1.5.1[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
@@ -173,7 +175,9 @@ RDEPEND="${PYTHON_DEPS}
 	openwrt? ( ~dev-python/openwrt-luci-rpc-1.1.2[${PYTHON_USEDEP}] )
 	plex? ( ~dev-python/PlexAPI-3.3.0[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
-	roku? ( ~dev-python/roku-3.1[${PYTHON_USEDEP}] )
+	roku? ( ~dev-python/roku-4.0.0[${PYTHON_USEDEP}] )
+	recorder? ( ~dev-python/sqlalchemy-1.3.11[${PYTHON_USEDEP}] )
+	ring? ( ~dev-python/ring-doorbell-0.2.5[${PYTHON_USEDEP}] )
 	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
 	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
@@ -183,6 +187,7 @@ RDEPEND="${PYTHON_DEPS}
 	somfy? ( ~dev-python/pymfy-0.7.1[${PYTHON_USEDEP}] )
 	sonos? ( >=dev-python/pysonos-0.0.24[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.20.0[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-5.3.6[${PYTHON_USEDEP}] )
 	speedtest? ( ~net-analyzer/speedtest-cli-2.1.2[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
@@ -207,7 +212,7 @@ RDEPEND="${PYTHON_DEPS}
 			  ~dev-python/zha-quirks-0.0.28[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.4.0[${PYTHON_USEDEP}] )
 	z-wave? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
-			  ~dev-python/homeassistant-pyozw-0.1.6[${PYTHON_USEDEP}]
+			  ~dev-python/homeassistant-pyozw-0.1.7[${PYTHON_USEDEP}]
 			  ~dev-python/pydispatcher-2.0.5[${PYTHON_USEDEP}]
 			  ~dev-python/cffi-1.12.2[${PYTHON_USEDEP}] )
 "

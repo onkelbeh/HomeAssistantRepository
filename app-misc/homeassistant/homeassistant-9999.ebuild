@@ -608,7 +608,7 @@ RDEPEND="${PYTHON_DEPS}
 	repetier? ( ~dev-python/pyrepetier-3.0.5[${PYTHON_USEDEP}] )
 	rflink? ( ~dev-python/rflink-0.0.46[${PYTHON_USEDEP}] )
 	rfxtrx? ( ~dev-python/pyRFXtrx-0.24[${PYTHON_USEDEP}] )
-	ring? ( ~dev-python/ring-doorbell-0.2.3[${PYTHON_USEDEP}] )
+	ring? ( ~dev-python/ring-doorbell-0.2.5[${PYTHON_USEDEP}] )
 	ripple? ( ~dev-python/python-ripple-api-0.0.3[${PYTHON_USEDEP}] )
 	rmvtransport? ( ~dev-python/PyRMVtransport-0.2.9[${PYTHON_USEDEP}] )
 	rocketchat? ( ~dev-python/rocketchat-API-0.6.1[${PYTHON_USEDEP}] )
@@ -683,7 +683,7 @@ RDEPEND="${PYTHON_DEPS}
 	ssdp? ( ~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]
 		  ~dev-python/netdisco-2.6.0[${PYTHON_USEDEP}] )
 	starline? ( ~dev-python/starline-0.1.3[${PYTHON_USEDEP}] )
-	starlingbank? ( ~dev-python/starlingbank-3.1[${PYTHON_USEDEP}] )
+	starlingbank? ( ~dev-python/starlingbank-3.2[${PYTHON_USEDEP}] )
 	startca? ( ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	statsd? ( ~dev-python/statsd-3.2.1[${PYTHON_USEDEP}] )
 	steam_online? ( ~dev-python/steamodd-4.21[${PYTHON_USEDEP}] )
