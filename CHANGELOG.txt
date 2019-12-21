@@ -1,4 +1,5 @@
 2019-12-21
+	* bump mypy-0.761
 	* bump ring-doorbell-0.2.5
 	* bump starlingbank-3.2
 	* bump simplisafe-python-5.3.6
