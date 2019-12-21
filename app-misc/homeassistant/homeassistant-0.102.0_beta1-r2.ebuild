@@ -36,7 +36,7 @@ RDEPEND="${PYTHON_DEPS}
 	$(python_gen_cond_dep '~dev-python/contextvars-2.4[${PYTHON_USEDEP}]' python3_6)
 	~dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 	>=dev-python/immutables-0.9[${PYTHON_USEDEP}]
-	~dev-python/importlib-metadata-0.23[${PYTHON_USEDEP}]
+	~dev-python/importlib_metadata-0.23[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.10.3[${PYTHON_USEDEP}]
 	~dev-python/passlib-1.7.1-r1[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]

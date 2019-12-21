@@ -1,4 +1,6 @@
 2019-12-21 homeassistant-0.103.3
+	* importlib-metadata is a dupe to importlib_metadata from Gentoo's Repo, dependencies updated
+	  (https://github.com/onkelbeh/HomeAssistantRepository/issues/7)
 	* clean up KEYWORDS where KEYWORDS.invalid
 	* homeassistant-0.103.3, new use flags
 	* update dev ebuild

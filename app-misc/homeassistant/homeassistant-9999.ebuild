@@ -65,7 +65,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/idna-ssl-1.1.0[${PYTHON_USEDEP}]
 	>=dev-python/ifaddr-0.1.6[${PYTHON_USEDEP}]
 	>=dev-python/immutables-0.9[${PYTHON_USEDEP}]
-	~dev-python/importlib-metadata-0.23[${PYTHON_USEDEP}]
+	~dev-python/importlib_metadata-0.23[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.10.3[${PYTHON_USEDEP}]
 	>=dev-python/jmespath-0.9.4[${PYTHON_USEDEP}]
 	>=dev-python/jose-1.0.0[${PYTHON_USEDEP}]
