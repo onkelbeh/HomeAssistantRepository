@@ -1,5 +1,6 @@
 2019-12-21
-	* homeassistant-0.103.1
+	* homeassistant-0.103.2
+	* homeassistant-0.103.1 (no frontend/web)
 	* bump mypy-0.761
 	* bump ring-doorbell-0.2.5
 	* bump starlingbank-3.2
