@@ -1,4 +1,5 @@
 2019-12-21 homeassistant-0.103.3
+	* clean up KEYWORDS where KEYWORDS.invalid
 	* homeassistant-0.103.3, new use flags
 	* update dev ebuild
 	* remove unneeded old frontends
