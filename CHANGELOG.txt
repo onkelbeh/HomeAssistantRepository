@@ -1,3 +1,6 @@
+2019-12-24
+	* bump keba-kecontact-1.0.0
+
 2019-12-21 homeassistant-0.103.3
 	* bump python-velbus-2.0.30
 	* bump zeroconf-0.24.2
