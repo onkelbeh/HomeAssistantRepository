@@ -2,6 +2,7 @@
 	* bump zeroconf-0.24.3
 	* bump youtube_dl-2019.12.25
 	* bump libpyvivotek-0.4.0
+	* bump teslajsonpy-0.2.1
 
 2019-12-24 homeassistant-0.103.4
 	* bump keba-kecontact-1.0.0
