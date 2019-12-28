@@ -4,6 +4,10 @@
 	* bump libpyvivotek-0.4.0
 	* bump teslajsonpy-0.2.1
 	* bump tuyaha-0.0.5
+	* bump bellows-homeassistant-0.12.0
+	* bump zha-quirks-0.0.30
+	* bump zigpy-homeassistant-0.12.0
+	* bump zigpy-xbee-homeassistant-0.8.0
 
 2019-12-24 homeassistant-0.103.4
 	* bump keba-kecontact-1.0.0
