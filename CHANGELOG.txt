@@ -1,5 +1,6 @@
 2019-12-28
-	* bumo zeroconf-0.24.3
+	* bump zeroconf-0.24.3
+	* bump youtube_dl-2019.12.25
 
 2019-12-24 homeassistant-0.103.4
 	* bump keba-kecontact-1.0.0
