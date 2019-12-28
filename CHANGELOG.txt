@@ -10,6 +10,7 @@
 	* bump zigpy-xbee-homeassistant-0.8.0
 	* bump shodan-1.21.1
 	* bump python-qbittorrent-0.4.1
+	* bump ring-doorbell-0.2.8
 
 2019-12-24 homeassistant-0.103.4
 	* bump keba-kecontact-1.0.0
