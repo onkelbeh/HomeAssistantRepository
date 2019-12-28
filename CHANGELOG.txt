@@ -11,6 +11,7 @@
 	* bump shodan-1.21.1
 	* bump python-qbittorrent-0.4.1
 	* bump ring-doorbell-0.2.8
+	* ESPHome: fix Dashboard's Online Check Issue
 
 2019-12-24 homeassistant-0.103.4
 	* bump keba-kecontact-1.0.0
