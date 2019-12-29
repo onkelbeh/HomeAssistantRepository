@@ -1,7 +1,8 @@
 2019-12-29
 	* bump homematicip-0.10.14
 	* bump libpurecool-0.6.0
-	* python-velbus-2.0.32
+	* bump python-velbus-2.0.32
+	* add PsychroLib-2.3.0 (dewpoint calculation)
 
 2019-12-28 homeassistant-0.103.5
 	* bump zeroconf-0.24.3
