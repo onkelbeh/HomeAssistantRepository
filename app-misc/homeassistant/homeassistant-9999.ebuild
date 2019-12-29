@@ -608,7 +608,7 @@ RDEPEND="${PYTHON_DEPS}
 	repetier? ( ~dev-python/pyrepetier-3.0.5[${PYTHON_USEDEP}] )
 	rflink? ( ~dev-python/rflink-0.0.46[${PYTHON_USEDEP}] )
 	rfxtrx? ( ~dev-python/pyRFXtrx-0.24[${PYTHON_USEDEP}] )
-	ring? ( ~dev-python/ring-doorbell-0.2.5[${PYTHON_USEDEP}] )
+	ring? ( ~dev-python/ring-doorbell-0.2.8[${PYTHON_USEDEP}] )
 	ripple? ( ~dev-python/python-ripple-api-0.0.3[${PYTHON_USEDEP}] )
 	rmvtransport? ( ~dev-python/PyRMVtransport-0.2.9[${PYTHON_USEDEP}] )
 	rocketchat? ( ~dev-python/rocketchat-API-0.6.1[${PYTHON_USEDEP}] )
