@@ -3,6 +3,7 @@
 	* dump rflink-0.0.50
 	* bump beautifulsoup-4.8.2.ebuild
 	* bump holidays-0.9.12
+	* bump ihcsdk-2.4.0
 
 2019-12-30
 	* make fail2ban survive the last python upgrade
