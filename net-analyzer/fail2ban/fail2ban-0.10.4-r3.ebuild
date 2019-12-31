@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-PYTHON_COMPAT=( python{2_7,3_5,3_6,3_7} pypy )
+PYTHON_COMPAT=( python{2_7,3_6,3_7} )
 DISTUTILS_SINGLE_IMPL=1
 
 inherit distutils-r1 systemd
@@ -25,7 +25,7 @@ RDEPEND="
 		sys-apps/systemd[python(-),${PYTHON_USEDEP}]
 	)' 'python*' ) )
 "
-REQUIRED_USE="systemd? ( !python_single_target_pypy )"
+
 RESTRICT="test"
 DOCS=( ChangeLog DEVELOP README.md THANKS TODO doc/run-rootless.txt )
 
