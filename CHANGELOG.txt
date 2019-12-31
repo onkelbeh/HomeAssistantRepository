@@ -1,5 +1,9 @@
+2019-12-31
+	* esphome tighten protobuf dependency
+
 2019-12-30
 	* make fail2ban survive the last python upgrade
+
 2019-12-29
 	* bump homematicip-0.10.14
 	* bump libpurecool-0.6.0
