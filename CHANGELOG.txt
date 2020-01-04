@@ -1,6 +1,7 @@
 2020-01-03
 	* add gios-0.0.3
 	* bump liveboxplaytv-2.0.3
+	* bump homematicip-0.10.15
 
 2019-12-31
 	* esphome tighten protobuf dependency
