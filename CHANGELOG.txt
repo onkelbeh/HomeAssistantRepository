@@ -6,6 +6,7 @@
 	* bump sphinx-2.3.1
 	* bump pyps4-2ndscreen-1.0.4
 	* bump alarmdecoder-1.13.9
+	* add aiopylgtv-0.2.4 (replaces pylgtv)
 
 2019-12-31
 	* esphome tighten protobuf dependency
