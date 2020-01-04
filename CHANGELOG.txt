@@ -15,6 +15,7 @@
 	* bump denonavr-0.7.11
 	* bump pydeconz-65/66
 	* add aiokef-0.2.2
+	* bump pydeconz-67, remove some oldies
 
 2019-12-31
 	* esphome tighten protobuf dependency
