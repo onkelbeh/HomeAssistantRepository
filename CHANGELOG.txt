@@ -10,6 +10,7 @@
 	* bump youtube_dl-2020.1.1
 	* bump zeroconf-0.24.4
 	* bump python_opendata_transport-0.2.1
+	* bump pre-commit-1.21.0
 
 2019-12-31
 	* esphome tighten protobuf dependency
