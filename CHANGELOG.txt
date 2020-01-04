@@ -3,6 +3,7 @@
 	* bump liveboxplaytv-2.0.3
 	* bump homematicip-0.10.15
 	* bump pyvlx-0.2.12
+	* bump sphinx-2.3.1
 
 2019-12-31
 	* esphome tighten protobuf dependency
