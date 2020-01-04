@@ -11,6 +11,7 @@
 	* bump zeroconf-0.24.4
 	* bump python_opendata_transport-0.2.1
 	* bump pre-commit-1.21.0
+	* bump env-canada-0.0.31
 
 2019-12-31
 	* esphome tighten protobuf dependency
