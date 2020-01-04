@@ -13,6 +13,7 @@
 	* bump pre-commit-1.21.0
 	* bump env-canada-0.0.31
 	* bump denonavr-0.7.11
+	* bump pydeconz-65/66
 
 2019-12-31
 	* esphome tighten protobuf dependency
