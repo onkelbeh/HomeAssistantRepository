@@ -2,6 +2,7 @@
 	* add gios-0.0.3
 	* bump liveboxplaytv-2.0.3
 	* bump homematicip-0.10.15
+	* bump pyvlx-0.2.12
 
 2019-12-31
 	* esphome tighten protobuf dependency
@@ -76,7 +77,7 @@
 	* update keyrings_alt-3.4.0
 	* update deps in dev-ebuild, drop old use flag names, replace all with component names
 
-2019-12-12 
+2019-12-12
 	* bump sphinx-2.2.2
 	* bump sphinx-autodoc-typehints-1.10.3
 	* bump tahoma-api-0.0.16
@@ -957,7 +958,7 @@
 	* frontend-20191002.2
 	* homeassistant-0.100.0_beta3
 	* bump beautifulsoup-4.8.1
-	
+
 2019-10-09 go ahead
 	* hack some home-assistant-cli-9999 deps good again
 	* bump frontend-20191002.1
