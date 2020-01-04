@@ -16,6 +16,7 @@
 	* bump pydeconz-65/66
 	* add aiokef-0.2.2
 	* bump pydeconz-67, remove some oldies
+	* update ring-doorbell-0.2.9
 
 2019-12-31
 	* esphome tighten protobuf dependency
