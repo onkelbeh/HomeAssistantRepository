@@ -1,6 +1,7 @@
 2020-01-04
 	* add elgato-0.1.0
 	* bump elgato-0.2.0
+	* bump adguardhome-0.4.0
 
 2020-01-03
 	* add gios-0.0.3
