@@ -3,6 +3,7 @@
 	* bump elgato-0.2.0
 	* bump adguardhome-0.4.0
 	* bump wled-0.2.1
+	* bump twentemilieu-0.2.0
 
 2020-01-03
 	* add gios-0.0.3
