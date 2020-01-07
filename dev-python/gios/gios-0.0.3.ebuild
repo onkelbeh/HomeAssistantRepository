@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python wrapper for getting air quality data from GIOŚ servers."
+DESCRIPTION="Python wrapper for getting air quality data from GIOS servers."
 HOMEPAGE="https://github.com/bieniu/gios https://pypi.org/project/gios/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
