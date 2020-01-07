@@ -2,6 +2,7 @@
 	* bump pyvizio-0.0.9
 	* bump python-velbus-2.0.35
 	* bump teslajsonpy-0.2.2
+	* add surepy-0.1.10
 
 2020-01-04
 	* add elgato-0.1.0
