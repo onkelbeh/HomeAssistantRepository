@@ -13,6 +13,7 @@
 	* bump pyvizio-0.0.12
 	* add tmb-0.0.4
 	* bump frontend-20200107.0
+	* gios-0.0.3 fix license string
 
 2020-01-04
 	* add elgato-0.1.0

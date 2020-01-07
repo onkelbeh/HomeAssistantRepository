@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -280,7 +280,7 @@ RDEPEND="${PYTHON_DEPS}
 	enocean? ( ~dev-python/enocean-0.50[${PYTHON_USEDEP}] )
 	enphase_envoy? ( ~dev-python/envoy-reader-0.8.6[${PYTHON_USEDEP}] )
 	entur_public_transport? ( ~dev-python/enturclient-0.2.1[${PYTHON_USEDEP}] )
-	environment_canada? ( ~dev-python/env-canada-0.0.30[${PYTHON_USEDEP}] )
+	environment_canada? ( ~dev-python/env-canada-0.0.31[${PYTHON_USEDEP}] )
 	envirophat? ( ~dev-python/envirophat-0.0.6[${PYTHON_USEDEP}]
 				~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	envisalink? ( ~dev-python/pyenvisalink-4.0[${PYTHON_USEDEP}] )
@@ -655,7 +655,7 @@ RDEPEND="${PYTHON_DEPS}
 	smappee? ( ~dev-python/smappy-0.2.16[${PYTHON_USEDEP}] )
 	smarthab? ( ~dev-python/SmartHab-0.20[${PYTHON_USEDEP}] )
 	smartthings? ( ~dev-python/pysmartapp-0.3.2[${PYTHON_USEDEP}]
-				 ~dev-python/pysmartthings-0.6.9[${PYTHON_USEDEP}] )
+				 ~dev-python/pysmartthings-0.7.0[${PYTHON_USEDEP}] )
 	smarty? ( ~dev-python/pysmarty-0.8[${PYTHON_USEDEP}] )
 	smhi? ( ~dev-python/smhi-pkg-1.0.10[${PYTHON_USEDEP}] )
 	snapcast? ( ~dev-python/snapcast-2.0.10[${PYTHON_USEDEP}] )
