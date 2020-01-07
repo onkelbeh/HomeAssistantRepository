@@ -9,6 +9,7 @@
 	* bump pyvizio-0.0.11
 	* bump hass-nabucasa-0.31
 	* bump androidtv-0.0.38
+	* bump adb-shell-0.1.1
 
 2020-01-04
 	* add elgato-0.1.0
