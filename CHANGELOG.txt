@@ -7,6 +7,7 @@
 	* update androidtv-0.0.37
 	* bump python-synology-0.3.0
 	* bump pyvizio-0.0.11
+	* bump hass-nabucasa-0.31
 
 2020-01-04
 	* add elgato-0.1.0
