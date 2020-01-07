@@ -11,7 +11,7 @@ DESCRIPTION="Python wrapper for getting air quality data from GIOŚ servers."
 HOMEPAGE="https://github.com/bieniu/gios https://pypi.org/project/gios/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache 2"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
