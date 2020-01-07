@@ -5,6 +5,7 @@
 	* add surepy-0.1.10
 	* add brother-0.1.4
 	* update androidtv-0.0.37
+	* bump python-synology-0.3.0
 
 2020-01-04
 	* add elgato-0.1.0
