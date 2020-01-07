@@ -4,6 +4,7 @@
 	* bump teslajsonpy-0.2.2
 	* add surepy-0.1.10
 	* add brother-0.1.4
+	* update androidtv-0.0.37
 
 2020-01-04
 	* add elgato-0.1.0

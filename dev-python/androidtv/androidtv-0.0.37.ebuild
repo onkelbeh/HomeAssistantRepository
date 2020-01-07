@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -16,9 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/rsa[${PYTHON_USEDEP}]
-		 >=dev-python/pure-python-adb-homeassistant-0.1.7[${PYTHON_USEDEP}]
-		 >=dev-python/adb-homeassistant-1.3.2[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/pure-python-adb-0.2.2[${PYTHON_USEDEP}]
+		 >=dev-python/adb-shell-0.1.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
