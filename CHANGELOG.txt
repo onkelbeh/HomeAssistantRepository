@@ -15,6 +15,7 @@
 	* bump frontend-20200107.0
 	* gios-0.0.3 fix license string
 	* aiokef-0.2.2 add MIT license
+	* aiopylgtv-0.2.4 add MIT license
 
 2020-01-04
 	* add elgato-0.1.0

@@ -11,7 +11,7 @@ DESCRIPTION="Library to control webOS based LG Tv devices"
 HOMEPAGE="https://github.com/bendavid/aiopylgtv https://pypi.org/project/aiopylgtv/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
