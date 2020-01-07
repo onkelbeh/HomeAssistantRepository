@@ -1,6 +1,7 @@
 2020-01-07
 	* bump pyvizio-0.0.9
-	* bump python-velbus
+	* bump python-velbus-2.0.35
+	* bump teslajsonpy-0.2.2
 
 2020-01-04
 	* add elgato-0.1.0
