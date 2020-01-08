@@ -1,5 +1,6 @@
 2020-01-08
   * allow some not so dusty libs for esphome
+  * fix manifest in dev-python/brother
 
 2019-12-28 homeassistant-0.103.5
 	* bump zeroconf-0.24.3
