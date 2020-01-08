@@ -2,6 +2,72 @@
   * allow some not so dusty libs for esphome
   * fix manifest in dev-python/brother
 
+2020-01-07
+	* bump pyvizio-0.0.9
+	* bump python-velbus-2.0.35
+	* bump teslajsonpy-0.2.2
+	* add surepy-0.1.10
+	* add brother-0.1.4
+	* update androidtv-0.0.37
+	* bump python-synology-0.3.0
+	* bump pyvizio-0.0.11
+	* bump hass-nabucasa-0.31
+	* bump androidtv-0.0.38
+	* bump adb-shell-0.1.1
+	* bump pyvizio-0.0.12
+	* add tmb-0.0.4
+	* bump frontend-20200107.0
+	* gios-0.0.3 fix license string
+	* aiokef-0.2.2 add MIT license
+	* aiopylgtv-0.2.4 add MIT license
+	* gios-0.0.3.ebuild remove illegal char from DESCRIPTION
+
+2020-01-04
+	* add elgato-0.1.0
+	* bump elgato-0.2.0
+	* bump adguardhome-0.4.0
+	* bump wled-0.2.1
+	* bump twentemilieu-0.2.0
+	* fix esphome manifest
+
+2020-01-03
+	* add gios-0.0.3
+	* bump liveboxplaytv-2.0.3
+	* bump homematicip-0.10.15
+	* bump pyvlx-0.2.12
+	* bump sphinx-2.3.1
+	* bump pyps4-2ndscreen-1.0.4
+	* bump alarmdecoder-1.13.9
+	* add aiopylgtv-0.2.4 (replaces pylgtv)
+	* bump youtube_dl-2020.1.1
+	* bump zeroconf-0.24.4
+	* bump python_opendata_transport-0.2.1
+	* bump pre-commit-1.21.0
+	* bump env-canada-0.0.31
+	* bump denonavr-0.7.11
+	* bump pydeconz-65/66
+	* add aiokef-0.2.2
+	* bump pydeconz-67, remove some oldies
+	* update ring-doorbell-0.2.9
+	* add sentry-sdk-0.13.5
+
+2019-12-31
+	* esphome tighten protobuf dependency
+	* dump rflink-0.0.50
+	* bump beautifulsoup-4.8.2.ebuild
+	* bump holidays-0.9.12
+	* bump ihcsdk-2.4.0
+	* bump pysmartthings-0.7.0
+
+2019-12-30
+	* make fail2ban survive the last python upgrade
+
+2019-12-29
+	* bump homematicip-0.10.14
+	* bump libpurecool-0.6.0
+	* bump python-velbus-2.0.32
+	* add PsychroLib-2.3.0 (dewpoint calculation)
+
 2019-12-28 homeassistant-0.103.5
 	* bump zeroconf-0.24.3
 	* bump youtube_dl-2019.12.25
