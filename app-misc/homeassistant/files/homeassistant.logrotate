@@ -8,5 +8,5 @@
 	notifempty
 	missingok
 	copytruncate
-	su homeassistant.homeassistant
+	su homeassistant homeassistant
 }
