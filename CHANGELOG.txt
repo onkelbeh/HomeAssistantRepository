@@ -1,6 +1,7 @@
 2020-01-08
   * allow some not so dusty libs for esphome
   * fix manifest in dev-python/brother
+  * bump pyRFXtrx-0.25.0
 
 2020-01-07
 	* bump pyvizio-0.0.9
