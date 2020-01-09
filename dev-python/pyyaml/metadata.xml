@@ -8,4 +8,11 @@
   <use>
     <flag name="libyaml">enable support for C implementation using libyaml</flag>
   </use>
+  <upstream>
+    <remote-id type="pypi">PyYAML</remote-id>
+    <maintainer status="unknown">
+      <email>xi@resolvent.net</email>
+      <name>Kirill Simonov</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>

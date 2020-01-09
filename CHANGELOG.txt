@@ -2,6 +2,7 @@
   * allow some not so dusty libs for esphome
   * fix manifest in dev-python/brother
   * bump pyRFXtrx-0.25.0
+  * fix pyyaml-5.2 packet version number
 
 2020-01-07
 	* bump pyvizio-0.0.9
