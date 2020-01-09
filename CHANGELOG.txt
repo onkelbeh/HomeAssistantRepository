@@ -6,6 +6,7 @@
   * remove unused frontend-20200107.0
     add frontend-20200108.0
   * homeassistant-0.104.0_beta0
+  * patch ESPHome for pyyaml-5.2
 
 2020-01-07
 	* bump pyvizio-0.0.9
