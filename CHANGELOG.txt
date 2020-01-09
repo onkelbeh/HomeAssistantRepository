@@ -3,6 +3,8 @@
   * fix manifest in dev-python/brother
   * bump pyRFXtrx-0.25.0
   * fix pyyaml-5.2 packet version number
+  * remove unused frontend-20200107.0
+    add frontend-20200108.0
 
 2020-01-07
 	* bump pyvizio-0.0.9
