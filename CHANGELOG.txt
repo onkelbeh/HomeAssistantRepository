@@ -1,6 +1,7 @@
 2020-01-10
   * pyhomematic-0.1.63 bumped
   * add pyaehw4a1
+  * update pyvizio-0.0.15
 
 2020-01-08 homeassistant-0.104.0_beta0
   * allow some not so dusty libs for esphome
