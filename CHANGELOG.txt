@@ -4,6 +4,7 @@
   * bump pylast-3.2.0
   * bump colorlog-4.1.0
   * bump pydocstyle-5.0.2
+  * bump pyatmo-3.2.0
 
 2020-01-10
   * pyhomematic-0.1.63 bumped
