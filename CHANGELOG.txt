@@ -1,6 +1,7 @@
 2020-01-11
   * bump praw-6.5.0
   * bump shodan-1.21.2
+  * bump pylast-3.2.0
 
 2020-01-10
   * pyhomematic-0.1.63 bumped
