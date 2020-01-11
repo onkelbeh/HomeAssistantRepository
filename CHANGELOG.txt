@@ -1,4 +1,4 @@
-2020-01-11
+2020-01-11 homeassistant-0.104.0_beta2
   * bump praw-6.5.0
   * bump shodan-1.21.2
   * bump pylast-3.2.0
@@ -6,6 +6,7 @@
   * bump pydocstyle-5.0.2
   * bump pyatmo-3.2.0
   * publish my current portage files
+  * homeassistant-0.104.0_beta2
 
 2020-01-10
   * pyhomematic-0.1.63 bumped
