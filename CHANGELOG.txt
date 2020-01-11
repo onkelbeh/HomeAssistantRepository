@@ -3,6 +3,7 @@
   * bump shodan-1.21.2
   * bump pylast-3.2.0
   * bump colorlog-4.1.0
+  * bump pydocstyle-5.0.2
 
 2020-01-10
   * pyhomematic-0.1.63 bumped
