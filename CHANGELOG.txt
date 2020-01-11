@@ -8,6 +8,7 @@
   * publish my current portage files
   * homeassistant-0.104.0_beta2
   * uri.https: surepy-0.1.10
+  * add 2 missing sphinx Manifests
 
 2020-01-10
   * pyhomematic-0.1.63 bumped
