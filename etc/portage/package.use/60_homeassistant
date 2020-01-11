@@ -1,6 +1,5 @@
-app-misc/homeassistant androidtv darksky enigma esphome fronius growl musiccast mikrotik mysql mqtt tradfri rxv samsungtv socat sonos ssl atv maxcube frontend qnap wwlln z-wave
+app-misc/homeassistant androidtv atv axis darksky enigma esphome frontend fronius growl holidays influxdb maxcube maxcube_hack musiccast mikrotik mysql mqtt recorder tradfri rxv samsungtv signal socat sonos ssl qnap wwlln z-wave
 
 dev-lang/python sqlite
 dev-libs/libxslt python
 dev-python/sqlalchemy mysql sqlite
-dev-libs/libxml2 python_targets_python2_7

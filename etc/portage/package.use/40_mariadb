@@ -1,2 +1,2 @@
-dev-db/mariadb -server minimal
-virtual/mysql -server
+dev-db/mariadb server
+virtual/mysql server

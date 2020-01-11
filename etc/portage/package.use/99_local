@@ -1,0 +1,14 @@
+>=app-crypt/gcr-3.28.1 gtk
+>=app-crypt/pinentry-1.1.0-r2 gnome-keyring
+>=app-text/xmlto-0.0.28-r1 text
+>=dev-libs/libpcre2-10.32 pcre16
+>=dev-libs/libxml2-2.9.9-r1 icu
+dev-libs/libxml2 python_targets_python2_7
+dev-libs/libxslt python_targets_python2_7
+=dev-python/backports-1.0 python_targets_python2_7
+=dev-python/backports-functools-lru-cache-1.4-r1 python_targets_python2_7
+>=dev-python/setuptools_scm-3.2.0 python_targets_python2_7
+>=media-libs/harfbuzz-2.6.1 icu
+>=media-libs/libvpx-1.7.0 svc postproc
+>=sys-libs/zlib-1.2.11-r2 minizip
+>=x11-libs/cairo-1.16.0-r3 X
