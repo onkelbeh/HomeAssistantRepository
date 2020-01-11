@@ -5,7 +5,6 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
-  <herd>python</herd>
   <upstream>
     <remote-id type="pypi">gpiozero</remote-id>
     <docs>https://pythonhosted.org/gpiozero/</docs>

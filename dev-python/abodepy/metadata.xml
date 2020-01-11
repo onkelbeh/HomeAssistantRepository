@@ -4,8 +4,7 @@
   <maintainer>
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
-  </maintainer>
-  <herd>python</herd>
+  </maintainer>  
   <upstream>
     <remote-id type="pypi">abodepy</remote-id>
     <maintainer status="unknown">

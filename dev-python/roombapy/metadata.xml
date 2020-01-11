@@ -10,7 +10,6 @@
     <flag name="pillow">Use pillow for map generation</flag>
     <flag name="mqtt">Use paho mqtt client for communication</flag>
   </use>
-  <herd>python</herd>
   <upstream>
     <remote-id type="pypi">roombapy</remote-id>
     <maintainer status="unknown">

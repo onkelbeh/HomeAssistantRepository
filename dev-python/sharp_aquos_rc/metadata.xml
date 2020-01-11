@@ -5,7 +5,6 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
-  <herd>python</herd>
   <upstream>
     <remote-id type="pypi">sharp_aquos_rc</remote-id>
     <maintainer status="unknown">

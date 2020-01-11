@@ -5,6 +5,13 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="github">esphome/esphome</remote-id>
+    <maintainer status="unknown">
+      <email>contact@esphome.io</email>
+      <name>Otto Winter</name>
+    </maintainer>
+  </upstream>
   <use>
     <flag name="server">create user and install init-script to run ESPHome Dashboard</flag>
   </use>
