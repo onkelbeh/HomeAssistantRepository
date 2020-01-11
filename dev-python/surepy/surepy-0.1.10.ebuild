@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Library to interact with the flaps & doors from Sure Petcare"
-HOMEPAGE="http://github.com/benleb/surepy https://pypi.org/project/surepy/"
+HOMEPAGE="https://github.com/benleb/surepy https://pypi.org/project/surepy/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
