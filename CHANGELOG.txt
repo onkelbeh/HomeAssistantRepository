@@ -1,6 +1,7 @@
-2020-01-12
+2020-01-12 homeassistant-0.104.0_beta4
   * bump huawei-lte-api-1.4.6
   * bump ring-doorbell-0.5.0
+  * homeassistant-0.104.0_beta4
 
 2020-01-11 homeassistant-0.104.0_beta2
   * bump praw-6.5.0

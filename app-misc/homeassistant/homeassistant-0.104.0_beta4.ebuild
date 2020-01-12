@@ -176,7 +176,7 @@ RDEPEND="${PYTHON_DEPS}
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
 	roku? ( ~dev-python/roku-4.0.0[${PYTHON_USEDEP}] )
 	recorder? ( ~dev-python/sqlalchemy-1.3.12[${PYTHON_USEDEP}] )
-	ring? ( ~dev-python/ring-doorbell-0.2.9[${PYTHON_USEDEP}] )
+	ring? ( ~dev-python/ring-doorbell-0.5.0[${PYTHON_USEDEP}] )
 	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
 	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
