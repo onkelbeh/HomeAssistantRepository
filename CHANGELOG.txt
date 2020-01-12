@@ -1,3 +1,6 @@
+2020-01-12
+  * bump huawei-lte-api-1.4.6
+
 2020-01-11 homeassistant-0.104.0_beta2
   * bump praw-6.5.0
   * bump shodan-1.21.2
