@@ -3,6 +3,7 @@
   * bump oru-0.1.11
   * bump nsapi-3.0.0
   * bump simplisafe-python-6.0.0
+  * bump apprise-0.8.3
 
 2020-01-12 homeassistant-0.104.0_beta4
   * bump huawei-lte-api-1.4.6
