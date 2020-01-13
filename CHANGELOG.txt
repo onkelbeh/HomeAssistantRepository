@@ -6,6 +6,7 @@
   * bump apprise-0.8.3
   * bump env-canada-0.0.34
   * bump zha-quirks-0.0.31
+  * bump aiopylgtv-0.2.6
 
 2020-01-12 homeassistant-0.104.0_beta4
   * bump huawei-lte-api-1.4.6
