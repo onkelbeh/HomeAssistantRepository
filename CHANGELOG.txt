@@ -2,6 +2,7 @@
   * bump aiopylgtv-0.2.5
   * bump oru-0.1.11
   * bump nsapi-3.0.0
+  * bump simplisafe-python-6.0.0
 
 2020-01-12 homeassistant-0.104.0_beta4
   * bump huawei-lte-api-1.4.6
