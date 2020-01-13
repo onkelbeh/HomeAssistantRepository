@@ -1,3 +1,6 @@
+2020-01-13
+  * bump aiopylgtv-0.2.5
+
 2020-01-12 homeassistant-0.104.0_beta4
   * bump huawei-lte-api-1.4.6
   * bump ring-doorbell-0.5.0
