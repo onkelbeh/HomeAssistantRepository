@@ -1,6 +1,7 @@
 2020-01-14
   * bump fritzconnection-1.2.0
   * bump teslajsonpy-0.2.3
+  * bump aiokef-0.2.5
 
 2020-01-13
   * bump aiopylgtv-0.2.5
