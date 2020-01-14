@@ -85,6 +85,7 @@
     <flag name="ubee">getting stats from Ubee routers</flag>
     <flag name="unify">talk with a Ubiquiti Unify Controller</flag>
     <flag name="vera">add support for Vera Z-Wave Controller</flag>
+    <flag name="webostv">allows you to control a LG webOS Smart TV</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
     <flag name="withings">add support for Withings Health API</flag>

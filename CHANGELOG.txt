@@ -1,8 +1,9 @@
-2020-01-14
+2020-01-14 homeassistant-0.104.0_beta5
   * bump fritzconnection-1.2.0
   * bump teslajsonpy-0.2.3
   * bump aiokef-0.2.5
   * bump ring-doorbell-0.6.0
+  * homeassistant-0.104.0_beta5
 
 2020-01-13
   * bump aiopylgtv-0.2.5
