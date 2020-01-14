@@ -1,3 +1,6 @@
+2020-01-14
+  * bump fritzconnection-1.2.0
+
 2020-01-13
   * bump aiopylgtv-0.2.5
   * bump oru-0.1.11
