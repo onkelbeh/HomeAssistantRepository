@@ -2,6 +2,7 @@
   * bump youtube_dl-2020.1.15
   * bump pyvizio-0.0.20
   * bump emulated-roku-0.1.9
+  * bump pyubee-0.8
 
 2020-01-14 homeassistant-0.104.0_beta5
   * bump fritzconnection-1.2.0
