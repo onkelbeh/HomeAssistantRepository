@@ -1,6 +1,7 @@
 2020-01-16 homeassistant-0.104.0
   * homeassistant-0.104.0
   * bump librouteros-3.0.0
+  * bump pynws-0.10.1
 
 2020-01-15
   * bump youtube_dl-2020.1.15
