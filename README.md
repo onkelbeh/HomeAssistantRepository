@@ -32,16 +32,13 @@ Some packages with missing or hidden older releases have been [cloned](https://g
 ## ESPHome
 Aside from Home Assistant this repo contains ebuilds I use with my Home Assistant, some have to be mentioned::
 
- * `ESPHome` (soon I'll throw away Tasmota...), thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, a bit complicated to get it started (mostly with DNS, it uses a weird .local dns architecture for mDNS, too complex for me to run it across Vlans), but as soon you got it running, a lot of ESP devices are very easy to deploy. Its integration in Home Assistant is easy and reacts fast on state changes. I begin to love its Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors will have a unique name all over the system, and names can be changed very easily. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with Tasmota.
+ * `ESPHome` (soon I'll throw away Tasmota...), thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, a bit complicated to get it started (mostly with DNS, it uses a weird .local architecture for mDNS, but as soon as I got my name server accepting dynmic names from DHCP, a lot of ESP devices are very easy to deploy. Its integration in Home Assistant is easy and reacts fast on state changes. I begin to love its Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors will have a unique name all over the system, and names can be changed very easily. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota.
 
 Thanks to @evadim and @klowe0100 for improving the ebuild and helping to keep it updated.
 
  * `platformio` (needed for ESPHome and other stuff)
 
-Since `homeassistant-0.95.0_beta0` `esphome-1.13.6` can be run again in the same environment with home assistant, because home assistant does not insist on `dev-python/pyyaml-3.13` anymore and
-`esphome>=1.14.1` with `platformio-4.0.3-r2`
-
- ESPHome will run on Python 3.7. Some libraries from Otto's releases are too old for Home Assistants environment, I do NOT use virtual environments, so I simply patched it, it runs linke that on my productive system without any problems. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
+ ESPHome will run on Python 3.7. Some libraries from Otto's releases are too old for Home Assistants environment, I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
 
 If you have questions or suggestions don't hesitate to contact me, any help is **very** welcome.
 
