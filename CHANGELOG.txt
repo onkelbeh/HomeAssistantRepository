@@ -4,6 +4,7 @@
   * bump pydeconz-68
   * bump frontend-20200108.2
   * update homeassistant-0.104.2
+  * renew README.md
 
 2020-01-16 homeassistant-0.104.1
   * homeassistant-0.104.0
