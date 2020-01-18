@@ -163,30 +163,9 @@ dev-lang/python-2.7.16 pulled in by:
 
 ## Installation on Python 3.6 (deprecated)
 
-Installation is pretty easy, but it won't help. You have to run it on 3.7, I just keep this part until support for it finally dropped:
+Installation is pretty easy, but it won't help. You have to run it on 3.7. I remove this part 01/2020. If you really want to do this, scroll back in time, it's a git :-)
 
-First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default:
-```
-[HomeAssistantRepository]
-location = /usr/portage/homeassistant
-sync-type = git
-sync-uri = https://git.edevau.net/onkelbeh/HomeAssistantRepository.git
-auto-sync = yes
-sync-rsync-verify-metamanifest = no
-```
-Sync it and install it (as root)
-```sh
-$ emerge --sync
-$ emerge -tav app-misc/homeassistant
-```
-Make sure you have a proper locale setting. I use
-```sh
-$ cat /etc/locale.gen
-de_DE ISO-8859-1
-de_DE@euro UTF-8
-```
-
-Additional information can be found at https://wiki.gentoo.org/wiki//etc/portage/repos.conf.
+## Problems
 Please let me know if any initial dependencies are missing, since I use only some of the components myself. From time to time a fresh compile test on an empty box is run to catch general faults, last good (full) compile test was December 2019 with `v0.102.3`.
 
 ## Todos
