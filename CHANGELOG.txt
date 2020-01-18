@@ -1,6 +1,7 @@
 2020-01-18
   * bump pyvizio-0.1.1
   * bump pyatmo-3.2.2
+  * bump pydeconz-68
 
 2020-01-16 homeassistant-0.104.1
   * homeassistant-0.104.0
