@@ -1,3 +1,6 @@
+2020-01-18
+  * bump pyvizio-0.1.1
+
 2020-01-16 homeassistant-0.104.1
   * homeassistant-0.104.0
   * bump librouteros-3.0.0
