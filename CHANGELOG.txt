@@ -2,6 +2,7 @@
   * homeassistant-0.104.3
   * bump emulated-roku-0.2.0
   * bump aiokef-0.2.6
+  * bump zigpy-zigate-0.5.1
 
 2020-01-18 homeassistant-0.104.2
   * bump pyvizio-0.1.1
