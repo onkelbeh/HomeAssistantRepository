@@ -10,6 +10,7 @@
   * add speak2mary-1.4.0
   * bump youtube_dl-2020.1.24
   * bump PyChromecast-4.1.1
+  * add spotipy-2.7.1
 
 2020-01-21 homeassistant-0.104.3
   * homeassistant-0.104.3
