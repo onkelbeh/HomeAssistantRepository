@@ -1,5 +1,6 @@
 2020-01-25
   * bump pyvizio-0.1.4
+  * bump aiopylgtv-0.3.0
 
 2020-01-21 homeassistant-0.104.3
   * homeassistant-0.104.3
