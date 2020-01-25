@@ -3,6 +3,7 @@
   * bump aiopylgtv-0.3.0
   * bump hlk-sw16-0.0.8
   * bump pydaikin-1.6.2
+  * add simplehound-0.3
 
 2020-01-21 homeassistant-0.104.3
   * homeassistant-0.104.3
