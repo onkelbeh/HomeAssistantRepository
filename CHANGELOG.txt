@@ -6,6 +6,7 @@
   * add simplehound-0.3
   * bump sqlalchemy-1.3.13
   * bump emulated-roku-0.2.1
+  * bump shodan-1.21.3
 
 2020-01-21 homeassistant-0.104.3
   * homeassistant-0.104.3
