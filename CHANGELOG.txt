@@ -1,6 +1,7 @@
 2020-01-26
   * bump aiopylgtv-0.3.2
   * bump ihcsdk-2.5.0
+  * bump androidtv-0.0.39
 
 2020-01-25
   * bump pyvizio-0.1.4
