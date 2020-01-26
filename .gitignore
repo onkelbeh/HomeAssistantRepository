@@ -1,5 +1,7 @@
 /*~
 /._.DS_Store
 /.DS_Store
-/repoman/*
 */.DS_Store
+
+/repoman/*
+/tools/
