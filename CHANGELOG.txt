@@ -1,3 +1,6 @@
+2020-01-27
+  * bump huawei-lte-api-1.4.7
+
 2020-01-26
   * bump aiopylgtv-0.3.2
   * bump ihcsdk-2.5.0
