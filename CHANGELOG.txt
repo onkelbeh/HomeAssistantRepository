@@ -2,6 +2,7 @@
   * bump huawei-lte-api-1.4.7
   * bump teslajsonpy-0.3.0
   * bump HAP-python-2.7.0
+  * add garminconnect-0.1.8
 
 2020-01-26
   * bump aiopylgtv-0.3.2
