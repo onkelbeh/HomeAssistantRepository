@@ -1,3 +1,6 @@
+2020-01-29
+  *remove old simplisafe-python ebuilds
+
 2020-01-27
   * bump huawei-lte-api-1.4.7
   * bump teslajsonpy-0.3.0
