@@ -2,6 +2,7 @@
   * remove old simplisafe-python ebuilds
   * python-synology-0.4.0 bumped
   * add python-gammu-2.12 (untested)
+  * bump proxmoxer-1.0.4
 
 2020-01-27
   * bump huawei-lte-api-1.4.7
