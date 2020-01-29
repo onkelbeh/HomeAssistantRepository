@@ -10,6 +10,7 @@
   * bump pyhaversion-3.2.0
   * bump haanna-0.14.1
   * bump homeassistant-pyozw-0.1.8
+  * bump pre-commit-2.0.0
 
 2020-01-27
   * bump huawei-lte-api-1.4.7
