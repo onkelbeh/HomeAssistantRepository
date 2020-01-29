@@ -13,6 +13,7 @@
   * bump pre-commit-2.0.0
   * bump pyicloud-0.9.2
   * add pyopnsense-0.2.0
+  * fix some (complained) metadata issues
 
 2020-01-27
   * bump huawei-lte-api-1.4.7
