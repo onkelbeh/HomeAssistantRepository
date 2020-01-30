@@ -5,6 +5,8 @@
   * update bellows-homeassistant-0.13.1
   * update home-assistant-frontend-20200130.0
   * bump zigpy-homeassistant-0.13.0
+  * bump zigpy-xbee-homeassistant-0.9.0
+  * bump pyps4-2ndscreen-1.0.6
   * update homeassistant-0.105.0_beta1
 
 2020-01-29
