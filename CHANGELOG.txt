@@ -1,5 +1,6 @@
 2020-01-30 homeassistant-0.105.0_beta0
   * update homeassistant-0.105.0_beta0, add ~arm64 arch for testing
+  * add home-assistant-frontend-20200129.0
 
 2020-01-29 
   * remove old simplisafe-python ebuilds
