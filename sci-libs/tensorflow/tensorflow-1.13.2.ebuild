@@ -1,10 +1,10 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 DISTUTILS_OPTIONAL=1
-PYTHON_COMPAT=( python2_7 python{3_5,3_6,3_7} )
+PYTHON_COMPAT=( python2_7 python{3_6,3_7,3_8} )
 MY_PV=${PV/_rc/-rc}
 MY_P=${PN}-${MY_PV}
 
@@ -15,7 +15,7 @@ HOMEPAGE="https://www.tensorflow.org/"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 IUSE="cuda mpi +python"
 CPU_USE_FLAGS_X86="sse sse2 sse3 sse4_1 sse4_2 avx avx2 fma3 fma4"
 for i in $CPU_USE_FLAGS_X86; do

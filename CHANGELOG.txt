@@ -10,6 +10,7 @@
   * bump pre-commit-2.0.1
   * update homeassistant-0.105.0_beta1
   * update numpy-1.17.4
+  * start preparing for tests with Python 3.8 and/on arm64/Raspberry
 
 2020-01-29
   * remove old simplisafe-python ebuilds
