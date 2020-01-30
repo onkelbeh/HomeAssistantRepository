@@ -3,6 +3,7 @@
   * add home-assistant-frontend-20200129.0
   * remove pyyaml-5.2 and pyyaml-5.1.2.ebuild, they made it into main repo
   * update bellows-homeassistant-0.13.1
+  * update home-assistant-frontend-20200130.0
   * update homeassistant-0.105.0_beta1
 
 2020-01-29
