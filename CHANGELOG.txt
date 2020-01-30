@@ -1,4 +1,7 @@
-2020-01-29
+2020-01-30 homeassistant-0.105.0_beta0
+  * update homeassistant-0.105.0_beta0, add ~arm64 arch for testing
+
+2020-01-29 
   * remove old simplisafe-python ebuilds
   * python-synology-0.4.0 bumped
   * add python-gammu-2.12 (untested)
