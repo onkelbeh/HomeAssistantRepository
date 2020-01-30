@@ -146,7 +146,7 @@ RDEPEND="${PYTHON_DEPS}
 	flume? ( ~dev-python/PyFlume-0.2.4[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-1.0.3[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( ~app-misc/home-assistant-frontend-20200129.0[${PYTHON_USEDEP}] )
+	frontend? ( ~app-misc/home-assistant-frontend-20200130.0[${PYTHON_USEDEP}] )
 	gpiozero? ( ~dev-python/gpiozero-1.5.1[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
@@ -206,9 +206,9 @@ RDEPEND="${PYTHON_DEPS}
 	yeelight? ( ~dev-python/yeelight-0.5.0[${PYTHON_USEDEP}] )
 	youtube? ( ~dev-python/youtube_dl-2020.01.24[${PYTHON_USEDEP}] )
 	zigbee? ( ~dev-python/zigpy-deconz-0.7.0[${PYTHON_USEDEP}]
-			  ~dev-python/zigpy-homeassistant-0.12.0[${PYTHON_USEDEP}]
-			  ~dev-python/zigpy-xbee-homeassistant-0.8.0[${PYTHON_USEDEP}]
-			  ~dev-python/bellows-homeassistant-0.12.0[${PYTHON_USEDEP}]
+			  ~dev-python/zigpy-homeassistant-0.13.0[${PYTHON_USEDEP}]
+			  ~dev-python/zigpy-xbee-homeassistant-0.9.0[${PYTHON_USEDEP}]
+			  ~dev-python/bellows-homeassistant-0.13.1[${PYTHON_USEDEP}]
 			  ~dev-python/zigpy-zigate-0.5.1[${PYTHON_USEDEP}]
 			  ~dev-python/zha-quirks-0.0.31[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.4.0[${PYTHON_USEDEP}] )
