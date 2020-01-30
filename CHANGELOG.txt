@@ -1,9 +1,11 @@
-2020-01-30 homeassistant-0.105.0_beta0
+2020-01-30 homeassistant-0.105.0_beta1
   * update homeassistant-0.105.0_beta0, add ~arm64 arch for testing
   * add home-assistant-frontend-20200129.0
   * remove pyyaml-5.2 and pyyaml-5.1.2.ebuild, they made it into main repo
+  * update bellows-homeassistant-0.13.1
+  * update homeassistant-0.105.0_beta1
 
-2020-01-29 
+2020-01-29
   * remove old simplisafe-python ebuilds
   * python-synology-0.4.0 bumped
   * add python-gammu-2.12 (untested)
