@@ -1,3 +1,6 @@
+2020-01-31 homeassistant-0.105.0.beta2
+  * update s3transfer-0.2.1
+
 2020-01-30 homeassistant-0.105.0_beta1
   * update homeassistant-0.105.0_beta0, add ~arm64 arch for testing
   * add home-assistant-frontend-20200129.0
