@@ -1,6 +1,7 @@
 2020-01-31 homeassistant-0.105.0.beta2
   * update s3transfer-0.2.1
   * aiobotocore-0.11.1-r1: fix botocore dependency
+  * update botocore-1.13.14 (from main repo archive)
 
 2020-01-30 homeassistant-0.105.0_beta1
   * update homeassistant-0.105.0_beta0, add ~arm64 arch for testing
