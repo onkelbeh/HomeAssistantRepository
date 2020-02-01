@@ -202,9 +202,9 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
   * Sonoff Dual
   * Sonoff RF Bridge with remote Switches
   * Sonoff Touch
-  * Sonoff Basic (not working well with Tasmota in newer versions)
+  * Sonoff Basic (Wifi not working well with EPHome or Tasmota in newer versions)
   The Sonoff Pow will stay with Tasmota for a while, because I have no good implementation of an energy monitor in ESPHome.
-* Experimenting with Shelly Devices
+* Experimenting with Shelly Devices, a friend has some Shelly 1/2, bought a Pro, but this one has a Chip form TI, no ESP, so we'll have to use the original Firmware.
 * Now all of my HC-SR501 PIR Sensors are connected to two big input arrays I built into old CAT6 patch panels with an ESP12 and 4 PCF8574 I2C I/O Expanders, this makes 24 I/O lines per panel. On these runs ESPHome.
 * Yamaha RXV (4 devices)
 * SamsungTV (partly _not_ working anymore due to Samsung's newest firmware 'improvements', at least I can read it's status for controlling lights & the shutters)
@@ -223,43 +223,61 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 I have **no** Google, Amazon or Apple involved in my privacy (at least in this case) and I am not planning to let them in.
 
 ## Some thoughts
-* Tried to get all Python installed system wide under Gentoo's package management and keeping `/etc/homeassistant/deps` empty or at least as small as possible, currently something randomly downgrades beautifulsoup to 4.6.3, still looking into that.
+* Tried to get all Python installed system wide under Gentoo's package management and keeping `/etc/homeassistant/deps` empty or at least as small as possible, currently something randomly downgrades beautifulsoup to 4.6.3 (in deps virtualenv), still looking into that.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies execpt portage are not tested.
 * Since I use Gentoo mostly on servers, I do not use systemd, the most important reason to run Gentoo is that you are NOT forced to run this incredible crap.
-* I prefer an own profile based on "amd64/17.1/no-multilib"
-* python-3.7.5-r1 is set as default target, also 2.7.17 is installed on my test server.
-* I do no tests anymore on Python 3.6
+* I use an own profile based on "amd64/17.1/no-multilib"
+* python-3.7.6 is set as default target, also 2.7.17-r1 is installed on my test server.
+* I do no tests anymore on Python 3.6 or lower
 
 ## Licenses
-The repository itself is released under GPL-3, all work on the depending components under the licenses they came from, which could be (as my grep told me on Nov 20th):
+The repository itself is released under GPL-3, all work on the depending components under the licenses they came from, which could be (as my grep told me on Feb 1st):
+
+```sh
+grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | sed 's;";|;' | sed 's/ //g' | xargs -L1 printf '|%s\n'
+```
 
 | Count | License |
 | ------ | ------ |
-|2x |AGPL-3|
-|250x |Apache-2.0|
-|2x |Artistic-2|
-|288x |BSD|
-|4x |CC0-1.0|
-|2x |CC-BY-NC-SA-4.0|
-|2x |ECL-2.0|
-|8x |EPL-1.0|
-|2x |GPL-1|
-|36x |GPL-2|
-|162x |GPL-3|
-|12x |GPL-3+|
-|4x |LGPL-2+|
-|8x |LGPL-2.1|
-|10x |LGPL-3|
-|4x |LGPL-3+|
-|1001x |MIT|
-|6x |MPL-2.0|
-|1x |NEWLIB|
-|9x |PSF-2|
-|2x |PSF-2.4|
-|3x |public-domain|
-|12x |Unlicense|
-|5x |ZPL|
+|2|AGPL-3|
+|1|AGPL-3+|
+|16|all-rights-reserved|
+|293|Apache-2.0|
+|3|Apache-2.0 BSD-2|
+|1|Apache-2.0 MIT|
+|2|Artistic-2|
+|1|Boost-1.0|
+|143|BSD|
+|5|BSD-2|
+|4|BSD-2 Unlicense|
+|7|BSD-4|
+|1|BSD Apache-2.0|
+|4|CC0-1.0|
+|1|CC-BY-NC-SA-3.0|
+|2|CC-BY-NC-SA-4.0|
+|2|ECL-2.0|
+|10|EPL-1.0|
+|2|GPL-1|
+|20|GPL-2|
+|5|GPL-2+|
+|131|GPL-3|
+|19|GPL-3+|
+|2|ISC|
+|1|LGPL-2|
+|8|LGPL-2+|
+|14|LGPL-2.1|
+|2|LGPL-2.1+|
+|26|LGPL-3|
+|16|LGPL-3+|
+|996|MIT|
+|5|MPL-2.0|
+|1|NEWLIB|
+|12|PSF-2|
+|3|PSF-2.4|
+|3|public-domain|
+|11|Unlicense|
+|5|ZPL|
 
 I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
 
-Last update of this text: 18.1.2020
+Last update of this text: 1.2.2020
