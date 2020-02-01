@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -10,7 +10,7 @@ inherit distutils-r1 vcs-snapshot
 DESCRIPTION="YAML parser/emitter that supports roundtrip comment preservation"
 HOMEPAGE="https://pypi.org/project/ruamel.yaml/ https://bitbucket.org/ruamel/yaml"
 MY_PN="${PN//-/.}"
-SRC_URI="https://bitbucket.org/${MY_PN/.//}/get/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN/-/.}/${P/-/.}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -29,6 +29,8 @@ DEPEND="
 		dev-python/ruamel-std-pathlib[${PYTHON_USEDEP}]
 	)
 "
+
+S="${WORKDIR}/${P/-/.}"
 
 python_install() {
 	distutils-r1_python_install --single-version-externally-managed

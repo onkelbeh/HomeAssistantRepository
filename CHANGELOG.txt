@@ -26,6 +26,8 @@
   * bump total-connect-client-0.50
   * bump aiokef-0.2.7
   * add bravia-tv-1.0
+  * update homeassistant-9999.ebuild to match 0.105.0 versions
+  * fix all ruamel-yaml download sources, update PYTHON_COMPAT and KEYWORDS
 
 2020-01-31 homeassistant-0.105.0.beta2
   * update s3transfer-0.2.1
