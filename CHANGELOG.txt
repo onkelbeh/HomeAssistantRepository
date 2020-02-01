@@ -25,6 +25,7 @@
   * rework main ebuilds to use SLOT dependency
   * bump total-connect-client-0.50
   * bump aiokef-0.2.7
+  * add bravia-tv-1.0
 
 2020-01-31 homeassistant-0.105.0.beta2
   * update s3transfer-0.2.1
