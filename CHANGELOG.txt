@@ -29,6 +29,7 @@
   * update homeassistant-9999.ebuild to match 0.105.0 versions
   * fix all ruamel-yaml download sources, update PYTHON_COMPAT and KEYWORDS
   * removed cffi requirements in actual homeassistant ebuilds
+  * re-add (old, but needed) importlib_metadata-1.3.0
 
 2020-01-31 homeassistant-0.105.0.beta2
   * update s3transfer-0.2.1
