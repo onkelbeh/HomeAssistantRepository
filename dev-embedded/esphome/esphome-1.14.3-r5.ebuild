@@ -34,14 +34,9 @@ DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=dev-python/tzlocal-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
-	=dev-embedded/platformio-4.0.3
-	>=dev-python/pyyaml-5.1.2[${PYTHON_USEDEP}]
-	>=dev-python/paho-mqtt-1.4.0[${PYTHON_USEDEP}]
-	>=dev-python/colorlog-4.0.2[${PYTHON_USEDEP}]
 	~dev-embedded/esptool-2.7[${PYTHON_USEDEP}]
 	>=dev-python/typing-3.6.6[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-3.10.0[${PYTHON_USEDEP}]
-	>=dev-libs/protobuf-3.10.0
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	server? ( >=dev-python/ifaddr-0.1.6
@@ -49,7 +44,13 @@ DEPEND="${REDEPEND}
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+	)
+	=dev-libs/protobuf-3.10.1
+	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
+	=dev-python/pyyaml-5.3[${PYTHON_USEDEP}]
+	=dev-embedded/platformio-4.1.0
+	=dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
+"
 
 DISABLE_AUTOFORMATTING=1
 DOC_CONTENTS="
@@ -76,7 +77,13 @@ src_prepare() {
 	sed -e 's;paho-mqtt==1.4.0;paho-mqtt==1.5.0;' \
 		-i esphome.egg-info/requires.txt \
 		-i setup.py
-	sed -e 's;PyYAML==5.1.2;PyYAML==5.2;' \
+	sed -e 's;PyYAML==5.1.2;PyYAML==5.3;' \
+		-i esphome.egg-info/requires.txt \
+		-i setup.py
+	sed -e 's;platformio==4.0.3;platformio==4.1.0;' \
+		-i esphome.egg-info/requires.txt \
+		-i setup.py
+	sed -e 's;colorlog==4.0.2;colorlog==4.1.0;' \
 		-i esphome.egg-info/requires.txt \
 		-i setup.py
 	eapply_user
