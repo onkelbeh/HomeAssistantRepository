@@ -22,6 +22,7 @@
   * resolved https://github.com/onkelbeh/HomeAssistantRepository/issues/9:
     - patched slixmpp-1.4.2-r1 for python_37
     - updated KEYWORDS and PYTHON_COMPAT in aioharmony-0.1.13-r1
+  * rework main ebuilds to use SLOT dependency 
 
 2020-01-31 homeassistant-0.105.0.beta2
   * update s3transfer-0.2.1

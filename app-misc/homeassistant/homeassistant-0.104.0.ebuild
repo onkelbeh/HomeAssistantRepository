@@ -22,7 +22,7 @@ IUSE="abode ambiclimate ambient_station androidtv asuswrt atmo atv aurora avea a
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
-	>=dev-lang/python-3.6.5
+	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
 	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson

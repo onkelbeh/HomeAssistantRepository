@@ -22,7 +22,7 @@ IUSE="abode ambiclimate androidtv asuswrt atmo atv aurora avea axis bitcoin bloc
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
-	>=dev-lang/python-3.6.5
+	|| ( dev-lang/python:3.6 dev-lang/python:3.7 dev-lang/python:3.8 )
 	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson

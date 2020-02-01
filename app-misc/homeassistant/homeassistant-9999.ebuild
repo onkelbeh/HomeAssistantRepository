@@ -27,7 +27,7 @@ IUSE="abode acer_projector adguard ads aftership airly airvisual aladdin_connect
 
 RDEPEND="${PYTHON_DEPS}
 	!app-misc/homeassistant-bin
-	>=dev-lang/python-3.6.5
+	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
 	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
