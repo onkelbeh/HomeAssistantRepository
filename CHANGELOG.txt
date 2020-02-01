@@ -1,13 +1,16 @@
+2020-02-01
+  * expanded version patches on ESPHome:
+    =dev-libs/protobuf-3.10.1
+    ~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
+    =dev-python/pyyaml-5.3[${PYTHON_USEDEP}]
+    =dev-embedded/platformio-4.1.0
+    =dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
+  * bump pytrafikverket-0.1.6.1
+
 2020-01-31 homeassistant-0.105.0.beta2
   * update s3transfer-0.2.1
   * aiobotocore-0.11.1-r1: fix botocore dependency (experimental)
   * update botocore-1.13.14 (from main repo archive) (experimental)
-  * expanded version patches on ESPHome:
-      =dev-libs/protobuf-3.10.1
-      ~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
-      =dev-python/pyyaml-5.3[${PYTHON_USEDEP}]
-      =dev-embedded/platformio-4.1.0
-      =dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
 
 2020-01-30 homeassistant-0.105.0_beta1
   * update homeassistant-0.105.0_beta0, add ~arm64 arch for testing
