@@ -14,6 +14,7 @@
   * bump zha-quirks-0.0.32
   * cleanup app-misc/homeassistant, remove obsolete frontends
   * fix numpy-1.17.4.ebuild file perms
+  * remove herd tag from dev-python/elgato/metadata.xml
 
 2020-01-31 homeassistant-0.105.0.beta2
   * update s3transfer-0.2.1
