@@ -1,3 +1,6 @@
+2020-02-02
+  * bump pysignalclirestapi-0.2.4
+
 2020-02-01 homeassistant-0.105.0_beta4
   * expanded version patches on ESPHome:
     =dev-libs/protobuf-3.10.1
