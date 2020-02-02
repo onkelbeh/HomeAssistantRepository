@@ -6,6 +6,7 @@
   * bump praw-6.5.1
   * bump numpy-1.18.1
   * bump pyhomematic-0.1.64
+  * bump rflink-0.0.51
 
 2020-02-01 homeassistant-0.105.0_beta4
   * expanded version patches on ESPHome:
