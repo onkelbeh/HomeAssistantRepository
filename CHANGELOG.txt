@@ -1,5 +1,6 @@
 2020-02-02
   * bump pysignalclirestapi-0.2.4
+  * bump sendgrid-6.1.1
 
 2020-02-01 homeassistant-0.105.0_beta4
   * expanded version patches on ESPHome:
