@@ -5,6 +5,7 @@
   * bump discord-py-1.3.1
   * bump praw-6.5.1
   * bump numpy-1.18.1
+  * bump pyhomematic-0.1.64
 
 2020-02-01 homeassistant-0.105.0_beta4
   * expanded version patches on ESPHome:
