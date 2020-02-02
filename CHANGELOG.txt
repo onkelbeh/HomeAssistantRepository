@@ -8,6 +8,7 @@
   * bump pyhomematic-0.1.64
   * bump rflink-0.0.51
   * add saltbox-0.1.3
+  * bump alpha-vantage-2.1.3
 
 2020-02-01 homeassistant-0.105.0_beta4
   * expanded version patches on ESPHome:
