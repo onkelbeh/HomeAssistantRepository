@@ -5,6 +5,7 @@
     - use EAPI7 acct-user/acct-group for homeassistant
   * update app-misc/homeassistant-0.105.0_beta6
   * remove broken ruamel-yaml WORKDIR
+  * bump pydeconz-70
 
 2020-02-02
   * bump pysignalclirestapi-0.2.4
