@@ -8,6 +8,7 @@
   * bump pydeconz-70
   * bump pyvizio-0.1.19
   * bump nsapi-3.0.2
+  * botocore-1.12.252-r1, fixed requirements
 
 2020-02-02
   * bump pysignalclirestapi-0.2.4
