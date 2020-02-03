@@ -4,6 +4,7 @@
     - try out leaving NabuCasa behind (problems with python-dateutil) (experimental)
     - use EAPI7 acct-user/acct-group for homeassistant
   * update app-misc/homeassistant-0.105.0_beta6
+  * remove broken ruamel-yaml WORKDIR
 
 2020-02-02
   * bump pysignalclirestapi-0.2.4
