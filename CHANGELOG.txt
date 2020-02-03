@@ -6,6 +6,7 @@
   * update app-misc/homeassistant-0.105.0_beta6
   * remove broken ruamel-yaml WORKDIR
   * bump pydeconz-70
+  * bump pyvizio-0.1.19
 
 2020-02-02
   * bump pysignalclirestapi-0.2.4
