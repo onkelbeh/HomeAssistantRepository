@@ -1,3 +1,9 @@
+2020-02-03
+  * update app-misc/homeassistant-0.105.0_beta5
+    - try out leaving cffi behind (experimental)
+    - try out leaving NabuCasa behind (problems with python-dateutil) (experimental)
+    - use EAPI7 acct-user/acct-group for homeassistant
+
 2020-02-02
   * bump pysignalclirestapi-0.2.4
   * bump sendgrid-6.1.1
