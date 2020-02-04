@@ -20,6 +20,7 @@
   * remove dev-python/PyNaCl, is in Gentoo repo
   * bump pycryptodome-3.9.6 from Gentoo repo
   * update hass-nabucasa requirements
+  * update snitun-0.20
 
 2020-02-03
   * update app-misc/homeassistant-0.105.0_beta5
