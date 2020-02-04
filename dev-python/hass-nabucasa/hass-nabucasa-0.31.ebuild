@@ -13,15 +13,16 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux ~arm64"
+KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="~dev-python/warrant-0.6.1[${PYTHON_USEDEP}]
-		 ~dev-python/snitun-0.18[${PYTHON_USEDEP}]
-		 >=app-crypt/acme-0.32.0
+		 ~dev-python/snitun-0.20[${PYTHON_USEDEP}]
+		 ~app-crypt/acme-1.0.0
 		 >=dev-python/cryptography-2.5[${PYTHON_USEDEP}]
 		 >=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
-		 dev-python/pytz[${PYTHON_USEDEP}]"
+		 dev-python/pytz[${PYTHON_USEDEP}]
+		 dev-python/aiohttp[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
