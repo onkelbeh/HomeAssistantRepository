@@ -1,3 +1,6 @@
+2020-02-04
+  * bump pyvizio-0.1.21
+
 2020-02-03
   * update app-misc/homeassistant-0.105.0_beta5
     - try out leaving cffi behind (experimental)
