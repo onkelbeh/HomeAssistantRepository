@@ -1,11 +1,11 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
 PYTHON_COMPAT=( python2_7 )
 
-inherit user readme.gentoo-r1 distutils-r1
+inherit readme.gentoo-r1 distutils-r1
 
 MY_P=${P/_beta/b}
 MY_PV=${PV/_beta/b}
@@ -21,7 +21,8 @@ KEYWORDS="amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="server test"
 
 RDEPEND=""
-DEPEND="${REDEPEND}
+DEPEND="${RDEPEND}
+  server? ( acct-group/${PN} acct-user/${PN} )
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=dev-python/tzlocal-1.5.1[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]
@@ -54,27 +55,16 @@ S="${WORKDIR}/${MY_P}"
 
 DOCS="README.md"
 
-pkg_setup() {
-	if use server; then
-		enewgroup "${PN}"
-		enewuser "${PN}" -1 -1 "/etc/${PN}" "${PN}"
-	fi
-}
-
 python_install_all() {
 	dodoc ${DOCS}
 	distutils-r1_python_install_all
-
 	if use server; then
 		keepdir "/etc/${PN}"
 		fowners -R "${PN}:${PN}" "/etc/${PN}"
-
 		keepdir "/var/log/${PN}"
 		fowners -R "${PN}:${PN}" "/var/log/${PN}"
-
 		newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
 		newinitd "${FILESDIR}/${PN}.init.d-r1" "${PN}"
-
 		readme.gentoo_create_doc
 	fi
 }

@@ -3,9 +3,9 @@
 
 EAPI="7"
 PYTHON_COMPAT=( python3_{7,8} )
-inherit user readme.gentoo-r1 eutils distutils-r1
+inherit readme.gentoo-r1 eutils distutils-r1
 
-DESCRIPTION="Open-source home automation platform running on Python on 3.7 (and 3.6 for a short time)"
+DESCRIPTION="Open-source home automation platform running on Python on 3.7"
 HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistantRepository"
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -23,9 +23,11 @@ else
 	S="${WORKDIR}/${MY_P}/"
 fi
 
-IUSE="abode acer_projector adguard ads aftership airly airvisual aladdin_connect alarmdecoder alarmdotcom almond alpha_vantage amazon_polly ambiclimate ambient_station amcrest ampio android_ip_webcam androidtv anel_pwrctrl anthemav apache_kafka apcupsd apns apple_tv apprise aprs aqualogic aquostv arcam_fmj arduino arlo aruba asterisk_mbox asuswrt aten_pe atome august aurora_abb_powerone automatic avea avion awair aws axis baidu bbb_gpio bbox beewi_smartclim bh1750 bitcoin bizkaibus blackbird blink blinksticklight blinkt blockchain bluesound bluetooth_le_tracker bluetooth_tracker bme280 bme680 bmw_connected_drive bom braviatv broadlink brother brottsplatskartan brunt bt_home_hub_5 bt_smarthub buienradar caldav canary cast channels cisco_ios cisco_mobility_express cisco_webex_teams clementine cloud cloudflare cmus co2signal coinbase coinmarketcap comfoconnect concord232 coolmaster cppm_tracker cpuspeed crimereports cups daikin danfoss_air darksky datadog deconz decora decora_wifi delijn deluge denonavr deutsche_bahn dht digital_ocean digitalloggers directv discogs discord discovery dlib_face_detect dlib_face_identify dlink dlna_dmr dnsip dominos doods doorbird dovado dsmr duke_energy dunehd dweet dyson ebox ebusd ecoal_boiler ecobee econet ecovacs eddystone_temperature edimax ee_brightbox egardia eight_sleep elgato eliqonline elkm1 elv emby emulated_hue emulated_roku enigma2 enocean enphase_envoy entur_public_transport environment_canada envirophat envisalink ephember epson epsonworkforce eq3btsmart esphome essent etherscan eufy everlights familyhub fastdotcom feedreader ffmpeg fibaro fido fints fitbit fixer fleetgo flexit flic flume flunearyou flux_led folder_watcher foobot fortigate fortios foscam free_mobile freebox fritz fritzbox fritzbox_callmonitor fritzbox_netmonitor fritzdect fronius frontier_silicon futurenow garmin_connect gc100 gearbest geizhals geniushub geo_json_events geo_rss_events geonetnz_quakes gios gitlab_ci gitter glances gntp goalfeed gogogate2 google google_maps google_translate google_travel_time gpmdp gpsd greeneye_monitor greenwave growatt_server gstreamer gtfs habitica hangouts harman_kardon_avr harmony hdmi_cec heatmiser heos here_travel_time hikvision hikvisioncam hisense_aehw4a1 hive hlk_sw16 homekit homekit_controller homematic homematicip_cloud homeworks honeywell horizon hp_ilo html5 http htu21d huawei_lte hue hunterdouglas_powerview hydrawise ialarm iaqualink icloud idteck_prox ifttt iglo ign_sismologia ihc imap incomfort influxdb insteon intesishome iota iperf3 ipma iqvia irish_rail_transport islamic_prayer_times iss isy994 itach izone jewish_calendar joaoapps_join juicenet kaiterra keba keenetic_ndms2 kef keyboard keyboard_remote kira kiwi knx kodi konnected kwb lametric lastfm launch_library lcn lg_netcast lg_soundbar life360 lifx lifx_legacy lightwave limitlessled linky linode linux_battery lirc litejet liveboxplaytv logi_circle london_underground loopenergy luci luftdaten lupusec lutron lutron_caseta lw12wifi lyft magicseaweed mailgun marytts mastodon matrix maxcube maxcube_hack mcp23017 mediaroom melissa message_bird met meteo_france meteoalarm metoffice mfi mhz19 microsoft miflora mikrotik mill minio mitemp_bt mobile_app mochad modbus modem_callerid monoprice mopar mpd mqtt msteams mvglive mychevy mycroft myq mysensors mystrom mythicbeastsdns n26 nad namecheapdns nanoleaf neato nederlandse_spoorwegen nello ness_alarm nest netatmo netdata netgear netgear_lte netio neurio_energy nextbus niko_home_control nilu nissan_leaf nmap_tracker nmbs noaa_tides norway_air notion nsw_fuel_station nsw_rural_fire_service_feed nuheat nuimo_controller nuki nut nws nx584 nzbget oasa_telematics obihai oem ohmconnect ombi onkyo onvif opencv openevse openhome opensensemap opentherm_gw openuv openweathermap opnsense opple orangepi_gpio oru orvibo osramlightify otp owntracks panasonic_bluray panasonic_viera pandora pcal9535a pencom philips_js pi_hole piglow pilight pjlink plex plugwise plum_lightpad pocketcasts point prezzibenzina proliphix prometheus proxmoxve proxy ps4 ptvsd pushbullet pushetta pushover python_script qbittorrent qld_bushfire qnap qrcode quantum_gateway qwikswitch rachio radiotherm rainbird raincloud rainforest_eagle rainmachine raspihats raspyrfm recollect_waste recorder recswitch reddit rejseplanen remember_the_milk remote_rpi_gpio repetier rflink rfxtrx ring ripple rmvtransport rocketchat roku route53 rova rpi_gpio rpi_gpio_pwm rpi_pfio rpi_rf russound_rio russound_rnet sabnzbd saj samsungtv satel_integra scrape scsgate sendgrid sense sensehat sensibo sentry serial serial_pm sesame seven_segments seventeentrack shiftr shodan sht31 sighthound signal_messenger simplepush simplisafe sinch sisyphus skybeacon skybell slack sleepiq slide sma smappee smarthab smartthings smarty smhi sms snapcast snmp sochain socialblade solaredge solaredge_local solarlog solax soma somfy somfy_mylink songpal sonos sony_projector soundtouch spc speedtestdotnet spider spotcrime spotify sql ssdp starline starlingbank startca statsd steam_online stiebel_eltron stream streamlabswater suez_water supla surepetcare swiss_hydrological_data swiss_public_transport switchbot switcher_kis switchmate syncthru synology synology_srm synologydsm systemmonitor tado tahoma tank_utility tapsaff tautulli ted5000 telegram_bot tellduslive tellstick temper tensorflow tesla test tfiac thermoworks_smoke thingspeak thinkingcleaner tibber tikteck tile tmb todoist tof toon totalconnect touchline tplink tplink_lte traccar trackr tradfri trafikverket_train trafikverket_weatherstation transmission transport_nsw travisci trend tuya twentemilieu twilio twitch twitter ubee unifi unifi_direct unifiled upc_connect upcloud updater upnp uscis usgs_earthquakes_feed uvc vallox vasttrafik velux venstar vera verisure versasense version vesync vicare vivotek vizio vlc vlc_telnet volkszaehler vultr w800rf32 wake_on_lan waqi waterfurnace watson_iot watson_tts waze_travel_time webostv wemo whois wink wirelesstag withings wled workday wunderlist wwlln xbox_live xeoma xfinity xiaomi_aqara xiaomi_miio xiaomi_tv xmpp yale_smart_alarm yamaha yamaha_musiccast yandex_transport yeelight yeelightsunflower yessssms yi yr yweather zengge zeroconf zestimate zha zhong_hong zigbee ziggo_mediabox_xl zoneminder zwave"
+IUSE="abode acer_projector adguard ads aftership airly airvisual aladdin_connect alarmdecoder alarmdotcom almond alpha_vantage amazon_polly ambiclimate ambient_station amcrest ampio android_ip_webcam androidtv anel_pwrctrl anthemav apache_kafka apcupsd apns apple_tv apprise aprs aqualogic aquostv arcam_fmj arduino arlo aruba asterisk_mbox asuswrt aten_pe atome august aurora_abb_powerone automatic avea avion awair aws axis baidu bbb_gpio bbox beewi_smartclim bh1750 bitcoin bizkaibus blackbird blink blinksticklight blinkt blockchain bluesound bluetooth_le_tracker bluetooth_tracker bme280 bme680 bmw_connected_drive bom braviatv broadlink brother brottsplatskartan brunt bt_home_hub_5 bt_smarthub buienradar caldav canary cast channels cisco_ios cisco_mobility_express cisco_webex_teams clementine cloud cloudflare cmus co2signal coinbase coinmarketcap comfoconnect concord232 coolmaster cppm_tracker cpuspeed crimereports cups daikin danfoss_air darksky datadog deconz decora decora_wifi delijn deluge denonavr deutsche_bahn dht digital_ocean digitalloggers directv discogs discord discovery dlib_face_detect dlib_face_identify dlink dlna_dmr dnsip dominos doods doorbird dovado dsmr duke_energy dunehd dweet dyson ebox ebusd ecoal_boiler ecobee econet ecovacs eddystone_temperature edimax ee_brightbox egardia eight_sleep elgato eliqonline elkm1 elv emby emulated_hue emulated_roku enigma2 enocean enphase_envoy entur_public_transport environment_canada envirophat envisalink ephember epson epsonworkforce eq3btsmart esphome essent etherscan eufy everlights familyhub fastdotcom feedreader ffmpeg fibaro fido fints fitbit fixer fleetgo flexit flic flume flunearyou flux_led folder_watcher foobot fortigate fortios foscam free_mobile freebox fritz fritzbox fritzbox_callmonitor fritzbox_netmonitor fritzdect fronius frontend frontier_silicon futurenow garmin_connect gc100 gearbest geizhals geniushub geo_json_events geo_rss_events geonetnz_quakes gios gitlab_ci gitter glances gntp goalfeed gogogate2 google google_maps google_translate google_travel_time gpmdp gpsd greeneye_monitor greenwave growatt_server gstreamer gtfs habitica hangouts harman_kardon_avr harmony hdmi_cec heatmiser heos here_travel_time hikvision hikvisioncam hisense_aehw4a1 hive hlk_sw16 homekit homekit_controller homematic homematicip_cloud homeworks honeywell horizon hp_ilo html5 http htu21d huawei_lte hue hunterdouglas_powerview hydrawise ialarm iaqualink icloud idteck_prox ifttt iglo ign_sismologia ihc imap incomfort influxdb insteon intesishome iota iperf3 ipma iqvia irish_rail_transport islamic_prayer_times iss isy994 itach izone jewish_calendar joaoapps_join juicenet kaiterra keba keenetic_ndms2 kef keyboard keyboard_remote kira kiwi knx kodi konnected kwb lametric lastfm launch_library lcn lg_netcast lg_soundbar life360 lifx lifx_legacy lightwave limitlessled linky linode linux_battery lirc litejet liveboxplaytv logi_circle london_underground loopenergy luci luftdaten lupusec lutron lutron_caseta lw12wifi lyft magicseaweed mailgun marytts mastodon matrix maxcube maxcube_hack mcp23017 mediaroom melissa message_bird met meteo_france meteoalarm metoffice mfi mhz19 microsoft miflora mikrotik mill minio mitemp_bt mobile_app mochad modbus modem_callerid monoprice mopar mpd mqtt msteams mvglive mychevy mycroft myq mysensors mystrom mythicbeastsdns n26 nad namecheapdns nanoleaf neato nederlandse_spoorwegen nello ness_alarm nest netatmo netdata netgear netgear_lte netio neurio_energy nextbus niko_home_control nilu nissan_leaf nmap_tracker nmbs noaa_tides norway_air notion nsw_fuel_station nsw_rural_fire_service_feed nuheat nuimo_controller nuki nut nws nx584 nzbget oasa_telematics obihai oem ohmconnect ombi onkyo onvif opencv openevse openhome opensensemap opentherm_gw openuv openweathermap opnsense opple orangepi_gpio oru orvibo osramlightify otp owntracks panasonic_bluray panasonic_viera pandora pcal9535a pencom philips_js pi_hole piglow pilight pjlink plex plugwise plum_lightpad pocketcasts point prezzibenzina proliphix prometheus proxmoxve proxy ps4 ptvsd pushbullet pushetta pushover python_script qbittorrent qld_bushfire qnap qrcode quantum_gateway qwikswitch rachio radiotherm rainbird raincloud rainforest_eagle rainmachine raspihats raspyrfm recollect_waste recorder recswitch reddit rejseplanen remember_the_milk remote_rpi_gpio repetier rflink rfxtrx ring ripple rmvtransport rocketchat roku route53 rova rpi_gpio rpi_gpio_pwm rpi_pfio rpi_rf russound_rio russound_rnet sabnzbd saj samsungtv satel_integra scrape scsgate sendgrid sense sensehat sensibo sentry serial serial_pm sesame seven_segments seventeentrack shiftr shodan sht31 sighthound signal_messenger simplepush simplisafe sinch sisyphus skybeacon skybell slack sleepiq slide sma smappee smarthab smartthings smarty smhi sms snapcast snmp sochain socialblade solaredge solaredge_local solarlog solax soma somfy somfy_mylink songpal sonos sony_projector soundtouch spc speedtestdotnet spider spotcrime spotify sql ssdp starline starlingbank startca statsd steam_online stiebel_eltron stream streamlabswater suez_water supla surepetcare swiss_hydrological_data swiss_public_transport switchbot switcher_kis switchmate syncthru synology synology_srm synologydsm systemmonitor tado tahoma tank_utility tapsaff tautulli ted5000 telegram_bot tellduslive tellstick temper tensorflow tesla test tfiac thermoworks_smoke thingspeak thinkingcleaner tibber tikteck tile tmb todoist tof toon totalconnect touchline tplink tplink_lte traccar trackr tradfri trafikverket_train trafikverket_weatherstation transmission transport_nsw travisci trend tuya twentemilieu twilio twitch twitter ubee unifi unifi_direct unifiled upc_connect upcloud updater upnp uscis usgs_earthquakes_feed uvc vallox vasttrafik velux venstar vera verisure versasense version vesync vicare vivotek vizio vlc vlc_telnet volkszaehler vultr w800rf32 wake_on_lan waqi waterfurnace watson_iot watson_tts waze_travel_time webostv wemo whois wink wirelesstag withings wled workday wunderlist wwlln xbox_live xeoma xfinity xiaomi_aqara xiaomi_miio xiaomi_tv xmpp yale_smart_alarm yamaha yamaha_musiccast yandex_transport yeelight yeelightsunflower yessssms yi yr yweather zengge zeroconf zestimate zha zhong_hong zigbee ziggo_mediabox_xl zoneminder zwave"
 
 RDEPEND="${PYTHON_DEPS}
+  acct-group/${PN}
+  acct-user/${PN}
 	!app-misc/homeassistant-bin
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
 	app-admin/logrotate
@@ -78,7 +80,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/nose-1.3.7[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.17.3[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
-	~dev-python/passlib-1.7.1-r1[${PYTHON_USEDEP}]
+	~dev-python/passlib-1.7.1[${PYTHON_USEDEP}]
 	>=dev-python/pbr-5.1.3[${PYTHON_USEDEP}]
 	~dev-python/pillow-6.2.1[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
@@ -99,9 +101,9 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/python-slugify-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-5.1.2[${PYTHON_USEDEP}]
-	=dev-python/requests-2.22.0-r1[${PYTHON_USEDEP}]
+	~dev-python/requests-2.22.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
-	=dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
+	~dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 	>=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
@@ -310,6 +312,7 @@ RDEPEND="${PYTHON_DEPS}
 	fritzbox_callmonitor? ( ~dev-python/fritzconnection-1.2.0[${PYTHON_USEDEP}] )
 	fritzbox_netmonitor? ( ~dev-python/fritzconnection-1.2.0[${PYTHON_USEDEP}] )
 	fritzdect? ( ~dev-python/fritzhome-1.0.4[${PYTHON_USEDEP}] )
+	frontend? ( ~app-misc/home-assistant-frontend-20200130.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
 	frontier_silicon? ( ~dev-python/afsapi-0.0.4[${PYTHON_USEDEP}] )
 	futurenow? ( ~dev-python/pyfnip-0.2[${PYTHON_USEDEP}] )
@@ -813,21 +816,14 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 
 DOCS="README.rst"
 
-pkg_setup() {
-	enewgroup "${PN}"
-	enewuser "${PN}" -1 -1 "$INSTALL_DIR" "${PN}"
-}
-
 src_prepare() {
 	sed -e 's;astral==1.5;astral>=1.5;' \
 		-i "setup.py" \
 		-i homeassistant/package_constraints.txt
-
 	# https://github.com/home-assistant/home-assistant/issues/28811
 	if use maxcube_hack ; then
 	   eapply "${FILESDIR}/maxcube_TypeError_dirty_hack.patch"
 	fi
-
 	eapply_user
 }
 
@@ -841,16 +837,13 @@ python_install_all() {
 	fowners -R "${PN}:${PN}" "/var/log/${PN}"
 	newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
 	newinitd "${FILESDIR}/${PN}.init.d" "${PN}"
-
 	if use socat ; then
 		newinitd "${FILESDIR}/socat-zwave.init.d" "socat-zwave"
 		sed -i -e 's/# need socat-zwave/need socat-zwave/g' "${D}/etc/init.d/${PN}" || die
 	fi
-
 	if use mqtt ; then
 		sed -i -e 's/# need mosquitto/need mosquitto/g' "${D}/etc/init.d/${PN}" || die
 	fi
-
 	insinto /etc/logrotate.d
 	newins "${FILESDIR}/${PN}.logrotate" "${PN}"
 	dobin "${FILESDIR}/hasstest"

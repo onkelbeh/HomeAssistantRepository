@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -28,7 +28,7 @@ RDEPEND="${DEPEND}
 	<dev-python/lockfile-0.13[${PYTHON_USEDEP}]
 	>=dev-python/lockfile-0.9.1[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3[${PYTHON_USEDEP}]
-	!=dev-python/pyserial-3.3[${PYTHON_USEDEP}]
+	!~dev-python/pyserial-3.3[${PYTHON_USEDEP}]
 	<dev-python/pyserial-4[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.4.0[${PYTHON_USEDEP}]
 	<dev-python/requests-3[${PYTHON_USEDEP}]

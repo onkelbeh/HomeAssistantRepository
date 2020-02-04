@@ -4,14 +4,12 @@
 EAPI="7"
 
 PYTHON_COMPAT=( python3_{7,8} )
-
-#inherit python-single-r1 user readme.gentoo-r1 eutils # distutils-r1
 inherit readme.gentoo-r1 eutils distutils-r1
 
 MY_P=${P/_beta/b}
 MY_PV=${PV/_beta/b}
 
-DESCRIPTION="Open-source home automation platform running on Python on 3.7 (and 3.6 for a short time)"
+DESCRIPTION="Open-source home automation platform running on Python on 3.7"
 HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistantRepository"
 SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
 
@@ -73,7 +71,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/nose-1.3.7[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.17.4[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
-	~dev-python/passlib-1.7.1-r1[${PYTHON_USEDEP}]
+	~dev-python/passlib-1.7.1[${PYTHON_USEDEP}]
 	>=dev-python/pbr-5.1.3[${PYTHON_USEDEP}]
 	~dev-python/pillow-6.2.1[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
@@ -93,9 +91,9 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/python-slugify-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-5.3[${PYTHON_USEDEP}]
-	=dev-python/requests-2.22.0-r1[${PYTHON_USEDEP}]
+	~dev-python/requests-2.22.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
-	=dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
+	~dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 	>=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
@@ -177,7 +175,7 @@ RDEPEND="${PYTHON_DEPS}
 	roku? ( ~dev-python/roku-4.0.0[${PYTHON_USEDEP}] )
 	recorder? ( ~dev-python/sqlalchemy-1.3.13[${PYTHON_USEDEP}] )
 	ring? ( ~dev-python/ring-doorbell-0.6.0[${PYTHON_USEDEP}] )
-	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
+	rxv? ( ~dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
 	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
 	signal? ( ~dev-python/pysignalclirestapi-0.1.4[${PYTHON_USEDEP}] )
@@ -257,51 +255,36 @@ S="${WORKDIR}/home-assistant-${MY_PV}"
 
 DOCS="README.rst"
 
-#pkg_setup() {
-#	enewgroup "${PN}"
-#	enewuser "${PN}" -1 -1 "$INSTALL_DIR" "${PN}"
-#}
-
 src_prepare() {
 	sed -e 's;astral==1.5;astral>=1.5;' \
 		-i "setup.py" \
 		-i homeassistant/package_constraints.txt
-
 	# https://github.com/home-assistant/home-assistant/issues/28811
 	if use maxcube_hack ; then
 	   eapply "${FILESDIR}/maxcube_TypeError_dirty_hack.patch"
 	fi
-
 	eapply_user
 }
 
 python_install_all() {
 	dodoc ${DOCS}
 	distutils-r1_python_install_all
-
 	keepdir "$INSTALL_DIR"
-
 	keepdir "/etc/${PN}"
 	fowners -R "${PN}:${PN}" "/etc/${PN}"
-
 	keepdir "/var/log/${PN}"
 	fowners -R "${PN}:${PN}" "/var/log/${PN}"
-
 	newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
 	newinitd "${FILESDIR}/${PN}.init.d" "${PN}"
-
 	if use socat ; then
 		newinitd "${FILESDIR}/socat-zwave.init.d" "socat-zwave"
 		sed -i -e 's/# need socat-zwave/need socat-zwave/g' "${D}/etc/init.d/${PN}" || die
 	fi
-
 	if use mqtt ; then
 		sed -i -e 's/# need mosquitto/need mosquitto/g' "${D}/etc/init.d/${PN}" || die
 	fi
-
 	insinto /etc/logrotate.d
 	newins "${FILESDIR}/${PN}.logrotate" "${PN}"
-
 	dobin "${FILESDIR}/hasstest"
 	readme.gentoo_create_doc
 }

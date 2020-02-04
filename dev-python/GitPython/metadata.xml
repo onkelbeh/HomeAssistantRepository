@@ -7,7 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">GitPython</remote-id>
-    <docs>https://pythonhosted.org/GitPython/</docs>
     <maintainer status="unknown">
       <email>byronimo@gmail.com, mtrier@gmail.com</email>
       <name>Sebastian Thiel, Michael Trier</name>

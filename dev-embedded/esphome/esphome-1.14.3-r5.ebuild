@@ -5,7 +5,7 @@ EAPI=6
 
 PYTHON_COMPAT=( python3_{6,7} )
 
-inherit user readme.gentoo-r1 distutils-r1
+inherit readme.gentoo-r1 distutils-r1
 
 if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
@@ -20,7 +20,6 @@ else
 	S="${WORKDIR}/${MY_P}/"
 fi
 
-
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
 HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
 
@@ -30,7 +29,8 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="server test"
 
 RDEPEND=""
-DEPEND="${REDEPEND}
+DEPEND="${RDEPEND}
+  server? ( acct-group/${PN} acct-user/${PN} )
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=dev-python/tzlocal-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
@@ -45,11 +45,11 @@ DEPEND="${REDEPEND}
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)
-	=dev-libs/protobuf-3.10.1
+	~dev-libs/protobuf-3.10.1
 	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
-	=dev-python/pyyaml-5.3[${PYTHON_USEDEP}]
-	=dev-embedded/platformio-4.1.0
-	=dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
+	~dev-python/pyyaml-5.3[${PYTHON_USEDEP}]
+	~dev-embedded/platformio-4.1.0
+	~dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
 "
 
 DISABLE_AUTOFORMATTING=1
@@ -62,13 +62,6 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
 DOCS="README.md"
-
-pkg_setup() {
-	if use server; then
-		enewgroup "${PN}"
-		enewuser "${PN}" -1 -1 "/etc/${PN}" "${PN}"
-	fi
-}
 
 src_prepare() {
 	sed -e 's;protobuf==3.10.0;protobuf==3.10.1;' \
@@ -92,17 +85,13 @@ src_prepare() {
 python_install_all() {
 	dodoc ${DOCS}
 	distutils-r1_python_install_all
-
 	if use server; then
 		keepdir "/etc/${PN}"
 		fowners -R "${PN}:${PN}" "/etc/${PN}"
-
 		keepdir "/var/log/${PN}"
 		fowners -R "${PN}:${PN}" "/var/log/${PN}"
-
 		newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
 		newinitd "${FILESDIR}/${PN}.init.d-r2" "${PN}"
-
 		readme.gentoo_create_doc
 	fi
 }

@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -21,7 +21,7 @@ RDEPEND="
 		>=dev-python/voluptuous-0.11.1[${PYTHON_USEDEP}]
 		>=dev-python/aiohttp-3.3.2[${PYTHON_USEDEP}]
 		>=dev-python/async_timeout-3.0.0[${PYTHON_USEDEP}]
-		=dev-python/python-didl-lite-1.2.3[${PYTHON_USEDEP}]
+		~dev-python/python-didl-lite-1.2.3[${PYTHON_USEDEP}]
 		>=dev-python/defusedxml-0.5.0[${PYTHON_USEDEP}]
 		"
 DEPEND="${REDEPEND}

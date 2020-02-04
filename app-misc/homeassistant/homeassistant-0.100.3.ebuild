@@ -1,11 +1,10 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
 
 PYTHON_COMPAT=( python3_{6,7} )
-
-inherit user readme.gentoo-r1 eutils distutils-r1
+inherit readme.gentoo-r1 eutils distutils-r1
 
 MY_P=${P/_beta/b}
 MY_PV=${PV/_beta/b}
@@ -20,7 +19,8 @@ KEYWORDS="amd64"
 IUSE="abode androidtv asuswrt atmo atv aurora avea buienradar cli ciscomobilityexpress daikin darksky denonavr enigma esphome everlights envoy fronius +frontend gpiozero growl harmony heos homekit homematic homematicip hpilo hs100 hue maxcube miio mikrotik mqtt musiccast +mysql openwrt qnap roku rxv samsungtv sma socat sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink withings wwlln xknx z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
-	!app-misc/homeassistant-bin
+  acct-group/${PN}
+  acct-user/${PN}
 	|| ( dev-lang/python:3.6 dev-lang/python:3.7 )
 	app-admin/logrotate
 	dev-db/sqlite
@@ -38,13 +38,13 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/immutables-0.9[${PYTHON_USEDEP}]
 	~dev-python/importlib_metadata-0.23[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.10[${PYTHON_USEDEP}]
-	~dev-python/passlib-1.7.1-r1[${PYTHON_USEDEP}]
+	~dev-python/passlib-1.7.1[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
 	~dev-python/python-slugify-3.0.4[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.2[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-5.1.2[${PYTHON_USEDEP}]
-	=dev-python/requests-2.22.0[${PYTHON_USEDEP}]
+	~dev-python/requests-2.22.0[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.3.0[${PYTHON_USEDEP}]
@@ -100,7 +100,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/python-dateutil-2.8.0[${PYTHON_USEDEP}]
 	>=dev-python/python-jose-cryptodome-1.3.2[${PYTHON_USEDEP}]
 	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
-	=dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
+	~dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
 	>=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-1.3.8[${PYTHON_USEDEP}]
@@ -126,7 +126,7 @@ RDEPEND="${PYTHON_DEPS}
 	atmo? ( ~dev-python/pyatmo-2.2.1[${PYTHON_USEDEP}] )
 	atv? ( >=dev-python/pyatv-0.3.13[${PYTHON_USEDEP}] )
 	aurora? ( ~dev-python/aurorapy-0.2.6[${PYTHON_USEDEP}] )
-	avea? ( =dev-python/avea-1.2.8[${PYTHON_USEDEP}] )
+	avea? ( ~dev-python/avea-1.2.8[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.1[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli[${PYTHON_USEDEP}] )
 	ciscomobilityexpress? ( ~dev-python/ciscomobilityexpress-0.3.3[${PYTHON_USEDEP}] )
@@ -139,7 +139,7 @@ RDEPEND="${PYTHON_DEPS}
 	everlights? ( ~dev-python/pyeverlights-0.1.0[${PYTHON_USEDEP}] )
 	envoy? ( ~dev-python/envoy-reader-0.8.6[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( =app-misc/home-assistant-frontend-20191002.2[${PYTHON_USEDEP}] )
+	frontend? ( ~app-misc/home-assistant-frontend-20191002.2[${PYTHON_USEDEP}] )
 	gpiozero? ( ~dev-python/gpiozero-1.5.1[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
@@ -162,7 +162,7 @@ RDEPEND="${PYTHON_DEPS}
 	openwrt? ( ~dev-python/openwrt-luci-rpc-1.1.1[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
 	roku? ( ~dev-python/roku-3.1[${PYTHON_USEDEP}] )
-	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
+	rxv? ( ~dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
 	samsungtv? ( >=dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
 	sma? ( ~dev-python/pysma-0.3.4[${PYTHON_USEDEP}] )
@@ -179,7 +179,7 @@ RDEPEND="${PYTHON_DEPS}
 	vera? ( ~dev-python/pyvera-0.3.6[${PYTHON_USEDEP}] )
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.8[${PYTHON_USEDEP}] )
-	withings? ( =dev-python/withings-api-2.0.0_beta[${PYTHON_USEDEP}] )
+	withings? ( ~dev-python/withings-api-2.0.0_beta[${PYTHON_USEDEP}] )
 	wwlln? ( ~dev-python/aiowwlln-2.0.2[${PYTHON_USEDEP}] )
 	xknx? ( ~dev-python/xknx-0.11.2[${PYTHON_USEDEP}] )
 	zigbee? ( ~dev-python/zigpy-deconz-0.5.0[${PYTHON_USEDEP}]
@@ -232,16 +232,10 @@ S="${WORKDIR}/home-assistant-${MY_PV}"
 
 DOCS="README.rst"
 
-pkg_setup() {
-	enewgroup "${PN}"
-	enewuser "${PN}" -1 -1 "$INSTALL_DIR" "${PN}"
-}
-
 src_prepare() {
 	sed -e 's;astral==1.5;astral>=1.5;' \
 		-i "setup.py" \
 		-i homeassistant/package_constraints.txt
-
 	eapply_user
 }
 

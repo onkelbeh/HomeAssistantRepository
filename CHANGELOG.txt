@@ -2,6 +2,19 @@
   * bump pyvizio-0.1.21
   * bump home-assistant-frontend-20200130.1
   * bump libpurecool-0.6.1
+  * did some minor code cleanup
+    - update year in all copyright headers
+    - fix some wrong file permissions
+    - fix mixed tab/space use
+    - fix metadata.bad (16x) reported by RepoMan
+    - deprecated inherits: migrate from 'user' to 'GLEP 81'
+      - in app-misc/homeassistant
+      - in dev-embedded/esphome
+    - remove useless blank lines where seen
+    - short some DESCRIPTION where >80 chars
+    - clean up ~ operator with a non-zero revision
+    - clean up = operator with no revision
+    - fix non standard copyright header
 
 2020-02-03
   * update app-misc/homeassistant-0.105.0_beta5

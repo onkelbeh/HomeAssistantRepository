@@ -7,7 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">face_recognition</remote-id>
-    <docs>https://pythonhosted.org/face_recognition/</docs>
     <maintainer status="unknown">
       <email>ageitgey@gmail.com</email>
       <name>Adam Geitgey</name>

@@ -3,7 +3,6 @@
 <pkgmetadata>
   <upstream>
     <remote-id type="pypi">pymodbus</remote-id>
-    <docs>https://pythonhosted.org/pymodbus/</docs>
     <maintainer status="unknown">
       <email>otlasanju@gmail.com</email>
       <name>dhoomakethu</name>

@@ -1,17 +1,15 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
 
 PYTHON_COMPAT=( python3_{6,7,8} )
-
-#inherit python-single-r1 user readme.gentoo-r1 eutils # distutils-r1
-inherit user readme.gentoo-r1 eutils distutils-r1
+inherit readme.gentoo-r1 eutils distutils-r1
 
 MY_P=${P/_beta/b}
 MY_PV=${PV/_beta/b}
 
-DESCRIPTION="Open-source home automation platform running on Python on 3.7 (and 3.6 for a short time)"
+DESCRIPTION="Open-source home automation platform running on Python on 3.7"
 HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistantRepository"
 SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
 
@@ -21,7 +19,8 @@ KEYWORDS="amd64"
 IUSE="abode ambiclimate androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs enigma enocean esphome everlights envoy fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik mqtt musiccast +mysql openwrt plex qnap roku rxv samsungtv sma socat somfy sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
-	!app-misc/homeassistant-bin
+  acct-group/${PN}
+  acct-user/${PN}
 	|| ( dev-lang/python:3.6 dev-lang/python:3.7 dev-lang/python:3.8 )
 	app-admin/logrotate
 	dev-db/sqlite
@@ -74,7 +73,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/nose-1.3.7[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.17.3[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
-	~dev-python/passlib-1.7.1-r1[${PYTHON_USEDEP}]
+	~dev-python/passlib-1.7.1[${PYTHON_USEDEP}]
 	>=dev-python/pbr-5.1.3[${PYTHON_USEDEP}]
 	~dev-python/pillow-6.2.1[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
@@ -94,9 +93,9 @@ RDEPEND="${PYTHON_DEPS}
 	~dev-python/python-slugify-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-5.1.2[${PYTHON_USEDEP}]
-	=dev-python/requests-2.22.0-r1[${PYTHON_USEDEP}]
+	~dev-python/requests-2.22.0-r1[${PYTHON_USEDEP}]
 	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
-	=dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
+	~dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 	>=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
@@ -174,7 +173,7 @@ RDEPEND="${PYTHON_DEPS}
 	plex? ( ~dev-python/PlexAPI-3.3.0[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
 	roku? ( ~dev-python/roku-3.1[${PYTHON_USEDEP}] )
-	rxv? ( =dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
+	rxv? ( ~dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
 	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
 	sma? ( ~dev-python/pysma-0.3.4[${PYTHON_USEDEP}] )
@@ -248,21 +247,14 @@ S="${WORKDIR}/home-assistant-${MY_PV}"
 
 DOCS="README.rst"
 
-pkg_setup() {
-	enewgroup "${PN}"
-	enewuser "${PN}" -1 -1 "$INSTALL_DIR" "${PN}"
-}
-
 src_prepare() {
 	sed -e 's;astral==1.5;astral>=1.5;' \
 		-i "setup.py" \
 		-i homeassistant/package_constraints.txt
-
 	# https://github.com/home-assistant/home-assistant/issues/28811
 	if use maxcube_hack ; then
 	   eapply "${FILESDIR}/maxcube_TypeError_dirty_hack.patch"
 	fi
-
 	eapply_user
 }
 

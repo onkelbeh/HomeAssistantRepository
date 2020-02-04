@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -23,7 +23,7 @@ DEPEND="${REDEPEND}
 	dev-python/setuptools-markdown[${PYTHON_USEDEP}]
 	dev-python/pypandoc[${PYTHON_USEDEP}]
 	>=dev-python/wheel-0.25.0[${PYTHON_USEDEP}]
-	=dev-python/asyncssh-1.15.0[${PYTHON_USEDEP}]
+	~dev-python/asyncssh-1.15.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

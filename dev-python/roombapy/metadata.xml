@@ -13,6 +13,7 @@
   <upstream>
     <remote-id type="pypi">roombapy</remote-id>
     <maintainer status="unknown">
+      <name>Nick Waterton</name>
       <email>nick.waterton@med.ge.com</email>
     </maintainer>
   </upstream>
