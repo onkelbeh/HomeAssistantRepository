@@ -32,6 +32,7 @@
     <flag name="daikin">Daikin wireless controllers</flag>
     <flag name="denonavr">Automation Library for Denon AVR receivers</flag>
     <flag name="discogs">Discogs Client</flag>
+    <flag name="dyson">integrate all Dyson related platforms</flag>
     <flag name="emulated_roku">emulate Roku API for Harmony and Android remotes</flag>
     <flag name="enigma">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
@@ -61,10 +62,13 @@
     <flag name="maxcube_hack">apply Patch for https://github.com/home-assistant/home-assistant/issues/28811</flag>
     <flag name="miio">add support for Xiaomi smart appliances</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
+    <flag name="mobile_app">Home Assistant Mobile App Support</flag>
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
     <flag name="musiccast">add support for Yamaha MusicCast devices</flag>
     <flag name="mysql">install MySQL Libraries for use with HomeAssistant</flag>
+    <flag name="nederlandse_spoorwegen">train service in the Netherlands</flag>
     <flag name="openwrt">fetch connected devices from your OpenWrt</flag>
+    <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="plex">Python bindings for the Plex API</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="recorder">storing details in a database per sqlalchemy</flag>
