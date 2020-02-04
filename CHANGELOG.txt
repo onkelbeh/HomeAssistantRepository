@@ -15,6 +15,7 @@
     - clean up ~ operator with a non-zero revision
     - clean up = operator with no revision
     - fix non standard copyright header
+  * add a MQTT virtual
 
 2020-02-03
   * update app-misc/homeassistant-0.105.0_beta5
