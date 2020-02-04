@@ -17,7 +17,8 @@
     - fix non standard copyright header
   * add a MQTT virtual
   * bump homeassistant-0.105.0_beta7, remove some oldies
-  * remove dev-python/PyNaCl, is in gentoo repo
+  * remove dev-python/PyNaCl, is in Gentoo repo
+  * bump pycryptodome-3.9.6 from Gentoo repo
 
 2020-02-03
   * update app-misc/homeassistant-0.105.0_beta5
