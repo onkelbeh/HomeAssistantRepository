@@ -1,5 +1,6 @@
 2020-02-05
   * remove bad email from dev-python/gntp
+  * Release homeassistant-0.105.0
 
 2020-02-04
   * bump pyvizio-0.1.21
