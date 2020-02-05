@@ -8,7 +8,6 @@
   <upstream>
     <remote-id type="pypi">gntp</remote-id>
     <maintainer status="unknown">
-      <email>UNKNOWN</email>
       <name>Paul Traylor</name>
     </maintainer>
   </upstream>
