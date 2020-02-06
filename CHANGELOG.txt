@@ -1,3 +1,7 @@
+2020-02-06
+  * bump home-assistant-frontend-20200130.2
+  * Release homeassistant-0.105.1
+
 2020-02-05
   * remove bad email from dev-python/gntp
   * Release homeassistant-0.105.0
