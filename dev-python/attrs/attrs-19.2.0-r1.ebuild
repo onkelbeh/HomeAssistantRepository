@@ -8,10 +8,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 inherit distutils-r1
 
 DESCRIPTION="Attributes without boilerplate"
-HOMEPAGE="
-	https://github.com/hynek/attrs
-	https://attrs.readthedocs.org/
-	https://pypi.org/project/attrs/"
+HOMEPAGE="https://github.com/hynek/attrs https://attrs.readthedocs.org/ https://pypi.org/project/attrs/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

@@ -5,6 +5,10 @@
   * add aio-georss-gdacs-0.3
   * add sqlitedict-1.6.0
   * update homeassistant-0.105.2
+  * update esphome-9999.ebuild
+  * clean up PYTHON_COMPAT & KEYWORDS Letters: A
+    - allow Python 3.8 (currently no tested)
+    - add ~arm64 support, also untested
 
 2020-02-05 homeassistant-0.105.0
   * remove bad email from dev-python/gntp
