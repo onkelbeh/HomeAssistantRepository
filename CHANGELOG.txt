@@ -2,6 +2,7 @@
   * bump home-assistant-frontend-20200130.2
   * Release homeassistant-0.105.1
   * bump aiopylgtv-0.3.3
+  * add aio-georss-gdacs-0.3
 
 2020-02-05
   * remove bad email from dev-python/gntp
