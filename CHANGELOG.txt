@@ -1,15 +1,16 @@
-2020-02-06
+2020-02-06 homeassistant-0.105.2
   * bump home-assistant-frontend-20200130.2
   * Release homeassistant-0.105.1
   * bump aiopylgtv-0.3.3
   * add aio-georss-gdacs-0.3
   * add sqlitedict-1.6.0
+  * update homeassistant-0.105.2
 
-2020-02-05
+2020-02-05 homeassistant-0.105.0
   * remove bad email from dev-python/gntp
   * Release homeassistant-0.105.0
 
-2020-02-04
+2020-02-04 homeassistant-0.105.0_beta7
   * bump pyvizio-0.1.21
   * bump home-assistant-frontend-20200130.1
   * bump libpurecool-0.6.1
@@ -33,7 +34,7 @@
   * update snitun-0.20
   * bump homeassistant-0.105.0_beta7, remove some oldies
 
-2020-02-03
+2020-02-03 app-misc/homeassistant-0.105.0_beta6
   * update app-misc/homeassistant-0.105.0_beta5
     - try out leaving cffi behind (experimental)
     - try out leaving NabuCasa behind (problems with python-dateutil) (experimental)
