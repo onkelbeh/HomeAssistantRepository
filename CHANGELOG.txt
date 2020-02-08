@@ -7,6 +7,7 @@
   * add mcstatus-2.3.0
   * bump zigpy-homeassistant-0.13.2
   * update KEYWORDS in frontend and main Ebuilds
+  * bump denonavr-0.7.12
 
 2020-02-06 homeassistant-0.105.2
   * bump home-assistant-frontend-20200130.2
