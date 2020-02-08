@@ -1,8 +1,9 @@
 2020-02-08
   * bump amcrest-1.5.6
-  * bellows-homeassistant-0.13.2
-  * zigpy-homeassistant-0.13.1
+  * bump bellows-homeassistant-0.13.2
+  * bump zigpy-homeassistant-0.13.1
   * bump adguardhome-0.4.1
+  * bump pynws-0.10.4
 
 2020-02-06 homeassistant-0.105.2
   * bump home-assistant-frontend-20200130.2
