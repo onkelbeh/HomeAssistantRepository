@@ -1,5 +1,6 @@
 2020-02-08
   * bump amcrest-1.5.6
+  * bellows-homeassistant-0.13.2
 
 2020-02-06 homeassistant-0.105.2
   * bump home-assistant-frontend-20200130.2
