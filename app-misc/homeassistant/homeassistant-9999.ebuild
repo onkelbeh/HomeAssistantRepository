@@ -9,7 +9,7 @@ DESCRIPTION="Open-source home automation platform running on Python on 3.7"
 HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistantRepository"
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86"
+KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 
 if [[ ${PV} == *9999* ]]; then
 	inherit git-r3

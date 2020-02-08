@@ -15,7 +15,7 @@ SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.g
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 arm64 x86"
+KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="abode ambiclimate ambient_station androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex qnap +recorder ring roku rxv samsungtv signal sma socat somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unify vera webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS}
