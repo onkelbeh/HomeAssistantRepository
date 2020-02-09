@@ -1,3 +1,6 @@
+2020-02-09
+  * bump insteonplm-0.16.7
+
 2020-02-08
   * bump amcrest-1.5.6
   * bump bellows-homeassistant-0.13.2
