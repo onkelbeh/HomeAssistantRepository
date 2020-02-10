@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} pypy{,3} )
+PYTHON_COMPAT=( python2_7 python3_{4,5,6,7,8} pypy{,3} )
 PYTHON_REQ_USE="ssl(+),threads(+)"
 
 inherit eutils bash-completion-r1 distutils-r1
@@ -13,7 +13,7 @@ HOMEPAGE="https://pip.pypa.io/ https://pypi.org/project/pip/ https://github.com/
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 SLOT="0"
 IUSE="-vanilla"
 

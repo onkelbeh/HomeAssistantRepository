@@ -3,20 +3,17 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
 DESCRIPTION="Python client for Owlet monitors"
 HOMEPAGE="https://github.com/craigjmidwinter/pyowlet https://pypi.org/project/pyowlet/"
-
-#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
-# Craig forgot the release, hope this will be temoprary
 SRC_URI="https://github.com/onkelbeh/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
