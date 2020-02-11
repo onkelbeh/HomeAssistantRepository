@@ -3,6 +3,7 @@
     - allow Python 3.8 (currently untested!)
     - add ~arm64 support, also untested!
     - drop all PYTHON_COMPAT except 3.6-3.8 where seen
+  * clean up PYTHON_COMPAT & KEYWORDS outside dev-python
 
 2020-02-10 homeassistant-0.105.3
   * bump surepy-0.2.3

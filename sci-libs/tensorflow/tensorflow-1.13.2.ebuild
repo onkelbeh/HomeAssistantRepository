@@ -4,7 +4,7 @@
 EAPI=7
 
 DISTUTILS_OPTIONAL=1
-PYTHON_COMPAT=( python2_7 python{3_6,3_7,3_8} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 MY_PV=${PV/_rc/-rc}
 MY_P=${PN}-${MY_PV}
 
@@ -15,7 +15,7 @@ HOMEPAGE="https://www.tensorflow.org/"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64"
+KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="cuda mpi +python"
 CPU_USE_FLAGS_X86="sse sse2 sse3 sse4_1 sse4_2 avx avx2 fma3 fma4"
 for i in $CPU_USE_FLAGS_X86; do
