@@ -2,14 +2,14 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-PYTHON_COMPAT=( python{2_7,3_{6,7,8}} )
+PYTHON_COMPAT=( python3_{6,7} )
 DISTUTILS_SINGLE_IMPL=1
 
-inherit distutils-r1 systemd
+inherit bash-completion-r1 distutils-r1 systemd
 
 DESCRIPTION="scans log files and bans IPs that show malicious signs"
 HOMEPAGE="https://www.fail2ban.org/"
-SRC_URI="https://github.com/${PN}/${PN}/tarball/${PV} -> ${P}.tar.gz"
+SRC_URI="https://github.com/${PN}/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -21,18 +21,13 @@ RDEPEND="
 	virtual/mta
 	selinux? ( sec-policy/selinux-fail2ban )
 	systemd? ( $(python_gen_cond_dep '|| (
-		dev-python/python-systemd[${PYTHON_USEDEP}]
-		sys-apps/systemd[python(-),${PYTHON_USEDEP}]
+		dev-python/python-systemd[${PYTHON_MULTI_USEDEP}]
+		sys-apps/systemd[python(-),${PYTHON_MULTI_USEDEP}]
 	)' 'python*' ) )
 "
 
 RESTRICT="test"
 DOCS=( ChangeLog DEVELOP README.md THANKS TODO doc/run-rootless.txt )
-
-src_unpack() {
-	default
-	mv ${PN}-${PN}-* ${P} || die
-}
 
 python_prepare_all() {
 	default
@@ -72,6 +67,9 @@ python_install_all() {
 	newins files/${PN}-logrotate ${PN}
 
 	keepdir /var/lib/${PN}
+
+	newbashcomp files/bash-completion ${PN}-client
+	bashcomp_alias ${PN}-client ${PN}-server ${PN}-regex
 }
 
 pkg_preinst() {
