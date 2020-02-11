@@ -14,6 +14,7 @@
   </upstream>
   <use>
     <flag name="abode">Library for the Abode alarm API</flag>
+    <flag name="adguard">monitor your ad- and tracker-blocking DNS server</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="ambiclimate">communicate with Ambiclimate</flag>
     <flag name="ambient_station">retrieves local weather information from Ambient Weather</flag>

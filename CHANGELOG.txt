@@ -1,10 +1,11 @@
-2020-02-10
+2020-02-10 homeassistant-0.105.3
   * bump surepy-0.2.3
   * add zigpy-cc-0.1.0
   * clean up PYTHON_COMPAT & KEYWORDS Letters: L-S
     - allow Python 3.8 (currently untested!)
     - add ~arm64 support, also untested!
     - drop all PYTHON_COMPAT except 3.6-3.8 where seen
+  * update homeassistant-0.105.3
 
 2020-02-09
   * bump insteonplm-0.16.7
