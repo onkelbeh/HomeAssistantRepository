@@ -4,6 +4,12 @@
     - add ~arm64 support, also untested!
     - drop all PYTHON_COMPAT except 3.6-3.8 where seen
   * clean up PYTHON_COMPAT & KEYWORDS outside dev-python
+  * zigpy-cc-0.1.0 -> https
+  * got autobahn/autobahn-18.7.1 working on Python 3.7
+    - bump cbor-1.0.0-r1
+    - bump py-ubjson-0.14.0
+    - bump pytrie-0.3.1-r1
+    - bump wsaccel-0.6.2_p20170108-r1
 
 2020-02-10 homeassistant-0.105.3
   * bump surepy-0.2.3
