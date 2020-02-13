@@ -18,9 +18,7 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE="abode ambiclimate androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs enigma enocean esphome everlights envoy fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik mqtt musiccast +mysql openwrt plex qnap roku rxv samsungtv sma socat somfy sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
-RDEPEND="${PYTHON_DEPS}
-  acct-group/${PN}
-  acct-user/${PN}
+RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	|| ( dev-lang/python:3.6 dev-lang/python:3.7 dev-lang/python:3.8 )
 	app-admin/logrotate
 	dev-db/sqlite

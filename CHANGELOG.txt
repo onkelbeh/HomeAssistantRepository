@@ -13,6 +13,7 @@
   * bump py-august-0.12.0
   * refresh dev ebuild's 9999 requirements
   * updated README.md
+  * clean up & remove some oldies
 
 2020-02-11
   * clean up PYTHON_COMPAT & KEYWORDS Letters: T-Z

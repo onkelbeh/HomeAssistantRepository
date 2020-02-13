@@ -18,10 +18,8 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE="abode androidtv asuswrt atmo atv aurora avea buienradar cli ciscomobilityexpress daikin darksky denonavr enigma esphome everlights envoy fronius +frontend gpiozero growl harmony heos homekit homematic homematicip hpilo hs100 hue maxcube miio mikrotik mqtt musiccast +mysql openwrt qnap roku rxv samsungtv sma socat sonos shodan speedtest ssl test tradfri ubee unify vera wemo wink withings wwlln xknx z-wave zigbee zoneminder"
 
-RDEPEND="${PYTHON_DEPS}
-  acct-group/${PN}
-  acct-user/${PN}
-	|| ( dev-lang/python:3.6 dev-lang/python:3.7 )
+RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
+  || ( dev-lang/python:3.6 dev-lang/python:3.7 )
 	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
