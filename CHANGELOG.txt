@@ -1,3 +1,6 @@
+2020-02-12
+  * add dynalite-devices-0.1.17
+
 2020-02-11
   * clean up PYTHON_COMPAT & KEYWORDS Letters: T-Z
     - allow Python 3.8 (currently untested!)
