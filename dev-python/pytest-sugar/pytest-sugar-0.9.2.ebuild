@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="pytest-sugar is a plugin for pytest that changes the default look and feel of pytest (e.g. progressbar, show tests that fail instantly)."
+DESCRIPTION="Plugin for pytest that changes the default look and feel of pytest."
 HOMEPAGE="https://pivotfinland.com/pytest-sugar/ https://pypi.org/project/pytest-sugar/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A Python SOCKS client module. See https://github.com/Anorov/PySocks for more information."
+DESCRIPTION="A Python SOCKS client module. See https://github.com/Anorov/PySocks."
 HOMEPAGE="https://github.com/Anorov/PySocks https://pypi.org/project/PySocks/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

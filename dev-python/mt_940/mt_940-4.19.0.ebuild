@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 MY_PN=${PN/_/-}
-DESCRIPTION="A library to parse MT940 files and returns smart Python collections for statistics and manipulation."
+DESCRIPTION="Parse MT940 files returns Python collections for statistics and manipulation."
 HOMEPAGE="https://github.com/WoLpH/mt940 https://pypi.org/project/mt-940/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 

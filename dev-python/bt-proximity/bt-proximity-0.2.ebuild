@@ -9,7 +9,7 @@ inherit distutils-r1
 
 MY_P=${PN/-/_}-${PV}
 
-DESCRIPTION="Allows for querying of the RSSI values for nearby devices using pybluez. Ported to Python 3, based on https://github.com/ewenchou/bluetooth-proximity"
+DESCRIPTION="Allows for querying of the RSSI values for nearby devices using pybluez."
 HOMEPAGE="https://github.com/FrederikBolding/bluetooth-proximity https://pypi.org/project/bt-proximity/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 

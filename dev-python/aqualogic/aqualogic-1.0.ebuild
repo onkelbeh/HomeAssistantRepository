@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Library for interfacing with a Hayward/Goldline AquaLogic/ProLogic pool controller."
+DESCRIPTION="Library for a Hayward/Goldline AquaLogic/ProLogic pool controller."
 HOMEPAGE="https://github.com/swilson/aqualogic https://pypi.org/project/aqualogic/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

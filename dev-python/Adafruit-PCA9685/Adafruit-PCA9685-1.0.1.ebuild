@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 MY_PN=${PN/-/_}
-DESCRIPTION="Python code to use the PCA9685 PWM servo/LED controller with a Raspberry Pi or BeagleBone Black."
+DESCRIPTION="PCA9685 PWM servo/LED controller with a Raspberry Pi or BeagleBone Black."
 HOMEPAGE="https://github.com/adafruit/Adafruit_Python_PCA9685/ https://pypi.org/project/Adafruit-PCA9685/"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 

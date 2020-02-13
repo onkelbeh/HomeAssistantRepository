@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="JavaScript to Python Translator & JavaScript interpreter written in 100% pure Python."
+DESCRIPTION="JavaScript to Python Translator & JavaScript interpreter."
 HOMEPAGE="https://github.com/PiotrDabkowski/Js2Py https://pypi.org/project/Js2Py/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

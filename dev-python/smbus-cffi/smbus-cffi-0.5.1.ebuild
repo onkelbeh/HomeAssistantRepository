@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="This Python module allows SMBus access through the I2C /dev interface on Linux hosts. The host kernel must have I2C support, I2C device interface support, and a bus adapter driver."
+DESCRIPTION="SMBus access through the I2C /dev interface on Linux hosts."
 HOMEPAGE="https://github.com/bivab/smbus-cffi https://pypi.org/project/smbus-cffi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

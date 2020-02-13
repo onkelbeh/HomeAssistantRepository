@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python interface for the AlarmDecoder (AD2) family of alarm devices which includes the AD2USB, AD2SERIAL and AD2PI."
+DESCRIPTION="Python interface for the AlarmDecoder (AD2) family of alarm devices."
 HOMEPAGE="https://github.com/nutechsoftware/alarmdecoder https://pypi.org/project/alarmdecoder/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

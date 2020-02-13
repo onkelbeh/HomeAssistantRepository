@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 MY_PN=${PN/-/_}
-DESCRIPTION="Library to get readings from the DHT11, DHT22, and AM2302 humidity and temperature sensors on a Raspberry Pi or Beaglebone Black."
+DESCRIPTION="Read DHT11, DHT22, and AM2302 humidity and temperature on a Raspberry Pi."
 HOMEPAGE="https://github.com/adafruit/Adafruit_Python_DHT/ https://pypi.org/project/Adafruit-DHT/"
 SRC_URI="https://github.com/adafruit/Adafruit_Python_DHT/archive/${PV}.tar.gz -> ${P}.tar.gz"
 

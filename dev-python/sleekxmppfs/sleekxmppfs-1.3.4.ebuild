@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A fork of SleekXMPP with TLS cert validation disabled, intended only to be used with the sucks project"
+DESCRIPTION="A fork of SleekXMPP with TLS cert validation disabled."
 HOMEPAGE="https://github.com/OverloadUT/SleekXMPP https://pypi.org/project/sleekxmppfs/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

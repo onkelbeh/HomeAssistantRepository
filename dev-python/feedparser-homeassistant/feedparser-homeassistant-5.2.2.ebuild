@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds"
+DESCRIPTION="Universal feed parser, handles RSS, CDF and Atom feeds"
 HOMEPAGE="https://github.com/kurtmckee/feedparser https://pypi.org/project/feedparser-homeassistant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.dev1.tar.gz -> ${P}.tar.gz"
 

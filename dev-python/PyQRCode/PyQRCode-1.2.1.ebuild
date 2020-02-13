@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A QR code generator written purely in Python with SVG, EPS, PNG and terminal output."
+DESCRIPTION="A QR code generator purely in Python with SVG, EPS, PNG and terminal output."
 HOMEPAGE="https://github.com/mnooner256/pyqrcode https://pypi.org/project/PyQRCode/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

@@ -14,6 +14,7 @@
   * refresh dev ebuild's 9999 requirements
   * updated README.md
   * clean up & remove some oldies
+  * fix some DESCRIPTION.toolong from RepoMan
 
 2020-02-11
   * clean up PYTHON_COMPAT & KEYWORDS Letters: T-Z

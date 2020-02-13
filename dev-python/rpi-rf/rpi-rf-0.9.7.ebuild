@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Sending and receiving 433/315MHz signals with low-cost GPIO RF modules on a Raspberry Pi"
+DESCRIPTION="Send and receive 433/315MHz signals with GPIO RF modules on a Raspberry Pi"
 HOMEPAGE="https://github.com/milaq/rpi-rf https://pypi.org/project/rpi-rf/"
 SRC_URI="https://github.com/milaq/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 

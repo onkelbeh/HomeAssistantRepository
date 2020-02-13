@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Advanced Enumerations (compatible with Python's stdlib Enum), NamedTuples, and NamedConstants"
+DESCRIPTION="Advanced Enumerations, NamedTuples, and NamedConstants"
 HOMEPAGE="https://bitbucket.org/stoneleaf/aenum https://pypi.org/project/aenum/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

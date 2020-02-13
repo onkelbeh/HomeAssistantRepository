@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python API for select Russound RNET commands to provide Russound support within home-assistant.io"
+DESCRIPTION="Python API for Russound RNET commands."
 HOMEPAGE="https://github.com/laf/russound.git https://pypi.org/project/russound/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

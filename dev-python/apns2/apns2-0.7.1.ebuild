@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A python library for interacting with the Apple Push Notification Service via HTTP/2 protocol"
+DESCRIPTION="Interacting with the Apple Push Notification Service via HTTP/2 protocol"
 HOMEPAGE="https://github.com/Pr0Ger/PyAPNs2 https://pypi.org/project/apns2/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

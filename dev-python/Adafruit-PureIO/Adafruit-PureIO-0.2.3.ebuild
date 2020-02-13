@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Pure python (i.e. no native extensions) access to Linux IO including I2C and SPI.  Drop in replacement for smbus and spidev modules."
+DESCRIPTION="Access to Linux IO including I2C and SPI."
 HOMEPAGE="https://github.com/adafruit/Adafruit_Python_PureIO https://pypi.org/project/Adafruit-PureIO/"
 MY_PN=${PN/-/_}
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"

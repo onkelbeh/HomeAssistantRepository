@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="An async python library for controlling HEOS devices through the HEOS CLI Protocol"
+DESCRIPTION="Async python library: HEOS devices through the HEOS CLI Protocol"
 HOMEPAGE="https://github.com/andrewsayre/pyheos https://pypi.org/project/pyheos/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

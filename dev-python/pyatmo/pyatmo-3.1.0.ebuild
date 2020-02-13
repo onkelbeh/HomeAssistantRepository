@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Simple API to access Netatmo weather station data from any python script. Design for Home-Assitant (but not only)"
+DESCRIPTION="API to access Netatmo weather station data for Home-Assistant."
 HOMEPAGE="https://github.com/jabesq/netatmo-api-python https://pypi.org/project/pyatmo/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

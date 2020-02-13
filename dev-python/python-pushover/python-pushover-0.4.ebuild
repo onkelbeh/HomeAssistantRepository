@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Comprehensive bindings and command line utility for the Pushover notification service"
+DESCRIPTION="Bindings and command line utility for the Pushover notification service"
 HOMEPAGE="https://github.com/Thibauth/python-pushover https://pypi.org/project/python-pushover/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

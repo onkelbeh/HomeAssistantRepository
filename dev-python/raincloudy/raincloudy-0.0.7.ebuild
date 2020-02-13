@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A Python library to communicate with Melnor RainCloud Smart Garden Watering Irrigation Timer (https://wwww.melnor.com/)"
+DESCRIPTION="Melnor RainCloud Smart Garden Watering Irrigation Timer."
 HOMEPAGE="https://github.com/tchellomello/raincloudy https://pypi.org/project/raincloudy/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

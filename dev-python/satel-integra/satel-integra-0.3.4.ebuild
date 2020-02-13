@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 MY_PN=${PN/-/_}
-DESCRIPTION="Communication library and basic testing tool for Satel Integra alarm system. Communication via tcpip protocol published by SATEL."
+DESCRIPTION="Communication library for Satel Integra alarm system."
 HOMEPAGE="https://github.com/c-soft/satel_integra https://pypi.org/project/satel-integra/"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 

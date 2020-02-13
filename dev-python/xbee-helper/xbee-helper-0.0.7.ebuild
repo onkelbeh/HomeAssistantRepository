@@ -7,9 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="This project offers a high level API to an XBee device running an up-
-to-date version of the ZigBee firmware. It builds upon the existing
-XBee project by abstracting more functionality into methods."
+DESCRIPTION="a high level API to an XBee device"
 HOMEPAGE="https://github.com/flyte/xbee-helper https://pypi.org/project/xbee-helper/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python API for controlling Genie garage doors connected to Aladdin Connect devices"
+DESCRIPTION="Python API controlling Genie garage doors connected to Aladdin Connect devices"
 HOMEPAGE="https://github.com/shoejosh/aladdin-connect https://pypi.org/project/aladdin-connect/"
 MY_PN=${PN/-/_}
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
