@@ -6,6 +6,7 @@
   * add pushover_complete-1.1.1 (replaces python-pushover)
   * update konnected-1.1.0
   * bump pyipma-2.0.3
+  * update py-august-0.11.0
 
 2020-02-11
   * clean up PYTHON_COMPAT & KEYWORDS Letters: T-Z
