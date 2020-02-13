@@ -2,6 +2,7 @@
   * add dynalite-devices-0.1.17, fix KEYWORDS
   * add pymelcloud-2.0.0
   * update PyViCare-0.1.7
+  * update python-velbus-2.0.40
 
 2020-02-11
   * clean up PYTHON_COMPAT & KEYWORDS Letters: T-Z
