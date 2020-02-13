@@ -29,6 +29,7 @@
   * bump fail2ban (hack for Python 3.7) to 0.11.1-r3
   * update license stats
   * update README
+  * bump ihcsdk-2.6.0
 
 2020-02-10 homeassistant-0.105.3
   * bump surepy-0.2.3
