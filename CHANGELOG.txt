@@ -11,6 +11,7 @@
   * bump home-assistant-frontend-20200130.3
   * bump home-assistant-frontend-20200212.0
   * bump py-august-0.12.0
+  * refresh dev ebuild's 9999 requirements
 
 2020-02-11
   * clean up PYTHON_COMPAT & KEYWORDS Letters: T-Z
