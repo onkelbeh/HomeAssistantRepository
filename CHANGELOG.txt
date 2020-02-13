@@ -9,6 +9,7 @@
   * update py-august-0.11.0
   * add vilfo-api-client-0.3.2
   * bump home-assistant-frontend-20200130.3
+  * bump home-assistant-frontend-20200212.0
 
 2020-02-11
   * clean up PYTHON_COMPAT & KEYWORDS Letters: T-Z
