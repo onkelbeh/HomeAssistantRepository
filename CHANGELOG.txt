@@ -32,6 +32,7 @@
   * bump ihcsdk-2.6.0
   * bump websockets-8.1
   * update simplisafe-python-7.1.0
+  * sort KEYWORDS where complained by repoman
 
 2020-02-10 homeassistant-0.105.3
   * bump surepy-0.2.3
