@@ -7,6 +7,7 @@
   * update konnected-1.1.0
   * bump pyipma-2.0.3
   * update py-august-0.11.0
+  * add vilfo-api-client-0.3.2
 
 2020-02-11
   * clean up PYTHON_COMPAT & KEYWORDS Letters: T-Z
