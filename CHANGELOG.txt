@@ -12,13 +12,14 @@
   * bump home-assistant-frontend-20200212.0
   * bump py-august-0.12.0
   * refresh dev ebuild's 9999 requirements
+  * updated README.md
 
 2020-02-11
   * clean up PYTHON_COMPAT & KEYWORDS Letters: T-Z
     - allow Python 3.8 (currently untested!)
     - add ~arm64 support, also untested!
     - drop all PYTHON_COMPAT except 3.6-3.8 where seen
-  * clean up PYTHON_COMPAT & KEYWORDS outside dev-python
+  * clean up PYTHON_COMPAT & KEYWORDS outside of dev-python
   * zigpy-cc-0.1.0 -> https
   * got autobahn/autobahn-18.7.1 working on Python 3.7
     - bump cbor-1.0.0-r1
@@ -26,6 +27,8 @@
     - bump pytrie-0.3.1-r1
     - bump wsaccel-0.6.2_p20170108-r1
   * bump fail2ban (hack for Python 3.7) to 0.11.1-r3
+  * update license stats
+  * update README
 
 2020-02-10 homeassistant-0.105.3
   * bump surepy-0.2.3

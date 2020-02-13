@@ -14,6 +14,8 @@ You will need Python 3.7 for running Home assistant on Gentoo Linux. Home Assist
 
 Many of the modules/components/libraries do **not** have compatibility for Python 3.7 advertised, and many of the components have **not** been tested here, but all compile without errors on their own. Please report an issue [here](https://github.com/onkelbeh/HomeAssistantRepository/issues) or my [private git server](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues) if you encounter any problems.
 
+By user request, I have populated an ~arm64 KEYWORD on all ebuilds, which is (currently) completely untested. I am preparing a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
+
 I am running my productive box with Python 3.7, no Python 3.6 anymore. Anyway, it also has to have 2.7. Even ESPHome runs on the same box with some small patches (included in my Ebuild). Installation- and upgrade instructions? Just scroll down a bit, you will also find a list of the packages which still depend on Python 2.7 there.
 
 ## Source
@@ -53,7 +55,7 @@ You will find this Repository at
 Sure, you can submit **issues** and **pull requests** on both sites.
 
 ## Python 3.8
-Python 3.8 appeared on Gentoo Linux on Nov 11th, 2019, I just have started to very first experiments on a box with Python 3.8 installed. Afaics this will take some time, no need to hurry.
+Python 3.8 appeared on Gentoo Linux in Nov 2019, I have started very first experiments, all ebuilds have 3.8 support advertised, slightly tested, this will take time, feedback is welcome.
 
 ## Installation on Python 3.7
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default:
@@ -242,25 +244,25 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |2|AGPL-3|
 |1|AGPL-3+|
 |16|all-rights-reserved|
-|293|Apache-2.0|
-|3|Apache-2.0 BSD-2|
+|309|Apache-2.0|
+|3|Apache-2.0 || BSD-2|
 |1|Apache-2.0 MIT|
 |2|Artistic-2|
 |1|Boost-1.0|
-|143|BSD|
+|146|BSD|
 |5|BSD-2|
-|4|BSD-2 Unlicense|
+|5|BSD-2 Unlicense|
 |7|BSD-4|
-|1|BSD Apache-2.0|
+|1|BSD || Apache-2.0|
 |4|CC0-1.0|
 |1|CC-BY-NC-SA-3.0|
 |2|CC-BY-NC-SA-4.0|
 |2|ECL-2.0|
 |10|EPL-1.0|
 |2|GPL-1|
-|20|GPL-2|
+|21|GPL-2|
 |5|GPL-2+|
-|131|GPL-3|
+|132|GPL-3|
 |19|GPL-3+|
 |2|ISC|
 |1|LGPL-2|
@@ -269,7 +271,7 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |2|LGPL-2.1+|
 |26|LGPL-3|
 |16|LGPL-3+|
-|996|MIT|
+|1022|MIT|
 |5|MPL-2.0|
 |1|NEWLIB|
 |12|PSF-2|
