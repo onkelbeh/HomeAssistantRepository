@@ -16,6 +16,7 @@
   * clean up & remove some oldies
   * fix some DESCRIPTION.toolong from RepoMan
   * update requirements_all.txt
+  * update directpy-0.6.ebuild requirement
 
 2020-02-11
   * clean up PYTHON_COMPAT & KEYWORDS Letters: T-Z
