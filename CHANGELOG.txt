@@ -5,6 +5,7 @@
   * fix the rest of 75 DESCRIPTION.toolong
   * clean old platformio, reformat PYTHON_TARGETS for single-r1
   * remove beta flags from good working core modules
+  * remove beta flags from esphome
 
 2020-02-12
   * add dynalite-devices-0.1.17, fix KEYWORDS
