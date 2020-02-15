@@ -1,9 +1,10 @@
-2020-02-15
+2020-02-15 homeassistant-0.105.4
   * bump 0.105.4
   * re-add old frontend 20200130.3
   * fix py-nextbus-0.1.2 SRC_URI
   * fix the rest of 75 DESCRIPTION.toolong
   * clean old platformio, reformat PYTHON_TARGETS for single-r1
+  * remove beta flags from good working core modules
 
 2020-02-12
   * add dynalite-devices-0.1.17, fix KEYWORDS
