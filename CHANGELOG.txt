@@ -1,3 +1,7 @@
+2020-02-15
+  * bump 0.105.4
+  * re-add old frontend 20200130.3
+
 2020-02-12
   * add dynalite-devices-0.1.17, fix KEYWORDS
   * add pymelcloud-2.0.0
