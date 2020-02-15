@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Represents the base components of the Fortinet FortiGate REST interface with abstractions"
+DESCRIPTION="Base components of the Fortinet FortiGate REST interface with abstractions"
 HOMEPAGE="https://github.com/p4r4n0y1ng/pyfgt https://pypi.org/project/pyfgt/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

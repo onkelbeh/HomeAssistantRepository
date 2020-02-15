@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python library to provide a realiable communication link with LightWaveRF lights and switches."
+DESCRIPTION="Provide a realiable communication link with LightWaveRF lights and switches."
 HOMEPAGE="https://github.com/GeoffAtHome/lightwave https://pypi.org/project/lightwave/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Pure Python reimplementation of pcapy. This package is API compatible and a drop-in replacement."
+DESCRIPTION="Pure Python reimplementation of pcapy. API compatible and a drop-in replacement."
 HOMEPAGE="https://bitbucket.org/viraptor/pure-pcapy/overview https://pypi.org/project/pure-pcapy3/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

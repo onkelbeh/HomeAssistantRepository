@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Retrieve a list of devices from a bt smarthub or bt smarthub 2 on a local network"
+DESCRIPTION="Retrieve list of devices from a bt smarthub or bt smarthub 2 on a local network"
 HOMEPAGE="https://github.com/jxwolstenholme/btsmarthub_devicelist https://pypi.org/project/btsmarthub-devicelist/"
 MY_PN=${PN//-/_}
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Easy access of environment variables from Python with support for strings, booleans, list, tuples, and dicts."
+DESCRIPTION="Easy access env variables with strings, booleans, list, tuples, and dicts."
 HOMEPAGE="https://github.com/bjinwright/envs https://pypi.org/project/envs/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Remote debugging server for Python support in Visual Studio and Visual Studio Code"
+DESCRIPTION="Remote debugging server, Python support in Visual Studio and Visual Studio Code"
 HOMEPAGE="https://aka.ms/ptvs https://pypi.org/project/ptvsd/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.zip"
 

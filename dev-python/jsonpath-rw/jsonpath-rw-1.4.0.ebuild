@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A robust and significantly extended implementation of JSONPath for Python, with a clear AST for metaprogramming."
+DESCRIPTION="A robust and significantly extended implementation of JSONPath for Python."
 HOMEPAGE="https://github.com/kennknowles/python-jsonpath-rw https://pypi.org/project/jsonpath-rw/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

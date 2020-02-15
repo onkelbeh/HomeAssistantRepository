@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Handles the authorization flow to obtain tokens from Plex.tv via external redirection."
+DESCRIPTION="Authorization flow to obtain tokens from Plex.tv via external redirection."
 HOMEPAGE="https://github.com/jjlawren/python-plexauth/ https://pypi.org/project/plexauth/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

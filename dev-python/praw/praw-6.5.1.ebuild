@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="PRAW, an acronym for Python Reddit API Wrapper, is a python package that allows for simple access to reddit's API."
+DESCRIPTION="Python Reddit API Wrapper, is a python package that allows simple access to reddit's API."
 HOMEPAGE="https://praw.readthedocs.org/ https://pypi.org/project/praw/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

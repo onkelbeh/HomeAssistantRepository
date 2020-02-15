@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 MY_PN=${PN/-/_}
-DESCRIPTION="Minimalistic Python client for the NextBus public API for real-time transit arrival data"
+DESCRIPTION="Python client for the NextBus public API for real-time transit arrival data"
 HOMEPAGE="https://github.com/vividboarder/py_nextbus https://pypi.org/project/py-nextbusnext/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python Arlo is a library written in Python 2.7/3x that exposes the Netgear Arlo cameras as Python objects."
+DESCRIPTION="Python library that exposes the Netgear Arlo cameras as Python objects."
 HOMEPAGE="https://github.com/tchellomello/python-arlo https://pypi.org/project/pyarlo/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

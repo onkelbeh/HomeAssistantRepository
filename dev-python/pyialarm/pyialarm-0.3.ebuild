@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A simple library to interface with iAlarm systems, built for use with Home-Assistant"
+DESCRIPTION="A simple library to interface with iAlarm systems, built for Home-Assistant"
 HOMEPAGE="https://github.com/RyuzakiKK/pyialarm https://pypi.org/project/pyialarm/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

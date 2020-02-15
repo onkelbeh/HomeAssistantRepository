@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="A module to drive the Pimoroni PiGlow board, based on the sn3218 i2c LED controller"
+DESCRIPTION="Drive the Pimoroni PiGlow board, based on the sn3218 i2c LED controller"
 HOMEPAGE="https://www.pimoroni.com https://pypi.org/project/piglow/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

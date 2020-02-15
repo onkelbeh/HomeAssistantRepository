@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A Python library that implements a Tuya API endpoint that was specially designed for Home Assistant"
+DESCRIPTION="Tuya API endpoint for Home Assistant"
 HOMEPAGE="https://github.com/PaulAnnekov/tuyaha https://pypi.org/project/tuyaha/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

@@ -10,7 +10,7 @@ inherit distutils-r1
 MY_P=${P/_beta/b}
 MY_PV=${PV/_beta/b}
 
-DESCRIPTION="a subset of the Python which allows to provide a program input into a trusted environment."
+DESCRIPTION="subset of Python which allows program input into a trusted environment."
 HOMEPAGE="https://pypi.python.org/pypi/RestrictedPython https://pypi.org/project/RestrictedPython/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
 

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="An unofficial python package that provides access to parts of the Starling bank API. Designed to be used for personal use (i.e. using personal access tokens)."
+DESCRIPTION="Python package that provides access to parts of the Starling bank API."
 HOMEPAGE="https://github.com/Dullage/starlingbank https://pypi.org/project/starlingbank/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

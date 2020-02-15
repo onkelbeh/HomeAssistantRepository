@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A python3 library for running asynchronus communications with envisalink alarm control panel modules."
+DESCRIPTION="Asynchronus communications with envisalink alarm control panel."
 HOMEPAGE="https://github.com/Cinntax/pyenvisalink https://pypi.org/project/pyenvisalink/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

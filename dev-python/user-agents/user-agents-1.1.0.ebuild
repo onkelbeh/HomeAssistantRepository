@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python{2_7,3_{5,6,7}} )
 
 inherit distutils-r1
 
-DESCRIPTION="A library to identify devices (phones, tablets) and their capabilities by parsing (browser/HTTP) user agent strings"
+DESCRIPTION="A library to identify devices and their capabilities parsing user agent strings"
 HOMEPAGE="https://github.com/selwin/python-user-agents"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

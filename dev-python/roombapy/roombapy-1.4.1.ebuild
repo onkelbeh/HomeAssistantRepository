@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python program and library to control Wi-Fi enabled iRobot Roomba vacuum cleaners"
+DESCRIPTION="Python library to control Wi-Fi enabled iRobot Roomba vacuum cleaners"
 HOMEPAGE="https://github.com/pschmitt/roombapy https://pypi.org/project/roombapy/"
 SRC_URI="https://github.com/pschmitt/roombapy/archive/${PV}.tar.gz -> ${P}.tar.gz"
 

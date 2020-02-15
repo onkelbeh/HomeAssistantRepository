@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A simple python3 library for info about the current International Space Station location"
+DESCRIPTION="A simple library for info about the current International Space Station location"
 HOMEPAGE="https://github.com/HydrelioxGitHub/pyiss https://pypi.org/project/pyiss/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

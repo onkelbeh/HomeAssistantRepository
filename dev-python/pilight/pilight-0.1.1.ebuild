@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A pure python module to connect to a pilight daemon to send and receive commands."
+DESCRIPTION="Pure python module to connect to a pilight daemon to send and receive commands."
 HOMEPAGE="https://github.com/DavidLP/pilight https://pypi.org/project/pilight/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

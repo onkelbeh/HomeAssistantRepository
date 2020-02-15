@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python class to integrate Boto3's Cognito client so it is easy to login users. With SRP support."
+DESCRIPTION="Integrate Boto3's Cognito client so it is easy to login users. With SRP support."
 HOMEPAGE="https://github.com/capless/warrant https://pypi.org/project/warrant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="A Python library for interacting with Konnected home automation controllers (see https://konnected.io)"
+DESCRIPTION="Library for interacting with Konnected home automation controllers."
 HOMEPAGE="https://github.com/konnected-io/konnected-py https://pypi.org/project/konnected/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A python3 library for running asynchronus communications with IntesisHome Smart AC Controllers"
+DESCRIPTION="Library running asynchronus communications with IntesisHome Smart AC Controllers"
 HOMEPAGE="https://github.com/jnimmo/pyIntesisHome https://pypi.org/project/pyintesishome/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

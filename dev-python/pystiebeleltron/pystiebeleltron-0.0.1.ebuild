@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python API for interacting with the Stiebel Eltron ISG web gateway via Modbus for controlling integral ventilation units and heat pumps."
+DESCRIPTION="Python API for interacting with the Stiebel Eltron ISG web gateway via Modbus."
 HOMEPAGE="https://github.com/fucm/python-stiebel-eltron https://pypi.org/project/pystiebeleltron/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.dev2.tar.gz -> ${P}.tar.gz"
 

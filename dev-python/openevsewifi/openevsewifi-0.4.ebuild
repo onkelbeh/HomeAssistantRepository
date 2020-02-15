@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A python library for communicating with the ESP8266-based wifi module from OpenEVSE"
+DESCRIPTION="A python library communicating with the ESP8266-based wifi module from OpenEVSE"
 HOMEPAGE="https://github.com/miniconfig/python-openevse-wifi https://pypi.org/project/openevsewifi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

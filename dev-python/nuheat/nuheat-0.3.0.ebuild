@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="A Python library that allows control of connected NuHeat Signature radiant floor thermostats."
+DESCRIPTION="Control of connected NuHeat Signature radiant floor thermostats."
 HOMEPAGE="https://github.com/broox/python-nuheat https://pypi.org/project/nuheat/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
