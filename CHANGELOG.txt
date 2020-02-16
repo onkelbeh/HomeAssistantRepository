@@ -2,6 +2,7 @@
   * bump simplisafe-python-7.3.0
   * bump pymelcloud-2.1.0
   * bump pyTibber-0.12.2
+  * bump apprise-0.8.4
 
 2020-02-15 homeassistant-0.105.4
   * bump 0.105.4
