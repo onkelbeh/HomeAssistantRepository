@@ -5,6 +5,7 @@
   * bump apprise-0.8.4
   * bump hdate-0.9.5
   * add uEagle-0.0.1
+  * bump python-velbus-2.0.41
 
 2020-02-15 homeassistant-0.105.4
   * bump 0.105.4
