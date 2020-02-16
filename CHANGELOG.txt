@@ -1,3 +1,6 @@
+2020-02-16
+  * bump simplisafe-python-7.3.0
+
 2020-02-15 homeassistant-0.105.4
   * bump 0.105.4
   * re-add old frontend 20200130.3
