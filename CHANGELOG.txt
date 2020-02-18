@@ -1,6 +1,7 @@
 2020-02-18
   * bump Adafruit-Blinka-3.9.0
   * bump adafruit-circuitpython-mcp230xx-2.2.2
+  * bump aiohue-2.0.0
 
 2020-02-16
   * bump simplisafe-python-7.3.0
