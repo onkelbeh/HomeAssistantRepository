@@ -3,6 +3,7 @@
   * bump adafruit-circuitpython-mcp230xx-2.2.2
   * bump aiohue-2.0.0
   * bump bimmer-connected-0.7.0
+  * bump greeneye-monitor-2.0
 
 2020-02-16
   * bump simplisafe-python-7.3.0
