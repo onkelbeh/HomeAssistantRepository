@@ -5,6 +5,7 @@
   * bump bimmer-connected-0.7.0
   * bump greeneye-monitor-2.0
   * bump nsapi-3.0.3
+  * bump pyEight-0.1.3
 
 2020-02-16
   * bump simplisafe-python-7.3.0
