@@ -1,3 +1,6 @@
+2020-02-18
+  * bump Adafruit-Blinka-3.9.0
+
 2020-02-16
   * bump simplisafe-python-7.3.0
   * bump pymelcloud-2.1.0
