@@ -11,6 +11,7 @@
   * add pigpio/pigpio-1.35 ff.
   * remove futile platforms from Pi/Ada libraries
   * bump pre-commit-2.1.0
+  * bump aiounifi-13
 
 2020-02-18 homeassistant-0.105.5
   * bump Adafruit-Blinka-3.9.0
