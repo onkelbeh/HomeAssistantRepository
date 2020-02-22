@@ -16,6 +16,7 @@
   * bump vallox-websocket-api-2.4.0
   * bump zha-quirks-0.0.33
   * update python-ecobee-api-0.2.1
+  * bump pyhomematic-0.1.65
 
 2020-02-18 homeassistant-0.105.5
   * bump Adafruit-Blinka-3.9.0
