@@ -1,3 +1,6 @@
+2020-02-22
+  * bump homematicip-0.10.17
+
 2020-02-18 homeassistant-0.105.5
   * bump Adafruit-Blinka-3.9.0
   * bump adafruit-circuitpython-mcp230xx-2.2.2
