@@ -15,7 +15,7 @@ S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~arm64"
 IUSE="test"
 
 RDEPEND="dev-python/Adafruit-PureIO[${PYTHON_USEDEP}]"

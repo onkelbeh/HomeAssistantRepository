@@ -9,6 +9,7 @@
   * bump pyps4-2ndscreen-1.0.7
   * update pwmled-1.5.0 and
   * add pigpio/pigpio-1.35 ff.
+  * remove futile platforms from Pi/Ada libraries
 
 2020-02-18 homeassistant-0.105.5
   * bump Adafruit-Blinka-3.9.0
