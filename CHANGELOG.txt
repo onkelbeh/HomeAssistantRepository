@@ -19,6 +19,7 @@
   * bump pyhomematic-0.1.65
   * update requests-2.23.0 from main repo
   * bump pyatmo-3.2.4
+  * update pyvizio-0.1.26
 
 2020-02-18 homeassistant-0.105.5
   * bump Adafruit-Blinka-3.9.0
