@@ -21,6 +21,7 @@
   * bump pyatmo-3.2.4
   * update pyvizio-0.1.26
   * bump py-august-0.17.0
+  * bump brother-0.1.6
 
 2020-02-18 homeassistant-0.105.5
   * bump Adafruit-Blinka-3.9.0
