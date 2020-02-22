@@ -6,6 +6,7 @@
   * bump aio-geojson-client-0.12
   * update aio-geojson-geonetnz-quakes-0.12
   * update aio-geojson-nsw-rfs-incidents-0.3
+  * bump pyps4-2ndscreen-1.0.7
 
 2020-02-18 homeassistant-0.105.5
   * bump Adafruit-Blinka-3.9.0
