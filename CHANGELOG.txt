@@ -1,5 +1,6 @@
 2020-02-22
   * bump homematicip-0.10.17
+  * skip unused, remove olds and bump frontend-20200220.1
 
 2020-02-18 homeassistant-0.105.5
   * bump Adafruit-Blinka-3.9.0
