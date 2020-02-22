@@ -3,6 +3,9 @@
   * skip unused, remove olds and bump frontend-20200220.1
   * bump py-august-0.14.0
   * update simplisafe-python-8.1.1
+  * bump aio-geojson-client-0.12
+  * update aio-geojson-geonetnz-quakes-0.12
+  * update aio-geojson-nsw-rfs-incidents-0.3
 
 2020-02-18 homeassistant-0.105.5
   * bump Adafruit-Blinka-3.9.0
