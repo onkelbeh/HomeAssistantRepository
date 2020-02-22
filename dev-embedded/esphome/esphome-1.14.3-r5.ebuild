@@ -30,7 +30,7 @@ IUSE="server test"
 
 RDEPEND=""
 DEPEND="${RDEPEND}
-  server? ( acct-group/${PN} acct-user/${PN} )
+	server? ( acct-group/${PN} acct-user/${PN} )
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=dev-python/tzlocal-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
