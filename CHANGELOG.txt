@@ -23,6 +23,7 @@
   * bump py-august-0.17.0
   * bump brother-0.1.6
   * add dynalite-0.1.32, bump dynalite-devices-0.1.22
+  * sort KEYWORDS.unsorted
 
 2020-02-18 homeassistant-0.105.5
   * bump Adafruit-Blinka-3.9.0
