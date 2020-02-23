@@ -1,3 +1,6 @@
+2020-02-23
+  * bump env-canada-0.0.35
+
 2020-02-22 homeassistant-0.106.0_beta2
   * bump homematicip-0.10.17
   * skip unused, remove olds and bump frontend-20200220.1
