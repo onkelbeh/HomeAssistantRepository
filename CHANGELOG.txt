@@ -1,6 +1,7 @@
 2020-02-25
   * add pyEzviz-0.1.5.2
   * bump aioambient-1.0.4
+  * add aiohomekit-0.2.10, bump aiohomekit-0.2.11
 
 2020-02-23
   * bump env-canada-0.0.35
