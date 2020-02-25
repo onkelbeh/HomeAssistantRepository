@@ -1,3 +1,6 @@
+2020-02-25
+  * add pyEzviz-0.1.5.2
+
 2020-02-23
   * bump env-canada-0.0.35
   * bump haanna-0.14.3
