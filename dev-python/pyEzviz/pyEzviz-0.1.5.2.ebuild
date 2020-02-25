@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Pilot your Ezviz cameras"
-HOMEPAGE="http://github.com/baqs/pyEzviz/ https://pypi.org/project/pyEzviz/"
+HOMEPAGE="https://github.com/baqs/pyEzviz/ https://pypi.org/project/pyEzviz/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
