@@ -6,6 +6,8 @@
   * bump pre-commit-2.1.1
   * add orjson-2.5.1
   * update homeassistant-0.106.0_beta4
+  * fix uri.https in pyEzviz
+  * fix some leading spaces
 
 2020-02-23
   * bump env-canada-0.0.35

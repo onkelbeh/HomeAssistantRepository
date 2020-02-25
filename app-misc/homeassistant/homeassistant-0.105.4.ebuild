@@ -169,7 +169,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	mysql? ( || ( dev-python/mysqlclient[${PYTHON_USEDEP}]
 			dev-python/mysql-python[${PYTHON_USEDEP}] )
 			virtual/mysql )
-  nederlandse_spoorwegen? ( ~dev-python/nsapi-3.0.2[${PYTHON_USEDEP}] )
+	nederlandse_spoorwegen? ( ~dev-python/nsapi-3.0.2[${PYTHON_USEDEP}] )
 	openwrt? ( ~dev-python/openwrt-luci-rpc-1.1.2[${PYTHON_USEDEP}] )
 	owntracks? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
 		virtual/mqtt )
