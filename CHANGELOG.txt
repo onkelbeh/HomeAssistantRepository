@@ -1,10 +1,11 @@
-2020-02-25
+2020-02-25 homeassistant-0.106.0_beta4
   * add pyEzviz-0.1.5.2
   * bump aioambient-1.0.4
   * add aiohomekit-0.2.10, bump aiohomekit-0.2.11
   * bump ciso8601-2.1.3
   * bump pre-commit-2.1.1
   * add orjson-2.5.1
+  * update homeassistant-0.106.0_beta4
 
 2020-02-23
   * bump env-canada-0.0.35
