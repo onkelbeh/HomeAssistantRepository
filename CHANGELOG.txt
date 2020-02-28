@@ -6,6 +6,7 @@
   * bump socialbladeclient-0.5
   * bump pyipma-2.0.4
   * bump python-tado-0.3.0
+  * bump simplisafe-python-9.0.2
 
 2020-02-25 homeassistant-0.106.0_beta4
   * add pyEzviz-0.1.5.2
