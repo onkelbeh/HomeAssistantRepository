@@ -11,7 +11,7 @@ DESCRIPTION="Fast, correct Python JSON library supporting dataclasses, datetimes
 HOMEPAGE="https://github.com/ijl/orjson https://pypi.org/project/orjson/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="|| (Apache-2.0 MIT)"
+LICENSE="|| ( Apache-2.0 MIT )"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
