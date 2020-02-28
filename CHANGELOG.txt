@@ -1,3 +1,6 @@
+2020-02-28 homeassistant-0.106.1
+  * bump home-assistant-frontend-20200220.4
+
 2020-02-25 homeassistant-0.106.0_beta4
   * add pyEzviz-0.1.5.2
   * bump aioambient-1.0.4
