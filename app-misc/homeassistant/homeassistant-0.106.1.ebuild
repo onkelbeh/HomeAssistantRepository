@@ -15,8 +15,8 @@ SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.g
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea axis bitcoin blockchain bmw_connected_drive braviatv buienradar cli ciscomobilityexpress daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex qnap +recorder ring roku rxv samsungtv signal sma socat somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unify vallox vera velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
+KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
+IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea axis bitcoin blockchain bmw_connected_drive braviatv buienradar cli ciscomobilityexpress daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku rxv samsungtv signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unify vallox vera velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
@@ -147,7 +147,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	flume? ( ~dev-python/PyFlume-0.2.4[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-1.0.3[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( ~app-misc/home-assistant-frontend-20200220.1[${PYTHON_USEDEP}] )
+	frontend? ( ~app-misc/home-assistant-frontend-20200220.4[${PYTHON_USEDEP}] )
 	gpiozero? ( ~dev-python/gpiozero-1.5.1[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
@@ -164,7 +164,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	incomfort? ( ~dev-python/incomfort-client-0.4.0[${PYTHON_USEDEP}] )
 	influxdb? ( dev-db/influxdb
 			~dev-python/influxdb-5.2.3[${PYTHON_USEDEP}] )
-	ipma? ( ~dev-python/pyipma-2.0.3[${PYTHON_USEDEP}] )
+	ipma? ( ~dev-python/pyipma-2.0.4[${PYTHON_USEDEP}] )
 	jewish_calendar? ( ~dev-python/hdate-0.9.3[${PYTHON_USEDEP}] )
 	kef? ( ~dev-python/aiokef-0.2.6[${PYTHON_USEDEP}] ~dev-python/getmac-0.8.1[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
@@ -181,6 +181,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	owntracks? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
 		virtual/mqtt )
 	plex? ( ~dev-python/PlexAPI-3.3.0[${PYTHON_USEDEP}] )
+	plugwise? ( ~dev-python/haanna-0.14.3[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
 	roku? ( ~dev-python/roku-4.0.0[${PYTHON_USEDEP}] )
 	recorder? ( ~dev-python/sqlalchemy-1.3.13[${PYTHON_USEDEP}] )
@@ -191,10 +192,11 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	signal? ( ~dev-python/pysignalclirestapi-0.2.4[${PYTHON_USEDEP}] )
 	sma? ( ~dev-python/pysma-0.3.5[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
+	socialblade? ( ~dev-python/socialbladeclient-0.2[${PYTHON_USEDEP}] )
 	somfy? ( ~dev-python/pymfy-0.7.1[${PYTHON_USEDEP}] )
 	sonos? ( >=dev-python/pysonos-0.0.24[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.21.3[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-8.1.1[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-9.0.2[${PYTHON_USEDEP}] )
 	speedtest? ( ~net-analyzer/speedtest-cli-2.1.2[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot

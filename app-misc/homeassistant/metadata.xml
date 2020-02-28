@@ -81,6 +81,7 @@
     <flag name="signal">add Support for Moxie's Signal API</flag>
     <flag name="sma">add Support for SMA Solar WebConnect</flag>
     <flag name="socat">Install socat and socat-zwave startscript</flag>
+    <flag name="socialblade">monitor Youtube Channels</flag>
     <flag name="somfy">Somfy devices via their online service</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
     <flag name="shodan">Shodan is a search engine for Internet-connected devices</flag>

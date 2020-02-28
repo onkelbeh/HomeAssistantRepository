@@ -195,7 +195,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	somfy? ( ~dev-python/pymfy-0.7.1[${PYTHON_USEDEP}] )
 	sonos? ( >=dev-python/pysonos-0.0.24[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.21.3[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-6.1.1[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-8.1.1[${PYTHON_USEDEP}] )
 	speedtest? ( ~net-analyzer/speedtest-cli-2.1.2[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
