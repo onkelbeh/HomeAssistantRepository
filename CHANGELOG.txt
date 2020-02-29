@@ -1,3 +1,7 @@
+2020-02-29 homeassistant-0.106.2
+  * bump home-assistant-frontend-20200220.5
+  * update homeassistant-0.106.2
+
 2020-02-28 homeassistant-0.106.1
   * bump home-assistant-frontend-20200220.4
   * fix a dep in 0.106.1 betas
