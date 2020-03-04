@@ -1,5 +1,6 @@
 2020-03-04 homeassistant-0.106.5
   * bump PyFlume-0.3.0
+  * bump aiounifi-14
 
 2020-02-29 homeassistant-0.106.2
   * bump home-assistant-frontend-20200220.5
