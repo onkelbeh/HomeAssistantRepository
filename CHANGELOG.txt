@@ -3,6 +3,7 @@
   * bump aiounifi-14
   * bump bravia-tv-1.0.1
   * bump brother-0.1.8
+  * add coronavirus
 
 2020-02-29 homeassistant-0.106.2
   * bump home-assistant-frontend-20200220.5
