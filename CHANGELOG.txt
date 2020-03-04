@@ -9,6 +9,7 @@
   * bump huawei-lte-api-1.4.10
   * bump py-august-0.21.0
   * bump py-august-0.22.0
+  * bump pyEight-0.1.4
 
 2020-02-29 homeassistant-0.106.2
   * bump home-assistant-frontend-20200220.5
