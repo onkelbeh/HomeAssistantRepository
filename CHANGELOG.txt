@@ -6,6 +6,7 @@
   * add coronavirus
   * bump dynalite-devices-0.1.26
   * bump dynalite-devices-0.1.30
+  * bump huawei-lte-api-1.4.10
 
 2020-02-29 homeassistant-0.106.2
   * bump home-assistant-frontend-20200220.5
