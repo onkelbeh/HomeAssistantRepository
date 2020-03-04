@@ -17,6 +17,7 @@
   * bump roombapy-1.4.2 & roombapy-1.4.3
   * bump teslajsonpy-0.4.0
   * bump total-connect-client-0.53
+  * add untangle-1.1.1
 
 2020-02-29 homeassistant-0.106.2
   * bump home-assistant-frontend-20200220.5
