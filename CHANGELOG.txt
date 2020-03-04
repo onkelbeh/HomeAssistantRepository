@@ -15,7 +15,8 @@
   * add pyqvrpro-0.51
   * add pytankerkoenig-0.0.6
   * bump roombapy-1.4.2 & roombapy-1.4.3
-  * dump teslajsonpy-0.4.0
+  * bump teslajsonpy-0.4.0
+  * bump total-connect-client-0.53
 
 2020-02-29 homeassistant-0.106.2
   * bump home-assistant-frontend-20200220.5
