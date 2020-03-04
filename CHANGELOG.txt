@@ -14,6 +14,7 @@
   * bump pyipma-2.0.5
   * add pyqvrpro-0.51
   * add pytankerkoenig-0.0.6
+  * bump roombapy-1.4.2 & roombapy-1.4.3
 
 2020-02-29 homeassistant-0.106.2
   * bump home-assistant-frontend-20200220.5
