@@ -11,6 +11,7 @@
   * bump py-august-0.22.0
   * bump pyEight-0.1.4
   * bump pyTibber-0.13.0
+  * bump pyipma-2.0.5
 
 2020-02-29 homeassistant-0.106.2
   * bump home-assistant-frontend-20200220.5
