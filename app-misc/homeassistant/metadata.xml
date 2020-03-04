@@ -29,6 +29,7 @@
     <flag name="buienradar">use buienradar weather data</flag>
     <flag name="cli">install Home Assistant Cli hass-cli (lots of modules required)</flag>
     <flag name="ciscomobilityexpress">install ciscomobilityexpress support</flag>
+    <flag name="coronavirus">add sensors for COVID-19 infections from Johns Hopkins University</flag>
     <flag name="darksky">use dark sky weather data</flag>
     <flag name="daikin">Daikin wireless controllers</flag>
     <flag name="denonavr">Automation Library for Denon AVR receivers</flag>

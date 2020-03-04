@@ -24,6 +24,7 @@
   * bump zigpy-homeassistant-0.14.0
   * update new homeassistant-core repo name @github
   * update homeassistant-0.106.[3-5]
+  * add homeassistant-0.106.5-r1 with sensors for COVID-19 infections
 
 2020-02-29 homeassistant-0.106.2
   * bump home-assistant-frontend-20200220.5
