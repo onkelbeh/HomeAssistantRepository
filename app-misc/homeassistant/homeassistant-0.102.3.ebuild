@@ -6,12 +6,13 @@ EAPI="7"
 PYTHON_COMPAT=( python3_{6,7,8} )
 inherit readme.gentoo-r1 eutils distutils-r1
 
-MY_P=${P/_beta/b}
+MY_PN=${PN}-core
 MY_PV=${PV/_beta/b}
+MY_P=${MY_PN}-${MY_PV}
 
 DESCRIPTION="Open-source home automation platform running on Python on 3.7"
 HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistantRepository"
-SRC_URI="https://github.com/home-assistant/home-assistant/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
+SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -241,7 +242,7 @@ The sqlite db is by default in: /etc/${PN}
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
-S="${WORKDIR}/home-assistant-${MY_PV}"
+S="${WORKDIR}/core-${MY_PV}"
 
 DOCS="README.rst"
 

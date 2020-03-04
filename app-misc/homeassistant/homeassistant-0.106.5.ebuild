@@ -148,7 +148,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	flume? ( ~dev-python/PyFlume-0.2.4[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-1.0.3[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( ~app-misc/home-assistant-frontend-20200220.4[${PYTHON_USEDEP}] )
+	frontend? ( ~app-misc/home-assistant-frontend-20200220.5[${PYTHON_USEDEP}] )
 	gpiozero? ( ~dev-python/gpiozero-1.5.1[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
@@ -204,7 +204,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 			net-proxy/haproxy )
 	tradfri? ( >=dev-python/pytradfri-6.4.0[${PYTHON_USEDEP}] )
 	ubee? ( ~dev-python/pyubee-0.8[${PYTHON_USEDEP}] )
-	unify? ( ~dev-python/aiounify-13[${PYTHON_USEDEP}] )
+	unify? ( ~dev-python/aiounify-14[${PYTHON_USEDEP}] )
 	vallox? ( ~dev-python/vallox-websocket-api-2.4.0[${PYTHON_USEDEP}] )
 	vera? ( ~dev-python/pyvera-0.3.7[${PYTHON_USEDEP}] )
 	velbus? ( ~dev-python/python-velbus-2.0.41[${PYTHON_USEDEP}] )
@@ -266,12 +266,15 @@ S="${WORKDIR}/core-${MY_PV}"
 DOCS="README.rst"
 
 src_prepare() {
-	sed -e 's;astral==1.5;astral>=1.5;' \
-		-i "setup.py" \
-		-i homeassistant/package_constraints.txt
 	# https://github.com/home-assistant/home-assistant/issues/28811
 	if use maxcube_hack ; then
-	   eapply "${FILESDIR}/maxcube_TypeError_dirty_hack.patch"
+	  eapply "${FILESDIR}/maxcube_TypeError_dirty_hack.patch"
+		#sed -e 's;if cube.is_windowshutter(device);if device.type == 4;' \
+		#    -i components/maxcube/binary_sensor.py \
+		#		|| die
+		#sed -e 's;if cube.is_thermostat(device) or cube.is_wallthermostat(device);if device.type == 3 or device.type == 1;' \
+		#    -i components/maxcube/climate.py \
+		#		|| die
 	fi
 	eapply_user
 }
