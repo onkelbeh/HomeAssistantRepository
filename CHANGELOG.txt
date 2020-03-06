@@ -2,6 +2,7 @@
   * bump abodepy-0.18.1
   * bump aiohomekit-0.2.15
   * bump aiohomekit-0.2.17
+  * bump buienradar-1.0.4
 
 2020-03-04 homeassistant-0.106.5
   * bump PyFlume-0.3.0
