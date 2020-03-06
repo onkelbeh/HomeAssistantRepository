@@ -6,6 +6,7 @@
   * bump dynalite-devices-0.1.32
   * bump hass-nabucasa-0.32
   * bump pyTibber-0.13.2
+  * add pysml-0.0.2
 
 2020-03-04 homeassistant-0.106.5
   * bump PyFlume-0.3.0
