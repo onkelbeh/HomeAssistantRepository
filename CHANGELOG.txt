@@ -1,6 +1,7 @@
 2020-03-08
   * bump frontend-20200306.0, remove olds
   * bump aiohomekit-0.2.21
+  * bump zeroconf-0.24.5
 
 2020-03-06
   * bump abodepy-0.18.1
