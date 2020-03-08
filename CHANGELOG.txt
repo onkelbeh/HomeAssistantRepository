@@ -3,6 +3,7 @@
   * bump aiohomekit-0.2.21
   * bump zeroconf-0.24.5
   * update requirements_all.txt
+  * refresh dev ebuild
 
 2020-03-06
   * bump abodepy-0.18.1
