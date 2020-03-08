@@ -130,7 +130,7 @@ envirophat==0.0.6
 envoy-reader==0.11.0
 epsonprinter==0.0.9
 epson-projector==0.1.3
-esphome
+esphome==1.14.3
 eternalegypt==0.0.11
 evdev==1.1.2
 face_recognition==1.2.3
