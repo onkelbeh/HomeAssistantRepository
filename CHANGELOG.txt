@@ -19,6 +19,7 @@
   * bump python-tado-0.4.0
   * bump python-velbus-2.0.42
   * bump pyubee-0.9
+  * bump rflink-0.0.52
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
