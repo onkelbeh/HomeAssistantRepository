@@ -37,6 +37,7 @@
   * bump py-august-0.25.0
   * bump pylast-3.2.1
   * bump pypck-0.6.4
+  * bump sendgrid-6.1.3
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
