@@ -1,4 +1,4 @@
-2020-03-13
+2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
   * bump aiohomekit-0.2.25
   * bump aiohomekit-0.2.29
@@ -29,6 +29,7 @@
   * add griddypower-0.1.0
   * add iammeter-0.1.3
   * add samsungtvws-1.4.0
+  * update homeassistant-0.106.6
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
