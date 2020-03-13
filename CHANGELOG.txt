@@ -13,6 +13,7 @@
   * bump pyatmo-3.3.0
   * bump pyicloud-0.9.3
   * bump pyicloud-0.9.4
+  * bump pymelcloud-2.4.0
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
