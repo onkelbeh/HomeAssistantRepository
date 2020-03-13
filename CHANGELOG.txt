@@ -26,6 +26,7 @@
   * bump zigpy-xbee-homeassistant-0.10.0
   * bump home-assistant-frontend-20200311.0
   * bump home-assistant-frontend-20200311.1
+  * add griddypower-0.1.0
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
