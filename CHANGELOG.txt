@@ -10,6 +10,7 @@
   * bump hass-nabucasa-0.32.2
   * bump py-august-0.24.0
   * bump pyTibber-0.13.3
+  * bump pyatmo-3.3.0
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
