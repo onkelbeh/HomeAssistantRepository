@@ -15,6 +15,7 @@
   * bump pyicloud-0.9.4
   * bump pymelcloud-2.4.0
   * bump python-ecobee-api-0.2.2
+  * bump python-izone-1.1.2
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
