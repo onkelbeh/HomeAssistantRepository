@@ -32,6 +32,7 @@
   * update homeassistant-0.106.6
   * fix leading spaces in homeassistant-9999.ebuild
   * bump directpy-0.7
+  * bump pre-commit-2.2.0
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
