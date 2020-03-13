@@ -34,6 +34,7 @@
   * bump directpy-0.7
   * bump pre-commit-2.2.0
   * bump psutil-5.7.0
+  * bump py-august-0.25.0
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
