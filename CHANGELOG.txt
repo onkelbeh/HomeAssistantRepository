@@ -2,6 +2,7 @@
   * bump aiohomekit-0.2.24
   * bump aiohomekit-0.2.25
   * bump aiohomekit-0.2.29
+  * bump aiounifi-15
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
