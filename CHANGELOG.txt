@@ -31,6 +31,7 @@
   * add samsungtvws-1.4.0
   * update homeassistant-0.106.6
   * fix leading spaces in homeassistant-9999.ebuild
+  * bump directpy-0.7
 
 2020-03-08
   * bump frontend-20200306.0, remove olds
