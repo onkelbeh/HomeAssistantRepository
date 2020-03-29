@@ -3,6 +3,10 @@
   * bump PySwitchbot-0.8.0
   * bump aioasuswrt-1.2.2
   * bump aioasuswrt-1.2.3
+  * bump aiohomekit-0.2.29.1
+  * bump aiohomekit-0.2.29.2
+  * bump aiohomekit-0.2.34
+  * bump aiohomekit-0.2.35
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
