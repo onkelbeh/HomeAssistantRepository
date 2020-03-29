@@ -43,6 +43,7 @@
   * bump python-velbus-2.0.43
   * bump pyubee-0.10
   * bump pyvizio-0.1.44
+  * bump pyyaml-5.3 & pyyaml-5.3.1
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
