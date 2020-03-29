@@ -24,6 +24,7 @@
   * bump home-assistant-frontend-20200316.1
   * bump home-assistant-frontend-20200318.0
   * bump home-assistant-frontend-20200318.1
+  * update home-assistant-cli-0.8.0
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
