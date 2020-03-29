@@ -52,6 +52,7 @@
   * bump wled-0.3.0
   * bump yeelight-0.5.1
   * bump youtube_dl-2020.3.24
+  * bump zha-quirks-0.0.37
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
