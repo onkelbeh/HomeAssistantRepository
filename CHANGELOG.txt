@@ -45,6 +45,7 @@
   * bump pyvizio-0.1.44
   * bump pyyaml-5.3 & pyyaml-5.3.1
   * bump shodan-1.22.0
+  * bump simplisafe-python-9.0.[3-5]
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
