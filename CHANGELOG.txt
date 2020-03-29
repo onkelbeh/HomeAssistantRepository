@@ -19,6 +19,7 @@
   * bump garminconnect-0.1.10
   * bump gios-0.0.[4,5]
   * bump hole-0.5.1
+  * bump homeassistant-pyozw-0.1.[9,10]
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
