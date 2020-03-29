@@ -8,6 +8,7 @@
   * bump aiohomekit-0.2.34
   * bump aiohomekit-0.2.35
   * bump PyViCare-0.1.10
+  * bump aiohue-2.1.0
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
