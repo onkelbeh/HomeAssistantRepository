@@ -34,6 +34,7 @@
   * bump pyicloud-0.9.5
   * bump pyicloud-0.9.6.1
   * bump pyintesishome-1.7.1
+  * bump pylutron-caseta-0.6.0
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
