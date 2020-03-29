@@ -38,6 +38,7 @@
   * bump pymodbus-2.3.0
   * bump pyobihai-1.2.1
   * bump pysonos-0.0.25
+  * bump python-ecobee-api-0.2.3
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
