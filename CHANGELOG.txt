@@ -28,6 +28,7 @@
   * bump huawei-lte-api-1.4.11
   * bump insteonplm-0.16.8
   * add nextcloudmonitor-1.1.0
+  * bump plexwebsocket-0.0.7
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
