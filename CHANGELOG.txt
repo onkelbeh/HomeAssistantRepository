@@ -1,3 +1,6 @@
+2020-03-29 get back to normalize
+  * bump PyChromecast-4.2.0
+
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
   * bump aiohomekit-0.2.25
