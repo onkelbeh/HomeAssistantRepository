@@ -47,6 +47,8 @@
   * bump shodan-1.22.0
   * bump simplisafe-python-9.0.[3-5]
   * bump spotipy-2.10.0
+  * bump teslajsonpy-0.5.1 & teslajsonpy-0.6.0
+  * bump total-connect-client-0.54.2
 
 2020-03-13 homeassistant-0.106.6
   * bump aiohomekit-0.2.24
