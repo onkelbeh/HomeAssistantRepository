@@ -158,7 +158,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	hpilo? ( ~dev-python/python-hpilo-4.3[${PYTHON_USEDEP}] )
 	hkavr? ( ~dev-python/hkavr-0.0.5[${PYTHON_USEDEP}] )
 	holidays? ( ~dev-python/holidays-0.10.1[${PYTHON_USEDEP}] )
-	homekit? ( ~dev-python/aiohomekit-0.2.29.1[${PYTHON_USEDEP}] )
+	homekit? ( ~dev-python/aiohomekit-0.2.29.2[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.65[${PYTHON_USEDEP}] )
 	homematicip? ( ~dev-python/homematicip-0.10.17[${PYTHON_USEDEP}] )
 	hs100? ( >=dev-python/pyHS100-0.3.5[${PYTHON_USEDEP}] )
@@ -198,7 +198,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	somfy? ( ~dev-python/pymfy-0.7.1[${PYTHON_USEDEP}] )
 	sonos? ( >=dev-python/pysonos-0.0.24[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.21.3[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-9.0.2[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-9.0.3[${PYTHON_USEDEP}] )
 	speedtest? ( ~net-analyzer/speedtest-cli-2.1.2[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
@@ -208,7 +208,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	unify? ( ~dev-python/aiounify-15[${PYTHON_USEDEP}] )
 	vallox? ( ~dev-python/vallox-websocket-api-2.4.0[${PYTHON_USEDEP}] )
 	vera? ( ~dev-python/pyvera-0.3.7[${PYTHON_USEDEP}] )
-	velbus? ( ~dev-python/python-velbus-2.0.42[${PYTHON_USEDEP}] )
+	velbus? ( ~dev-python/python-velbus-2.0.43[${PYTHON_USEDEP}] )
 	webostv? ( ~dev-python/aiopylgtv-0.3.3[${PYTHON_USEDEP}] )
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.8[${PYTHON_USEDEP}] )
