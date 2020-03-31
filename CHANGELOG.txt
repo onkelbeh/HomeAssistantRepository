@@ -2,6 +2,7 @@
   * bump frontend-20200330.0
   * bump aioambient-1.1.0
   * bump aiohomekit-0.2.37
+  * bump aiokef-0.2.9
 
 2020-03-29 get back to normalize
   * bump PyChromecast-4.2.0
