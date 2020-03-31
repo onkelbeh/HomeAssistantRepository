@@ -5,6 +5,8 @@
   * bump aiokef-0.2.9
   * add pyipp-0.8.1
   * add python-ecobee-api-0.2.5
+  * add slackclient-2.5.0
+  * bump zigpy-cc-0.3.1
 
 2020-03-29 get back to normalize
   * bump PyChromecast-4.2.0
