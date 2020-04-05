@@ -18,6 +18,7 @@
   * bump HAP-python-2.8.0
   * bump pyflunearyou-1.0.7
   * bump python-miio-0.5.0.1
+  * bump pyipp-0.8.3
 
 2020-03-31 homeassistant-0.107.7
   * bump frontend-20200330.0
