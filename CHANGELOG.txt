@@ -22,6 +22,7 @@
   * bump pyvizio-0.1.45
   * bump luftdaten-0.6.4
   * bump gios-0.1.1
+  * bump Mastodon-py-1.5.1
 
 2020-03-31 homeassistant-0.107.7
   * bump frontend-20200330.0
