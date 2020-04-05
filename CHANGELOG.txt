@@ -26,6 +26,7 @@
   * bump zeroconf-0.25.0
   * bump adguardhome-0.4.2
   * bump abodepy-0.19.0
+  * bump home-assistant-frontend-20200403.0
 
 2020-03-31 homeassistant-0.107.7
   * bump frontend-20200330.0
