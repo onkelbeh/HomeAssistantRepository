@@ -14,6 +14,7 @@
   * add directv-0.3.0
   * bump pyotgw-0.6_beta1
   * bump dynalite-devices-0.1.39
+  * bump pyipp-0.8.2
 
 2020-03-31 homeassistant-0.107.7
   * bump frontend-20200330.0
