@@ -1,6 +1,7 @@
 2020-04-05
   * add tesla-powerwall-0.1.4
   * bump apprise-0.8.5
+  * update python-tado-0.6.0
 
 2020-03-31 homeassistant-0.107.7
   * bump frontend-20200330.0
