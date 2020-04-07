@@ -9,7 +9,8 @@ inherit distutils-r1
 
 DESCRIPTION="pywbem - A WBEM client"
 HOMEPAGE="https://pywbem.github.io/pywbem/ https://pypi.org/project/pywbem/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/${PN}/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
