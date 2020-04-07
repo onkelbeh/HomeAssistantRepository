@@ -5,6 +5,7 @@
   * HAP-python-2.8.1 bumped
   * bump aioambient-1.1.1
   * bump simplisafe-python-9.0.6
+  * add pi4ioe5v9xxxx-0.0.2
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
