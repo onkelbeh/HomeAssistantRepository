@@ -1,4 +1,4 @@
-2020-04-07
+2020-04-07 homeassistant-0.108.0_beta5
   * bump frontend to 20200406.0
   * bump pywbem to 0.17.0
   * change broken pypi archive int pywbem-0.16.0 to github
@@ -7,6 +7,7 @@
   * bump simplisafe-python-9.0.6
   * add pi4ioe5v9xxxx-0.0.2
   * remove obsolete frontends
+  * update homeassistant-0.108.0_beta5
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
