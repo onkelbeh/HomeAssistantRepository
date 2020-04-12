@@ -35,7 +35,7 @@ DEPEND="${RDEPEND}
 	>=dev-python/tzlocal-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
 	~dev-embedded/esptool-2.7[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-3.10.0[${PYTHON_USEDEP}]
+	~dev-python/protobuf-python-3.11.4[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	server? ( >=dev-python/ifaddr-0.1.6

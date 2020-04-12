@@ -57,7 +57,7 @@
   * remove pyyaml-5.3.1 (dupe)
   * remove obsolete typing backport from newer HA versions
   * update platformio-4.3.1
-  * update compatibility patches fpr ESPHome's dependencies, remove typing
+  * update compatibility patches for ESPHome's dependencies, remove typing, pin protobuf-python to 3.11.4
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
