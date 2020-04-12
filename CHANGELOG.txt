@@ -31,6 +31,7 @@
   * bump nexia-0.8.1, nexia-0.8.2
   * bump async-upnp-client-0.14.13
   * bump zigpy-homeassistant-0.19.0
+  * bump pyvizio-0.1.47
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
