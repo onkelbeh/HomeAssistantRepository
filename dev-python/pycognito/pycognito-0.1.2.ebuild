@@ -19,7 +19,6 @@ IUSE="test"
 # cannot use >=dev-python/boto3-1.10.49 with 0.108.3
 RDEPEND="dev-python/boto3[${PYTHON_USEDEP}]
 		 >=dev-python/envs-1.3[${PYTHON_USEDEP}]
-		 >=dev-python/python-jose-3.1.0[${PYTHON_USEDEP}]
 		 >=dev-python/requests-2.22.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
