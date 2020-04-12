@@ -32,6 +32,7 @@
   * bump async-upnp-client-0.14.13
   * bump zigpy-homeassistant-0.19.0
   * bump pyvizio-0.1.47
+  * bump TwitterAPI-2.5.11
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
