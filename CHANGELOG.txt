@@ -1,3 +1,6 @@
+2020-04-12
+  * bump python-synology-0.5.0
+  
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
   * bump apprise-0.8.5
