@@ -22,6 +22,8 @@
   * bump aiounifi-16
   * bump PyFlume-0.4.0
   * bump zigpy-homeassistant-0.18.2
+  * bump PyChromecast-4.2.3
+  * bump home-assistant-frontend-20200407.2
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
