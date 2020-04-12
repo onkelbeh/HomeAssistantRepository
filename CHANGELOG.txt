@@ -50,6 +50,12 @@
   * add python-jose-3.1.0
   * add pycognito-0.1.2
   * fix beta KEYWORDS
+  * some fixes
+    - release acme-1.3.0 (1.2.0 is bad) in NabuCasa
+    - cannot use >=dev-python/boto3-1.10.49 with 0.108.3 (pycognito)
+    - python-jose needs pytest-runner in build environment
+  * remove pyyaml-5.3.1 (dupe)
+  * remove obsolete typing backport from newer HA versions
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
