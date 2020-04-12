@@ -35,6 +35,7 @@
   * bump TwitterAPI-2.5.11
   * bump getmac-0.8.2
   * bump sendgrid-6.2.1
+  * bump discord-py-1.3.3
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
