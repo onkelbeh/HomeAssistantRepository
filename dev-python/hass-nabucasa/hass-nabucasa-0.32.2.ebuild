@@ -18,7 +18,7 @@ IUSE="test"
 
 RDEPEND="~dev-python/pycognito-0.1.2[${PYTHON_USEDEP}]
 		 ~dev-python/snitun-0.20[${PYTHON_USEDEP}]
-		 ~app-crypt/acme-1.2.0
+		 >=app-crypt/acme-1.2.0
 		 ~dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 		 >=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 		 dev-python/pytz[${PYTHON_USEDEP}]
