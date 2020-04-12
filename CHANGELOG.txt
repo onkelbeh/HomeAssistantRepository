@@ -40,6 +40,7 @@
   * bump beautifulsoup-4.9.0
   * bump numpy-1.18.2
   * bump geopy-1.21.0
+  * bump roombapy-1.5.0
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
