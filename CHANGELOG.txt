@@ -24,6 +24,7 @@
   * bump zigpy-homeassistant-0.18.2
   * bump PyChromecast-4.2.3
   * bump home-assistant-frontend-20200407.2
+  * bump pyvizio-0.1.46
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
