@@ -33,6 +33,7 @@
   * bump zigpy-homeassistant-0.19.0
   * bump pyvizio-0.1.47
   * bump TwitterAPI-2.5.11
+  * bump getmac-0.8.2
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
