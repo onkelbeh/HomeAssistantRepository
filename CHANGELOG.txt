@@ -8,6 +8,7 @@
   * add nexia-0.7.3.ebuild
   * bump nexia-0.8.0.ebuild
   * bump nexia-0.9.1.ebuild
+  * bump pyW215-0.7.0 (now from pypi)
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
