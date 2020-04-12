@@ -16,11 +16,11 @@ SLOT="0"
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/warrant-0.6.1[${PYTHON_USEDEP}]
+RDEPEND="~dev-python/pycognito-0.1.1[${PYTHON_USEDEP}]
 		 ~dev-python/snitun-0.20[${PYTHON_USEDEP}]
-		 ~app-crypt/acme-1.0.0
-		 >=dev-python/cryptography-2.5[${PYTHON_USEDEP}]
-		 >=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
+		 ~app-crypt/acme-1.2.0
+		 ~dev-python/cryptography-2.8[${PYTHON_USEDEP}]
+		 >=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 		 dev-python/pytz[${PYTHON_USEDEP}]
 		 dev-python/aiohttp[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}

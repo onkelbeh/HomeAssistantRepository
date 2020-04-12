@@ -45,6 +45,7 @@
   * update homeassistant-0.108.1
   * update homeassistant-0.108.2
   * bump homeassistant-0.108.3
+  * fix nabucasa deps
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
