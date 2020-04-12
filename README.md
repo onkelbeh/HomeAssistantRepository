@@ -34,7 +34,7 @@ Some packages with missing or hidden older releases have been [cloned](https://g
 ## ESPHome
 Aside from Home Assistant this repo contains ebuilds I use with my Home Assistant, some have to be mentioned::
 
- * `ESPHome` (soon I'll throw away Tasmota...), thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, a bit complicated to get it started (mostly with DNS, it uses a weird .local architecture for mDNS, but as soon as I got my name server accepting dynmic names from DHCP, a lot of ESP devices are very easy to deploy. Its integration in Home Assistant is easy and reacts fast on state changes. I begin to love its Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors will have a unique name all over the system, and names can be changed very easily. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota.
+ * `ESPHome` (soon I'll throw away Tasmota...), thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, a bit complicated to get it started (mostly with DNS, it uses a weird .local architecture for mDNS, but as soon as I got my name server accepting dynamic names from DHCP, a lot of ESP devices are very easy to deploy. Its integration in Home Assistant is easy and reacts fast on state changes. I begin to love its Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors now have a unique name everywhere in the system, and names can be changed very easily. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota.
 
 Thanks to @evadim and @klowe0100 for improving the ebuild and helping to keep it updated.
 
@@ -77,7 +77,7 @@ $ cat /etc/locale.gen
 de_DE ISO-8859-1
 de_DE@euro UTF-8
 ```
-It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`, a lot of main repo's unstable ebuilds are needed, because some of main repo's stable versions have *no* support Python 3.7 advertised.
+It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`, a lot of main repo's unstable ebuilds are needed, because some of main repo's stable versions have *no* support for Python 3.7 advertised.
 
 Edit your `/etc/portage/make.conf` to set the new Python Targets:
 ```sh
@@ -199,15 +199,15 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 * ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy/). I formerly used it to avoid some serious design problems in Tasmota, but since I use ESPHome, these devices live only until they have to be touched for some reason, their firmware will get replaced with ESPHome.
 * Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a device has to be touched, it's firmware will be replaced with Otto Winter's ESPHome.
   * Sonoff S20
-  * Sonoff Pow R2
   * Sonoff 4ch
   * Sonoff Dual
   * Sonoff RF Bridge with remote Switches
   * Sonoff Touch
   * Sonoff Basic (Wifi not working well with EPHome or Tasmota in newer versions)
-  The Sonoff Pow will stay with Tasmota for a while, because I have no good implementation of an energy monitor in ESPHome.
+  * Sonoff Pow R2
+  The Sonoff Pow (and R2) will stay with Tasmota for a while, because I have no good implementation of Tasmota's energy summary in ESPHome.
 * Experimenting with Shelly Devices, a friend has some Shelly 1/2, bought a Pro, but this one has a Chip form TI, no ESP, so we'll have to use the original Firmware.
-* Now all of my HC-SR501 PIR Sensors are connected to two big input arrays I built into old CAT6 patch panels with an ESP12 and 4 PCF8574 I2C I/O Expanders, this makes 24 I/O lines per panel. On these runs ESPHome.
+* Now all of my HC-SR501 PIR Sensors and some of my traditional light switches are connected to two big input arrays I built into old CAT6 patch panels with an ESP12 and 4 PCF8574 I2C I/O Expanders, this makes 24 I/O lines per panel. All these panels run ESPHome.
 * Yamaha RXV (4 devices)
 * SamsungTV (partly _not_ working anymore due to Samsung's newest firmware 'improvements', at least I can read it's status for controlling lights & the shutters)
 * Some Tradfri lights
@@ -225,11 +225,11 @@ Some of my devices are still connected via Eclipse Mosquitto (https://mosquitto.
 I have **no** Google, Amazon or Apple involved in my privacy (at least in this case) and I am not planning to let them in.
 
 ## Some thoughts
-* Tried to get all Python installed system wide under Gentoo's package management and keeping `/etc/homeassistant/deps` empty or at least as small as possible, currently something randomly downgrades beautifulsoup to 4.6.3 (in deps virtualenv), still looking into that.
+* Tried to get all Python installed system wide under Gentoo's package management and keeping `/etc/homeassistant/deps` empty or at least as small as possible.
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies execpt portage are not tested.
 * Since I use Gentoo mostly on servers, I do not use systemd, the most important reason to run Gentoo is that you are NOT forced to run this incredible crap.
 * I use an own profile based on "amd64/17.1/no-multilib"
-* python-3.7.6 is set as default target, also 2.7.17-r1 is installed on my test server.
+* python-3.7.7-r1 is set as default target, also 2.7.17-r2 is installed on my test server.
 * I do no tests anymore on Python 3.6 or lower
 
 ## Licenses
