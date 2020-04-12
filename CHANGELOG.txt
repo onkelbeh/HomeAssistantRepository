@@ -18,6 +18,7 @@
   * bump shodan-1.23.0
   * bump pylutron-caseta-0.6.1
   * bump aioswitcher-1.1.1
+  * bump pyipp-0.9.1
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
