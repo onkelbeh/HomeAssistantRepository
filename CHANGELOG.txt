@@ -37,6 +37,7 @@
   * bump sendgrid-6.2.1
   * bump discord-py-1.3.3
   * bump distro-1.5.0
+  * bump beautifulsoup-4.9.0
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
