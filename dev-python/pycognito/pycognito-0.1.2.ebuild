@@ -16,7 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=">=dev-python/boto3-1.10.49[${PYTHON_USEDEP}]
+# cannot use >=dev-python/boto3-1.10.49 with 0.108.3
+RDEPEND="dev-python/boto3[${PYTHON_USEDEP}]
 		 >=dev-python/envs-1.3[${PYTHON_USEDEP}]
 		 >=dev-python/python-jose-3.1.0[${PYTHON_USEDEP}]
 		 >=dev-python/requests-2.22.0[${PYTHON_USEDEP}]"
