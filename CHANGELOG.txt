@@ -1,4 +1,4 @@
-2020-04-12 homeassistant-0.108.1
+2020-04-12 homeassistant-0.108.2
   * bump python-synology-0.5.0
   * bump fontend 20200406.0
   * bump HAP-python-2.8.1
@@ -43,6 +43,7 @@
   * bump roombapy-1.5.0
   * update homeassistant-0.108.0
   * update homeassistant-0.108.1
+  * update homeassistant-0.108.2
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
