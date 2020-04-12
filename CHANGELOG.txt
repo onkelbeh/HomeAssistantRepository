@@ -26,6 +26,7 @@
   * bump home-assistant-frontend-20200407.2
   * bump pyvizio-0.1.46
   * bump aiounifi-17
+  * bump HAP-python-2.8.2
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
