@@ -1,75 +1,67 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 PYTHON_REQ_USE="threads(+)"
 
 FORTRAN_NEEDED=lapack
 
 inherit distutils-r1 flag-o-matic fortran-2 multiprocessing toolchain-funcs
 
-DOC_PV="${PV}"
-DOC_P="${PN}-${DOC_PV}"
-
+DOC_PV="1.16.4"
 DESCRIPTION="Fast array and numerical python library"
 HOMEPAGE="https://www.numpy.org"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.zip"
+SRC_URI="
+	mirror://pypi/${PN:0:1}/${PN}/${P}.zip
+	doc? (
+		https://numpy.org/doc/$(ver_cut 1-2 ${DOC_PV})/numpy-html.zip -> numpy-html-${DOC_PV}.zip
+		https://numpy.org/doc/$(ver_cut 1-2 ${DOC_PV})/numpy-ref.pdf -> numpy-ref-${DOC_PV}.pdf
+		https://numpy.org/doc/$(ver_cut 1-2 ${DOC_PV})/numpy-user.pdf -> numpy-user-${DOC_PV}.pdf
+	)"
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
 IUSE="doc lapack test"
+RESTRICT="!test? ( test )"
 
-RDEPEND="lapack? ( virtual/cblas virtual/lapack )"
-DEPEND="${RDEPEND}
-	app-arch/unzip
+RDEPEND="
+	lapack? (
+		>=virtual/cblas-3.8
+		>=virtual/lapack-3.8
+	)"
+DEPEND="${RDEPEND}"
+BDEPEND="app-arch/unzip
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	lapack? ( virtual/pkgconfig )
-	test? ( >=dev-python/nose-1.0[${PYTHON_USEDEP}] )"
+	test? (
+		dev-python/pytest[${PYTHON_USEDEP}]
+	)"
 
 PATCHES=(
-	# "${FILESDIR}"/${PN}-1.14.5-no-hardcode-blas.patch
-	# backport a fix for py3.7 test failures
-	# "${FILESDIR}"/numpy-1.14.5-py37.patch
+	"${FILESDIR}"/${PN}-1.17.4-no-hardcode-blasv2.patch
 )
 
 src_unpack() {
 	default
 	if use doc; then
-		unzip -qo "${DISTDIR}"/${PN}-html-${DOC_PV}.zip -d html || die
+		unzip -qo "${DISTDIR}"/numpy-html-${DOC_PV}.zip -d html || die
 	fi
-}
-
-pc_incdir() {
-	$(tc-getPKG_CONFIG) --cflags-only-I $@ | \
-		sed -e 's/^-I//' -e 's/[ ]*-I/:/g' -e 's/[ ]*$//' -e 's|^:||'
-}
-
-pc_libdir() {
-	$(tc-getPKG_CONFIG) --libs-only-L $@ | \
-		sed -e 's/^-L//' -e 's/[ ]*-L/:/g' -e 's/[ ]*$//' -e 's|^:||'
-}
-
-pc_libs() {
-	$(tc-getPKG_CONFIG) --libs-only-l $@ | \
-		sed -e 's/[ ]-l*\(pthread\|m\)\([ ]\|$\)//g' \
-		-e 's/^-l//' -e 's/[ ]*-l/,/g' -e 's/[ ]*$//' \
-		| tr ',' '\n' | sort -u | tr '\n' ',' | sed -e 's|,$||'
 }
 
 python_prepare_all() {
 	if use lapack; then
-		append-ldflags "$($(tc-getPKG_CONFIG) --libs-only-other cblas lapack)"
+		local incdir="${EPREFIX}"/usr/include
 		local libdir="${EPREFIX}"/usr/$(get_libdir)
 		cat >> site.cfg <<-EOF || die
 			[blas]
-			include_dirs = $(pc_incdir cblas)
-			library_dirs = $(pc_libdir cblas blas):${libdir}
-			blas_libs = $(pc_libs cblas blas)
+			include_dirs = ${incdir}
+			library_dirs = ${libdir}
+			blas_libs = cblas,blas
 			[lapack]
-			library_dirs = $(pc_libdir lapack):${libdir}
-			lapack_libs = $(pc_libs lapack)
+			library_dirs = ${libdir}
+			lapack_libs = lapack
 		EOF
 	else
 		export {ATLAS,PTATLAS,BLAS,LAPACK,MKL}=None
@@ -99,16 +91,17 @@ python_prepare_all() {
 	# don't version f2py, we will handle it.
 	sed -i -e '/f2py_exe/s: + os\.path.*$::' numpy/f2py/setup.py || die
 
-	# we don't have f2py-3.3
-	sed \
-		-e 's:test_f2py:_&:g' \
-		-i numpy/tests/test_scripts.py || die
+	# disable fuzzed tests
+	find numpy/*/tests -name '*.py' -exec sed -i \
+		-e 's:def \(.*_fuzz\):def _\1:' {} + || die
+	# very memory- and disk-hungry
+	sed -i -e 's:test_large_zip:_&:' numpy/lib/tests/test_io.py || die
 
 	distutils-r1_python_prepare_all
 }
 
 python_compile() {
-	export MAKEOPTS=-j1 # bug #660754
+	export MAKEOPTS=-j1 #660754
 
 	local python_makeopts_jobs=""
 	python_is_python3 || python_makeopts_jobs="-j $(makeopts_jobs)"
@@ -118,18 +111,20 @@ python_compile() {
 }
 
 python_test() {
-	distutils_install_for_testing --single-version-externally-managed --record "${TMPDIR}/record.txt" ${NUMPY_FCONFIG}
+	distutils_install_for_testing --single-version-externally-managed \
+		--record "${TMPDIR}/record.txt" ${NUMPY_FCONFIG}
 
 	cd "${TMPDIR}" || die
 
-	${EPYTHON} -c "
+	"${EPYTHON}" -c "
 import numpy, sys
 r = numpy.test(label='full', verbose=3)
-sys.exit(0 if r.wasSuccessful() else 1)" || die "Tests fail with ${EPYTHON}"
+sys.exit(0 if r else 1)" || die "Tests fail with ${EPYTHON}"
 }
 
 python_install() {
 	distutils-r1_python_install ${NUMPY_FCONFIG}
+	python_optimize
 }
 
 python_install_all() {
