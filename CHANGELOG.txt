@@ -16,6 +16,7 @@
   * bump pyqvrpro-0.52
   * bump SQLAlchemy-1.3.16
   * bump shodan-1.23.0
+  * bump pylutron-caseta-0.6.1
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
