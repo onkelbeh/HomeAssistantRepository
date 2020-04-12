@@ -49,6 +49,7 @@
   * update rsa-4.0-r2, fix deps
   * add python-jose-3.1.0
   * add pycognito-0.1.2
+  * fix beta KEYWORDS
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
