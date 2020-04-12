@@ -56,6 +56,7 @@
     - python-jose needs pytest-runner in build environment
   * remove pyyaml-5.3.1 (dupe)
   * remove obsolete typing backport from newer HA versions
+  * update platformio-4.3.1
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
