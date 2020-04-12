@@ -12,6 +12,7 @@
   * bump pyipp-0.9.0
   * bump hass-nabucasa-0.33.0
   * bump hass-nabucasa-0.34.0
+  * bump home-assistant-frontend-20200407.1
 
 2020-04-05 homeassistant-0.108.0_beta3
   * add tesla-powerwall-0.1.4
