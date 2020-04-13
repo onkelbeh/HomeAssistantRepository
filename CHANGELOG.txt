@@ -4,6 +4,7 @@
   * bump keyring-21.2.0
   * bump bimmer-connected-0.7.5
   * bump lightwave-0.18
+  * bump pyintesishome-1.7.3
 
 2020-04-12 homeassistant-0.108.3
   * bump python-synology-0.5.0
