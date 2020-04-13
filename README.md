@@ -233,7 +233,7 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 * I do no tests anymore on Python 3.6 or lower
 
 ## Licenses
-The repository itself is released under GPL-3, all work on the depending components under the licenses they came from, which could be (as my grep told me on Feb 1st):
+The repository itself is released under GPL-3, all work on the depending components under the licenses they came from, which could be (as my grep told me on 12.3.2020):
 
 ```sh
 grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | sed 's;";|;' | sed 's/ //g' | xargs -L1 printf '|%s\n'
@@ -244,12 +244,12 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |2|AGPL-3|
 |1|AGPL-3+|
 |16|all-rights-reserved|
-|309|Apache-2.0|
+|338|Apache-2.0|
 |3|Apache-2.0 || BSD-2|
 |1|Apache-2.0 MIT|
 |2|Artistic-2|
 |1|Boost-1.0|
-|146|BSD|
+|142|BSD|
 |5|BSD-2|
 |5|BSD-2 Unlicense|
 |7|BSD-4|
@@ -260,18 +260,18 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |2|ECL-2.0|
 |10|EPL-1.0|
 |2|GPL-1|
-|21|GPL-2|
+|22|GPL-2|
 |5|GPL-2+|
-|132|GPL-3|
+|125|GPL-3|
 |19|GPL-3+|
 |2|ISC|
 |1|LGPL-2|
 |8|LGPL-2+|
 |14|LGPL-2.1|
 |2|LGPL-2.1+|
-|26|LGPL-3|
-|16|LGPL-3+|
-|1022|MIT|
+|28|LGPL-3|
+|15|LGPL-3+|
+|1101|MIT|
 |5|MPL-2.0|
 |1|NEWLIB|
 |12|PSF-2|
@@ -282,4 +282,4 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 
 I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
 
-Last update of this text: 1.2.2020
+Last update of this text: 12.3.2020
