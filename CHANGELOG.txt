@@ -1,3 +1,6 @@
+2020-04-13 homeassistant-0.108.3-r1
+  * bump certifi
+
 2020-04-12 homeassistant-0.108.3
   * bump python-synology-0.5.0
   * bump fontend 20200406.0
