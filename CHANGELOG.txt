@@ -8,6 +8,7 @@
   * update androidtv-0.0.40
   * bump teslajsonpy-0.7.0
   * bump simplisafe-python-9.0.7
+  * bump pyipp-0.10.1
 
 2020-04-15 homeassistant-0.108.4
   * only bump homeassistant-0.108.4
