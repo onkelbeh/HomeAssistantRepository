@@ -16,7 +16,7 @@ SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea axis bitcoin blockchain bmw_connected_drive braviatv buienradar cli ciscomobilityexpress coronavirus daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku rxv samsungtv signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unify vallox vera velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
@@ -54,6 +54,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	>=dev-python/future-0.17.1[${PYTHON_USEDEP}]
 	~dev-python/gTTS-token-1.1.3[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.32.2[${PYTHON_USEDEP}]
+	~dev-python/HAP-python-2.8.2[${PYTHON_USEDEP}]
 	>=dev-python/idna-2.8[${PYTHON_USEDEP}]
 	>=dev-python/idna-ssl-1.1.0[${PYTHON_USEDEP}]
 	>=dev-python/ifaddr-0.1.6[${PYTHON_USEDEP}]
@@ -107,7 +108,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	~dev-python/voluptuous-serialize-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}]
 	=dev-python/warrant-0.6.1-r1[${PYTHON_USEDEP}]
-	>=dev-python/websocket-client-0.54.0[${PYTHON_USEDEP}]
+	>=dev-python/websocket-client-0.56.0[${PYTHON_USEDEP}]
 	~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.25.0[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.43.0
@@ -115,7 +116,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	abode? ( ~dev-python/abodepy-0.18.1[${PYTHON_USEDEP}] )
 	adguard? ( ~dev-python/adguardhome-0.4.2[${PYTHON_USEDEP}] )
 	ambiclimate? ( ~dev-python/Ambiclimate-0.2.1[${PYTHON_USEDEP}] )
-	ambient_station? ( ~dev-python/aioambient-1.1.0[${PYTHON_USEDEP}] )
+	ambient_station? ( ~dev-python/aioambient-1.1.1[${PYTHON_USEDEP}] )
 	amcrest? ( ~dev-python/amcrest-1.7.0[${PYTHON_USEDEP}] )
 	androidtv? ( ~dev-python/androidtv-0.0.39[${PYTHON_USEDEP}]
 			~dev-python/adb-shell-0.1.1[${PYTHON_USEDEP}] )
@@ -133,8 +134,8 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	buienradar? ( ~dev-python/buienradar-1.0.4[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli[${PYTHON_USEDEP}] )
 	ciscomobilityexpress? ( ~dev-python/ciscomobilityexpress-0.3.3[${PYTHON_USEDEP}] )
-	coronavirus? ( ~dev-python/coronavirus-1.0.1[${PYTHON_USEDEP}] )
-	daikin? ( ~dev-python/pydaikin-1.6.2[${PYTHON_USEDEP}] )
+	coronavirus? ( ~dev-python/coronavirus-1.1.0[${PYTHON_USEDEP}] )
+	daikin? ( ~dev-python/pydaikin-1.6.3[${PYTHON_USEDEP}] )
 	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
 	denonavr? ( ~dev-python/denonavr-0.8.1[${PYTHON_USEDEP}] )
 	discogs? ( ~dev-python/discogs_client-2.2.2[${PYTHON_USEDEP}] )
@@ -148,7 +149,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	flume? ( ~dev-python/PyFlume-0.3.0[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-1.0.3[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( ~app-misc/home-assistant-frontend-20200403.0[${PYTHON_USEDEP}] )
+	frontend? ( ~app-misc/home-assistant-frontend-20200407.2[${PYTHON_USEDEP}] )
 	gpiozero? ( ~dev-python/gpiozero-1.5.1[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
@@ -189,7 +190,8 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	ring? ( ~dev-python/ring-doorbell-0.6.0[${PYTHON_USEDEP}] )
 	rxv? ( ~dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
-	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] )
+	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}]
+			~dev-python/samsungtvws-1.4.0[${PYTHON_USEDEP}] )
 	signal? ( ~dev-python/pysignalclirestapi-0.2.4[${PYTHON_USEDEP}] )
 	sma? ( ~dev-python/pysma-0.3.5[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
@@ -197,7 +199,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	somfy? ( ~dev-python/pymfy-0.7.1[${PYTHON_USEDEP}] )
 	sonos? ( >=dev-python/pysonos-0.0.25[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.22.0[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-9.0.5[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-9.0.6[${PYTHON_USEDEP}] )
 	speedtest? ( ~net-analyzer/speedtest-cli-2.1.2[${PYTHON_USEDEP}] )
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
@@ -218,7 +220,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	yeelight? ( ~dev-python/yeelight-0.5.1[${PYTHON_USEDEP}] )
 	youtube? ( ~dev-python/youtube_dl-2020.3.24[${PYTHON_USEDEP}] )
 	zigbee? ( ~dev-python/zigpy-deconz-0.8.0[${PYTHON_USEDEP}]
-			~dev-python/zigpy-homeassistant-0.18.1[${PYTHON_USEDEP}]
+			~dev-python/zigpy-homeassistant-0.18.2[${PYTHON_USEDEP}]
 			~dev-python/zigpy-xbee-homeassistant-0.11.0[${PYTHON_USEDEP}]
 			~dev-python/bellows-homeassistant-0.15.2[${PYTHON_USEDEP}]
 			~dev-python/zigpy-zigate-0.5.1[${PYTHON_USEDEP}]
@@ -289,6 +291,7 @@ python_install_all() {
 	fowners -R "${PN}:${PN}" "/var/log/${PN}"
 	newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
 	newinitd "${FILESDIR}/${PN}.init.d" "${PN}"
+	dobin "${FILESDIR}/hasstest"
 	if use socat ; then
 		newinitd "${FILESDIR}/socat-zwave.init.d" "socat-zwave"
 		sed -i -e 's/# need socat-zwave/need socat-zwave/g' "${D}/etc/init.d/${PN}" || die
@@ -298,7 +301,6 @@ python_install_all() {
 	fi
 	insinto /etc/logrotate.d
 	newins "${FILESDIR}/${PN}.logrotate" "${PN}"
-	dobin "${FILESDIR}/hasstest"
 	readme.gentoo_create_doc
 }
 
