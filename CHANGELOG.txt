@@ -1,3 +1,6 @@
+2020-04-15 homeassistant-0.108.4
+  * only bump homeassistant-0.108.4
+
 2020-04-13 homeassistant-0.108.3-r1
   * bump certifi
   * remove obsolete importlib-metadata
