@@ -2,6 +2,7 @@
   * bump pydaikin-1.6.3
   * update homeassistant-0.108.5
   * bump pyHik-0.2.7
+  * bump holidays-0.10.2
 
 2020-04-15 homeassistant-0.108.4
   * only bump homeassistant-0.108.4
