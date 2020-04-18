@@ -7,6 +7,7 @@
   * bump nexia-0.9.2
   * bump teslajsonpy-0.8.0
   * update zeroconf-0.25.1
+  * bump tesla-powerwall-0.2.[3-5]
 
 2020-04-16 homeassistant-0.108.5
   * bump pydaikin-1.6.3
