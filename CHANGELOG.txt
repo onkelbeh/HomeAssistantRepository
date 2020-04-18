@@ -2,6 +2,7 @@
   * add dep in bravia-tv-1.0.1
   * update broadlink-0.13.1
   * bump aiounifi-18
+  * bump pyhomematic-0.1.66
 
 2020-04-16 homeassistant-0.108.5
   * bump pydaikin-1.6.3
