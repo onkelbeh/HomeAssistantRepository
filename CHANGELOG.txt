@@ -4,6 +4,7 @@
   * bump aiounifi-18
   * bump pyhomematic-0.1.66
   * bump pyintesishome-1.7.4
+  * bump nexia-0.9.2
 
 2020-04-16 homeassistant-0.108.5
   * bump pydaikin-1.6.3
