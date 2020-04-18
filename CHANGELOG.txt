@@ -19,6 +19,7 @@
     - remove an outdated beta
   * cleanup package_constraints in mail ebuild
     - add -r1 (internal test only)
+    - removed contextvars-2.4 backport from _ALL_ versions without Python3_6 support
 
 2020-04-16 homeassistant-0.108.5
   * bump pydaikin-1.6.3

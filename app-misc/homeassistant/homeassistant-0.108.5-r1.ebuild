@@ -70,7 +70,6 @@ RDEPEND="${RDEPEND}
 	~dev-python/boto3-1.9.252[${PYTHON_USEDEP}]
 	~dev-python/caldav-0.6.1[${PYTHON_USEDEP}]
 	>=dev-python/cdu-0.1.3[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep '~dev-python/contextvars-2.4[${PYTHON_USEDEP}]' python3_6)
 	>=dev-python/chardet-3.0.4[${PYTHON_USEDEP}]
 	~dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
 	>=dev-python/coverage-4.5.2[${PYTHON_USEDEP}]
