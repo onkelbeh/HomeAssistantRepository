@@ -27,6 +27,7 @@
     <flag name="bitcoin">displays various details about the Bitcoin network</flag>
     <flag name="blockchain">displays Bitcoin wallet balances from blockchain.info</flag>
     <flag name="buienradar">use buienradar weather data</flag>
+    <flag name="cast">let me talk to Google Chromecast</flag>
     <flag name="cli">install Home Assistant Cli hass-cli (lots of modules required)</flag>
     <flag name="ciscomobilityexpress">install ciscomobilityexpress support</flag>
     <flag name="coronavirus">add sensors for COVID-19 infections from Johns Hopkins University</flag>

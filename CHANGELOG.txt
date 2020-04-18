@@ -10,6 +10,13 @@
   * bump tesla-powerwall-0.2.[3-5]
   * update python-synology-0.6.0
   * bump panasonic-viera-0.3.5
+  * fix https://github.com/onkelbeh/HomeAssistantRepository/issues/11
+    - rename PyChromecast to pychromecast due to file conflicts
+    - update metadata.xml
+    - put it into a use flag for 0.108.4 and newer
+    - pin versions as they should be
+    - remove PyChromecast-4.2.3.ebuild as it will never be used
+    - remove an outdated beta
   * cleanup package_constraints in mail ebuild
     - add -r1 (internal test only)
 

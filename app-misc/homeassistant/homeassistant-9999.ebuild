@@ -80,7 +80,6 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	~dev-python/pillow-7.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
 	>=dev-python/psutil-5.6.5[${PYTHON_USEDEP}]
-	>=dev-python/PyChromecast-4.1.1[${PYTHON_USEDEP}]
 	>=dev-python/pycparser-2.19[${PYTHON_USEDEP}]
 	|| ( >=dev-python/pycryptodome-3.7.3[${PYTHON_USEDEP}] dev-python/pycrypto[${PYTHON_USEDEP}] )
 	~dev-python/pyhaversion-3.2.0[${PYTHON_USEDEP}]
@@ -192,7 +191,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	buienradar? ( ~dev-python/buienradar-1.0.1[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.6.1[${PYTHON_USEDEP}] )
 	canary? ( ~dev-python/py-canary-0.5.0[${PYTHON_USEDEP}] )
-	cast? ( ~dev-python/PyChromecast-4.1.1[${PYTHON_USEDEP}] )
+	cast? ( ~dev-python/pychromecast-4.2.0[${PYTHON_USEDEP}] )
 	channels? ( ~dev-python/pychannels-1.0.0[${PYTHON_USEDEP}] )
 	cisco_ios? ( ~dev-python/pexpect-4.6.0[${PYTHON_USEDEP}] )
 	cisco_mobility_express? ( ~dev-python/ciscomobilityexpress-0.3.3[${PYTHON_USEDEP}] )

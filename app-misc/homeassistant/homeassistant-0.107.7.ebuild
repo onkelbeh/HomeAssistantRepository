@@ -77,7 +77,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	~dev-python/pillow-7.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
 	>=dev-python/psutil-5.6.5[${PYTHON_USEDEP}]
-	>=dev-python/PyChromecast-4.2.0[${PYTHON_USEDEP}]
+	~dev-python/pychromecast-4.2.0[${PYTHON_USEDEP}]
 	>=dev-python/pycparser-2.19[${PYTHON_USEDEP}]
 	|| ( >=dev-python/pycryptodome-3.7.3[${PYTHON_USEDEP}] dev-python/pycrypto[${PYTHON_USEDEP}] )
 	~dev-python/pyhaversion-3.2.0[${PYTHON_USEDEP}]

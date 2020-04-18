@@ -11,5 +11,8 @@
       <email>paulus@paulusschoutsen.nl</email>
       <name>Paulus Schoutsen</name>
     </maintainer>
+    <longdescription lang="en">
+      Library for Python 2 and 3 to communicate with the Google Chromecast.
+    </longdescription>
   </upstream>
 </pkgmetadata>
