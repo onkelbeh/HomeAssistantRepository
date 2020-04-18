@@ -10,6 +10,8 @@
   * bump tesla-powerwall-0.2.[3-5]
   * update python-synology-0.6.0
   * bump panasonic-viera-0.3.5
+  * cleanup package_constraints in mail ebuild
+    - add -r1 (internal test only)
 
 2020-04-16 homeassistant-0.108.5
   * bump pydaikin-1.6.3
