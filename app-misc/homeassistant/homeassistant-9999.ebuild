@@ -44,7 +44,6 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	~dev-python/beautifulsoup-4.8.2[${PYTHON_USEDEP}]
 	~dev-python/blinkpy-0.14.2[${PYTHON_USEDEP}]
 	~dev-python/boto3-1.9.252[${PYTHON_USEDEP}]
-	~dev-python/caldav-0.6.1[${PYTHON_USEDEP}]
 	>=dev-python/cdu-0.1.3[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2019.11.28[${PYTHON_USEDEP}]
 	>=dev-python/chardet-3.0.4[${PYTHON_USEDEP}]
