@@ -10,7 +10,7 @@ inherit distutils-r1 vcs-snapshot
 DESCRIPTION="YAML parser/emitter that supports roundtrip comment preservation"
 HOMEPAGE="https://pypi.org/project/ruamel.yaml/ https://bitbucket.org/ruamel/yaml"
 MY_PN="${PN//-/.}"
-SRC_URI="mirror://pypi/${P:0:1}/${MY_PN}/${MY_PN}.tar.gz -> ${P}.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${MY_PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
