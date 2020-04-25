@@ -7,6 +7,7 @@
   * bump nad_receiver-0.0.12
   * bump pyTibber-0.13.8
   * add fnvhash-0.1.0
+  * bump brother-0.1.13
 
 2020-04-16 homeassistant-0.108.6
   * add dep in bravia-tv-1.0.1
