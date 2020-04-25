@@ -4,6 +4,7 @@
   * bump python-tado-0.8.1
   * bump home-assistant-frontend-20200418.0
   * bump PlexAPI-3.4.0
+  * bump nad_receiver-0.0.12
 
 2020-04-16 homeassistant-0.108.6
   * add dep in bravia-tv-1.0.1
