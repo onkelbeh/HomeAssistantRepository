@@ -17,6 +17,7 @@
   * add mychevy-2.0.1
   * bump home-assistant-frontend-20200422.0
   * bump aioasuswrt-1.2.5
+  * add pyatag-0.2.19
 
 2020-04-16 homeassistant-0.108.6
   * add dep in bravia-tv-1.0.1
