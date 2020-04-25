@@ -2,6 +2,7 @@
   * bump androidtv-0.0.41
   * bump roombapy-1.5.1
   * bump python-tado-0.8.1
+  * bump home-assistant-frontend-20200418.0
 
 2020-04-16 homeassistant-0.108.6
   * add dep in bravia-tv-1.0.1
