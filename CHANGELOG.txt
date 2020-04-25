@@ -28,6 +28,7 @@
   * bump dynalite-devices-0.1.40
   * bump zigpy-deconz-0.8.1
   * bump av-7.0.1
+  * remove old dep from wakeonlan-1.1.6, -> -r1
 
 2020-04-16 homeassistant-0.108.6
   * add dep in bravia-tv-1.0.1
