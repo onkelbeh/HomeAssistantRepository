@@ -24,6 +24,7 @@
   * bump simplisafe-python-9.1.0, remove unused
   * bump tesla-powerwall-0.2.8
   * update python-mystrom-1.1.2
+  * bump home-assistant-frontend-20200424.0
 
 2020-04-16 homeassistant-0.108.6
   * add dep in bravia-tv-1.0.1
