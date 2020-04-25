@@ -1,4 +1,4 @@
-2020-04-25
+2020-04-25 homeassistant-0.108.7
   * bump androidtv-0.0.41
   * bump roombapy-1.5.1
   * bump python-tado-0.8.1
@@ -14,6 +14,7 @@
   * bump broadlink-0.13.2
   * bump bravia-tv-1.0.2
   * add base36-0.1.1
+  * add mychevy-2.0.1
 
 2020-04-16 homeassistant-0.108.6
   * add dep in bravia-tv-1.0.1
