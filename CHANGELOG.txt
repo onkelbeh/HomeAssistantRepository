@@ -18,6 +18,7 @@
   * bump home-assistant-frontend-20200422.0
   * bump aioasuswrt-1.2.5
   * add pyatag-0.2.19
+  * bump blinkpy-0.14.3
 
 2020-04-16 homeassistant-0.108.6
   * add dep in bravia-tv-1.0.1
