@@ -17,7 +17,10 @@ SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
-IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea axis bitcoin blockchain bmw_connected_drive braviatv buienradar +cast cli ciscomobilityexpress coronavirus daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku rxv samsungtv signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unify vallox vera velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
+IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea axis bitcoin blockchain bmw_connected_drive braviatv buienradar +caldav +cast cli ciscomobilityexpress coronavirus daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku rxv samsungtv signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unify vallox vera velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
+
+# from 2020/04 cleanup to be removed or integrated later
+IUSE="${IUSE} aws scrape blink +version systemmonitor"
 
 RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
@@ -25,41 +28,79 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	dev-db/sqlite
 	dev-libs/libfastjson
 	>=dev-libs/xerces-c-3.1.4-r1
+	mqtt? ( ~dev-python/hbmqtt-0.9.5[${PYTHON_USEDEP}]
+	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}] )"
 
-	>=app-crypt/acme-0.32.0[${PYTHON_USEDEP}]
-	~dev-python/aiobotocore-0.11.1[${PYTHON_USEDEP}]
+# Home Assistant Core
+RDEPEND="${RDEPEND}
 	~dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
-	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
-	>=dev-python/asn1crypto-0.24.0[${PYTHON_USEDEP}]
 	~dev-python/astral-1.10.1[${PYTHON_USEDEP}]
 	~dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 	~dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
-	~dev-python/beautifulsoup-4.8.2[${PYTHON_USEDEP}]
-	~dev-python/blinkpy-0.14.2[${PYTHON_USEDEP}]
-	~dev-python/boto3-1.9.252[${PYTHON_USEDEP}]
-	~dev-python/caldav-0.6.1[${PYTHON_USEDEP}]
-	>=dev-python/cdu-0.1.3[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2019.11.28[${PYTHON_USEDEP}]
-	>=dev-python/chardet-3.0.4[${PYTHON_USEDEP}]
-	~dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
-	>=dev-python/coverage-4.5.2[${PYTHON_USEDEP}]
-	~dev-python/cryptography-2.8[${PYTHON_USEDEP}]
-	>=dev-python/distro-1.4.0[${PYTHON_USEDEP}]
-	~dev-python/docopt-0.6.2[${PYTHON_USEDEP}]
-	>=dev-python/docutils-0.14[${PYTHON_USEDEP}]
-	>=dev-python/ecdsa-0.13[${PYTHON_USEDEP}]
-	>=dev-python/envs-1.3[${PYTHON_USEDEP}]
-	>=dev-python/future-0.17.1[${PYTHON_USEDEP}]
-	~dev-python/gTTS-token-1.1.3[${PYTHON_USEDEP}]
-	~dev-python/hass-nabucasa-0.32.2[${PYTHON_USEDEP}]
-	~dev-python/HAP-python-2.8.2[${PYTHON_USEDEP}]
-	>=dev-python/idna-2.8[${PYTHON_USEDEP}]
-	>=dev-python/idna-ssl-1.1.0[${PYTHON_USEDEP}]
-	>=dev-python/ifaddr-0.1.6[${PYTHON_USEDEP}]
-	>=dev-python/immutables-0.9[${PYTHON_USEDEP}]
+	~dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
 	~dev-python/importlib_metadata-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.11.1[${PYTHON_USEDEP}]
+	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
+	~dev-python/cryptography-2.8[${PYTHON_USEDEP}]
+	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
+	~dev-python/python-slugify-4.0.0[${PYTHON_USEDEP}]
+	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
+	~dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]
+	~dev-python/requests-2.23.0[${PYTHON_USEDEP}]
+	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
+	~dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
+	~dev-python/voluptuous-serialize-2.3.0[${PYTHON_USEDEP}]"
+
+# from package_constraints.txt
+RDEPEND="${RDEPEND}
+	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
+	>=dev-python/distro-1.4.0[${PYTHON_USEDEP}]
+	~dev-python/hass-nabucasa-0.32.2[${PYTHON_USEDEP}]
+	~app-misc/home-assistant-frontend-20200407.2[${PYTHON_USEDEP}]
+	>=dev-python/netdisco-2.6.0[${PYTHON_USEDEP}]
+	~dev-python/sqlalchemy-1.3.15[${PYTHON_USEDEP}]
+	~dev-python/zeroconf-0.25.0[${PYTHON_USEDEP}]
+	|| ( >=dev-python/pycryptodome-3.7.3[${PYTHON_USEDEP}] dev-python/pycrypto[${PYTHON_USEDEP}] )"
+
+# unused/not found or referred somewhere else
+#	>=app-crypt/acme-0.32.0[${PYTHON_USEDEP}]
+# >=dev-python/asn1crypto-0.24.0[${PYTHON_USEDEP}]
+# ~dev-python/boto3-1.9.252[${PYTHON_USEDEP}]
+# >=dev-python/cdu-0.1.3[${PYTHON_USEDEP}]
+# >=dev-python/chardet-3.0.4[${PYTHON_USEDEP}]
+# >=dev-python/coverage-4.5.2[${PYTHON_USEDEP}]
+# >=dev-python/ifaddr-0.1.6[${PYTHON_USEDEP}]
+# ~dev-python/docopt-0.6.2[${PYTHON_USEDEP}]
+# >=dev-python/docutils-0.14[${PYTHON_USEDEP}]
+# >=dev-python/ecdsa-0.13[${PYTHON_USEDEP}]
+# ~dev-python/warrant-0.6.1-r1[${PYTHON_USEDEP}]
+# >=dev-python/envs-1.3[${PYTHON_USEDEP}]
+# >=dev-python/future-0.17.1[${PYTHON_USEDEP}]
+# >=dev-python/pyopenssl-19.0.0[${PYTHON_USEDEP}]
+# >=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
+# >=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
+# ~dev-python/transitions-0.6.9[${PYTHON_USEDEP}]
+# >=dev-python/tzlocal-1.5.1[${PYTHON_USEDEP}]
+# >=dev-python/nose-1.3.7[${PYTHON_USEDEP}]
+# >=dev-python/six-1.12.0[${PYTHON_USEDEP}]
+# >=dev-python/idna-2.8[${PYTHON_USEDEP}]
+# >=dev-python/urllib3-1.25.3[${PYTHON_USEDEP}]
+
+# still unknown origin
+RDEPEND="${RDEPEND}
+	aws? ( ~dev-python/aiobotocore-0.11.1[${PYTHON_USEDEP}] )
+	scrape? ( ~dev-python/beautifulsoup-4.8.2[${PYTHON_USEDEP}] )
+	blink? ( ~dev-python/blinkpy-0.14.2[${PYTHON_USEDEP}] )
+	systemmonitor? ( >=dev-python/psutil-5.7.0[${PYTHON_USEDEP}] )
+	version? ( ~dev-python/pyhaversion-3.2.0[${PYTHON_USEDEP}] )
+
+	~dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
+	~dev-python/gTTS-token-1.1.3[${PYTHON_USEDEP}]
+	~dev-python/HAP-python-2.8.2[${PYTHON_USEDEP}]
+	>=dev-python/idna-ssl-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/immutables-0.9[${PYTHON_USEDEP}]
 	>=dev-python/jmespath-0.9.4[${PYTHON_USEDEP}]
 	>=dev-python/jose-1.0.0[${PYTHON_USEDEP}]
 	>=dev-python/jsonrpc-async-0.6[${PYTHON_USEDEP}]
@@ -67,50 +108,27 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	~dev-python/jsonrpc-websocket-0.6[${PYTHON_USEDEP}]
 	>=dev-python/lxml-4.3.3[${PYTHON_USEDEP}]
 	>=dev-python/multidict-4.5.2[${PYTHON_USEDEP}]
-	>=dev-python/netdisco-2.6.0[${PYTHON_USEDEP}]
-	>=dev-python/nose-1.3.7[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.18.1[${PYTHON_USEDEP}]
-	mqtt? ( ~dev-python/hbmqtt-0.9.5[${PYTHON_USEDEP}]
-		~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}] )
 	~dev-python/passlib-1.7.1[${PYTHON_USEDEP}]
 	>=dev-python/pbr-5.1.3[${PYTHON_USEDEP}]
 	~dev-python/pillow-7.0.0[${PYTHON_USEDEP}]
-	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
-	>=dev-python/psutil-5.7.0[${PYTHON_USEDEP}]
 	>=dev-python/pycparser-2.19[${PYTHON_USEDEP}]
-	|| ( >=dev-python/pycryptodome-3.7.3[${PYTHON_USEDEP}] dev-python/pycrypto[${PYTHON_USEDEP}] )
-	~dev-python/pyhaversion-3.3.0[${PYTHON_USEDEP}]
-	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
-	>=dev-python/pyopenssl-19.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pyotp-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/PyQRCode-1.2.1[${PYTHON_USEDEP}]
 	>=dev-python/pyrfc3339-1.1[${PYTHON_USEDEP}]
 	~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.8.0[${PYTHON_USEDEP}]
 	>=dev-python/python-jose-cryptodome-1.3.2[${PYTHON_USEDEP}]
-	~dev-python/python-slugify-4.0.0[${PYTHON_USEDEP}]
-	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
-	~dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]
-	~dev-python/requests-2.23.0[${PYTHON_USEDEP}]
-	>=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
 	~dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
-	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
-	>=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
-	>=dev-python/six-1.12.0[${PYTHON_USEDEP}]
-	~dev-python/transitions-0.6.9[${PYTHON_USEDEP}]
-	>=dev-python/tzlocal-1.5.1[${PYTHON_USEDEP}]
 	>=dev-python/ua-parser-0.8.0[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.25.3[${PYTHON_USEDEP}]
 	=dev-python/user-agents-2.0-r1[${PYTHON_USEDEP}]
-	~dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
-	~dev-python/voluptuous-serialize-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}]
-	=dev-python/warrant-0.6.1-r1[${PYTHON_USEDEP}]
 	>=dev-python/websocket-client-0.56.0[${PYTHON_USEDEP}]
 	~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.25.0[${PYTHON_USEDEP}]
-	>=media-libs/mutagen-1.43.0
+	>=media-libs/mutagen-1.43.0"
 
+# Module requirements from useflags
+RDEPEND="${RDEPEND}
 	abode? ( ~dev-python/abodepy-0.18.1[${PYTHON_USEDEP}] )
 	adguard? ( ~dev-python/adguardhome-0.4.2[${PYTHON_USEDEP}] )
 	ambiclimate? ( ~dev-python/Ambiclimate-0.2.1[${PYTHON_USEDEP}] )
@@ -130,6 +148,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.7.1[${PYTHON_USEDEP}] )
 	braviatv? ( ~dev-python/braviatv-1.0.1 )
 	buienradar? ( ~dev-python/buienradar-1.0.4[${PYTHON_USEDEP}] )
+	caldav? ( ~dev-python/caldav-0.6.1[${PYTHON_USEDEP}] )
 	cast? ( ~dev-python/pychromecast-4.2.0[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli[${PYTHON_USEDEP}] )
 	ciscomobilityexpress? ( ~dev-python/ciscomobilityexpress-0.3.3[${PYTHON_USEDEP}] )
@@ -148,7 +167,6 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	flume? ( ~dev-python/PyFlume-0.3.0[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-1.0.3[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( ~app-misc/home-assistant-frontend-20200407.2[${PYTHON_USEDEP}] )
 	gpiozero? ( ~dev-python/gpiozero-1.5.1[${PYTHON_USEDEP}] )
 	growl? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.1.13[${PYTHON_USEDEP}] )
@@ -185,7 +203,6 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	plugwise? ( ~dev-python/haanna-0.14.3[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
 	roku? ( ~dev-python/roku-4.1.0[${PYTHON_USEDEP}] )
-	recorder? ( ~dev-python/sqlalchemy-1.3.15[${PYTHON_USEDEP}] )
 	ring? ( ~dev-python/ring-doorbell-0.6.0[${PYTHON_USEDEP}] )
 	rxv? ( ~dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )

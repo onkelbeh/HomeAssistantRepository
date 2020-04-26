@@ -1,4 +1,4 @@
-2020-04-25 homeassistant-0.108.6
+2020-04-25 homeassistant-0.108.9
   * pin ~dev-python/zeroconf-0.25.0
   * update homeassistant-0.108.6
   * remove unused nabucasa versions
