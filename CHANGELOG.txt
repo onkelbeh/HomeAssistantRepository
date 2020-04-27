@@ -1,3 +1,6 @@
+2020-04-27
+  * esphome-9999 re-add beta flags
+
 2020-04-25 homeassistant-0.108.9
   * pin ~dev-python/zeroconf-0.25.0
   * update homeassistant-0.108.6
