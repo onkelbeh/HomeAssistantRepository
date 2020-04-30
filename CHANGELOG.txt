@@ -14,6 +14,7 @@
   * bump python-synology-0.7.3
   * bump tuyaha-0.0.6
   * bump nexia-0.9.3
+  * add numato-gpio-0.7.1
 
 2020-04-27
   * esphome-9999 re-add beta flags
