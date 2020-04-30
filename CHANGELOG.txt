@@ -12,6 +12,7 @@
   * bump nsapi-3.0.4
   * bump home-assistant-frontend-20200427.1
   * bump python-synology-0.7.3
+  * bump tuyaha-0.0.6
 
 2020-04-27
   * esphome-9999 re-add beta flags
