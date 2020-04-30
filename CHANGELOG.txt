@@ -1,6 +1,7 @@
 2020-04-30
   * fix bravia-tv-1.0.1 typo, https://github.com/onkelbeh/HomeAssistantRepository/issues/13
   * bump pysignalclirestapi-0.3.4
+  * bump pyairvisual-4.4.0
 
 2020-04-27
   * esphome-9999 re-add beta flags
