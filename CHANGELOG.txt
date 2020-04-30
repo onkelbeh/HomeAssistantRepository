@@ -7,6 +7,7 @@
   * add pysqueezebox-0.1.[2,5]
   * bump home-assistant-frontend-20200427.0
   * bump simplisafe-python-9.2.0
+  * bump arcam-fmj-0.4.4
 
 2020-04-27
   * esphome-9999 re-add beta flags
