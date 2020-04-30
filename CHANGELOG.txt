@@ -9,6 +9,7 @@
   * bump simplisafe-python-9.2.0
   * bump arcam-fmj-0.4.4
   * bump python-synology-0.7.2
+  * bump nsapi-3.0.4
 
 2020-04-27
   * esphome-9999 re-add beta flags
