@@ -4,6 +4,7 @@
   * bump pyairvisual-4.4.0
   * bump python-synology-0.7.1
   * bump pyvlx-0.2.14
+  * add pysqueezebox-0.1.[2,5]
 
 2020-04-27
   * esphome-9999 re-add beta flags
