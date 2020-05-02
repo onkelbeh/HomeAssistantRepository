@@ -1,6 +1,7 @@
 2020-05-02 homeassistant-0.109.0
   * homeassistant-0.109.0
   * small changes in virtual/mqtt
+  * add WSDiscovery-2.0.0
 
 2020-04-30
   * fix bravia-tv-1.0.1 typo, https://github.com/onkelbeh/HomeAssistantRepository/issues/13
