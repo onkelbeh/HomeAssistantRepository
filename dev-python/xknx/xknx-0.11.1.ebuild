@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="An Asynchronous Library for the KNX protocol. Documentation: http://xknx.io/"
+DESCRIPTION="An Asynchronous Library for the KNX protocol. Documentation: https://xknx.io/"
 HOMEPAGE="https://xknx.io/ https://pypi.org/project/xknx/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Receive data packets from GreenEye Monitor(http://www.brultech.com/greeneye/)"
+DESCRIPTION="Receive data packets from GreenEye Monitor(https://www.brultech.com/greeneye/)"
 HOMEPAGE="https://github.com/jkeljo/greeneye-monitor https://pypi.org/project/greeneye-monitor/"
 SRC_URI="https://github.com/jkeljo/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 

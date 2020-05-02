@@ -62,7 +62,7 @@ python_install_all() {
 	doman man/*.{1,5}
 
 	# Use INSTALL_MASK if you do not want to touch /etc/logrotate.d.
-	# See http://thread.gmane.org/gmane.linux.gentoo.devel/35675
+	# See https://thread.gmane.org/gmane.linux.gentoo.devel/35675
 	insinto /etc/logrotate.d
 	newins files/${PN}-logrotate ${PN}
 
@@ -88,7 +88,7 @@ pkg_postinst() {
 		elog "new location is under /usr/share."
 		elog
 		elog "You are upgrading from version 0.6.x, please see:"
-		elog "http://www.fail2ban.org/wiki/index.php/HOWTO_Upgrade_from_0.6_to_0.8"
+		elog "https://www.fail2ban.org/wiki/index.php/HOWTO_Upgrade_from_0.6_to_0.8"
 	fi
 
 	if ! has_version dev-python/pyinotify && ! has_version app-admin/gamin; then

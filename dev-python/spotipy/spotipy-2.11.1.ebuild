@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="A light weight Python library for the Spotify Web API"
-HOMEPAGE="http://spotipy.readthedocs.org/ https://pypi.org/project/spotipy/"
+HOMEPAGE="https://spotipy.readthedocs.org/ https://pypi.org/project/spotipy/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Convert XML documents into Python objects"
-HOMEPAGE="http://0chris.com/untangle https://pypi.org/project/untangle/"
+HOMEPAGE="https://0chris.com/untangle https://pypi.org/project/untangle/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

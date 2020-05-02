@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="JOSE implementation in Python"
-HOMEPAGE="http://github.com/mpdavis/python-jose https://pypi.org/project/python-jose/"
+HOMEPAGE="https://github.com/mpdavis/python-jose https://pypi.org/project/python-jose/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Raspberry Pi GPIO module"
-HOMEPAGE="http://abyz.me.uk/rpi/pigpio/python.html https://pypi.org/project/pigpio/"
+HOMEPAGE="https://abyz.me.uk/rpi/pigpio/python.html https://pypi.org/project/pigpio/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Unlicense"

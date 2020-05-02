@@ -9,6 +9,7 @@
   * bump hass-nabucasa-0.34.2
   * homeassistant-0.109.1
   * update homeassistant-0.109.2
+  * lots of small repoman cleanups
 
 2020-04-30
   * fix bravia-tv-1.0.1 typo, https://github.com/onkelbeh/HomeAssistantRepository/issues/13
