@@ -4,6 +4,7 @@
   * add WSDiscovery-2.0.0
   * bump pymelcloud-2.5.2
   * add pulsectl-20.4.3
+  * update HAP-python-2.8.3
 
 2020-04-30
   * fix bravia-tv-1.0.1 typo, https://github.com/onkelbeh/HomeAssistantRepository/issues/13
