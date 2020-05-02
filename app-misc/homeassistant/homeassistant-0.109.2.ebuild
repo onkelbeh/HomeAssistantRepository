@@ -17,10 +17,10 @@ SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
-IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea axis bitcoin blockchain bmw_connected_drive braviatv buienradar +caldav +cast cli ciscomobilityexpress coronavirus daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku rxv samsungtv +scrape signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unify vallox vera velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
+IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea aws axis bitcoin blockchain blink bmw_connected_drive braviatv buienradar +caldav +cast cli ciscomobilityexpress coronavirus daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku rxv samsungtv +scrape signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl systemmonitor test tradfri ubee unify vallox vera +version velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
 # from 2020/04 cleanup to be removed or integrated later
-IUSE="${IUSE} aws scrape blink +version systemmonitor"
+# IUSE="${IUSE} x"
 
 RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
@@ -62,38 +62,8 @@ RDEPEND="${RDEPEND}
 	~dev-python/zeroconf-0.25.1[${PYTHON_USEDEP}]
 	|| ( >=dev-python/pycryptodome-3.7.3[${PYTHON_USEDEP}] dev-python/pycrypto[${PYTHON_USEDEP}] )"
 
-# unused/not found or referred somewhere else
-#	>=app-crypt/acme-0.32.0[${PYTHON_USEDEP}]
-# >=dev-python/asn1crypto-0.24.0[${PYTHON_USEDEP}]
-# ~dev-python/boto3-1.9.252[${PYTHON_USEDEP}]
-# >=dev-python/cdu-0.1.3[${PYTHON_USEDEP}]
-# >=dev-python/chardet-3.0.4[${PYTHON_USEDEP}]
-# >=dev-python/coverage-4.5.2[${PYTHON_USEDEP}]
-# >=dev-python/ifaddr-0.1.6[${PYTHON_USEDEP}]
-# ~dev-python/docopt-0.6.2[${PYTHON_USEDEP}]
-# >=dev-python/docutils-0.14[${PYTHON_USEDEP}]
-# >=dev-python/ecdsa-0.13[${PYTHON_USEDEP}]
-# ~dev-python/warrant-0.6.1-r1[${PYTHON_USEDEP}]
-# >=dev-python/envs-1.3[${PYTHON_USEDEP}]
-# >=dev-python/future-0.17.1[${PYTHON_USEDEP}]
-# >=dev-python/pyopenssl-19.0.0[${PYTHON_USEDEP}]
-# >=dev-python/requests-toolbelt-0.9.1[${PYTHON_USEDEP}]
-# >=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
-# ~dev-python/transitions-0.6.9[${PYTHON_USEDEP}]
-# >=dev-python/tzlocal-1.5.1[${PYTHON_USEDEP}]
-# >=dev-python/nose-1.3.7[${PYTHON_USEDEP}]
-# >=dev-python/six-1.12.0[${PYTHON_USEDEP}]
-# >=dev-python/idna-2.8[${PYTHON_USEDEP}]
-# >=dev-python/urllib3-1.25.3[${PYTHON_USEDEP}]
-
 # still unknown origin
 RDEPEND="${RDEPEND}
-	aws? ( ~dev-python/aiobotocore-0.11.1[${PYTHON_USEDEP}] )
-	scrape? ( ~dev-python/beautifulsoup-4.9.0[${PYTHON_USEDEP}] )
-	blink? ( ~dev-python/blinkpy-0.14.3[${PYTHON_USEDEP}] )
-	systemmonitor? ( >=dev-python/psutil-5.7.0[${PYTHON_USEDEP}] )
-	version? ( ~dev-python/pyhaversion-3.2.0[${PYTHON_USEDEP}] )
-
 	~dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
 	~dev-python/gTTS-token-1.1.3[${PYTHON_USEDEP}]
 	~dev-python/HAP-python-2.8.2[${PYTHON_USEDEP}]
@@ -140,8 +110,10 @@ RDEPEND="${RDEPEND}
 	atv? ( >=dev-python/pyatv-0.3.13[${PYTHON_USEDEP}] )
 	aurora? ( ~dev-python/aurorapy-0.2.6[${PYTHON_USEDEP}] )
 	avea? ( ~dev-python/avea-1.4[${PYTHON_USEDEP}] )
+	aws? ( ~dev-python/aiobotocore-0.11.1[${PYTHON_USEDEP}] )
 	axis? ( ~dev-python/axis-25[${PYTHON_USEDEP}] )
 	bitcoin? ( ~dev-python/blockchain-1.4.4[${PYTHON_USEDEP}] )
+	blink? ( ~dev-python/blinkpy-0.14.3[${PYTHON_USEDEP}] )
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
 	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.7.5[${PYTHON_USEDEP}] )
 	braviatv? ( ~dev-python/braviatv-1.0.2 )
@@ -219,11 +191,13 @@ RDEPEND="${RDEPEND}
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
 			net-proxy/haproxy )
+	systemmonitor? ( >=dev-python/psutil-5.7.0[${PYTHON_USEDEP}] )
 	tradfri? ( >=dev-python/pytradfri-6.4.0[${PYTHON_USEDEP}] )
 	ubee? ( ~dev-python/pyubee-0.10[${PYTHON_USEDEP}] )
 	unify? ( ~dev-python/aiounify-18[${PYTHON_USEDEP}] )
 	vallox? ( ~dev-python/vallox-websocket-api-2.4.0[${PYTHON_USEDEP}] )
 	vera? ( ~dev-python/pyvera-0.3.7[${PYTHON_USEDEP}] )
+	version? ( ~dev-python/pyhaversion-3.2.0[${PYTHON_USEDEP}] )
 	velbus? ( ~dev-python/python-velbus-2.0.43[${PYTHON_USEDEP}] )
 	webostv? ( ~dev-python/aiopylgtv-0.3.3[${PYTHON_USEDEP}] )
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
