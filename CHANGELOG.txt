@@ -6,6 +6,7 @@
   * add pulsectl-20.4.3
   * update HAP-python-2.8.3
   * bump python-synology-0.7.4
+  * bump hass-nabucasa-0.34.2
 
 2020-04-30
   * fix bravia-tv-1.0.1 typo, https://github.com/onkelbeh/HomeAssistantRepository/issues/13
