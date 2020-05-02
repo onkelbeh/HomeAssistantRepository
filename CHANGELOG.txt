@@ -2,6 +2,7 @@
   * homeassistant-0.109.0
   * small changes in virtual/mqtt
   * add WSDiscovery-2.0.0
+  * bump pymelcloud-2.5.2
 
 2020-04-30
   * fix bravia-tv-1.0.1 typo, https://github.com/onkelbeh/HomeAssistantRepository/issues/13
