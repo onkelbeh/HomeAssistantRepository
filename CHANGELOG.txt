@@ -4,6 +4,7 @@
   * bump python-synology-0.8.0
   * bump bravia_tv-1.0.3
   * bump youtube_dl-2020.5.3
+  * bump home-assistant-frontend-20200427.2
 
 2020-05-02 homeassistant-0.109.2
   * homeassistant-0.109.0
