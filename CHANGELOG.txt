@@ -7,6 +7,7 @@
   * bump home-assistant-frontend-20200427.2
   * bump aiounifi-20
   * update requests-mock-1.8.0, remove dupe
+  * add python-openzwave-mqtt-1.0.1
 
 2020-05-02 homeassistant-0.109.2
   * homeassistant-0.109.0
