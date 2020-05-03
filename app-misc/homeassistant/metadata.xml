@@ -28,6 +28,7 @@
     <flag name="bitcoin">displays various details about the Bitcoin network</flag>
     <flag name="blockchain">displays Bitcoin wallet balances from blockchain.info</flag>
     <flag name="blink">events from Blink camera and security systems</flag>
+    <flag name="bravia-tv">Control almost all Sony Bravia TV 2013 and newer.</flag>
     <flag name="buienradar">use buienradar weather data</flag>
     <flag name="caldav">integrate a CalDAV (RFC4791) calendar</flag>
     <flag name="cast">let me talk to Google Chromecast</flag>

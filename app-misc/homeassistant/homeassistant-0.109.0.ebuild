@@ -17,7 +17,7 @@ SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
-IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea axis bitcoin blockchain bmw_connected_drive braviatv buienradar +caldav +cast cli ciscomobilityexpress coronavirus daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku rxv samsungtv +scrape signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unifi vallox vera velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
+IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea axis bitcoin blockchain bmw_connected_drive bravia-tv buienradar +caldav +cast cli ciscomobilityexpress coronavirus daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku rxv samsungtv +scrape signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unifi vallox vera velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
 # from 2020/04 cleanup to be removed or integrated later
 IUSE="${IUSE} aws scrape blink +version systemmonitor"
@@ -144,7 +144,8 @@ RDEPEND="${RDEPEND}
 	bitcoin? ( ~dev-python/blockchain-1.4.4[${PYTHON_USEDEP}] )
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
 	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.7.5[${PYTHON_USEDEP}] )
-	braviatv? ( ~dev-python/braviatv-1.0.2 )
+	bravia-tv? ( ~dev-python/bravia-tv-1.0.2[${PYTHON_USEDEP}]
+		~dev-python/getmac-0.8.1[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.4[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.6.1[${PYTHON_USEDEP}] )
 	cast? ( ~dev-python/pychromecast-5.0.0[${PYTHON_USEDEP}] )
