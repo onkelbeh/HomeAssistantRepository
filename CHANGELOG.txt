@@ -14,6 +14,7 @@
   * remove old frontend useflag
   * add missing roomba useflag
   * add missing synologydsm useflag
+  * add korean-lunar-calendar-0.2.1 (needed for workday binary_sensor)
 
 2020-05-02 homeassistant-0.109.2
   * homeassistant-0.109.0
