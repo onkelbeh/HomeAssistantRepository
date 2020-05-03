@@ -1,3 +1,6 @@
+2020-05-03 homeassistant-0.109.2
+  * adopting semantic versioning in hass-nabucasa
+
 2020-05-02 homeassistant-0.109.2
   * homeassistant-0.109.0
   * small changes in virtual/mqtt
