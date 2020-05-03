@@ -18,7 +18,7 @@ IUSE="test"
 
 RDEPEND="~dev-python/warrant-0.6.1[${PYTHON_USEDEP}]
 		 ~dev-python/snitun-0.20[${PYTHON_USEDEP}]
-		 ~app-crypt/acme-1.0.0
+		 ~app-crypt/acme-0.40.1
 		 >=dev-python/cryptography-2.5[${PYTHON_USEDEP}]
 		 >=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
 		 dev-python/pytz[${PYTHON_USEDEP}]
