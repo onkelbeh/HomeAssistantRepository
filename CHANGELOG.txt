@@ -1,6 +1,7 @@
 2020-05-03 homeassistant-0.109.2
   * adopting semantic versioning in hass-nabucasa
   * bump roombapy-1.5.2
+  * bump python-synology-0.8.0
 
 2020-05-02 homeassistant-0.109.2
   * homeassistant-0.109.0
