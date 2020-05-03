@@ -49,7 +49,7 @@
     <flag name="flume">monitors the real-time status of your home water meter</flag>
     <flag name="flunearyou">allows users in the US to get information from Flu Near You</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
-    <flag name="frontend">keep Home Assistant frontend out of virtualenv</flag>
+    <flag name="frontend">(obsolete frontend useflag, until 0.108.5)</flag>
     <flag name="gpiozero">interface to GPIO devices on a Raspberry Pi</flag>
     <flag name="growl">add Growl Notification Transport Protocol</flag>
     <flag name="harmony">Logitech Harmony support</flag>
