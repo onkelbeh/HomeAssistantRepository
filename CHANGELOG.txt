@@ -1,4 +1,4 @@
-2020-05-03 homeassistant-0.109.2
+2020-05-03 homeassistant-0.109.3
   * adopting semantic versioning in hass-nabucasa
   * bump roombapy-1.5.2
   * bump python-synology-0.8.0
@@ -10,6 +10,7 @@
   * add python-openzwave-mqtt-1.0.1
   * rename unifi component (very old typo)
   * rename bravia-tv component
+  * update homeassistant-0.109.3, remove oldies
 
 2020-05-02 homeassistant-0.109.2
   * homeassistant-0.109.0

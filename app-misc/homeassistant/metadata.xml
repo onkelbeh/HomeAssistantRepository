@@ -82,6 +82,7 @@
     <flag name="recorder">storing details in a database per sqlalchemy</flag>
     <flag name="ring">integrate your ring.com devices</flag>
     <flag name="roku">add support for Roku players</flag>
+    <flag name="roomba">control a iRobot Roomba vacuum or iRobot Braava m-series mop</flag>
     <flag name="rxv">Library for Yamaha RX-* Receivers</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
     <flag name="signal">add Support for Moxie's Signal API</flag>
@@ -94,6 +95,7 @@
     <flag name="simplisafe">integrates SimpliSafe home security (V2 and V3) systems</flag>
     <flag name="speedtest">spedtest.net support</flag>
     <flag name="ssl">include support for haproxy</flag>
+    <flag name="synologydsm">monitor getting various statistics from your Synology NAS</flag>
     <flag name="systemmonitor">monitor your platform</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>

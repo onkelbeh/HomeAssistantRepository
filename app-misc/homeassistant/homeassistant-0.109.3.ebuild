@@ -55,8 +55,8 @@ RDEPEND="${RDEPEND}
 RDEPEND="${RDEPEND}
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	>=dev-python/distro-1.5.0[${PYTHON_USEDEP}]
-	~dev-python/hass-nabucasa-0.34.1[${PYTHON_USEDEP}]
-	~app-misc/home-assistant-frontend-20200427.1[${PYTHON_USEDEP}]
+	~dev-python/hass-nabucasa-0.34.2[${PYTHON_USEDEP}]
+	~app-misc/home-assistant-frontend-20200427.2[${PYTHON_USEDEP}]
 	>=dev-python/netdisco-2.6.0[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-1.3.16[${PYTHON_USEDEP}]
 	~dev-python/zeroconf-0.25.1[${PYTHON_USEDEP}]
@@ -174,6 +174,7 @@ RDEPEND="${RDEPEND}
 	plugwise? ( ~dev-python/haanna-0.14.3[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
 	roku? ( ~dev-python/roku-4.1.0[${PYTHON_USEDEP}] )
+	roomba? ( ~dev-python/roombapy-1.5.2[${PYTHON_USEDEP}] )
 	ring? ( ~dev-python/ring-doorbell-0.6.0[${PYTHON_USEDEP}] )
 	rxv? ( ~dev-python/rxv-0.6.0[${PYTHON_USEDEP}]
 			~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}] )
@@ -192,6 +193,7 @@ RDEPEND="${RDEPEND}
 	ssl? ( 	dev-libs/openssl:0
 			app-crypt/certbot
 			net-proxy/haproxy )
+	synologydsm? ( ~dev-python/python-synology-0.8.0[${PYTHON_USEDEP}] )
 	systemmonitor? ( >=dev-python/psutil-5.7.0[${PYTHON_USEDEP}] )
 	tradfri? ( >=dev-python/pytradfri-6.4.0[${PYTHON_USEDEP}] )
 	ubee? ( ~dev-python/pyubee-0.10[${PYTHON_USEDEP}] )
