@@ -64,7 +64,9 @@ RDEPEND="${RDEPEND}
 
 # still unknown origin
 RDEPEND="${RDEPEND}
+	~dev-python/base36-0.1.1[${PYTHON_USEDEP}]
 	~dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
+	~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}]
 	~dev-python/gTTS-token-1.1.3[${PYTHON_USEDEP}]
 	~dev-python/HAP-python-2.8.2[${PYTHON_USEDEP}]
 	>=dev-python/idna-ssl-1.1.0[${PYTHON_USEDEP}]
