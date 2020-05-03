@@ -97,7 +97,7 @@
     <flag name="test">internal and developer use</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
     <flag name="ubee">getting stats from Ubee routers</flag>
-    <flag name="unify">talk with a Ubiquiti Unify Controller</flag>
+    <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="vera">add support for Vera Z-Wave Controller</flag>
     <flag name="version">display the current Home Assistant versions</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>

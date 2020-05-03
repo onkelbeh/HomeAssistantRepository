@@ -17,7 +17,7 @@ SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
-IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea axis bitcoin blockchain bmw_connected_drive braviatv buienradar cli ciscomobilityexpress coronavirus daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku rxv samsungtv signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unify vallox vera velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
+IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea axis bitcoin blockchain bmw_connected_drive braviatv buienradar cli ciscomobilityexpress coronavirus daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku rxv samsungtv signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unifi vallox vera velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
@@ -203,7 +203,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 			net-proxy/haproxy )
 	tradfri? ( >=dev-python/pytradfri-6.4.0[${PYTHON_USEDEP}] )
 	ubee? ( ~dev-python/pyubee-0.10[${PYTHON_USEDEP}] )
-	unify? ( ~dev-python/aiounify-15[${PYTHON_USEDEP}] )
+	unifi? ( ~dev-python/aiounifi-15[${PYTHON_USEDEP}] )
 	vallox? ( ~dev-python/vallox-websocket-api-2.4.0[${PYTHON_USEDEP}] )
 	vera? ( ~dev-python/pyvera-0.3.7[${PYTHON_USEDEP}] )
 	velbus? ( ~dev-python/python-velbus-2.0.43[${PYTHON_USEDEP}] )

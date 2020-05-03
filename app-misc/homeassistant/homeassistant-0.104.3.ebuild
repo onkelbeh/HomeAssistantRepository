@@ -17,7 +17,7 @@ SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="abode ambiclimate ambient_station androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik +mqtt musiccast +mysql openwrt plex qnap +recorder ring roku rxv samsungtv signal sma socat somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unify vera webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
+IUSE="abode ambiclimate ambient_station androidtv asuswrt atmo atv aurora avea axis bitcoin blockchain buienradar cli ciscomobilityexpress daikin darksky denonavr discogs emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius +frontend gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue incomfort influxdb maxcube maxcube_hack miio mikrotik +mqtt musiccast +mysql openwrt plex qnap +recorder ring roku rxv samsungtv signal sma socat somfy sonos shodan simplisafe speedtest +ssl test tradfri ubee unifi vera webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
 RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
@@ -190,7 +190,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 			net-proxy/haproxy )
 	tradfri? ( >=dev-python/pytradfri-6.4.0[${PYTHON_USEDEP}] )
 	ubee? ( ~dev-python/pyubee-0.7[${PYTHON_USEDEP}] )
-	unify? ( ~dev-python/aiounify-11[${PYTHON_USEDEP}] )
+	unifi? ( ~dev-python/aiounifi-11[${PYTHON_USEDEP}] )
 	vera? ( ~dev-python/pyvera-0.3.7[${PYTHON_USEDEP}] )
 	webostv? ( ~dev-python/aiopylgtv-0.2.7[${PYTHON_USEDEP}] )
 	wemo? ( >=dev-python/pywemo-0.4.34[${PYTHON_USEDEP}] )
