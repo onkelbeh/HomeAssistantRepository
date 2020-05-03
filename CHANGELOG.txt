@@ -13,6 +13,7 @@
   * update homeassistant-0.109.3, remove oldies
   * remove old frontend useflag
   * add missing roomba useflag
+  * add missing synologydsm useflag
 
 2020-05-02 homeassistant-0.109.2
   * homeassistant-0.109.0
