@@ -12,6 +12,7 @@
   * update roombapy-1.5.3
   * bump pytz-2020.1
   * bump pysqueezebox-0.1.4
+  * bump pysonos-0.0.28
 
 2020-05-03 homeassistant-0.109.3
   * adopting semantic versioning in hass-nabucasa
