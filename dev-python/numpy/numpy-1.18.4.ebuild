@@ -1,12 +1,14 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=7
 
 PYTHON_COMPAT=( python3_{6,7,8} )
 PYTHON_REQ_USE="threads(+)"
 
 FORTRAN_NEEDED=lapack
+
+DISTUTILS_USE_SETUPTOOLS=rdepend
 
 inherit distutils-r1 flag-o-matic fortran-2 multiprocessing toolchain-funcs
 
@@ -22,26 +24,32 @@ SRC_URI="
 	)"
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
-IUSE="doc lapack test"
-RESTRICT="!test? ( test )"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
+IUSE="doc lapack"
 
 RDEPEND="
 	lapack? (
-		virtual/cblas
-		virtual/lapack
-	)"
-DEPEND="${RDEPEND}"
-BDEPEND="app-arch/unzip
-	dev-python/setuptools[${PYTHON_USEDEP}]
+		>=virtual/cblas-3.8
+		>=virtual/lapack-3.8
+	)
+"
+BDEPEND="
+	${RDEPEND}
+	app-arch/unzip
+	>=dev-python/cython-0.29.15[${PYTHON_USEDEP}]
 	lapack? ( virtual/pkgconfig )
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+		>=dev-python/hypothesis-5.8.0[${PYTHON_USEDEP}]
+		>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
+		>=dev-python/cffi-1.14.0[${PYTHON_USEDEP}]
+	)
+"
 
-#PATCHES=(
-#	"${FILESDIR}"/${PN}-1.15.4-no-hardcode-blas.patch
-#)
+PATCHES=(
+	"${FILESDIR}"/${PN}-1.17.4-no-hardcode-blasv2.patch
+)
+
+distutils_enable_tests pytest
 
 src_unpack() {
 	default
@@ -50,36 +58,18 @@ src_unpack() {
 	fi
 }
 
-pc_incdir() {
-	$(tc-getPKG_CONFIG) --cflags-only-I $@ | \
-		sed -e 's/^-I//' -e 's/[ ]*-I/:/g' -e 's/[ ]*$//' -e 's|^:||'
-}
-
-pc_libdir() {
-	$(tc-getPKG_CONFIG) --libs-only-L $@ | \
-		sed -e 's/^-L//' -e 's/[ ]*-L/:/g' -e 's/[ ]*$//' -e 's|^:||'
-}
-
-pc_libs() {
-	$(tc-getPKG_CONFIG) --libs-only-l $@ | \
-		sed -e 's/[ ]-l*\(pthread\|m\)\([ ]\|$\)//g' \
-		-e 's/^-l//' -e 's/[ ]*-l/,/g' -e 's/[ ]*$//' \
-		| tr ',' '\n' | sort -u | tr '\n' ',' | sed -e 's|,$||'
-}
-
 python_prepare_all() {
 	if use lapack; then
-		append-ldflags "$($(tc-getPKG_CONFIG) --libs-only-other cblas lapack)"
 		local incdir="${EPREFIX}"/usr/include
 		local libdir="${EPREFIX}"/usr/$(get_libdir)
 		cat >> site.cfg <<-EOF || die
 			[blas]
-			include_dirs = $(pc_incdir cblas):${incdir}
-			library_dirs = $(pc_libdir cblas blas):${libdir}
-			blas_libs = $(pc_libs cblas blas)
+			include_dirs = ${incdir}
+			library_dirs = ${libdir}
+			blas_libs = cblas,blas
 			[lapack]
-			library_dirs = $(pc_libdir lapack):${libdir}
-			lapack_libs = $(pc_libs lapack)
+			library_dirs = ${libdir}
+			lapack_libs = lapack
 		EOF
 	else
 		export {ATLAS,PTATLAS,BLAS,LAPACK,MKL}=None
@@ -89,7 +79,7 @@ python_prepare_all() {
 
 	append-flags -fno-strict-aliasing
 
-	# See progress in https://projects.scipy.org/scipy/numpy/ticket/573
+	# See progress in http://projects.scipy.org/scipy/numpy/ticket/573
 	# with the subtle difference that we don't want to break Darwin where
 	# -shared is not a valid linker argument
 	if [[ ${CHOST} != *-darwin* ]]; then
@@ -121,11 +111,7 @@ python_prepare_all() {
 python_compile() {
 	export MAKEOPTS=-j1 #660754
 
-	local python_makeopts_jobs=""
-	python_is_python3 || python_makeopts_jobs="-j $(makeopts_jobs)"
-	distutils-r1_python_compile \
-		${python_makeopts_jobs} \
-		${NUMPY_FCONFIG}
+	distutils-r1_python_compile ${NUMPY_FCONFIG}
 }
 
 python_test() {
@@ -141,11 +127,14 @@ sys.exit(0 if r else 1)" || die "Tests fail with ${EPYTHON}"
 }
 
 python_install() {
+	# https://github.com/numpy/numpy/issues/16005
+	local mydistutilsargs=( build_src )
 	distutils-r1_python_install ${NUMPY_FCONFIG}
+	python_optimize
 }
 
 python_install_all() {
-	local DOCS=( THANKS.txt )
+	local DOCS=( LICENSE.txt README.md THANKS.txt )
 
 	if use doc; then
 		local HTML_DOCS=( "${WORKDIR}"/html/. )
