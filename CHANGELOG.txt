@@ -22,6 +22,7 @@
   * update pydaikin-2.0.0
   * bump zeroconf-0.26.1
   * bump python-songpal-0.12
+  * bump aiounifi-21
 
 2020-05-03 homeassistant-0.109.3
   * adopting semantic versioning in hass-nabucasa
