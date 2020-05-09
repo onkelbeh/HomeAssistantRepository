@@ -16,6 +16,7 @@
   * bump pyserial-3.4
   * add homeconnect-0.5
   * add blebox-uniapi-1.3.2
+  * bump home-assistant-frontend-20200505.0
 
 2020-05-03 homeassistant-0.109.3
   * adopting semantic versioning in hass-nabucasa
