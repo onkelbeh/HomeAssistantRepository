@@ -19,6 +19,7 @@
   * bump home-assistant-frontend-20200505.0
   * add zigpy-0.20.1
   * add bellows-0.16.1
+  * update pydaikin-2.0.0
 
 2020-05-03 homeassistant-0.109.3
   * adopting semantic versioning in hass-nabucasa
