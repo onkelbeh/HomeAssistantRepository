@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">devolo-home-control-api</remote-id>
+    <maintainer status="unknown">
+      <email>m.bong@famabo.de, guido.schmitz@fedaix.de</email>
+      <name>Markus Bong, Guido Schmitz</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
