@@ -4,6 +4,7 @@
   * update pyTibber-0.14.0
   * bump graphql-subscription-manager-0.3.5
   * bump spotipy-2.12.0
+  * update pyicloud-0.9.7
 
 2020-05-03 homeassistant-0.109.3
   * adopting semantic versioning in hass-nabucasa
