@@ -37,6 +37,7 @@
   * bump zigpy-deconz-0.9.2
   * add rokuecp-0.2.2
   * bump bravia-tv-1.0.4
+  * add rokuecp-0.2.0, rokuecp-0.2.1
 
 2020-05-03 homeassistant-0.109.3
   * adopting semantic versioning in hass-nabucasa
