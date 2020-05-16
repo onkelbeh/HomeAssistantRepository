@@ -18,6 +18,7 @@
   * bump aioswitcher-1.2.0
   * bump zigpy-0.20.3
   * bump upb-lib-0.4.11
+  * bump pyatag-0.3.1.1
 
 2020-05-09 homeassistant-0.109.6
   * aiohttp-cors-0.7.0-r1 from main repo is now OK again
