@@ -18,6 +18,8 @@
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="ambiclimate">communicate with Ambiclimate</flag>
     <flag name="ambient_station">retrieves local weather information from Ambient Weather</flag>
+    <flag name="amcrest">integrate your Amcrest or Dahua IP camera</flag>
+    <flag name="apprise">just about every Notification platform</flag>
     <flag name="asuswrt">Api wrapper for Asuswrt</flag>
     <flag name="atmo">Access to Netatmo weather station data</flag>
     <flag name="atv">Library for controlling an Apple TV</flag>
@@ -28,6 +30,7 @@
     <flag name="bitcoin">displays various details about the Bitcoin network</flag>
     <flag name="blockchain">displays Bitcoin wallet balances from blockchain.info</flag>
     <flag name="blink">events from Blink camera and security systems</flag>
+    <flag name="bmw_connected_drive">retrieve data from the BMW Connected Drive</flag>
     <flag name="bravia-tv">Control almost all Sony Bravia TV 2013 and newer.</flag>
     <flag name="buienradar">use buienradar weather data</flag>
     <flag name="caldav">integrate a CalDAV (RFC4791) calendar</flag>
@@ -66,6 +69,9 @@
     <flag name="icloud">iCloud allows users to track their location on iOS devices.</flag>
     <flag name="incomfort">client for Intergas InComfort/InTouch Lan2RF systems</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
+    <flag name="ipma">ipma weather platform</flag>a
+    <flag name="jewish_calendar">jewish_calendar</flag>
+    <flag name="kef">KEF wireless speakers</flag>a
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="maxcube_hack">apply Patch for https://github.com/home-assistant/home-assistant/issues/28811</flag>
     <flag name="miio">add support for Xiaomi smart appliances</flag>
@@ -104,6 +110,8 @@
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
     <flag name="ubee">getting stats from Ubee routers</flag>
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
+    <flag name="vallox">control any Vallox ventilation unit</flag>
+    <flag name="velbus">supports the Velbus USB, serial and TCP/IP gateway</flag>
     <flag name="vera">add support for Vera Z-Wave Controller</flag>
     <flag name="version">display the current Home Assistant versions</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>

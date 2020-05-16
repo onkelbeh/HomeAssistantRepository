@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Python Interface for forked-daapd"
-HOMEPAGE="http://github.com/uvjustin/pyforked-daapd/ https://pypi.org/project/pyforked-daapd/"
+HOMEPAGE="https://github.com/uvjustin/pyforked-daapd/ https://pypi.org/project/pyforked-daapd/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

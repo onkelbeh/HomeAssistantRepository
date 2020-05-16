@@ -46,7 +46,8 @@
   * add (missed) pyforked-daapd-0.1.8
   * update homeassistant-0.110.0_beta2
   * update homeassistant-0.110.0_beta3
-  * remove obsolete Python 3.6 patrs from README.md
+  * remove obsolete Python 3.6 parts from README.md
+  * RepoMan complaints corrected
 
 2020-05-09 homeassistant-0.109.6
   * aiohttp-cors-0.7.0-r1 from main repo is now OK again

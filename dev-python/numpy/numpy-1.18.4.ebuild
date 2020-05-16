@@ -79,7 +79,7 @@ python_prepare_all() {
 
 	append-flags -fno-strict-aliasing
 
-	# See progress in http://projects.scipy.org/scipy/numpy/ticket/573
+	# See progress in https://projects.scipy.org/scipy/numpy/ticket/573
 	# with the subtle difference that we don't want to break Darwin where
 	# -shared is not a valid linker argument
 	if [[ ${CHOST} != *-darwin* ]]; then

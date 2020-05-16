@@ -9,7 +9,7 @@
     <remote-id type="pypi">python-digitalocean</remote-id>
     <maintainer status="unknown">
       <email>lorenzo@setale.me</email>
-      <name>Lorenzo Setale ( http://who.is.lorenzo.setale.me/? )</name>
+      <name>Lorenzo Setale</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">keyrings.alt</remote-id>
-    <doc>http://pythonhosted.org/keyrings.alt/</doc>
+    <doc>https://pythonhosted.org/keyrings.alt/</doc>
     <maintainer status="unknown">
       <email>jaraco@jaraco.com</email>
       <name>Jason R. Coombs</name>

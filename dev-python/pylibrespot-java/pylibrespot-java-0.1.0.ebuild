@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Python Interface for librespot-java"
-HOMEPAGE="http://github.com/uvjustin/pylibrespot-java/ https://pypi.org/project/pylibrespot-java/"
+HOMEPAGE="https://github.com/uvjustin/pylibrespot-java/ https://pypi.org/project/pylibrespot-java/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE=""
