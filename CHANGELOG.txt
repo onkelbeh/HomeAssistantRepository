@@ -2,6 +2,7 @@
   * bump rokuecp-0.2.3
   * bump home-assistant-frontend-20200509.0
   * bump rokuecp-0.3.2
+  * add PyFlick-0.0.2
 
 2020-05-09 homeassistant-0.109.6
   * aiohttp-cors-0.7.0-r1 from main repo is now OK again
