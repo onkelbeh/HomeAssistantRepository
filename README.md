@@ -7,12 +7,12 @@ https://github.com/home-assistant/home-assistant
 
 "Open source home automation that puts local control and privacy first."
 
-## Python 3.7
-You will need Python 3.7 for running Home assistant on Gentoo Linux. Home Assistant has dropped support for Python 3.6 since ~0.103.0:
-- https://github.com/home-assistant/home-assistant/pull/27680
-- https://github.com/home-assistant/architecture/blob/master/adr/0002-minimum-supported-python-version.md
+Please report an issue [here](https://github.com/onkelbeh/HomeAssistantRepository/issues) or my [private git server](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues) if you encounter any problems.
 
-Many of the modules/components/libraries do **not** have compatibility for Python 3.7 advertised, and many of the components have **not** been tested here, but all compile without errors on their own. Please report an issue [here](https://github.com/onkelbeh/HomeAssistantRepository/issues) or my [private git server](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues) if you encounter any problems.
+## Python 3.7
+You will need Python 3.7 for running Home assistant on Gentoo Linux.
+
+Some modules/components/libraries still do **not** have compatibility for Python 3.7 advertised, and many of the components have **not** been tested here, but all compile without errors on their own.
 
 By user request, I have populated an ~arm64 KEYWORD on all ebuilds, which is (currently) completely untested. I am preparing a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
 
@@ -58,6 +58,7 @@ Sure, you can submit **issues** and **pull requests** on both sites.
 Python 3.8 appeared on Gentoo Linux in Nov 2019, I have started very first experiments, all ebuilds have 3.8 support advertised, slightly tested, this will take time, feedback is welcome.
 
 ## Installation on Python 3.7
+Python 3.7 is default target since 05/2020. Installation is very easy now.
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default:
 ```
 [HomeAssistantRepository]
@@ -77,23 +78,18 @@ $ cat /etc/locale.gen
 de_DE ISO-8859-1
 de_DE@euro UTF-8
 ```
-It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`, a lot of main repo's unstable ebuilds are needed, because some of main repo's stable versions have *no* support for Python 3.7 advertised.
+It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`.
 
 Edit your `/etc/portage/make.conf` to set the new Python Targets:
 ```sh
-USE_PYTHON="3.7 3.6 2.7"
+USE_PYTHON="3.7 2.7"
 # PYTHON_TARGETS="python3_7 python3_6 python2_7"
 PYTHON_TARGETS="python3_7"
 PYTHON_SINGLE_TARGET="python3_7"
 ```
-Unmask Python 3.7 code in `/etc/portage/profile/use.stable.mask`:
-```sh
--python_targets_python3_7
--python_single_target_python3_7
-```
 Run `eselect python` to put Python 3.7 on position 1
 
-Install it (as root)
+Install Home Assistant (as root)
 ```sh
 $ emerge -tav app-misc/homeassistant
 $ rc-update add homeassistant
@@ -131,7 +127,7 @@ $ emerge --depclean
 
 Edit your `/etc/portage/make.conf` to remove old Python Targets:
 ```sh
-USE_PYTHON="3.7 3.6 2.7"
+USE_PYTHON="3.7 2.7"
 PYTHON_TARGETS="python3_7"
 PYTHON_SINGLE_TARGET="python3_7"
 ```
@@ -150,8 +146,8 @@ $ eix --installed-with-use python_targets_python3_6
 $ diff <(equery h python_targets_python3_6) <(equery h python_targets_python3_7)
 ```
 
-If you are clean, feel free to remove Python 3.6. My productive box runs without Python 3.6.
-It was not possible to remove Python 2.7 yet:
+If you are clean, feel free to remove Python 3.6. My productive box runs without Python 3.6 since 11/2019.
+It is not possible to remove Python 2.7 yet:
 ```sh
 dev-lang/python-2.7.16 pulled in by:
   app-crypt/gcr-3.28.1 requires >=dev-lang/python-2.7.5-r2:2.7
@@ -168,7 +164,7 @@ dev-lang/python-2.7.16 pulled in by:
 Installation is pretty easy, but it won't help. You have to run it on 3.7. I removed this part 01/2020, if you really want to do this, scroll back in time, it's a git :-)
 
 ## Problems
-Please let me know if any initial dependencies are missing, since I use only some of the components myself. From time to time a fresh compile test on an empty box is run to catch general faults, last good (full) compile test was December 2019 with `v0.102.3`.
+Please let me know if any initial dependencies are missing, since I use only some of the components myself. From time to time a fresh compile test on an empty box is run to catch general faults, last good (full) compile test was May 2020 with `v0.109.6`.
 
 ## Todos
 - If it moves, compile it :-)
