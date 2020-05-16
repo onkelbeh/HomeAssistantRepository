@@ -48,6 +48,7 @@
   * update homeassistant-0.110.0_beta3
   * remove obsolete Python 3.6 parts from README.md
   * RepoMan complaints corrected
+  * ESPHome-1.14.3-r7 now loves tornado-6.04
 
 2020-05-09 homeassistant-0.109.6
   * aiohttp-cors-0.7.0-r1 from main repo is now OK again
