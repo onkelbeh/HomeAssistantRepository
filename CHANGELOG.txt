@@ -38,6 +38,7 @@
   * bump axis-26
   * bump huawei-lte-api-1.4.12
   * bump pysonos-0.0.29
+  * bump yeelight-0.5.2
 
 2020-05-09 homeassistant-0.109.6
   * aiohttp-cors-0.7.0-r1 from main repo is now OK again
