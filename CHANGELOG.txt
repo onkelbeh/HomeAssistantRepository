@@ -6,6 +6,8 @@
   * add bsblan-0.3.6
   * add bsblan-0.3.7
   * bump pysaj-0.0.16
+  * add open-garage-0.1.2
+  * add open-garage-0.1.3
 
 2020-05-09 homeassistant-0.109.6
   * aiohttp-cors-0.7.0-r1 from main repo is now OK again
