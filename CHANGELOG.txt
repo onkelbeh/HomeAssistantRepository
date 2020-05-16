@@ -24,6 +24,7 @@
   * bump sense-energy-0.7.2
   * bump home-assistant-frontend-20200512.0
   * add pyzerproc-0.2.4
+  * bump aiounifi-22
 
 2020-05-09 homeassistant-0.109.6
   * aiohttp-cors-0.7.0-r1 from main repo is now OK again
