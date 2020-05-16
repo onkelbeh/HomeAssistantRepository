@@ -22,6 +22,7 @@
   * bump vigilancemeteo-3.0.1
   * bump HAP-python-2.8.4
   * bump sense-energy-0.7.2
+  * bump home-assistant-frontend-20200512.0
 
 2020-05-09 homeassistant-0.109.6
   * aiohttp-cors-0.7.0-r1 from main repo is now OK again
