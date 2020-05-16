@@ -42,6 +42,7 @@
   * bump home-assistant-frontend-20200514.1
   * bump python-synology-0.8.1
   * add roombapy-1.6.1
+  * bump pychromecast-5.2.0
 
 2020-05-09 homeassistant-0.109.6
   * aiohttp-cors-0.7.0-r1 from main repo is now OK again
