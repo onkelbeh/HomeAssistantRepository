@@ -28,7 +28,6 @@
   * bump PlexAPI-3.6.0
   * bump broadlink-0.14.0
   * add wiffi-1.0.0
-  * add pyforked-daapd-0.1.8
   * add pylibrespot-java-0.1.0
   * bump xknx-0.11.3
   * bump home-assistant-frontend-20200513.0
@@ -44,6 +43,7 @@
   * add roombapy-1.6.1
   * bump pychromecast-5.2.0
   * bump home-assistant-frontend-20200515.0
+  * add (missed) pyforked-daapd-0.1.8
 
 2020-05-09 homeassistant-0.109.6
   * aiohttp-cors-0.7.0-r1 from main repo is now OK again
