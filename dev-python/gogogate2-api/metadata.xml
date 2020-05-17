@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">gogogate2-api</remote-id>
+    <maintainer status="unknown">
+      <email>robbie.van.gorkom@protonmail.com</email>
+      <name>Robbie Van Gorkom</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
