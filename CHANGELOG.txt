@@ -1,3 +1,6 @@
+2020-05-20
+  * clone old passlib-1.7.2.ebuild, removed from main repo
+
 2020-05-17 homeassistant-0.110.0_beta3
   * add gogogate2-api-1.0.3
   * bump pyhomematic-0.1.67
