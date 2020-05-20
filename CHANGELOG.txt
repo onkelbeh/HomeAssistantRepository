@@ -15,6 +15,7 @@
   * bump garminconnect-0.1.13
   * bump home-assistant-frontend-20200519.0 (skip some unneeded)
   * update homeassistant-0.110.0
+  * remove beta flags from homeassistant-0.110.0
 
 2020-05-17 homeassistant-0.110.0_beta3
   * add gogogate2-api-1.0.3
