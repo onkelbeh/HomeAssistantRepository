@@ -1,6 +1,7 @@
 2020-05-20
   * clone old passlib-1.7.1-r2.ebuild, removed from main repo
   * bump arcam-fmj-0.4.6
+  * bump open-garage-0.1.4
 
 2020-05-17 homeassistant-0.110.0_beta3
   * add gogogate2-api-1.0.3
