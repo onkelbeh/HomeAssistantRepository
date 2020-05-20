@@ -8,6 +8,7 @@
   * bump pywemo-0.4.43, remove unused pywemo-0.4.38
   * bump pymfy-0.9.0
   * bump sqlalchemy-1.3.17
+  * bump pydaikin-2.0.2
 
 2020-05-17 homeassistant-0.110.0_beta3
   * add gogogate2-api-1.0.3
