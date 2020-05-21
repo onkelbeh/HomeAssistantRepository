@@ -1,3 +1,6 @@
+2020-05-21 homeassistant-0.110.0
+  * add forgotten Manifest
+
 2020-05-20 homeassistant-0.110.0
   * clone old passlib-1.7.1-r2.ebuild, removed from main repo
   * bump arcam-fmj-0.4.6
