@@ -1,5 +1,6 @@
 2020-05-21 homeassistant-0.110.0
   * add forgotten Manifest
+  * update pynuki-1.3.7
 
 2020-05-20 homeassistant-0.110.0
   * clone old passlib-1.7.1-r2.ebuild, removed from main repo
