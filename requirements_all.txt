@@ -191,7 +191,6 @@ homeassistant-pyozw==0.1.8
 homekit-python==0.15.0
 homematicip==0.10.17
 horimote==0.4.1
-httplib2==0.10.3
 huawei-lte-api==1.4.7
 Hydrawiser==0.1.1
 i2csense==0.0.4
