@@ -5,6 +5,10 @@
   * bump proxmoxer-1.1.0
   * bump python-openzwave-mqtt-1.0.1
   * bump onvif-zeep-async-0.4.0
+  * bump home-assistant-frontend-20200519.1
+  * bump home-assistant-frontend-20200519.3
+  * bump home-assistant-frontend-20200519.4
+  * remove old frontends
 
 2020-05-21 homeassistant-0.110.0
   * add forgotten Manifest
