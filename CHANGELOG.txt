@@ -11,6 +11,7 @@
   * remove old frontends
   * update homeassistant-0.110.1
   * bump convertdate-2.2.1
+  * remove idna-ssl-1.1.0 dupe
 
 2020-05-21 homeassistant-0.110.0
   * add forgotten Manifest
