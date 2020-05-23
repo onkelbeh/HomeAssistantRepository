@@ -164,7 +164,7 @@ dev-lang/python-2.7.16 pulled in by:
 Installation is pretty easy, but it won't help. You have to run it on 3.7. I removed this part 01/2020, if you really want to do this, scroll back in time, it's a git :-)
 
 ## Problems
-Please let me know if any initial dependencies are missing, since I use only some of the components myself. From time to time a fresh compile test on an empty box is run to catch general faults, last good (full) compile test was May 2020 with `v0.109.6`.
+Please let me know if any initial dependencies are missing, since I use only some of the components myself. From time to time a fresh compile test on an empty box is run to catch general faults, last good (full) compile test was May 23th 2020 with `v0.110.1`.
 
 ## Todos
 - If it moves, compile it :-)
