@@ -16,6 +16,7 @@
   * delete old regex
   * did a full compile test
   * bump iaqualink-0.3.3
+  * fix convertdate-2.2.1-r1, add PyMeeus-0.3.7
 
 2020-05-21 homeassistant-0.110.0
   * add forgotten Manifest

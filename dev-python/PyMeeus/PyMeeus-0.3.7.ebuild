@@ -7,19 +7,16 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Converts between Gregorian dates and other calendar systems."
-HOMEPAGE="https://github.com/fitnr/convertdate https://pypi.org/project/convertdate/"
+DESCRIPTION="Python implementation of Jean Meeus astronomical routines"
+HOMEPAGE="https://github.com/architest/pymeeus https://pypi.org/project/PyMeeus/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=">=dev-python/ephem-3.7.5.3
-		 <dev-python/ephem-3.8
-		 >=dev-python/pytz-2014.10"
-#		 >=dev-python/pymeeus-0.3.6.1
+RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
