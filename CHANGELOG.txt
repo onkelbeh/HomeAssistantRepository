@@ -10,6 +10,7 @@
   * bump home-assistant-frontend-20200519.4
   * remove old frontends
   * update homeassistant-0.110.1
+  * bump convertdate-2.2.1
 
 2020-05-21 homeassistant-0.110.0
   * add forgotten Manifest
