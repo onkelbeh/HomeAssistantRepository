@@ -3,6 +3,7 @@
   * bump pydaikin-2.0.4
   * bump av-8.0.1
   * bump proxmoxer-1.1.0
+  * bump python-openzwave-mqtt-1.0.1
 
 2020-05-21 homeassistant-0.110.0
   * add forgotten Manifest
