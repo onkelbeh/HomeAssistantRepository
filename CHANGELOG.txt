@@ -13,6 +13,7 @@
   * bump convertdate-2.2.1
   * remove idna-ssl-1.1.0 dupe
   * remove coverage-4.5.2 dupe
+  * delete old regex
 
 2020-05-21 homeassistant-0.110.0
   * add forgotten Manifest
