@@ -3,6 +3,7 @@
   * bump hass-nabucasa-0.34.3
   * bump aiohomekit-0.2.38
   * bump tellduslive-0.10.11
+  * bump env-canada-0.0.38
 
 2020-05-23 homeassistant-0.110.1
   * bump rokuecp-0.4.1
