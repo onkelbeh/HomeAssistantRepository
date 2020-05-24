@@ -1,6 +1,7 @@
 2020-05-24
   * bump zeroconf-0.26.2
   * bump hass-nabucasa-0.34.3
+  * bump aiohomekit-0.2.38
 
 2020-05-23 homeassistant-0.110.1
   * bump rokuecp-0.4.1
