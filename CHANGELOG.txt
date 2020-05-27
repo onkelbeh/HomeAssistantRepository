@@ -3,6 +3,7 @@
   * bump bravia-tv-1.0.5
   * update axis-27
   * update pyatag-0.3.3.4
+  * add asyncio-dgram-1.0.1
 
 2020-05-25 homeassistant-0.110.2
   * update homeassistant-0.110.2
