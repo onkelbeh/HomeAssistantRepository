@@ -1,5 +1,6 @@
 2020-05-27
   * add circuit-webhook-1.0.1
+  * bump bravia-tv-1.0.5
 
 2020-05-25 homeassistant-0.110.2
   * update homeassistant-0.110.2
