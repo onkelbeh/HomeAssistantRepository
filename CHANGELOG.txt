@@ -1,4 +1,4 @@
-2020-05-27
+2020-05-27 homeassistant-0.110.3
   * add circuit-webhook-1.0.1
   * bump bravia-tv-1.0.5
   * update axis-27
@@ -9,6 +9,8 @@
   * bump pypjlink2-1.2.1
   * bump pychromecast-5.3.0
   * bump zeroconf-0.26.3
+  * bump home-assistant-frontend-20200519.5
+  * update homeassistant-0.110.3
 
 2020-05-25 homeassistant-0.110.2
   * update homeassistant-0.110.2

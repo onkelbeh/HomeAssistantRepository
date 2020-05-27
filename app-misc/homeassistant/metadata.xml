@@ -67,6 +67,7 @@
     <flag name="homematicip">A python wrapper for the homematicIP REST API (Access Point Based)</flag>
     <flag name="hs100">Interface for TPLink Stuff</flag>
     <flag name="hue">talk to Philips Hue</flag>
+    <flag name="iaqualink">iAqualink by Jandy allows you to control your pool via cloud service</flag>
     <flag name="icloud">iCloud allows users to track their location on iOS devices.</flag>
     <flag name="incomfort">client for Intergas InComfort/InTouch Lan2RF systems</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
@@ -113,6 +114,7 @@
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="vallox">control any Vallox ventilation unit</flag>
     <flag name="velbus">supports the Velbus USB, serial and TCP/IP gateway</flag>
+    <flag name="velux">allows you to connect to a Velux KLF 200 interface</flag>
     <flag name="vera">add support for Vera Z-Wave Controller</flag>
     <flag name="version">display the current Home Assistant versions</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>
