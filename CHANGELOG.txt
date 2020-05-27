@@ -5,6 +5,7 @@
   * update pyatag-0.3.3.4
   * add asyncio-dgram-1.0.1
   * add aioguardian-0.2.3
+  * update devolo-home-control-api-0.11.0
 
 2020-05-25 homeassistant-0.110.2
   * update homeassistant-0.110.2
