@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Home Assistant cloud integration by Nabu Casa, inc."
-HOMEPAGE="https://www.nabucasa.com/ https://pypi.org/project/hass-nabucasa/"
+HOMEPAGE="https://github.com/NabuCasa/hass-nabucasa/ https://www.nabucasa.com/ https://pypi.org/project/hass-nabucasa/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"
@@ -16,13 +16,14 @@ SLOT="0"
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/warrant-0.6.1[${PYTHON_USEDEP}]
+RDEPEND="~dev-python/pycognito-0.1.2[${PYTHON_USEDEP}]
 		 ~dev-python/snitun-0.20[${PYTHON_USEDEP}]
-		 ~app-crypt/acme-0.40.1
-		 >=dev-python/cryptography-2.5[${PYTHON_USEDEP}]
-		 >=dev-python/attrs-18.2.0[${PYTHON_USEDEP}]
-		 dev-python/pytz[${PYTHON_USEDEP}]
-		 dev-python/aiohttp[${PYTHON_USEDEP}]"
+		 ~app-crypt/acme-1.3.0
+		 >=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
+		 >=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
+		 >=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
+		 >=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
+		 ~dev-python/atomicwrites-1.3.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
