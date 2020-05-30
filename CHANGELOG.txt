@@ -4,6 +4,7 @@
   * add Plugwise-Smile-0.2.13
   * hass-nabucasa-0.34.4
   * update elkm1-lib-0.7.18
+  * bump youtube_dl-2020.5.29
 
 2020-06-29
   * fix netifaces version typo in xknx
