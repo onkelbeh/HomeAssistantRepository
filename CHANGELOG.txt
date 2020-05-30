@@ -7,6 +7,7 @@
   * bump youtube_dl-2020.5.29
   * bump plexwebsocket-0.0.10
   * add sonarr-0.2.1
+  * bump openhomedevice-0.7.2
 
 2020-06-29
   * fix netifaces version typo in xknx
