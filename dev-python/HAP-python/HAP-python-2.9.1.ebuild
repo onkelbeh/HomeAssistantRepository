@@ -19,7 +19,6 @@ IUSE="test"
 RDEPEND="dev-python/curve25519-donna[${PYTHON_USEDEP}]
 	dev-python/ed25519[${PYTHON_USEDEP}]
 	dev-python/pycryptodome[${PYTHON_USEDEP}]
-	dev-python/tlslite-ng[${PYTHON_USEDEP}]
 	dev-python/zeroconf[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
