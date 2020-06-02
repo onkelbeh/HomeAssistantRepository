@@ -1,5 +1,6 @@
 2020-06-02
   * bump teslajsonpy-0.8.1
+  * bump iaqualink-0.3.4
 
 2020-06-01
   * bump axis-28
