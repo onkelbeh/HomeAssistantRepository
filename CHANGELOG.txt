@@ -3,6 +3,7 @@
   * update pytest-5.4.3
   * bump PlexAPI-4.0.0
   * bump wled-0.4.1
+  * bump pysqueezebox-0.2.1
 
 2020-06-02
   * bump teslajsonpy-0.8.1
