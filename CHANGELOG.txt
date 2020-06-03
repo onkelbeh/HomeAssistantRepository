@@ -1,3 +1,6 @@
+2020-06-03
+  * bump pyforked-daapd-0.1.10
+
 2020-06-02
   * bump teslajsonpy-0.8.1
   * bump iaqualink-0.3.4
