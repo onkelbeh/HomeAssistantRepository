@@ -3,6 +3,8 @@
   * bump av-8.0.2
   * bump axis-29
   * bump pyinsteon-1.0.3
+  * skipped total_connect_client==0.55 and total_connect_client==0.54.1, no proper source files found.
+  * bump keba-kecontact-1.1.0
 
 2020-06-03
   * bump pyforked-daapd-0.1.10
