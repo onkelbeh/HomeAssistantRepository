@@ -17,6 +17,7 @@
   * bump tesla-powerwall-0.2.10
   * bump zeroconf-0.27.1
   * update zigpy-cc-0.4.2
+  * bump zigpy-cc-0.4.4
 
 2020-06-03
   * bump pyforked-daapd-0.1.10
