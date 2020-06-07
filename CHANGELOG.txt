@@ -6,6 +6,7 @@
   * skipped total_connect_client==0.55 and total_connect_client==0.54.1, no proper source files found.
   * bump keba-kecontact-1.1.0
   * bump python-synology-0.8.2
+  * bump sonarr-0.2.2
 
 2020-06-03
   * bump pyforked-daapd-0.1.10
