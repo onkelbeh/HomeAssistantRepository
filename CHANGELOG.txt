@@ -26,6 +26,9 @@
   * bump home-assistant-frontend-20200603.1
   * bump home-assistant-frontend-20200603.2
   * update homeassistant-0.110.5
+  * bump platformio-4.3.4
+  * update esphome-1.14.4
+  * update esphome-9999
 
 2020-06-03
   * bump pyforked-daapd-0.1.10
