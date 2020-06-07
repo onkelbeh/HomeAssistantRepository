@@ -1,4 +1,4 @@
-2020-06-07
+2020-06-07 homeassistant-0.110.5
   * fix crashed gitea 3:)
   * bump av-8.0.2
   * bump axis-29
@@ -25,6 +25,7 @@
   * bump home-assistant-frontend-20200603.0
   * bump home-assistant-frontend-20200603.1
   * bump home-assistant-frontend-20200603.2
+  * update homeassistant-0.110.5
 
 2020-06-03
   * bump pyforked-daapd-0.1.10
