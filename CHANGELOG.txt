@@ -14,6 +14,7 @@
   * bump pymyq-2.0.3
   * bump pysonos-0.0.31
   * add notify-events-1.0.4
+  * bump tesla-powerwall-0.2.10
 
 2020-06-03
   * bump pyforked-daapd-0.1.10
