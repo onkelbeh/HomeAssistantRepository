@@ -24,6 +24,7 @@
   * bump arcam-fmj-0.5.1
   * bump home-assistant-frontend-20200603.0
   * bump home-assistant-frontend-20200603.1
+  * bump home-assistant-frontend-20200603.2
 
 2020-06-03
   * bump pyforked-daapd-0.1.10
