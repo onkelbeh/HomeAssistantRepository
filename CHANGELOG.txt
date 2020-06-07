@@ -9,6 +9,7 @@
   * bump sonarr-0.2.2
   * bump numpy-1.18.5
   * update pytile-3.0.6
+  * bump pychromecast-6.0.0
 
 2020-06-03
   * bump pyforked-daapd-0.1.10
