@@ -11,6 +11,7 @@
   * update pytile-3.0.6
   * bump pychromecast-6.0.0
   * update hass-nabucasa-0.34.5
+  * bump pymyq-2.0.3
 
 2020-06-03
   * bump pyforked-daapd-0.1.10
