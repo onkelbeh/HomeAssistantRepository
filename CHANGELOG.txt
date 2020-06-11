@@ -16,6 +16,8 @@
   * bump pre-commit-2.5.1
   * bump homeassistant-0.110.6
   * bump homeassistant-0.110.7
+  * update homeassistant-0.111.0
+  * remove old google-api-python-client
 
 2020-06-07 homeassistant-0.110.5
   * fix crashed gitea 3:)
