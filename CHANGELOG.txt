@@ -5,6 +5,7 @@
   * add xs1-api-client-3.0.0
   * bump wled-0.4.2
   * bump tesla-powerwall-0.2.11
+  * update aioharmony-0.2.4
 
 2020-06-07 homeassistant-0.110.5
   * fix crashed gitea 3:)
