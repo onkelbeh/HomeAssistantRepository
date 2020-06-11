@@ -18,6 +18,7 @@
   * bump homeassistant-0.110.7
   * update homeassistant-0.111.0
   * remove old google-api-python-client
+  * update RtmAPI-0.7.2-r1 (protect against CVE-2020-11078)
 
 2020-06-07 homeassistant-0.110.5
   * fix crashed gitea 3:)
