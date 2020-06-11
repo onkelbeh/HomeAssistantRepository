@@ -1,4 +1,4 @@
-2020-06-11 homeassistant-0.110.7
+2020-06-11 homeassistant-0.111.0
   * bump androidtv-0.0.43
   * bump ihcsdk-2.7.0
   * add xs1-api-client-2.3.5
@@ -16,9 +16,10 @@
   * bump pre-commit-2.5.1
   * bump homeassistant-0.110.6
   * bump homeassistant-0.110.7
-  * update homeassistant-0.111.0
   * remove old google-api-python-client
   * update RtmAPI-0.7.2-r1 (protect against CVE-2020-11078)
+  * update homeassistant-0.111.0
+  * remove oldies
 
 2020-06-07 homeassistant-0.110.5
   * fix crashed gitea 3:)

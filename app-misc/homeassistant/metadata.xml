@@ -88,7 +88,6 @@
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ozw">Open Zwave MQTT</flag>
     <flag name="plex">Python bindings for the Plex API</flag>
-    <flag name="plugwise">enables Plugwise Anna thermostats</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="recorder">storing details in a database per sqlalchemy</flag>
     <flag name="ring">integrate your ring.com devices</flag>
@@ -122,7 +121,6 @@
     <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
     <flag name="withings">add support for Withings Health API</flag>
     <flag name="wled">add support for Aircookie's WLED</flag>
-    <flag name="wwlln">install support for World Wide Lightning Location Network</flag>
     <flag name="xknx">Asynchronous Library for the KNX protocol</flag>
     <flag name="yeelight">allows you to control your Yeelight Wifi bulbs</flag>
     <flag name="youtube">support for youtube_dl</flag>
