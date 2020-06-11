@@ -9,6 +9,7 @@
   * update aiokef-0.2.10
   * bump pre-commit-2.4.0
   * bump pre-commit-2.5.0
+  * bump hass-nabucasa-0.34.6
 
 2020-06-07 homeassistant-0.110.5
   * fix crashed gitea 3:)
