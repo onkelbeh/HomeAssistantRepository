@@ -6,6 +6,7 @@
   * bump wled-0.4.2
   * bump tesla-powerwall-0.2.11
   * update aioharmony-0.2.4
+  * update aiokef-0.2.10
 
 2020-06-07 homeassistant-0.110.5
   * fix crashed gitea 3:)
