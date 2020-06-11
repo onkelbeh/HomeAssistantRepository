@@ -1,6 +1,8 @@
 2020-06-11
   * bump androidtv-0.0.43
   * bump ihcsdk-2.7.0
+  * add xs1-api-client-2.3.5
+  * add xs1-api-client-3.0.0
 
 2020-06-07 homeassistant-0.110.5
   * fix crashed gitea 3:)
