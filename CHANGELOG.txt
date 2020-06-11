@@ -13,6 +13,7 @@
   * bump coronavirus-1.1.1
   * bump solax-0.2.3
   * bump homematicip-0.10.18
+  * bump pre-commit-2.5.1
 
 2020-06-07 homeassistant-0.110.5
   * fix crashed gitea 3:)
