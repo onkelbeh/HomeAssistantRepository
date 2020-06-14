@@ -7,6 +7,7 @@
   * add influxdb-client-1.7.0
   * bump axis-30
   * bump pyvera-0.3.9
+  * bump PyViCare-0.2.0
 
 2020-06-11 homeassistant-0.111.0
   * bump androidtv-0.0.43
