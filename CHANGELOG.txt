@@ -1,4 +1,4 @@
-2020-06-14 homeassistant-0.111.1
+2020-06-14 homeassistant-0.111.2
   * bump bellows-0.17.0
   * bump zigpy-0.21.0
   * bump pymyq-2.0.4
@@ -11,6 +11,7 @@
   * bump home-assistant-frontend-20200603.3
   * bump home-assistant-frontend-20200613.0
   * update homeassistant-0.111.1
+  * update homeassistant-0.111.2
 
 2020-06-11 homeassistant-0.111.0
   * bump androidtv-0.0.43
