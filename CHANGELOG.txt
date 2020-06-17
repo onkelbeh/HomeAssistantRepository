@@ -1,4 +1,4 @@
-2020-06-17
+2020-06-17 homeassistant-0.111.3
   * bump wled-0.4.3
   * bump zha-quirks-0.0.40
   * add pygti-0.6.0
@@ -9,6 +9,7 @@
   * bump aioasuswrt-1.2.6
   * update denonavr-0.9.3
   * bump growattServer-0.0.4
+  * update homeassistant-0.111.3
 
 2020-06-14 homeassistant-0.111.2
   * bump bellows-0.17.0
