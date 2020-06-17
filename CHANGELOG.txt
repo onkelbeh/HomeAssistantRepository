@@ -8,6 +8,7 @@
   * bump env-canada-0.0.39
   * bump aioasuswrt-1.2.6
   * update denonavr-0.9.3
+  * bump growattServer-0.0.4
 
 2020-06-14 homeassistant-0.111.2
   * bump bellows-0.17.0
