@@ -1,3 +1,6 @@
+2020-06-17
+  * bump wled-0.4.3
+
 2020-06-14 homeassistant-0.111.2
   * bump bellows-0.17.0
   * bump zigpy-0.21.0
