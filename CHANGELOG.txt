@@ -10,6 +10,7 @@
   * update denonavr-0.9.3
   * bump growattServer-0.0.4
   * update homeassistant-0.111.3
+  * add missing ecdsa dep in nabucasa (https://github.com/onkelbeh/HomeAssistantRepository/issues/15)
 
 2020-06-14 homeassistant-0.111.2
   * bump bellows-0.17.0
