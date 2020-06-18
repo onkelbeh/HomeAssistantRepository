@@ -10,19 +10,19 @@ https://github.com/home-assistant/home-assistant
 Please report an issue [here](https://github.com/onkelbeh/HomeAssistantRepository/issues) or my [private git server](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues) if you encounter any problems.
 
 ## Python 3.7
-You will need Python 3.7 for running Home assistant on Gentoo Linux.
+You will need at least Python 3.7 for running Home assistant on Gentoo Linux.
 
-Some modules/components/libraries still do **not** have compatibility for Python 3.7 advertised, and many of the components have **not** been tested here, but all compile without errors on their own.
+Some modules/components/libraries still do not have compatibility for Python 3.7 advertised, and many of the components have not been tested here, but all compile without errors on their own.
 
-By user request, I have populated an ~arm64 KEYWORD on all ebuilds, which is (currently) completely untested. I am preparing a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
+By user request, I have populated an ~arm64 KEYWORD on all ebuilds, which is (currently) completely untested. I will some day prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
 
-I am running my productive box with Python 3.7, no Python 3.6 anymore. Anyway, it also has to have 2.7. Even ESPHome runs on the same box with some small patches (included in my Ebuild). Installation- and upgrade instructions? Just scroll down a bit, you will also find a list of the packages which still depend on Python 2.7 there.
+I am running my productive box with Python 3.7. Anyway, it also has to have 2.7. Even ESPHome runs on the same box with some small patches (included in my Ebuild). Installation- and upgrade instructions? Just scroll down a bit, you will also find a list of the packages which still depend on Python 2.7 there.
 
 ## Source
 Once this was a fork of `https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin`, which seemed unmaintained to me. First I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise of several hundred page views in the very first days. I'll do my best to keep it close to the official releases, might get slower during summers. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages are on file. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year.
 
 ## Nearly all Home Assistant Components are now included
-Except some modules with uncorrectable errors (e.g. hard drive crashes, lost sources or some other unbelievable mess) nearly all possible integrations for Home Assistant and their stated dependencies are included as ebuilds, based on the *most accurate* integrations list from `/usr/lib/python3.7/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule. I will expand/continue my tests and do some more cleanups. Gentoo's Python guys either will bring some more code to 3.7 soon.
+Except some modules with uncorrectable errors (e.g. hard drive crashes, lost sources or some other unbelievable mess) nearly all possible integrations for Home Assistant and their stated dependencies are included as ebuilds, based on the integrations list from `/usr/lib/python3.7/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule. I will expand/continue my tests and do some more cleanups. Gentoo's Python guys either will bring some more code to 3.7 soon.
 
 ## Authors welcome
 If you are author of an integration / component or other stuff related to Home Assistant and you want your stuff added, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on Github are OK, but a Pypi `sdist` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. And make sure you have a proper license assigned, selected license should be unique on all platforms (Pypi/Github/Sourceforge).
@@ -42,7 +42,7 @@ Thanks to @evadim and @klowe0100 for improving the ebuild and helping to keep it
 
  ESPHome will run on Python 3.7. Some libraries from Otto's releases are too old for Home Assistants environment, I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
 
-If you have questions or suggestions don't hesitate to contact me, any help is **very** welcome.
+If you have questions or suggestions don't hesitate to contact me, any help is very welcome.
 
 ## Git Server & Mirrors
 You will find this Repository at
@@ -80,7 +80,7 @@ de_DE@euro UTF-8
 ```
 It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`.
 
-Edit your `/etc/portage/make.conf` to set the new Python Targets:
+Check your `/etc/portage/make.conf` for the corret Python Targets:
 ```sh
 USE_PYTHON="3.7 2.7"
 # PYTHON_TARGETS="python3_7 python3_6 python2_7"
@@ -89,13 +89,17 @@ PYTHON_SINGLE_TARGET="python3_7"
 ```
 Run `eselect python` to put Python 3.7 on position 1
 
-Install Home Assistant (as root)
+Finally install Home Assistant:
 ```sh
 $ emerge -tav app-misc/homeassistant
 $ rc-update add homeassistant
 ```
-## Upgrading to Python 3.7
-Take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`, a lot of unstable ebuilds are needed, because some of the stable versions do *not* support Python 3.7. These files reflect some modules I use, adjust them to your needs. Find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
+
+I could be necessary to install some components by hand, there are too many components to mask all in use flags. If you use a component which you want to be added as a use flag, send a pull request, or just let me know.
+
+## Upgrading to Python 3.7 from a pre 3.7 system
+Easiest way is to take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`, a lot of unstable ebuilds are needed, because some of the stable versions do *not* support Python 3.7, but this is changing eyery day.
+These files reflect some modules I use, adjust them to your needs. Find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
 
 Make sure your system is up to date:
 ```sh
@@ -146,23 +150,6 @@ $ eix --installed-with-use python_targets_python3_6
 $ diff <(equery h python_targets_python3_6) <(equery h python_targets_python3_7)
 ```
 
-If you are clean, feel free to remove Python 3.6. My productive box runs without Python 3.6 since 11/2019.
-It is not possible to remove Python 2.7 yet:
-```sh
-dev-lang/python-2.7.16 pulled in by:
-  app-crypt/gcr-3.28.1 requires >=dev-lang/python-2.7.5-r2:2.7
-  dev-libs/libxml2-2.9.9-r1 requires >=dev-lang/python-2.7.5-r2:2.7[xml]
-  dev-libs/libxslt-1.1.33-r1 requires >=dev-lang/python-2.7.5-r2:2.7[xml]
-  dev-python/backports-1.0 requires >=dev-lang/python-2.7.5-r2:2.7
-  dev-python/backports-functools-lru-cache-1.4-r1 requires >=dev-lang/python-2.7.5-r2:2.7
-  dev-util/ninja-1.8.2 requires >=dev-lang/python-2.7.5-r2:2.7
-  sys-devel/llvm-8.0.1 requires >=dev-lang/python-2.7.5-r2:2.7
-```
-
-## Installation on Python 3.6 (deprecated)
-
-Installation is pretty easy, but it won't help. You have to run it on 3.7. I removed this part 01/2020, if you really want to do this, scroll back in time, it's a git :-)
-
 ## Problems
 Please let me know if any initial dependencies are missing, since I use only some of the components myself. From time to time a fresh compile test on an empty box is run to catch general faults, last good (full) compile test was May 23th 2020 with `v0.110.1`.
 
@@ -178,9 +165,10 @@ Please let me know if any initial dependencies are missing, since I use only som
 - Write an real good installation page for the home-assistant.io Documentation an get it added there.
 - Convince more people to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
-## experiments are in progress:
+## Experiments in progress:
 * grafana with influxdb, will have to use it at work soon and have to get used to it anyway, fits much better for irregular measurements than Cacti/RRD.
 * remote IOS authentication with [haproxy](https://www.haproxy.org) and client certificates.
+* play with [Node-RED](https://nodered.org/)
 
 ## some Background...
 I have Home Assistant running on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 30GB Disk from a small FC SAN (HP MSA). Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. currently 10.2.29 without problems. Influxdb and Graphana are also on the same box. Find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
