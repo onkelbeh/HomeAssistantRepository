@@ -12,6 +12,7 @@
   * some corrections to README.md, Manifest check says total_connect_client-0.54.1 is still broken (no usable source)
   * bump home-assistant-frontend-20200617.0
   * update core-0.111.4, add use flag for PyMetno
+  * bump aioharmony-0.2.5
 
 2020-06-18
   * throw out more old Python 3.6 stuff from README.md
