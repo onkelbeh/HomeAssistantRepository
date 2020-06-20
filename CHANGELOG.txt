@@ -1,5 +1,6 @@
 2020-06-20
   * bump aiokef-0.2.12
+  * add pysmappee-0.1.0
 
 2020-06-18
   * throw out more old Python 3.6 stuff from README.md
