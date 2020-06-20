@@ -274,13 +274,7 @@ DOCS="README.rst"
 src_prepare() {
 	# https://github.com/home-assistant/home-assistant/issues/28811
 	if use maxcube_hack ; then
-	  eapply "${FILESDIR}/maxcube_TypeError_dirty_hack.patch"
-		#sed -e 's;if cube.is_windowshutter(device);if device.type == 4;' \
-		#    -i components/maxcube/binary_sensor.py \
-		#		|| die
-		#sed -e 's;if cube.is_thermostat(device) or cube.is_wallthermostat(device);if device.type == 3 or device.type == 1;' \
-		#    -i components/maxcube/climate.py \
-		#		|| die
+	  eapply "${FILESDIR}/maxcube_TypeError_01114_dirty_hack.patch"
 	fi
 	eapply_user
 }

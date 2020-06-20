@@ -1,0 +1,50 @@
+diff --git a/homeassistant/components/maxcube/binary_sensor.py b/homeassistant/components/maxcube/binary_sensor.py
+index b42c96f..6433f8f 100644
+--- a/homeassistant/components/maxcube/binary_sensor.py
++++ b/homeassistant/components/maxcube/binary_sensor.py
+@@ -17,7 +17,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
+             name = f"{cube.room_by_id(device.room_id).name} {device.name}"
+ 
+             # Only add Window Shutters
+-            if cube.is_windowshutter(device):
++            if device.type == 4:
+                 devices.append(MaxCubeShutter(handler, name, device.rf_address))
+ 
+     if devices:
+diff --git a/homeassistant/components/maxcube/climate.py b/homeassistant/components/maxcube/climate.py
+index 69d9177..c846e91 100644
+--- a/homeassistant/components/maxcube/climate.py
++++ b/homeassistant/components/maxcube/climate.py
+@@ -65,7 +65,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
+         for device in cube.devices:
+             name = f"{cube.room_by_id(device.room_id).name} {device.name}"
+ 
+-            if cube.is_thermostat(device) or cube.is_wallthermostat(device):
++            if device.type == 1 or device.type == 3:
+                 devices.append(MaxCubeClimate(handler, name, device.rf_address))
+ 
+     if devices:
+@@ -173,11 +173,11 @@ class MaxCubeClimate(ClimateEntity):
+         device = cube.device_by_rf(self._rf_address)
+         valve = 0
+ 
+-        if cube.is_thermostat(device):
++        if device.type == 1:
+             valve = device.valve_position
+-        elif cube.is_wallthermostat(device):
++        elif device.type == 3:
+             for device in cube.devices_by_room(cube.room_by_id(device.room_id)):
+-                if cube.is_thermostat(device) and device.valve_position > 0:
++                if device.type == 1 and device.valve_position > 0:
+                     valve = device.valve_position
+                     break
+         else:
+@@ -275,7 +275,7 @@ class MaxCubeClimate(ClimateEntity):
+         device = cube.device_by_rf(self._rf_address)
+         attributes = {}
+ 
+-        if cube.is_thermostat(device):
++        if device.type == 1:
+             attributes[ATTR_VALVE_POSITION] = device.valve_position
+ 
+         return attributes
