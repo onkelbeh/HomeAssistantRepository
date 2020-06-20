@@ -16,6 +16,7 @@
   * re-add required websocket-client-0.56.0
   * fix typo in axis-3[1,2] ebuilds
   * update pycognito-0.1.3
+  * remove python-jose dep from pycognito due to fileconflicts with python-jose-cryptodome
 
 2020-06-18
   * throw out more old Python 3.6 stuff from README.md
