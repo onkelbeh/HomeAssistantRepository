@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/attr[${PYTHON_USEDEP}]"
+	dev-python/attrs[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

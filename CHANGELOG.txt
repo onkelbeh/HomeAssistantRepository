@@ -14,6 +14,7 @@
   * update core-0.111.4, add use flag for PyMetno
   * bump aioharmony-0.2.5
   * re-add required websocket-client-0.56.0
+  * fix typo in axis-3[1,2] ebuilds
 
 2020-06-18
   * throw out more old Python 3.6 stuff from README.md
