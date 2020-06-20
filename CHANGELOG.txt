@@ -2,6 +2,7 @@
   * bump aiokef-0.2.12
   * add pysmappee-0.1.0
   * bump youtube_dl-2020.6.16.1
+  * built-in importlib.metadata library in Python 3.8+
 
 2020-06-18
   * throw out more old Python 3.6 stuff from README.md

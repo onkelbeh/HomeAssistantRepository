@@ -39,7 +39,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2020.4.5.1[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
-	~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]
+	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
 	>=dev-python/jinja-2.11.1[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
 	~dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
