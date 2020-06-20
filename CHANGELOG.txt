@@ -1,4 +1,4 @@
-2020-06-20
+2020-06-20 homeassistant-0.111.4
   * bump aiokef-0.2.12
   * add pysmappee-0.1.0
   * bump youtube_dl-2020.6.16.1
@@ -11,6 +11,7 @@
   * bump axis-32
   * some corrections to README.md, Manifest check says total_connect_client-0.54.1 is still broken (no usable source)
   * bump home-assistant-frontend-20200617.0
+  * update core-0.111.4, add use flag for PyMetno
 
 2020-06-18
   * throw out more old Python 3.6 stuff from README.md
