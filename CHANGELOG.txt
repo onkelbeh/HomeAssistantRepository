@@ -8,6 +8,7 @@
   * bump plexwebsocket-0.0.11
   * clean up old requests dupes
   * bump netdisco-2.7.1
+  * bump axis-32
 
 2020-06-18
   * throw out more old Python 3.6 stuff from README.md
