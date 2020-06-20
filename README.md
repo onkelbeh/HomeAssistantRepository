@@ -10,13 +10,13 @@ https://github.com/home-assistant/home-assistant
 Please report an issue [here](https://github.com/onkelbeh/HomeAssistantRepository/issues) or my [private git server](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues) if you encounter any problems.
 
 ## Python 3.7
-You will need at least Python 3.7 for running Home assistant on Gentoo Linux.
+You will need at least Python 3.7.7 for running Home assistant on Gentoo Linux.
 
 Some modules/components/libraries still do not have compatibility for Python 3.7 advertised, and many of the components have not been tested here, but all compile without errors on their own.
 
 By user request, I have populated an ~arm64 KEYWORD on all ebuilds, which is (currently) completely untested. I will some day prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
 
-I am running my productive box with Python 3.7. Anyway, it also has to have 2.7. Even ESPHome runs on the same box with some small patches (included in my Ebuild). Installation- and upgrade instructions? Just scroll down a bit, you will also find a list of the packages which still depend on Python 2.7 there.
+I am running my productive box with Python 3.7. Anyway, it also has to have 2.7. Even ESPHome runs on the same box with some small patches (included in my Ebuild).
 
 ## Source
 Once this was a fork of `https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin`, which seemed unmaintained to me. First I just wanted to compile it for my personal use. This happed at 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise of several hundred page views in the very first days. I'll do my best to keep it close to the official releases, might get slower during summers. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages are on file. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year.
@@ -158,8 +158,7 @@ Please let me know if any initial dependencies are missing, since I use only som
 - Map more, perhaps all important components to use flags
 - Publish my Home Assistant Configuration
 - Publish my ESPHome Configurations
-- Remove support for Python 3.6 in the mid of December
-- Add support for Python 3.8 in a new dev branch
+- Add test support for Python 3.8 and 3.9 in new dev branches
 - Add libraries if I need it or someone asks for
 - Create a better mechanism to check [requirements_all.txt](https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt) against this repo. A very early version of it was used to create the `v9999` dev ebuild with nearly all components framed into USE flags. Someone blame me for 800 use flags ;-)
 - Write an real good installation page for the home-assistant.io Documentation an get it added there.
@@ -213,7 +212,7 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies execpt portage are not tested.
 * Since I use Gentoo mostly on servers, I do not use systemd, the most important reason to run Gentoo is that you are NOT forced to run this incredible crap.
 * I use an own profile based on "amd64/17.1/no-multilib"
-* python-3.7.7-r1 is set as default target, also 2.7.17-r2 is installed on my test server.
+* python-3.7.7-r2 is set as default target, also 2.7.18 and 3.8.2-r2 are installed on my test server.
 * I do no tests anymore on Python 3.6 or lower
 
 ## Licenses
@@ -266,4 +265,4 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 
 I did my best to keep these clean, thanks to @matoro for help. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
 
-Last update of this text: 12.3.2020
+Last update of this text: 20.6.2020
