@@ -5,6 +5,7 @@
   * built-in importlib.metadata library in Python 3.8+
   * bump axis-31
   * update PyMetno-0.5.1, SRC_URI changed to Github
+  * bump plexwebsocket-0.0.11
 
 2020-06-18
   * throw out more old Python 3.6 stuff from README.md
