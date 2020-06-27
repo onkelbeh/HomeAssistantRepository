@@ -20,6 +20,7 @@
   * bump home-assistant-frontend-20200623.2
   * bump Plugwise-Smile-1.1.0
   * bump pyzerproc-0.2.5
+  * bump SQLAlchemy-1.3.18
 
 2020-06-21
   * bump ptvsd-4.3.2
