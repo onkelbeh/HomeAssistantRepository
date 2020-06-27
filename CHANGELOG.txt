@@ -1,3 +1,9 @@
+2020-06-21
+  * bump ptvsd-4.3.2
+  * move home-assistant-frontend to dev-python
+  * bump home-assistant-frontend-20200620.0
+  * bump pyaehw4a1-0.3.5
+
 2020-06-20 homeassistant-0.111.4
   * bump aiokef-0.2.12
   * add pysmappee-0.1.0
