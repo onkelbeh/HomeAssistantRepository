@@ -5,6 +5,7 @@
   * bump python-awair-0.1.1
   * bump Hydrawiser-0.2
   * bump pyintesishome-1.7.5
+  *b ump pyps4-2ndscreen-1.1.0
 
 2020-06-21
   * bump ptvsd-4.3.2
