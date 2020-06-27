@@ -18,6 +18,7 @@
   * bump hass-nabucasa-0.34.7
   * add toonapi-0.1.0
   * bump home-assistant-frontend-20200623.2
+  * bump Plugwise-Smile-1.1.0
 
 2020-06-21
   * bump ptvsd-4.3.2
