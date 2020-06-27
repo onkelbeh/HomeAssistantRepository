@@ -1,3 +1,6 @@
+2020-06-27
+  * bump dynalite-devices-0.1.41
+
 2020-06-21
   * bump ptvsd-4.3.2
   * move home-assistant-frontend to dev-python
