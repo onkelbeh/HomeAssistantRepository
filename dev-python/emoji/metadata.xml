@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">emoji</remote-id>
+    <maintainer status="unknown">
+      <email>carpedm20@gmail.com</email>
+      <name>Taehoon Kim and Kevin Wurster</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

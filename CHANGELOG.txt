@@ -1,5 +1,6 @@
 2020-06-27
   * bump dynalite-devices-0.1.41
+  * add emoji-0.5.4
 
 2020-06-21
   * bump ptvsd-4.3.2
