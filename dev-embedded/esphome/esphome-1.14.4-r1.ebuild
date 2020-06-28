@@ -40,7 +40,7 @@ DEPEND="${RDEPEND}
 	~dev-python/protobuf-python-3.11.4[${PYTHON_USEDEP}]
 	~dev-libs/protobuf-3.11.4
 	~dev-python/tzlocal-2.0.0[${PYTHON_USEDEP}]
-	~dev-python/pytz-2019.3[${PYTHON_USEDEP}]
+	~dev-python/pytz-2020.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 
 	dev-python/setuptools[${PYTHON_USEDEP}]
@@ -67,9 +67,12 @@ src_prepare() {
 	sed -e 's;tornado==5.1.1;tornado==6.0.4;' \
 		-i esphome.egg-info/requires.txt \
 		-i setup.py
-		sed -e 's;protobuf==3.11.3;protobuf==3.11.4;' \
-			-i esphome.egg-info/requires.txt \
-			-i setup.py
+	sed -e 's;protobuf==3.11.3;protobuf==3.11.4;' \
+		-i esphome.egg-info/requires.txt \
+		-i setup.py
+	sed -e 's;pytz==2019.3;pytz==2020.1;' \
+		-i esphome.egg-info/requires.txt \
+		-i setup.py
 	eapply_user
 }
 
