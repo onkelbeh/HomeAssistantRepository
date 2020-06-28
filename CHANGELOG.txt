@@ -8,6 +8,8 @@
   * update homeassistant-0.112.0_beta2
   * update esphome-1.14.4-r1 (only changed deps for HA compatibility)
   * nail some deps in esphome-1.14.4
+  * fix (moved) frontend dependencies
+  * remove oldies
 
 2020-06-27
   * bump dynalite-devices-0.1.41

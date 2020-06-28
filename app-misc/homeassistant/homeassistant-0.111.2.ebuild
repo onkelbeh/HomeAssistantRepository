@@ -56,7 +56,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	>=dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.34.6[${PYTHON_USEDEP}]
-	~app-misc/home-assistant-frontend-20200603.3[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20200603.3[${PYTHON_USEDEP}]
 	>=dev-python/netdisco-2.7.0[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-1.3.17[${PYTHON_USEDEP}]
 	~dev-python/zeroconf-0.27.1[${PYTHON_USEDEP}]
