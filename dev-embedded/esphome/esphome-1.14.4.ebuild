@@ -35,8 +35,8 @@ DEPEND="${RDEPEND}
 	~dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
-	server? ( >=dev-python/ifaddr-0.1.6
-			~www-servers/tornado-6.0.4[${PYTHON_USEDEP}] )
+	~dev-python/ifaddr-0.1.6[${PYTHON_USEDEP}]
+	~www-servers/tornado-6.0.4[${PYTHON_USEDEP}]
 	~dev-python/protobuf-python-3.11.4[${PYTHON_USEDEP}]
 	~dev-libs/protobuf-3.11.4
 	>=dev-python/tzlocal-2.0.0[${PYTHON_USEDEP}]
