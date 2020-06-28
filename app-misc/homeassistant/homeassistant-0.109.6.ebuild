@@ -19,9 +19,6 @@ SLOT="0"
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="abode adguard ambiclimate ambient_station amcrest androidtv apprise asuswrt atmo atv aurora avea aws axis bitcoin blockchain blink bmw_connected_drive bravia-tv buienradar +caldav +cast cli ciscomobilityexpress coronavirus daikin darksky denonavr discogs dyson emulated_roku enigma enocean esphome everlights envoy flume flunearyou fronius gpiozero growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue icloud incomfort influxdb ipma jewish_calendar kef maxcube maxcube_hack miio mikrotik mobile_app +mqtt musiccast myq +mysql nederlandse_spoorwegen openwrt owntracks plex plugwise qnap +recorder ring roku roomba rxv samsungtv +scrape signal sma socat socialblade somfy sonos shodan simplisafe speedtest +ssl synologydsm systemmonitor test tradfri ubee unifi vallox vera +version velbus webostv wemo wink withings wled wwlln xknx yeelight youtube z-wave zigbee zoneminder"
 
-# from 2020/04 cleanup to be removed or integrated later
-# IUSE="${IUSE} x"
-
 RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
 	app-admin/logrotate

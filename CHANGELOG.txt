@@ -1,5 +1,6 @@
-2020-06-28
+2020-06-28 homeassistant-0.112.0_beta2
   * bump teslajsonpy-0.9.0
+  * update homeassistant-0.112.0_beta2, set legacy to beta, remove olds
 
 2020-06-27
   * bump dynalite-devices-0.1.41
