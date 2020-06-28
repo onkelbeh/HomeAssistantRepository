@@ -1,6 +1,10 @@
 2020-06-28 homeassistant-0.112.0_beta2
   * bump teslajsonpy-0.9.0
   * update homeassistant-0.112.0_beta2, set legacy to beta, remove olds
+  * add the missing releases of total-connect-client to my own repo:
+    - v0.54.1
+    - v0.55
+    - v0.55.1
 
 2020-06-27
   * bump dynalite-devices-0.1.41
