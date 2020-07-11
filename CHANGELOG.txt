@@ -43,6 +43,7 @@
   * bump foobot_async-0.3.2
   * bump tuyaha-0.0.7
   * bump aiohomekit-0.2.45
+  * add debugpy-1.0.0_beta11
 
 2020-06-29
   * bump aioguardian-1.0.0
