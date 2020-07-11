@@ -37,6 +37,7 @@
   * bump pysmappee-0.1.4
   * add demjson-2.2.4
   * update PySyncThru-0.5.2
+  * update pysmappee-0.1.5
 
 2020-06-29
   * bump aioguardian-1.0.0
