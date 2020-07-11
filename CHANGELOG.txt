@@ -25,6 +25,7 @@
   * update androidtv-0.0.45
   * bump SmartHab-0.21
   * add bond-home-0.0.8
+  * bump voluptuous-serialize-2.4.0
 
 2020-06-29
   * bump aioguardian-1.0.0
