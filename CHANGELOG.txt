@@ -7,6 +7,7 @@
   * add poolsense-0.0.[5,8]
   * add pydexcom-0.2.0
   * update pynws-1.2.1
+  * bump pysmappee-0.1.2
 
 2020-06-29
   * bump aioguardian-1.0.0
