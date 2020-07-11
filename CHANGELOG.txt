@@ -24,6 +24,7 @@
   * bump adb-shell-0.2.0
   * update androidtv-0.0.45
   * bump SmartHab-0.21
+  * add bond-home-0.0.8
 
 2020-06-29
   * bump aioguardian-1.0.0
