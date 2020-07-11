@@ -29,6 +29,7 @@
   * update pdunehd-1.3.2
   * bump rjpl-0.3.6
   * bump denonavr-0.9.4
+  * bump aiokef-0.2.13
 
 2020-06-29
   * bump aioguardian-1.0.0
