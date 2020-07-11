@@ -32,6 +32,7 @@
   * bump aiokef-0.2.13
   * bump coverage-5.2
   * bump aiohomekit-0.2.41
+  * bump pyvizio-0.1.49
 
 2020-06-29
   * bump aioguardian-1.0.0
