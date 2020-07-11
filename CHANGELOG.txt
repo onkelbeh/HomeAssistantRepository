@@ -1,5 +1,6 @@
 2020-07-11
   * bump zha-quirks-0.0.41
+  * bump netdisco-2.8.0
 
 2020-06-29
   * bump aioguardian-1.0.0
