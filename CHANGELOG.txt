@@ -30,6 +30,7 @@
   * bump rjpl-0.3.6
   * bump denonavr-0.9.4
   * bump aiokef-0.2.13
+  * bump coverage-5.2
 
 2020-06-29
   * bump aioguardian-1.0.0
