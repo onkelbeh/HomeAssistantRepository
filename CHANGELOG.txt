@@ -19,6 +19,7 @@
   * bump python-miio-0.5.2.1
   * bump python-join-api-0.0.6
   * bump bravia-tv-1.0.6
+  * bump env-canada-0.1.0
 
 2020-06-29
   * bump aioguardian-1.0.0
