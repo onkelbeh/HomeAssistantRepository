@@ -49,6 +49,7 @@
   * bump home-assistant-frontend-20200701.0
   * bump home-assistant-frontend-20200702.0
   * bump home-assistant-frontend-20200702.1
+  * bump pyads-3.1.3
 
 2020-06-29
   * bump aioguardian-1.0.0
