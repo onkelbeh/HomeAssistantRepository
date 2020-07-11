@@ -17,6 +17,7 @@
   * bump pyps4-2ndscreen-1.1.1
   * bump teslajsonpy-0.9.2
   * bump python-miio-0.5.2.1
+  * bump python-join-api-0.0.6
 
 2020-06-29
   * bump aioguardian-1.0.0
