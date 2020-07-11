@@ -11,6 +11,8 @@
   * bump proxmoxer-1.1.1
   * bump gogogate2-api-1.0.4
   * bump pre-commit-2.6.0
+  * update pytile-4.0.0
+  * bump aresponses-2.0.0
 
 2020-06-29
   * bump aioguardian-1.0.0
