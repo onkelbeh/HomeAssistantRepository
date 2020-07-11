@@ -13,6 +13,7 @@
   * bump pre-commit-2.6.0
   * update pytile-4.0.0
   * bump aresponses-2.0.0
+  * bump sonarr-0.2.3
 
 2020-06-29
   * bump aioguardian-1.0.0
