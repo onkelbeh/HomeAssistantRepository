@@ -33,6 +33,7 @@
   * bump coverage-5.2
   * bump aiohomekit-0.2.41
   * bump pyvizio-0.1.49
+  * bump influxdb-client-1.8.0
 
 2020-06-29
   * bump aioguardian-1.0.0
