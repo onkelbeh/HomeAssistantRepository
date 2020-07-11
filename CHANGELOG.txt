@@ -9,6 +9,7 @@
   * update pynws-1.2.1
   * bump pysmappee-0.1.2
   * bump proxmoxer-1.1.1
+  * bump gogogate2-api-1.0.4
 
 2020-06-29
   * bump aioguardian-1.0.0
