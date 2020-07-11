@@ -41,6 +41,7 @@
   * update aioguardian-1.0.1
   * downgrade influxdb-client-1.6.0
   * bump foobot_async-0.3.2
+  * bump tuyaha-0.0.7
 
 2020-06-29
   * bump aioguardian-1.0.0
