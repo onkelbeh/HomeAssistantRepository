@@ -39,7 +39,8 @@
   * update PySyncThru-0.5.2
   * update pysmappee-0.1.5
   * update aioguardian-1.0.1
-  * donwgrade influxdb-client-1.6.0
+  * downgrade influxdb-client-1.6.0
+  * bump foobot_async-0.3.2
 
 2020-06-29
   * bump aioguardian-1.0.0
