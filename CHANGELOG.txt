@@ -46,6 +46,7 @@
   * add debugpy-1.0.0_beta11
   * bump debugpy-1.0.0_beta12
   * bump home-assistant-frontend-20200629.0
+  * bump home-assistant-frontend-20200701.0
 
 
 2020-06-29
