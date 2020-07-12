@@ -5,6 +5,7 @@
   * bump bond-home-0.0.9
   * bump teslajsonpy-0.9.3
   * bump aiounifi-23
+  * remove beta status from homeassistant-0.112.4 after tests
 
 2020-07-11 homeassistant-0.112.4
   * bump zha-quirks-0.0.41
