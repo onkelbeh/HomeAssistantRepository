@@ -1,6 +1,7 @@
 2020-07-12 homeassistant-0.112.4
   * fix influcdb-client compile problems
   * blinkpy-0.15.1 bumped
+  * bump pyHS100-0.3.5.1
 
 2020-07-11 homeassistant-0.112.4
   * bump zha-quirks-0.0.41
