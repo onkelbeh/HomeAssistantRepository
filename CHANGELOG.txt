@@ -3,6 +3,7 @@
   * blinkpy-0.15.1 bumped
   * bump pyHS100-0.3.5.1
   * bump bond-home-0.0.9
+  * bump teslajsonpy-0.9.3
 
 2020-07-11 homeassistant-0.112.4
   * bump zha-quirks-0.0.41
