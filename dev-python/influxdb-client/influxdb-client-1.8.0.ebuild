@@ -33,6 +33,12 @@ DEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
+src_prepare() {
+	sed -e "s;packages=find_packages();packages=find_packages(exclude=['tests', 'docs']);" \
+		-i setup.py
+	eapply_user
+	}
+
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
