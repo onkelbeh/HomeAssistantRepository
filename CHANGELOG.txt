@@ -1,3 +1,7 @@
+2020-07-18
+  * remove typing
+
+
 2020-07-12 homeassistant-0.112.4
   * fix influcdb-client compile problems
   * blinkpy-0.15.1 bumped
