@@ -8,6 +8,7 @@
   * bump homematicip-0.10.19
   * bump zha-quirks-0.0.42
   * bump zigpy-0.22.1
+  * bump home-assistant-frontend-20200714.0
 
 2020-07-12 homeassistant-0.112.4
   * fix influcdb-client compile problems
