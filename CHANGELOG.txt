@@ -16,6 +16,7 @@
   * bump pysonos-0.0.32
   * add pymata-express-1.13
   * add pymata-express-1.17
+  * add aioymaps-1.0.0
 
 2020-07-12 homeassistant-0.112.4
   * fix influcdb-client compile problems
