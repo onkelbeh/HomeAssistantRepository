@@ -12,6 +12,7 @@
   * bump home-assistant-frontend-20200715.0
   * bump home-assistant-frontend-20200715.1
   * bump home-assistant-frontend-20200716.0
+  * bump zigpy-0.22.2
 
 2020-07-12 homeassistant-0.112.4
   * fix influcdb-client compile problems
