@@ -1,4 +1,4 @@
-2020-07-18
+2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing
   * bump pydeconz-72
   * bump aiokafka-0.6.0
@@ -17,6 +17,7 @@
   * add pymata-express-1.13
   * add pymata-express-1.17
   * add aioymaps-1.0.0
+  * update homeassistant-0.112.5.ebuild
 
 2020-07-12 homeassistant-0.112.4
   * fix influcdb-client compile problems
