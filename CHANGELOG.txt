@@ -1,7 +1,7 @@
 2020-07-18
   * remove typing
   * bump pydeconz-72
-
+  * bump aiokafka-0.6.0
 
 2020-07-12 homeassistant-0.112.4
   * fix influcdb-client compile problems
