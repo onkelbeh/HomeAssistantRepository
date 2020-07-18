@@ -1,5 +1,6 @@
 2020-07-18
   * remove typing
+  * bump pydeconz-72
 
 
 2020-07-12 homeassistant-0.112.4
