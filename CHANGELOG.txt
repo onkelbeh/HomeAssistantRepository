@@ -22,6 +22,7 @@
   * update xboxapi-2.0.0
   * add accuweather-0.0.9
   * update accuweather-0.0.9
+  * bump netdisco-2.8.1
 
 2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing
