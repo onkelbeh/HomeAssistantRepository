@@ -15,6 +15,7 @@
   * bump pysmartthings-0.7.2
   * add bond-api-0.1.4.ebuild, bond-api-0.1.7.ebuild
   * bump androidtv-0.0.46
+  * bump simplisafe-python-9.2.1
 
 2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing
