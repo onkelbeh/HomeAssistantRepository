@@ -20,7 +20,7 @@ IUSE="test"
 RDEPEND="${DEPEND}
 	>=dev-python/requests-2.0[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-3.0.0[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.24.4[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.25.1[${PYTHON_USEDEP}]
 	>=dev-python/casttube-0.2.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
