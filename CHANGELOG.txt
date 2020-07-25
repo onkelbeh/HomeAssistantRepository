@@ -23,6 +23,8 @@
   * add accuweather-0.0.9
   * update accuweather-0.0.9
   * bump netdisco-2.8.1
+  * update homeassistant-0.113.0
+  * add some actual useflags to 0.113.0
 
 2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing

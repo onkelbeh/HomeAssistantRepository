@@ -15,11 +15,15 @@
   <use>
     <flag name="abode">Library for the Abode alarm API</flag>
     <flag name="adguard">monitor your ad- and tracker-blocking DNS server</flag>
+    <flag name="ads">Beckhoff automation devices running TwinCAT</flag>
+    <flag name="agent_dvr">Agent DVR is a free* software DVR solution</flag>
+    <flag name="aioguardian">integrates Elexa Guardian water valve controllers</flag>
     <flag name="alarmdecoder">AlarmDecoder extended</flag>
     <flag name="ambiclimate">communicate with Ambiclimate</flag>
     <flag name="ambient_station">retrieves local weather information from Ambient Weather</flag>
     <flag name="amcrest">integrate your Amcrest or Dahua IP camera</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
+    <flag name="apache_kafka">sends all state changes to a Apache Kafka topic</flag>
     <flag name="apprise">just about every Notification platform</flag>
     <flag name="arcam_fmj">speaking to Arcam receivers</flag>
     <flag name="asuswrt">Api wrapper for Asuswrt</flag>
@@ -60,6 +64,7 @@
     <flag name="everlights">Library for controlling an EverLights lighting system</flag>
     <flag name="flume">monitors the real-time status of your home water meter</flag>
     <flag name="flunearyou">allows users in the US to get information from Flu Near You</flag>
+    <flag name="foobot">fetch air quality data from your Foobot device</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
     <flag name="frontend">(obsolete frontend useflag, until 0.108.5)</flag>
     <flag name="gpiozero">interface to GPIO devices on a Raspberry Pi</flag>
@@ -82,9 +87,11 @@
     <flag name="ihc">use IHC Python SDK</flag>
     <flag name="incomfort">client for Intergas InComfort/InTouch Lan2RF systems</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
+    <flag name="insteon">allowing linked INSTEON devices to be used</flag>
     <flag name="intesishome">communications with IntesisHome Smart AC Controllers</flag>
     <flag name="ipma">ipma weather platform</flag>a
     <flag name="jewish_calendar">jewish_calendar</flag>
+    <flag name="joaoapps_join">joaoapps_join integration exposes services from Join</flag>
     <flag name="kef">KEF wireless speakers</flag>a
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="maxcube_hack">apply Patch for https://github.com/home-assistant/home-assistant/issues/28811</flag>
@@ -98,6 +105,7 @@
     <flag name="mysql">install MySQL Libraries for use with HomeAssistant</flag>
     <flag name="nederlandse_spoorwegen">train service in the Netherlands</flag>
     <flag name="netdata">API for interacting with Netdata</flag>
+    <flag name="nws">uses the National Weather Service web API</flag>
     <flag name="nx584">NX584/NX8E Interface Library and Server</flag>
     <flag name="openwrt">fetch connected devices from your OpenWrt</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
@@ -105,8 +113,10 @@
     <flag name="plex">Python bindings for the Plex API</flag>
     <flag name="plugwise">Plugwise_Smile (Anna/Adam/P1) API</flag>
     <flag name="powerwall">API for Tesla Powerwall</flag>
+    <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="recorder">storing details in a database per sqlalchemy</flag>
+    <flag name="rejseplanen">travel details for Danish public transport</flag>
     <flag name="ring">integrate your ring.com devices</flag>
     <flag name="roku">add support for Roku players</flag>
     <flag name="roomba">control a iRobot Roomba vacuum or iRobot Braava m-series mop</flag>
@@ -117,6 +127,7 @@
     <flag name="simplisafe">integrates SimpliSafe home security (V2 and V3) systems</flag>
     <flag name="sma">add Support for SMA Solar WebConnect</flag>
     <flag name="smappee">integrate Smappee monitors, plugs and switches</flag>
+    <flag name="smarthab">control your lights and shutters with the SmartHab integration</flag>
     <flag name="socat">Install socat and socat-zwave startscript</flag>
     <flag name="socialblade">monitor Youtube Channels</flag>
     <flag name="solax">Solax inverter API client</flag>
@@ -127,10 +138,13 @@
     <flag name="ssl">include support for haproxy</flag>
     <flag name="synologydsm">monitor getting various statistics from your Synology NAS</flag>
     <flag name="systemmonitor">monitor your platform</flag>
+    <flag name="tesla">integration with the Tesla cloud service</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tile">API for Tile Bluetooth trackers</flag>
     <flag name="toon">client for the Quby ToonAPI</flag>
+    <flag name="tplink">control your TP-Link Smart Home Devices</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
+    <flag name="tuya">integrate all Tuya Smart related platforms</flag>
     <flag name="ubee">getting stats from Ubee routers</flag>
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="vallox">control any Vallox ventilation unit</flag>
@@ -139,6 +153,7 @@
     <flag name="vera">add support for Vera Z-Wave Controller</flag>
     <flag name="version">display the current Home Assistant versions</flag>
     <flag name="vicare">communicate with the Viessmann ViCare API</flag>
+    <flag name="vizio">allows you to control SmartCast-compatible TVs</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
@@ -148,6 +163,7 @@
     <flag name="xs1">get and set values of the EZcontrol XS1 Gateway</flag>
     <flag name="yeelight">allows you to control your Yeelight Wifi bulbs</flag>
     <flag name="youtube">support for youtube_dl</flag>
+    <flag name="zerproc">discovers nearby Zerproc lights</flag>
     <flag name="zigbee">Support for ZHA/deconz based Zigbee/ZNet Devices</flag>
     <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
     <flag name="z-wave">Support for Z-Wave Devices (uncomplete)</flag>
