@@ -3,6 +3,7 @@
   * bump pychromecast-7.1.2, remove many oldies
   * add pyControl4-0.0.6
   * bump pyobihai-1.2.3
+  * add httpx-0.13.3
 
 2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing
