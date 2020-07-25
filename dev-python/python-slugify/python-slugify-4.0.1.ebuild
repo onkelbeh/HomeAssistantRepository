@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_{6,7} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
@@ -13,11 +13,11 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
-RDEPEND=">=dev-python/unidecode-0.04.16[${PYTHON_USEDEP}]
-		 ~dev-python/text-unidecode-1.2[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/unidecode-1.1.1[${PYTHON_USEDEP}]
+		 >=dev-python/text-unidecode-1.3[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
