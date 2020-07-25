@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
@@ -13,17 +13,19 @@ MY_P=${MY_PN}-${PV}
 DESCRIPTION="A python wrapper for the Discord API"
 HOMEPAGE="https://github.com/Rapptz/discord.py https://pypi.org/project/discord.py/"
 #SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
-#SRC_URI="https://github.com/Rapptz/discord.py/archive/v1.2.3.tar.gz"
 SRC_URI="https://github.com/Rapptz/${MY_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 S=${WORKDIR}/${MY_P}
 
-RDEPEND=""
+RDEPEND=">=dev-python/aiohttp-3.6.0[${PYTHON_USEDEP}]
+	<dev-python/aiohttp-3.7.0[${PYTHON_USEDEP}]
+	>=dev-python/websockets-6.0[${PYTHON_USEDEP}]
+	<dev-python/websockets-7.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
