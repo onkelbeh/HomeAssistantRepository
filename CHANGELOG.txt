@@ -10,6 +10,7 @@
   * add wolf_smartset-0.1.4
   * bump pyinsteon-1.0.7
   * bump bellows-0.18.0
+  * add pyskyqhub-0.1.0
 
 2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing
