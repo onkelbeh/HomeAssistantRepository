@@ -19,6 +19,7 @@
   * bump pynuki-1.3.8
   * update python-slugify-4.0.1
   * bump coverage-5.2.1
+  * update xboxapi-2.0.0
 
 2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing
