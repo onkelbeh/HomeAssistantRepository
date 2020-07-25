@@ -8,6 +8,7 @@
   * add httpcore-0.9.1
   * add sniffio-1.1.0
   * add wolf_smartset-0.1.4
+  * bump pyinsteon-1.0.7
 
 2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing

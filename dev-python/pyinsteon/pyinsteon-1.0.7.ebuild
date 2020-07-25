@@ -16,11 +16,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/pyserial-3.2.0[${PYTHON_USEDEP}]
+RDEPEND="dev-python/pyserial[${PYTHON_USEDEP}]
 	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
-	dev-python/async_timeout[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/aiofiles[${PYTHON_USEDEP}]"
+	dev-python/pypubsub[${PYTHON_USEDEP}]
+	dev-python/aiofiles[${PYTHON_USEDEP}]
+	dev-python/async_generator[${PYTHON_USEDEP}]
+	dev-python/pyyaml[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
