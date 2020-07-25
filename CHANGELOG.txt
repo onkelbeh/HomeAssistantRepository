@@ -20,6 +20,7 @@
   * update python-slugify-4.0.1
   * bump coverage-5.2.1
   * update xboxapi-2.0.0
+  * add accuweather-0.0.9
 
 2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing
