@@ -5,6 +5,7 @@
   * bump pyobihai-1.2.3
   * add httpx-0.13.3
   * add hstspreload-2020.7.22
+  * add httpcore-0.9.1
 
 2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing
