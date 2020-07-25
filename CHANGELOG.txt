@@ -6,6 +6,7 @@
   * add httpx-0.13.3
   * add hstspreload-2020.7.22
   * add httpcore-0.9.1
+  * add sniffio-1.1.0
 
 2020-07-18 homeassistant-0.112.5.ebuild
   * remove typing
