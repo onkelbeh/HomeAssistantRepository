@@ -22,6 +22,11 @@ DEPEND="${REDEPEND}
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/asynctest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-trio[${PYTHON_USEDEP}]
+		dev-python/pytest-tornasync[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
