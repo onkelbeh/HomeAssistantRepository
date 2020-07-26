@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{5..8} )
 
 inherit distutils-r1
 
@@ -19,8 +19,9 @@ IUSE="test"
 RDEPEND="dev-python/curve25519-donna[${PYTHON_USEDEP}]
 	dev-python/ed25519[${PYTHON_USEDEP}]
 	dev-python/pycryptodome[${PYTHON_USEDEP}]
-	dev-python/tlslite-ng[${PYTHON_USEDEP}]
-	dev-python/zeroconf[${PYTHON_USEDEP}]"
+	dev-python/zeroconf[${PYTHON_USEDEP}]
+	dev-python/base36[${PYTHON_USEDEP}]
+	dev-python/pyqrcode[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
