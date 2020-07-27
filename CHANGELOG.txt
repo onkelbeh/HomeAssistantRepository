@@ -1,4 +1,7 @@
-2020-07-16
+2020-07-27
+  * update teslajsonpy-0.10.1
+
+2020-07-26
   * update HAP-python-3.0.0
   * downgrade volvooncall-0.8.7
   * add aioazuredevops-1.3.4
