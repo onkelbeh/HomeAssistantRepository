@@ -1,6 +1,7 @@
 2020-07-27
   * update teslajsonpy-0.10.1
   * update abodepy-1.1.0
+  * update holidays-0.10.3
 
 2020-07-26
   * update HAP-python-3.0.0
