@@ -39,7 +39,7 @@ DEPEND="${RDEPEND}
 	~www-servers/tornado-6.0.4[${PYTHON_USEDEP}]
 	~dev-python/protobuf-python-3.11.4[${PYTHON_USEDEP}]
 	~dev-libs/protobuf-3.11.4
-	~dev-python/tzlocal-2.0.0[${PYTHON_USEDEP}]
+	~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
 	~dev-python/pytz-2020.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 
@@ -68,6 +68,9 @@ src_prepare() {
 		-i esphome.egg-info/requires.txt \
 		-i setup.py
 	sed -e 's;protobuf==3.11.3;protobuf==3.11.4;' \
+		-i esphome.egg-info/requires.txt \
+		-i setup.py
+	sed -e 's;tzlocal==2.0.0;tzlocal==2.1;' \
 		-i esphome.egg-info/requires.txt \
 		-i setup.py
 	eapply_user
