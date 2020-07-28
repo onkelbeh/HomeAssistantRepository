@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyvolumio</remote-id>
+    <maintainer status="unknown">
+      <email>onfreund@gmail.com</email>
+      <name>On Freund</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
