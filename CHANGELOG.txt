@@ -5,6 +5,7 @@
   * rename PyCRC -> pythoncrc (as the source on pypi did)
   * update PyCRC deps in dsmr-parser
   * remove (revoked) aioswitcher-2019.* Ebuilds
+  * remove (revoked) smhi-pkg-1.0.10, update to smhi-pkg-1.0.13
 
 2020-07-27
   * update teslajsonpy-0.10.1
