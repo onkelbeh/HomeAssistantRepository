@@ -5,4 +5,12 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">ifaddr</remote-id>
+    <docs>https://pythonhosted.org/ifaddr/</docs>
+    <maintainer status="unknown">
+      <email>scm@smurn.org</email>
+      <name>Stefan C. Mueller</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
