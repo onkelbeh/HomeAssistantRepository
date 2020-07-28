@@ -19,7 +19,11 @@
     speedtest-cli/Manifest
   * update requirements_all.txt with 0.113.1 deps
   * update dev ebuild to 0.113.1
-
+  * fix https://github.com/onkelbeh/HomeAssistantRepository/issues/22
+    - add colorzero-1.1
+    - update gpiozero-1.5.1-r1, add missing dep, revoke gpiozero-1.5.1
+    - update gpiozero-1.5.0-r1, add missing dep, remove gpiozero-1.5.0
+    
 2020-07-27
   * update teslajsonpy-0.10.1
   * update abodepy-1.1.0
