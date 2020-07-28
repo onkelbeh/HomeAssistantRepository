@@ -27,6 +27,7 @@
   * update esphome-9999 to 1.14.5
   * update colorlog-4.2.1
   * update ifaddr-0.1.7
+  * update esphome-1.15.0_beta1, read Ebuild before using it.
 
 2020-07-27
   * update teslajsonpy-0.10.1
