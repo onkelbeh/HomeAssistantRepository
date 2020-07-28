@@ -2,6 +2,8 @@
   * add pyvolumio-0.1.0
   * bump xboxapi-2.0.1
   * bump python-miio-0.5.3
+  * rename PyCRC -> pythoncrc (as the source on pypi did)
+  * update PyCRC deps in dsmr-parser
 
 2020-07-27
   * update teslajsonpy-0.10.1

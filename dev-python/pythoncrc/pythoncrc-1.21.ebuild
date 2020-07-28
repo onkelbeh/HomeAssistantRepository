@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Python CRC Calculations Modules"
-HOMEPAGE="https://github.com/cristianav/PyCRC https://pypi.org/project/PyCRC/"
+HOMEPAGE="https://github.com/cristianav/PyCRC https://pypi.org/project/pythoncrc/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"
