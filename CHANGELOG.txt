@@ -17,6 +17,7 @@
     semantic_version/Manifest
     speedtest-cli/Manifest
     speedtest-cli/Manifest
+  * update requirements_all.txt with 0.113.1 deps
 
 2020-07-27
   * update teslajsonpy-0.10.1
