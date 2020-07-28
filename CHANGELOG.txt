@@ -4,6 +4,7 @@
   * bump python-miio-0.5.3
   * rename PyCRC -> pythoncrc (as the source on pypi did)
   * update PyCRC deps in dsmr-parser
+  * remove (revoked) aioswitcher-2019.* Ebuilds
 
 2020-07-27
   * update teslajsonpy-0.10.1
