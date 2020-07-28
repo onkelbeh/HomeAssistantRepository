@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">colorlog</remote-id>
+    <maintainer status="unknown">
+      <email>sam@borntyping.co.uk</email>
+      <name>Sam Clements</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>

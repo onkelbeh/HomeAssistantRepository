@@ -25,6 +25,7 @@
     - update gpiozero-1.5.0-r1, add missing dep, remove gpiozero-1.5.0
   * update esphome-1.14.5
   * update esphome-9999 to 1.14.5
+  * update colorlog-4.2.1
 
 2020-07-27
   * update teslajsonpy-0.10.1
