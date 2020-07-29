@@ -1,5 +1,6 @@
 2020-07-29 homeassistant-0.113.2
   * update homeassistant-0.113.2
+  * update skybellpy-0.6.1
 
 2020-07-28
   * add pyvolumio-0.1.0
