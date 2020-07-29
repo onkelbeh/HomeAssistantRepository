@@ -129,6 +129,7 @@
     <flag name="shodan">Shodan is a search engine for Internet-connected devices</flag>
     <flag name="signal">add Support for Moxie's Signal API</flag>
     <flag name="simplisafe">integrates SimpliSafe home security (V2 and V3) systems</flag>
+    <flag name="skybell">integrate your Skybell.com doorbells</flag>
     <flag name="sma">add Support for SMA Solar WebConnect</flag>
     <flag name="smappee">integrate Smappee monitors, plugs and switches</flag>
     <flag name="smarthab">control your lights and shutters with the SmartHab integration</flag>
