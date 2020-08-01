@@ -18,6 +18,7 @@
     - create a PR for the Patch (https://github.com/home-assistant-ecosystem/home-assistant-cli/pull/347)
   * update home-assistant-cli-9999
   * update homeassistant-0.113.3
+  * bump pychromecast-7.2.0
 
 2020-07-29 homeassistant-0.113.2
   * update homeassistant-0.113.2
