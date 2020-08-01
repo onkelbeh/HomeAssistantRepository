@@ -4,6 +4,7 @@
   * bump androidtv-0.0.47
   * bump aioambient-1.2.0
   * bump aioharmony-0.2.6
+  * update simplisafe-python-9.2.2
 
 2020-07-29 homeassistant-0.113.2
   * update homeassistant-0.113.2
