@@ -13,6 +13,10 @@
   * bump bond-api-0.1.8
   * update aiofiles>=0.4.0 dep for androidtv
   * add jsonpath-ng-1.5.1
+  * update home-assistant-cli-0.9.0, home-assistant-cli-0.9.0
+    - include a patch for https://github.com/home-assistant-ecosystem/home-assistant-cli/issues/322
+    - create a PR for the Patch (https://github.com/home-assistant-ecosystem/home-assistant-cli/pull/347)
+  * update home-assistant-cli-9999
 
 2020-07-29 homeassistant-0.113.2
   * update homeassistant-0.113.2

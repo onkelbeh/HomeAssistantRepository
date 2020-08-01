@@ -1,5 +1,7 @@
 homeassistant
 esphome==1.14.5
+home-assistant-cli
+
 abodepy==0.19.0
 Adafruit_BBIO==1.1.1
 Adafruit-Blinka==3.9.0
