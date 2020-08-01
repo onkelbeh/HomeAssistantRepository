@@ -10,6 +10,7 @@
   * update pywemo-0.4.45
   * bump pyads-3.2.1
   * bump aioazuredevops-1.3.5
+  * bump bond-api-0.1.8
 
 2020-07-29 homeassistant-0.113.2
   * update homeassistant-0.113.2
