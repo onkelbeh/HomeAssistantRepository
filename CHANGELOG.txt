@@ -1,4 +1,4 @@
-2020-08-01
+2020-08-01 homeassistant-0.113.3
   * bump youtube_dl-2020.7.28
   * bump adb-shell-0.2.1
   * bump androidtv-0.0.47
@@ -17,6 +17,7 @@
     - include a patch for https://github.com/home-assistant-ecosystem/home-assistant-cli/issues/322
     - create a PR for the Patch (https://github.com/home-assistant-ecosystem/home-assistant-cli/pull/347)
   * update home-assistant-cli-9999
+  * update homeassistant-0.113.3
 
 2020-07-29 homeassistant-0.113.2
   * update homeassistant-0.113.2
