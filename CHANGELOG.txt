@@ -1,3 +1,6 @@
+2020-08-01
+  * bump youtube_dl-2020.7.28
+
 2020-07-29 homeassistant-0.113.2
   * update homeassistant-0.113.2
   * update skybellpy-0.6.1
