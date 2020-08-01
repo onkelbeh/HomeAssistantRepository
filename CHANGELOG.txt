@@ -5,7 +5,8 @@
   * bump aioambient-1.2.0
   * bump aioharmony-0.2.6
   * update simplisafe-python-9.2.2
-  * update elkm1-lib-0.7.19.ebuild
+  * update elkm1-lib-0.7.19
+  * bump wirelesstagpy-0.4.1
 
 2020-07-29 homeassistant-0.113.2
   * update homeassistant-0.113.2
