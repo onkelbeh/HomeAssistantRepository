@@ -1,6 +1,7 @@
 2020-08-01
   * bump youtube_dl-2020.7.28
   * bump adb-shell-0.2.1
+  * bump androidtv-0.0.47
 
 2020-07-29 homeassistant-0.113.2
   * update homeassistant-0.113.2

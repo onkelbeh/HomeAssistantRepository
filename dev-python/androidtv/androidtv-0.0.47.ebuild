@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND=">=dev-python/pure-python-adb-0.2.2[${PYTHON_USEDEP}]
-		 >=dev-python/adb-shell-0.1.1[${PYTHON_USEDEP}]"
+		 >=dev-python/adb-shell-0.2.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
