@@ -51,7 +51,8 @@ RDEPEND="${RDEPEND}
 	~dev-python/requests-2.24.0[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
-	~dev-python/voluptuous-serialize-2.4.0[${PYTHON_USEDEP}]"
+	~dev-python/voluptuous-serialize-2.4.0[${PYTHON_USEDEP}]
+	~dev-python/yarl-1.4.2[${PYTHON_USEDEP}]"
 
 # from package_constraints.txt, if not defined earlier
 RDEPEND="${RDEPEND}
