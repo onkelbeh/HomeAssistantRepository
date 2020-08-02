@@ -1,3 +1,8 @@
+2020-08-02
+  * bump protobuf-3.12.4
+  * bump protobuf-python-3.12.4
+  * update esphome-9999
+
 2020-08-01 homeassistant-0.113.3
   * bump youtube_dl-2020.7.28
   * bump adb-shell-0.2.1

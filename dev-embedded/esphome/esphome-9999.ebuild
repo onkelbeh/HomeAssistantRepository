@@ -37,8 +37,8 @@ DEPEND="${RDEPEND}
 	~dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
 	~www-servers/tornado-6.0.4[${PYTHON_USEDEP}]
-	~dev-python/protobuf-python-3.12.2[${PYTHON_USEDEP}]
-	~dev-libs/protobuf-3.12.2
+	~dev-python/protobuf-python-3.12.4[${PYTHON_USEDEP}]
+	~dev-libs/protobuf-3.12.4
 	~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
 	~dev-python/pytz-2020.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.4[${PYTHON_USEDEP}]
