@@ -4,6 +4,7 @@
   * update esphome-9999
   * add the forgotten protobuf-3.12 patches
   * Pin yarl dependency to 1.4.2 as core dependency
+  * add meteofrance-api-0.1.0
 
 2020-08-01 homeassistant-0.113.3
   * bump youtube_dl-2020.7.28
