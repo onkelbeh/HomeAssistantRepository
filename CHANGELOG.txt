@@ -8,6 +8,7 @@
   * bump pyhomematic-0.1.68
   * bump pyatmo-4.0.0
   * bump toonapi-0.2.0
+  * bump PyMetno-0.7.0
 
 2020-08-02
   * bump protobuf-3.12.4
