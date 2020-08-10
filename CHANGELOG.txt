@@ -2,6 +2,7 @@
   * bump pyskyqhub-0.1.1
   * bump numato-gpio-0.8.0
   * update hass-nabucasa-0.35.0
+  * bump home-assistant-frontend-20200803.0
 
 2020-08-02
   * bump protobuf-3.12.4
