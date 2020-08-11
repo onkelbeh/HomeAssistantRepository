@@ -8,6 +8,7 @@
   * bump python-openzwave-mqtt-1.0.4
   * bump dynalite-devices-0.1.44
   * bump numpy-1.19.1
+  * bump DoorBirdPy-2.1.0
 
 2020-08-10
   * bump pyskyqhub-0.1.1
