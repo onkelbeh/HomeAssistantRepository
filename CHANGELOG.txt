@@ -1,5 +1,6 @@
 2020-08-11
   * bump blinkpy-0.16.3
+  * bump wiffi-1.0.1
 
 2020-08-10
   * bump pyskyqhub-0.1.1
