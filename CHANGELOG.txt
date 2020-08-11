@@ -3,7 +3,8 @@
   * bump wiffi-1.0.1
   * add ovoenergy-1.1.6
   * bump home-assistant-frontend-20200805.0
-  * bump androidtv-0.0.48
+  * update androidtv-0.0.48
+  * bump pure-python-adb-0.3.0
 
 2020-08-10
   * bump pyskyqhub-0.1.1
