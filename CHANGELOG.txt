@@ -6,6 +6,7 @@
   * update androidtv-0.0.48
   * bump pure-python-adb-0.3.0
   * bump python-openzwave-mqtt-1.0.4
+  * bump dynalite-devices-0.1.44
 
 2020-08-10
   * bump pyskyqhub-0.1.1
