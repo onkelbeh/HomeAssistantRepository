@@ -92,7 +92,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pillow-7.1.2[${PYTHON_USEDEP}]
 	>=dev-python/pycparser-2.19[${PYTHON_USEDEP}]
 	>=dev-python/pyotp-2.3.0[${PYTHON_USEDEP}]
-	>=dev-python/PyQRCode-1.2.1[${PYTHON_USEDEP}]
+	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
 	>=dev-python/pyrfc3339-1.1[${PYTHON_USEDEP}]
 	~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.8.0[${PYTHON_USEDEP}]
