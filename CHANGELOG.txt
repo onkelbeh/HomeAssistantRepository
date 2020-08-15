@@ -30,6 +30,7 @@
   * bump pyvizio-0.1.51
   * update simplisafe-python-9.3.0
   * bump konnected-1.2.0
+  * bump pyipp-0.11.0
 
 2020-08-11
   * bump blinkpy-0.16.3
