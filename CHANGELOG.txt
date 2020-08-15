@@ -45,6 +45,7 @@
   * remove dupe of PyQRCode / pyqrcode
   * zeroconf-0.28.0 needs ifaddr-0.1.7
   * update forgotten package_constraints.txt
+  * remove dupe of aiohttp-3.6.2.ebuild
 
 2020-08-11
   * bump blinkpy-0.16.3
