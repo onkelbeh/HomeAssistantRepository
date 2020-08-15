@@ -1,4 +1,4 @@
-2020-08-15
+2020-08-15 homeassistant-0.114.0
   * bump protobuf-python-3.12.2
   * add pycocotools-2.0.1
   * add tf-slim-1.1.0
@@ -37,6 +37,7 @@
   * bump ovoenergy-1.1.7
   * bump growattServer-0.1.1
   * bump apprise-0.8.7
+  * update homeassistant-0.114.0
 
 2020-08-11
   * bump blinkpy-0.16.3
