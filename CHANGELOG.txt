@@ -12,6 +12,7 @@
   * add aiopvpc-2.0.2
   * add pycoolmasternet-async-0.1.0
   * add py-nightscout-1.2.1
+  * bump pysmappee-0.2.9
 
 2020-08-11
   * bump blinkpy-0.16.3
