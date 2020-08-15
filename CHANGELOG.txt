@@ -13,6 +13,9 @@
   * add pycoolmasternet-async-0.1.0
   * add py-nightscout-1.2.1
   * bump pysmappee-0.2.9
+  * add aioflo-0.4.0
+  * bump aioflo-0.4.1
+  * add aioeafm-0.1.2
 
 2020-08-11
   * bump blinkpy-0.16.3
