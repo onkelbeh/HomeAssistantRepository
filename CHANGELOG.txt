@@ -48,6 +48,8 @@
   * remove dupe of aiohttp-3.6.2.ebuild
   * patch esphome-1.14.5-r1 to use ~dev-python/ifaddr-0.1.7
     or just use 1.15.0
+  * esphome-9999:
+      reassign ifaddr & tornado to server IUSE for testing
 
 2020-08-11
   * bump blinkpy-0.16.3
