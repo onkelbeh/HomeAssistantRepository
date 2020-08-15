@@ -16,6 +16,7 @@
   * add aioflo-0.4.0
   * bump aioflo-0.4.1
   * add aioeafm-0.1.2
+  * update devolo-home-control-api-0.13.0
 
 2020-08-11
   * bump blinkpy-0.16.3
