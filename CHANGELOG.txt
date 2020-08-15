@@ -1,6 +1,7 @@
 2020-08-15
   * bump protobuf-python-3.12.2
   * add pycocotools-2.0.1
+  * add tf-slim-1.1.0
 
 2020-08-11
   * bump blinkpy-0.16.3
