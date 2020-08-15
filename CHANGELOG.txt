@@ -22,6 +22,7 @@
   * bump libpurecool-0.6.3
   * bump home-assistant-frontend-20200811.0
   * bump RachioPy-0.1.4
+  * bump zha-quirks-0.0.43.ebuild
 
 2020-08-11
   * bump blinkpy-0.16.3
