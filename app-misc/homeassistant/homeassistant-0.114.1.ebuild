@@ -33,7 +33,7 @@ RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 # Home Assistant Core dependencies
 # from setup.py
 RDEPEND="${RDEPEND}
-	~dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
+	~dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
 	~dev-python/astral-1.10.1[${PYTHON_USEDEP}]
 	~dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 	~dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
@@ -45,7 +45,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
 	~dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
-	~dev-python/python-slugify-4.0.0[${PYTHON_USEDEP}]
+	~dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2020.1[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]
 	~dev-python/requests-2.24.0[${PYTHON_USEDEP}]
