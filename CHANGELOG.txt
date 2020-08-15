@@ -33,6 +33,7 @@
   * bump pyipp-0.11.0
   * bump rokuecp-0.6.0
   * bump PySyncThru-0.7.0
+  * update pywemo-0.4.46, stupid filename on Pypi...
 
 2020-08-11
   * bump blinkpy-0.16.3
