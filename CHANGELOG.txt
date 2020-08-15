@@ -36,6 +36,7 @@
   * update pywemo-0.4.46, stupid filename on Pypi...
   * bump ovoenergy-1.1.7
   * bump growattServer-0.1.1
+  * bump apprise-0.8.7
 
 2020-08-11
   * bump blinkpy-0.16.3
