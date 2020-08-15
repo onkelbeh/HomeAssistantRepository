@@ -13,10 +13,10 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-#KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
+KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/ifaddr[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

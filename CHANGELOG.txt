@@ -43,6 +43,7 @@
   * change to dev-python/pyqrcode
   * update homeassistant-0.114.1
   * remove dupe of PyQRCode / pyqrcode
+  * zeroconf-0.28.0 needs ifaddr-0.1.7
 
 2020-08-11
   * bump blinkpy-0.16.3
