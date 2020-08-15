@@ -39,6 +39,7 @@
   * bump apprise-0.8.7
   * update homeassistant-0.114.0
   * remove obsolete frontends
+  * bump pycognito-0.1.4
 
 2020-08-11
   * bump blinkpy-0.16.3
