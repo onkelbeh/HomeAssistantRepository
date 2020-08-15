@@ -4,6 +4,7 @@
   * add tf-slim-1.1.0
   * update regenmaschine-2.1.0
   * bump teslajsonpy-0.10.3
+  * bump teslajsonpy-0.10.4
 
 2020-08-11
   * bump blinkpy-0.16.3
