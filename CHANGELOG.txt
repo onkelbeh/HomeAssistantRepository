@@ -42,6 +42,7 @@
   * bump pycognito-0.1.4
   * change to dev-python/pyqrcode
   * update homeassistant-0.114.1
+  * remove dupe of PyQRCode / pyqrcode
 
 2020-08-11
   * bump blinkpy-0.16.3
