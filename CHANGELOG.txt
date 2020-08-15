@@ -19,6 +19,7 @@
   * update devolo-home-control-api-0.13.0
   * update dynalite-devices-0.1.45
   * bump pysmartthings-0.7.3
+  * bump libpurecool-0.6.3
 
 2020-08-11
   * bump blinkpy-0.16.3
