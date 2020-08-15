@@ -8,6 +8,7 @@
   * bump home-assistant-frontend-20200807.1
   * bump env-canada-0.2.0
   * bump pyvolumio-0.1.1
+  * bump aiohomekit-0.2.46
 
 2020-08-11
   * bump blinkpy-0.16.3
