@@ -1,3 +1,6 @@
+2020-08-15
+  * bump protobuf-python-3.12.2
+
 2020-08-11
   * bump blinkpy-0.16.3
   * bump wiffi-1.0.1
