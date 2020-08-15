@@ -6,6 +6,7 @@
   * bump teslajsonpy-0.10.3
   * bump teslajsonpy-0.10.4
   * bump home-assistant-frontend-20200807.1
+  * bump env-canada-0.2.0
 
 2020-08-11
   * bump blinkpy-0.16.3
