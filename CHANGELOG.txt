@@ -1,3 +1,6 @@
+2020-08-16
+  * update esphome-1.15.0_beta3 (experimental)
+
 2020-08-15 homeassistant-0.114.1
   * bump protobuf-python-3.12.2
   * add pycocotools-2.0.1
