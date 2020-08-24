@@ -24,6 +24,7 @@
   * bump praw-7.1.0
   * bump connect-box-0.2.7
   * add python-http-client-3.3.1
+  * add starkbank-ecdsa-1.0.0
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
