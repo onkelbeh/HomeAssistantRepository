@@ -10,6 +10,7 @@
   * add smart-meter-texas-0.4.1
   * bump tenacity-6.2.0
   * bump aioymaps-1.1.0
+  * bump PyMetno-0.7.1
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
