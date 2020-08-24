@@ -27,6 +27,7 @@
   * add starkbank-ecdsa-1.0.0
   * update sendgrid-6.4.6
   * update python-whois-0.7.3
+  * bump slixmpp-1.5.2
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
