@@ -15,6 +15,7 @@
   * bump hlk-sw16-0.0.9
   * bump broadlink-0.14.1
   * bump home-assistant-frontend-20200820.0
+  * add pykodi-0.1.0
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
