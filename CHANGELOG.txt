@@ -22,6 +22,7 @@
   * bump pylast-3.3.0
   * update beautifulsoup4-4.9.1
   * bump praw-7.1.0
+  * bump connect-box-0.2.7
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
