@@ -13,6 +13,7 @@
   * bump PyMetno-0.7.1
   * bump sentry-sdk-0.16.5
   * bump hlk-sw16-0.0.9
+  * bump broadlink-0.14.1
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
