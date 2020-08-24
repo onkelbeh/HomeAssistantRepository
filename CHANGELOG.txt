@@ -11,6 +11,7 @@
   * bump tenacity-6.2.0
   * bump aioymaps-1.1.0
   * bump PyMetno-0.7.1
+  * bump sentry-sdk-0.16.5
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
