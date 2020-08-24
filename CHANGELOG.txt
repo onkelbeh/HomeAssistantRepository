@@ -17,6 +17,7 @@
   * bump home-assistant-frontend-20200820.0
   * add pykodi-0.1.0
   * bump PlexAPI-4.1.0
+  * add pyrisco-0.2.1
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
