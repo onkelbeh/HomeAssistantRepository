@@ -1,3 +1,6 @@
+2020-08-24
+  * bump openevsewifi-1.1.0
+
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
 
