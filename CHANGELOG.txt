@@ -39,6 +39,7 @@
   * update bomradarloop-0.1.5
   * bump aiocoap-0.4_beta3
   * add aioshelly-0.1.2
+  * add pywilight-0.0.65
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
