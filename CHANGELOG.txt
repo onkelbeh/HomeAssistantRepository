@@ -32,6 +32,7 @@
   * update psutil-5.7.2
   * update mutagen-1.45.0
   * update discord-py-1.4.1
+  * colorlog-4.2.1 marked as stable
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
