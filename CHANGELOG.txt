@@ -6,6 +6,7 @@
   * bump zeroconf-0.28.1
   * bump python-openzwave-mqtt-1.0.5
   * bump pysuez-0.1.19
+  * bump pychromecast-7.2.1
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
