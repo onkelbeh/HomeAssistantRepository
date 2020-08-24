@@ -19,6 +19,7 @@
   * bump PlexAPI-4.1.0
   * add pyrisco-0.2.1
   * update volkszaehler-0.1.3
+  * bump pylast-3.3.0
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
