@@ -3,6 +3,7 @@
   * bump netdisco-2.8.2
   * bump python-velbus-2.0.44
   * bump pytrafikverket-0.1.6.2
+  * bump zeroconf-0.28.1
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
