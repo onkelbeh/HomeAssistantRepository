@@ -2,6 +2,7 @@
   * bump openevsewifi-1.1.0
   * bump netdisco-2.8.2
   * bump python-velbus-2.0.44
+  * bump pytrafikverket-0.1.6.2
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
