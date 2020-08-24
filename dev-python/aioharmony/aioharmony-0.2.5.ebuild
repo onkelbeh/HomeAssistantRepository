@@ -16,9 +16,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=">=dev-python/aiohttp
-		 >=dev-python/async_timeout
-		 >=dev-python/slixmpp"
+RDEPEND="dev-python/aiohttp
+		 dev-python/async_timeout
+		 dev-python/slixmpp"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

@@ -40,6 +40,7 @@
   * bump aiocoap-0.4_beta3
   * add aioshelly-0.1.2
   * add pywilight-0.0.65
+  * fix bad RDEPEND in aioharmony-0.2.x (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/15)
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
