@@ -37,6 +37,7 @@
   * bump discogs-client-2.3.0
   * update py-cpuinfo-7.0.0 from main repo
   * update bomradarloop-0.1.5
+  * bump aiocoap-0.4_beta3
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
