@@ -33,6 +33,7 @@
   * update mutagen-1.45.0
   * update discord-py-1.4.1
   * colorlog-4.2.1 marked as stable
+  * update TwitterAPI-2.5.13
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
