@@ -35,6 +35,7 @@
   * colorlog-4.2.1 marked as stable
   * update TwitterAPI-2.5.13
   * bump discogs-client-2.3.0
+  * update py-cpuinfo-7.0.0 from main repo
 
 2020-08-16
   * update esphome-1.15.0_beta3 (experimental)
