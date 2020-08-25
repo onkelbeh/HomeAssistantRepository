@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python{2_7,3_{5,6,7}} )
+PYTHON_COMPAT=( python3_{6..8} )
 PYTHON_REQ_USE="ssl(+)"
 
 inherit distutils-r1
@@ -25,9 +25,7 @@ RDEPEND="
 	dev-python/certifi[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-1.3.4[${PYTHON_USEDEP}]
 	>=dev-python/pyopenssl-0.14[${PYTHON_USEDEP}]
-	>=dev-python/idna-2.0.0[${PYTHON_USEDEP}]
-	virtual/python-ipaddress[${PYTHON_USEDEP}]
-"
+	>=dev-python/idna-2.0.0[${PYTHON_USEDEP}]"
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
