@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">croniter</remote-id>
+    <maintainer status="unknown">
+      <email>taichino@gmail.com, kiorky@cryptelium.net</email>
+      <name>Matsumoto Taichi, kiorky</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
