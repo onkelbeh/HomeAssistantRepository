@@ -1,5 +1,6 @@
 2020-08-25
   * bump home-assistant-frontend-20200824.0
+  * bump temescal-0.2, bump temescal-0.3
 
 2020-08-24
   * bump openevsewifi-1.1.0
