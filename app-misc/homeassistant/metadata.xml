@@ -98,6 +98,7 @@
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="maxcube_hack">apply Patch for https://github.com/home-assistant/home-assistant/issues/28811</flag>
     <flag name="metno">A library to communicate with the met.no api</flag>
+    <flag name="meteo_france">uses the meteorological data from Meteo-France</flag>
     <flag name="miio">add support for Xiaomi smart appliances</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
     <flag name="mobile_app">Home Assistant Mobile App Support</flag>

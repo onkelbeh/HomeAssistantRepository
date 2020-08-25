@@ -6,6 +6,7 @@
   * fix broken python-synology
   * check and rework deps for python-miio-0.5.2.1 and python-miio-0.5.3.ebuild
   * bump croniter-0.3.3[2,4]
+  * update homeassistant-0.114.2
 
 2020-08-24
   * bump openevsewifi-1.1.0
