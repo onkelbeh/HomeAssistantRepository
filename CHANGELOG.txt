@@ -3,6 +3,7 @@
   * bump temescal-0.2, bump temescal-0.3
   * remove PYTHON_COMPAT for 2.7 (and virtual/python-ipaddress) from urllib3
     https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/14
+  * fix broken python-synology
 
 2020-08-24
   * bump openevsewifi-1.1.0
