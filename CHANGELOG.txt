@@ -1,4 +1,4 @@
-2020-08-25
+2020-08-25 homeassistant-0.114.3
   * bump home-assistant-frontend-20200824.0
   * bump temescal-0.2, bump temescal-0.3
   * remove PYTHON_COMPAT for 2.7 (and virtual/python-ipaddress) from urllib3
@@ -7,6 +7,7 @@
   * check and rework deps for python-miio-0.5.2.1 and python-miio-0.5.3.ebuild
   * bump croniter-0.3.3[2,4]
   * update homeassistant-0.114.2
+  * update homeassistant-0.114.3
 
 2020-08-24
   * bump openevsewifi-1.1.0
