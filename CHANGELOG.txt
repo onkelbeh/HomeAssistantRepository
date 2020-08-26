@@ -5,6 +5,7 @@
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/19
     * add pytest-runner-5.2
     * add missing BDEPEND
+  * update RDEPEND in dev-python/croniter
 
 2020-08-25 homeassistant-0.114.3
   * bump home-assistant-frontend-20200824.0

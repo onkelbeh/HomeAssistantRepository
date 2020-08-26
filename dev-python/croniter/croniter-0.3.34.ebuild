@@ -22,7 +22,8 @@ DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytz[${PYTHON_USEDEP}]
 	)"
-RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]
+	dev-python/natsort[${PYTHON_USEDEP}]"
 python_test() {
 	py.test -v src/croniter/tests || die "tests failed"
 }
