@@ -2,6 +2,9 @@
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
   * add deepmerge-0.1.0, fix BDEPS
   * add vcver-0.2.11
+  * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/19
+    * add pytest-runner-5.2
+    * add missing BDEPEND
 
 2020-08-25 homeassistant-0.114.3
   * bump home-assistant-frontend-20200824.0
