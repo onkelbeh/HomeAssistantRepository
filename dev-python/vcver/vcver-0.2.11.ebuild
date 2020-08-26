@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="a toolset to deeply merge python dictionaries."
-HOMEPAGE="https://github.com/toumorokoshi/deepmerge/ http://deepmerge.readthedocs.io/en/latest/ https://pypi.org/project/deepmerge/"
+DESCRIPTION="provide package versions with version control data."
+HOMEPAGE="https://github.com/toumorokoshi/vcver-python https://pypi.org/project/vcver/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-BDEPEND="dev-python/vcver[${PYTHON_USEDEP}]"
+BDEPEND="dev-python/packaging[${PYTHON_USEDEP}]"
 RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]

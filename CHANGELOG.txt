@@ -1,6 +1,7 @@
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
-  * add deepmerge-0.1.0
+  * add deepmerge-0.1.0, fix BDEPS
+  * add vcver-0.2.11
 
 2020-08-25 homeassistant-0.114.3
   * bump home-assistant-frontend-20200824.0
