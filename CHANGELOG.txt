@@ -10,6 +10,7 @@
   * update aiohomekit-0.2.49
   * update pysmappee-0.2.10
   * update panasonic-viera-0.3.6
+  * bump brother-0.1.15
 
 2020-08-25 homeassistant-0.114.3
   * bump home-assistant-frontend-20200824.0
