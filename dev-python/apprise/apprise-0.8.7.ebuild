@@ -15,7 +15,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
-
+BDEPEND="dev-python/Babel"
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/requests-oauthlib[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
