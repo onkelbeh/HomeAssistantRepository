@@ -65,6 +65,7 @@
   * python-synology-0.8.2-r1, remove urllib3 version limit
   * restore (still needed) importlib_metadata-1.6.0-r1
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/50
+  * zha-quirks must use dev-python/zigpy, not zigpy-homeassistant
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
