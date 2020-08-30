@@ -42,6 +42,7 @@
   * add pytest-test-groups-1.0.3
   * update pytest-sugar
   * add pytest-xdist-1.32.0
+  * fix pure-pcapy3 typo
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
