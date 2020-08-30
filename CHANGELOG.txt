@@ -61,6 +61,7 @@
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/39
     -> requirements.txt is not read by setup.py
   * unpin click-log from bellows-18.1-r1
+  * unpin some versions in openwrt-luci-rpc-1.1.3-r2
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
