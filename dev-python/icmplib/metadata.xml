@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">icmplib</remote-id>
+    <maintainer status="unknown">
+      <email>valentin-hello@gmx.com</email>
+      <name>Valentin BELYN</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
