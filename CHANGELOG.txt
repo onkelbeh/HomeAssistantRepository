@@ -69,6 +69,7 @@
   * dev-python/zigpy-deconz must also use dev-python/zigpy, not zigpy-homeassistant
   * iaqualink needs pytest-runner
   * PyMetno-0.7.1 flip SRC_URI back to Pypi for violating naming conventions
+  * pygatt-4.0.5 needs nose during compile phase
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
