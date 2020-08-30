@@ -2,6 +2,10 @@
   * bump btlewrap-0.0.10
   * update xknx-0.12.0, change RDEPENDs
   * update certifi-2020.6.20
+  * add readlike-0.1.3
+  * add readlike-0.1.2
+  * add ReParser-1.4.3
+  * update hangups-0.4.10
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
