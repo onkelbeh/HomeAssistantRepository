@@ -70,6 +70,7 @@
   * iaqualink needs pytest-runner
   * PyMetno-0.7.1 flip SRC_URI back to Pypi for violating naming conventions
   * pygatt-4.0.5 needs nose during compile phase
+  * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/55
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
