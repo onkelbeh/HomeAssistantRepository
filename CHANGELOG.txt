@@ -20,7 +20,7 @@
   * update PyXiaomiGateway-0.13.2, add RDEPENDs in older versions
   * update python-didl-lite-1.2.4, update old
   * update async-upnp-client-0.14.14
-
+  * add queueman-0.5
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
