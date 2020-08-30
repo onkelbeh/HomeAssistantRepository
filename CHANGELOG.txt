@@ -76,7 +76,7 @@
   * apprise needs BDEPEND="dev-python/Babel"
   * fix dev-python/tesla-powerwall-0.2.12 installs 'tests' package (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/59)
   * fix requests-oauth-0.4.1 installs 'tests' (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/61)
-
+  * fix zm-py-0.4.0 installs tests (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/62)
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
