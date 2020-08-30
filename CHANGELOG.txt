@@ -14,7 +14,8 @@
   * remove arcam-fmj old 3.3 asyncio dependency (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/26)
   * update arcam-fmj-0.5.2
   * add icmplib-1.1.[1,2]
-  * update aioshelly-0.2.2, add REDEPS in aioshelly-0.1.2
+  * update aioshelly-0.2.2, add RDEPS in aioshelly-0.1.2
+  * update pymediaroom-0.6.4.1, add RDEPS in pymediaroom-0.6.4
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
