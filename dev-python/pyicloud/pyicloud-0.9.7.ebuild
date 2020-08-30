@@ -19,7 +19,7 @@ IUSE="test"
 RDEPEND=">=dev-python/requests-2.20[${PYTHON_USEDEP}]
 	>=dev-python/keyring-8.0[${PYTHON_USEDEP}]
 	dev-python/keyrings_alt[${PYTHON_USEDEP}]
-	>=dev-python/click-6[${PYTHON_USEDEP}]
+	>=dev-python/click-6.0[${PYTHON_USEDEP}]
 	<dev-python/click-7.1.1[${PYTHON_USEDEP}]
 	>=dev-python/six-1.14.0[${PYTHON_USEDEP}]
 	dev-python/tzlocal[${PYTHON_USEDEP}]

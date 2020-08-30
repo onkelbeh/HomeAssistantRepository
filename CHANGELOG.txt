@@ -55,6 +55,7 @@
   * recheck and remove some hard coded version pins
   * remove some misc typos
   * old pylint versions removed
+  * fix dev-python/click-6.0 DEP in pyicloud
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
