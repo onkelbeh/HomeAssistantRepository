@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
-		 >=dev-python/zigpy-homeassistant-0.10.0[${PYTHON_USEDEP}]"
+		 dev-python/zigpy[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
