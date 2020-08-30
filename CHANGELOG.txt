@@ -67,6 +67,7 @@
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/50
   * zha-quirks must use dev-python/zigpy, not zigpy-homeassistant
   * dev-python/zigpy-deconz must also use dev-python/zigpy, not zigpy-homeassistant
+  * iaqualink needs pytest-runner
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
