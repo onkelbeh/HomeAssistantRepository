@@ -23,8 +23,8 @@ RDEPEND="~dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
 		 ~dev-python/idna-2.8[${PYTHON_USEDEP}]
 		 ~dev-python/idna-ssl-1.1.0[${PYTHON_USEDEP}]
 		 ~dev-python/multidict-4.5.2[${PYTHON_USEDEP}]
-		 ~dev-python/typing-extensions-3.7.2[${PYTHON_USEDEP}]
-		 ~dev-python/yarl-1.3.0[${PYTHON_USEDEP}]"
+		 dev-python/typing-extensions[${PYTHON_USEDEP}]
+		 dev-python/yarl[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
