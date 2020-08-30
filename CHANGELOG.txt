@@ -1,3 +1,6 @@
+2020-08-30
+  * bump btlewrap-0.0.10
+
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
   * add deepmerge-0.1.0, fix BDEPS
