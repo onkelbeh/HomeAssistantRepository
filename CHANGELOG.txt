@@ -1,4 +1,4 @@
-2020-08-30
+2020-08-30 homeassistant-0.114.4
   * bump btlewrap-0.0.10
   * update xknx-0.12.0, change RDEPENDs
   * update certifi-2020.6.20
@@ -17,10 +17,11 @@
   * update aioshelly-0.2.2, add RDEPS in aioshelly-0.1.2
   * update pymediaroom-0.6.4.1, add RDEPS in pymediaroom-0.6.4
   * update eternalegypt-0.0.12
-  * update PyXiaomiGateway-0.13.2, add RDEPENDs in older versions
-  * update python-didl-lite-1.2.4, update old
+  * update PyXiaomiGateway-0.13.2, add RDEPENDs in older versions (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/24)
+  * update python-didl-lite-1.2.4, update old (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/23)
   * update async-upnp-client-0.14.14
-  * add queueman-0.5
+  * add queueman-0.5 (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/17)
+  * update envoy-reader-0.16.1
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
