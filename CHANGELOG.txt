@@ -7,6 +7,7 @@
   * add ReParser-1.4.3
   * update hangups-0.4.10
   * update zigpy-cc-0.5.1
+  * update zeroconf-0.28.2
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
