@@ -50,6 +50,7 @@
   * openwrt-luci-rpc, unpin requests version
   * fix all remaining async-timeout -> async_timeout
   * remove all old dev-python/typing RDEPENDs
+  * add python-socketio-4.6.0
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
