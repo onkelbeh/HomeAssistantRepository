@@ -39,6 +39,7 @@
   * update codecov-2.1.0.ebuild
   * update pylint-strict-informational-0.1
   * update pytest-cov-2.10.0
+  * add pytest-test-groups-1.0.3
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
