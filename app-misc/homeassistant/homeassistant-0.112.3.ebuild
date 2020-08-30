@@ -140,7 +140,7 @@ RDEPEND="${RDEPEND}
   darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
   delijn? ( ~dev-python/pydelijn-0.5.1[${PYTHON_USEDEP}] )
   denonavr? ( ~dev-python/denonavr-0.9.3[${PYTHON_USEDEP}] )
-  discogs? ( ~dev-python/discogs_client-2.2.2[${PYTHON_USEDEP}] )
+  discogs? ( ~dev-python/discogs-client-2.2.2[${PYTHON_USEDEP}] )
   dynalite? ( ~dev-python/dynalite-devices-0.1.41[${PYTHON_USEDEP}] )
   dyson? ( ~dev-python/libpurecool-0.6.1[${PYTHON_USEDEP}] )
   ecobee? ( ~dev-python/python-ecobee-api-0.2.7[${PYTHON_USEDEP}] )

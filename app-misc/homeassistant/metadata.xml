@@ -38,7 +38,8 @@
     <flag name="blink">events from Blink camera and security systems</flag>
     <flag name="blockchain">displays Bitcoin wallet balances from blockchain.info</flag>
     <flag name="bmw_connected_drive">retrieve data from the BMW Connected Drive</flag>
-    <flag name="bravia-tv">Control almost all Sony Bravia TV 2013 and newer.</flag>
+    <flag name="bravia-tv">Control almost all Sony Bravia TV 2013 and newer</flag>
+    <flag name="brother">read current data from your local Brother printer</flag>
     <flag name="buienradar">use buienradar weather data</flag>
     <flag name="caldav">integrate a CalDAV (RFC4791) calendar</flag>
     <flag name="cast">let me talk to Google Chromecast</flag>
@@ -67,6 +68,7 @@
     <flag name="flume">monitors the real-time status of your home water meter</flag>
     <flag name="flunearyou">allows users in the US to get information from Flu Near You</flag>
     <flag name="foobot">fetch air quality data from your Foobot device</flag>
+    <flag name="freebox">allows you to observe and control Freebox router</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
     <flag name="frontend">(obsolete frontend useflag, until 0.108.5)</flag>
     <flag name="gpiozero">interface to GPIO devices on a Raspberry Pi</flag>
@@ -91,10 +93,10 @@
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
     <flag name="insteon">allowing linked INSTEON devices to be used</flag>
     <flag name="intesishome">communications with IntesisHome Smart AC Controllers</flag>
-    <flag name="ipma">ipma weather platform</flag>a
+    <flag name="ipma">ipma weather platform</flag>
     <flag name="jewish_calendar">jewish_calendar</flag>
     <flag name="joaoapps_join">joaoapps_join integration exposes services from Join</flag>
-    <flag name="kef">KEF wireless speakers</flag>a
+    <flag name="kef">KEF wireless speakers</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="maxcube_hack">apply Patch for https://github.com/home-assistant/home-assistant/issues/28811</flag>
     <flag name="metno">A library to communicate with the met.no api</flag>
@@ -154,6 +156,7 @@
     <flag name="tuya">integrate all Tuya Smart related platforms</flag>
     <flag name="ubee">getting stats from Ubee routers</flag>
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
+    <flag name="upnp">support UPnP/Internet Gateway Device (IGD) Protocol</flag>
     <flag name="vallox">control any Vallox ventilation unit</flag>
     <flag name="velbus">supports the Velbus USB, serial and TCP/IP gateway</flag>
     <flag name="velux">allows you to connect to a Velux KLF 200 interface</flag>

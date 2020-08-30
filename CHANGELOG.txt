@@ -23,6 +23,9 @@
   * add queueman-0.5 (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/17)
   * update envoy-reader-0.16.1
   * bump meteofrance-api-0.1.1
+  * fix 2 RDEPEND typos
+  * update homeassistant-0.114.4, 3 new useflags by request (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/20)
+
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124

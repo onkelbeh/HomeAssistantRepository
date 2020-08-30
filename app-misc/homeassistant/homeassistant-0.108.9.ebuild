@@ -157,7 +157,7 @@ RDEPEND="${RDEPEND}
 	daikin? ( ~dev-python/pydaikin-1.6.3[${PYTHON_USEDEP}] )
 	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
 	denonavr? ( ~dev-python/denonavr-0.8.1[${PYTHON_USEDEP}] )
-	discogs? ( ~dev-python/discogs_client-2.2.2[${PYTHON_USEDEP}] )
+	discogs? ( ~dev-python/discogs-client-2.2.2[${PYTHON_USEDEP}] )
 	dyson? ( ~dev-python/libpurecool-0.6.1[${PYTHON_USEDEP}] )
 	emulated_roku? ( ~dev-python/emulated-roku-0.2.1[${PYTHON_USEDEP}] )
 	enigma? ( ~dev-python/openwebifpy-3.1.1[${PYTHON_USEDEP}] )
