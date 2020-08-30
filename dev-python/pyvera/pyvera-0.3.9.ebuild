@@ -25,8 +25,6 @@ DEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-PATCHES=( "${FILESDIR}"/${P}-no_tests.patch )
-
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
