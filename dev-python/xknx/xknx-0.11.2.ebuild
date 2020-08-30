@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/netifaces-0.10.9
+RDEPEND=">=dev-python/netifaces-0.10.9
 		 >=dev-python/pyyaml-5.1"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
