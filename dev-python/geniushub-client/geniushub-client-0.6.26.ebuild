@@ -20,7 +20,7 @@ RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
-	~dev-python/async-timeout-3.0.1[${PYTHON_USEDEP}]
+	~dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 	~dev-python/attrs-19.1.0[${PYTHON_USEDEP}]
 	~dev-python/chardet-3.0.4[${PYTHON_USEDEP}]
 	~dev-python/docopt-0.6.2[${PYTHON_USEDEP}]
