@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">codecov</remote-id>
     <maintainer status="unknown">
-      <email>hello@codecov.io</email>
-      <name>@codecov</name>
+      <email>support@codecov.io</email>
+      <name>Codecov</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

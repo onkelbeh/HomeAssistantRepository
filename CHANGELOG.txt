@@ -34,9 +34,9 @@
   * update zigpy-zigate-0.6.1
   * downgrade asynctest-0.12.2
   * upgrade HA build/test DEPEND
-  * update codecov-2.1.0.ebuild
   * bump mock-open-1.4.0
   * update mypy-0.780
+  * update codecov-2.1.0.ebuild
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
