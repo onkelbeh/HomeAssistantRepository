@@ -45,6 +45,7 @@
   * fix pure-pcapy3 typo
   * correct wled RDEPENDs
   * correct velbus RDEPENDs
+  * remove all old dev-python/asyncio RDEPENDs
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
