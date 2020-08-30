@@ -20,7 +20,7 @@ RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/requests-oauthlib[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 	>=dev-python/click-5.0[${PYTHON_USEDEP}]
-	dev-python/pyaml[${PYTHON_USEDEP}]"
+	dev-python/pyyaml[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

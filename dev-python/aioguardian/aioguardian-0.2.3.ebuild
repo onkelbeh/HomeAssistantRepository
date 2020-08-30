@@ -19,7 +19,7 @@ IUSE="test"
 RDEPEND=">=dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
 	>=dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 	>=dev-python/asyncio-dgram-1.0.1[${PYTHON_USEDEP}]
-	>=dev-python/voluptous-0.11.7[${PYTHON_USEDEP}]"
+	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
