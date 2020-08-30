@@ -31,6 +31,7 @@
   * fix PlexAPI Manifest
   * update zigpy-0.22.2
   * add zigpy-xbee-0.12.1
+  * update zigpy-zigate-0.6.1
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
