@@ -9,7 +9,7 @@
     <remote-id type="pypi">zigpy-cc</remote-id>
     <maintainer status="unknown">
       <email>sanyatuning@gmail.com</email>
-      <name>Balázs Sándor</name>
+      <name>Balazs Sandor</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
