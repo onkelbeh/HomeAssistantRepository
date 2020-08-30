@@ -16,10 +16,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/aiohttp-3.6.2
-		 ~dev-python/attrs-19.3.0
-		 ~dev-python/cattrs-0.9.0
-		 ~dev-python/yarl-1.3.0"
+RDEPEND=">=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
+	>=dev-python/attrs-19.0.0[${PYTHON_USEDEP}]
+	dev-python/yarl[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
