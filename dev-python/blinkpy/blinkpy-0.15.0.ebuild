@@ -17,11 +17,11 @@ KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
 RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]
-		 >=dev-python/requests-2.20.0[${PYTHON_USEDEP}]
-		 >=dev-python/python-slugify-3.0.2[${PYTHON_USEDEP}]"
+		 >=dev-python/requests-2.23.0[${PYTHON_USEDEP}]
+		 >=dev-python/python-slugify-4.0.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	~dev-python/testtools-2.3.0[${PYTHON_USEDEP}]
+	>=dev-python/testtools-2.3.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
