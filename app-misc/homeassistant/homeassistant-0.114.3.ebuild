@@ -283,24 +283,28 @@ RDEPEND="${RDEPEND}
 
 DEPEND="${RDEPEND}
 		test? (
-			  ~dev-python/asynctest-0.12.2[${PYTHON_USEDEP}]
-			  ~dev-python/coveralls-1.2.0[${PYTHON_USEDEP}]
-			  ~dev-python/flake8-docstrings-1.3.0[${PYTHON_USEDEP}]
-			  ~dev-python/flake8-3.7.5[${PYTHON_USEDEP}]
-			  ~dev-python/mock-open-1.3.1[${PYTHON_USEDEP}]
-			  dev-python/mock[${PYTHON_USEDEP}]
-			  ~dev-python/mypy-0.660[${PYTHON_USEDEP}]
-			  ~dev-python/pydocstyle-3.0.0[${PYTHON_USEDEP}]
-			  ~dev-python/pylint-2.2.2[${PYTHON_USEDEP}]
-			  ~dev-python/pytest-aiohttp-0.3.0[${PYTHON_USEDEP}]
-			  ~dev-python/pytest-cov-2.6.1[${PYTHON_USEDEP}]
-			  ~dev-python/pytest-sugar-0.9.2[${PYTHON_USEDEP}]
-			  ~dev-python/pytest-timeout-1.3.3[${PYTHON_USEDEP}]
-			  ~dev-python/pytest-4.2.1[${PYTHON_USEDEP}]
-			  ~dev-python/requests-mock-1.5.2[${PYTHON_USEDEP}]
-			  dev-python/nose[${PYTHON_USEDEP}]
-			  dev-python/coverage[${PYTHON_USEDEP}]
-			)"
+			~dev-python/asynctest-0.13.0[${PYTHON_USEDEP}]
+			~dev-python/codecov-2.1.0[${PYTHON_USEDEP}]
+			~dev-python/coverage-5.2.1[${PYTHON_USEDEP}]
+			~dev-python/mock-open-1.4.0[${PYTHON_USEDEP}]
+			~dev-python/mypy-0.780[${PYTHON_USEDEP}]
+			~dev-python/pre-commit-2.6.0[${PYTHON_USEDEP}]
+			~dev-python/pylint-2.4.4[${PYTHON_USEDEP}]
+			~dev-python/astroid-2.3.3[${PYTHON_USEDEP}]
+			~dev-python/pylint-strict-informational-0.1[${PYTHON_USEDEP}]
+			~dev-python/pytest-aiohttp-0.3.0[${PYTHON_USEDEP}]
+			~dev-python/pytest-cov-2.10.0[${PYTHON_USEDEP}]
+			~dev-python/pytest-test-groups-1.0.3[${PYTHON_USEDEP}]
+			~dev-python/pytest-sugar-0.9.3[${PYTHON_USEDEP}]
+			~dev-python/pytest-timeout-1.3.4[${PYTHON_USEDEP}]
+			~dev-python/pytest-xdist-1.32.0[${PYTHON_USEDEP}]
+			~dev-python/pytest-5.4.3[${PYTHON_USEDEP}]
+			~dev-python/requests_mock-1.8.0[${PYTHON_USEDEP}]
+			~dev-python/responses-0.10.6[${PYTHON_USEDEP}]
+		  dev-python/mock[${PYTHON_USEDEP}]
+		  dev-python/nose[${PYTHON_USEDEP}]
+		  dev-python/coverage[${PYTHON_USEDEP}]
+		)"
 
 INSTALL_DIR="/opt/${PN}"
 
