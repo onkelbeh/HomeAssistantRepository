@@ -40,6 +40,7 @@
   * update pylint-strict-informational-0.1
   * update pytest-cov-2.10.0
   * add pytest-test-groups-1.0.3
+  * update pytest-sugar
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
