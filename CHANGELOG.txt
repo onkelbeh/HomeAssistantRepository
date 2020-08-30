@@ -23,8 +23,6 @@
   * add queueman-0.5 (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/17)
   * update envoy-reader-0.16.1
   * bump meteofrance-api-0.1.1
-  * fix 2 RDEPEND typos
-  * update homeassistant-0.114.4, 3 new useflags by request (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/20)
   * update withings-api-2.1.6
   * bump withings-api-2.1.8
   * add requests-oauth-0.4.1
@@ -56,6 +54,9 @@
   * remove some misc typos
   * old pylint versions removed
   * fix dev-python/click-6.0 DEP in pyicloud
+  * fix inconsistant dev-python/getmac version pins
+  * fix 2 RDEPEND typos
+  * update homeassistant-0.114.4, 3 new useflags by request (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/20)
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124

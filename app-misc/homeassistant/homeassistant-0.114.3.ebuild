@@ -134,7 +134,7 @@ RDEPEND="${RDEPEND}
   blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
   bmw_connected_drive? ( ~dev-python/bimmer-connected-0.7.7[${PYTHON_USEDEP}] )
   bravia-tv? ( ~dev-python/bravia-tv-1.0.6[${PYTHON_USEDEP}]
-	  ~dev-python/getmac-0.8.1[${PYTHON_USEDEP}] )
+	  ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
   buienradar? ( ~dev-python/buienradar-1.0.4[${PYTHON_USEDEP}] )
   caldav? ( ~dev-python/caldav-0.6.1[${PYTHON_USEDEP}] )
   cast? ( ~dev-python/pychromecast-7.2.1[${PYTHON_USEDEP}] )
@@ -289,7 +289,7 @@ DEPEND="${RDEPEND}
 			~dev-python/mock-open-1.4.0[${PYTHON_USEDEP}]
 			~dev-python/mypy-0.780[${PYTHON_USEDEP}]
 			~dev-python/pre-commit-2.6.0[${PYTHON_USEDEP}]
-			~dev-python/pylint-2.4.4[${PYTHON_USEDEP}]
+			dev-python/pylint[${PYTHON_USEDEP}]
 			~dev-python/astroid-2.3.3[${PYTHON_USEDEP}]
 			~dev-python/pylint-strict-informational-0.1[${PYTHON_USEDEP}]
 			~dev-python/pytest-aiohttp-0.3.0[${PYTHON_USEDEP}]
@@ -299,7 +299,7 @@ DEPEND="${RDEPEND}
 			~dev-python/pytest-timeout-1.3.4[${PYTHON_USEDEP}]
 			~dev-python/pytest-xdist-1.32.0[${PYTHON_USEDEP}]
 			~dev-python/pytest-5.4.3[${PYTHON_USEDEP}]
-			~dev-python/requests_mock-1.8.0[${PYTHON_USEDEP}]
+			~dev-python/requests-mock-1.8.0[${PYTHON_USEDEP}]
 			~dev-python/responses-0.10.6[${PYTHON_USEDEP}]
 		  dev-python/mock[${PYTHON_USEDEP}]
 		  dev-python/nose[${PYTHON_USEDEP}]

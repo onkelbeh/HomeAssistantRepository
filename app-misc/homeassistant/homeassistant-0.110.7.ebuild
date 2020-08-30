@@ -120,7 +120,7 @@ RDEPEND="${RDEPEND}
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
 	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.7.5[${PYTHON_USEDEP}] )
 	bravia-tv? ( ~dev-python/bravia-tv-1.0.4[${PYTHON_USEDEP}]
-		~dev-python/getmac-0.8.1[${PYTHON_USEDEP}] )
+		~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.4[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.6.1[${PYTHON_USEDEP}] )
 	cast? ( ~dev-python/pychromecast-5.3.0[${PYTHON_USEDEP}] )

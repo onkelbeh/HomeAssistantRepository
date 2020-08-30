@@ -128,8 +128,7 @@ RDEPEND="${RDEPEND}
   blink? ( ~dev-python/blinkpy-0.15.1[${PYTHON_USEDEP}] )
   blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
   bmw_connected_drive? ( ~dev-python/bimmer-connected-0.7.7[${PYTHON_USEDEP}] )
-  bravia-tv? ( ~dev-python/bravia-tv-1.0.6[${PYTHON_USEDEP}]
-	  ~dev-python/getmac-0.8.1[${PYTHON_USEDEP}] )
+  bravia-tv? ( ~dev-python/bravia-tv-1.0.6[${PYTHON_USEDEP}] )
   buienradar? ( ~dev-python/buienradar-1.0.4[${PYTHON_USEDEP}] )
   caldav? ( ~dev-python/caldav-0.6.1[${PYTHON_USEDEP}] )
   cast? ( ~dev-python/pychromecast-6.0.0[${PYTHON_USEDEP}] )
@@ -180,8 +179,7 @@ RDEPEND="${RDEPEND}
   intesishome? ( ~dev-python/pyintesishome-1.7.5[${PYTHON_USEDEP}] )
   ipma? ( ~dev-python/pyipma-2.0.5[${PYTHON_USEDEP}] )
   jewish_calendar? ( ~dev-python/hdate-0.9.3[${PYTHON_USEDEP}] )
-  kef? ( ~dev-python/aiokef-0.2.13[${PYTHON_USEDEP}]
-	  ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
+  kef? ( ~dev-python/aiokef-0.2.13[${PYTHON_USEDEP}] )
   maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
   metno? ( ~dev-python/PyMetno-0.5.1[${PYTHON_USEDEP}] )
   miio? ( ~dev-python/python-miio-0.5.2.1[${PYTHON_USEDEP}] )
