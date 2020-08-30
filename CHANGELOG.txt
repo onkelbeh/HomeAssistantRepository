@@ -74,6 +74,7 @@
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/58
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/57
   * apprise needs BDEPEND="dev-python/Babel"
+  * fix dev-python/tesla-powerwall-0.2.12 installs 'tests' package (https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/59)
 
 2020-08-26
   * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/18#issuecomment-124
