@@ -10,6 +10,8 @@ inherit distutils-r1
 DESCRIPTION="A Python wrapper around the HERE APIs"
 HOMEPAGE="https://github.com/abdullahselek/HerePy https://pypi.org/project/herepy/"
 SRC_URI="https://github.com/abdullahselek/HerePy/archive/${PV}.tar.gz -> ${P}.tar.gz"
+MY_PN="HerePy"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
