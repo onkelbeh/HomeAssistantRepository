@@ -3,6 +3,7 @@
   * add ProgettiHWSW-0.1.1
   * update pydocstyle
   * bump sentry-sdk-0.17.1
+  * update pyads-3.2.2
 
 2020-08-30 homeassistant-0.114.4
   * bump btlewrap-0.0.10
