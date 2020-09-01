@@ -10,6 +10,7 @@
   * update pyvolumio-0.1.2
   * update zeroconf-0.28.3
   * bump pykodi-0.1.1
+  * fix [#66](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/6a6), foobot_async-0.3.2 tries to install test package
 
 2020-08-30 homeassistant-0.114.4
   * bump btlewrap-0.0.10
