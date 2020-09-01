@@ -33,6 +33,13 @@ DEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
+# packages=find_packages()
+# https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/69
+src_prepare() {
+	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
+	eapply_user
+}
+
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
