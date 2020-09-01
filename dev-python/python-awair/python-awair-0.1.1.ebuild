@@ -10,8 +10,6 @@ inherit distutils-r1
 MY_PN=${PN/-/_}
 DESCRIPTION="WIP Python library for the Awair GraphQL API."
 HOMEPAGE="https://github.com/ahayworth/python_awair https://pypi.org/project/python-awair/"
-#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-#SRC_URI="https://github.com/ahayworth/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${PN}-${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
@@ -27,8 +25,6 @@ DEPEND="${REDEPEND}
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 python_test() {
 	nosetests --verbose || die
