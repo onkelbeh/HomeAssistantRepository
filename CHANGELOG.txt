@@ -4,6 +4,7 @@
   * update pydocstyle
   * bump sentry-sdk-0.17.1
   * update pyads-3.2.2
+  * update gios-0.1.3
 
 2020-08-30 homeassistant-0.114.4
   * bump btlewrap-0.0.10
