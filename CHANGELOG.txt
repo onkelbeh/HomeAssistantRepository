@@ -17,6 +17,7 @@
   * 'requirements.txt' is missing in pyps4-2ndscreen, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/68
   * #69 roombapy-1.6.1 tries to install 'tests' package
   * #54 pysmartthings tries to install 'tests' package
+  * pywemo-0.4.46 SDIST archive broken, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/60
 
 2020-08-30 homeassistant-0.114.4
   * bump btlewrap-0.0.10

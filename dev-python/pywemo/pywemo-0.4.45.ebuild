@@ -3,13 +3,18 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
 DESCRIPTION="Lightweight Python module to discover and control WeMo devices"
 HOMEPAGE="http://github.com/pavoni/pywemo https://pypi.org/project/pywemo/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+# SRC is broken, packed with outrageous paths, no setup.py
+# SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.macosx-10.15-x86_64.tar.gz -> ${P}.tar.gz"
+# no tags or releases on github, use commit-id:
+# SRC_URI="https://github.com/pavoni/pywemo/archive/d9cd5c246624ec7b81d63fcb6a02c983750f60f8.zip -> ${P}.zip"
+# too complex and unstable, so I forked it and added the missing tags:
+SRC_URI="https://github.com/onkelbeh/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
