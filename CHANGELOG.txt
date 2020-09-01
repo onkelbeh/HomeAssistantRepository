@@ -7,6 +7,7 @@
   * update gios-0.1.3
   * update homematicip
   * update pyrisco-0.2.4
+  * update pyvolumio-0.1.2
 
 2020-08-30 homeassistant-0.114.4
   * bump btlewrap-0.0.10
