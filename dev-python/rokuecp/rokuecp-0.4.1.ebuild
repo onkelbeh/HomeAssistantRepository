@@ -13,7 +13,7 @@ HOMEPAGE="https://github.com/ctalkington/python-rokuecp https://pypi.org/project
 MY_PN="python-rokuecp"
 # Pypi SDIST is incomplete
 # SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
-SRC_URI="https://github.com/ctalkington/${MY_PN}/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/ctalkington/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
