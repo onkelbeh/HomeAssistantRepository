@@ -3,14 +3,17 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
-MY_PN=${PN/-/_}
 DESCRIPTION="PS4 2nd Screen Python Library"
 HOMEPAGE="https://github.com/ktnrg45/pyps4-2ndscreen https://pypi.org/project/pyps4-2ndscreen/"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+
+# Pypi SDIST is incomplete
+# SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+# https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/68
+SRC_URI="https://github.com/ktnrg45/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="LGPL-2+"
 SLOT="0"
@@ -27,8 +30,6 @@ DEPEND="${REDEPEND}
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 python_test() {
 	nosetests --verbose || die
