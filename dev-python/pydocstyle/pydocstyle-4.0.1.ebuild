@@ -16,8 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/snowballstemmer-1.2.1[${PYTHON_USEDEP}]
-		 ~dev-python/configparser-3.5.0[${PYTHON_USEDEP}]"
+RDEPEND="~dev-python/snowballstemmer-1.2.1[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

@@ -1,6 +1,7 @@
 2020-09-01
   * bump xknx-0.13.0
   * add ProgettiHWSW-0.1.1
+  * update pydocstyle
 
 2020-08-30 homeassistant-0.114.4
   * bump btlewrap-0.0.10
