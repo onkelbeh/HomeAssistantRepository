@@ -19,6 +19,7 @@
   * #54 pysmartthings tries to install 'tests' package
   * pywemo-* SDIST archive broken, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/60
   * pywemo-* tries to install 'tests' package, patch for setup.py added
+  * restore a copy of pynacl-1.3.0 from main repo archive
 
 2020-08-30 homeassistant-0.114.4
   * bump btlewrap-0.0.10
