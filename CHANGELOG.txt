@@ -21,6 +21,10 @@
   * pywemo-* tries to install 'tests' package, patch for setup.py added
   * restore a copy of pynacl-1.3.0 from main repo archive
   * align numpy-1.19.1 cython dep to https://github.com/numpy/numpy/blob/v1.19.1/pyproject.toml (https://github.com/onkelbeh/HomeAssistantRepository/issues/23)
+  * xs1-api-client, fixed 3 problems:
+    - setup.py tried to get branch name from (non-existant) git
+    - it tried to install a 'tests' package at top level
+    - SDIST package at Pypi is missing 'requiremts.txt'
 
 2020-08-30 homeassistant-0.114.4
   * bump btlewrap-0.0.10
