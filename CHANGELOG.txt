@@ -2,6 +2,7 @@
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023
   * pyowlet removed, API ist dead an Component no no longer lives
   * bump yeelight-0.5.3
+  * bump Pysher-1.0.6
 
 2020-09-01
   * bump xknx-0.13.0
