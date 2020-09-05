@@ -31,6 +31,7 @@
   * update asyncssh-2.3.0
   * update pytest-cov (forgot the patches)
   * update aioasuswrt-1.2.8
+  * update aioesphomeapi-2.6.3 (SRC_URI from github, Pypi SDIST is broken)
 
 2020-09-01
   * bump xknx-0.13.0
