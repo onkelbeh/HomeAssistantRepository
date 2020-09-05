@@ -39,6 +39,7 @@
   * update gios-0.1.4
   * update accuweather-0.0.10
   * update pyowm
+  * vallox-websocket-api-2.4.0: fix websockets-8.0 compytibility
 
 2020-09-01
   * bump xknx-0.13.0

@@ -19,7 +19,7 @@ KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND=">=dev-python/websockets-7.0[${PYTHON_USEDEP}]
-		 <dev-python/websockets-8.0[${PYTHON_USEDEP}]
+		 <dev-python/websockets-9.0[${PYTHON_USEDEP}]
 		 >=dev-python/construct-2.9.0[${PYTHON_USEDEP}]
 		 <dev-python/construct-3.0.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
