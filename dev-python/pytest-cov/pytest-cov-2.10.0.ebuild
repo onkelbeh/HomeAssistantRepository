@@ -34,7 +34,7 @@ DEPEND="
 
 PATCHES=(
 	# Bug 597708
-	"${FILESDIR}/${PN}-2.8.1-disable-broken-tests.patch"
+	# "${FILESDIR}/${PN}-2.8.1-disable-broken-tests.patch"
 	"${FILESDIR}/${PN}-2.8.1-latest-setuptools.patch"
 	# https://github.com/pytest-dev/pytest-cov/issues/365
 	"${FILESDIR}/pytest-cov-2.8.1-python38.patch"
