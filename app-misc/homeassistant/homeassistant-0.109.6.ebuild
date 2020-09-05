@@ -69,7 +69,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/idna-ssl-1.1.0[${PYTHON_USEDEP}]
 	>=dev-python/immutables-0.9[${PYTHON_USEDEP}]
 	>=dev-python/jmespath-0.9.4[${PYTHON_USEDEP}]
-	>=dev-python/jose-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/python-jose-1.0.0[${PYTHON_USEDEP}]
 	>=dev-python/jsonrpc-async-0.6[${PYTHON_USEDEP}]
 	~dev-python/jsonrpc-base-1.0[${PYTHON_USEDEP}]
 	~dev-python/jsonrpc-websocket-0.6[${PYTHON_USEDEP}]

@@ -3,23 +3,22 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{5..8} )
 
 inherit distutils-r1
 
-DESCRIPTION="JOSE implementation in Python"
-HOMEPAGE="https://github.com/mpdavis/python-jose https://pypi.org/project/python-jose/"
+DESCRIPTION="A JSON-RPC client library base interface"
+HOMEPAGE="http://github.com/emlove/jsonrpc-base https://pypi.org/project/jsonrpc-base/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/six[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+RDEPEND=""
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

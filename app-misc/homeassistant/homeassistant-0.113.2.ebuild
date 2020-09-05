@@ -79,7 +79,6 @@ RDEPEND="${RDEPEND}
 	~dev-python/gTTS-token-1.1.3[${PYTHON_USEDEP}]
 	~dev-python/HAP-python-2.9.2[${PYTHON_USEDEP}]
 	>=dev-python/jmespath-0.9.4[${PYTHON_USEDEP}]
-	>=dev-python/jose-1.0.0[${PYTHON_USEDEP}]
 	>=dev-python/jsonrpc-async-0.6[${PYTHON_USEDEP}]
 	~dev-python/jsonrpc-base-1.0[${PYTHON_USEDEP}]
 	~dev-python/jsonrpc-websocket-0.6[${PYTHON_USEDEP}]
