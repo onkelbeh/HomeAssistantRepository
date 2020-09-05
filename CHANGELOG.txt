@@ -12,6 +12,7 @@
   * update pyvizio-0.1.56, license changed
   * update PyMetno-0.8.1
   * bump connect-box-0.2.8
+  * update dynalite-devices-0.1.46
 
 2020-09-01
   * bump xknx-0.13.0
