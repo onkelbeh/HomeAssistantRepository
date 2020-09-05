@@ -16,9 +16,9 @@ SLOT="0"
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/pycognito-0.1.3[${PYTHON_USEDEP}]
+RDEPEND="~dev-python/pycognito-0.1.4[${PYTHON_USEDEP}]
 		 ~dev-python/snitun-0.20[${PYTHON_USEDEP}]
-		 ~app-crypt/acme-1.4.0
+		 ~app-crypt/acme-1.7.0
 		 >=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 		 >=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 		 >=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
