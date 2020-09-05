@@ -16,9 +16,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/pybluez
-	dev-python/libusb1
-	dev-python/pycurl"
+RDEPEND="app-mobilephone/gammu
+	dev-python/pybluez[${PYTHON_USEDEP}]
+	dev-python/libusb1[${PYTHON_USEDEP}]
+	dev-python/pycurl[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

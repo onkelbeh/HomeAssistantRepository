@@ -3,12 +3,12 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
 DESCRIPTION="Gammu bindings"
-HOMEPAGE="https://github.com/gammu/gammu https://wammu.eu/python-gammu/ https://pypi.org/project/python-gammu/"
+HOMEPAGE="https://wammu.eu/python-gammu/ https://pypi.org/project/python-gammu/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-2+"
