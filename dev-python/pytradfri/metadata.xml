@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">pytradfri</remote-id>
+    <maintainer status="unknown">
+      <email>no@email.com</email>
+      <name>balloob, lwis, ggravlingen</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
