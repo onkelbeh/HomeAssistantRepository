@@ -25,7 +25,10 @@ S=${WORKDIR}/${MY_P}
 RDEPEND=">=dev-python/aiohttp-3.6.0[${PYTHON_USEDEP}]
 	<dev-python/aiohttp-3.7.0[${PYTHON_USEDEP}]
 	>=dev-python/websockets-6.0[${PYTHON_USEDEP}]
-	<dev-python/websockets-7.0[${PYTHON_USEDEP}]"
+	!~dev-python/websockets-7.0[${PYTHON_USEDEP}]
+	!~dev-python/websockets-8.0[${PYTHON_USEDEP}]
+	!~dev-python/websockets-8.0.1[${PYTHON_USEDEP}]
+	<dev-python/websockets-9.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

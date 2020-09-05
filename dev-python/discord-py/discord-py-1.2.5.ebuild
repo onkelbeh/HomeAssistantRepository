@@ -22,8 +22,8 @@ IUSE="test"
 
 S=${WORKDIR}/${MY_P}
 
-RDEPEND=">=dev-python/aiohttp-3.6.0[${PYTHON_USEDEP}]
-	<dev-python/aiohttp-3.7.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.3.0[${PYTHON_USEDEP}]
+	<dev-python/aiohttp-3.6.0[${PYTHON_USEDEP}]
 	>=dev-python/websockets-6.0[${PYTHON_USEDEP}]
 	<dev-python/websockets-7.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
