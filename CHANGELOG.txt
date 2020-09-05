@@ -21,6 +21,7 @@
   * update poetry-core-1.0.0_alpha9
   * update poetry-1.0.10
   * update aioswitcher-1.2.1
+  * added asyncpysupla-0.0.5
 
 2020-09-01
   * bump xknx-0.13.0
