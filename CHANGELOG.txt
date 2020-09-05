@@ -34,6 +34,8 @@
   * update aioesphomeapi-2.6.3 (SRC_URI from github, Pypi SDIST is broken)
   * update pyrisco-0.3.0
   * update pyskyqhub-0.1.2 (with a patch for https://github.com/RogerSelwyn/skyq_hub/pull/5)
+  * bump home-assistant-frontend-20200904.0 (new EAPI="7" build)
+  * rework the older home-assistant-frontend to EAPI="7" DEPS
 
 2020-09-01
   * bump xknx-0.13.0
