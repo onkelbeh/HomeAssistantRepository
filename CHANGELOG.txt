@@ -38,6 +38,7 @@
   * rework the older home-assistant-frontend to EAPI="7" DEPS
   * update gios-0.1.4
   * update accuweather-0.0.10
+  * update pyowm
 
 2020-09-01
   * bump xknx-0.13.0
