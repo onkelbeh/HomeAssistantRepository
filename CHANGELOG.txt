@@ -5,6 +5,7 @@
   * bump Pysher-1.0.6
   * add noaa-coops-0.1.8
   * bump pycoolmasternet-async-0.1.1
+  * bump openwrt-luci-rpc-1.1.5, openwrt-luci-rpc-1.1.6
 
 2020-09-01
   * bump xknx-0.13.0
