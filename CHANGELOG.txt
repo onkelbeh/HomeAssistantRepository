@@ -9,6 +9,7 @@
   * bump pysqueezebox-0.3.1 pysqueezebox-0.4.0
   * bump home-assistant-frontend-20200901.0
   * bump click-7.1.1
+  * update pyvizio-0.1.56, license changed
 
 2020-09-01
   * bump xknx-0.13.0
