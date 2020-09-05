@@ -8,6 +8,7 @@
   * bump openwrt-luci-rpc-1.1.5, openwrt-luci-rpc-1.1.6
   * bump pysqueezebox-0.3.1 pysqueezebox-0.4.0
   * bump home-assistant-frontend-20200901.0
+  * bump click-7.1.1
 
 2020-09-01
   * bump xknx-0.13.0
