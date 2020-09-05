@@ -43,7 +43,7 @@ DEPEND="${REDEPEND}
 		~dev-python/pytest-sugar-0.9.2[${PYTHON_USEDEP}]
 		~dev-python/pytest-timeout-1.3.3[${PYTHON_USEDEP}]
 		~dev-python/pytest-4.4.1[${PYTHON_USEDEP}]
-		~dev-python/requests_mock-1.6.0[${PYTHON_USEDEP}]
+		~dev-python/requests-mock-1.6.0[${PYTHON_USEDEP}]
 		~dev-python/wheel-0.33.1[${PYTHON_USEDEP}]
 		~dev-python/codecov-2.0.15[${PYTHON_USEDEP}]
 		~dev-python/twine-1.13.0[${PYTHON_USEDEP}]

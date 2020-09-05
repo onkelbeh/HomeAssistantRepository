@@ -53,7 +53,7 @@ DEPEND="${REDEPEND}
 		<dev-python/pytest-timeout-1.4[${PYTHON_USEDEP}]
 		>=dev-python/pytest-5.1.2[${PYTHON_USEDEP}]
 		<dev-python/pytest-6[${PYTHON_USEDEP}]
-		>=dev-python/requests_mock-1.6.0[${PYTHON_USEDEP}]
+		>=dev-python/requests-mock-1.6.0[${PYTHON_USEDEP}]
 		>=dev-python/wheel-0.33.1[${PYTHON_USEDEP}]
 		>=dev-python/codecov-2.0.15[${PYTHON_USEDEP}]
 		>=dev-python/twine-1.13.0[${PYTHON_USEDEP}]
