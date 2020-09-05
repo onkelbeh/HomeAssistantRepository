@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">SQLAlchemy</remote-id>
+    <maintainer status="unknown">
+      <email>mike_mp@zzzcomputing.com</email>
+      <name>Mike Bayer</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
