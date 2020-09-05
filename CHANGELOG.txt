@@ -30,6 +30,7 @@
   * update asyncssh-2.4.0
   * update asyncssh-2.3.0
   * update pytest-cov (forgot the patches)
+  * update aioasuswrt-1.2.8
 
 2020-09-01
   * bump xknx-0.13.0
