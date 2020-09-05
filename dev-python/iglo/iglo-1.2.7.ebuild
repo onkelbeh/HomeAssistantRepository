@@ -9,9 +9,9 @@ inherit distutils-r1
 
 DESCRIPTION="Control iGlo based RGB lights"
 HOMEPAGE="https://github.com/jesserockz/python-iglo https://pypi.org/project/iglo/"
-# SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 # SRC_URI="https://github.com/jesserockz/python-iglo/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI="https://github.com/onkelbeh/python-iglo/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+# SRC_URI="https://github.com/onkelbeh/python-iglo/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
