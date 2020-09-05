@@ -3,6 +3,7 @@
   * pyowlet removed, API ist dead an Component no no longer lives
   * bump yeelight-0.5.3
   * bump Pysher-1.0.6
+  * add noaa-coops-0.1.8
 
 2020-09-01
   * bump xknx-0.13.0
