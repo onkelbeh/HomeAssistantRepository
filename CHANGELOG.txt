@@ -18,6 +18,8 @@
   * update apprise-0.8.8
   * update pytradfri-7.0.0
   * update dtlssocket-0.1.10
+  * update poetry-core-1.0.0_alpha9
+  * update poetry-1.0.10
 
 2020-09-01
   * bump xknx-0.13.0
