@@ -15,6 +15,7 @@
   * update dynalite-devices-0.1.46
   * update hass-nabucasa-0.36.1
   * update sentry-sdk-0.17.3
+  * update apprise-0.8.8
 
 2020-09-01
   * bump xknx-0.13.0
