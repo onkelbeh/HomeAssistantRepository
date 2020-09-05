@@ -33,7 +33,7 @@
   * update aioasuswrt-1.2.8
   * update aioesphomeapi-2.6.3 (SRC_URI from github, Pypi SDIST is broken)
   * update pyrisco-0.3.0
-  * update pyskyqhub-0.1.2
+  * update pyskyqhub-0.1.2 (with a patch for https://github.com/RogerSelwyn/skyq_hub/pull/5)
 
 2020-09-01
   * bump xknx-0.13.0
