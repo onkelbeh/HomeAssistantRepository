@@ -22,8 +22,8 @@
   * update poetry-1.0.10
   * update aioswitcher-1.2.1
   * added asyncpysupla-0.0.5
-  * update pysonos-0.0.33
   * update nexia-0.9.4
+  * update pysonos-0.0.33
 
 2020-09-01
   * bump xknx-0.13.0
