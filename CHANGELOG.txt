@@ -33,6 +33,7 @@
   * add trio-0.16.0
   * add outcome-1.0.1
   * add pytest-trio-0.6.0
+  * aioazurdevops fix deps
 
 2020-09-05
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023
