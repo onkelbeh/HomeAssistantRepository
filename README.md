@@ -212,7 +212,7 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies execpt portage are not tested.
 * Since I use Gentoo mostly on servers, I do not use systemd, the most important reason to run Gentoo is that you are NOT forced to run this incredible crap.
 * I use an own profile based on "amd64/17.1/no-multilib"
-* python-3.7.7-r2 is set as default target, also 2.7.18 and 3.8.2-r2 are installed on my test server.
+* python-3.7.9 is set as default target, also 2.7.18-r1 and 3.8.5 are installed on my test server.
 * I do no tests anymore on Python 3.6 or lower
 
 ## Licenses
