@@ -17,7 +17,7 @@ KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 S=${WORKDIR}/${MY_P}
 
-DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
+BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/setuptools_scm[${PYTHON_USEDEP}]
 	test? ( dev-python/pytest-aiohttp[${PYTHON_USEDEP}] )"
 
