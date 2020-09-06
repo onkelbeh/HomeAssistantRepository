@@ -32,10 +32,6 @@ DEPEND="
 		dev-python/python-dateutil[${PYTHON_USEDEP}]
 	)"
 
-PATCHES=(
-	"${FILESDIR}/${PN}-2.1.0-no-pytest-runner.patch"
-)
-
 python_prepare_all() {
 	# Disable failing tests
 

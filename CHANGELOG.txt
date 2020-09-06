@@ -1,5 +1,6 @@
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
+  * astroid-2.3.3: romove obsolete patch
 
 2020-09-05
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023
