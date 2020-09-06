@@ -26,7 +26,6 @@ DEPEND="
 	test? (
 		dev-python/flake8[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/ruamel-std-pathlib[${PYTHON_USEDEP}]
 	)
 "
 
