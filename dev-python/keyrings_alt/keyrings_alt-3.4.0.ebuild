@@ -1,47 +1,33 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
-MY_PN="${PN/_/.}"
-MY_P="${MY_PN}-${PV}"
-
 DESCRIPTION="Alternate keyring implementations"
 HOMEPAGE="https://github.com/jaraco/keyrings.alt https://pypi.org/project/keyrings.alt/"
+MY_PN="${PN/_/.}"
+MY_P="${MY_PN}-${PV}"
 SRC_URI="mirror://pypi/${P:0:1}/${MY_PN}/${MY_P}.tar.gz"
+S=${WORKDIR}/${MY_P}
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-#RDEPEND="dev-python/six[${PYTHON_USEDEP}]"
 RDEPEND=""
-DEPEND="${RDEPEND}
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	>=dev-python/setuptools_scm-1.15.0[${PYTHON_USEDEP}]
 	test? (
-		>=dev-python/fs-0.5[${PYTHON_USEDEP}]
-		<dev-python/fs-2[${PYTHON_USEDEP}]
-		>=dev-python/pytest-2.8[${PYTHON_USEDEP}]
+		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-S=${WORKDIR}/${MY_P}
-
-# Multiple failures
-RESTRICT=test
-
-python_prepare_all() {
-	sed \
-		-e "s:find_packages():find_packages(exclude=['tests']):g" \
-		-i setup.py || die
-	distutils-r1_python_prepare_all
-}
-
 python_test() {
+	nosetests --verbose || die
 	py.test -v -v || die
 }

@@ -60,6 +60,7 @@
   * add pytest-tornasync-0.6.0
   * patch locationsharinglib against pinned versions
   * update linode-api-4.1.9_beta1, fix some problems
+  * update keyrings_alt-3.4.0
 
 2020-09-05
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023
