@@ -41,6 +41,7 @@
   * add pytest-trio-0.6.0
   * aioazurdevops fix deps
   * bump ovoenergy-1.1.10
+  * add zeep-3.4.0-r1
 
 2020-09-05
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023
