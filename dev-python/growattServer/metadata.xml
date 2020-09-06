@@ -7,5 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">growattServer</remote-id>
+    <maintainer status="unknown">
+      <email>indykoningnl@gmail.com</email>
+      <name>IndyKoning</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>
