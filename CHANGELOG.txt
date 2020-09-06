@@ -17,6 +17,7 @@
   * re-add aiocoap-0.4_alpha1
   * re-add dtlssocket-0.1.7, rework the olds
   * remove old pluggy
+  * patch incomfort-client-0.4.0-r1 for pinning bad versions
 
 2020-09-05
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023
