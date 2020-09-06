@@ -37,6 +37,7 @@
     - twentemilieu
     - sisyphus-control-2.2.1-r1
     - pymetar-1.1-r1
+    * pymonoprice-0.3
   * bump / rework pychromecast-7.3.0
   * add trio-0.16.0
   * add outcome-1.0.1
