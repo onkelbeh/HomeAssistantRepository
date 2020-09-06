@@ -20,6 +20,7 @@
   * patch incomfort-client-0.4.0-r1 for pinning bad versions
   * growattServer: add patch for https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/52
   * growattServer: re-add LICENSE String
+  * fix Manifest for gTTS-token 
 
 2020-09-05
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023
