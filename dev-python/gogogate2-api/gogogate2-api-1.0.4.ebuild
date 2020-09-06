@@ -3,13 +3,12 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Library for connecting to gogogate2 hubs"
+DESCRIPTION="Library for connecting to GogoGate2 and iSmartGate hubs"
 HOMEPAGE="https://github.com/vangorra/python_gogogate2_api https://pypi.org/project/gogogate2-api/"
-
 MY_PN=${PN/-/_}
 MY_P=${MY_PN}-${PV}
 SRC_URI="mirror://pypi/${P:0:1}/${MY_PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
@@ -25,7 +24,7 @@ RDEPEND=">=dev-python/arrow-0.15.2[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodomex-3.9.7[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.23.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-3.7.4.2[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

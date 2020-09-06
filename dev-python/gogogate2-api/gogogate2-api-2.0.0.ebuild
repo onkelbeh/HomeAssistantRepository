@@ -21,7 +21,7 @@ IUSE="test"
 
 RDEPEND=">=dev-python/arrow-0.15.2[${PYTHON_USEDEP}]
 	>=dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]
-	>=dev-python/pycryptodomex-3.9.7[${PYTHON_USEDEP}]
+	>=dev-python/pycryptodome-3.9.7[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.23.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-3.7.4.2[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
@@ -30,6 +30,8 @@ BDEPEND="${REDEPEND}
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
+
+DOCS="README.md"
 
 python_test() {
 	nosetests --verbose || die

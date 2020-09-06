@@ -11,6 +11,7 @@
   * importlib_metadata-1.6.0-r2: Python 3.7 & 3.8, keep a copy from main repo
   * async_timeout-3.0.1: break circular dependencies during test
   * update sense-energy-0.8.0, use new template for all
+  * update gogogate2-api-2.0.0
 
 2020-09-05
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023
