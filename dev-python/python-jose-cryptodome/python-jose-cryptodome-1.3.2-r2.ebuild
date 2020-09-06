@@ -16,6 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
+DEPEND="!dev-python/python-jose"
 RDEPEND=">=dev-python/pycryptodome-3.3.1[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 	dev-python/ecdsa[${PYTHON_USEDEP}]
