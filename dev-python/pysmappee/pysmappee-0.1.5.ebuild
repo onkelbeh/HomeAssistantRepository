@@ -24,7 +24,8 @@ BDEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-# packages=setuptools.find_packages() -> packages=setuptools.find_packages(exclude=['test','test.*']),
+# packages=find_packages()
+# https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/104
 src_prepare() {
 	sed -i "s/packages=setuptools.find_packages()/packages=setuptools.find_packages(exclude=['test','test.*'])/g" -i setup.py || die
 	eapply_user
