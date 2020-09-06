@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">gTTS-token</remote-id>
+    <maintainer status="unknown">
+      <email>boudewijn@vangroos.nl</email>
+      <name>Boudewijn van Groos</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
