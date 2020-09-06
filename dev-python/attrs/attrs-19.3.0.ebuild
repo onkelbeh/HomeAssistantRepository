@@ -16,11 +16,9 @@ SLOT="0"
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
-RDEPEND="
-	dev-python/zope-interface[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/zope-interface[${PYTHON_USEDEP}]"
 
-DEPEND="
-	${RDEPEND}
+BDEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		$(python_gen_impl_dep sqlite)

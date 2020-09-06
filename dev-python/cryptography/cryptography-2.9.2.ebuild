@@ -39,7 +39,7 @@ RDEPEND="
 		>=dev-python/cffi-1.8:=[${PYTHON_USEDEP}]
 	' 'python*')
 	"
-DEPEND="${RDEPEND}
+BDEPEND="${RDEPEND}
 	>=dev-python/setuptools-1.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pretend[${PYTHON_USEDEP}]
