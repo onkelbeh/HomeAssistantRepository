@@ -14,6 +14,7 @@
   * update gogogate2-api-2.0.0
   * update arcam-fmj-0.5.3
   * update pytradfri-7.0.1, rework the olds
+  * re-add aiocoap-0.4_alpha1
 
 2020-09-05
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023
