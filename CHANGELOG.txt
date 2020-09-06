@@ -57,6 +57,7 @@
   * unpin bs4 in motorparts-1.1.0
   * fix lupupy-0.0.1* pathlib DEPS
   * fix pyalmond test DEPS
+  * add pytest-tornasync-0.6.0
 
 2020-09-05
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023
