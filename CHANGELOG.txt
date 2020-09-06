@@ -29,6 +29,7 @@
     - jsonrpc-websocket-0.6
     - pychromecast-7.2.1
     - aiohue
+    - denonavr
   * bump / rework pychromecast-7.3.0
   * add trio-0.16.0
   * add outcome-1.0.1
