@@ -25,6 +25,7 @@
   * update gogogate2-api-2.0.1
   * bump bellows-0.20.1
   * bump zha-quirks-0.0.44
+  * update zigpy-xbee-0.13.0
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
