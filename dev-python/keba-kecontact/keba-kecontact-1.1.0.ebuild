@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{5..9} )
 
 inherit distutils-r1
 
@@ -21,8 +21,10 @@ IUSE="test"
 
 S=${WORKDIR}/${MY_PN}
 
+DOCS="README.md"
+
 RDEPEND=""
-DEPEND="${REDEPEND}
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

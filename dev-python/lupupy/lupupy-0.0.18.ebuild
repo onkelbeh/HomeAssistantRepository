@@ -3,12 +3,12 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
 DESCRIPTION="A python cli for Lupusec alarm panels."
-HOMEPAGE="https://www.github.com/majuss/lupupy https://pypi.org/project/lupupy/"
+HOMEPAGE="http://www.github.com/majuss/lupupy https://pypi.org/project/lupupy/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,8 +19,8 @@ IUSE="test"
 RDEPEND=">=dev-python/requests-2.12.4[${PYTHON_USEDEP}]
 	dev-python/demjson[${PYTHON_USEDEP}]
 	dev-python/colorlog[${PYTHON_USEDEP}]
-	dev-python/pathlib[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+	dev-python/pathlib2[${PYTHON_USEDEP}]"
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{5..9} )
 
 inherit distutils-r1
 
@@ -20,6 +20,8 @@ KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 S=${WORKDIR}/${MY_PN}
+
+DOCS="README.md"
 
 RDEPEND=""
 DEPEND="${REDEPEND}

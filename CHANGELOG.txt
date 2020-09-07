@@ -1,3 +1,21 @@
+2020-09-07
+  * update geopy-2.0.0.ebuild
+  * easy deps in geniushub-client-*
+  * gearbest-parser-1.0.7-r1 unpin BS4
+  * fritzconnection unpin requests
+  * unpin directv
+  * re-check broadlink DEPS
+  * re-check beewi-smartclim-0.0.7 DEPS
+  * unpin aiohttp in airly-0.0.2-r1
+  * P38: python-memcached-1.59-r1
+  * add hyper-0.7.0
+  * add aio-georss-client-0.5
+  * fix aio-georss-gdacs-0.3
+  * update aio-geojson-client-0.13
+  * aio-geojson-client tries to install tests
+  * fix alarmdecoder, P38
+  * fix dep in TwitterAPI
+
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
   * astroid-2.3.3: romove obsolete patch
@@ -20,7 +38,51 @@
   * patch incomfort-client-0.4.0-r1 for pinning bad versions
   * growattServer: add patch for https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/52
   * growattServer: re-add LICENSE String
-  * fix Manifest for gTTS-token 
+  * fix Manifest for gTTS-token
+
+  Started Python 3.8 Test in a new branch
+  =======================================
+  * hack pytest circular depencies in test
+  * add (unsupp) P3.8 for:
+    - jsonrpc-websocket-0.6
+    - pychromecast-7.2.1
+    - aiohue
+    - denonavr
+    - keba-kecontact
+    - tenacity
+    - n26
+    - ovoenergy
+    - twentemilieu
+    - sisyphus-control-2.2.1-r1
+    - pymetar-1.1-r1
+    * pymonoprice-0.3
+  * bump / rework pychromecast-7.3.0
+  * add trio-0.16.0
+  * add outcome-1.0.1
+  * add pytest-trio-0.6.0
+  * aioazurdevops fix deps
+  * bump ovoenergy-1.1.10
+  * add zeep-3.4.0-r1
+  * update socketio-client-nexus-0.7.6
+  * patch saltbox-0.1.3-r1 for incompleteness and pinned requirements
+  * adjusted reqs of roku
+  * fix python-clementine-remote
+  * fix pysmappee, fix pysmappee again (installs tests)
+  * adjust pymodbus DEPS
+  * fix pycomfoconnect-0.3 DEPS
+  * remove unkown dep from py-august
+  * add netaddr-0.8.0
+  * unpin bs4 in motorparts-1.1.0
+  * fix lupupy-0.0.1* pathlib DEPS
+  * fix pyalmond test DEPS
+  * add pytest-tornasync-0.6.0
+  * patch locationsharinglib against pinned versions
+  * update linode-api-4.1.9_beta1, fix some problems
+  * update keyrings_alt-3.4.0
+  * patch insteonplm against pinned versions
+  * add aenum-2.2.4
+  * fixes in gstreamer-player-1.1.2
+  * fix installation of tests in georss-client
 
 2020-09-05
   * repair iglo-1.2.7, drop iglo-1.2.5, abondoned anyway: https://github.com/jesserockz/python-iglo/issues/1#issuecomment-558479023

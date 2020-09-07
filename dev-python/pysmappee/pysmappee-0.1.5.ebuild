@@ -17,14 +17,15 @@ KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND=""
-DEPEND="${REDEPEND}
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-# packages=setuptools.find_packages() -> packages=setuptools.find_packages(exclude=['test','test.*']),
+# packages=find_packages()
+# https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/104
 src_prepare() {
 	sed -i "s/packages=setuptools.find_packages()/packages=setuptools.find_packages(exclude=['test','test.*'])/g" -i setup.py || die
 	eapply_user
