@@ -4,6 +4,7 @@
   * gearbest-parser-1.0.7-r1 unpin BS4
   * fritzconnection unpin requests
   * unpin directv
+  * re-check broadlink DEPS
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
