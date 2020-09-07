@@ -16,6 +16,7 @@
   * fix alarmdecoder, P38
   * fix dep in TwitterAPI
   * old tensorflow-1.13.2 removed
+  * bump pytradfri-7.0.2.ebuild
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
