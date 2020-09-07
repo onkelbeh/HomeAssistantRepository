@@ -3,11 +3,11 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Api wrapper for Melissa Climate."
+DESCRIPTION="Api wrapper for Melissa Climate http://seemelissa.com"
 HOMEPAGE="https://github.com/kennedyshead/py-melissa-climate https://pypi.org/project/py-melissa-climate/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
@@ -19,8 +19,10 @@ IUSE="test"
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/requests-futures[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/setuptools-markdown[${PYTHON_USEDEP}]
+	dev-python/pypandoc[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
