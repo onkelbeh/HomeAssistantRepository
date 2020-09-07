@@ -15,6 +15,7 @@
   * aio-geojson-client tries to install tests
   * fix alarmdecoder, P38
   * fix dep in TwitterAPI
+  * old tensorflow-1.13.2 removed
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
