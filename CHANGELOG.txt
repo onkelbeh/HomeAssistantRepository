@@ -2,6 +2,7 @@
   * update geopy-2.0.0.ebuild
   * easy deps in geniushub-client-*
   * gearbest-parser-1.0.7-r1 unpin BS4
+  * fritzconnection unpin requests
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
