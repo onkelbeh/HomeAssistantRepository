@@ -21,6 +21,7 @@
   * update aioshelly-0.3.0
   * bump zeroconf-0.28.4
   * bump spotipy-2.14.0
+  * update axis-35
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
