@@ -18,6 +18,7 @@
   * old tensorflow-1.13.2 removed
   * bump pytradfri-7.0.2.ebuild
   * update py-melissa-climate-2.1.4
+  * update aioshelly-0.3.0
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
