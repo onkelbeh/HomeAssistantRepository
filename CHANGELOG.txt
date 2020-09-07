@@ -5,6 +5,7 @@
   * fritzconnection unpin requests
   * unpin directv
   * re-check broadlink DEPS
+  * re-check beewi-smartclim-0.0.7 DEPS
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
