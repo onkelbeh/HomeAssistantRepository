@@ -10,6 +10,7 @@
   * P38: python-memcached-1.59-r1
   * add hyper-0.7.0
   * add aio-georss-client-0.5
+  * fix aio-georss-gdacs-0.3
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
