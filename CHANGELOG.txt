@@ -24,6 +24,7 @@
   * update axis-35
   * update gogogate2-api-2.0.1
   * bump bellows-0.20.1
+  * bump zha-quirks-0.0.44
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
