@@ -29,6 +29,7 @@ BDEPEND="${REDEPEND}
 
 src_prepare() {
 	sed "s/beautifulsoup4==4.6.0/beautifulsoup4/g" -i setup.py || die
+	eapply_user
 }
 
 python_test() {

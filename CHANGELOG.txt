@@ -6,6 +6,8 @@
   * unpin directv
   * re-check broadlink DEPS
   * re-check beewi-smartclim-0.0.7 DEPS
+  * add hyper-0.7.0
+  * unpin aiohttp in airly-0.0.2-r1
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
