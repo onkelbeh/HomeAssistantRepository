@@ -20,6 +20,7 @@
   * update py-melissa-climate-2.1.4
   * update aioshelly-0.3.0
   * bump zeroconf-0.28.4
+  * bump spotipy-2.14.0
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
