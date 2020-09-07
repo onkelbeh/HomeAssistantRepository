@@ -28,6 +28,7 @@
   * update zigpy-xbee-0.13.0
   * update zigpy-cc-0.5.2
   * bump zigpy-zigate-0.6.2
+  * update zigpy-0.23.1
 
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
