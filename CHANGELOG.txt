@@ -1,3 +1,7 @@
+2020-09-07
+  * update geopy-2.0.0.ebuild
+
+
 2020-09-06
   * cleanup ruamel-yaml, only 0.15.100 is still needed
   * astroid-2.3.3: romove obsolete patch

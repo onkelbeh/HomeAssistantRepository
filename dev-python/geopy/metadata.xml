@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <maintainer type="project">
-    <email>python@gentoo.org</email>
-    <name>Python</name>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="google-code">geopy</remote-id>
     <remote-id type="pypi">geopy</remote-id>
-    <remote-id type="github">geopy/geopy</remote-id>
+    <maintainer status="unknown">
+      <email>kostya@esmukov.ru</email>
+      <name>Kostya Esmukov</name>
+    </maintainer>
   </upstream>
-  <use>
-    <flag name="yahoo">Enables use of YahooPlaceFinder</flag>
-    <flag name="timezone">Enables localized date support</flag>
-  </use>
 </pkgmetadata>
