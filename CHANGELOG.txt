@@ -27,6 +27,7 @@
   * devolo-home-control-api, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/126
   * broken braviarc-homeassistant removed
   * fix av-8.0.2 RDEPENDs
+  * hack missing requirements.txt in PyEssent
 
 2020-09-07
   * update geopy-2.0.0.ebuild
