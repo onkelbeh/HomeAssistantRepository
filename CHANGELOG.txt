@@ -30,6 +30,7 @@
   * hack missing requirements.txt in PyEssent
   * georss-generic-client: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/129
   * geojson-client-0.4: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/130
+  * zha-quirks: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/170
 
 2020-09-07
   * update geopy-2.0.0.ebuild
