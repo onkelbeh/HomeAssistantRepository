@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
@@ -18,13 +18,15 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/crcmod-1.7[${PYTHON_USEDEP}]
-	>=dev-python/get-mac-0.2.1[${PYTHON_USEDEP}]
+DEPEND="dev-python/click[${PYTHON_USEDEP}]
+	>=dev-python/crcmod-1.7[${PYTHON_USEDEP}]
+	dev-python/get-mac[${PYTHON_USEDEP}]
 	>=dev-python/intelhex-2.2.1[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-asyncio-0.4[${PYTHON_USEDEP}]
-	>=dev-python/voluptuous-0.11.1[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+	>=dev-python/voluptuous-0.11.1[${PYTHON_USEDEP}]
+	dev-python/dev-python/paho-mqtt[${PYTHON_USEDEP}]"
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
