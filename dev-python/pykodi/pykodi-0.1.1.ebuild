@@ -20,7 +20,7 @@ RDEPEND="dev-python/jsonrpc-base[${PYTHON_USEDEP}]
 	dev-python/jsonrpc-async[${PYTHON_USEDEP}]
 	dev-python/jsonrpc-websocket[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
