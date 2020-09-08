@@ -4,6 +4,7 @@
   * bump home-assistant-frontend-20200907.0
   * fix Typo: zigpy-znp-0.1.1
   * update PyOTA-2.1.0-r1
+  * update some Maifests after cleanups
 
 2020-09-07
   * update geopy-2.0.0.ebuild
