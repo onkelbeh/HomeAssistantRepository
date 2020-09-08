@@ -36,6 +36,7 @@
   * proxmoxer: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/140
   * pushetta-1.0.15: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/142
   * pylinky: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/149
+  * pyowm: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/151
 
 2020-09-07
   * update geopy-2.0.0.ebuild
