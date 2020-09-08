@@ -30,6 +30,11 @@ DEPEND="${REDEPEND}
 
 S="${WORKDIR}/${MY_PN}-${PV}"
 
+src_prepare() {
+	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
+	eapply_user
+}
+
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
