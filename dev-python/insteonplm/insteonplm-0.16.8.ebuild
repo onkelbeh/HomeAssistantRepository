@@ -31,6 +31,7 @@ BDEPEND="${REDEPEND}
 
 src_prepare() {
 	sed -i "s/pyserial==3.2.0/pyserial/g" -i setup.py || die
+	sed "s/packages=find_packages()/packages=find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
 	eapply_user
 }
 

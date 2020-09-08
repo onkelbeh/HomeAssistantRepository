@@ -31,6 +31,7 @@
   * georss-generic-client: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/129
   * geojson-client-0.4: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/130
   * zha-quirks: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/170
+  * insteonplm: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/136
 
 2020-09-07
   * update geopy-2.0.0.ebuild
