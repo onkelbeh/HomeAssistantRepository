@@ -38,6 +38,7 @@
   * pylinky: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/149
   * pyowm: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/151
   * pypck: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/152
+  * pysmartapp-0.3.2: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/155
 
 2020-09-07
   * update geopy-2.0.0.ebuild
