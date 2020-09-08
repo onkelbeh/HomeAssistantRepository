@@ -16,7 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/voluptuous[${PYTHON_USEDEP}]
+RDEPEND="!dev-python/zigpy-homeassistant
+	dev-python/voluptuous[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/pycryptodome[${PYTHON_USEDEP}]
 	dev-python/crccheck[${PYTHON_USEDEP}]"
