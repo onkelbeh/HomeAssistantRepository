@@ -10,6 +10,7 @@ inherit distutils-r1
 DESCRIPTION="simple client for the Spotify Web API"
 HOMEPAGE="https://github.com/plamere/spotipy https://spotipy.readthedocs.org/ https://pypi.org/project/spotipy-homeassistant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.dev1.tar.gz -> ${P}.tar.gz"
+S=${WORKDIR}/${PN}-${PV}.dev1
 
 LICENSE="MIT"
 SLOT="0"
