@@ -21,6 +21,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
+DOCS="README.md"
+
 RDEPEND="~dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
 	~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.4.2[${PYTHON_USEDEP}]"
