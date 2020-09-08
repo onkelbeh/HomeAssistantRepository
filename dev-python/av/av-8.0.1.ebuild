@@ -16,9 +16,11 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=""
-DEPEND="${REDEPEND}
+RDEPEND="media-video/ffmpeg
+	dev-python/ha-ffmpeg[${PYTHON_USEDEP}]"
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/pkgconfig[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
