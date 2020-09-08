@@ -11,6 +11,7 @@
   * fix deps in sonarr
     - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/113
   * directv -> BDEPEND
+  * fix RDEPEND in georss-qld-bushfire-alert-client-0.3
 
 2020-09-07
   * update geopy-2.0.0.ebuild
