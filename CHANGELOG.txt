@@ -34,6 +34,7 @@
   * insteonplm: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/136
   * pizzapi: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/139
   * proxmoxer: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/140
+  * pushetta-1.0.15: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/142
 
 2020-09-07
   * update geopy-2.0.0.ebuild
