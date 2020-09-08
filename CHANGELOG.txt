@@ -20,6 +20,7 @@
   * dev-python/btlewrap patch installation of test
   * zigpy replaces zigpy-homeassistant
   * fix sseclient-py-1.7 WORKDIR
+  * contextvars-2.4 removed (not for Python >3.5)
 
 2020-09-07
   * update geopy-2.0.0.ebuild
