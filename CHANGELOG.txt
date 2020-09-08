@@ -44,6 +44,7 @@
   * simplehound-0.3: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/163
   * feedparser-homeassistant-5.2.2: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/128
   * pylgnetcast-homeassistant-0.2.0: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/148
+  * rocketchat-API-0.6.35: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/162
 
 2020-09-07
   * update geopy-2.0.0.ebuild
