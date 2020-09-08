@@ -6,6 +6,6 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">nad_receiver</remote-id>
+    <remote-id type="pypi">nad-receiver</remote-id>
   </upstream>
 </pkgmetadata>
