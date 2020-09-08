@@ -12,6 +12,7 @@
     - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/113
   * directv -> BDEPEND
   * fix RDEPEND in georss-qld-bushfire-alert-client-0.3
+  * update numato-gpio-0.8.0 RDEPEND
 
 2020-09-07
   * update geopy-2.0.0.ebuild
