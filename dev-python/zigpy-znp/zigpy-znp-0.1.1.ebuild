@@ -18,7 +18,7 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="pyserial-asyncio[${PYTHON_USEDEP}]
+RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
 	>=dev-python/zigpy-0.23.0[${PYTHON_USEDEP}]
 	dev-python/async_timeout[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
