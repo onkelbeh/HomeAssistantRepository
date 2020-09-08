@@ -21,6 +21,8 @@
   * zigpy replaces zigpy-homeassistant
   * fix sseclient-py-1.7 WORKDIR
   * contextvars-2.4 removed (not for Python >3.5)
+  * fix broken source of requests-cache-0.5.0
+  * update requests-cache-0.5.2
 
 2020-09-07
   * update geopy-2.0.0.ebuild
