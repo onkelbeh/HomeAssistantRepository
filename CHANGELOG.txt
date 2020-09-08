@@ -8,6 +8,9 @@
   * update rokuecp-0.6.1, fix 0.6.0 deps
     - https://github.com/ctalkington/python-rokuecp/issues/67
     - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/113
+  * fix deps in sonarr
+    - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/113
+
 
 2020-09-07
   * update geopy-2.0.0.ebuild
