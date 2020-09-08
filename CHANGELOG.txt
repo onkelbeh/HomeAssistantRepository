@@ -10,7 +10,7 @@
     - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/113
   * fix deps in sonarr
     - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/113
-
+  * directv -> BDEPEND
 
 2020-09-07
   * update geopy-2.0.0.ebuild
