@@ -42,6 +42,7 @@
   * pytraccar-0.9.0: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/159
   * pyvesync-1.1.0: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/160
   * simplehound-0.3: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/163
+  * feedparser-homeassistant-5.2.2: https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/128
 
 2020-09-07
   * update geopy-2.0.0.ebuild

@@ -10,6 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Universal feed parser, handles RSS, CDF and Atom feeds"
 HOMEPAGE="https://github.com/kurtmckee/feedparser https://pypi.org/project/feedparser-homeassistant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.dev1.tar.gz -> ${P}.tar.gz"
+S=${WORKDIR}/${PN}-${PV}.dev1
 
 LICENSE="all-rights-reserved"
 RESTRICT="mirror"
