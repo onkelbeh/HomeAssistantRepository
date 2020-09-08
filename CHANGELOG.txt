@@ -17,6 +17,7 @@
     update nad-receiver-0.1.0, fix REDEPEND
   * update pymysensors-0.20.1
   * correct RDEP python-velbus-2.0.43
+  * dev-python/btlewrap patch installation of test
 
 2020-09-07
   * update geopy-2.0.0.ebuild

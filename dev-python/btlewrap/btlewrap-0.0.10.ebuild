@@ -24,6 +24,11 @@ DEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
+src_prepare() {
+	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['test','test.*'])/g" -i setup.py || die
+	eapply_user
+}
+
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die

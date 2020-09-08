@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
@@ -23,6 +23,11 @@ DEPEND="${REDEPEND}
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
+
+src_prepare() {
+	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['test','test.*'])/g" -i setup.py || die
+	eapply_user
+}
 
 python_test() {
 	nosetests --verbose || die
