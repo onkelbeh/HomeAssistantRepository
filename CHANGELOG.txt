@@ -1,3 +1,6 @@
+2020-09-08
+  * update Plugwise-Smile-1.4.0
+
 2020-09-07
   * update geopy-2.0.0.ebuild
   * easy deps in geniushub-client-*
