@@ -7,6 +7,7 @@
   * bump python-synology-0.9.0
   * PyEssent small fix
   * update mutagen-1.45.1
+  * cdu-0.1.3 fix Manifest
 
 2020-09-08
   * update Plugwise-Smile-1.4.0
