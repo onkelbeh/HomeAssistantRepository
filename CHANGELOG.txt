@@ -15,6 +15,7 @@
   * zigpy-znp-0.1.1 tries to install tests, fixes https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/174
   * let asyncssh-1.15.0 run on Python 3.8
   * re-add pyserial-3.3 (P38)
+  * update meteofrance-api, block meteofrance
 
 2020-09-08
   * update Plugwise-Smile-1.4.0
