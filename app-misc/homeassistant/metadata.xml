@@ -52,6 +52,7 @@
     <flag name="delijn">De Lijn public transport network in Flanders</flag>
     <flag name="denonavr">Automation Library for Denon AVR receivers</flag>
     <flag name="dexcom">view your CGM data from Dexcom</flag>
+    <flag name="devolo">Devolo Home-control</flag>
     <flag name="discogs">Discogs Client</flag>
     <flag name="discord">send messages to the user using Discord</flag>
     <flag name="dunehd">control a Dune HD media player</flag>
@@ -71,7 +72,9 @@
     <flag name="freebox">allows you to observe and control Freebox router</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
     <flag name="frontend">(obsolete frontend useflag, until 0.108.5)</flag>
+    <flag name="gios">source for air quality data</flag>
     <flag name="gpiozero">interface to GPIO devices on a Raspberry Pi</flag>
+    <flag name="gogogate2">lets you control Gogogate2-Enabled garage doors</flag>
     <flag name="growatt_server">talk to growatt server</flag>
     <flag name="growl">add Growl Notification Transport Protocol</flag>
     <flag name="harmony">Logitech Harmony support</flag>
@@ -97,13 +100,13 @@
     <flag name="jewish_calendar">jewish_calendar</flag>
     <flag name="joaoapps_join">joaoapps_join integration exposes services from Join</flag>
     <flag name="kef">KEF wireless speakers</flag>
+    <flag name="kodi">control a Kodi multimedia system</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="maxcube_hack">apply Patch for https://github.com/home-assistant/home-assistant/issues/28811</flag>
     <flag name="metno">A library to communicate with the met.no api</flag>
     <flag name="meteo_france">uses the meteorological data from Meteo-France</flag>
     <flag name="miio">add support for Xiaomi smart appliances</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
-    <flag name="mobile_app">Home Assistant Mobile App Support</flag>
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
     <flag name="musiccast">add support for Yamaha MusicCast devices</flag>
     <flag name="myq">lets you control MyQ-Enabled garage doors</flag>
@@ -116,6 +119,7 @@
     <flag name="openwrt">fetch connected devices from your OpenWrt</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ozw">Open Zwave MQTT</flag>
+    <flag name="ping">ICMPLib</flag>
     <flag name="plex">Python bindings for the Plex API</flag>
     <flag name="plugwise">Plugwise_Smile (Anna/Adam/P1) API</flag>
     <flag name="poolsense">PoolSense is a smart pool monitor</flag>
@@ -129,6 +133,7 @@
     <flag name="roomba">control a iRobot Roomba vacuum or iRobot Braava m-series mop</flag>
     <flag name="rxv">Library for Yamaha RX-* Receivers</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
+    <flag name="shelly">Shelly devices</flag>
     <flag name="shodan">Shodan is a search engine for Internet-connected devices</flag>
     <flag name="signal">add Support for Moxie's Signal API</flag>
     <flag name="simplisafe">integrates SimpliSafe home security (V2 and V3) systems</flag>
@@ -166,6 +171,7 @@
     <flag name="vizio">allows you to control SmartCast-compatible TVs</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
+    <flag name="whois">perform daily WHOIS lookups</flag>
     <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
     <flag name="withings">add support for Withings Health API</flag>
     <flag name="wled">add support for Aircookie's WLED</flag>
