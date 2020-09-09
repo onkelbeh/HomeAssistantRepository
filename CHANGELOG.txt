@@ -12,6 +12,7 @@
   * gstreamer-player-1.1.2 fix Manifest
   * bump home-assistant-frontend-20200908.0
   * change source in incomfort-client-0.4.0-r1, fixes https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/135
+  * zigpy-znp-0.1.1 tries to install tests, fixes https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/174
 
 2020-09-08
   * update Plugwise-Smile-1.4.0
