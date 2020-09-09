@@ -9,7 +9,9 @@ inherit distutils-r1
 
 DESCRIPTION="A aiohttp-based client for Intergas InComfort/InTouch Lan2RF systems"
 HOMEPAGE="https://github.com/zxdavb/incomfort-client https://pypi.org/project/incomfort-client/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+# Pypi SDIST is missing (at least) requirements.txt
+#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/zxdavb/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE=""
 SLOT="0"
