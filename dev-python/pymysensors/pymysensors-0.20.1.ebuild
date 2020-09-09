@@ -20,7 +20,7 @@ DOCS="README.md"
 
 DEPEND="dev-python/click[${PYTHON_USEDEP}]
 	>=dev-python/crcmod-1.7[${PYTHON_USEDEP}]
-	dev-python/get-mac[${PYTHON_USEDEP}]
+	dev-python/getmac[${PYTHON_USEDEP}]
 	>=dev-python/intelhex-2.2.1[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-asyncio-0.4[${PYTHON_USEDEP}]

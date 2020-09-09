@@ -19,7 +19,7 @@ IUSE="test"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/crcmod-1.7[${PYTHON_USEDEP}]
-	>=dev-python/get-mac-0.2.1[${PYTHON_USEDEP}]
+	>=dev-python/getmac-0.2.1[${PYTHON_USEDEP}]
 	>=dev-python/intelhex-2.2.1[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-asyncio-0.4[${PYTHON_USEDEP}]

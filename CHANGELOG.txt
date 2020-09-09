@@ -1,5 +1,6 @@
 2020-09-08
   * cleanup PyDispatcher vs pydispatcher
+  * consolidate get-mac in getmac (dupe), fixes https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/131
 
 2020-09-08
   * update Plugwise-Smile-1.4.0
