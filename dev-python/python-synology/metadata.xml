@@ -7,9 +7,5 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-synology</remote-id>
-    <maintainer status="unknown">
-      <email>GitHub@StaticCube.com</email>
-      <name>FG van Zeelst (StaticCube)</name>
-    </maintainer>
   </upstream>
 </pkgmetadata>
