@@ -6,6 +6,7 @@
   * update pydelijn-0.6.1
   * bump python-synology-0.9.0
   * PyEssent small fix
+  * update mutagen-1.45.1
 
 2020-09-08
   * update Plugwise-Smile-1.4.0
