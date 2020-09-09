@@ -16,7 +16,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=">=dev-python/poetry-core-1.0.0_alpha3[${PYTHON_USEDEP}]"
+# File collisions
+#RDEPEND=">=dev-python/poetry-core-1.0.0_alpha3[${PYTHON_USEDEP}]"
+RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
