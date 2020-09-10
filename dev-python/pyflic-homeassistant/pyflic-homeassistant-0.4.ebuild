@@ -10,6 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Python library to connect to and interact with Flic buttons."
 HOMEPAGE="https://github.com/soldag/pyflic https://pypi.org/project/pyflic-homeassistant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.dev0.tar.gz -> ${P}.tar.gz"
+S=${WORKDIR}/${PN}-${PV}.dev0
 
 # No License found
 LICENSE="all-rights-reserved"
