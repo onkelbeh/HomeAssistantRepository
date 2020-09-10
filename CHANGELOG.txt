@@ -13,6 +13,9 @@
     - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/175
     - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/161
     - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/176
+  * pystiebeleltron-0.0.1:
+    - fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/156
+    - avoid installation of 'test' package
 
 2020-09-08 homeassistant-0.115.0_beta2
   * cleanup PyDispatcher vs pydispatcher
