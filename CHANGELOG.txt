@@ -8,6 +8,7 @@
   * bump pysmappee-0.2.13, added a PR for the setup.py patch: https://github.com/smappee/pysmappee/issues/5
   * update hass-nabucasa-0.37.0
   * keba-kecontact: fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/137
+  * volkszaehler: fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/168
 
 2020-09-08 homeassistant-0.115.0_beta2
   * cleanup PyDispatcher vs pydispatcher

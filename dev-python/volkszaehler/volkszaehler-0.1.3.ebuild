@@ -10,7 +10,9 @@ inherit distutils-r1
 DESCRIPTION="Python Wrapper for interacting with the Volkszahler API."
 HOMEPAGE="https://github.com/fabaff/python-volkszaehler https://pypi.org/project/volkszaehler/"
 #SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
-SRC_URI="https://github.com/home-assistant-ecosystem/python-volkszaehler/archive/${PV}.tar.gz -> ${P}.tar.gz"
+MY_PN=python-${PN}
+SRC_URI="https://github.com/home-assistant-ecosystem/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+S=${WORKDIR}/${MY_PN}-${PV}
 
 LICENSE="MIT"
 SLOT="0"
