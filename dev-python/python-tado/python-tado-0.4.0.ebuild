@@ -9,8 +9,9 @@ inherit distutils-r1
 
 DESCRIPTION="PyTado from chrism0dwk, modfied by w.malgadey"
 HOMEPAGE="https://github.com/wmalgadey/PyTado https://pypi.org/project/python-tado/"
-#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
-SRC_URI="https://github.com/wmalgadey/PyTado/archive/${PV}.tar.gz -> ${P}.tar.gz"
+MY_PN="PyTado"
+SRC_URI="https://github.com/wmalgadey/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+S=${WORKDIR}/${MY_PN}-${PV}
 
 LICENSE="GPL-3"
 SLOT="0"
