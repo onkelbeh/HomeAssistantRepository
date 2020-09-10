@@ -5,6 +5,7 @@
   * bump sentry-sdk-0.17.4
   * bump pyTibber-0.15.1
   * bump isort-5.5.2
+  * bump pysmappee-0.2.13, added a PR for the setup.py patch: https://github.com/smappee/pysmappee/issues/5
 
 2020-09-08 homeassistant-0.115.0_beta2
   * cleanup PyDispatcher vs pydispatcher
