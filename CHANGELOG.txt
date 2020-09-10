@@ -1,3 +1,6 @@
+2020-09-10
+  * bump zigpy-0.23.2
+
 2020-09-08 homeassistant-0.115.0_beta2
   * cleanup PyDispatcher vs pydispatcher
   * consolidate get-mac in getmac (dupe), fixes https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/131
