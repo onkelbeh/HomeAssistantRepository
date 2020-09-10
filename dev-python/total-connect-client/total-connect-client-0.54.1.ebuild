@@ -7,8 +7,6 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-MY_P=${PN//-/_}-${PV}
-
 DESCRIPTION="Interact with Total Connect 2 alarm systems"
 HOMEPAGE="https://github.com/craigjmidwinter/total-connect-client https://pypi.org/project/total-connect-client/"
 SRC_URI="https://github.com/onkelbeh/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
@@ -25,8 +23,6 @@ DEPEND="${REDEPEND}
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-S=${WORKDIR}/${MY_P}
 
 python_test() {
 	nosetests --verbose || die
