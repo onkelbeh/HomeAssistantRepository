@@ -18,6 +18,7 @@
     - avoid installation of 'test' package
   * thermoworks-smoke-0.1.8: fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/166
   * python-tado: fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/158
+  * orjson-2.5.1 removed, too complex to compile in Gentoo
 
 2020-09-08 homeassistant-0.115.0_beta2
   * cleanup PyDispatcher vs pydispatcher
