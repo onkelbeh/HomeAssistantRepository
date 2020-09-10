@@ -9,6 +9,10 @@
   * update hass-nabucasa-0.37.0
   * keba-kecontact: fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/137
   * volkszaehler: fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/168
+  * raspyrfm-client: fix several issues:
+    - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/175
+    - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/161
+    - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/176
 
 2020-09-08 homeassistant-0.115.0_beta2
   * cleanup PyDispatcher vs pydispatcher

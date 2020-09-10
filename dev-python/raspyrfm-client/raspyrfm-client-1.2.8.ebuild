@@ -7,7 +7,6 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-MY_PN=${PN/-/_}
 DESCRIPTION="A library to send rc signals with the RaspyRFM module"
 HOMEPAGE="https://github.com/markusressel/raspyrfm-client https://pypi.org/project/raspyrfm-client/"
 SRC_URI="https://github.com/markusressel/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
@@ -25,7 +24,11 @@ DEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-S="${WORKDIR}/${MY_PN}-${PV}"
+src_prepare() {
+	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests'])/g" -i setup.py || die
+	eapply "${FILESDIR}/${PN}_catch_git_queries.patch"
+	eapply_user
+}
 
 python_test() {
 	nosetests --verbose || die
