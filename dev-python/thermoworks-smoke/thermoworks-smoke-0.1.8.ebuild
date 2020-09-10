@@ -12,6 +12,7 @@ MY_P=${PN/-/_}-${PV}
 DESCRIPTION="Pull data for your thermoworks smoke thermometer"
 HOMEPAGE="https://github.com/nhorvath/python-thermoworks-smoke https://pypi.org/project/thermoworks-smoke/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
+S=${WORKDIR}/${PN/-/_}-${PV}
 
 LICENSE="GPL-3"
 SLOT="0"

@@ -16,6 +16,7 @@
   * pystiebeleltron-0.0.1:
     - fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/156
     - avoid installation of 'test' package
+  * thermoworks-smoke-0.1.8: fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/166
 
 2020-09-08 homeassistant-0.115.0_beta2
   * cleanup PyDispatcher vs pydispatcher
