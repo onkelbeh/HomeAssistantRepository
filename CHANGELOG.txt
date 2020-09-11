@@ -3,6 +3,7 @@
   * bump homeassistant-0.115.0_beta5
   * bump aioshelly-0.3.1
   * add giteapy-1.0.8 (for repo management)
+  * bump zeroconf-0.28.5
 
 2020-09-10 homeassistant-0.115.0_beta4
   * bump zigpy-0.23.2
