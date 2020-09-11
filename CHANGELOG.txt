@@ -1,6 +1,7 @@
 2020-09-11 homeassistant-0.115.0_beta5
   * bump numpy-1.19.2
   * bump homeassistant-0.115.0_beta5
+  * bump aioshelly-0.3.1
 
 2020-09-10 homeassistant-0.115.0_beta4
   * bump zigpy-0.23.2
