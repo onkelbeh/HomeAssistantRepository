@@ -14,7 +14,8 @@
 
   * directv-0.3.0 (fixes https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/127), olds removed
   * fix pyrainbird, source incomplete, no version tags at github, and a top level violation.
-  * niko-home-control fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/76, revert SRC_URI to new tag  
+  * niko-home-control fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/76, revert SRC_URI to new tag
+  * horimote-0.4.1: fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/132
 
 2020-09-11 homeassistant-0.115.0_beta5
   * bump numpy-1.19.2
