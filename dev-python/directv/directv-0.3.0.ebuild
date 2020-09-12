@@ -9,7 +9,12 @@ inherit distutils-r1
 
 DESCRIPTION="Asynchronous Python client for DirecTV (SHEF)."
 HOMEPAGE="https://github.com/ctalkington/python-directv https://pypi.org/project/directv/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+
+# SDIST at Pypi is incomplete
+MY_PN="python-directv"
+#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/ctalkington/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+S=${WORKDIR}/${MY_PN}-${PV}
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,8 +23,8 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
-	>=dev-python/yarl-1.4.4[${PYTHON_USEDEP}]"
+RDEPEND="~dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
+	~dev-python/yarl-1.4.2[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

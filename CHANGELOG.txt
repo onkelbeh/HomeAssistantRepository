@@ -12,6 +12,8 @@
   * update esphome-1.14.5-r2, Python 3.8 for my production box
   * update esphome-1.15.0_beta4, esphome-9999 (without src_prepare())
 
+  * directv-0.3.0 (fixes https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/127), olds removed
+
 2020-09-11 homeassistant-0.115.0_beta5
   * bump numpy-1.19.2
   * bump homeassistant-0.115.0_beta5
