@@ -25,12 +25,12 @@ From time to time a fresh compile test on empty boxes (one with Python 3.8 and o
 If you are author of an integration / component or other stuff related to Home Assistant and if I have your stuff not already added, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on Github are OK, but a Pypi `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (Pypi/Github/Sourceforge).
 
 ## Python 3.8 Support
-Since 0.114.4 (09/2020) everything compiles fine on Python 3.8. Still cleaning up, I did not yet any production test on Python 3.8, but I will very soon. Everything looks good. I am doing most of the tests/work on a box with Python 3.8 only. Before a new release of the app-misc/homeassistant Ebuild is made, I make sure all important components also compile on...
+Since 0.114.4 (09/2020) everything compiles fine on Python 3.8. Still cleaning up, I did not yet any production test on Python 3.8, but I will very soon. Everything looks good. I am doing most of the tests/work on a box with Python 3.8 only. Before a new release of the app-misc/homeassistant Ebuild is made, I make sure all important components also compile on 3.7.
+
+Today (2020/09/12) I updated my productive box to Python 3.8.5. And, finally, I could Python 2.7 from it. ESPHome still runs on the same box with some small patches (included in my Ebuild), the current `esphome-9999` doesn't even need a `src_prepare()`.
 
 ## ... Python 3.7
 You will need at least Python 3.7.7 for running Home assistant on Gentoo Linux. By user request, I have populated an ~arm64 KEYWORD on all ebuilds, which is (currently) completely untested. I know about at least 2 guys using it, but I had no feedback yet. I will some day prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
-
-I am still running my productive box with Python 3.7. Anyway, it still has 2.7, but this can be removed now. Even ESPHome runs on the same box with some small patches (included in my Ebuild). I try to compile all Ebuilds from time to time.
 
 ## Python 2.7 on Gentoo
 
@@ -131,7 +131,7 @@ Same as it was from Python 3.6 to 3.7.
 * update your naked core system as described below
 * reinstall app-misc/homeassistant with only the new Python Version
 
-This avoids a lot of recompiling all Home Assistant deps, and a lot of dependency trouble. Very recommended. I did not, but I just wanted to see if it works ;-) 
+This avoids a lot of recompiling all Home Assistant deps, and a lot of dependency trouble. Very recommended. I did not, but I just wanted to see if it works ;-)
 
 ### The upgrade steps:
 
