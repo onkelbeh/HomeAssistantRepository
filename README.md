@@ -124,6 +124,17 @@ I could be necessary to install some components by hand, there are too many comp
 
 Same as it was from Python 3.6 to 3.7.
 
+### The fastest way:
+
+* Throw away app-misc/homeassistant
+* run `emerge --depclean -a`, this will remove all dependent packages
+* update your naked core system as described below
+* reinstall app-misc/homeassistant with only the new Python Version
+
+This avoids a lot of recompiling all Home Assistant deps, and a lot of dependency trouble. Very recommended. I did not, but I just wanted to see if it works ;-) 
+
+### The upgrade steps:
+
 Make sure your system is up to date:
 ```sh
 $ emerge -tauvDUN @world
@@ -148,6 +159,7 @@ $ emerge -1vUD @world
 $ emerge --depclean
 ```
 If everthing is clean, double check with:
+
 * `eix --installed-with-use python_targets_python3_7` (<- old version)
 * `eix --installed-without-use python_targets_python3_8` (<- new version)
 
@@ -158,8 +170,13 @@ or
 
 
 Help it with:
-* `eix -I# --installed-without-use python_targets_python3_8 | xargs emerge -1tv`
+```sh
+eix -I# --installed-without-use python_targets_python3_8 | xargs emerge -1tv
+```
 
+### Now you have all Python packages for both versions installed
+
+Time to get rid of the packages compiled for the old Python:
 
 Edit your `/etc/portage/make.conf` to remove old Python Targets:
 ```sh
@@ -170,15 +187,31 @@ PYTHON_SINGLE_TARGET="python3_8"
 Run the Update again:
 
 ```sh
-$ emerge --depclean
-$ emerge -1vUD @world
-$ emerge --depclean
+# emerge --depclean
+# emerge -1vUD @world
+# emerge --depclean
 ```
+
 Sometimes I had dependencies `portage` didn't respect, in some cases it seems not to know in which Python's site-packages modules are already installed. Install them manually (after compile errors). Once all packages are updated, you can remove the older python targets in `package.use` and run another upgrade to remove now obsolete support for Python 3.7. This will save hard disk space and compile time.
 
 It does not make sense to compile all this stuff **for more than one** python.
 
-Tools that might help to clean up:
+Check if all is gone:
+
+```sh
+# eix --installed-with-use python_targets_python3_7
+```
+
+Recompile all packages which are still present in the old Python.
+
+### Remove the old Python
+
+```sh
+# emerge -cav /dev-lang/python:3.7
+```
+
+### Tools that might help to clean up:
+
 ```sh
 $ eix --installed-with-use python_targets_python3_7
 $ diff <(equery h python_targets_python3_7) <(equery h python_targets_python3_8)
