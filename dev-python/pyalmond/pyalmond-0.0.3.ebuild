@@ -11,7 +11,7 @@ DESCRIPTION="Python module to talk to the Web Almond API."
 HOMEPAGE="https://github.com/stanford-oval/pyalmond https://pypi.org/project/pyalmond/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD-3-Clause"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

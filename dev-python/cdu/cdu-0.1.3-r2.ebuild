@@ -11,7 +11,10 @@ DESCRIPTION="Cloud Storage Disk Usage Analyzer"
 HOMEPAGE="https://github.com/ilogik/cdu https://pypi.org/project/cdu/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+# License unknown
+LICENSE="all-rights-reserved"
+RESTRICT="mirror"
+
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

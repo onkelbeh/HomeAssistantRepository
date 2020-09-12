@@ -11,7 +11,7 @@ DESCRIPTION="Chromium HSTS Preload list as a Python package and updated daily"
 HOMEPAGE="https://github.com/sethmlarson/hstspreload https://pypi.org/project/hstspreload/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD-3"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

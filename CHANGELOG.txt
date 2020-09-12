@@ -4,6 +4,7 @@
   * remove 0.11.1-r3 (not needed anymore)
   * queueman-0.5 add generic description to avoid repoman complaints
   * complete all useflags in metadata.xml
+  * update/re-check some LICENSE strings
 
 2020-09-11 homeassistant-0.115.0_beta5
   * bump numpy-1.19.2
