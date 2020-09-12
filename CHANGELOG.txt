@@ -8,6 +8,7 @@
   * re-add dev-python/PyDispatcher, seems differ to pydispatcher from main repo
   * link dev-python/PyDispatcher again
   * small version fixes
+  * fix deps in hass-nabucasa-0.37.0, some cleanup
 
 2020-09-11 homeassistant-0.115.0_beta5
   * bump numpy-1.19.2

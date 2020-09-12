@@ -22,7 +22,7 @@ RDEPEND="~dev-python/pycognito-0.1.4[${PYTHON_USEDEP}]
 		 >=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 		 >=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 		 >=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
-		 ~dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
+		 >=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 		 ~dev-python/atomicwrites-1.4.0[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
