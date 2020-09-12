@@ -1,4 +1,14 @@
 2020-09-12 homeassistant-0.115.0_beta7
+
+Important notice about PyDispatcher/pydispatcher:
+During cleanups, I changed PyDispatcher to pydispatcher,
+this was a mistake, these are 2 different packages.
+To remove the (conflicting) wrong one, do a:
+
+# emerge -cav homeassistant
+# emerge -cav dev-python/pydispatcher
+# emerge -1tav =pp-misc/homeassistant --autounmask=y
+
   * bump pyloopenergy-0.2.1
   * update homeassistant-0.115.0_beta6
   * remove 0.11.1-r3 (not needed anymore)
