@@ -107,6 +107,7 @@
     <flag name="meteo_france">uses the meteorological data from Meteo-France</flag>
     <flag name="miio">add support for Xiaomi smart appliances</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
+    <flag name="mobile_app">mobile_app not needed anymore</flag>
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
     <flag name="musiccast">add support for Yamaha MusicCast devices</flag>
     <flag name="myq">lets you control MyQ-Enabled garage doors</flag>
@@ -133,6 +134,7 @@
     <flag name="roomba">control a iRobot Roomba vacuum or iRobot Braava m-series mop</flag>
     <flag name="rxv">Library for Yamaha RX-* Receivers</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
+    <flag name="scrape">scraping information from websites</flag>
     <flag name="shelly">Shelly devices</flag>
     <flag name="shodan">Shodan is a search engine for Internet-connected devices</flag>
     <flag name="signal">add Support for Moxie's Signal API</flag>
@@ -152,6 +154,7 @@
     <flag name="ssl">include support for haproxy</flag>
     <flag name="synologydsm">monitor getting various statistics from your Synology NAS</flag>
     <flag name="systemmonitor">monitor your platform</flag>
+    <flag name="tellduslive">cloud platform that connects to your Tellstick</flag>
     <flag name="tesla">integration with the Tesla cloud service</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tile">API for Tile Bluetooth trackers</flag>
