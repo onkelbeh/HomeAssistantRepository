@@ -9,6 +9,7 @@
   * link dev-python/PyDispatcher again
   * small version fixes
   * fix deps in hass-nabucasa-0.37.0, some cleanup
+  * update esphome-1.14.5-r2, Python 3.8 for my production box
 
 2020-09-11 homeassistant-0.115.0_beta5
   * bump numpy-1.19.2
