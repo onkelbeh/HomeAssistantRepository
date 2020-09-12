@@ -2,6 +2,7 @@
   * bump pyloopenergy-0.2.1
   * update homeassistant-0.115.0_beta6
   * remove 0.11.1-r3 (not needed anymore)
+  * queueman-0.5 add generic description to avoid repoman complaints
 
 2020-09-11 homeassistant-0.115.0_beta5
   * bump numpy-1.19.2

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{7..8} )
 
 inherit distutils-r1
 
-DESCRIPTION=""
+DESCRIPTION="simple queue manager for python"
 HOMEPAGE="https://github.com/ludeeus/queueman https://pypi.org/project/queueman/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
