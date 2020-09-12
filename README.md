@@ -8,9 +8,9 @@ https://github.com/home-assistant/home-assistant
 "Open source home automation that puts local control and privacy first."
 
 ## Origin: Ireland, Home: Bavaria
-Once this was a fork of Paul Healy's `https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin`, which seemed unmaintained to me. First I just wanted to compile it for my personal use. This happed at Home Assistant 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise of several hundred page views in the very first days. I'll do my best to keep it close to the official releases, might get slower during summers. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages are on file. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year.
+Once this was a fork of Paul Healy's `https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin`, which seemed unmaintained to me. First I just wanted to compile it for my personal use. This happed at Home Assistant 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise of several hundred page views in the very first days. I'll do my best to keep it close to the official releases, might get slower during summers. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages are on file, 970 Packes in 2380 Ebuilds in September 2020. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year.
 
-If you have questions or suggestions: contact me, any help is very welcome. If you want to help or contribute, please [join me](https://git.edevau.net/user/sign_up).
+If you have questions or suggestions: contact me, **any** help is very welcome. If you want to help or contribute, please [join me](https://git.edevau.net/user/sign_up).
 
 ## Reporting Issues
 First, please also check if your issue is already reported at [git.edevau.net](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues).
@@ -37,16 +37,22 @@ I am still running my productive box with Python 3.7. Anyway, it still has 2.7, 
 In August 2020 I discovered that it is now possible to remove Python 2.7 completely. I have done this on all my test servers and my Home Assistant Box. All still work like a charm.
 
 ## Nearly all Home Assistant Components are now included
-Except some modules with uncorrectable errors (e.g. hard drive crashes, lost sources) i believe all possible integrations for Home Assistant and their stated dependencies are included as ebuilds, based on the integrations list from `/usr/lib/python3.7/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule. I will expand/continue my tests and do some more cleanups. Gentoo's Python guys either will bring some more code to 3.7 soon.
+Except some modules with uncorrectable errors (e.g. hard drive crashes, lost sources) I believe all possible integrations for Home Assistant and their stated dependencies are included as ebuilds, based on the integrations list from `/usr/lib/python3.7/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule.
+
+In some cases I added small patches to the ebuilds, some packages have versions pinned without any reason. For me it's OK, if the packages compile and complete their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups.
 
 ## Why don't we use a virtual environment for Home Assistant
 On Gentoo, we have a very powerful package manager. So I (now) try to put everything Home Assistant uses into Ebuilds.
 
 Some years ago I started with only those packages Home Assitant needed absolutely to start. Home Assistant then downloads and installs modules it requires and cannot find. After some time, `/etc/homeassitant/deps` grew larger and larger, things messed up, I had a well maintained system, except the directory where a lot of packages (also outdated ones) live without our knowledge.
 
-So I started to more components as Ebuilds, I did not touch the internal requirement check. If a package is installed via `portage`, Home Assitant does not download it's own copy.
+So I started to add more important components as Ebuilds, I did not touch the internal requirement check. If a package is installed via `portage` and Home Assistants constraints match, Home Assitant does not download it's own copy.
 
-You should take a look in `/etc/homeassistant/deps/` from time to time, I do this after every upgradie, if  is not empty, install the missing package, if it's still donloaded, possibly the wrong (mostly too new) version of a component or a library is installed. `/etc/portage/package.accept_keywords` and `--autounmask=y` is your friend. You should not unmask too much.
+You can find the current constraints in:
+* https://github.com/home-assistant/core/blob/dev/requirements_all.txt and
+* https://github.com/home-assistant/core/blob/dev/homeassistant/package_constraints.txt
+
+You should take a look in `/etc/homeassistant/deps/` from time to time, I do this after every upgrade, if  is not empty, install the missing package, emtpy this directory, restart Home Assistant, if it's still downloaded, possibly the wrong (mostly too new) version of a component or a library is installed. `eix`, `/etc/portage/package.accept_keywords` and `--autounmask=y` are your friends. You should not unmask too much, and think about the next releases when you unmask packages.
 
 ## Sources Missing, older release tags
 Some packages with missing or hidden older releases have been [forked](https://github.com/onkelbeh?tab=repositories) after the originating author has been queried and notified. I did not touch any source, no changes except adding the missing release tags have been made. If patches are needed, these will be applied during the compile process. As soon as another usable release will be available, I'll swap the `SRC_URI` back to Pypi, the original Github or wherever it came from. For every fork in use I have an open ticket at [git.edevau.net](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues).  Please drop me a [note](https://github.com/onkelbeh/HomeAssistantRepository/issues) if you find something wrong.
@@ -55,7 +61,7 @@ Some packages with missing or hidden older releases have been [forked](https://g
 Aside from Home Assistant's stuff this repo contains some ebuilds I use with my Home Assistant, some have to be explicitly mentioned:
 
 ## ESPHome
-Thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, as soon as your name server accepts dynamic names from DHCP, a lot of ESP devices are very easy to deploy. Its integration in Home Assistant is easy and reacts fast on state changes. I begin to love its Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors now have a unique name everywhere in the system, and names can be changed very easily. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota. Some [required libraries](https://github.com/esphome/feature-requests/issues/586) are too old for Home Assistants environment, I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems. Please report any problems. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
+Thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, as soon as your name server accepts dynamic names from DHCP, a lot of ESP devices are very easy to deploy. Its integration in Home Assistant is easy and reacts fast on state changes. I love its Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors now have a unique name everywhere in the system, and names can be changed very easily. I have the dashboard installed in HA's Gui, so updates and changes are made with a few clicks. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota. Some [required libraries](https://github.com/esphome/feature-requests/issues/586) are too old for Home Assistants environment, and I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems. Please report any problems. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
 
 ## Platformio
 Platformio is needed for ESPHome and other stuff.
@@ -68,9 +74,9 @@ You will find this Repository at
 | Main | https://git.edevau.net/onkelbeh/HomeAssistantRepository | https://git.edevau.net/onkelbeh/HomeAssistantRepository.git |
 | Mirror | https://github.com/onkelbeh/HomeAssistantRepository |  https://github.com/onkelbeh/HomeAssistantRepository.git |
 
-Sorry, I currently cannot offer ssh access to my git server.
+Sorry, due to technical reasons, I currently cannot offer ssh access to my git server.
 
-Sure, you can submit **issues** and **pull requests** on both sites, but I prefer them on my own server, but this requires registration.
+Sure, you can submit **issues** and **pull requests** on both sites, but I prefer them on my own server (requires registration).
 
 ## Installation on Python 3.7 or Python 3.8
 Since Python 3.7 is default target since 05/2020, installation is very easy now.
@@ -250,14 +256,14 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 | ------ | ------ |
 |2|AGPL-3|
 |1|AGPL-3+|
-|16|all-rights-reserved|
-|363|Apache-2.0|
+|19|all-rights-reserved|
+|384|Apache-2.0|
 |3|Apache-2.0 || BSD-2|
 |1|Apache-2.0 MIT|
 |2|Artistic-2|
 |1|Boost-1.0|
-|145|BSD|
-|5|BSD-2|
+|156|BSD|
+|6|BSD-2|
 |5|BSD-2 Unlicense|
 |7|BSD-4|
 |1|BSD || Apache-2.0|
@@ -269,24 +275,24 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |2|GPL-1|
 |22|GPL-2|
 |5|GPL-2+|
-|152|GPL-3|
+|180|GPL-3|
 |22|GPL-3+|
 |2|ISC|
 |1|LGPL-2|
-|8|LGPL-2+|
+|10|LGPL-2+|
 |14|LGPL-2.1|
 |2|LGPL-2.1+|
 |28|LGPL-3|
 |15|LGPL-3+|
-|1168|MIT|
+|1346|MIT|
 |5|MPL-2.0|
 |1|NEWLIB|
-|14|PSF-2|
+|12|PSF-2|
 |3|PSF-2.4|
-|3|public-domain|
-|12|Unlicense|
+|4|public-domain|
+|14|Unlicense|
 |5|ZPL|
 
 I did my best to keep these clean. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
 
-Last update of this text: 11.9.2020
+Last update of this text: 12.9.2020
