@@ -3,14 +3,13 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
 DESCRIPTION="SDK for Niko Home Control"
 HOMEPAGE="https://github.com/NoUseFreak/niko-home-control https://pypi.org/project/niko-home-control/"
-#SRC_URI="https://github.com/NoUseFreak/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI="https://github.com/onkelbeh/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/NoUseFreak/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
