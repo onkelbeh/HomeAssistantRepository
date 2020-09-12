@@ -1,5 +1,6 @@
 2020-09-12
   * bump pyloopenergy-0.2.1
+  * update homeassistant-0.115.0_beta6
 
 2020-09-11 homeassistant-0.115.0_beta5
   * bump numpy-1.19.2

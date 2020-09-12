@@ -66,7 +66,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/netdisco-2.8.2[${PYTHON_USEDEP}]
 	~dev-python/pillow-7.2.0[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-1.3.19[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.28.4[${PYTHON_USEDEP}]
+	~dev-python/zeroconf-0.28.5[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.24.3[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
@@ -220,7 +220,7 @@ RDEPEND="${RDEPEND}
   openwrt? ( ~dev-python/openwrt-luci-rpc-1.1.6[${PYTHON_USEDEP}] )
   owntracks? ( virtual/mqtt )
   ozw? ( ~dev-python/python-openzwave-mqtt-1.0.5[${PYTHON_USEDEP}] )
-  ping? ( ~dev-python/icmplib-1.1.1[${PYTHON_USEDEP}] )
+  ping? ( ~dev-python/icmplib-1.1.3[${PYTHON_USEDEP}] )
 	plex? ( ~dev-python/PlexAPI-4.1.0[${PYTHON_USEDEP}] )
   plugwise? ( ~dev-python/Plugwise-Smile-1.1.0[${PYTHON_USEDEP}] )
 	poolsense? ( ~dev-python/poolsense-0.0.8[${PYTHON_USEDEP}] )
@@ -235,7 +235,7 @@ RDEPEND="${RDEPEND}
   samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}]
 	  ~dev-python/samsungtvws-1.4.0[${PYTHON_USEDEP}] )
   scrape? ( ~dev-python/beautifulsoup-4.9.1[${PYTHON_USEDEP}] )
-  shelly? ( ~dev-python/aioshelly-0.3.0[${PYTHON_USEDEP}] )
+  shelly? ( ~dev-python/aioshelly-0.3.1[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.23.0[${PYTHON_USEDEP}] )
   signal? ( ~dev-python/pysignalclirestapi-0.3.4[${PYTHON_USEDEP}] )
   simplisafe? ( ~dev-python/simplisafe-python-9.3.0[${PYTHON_USEDEP}] )
@@ -287,7 +287,7 @@ RDEPEND="${RDEPEND}
 					~dev-python/zigpy-deconz-0.9.2[${PYTHON_USEDEP}]
 					~dev-python/zigpy-xbee-0.13.0[${PYTHON_USEDEP}]
 					~dev-python/zigpy-zigate-0.6.2[${PYTHON_USEDEP}]
-					~dev-python/zigpy-0.23.1[${PYTHON_USEDEP}]
+					~dev-python/zigpy-0.23.2[${PYTHON_USEDEP}]
 					~dev-python/zigpy-znp-0.1.1[${PYTHON_USEDEP}]
 					~dev-python/bellows-0.20.1[${PYTHON_USEDEP}]
 					~dev-python/zha-quirks-0.0.44[${PYTHON_USEDEP}] )
