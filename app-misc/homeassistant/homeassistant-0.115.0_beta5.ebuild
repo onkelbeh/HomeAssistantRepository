@@ -293,7 +293,7 @@ RDEPEND="${RDEPEND}
 					~dev-python/zha-quirks-0.0.44[${PYTHON_USEDEP}] )
   zoneminder? ( ~dev-python/zm-py-0.4.0[${PYTHON_USEDEP}] )
   z-wave? ( ~dev-python/homeassistant-pyozw-0.1.10[${PYTHON_USEDEP}]
-					~dev-python/pydispatcher-2.0.5[${PYTHON_USEDEP}] )"
+					~dev-python/PyDispatcher-2.0.5[${PYTHON_USEDEP}] )"
 
 DEPEND="${RDEPEND}
 		test? (
