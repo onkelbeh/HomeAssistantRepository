@@ -7,7 +7,7 @@ To remove the (conflicting) wrong one, do a:
 
 # emerge -cav homeassistant
 # emerge -cav dev-python/pydispatcher
-# emerge -1tav =pp-misc/homeassistant --autounmask=y
+# emerge -1tav =app-misc/homeassistant --autounmask=y
 
   * bump pyloopenergy-0.2.1
   * update homeassistant-0.115.0_beta6
