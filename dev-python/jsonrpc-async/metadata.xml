@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">jsonrpc-async</remote-id>
+    <maintainer status="unknown">
+      <email>adam@armills.info</email>
+      <name>Adam Mills</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
