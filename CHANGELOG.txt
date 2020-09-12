@@ -21,6 +21,7 @@
   * update mypy-0.782
   * update jsonrpc-async-1.1.1
   * bump jsonrpc-websocket-1.2.1
+  * update pykodi-0.2.0
 
 2020-09-11 homeassistant-0.115.0_beta5
   * bump numpy-1.19.2
