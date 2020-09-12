@@ -18,6 +18,7 @@
   * horimote-0.4.1: fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/132
   * bump codecov-2.1.9
   * bump pytest-cov-2.10.1
+  * update mypy-0.782
 
 2020-09-11 homeassistant-0.115.0_beta5
   * bump numpy-1.19.2
