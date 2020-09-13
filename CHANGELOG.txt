@@ -10,6 +10,7 @@ To remove the (conflicting) wrong one, do a:
 2020-09-13
   * bump youtube_dl-2020.9.6
   * bump pytest-timeout-1.4.2
+  * bump responses-0.12.0
 
 2020-09-12 homeassistant-0.115.0_beta7
   * bump pyloopenergy-0.2.1
