@@ -39,6 +39,7 @@ To remove the (conflicting) wrong one, do a:
     - added arris-tg2492lg-1.0.0
     - add batinfo-0.4.2
     - add pulsectl-20.2.4
+    - downgrade pyzbar-0.1.7 from main repo
 
 2020-09-13
   * bump youtube_dl-2020.9.6
