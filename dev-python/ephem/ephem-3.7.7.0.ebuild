@@ -7,17 +7,16 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="API package for rememberthemilk.com"
-HOMEPAGE="https://bitbucket.org/rtmapi/rtmapi https://pypi.org/project/RtmAPI/"
+DESCRIPTION="Compute positions of the planets and stars"
+HOMEPAGE="https://rhodesmill.org/pyephem/ https://pypi.org/project/ephem/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-# needs(!) httplib2-0.10.3-r1
-RDEPEND="~dev-python/httplib2-0.10.3[${PYTHON_USEDEP}]"
+RDEPEND=""
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

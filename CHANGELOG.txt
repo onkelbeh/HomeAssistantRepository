@@ -23,7 +23,19 @@ To remove the (conflicting) wrong one, do a:
   * update coverage-5.3
   * add rpi-bad-power-0.0.3
   * update aiohomekit-0.2.53
-  * add transmissionrpc-0.11
+  * add more older reqs reported by new test script:
+    - add transmissionrpc-0.11
+    - add stookalert-0.1.4
+    - downgrade smart-meter-texas-0.4.0
+    - update ephem-3.7.7.0
+    - update ephem-3.7.7.1
+    - add sharkiqpy-0.1.8
+    - add py-schluter-0.1.7
+    - add roonapi-0.0.22
+    - restore httplib2-0.10.3-r1 from archive (for dev-python/RtmAPI) (use at your own risk!)
+    - correct dep in RtmAPI-0.7.2-r1 (use at your own risk!)
+    - add pyfunctional-1.3.0, pyfunctional-1.4.1
+    - avri-api-0.1.7 added
 
 2020-09-13
   * bump youtube_dl-2020.9.6
