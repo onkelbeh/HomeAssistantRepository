@@ -12,6 +12,7 @@ To remove the (conflicting) wrong one, do a:
   * update PyGithub-1.52
   * update evohome-async-0.3.5
   * restore (still needed) pexpect-4.6.0 from archive
+  * add pybluez-0.22
 
 2020-09-13
   * bump youtube_dl-2020.9.6
