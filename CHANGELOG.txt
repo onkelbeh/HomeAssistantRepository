@@ -21,6 +21,7 @@ To remove the (conflicting) wrong one, do a:
   * update pyhaversion-3.4.0, filed an issue at https://github.com/ludeeus/pyhaversion/issues/14
   * update pydeconz-73
   * update coverage-5.3
+  * add rpi-bad-power-0.0.3
 
 2020-09-13
   * bump youtube_dl-2020.9.6
