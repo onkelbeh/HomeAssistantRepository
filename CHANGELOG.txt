@@ -7,6 +7,10 @@ To remove the (conflicting) wrong one, do a:
 # emerge -cav dev-python/pydispatcher
 # emerge -1tav =app-misc/homeassistant --autounmask=y
 
+2020-09-14
+  * update PyGithub-1.43.8
+  * update PyGithub-1.52
+
 2020-09-13
   * bump youtube_dl-2020.9.6
   * bump pytest-timeout-1.4.2
