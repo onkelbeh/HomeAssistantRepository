@@ -23,6 +23,7 @@ To remove the (conflicting) wrong one, do a:
   * update coverage-5.3
   * add rpi-bad-power-0.0.3
   * update aiohomekit-0.2.53
+  * add transmissionrpc-0.11
 
 2020-09-13
   * bump youtube_dl-2020.9.6
