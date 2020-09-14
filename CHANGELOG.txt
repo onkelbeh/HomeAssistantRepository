@@ -7,6 +7,9 @@ To remove the (conflicting) wrong one, do a:
 # emerge -cav dev-python/pydispatcher
 # emerge -1tav =app-misc/homeassistant --autounmask=y
 
+2020-09-15
+  * update platformio-5.0.1
+
 2020-09-14 homeassistant-0.115.0_beta9
   * update PyGithub-1.43.8
   * update PyGithub-1.52
