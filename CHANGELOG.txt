@@ -7,7 +7,7 @@ To remove the (conflicting) wrong one, do a:
 # emerge -cav dev-python/pydispatcher
 # emerge -1tav =app-misc/homeassistant --autounmask=y
 
-2020-09-14
+2020-09-14 homeassistant-0.115.0_beta9
   * update PyGithub-1.43.8
   * update PyGithub-1.52
   * update evohome-async-0.3.5
@@ -44,6 +44,7 @@ To remove the (conflicting) wrong one, do a:
     - add adafruit-circuitpython-busdevice-5.0.1
     - add adafruit-circuitpython-bmp280-3.1.1
     - downgrade prometheus_client-0.7.1 from main repo
+  * update homeassistant-0.115.0_beta9
 
 2020-09-13
   * bump youtube_dl-2020.9.6
