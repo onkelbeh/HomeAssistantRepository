@@ -66,7 +66,7 @@ DOCS="README.md"
 src_prepare() {
 	sed -e 's;protobuf==3.12.2;protobuf==3.12.4;' \
 		-i esphome.egg-info/requires.txt \
-		-i requirements.txt || die 
+		-i requirements.txt || die
 	eapply_user
 }
 

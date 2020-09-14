@@ -9,6 +9,8 @@ To remove the (conflicting) wrong one, do a:
 
 2020-09-15
   * update platformio-5.0.1
+  * update esphome-1.15.0
+  * update esphome-9999
 
 2020-09-14 homeassistant-0.115.0_beta9
   * update PyGithub-1.43.8

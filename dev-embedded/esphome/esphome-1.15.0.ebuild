@@ -1,9 +1,10 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7} )
+PYTHON_COMPAT=( python3_{6..8} )
+DISTUTILS_SINGLE_IMPL=1
 
 inherit readme.gentoo-r1 distutils-r1
 
@@ -28,29 +29,32 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="+server test"
 
-RDEPEND=""
-DEPEND="${RDEPEND}
+RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
-	~dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
-	~dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]
-	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
-	~dev-python/colorlog-4.1.0[${PYTHON_USEDEP}]
-	server? ( ~www-servers/tornado-6.0.4[${PYTHON_USEDEP}] )
-	~dev-libs/protobuf-3.12.4
-	~dev-python/protobuf-python-3.12.4[${PYTHON_USEDEP}]
-	~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
-	~dev-python/pytz-2020.1[${PYTHON_USEDEP}]
-	~dev-python/pyserial-3.4[${PYTHON_USEDEP}]
-	server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
-	~dev-embedded/platformio-4.3.4
-	~dev-embedded/esptool-2.8[${PYTHON_USEDEP}]
-	~dev-python/click-7.1.2[${PYTHON_USEDEP}]
-	dev-python/setuptools[${PYTHON_USEDEP}]
-	test? (
-		dev-python/nose[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)
-"
+  $(python_gen_cond_dep '
+	  ~dev-python/voluptuous-0.11.7[${PYTHON_MULTI_USEDEP}]
+	  ~dev-python/pyyaml-5.3.1[${PYTHON_MULTI_USEDEP}]
+	  ~dev-python/paho-mqtt-1.5.0[${PYTHON_MULTI_USEDEP}]
+	  ~dev-python/colorlog-4.2.1[${PYTHON_MULTI_USEDEP}]
+	  server? ( ~www-servers/tornado-6.0.4[${PYTHON_MULTI_USEDEP}] )
+	  ~dev-libs/protobuf-3.12.4
+	  ~dev-python/protobuf-python-3.12.4[${PYTHON_MULTI_USEDEP}]
+	  ~dev-python/tzlocal-2.1[${PYTHON_MULTI_USEDEP}]
+	  ~dev-python/pytz-2020.1[${PYTHON_MULTI_USEDEP}]
+	  ~dev-python/pyserial-3.4[${PYTHON_MULTI_USEDEP}]
+	  server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_MULTI_USEDEP}] )
+	  ~dev-embedded/platformio-4.3.4
+	  ~dev-embedded/esptool-2.8[${PYTHON_MULTI_USEDEP}]
+	  ~dev-python/click-7.1.2[${PYTHON_MULTI_USEDEP}]
+	')"
+
+BDEPEND="
+  $(python_gen_cond_dep '
+	  dev-python/setuptools[${PYTHON_MULTI_USEDEP}]
+	  test? (
+	    dev-python/nose[${PYTHON_MULTI_USEDEP}]
+	    dev-python/pytest[${PYTHON_MULTI_USEDEP}] )
+	')"
 
 DISABLE_AUTOFORMATTING=1
 DOC_CONTENTS="
@@ -63,16 +67,9 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 
 DOCS="README.md"
 
-# site-packages/homeassistant/components/tensorflow has a dep to protobuf==3.6.1
-# which I ignored because tensorflow-1.13.2 is very outdated
-# site-packages/homeassistant/scripts/check_config.py:REQUIREMENTS = ("colorlog==4.1.0",)
 src_prepare() {
-	sed -e 's;colorlog==4.2.1;colorlog==4.1.0;' \
-		-i esphome.egg-info/requires.txt \
-		-i requirements.txt
 	sed -e 's;protobuf==3.12.2;protobuf==3.12.4;' \
-		-i esphome.egg-info/requires.txt \
-		-i requirements.txt
+		-i requirements.txt || die
 	eapply_user
 }
 
