@@ -11,7 +11,7 @@ DESCRIPTION="Easily forge ICMP packets and make your own ping and traceroute."
 HOMEPAGE="https://github.com/ValentinBELYN/icmplib https://pypi.org/project/icmplib/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL-3"
+LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
