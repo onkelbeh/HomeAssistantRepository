@@ -9,7 +9,12 @@ inherit distutils-r1
 
 DESCRIPTION="Asynchronous Python client for the Sonarr API."
 HOMEPAGE="https://github.com/ctalkington/python-sonarr https://pypi.org/project/sonarr/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+
+# SDIST incomplete at Pypi
+# SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+MY_PN="python-sonarr"
+SRC_URI="https://github.com/ctalkington/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+S=${WORKDIR}/${MY_PN}-${PV}
 
 LICENSE="MIT"
 SLOT="0"
