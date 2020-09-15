@@ -14,7 +14,9 @@ HOMEPAGE="https://github.com/pavoni/pywemo https://pypi.org/project/pywemo/"
 # no tags or releases on github, use commit-id:
 # SRC_URI="https://github.com/pavoni/pywemo/archive/d9cd5c246624ec7b81d63fcb6a02c983750f60f8.zip -> ${P}.zip"
 # too complex and unstable, so I forked it and added the missing tags:
-SRC_URI="https://github.com/onkelbeh/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+# fixed now https://github.com/pavoni/pywemo/issues/163#issuecomment-691500503
+# SRC_URI="https://github.com/onkelbeh/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/pavoni/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

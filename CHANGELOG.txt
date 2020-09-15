@@ -20,6 +20,8 @@ To remove the (conflicting) wrong one, do a:
   * fix sonarr https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/164
   * pymata-express, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/150
   * pyatag, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/144
+  * pywemo, missing releases added at origin, fork removed
+  * bump pywemo-0.5.0, SRC now is Pypi
 
 2020-09-14 homeassistant-0.115.0_beta9
   * update PyGithub-1.43.8
