@@ -18,6 +18,7 @@ To remove the (conflicting) wrong one, do a:
   * bump home-assistant-frontend-20200915.0
   * update icmplib-1.2, change LICENSE="LGPL-3"
   * fix sonarr https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/164
+  * pymata-express, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/150
 
 2020-09-14 homeassistant-0.115.0_beta9
   * update PyGithub-1.43.8
