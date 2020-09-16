@@ -12,6 +12,7 @@ To remove the (conflicting) wrong one, do a:
   * bump sentry-sdk-0.17.6
   * bump youtube_dl-2020.9.14
   * bump statsd-3.3.0
+  * bump synology-srm-0.2.0
 
 2020-09-15
   * update platformio-5.0.1
