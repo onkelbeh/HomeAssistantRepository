@@ -1,3 +1,6 @@
+## Breaking Change:
+ -> 0.115.0_beta10: all useflags are now named like Home Assistants Component Domain
+
 Important notice about PyDispatcher/pydispatcher:
 During cleanups, I changed PyDispatcher to pydispatcher,
 this was a mistake, these are 2 different packages.
@@ -15,6 +18,8 @@ To remove the (conflicting) wrong one, do a:
   * bump synology-srm-0.2.0
   * restore google-api-python-client-1.6.4 (still needed)
   * added aio-geojson-geonetnz-volcano-0.5
+
+  * update homeassistant-0.115.0_beta10 (renamed MANY use flags)
 
 2020-09-15
   * update platformio-5.0.1
