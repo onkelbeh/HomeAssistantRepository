@@ -13,6 +13,7 @@ To remove the (conflicting) wrong one, do a:
   * bump youtube_dl-2020.9.14
   * bump statsd-3.3.0
   * bump synology-srm-0.2.0
+  * restore google-api-python-client-1.6.4 (still needed)
 
 2020-09-15
   * update platformio-5.0.1
