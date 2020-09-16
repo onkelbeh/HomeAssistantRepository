@@ -17,7 +17,8 @@ SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="abode adguard ads agent_dvr airvisual alarmdecoder ambiclimate ambient_station amcrest androidtv apache_kafka apple_tv apprise arcam_fmj asuswrt aurora avea awair aws axis bitcoin blink blockchain bmw_connected_drive braviatv brother buienradar caldav cast cisco_mobility_express cli coronavirus daikin darksky deconz delijn denonavr devolo_home_control dexcom discogs discord dunehd dynalite dyson ecobee emulated_roku enigma2 enocean enphase_envoy environment_canada esphome everlights flume flunearyou foobot freebox fronius gios gogogate2 growatt_server guardian harman_kardon_avr harmony heos here_travel_time homekit homematic homematicip_cloud hp_ilo hue hydrawise iaqualink icloud ihc incomfort influxdb insteon intesishome ipma jewish_calendar joaoapps_join kef knx kodi luci maxcube maxcube_hack media_extractor meteo_france miio mikrotik mqtt myq mysql nederlandse_spoorwegen netatmo netdata nuki nws nx584 owntracks ozw ping plex plugwise poolsense powerwall ps4 qnap recorder rejseplanen ring roku roomba samsungtv scrape shelly shodan signal_messenger simplisafe skybell sma smappee smarthab smartthings socat socialblade solax somfy sonos speedtestdotnet squeezebox ssl synology_dsm systemmonitor tellduslive tesla test tile toon totalconnect tplink tradfri tuya ubee unifi upnp vallox velbus velux vera version vicare vizio webostv wemo whois wink withings wled workday xbox_live xs1 yamaha yamaha_musiccast yeelight zerproc zha zoneminder zwave"
+IUSE="abode adguard ads agent_dvr airvisual alarmdecoder ambiclimate ambient_station amcrest androidtv apache_kafka apple_tv apprise arcam_fmj asuswrt aurora avea awair aws axis bitcoin blink blockchain bmw_connected_drive braviatv brother buienradar caldav cast cisco_mobility_express cli coronavirus daikin darksky deconz delijn denonavr devolo_home_control dexcom discogs discord dunehd dynalite dyson ecobee emulated_roku enigma2 enocean enphase_envoy environment_canada esphome everlights flume flunearyou foobot freebox fronius gios gogogate2 growatt_server guardian harman_kardon_avr harmony heos here_travel_time homekit homematic homematicip_cloud hp_ilo hue hydrawise iaqualink icloud ihc incomfort influxdb insteon intesishome ipma jewish_calendar joaoapps_join kef knx kodi luci maxcube maxcube_hack media_extractor meteo_france mikrotik mqtt myq mysql nederlandse_spoorwegen netatmo netdata nuki nws nx584 owntracks ozw ping plex plugwise poolsense powerwall ps4 qnap recorder rejseplanen ring roku roomba samsungtv scrape shelly shodan signal_messenger simplisafe skybell sma smappee smarthab smartthings socat socialblade solax somfy sonos speedtestdotnet squeezebox ssl synology_dsm systemmonitor tellduslive tesla test tile toon totalconnect tplink tradfri tuya ubee unifi upnp vallox velbus velux vera version vicare vizio webostv wemo whois wink withings wled workday xbox_live xiaomi_miio xs1 yamaha yamaha_musiccast yeelight zerproc zha zoneminder zwave"
+
 
 # from 2020/04 cleanup to be removed or integrated later
 # external deps
@@ -227,12 +228,12 @@ RDEPEND="${RDEPEND}
 	smappee? ( ~dev-python/pysmappee-0.2.13[${PYTHON_USEDEP}] )
 	smarthab? ( ~dev-python/SmartHab-0.21[${PYTHON_USEDEP}] )
 	smartthings? ( ~dev-python/pysmartapp-0.3.2[${PYTHON_USEDEP}] ~dev-python/pysmartthings-0.7.3[${PYTHON_USEDEP}] )
-	socat? ( ~net-misc/socat-1.7.3.4[${PYTHON_USEDEP}] )
+	socat? ( net-misc/socat )
 	socialblade? ( ~dev-python/socialbladeclient-0.5[${PYTHON_USEDEP}] )
 	solax? ( ~dev-python/solax-0.2.3[${PYTHON_USEDEP}] )
 	somfy? ( ~dev-python/pymfy-0.9.0[${PYTHON_USEDEP}] )
 	sonos? ( ~dev-python/pysonos-0.0.33[${PYTHON_USEDEP}] )
-	speedtestdotnet? ( ~dev-python/speedtest-cli-2.1.2[${PYTHON_USEDEP}] )
+	speedtestdotnet? ( ~net-analyzer/speedtest-cli-2.1.2[${PYTHON_USEDEP}] )
 	squeezebox? ( ~dev-python/pysqueezebox-0.3.1[${PYTHON_USEDEP}] )
 	synology_dsm? ( ~dev-python/python-synology-0.8.2[${PYTHON_USEDEP}] )
 	systemmonitor? ( ~dev-python/psutil-5.7.2[${PYTHON_USEDEP}] )
