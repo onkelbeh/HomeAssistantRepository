@@ -9,6 +9,7 @@ To remove the (conflicting) wrong one, do a:
 
 2020-09-16
   * bump aioshelly-0.3.2
+  * bump sentry-sdk-0.17.6
 
 2020-09-15
   * update platformio-5.0.1
