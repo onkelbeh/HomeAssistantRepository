@@ -21,6 +21,7 @@ To remove the (conflicting) wrong one, do a:
 
   * update homeassistant-0.115.0_beta10 (renamed MANY use flags)
   * removed speedtest-cli from dev-python
+  * updated README.md (added USE flags notice)
 
 2020-09-15
   * update platformio-5.0.1

@@ -1,5 +1,14 @@
 # Home Assistant Gentoo Overlay
 
+## Breaking Change: many USE flags changed in 0.115.0
+
+Beginning with `0.115.0_beta10` many USE Flags have changed.
+All USE flags have now *exactly* the same name as the components `domain` in Home Assistant. OK, this is a hard cut, but overdue. Mostly caused by the creation of an automated import routine, first I planned to keep the old names, the replacement class was already written, but during data collection I discovered that the original domain names aren't so bad anyway.
+
+Some outdated components disappeared forever.
+
+You will find the detailed changes in commit: https://git.edevau.net/onkelbeh/HomeAssistantRepository/commit/3fec35c803e6061e0186df2af4e914e5791b53cc, scroll down to `metadata.xml`. But `emerge` will also tell.
+
 ## Home Assistant without Docker & Virtual Environments
 
 https://www.home-assistant.io/
