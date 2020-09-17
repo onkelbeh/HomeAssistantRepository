@@ -10,6 +10,11 @@ To remove the (conflicting) wrong one, do a:
 # emerge -cav dev-python/pydispatcher
 # emerge -1tav =app-misc/homeassistant --autounmask=y
 
+2020-09-17 homeassistant-0.115.0_beta12
+  * bump homeassistant-0.115.0_beta12
+  * bump frontend frontend-20200916.0
+  * fix frontend deps in the older betas
+
 2020-09-16 homeassistant-0.115.0_beta11
   * bump aioshelly-0.3.2
   * bump sentry-sdk-0.17.6

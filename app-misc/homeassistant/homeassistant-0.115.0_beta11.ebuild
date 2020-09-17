@@ -61,7 +61,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.37.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20200912.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20200915.0[${PYTHON_USEDEP}]
 	~dev-python/netdisco-2.8.2[${PYTHON_USEDEP}]
 	~dev-python/pillow-7.2.0[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-1.3.19[${PYTHON_USEDEP}]
