@@ -13,6 +13,7 @@ To remove the (conflicting) wrong one, do a:
 2020-09-18 homeassistant-0.115.0
   * Py3.8 flagged: atenpdu, baidu-aip, bizkaibus, blinkt, brottsplatskartan, pydroid-ipcam
   * bump pyhaversion-3.4.2
+  * bump home-assistant-frontend-20200917.1
 
 2020-09-17 homeassistant-0.115.0_beta12
   * bump homeassistant-0.115.0_beta12
