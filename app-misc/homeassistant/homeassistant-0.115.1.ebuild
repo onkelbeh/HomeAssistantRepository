@@ -10,73 +10,73 @@ MY_PN=${PN}-core
 MY_PV=${PV/_beta/b}
 MY_P=${MY_PN}-${MY_PV}
 
+if [[ ${PV} == *9999* ]]; then
+	   inherit git-r3
+	   EGIT_REPO_URI="https://github.com/home-assistant/core.git"
+	   EGIT_BRANCH="dev"
+	   S="${WORKDIR}/core/"
+else
+	   MY_P=${P/_beta/b}
+	   MY_PV=${PV/_beta/b}
+	   SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
+	   S="${WORKDIR}/core-${MY_PV}"
+fi
+
 DESCRIPTION="Open-source home automation platform running on Python on 3.7"
 HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistantRepository"
-SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
+
 IUSE="abode accuweather acer_projector acmeda adguard ads aftership agent_dvr airly airvisual aladdin_connect alarmdecoder almond alpha_vantage ambiclimate ambient_station amcrest ampio androidtv android_ip_webcam anel_pwrctrl anthemav apache_kafka apcupsd apple_tv apprise arcam_fmj asuswrt aten_pe atome august avea avion avri awair axis baidu beewi_smartclim bh1750 bitcoin bizkaibus blackbird blebox blink blinksticklight blinkt blockchain bluetooth_le_tracker bluetooth_tracker bme280 bme680 bmw_connected_drive bom bond braviatv broadlink brother brottsplatskartan brunt bsblan bt_home_hub_5 bt_smarthub buienradar caldav canary cast cisco_mobility_express cli co2signal coronavirus daikin darksky ddwrt deconz delijn denonavr deutsche_bahn devolo_home_control dexcom discogs discord dunehd dynalite dyson ecobee emulated_roku enigma2 enocean enphase_envoy environment_canada esphome everlights flume flunearyou flux_led foobot fortios freebox fronius gios gogogate2 growatt_server guardian harman_kardon_avr harmony heos here_travel_time homekit homematic homematicip_cloud hp_ilo http hue hydrawise iaqualink ihc incomfort influxdb insteon intesishome ipma jewish_calendar joaoapps_join kef knx kodi luci maxcube maxcube_hack media_extractor meteo_france mikrotik mitemp_bt mobile_app mqtt myq mysql nad nederlandse_spoorwegen netatmo netdata nuki nws nx584 owntracks ozw panasonic_viera ping plex plugwise poolsense powerwall ps4 qnap rainmachine recorder rejseplanen ring roku roomba samsungtv scrape shelly shodan signal_messenger simplisafe skybell sma smappee smarthab smartthings snmp socat socialblade solax somfy sonos speedtestdotnet sql squeezebox ssl synology_dsm systemmonitor tellduslive tesla test tile toon totalconnect tplink tradfri tuya ubee unifi unifi_direct upnp vallox velbus velux vera version vicare vizio waqi webostv wemo whois wink withings wled workday xbox_live xiaomi_aqara xiaomi_miio xiaomi_tv xs1 yamaha yamaha_musiccast yeelight zerproc zha zhong_hong zoneminder zwave"
 
-# from 2020/04 cleanup to be removed or integrated later
 # external deps
-
 RDEPEND="${PYTHON_DEPS} acct-group/${PN} acct-user/${PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
-	app-admin/logrotate
+		app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
 	>=dev-libs/xerces-c-3.1.4-r1"
 
 # Home Assistant Core dependencies
-# from setup.py
+# from package_constraints.txt
 RDEPEND="${RDEPEND}
 	~dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
+	~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/astral-1.10.1[${PYTHON_USEDEP}]
 	~dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
 	~dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
+	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2020.6.20[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
-	>=dev-python/jinja-2.11.2[${PYTHON_USEDEP}]
-	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
 	~dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
-	>=dev-python/pip-8.0.3-r1[${PYTHON_USEDEP}]
-	~dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/pytz-2020.1[${PYTHON_USEDEP}]
-	~dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]
-	~dev-python/requests-2.24.0[${PYTHON_USEDEP}]
-	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
-	~dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
-	~dev-python/voluptuous-serialize-2.4.0[${PYTHON_USEDEP}]
-	~dev-python/yarl-1.4.2[${PYTHON_USEDEP}]"
-
-# from package_constraints.txt, if not defined earlier
-RDEPEND="${RDEPEND}
-	~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
-	>=dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]
 	~dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.37.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-frontend-20200917.1[${PYTHON_USEDEP}]
-	~dev-python/netdisco-2.8.2[${PYTHON_USEDEP}]
-	~dev-python/pillow-7.2.0[${PYTHON_USEDEP}]
-	~dev-python/sqlalchemy-1.3.19[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.28.5[${PYTHON_USEDEP}]
-	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.24.3[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
-	!dev-python/pycrypto[${PYTHON_USEDEP}]
-	~dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
-	!dev-python/enum34[${PYTHON_USEDEP}]
-	!dev-python/typing[${PYTHON_USEDEP}]
-	!dev-python/uuid[${PYTHON_USEDEP}]"
-
-# >=dev-python/idna-ssl-1.1.0[${PYTHON_USEDEP}]
-# >=dev-python/immutables-0.9[${PYTHON_USEDEP}]
+	$(python_gen_cond_dep '~dev-python/importlib-metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
+	~dev-python/jinja-2.11.2[${PYTHON_USEDEP}]
+	~dev-python/netdisco-2.8.2[${PYTHON_USEDEP}]
+	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
+	~dev-python/pillow-7.2.0[${PYTHON_USEDEP}]
+	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
+	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
+	~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
+	~dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]
+	>=dev-python/pytz-2020.1[${PYTHON_USEDEP}]
+	~dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]
+	~dev-python/requests-2.24.0[${PYTHON_USEDEP}]
+	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
+	~dev-python/sqlalchemy-1.3.19[${PYTHON_USEDEP}]
+	>=dev-python/urllib3-1.24.3[${PYTHON_USEDEP}]
+	~dev-python/voluptuous-serialize-2.4.0[${PYTHON_USEDEP}]
+	~dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
+	~dev-python/yarl-1.4.2[${PYTHON_USEDEP}]
+	~dev-python/zeroconf-0.28.5[${PYTHON_USEDEP}]"
 
 # still unknown origin, some from requirements_all.txt
 RDEPEND="${RDEPEND}
@@ -297,7 +297,7 @@ RDEPEND="${RDEPEND}
 	upnp? ( ~dev-python/async-upnp-client-0.14.13[${PYTHON_USEDEP}] )
 	vallox? ( ~dev-python/vallox-websocket-api-2.4.0[${PYTHON_USEDEP}] )
 	velbus? ( ~dev-python/python-velbus-2.0.44[${PYTHON_USEDEP}] )
-	velux? ( ~dev-python/pyvlx-0.2.16[${PYTHON_USEDEP}] )
+	velux? ( ~dev-python/pyvlx-0.2.17[${PYTHON_USEDEP}] )
 	vera? ( ~dev-python/pyvera-0.3.9[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-3.4.2[${PYTHON_USEDEP}] )
 	vicare? ( ~dev-python/PyViCare-0.2.0[${PYTHON_USEDEP}] )
@@ -324,7 +324,7 @@ RDEPEND="${RDEPEND}
 	zoneminder? ( ~dev-python/zm-py-0.4.0[${PYTHON_USEDEP}] )
 	zwave? ( ~dev-python/homeassistant-pyozw-0.1.10[${PYTHON_USEDEP}] ~dev-python/PyDispatcher-2.0.5[${PYTHON_USEDEP}] )"
 
-DEPEND="${RDEPEND}
+BDEPEND="${RDEPEND}
 		test? (
 			~dev-python/asynctest-0.13.0[${PYTHON_USEDEP}]
 			~dev-python/codecov-2.1.0[${PYTHON_USEDEP}]
