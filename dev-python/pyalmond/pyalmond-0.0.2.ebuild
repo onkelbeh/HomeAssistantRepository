@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Python module to talk to the Web Almond API."
 HOMEPAGE="https://github.com/stanford-oval/pyalmond https://pypi.org/project/pyalmond/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/stanford-oval/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"

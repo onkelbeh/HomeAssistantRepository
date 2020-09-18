@@ -14,6 +14,7 @@ To remove the (conflicting) wrong one, do a:
   * Py3.8 flagged: atenpdu, baidu-aip, bizkaibus, blinkt, brottsplatskartan, pydroid-ipcam
   * bump pyhaversion-3.4.2
   * bump home-assistant-frontend-20200917.1
+  * fix pyalmond-0.0.2 SRC_URI, SDIST disappeared from Pypi
 
 2020-09-17 homeassistant-0.115.0_beta12
   * bump homeassistant-0.115.0_beta12
