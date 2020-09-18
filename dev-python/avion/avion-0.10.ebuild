@@ -26,6 +26,12 @@ DEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
+src_prepare() {
+	sed -e "s;packages=find_packages();packages=['avion'];" \
+		-i setup.py || die
+	eapply_user
+}
+
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
