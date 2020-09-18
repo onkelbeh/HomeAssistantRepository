@@ -16,6 +16,7 @@ To remove the (conflicting) wrong one, do a:
   * bump home-assistant-frontend-20200917.1
   * fix pyalmond-0.0.2 SRC_URI, SDIST disappeared from Pypi
   * avion-0.10: patch collision errors
+  * update homeassistant-0.115.0
 
 2020-09-17 homeassistant-0.115.0_beta12
   * bump homeassistant-0.115.0_beta12
