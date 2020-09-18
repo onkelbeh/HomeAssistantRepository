@@ -10,6 +10,9 @@ To remove the (conflicting) wrong one, do a:
 # emerge -cav dev-python/pydispatcher
 # emerge -1tav =app-misc/homeassistant --autounmask=y
 
+2020-09-18 homeassistant-0.115.0
+  * Py3.8 flagged: atenpdu, baidu-aip, bizkaibus, blinkt, brottsplatskartan, pydroid-ipcam
+
 2020-09-17 homeassistant-0.115.0_beta12
   * bump homeassistant-0.115.0_beta12
   * bump frontend frontend-20200916.0
