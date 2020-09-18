@@ -7,5 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyvlx</remote-id>
+    <maintainer status="unknown">
+      <email>julius@mittenzwei.com</email>
+      <name>Julius Mittenzwei</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>
