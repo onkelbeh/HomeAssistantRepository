@@ -26,7 +26,7 @@ HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="+server test"
 
 RDEPEND="
@@ -52,8 +52,8 @@ BDEPEND="
   $(python_gen_cond_dep '
 	  dev-python/setuptools[${PYTHON_MULTI_USEDEP}]
 	  test? (
-	    dev-python/nose[${PYTHON_MULTI_USEDEP}]
-	    dev-python/pytest[${PYTHON_MULTI_USEDEP}] )
+		dev-python/nose[${PYTHON_MULTI_USEDEP}]
+		dev-python/pytest[${PYTHON_MULTI_USEDEP}] )
 	')"
 
 DISABLE_AUTOFORMATTING=1
