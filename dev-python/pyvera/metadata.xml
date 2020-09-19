@@ -7,9 +7,5 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyvera</remote-id>
-    <maintainer status="unknown">
-      <email>mail@gregdowling.com</email>
-      <name>James Cole, Greg Dowling</name>
-    </maintainer>
   </upstream>
 </pkgmetadata>
