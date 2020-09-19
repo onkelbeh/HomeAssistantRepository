@@ -21,6 +21,7 @@
     - bump pylint-2.6.0
     - add stdlib-list-0.7.0
   * bump zigpy-0.24.1
+  * bump zigpy-deconz-0.10.0
 
 2020-09-18 homeassistant-0.115.0
   * Py3.8 flagged: atenpdu, baidu-aip, bizkaibus, blinkt, brottsplatskartan, pydroid-ipcam
