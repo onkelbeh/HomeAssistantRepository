@@ -14,6 +14,11 @@ To remove the (conflicting) wrong one, do a:
   * update pyvera-0.3.10
   * update home-assistant-frontend-20200918.0, remove olds
   * bump python-velbus-2.0.45, remove olds
+  * update hangups-0.4.11, it still pins outdated versions
+    - added (old) configargparse-0.11.0
+    - added (old) urwid-1.3.1
+    - added (old) MechanicalSoup-0.6.0
+    - reworked deps for hangups-0.4.10
 
 2020-09-18 homeassistant-0.115.0
   * Py3.8 flagged: atenpdu, baidu-aip, bizkaibus, blinkt, brottsplatskartan, pydroid-ipcam
