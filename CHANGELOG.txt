@@ -19,6 +19,9 @@ To remove the (conflicting) wrong one, do a:
     - added (old) urwid-1.3.1
     - added (old) MechanicalSoup-0.6.0
     - reworked deps for hangups-0.4.10
+  * update esphome
+    - esphome-1.15.0 -> stable
+    - update esphome-1.15.1
 
 2020-09-18 homeassistant-0.115.0
   * Py3.8 flagged: atenpdu, baidu-aip, bizkaibus, blinkt, brottsplatskartan, pydroid-ipcam
