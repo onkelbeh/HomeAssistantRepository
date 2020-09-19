@@ -17,6 +17,7 @@
   * update homeassistant-9999.off (to have the new USE flags)
   * rework tests for homeassistant core:
     - bump pre-commit-2.7.1
+    - add pipdeptree-1.0.0
 
 2020-09-18 homeassistant-0.115.0
   * Py3.8 flagged: atenpdu, baidu-aip, bizkaibus, blinkt, brottsplatskartan, pydroid-ipcam
