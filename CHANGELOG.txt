@@ -23,6 +23,7 @@ To remove the (conflicting) wrong one, do a:
     - esphome-1.15.0 -> stable
     - update esphome-1.15.1
     - update esphome-9999 (protobuf re-pinned)
+  * update homeassistant-9999.off (to have the new USE flags)
 
 2020-09-18 homeassistant-0.115.0
   * Py3.8 flagged: atenpdu, baidu-aip, bizkaibus, blinkt, brottsplatskartan, pydroid-ipcam
