@@ -11,24 +11,24 @@ MY_PV=${PV/_beta/b}
 MY_P=${MY_PN}-${MY_PV}
 
 if [[ ${PV} == *9999* ]]; then
-       inherit git-r3
-       EGIT_REPO_URI="https://github.com/home-assistant/core.git"
-       EGIT_BRANCH="dev"
-       S="${WORKDIR}/core/"
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/home-assistant/core.git"
+	EGIT_BRANCH="dev"
+	S="${WORKDIR}/core/"
 else
-       MY_P=${P/_beta/b}
-       MY_PV=${PV/_beta/b}
-       SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
-       S="${WORKDIR}/core-${MY_PV}"
+	MY_P=${P/_beta/b}
+	MY_PV=${PV/_beta/b}
+	SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
+	S="${WORKDIR}/core-${MY_PV}"
 fi
 
-DESCRIPTION="Open-source home automation platform running on Python on 3.7"
-HOMEPAGE="https://home-assistant.io https://git.edevau.net/onkelbeh/HomeAssistantRepository"
+DESCRIPTION="Open-source home automation platform running on Python >= 3.7"
+HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssistantRepository/"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 
+KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="abode accuweather acer_projector acmeda adguard ads aftership agent_dvr airly airvisual aladdin_connect alarmdecoder almond alpha_vantage ambiclimate ambient_station amcrest ampio androidtv android_ip_webcam anel_pwrctrl anthemav apache_kafka apcupsd apple_tv apprise aquostv arcam_fmj aruba asuswrt aten_pe atome august aurora_abb_powerone avea avion -avri awair axis baidu -beewi_smartclim bh1750 bitcoin bizkaibus blackbird blebox blink blinksticklight blinkt blockchain bluetooth_le_tracker bluetooth_tracker bme280 bme680 bmw_connected_drive bom bond braviatv broadlink brother brottsplatskartan brunt bsblan bt_home_hub_5 bt_smarthub buienradar +caldav canary cast cisco_mobility_express cli co2signal coronavirus daikin darksky ddwrt deconz delijn denonavr deutsche_bahn devolo_home_control dexcom dht discogs discord doorbird dunehd dynalite dyson ecobee elv emulated_roku enigma2 enocean enphase_envoy environment_canada esphome everlights evohome fibaro flume flunearyou flux_led foobot fortios freebox fritz fritzbox fritzbox_callmonitor fritzbox_netmonitor fronius garmin_connect gios github gogogate2 greeneye_monitor growatt_server guardian harman_kardon_avr harmony heos here_travel_time homekit -homematic -homematicip_cloud hp_ilo http hue hydrawise iaqualink ihc incomfort influxdb insteon intesishome ipma islamic_prayer_times jewish_calendar joaoapps_join kef knx kodi linode loopenergy luci luftdaten maxcube maxcube_hack media_extractor meteo_france mfi miflora mikrotik -mitemp_bt mobile_app +mqtt myq +mysql nad nederlandse_spoorwegen netatmo netdata nuki nws nx584 opengarage opensensemap +otp owntracks ozw panasonic_viera philips_js pilight +ping plex plugwise poolsense powerwall ps4 qnap rachio rainbird rainmachine +recorder rejseplanen ring roku roomba roon samsungtv +scrape shelly shodan signal_messenger simplisafe skybell sma smappee smarthab smartthings +snmp socat socialblade solax somfy sonos speedtestdotnet +sql squeezebox +ssl statsd synology_dsm systemmonitor tellduslive tesla test tile toon totalconnect tplink tradfri tuya ubee unifi unifi_direct upnp vallox velbus velux vera +version vicare vizio waqi waze_travel_time webostv wemo whois wink withings wled workday xbox_live xiaomi_aqara xiaomi_miio xiaomi_tv xs1 yamaha yamaha_musiccast yeelight yi zerproc zha zhong_hong zoneminder zwave"
 
 # external deps
@@ -56,13 +56,14 @@ RDEPEND="${RDEPEND}
 	~dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.37.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20200917.1[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20200918.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/importlib-metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
 	~dev-python/jinja-2.11.2[${PYTHON_USEDEP}]
 	~dev-python/netdisco-2.8.2[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/pillow-7.2.0[${PYTHON_USEDEP}]
+	>=dev-python/pip-8.0.3[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
 	~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
@@ -330,7 +331,7 @@ RDEPEND="${RDEPEND}
 	vallox? ( ~dev-python/vallox-websocket-api-2.4.0[${PYTHON_USEDEP}] )
 	velbus? ( ~dev-python/python-velbus-2.0.44[${PYTHON_USEDEP}] )
 	velux? ( ~dev-python/pyvlx-0.2.17[${PYTHON_USEDEP}] )
-	vera? ( ~dev-python/pyvera-0.3.9[${PYTHON_USEDEP}] )
+	vera? ( ~dev-python/pyvera-0.3.10[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-3.4.2[${PYTHON_USEDEP}] )
 	vicare? ( ~dev-python/PyViCare-0.2.0[${PYTHON_USEDEP}] )
 	vizio? ( ~dev-python/pyvizio-0.1.56[${PYTHON_USEDEP}] )
@@ -353,35 +354,38 @@ RDEPEND="${RDEPEND}
 	yeelight? ( ~dev-python/yeelight-0.5.3[${PYTHON_USEDEP}] )
 	yi? ( ~dev-python/aioftp-0.12.0[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.2.5[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.20.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.4[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.44[${PYTHON_USEDEP}] ~dev-python/zigpy-cc-0.5.2[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.9.2[${PYTHON_USEDEP}] ~dev-python/zigpy-0.23.2[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.13.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.6.2[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.1.1[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.20.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.4[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.44[${PYTHON_USEDEP}] ~dev-python/zigpy-cc-0.5.2[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.10.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.24.1[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.13.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.6.2[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.1.1[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.4.0[${PYTHON_USEDEP}] )
 	zwave? ( ~dev-python/homeassistant-pyozw-0.1.10[${PYTHON_USEDEP}] ~dev-python/PyDispatcher-2.0.5[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}
-        test? (
-            ~dev-python/asynctest-0.13.0[${PYTHON_USEDEP}]
-            ~dev-python/codecov-2.1.0[${PYTHON_USEDEP}]
-            ~dev-python/coverage-5.2.1[${PYTHON_USEDEP}]
-            ~dev-python/mock-open-1.4.0[${PYTHON_USEDEP}]
-            ~dev-python/mypy-0.780[${PYTHON_USEDEP}]
-            ~dev-python/pre-commit-2.6.0[${PYTHON_USEDEP}]
-            dev-python/pylint[${PYTHON_USEDEP}]
-            ~dev-python/astroid-2.3.3[${PYTHON_USEDEP}]
-            ~dev-python/pylint-strict-informational-0.1[${PYTHON_USEDEP}]
-            ~dev-python/pytest-aiohttp-0.3.0[${PYTHON_USEDEP}]
-            ~dev-python/pytest-cov-2.10.0[${PYTHON_USEDEP}]
-            ~dev-python/pytest-test-groups-1.0.3[${PYTHON_USEDEP}]
-            ~dev-python/pytest-sugar-0.9.3[${PYTHON_USEDEP}]
-            ~dev-python/pytest-timeout-1.3.4[${PYTHON_USEDEP}]
-            ~dev-python/pytest-xdist-1.32.0[${PYTHON_USEDEP}]
-            ~dev-python/pytest-5.4.3[${PYTHON_USEDEP}]
-            ~dev-python/requests-mock-1.8.0[${PYTHON_USEDEP}]
-            ~dev-python/responses-0.10.6[${PYTHON_USEDEP}]
-          dev-python/mock[${PYTHON_USEDEP}]
-          dev-python/nose[${PYTHON_USEDEP}]
-          dev-python/coverage[${PYTHON_USEDEP}]
-        )"
+	test? (
+		~dev-python/astroid-2.4.2[${PYTHON_USEDEP}]
+		~dev-python/asynctest-0.13.0[${PYTHON_USEDEP}]
+		~dev-python/codecov-2.1.0[${PYTHON_USEDEP}]
+		~dev-python/coverage-5.2.1[${PYTHON_USEDEP}]
+		~dev-python/jsonpickle-1.4.1[${PYTHON_USEDEP}]
+		~dev-python/mock-open-1.4.0[${PYTHON_USEDEP}]
+		~dev-python/mypy-0.780[${PYTHON_USEDEP}]
+		~dev-python/pipdeptree-1.0.0[${PYTHON_USEDEP}]
+		~dev-python/pre-commit-2.7.1[${PYTHON_USEDEP}]
+		~dev-python/pylint-strict-informational-0.1[${PYTHON_USEDEP}]
+		~dev-python/pylint-2.6.0[${PYTHON_USEDEP}]
+		~dev-python/pytest-aiohttp-0.3.0[${PYTHON_USEDEP}]
+		~dev-python/pytest-cov-2.10.0[${PYTHON_USEDEP}]
+		~dev-python/pytest-sugar-0.9.3[${PYTHON_USEDEP}]
+		~dev-python/pytest-test-groups-1.0.3[${PYTHON_USEDEP}]
+		~dev-python/pytest-timeout-1.3.4[${PYTHON_USEDEP}]
+		~dev-python/pytest-xdist-1.32.0[${PYTHON_USEDEP}]
+		~dev-python/pytest-5.4.3[${PYTHON_USEDEP}]
+		~dev-python/requests-mock-1.8.0[${PYTHON_USEDEP}]
+		~dev-python/responses-0.10.6[${PYTHON_USEDEP}]
+		~dev-python/stdlib-list-0.7.0[${PYTHON_USEDEP}]
+		~dev-python/tqdm-4.48.2[${PYTHON_USEDEP}]
+	)
+	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/mock[${PYTHON_USEDEP}]"
 
 INSTALL_DIR="/opt/${PN}"
 
