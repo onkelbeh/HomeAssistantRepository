@@ -1,6 +1,9 @@
 ## Breaking Change:
  -> 0.115.0_beta10: all useflags are now named like Home Assistants Component Domain
 
+2020-09-21
+  * bump xknx-0.14.2
+
 2020-09-20
   * repair bad pylint Manifest
   * add forgotten pip dependency to homeassistant-0.115.2-r1
