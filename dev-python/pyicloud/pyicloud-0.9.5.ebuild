@@ -17,8 +17,8 @@ KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND=">=dev-python/requests-1.2[${PYTHON_USEDEP}]
-	dev-python/keyring[${PYTHON_USEDEP}]
-	dev-python/keyrings_alt[${PYTHON_USEDEP}]
+	>=dev-python/keyring-8.0[${PYTHON_USEDEP}]
+	>=dev-python/keyrings_alt-1.0[${PYTHON_USEDEP}]
 	>=dev-python/click-6[${PYTHON_USEDEP}]
 	<dev-python/click-7[${PYTHON_USEDEP}]
 	>=dev-python/six-1.9.0[${PYTHON_USEDEP}]

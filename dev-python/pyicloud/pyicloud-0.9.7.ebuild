@@ -22,10 +22,10 @@ RDEPEND=">=dev-python/requests-2.20[${PYTHON_USEDEP}]
 	>=dev-python/click-6.0[${PYTHON_USEDEP}]
 	<dev-python/click-7.1.1[${PYTHON_USEDEP}]
 	>=dev-python/six-1.14.0[${PYTHON_USEDEP}]
-	dev-python/tzlocal[${PYTHON_USEDEP}]
-	dev-python/pytz[${PYTHON_USEDEP}]
-	dev-python/certifi[${PYTHON_USEDEP}]
-	dev-python/future[${PYTHON_USEDEP}]"
+	~dev-python/tzlocal-2.0.0[${PYTHON_USEDEP}]
+	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
+	>=dev-python/certifi-2019.11.28[${PYTHON_USEDEP}]
+	>=dev-python/future-0.18.2[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
