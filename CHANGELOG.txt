@@ -1,6 +1,9 @@
 ## Breaking Change:
  -> 0.115.0_beta10: all useflags are now named like Home Assistants Component Domain
 
+2020-09-22
+  * bump pyinsteon-1.0.8.ebuild
+
 2020-09-21
   * bump xknx-0.14.2
   * bump youtube_dl-2020.9.20
