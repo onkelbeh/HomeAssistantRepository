@@ -1,6 +1,9 @@
 ## Breaking Change:
  -> 0.115.0_beta10: all useflags are now named like Home Assistants Component Domain
 
+2020-09-24
+  * update sonarr-0.3.0
+
 2020-09-23
   * bump xknx-0.14.3
   * update accuweather-0.0.11
