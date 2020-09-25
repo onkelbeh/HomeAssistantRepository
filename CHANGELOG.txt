@@ -7,6 +7,7 @@
   * bump pyTibber-0.15.3
   * bump simplisafe-python-9.3.3
   * bump home-assistant-frontend-20200918.2
+  * bump Plugwise-Smile-1.5.1
 
 2020-09-24
   * update sonarr-0.3.0
