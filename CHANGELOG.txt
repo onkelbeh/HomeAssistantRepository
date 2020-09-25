@@ -3,6 +3,7 @@
 
 2020-09-25
   * bump pyairvisual-5.0.2
+  * bump graphql-subscription-manager-0.3.6
 
 2020-09-24
   * update sonarr-0.3.0
