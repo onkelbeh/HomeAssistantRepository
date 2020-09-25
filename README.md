@@ -130,7 +130,7 @@ Sure, you can submit **issues** and **pull requests** on both sites, but I prefe
 ## Installation on Python 3.7 or Python 3.8
 Since Python 3.7 is default target since 05/2020, installation is very easy now.
 
-But, **before** installing on 3.7, please think about using 3.8, this will save you the migration from 3.7 -> 3.8. And, as my first test show, you will notice an appreciable improvement in frontend performance. For using 3.8, simply increase all version numbers in the manual below by 1 :-)
+But, **before** installing on 3.7, please think about using 3.8, this will save you the migration from 3.7 -> 3.8. And, as my first test show, you will notice an appreciable improvement in frontend performance. For using 3.7, simply decrease all version numbers in the manual below by 1 :-)
 
 ### Let's get started:
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure **not to interfere** with your main Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default. Others use `/usr/local/portage/homeassistant`
@@ -152,15 +152,15 @@ $ cat /etc/locale.gen
 de_DE ISO-8859-1
 de_DE@euro UTF-8
 ```
-It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`.
+It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`. The clean way is to let `portage` build your own.
 
 Check your `/etc/portage/make.conf` for the correct Python Targets:
 ```sh
-USE_PYTHON="3.7"
-PYTHON_TARGETS="python3_7"
-PYTHON_SINGLE_TARGET="python3_7"
+USE_PYTHON="3.8"
+PYTHON_TARGETS="python3_8"
+PYTHON_SINGLE_TARGET="python3_8"
 ```
-Run `eselect python` to put Python 3.7 on position 1
+Run `eselect python` to put Python 3.8 on position 1
 
 Finally install Home Assistant:
 ```sh
@@ -170,9 +170,7 @@ $ rc-update add homeassistant
 
 I could be necessary to install some components by hand, there are too many components to mask all in use flags. If you use a component which you want to be added as a use flag, send a pull request, or just let me know.
 
-## Upgrading to Python 3.8 from a pre 3.8 system
-
-Same as it was from Python 3.6 to 3.7:
+## Upgrading to Python 3.8 from a pre 3.8 system (same as it was from Python 3.6 to 3.7).
 
 ### The fastest way:
 
@@ -181,7 +179,7 @@ Same as it was from Python 3.6 to 3.7:
 * update your naked core system as described below
 * reinstall app-misc/homeassistant with only the new Python Version
 
-This avoids a lot of recompiling all Home Assistant deps, and a lot of dependency trouble. Very recommended. I did not, but I just wanted to see if it works ;-)
+This avoids a lot of recompiling all Home Assistant deps, and a lot of dependency trouble. Very recommended. I did not, but I just wanted to see if the hard way works too ;-)
 
 ### The upgrade steps:
 
@@ -244,7 +242,7 @@ Run the Update again:
 
 Sometimes I had dependencies `portage` didn't respect, in some cases it seems not to know in which Python's site-packages modules are already installed. Install them manually (after compile errors). Once all packages are updated, you can remove the older python targets in `package.use` and run another upgrade to remove now obsolete support for old Python Versions. This will save hard disk space and compile time.
 
-It does not make sense to compile all this stuff **for more than one** Python version.
+It does not make sense to compile all this stuff **for more than one** Python target.
 
 Check if all is gone:
 
@@ -272,14 +270,14 @@ $ diff <(equery h python_targets_python3_7) <(equery h python_targets_python3_8)
 - update the missing component descriptions for `metadata.xml`
 - Publish my ESPHome Configurations
 - Add test support for Python 3.9 in new dev branches
-- Add libraries if I need it or someone asks for
+- Add more libraries if I need it or someone asks for
 - Write an real good installation page for the home-assistant.io Documentation an get it added there.
 - Convince the world to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
 ## Experiments in progress:
 * grafana with influxdb, will have to use it at work soon and have to get used to it anyway, fits much better for irregular measurements than Cacti/RRD.
 * remote IOS authentication with [haproxy](https://www.haproxy.org) and client certificates.
-* play with [Node-RED](https://nodered.org/), there are users requests for it, but my skills are to low for this Ebuild :-)
+* play with [Node-RED](https://nodered.org/), there are users requests for it, but my skills are too low for this Ebuild :-)
 * first tests with Python 3.9 are in progress
 
 ## some Background...
