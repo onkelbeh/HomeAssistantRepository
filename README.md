@@ -1,5 +1,31 @@
 # Home Assistant Gentoo Overlay
 
+## New Main Ebuilds
+
+Since homeassistant-0.115.3 the **Main Ebuild** is released in 3 different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold.
+
+### `app-misc/homeassistant`
+
+This is the Ebuild we have since `0.97.0`, it currently holds **255** USE Flags. As soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure.
+
+### `app-misc/homeassistant-min`
+
+New Ebuild, generated for `0.115.3` and later, currently holds **37** USE Flags. These are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release.
+
+### `app-misc/homeassistant-full`
+
+This Ebuild contains USE Flags for all components available. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time.
+
+### Commons for all three Main Ebuilds
+
+Some core dependecies are pulled in from suggested USE Flags `(+)`. You should have a *good reason* to deselect suggested USE Flags. Other components are known to have issues, these are deselected `(-)` in the Ebuilds. Perhaps they compile, perhaps they run. For normal, they have dependencies which interfere with very common libraries. The suggest/deselect prefixes are the same in all three expansion stages.
+
+Best you will start using the `app-misc/homeassistant-min` Ebuild. If you have it running and your stuff is added, you should take a look in `/etc/homeassistant/deps`. This directory holds Home Assistants virtual environment. If you find anything there, you can:
+
+ 1. do nothing and let it live in the virtual environment (not suggested)
+ 2. install the missing dependency with `emerge -tav {dependency}`, emtpy `/etc/homeassistant/deps` and restart Home Assistant. If something still is missing, it will be downloaded and installed again in the virtual enviroment. Things you install this way will be recorded in `/var/lib/portage/world`. These modules will be maintained and updated by portage.
+ 3. If you get a big `/var/lib/portage/world`, you can choose to use a bigger Ebuild anytime. Remove the old one first.
+
 ## Breaking Change: many USE flags changed in 0.115.0
 
 Beginning with `0.115.0_beta10` many USE Flags have changed.
@@ -36,7 +62,7 @@ If you are author of an integration / component or other stuff related to Home A
 ## Python 3.8 Support
 Since 0.114.4 (09/2020) everything compiles fine on Python 3.8. Still cleaning up, I did not yet any production test on Python 3.8, but I will very soon. Everything looks good. I am doing most of the tests/work on a box with Python 3.8 only. Before a new release of the app-misc/homeassistant Ebuild is made, I make sure all important components also compile on 3.7.
 
-Today (2020/09/12) I updated my productive box to Python 3.8.5. And, finally, I could Python 2.7 from it. ESPHome still runs on the same box with some small patches (included in my Ebuild), the current `esphome-9999` doesn't even need a `src_prepare()`.
+Today (2020/09/12) I updated my productive box to Python 3.8.5. And, finally, I could finally remove Python 2.7 from it. ESPHome still runs on the same box with some small patches (included in my Ebuild), the current `esphome-9999` doesn't even need a `src_prepare()`.
 
 ## ... Python 3.7
 You will need at least Python 3.7.7 for running Home assistant on Gentoo Linux. By user request, I have populated an ~arm64 KEYWORD on all ebuilds, which is (currently) completely untested. I know about at least 2 guys using it, but I had no feedback yet. I will some day prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
@@ -69,10 +95,10 @@ Some packages with missing or hidden older releases have been [forked](https://g
 ## Other things
 Aside from Home Assistant's stuff this repo contains some ebuilds I use with my Home Assistant, some have to be explicitly mentioned:
 
-## ESPHome
+### ESPHome
 Thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, as soon as your name server accepts dynamic names from DHCP, a lot of ESP devices are very easy to deploy. Its integration in Home Assistant is easy and reacts fast on state changes. I love its Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors now have a unique name everywhere in the system, and names can be changed very easily. I have the dashboard installed in HA's Gui, so updates and changes are made with a few clicks. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota. Some [required libraries](https://github.com/esphome/feature-requests/issues/586) are too old for Home Assistants environment, and I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems. Please report any problems. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
 
-## Platformio
+### Platformio
 Platformio is needed for ESPHome and other stuff.
 
 ## Git Server & Mirrors
@@ -131,7 +157,7 @@ I could be necessary to install some components by hand, there are too many comp
 
 ## Upgrading to Python 3.8 from a pre 3.8 system
 
-Same as it was from Python 3.6 to 3.7.
+Same as it was from Python 3.6 to 3.7:
 
 ### The fastest way:
 
@@ -241,6 +267,7 @@ $ diff <(equery h python_targets_python3_7) <(equery h python_targets_python3_8)
 * grafana with influxdb, will have to use it at work soon and have to get used to it anyway, fits much better for irregular measurements than Cacti/RRD.
 * remote IOS authentication with [haproxy](https://www.haproxy.org) and client certificates.
 * play with [Node-RED](https://nodered.org/), there are users requests for it, but my skills are to low for this Ebuild :-)
+* first tests with Python 3.9 are in progress
 
 ## some Background...
 I have Home Assistant running on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 30GB Disk from a small FC SAN (HP MSA). Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. currently 10.2.29 without problems. Influxdb and Graphana are also on the same box. Find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
@@ -337,5 +364,4 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 
 I did my best to keep these clean. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
 
-Last update of this text: 12.9.2020
-
+Last update of this text: 25.9.2020

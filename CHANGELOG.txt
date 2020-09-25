@@ -8,7 +8,11 @@
   * bump simplisafe-python-9.3.3
   * bump home-assistant-frontend-20200918.2
   * bump Plugwise-Smile-1.5.1
+  * update README.md
   * bump axis-37
+  * add homeassistant-min-0.115.3
+  * update homeassistant-0.115.3
+  * add homeassistant-full-0.115.3
 
 2020-09-24
   * update sonarr-0.3.0

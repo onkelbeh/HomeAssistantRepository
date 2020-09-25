@@ -1,0 +1,12 @@
+/var/log/homeassistant/server.log
+/var/log/homeassistant/stdout.log
+{
+	compress
+	maxage 365
+	rotate 7
+	size=+1024k
+	notifempty
+	missingok
+	copytruncate
+	su homeassistant homeassistant
+}
