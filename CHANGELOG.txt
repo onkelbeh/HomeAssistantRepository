@@ -1,6 +1,9 @@
 ## Breaking Change:
  -> 0.115.0_beta10: all useflags are now named like Home Assistants Component Domain
 
+2020-09-25
+  * bump pyairvisual-5.0.2
+
 2020-09-24
   * update sonarr-0.3.0
   * bump PlexAPI-4.1.1
