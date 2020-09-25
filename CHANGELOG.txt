@@ -13,6 +13,7 @@
   * add homeassistant-min-0.115.3
   * update homeassistant-0.115.3
   * add homeassistant-full-0.115.3
+  * bump esphome-1.15.2
 
 2020-09-24
   * update sonarr-0.3.0
