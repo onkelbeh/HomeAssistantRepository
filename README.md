@@ -110,7 +110,7 @@ Some packages with missing or hidden older releases have been [forked](https://g
 Aside from Home Assistant's stuff this repo contains some ebuilds I use with my Home Assistant, some have to be explicitly mentioned:
 
 ### ESPHome
-Thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, as soon as your name server accepts dynamic names from DHCP, a lot of ESP devices are very easy to deploy and maintain. Its integration in Home Assistant is easy and reacts fast on state changes. I love its Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors now have a unique name everywhere in the system, and names can be changed very easily. I have the dashboard installed in HA's Gui, so updates and changes are made with a few clicks. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota. Some [required libraries](https://github.com/esphome/feature-requests/issues/586) are too old for Home Assistants environment, and I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems. Please report any problems. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
+Thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, as soon as your name server accepts dynamic names from DHCP, a lot of ESP devices are very easy to deploy and maintain. It's integration in Home Assistant is easy and reacts fast on state changes. I love it's Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors now have a unique name everywhere in the system, and names can be changed very easily. I have the dashboard installed in HA's Gui, so updates and changes are made with a few clicks. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota. Some [required libraries](https://github.com/esphome/feature-requests/issues/586) are too old for Home Assistants environment, and I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems. Please report any problems. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
 
 ### Platformio
 Platformio is needed for ESPHome and other stuff.
@@ -132,6 +132,7 @@ Since Python 3.7 is default target since 05/2020, installation is very easy now.
 
 But, **before** installing on 3.7, please think about using 3.8, this will save you the migration from 3.7 -> 3.8. And, as my first test show, you will notice an appreciable improvement in frontend performance. For using 3.8, simply increase all version numbers in the manual below by 1 :-)
 
+### Let's get started:
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure **not to interfere** with your main Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default. Others use `/usr/local/portage/homeassistant`
 ```
 [HomeAssistantRepository]
@@ -153,7 +154,7 @@ de_DE@euro UTF-8
 ```
 It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`.
 
-Check your `/etc/portage/make.conf` for the corret Python Targets:
+Check your `/etc/portage/make.conf` for the correct Python Targets:
 ```sh
 USE_PYTHON="3.7"
 PYTHON_TARGETS="python3_7"
