@@ -19,6 +19,7 @@
   * homeassistant-min-0.115.3-r2, new useflags for pulled-in deps
   * commit the changes for all 3 Ebuilds, some cleanups in old (inherited) RDEPENDs
   * bump python-velbus-2.0.46
+  * bump py-nightscout-1.2.2
 
 2020-09-25
   * bump pyairvisual-5.0.2
