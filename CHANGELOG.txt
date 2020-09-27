@@ -2,6 +2,7 @@
   * add config-0.5.0
   * add omnilogic-0.4.0
   * bump broadlink-0.13.0
+  * bump spotipy-2.16.0
 
 2020-09-25
   * bump pyairvisual-5.0.2
