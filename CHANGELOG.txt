@@ -4,6 +4,7 @@
   * bump broadlink-0.13.0
   * bump spotipy-2.16.0
   * bump pychromecast-7.4.1
+  * bump aioshelly-0.3.3
 
 2020-09-25
   * bump pyairvisual-5.0.2
