@@ -5,6 +5,16 @@
   * bump spotipy-2.16.0
   * bump pychromecast-7.4.1
   * bump aioshelly-0.3.3
+  * clean up core-dependencies, remove unreferenced atoms from template:
+    - user-agents
+    - lxml
+    - pbr
+    - pyrfc3339
+    - python-dateutil
+    - python-jose-cryptodome
+    - ua-parser
+    - passlib
+  * add homeassistant-min-0.115.3-r1, with reduced core DEPS for testing
 
 2020-09-25
   * bump pyairvisual-5.0.2
