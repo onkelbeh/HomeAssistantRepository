@@ -23,7 +23,7 @@ Some core dependecies are pulled in from suggested USE Flags `(+)`. You should h
 Best you will start using the `app-misc/homeassistant-min` Ebuild. If you have it running and your stuff is added, you should take a look in `/etc/homeassistant/deps`. This directory holds Home Assistants virtual environment. If you find anything there, you can:
 
  1. do nothing and let it live in the virtual environment (not suggested)
- 2. install the missing dependency with `emerge -tav {dependency}`, emtpy `/etc/homeassistant/deps` and restart Home Assistant. If something still is missing, it will be downloaded and installed again in the virtual enviroment. Things you install this way will be recorded in `/var/lib/portage/world`. These modules will be maintained and updated by portage.
+ 2. install the missing dependency with `emerge -tav {dependency}`, emtpy `/etc/homeassistant/deps` and restart Home Assistant. If something still is missing, it will be downloaded and installed again in the virtual enviroment. Things you install this way will be recorded in `/var/lib/portage/world`. These modules will then be maintained and updated by portage.
  3. If you get a big `/var/lib/portage/world`, you can choose to use a bigger Ebuild anytime. Remove the old one first.
 
 ## Breaking Change: many USE flags changed in 0.115.0
@@ -35,7 +35,7 @@ Some outdated components disappeared forever.
 
 You will find the detailed changes in commit: https://git.edevau.net/onkelbeh/HomeAssistantRepository/commit/3fec35c803e6061e0186df2af4e914e5791b53cc, scroll down to `metadata.xml`. But `emerge` will also tell.
 
-## Home Assistant without Docker & Virtual Environments
+# Home Assistant without Docker & Virtual Environments
 
 https://www.home-assistant.io/
 https://github.com/home-assistant/home-assistant
@@ -297,7 +297,7 @@ Some of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
   * Sonoff Dual
   * Sonoff RF Bridge with remote Switches
   * Sonoff Touch
-  * Sonoff Basic (Wifi not working well with EPHome or Tasmota in newer versions)
+  * Sonoff Basic (Wifi not working well with ESPHome or Tasmota in newer versions)
   * Sonoff Pow R2
   The Sonoff Pow (and R2) will stay with Tasmota for a while, because I have no good implementation of Tasmota's energy summary in ESPHome.
 * Experimenting with Shelly Devices, a friend has some Shelly 1/2, bought a Pro, but this one has a Chip form TI, no ESP, so we'll have to use the original Firmware.
