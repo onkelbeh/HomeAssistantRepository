@@ -17,6 +17,7 @@
   * add homeassistant-min-0.115.3-r1, with reduced core DEPS for testing
   * defusedxml-0.6.0 remove old
   * homeassistant-min-0.115.3-r2, new useflags for pulled-in deps
+  * commit the changes for all 3 Ebuilds, some cleanups in old (inherited) RDEPENDs
 
 2020-09-25
   * bump pyairvisual-5.0.2

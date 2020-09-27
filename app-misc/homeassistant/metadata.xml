@@ -100,6 +100,7 @@
     <flag name="discord">send messages to the user using Discord</flag>
     <flag name="doorbird">The doorbird implementation allows you to integrate your DoorBird device</flag>
     <flag name="dunehd">control a Dune HD media player</flag>
+    <flag name="dwd_weather_warnings">dwd_weather_warnings sensor platform uses DWD for  warnings</flag>
     <flag name="dynalite">Dynalite DyNET interface</flag>
     <flag name="dyson">integrate all Dyson related platforms</flag>
     <flag name="ecobee">talking to Ecobee thermostats</flag>
@@ -198,6 +199,7 @@
     <flag name="rainmachine">integrate all platforms related to RainMachine smart Wi-Fi sprinkler controllers</flag>
     <flag name="recorder">storing details in a database per sqlalchemy</flag>
     <flag name="rejseplanen">travel details for Danish public transport</flag>
+    <flag name="rest">rest sensor platform for data exposed by a RESTful API</flag>
     <flag name="ring">integrate your ring.com devices</flag>
     <flag name="roku">add support for Roku players</flag>
     <flag name="roomba">control a iRobot Roomba vacuum or iRobot Braava m-series mop</flag>
@@ -220,6 +222,7 @@
     <flag name="somfy">Somfy devices via their online service</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
     <flag name="speedtestdotnet">speedtest.net support</flag>
+    <flag name="sql">enables you to use an SQL database supported by the sqlalchemy library</flag>
     <flag name="squeezebox">library to control Logitech Media Server</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="statsd">transfer all state changes to an external StatsD instance</flag>
@@ -230,6 +233,7 @@
     <flag name="test">internal and developer use</flag>
     <flag name="tile">API for Tile Bluetooth trackers</flag>
     <flag name="toon">client for the Quby ToonAPI</flag>
+    <flag name="totalconnect">provides connectivity with the Honeywell TotalConnect alarm systems</flag>
     <flag name="tplink">control your TP-Link Smart Home Devices</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
     <flag name="tuya">integrate all Tuya Smart related platforms</flag>

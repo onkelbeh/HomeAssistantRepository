@@ -20,6 +20,7 @@
     <flag name="cli">set a dependency for Home Assistant Cli hass-cli (lots of modules required)</flag>
     <flag name="coronavirus">add sensors for COVID-19 infections from Johns Hopkins University</flag>
     <flag name="darksky">use dark sky weather data</flag>
+    <flag name="dwd_weather_warnings">dwd_weather_warnings sensor platform uses DWD for  warnings</flag>
     <flag name="enigma2">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
@@ -44,6 +45,7 @@
     <flag name="snmp">Presence Detection, Sensor, Switch via SNMP</flag>
     <flag name="socat">Set a flag to install socat and socat-zwave startscript</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
+    <flag name="sql">enables you to use an SQL database supported by the sqlalchemy library</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
@@ -51,5 +53,6 @@
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
     <flag name="yamaha">Library for Yamaha RX-* Receivers</flag>
     <flag name="yamaha_musiccast">add support for Yamaha MusicCast devices</flag>
+    <flag name="zwave">Support for Z-Wave Devices (uncomplete)</flag>
   </use>
 </pkgmetadata>
