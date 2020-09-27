@@ -27,7 +27,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
-IUSE="androidtv axis +caldav cli coronavirus darksky enigma2 esphome fronius github influxdb kodi maxcube maxcube_hack mikrotik +mqtt +mysql +otp owntracks +ping qnap +recorder samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl test tradfri +version workday yamaha yamaha_musiccast"
+IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github influxdb kodi maxcube maxcube_hack mikrotik +mqtt +mysql +otp owntracks +ping qnap +recorder +rest samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl test tradfri +version workday yamaha yamaha_musiccast"
 
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
@@ -125,6 +125,7 @@ RDEPEND="${RDEPEND}
 	ping? ( ~dev-python/icmplib-1.1.3[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
 	recorder? ( ~dev-python/sqlalchemy-1.3.19[${PYTHON_USEDEP}] )
+	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-1.4.0[${PYTHON_USEDEP}] )
 	scrape? ( ~dev-python/beautifulsoup-4.9.1[${PYTHON_USEDEP}] )
 	shelly? ( ~dev-python/aioshelly-0.3.2[${PYTHON_USEDEP}] )
