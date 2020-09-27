@@ -110,7 +110,7 @@ Some packages with missing or hidden older releases have been [forked](https://g
 Aside from Home Assistant's stuff this repo contains some ebuilds I use with my Home Assistant, some have to be explicitly mentioned:
 
 ### ESPHome
-Thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, as soon as your name server accepts dynamic names from DHCP, a lot of ESP devices are very easy to deploy and maintain. It's integration in Home Assistant is easy and reacts fast on state changes. I love it's Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors now have a unique name everywhere in the system, and names can be changed very easily. I have the dashboard installed in HA's Gui, so updates and changes are made with a few clicks. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota. Some [required libraries](https://github.com/esphome/feature-requests/issues/586) are too old for Home Assistants environment, and I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems. Please report any problems. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
+Thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, as soon as your name server accepts dynamic names from DHCP, a lot of ESP devices are very easy to deploy and maintain. It's integration in Home Assistant is easy and reacts fast on state changes. I love it's Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors now have a unique name everywhere in the system, and names can be changed very easily. I have the dashboard installed in HA's Gui, so updates and changes are made with a few clicks. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota. Some [required libraries](https://github.com/esphome/feature-requests/issues/586) are too old for Home Assistants environment, and I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems, please report if you find any. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
 
 ### Platformio
 Platformio is needed for ESPHome and other stuff.
@@ -130,7 +130,7 @@ Sure, you can submit **issues** and **pull requests** on both sites, but I prefe
 ## Installation on Python 3.7 or Python 3.8
 Since Python 3.7 is default target since 05/2020, installation is very easy now.
 
-But, **before** installing on 3.7, please think about using 3.8, this will save you the migration from 3.7 -> 3.8. And, as my first test show, you will notice an appreciable improvement in frontend performance. For using 3.7, simply decrease all version numbers in the manual below by 1 :-)
+But, **before** installing on 3.7, please think about using 3.8, this will save you the migration from 3.7 -> 3.8. And: you will notice an appreciable improvement in frontend performance. For using 3.7, simply decrease all version numbers in the manual below by 1 :-)
 
 ### Let's get started:
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure **not to interfere** with your main Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default. Others use `/usr/local/portage/homeassistant`
@@ -311,7 +311,7 @@ Some of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
 * Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
 * Enigma2 on Dreambox (2 left) (https://wiki.blue-panel.com/index.php/Enigma2)
 * Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
-* EQ3-Max! (I accidently bought some, so I have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` use flag to home assistant, then the patch will be applied before installation. Recently I saw some other interesting soft for this hardware. Perhaps I'll try one of these, and forget about `maxcube-api`.
+* EQ3-Max! (I accidently bought some, so I have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` USE Flag to home assistant, then the patch will be applied before installation. Recently I saw some other interesting soft for this hardware. Perhaps I'll try one of these, and forget about `maxcube-api`.
 * Axis Camera (1, a few more to come)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
@@ -337,15 +337,15 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |2|AGPL-3|
 |1|AGPL-3+|
 |19|all-rights-reserved|
-|384|Apache-2.0|
+|422|Apache-2.0|
 |3|Apache-2.0 || BSD-2|
-|1|Apache-2.0 MIT|
+|5|Apache-2.0 MIT|
 |2|Artistic-2|
 |1|Boost-1.0|
-|156|BSD|
+|175|BSD|
 |6|BSD-2|
 |5|BSD-2 Unlicense|
-|7|BSD-4|
+|8|BSD-4|
 |1|BSD || Apache-2.0|
 |4|CC0-1.0|
 |1|CC-BY-NC-SA-3.0|
@@ -353,9 +353,9 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |2|ECL-2.0|
 |11|EPL-1.0|
 |2|GPL-1|
-|22|GPL-2|
+|20|GPL-2|
 |5|GPL-2+|
-|180|GPL-3|
+|174|GPL-3|
 |22|GPL-3+|
 |2|ISC|
 |1|LGPL-2|
@@ -364,13 +364,13 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |2|LGPL-2.1+|
 |28|LGPL-3|
 |15|LGPL-3+|
-|1346|MIT|
+|1402|MIT|
 |5|MPL-2.0|
 |1|NEWLIB|
 |12|PSF-2|
 |3|PSF-2.4|
 |4|public-domain|
-|14|Unlicense|
+|12|Unlicense|
 |5|ZPL|
 
 I did my best to keep these clean. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
