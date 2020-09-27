@@ -3,6 +3,7 @@
   * add omnilogic-0.4.0
   * bump broadlink-0.13.0
   * bump spotipy-2.16.0
+  * bump pychromecast-7.4.1
 
 2020-09-25
   * bump pyairvisual-5.0.2
