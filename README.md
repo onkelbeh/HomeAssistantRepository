@@ -2,7 +2,7 @@
 
 ## 2020/09/25: Publishing new Main Ebuilds
 
-Since homeassistant-0.115.3 the **Main Ebuild** is released in 3 different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold.
+Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold.
 
 ### `app-misc/homeassistant`
 
@@ -14,24 +14,24 @@ New Ebuild, generated for `0.115.3` and later, currently holds **37** USE Flags.
 
 ### `app-misc/homeassistant-full`
 
-This Ebuild contains USE Flags for all components available. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Someone blame me for 800 use flags ;-)
+This Ebuild contains USE Flags for all components available. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Who would blame me for this at 800 USE Flags ;-)
 
 ### Commons for all three Main Ebuilds
 
-Some core dependecies are pulled in from suggested USE Flags `(+)`. You should have a *good reason* to deselect suggested USE Flags. Other components are known to have issues, these are deselected `(-)` in the Ebuilds. Perhaps they compile, perhaps they run. For normal, they have dependencies which interfere with very common libraries. The suggest/deselect prefixes are the same in all three expansion stages.
+Some core dependecies are pulled in from suggested USE Flags `(+)`. You should have a *good reason* to deselect suggested USE Flags. Other components are known to have issues, these are deselected `(-)` in the Ebuilds. Perhaps they compile, perhaps they run. Normally, they have dependencies which interfere with very common libraries. The suggest/deselect prefixes are the same in all three expansion stages.
 
-Best you will start using the `app-misc/homeassistant-min` Ebuild. If you have it running and your stuff is added, you should take a look in `/etc/homeassistant/deps`. This directory holds Home Assistants virtual environment. If you find anything there, you can:
+Best you start using the `app-misc/homeassistant-min` Ebuild. If you have it running and your stuff is added, you should take a look in `/etc/homeassistant/deps`. This directory holds Home Assistants virtual environment. If you find anything there, you can:
 
  1. do nothing and let it live in the virtual environment (not suggested)
- 2. install the missing dependency with `emerge -tav {dependency}`, emtpy `/etc/homeassistant/deps` and restart Home Assistant. If something still is missing, it will be downloaded and installed again in the virtual enviroment. Things you install this way will be recorded in `/var/lib/portage/world`. These modules will then be maintained and updated by portage.
+ 2. install the missing dependency with `emerge -tav {dependency}`, remove the contents of `/etc/homeassistant/deps` and restart Home Assistant. If there is still something missing, it will be downloaded and installed again in the virtual enviroment. Things you install this way will be recorded in `/var/lib/portage/world`. These modules will then be maintained and updated by portage.
  3. If you get a big `/var/lib/portage/world`, you can choose to use a bigger Ebuild anytime. Remove the old one first.
 
-## Breaking Change: many USE flags changed in 0.115.0
+## Breaking Change: many USE Flags changed in 0.115.0
 
 Beginning with `0.115.0_beta10` many USE Flags have changed.
-All USE flags have now *exactly* the same name as the components `domain` in Home Assistant. OK, this is a hard cut, but overdue. Mostly caused by the creation of an automated import routine, first I planned to keep the old names, the replacement class was already written, but during data collection I discovered that the original domain names aren't so bad anyway.
+All USE Flags have *exactly* the same name as the components `domain` in Home Assistant now. OK, this is a hard cut, but overdue. Mostly caused by the creation of an automated import routine, at first I planned to keep the old names, the replacement class was already written, but during data collection I discovered that the original domain names aren't so bad anyway.
 
-Some outdated components disappeared forever.
+Some outdated components have disappeared forever.
 
 You will find the detailed changes in commit: https://git.edevau.net/onkelbeh/HomeAssistantRepository/commit/3fec35c803e6061e0186df2af4e914e5791b53cc, scroll down to `metadata.xml`. But `emerge` will also tell.
 
@@ -43,7 +43,7 @@ https://github.com/home-assistant/home-assistant
 "Open source home automation that puts local control and privacy first."
 
 ## Origin: Ireland, Home: Bavaria
-Once this was a fork of Paul Healy's `https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin`, which seemed unmaintained to me. First I just wanted to compile it for my personal use. This happed at Home Assistant 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise of several hundred page views in the very first days. I'll do my best to keep it close to the official releases, might get slower during summers. After 3 months it had ~170 ebuilds, now (Nov 2019) > 1599 ebuilds in > 830 packages are on file, 970 Packes in 2380 Ebuilds in September 2020. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year.
+Once this was a fork of Paul Healy's `https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin`, which seemed unmaintained to me. At first I just wanted to compile it for my personal use. This happened at Home Assistant 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise by several hundred page views in the very first days. I'll do my best to keep it close to the official releases, though it might get slower during summers. After three months it had ~170 ebuilds, Nov 2019 > 1599 Ebuilds in > 830 packages are on file, 970 packages in 2380 Ebuilds in September 2020. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year.
 
 If you have questions or suggestions: contact me, **any** help is very welcome. If you want to help or contribute, please [join me](https://git.edevau.net/user/sign_up).
 
@@ -57,45 +57,45 @@ Please let me know if anything is wrong or dependencies are missing, since I use
 From time to time a fresh compile test on empty boxes (one with Python 3.8 and one with Python 3.7) is run to catch general faults, last good (full) compile test was September 2020 with `v0.115.0`. It was not possible to fix everything, work is in progress, some [open problems](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues) remain.
 
 ## Authors welcome
-If you are author of an integration / component or other stuff related to Home Assistant and if I have your stuff not already added, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on Github are OK, but a Pypi `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (Pypi/Github/Sourceforge).
+If you are an author of an integration / component or other stuff related to Home Assistant and I have your stuff not added already, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on Github are OK, but a Pypi `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (Pypi/Github/Sourceforge).
 
 ## Python 3.9 Support
-Just cloned a box for first tests. but it is too early to try bigger things, most of the dependencies from Main Repo are ready, but some are still missing. Forking them only for adding compatibility would get out of hand. So we just wait a bit.... things are moving fast.
+Just cloned a box for first tests. but it is too early to try bigger things, most of the dependencies from Main Repo are ready, but some are still missing. Forking them only for adding compatibility would get out of hand. So we'll just wait a bit... things are moving fast.
 
 ## Python 3.8 Support
 Since 0.114.4 (09/2020) everything compiles fine on Python 3.8. Still some smaller things to clean up. I upgraded my production box to Python 3.8 ONLY on 2020/09/12. Everything looks good. I am doing most of the tests/work on such a box with Python 3.8 only. During compile tests, I have all available tests turned on. ESPHome runs on the same box (and in the same environment) with some small patches (included in my Ebuild), the current `esphome-9999` doesn't even need a `src_prepare()`.
 
 ## ... Python 3.7
-You will need at least Python 3.7.7 for running Home assistant on Gentoo Linux. If you are new here, forget about 3.7, set it up straight on Python 3.8. Before a new release of the app-misc/homeassistant Ebuild is made, I make sure all important components also compile on 3.7. During compile tests, I have all available tests turned on. I won't do any production tests anymore with Python 3.7
+You will need at least Python 3.7.7 for running Home Assistant on Gentoo Linux. If you are new here, forget about 3.7, set it up straight on Python 3.8. Before a new release of the app-misc/homeassistant Ebuild is made, I'll make sure all important components also compile on 3.7. During compile tests, I have all available tests turned on. I won't do any production tests anymore with Python 3.7
 
 ## Python 2.7 on Gentoo
 
 In August 2020 I discovered that it is now possible to remove Python 2.7 completely. I have done this on all my test servers and my Home Assistant Box. All still work like a charm.
 
 ## ARM64
-By user request, I have populated an ~arm64 KEYWORD on all ebuilds, which is (currently) completely untested. I know about at least 2 guys using it, but I had no feedback yet. I will some day prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
+By user request, I have populated an ~arm64 KEYWORD on all Ebuilds, which is (currently) completely untested. I know of at least two guys using it, but I got no feedback yet. Some day I will prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
 
 ## Nearly all Home Assistant Components are now included
-Except some modules with uncorrectable errors (e.g. hard drive crashes, lost sources) I believe all possible integrations for Home Assistant and their stated dependencies are included as ebuilds, based on the integrations list from `/usr/lib/python3.8/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule.
+Except of some modules with uncorrectable errors (e.g. hard drive crashes, lost sources) I believe all possible integrations for Home Assistant and their stated dependencies are included as Ebuilds, based on the integrations list from `/usr/lib/python3.8/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule.
 
 Currrently missing (0.115.3):
 * azure-eventhub-5.1.0
 * azure-servicebus-0.50.1
-* google-cloud-texttospeech-0.4.0 (no potential need, good alternatives are on the market)
+* google-cloud-texttospeech-0.4.0 (no potential need, there are good alternatives on the market)
 * google-cloud-pubsub-0.39.1
 * pylacrosse-0.4.0 (version numbering mismatch, too lazy to patch)
 * opencv-python-headless-4.3.0.36
-* tensorflow-2.3.0 & tf-models-official-2.3.0 (I just wait for the Ebuild on main repo)
+* tensorflow-2.3.0 & tf-models-official-2.3.0 (I only wait for the Ebuild on main repo)
 * pyuptimerobot-0.0.5 (seems unmaintained, could not find a valid source)
 
-In some cases I added small patches to the ebuilds, some packages have versions pinned without any reason. For me it's OK, if the packages compile and complete *all* their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups.
+In some cases I added small patches to the Ebuilds, some packages have versions pinned without any reason. For me it's OK, if the packages compile and complete *all* their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups.
 
 ## Why I don't (want to) use a virtual environment for Home Assistant
 On Gentoo, we have a very powerful package manager. So I (now) try to put everything Home Assistant uses into Ebuilds.
 
-Some years ago I started with only those packages Home Assitant needed absolutely to start. Home Assistant then downloads and installs modules it requires and cannot find. After some time, `/etc/homeassitant/deps` grew larger and larger, things messed up, I had a well maintained system, except the directory where a lot of packages (also outdated ones) live without our knowledge.
+Some years ago I started with only those packages Home Assistant needed absolutely to start. Home Assistant then downloads and installs modules it requires and cannot find. After some time, `/etc/homeassitant/deps` grew larger and larger, things messed up, I had a well-maintained system, except the directory where a lot of packages (also outdated ones) live without our knowledge.
 
-So I started to add more important components as Ebuilds, I did not touch the internal requirement check. If a package is installed via `portage` and Home Assistants constraints match, Home Assitant does not download it's own copy.
+So I started to add more important components as Ebuilds, I did not touch the internal requirement check. If a package is installed via `portage` and Home Assistants constraints match, Home Assistant does not download its own copy.
 
 You can find the current constraints in:
 * https://github.com/home-assistant/core/blob/dev/requirements_all.txt and
@@ -104,13 +104,13 @@ You can find the current constraints in:
 You should take a look in `/etc/homeassistant/deps/` from time to time, I do this after every upgrade, if it's not empty, install the missing package, emtpy this directory, restart Home Assistant, if it's still downloaded, possibly the wrong (mostly too new) version of a component or a library is installed. `eix`, `/etc/portage/package.accept_keywords` and `--autounmask=y` are your friends. You should not unmask too much, and think about the next releases when you unmask packages.
 
 ## Sources Missing, older release tags
-Some packages with missing or hidden older releases have been [forked](https://github.com/onkelbeh?tab=repositories) after the originating author has been queried and notified. I did not touch any source, no changes except adding the missing release tags have been made. I used these forks ONLY for generating consitent sources. If patches are needed, these will be applied during the compile process. As soon as another usable release will be available, I'll swap the `SRC_URI` back to Pypi, the original Github or wherever it should come from. For every fork in use I have an open ticket at [git.edevau.net](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues).  Please drop me a [note](https://github.com/onkelbeh/HomeAssistantRepository/issues) if you find a valid origin or something wrong.
+Some packages with missing or hidden older releases have been [forked](https://github.com/onkelbeh?tab=repositories) after the originating author has been queried and notified. I did not touch any source, no changes except of adding the missing release tags have been made. I used these forks ONLY for generating consitent sources. If patches are needed, they will be applied during the compile process. As soon as another usable release will be available, I'll swap the `SRC_URI` back to Pypi, the original Github or wherever it should come from. For every fork in use I have an open ticket at [git.edevau.net](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues).  Please drop me a [note](https://github.com/onkelbeh/HomeAssistantRepository/issues) if you find a valid origin or something wrong.
 
 ## Other things
-Aside from Home Assistant's stuff this repo contains some ebuilds I use with my Home Assistant, some have to be explicitly mentioned:
+Aside from Home Assistant's stuff this repo contains some Ebuilds I use with my Home Assistant, some have to be explicitly mentioned:
 
 ### ESPHome
-Thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, as soon as your name server accepts dynamic names from DHCP, a lot of ESP devices are very easy to deploy and maintain. It's integration in Home Assistant is easy and reacts fast on state changes. I love it's Integration in Home Assistant, you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors now have a unique name everywhere in the system, and names can be changed very easily. I have the dashboard installed in HA's Gui, so updates and changes are made with a few clicks. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota. Some [required libraries](https://github.com/esphome/feature-requests/issues/586) are too old for Home Assistants environment, and I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems, please report if you find any. You can also use the dev ebuild (`dev-embedded/esphome-9999.ebuild`), this uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
+Thanks to @OttoWinter for his fabulous idea and [great work](https://github.com/esphome/esphome), really cool stuff, as soon as your name server accepts dynamic names from DHCP, a lot of ESP devices are very easy to deploy and maintain. Its integration in Home Assistant is easy and reacts fast on state changes. I love its integration in Home Assistant, since you have one single point where you define and name a switch or a sensor (instead of > three points using MQTT). Together with the possibility of OTA updates my sensors now have a unique name everywhere in the system, and names can be changed very easily. I installed the dashboard in HA's Gui, so updates and changes are made with a few clicks. In the meantime I migrated all my Magichome Controllers, very happy with it, and I have a couple of binary input arrays running with it without any problems. However, my Sonoff POW and POW R2 are still running with various versions of Tasmota. Some [required libraries](https://github.com/esphome/feature-requests/issues/586) are too old for Home Assistants environment, and I do NOT use virtual environments, so I simply patched it, it runs on my productive system without any problems, please report if you find any. You can also use the dev Ebuild (`dev-embedded/esphome-9999.ebuild`), which uses newer libraries, but will be compiled every time you run a world update, it is also very stable most of the time.
 
 ### Platformio
 Platformio is needed for ESPHome and other stuff.
@@ -168,13 +168,13 @@ $ emerge -tav app-misc/homeassistant
 $ rc-update add homeassistant
 ```
 
-I could be necessary to install some components by hand, there are too many components to mask all in use flags. If you use a component which you want to be added as a use flag, send a pull request, or just let me know.
+It could be necessary to install some components by hand, there are too many components to mask all in USE Flags. If you use a component which you want to be added as a USE Flag, send a pull request, or just let me know.
 
 ## Upgrading to Python 3.8 from a pre 3.8 system (same as it was from Python 3.6 to 3.7).
 
 ### The fastest way:
 
-* Throw away app-misc/homeassistant
+* Remove app-misc/homeassistant (emerge -cav)
 * run `emerge --depclean -a`, this will remove all dependent packages
 * update your naked core system as described below
 * reinstall app-misc/homeassistant with only the new Python Version
@@ -191,14 +191,14 @@ Install Python 3.8:
 ```sh
 $ emerge -tav dev-lang/python:3.8
 ```
-Edit your `/etc/portage/make.conf` to set the new Python Targets, make sure you have now **both** versions active:
+Edit your `/etc/portage/make.conf` to set the new Python Targets, make sure you have **both** versions active now:
 ```sh
 USE_PYTHON="3.8 3.7"
 PYTHON_TARGETS="python3_8 python3_7"
 PYTHON_SINGLE_TARGET="python3_8"
 ```
 
-Run `eselect python` to put Python 3.8 on position 1, perhaps you have to edit `/etc/python-exec/python-exec.conf`.
+Run `eselect python` to put Python 3.8 on position 1, perhaps you'll have to edit `/etc/python-exec/python-exec.conf`.
 
 Run the Update:
 ```sh
@@ -206,7 +206,7 @@ $ emerge --depclean
 $ emerge -1vUD @world
 $ emerge --depclean
 ```
-If everthing is clean, double check with:
+If everything is clean, double check with:
 
 * `eix --installed-with-use python_targets_python3_7` (<- old version)
 * `eix --installed-without-use python_targets_python3_8` (<- new version)
@@ -240,7 +240,7 @@ Run the Update again:
 # emerge --depclean
 ```
 
-Sometimes I had dependencies `portage` didn't respect, in some cases it seems not to know in which Python's site-packages modules are already installed. Install them manually (after compile errors). Once all packages are updated, you can remove the older python targets in `package.use` and run another upgrade to remove now obsolete support for old Python Versions. This will save hard disk space and compile time.
+Sometimes I had dependencies `portage` didn't respect, in some cases it seems not to know in which Python's site-packages modules are already installed. Install them manually (after compile errors). Once all packages are updated, you can remove the older Python targets in `package.use` and run another upgrade to remove now obsolete support for old Python versions. This will save hard disk space and compile time.
 
 It does not make sense to compile all this stuff **for more than one** Python target.
 
@@ -265,33 +265,33 @@ $ eix --installed-with-use python_targets_python3_7
 $ diff <(equery h python_targets_python3_7) <(equery h python_targets_python3_8)
 ```
 
-## Todos
+## To-dos
 - If it moves, compile it :-)
 - update the missing component descriptions for `metadata.xml`
 - Publish my ESPHome Configurations
 - Add test support for Python 3.9 in new dev branches
 - Add more libraries if I need it or someone asks for
-- Write an real good installation page for the home-assistant.io Documentation an get it added there.
+- Write a real good installation page for the home-assistant.io Documentation and get it added there.
 - Convince the world to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
 ## Experiments in progress:
 * grafana with influxdb, will have to use it at work soon and have to get used to it anyway, fits much better for irregular measurements than Cacti/RRD.
 * remote IOS authentication with [haproxy](https://www.haproxy.org) and client certificates.
-* play with [Node-RED](https://nodered.org/), there are users requests for it, but my skills are too low for this Ebuild :-)
+* play with [Node-RED](https://nodered.org/), there are user requests for it, but my skills are too low for this Ebuild :-)
 * first tests with Python 3.9 are in progress
 
 ## some Background...
-I have Home Assistant running on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 30GB Disk from a small FC SAN (HP MSA). Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. currently 10.2.29 without problems. Influxdb and Graphana are also on the same box. Find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
+I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 30GB Disk from a small FC SAN (HP MSA). Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. Currently 10.2.29 without problems. Influxdb and Graphana are also on the same box. You'll find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
 
 Some of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/), I use the stable version coming with the original distribution (1.6.8), no SSL inside my isolated IOT Vlan, so no need to upgrade. Along MQTT I am actively using (and therefore testing) the following platforms/components:
-* some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. I would not buy the Fibaro stuff again, because of their weird firmware policy. You need to have their expensive (and otherwise useless) gateway to make an update. The cheap chinese stuff will do it better. And they are very badly shielded.
+* some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. I would not buy the Fibaro stuff again, because of their weird firmware policy. You need to have their expensive (and otherwise useless) gateway to make an update. The cheap chinese stuff will do better. And they are very badly shielded.
   - in the vm run `socat pty,link=/dev/ttyUSB0,raw,user=homeassistant,group=dialout,mode=777 tcp:[ip of usbhost]:3333`
   - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
 * some Zigbee devices from Xioami, via an CC2531 USB stick from Amazon -> `zigbee2mqtt`
 * a bunch of OneWire and I2C Sensors (mostly via ESPHome and MQTT) and
 * ESPHome - see description above - (https://esphome.io/ & https://github.com/esphome/esphome/)
 * ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy/). I formerly used it to avoid some serious design problems in Tasmota, but since I use ESPHome, these devices live only until they have to be touched for some reason, their firmware will get replaced with ESPHome.
-* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a device has to be touched, it's firmware will be replaced with Otto Winter's ESPHome.
+* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a device has to be touched, its firmware will be replaced with Otto Winter's ESPHome.
   * Sonoff S20
   * Sonoff 4ch
   * Sonoff Dual
@@ -300,12 +300,12 @@ Some of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
   * Sonoff Basic (Wifi not working well with ESPHome or Tasmota in newer versions)
   * Sonoff Pow R2
   The Sonoff Pow (and R2) will stay with Tasmota for a while, because I have no good implementation of Tasmota's energy summary in ESPHome.
-* Experimenting with Shelly Devices, a friend has some Shelly 1/2, bought a Pro, but this one has a Chip form TI, no ESP, so we'll have to use the original Firmware.
+* Experimenting with Shelly Devices, a friend has some Shelly 1/2, bought a Pro, but this one has a Chip from TI, no ESP, so we'll have to use the original Firmware.
 * Now all of my HC-SR501 PIR Sensors and some of my traditional light switches are connected to two big input arrays I built into old CAT6 patch panels with an ESP12 and 4 PCF8574 I2C I/O Expanders, this makes 24 I/O lines per panel. All these panels run ESPHome.
 * Yamaha RXV (4 devices)
-* SamsungTV (partly _not_ working anymore due to Samsung's newest firmware 'improvements', at least I can read it's status for controlling lights & the shutters)
+* SamsungTV (partly _not_ working anymore due to Samsung's newest firmware 'improvements', at least I can read its status for controlling lights & the shutters)
 * Some Tradfri lights
-* 4 IKEA Shutters, finally they can now be bought. A bit expensive, but nice and easy to install.
+* 4 IKEA Shutters, which finally can be bought now. A bit expensive, but nice and easy to install.
 * Sonos (had many, sold most of them, because they destroyed a formerly very cool Gui, only two boxes left)
 * Calendar (connected to a locally run ownCloud, OC not in this Repository) (https://owncloud.org/)
 * Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
@@ -319,7 +319,7 @@ Some of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
 I have **no** Google, Amazon or Apple involved in my privacy (at least in this case) and I am not planning to let them in.
 
 ## Some thoughts
-* Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies execpt portage are not tested.
+* Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies except of portage are not tested.
 * Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap.
 * I use an own profile based on "amd64/17.1/no-multilib"
 * python-3.8.6 is set as default target.
@@ -373,6 +373,6 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |12|Unlicense|
 |5|ZPL|
 
-I did my best to keep these clean. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate Licenses referenced in the ebuild files and in the corresponding homepages or sources.
+I did my best to keep these clean. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
-Last update of this text: 25.9.2020
+A big thanks goes too Iris for reviewing this README: 28.9.2020
