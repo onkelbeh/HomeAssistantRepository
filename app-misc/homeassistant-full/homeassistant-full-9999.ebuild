@@ -58,6 +58,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]
 	~dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
+	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.37.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-frontend-20200918.2[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
@@ -112,7 +113,7 @@ RDEPEND="${RDEPEND}
 	ads? ( ~dev-python/pyads-3.2.2[${PYTHON_USEDEP}] )
 	aftership? ( ~dev-python/pyaftership-0.1.2[${PYTHON_USEDEP}] )
 	agent_dvr? ( ~dev-python/agent-py-0.0.23[${PYTHON_USEDEP}] )
-	airly? ( ~dev-python/airly-0.0.2[${PYTHON_USEDEP}] )
+	airly? ( ~dev-python/airly-1.0.0[${PYTHON_USEDEP}] )
 	airvisual? ( ~dev-python/pyairvisual-4.4.0[${PYTHON_USEDEP}] )
 	aladdin_connect? ( ~dev-python/aladdin-connect-0.3[${PYTHON_USEDEP}] )
 	alarmdecoder? ( ~dev-python/adext-0.3[${PYTHON_USEDEP}] )
@@ -187,7 +188,7 @@ RDEPEND="${RDEPEND}
 	buienradar? ( ~dev-python/buienradar-1.0.4[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.6.1[${PYTHON_USEDEP}] )
 	canary? ( ~dev-python/py-canary-0.5.0[${PYTHON_USEDEP}] )
-	cast? ( ~dev-python/pychromecast-7.2.1[${PYTHON_USEDEP}] )
+	cast? ( ~dev-python/pychromecast-7.5.0[${PYTHON_USEDEP}] )
 	channels? ( ~dev-python/pychannels-1.0.0[${PYTHON_USEDEP}] )
 	circuit? ( ~dev-python/circuit-webhook-1.0.1[${PYTHON_USEDEP}] )
 	cisco_ios? ( ~dev-python/pexpect-4.6.0[${PYTHON_USEDEP}] )
@@ -562,7 +563,7 @@ RDEPEND="${RDEPEND}
 	pi_hole? ( ~dev-python/hole-0.5.1[${PYTHON_USEDEP}] )
 	pjlink? ( ~dev-python/pypjlink2-1.2.1[${PYTHON_USEDEP}] )
 	plex? ( ~dev-python/PlexAPI-4.1.0[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.5[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.11[${PYTHON_USEDEP}] )
-	plugwise? ( ~dev-python/Plugwise-Smile-1.4.0[${PYTHON_USEDEP}] )
+	plugwise? ( ~dev-python/Plugwise-Smile-1.5.1[${PYTHON_USEDEP}] )
 	plum_lightpad? ( ~dev-python/plumlightpad-0.0.11[${PYTHON_USEDEP}] )
 	pocketcasts? ( ~dev-python/pocketcasts-0.1[${PYTHON_USEDEP}] )
 	point? ( ~dev-python/pypoint-1.1.2[${PYTHON_USEDEP}] )
@@ -642,7 +643,7 @@ RDEPEND="${RDEPEND}
 	seventeentrack? ( ~dev-python/py17track-2.2.2[${PYTHON_USEDEP}] )
 	seven_segments? ( ~dev-python/pillow-7.2.0[${PYTHON_USEDEP}] )
 	sharkiq? ( ~dev-python/sharkiqpy-0.1.8[${PYTHON_USEDEP}] )
-	shelly? ( ~dev-python/aioshelly-0.3.2[${PYTHON_USEDEP}] )
+	shelly? ( ~dev-python/aioshelly-0.3.3[${PYTHON_USEDEP}] )
 	shiftr? ( ~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.23.0[${PYTHON_USEDEP}] )
 	sht31? ( ~dev-python/Adafruit-GPIO-1.0.3[${PYTHON_USEDEP}] ~dev-python/Adafruit-SHT31-1.0.2[${PYTHON_USEDEP}] )

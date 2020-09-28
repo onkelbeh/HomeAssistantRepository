@@ -1,4 +1,4 @@
-2020-09-28
+2020-09-28 homeassistant-0.115.4
   * add goalzero-0.1.4
   * bump dwdwfsapi-1.0.3
   * bump wolf_smartset-0.1.6
@@ -11,6 +11,7 @@
   * bump snapcast-2.1.1
   * bump pychromecast-7.5.0
   * bump pypck-0.7.2
+  * update homeassistant*-0.115.4
 
 2020-09-27
   * add config-0.5.0
