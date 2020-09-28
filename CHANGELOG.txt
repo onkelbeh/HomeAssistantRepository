@@ -9,6 +9,7 @@
   * update pyCEC-0.4.14
   * update airly-1.0.0
   * bump snapcast-2.1.1
+  * bump pychromecast-7.5.0
 
 2020-09-27
   * add config-0.5.0
