@@ -12,6 +12,7 @@
   * bump pychromecast-7.5.0
   * bump pypck-0.7.2
   * update homeassistant*-0.115.4
+  * add 2 more deps: mobile_app, notify_events
 
 2020-09-27
   * add config-0.5.0

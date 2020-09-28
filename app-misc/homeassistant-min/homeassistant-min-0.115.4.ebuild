@@ -27,7 +27,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
-IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github influxdb kodi maxcube maxcube_hack mikrotik +mqtt +mysql +otp owntracks +ping qnap +recorder +rest samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl test tradfri +version workday yamaha yamaha_musiccast +zwave"
+IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github influxdb kodi maxcube maxcube_hack mikrotik +mobile_app +mqtt +mysql +notify_events +otp owntracks +ping qnap +recorder +rest samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl test tradfri +version workday yamaha yamaha_musiccast +zwave"
 
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
@@ -120,6 +120,7 @@ RDEPEND="${RDEPEND}
 	kodi? ( ~dev-python/pykodi-0.2.0[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
 	mikrotik? ( ~dev-python/librouteros-3.0.0[${PYTHON_USEDEP}] )
+	mobile_app? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}] ~dev-python/emoji-0.5.4[${PYTHON_USEDEP}] )
 	mqtt? ( ~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysql-connector-python[${PYTHON_USEDEP}] dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	otp? ( ~dev-python/pyotp-2.3.0[${PYTHON_USEDEP}] )
