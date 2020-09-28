@@ -2,6 +2,8 @@
   * add goalzero-0.1.4
   * bump dwdwfsapi-1.0.3
   * bump wolf_smartset-0.1.6
+  * bump grpcio-1.31.0
+  * add grpcio-1.31.0
 
 2020-09-27
   * add config-0.5.0
