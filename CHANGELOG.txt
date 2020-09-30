@@ -6,7 +6,6 @@
   * update paho-mqtt-1.5.1
   * bump zha-quirks-0.0.45
   * bump homeassistant-*0.115.5
-
   * bump xknx-0.15.0
   * bump devolo-home-control-api-0.15.0
   * bump sentry-sdk-0.18.0
@@ -20,6 +19,7 @@
       - ~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}]
       - ~dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
       - ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}]
+  * bump home-assistant-frontend-20200930.0
 
 2020-09-28 homeassistant-0.115.4
   * add goalzero-0.1.4
