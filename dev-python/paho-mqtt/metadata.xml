@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer type="person">
-		<email>ramage.lucas@openmailbox.org</email>
-		<name>Lucas Ramage</name>
-	</maintainer>
-	<maintainer type="project">
-		<email>proxy-maint@gentoo.org</email>
-		<name>Proxy Maintainers</name>
-	</maintainer>
-	<upstream>
-		<remote-id type="github">eclipse/paho.mqtt.python</remote-id>
-	</upstream>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">paho-mqtt</remote-id>
+    <maintainer status="unknown">
+      <email>roger@atchoo.org</email>
+      <name>Roger Light</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>

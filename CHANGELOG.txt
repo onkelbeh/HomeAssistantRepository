@@ -3,6 +3,7 @@
   * fix pymysensors-0.20.1
   * fix python-miio-0.5.2.1
   * update bellows-0.20.3
+  * update paho-mqtt-1.5.1
 
 2020-09-28 homeassistant-0.115.4
   * add goalzero-0.1.4
