@@ -1,4 +1,4 @@
-2020-09-30 homeassistant-0.115.5
+2020-09-30 homeassistant-0.115.6
   * bump PyXiaomiGateway-0.13.3
   * fix pymysensors-0.20.1
   * fix python-miio-0.5.2.1
@@ -10,6 +10,16 @@
   * bump xknx-0.15.0
   * bump devolo-home-control-api-0.15.0
   * bump sentry-sdk-0.18.0
+  * update homeassistant*-0.115.6, move some fixed requirements to suggested useflags:
+      - >=dev-python/pyotp-2.3.0[${PYTHON_USEDEP}]
+      - >=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
+      - >=dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}]
+      - ~dev-python/base36-0.1.1[${PYTHON_USEDEP}]
+      - ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}]
+      - ~dev-python/HAP-python-3.0.0[${PYTHON_USEDEP}]
+      - ~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}]
+      - ~dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}]
+      - ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}]
 
 2020-09-28 homeassistant-0.115.4
   * add goalzero-0.1.4

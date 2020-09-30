@@ -194,6 +194,7 @@
     <flag name="poolsense">PoolSense is a smart pool monitor</flag>
     <flag name="powerwall">API for Tesla Powerwall</flag>
     <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
+    <flag name="python_script">write Python scripts that are exposed as services in Home Assistant</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="rachio">The rachio platform allows you to control your Rachio irrigation system</flag>
     <flag name="rainbird">allows interacting with LNK WiFi module of the Rain Bird Irrigation system</flag>
@@ -249,6 +250,7 @@
     <flag name="version">display the current Home Assistant versions</flag>
     <flag name="vicare">communicate with the Viessmann ViCare API</flag>
     <flag name="vizio">allows you to control SmartCast-compatible TVs</flag>
+    <flag name="wake_on_lan">enables the ability to send magic packets to Wake on LAN capable devices</flag>
     <flag name="waqi">will query World Air Quality Index service</flag>
     <flag name="waze_travel_time">waze_travel_time sensor provides travel time from the Waze</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>

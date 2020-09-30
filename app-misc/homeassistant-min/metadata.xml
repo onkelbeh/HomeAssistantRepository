@@ -25,6 +25,7 @@
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
     <flag name="fronius">add (very basic) Support for Fronius Symo JSON Api</flag>
     <flag name="github">GitHub sensor integrates data from GitHub to monitor your favorite repositories</flag>
+    <flag name="homekit">works as both HomeKit controller and accessory</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
     <flag name="kodi">control a Kodi multimedia system</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
@@ -37,6 +38,7 @@
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ping">ICMPLib</flag>
+    <flag name="python_script">write Python scripts that are exposed as services in Home Assistant</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="recorder">storing details in a database per sqlalchemy</flag>
     <flag name="rest">rest sensor platform for data exposed by a RESTful API</flag>
@@ -52,6 +54,7 @@
     <flag name="test">internal and developer use</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
     <flag name="version">display the current Home Assistant versions</flag>
+    <flag name="wake_on_lan">enables the ability to send magic packets to Wake on LAN capable devices</flag>
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
     <flag name="yamaha">Library for Yamaha RX-* Receivers</flag>
     <flag name="yamaha_musiccast">add support for Yamaha MusicCast devices</flag>
