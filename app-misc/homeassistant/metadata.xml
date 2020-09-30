@@ -176,6 +176,7 @@
     <flag name="nederlandse_spoorwegen">train service in the Netherlands</flag>
     <flag name="netatmo">Access to Netatmo weather station data</flag>
     <flag name="netdata">API for interacting with Netdata</flag>
+    <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
     <flag name="nuki">control Nuki Smart Locks</flag>
     <flag name="nws">uses the National Weather Service web API</flag>
     <flag name="nx584">NX584/NX8E Interface Library and Server</flag>

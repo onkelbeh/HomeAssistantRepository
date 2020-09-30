@@ -1,10 +1,11 @@
-2020-09-30
+2020-09-30 homeassistant-0.115.5
   * bump PyXiaomiGateway-0.13.3
   * fix pymysensors-0.20.1
   * fix python-miio-0.5.2.1
   * update bellows-0.20.3
   * update paho-mqtt-1.5.1
   * bump zha-quirks-0.0.45
+  * bump homeassistant-*0.115.5
 
 2020-09-28 homeassistant-0.115.4
   * add goalzero-0.1.4
