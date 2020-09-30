@@ -1,5 +1,6 @@
 2020-09-30
   * bump PyXiaomiGateway-0.13.3
+  * fix pymysensors-0.20.1
 
 2020-09-28 homeassistant-0.115.4
   * add goalzero-0.1.4

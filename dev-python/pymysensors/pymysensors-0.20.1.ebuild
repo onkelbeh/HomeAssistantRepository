@@ -25,7 +25,7 @@ DEPEND="dev-python/click[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-asyncio-0.4[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.1[${PYTHON_USEDEP}]
-	dev-python/dev-python/paho-mqtt[${PYTHON_USEDEP}]"
+	dev-python/paho-mqtt[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
