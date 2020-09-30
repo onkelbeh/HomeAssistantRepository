@@ -6,15 +6,15 @@ Since homeassistant-0.115.3 the **Main Ebuild** is released in three different s
 
 ### `app-misc/homeassistant`
 
-This is the Ebuild we have since `0.97.0`, it currently holds **258** USE Flags. As soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure.
+This is the Ebuild we have since `0.97.0`, it currently holds **260** USE Flags. As soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure.
 
 ### `app-misc/homeassistant-min`
 
-New Ebuild, generated for `0.115.3` and later, currently holds **42** USE Flags. These are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release.
+New Ebuild, generated for `0.115.3` and later, currently holds **45** USE Flags. These are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release.
 
 ### `app-misc/homeassistant-full`
 
-This Ebuild contains 301 USE Flags for all components available. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Who would blame me for this at 800 USE Flags ;-)
+This Ebuild contains 739 USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Who would blame me for this at 800 USE Flags ;-)
 
 ### Commons for all three Main Ebuilds
 
