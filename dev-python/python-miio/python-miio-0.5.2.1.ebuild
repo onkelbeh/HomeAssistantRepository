@@ -19,7 +19,7 @@ IUSE="test"
 RDEPEND=">=dev-python/click-7.1.1[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-2.9[${PYTHON_USEDEP}]
 	>=dev-python/construct-2.10.56[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf[${PYTHON_USEDEP}]
+	dev-python/zeroconf[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	>=dev-python/appdirs-1.4.3[${PYTHON_USEDEP}]
