@@ -6,15 +6,15 @@ Since homeassistant-0.115.3 the **Main Ebuild** is released in three different s
 
 ### `app-misc/homeassistant`
 
-This is the Ebuild we have since `0.97.0`, it currently holds **255** USE Flags. As soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure.
+This is the Ebuild we have since `0.97.0`, it currently holds **258** USE Flags. As soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure.
 
 ### `app-misc/homeassistant-min`
 
-New Ebuild, generated for `0.115.3` and later, currently holds **37** USE Flags. These are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release.
+New Ebuild, generated for `0.115.3` and later, currently holds **42** USE Flags. These are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release.
 
 ### `app-misc/homeassistant-full`
 
-This Ebuild contains USE Flags for all components available. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Who would blame me for this at 800 USE Flags ;-)
+This Ebuild contains 301 USE Flags for all components available. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Who would blame me for this at 800 USE Flags ;-)
 
 ### Commons for all three Main Ebuilds
 
@@ -57,7 +57,9 @@ Please let me know if anything is wrong or dependencies are missing, since I use
 From time to time a fresh compile test on empty boxes (one with Python 3.8 and one with Python 3.7) is run to catch general faults, last good (full) compile test was September 2020 with `v0.115.0`. It was not possible to fix everything, work is in progress, some [open problems](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues) remain.
 
 ## Authors welcome
-If you are an author of an integration / component or other stuff related to Home Assistant and I have your stuff not added already, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on Github are OK, but a Pypi `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (Pypi/Github/Sourceforge).
+If you are an author of an integration / component or other stuff related to Home Assistant and I have your stuff not added already, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on GitHub are OK, but a
+PyPI `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (
+PyPI/GitHub/Sourceforge).
 
 ## Python 3.9 Support
 Just cloned a box for first tests. but it is too early to try bigger things, most of the dependencies from Main Repo are ready, but some are still missing. Forking them only for adding compatibility would get out of hand. So we'll just wait a bit... things are moving fast.
@@ -72,7 +74,7 @@ You will need at least Python 3.7.7 for running Home Assistant on Gentoo Linux. 
 
 In August 2020 I discovered that it is now possible to remove Python 2.7 completely. I have done this on all my test servers and my Home Assistant Box. All still work like a charm.
 
-## ARM64
+## ~arm64
 By user request, I have populated an ~arm64 KEYWORD on all Ebuilds, which is (currently) completely untested. I know of at least two guys using it, but I got no feedback yet. Some day I will prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
 
 ## Nearly all Home Assistant Components are now included
@@ -86,9 +88,9 @@ Currrently missing (0.115.3):
 * pylacrosse-0.4.0 (version numbering mismatch, too lazy to patch)
 * opencv-python-headless-4.3.0.36
 * tensorflow-2.3.0 & tf-models-official-2.3.0 (I only wait for the Ebuild on main repo)
-* pyuptimerobot-0.0.5 (seems unmaintained, could not find a valid source)
+* pyuptimerobot-0.0.5 (unmaintained, could not find a valid source)
 
-In some cases I added small patches to the Ebuilds, some packages have versions pinned without any reason. For me it's OK, if the packages compile and complete *all* their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups.
+In some cases I added small patches to the Ebuilds, some packages have versions pinned without any reason. For me its OK, if the packages compile and complete *all* their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups.
 
 ## Why I don't (want to) use a virtual environment for Home Assistant
 On Gentoo, we have a very powerful package manager. So I (now) try to put everything Home Assistant uses into Ebuilds.
@@ -101,10 +103,11 @@ You can find the current constraints in:
 * https://github.com/home-assistant/core/blob/dev/requirements_all.txt and
 * https://github.com/home-assistant/core/blob/dev/homeassistant/package_constraints.txt
 
-You should take a look in `/etc/homeassistant/deps/` from time to time, I do this after every upgrade, if it's not empty, install the missing package, emtpy this directory, restart Home Assistant, if it's still downloaded, possibly the wrong (mostly too new) version of a component or a library is installed. `eix`, `/etc/portage/package.accept_keywords` and `--autounmask=y` are your friends. You should not unmask too much, and think about the next releases when you unmask packages.
+You should take a look in `/etc/homeassistant/deps/` from time to time, I do this after every upgrade, if it is not empty, install the missing package, emtpy this directory, restart Home Assistant, if it is still downloaded, possibly the wrong (mostly too new) version of a component or a library is installed. `eix`, `/etc/portage/package.accept_keywords` and `--autounmask=y` are your friends. You should not unmask too much, and think about the next releases when you unmask packages.
 
 ## Sources Missing, older release tags
-Some packages with missing or hidden older releases have been [forked](https://github.com/onkelbeh?tab=repositories) after the originating author has been queried and notified. I did not touch any source, no changes except of adding the missing release tags have been made. I used these forks ONLY for generating consitent sources. If patches are needed, they will be applied during the compile process. As soon as another usable release will be available, I'll swap the `SRC_URI` back to Pypi, the original Github or wherever it should come from. For every fork in use I have an open ticket at [git.edevau.net](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues).  Please drop me a [note](https://github.com/onkelbeh/HomeAssistantRepository/issues) if you find a valid origin or something wrong.
+Some packages with missing or hidden older releases have been [forked](https://github.com/onkelbeh?tab=repositories) after the originating author has been queried and notified. I did not touch any source, no changes except of adding the missing release tags have been made. I used these forks ONLY for generating consitent sources. If patches are needed, they will be applied during the compile process. As soon as another usable release will be available, I'll swap the `SRC_URI` back to
+PyPI, the original GitHub or wherever it should come from. For every fork in use I have an open ticket at [git.edevau.net](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues).  Please drop me a [note](https://github.com/onkelbeh/HomeAssistantRepository/issues) if you find a valid origin or something wrong.
 
 ## Other things
 Aside from Home Assistant's stuff this repo contains some Ebuilds I use with my Home Assistant, some have to be explicitly mentioned:
@@ -222,9 +225,7 @@ Help it with:
 eix -I# --installed-without-use python_targets_python3_8 | xargs emerge -1tv
 ```
 
-### Now you have all Python packages for both versions installed
-
-Time to get rid of the packages compiled for the old Python:
+Now you have all Python packages for both versions installed, time to get rid of the packages compiled for the old Python:
 
 Edit your `/etc/portage/make.conf` to remove old Python Targets:
 ```sh
@@ -250,7 +251,7 @@ Check if all is gone:
 # eix --installed-with-use python_targets_python3_7
 ```
 
-Recompile all packages which are still present in the old Python.
+Recompile all packages which are still present in the old Python. Repeat until all have vanished.
 
 ### Remove the old Python
 
@@ -311,7 +312,7 @@ Some of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/),
 * Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
 * Enigma2 on Dreambox (2 left) (https://wiki.blue-panel.com/index.php/Enigma2)
 * Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
-* EQ3-Max! (I accidently bought some, so I have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` USE Flag to home assistant, then the patch will be applied before installation. Recently I saw some other interesting soft for this hardware. Perhaps I'll try one of these, and forget about `maxcube-api`.
+* EQ3-Max! (I accidently bought some, so I have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` USE Flag to Home Assistant, then the patch will be applied before installation. Recently I saw some other interesting soft for this hardware. Perhaps I'll try one of these, and forget about `maxcube-api`.
 * Axis Camera (1, a few more to come)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/)
 
@@ -373,6 +374,7 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |12|Unlicense|
 |5|ZPL|
 
-I did my best to keep these clean. If a valid license was published on Pypi, it has been automatically merged. Otherwise I took it from Github or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
+I did my best to keep these clean. If a valid license was published on
+PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes too Iris for reviewing this README: 28.9.2020
