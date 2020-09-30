@@ -8,6 +8,7 @@
   * bump homeassistant-*0.115.5
 
   * bump xknx-0.15.0
+  * bump devolo-home-control-api-0.15.0
 
 2020-09-28 homeassistant-0.115.4
   * add goalzero-0.1.4
