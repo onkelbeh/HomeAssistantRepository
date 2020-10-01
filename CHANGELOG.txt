@@ -1,3 +1,6 @@
+2020-10-01
+  * bump pysonos-0.0.34
+
 2020-09-30 homeassistant-0.115.6
   * bump PyXiaomiGateway-0.13.3
   * fix pymysensors-0.20.1
