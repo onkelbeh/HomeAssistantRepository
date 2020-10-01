@@ -5,6 +5,7 @@
   * bump simplisafe-python-9.4.1
   * add hyperion-py-0.3.0
   * update homeassistant*-0.116.0_beta0
+  * fix all bad dev-python/importlib_metadata deps
 
 2020-09-30 homeassistant-0.115.6
   * bump PyXiaomiGateway-0.13.3

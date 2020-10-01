@@ -62,7 +62,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/hass-nabucasa-0.37.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-frontend-20200918.2[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep '~dev-python/importlib-metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
+	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
 	~dev-python/jinja-2.11.2[${PYTHON_USEDEP}]
 	~dev-python/netdisco-2.8.2[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
