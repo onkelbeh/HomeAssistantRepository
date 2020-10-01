@@ -245,6 +245,7 @@
     <flag name="glances">allows you to monitor the system information provided by the Glances API</flag>
     <flag name="gntp"/>
     <flag name="goalfeed">use your Goalfeed account to trigger events in Home Assistant</flag>
+    <flag name="goalzero">Goal Zero REST Api</flag>
     <flag name="gogogate2">lets you control Gogogate2-Enabled garage doors</flag>
     <flag name="google"/>
     <flag name="google_cloud"/>
@@ -443,6 +444,7 @@
     <flag name="oem">ESP8266 based “WiFi MQTT Relay / Thermostat” sold by OpenEnergyMonitor</flag>
     <flag name="ohmconnect"> show you the current OhmConnect status for the given OhmConnect ID</flag>
     <flag name="ombi">The Ombi integration monitors data from your Ombi instance</flag>
+    <flag name="omnilogic">Hayward Onmilogic pool control system</flag>
     <flag name="onewire">supports sensors which that using the One wire (1-wire) bus for communication</flag>
     <flag name="onkyo">allows you to control a Onkyo, Integra and some recent Pioneer receivers</flag>
     <flag name="onvif">allows you to use an ONVIF Profile S conformant device</flag>
@@ -535,6 +537,7 @@
     <flag name="rpi_gpio"/>
     <flag name="rpi_gpio_pwm"/>
     <flag name="rpi_pfio"/>
+    <flag name="rpi_power">monitor your Raspis Power Supply</flag>
     <flag name="rpi_rf"/>
     <flag name="russound_rio"/>
     <flag name="russound_rnet"/>
