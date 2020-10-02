@@ -1,3 +1,6 @@
+2020-10-02
+  * bump pyhomematic-0.1.69
+
 2020-10-01 homeassistant-0.116.0_beta0
   * bump pysonos-0.0.34
   * bump pyhiveapi-0.2.20.2
