@@ -3,6 +3,7 @@
   * bump pyvesync-1.2.0
   * bump aioshelly-0.3.4
   * bump denonavr-0.9.5
+  * restore (lost) homeassistant-full-0.115.5.ebuild
 
 2020-10-01 homeassistant-0.116.0_beta0
   * bump pysonos-0.0.34
