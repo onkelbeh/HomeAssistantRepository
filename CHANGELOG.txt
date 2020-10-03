@@ -2,6 +2,7 @@
   * update zigpy-znp-0.2.1, find_packages() patch no longer needed
   * bump icmplib-1.2.1
   * bump flake8-3.8.4
+  * update pyhomematic-0.1.70, removed patch
 
 2020-10-02
   * bump pyhomematic-0.1.69
