@@ -1,5 +1,6 @@
 2020-10-03
   * update zigpy-znp-0.2.1, find_packages() patch no longer needed
+  * bump icmplib-1.2.1
 
 2020-10-02
   * bump pyhomematic-0.1.69
