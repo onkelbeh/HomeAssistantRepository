@@ -1,6 +1,7 @@
 2020-10-04 homeassistant-0.116.0_beta2
   * bump pykodi-0.2.1
   * update homeassistant-0.116.0_beta2
+  * esphome-1.15.2 is not beta
 
 2020-10-03
   * update zigpy-znp-0.2.1, find_packages() patch no longer needed
