@@ -1,5 +1,6 @@
-2020-10-04
+2020-10-04 homeassistant-0.116.0_beta2
   * bump pykodi-0.2.1
+  * update homeassistant-0.116.0_beta2
 
 2020-10-03
   * update zigpy-znp-0.2.1, find_packages() patch no longer needed
@@ -8,7 +9,7 @@
   * update pyhomematic-0.1.70, removed patch
 
 2020-10-02
-  * bump pyhomematic-0.1.69
+  * bump pyhomematic-0.1.69, patch needed
   * bump pyvesync-1.2.0
   * bump aioshelly-0.3.4
   * bump denonavr-0.9.5
