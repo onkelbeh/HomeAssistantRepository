@@ -1,3 +1,6 @@
+2020-10-05
+  * bump apprise-0.8.9
+
 2020-10-04 homeassistant-0.116.0_beta2
   * bump pykodi-0.2.1
   * update homeassistant-0.116.0_beta2
