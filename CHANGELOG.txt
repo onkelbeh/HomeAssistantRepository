@@ -1,5 +1,6 @@
 2020-10-05
   * bump apprise-0.8.9
+  * add pyprof2calltree-1.4.5
 
 2020-10-04 homeassistant-0.116.0_beta2
   * bump pykodi-0.2.1
