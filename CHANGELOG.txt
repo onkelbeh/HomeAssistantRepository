@@ -1,3 +1,6 @@
+2020-10-06
+  * update pyvesync-1.2.1
+
 2020-10-05 homeassistant-0.116.0_beta4
   * bump apprise-0.8.9
   * add pyprof2calltree-1.4.5
