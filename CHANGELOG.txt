@@ -1,10 +1,11 @@
-2020-10-07 homeassistant-0.116.0_beta5
+2020-10-07 homeassistant-0.116.0_beta6
   * add HATasmota-0.0.8
   * update HATasmota-0.0.10
   * update HATasmota-0.0.9
   * bump pysonos-0.0.35
   * update tuyaha-0.0.8
   * update homeassistant-0.116.0_beta5
+  * bump homeassistant-0.116.0_beta6
 
 2020-10-06
   * update pyvesync-1.2.1
