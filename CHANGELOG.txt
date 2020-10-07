@@ -1,3 +1,7 @@
+2020-10-07
+  * add HATasmota-0.0.8
+  * update HATasmota-0.0.10
+
 2020-10-06
   * update pyvesync-1.2.1
   * update pysmartthings-0.7.4
