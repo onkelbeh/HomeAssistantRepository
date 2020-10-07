@@ -6,6 +6,7 @@
   * update tuyaha-0.0.8
   * update homeassistant-0.116.0_beta5
   * bump homeassistant-0.116.0_beta6
+  * bump zigpy-0.26.0
 
 2020-10-06
   * update pyvesync-1.2.1
