@@ -2,6 +2,7 @@
   * add HATasmota-0.0.8
   * update HATasmota-0.0.10
   * update HATasmota-0.0.9
+  * bump pysonos-0.0.35
 
 2020-10-06
   * update pyvesync-1.2.1
