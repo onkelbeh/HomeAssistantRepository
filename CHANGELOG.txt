@@ -10,6 +10,11 @@
   * bump elkm1-lib-0.8.0, elkm1-lib-0.8.1
   * bump python-openzwave-mqtt-1.2.0, python-openzwave-mqtt-1.2.2
   * update hass-splunk-0.1.0, bump hass-splunk-0.1.1
+  * update pymata-express-1.19
+  * bump debugpy-1.0.0_rc2
+  * fix pylacrosse-0.4 version number mismatch
+  * implement *_rc version handler (for debugpy-1.0.0_rc2)
+  * update homeassistant-0.116.0
 
 2020-10-06
   * update pyvesync-1.2.1

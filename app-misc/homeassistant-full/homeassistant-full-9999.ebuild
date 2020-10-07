@@ -32,7 +32,7 @@ IUSE="abode accuweather acer_projector acmeda adguard ads aftership agent_dvr ai
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
-        app-admin/logrotate
+		app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
 	>=dev-libs/xerces-c-3.1.4-r1"
@@ -207,6 +207,7 @@ RDEPEND="${RDEPEND}
 	danfoss_air? ( ~dev-python/pydanfossair-0.1.0[${PYTHON_USEDEP}] )
 	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
 	datadog? ( ~dev-python/datadog-0.15.0[${PYTHON_USEDEP}] )
+	debugpy? ( ~dev-python/debugpy-1.0.0_rc2[${PYTHON_USEDEP}] )
 	deconz? ( ~dev-python/pydeconz-73[${PYTHON_USEDEP}] )
 	decora? ( ~dev-python/bluepy-1.3.0[${PYTHON_USEDEP}] ~dev-python/decora-0.6[${PYTHON_USEDEP}] )
 	decora_wifi? ( ~dev-python/decora-wifi-1.4[${PYTHON_USEDEP}] )
@@ -253,7 +254,7 @@ RDEPEND="${RDEPEND}
 	eight_sleep? ( ~dev-python/pyEight-0.1.4[${PYTHON_USEDEP}] )
 	elgato? ( ~dev-python/elgato-0.2.0[${PYTHON_USEDEP}] )
 	eliqonline? ( ~dev-python/eliqonline-1.2.2[${PYTHON_USEDEP}] )
-	elkm1? ( ~dev-python/elkm1-lib-0.7.19[${PYTHON_USEDEP}] )
+	elkm1? ( ~dev-python/elkm1-lib-0.8.0[${PYTHON_USEDEP}] )
 	elv? ( ~dev-python/pypca-0.0.7[${PYTHON_USEDEP}] )
 	emby? ( ~dev-python/pyEmby-1.6[${PYTHON_USEDEP}] )
 	emulated_hue? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] )
@@ -284,6 +285,7 @@ RDEPEND="${RDEPEND}
 	fibaro? ( ~dev-python/fiblary3-0.1.7[${PYTHON_USEDEP}] )
 	fido? ( ~dev-python/pyfido-2.1.1[${PYTHON_USEDEP}] )
 	fints? ( ~dev-python/fints-1.0.1[${PYTHON_USEDEP}] )
+	firmata? ( ~dev-python/pymata-express-1.19[${PYTHON_USEDEP}] )
 	fitbit? ( ~dev-python/fitbit-0.3.1[${PYTHON_USEDEP}] )
 	fixer? ( ~dev-python/fixerio-1.0.0_alpha0[${PYTHON_USEDEP}] )
 	fleetgo? ( ~dev-python/ritassist-0.9.2[${PYTHON_USEDEP}] )
@@ -412,6 +414,7 @@ RDEPEND="${RDEPEND}
 	kodi? ( ~dev-python/pykodi-0.2.0[${PYTHON_USEDEP}] )
 	konnected? ( ~dev-python/konnected-1.2.0[${PYTHON_USEDEP}] )
 	kwb? ( ~dev-python/pykwb-0.0.8[${PYTHON_USEDEP}] )
+	lacrosse? ( ~dev-python/pylacrosse-0.4[${PYTHON_USEDEP}] )
 	lametric? ( ~dev-python/lmnotify-0.0.4[${PYTHON_USEDEP}] )
 	lastfm? ( ~dev-python/pylast-3.3.0[${PYTHON_USEDEP}] )
 	launch_library? ( ~dev-python/pylaunches-0.2.0[${PYTHON_USEDEP}] )
@@ -682,6 +685,7 @@ RDEPEND="${RDEPEND}
 	spc? ( ~dev-python/pyspcwebgw-0.4.0[${PYTHON_USEDEP}] )
 	speedtestdotnet? ( ~net-analyzer/speedtest-cli-2.1.2[${PYTHON_USEDEP}] )
 	spider? ( ~dev-python/spiderpy-1.3.1[${PYTHON_USEDEP}] )
+	splunk? ( ~dev-python/hass-splunk-0.1.1[${PYTHON_USEDEP}] )
 	spotcrime? ( ~dev-python/spotcrime-1.0.4[${PYTHON_USEDEP}] )
 	spotify? ( ~dev-python/spotipy-2.16.0[${PYTHON_USEDEP}] )
 	sql? ( ~dev-python/sqlalchemy-1.3.19[${PYTHON_USEDEP}] )
@@ -825,7 +829,7 @@ RDEPEND="${RDEPEND}
 	zeroconf? ( ~dev-python/zeroconf-0.28.5[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.2.5[${PYTHON_USEDEP}] )
 	zestimate? ( ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.20.3[${PYTHON_USEDEP}] ~dev-python/pyserial-3.4[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.45[${PYTHON_USEDEP}] ~dev-python/zigpy-cc-0.5.2[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.10.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.25.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.13.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.6.2[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.2.1[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.20.3[${PYTHON_USEDEP}] ~dev-python/pyserial-3.4[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.45[${PYTHON_USEDEP}] ~dev-python/zigpy-cc-0.5.2[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.10.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.26.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.13.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.6.2[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.2.1[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	ziggo_mediabox_xl? ( ~dev-python/ziggo-mediabox-xl-1.1.0[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.4.0[${PYTHON_USEDEP}] )
@@ -909,4 +913,3 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
-
