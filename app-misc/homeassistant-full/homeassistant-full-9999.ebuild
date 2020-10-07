@@ -657,7 +657,7 @@ RDEPEND="${RDEPEND}
 	sma? ( ~dev-python/pysma-0.3.5[${PYTHON_USEDEP}] )
 	smappee? ( ~dev-python/pysmappee-0.2.13[${PYTHON_USEDEP}] )
 	smarthab? ( ~dev-python/SmartHab-0.21[${PYTHON_USEDEP}] )
-	smartthings? ( ~dev-python/pysmartapp-0.3.2[${PYTHON_USEDEP}] ~dev-python/pysmartthings-0.7.3[${PYTHON_USEDEP}] )
+	smartthings? ( ~dev-python/pysmartapp-0.3.2[${PYTHON_USEDEP}] ~dev-python/pysmartthings-0.7.4[${PYTHON_USEDEP}] )
 	smarty? ( ~dev-python/pysmarty-0.8[${PYTHON_USEDEP}] )
 	smart_meter_texas? ( ~dev-python/smart-meter-texas-0.4.0[${PYTHON_USEDEP}] )
 	smhi? ( ~dev-python/smhi-pkg-1.0.13[${PYTHON_USEDEP}] )

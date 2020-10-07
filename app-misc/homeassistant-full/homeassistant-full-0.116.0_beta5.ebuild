@@ -60,7 +60,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.37.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20201001.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20201001.1[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
 	~dev-python/jinja-2.11.2[${PYTHON_USEDEP}]
@@ -124,7 +124,7 @@ RDEPEND="${RDEPEND}
 	apcupsd? ( ~dev-python/apcaccess-0.0.13[${PYTHON_USEDEP}] )
 	apns? ( ~dev-python/apns2-0.3.0[${PYTHON_USEDEP}] )
 	apple_tv? ( ~dev-python/pyatv-0.3.13[${PYTHON_USEDEP}] )
-	apprise? ( ~dev-python/apprise-0.8.8[${PYTHON_USEDEP}] )
+	apprise? ( ~dev-python/apprise-0.8.9[${PYTHON_USEDEP}] )
 	aprs? ( ~dev-python/aprslib-0.6.46[${PYTHON_USEDEP}] ~dev-python/geopy-1.21.0[${PYTHON_USEDEP}] )
 	aqualogic? ( ~dev-python/aqualogic-1.0[${PYTHON_USEDEP}] )
 	aquostv? ( ~dev-python/sharp_aquos_rc-0.3.2[${PYTHON_USEDEP}] )
@@ -306,7 +306,7 @@ RDEPEND="${RDEPEND}
 	fritzbox_callmonitor? ( ~dev-python/fritzconnection-1.2.0[${PYTHON_USEDEP}] )
 	fritzbox_netmonitor? ( ~dev-python/fritzconnection-1.2.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20201001.0[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20201001.1[${PYTHON_USEDEP}] )
 	frontier_silicon? ( ~dev-python/afsapi-0.0.4[${PYTHON_USEDEP}] )
 	futurenow? ( ~dev-python/pyfnip-0.2[${PYTHON_USEDEP}] )
 	garmin_connect? ( ~dev-python/garminconnect-0.1.13[${PYTHON_USEDEP}] )
@@ -657,7 +657,7 @@ RDEPEND="${RDEPEND}
 	sma? ( ~dev-python/pysma-0.3.5[${PYTHON_USEDEP}] )
 	smappee? ( ~dev-python/pysmappee-0.2.13[${PYTHON_USEDEP}] )
 	smarthab? ( ~dev-python/SmartHab-0.21[${PYTHON_USEDEP}] )
-	smartthings? ( ~dev-python/pysmartapp-0.3.2[${PYTHON_USEDEP}] ~dev-python/pysmartthings-0.7.3[${PYTHON_USEDEP}] )
+	smartthings? ( ~dev-python/pysmartapp-0.3.2[${PYTHON_USEDEP}] ~dev-python/pysmartthings-0.7.4[${PYTHON_USEDEP}] )
 	smarty? ( ~dev-python/pysmarty-0.8[${PYTHON_USEDEP}] )
 	smart_meter_texas? ( ~dev-python/smart-meter-texas-0.4.0[${PYTHON_USEDEP}] )
 	smhi? ( ~dev-python/smhi-pkg-1.0.13[${PYTHON_USEDEP}] )

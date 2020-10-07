@@ -60,7 +60,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.37.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20201001.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20201001.1[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
 	~dev-python/jinja-2.11.2[${PYTHON_USEDEP}]
@@ -126,7 +126,7 @@ RDEPEND="${RDEPEND}
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-1.4.0[${PYTHON_USEDEP}] )
 	scrape? ( ~dev-python/beautifulsoup-4.9.1[${PYTHON_USEDEP}] )
-	shelly? ( ~dev-python/aioshelly-0.3.3[${PYTHON_USEDEP}] )
+	shelly? ( ~dev-python/aioshelly-0.3.4[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.4[${PYTHON_USEDEP}] )
 	snmp? ( ~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
