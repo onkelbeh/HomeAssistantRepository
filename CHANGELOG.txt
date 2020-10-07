@@ -8,6 +8,7 @@
   * bump homeassistant-0.116.0_beta6
   * bump zigpy-0.26.0
   * bump elkm1-lib-0.8.0, elkm1-lib-0.8.1
+  * bump python-openzwave-mqtt-1.2.0, python-openzwave-mqtt-1.2.2
 
 2020-10-06
   * update pyvesync-1.2.1
