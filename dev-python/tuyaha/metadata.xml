@@ -9,7 +9,7 @@
     <remote-id type="pypi">tuyaha</remote-id>
     <maintainer status="unknown">
       <email>paul.annekov@gmail.com</email>
-      <name>Pavlo Annekov</name>
+      <name>Pavlo Annekov and original Tuya authors</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
