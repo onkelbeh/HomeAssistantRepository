@@ -133,7 +133,11 @@ Sure, you can submit **issues** and **pull requests** on both sites, but I prefe
 ## Installation on Python 3.7 or Python 3.8
 Since Python 3.7 is default target since 05/2020, installation is very easy now.
 
-But, **before** installing on 3.7, please think about using 3.8, this will save you the migration from 3.7 -> 3.8. And: you will notice an appreciable improvement in frontend performance. For using 3.7, simply decrease all version numbers in the manual below by 1 :-)
+But, **before** installing on 3.7, please think about using 3.8, this will save you the migration from 3.7 -> 3.8. And: you will notice an appreciable improvement in frontend performance.
+
+Anyway, we will be forced to have 3.8 very soon: https://github.com/home-assistant/core/commit/8d94dff75ced3b00641ef3b7aed58f309bed3b08
+
+If you insist on 3.7, simply decrease all version numbers in the manual below by 1 :-)
 
 ### Let's get started:
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure **not to interfere** with your main Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default. Others use `/usr/local/portage/homeassistant`
