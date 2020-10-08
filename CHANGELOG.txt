@@ -1,9 +1,10 @@
-2020-10-08
+2020-10-08 homeassistant-0.116.1
  * update pyatmo-4.1.0
  * update tesla-powerwall-0.3.3
  * bump home-assistant-frontend-20201001.2
  * bump sense-energy-0.8.1
  * update arris-tg2492lg-1.1.0
+ * update homeassistant-0.116.1
 
 2020-10-07 homeassistant-0.116.0
   * add HATasmota-0.0.8

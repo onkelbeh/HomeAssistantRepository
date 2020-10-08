@@ -1,7 +1,6 @@
-homeassistant==0.116.0
+homeassistant==0.116.1
 esphome==1.15.2
 home-assistant-cli==0.9.1
-
 abodepy==1.1.0
 accuweather==0.0.11
 acme==1.8.0
@@ -321,7 +320,7 @@ hlk-sw16==0.0.9
 hole==0.5.1
 holidays==0.10.3
 home-assistant-cli==9999
-home-assistant-frontend==20201001.1
+home-assistant-frontend==20201001.2
 homeconnect==0.5
 horimote==0.4.1
 hpack==3.0.0
@@ -571,7 +570,7 @@ pyarlo==0.2.3
 pyasn1-modules==0.2.8
 pyasn1==0.4.8
 pyatag==0.3.4.4
-pyatmo==4.0.0
+pyatmo==4.1.0
 pyAtome==0.1.1
 pyatv==0.3.13
 pybbox==0.0.5_alpha0
@@ -633,7 +632,7 @@ pygti==0.6.0
 pyhamcrest==2.0.2
 pyheos==0.6.0
 pyHik==0.2.7
-pyhiveapi==0.2.20.1
+pyhiveapi==0.2.20.2
 pyhomeworks==0.0.6
 pyHS100==0.3.5.1
 pyialarm==0.3
