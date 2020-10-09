@@ -6,6 +6,7 @@
  * update arris-tg2492lg-1.1.0
  * update homeassistant-0.116.1
  * update yeelight-0.5.4.ebuild
+ * add py-zabbix-1.1.7
 
 2020-10-07 homeassistant-0.116.0
   * add HATasmota-0.0.8
