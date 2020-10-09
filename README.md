@@ -85,7 +85,6 @@ Currrently missing (0.115.3):
 * azure-servicebus-0.50.1
 * google-cloud-texttospeech-0.4.0 (no potential need, there are good alternatives on the market)
 * google-cloud-pubsub-0.39.1
-* pylacrosse-0.4.0 (version numbering mismatch, too lazy to patch)
 * opencv-python-headless-4.3.0.36
 * tensorflow-2.3.0 & tf-models-official-2.3.0 (I only wait for the Ebuild on main repo)
 * pyuptimerobot-0.0.5 (unmaintained, could not find a valid source)

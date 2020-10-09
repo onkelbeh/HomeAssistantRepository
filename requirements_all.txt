@@ -1,4 +1,4 @@
-homeassistant==0.116.1
+homeassistant==0.116.2
 esphome==1.15.2
 home-assistant-cli==0.9.1
 abodepy==1.1.0
