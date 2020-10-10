@@ -1,3 +1,6 @@
+2020-10-10
+ * add pyruckus-0.7
+
 2020-10-08 homeassistant-0.116.1
  * update pyatmo-4.1.0
  * update tesla-powerwall-0.3.3
