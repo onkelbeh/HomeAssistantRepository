@@ -1,3 +1,6 @@
+2020-10-11
+ * bump RachioPy-1.0.3
+
 2020-10-10
  * add pyruckus-0.7
  * bump icmplib-1.2.2
