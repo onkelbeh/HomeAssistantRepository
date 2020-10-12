@@ -3,6 +3,7 @@
  * bump brother-0.1.18
  * bump HATasmota-0.0.11
  * add pi1wire-0.1.0
+ * bump greeneye-monitor-2.1
 
 2020-10-10
  * add pyruckus-0.7
