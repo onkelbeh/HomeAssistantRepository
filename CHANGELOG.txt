@@ -5,6 +5,7 @@
  * add pi1wire-0.1.0
  * bump greeneye-monitor-2.1
  * add advantage-air-0.2.1
+ * bump zigpy-znp-0.2.2
 
 2020-10-10
  * add pyruckus-0.7
