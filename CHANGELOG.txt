@@ -1,5 +1,6 @@
-2020-10-11
+2020-10-12
  * bump RachioPy-1.0.3
+ * bump brother-0.1.18
 
 2020-10-10
  * add pyruckus-0.7
