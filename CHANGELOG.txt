@@ -6,6 +6,7 @@
  * bump pygti-0.9.2
  * update pwmled-1.5.3 (untested)
  * update Adafruit-Blinka-5.5.3 (untested)
+ * add ms-cv-0.1.1
 
 2020-10-12
  * bump RachioPy-1.0.3
