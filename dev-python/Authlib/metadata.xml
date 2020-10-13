@@ -6,10 +6,10 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">pypoint</remote-id>
+    <remote-id type="pypi">Authlib</remote-id>
     <maintainer status="unknown">
-      <email>fredrik.e@gmail.com</email>
-      <name>Fredrik Erlandsson</name>
+      <email>me@lepture.com</email>
+      <name>Hsiaoming Yang</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
