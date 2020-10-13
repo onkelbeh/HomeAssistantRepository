@@ -8,6 +8,7 @@
  * update Adafruit-Blinka-5.5.3 (untested)
  * add ms-cv-0.1.1
  * add pydantic-1.6.1
+ * add xbox-webapi-2.0.7
 
 2020-10-12
  * bump RachioPy-1.0.3
