@@ -13,6 +13,7 @@
  * bump HATasmota-0.0.15
  * bump codecov-2.1.10
  * bump pyTibber-0.15.7
+ * bump devolo-home-control-api-0.15.1
 
 2020-10-12
  * bump RachioPy-1.0.3
