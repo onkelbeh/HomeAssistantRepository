@@ -14,6 +14,7 @@
  * bump codecov-2.1.10
  * bump pyTibber-0.15.7
  * bump devolo-home-control-api-0.15.1
+ * bump aiokef-0.2.16
 
 2020-10-12
  * bump RachioPy-1.0.3
