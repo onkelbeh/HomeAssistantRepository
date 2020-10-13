@@ -1,6 +1,7 @@
 2020-10-13
  * bump mypy-0.790
- 
+ * bump elkm1-lib-0.8.2
+
 2020-10-12
  * bump RachioPy-1.0.3
  * bump brother-0.1.18
