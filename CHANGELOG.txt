@@ -1,5 +1,6 @@
 2020-10-14
  * add greeclimate-0.9.0
+ * update omnilogic-0.4.2
 
 2020-10-13
  * bump mypy-0.790
