@@ -26,7 +26,7 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 
-KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
 IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github +homekit influxdb kodi maxcube maxcube_hack mikrotik +mobile_app +mqtt +mysql +notify_events +otp owntracks +ping +python_script qnap +recorder +rest samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl test tradfri +version +wake_on_lan workday yamaha yamaha_musiccast +zwave"
 
 # external deps
@@ -60,12 +60,12 @@ RDEPEND="${RDEPEND}
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.37.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20201001.1[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20201001.2[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
 	~dev-python/jinja-2.11.2[${PYTHON_USEDEP}]
 	~dev-python/netdisco-2.8.2[${PYTHON_USEDEP}]
-	~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
+	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/pillow-7.2.0[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
@@ -114,7 +114,7 @@ RDEPEND="${RDEPEND}
 	maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
 	mikrotik? ( ~dev-python/librouteros-3.0.0[${PYTHON_USEDEP}] )
 	mobile_app? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}] ~dev-python/emoji-0.5.4[${PYTHON_USEDEP}] )
-	mqtt? ( ~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}] )
+	mqtt? ( ~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysql-connector-python[${PYTHON_USEDEP}] dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	notify_events? ( ~dev-python/notify-events-1.0.4[${PYTHON_USEDEP}] )
 	otp? ( ~dev-python/pyotp-2.3.0[${PYTHON_USEDEP}] )

@@ -190,7 +190,7 @@
     <flag name="pilight">Pilight is a open source solution to communicate with 433 MHz devices</flag>
     <flag name="ping">ICMPLib</flag>
     <flag name="plex">Python bindings for the Plex API</flag>
-    <flag name="plugwise">Plugwise_Smile (Anna/Adam/P1) API</flag>
+    <flag name="plugwise">Plugwise_Smile (Anna/Adam/P1/Stretch) API to use in conjunction with Home Assist</flag>
     <flag name="poolsense">PoolSense is a smart pool monitor</flag>
     <flag name="powerwall">API for Tesla Powerwall</flag>
     <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
