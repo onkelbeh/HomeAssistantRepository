@@ -4,6 +4,7 @@
  * update pyruckus-0.12
  * bump Plugwise-Smile-1.6.0
  * update homeassistant-0.116.3
+ * update HATasmota-0.0.16
 
 2020-10-14
  * add greeclimate-0.9.0
