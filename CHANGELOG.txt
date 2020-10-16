@@ -2,6 +2,7 @@
  * bump elkm1-lib-0.8.3
  * update homeassistant-0.116.4
  * update onvif-zeep-async-0.6.0
+ * bump pyairvisual-5.0.3
 
 2020-10-15 homeassistant-0.116.3
  * bump xbox-webapi-2.0.8
