@@ -3,6 +3,9 @@
   * update httpcore-0.12.0
   * update httpx-0.16.1
   * add respx-0.14.0
+  * update greeclimate-0.9.1, fixes
+    - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/187
+    - https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/188
 
 2020-10-16 homeassistant-0.116.4
  * bump elkm1-lib-0.8.3
