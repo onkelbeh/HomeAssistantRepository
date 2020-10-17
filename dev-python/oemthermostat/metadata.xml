@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">oemthermostat</remote-id>
     <maintainer status="unknown">
-      <email>stuart@cadair.com</email>
-      <name>Stuart Mumford</name>
+      <email>"stuart@cadair.com"</email>
+      <name>"Stuart Mumford"</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
