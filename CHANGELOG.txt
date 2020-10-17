@@ -1,6 +1,7 @@
 2020-10-17
   * bump hass-nabucasa-0.37.1
   * update httpcore-0.12.0
+  * update httpx-0.16.1
 
 2020-10-16 homeassistant-0.116.4
  * bump elkm1-lib-0.8.3
