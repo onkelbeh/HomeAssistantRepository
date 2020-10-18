@@ -1,5 +1,6 @@
 2020-10-18
   * bump homeconnect-0.6.3
+  * bump HATasmota-0.0.18
 
 2020-10-17
   * bump hass-nabucasa-0.37.1

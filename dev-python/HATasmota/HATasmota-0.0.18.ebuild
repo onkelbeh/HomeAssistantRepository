@@ -24,7 +24,7 @@ IUSE="test"
 DOCS="README.md"
 
 RDEPEND="~dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
-	~dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]"
+	~dev-python/voluptuous-0.12.0[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
