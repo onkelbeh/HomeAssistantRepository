@@ -1,6 +1,7 @@
 2020-10-20
   * bump elkm1-lib-0.8.4
   * bump requests-file-1.5.1 from main repo
+  * update zeep-4.0.0
 
 2020-10-18
   * bump homeconnect-0.6.3
