@@ -1,3 +1,6 @@
+2020-10-20
+  * bump elkm1-lib-0.8.4
+
 2020-10-18
   * bump homeconnect-0.6.3
   * bump HATasmota-0.0.18
