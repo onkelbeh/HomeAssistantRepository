@@ -3,6 +3,7 @@
   * bump requests-file-1.5.1 from main repo
   * update zeep-4.0.0
   * update onvif-zeep-async-1.0.0
+  * bump androidtv-0.0.51
 
 2020-10-18
   * bump homeconnect-0.6.3
