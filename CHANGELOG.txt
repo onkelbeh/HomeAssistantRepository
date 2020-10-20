@@ -4,7 +4,8 @@
   * update zeep-4.0.0
   * update onvif-zeep-async-1.0.0
   * bump androidtv-0.0.51
-  * update axis-40
+  * update axis-39, bump axis-40
+  * update pymyq-2.0.8
 
 2020-10-18
   * bump homeconnect-0.6.3
