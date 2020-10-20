@@ -7,6 +7,7 @@
   * update axis-39, bump axis-40
   * update pymyq-2.0.8
   * bump HATasmota-0.0.19, HATasmota-0.0.20
+  * bump lightwave-0.19
 
 2020-10-18
   * bump homeconnect-0.6.3
