@@ -13,7 +13,8 @@
   * bump roonapi-0.0.23
   * bump pypck-0.7.4
   * bump pylutron-caseta-0.7.0
-  * add pushbullet-py-0.12.0
+  * add pushbullet-py-0.11.0, pushbullet-py-0.12.0
+  * fix pyatag-0.3.3.4 & pyatag-0.3.4.4 missing file
 
 2020-10-20
   * bump elkm1-lib-0.8.4
