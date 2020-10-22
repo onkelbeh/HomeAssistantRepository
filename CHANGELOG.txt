@@ -3,6 +3,7 @@
   * update sentry-sdk-0.19.1
   * bump aioshelly-0.4.0
   * bump pycfdns-1.1.1
+  * update python-synology-1.0.0
 
 2020-10-20
   * bump elkm1-lib-0.8.4
