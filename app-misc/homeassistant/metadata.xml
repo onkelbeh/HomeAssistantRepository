@@ -69,7 +69,6 @@
     <flag name="bme280">Bosch BME280 Environmental sensor connected via I2c bus (SDA, SCL pins)</flag>
     <flag name="bme680">read temperature, humidity, pressure and gas resistance values of a Bosch BME680</flag>
     <flag name="bmw_connected_drive">retrieve data from the BMW Connected Drive</flag>
-    <flag name="bom">weather platform uses the Australian Bureau of Meteorology (BOM) as a source for</flag>
     <flag name="bond">The Bond integration allows you to control appliances through your Bond Bridge. </flag>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
     <flag name="broadlink">allows you to interact with Broadlink remote control devices</flag>
