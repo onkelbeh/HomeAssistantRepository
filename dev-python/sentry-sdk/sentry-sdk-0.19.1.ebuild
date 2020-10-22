@@ -3,13 +3,14 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python client for Sentry (https://getsentry.com)"
+DESCRIPTION="Python client for Sentry (https://sentry.io)"
 HOMEPAGE="https://github.com/getsentry/sentry-python https://pypi.org/project/sentry-sdk/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+S="${WORKDIR}/sentry-python-${PV}"
 
 LICENSE="BSD"
 SLOT="0"
@@ -18,7 +19,7 @@ IUSE="test"
 
 RDEPEND="dev-python/certifi[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.10.0[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
