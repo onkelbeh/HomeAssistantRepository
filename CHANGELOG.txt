@@ -8,6 +8,7 @@
   * bump home-assistant-frontend-20201021.0, remove unused
   * bump simplisafe-python-9.5.1
   * bump home-assistant-frontend-20201021.1
+  * bump pyforked-daapd-0.1.11
 
 2020-10-20
   * bump elkm1-lib-0.8.4
