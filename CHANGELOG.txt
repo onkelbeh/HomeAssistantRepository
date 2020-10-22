@@ -1,3 +1,6 @@
+2020-10-22
+  * bump androidtv-0.0.52
+
 2020-10-20
   * bump elkm1-lib-0.8.4
   * bump requests-file-1.5.1 from main repo
@@ -8,6 +11,7 @@
   * update pymyq-2.0.8
   * bump HATasmota-0.0.19, HATasmota-0.0.20
   * bump lightwave-0.19
+  * update pysqueezebox-0.5.1, remove unused and olds
 
 2020-10-18
   * bump homeconnect-0.6.3
