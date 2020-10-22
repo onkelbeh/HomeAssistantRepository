@@ -2,6 +2,7 @@
   * bump androidtv-0.0.52
   * update sentry-sdk-0.19.1
   * bump aioshelly-0.4.0
+  * bump pycfdns-1.1.1
 
 2020-10-20
   * bump elkm1-lib-0.8.4
