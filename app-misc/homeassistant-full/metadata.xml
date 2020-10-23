@@ -65,7 +65,6 @@
     <flag name="aws">interact with Amazon Web Services</flag>
     <flag name="axis">communicating with devices from Axis Communications</flag>
     <flag name="azure_devops"/>
-    <flag name="azure_event_hub"/>
     <flag name="azure_service_bus"/>
     <flag name="baidu">text-to-speech platform uses Baidu TTS engine to read a text with natural soundi</flag>
     <flag name="bbb_gpio">base for all BeagleBone Black related GPIO platforms</flag>
@@ -648,7 +647,6 @@
     <flag name="tellduslive">cloud platform that connects to your Tellstick</flag>
     <flag name="tellstick">integrates TellStick devices into Home Assistant</flag>
     <flag name="temper"/>
-    <flag name="tensorflow"/>
     <flag name="tesla">integration with the Tesla cloud service</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tfiac"/>
