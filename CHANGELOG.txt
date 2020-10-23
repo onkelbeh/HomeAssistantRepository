@@ -1,6 +1,7 @@
-2020-10-23
+2020-10-23 homeassistant-0.117.0_beta2
   * bump home-assistant-frontend-20201021.2
   * update zigpy-deconz-0.10.0, zigpy-deconz-0.11.0, needed a patch
+  * update homeassistant-0.117.0_beta1
 
 2020-10-22 homeassistant-0.117.0_beta1
   * bump androidtv-0.0.52
