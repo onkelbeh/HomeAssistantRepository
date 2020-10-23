@@ -3,6 +3,7 @@
   * update zigpy-deconz-0.10.0, zigpy-deconz-0.11.0, needed a patch
   * update homeassistant-0.117.0_beta1
   * bump bsblan-0.4.0
+  * bump HATasmota-0.0.21
 
 2020-10-22 homeassistant-0.117.0_beta1
   * bump androidtv-0.0.52
