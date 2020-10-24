@@ -1,11 +1,12 @@
 2020-10-23 homeassistant-0.117.0_beta3
   * bump home-assistant-frontend-20201021.2
   * update zigpy-deconz-0.10.0, zigpy-deconz-0.11.0, needed a patch
-  * update homeassistant-0.117.0_beta1
+  * update homeassistant-0.117.0_beta2
   * bump bsblan-0.4.0
   * bump HATasmota-0.0.21
   * dg pycountry-19.8.18 from main repo
   * update homeassistant-0.117.0_beta3
+  * update esphome-1.15.3
 
 2020-10-22 homeassistant-0.117.0_beta1
   * bump androidtv-0.0.52
