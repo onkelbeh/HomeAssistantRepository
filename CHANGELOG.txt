@@ -14,6 +14,7 @@
   * add proto-plus-1.11.0
   * dg pycountry-19.8.18 from main repo
   * bump elkm1-lib-0.8.5
+  * add pynumparser-1.4.1
 
 2020-10-23 homeassistant-0.117.0_beta3
   * bump home-assistant-frontend-20201021.2
