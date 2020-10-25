@@ -3,6 +3,16 @@
   * bump PyXiaomiGateway-0.13.4
   * bump HATasmota-0.0.22
   * bump spotipy-2.16.1
+  * add google-nest-sdm-0.1.6
+  * update google-nest-sdm-0.1.9
+  * add google-api-core-1.23.0
+  * add google-auth-1.22.0
+  * update google-auth-1.22.1
+  * add grpc-google-iam-v1-0.12.3
+  * add google-cloud-pubsub-2.1.0
+  * add libcst-0.3.13
+  * add proto-plus-1.11.0
+  * dg pycountry-19.8.18 from main repo
 
 2020-10-23 homeassistant-0.117.0_beta3
   * bump home-assistant-frontend-20201021.2
@@ -10,7 +20,6 @@
   * update homeassistant-0.117.0_beta2
   * bump bsblan-0.4.0
   * bump HATasmota-0.0.21
-  * dg pycountry-19.8.18 from main repo
   * update homeassistant-0.117.0_beta3
   * update esphome-1.15.3
 
