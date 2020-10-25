@@ -2,6 +2,7 @@
   * bump garminconnect-0.1.16
   * bump PyXiaomiGateway-0.13.4
   * bump HATasmota-0.0.22
+  * bump spotipy-2.16.1
 
 2020-10-23 homeassistant-0.117.0_beta3
   * bump home-assistant-frontend-20201021.2
