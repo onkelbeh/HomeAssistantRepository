@@ -234,7 +234,7 @@ RDEPEND="${RDEPEND}
 	intesishome? ( ~dev-python/pyintesishome-1.7.5[${PYTHON_USEDEP}] )
 	ipma? ( ~dev-python/pyipma-2.0.5[${PYTHON_USEDEP}] )
 	islamic_prayer_times? ( ~dev-python/prayer_times_calculator-0.0.3[${PYTHON_USEDEP}] )
-	jewish_calendar? ( ~dev-python/hdate-0.9.5[${PYTHON_USEDEP}] )
+	jewish_calendar? ( ~dev-python/hdate-0.9.12[${PYTHON_USEDEP}] )
 	joaoapps_join? ( ~dev-python/python-join-api-0.0.6[${PYTHON_USEDEP}] )
 	kef? ( ~dev-python/aiokef-0.2.16[${PYTHON_USEDEP}] ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
 	knx? ( ~dev-python/xknx-0.15.0[${PYTHON_USEDEP}] )

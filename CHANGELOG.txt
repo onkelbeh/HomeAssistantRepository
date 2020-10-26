@@ -1,4 +1,4 @@
-2020-10-26 homeassistant-0.117.0_beta4
+2020-10-26 homeassistant-0.117.0_beta5
   * bump pyEight-0.1.5
   * bump pyHik-0.2.8
   * bump python-velbus-2.0.47
@@ -6,6 +6,7 @@
   * bump HATasmota-0.0.23
   * bump debugpy-1.0.0
   * update hdate-0.9.12
+  * update homeassistant-0.117.0_beta5
 
 2020-10-25
   * bump garminconnect-0.1.16
