@@ -3,6 +3,7 @@
   * bump pyHik-0.2.8
   * bump python-velbus-2.0.47
   * update homeassistant-0.117.0_beta4
+  * bump HATasmota-0.0.23
 
 2020-10-25
   * bump garminconnect-0.1.16
