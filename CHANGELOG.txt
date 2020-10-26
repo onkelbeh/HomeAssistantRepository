@@ -1,6 +1,7 @@
 2020-10-26
   * bump pyEight-0.1.5
   * bump pyHik-0.2.8
+  * bump python-velbus-2.0.47
 
 2020-10-25
   * bump garminconnect-0.1.16
