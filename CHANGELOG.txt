@@ -1,3 +1,6 @@
+2020-10-26
+  * bump pyEight-0.1.5
+
 2020-10-25
   * bump garminconnect-0.1.16
   * bump PyXiaomiGateway-0.13.4
