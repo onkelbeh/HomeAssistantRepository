@@ -4,6 +4,7 @@
   * bump python-velbus-2.0.47
   * update homeassistant-0.117.0_beta4
   * bump HATasmota-0.0.23
+  * bump debugpy-1.0.0
 
 2020-10-25
   * bump garminconnect-0.1.16
