@@ -2,6 +2,7 @@
   * bump simplisafe-python-9.6.0
   * bump pysqueezebox-0.5.4
   * bump fritzconnection-1.3.4
+  * add colorthief-0.2.1
 
 2020-10-26 homeassistant-0.117.0_beta5
   * bump pyEight-0.1.5
