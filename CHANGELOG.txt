@@ -3,6 +3,7 @@
   * bump home-assistant-frontend-20201021.3
   * bump HATasmota-0.0.24
   * bump python-velbus-2.1.1
+  * bump debugpy-1.1.0
 
 2020-10-27
   * bump simplisafe-python-9.6.0
