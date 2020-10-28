@@ -1,4 +1,4 @@
-2020-10-28 homeassistant-min-0.117.0_beta6
+2020-10-28 homeassistant-min-0.117.0
   * add a copy of cryptography-3.2 from main repo
   * bump home-assistant-frontend-20201021.3
   * bump HATasmota-0.0.24
@@ -6,6 +6,7 @@
   * bump debugpy-1.1.0
   * bump avea-1.5
   * update homeassistant-min-0.117.0_beta6
+  * update homeassistant-min-0.117.0
 
 2020-10-27
   * bump simplisafe-python-9.6.0

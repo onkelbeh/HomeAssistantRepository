@@ -334,7 +334,7 @@ holidays==0.10.3
 home-assistant-cli==0.9.1
 home-assistant-cli==9999
 home-assistant-frontend==20201021.3
-homeassistant-full==0.117.0_beta6
+homeassistant==0.117.0
 homeconnect==0.6.3
 horimote==0.4.1
 hpack==4.0.0
