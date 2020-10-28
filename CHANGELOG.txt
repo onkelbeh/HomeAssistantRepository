@@ -1,5 +1,6 @@
 2020-10-28
   * add a copy of cryptography-3.2 from main repo
+  * bump home-assistant-frontend-20201021.3
 
 2020-10-27
   * bump simplisafe-python-9.6.0
