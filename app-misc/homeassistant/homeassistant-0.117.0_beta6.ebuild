@@ -54,13 +54,13 @@ RDEPEND="${RDEPEND}
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2020.6.20[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
-	~dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
+	~dev-python/cryptography-3.2[${PYTHON_USEDEP}]
 	~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]
 	~dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.37.1[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20201021.2[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20201021.3[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.16.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
@@ -234,7 +234,7 @@ RDEPEND="${RDEPEND}
 	intesishome? ( ~dev-python/pyintesishome-1.7.5[${PYTHON_USEDEP}] )
 	ipma? ( ~dev-python/pyipma-2.0.5[${PYTHON_USEDEP}] )
 	islamic_prayer_times? ( ~dev-python/prayer_times_calculator-0.0.3[${PYTHON_USEDEP}] )
-	jewish_calendar? ( ~dev-python/hdate-0.9.5[${PYTHON_USEDEP}] )
+	jewish_calendar? ( ~dev-python/hdate-0.9.12[${PYTHON_USEDEP}] )
 	joaoapps_join? ( ~dev-python/python-join-api-0.0.6[${PYTHON_USEDEP}] )
 	kef? ( ~dev-python/aiokef-0.2.16[${PYTHON_USEDEP}] ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
 	knx? ( ~dev-python/xknx-0.15.0[${PYTHON_USEDEP}] )
@@ -293,7 +293,7 @@ RDEPEND="${RDEPEND}
 	shelly? ( ~dev-python/aioshelly-0.4.0[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.23.0[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.4[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-9.5.1[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-9.6.0[${PYTHON_USEDEP}] )
 	skybell? ( ~dev-python/skybellpy-0.6.1[${PYTHON_USEDEP}] )
 	sma? ( ~dev-python/pysma-0.3.5[${PYTHON_USEDEP}] )
 	smappee? ( ~dev-python/pysmappee-0.2.13[${PYTHON_USEDEP}] )
@@ -307,7 +307,7 @@ RDEPEND="${RDEPEND}
 	sonos? ( ~dev-python/pysonos-0.0.35[${PYTHON_USEDEP}] )
 	speedtestdotnet? ( ~net-analyzer/speedtest-cli-2.1.2[${PYTHON_USEDEP}] )
 	sql? ( ~dev-python/sqlalchemy-1.3.20[${PYTHON_USEDEP}] )
-	squeezebox? ( ~dev-python/pysqueezebox-0.5.1[${PYTHON_USEDEP}] )
+	squeezebox? ( ~dev-python/pysqueezebox-0.5.4[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
 	statsd? ( ~dev-python/statsd-3.2.1[${PYTHON_USEDEP}] )
 	synology_dsm? ( ~dev-python/python-synology-1.0.0[${PYTHON_USEDEP}] )
