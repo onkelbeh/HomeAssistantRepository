@@ -9,12 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Python module to help parse and construct Tasmota MQTT messages."
 HOMEPAGE="https://github.com/emontnemery/hatasmota https://pypi.org/project/HATasmota/"
-
-# 0.0.8 is not on Pypi
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
-#MY_PN="hatasmota"
-#SRC_URI="https://github.com/emontnemery/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-#S=${WORKDIR}/${MY_PN}-${PV}
 
 LICENSE="MIT"
 SLOT="0"
