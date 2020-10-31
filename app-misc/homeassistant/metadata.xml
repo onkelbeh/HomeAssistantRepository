@@ -69,6 +69,7 @@
     <flag name="bme280">Bosch BME280 Environmental sensor connected via I2c bus (SDA, SCL pins)</flag>
     <flag name="bme680">read temperature, humidity, pressure and gas resistance values of a Bosch BME680</flag>
     <flag name="bmw_connected_drive">retrieve data from the BMW Connected Drive</flag>
+    <flag name="bom">weather platform uses the Australian Bureau of Meteorology (BOM) as a source for</flag>
     <flag name="bond">Asynchronous Python wrapper library over Bond Local API</flag>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
     <flag name="broadlink">allows you to interact with Broadlink remote control devices</flag>
@@ -136,6 +137,7 @@
     <flag name="heos">controlling HEOS devices through the HEOS CLI Protocol</flag>
     <flag name="here_travel_time">here_travel_time sensor provides travel time from the HERE Routing API</flag>
     <flag name="homekit">works as both HomeKit controller and accessory</flag>
+    <flag name="homekit_controller">allows you to connect accessories with the “Works with HomeKit” logo</flag>
     <flag name="homematic">An API for the homematicip cloud</flag>
     <flag name="homematicip_cloud">A python wrapper for the homematicIP REST API (Access Point Based)</flag>
     <flag name="hp_ilo">HP Integrated Lights out XML interface</flag>
@@ -229,6 +231,7 @@
     <flag name="statsd">transfer all state changes to an external StatsD instance</flag>
     <flag name="synology_dsm">monitor getting various statistics from your Synology NAS</flag>
     <flag name="systemmonitor">monitor your platform</flag>
+    <flag name="tasmota">Python module to help parse and construct Tasmota MQTT messages</flag>
     <flag name="tellduslive">cloud platform that connects to your Tellstick</flag>
     <flag name="tesla">integration with the Tesla cloud service</flag>
     <flag name="test">internal and developer use</flag>
