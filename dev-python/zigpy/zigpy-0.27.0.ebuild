@@ -17,16 +17,24 @@ KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="!dev-python/zigpy-homeassistant
-	dev-python/voluptuous[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/aiosqlite[${PYTHON_USEDEP}]
+	dev-python/crccheck[${PYTHON_USEDEP}]
 	dev-python/pycryptodome[${PYTHON_USEDEP}]
-	dev-python/crccheck[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+	dev-python/voluptuous[${PYTHON_USEDEP}]"
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 	)"
+
+src_prepare() {
+	sed "s/packages=find_packages(exclude=\[\"\*.tests\"\])/packages=find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
+	eapply_user
+}
 
 python_test() {
 	nosetests --verbose || die
