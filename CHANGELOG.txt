@@ -5,6 +5,7 @@
   * add adafruit-circuitpython-pca9685-3.3.2
   * update pwmled-1.6.6
   * add aiounittest-1.4.0
+  * add aiosqlite-0.15.0
 
 2020-10-31 homeassistant-min-0.117.1
   * add pyisy-2.1.0
