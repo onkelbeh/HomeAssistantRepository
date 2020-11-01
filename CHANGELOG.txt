@@ -2,6 +2,7 @@
   * bump roonapi-0.0.25
   * bump envoy-reader-0.16.2
   * add adafruit-circuitpython-register-1.9.1
+  * add adafruit-circuitpython-pca9685-3.3.2
 
 2020-10-31 homeassistant-min-0.117.1
   * add pyisy-2.1.0
