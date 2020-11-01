@@ -1,5 +1,6 @@
 2020-11-01
   * bump roonapi-0.0.25
+  * bump envoy-reader-0.16.2
 
 2020-10-31 homeassistant-min-0.117.1
   * add pyisy-2.1.0
