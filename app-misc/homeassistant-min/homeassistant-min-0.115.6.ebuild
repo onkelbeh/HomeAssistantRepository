@@ -26,7 +26,7 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 
-KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
+KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
 IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github +homekit influxdb kodi maxcube maxcube_hack mikrotik +mobile_app +mqtt +mysql +notify_events +otp owntracks +ping +python_script qnap +recorder +rest samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl test tradfri +version +wake_on_lan workday yamaha yamaha_musiccast +zwave"
 
 # external deps

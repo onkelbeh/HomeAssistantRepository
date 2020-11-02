@@ -15,7 +15,7 @@ SRC_URI="https://pyyaml.org/download/${PN}/${MY_P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 x86 amd64-linux x86-linux"
+KEYWORDS="amd64 ~arm x86 amd64-linux x86-linux"
 IUSE="examples libyaml"
 
 RDEPEND="libyaml? ( dev-libs/libyaml )"

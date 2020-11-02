@@ -17,7 +17,7 @@ S=${WORKDIR}/"python-yeelight-ad3e4e7552531b270224a33f1d9dc9f5887e3280"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 DOCS="README.rst"

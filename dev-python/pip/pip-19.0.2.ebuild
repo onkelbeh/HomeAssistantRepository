@@ -13,7 +13,7 @@ HOMEPAGE="https://pip.pypa.io/ https://pypi.org/project/pip/ https://github.com/
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
-KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 SLOT="0"
 IUSE="-vanilla"
 

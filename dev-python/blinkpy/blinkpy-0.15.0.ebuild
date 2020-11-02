@@ -13,7 +13,7 @@ SRC_URI="https://github.com/fronzbot/blinkpy/archive/v${PV}.tar.gz -> ${P}.tar.g
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
+KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
 RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]

@@ -13,7 +13,7 @@ SRC_URI="https://github.com/rbarrois/python-semanticversion/archive/${PV}.tar.gz
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE="doc test"
 
 DEPEND="

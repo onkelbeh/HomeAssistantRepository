@@ -14,7 +14,7 @@ SRC_URI="mirror://pypi/S/${PN^}/${P^}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 x86 amd64-linux x86-linux"
+KEYWORDS="amd64 ~arm x86 amd64-linux x86-linux"
 IUSE="doc latex net test"
 
 # Tests automagically use latex, bug 667414
