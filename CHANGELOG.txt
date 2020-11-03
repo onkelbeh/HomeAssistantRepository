@@ -2,6 +2,7 @@
   * update aioshelly-0.5.0
   * bump pyairvisual-5.0.4
   * bump pre-commit-2.8.2
+  * bump pyatmo-4.2.0
 
 2020-11-01 homeassistant-0.117.2
   * bump roonapi-0.0.25

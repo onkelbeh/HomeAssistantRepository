@@ -1,13 +1,13 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
-DESCRIPTION="API to access Netatmo weather station data for Home-Assistant."
+DESCRIPTION="Simple API to access Netatmo weather station data from any Python 3 script. Designed for Home-Assitant (but not only)"
 HOMEPAGE="https://github.com/jabesq/netatmo-api-python https://pypi.org/project/pyatmo/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
@@ -19,7 +19,7 @@ IUSE="test"
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/requests-oauthlib[${PYTHON_USEDEP}]
 	dev-python/oauthlib[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
