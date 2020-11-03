@@ -4,6 +4,7 @@
   * bump pre-commit-2.8.2
   * bump pyatmo-4.2.0
   * bump aiounifi-25
+  * update uEagle-0.0.2
 
 2020-11-01 homeassistant-0.117.2
   * bump roonapi-0.0.25
