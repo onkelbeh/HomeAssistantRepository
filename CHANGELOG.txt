@@ -5,6 +5,7 @@
   * bump pyatmo-4.2.0
   * bump aiounifi-25
   * update uEagle-0.0.2
+  * update sentry-sdk-0.19.2
 
 2020-11-01 homeassistant-0.117.2
   * bump roonapi-0.0.25
