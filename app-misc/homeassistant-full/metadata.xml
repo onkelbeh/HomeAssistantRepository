@@ -367,7 +367,6 @@
     <flag name="mastodon"/>
     <flag name="matrix">allows you to send messages to matrix rooms</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
-    <flag name="maxcube_hack">apply Patch for https://github.com/home-assistant/home-assistant/issues/28811</flag>
     <flag name="mcp23017">base for all related mcp23017 platforms in Home Assistant</flag>
     <flag name="mediaroom"/>
     <flag name="media_extractor">support for youtube_dl</flag>

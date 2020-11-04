@@ -26,8 +26,8 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 
-KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="abode accuweather acer_projector acmeda adguard ads aftership agent_dvr airly airvisual aladdin_connect alarmdecoder almond alpha_vantage ambiclimate ambient_station amcrest ampio androidtv android_ip_webcam anel_pwrctrl anthemav apache_kafka apcupsd apple_tv apprise aquostv arcam_fmj aruba asuswrt aten_pe atome august aurora_abb_powerone avea avion -avri awair axis baidu -beewi_smartclim bh1750 bitcoin bizkaibus blackbird blebox blink blinksticklight blinkt blockchain bluetooth_le_tracker bluetooth_tracker bme280 bme680 bmw_connected_drive bond braviatv broadlink brother brottsplatskartan brunt bsblan bt_home_hub_5 bt_smarthub buienradar +caldav canary cast cisco_mobility_express cli co2signal coronavirus daikin darksky deconz delijn denonavr deutsche_bahn devolo_home_control dexcom dht discogs discord doorbird dunehd +dwd_weather_warnings dynalite dyson ecobee elv emulated_roku enigma2 enocean enphase_envoy environment_canada esphome everlights evohome fibaro flume flunearyou flux_led foobot fortios freebox fritz fritzbox fritzbox_callmonitor fritzbox_netmonitor fronius garmin_connect gios github gogogate2 greeneye_monitor growatt_server guardian harman_kardon_avr harmony heos here_travel_time +homekit -homematic -homematicip_cloud hp_ilo http hue hydrawise iaqualink ihc incomfort influxdb insteon intesishome ipma islamic_prayer_times jewish_calendar joaoapps_join kef knx kodi linode loopenergy luci luftdaten maxcube maxcube_hack media_extractor meteo_france mfi miflora mikrotik -mitemp_bt +mobile_app +mqtt myq +mysql nad nederlandse_spoorwegen netatmo netdata +notify_events nuki nws nx584 opengarage opensensemap +otp owntracks ozw panasonic_viera philips_js pilight +ping plex plugwise poolsense powerwall ps4 +python_script qnap rachio rainbird rainmachine +recorder rejseplanen +rest ring roku roomba roon samsungtv +scrape shelly shodan signal_messenger simplisafe skybell sma smappee smarthab smartthings +snmp socat socialblade solax somfy sonos speedtestdotnet +sql squeezebox +ssl statsd synology_dsm systemmonitor tellduslive tesla test tile toon totalconnect tplink tradfri tuya ubee unifi unifi_direct upnp vallox velbus velux vera +version vicare vizio +wake_on_lan waqi waze_travel_time webostv wemo whois wink withings wled workday xbox_live xiaomi_aqara xiaomi_miio xiaomi_tv xs1 yamaha yamaha_musiccast yeelight yi zerproc zha zhong_hong zoneminder +zwave"
+KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
+IUSE="abode accuweather acer_projector acmeda adguard ads aftership agent_dvr airly airvisual aladdin_connect alarmdecoder almond alpha_vantage ambiclimate ambient_station amcrest ampio androidtv android_ip_webcam anel_pwrctrl anthemav apache_kafka apcupsd apple_tv apprise aquostv arcam_fmj aruba asuswrt aten_pe atome august aurora_abb_powerone avea avion -avri awair axis baidu -beewi_smartclim bh1750 bitcoin bizkaibus blackbird blebox blink blinksticklight blinkt blockchain bluetooth_le_tracker bluetooth_tracker bme280 bme680 bmw_connected_drive bom bond braviatv broadlink brother brottsplatskartan brunt bsblan bt_home_hub_5 bt_smarthub buienradar +caldav canary cast cisco_mobility_express cli co2signal coronavirus daikin darksky deconz delijn denonavr deutsche_bahn devolo_home_control dexcom dht discogs discord doorbird dunehd +dwd_weather_warnings dynalite dyson ecobee elv emulated_roku enigma2 enocean enphase_envoy environment_canada esphome everlights evohome fibaro flume flunearyou flux_led foobot fortios freebox fritz fritzbox fritzbox_callmonitor fritzbox_netmonitor fronius garmin_connect gios github gogogate2 greeneye_monitor growatt_server guardian harman_kardon_avr harmony heos here_travel_time +homekit homekit_controller -homematic -homematicip_cloud hp_ilo http hue hydrawise iaqualink ihc incomfort influxdb insteon intesishome ipma islamic_prayer_times jewish_calendar joaoapps_join kef knx kodi linode loopenergy luci luftdaten maxcube media_extractor meteo_france mfi miflora mikrotik -mitemp_bt +mobile_app +mqtt myq +mysql nad nederlandse_spoorwegen netatmo netdata +notify_events nuki nws nx584 opengarage opensensemap +otp owntracks ozw panasonic_viera philips_js pilight +ping plex plugwise poolsense powerwall ps4 +python_script qnap rachio rainbird rainmachine +recorder rejseplanen +rest ring roku roomba roon samsungtv +scrape shelly shodan signal_messenger simplisafe skybell sma smappee smarthab smartthings +snmp socat socialblade solax somfy sonos speedtestdotnet +sql squeezebox +ssl statsd synology_dsm systemmonitor tasmota tellduslive tesla test tile toon totalconnect tplink tradfri tuya ubee unifi unifi_direct upnp vallox velbus velux vera +version vicare vizio +wake_on_lan waqi waze_travel_time webostv wemo whois wink withings wled workday xbox_live xiaomi_aqara xiaomi_miio xiaomi_tv xs1 yamaha yamaha_musiccast yeelight yi zerproc zha zhong_hong zoneminder +zwave"
 
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
@@ -60,7 +60,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.37.1[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20201021.3[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20201021.4[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.16.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
@@ -107,7 +107,7 @@ RDEPEND="${RDEPEND}
 	aftership? ( ~dev-python/pyaftership-0.1.2[${PYTHON_USEDEP}] )
 	agent_dvr? ( ~dev-python/agent-py-0.0.23[${PYTHON_USEDEP}] )
 	airly? ( ~dev-python/airly-1.0.0[${PYTHON_USEDEP}] )
-	airvisual? ( ~dev-python/pyairvisual-5.0.3[${PYTHON_USEDEP}] )
+	airvisual? ( ~dev-python/pyairvisual-5.0.4[${PYTHON_USEDEP}] )
 	aladdin_connect? ( ~dev-python/aladdin-connect-0.3[${PYTHON_USEDEP}] )
 	alarmdecoder? ( ~dev-python/adext-0.3[${PYTHON_USEDEP}] )
 	almond? ( ~dev-python/pyalmond-0.0.2[${PYTHON_USEDEP}] )
@@ -152,7 +152,8 @@ RDEPEND="${RDEPEND}
 	bluetooth_tracker? ( ~dev-python/bt-proximity-0.2[${PYTHON_USEDEP}] ~dev-python/pybluez-0.22[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	bme680? ( ~dev-python/bme680-1.0.5[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
-	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.7.8[${PYTHON_USEDEP}] )
+	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.7.11[${PYTHON_USEDEP}] )
+	bom? ( ~dev-python/bomradarloop-0.1.5[${PYTHON_USEDEP}] )
 	bond? ( ~dev-python/bond-api-0.1.8[${PYTHON_USEDEP}] )
 	braviatv? ( ~dev-python/bravia-tv-1.0.6[${PYTHON_USEDEP}] )
 	broadlink? ( ~dev-python/broadlink-0.15.0[${PYTHON_USEDEP}] )
@@ -220,6 +221,7 @@ RDEPEND="${RDEPEND}
 	heos? ( ~dev-python/pyheos-0.6.0[${PYTHON_USEDEP}] )
 	here_travel_time? ( ~dev-python/herepy-2.0.0[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-3.0.0[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] ~dev-python/PyTurboJPEG-1.4.0[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-0.2.54[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.70[${PYTHON_USEDEP}] )
 	homematicip_cloud? ( ~dev-python/homematicip-0.11.0[${PYTHON_USEDEP}] )
 	hp_ilo? ( ~dev-python/python-hpilo-4.3[${PYTHON_USEDEP}] )
@@ -256,7 +258,7 @@ RDEPEND="${RDEPEND}
 	mysql? ( dev-python/mysql-connector-python[${PYTHON_USEDEP}] dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	nad? ( ~dev-python/nad-receiver-0.0.12[${PYTHON_USEDEP}] )
 	nederlandse_spoorwegen? ( ~dev-python/nsapi-3.0.4[${PYTHON_USEDEP}] )
-	netatmo? ( ~dev-python/pyatmo-4.1.0[${PYTHON_USEDEP}] )
+	netatmo? ( ~dev-python/pyatmo-4.2.0[${PYTHON_USEDEP}] )
 	netdata? ( ~dev-python/netdata-0.2.0[${PYTHON_USEDEP}] )
 	notify_events? ( ~dev-python/notify-events-1.0.4[${PYTHON_USEDEP}] )
 	nuki? ( ~dev-python/pynuki-1.3.8[${PYTHON_USEDEP}] )
@@ -312,6 +314,7 @@ RDEPEND="${RDEPEND}
 	statsd? ( ~dev-python/statsd-3.2.1[${PYTHON_USEDEP}] )
 	synology_dsm? ( ~dev-python/python-synology-1.0.0[${PYTHON_USEDEP}] )
 	systemmonitor? ( ~dev-python/psutil-5.7.2[${PYTHON_USEDEP}] )
+	tasmota? ( ~dev-python/HATasmota-0.0.25[${PYTHON_USEDEP}] )
 	tellduslive? ( ~dev-python/tellduslive-0.10.11[${PYTHON_USEDEP}] )
 	tesla? ( ~dev-python/teslajsonpy-0.10.4[${PYTHON_USEDEP}] )
 	tile? ( ~dev-python/pytile-4.0.0[${PYTHON_USEDEP}] )
@@ -351,7 +354,7 @@ RDEPEND="${RDEPEND}
 	yeelight? ( ~dev-python/yeelight-0.5.4[${PYTHON_USEDEP}] )
 	yi? ( ~dev-python/aioftp-0.12.0[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.2.5[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.20.3[${PYTHON_USEDEP}] ~dev-python/pyserial-3.4[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.45[${PYTHON_USEDEP}] ~dev-python/zigpy-cc-0.5.2[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.11.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.26.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.13.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.6.2[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.2.2[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.20.3[${PYTHON_USEDEP}] ~dev-python/pyserial-3.4[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.45[${PYTHON_USEDEP}] ~dev-python/zigpy-cc-0.5.2[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.11.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.27.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.13.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.6.2[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.2.2[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.4.0[${PYTHON_USEDEP}] )
 	zwave? ( ~dev-python/homeassistant-pyozw-0.1.10[${PYTHON_USEDEP}] ~dev-python/PyDispatcher-2.0.5[${PYTHON_USEDEP}] )"
@@ -400,14 +403,6 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 S="${WORKDIR}/core-${MY_PV}"
 
 DOCS="README.rst"
-
-src_prepare() {
-	# https://github.com/home-assistant/home-assistant/issues/28811
-	if use maxcube_hack ; then
-	  eapply "${FILESDIR}/maxcube_TypeError_01114_dirty_hack.patch"
-	fi
-	eapply_user
-}
 
 python_install_all() {
 	dodoc ${DOCS}
