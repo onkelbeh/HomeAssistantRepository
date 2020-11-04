@@ -108,9 +108,9 @@ batinfo==0.4.2
 bcrypt==3.1.7
 bcrypt==3.2.0
 beacontools==1.2.3
-beautifulsoup==4.9.1
+beautifulsoup==4.9.3
 bellows==0.20.3
-bimmer-connected==0.7.8
+bimmer-connected==0.7.11
 bitstring==3.1.7
 bizkaibus==0.1.1
 blas==3.8
@@ -129,7 +129,7 @@ bond-api==0.1.8
 boto3==1.15.1
 boto3==1.9.252
 botocore==1.12.252
-botocore==1.18.1
+botocore==1.18.10
 bottle==0.12.18
 bottleneck==1.3.2
 bravia-tv==1.0.6
@@ -322,7 +322,6 @@ grpcio==1.31.0
 gstreamer-player==1.1.2
 gTTS-token==1.1.3
 gzip==1.10
-h11==0.10.0
 ha-ffmpeg==2.0
 ha-philipsjs==0.0.8
 habitipy==0.2.0
@@ -379,7 +378,6 @@ incremental==17.5.0
 inflect==4.1.0
 influxdb-client==1.8.0
 influxdb==5.2.3
-intelhex==2.2.1
 iperf3==0.1.11
 iso8601==0.1.12
 isodate==0.6.0
@@ -598,13 +596,13 @@ pyads==3.2.2
 pyaehw4a1==0.3.9
 pyaes==1.6.1
 pyaftership==0.1.2
-pyairvisual==5.0.3
+pyairvisual==5.0.4
 pyalmond==0.0.2
 pyarlo==0.2.3
 pyasn1-modules==0.2.8
 pyasn1==0.4.8
 pyatag==0.3.4.4
-pyatmo==4.1.0
+pyatmo==4.2.0
 pyAtome==0.1.1
 pyatv==0.3.13
 pybbox==0.0.5_alpha0
@@ -913,12 +911,11 @@ scipy==1.5.2
 scsgate==0.1.0
 secretstorage==3.1.2
 semantic_version==2.8.5
-semver==2.10.2
 sendgrid==6.4.6
 sense-energy==0.8.1
 sentry-sdk==0.19.1
 sepaxml==2.2.0
-setuptools==46.4.0
+setuptools==50.3.0
 sgmllib3k==1.0.0
 sharkiqpy==0.1.8
 sharp_aquos_rc==0.3.2
@@ -1075,7 +1072,7 @@ xmltodict==0.12.0
 xs1-api-client==3.0.0
 yalesmartalarmclient==0.1.6
 yarl==1.4.2
-yarl==1.5.1
+yarl==1.6.0
 yeelight==0.5.4
 yeelightsunflower==0.0.10
 YesssSMS==0.4.1
@@ -1096,4 +1093,4 @@ zigpy==0.27.0
 zipp==3.1.0
 zlib==1.2.11
 zm-py==0.4.0
-zope-interface==5.1.0
+zope-interface==5.1.2
