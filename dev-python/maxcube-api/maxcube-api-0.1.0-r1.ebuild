@@ -12,7 +12,7 @@ HOMEPAGE="https://github.com/goodfield/python-maxcube-api.git https://pypi.org/p
 EGIT_COMMIT="9458b66"
 EGIT_REPO_URI="https://github.com/hackercowboy/python-maxcube-api.git"
 
-LICENSE="The MIT License (MIT)"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
