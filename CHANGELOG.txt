@@ -5,6 +5,8 @@
   * update homeassistant-0.117.3
   * remove maxcube_hack, the fix is in core now
   * update homeassistant-0.117.4
+  * revert maxcube fix, was using the wrong version of the Library
+  * 'downgrade' maxcube-api-0.1.0-r1, now using the correct commit id
 
 2020-11-03
   * update aioshelly-0.5.0

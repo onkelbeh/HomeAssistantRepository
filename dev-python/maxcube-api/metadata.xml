@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">maxcube-api</remote-id>
+    <maintainer status="unknown">
+      <email>david@uebelacker.ch</email>
+      <name>David Uebelacker</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
