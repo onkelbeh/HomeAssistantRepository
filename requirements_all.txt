@@ -110,7 +110,7 @@ bcrypt==3.2.0
 beacontools==1.2.3
 beautifulsoup==4.9.3
 bellows==0.20.3
-bimmer-connected==0.7.11
+bimmer-connected==0.7.12
 bitstring==3.1.7
 bizkaibus==0.1.1
 blas==3.8
@@ -328,7 +328,7 @@ habitipy==0.2.0
 hangups==0.4.11
 hass-nabucasa==0.37.1
 hass-splunk==0.1.1
-HATasmota==0.0.25
+HATasmota==0.0.25.1
 haversine==2.1.2
 hbmqtt==0.9.5
 hdate==0.9.12
