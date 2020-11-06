@@ -3,6 +3,7 @@
   * bump androidtv-0.0.54
   * bump pylaunches-1.0.0
   * bump pylaunches-1.1.0
+  * bump HATasmota-0.0.25.1
 
 2020-11-04 homeassistant-0.117.4
   * bump bimmer-connected-0.7.11
