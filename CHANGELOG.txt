@@ -1,3 +1,6 @@
+2020-11-07
+  * update xknx-0.15.0-r1 (add a dep for standalone installation)
+
 2020-11-05 homeassistant-0.117.5
   * bump androidtv-0.0.53
   * bump androidtv-0.0.54
