@@ -12,6 +12,7 @@
   * bump aio-georss-client-0.6
   * update aio-georss-gdacs-0.4
   * bump colorlog-4.6.2
+  * bump HATasmota-0.0.27
 
 2020-11-07
   * update xknx-0.15.0-r1 (add a dep for standalone installation)
