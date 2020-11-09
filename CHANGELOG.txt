@@ -2,6 +2,7 @@
   * update pyvlx-0.2.18
   * bump google-nest-sdm-0.1.12
   * bump google-nest-sdm-0.1.13
+  * bump regenmaschine-3.0.0
 
 2020-11-07
   * update xknx-0.15.0-r1 (add a dep for standalone installation)
