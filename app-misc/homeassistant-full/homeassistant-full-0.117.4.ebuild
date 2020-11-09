@@ -32,7 +32,7 @@ IUSE="abode accuweather acer_projector acmeda adguard ads advantage_air aftershi
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
-        app-admin/logrotate
+	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
 	>=dev-libs/xerces-c-3.1.4-r1"
@@ -912,4 +912,3 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
-
