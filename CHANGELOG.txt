@@ -8,6 +8,7 @@
   * bump pyTibber-0.16.0
   * update pytest-6.1.2
   * bump aioshelly-0.5.1
+  * update epson-projector-0.2.3
 
 2020-11-07
   * update xknx-0.15.0-r1 (add a dep for standalone installation)
