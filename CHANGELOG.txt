@@ -5,6 +5,7 @@
   * bump regenmaschine-3.0.0
   * update pwmled-1.6.7
   * bump pigpio-1.78
+  * bump pyTibber-0.16.0
 
 2020-11-07
   * update xknx-0.15.0-r1 (add a dep for standalone installation)
