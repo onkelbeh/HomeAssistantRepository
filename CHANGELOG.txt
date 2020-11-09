@@ -17,6 +17,7 @@
   * update sisyphus-control-3.0
   * update devolo-home-control-api-0.16.0
   * bump gTTS-token-1.1.4
+  * add the remaining changes suggested by @ivecera in https://github.com/onkelbeh/HomeAssistantRepository/pull/26
 
 2020-11-07
   * update xknx-0.15.0-r1 (add a dep for standalone installation)
