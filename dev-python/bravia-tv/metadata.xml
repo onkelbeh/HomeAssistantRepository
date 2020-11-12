@@ -8,7 +8,7 @@
   <upstream>
     <remote-id type="pypi">bravia-tv</remote-id>
     <maintainer status="unknown">
-      <email>dncielsen90@gmail.com</email>
+      <email>dcnielsen90@gmail.com</email>
       <name>David Nielsen</name>
     </maintainer>
   </upstream>
