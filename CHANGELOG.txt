@@ -11,6 +11,7 @@
   * update plexauth-0.0.6
   * bump HATasmota-0.0.29, bump HATasmota-0.0.30
   * bump google-nest-sdm-0.1.14
+  * bump home-assistant-frontend-20201111.0
 
 2020-11-09
   * update pyvlx-0.2.18
