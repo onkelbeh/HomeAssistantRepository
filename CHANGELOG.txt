@@ -14,6 +14,7 @@
   * bump home-assistant-frontend-20201111.0
   * bump zha-quirks-0.0.46
   * bump greeclimate-0.9.6.ebuild, greeclimate-0.9.9
+  * update pycsspeechtts-1.0.4 (phuhh.)
 
 2020-11-09
   * update pyvlx-0.2.18
