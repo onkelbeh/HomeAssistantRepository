@@ -8,6 +8,7 @@
   * bump pysqueezebox-0.5.5
   * bump pylutron-caseta-0.7.2
   * bump bravia-tv-1.0.8
+  * update plexauth-0.0.6
 
 2020-11-09
   * update pyvlx-0.2.18
