@@ -1,3 +1,6 @@
+2020-11-12
+  * add objgraph-3.4.1, bump objgraph-3.5.0
+
 2020-11-09
   * update pyvlx-0.2.18
   * bump google-nest-sdm-0.1.12
