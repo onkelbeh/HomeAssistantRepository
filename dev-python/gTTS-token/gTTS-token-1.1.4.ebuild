@@ -18,7 +18,7 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="RDEPEND="dev-python/requests[${PYTHON_USEDEP}]""
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
