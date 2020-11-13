@@ -1,3 +1,26 @@
+2020-11-12 homeassistant-0.117.6
+  * add objgraph-3.4.1, bump objgraph-3.5.0
+  * bump python-openzwave-mqtt-1.3.2
+  * add aiorecollect-0.2.1
+  * bump pymfy-0.9.1
+  * update aioasuswrt-1.3.0
+  * update zigpy-zigate-0.7.0
+  * bump pysqueezebox-0.5.5
+  * bump pylutron-caseta-0.7.2
+  * bump bravia-tv-1.0.8
+  * update plexauth-0.0.6
+  * bump HATasmota-0.0.29, bump HATasmota-0.0.30
+  * bump google-nest-sdm-0.1.14
+  * bump home-assistant-frontend-20201111.0
+  * bump zha-quirks-0.0.46
+  * bump greeclimate-0.9.6.ebuild, greeclimate-0.9.9
+  * update pycsspeechtts-1.0.4 (phuhh.)
+  * add auroranoaa-0.0.1
+  * bump pywemo-0.5.2
+  * bump homematicip-0.12.1
+  * update hass-nabucasa-0.37.2
+  * update homeassistant-0.117.6
+
 2020-11-09
   * update pyvlx-0.2.18
   * bump google-nest-sdm-0.1.12

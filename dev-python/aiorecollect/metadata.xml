@@ -6,10 +6,10 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">bravia-tv</remote-id>
+    <remote-id type="pypi">aiorecollect</remote-id>
     <maintainer status="unknown">
-      <email>dcnielsen90@gmail.com</email>
-      <name>David Nielsen</name>
+      <email>bachya1208@gmail.com</email>
+      <name>Aaron Bach</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

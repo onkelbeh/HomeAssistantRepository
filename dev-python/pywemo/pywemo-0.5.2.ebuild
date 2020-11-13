@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Calculates a token to run the Google Translate text to speech"
-HOMEPAGE="https://github.com/boudewijn26/gTTS-token https://pypi.org/project/gTTS-token/"
+DESCRIPTION="Lightweight Python module to discover and control WeMo devices"
+HOMEPAGE="https://github.com/pavoni/pywemo https://pypi.org/project/pywemo/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -16,9 +16,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-DOCS="README.md"
-
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/ifaddr-0.1.0[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.0[${PYTHON_USEDEP}]
+	>=dev-python/six-1.10.0[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
