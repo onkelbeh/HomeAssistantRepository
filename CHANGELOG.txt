@@ -10,6 +10,7 @@
   * fix typo in pymfy-0.9.1.ebuild
   * update homeassistant-0.118.0_beta0
   * update homeassistant-0.118.0_beta1
+  * update esphome-1.15.3-r1, matches 0.118.0 deps
 
 2020-11-12 homeassistant-0.117.6
   * add objgraph-3.4.1, bump objgraph-3.5.0

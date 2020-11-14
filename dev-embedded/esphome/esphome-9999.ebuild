@@ -32,18 +32,18 @@ IUSE="+server test"
 RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-	  ~dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
+	  ~dev-python/voluptuous-0.12.0[${PYTHON_USEDEP}]
 	  ~dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]
-	  ~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
-	  ~dev-python/colorlog-4.2.1[${PYTHON_USEDEP}]
+	  ~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
+	  ~dev-python/colorlog-4.6.2[${PYTHON_USEDEP}]
 	  server? ( ~www-servers/tornado-6.0.4[${PYTHON_USEDEP}] )
-	  ~dev-libs/protobuf-3.12.4
-	  ~dev-python/protobuf-python-3.12.4[${PYTHON_USEDEP}]
+	  ~dev-libs/protobuf-3.13.0
+	  ~dev-python/protobuf-python-3.13.0[${PYTHON_USEDEP}]
 	  ~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
-	  ~dev-python/pytz-2020.1[${PYTHON_USEDEP}]
+	  ~dev-python/pytz-2020.4[${PYTHON_USEDEP}]
 	  ~dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	  server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
-	  ~dev-embedded/platformio-5.0.1
+	  ~dev-embedded/platformio-5.0.2
 	  ~dev-embedded/esptool-2.8[${PYTHON_USEDEP}]
 	  ~dev-python/click-7.1.2[${PYTHON_USEDEP}]
 	')"
@@ -67,11 +67,11 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 
 DOCS="README.md"
 
-src_prepare() {
-	sed -e 's;protobuf==3.13.0;protobuf==3.12.4;' \
-		-i requirements.txt || die
-	eapply_user
-}
+#src_prepare() {
+#	sed -e 's;protobuf==3.13.0;protobuf==3.12.4;' \
+#		-i requirements.txt || die
+#	eapply_user
+#}
 
 python_install_all() {
 	dodoc ${DOCS}
