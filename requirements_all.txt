@@ -330,7 +330,7 @@ habitipy==0.2.0
 hangups==0.4.11
 hass-nabucasa==0.37.1
 hass-splunk==0.1.1
-HATasmota==0.0.29
+HATasmota==0.0.30
 haversine==2.1.2
 hbmqtt==0.9.5
 hdate==0.9.12
@@ -626,7 +626,7 @@ pycountry-convert==0.7.2
 pycparser==2.20
 pycryptodome==3.9.8
 pycryptodomex==3.9.4
-pycsspeechtts==1.0.3
+pycsspeechtts==1.0.4
 pycups==1.9.73
 pycurl==7.43.0.6
 pydaikin==2.3.1
@@ -770,7 +770,7 @@ pysml==0.0.2
 pysnmp==4.4.12
 PySocks==1.7.1
 pysoma==0.0.10
-pysonos==0.0.35
+pysonos==0.0.36
 pyspcwebgw==0.4.0
 pysqueezebox==0.5.5
 pystiebeleltron==0.0.1
@@ -850,7 +850,7 @@ pyvolumio==0.1.3
 pyW215==0.7.0
 pyW800rf32==0.1
 pywebpush==1.9.2
-pywemo==0.5.0
+pywemo==0.5.2
 pywilight==0.0.65
 pyxeoma==1.4.1
 PyXiaomiGateway==0.13.4
@@ -1064,7 +1064,7 @@ xbox-webapi==2.0.8
 xboxapi==2.0.1
 xerces-c==3.2.3
 xfinity-gateway==0.0.4
-xknx==0.15.0
+xknx==0.15.3
 xmlschema==1.2.3
 xmltodict==0.12.0
 xs1-api-client==3.0.0
