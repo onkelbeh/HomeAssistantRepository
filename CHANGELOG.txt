@@ -1,6 +1,7 @@
 2020-11-14
   * bump xknx-0.15.3
   * bump pysonos-0.0.36
+  * update zigpy-zigate-0.7.1
 
 2020-11-12 homeassistant-0.117.6
   * add objgraph-3.4.1, bump objgraph-3.5.0
