@@ -17,7 +17,7 @@ SRC_URI="https://github.com/esphome/esphome/archive/v${MY_PV}.tar.gz -> ${MY_P}.
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~x86 ~amd64-linux ~x86-linux"
 IUSE="server test"
 
 RDEPEND=""

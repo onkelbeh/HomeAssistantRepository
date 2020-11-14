@@ -18,7 +18,7 @@ HOMEPAGE="https://www.numpy.org"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.zip"
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~x86 ~amd64-linux ~x86-linux"
 IUSE="doc lapack test"
 
 RDEPEND="lapack? ( virtual/cblas virtual/lapack )"

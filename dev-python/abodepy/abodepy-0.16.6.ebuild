@@ -16,7 +16,7 @@ SRC_URI="https://github.com/MisterWil/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~x86 ~amd64-linux ~x86-linux"
 IUSE="doc test"
 
 RDEPEND="~dev-python/lomond-0.1.14[${PYTHON_USEDEP}]

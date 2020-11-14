@@ -16,7 +16,7 @@ SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
+KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
 #KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="abode adguard alarmdecoder ambiclimate ambient_station amcrest androidtv apprise arcam_fmj asuswrt atmo atv aurora avea awair aws axis bitcoin blink blockchain bmw_connected_drive bravia-tv buienradar +caldav +cast ciscomobilityexpress cli coronavirus daikin darksky deconz delijn denonavr discogs dunehd dynalite dyson ecobee emulated_roku enigma enocean environment_canada envoy esphome everlights flume flunearyou fronius gpiozero growatt_server growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue hydrawise iaqualink icloud ihc incomfort influxdb intesishome ipma jewish_calendar kef maxcube maxcube_hack metno miio mikrotik mobile_app +mqtt musiccast myq +mysql nederlandse_spoorwegen netdata nx584 openwrt owntracks ozw plex plugwise powerwall qnap +recorder ring roku roomba rxv samsungtv +scrape shodan signal simplisafe sma smappee socat socialblade solax somfy sonos speedtest squeezebox +ssl synologydsm systemmonitor tellduslive test tile toon tradfri ubee unifi vallox velbus velux vera +version vicare webostv wemo wink withings wled xknx xs1 yeelight youtube zigbee zoneminder z-wave"
 
