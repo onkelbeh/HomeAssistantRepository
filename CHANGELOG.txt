@@ -7,6 +7,7 @@
   * recalc today's Manifests again
   * bump greeclimate-0.10.2
   * bump missing pyowm-3.1.0
+  * fix typo in pymfy-0.9.1.ebuild
 
 2020-11-12 homeassistant-0.117.6
   * add objgraph-3.4.1, bump objgraph-3.5.0
