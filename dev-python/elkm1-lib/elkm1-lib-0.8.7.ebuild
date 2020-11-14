@@ -18,7 +18,7 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="~dev-python/pyserial-asyncio-0.4.0[${PYTHON_USEDEP}]"
+RDEPEND="~dev-python/pyserial-asyncio-0.4[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
