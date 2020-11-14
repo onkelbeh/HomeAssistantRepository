@@ -5,6 +5,7 @@
   * bump sentry-sdk-0.19.3
   * merge global keyword to support 32 bit ARM boards from @ivecera
   * recalc today's Manifests again
+  * bump greeclimate-0.10.2
 
 2020-11-12 homeassistant-0.117.6
   * add objgraph-3.4.1, bump objgraph-3.5.0
