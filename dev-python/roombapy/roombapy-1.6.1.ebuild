@@ -13,7 +13,7 @@ SRC_URI="https://github.com/pschmitt/roombapy/archive/${PV}.tar.gz -> ${P}.tar.g
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test +opencv pillow mqtt"
 
 RDEPEND="mqtt? ( dev-python/paho-mqtt[${PYTHON_USEDEP}] )

@@ -16,7 +16,7 @@ SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 arm64 x86 amd64-linux x86-linux"
+KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
 #KEYWORDS="~amd64 ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="abode adguard ads agent_dvr aioguardian alarmdecoder ambiclimate ambient_station amcrest androidtv apache_kafka apprise arcam_fmj asuswrt atmo atv aurora avea awair aws axis bitcoin blink blockchain bmw_connected_drive bravia-tv brother buienradar +caldav +cast ciscomobilityexpress cli coronavirus daikin darksky deconz delijn denonavr dexcom discogs discord dunehd dynalite dyson ecobee emulated_roku enigma enocean environment_canada envoy esphome everlights flume flunearyou foobot freebox fronius gpiozero growatt_server growl harmony heos here hkavr holidays homekit homematic homematicip hpilo hs100 hue hydrawise iaqualink icloud ihc incomfort influxdb insteon intesishome ipma jewish_calendar joaoapps_join kef maxcube maxcube_hack meteo_france metno miio mikrotik mobile_app +mqtt musiccast myq +mysql nederlandse_spoorwegen netdata nuki nws nx584 openwrt owntracks ozw plex plugwise poolsense powerwall ps4 qnap +recorder rejseplanen ring roku roomba rxv samsungtv +scrape shodan signal simplisafe skybell sma smappee smarthab smartthings socat socialblade solax somfy sonos speedtest squeezebox +ssl synologydsm systemmonitor tellduslive tesla test tile toon tplink tradfri tuya ubee unifi upnp vallox velbus velux vera +version vicare vizio webostv wemo wink withings wled xbox_live xknx xs1 yeelight youtube zerproc zigbee zoneminder z-wave"
 
