@@ -6,7 +6,7 @@ Since homeassistant-0.115.3 the **Main Ebuild** is released in three different s
 
 ### `app-misc/homeassistant`
 
-This is the Ebuild we have since `0.97.0`, it currently holds **260** USE Flags. As soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure.
+This is the Ebuild we have since `0.97.0`, it currently holds **261** USE Flags. As soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure.
 
 ### `app-misc/homeassistant-min`
 
@@ -14,7 +14,7 @@ New Ebuild, generated for `0.115.3` and later, currently holds **45** USE Flags.
 
 ### `app-misc/homeassistant-full`
 
-This Ebuild contains 742 USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Who would blame me for this at 800 USE Flags ;-)
+This Ebuild contains **746** USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Who would blame me for this at 800 USE Flags ;-)
 
 ### Commons for all three Main Ebuilds
 
@@ -77,6 +77,9 @@ In August 2020 I discovered that it is now possible to remove Python 2.7 complet
 ## ~arm64
 By user request, I have populated an ~arm64 KEYWORD on all Ebuilds, which is (currently) completely untested. I know of at least two guys using it, but I got no feedback yet. Some day I will prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
 
+## ~arm
+By another request, I merged ~arm KEYWORD from @ivecera on all Ebuilds at 0.117.6. This guy is running an Odroid XU4. I updated all my scripts to keep it running.
+
 ## Nearly all Home Assistant Components are now included
 Except of some modules with uncorrectable errors (e.g. hard drive crashes, lost sources) I believe all possible integrations for Home Assistant and their stated dependencies are included as Ebuilds, based on the integrations list from `/usr/lib/python3.8/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule.
 
@@ -86,10 +89,11 @@ Currrently missing (0.115.3):
 * google-cloud-texttospeech-0.4.0 (no potential need, there are good alternatives on the market)
 * google-cloud-pubsub-0.39.1
 * opencv-python-headless-4.3.0.36
-* tensorflow-2.3.0 & tf-models-official-2.3.0 (I only wait for the Ebuild on main repo)
 * pyuptimerobot-0.0.5 (unmaintained, could not find a valid source)
 
 In some cases I added small patches to the Ebuilds, some packages have versions pinned without any reason. For me its OK, if the packages compile and complete *all* their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups.
+
+I am continuously filing pull requests to reduce the amount of needed patches. Most of them are caused by missing files in SDIST archives and/or having wrong package exclude masks in `setup.py`.
 
 ## Why I don't (want to) use a virtual environment for Home Assistant
 On Gentoo, we have a very powerful package manager. So I (now) try to put everything Home Assistant uses into Ebuilds.
@@ -377,7 +381,10 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |12|Unlicense|
 |5|ZPL|
 
+(last counted 10/2020)
+
 I did my best to keep these clean. If a valid license was published on
 PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
-A big thanks goes to Iris for reviewing this README: 28.9.2020
+A big thanks goes to Iris for reviewing this README.
+Last update 14.11.2020
