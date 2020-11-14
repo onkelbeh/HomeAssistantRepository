@@ -68,10 +68,9 @@ Just cloned a box for first tests. but it is too early to try bigger things, mos
 Since 0.114.4 (09/2020) everything compiles fine on Python 3.8. Still some smaller things to clean up. I upgraded my production box to Python 3.8 ONLY on 2020/09/12. Everything looks good. I am doing most of the tests/work on such a box with Python 3.8 only. During compile tests, I have all available tests turned on. ESPHome runs on the same box (and in the same environment) with some small patches (included in my Ebuild), the current `esphome-9999` doesn't even need a `src_prepare()`.
 
 ## ... Python 3.7
-You will need at least Python 3.7.7 for running Home Assistant on Gentoo Linux. If you are new here, forget about 3.7, set it up straight on Python 3.8. Before a new release of the app-misc/homeassistant Ebuild is made, I'll make sure all important components also compile on 3.7. During compile tests, I have all available tests turned on. I won't do any production tests anymore with Python 3.7
+You will need at least Python 3.7.7 for running Home Assistant on Gentoo Linux. If you are new here, forget about 3.7, set it up straight on Python 3.8. With 0.108.0 I will discontinue compile tests for 3.7 (and better start with 3.9). I won't do any production tests anymore on Python 3.7.
 
 ## Python 2.7 on Gentoo
-
 In August 2020 I discovered that it is now possible to remove Python 2.7 completely. I have done this on all my test servers and my Home Assistant Box. All still work like a charm.
 
 ## ~arm64
@@ -342,15 +341,15 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 
 | Count | License |
 | ------ | ------ |
-|2|AGPL-3|
-|1|AGPL-3+|
-|19|all-rights-reserved|
-|422|Apache-2.0|
+|3|AGPL-3|
+|4|AGPL-3+|
+|21|all-rights-reserved|
+|460|Apache-2.0|
 |3|Apache-2.0 || BSD-2|
-|5|Apache-2.0 MIT|
+|2|Apache-2.0 MIT|
 |2|Artistic-2|
 |1|Boost-1.0|
-|175|BSD|
+|180|BSD|
 |6|BSD-2|
 |5|BSD-2 Unlicense|
 |8|BSD-4|
@@ -359,29 +358,29 @@ grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | se
 |1|CC-BY-NC-SA-3.0|
 |2|CC-BY-NC-SA-4.0|
 |2|ECL-2.0|
-|11|EPL-1.0|
+|13|EPL-1.0|
 |2|GPL-1|
-|20|GPL-2|
+|21|GPL-2|
 |5|GPL-2+|
 |174|GPL-3|
-|22|GPL-3+|
+|25|GPL-3+|
 |2|ISC|
 |1|LGPL-2|
 |10|LGPL-2+|
-|14|LGPL-2.1|
+|17|LGPL-2.1|
 |2|LGPL-2.1+|
-|28|LGPL-3|
-|15|LGPL-3+|
-|1402|MIT|
-|5|MPL-2.0|
+|45|LGPL-3|
+|17|LGPL-3+|
+|1479|MIT|
+|7|MPL-2.0|
 |1|NEWLIB|
-|12|PSF-2|
+|11|PSF-2|
 |3|PSF-2.4|
 |4|public-domain|
-|12|Unlicense|
+|13|Unlicense|
 |5|ZPL|
 
-(last counted 10/2020)
+(last counted 11/2020)
 
 I did my best to keep these clean. If a valid license was published on
 PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
