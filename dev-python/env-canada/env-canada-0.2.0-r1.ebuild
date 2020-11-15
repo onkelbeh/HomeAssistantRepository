@@ -18,13 +18,15 @@ KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="
-	>=dev-python/requests-2.19.1[${PYTHON_USEDEP}]
-	>=dev-python/geopy-1.16.0[${PYTHON_USEDEP}]
-	>=dev-python/imageio-2.3.0[${PYTHON_USEDEP}]
-	>=dev-python/requests-futures-0.9.7[${PYTHON_USEDEP}]
-	>=dev-python/beautifulsoup-4.7.1[${PYTHON_USEDEP}]
-	>=dev-python/ratelimit-2.2.1[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+	dev-python/imageio[${PYTHON_USEDEP}]
+	dev-python/geopy[${PYTHON_USEDEP}]
+	dev-python/numpy[${PYTHON_USEDEP}]
+	dev-python/opencv-python-headless[${PYTHON_USEDEP}]
+	dev-python/python-dateutil[${PYTHON_USEDEP}]
+	dev-python/ratelimit[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/requests-futures[${PYTHON_USEDEP}]"
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
