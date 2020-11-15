@@ -168,7 +168,7 @@ clx-sdk-xms==1.0.0
 CO2Signal==0.4.2
 coinbase==2.1.0
 coinmarketcap==5.0.3
-colorama==0.4.3
+colorama==0.4.4
 colorlog==4.2.1
 colorlog==4.6.2
 colorzero==1.1
@@ -177,6 +177,7 @@ config==0.5.0
 configargparse==0.11.0
 connect-box==0.2.8
 constantly==15.1.0
+construct==2.10.56
 construct==2.9.45
 convertdate==2.2.1
 cookies==2.2.1
@@ -232,14 +233,14 @@ elementpath==2.0.3
 elfutils==0.181
 elgato==0.2.0
 eliqonline==1.2.2
-elkm1-lib==0.8.7
+elkm1-lib==0.8.8
 emoji==0.5.4
 emulated-roku==0.2.1
 enocean==0.50.1
 entrypoints==0.3
 enturclient==0.2.1
 enum-compat==0.0.3
-env-canada==0.2.0
+env-canada==0.2.2
 envirophat==0.0.6
 envoy-reader==0.16.2
 envs==1.3
@@ -314,7 +315,7 @@ graphql-subscription-manager==0.3.6
 greeclimate==0.9.6
 greeneye-monitor==2.1
 greenwavereality==0.5.1
-grep==3.4
+grep==3.5
 griddypower==0.1.0
 growattServer==0.1.1
 grpc-google-iam-v1==0.12.3
@@ -428,7 +429,7 @@ libudev==232
 libunistring==0.9.10
 libusb1==1.7
 libusb==1
-libusb==1.0.21
+libusb==1.0.23
 libxml2==2.9.10
 libxslt==1.1.34
 life360==4.1.1
@@ -450,7 +451,7 @@ lyft_rides==0.2
 lz4==1.9.2
 lz4==3.0.2
 magicseaweed==1.0.3
-markdown==3.2.2
+markdown==3.3.1
 markupsafe==1.1.1
 marshmallow==3.5.1
 Mastodon-py==1.5.1
@@ -1085,7 +1086,7 @@ ziggo-mediabox-xl==1.1.0
 zigpy-cc==0.5.2
 zigpy-deconz==0.11.0
 zigpy-xbee==0.13.0
-zigpy-zigate==0.7.0
+zigpy-zigate==0.7.1
 zigpy-znp==0.2.2
 zigpy==0.27.0
 zipp==3.1.0
