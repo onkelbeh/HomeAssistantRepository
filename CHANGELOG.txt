@@ -8,6 +8,7 @@
   * bump pywemo-0.5.3
   * bump pytradfri-7.0.3 and pytradfri-7.0.4
   * update PyEssent-0.14
+  * bump home-assistant-frontend-20201111.1, remove unused
 
 2020-11-15 homeassistant-0.118.0_beta2
   * update env-canada-0.2.2, env-canada-0.2.4, fix env-canada-0.2.0 deps
