@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">python-miio</remote-id>
+    <maintainer status="unknown">
+      <email>tpr@iki.fi</email>
+      <name>Teemu R</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
