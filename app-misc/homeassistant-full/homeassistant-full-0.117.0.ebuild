@@ -311,7 +311,6 @@ RDEPEND="${RDEPEND}
 	fritzbox_callmonitor? ( ~dev-python/fritzconnection-1.2.0[${PYTHON_USEDEP}] )
 	fritzbox_netmonitor? ( ~dev-python/fritzconnection-1.2.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.4.6[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20201021.3[${PYTHON_USEDEP}] )
 	frontier_silicon? ( ~dev-python/afsapi-0.0.4[${PYTHON_USEDEP}] )
 	futurenow? ( ~dev-python/pyfnip-0.2[${PYTHON_USEDEP}] )
 	garmin_connect? ( ~dev-python/garminconnect-0.1.13[${PYTHON_USEDEP}] )
