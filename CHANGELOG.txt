@@ -3,6 +3,7 @@
   * bump zigpy-zigate-0.7.2
   * update construct-2.10.56
   * bump python-miio-0.5.4
+  * update requests-2.25.0
 
 2020-11-15 homeassistant-0.118.0_beta2
   * update env-canada-0.2.2, env-canada-0.2.4, fix env-canada-0.2.0 deps
