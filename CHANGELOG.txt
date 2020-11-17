@@ -1,5 +1,6 @@
 2020-11-17 homeassistant-0.118.0_beta3
   * bump greeclimate-0.10.3
+  * bump zigpy-zigate-0.7.2
 
 2020-11-15 homeassistant-0.118.0_beta2
   * update env-canada-0.2.2, env-canada-0.2.4, fix env-canada-0.2.0 deps
