@@ -1,5 +1,6 @@
 abodepy==1.1.0
 accuweather==0.0.11
+acme==1.9.0
 Adafruit-Blinka==5.5.3
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.0.1
@@ -75,7 +76,7 @@ aresponses==2.0.0
 argh==0.26.2
 arpack==3.7.0
 arris-tg2492lg==1.1.0
-arrow==0.16.0
+arrow==0.17.0
 asmog==0.0.6
 asterisk_mbox==0.5.0
 astral==1.10.1
@@ -240,7 +241,7 @@ enocean==0.50.1
 entrypoints==0.3
 enturclient==0.2.1
 enum-compat==0.0.3
-env-canada==0.2.2
+env-canada==0.2.4
 envirophat==0.0.6
 envoy-reader==0.16.2
 envs==1.3
@@ -312,7 +313,7 @@ googlemaps==2.5.1
 goslide-api==0.5.1
 gpiozero==1.5.1
 graphql-subscription-manager==0.3.6
-greeclimate==0.9.6
+greeclimate==0.10.3
 greeneye-monitor==2.1
 greenwavereality==0.5.1
 grep==3.5
@@ -329,7 +330,7 @@ ha-ffmpeg==2.0
 ha-philipsjs==0.0.8
 habitipy==0.2.0
 hangups==0.4.11
-hass-nabucasa==0.37.1
+hass-nabucasa==0.37.2
 hass-splunk==0.1.1
 HATasmota==0.0.30
 haversine==2.1.2
@@ -344,7 +345,7 @@ hole==0.5.1
 holidays==0.10.3
 home-assistant-cli==0.9.1
 home-assistant-cli==9999
-home-assistant-frontend==20201111.0
+home-assistant-frontend==20201111.1
 homeassistant
 homeconnect==0.6.3
 horimote==0.4.1
@@ -389,6 +390,7 @@ jdatetime==3.4.0
 jeepney==0.4.3
 jinja==2.11.2
 jmespath==0.10.0
+josepy==1.4.0
 Js2Py==0.66
 jsonpath-ng==1.5.1
 jsonpath==0.82
@@ -475,7 +477,7 @@ ms-cv==0.1.1
 msrest==0.6.19
 msrestazure==0.6.4
 mt_940==4.19.0
-multidict==4.7.6
+multidict==5.0.0
 mutagen==1.45.1
 mychevy==2.0.1
 mycroftapi==2.0
@@ -747,6 +749,7 @@ pyrail==0.0.3
 pyrainbird==0.4.2
 pyrecswitch==1.0.2
 pyrepetier==3.0.5
+pyrfc3339==1.1
 pyRFXtrx==0.26.0
 pyrisco==0.3.1
 PyRMVtransport==0.2.9
@@ -834,14 +837,14 @@ pytile==4.0.0
 pytouchline==0.7
 pytraccar==0.9.0
 pytrackr==0.0.5
-pytradfri==7.0.2
+pytradfri==7.0.4
 pytrafikverket==0.1.6.2
 PyTransportNSW==0.1.1
 pytz==2020.1
 pyubee==0.10
 pyusb==1.0.2
 PyUserInput==0.1.11
-pyvera==0.3.10
+pyvera==0.3.11
 pyversasense==0.0.6
 pyvesync==1.2.0
 PyViCare==0.2.0
@@ -877,7 +880,7 @@ requests-futures==1.0.0
 requests-oauth==0.4.1
 requests-oauthlib==1.3.0
 requests-toolbelt==0.9.1
-requests==2.24.0
+requests==2.25.0
 responses==0.12.0
 rfc3986==1.4.0
 rfk101py==0.0.1
@@ -1012,7 +1015,7 @@ u-msgpack==2.7.0
 uamqp==1.2.11
 udev==245.5
 uEagle==0.0.2
-ujson==3.2.0
+ujson==4.0.1
 unidecode==1.1.1
 unifiled==0.11
 untangle==1.1.1
@@ -1071,7 +1074,7 @@ xmltodict==0.12.0
 xs1-api-client==3.0.0
 yalesmartalarmclient==0.1.6
 yarl==1.4.2
-yarl==1.6.0
+yarl==1.6.2
 yeelight==0.5.4
 yeelightsunflower==0.0.10
 YesssSMS==0.4.1
@@ -1086,7 +1089,7 @@ ziggo-mediabox-xl==1.1.0
 zigpy-cc==0.5.2
 zigpy-deconz==0.11.0
 zigpy-xbee==0.13.0
-zigpy-zigate==0.7.1
+zigpy-zigate==0.7.2
 zigpy-znp==0.2.2
 zigpy==0.27.0
 zipp==3.1.0
