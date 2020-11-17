@@ -11,6 +11,7 @@
   * bump home-assistant-frontend-20201111.1, remove unused
   * bump aioguardian-1.0.4
   * bump bimmer_connected-0.7.13
+  * update directv-0.4.0
 
 2020-11-15 homeassistant-0.118.0_beta2
   * update env-canada-0.2.2, env-canada-0.2.4, fix env-canada-0.2.0 deps
