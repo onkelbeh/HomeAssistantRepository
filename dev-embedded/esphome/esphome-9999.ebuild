@@ -43,7 +43,7 @@ RDEPEND="
 	  ~dev-python/pytz-2020.4[${PYTHON_USEDEP}]
 	  ~dev-python/pyserial-3.4[${PYTHON_USEDEP}]
 	  server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
-	  ~dev-embedded/platformio-5.0.2
+	  ~dev-embedded/platformio-5.0.3
 	  ~dev-embedded/esptool-2.8[${PYTHON_USEDEP}]
 	  ~dev-python/click-7.1.2[${PYTHON_USEDEP}]
 	')"
