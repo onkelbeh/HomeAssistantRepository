@@ -7,6 +7,7 @@
   * bump HATasmota-0.0.32
   * bump google-nest-sdm-0.1.15
   * update ovoenergy-1.1.11
+  * update wolf_smartset-0.1.8
 
 2020-11-17 homeassistant-0.118.0_beta3
   * bump greeclimate-0.10.3

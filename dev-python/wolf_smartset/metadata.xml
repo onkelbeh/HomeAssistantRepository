@@ -6,7 +6,7 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">wolf_smartset</remote-id>
+    <remote-id type="pypi">wolf-smartset</remote-id>
     <maintainer status="unknown">
       <email>adam.krol93@gmail.com</email>
       <name>Adam Krol</name>
