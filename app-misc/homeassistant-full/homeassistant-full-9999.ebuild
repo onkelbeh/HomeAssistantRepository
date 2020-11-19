@@ -60,7 +60,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.37.2[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20201111.1[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20201111.2[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.16.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
@@ -169,7 +169,7 @@ RDEPEND="${RDEPEND}
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	bme680? ( ~dev-python/bme680-1.0.5[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	bmp280? ( ~dev-python/adafruit-circuitpython-bmp280-3.1.1[${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.0[${PYTHON_USEDEP}] )
-	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.7.12[${PYTHON_USEDEP}] )
+	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.7.13[${PYTHON_USEDEP}] )
 	bom? ( ~dev-python/bomradarloop-0.1.5[${PYTHON_USEDEP}] )
 	bond? ( ~dev-python/bond-api-0.1.8[${PYTHON_USEDEP}] )
 	braviatv? ( ~dev-python/bravia-tv-1.0.8[${PYTHON_USEDEP}] )
@@ -345,7 +345,7 @@ RDEPEND="${RDEPEND}
 	growatt_server? ( ~dev-python/growattServer-0.1.1[${PYTHON_USEDEP}] )
 	gstreamer? ( ~dev-python/gstreamer-player-1.1.2[${PYTHON_USEDEP}] )
 	gtfs? ( ~dev-python/pygtfs-0.1.5[${PYTHON_USEDEP}] )
-	guardian? ( ~dev-python/aioguardian-1.0.1[${PYTHON_USEDEP}] )
+	guardian? ( ~dev-python/aioguardian-1.0.4[${PYTHON_USEDEP}] )
 	habitica? ( ~dev-python/habitipy-0.2.0[${PYTHON_USEDEP}] )
 	hangouts? ( ~dev-python/hangups-0.4.11[${PYTHON_USEDEP}] )
 	harman_kardon_avr? ( ~dev-python/hkavr-0.0.5[${PYTHON_USEDEP}] )
@@ -725,7 +725,7 @@ RDEPEND="${RDEPEND}
 	tankerkoenig? ( ~dev-python/pytankerkoenig-0.0.6[${PYTHON_USEDEP}] )
 	tank_utility? ( ~dev-python/tank_utility-1.4.0[${PYTHON_USEDEP}] )
 	tapsaff? ( ~dev-python/tapsaff-0.2.1[${PYTHON_USEDEP}] )
-	tasmota? ( ~dev-python/HATasmota-0.0.30[${PYTHON_USEDEP}] )
+	tasmota? ( ~dev-python/HATasmota-0.0.31[${PYTHON_USEDEP}] )
 	tautulli? ( ~dev-python/pytautulli-0.5.0[${PYTHON_USEDEP}] )
 	ted5000? ( ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	telegram_bot? ( ~dev-python/python-telegram-bot-11.1.0[${PYTHON_USEDEP}] ~dev-python/PySocks-1.7.1[${PYTHON_USEDEP}] )
