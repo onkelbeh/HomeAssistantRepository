@@ -26,7 +26,7 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 amd64-linux x86-linux"
 IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github +homekit influxdb kodi maxcube mikrotik +mobile_app +mqtt +mysql +notify_events +otp owntracks +ping +python_script qnap +recorder +rest samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl tasmota test tradfri +version +wake_on_lan workday yamaha yamaha_musiccast +zwave"
 
 # external deps
@@ -59,8 +59,8 @@ RDEPEND="${RDEPEND}
 	~dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
-	~dev-python/hass-nabucasa-0.37.1[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20201111.0[${PYTHON_USEDEP}]
+	~dev-python/hass-nabucasa-0.37.2[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20201111.2[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.16.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
@@ -75,7 +75,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2020.1[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]
-	~dev-python/requests-2.24.0[${PYTHON_USEDEP}]
+	~dev-python/requests-2.25.0[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-1.3.20[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.24.3[${PYTHON_USEDEP}]
@@ -134,8 +134,8 @@ RDEPEND="${RDEPEND}
 	sonos? ( ~dev-python/pysonos-0.0.36[${PYTHON_USEDEP}] )
 	sql? ( ~dev-python/sqlalchemy-1.3.20[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
-	tasmota? ( ~dev-python/HATasmota-0.0.30[${PYTHON_USEDEP}] )
-	tradfri? ( ~dev-python/pytradfri-7.0.2[${PYTHON_USEDEP}] )
+	tasmota? ( ~dev-python/HATasmota-0.0.32[${PYTHON_USEDEP}] )
+	tradfri? ( ~dev-python/pytradfri-7.0.4[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-3.4.2[${PYTHON_USEDEP}] )
 	wake_on_lan? ( ~dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}] )
 	workday? ( ~dev-python/holidays-0.10.3[${PYTHON_USEDEP}] )
