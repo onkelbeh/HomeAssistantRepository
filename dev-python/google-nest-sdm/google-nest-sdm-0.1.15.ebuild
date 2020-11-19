@@ -9,21 +9,16 @@ inherit distutils-r1
 
 DESCRIPTION="Library for the Google Nest SDM API"
 HOMEPAGE="https://github.com/allenporter/python-google-nest-sdm https://pypi.org/project/google-nest-sdm/"
-SRC_URI="https://github.com/allenporter/python-${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/python-${PN}-${PV}"
+MY_PN=${PN//-/_}
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-DOCS="README.md"
-
-RDEPEND="~dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
-	~dev-python/google-auth-1.22.0[${PYTHON_USEDEP}]
-	~dev-python/google-auth-oauthlib-0.4.1[${PYTHON_USEDEP}]
-	~dev-python/google-cloud-pubsub-2.1.0[${PYTHON_USEDEP}]
-	~dev-python/requests-oauthlib-1.3.0[${PYTHON_USEDEP}]"
+RDEPEND=""
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
