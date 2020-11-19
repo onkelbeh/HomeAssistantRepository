@@ -4,6 +4,7 @@
   * update zigpy-0.27.1
   * bump denonavr-0.9.6
   * bump pyvizio-0.1.57
+  * bump HATasmota-0.0.32
 
 2020-11-17 homeassistant-0.118.0_beta3
   * bump greeclimate-0.10.3
