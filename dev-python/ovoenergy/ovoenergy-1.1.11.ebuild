@@ -18,8 +18,8 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="~dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
-	~dev-python/click-7.1.2[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.7.3[${PYTHON_USEDEP}]
+	>=dev-python/click-7.1.2[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
