@@ -18,6 +18,7 @@ IUSE="test"
 
 RDEPEND="!dev-python/zigpy-homeassistant
 	dev-python/aiohttp[${PYTHON_USEDEP}]
+	>=dev-python/aiosqlite-0.16.0[${PYTHON_USEDEP}]
 	dev-python/crccheck[${PYTHON_USEDEP}]
 	dev-python/pycryptodome[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]"
@@ -29,6 +30,11 @@ BDEPEND="${REDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 	)"
+
+#src_prepare() {
+#	sed "s/packages=find_packages(exclude=\[\"\*.tests\"\])/packages=find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
+#	eapply_user
+#}
 
 python_test() {
 	nosetests --verbose || die

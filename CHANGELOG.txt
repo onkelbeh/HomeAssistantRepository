@@ -1,6 +1,7 @@
 2020-11-19
   * bump home-assistant-frontend-20201111.2
   * bump aiosqlite-0.16.0
+  * update zigpy-0.27.1
 
 2020-11-17 homeassistant-0.118.0_beta3
   * bump greeclimate-0.10.3
