@@ -10,6 +10,7 @@
   * update flake8-3.8.4-r1 (cannot be run with test)
   * unpin pylint in aioesphomeapi-2.6.3-r1
   * re-add (from main repo) pylint-2.5.3, still needed for <=homeassistant-0.118.1
+  * update homeassistant-0.118.2
 
 2020-11-19 homeassistant-0.118.1
   * bump home-assistant-frontend-20201111.2
