@@ -17,7 +17,8 @@ KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND=">=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
-	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]"
+	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
+	dev-python/async_timeout[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
