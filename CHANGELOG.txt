@@ -12,6 +12,7 @@
   * re-add (from main repo) pylint-2.5.3, still needed for <=homeassistant-0.118.1
   * update homeassistant-0.118.2
   * add tailer-0.4.1
+  * unpin some tests in home-assistant-cli-9999
 
 2020-11-19 homeassistant-0.118.1
   * bump home-assistant-frontend-20201111.2

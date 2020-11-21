@@ -35,7 +35,7 @@ RDEPEND=">=dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
 		 <dev-python/ruamel-yaml-0.17[${PYTHON_USEDEP}]
 		 >=dev-python/requests-2.22.0[${PYTHON_USEDEP}]
 		 >=dev-python/tabulate-0.8.3[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
@@ -50,9 +50,7 @@ DEPEND="${REDEPEND}
 		>=dev-python/pytest-cov-2.6.1[${PYTHON_USEDEP}]
 		>=dev-python/pytest-sugar-0.9.2[${PYTHON_USEDEP}]
 		>=dev-python/pytest-timeout-1.3.3[${PYTHON_USEDEP}]
-		<dev-python/pytest-timeout-1.4[${PYTHON_USEDEP}]
 		>=dev-python/pytest-5.1.2[${PYTHON_USEDEP}]
-		<dev-python/pytest-6[${PYTHON_USEDEP}]
 		>=dev-python/requests-mock-1.6.0[${PYTHON_USEDEP}]
 		>=dev-python/wheel-0.33.1[${PYTHON_USEDEP}]
 		>=dev-python/codecov-2.0.15[${PYTHON_USEDEP}]
