@@ -1,4 +1,4 @@
-2020-11-21
+2020-11-21 homeassistant-0.118.2
   * bump pymyq-2.0.10
   * update python-awair-0.2.1
   * bump zigpy-zigate-0.7.3
@@ -9,6 +9,7 @@
   * add plugwise-0.8.3
   * update flake8-3.8.4-r1 (cannot be run with test)
   * unpin pylint in aioesphomeapi-2.6.3-r1
+  * re-add (from main repo) pylint-2.5.3, still needed for <=homeassistant-0.118.1
 
 2020-11-19 homeassistant-0.118.1
   * bump home-assistant-frontend-20201111.2
