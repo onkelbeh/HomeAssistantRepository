@@ -16,6 +16,7 @@
   * bump aiopulse-0.4.2
   * bump debugpy-1.2.0
   * bump discord-py-1.5.1
+  * bump rpi-bad-power-0.1.0
 
 2020-11-19 homeassistant-0.118.1
   * bump home-assistant-frontend-20201111.2
