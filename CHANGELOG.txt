@@ -7,6 +7,7 @@
   * bump beewi-smartclim-0.0.10
   * update zigpy-0.28.0
   * add plugwise-0.8.3
+  * update flake8-3.8.4-r1 (cannot be run with test)
 
 2020-11-19 homeassistant-0.118.1
   * bump home-assistant-frontend-20201111.2

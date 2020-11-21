@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7,8} pypy3 )
+PYTHON_COMPAT=( pypy3 python3_{6..9} )
 DISTUTILS_USE_SETUPTOOLS=rdepend
 
 inherit distutils-r1
@@ -14,7 +14,7 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm arm64 hppa ~ia64 ppc ppc64 ~s390 sparc x86"
+KEYWORDS="amd64 arm arm64 hppa ~ia64 ~mips ppc ppc64 ~s390 sparc x86"
 
 # requires.txt inc. mccabe however that creates a circular dep
 RDEPEND="
@@ -22,7 +22,7 @@ RDEPEND="
 	<dev-python/pyflakes-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/pycodestyle-2.6.0[${PYTHON_USEDEP}]
 	<dev-python/pycodestyle-2.7.0[${PYTHON_USEDEP}]
-	dev-python/importlib_metadata[${PYTHON_USEDEP}]
+	$(python_gen_cond_dep 'dev-python/importlib_metadata[${PYTHON_USEDEP}]' pypy3 python3_{6,7})
 "
 PDEPEND="
 	>=dev-python/mccabe-0.6.0[${PYTHON_USEDEP}]
@@ -35,13 +35,11 @@ BDEPEND="${RDEPEND}
 	)
 "
 
+distutils_enable_sphinx docs/source dev-python/sphinx-prompt dev-python/sphinx_rtd_theme
 distutils_enable_tests pytest
-# Sphinx and friends are not keyworded for all arches, repoman complains
-#distutils_enable_sphinx docs/source dev-python/sphinx-prompt dev-python/sphinx_rtd_theme
 
-python_prepare_all() {
-	# don't treat warnings as errors when running tests
-	sed -r -i '/^[[:space:]]*error[[:space:]]*$/ d' pytest.ini || die
-
-	distutils-r1_python_prepare_all
+python_test() {
+	# Otherwise some tests fail if the package isn't installed
+	distutils_install_for_testing
+	pytest -vv || die "Tests fail with ${EPYTHON}"
 }
