@@ -1,6 +1,7 @@
 2020-11-21
   * bump pymyq-2.0.10
   * update python-awair-0.2.1
+  * bump zigpy-zigate-0.7.3
 
 2020-11-19 homeassistant-0.118.1
   * bump home-assistant-frontend-20201111.2
