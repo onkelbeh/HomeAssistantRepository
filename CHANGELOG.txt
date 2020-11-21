@@ -1,3 +1,6 @@
+2020-11-21
+  * bump pymyq-2.0.10
+
 2020-11-19 homeassistant-0.118.1
   * bump home-assistant-frontend-20201111.2
   * bump aiosqlite-0.16.0
