@@ -8,6 +8,7 @@
   * bump solax-0.2.5
   * update sentry-sdk-0.19.4
   * bump denonavr-0.9.7
+  * add motionblinds-0.1.6
 
 2020-11-21 homeassistant-0.118.2
   * bump pymyq-2.0.10
