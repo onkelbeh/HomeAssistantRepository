@@ -1,4 +1,4 @@
-2020-11-24
+2020-11-24 homeassistant-0.118.3
   * update sleepyq-0.8.1
   * bump envoy-reader-0.17.0
   * bump blinkpy-0.16.4
@@ -11,6 +11,7 @@
   * bump aioasuswrt-1.3.1
   * bump google-nest-sdm-0.2.0
   * bump millheater-0.4.0
+  * update homeassistant-0.118.3
 
 2020-11-21 homeassistant-0.118.2
   * bump pymyq-2.0.10

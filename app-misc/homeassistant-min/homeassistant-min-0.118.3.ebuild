@@ -26,13 +26,13 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 
-KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
-IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github +homekit influxdb kodi maxcube maxcube_hack mikrotik +mobile_app +mqtt +mysql +notify_events +otp owntracks +ping +python_script qnap +recorder +rest samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl tasmota test tradfri +version +wake_on_lan workday yamaha yamaha_musiccast +zwave"
+KEYWORDS="amd64 arm arm64 x86 amd64-linux x86-linux"
+IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github +homekit influxdb kodi maxcube mikrotik +mobile_app +mqtt +mysql +notify_events +otp owntracks +ping +python_script qnap qvr_pro +recorder +rest samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl tasmota test tradfri +version +wake_on_lan workday yamaha yamaha_musiccast +zwave"
 
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
-		app-admin/logrotate
+	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
 	>=dev-libs/xerces-c-3.1.4-r1"
@@ -45,7 +45,7 @@ RDEPEND="${RDEPEND}
 # Home Assistant Core dependencies
 # from package_constraints.txt
 RDEPEND="${RDEPEND}
-	~dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
+	~dev-python/aiohttp-3.7.1[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/astral-1.10.1[${PYTHON_USEDEP}]
 	~dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
@@ -59,14 +59,14 @@ RDEPEND="${RDEPEND}
 	~dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
-	~dev-python/hass-nabucasa-0.37.1[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20201021.4[${PYTHON_USEDEP}]
+	~dev-python/hass-nabucasa-0.37.2[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20201111.2[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.16.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
 	~dev-python/jinja-2.11.2[${PYTHON_USEDEP}]
 	~dev-python/netdisco-2.8.2[${PYTHON_USEDEP}]
-	~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
+	~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
 	~dev-python/pillow-7.2.0[${PYTHON_USEDEP}]
 	>=dev-python/pip-8.0.3[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
@@ -75,7 +75,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2020.1[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]
-	~dev-python/requests-2.24.0[${PYTHON_USEDEP}]
+	~dev-python/requests-2.25.0[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-1.3.20[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.24.3[${PYTHON_USEDEP}]
@@ -98,7 +98,7 @@ RDEPEND="${RDEPEND}
 
 # Module requirements from useflags
 RDEPEND="${RDEPEND}
-	androidtv? ( ~dev-python/adb-shell-0.2.1[${PYTHON_USEDEP}] ~dev-python/androidtv-0.0.52[${PYTHON_USEDEP}] ~dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}] )
+	androidtv? ( ~dev-python/adb-shell-0.2.1[${PYTHON_USEDEP}] ~dev-python/androidtv-0.0.54[${PYTHON_USEDEP}] ~dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}] )
 	axis? ( ~dev-python/axis-41[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.6.1[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli )
@@ -115,7 +115,7 @@ RDEPEND="${RDEPEND}
 	maxcube? ( ~dev-python/maxcube-api-0.1.0[${PYTHON_USEDEP}] )
 	mikrotik? ( ~dev-python/librouteros-3.0.0[${PYTHON_USEDEP}] )
 	mobile_app? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}] ~dev-python/emoji-0.5.4[${PYTHON_USEDEP}] )
-	mqtt? ( ~dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}] )
+	mqtt? ( ~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysql-connector-python[${PYTHON_USEDEP}] dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	notify_events? ( ~dev-python/notify-events-1.0.4[${PYTHON_USEDEP}] )
 	otp? ( ~dev-python/pyotp-2.3.0[${PYTHON_USEDEP}] )
@@ -123,19 +123,20 @@ RDEPEND="${RDEPEND}
 	ping? ( ~dev-python/icmplib-1.2.2[${PYTHON_USEDEP}] )
 	python_script? ( ~dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
+	qvr_pro? ( ~dev-python/pyqvrpro-0.52[${PYTHON_USEDEP}] )
 	recorder? ( ~dev-python/sqlalchemy-1.3.20[${PYTHON_USEDEP}] )
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-1.4.0[${PYTHON_USEDEP}] )
 	scrape? ( ~dev-python/beautifulsoup-4.9.1[${PYTHON_USEDEP}] )
-	shelly? ( ~dev-python/aioshelly-0.4.0[${PYTHON_USEDEP}] )
+	shelly? ( ~dev-python/aioshelly-0.5.1[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.4[${PYTHON_USEDEP}] )
 	snmp? ( ~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
-	sonos? ( ~dev-python/pysonos-0.0.35[${PYTHON_USEDEP}] )
+	sonos? ( ~dev-python/pysonos-0.0.36[${PYTHON_USEDEP}] )
 	sql? ( ~dev-python/sqlalchemy-1.3.20[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
-	tasmota? ( ~dev-python/HATasmota-0.0.25[${PYTHON_USEDEP}] )
-	tradfri? ( ~dev-python/pytradfri-7.0.2[${PYTHON_USEDEP}] )
+	tasmota? ( ~dev-python/HATasmota-0.0.32[${PYTHON_USEDEP}] )
+	tradfri? ( ~dev-python/pytradfri-7.0.4[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-3.4.2[${PYTHON_USEDEP}] )
 	wake_on_lan? ( ~dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}] )
 	workday? ( ~dev-python/holidays-0.10.3[${PYTHON_USEDEP}] )
@@ -153,7 +154,7 @@ BDEPEND="${RDEPEND}
 		~dev-python/mock-open-1.4.0[${PYTHON_USEDEP}]
 		~dev-python/mypy-0.790[${PYTHON_USEDEP}]
 		~dev-python/pipdeptree-1.0.0[${PYTHON_USEDEP}]
-		~dev-python/pre-commit-2.7.1[${PYTHON_USEDEP}]
+		~dev-python/pre-commit-2.8.2[${PYTHON_USEDEP}]
 		~dev-python/pylint-strict-informational-0.1[${PYTHON_USEDEP}]
 		~dev-python/pylint-2.6.0[${PYTHON_USEDEP}]
 		~dev-python/pytest-aiohttp-0.3.0[${PYTHON_USEDEP}]
@@ -162,7 +163,7 @@ BDEPEND="${RDEPEND}
 		~dev-python/pytest-test-groups-1.0.3[${PYTHON_USEDEP}]
 		~dev-python/pytest-timeout-1.4.2[${PYTHON_USEDEP}]
 		~dev-python/pytest-xdist-2.1.0[${PYTHON_USEDEP}]
-		~dev-python/pytest-6.0.2[${PYTHON_USEDEP}]
+		~dev-python/pytest-6.1.2[${PYTHON_USEDEP}]
 		~dev-python/requests-mock-1.8.0[${PYTHON_USEDEP}]
 		~dev-python/responses-0.12.0[${PYTHON_USEDEP}]
 		~dev-python/respx-0.14.0[${PYTHON_USEDEP}]
@@ -187,17 +188,6 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 S="${WORKDIR}/core-${MY_PV}"
 
 DOCS="README.rst"
-
-#device.is_thermostat()
-src_prepare() {
-	# https://github.com/home-assistant/home-assistant/issues/28811
-	if use maxcube_hack ; then
-	   sed "s/cube.is_thermostat(device)/device.is_thermostat()/g" -i homeassistant/components/maxcube/climate.py || die
-	   sed "s/cube.is_wallthermostat(device)/device.is_wallthermostat()/g" -i homeassistant/components/maxcube/climate.py || die
-	   sed "s/cube.is_windowshutter(device)/device.is_windowshutter()/g" -i homeassistant/components/maxcube/binary_sensor.py || die
-	fi
-	eapply_user
-}
 
 python_install_all() {
 	dodoc ${DOCS}
@@ -225,3 +215,4 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
+

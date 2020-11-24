@@ -39,6 +39,7 @@
     <flag name="ping">ICMPLib</flag>
     <flag name="python_script">write Python scripts that are exposed as services in Home Assistant</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
+    <flag name="qvr_pro">QVR Pro allows you to connect to cams configured on your QNAP NAS</flag>
     <flag name="recorder">storing details in a database per sqlalchemy</flag>
     <flag name="rest">rest sensor platform for data exposed by a RESTful API</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>

@@ -196,6 +196,7 @@
     <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
     <flag name="python_script">write Python scripts that are exposed as services in Home Assistant</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
+    <flag name="qvr_pro">QVR Pro allows you to connect to cams configured on your QNAP NAS</flag>
     <flag name="rachio">The rachio platform allows you to control your Rachio irrigation system</flag>
     <flag name="rainbird">allows interacting with LNK WiFi module of the Rain Bird Irrigation system</flag>
     <flag name="rainmachine">integrate all platforms related to RainMachine smart Wi-Fi sprinkler controllers</flag>
