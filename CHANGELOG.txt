@@ -1,3 +1,6 @@
+2020-11-24
+  * update sleepyq-0.8.1
+
 2020-11-21 homeassistant-0.118.2
   * bump pymyq-2.0.10
   * update python-awair-0.2.1
