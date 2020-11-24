@@ -3,6 +3,8 @@
   * bump envoy-reader-0.17.0
   * bump blinkpy-0.16.4
   * bump pysonos-0.0.37
+  * bump millheater-0.4.0
+  * bump pydeconz-74
 
 2020-11-21 homeassistant-0.118.2
   * bump pymyq-2.0.10
