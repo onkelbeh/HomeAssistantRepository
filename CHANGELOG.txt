@@ -3,7 +3,6 @@
   * bump envoy-reader-0.17.0
   * bump blinkpy-0.16.4
   * bump pysonos-0.0.37
-  * bump millheater-0.4.0
   * bump pydeconz-74
   * bump solax-0.2.5
   * update sentry-sdk-0.19.4
@@ -11,6 +10,7 @@
   * add motionblinds-0.1.6
   * bump aioasuswrt-1.3.1
   * bump google-nest-sdm-0.2.0
+  * bump millheater-0.4.0
 
 2020-11-21 homeassistant-0.118.2
   * bump pymyq-2.0.10
