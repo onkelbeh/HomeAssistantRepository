@@ -1,6 +1,7 @@
 2020-11-24
   * update sleepyq-0.8.1
   * bump envoy-reader-0.17.0
+  * bump blinkpy-0.16.4
 
 2020-11-21 homeassistant-0.118.2
   * bump pymyq-2.0.10
