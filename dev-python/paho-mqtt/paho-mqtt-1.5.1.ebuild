@@ -11,7 +11,7 @@ DESCRIPTION="MQTT version 5.0/3.1.1 client class"
 HOMEPAGE="http://eclipse.org/paho https://pypi.org/project/paho-mqtt/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="EEPL-1.0"
+LICENSE="EPL-1.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
