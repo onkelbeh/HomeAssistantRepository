@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyHS100</remote-id>
+    <maintainer status="unknown">
+      <email>sean@gadgetreactor.com</email>
+      <name>Sean Seah (GadgetReactor)</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
