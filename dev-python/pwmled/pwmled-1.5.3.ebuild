@@ -20,7 +20,7 @@ DOCS="README.md"
 
 RDEPEND="~dev-libs/pigpio-1.35[${PYTHON_USEDEP}]
 	~dev-python/Adafruit-Blinka-5.5.1[${PYTHON_USEDEP}]
-	~dev-python/Adafruit-PCA9685[${PYTHON_USEDEP}]
+	dev-python/Adafruit-PCA9685[${PYTHON_USEDEP}]
 	~dev-python/python-singleton-0.1.2[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
