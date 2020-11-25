@@ -11,7 +11,7 @@ if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/home-assistant/home-assistant-cli.git"
 else
-  SRC_URI="https://github.com/home-assistant/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://github.com/home-assistant/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 fi
 
 DESCRIPTION="The Home Assistant Command-line Interface (hass-cli)"
@@ -58,7 +58,6 @@ BDEPEND="
 	)"
 
 src_prepare() {
-	cd "${S}"
 	sed -i -e "s/'ruamel.yaml>=0.16.5,<0.17'/'ruamel.yaml>=0.15.100'/" setup.py || die "Sed version helper failed!"
 	sed -i -e 's;jsonpath-rw>=1.4.0,<2;jsonpath-ng>=1.5.1;' setup.py || die "Sed on jsonpath-rw in setup-py failed."
 	sed -i -e 's;jsonpath_rw;jsonpath_ng;' homeassistant_cli/helper.py || die "Sed on helper.py failed."
