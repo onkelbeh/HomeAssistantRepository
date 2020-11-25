@@ -219,4 +219,3 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
-
