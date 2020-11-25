@@ -32,7 +32,7 @@ IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigm
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
 	|| ( dev-lang/python:3.7 dev-lang/python:3.8 )
-        app-admin/logrotate
+	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
 	>=dev-libs/xerces-c-3.1.4-r1"
