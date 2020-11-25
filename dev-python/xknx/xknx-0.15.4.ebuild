@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6..8} )
+PYTHON_COMPAT=( python3_{6..9} )
 
 inherit distutils-r1
 
@@ -19,7 +19,8 @@ IUSE="test"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/netifaces-0.10.9
-	>=dev-python/pyyaml-5.1"
+	>=dev-python/pyyaml-5.1
+	>=dev-python/voluptuous-0.12.0"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
