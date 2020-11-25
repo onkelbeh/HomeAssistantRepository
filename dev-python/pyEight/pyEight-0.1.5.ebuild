@@ -11,7 +11,7 @@ DESCRIPTION="Provides a python api to interact with an Eight Sleep mattress cove
 HOMEPAGE="https://github.com/mezz64/pyEight https://pypi.org/project/pyEight/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
