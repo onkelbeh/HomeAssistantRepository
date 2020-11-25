@@ -23,7 +23,7 @@ RDEPEND=">=dev-python/click-7.1.1[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	>=dev-python/appdirs-1.4.3[${PYTHON_USEDEP}]
-	>=dev-python/tqdm4.45.0[${PYTHON_USEDEP}]
+	>=dev-python/tqdm-4.45.0[${PYTHON_USEDEP}]
 	>=dev-python/netifaces-0.10.9[${PYTHON_USEDEP}]
 	>=dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]
 	>=dev-python/croniter-0.3.32[${PYTHON_USEDEP}]"
