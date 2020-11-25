@@ -17,11 +17,11 @@ KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="dev-python/click[${PYTHON_USEDEP}]
-  ~dev-python/click-log-0.2.0[${PYTHON_USEDEP}]
-  ~dev-python/pure-pcapy3-1.0.1[${PYTHON_USEDEP}]
-  dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
-  dev-python/voluptuous[${PYTHON_USEDEP}]
-  >=dev-python/zigpy-0.20.1[${PYTHON_USEDEP}]"
+	~dev-python/click-log-0.2.0[${PYTHON_USEDEP}]
+	~dev-python/pure-pcapy3-1.0.1[${PYTHON_USEDEP}]
+	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
+	dev-python/voluptuous[${PYTHON_USEDEP}]
+	>=dev-python/zigpy-0.20.1[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
