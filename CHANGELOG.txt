@@ -4,6 +4,7 @@
   * bump pydeconz-75
   * bump xknx-0.15.4
   * update pyHS100-0.3.5.2
+  * update avea-1.5.1
 
 2020-11-24 homeassistant-0.118.3
   * update sleepyq-0.8.1
