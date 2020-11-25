@@ -1,6 +1,7 @@
 2020-11-25
   * bump HATasmota-0.1.1
   * update foobot_async-1.0.0
+  * bump pydeconz-75
 
 2020-11-24 homeassistant-0.118.3
   * update sleepyq-0.8.1
