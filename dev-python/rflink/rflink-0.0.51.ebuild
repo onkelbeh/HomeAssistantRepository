@@ -17,9 +17,9 @@ KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="dev-python/async_timeout[${PYTHON_USEDEP}]
-  dev-python/docopt[${PYTHON_USEDEP}]
-  dev-python/pyserial[${PYTHON_USEDEP}]
-  dev-python/pyserial-asyncio[${PYTHON_USEDEP}]"
+	dev-python/docopt[${PYTHON_USEDEP}]
+	dev-python/pyserial[${PYTHON_USEDEP}]
+	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
