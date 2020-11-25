@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="Use the full Github API v3"
-HOMEPAGE="http://pygithub.readthedocs.io/en/latest/ https://pypi.org/project/PyGithub/"
+HOMEPAGE="https://pygithub.readthedocs.io/en/latest/ https://pypi.org/project/PyGithub/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-3+"

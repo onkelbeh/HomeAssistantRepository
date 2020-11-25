@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{7..8} )
 inherit distutils-r1
 
 DESCRIPTION="A better mock for file I/O"
-HOMEPAGE="http://github.com/nivbend/mock-open https://pypi.org/project/mock-open/"
+HOMEPAGE="https://github.com/nivbend/mock-open https://pypi.org/project/mock-open/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

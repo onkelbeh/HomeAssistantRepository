@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="Async Python Client for ONVIF Camera"
-HOMEPAGE="http://github.com/hunterjm/python-onvif-zeep-async https://pypi.org/project/onvif-zeep-async/"
+HOMEPAGE="https://github.com/hunterjm/python-onvif-zeep-async https://pypi.org/project/onvif-zeep-async/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

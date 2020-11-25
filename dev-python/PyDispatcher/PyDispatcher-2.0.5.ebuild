@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="Multi-producer-multi-consumer signal dispatching mechanism"
-HOMEPAGE="http://pydispatcher.sourceforge.net https://pypi.org/project/PyDispatcher/"
+HOMEPAGE="https://pydispatcher.sourceforge.net https://pypi.org/project/PyDispatcher/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"

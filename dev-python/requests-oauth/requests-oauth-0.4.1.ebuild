@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{7..8} )
 inherit distutils-r1
 
 DESCRIPTION="Hook for adding Open Authentication support to Python-requests HTTP library."
-HOMEPAGE="http://github.com/maraujop/requests-oauth https://pypi.org/project/requests-oauth/"
+HOMEPAGE="https://github.com/maraujop/requests-oauth https://pypi.org/project/requests-oauth/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"

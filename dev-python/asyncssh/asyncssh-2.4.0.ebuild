@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="AsyncSSH: Asynchronous SSHv2 client and server library"
-HOMEPAGE="http://asyncssh.timeheart.net https://pypi.org/project/asyncssh/"
+HOMEPAGE="https://asyncssh.timeheart.net https://pypi.org/project/asyncssh/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="ECL-2.0"

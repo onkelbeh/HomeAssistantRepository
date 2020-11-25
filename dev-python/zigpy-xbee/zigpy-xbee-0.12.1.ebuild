@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{7..8} )
 inherit distutils-r1
 
 DESCRIPTION="A library which communicates with XBee radios for zigpy"
-HOMEPAGE="http://github.com/zigpy/zigpy-xbee https://pypi.org/project/zigpy-xbee/"
+HOMEPAGE="https://github.com/zigpy/zigpy-xbee https://pypi.org/project/zigpy-xbee/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"

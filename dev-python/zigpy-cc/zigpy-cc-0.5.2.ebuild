@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="A library which communicates with Texas Instruments CC2531 radios for zigpy"
-HOMEPAGE="http://github.com/zigpy/zigpy-cc https://pypi.org/project/zigpy-cc/"
+HOMEPAGE="https://github.com/zigpy/zigpy-cc https://pypi.org/project/zigpy-cc/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"

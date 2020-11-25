@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="A python cli for Lupusec alarm panels."
-HOMEPAGE="http://www.github.com/majuss/lupupy https://pypi.org/project/lupupy/"
+HOMEPAGE="https://www.github.com/majuss/lupupy https://pypi.org/project/lupupy/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

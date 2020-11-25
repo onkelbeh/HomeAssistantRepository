@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{5..8} )
 inherit distutils-r1
 
 DESCRIPTION="A JSON-RPC client library base interface"
-HOMEPAGE="http://github.com/emlove/jsonrpc-base https://pypi.org/project/jsonrpc-base/"
+HOMEPAGE="https://github.com/emlove/jsonrpc-base https://pypi.org/project/jsonrpc-base/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"

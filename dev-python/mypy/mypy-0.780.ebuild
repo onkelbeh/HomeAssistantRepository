@@ -17,7 +17,7 @@ else
 fi
 
 DESCRIPTION="Optional static typing for Python"
-HOMEPAGE="http://www.mypy-lang.org/"
+HOMEPAGE="https://www.mypy-lang.org/"
 
 LICENSE="MIT"
 SLOT="0"

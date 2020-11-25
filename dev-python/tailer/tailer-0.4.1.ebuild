@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="Python tail is a simple implementation of GNU tail and head."
-HOMEPAGE="http://github.com/six8/pytailer https://pypi.org/project/tailer/"
+HOMEPAGE="https://github.com/six8/pytailer https://pypi.org/project/tailer/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

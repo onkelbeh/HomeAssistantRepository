@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="a toolset to deeply merge python dictionaries."
-HOMEPAGE="https://github.com/toumorokoshi/deepmerge/ http://deepmerge.readthedocs.io/en/latest/ https://pypi.org/project/deepmerge/"
+HOMEPAGE="https://github.com/toumorokoshi/deepmerge/ https://deepmerge.readthedocs.io/en/latest/ https://pypi.org/project/deepmerge/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="A modern/fast Python SOAP client based on lxml / requests"
-HOMEPAGE="http://docs.python-zeep.org https://pypi.org/project/zeep/"
+HOMEPAGE="https://docs.python-zeep.org https://pypi.org/project/zeep/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

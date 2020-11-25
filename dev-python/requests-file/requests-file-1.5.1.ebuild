@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="File transport adapter for Requests"
-HOMEPAGE="http://github.com/dashea/requests-file https://pypi.org/project/requests-file/"
+HOMEPAGE="https://github.com/dashea/requests-file https://pypi.org/project/requests-file/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"

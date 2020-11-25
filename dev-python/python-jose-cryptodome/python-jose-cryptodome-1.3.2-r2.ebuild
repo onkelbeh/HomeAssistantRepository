@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="JOSE implementation in Python using pycryptodome"
-HOMEPAGE="http://github.com/capless/python-jose-cryptodome https://pypi.org/project/python-jose-cryptodome/"
+HOMEPAGE="https://github.com/capless/python-jose-cryptodome https://pypi.org/project/python-jose-cryptodome/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

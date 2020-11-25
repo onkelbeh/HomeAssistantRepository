@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="A JSON-RPC websocket client library for asyncio"
-HOMEPAGE="http://github.com/emlove/jsonrpc-websocket https://pypi.org/project/jsonrpc-websocket/"
+HOMEPAGE="https://github.com/emlove/jsonrpc-websocket https://pypi.org/project/jsonrpc-websocket/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"

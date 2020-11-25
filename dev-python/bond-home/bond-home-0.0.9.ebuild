@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Python library for controlling BOND Home Hub"
-HOMEPAGE="http://github.com/nguyer/bond-home https://pypi.org/project/bond-home/"
+HOMEPAGE="https://github.com/nguyer/bond-home https://pypi.org/project/bond-home/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Api wrapper for Melissa Climate http://seemelissa.com"
+DESCRIPTION="Api wrapper for Melissa Climate https://seemelissa.com"
 HOMEPAGE="https://github.com/kennedyshead/py-melissa-climate https://pypi.org/project/py-melissa-climate/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
