@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{6..8} )
 inherit distutils-r1
 
 DESCRIPTION="Bluetooth Python extension module"
-HOMEPAGE="http://pybluez.github.io/ https://pypi.org/project/PyBluez/"
+HOMEPAGE="https://pybluez.github.io/ https://pypi.org/project/PyBluez/"
 
 # SDIST on Pypi broken
 #MY_PN="PyBluez"
@@ -17,7 +17,7 @@ HOMEPAGE="http://pybluez.github.io/ https://pypi.org/project/PyBluez/"
 
 SRC_URI="https://github.com/${PN}/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
