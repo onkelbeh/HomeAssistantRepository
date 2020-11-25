@@ -31,7 +31,7 @@ IUSE="+server test"
 
 RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
-  $(python_gen_cond_dep '
+	$(python_gen_cond_dep '
 	  ~dev-python/voluptuous-0.11.7[${PYTHON_MULTI_USEDEP}]
 	  ~dev-python/pyyaml-5.3.1[${PYTHON_MULTI_USEDEP}]
 	  ~dev-python/paho-mqtt-1.5.0[${PYTHON_MULTI_USEDEP}]
@@ -49,7 +49,7 @@ RDEPEND="
 	')"
 
 BDEPEND="
-  $(python_gen_cond_dep '
+	$(python_gen_cond_dep '
 	  dev-python/setuptools[${PYTHON_MULTI_USEDEP}]
 	  test? (
 		dev-python/nose[${PYTHON_MULTI_USEDEP}]

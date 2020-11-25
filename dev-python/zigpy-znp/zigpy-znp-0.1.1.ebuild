@@ -32,7 +32,7 @@ BDEPEND="${REDEPEND}
 
 src_prepare() {
 	sed "s/packages=find_packages(exclude=\[\"\*.tests\"\])/packages=find_packages('src',exclude=['tests','tests.*'])/g" -i setup.py || die
-  eapply_user
+	eapply_user
 }
 
 python_test() {

@@ -15,7 +15,6 @@ HOMEPAGE="https://github.com/markusressel/xs1-api-client https://pypi.org/projec
 # MY_P=${MY_PN}-${PV}
 # SRC_URI="mirror://pypi/${P:0:1}/${MY_PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
 # S=${WORKDIR}/${MY_PN}-${PV}
-#
 # we take it from github:
 SRC_URI="https://github.com/markusressel/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
@@ -32,7 +31,6 @@ DEPEND="${REDEPEND}
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
 
 src_prepare() {
 

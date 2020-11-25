@@ -35,7 +35,6 @@ src_prepare() {
 	eapply_user
 }
 
-
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
