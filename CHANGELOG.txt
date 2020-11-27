@@ -1,3 +1,6 @@
+2020-11-27
+  * update roombapy-1.6.2, now uses pyproject.toml
+
 2020-11-25
   * bump HATasmota-0.1.1
   * update foobot_async-1.0.0

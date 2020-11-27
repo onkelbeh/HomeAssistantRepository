@@ -5,16 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
-  <use>
-    <flag name="opencv">Use opencv for map generation</flag>
-    <flag name="pillow">Use pillow for map generation</flag>
-    <flag name="mqtt">Use paho mqtt client for communication</flag>
-  </use>
   <upstream>
     <remote-id type="pypi">roombapy</remote-id>
     <maintainer status="unknown">
-      <name>Nick Waterton</name>
-      <email>nick.waterton@med.ge.com</email>
+      <email>philipp@schmitt.co</email>
+      <name>Philipp Schmitt</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

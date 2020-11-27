@@ -6,6 +6,7 @@ EAPI="7"
 PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 DESCRIPTION="Python library to control Wi-Fi enabled iRobot Roomba vacuum cleaners"
 HOMEPAGE="https://github.com/pschmitt/roombapy https://pypi.org/project/roombapy/"
@@ -16,29 +17,19 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test +opencv pillow mqtt"
 
-RDEPEND=">=dev-python/appdirs-1.4.3[${PYTHON_USEDEP}]
-	>=dev-python/olefile-0.44[${PYTHON_USEDEP}]
-	dev-python/packaging[${PYTHON_USEDEP}]
-	mqtt? ( dev-python/paho-mqtt[${PYTHON_USEDEP}] )
-	>=dev-python/pyparsing-2.2.0[${PYTHON_USEDEP}]
-	>=dev-python/six-1.10.0[${PYTHON_USEDEP}]
+DOCS="README.md"
+
+RDEPEND="mqtt? ( dev-python/paho-mqtt[${PYTHON_USEDEP}] )
 	opencv? ( =media-libs/opencv-3.4.1-r7[${PYTHON_USEDEP}]
 			  >=dev-python/numpy-1.12.1[${PYTHON_USEDEP}] )
 	pillow? ( >=dev-python/pillow-4.1.1[${PYTHON_USEDEP}] )"
-
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	>=dev-python/pyproject2setuppy-9[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-# packages=find_packages()
-# https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/69
-src_prepare() {
-	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
-	eapply_user
-}
 
 python_test() {
 	nosetests --verbose || die
