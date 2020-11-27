@@ -2,6 +2,7 @@
   * update roombapy-1.6.2, now uses pyproject.toml
   * update poetry-core-1.0.0
   * re-add tqdm-4.49.0 from main repo archive, dropped, but still needed
+  * fix roombapy Manifest
 
 2020-11-25
   * bump HATasmota-0.1.1
