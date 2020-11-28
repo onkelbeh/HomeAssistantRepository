@@ -8,6 +8,7 @@
   * bump rflink-0.0.55
   * update bellows-0.21.0
   * bump zigpy-0.28.1
+  * update zha-quirks-0.0.47
 
 2020-11-27
   * update roombapy-1.6.2, now uses pyproject.toml
