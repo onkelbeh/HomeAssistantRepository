@@ -6,6 +6,7 @@
   * update abodepy-1.2.0
   * bump xknx-0.15.6
   * bump rflink-0.0.55
+  * update bellows-0.21.0
 
 2020-11-27
   * update roombapy-1.6.2, now uses pyproject.toml
