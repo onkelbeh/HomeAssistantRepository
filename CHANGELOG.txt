@@ -2,6 +2,7 @@
   * add nodeenv-1.5.0
   * update pre-commit-2.9.2
   * bump home-assistant-frontend-20201126.0
+  * update lomond-0.3.3-r1, add pytest-runner
 
 2020-11-27
   * update roombapy-1.6.2, now uses pyproject.toml
