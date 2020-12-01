@@ -4,6 +4,7 @@
   * update pypck-0.7.6
   * update hyperion-py-0.6.0
   * update elgato-1.0.0
+  * update aiorecollect-0.2.2
 
 2020-11-29
   * bump brother-0.1.20
