@@ -1,3 +1,6 @@
+2020-12-01
+  * bump colorlog-4.6.2
+
 2020-11-29
   * bump brother-0.1.20
   * bump HATasmota-0.1.2
