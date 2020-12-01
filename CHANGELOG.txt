@@ -1,3 +1,7 @@
+2020-11-29
+  * bump brother-0.1.20
+  * bump HATasmota-0.1.2
+
 2020-11-28
   * add nodeenv-1.5.0
   * update pre-commit-2.9.2
