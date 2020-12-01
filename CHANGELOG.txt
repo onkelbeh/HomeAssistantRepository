@@ -3,6 +3,7 @@
   * update pyatmo-4.2.1
   * update pypck-0.7.6
   * update hyperion-py-0.6.0
+  * update elgato-1.0.0
 
 2020-11-29
   * bump brother-0.1.20
