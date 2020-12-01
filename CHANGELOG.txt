@@ -1,5 +1,7 @@
 2020-12-01
   * bump colorlog-4.6.2
+  * update pyatmo-4.2.1
+  * update pypck-0.7.6
 
 2020-11-29
   * bump brother-0.1.20
