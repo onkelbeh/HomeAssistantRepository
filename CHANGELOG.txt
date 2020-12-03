@@ -9,6 +9,7 @@
   * bump pydeconz-76
   * add synologydsm-api-1.0.1
   * bump python-openzwave-mqtt-1.4.0
+  * bump home-assistant-frontend-20201202.0
 
 2020-12-01
   * bump colorlog-4.6.2
