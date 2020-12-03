@@ -1,3 +1,6 @@
+2020-12-03
+  * bump pysml-0.0.3
+
 2020-12-01
   * bump colorlog-4.6.2
   * update pyatmo-4.2.1
@@ -5,6 +8,7 @@
   * update hyperion-py-0.6.0
   * update elgato-1.0.0
   * update aiorecollect-0.2.2
+  * removed ubee from USE-lists
 
 2020-11-29
   * bump brother-0.1.20
