@@ -2,6 +2,7 @@
   * bump pysml-0.0.3
   * update libpurecool-0.6.4
   * bump TwitterAPI-2.6.2.1
+  * bump pylast-4.0.0
 
 2020-12-01
   * bump colorlog-4.6.2
