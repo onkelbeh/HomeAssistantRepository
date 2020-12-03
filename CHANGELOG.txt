@@ -12,6 +12,7 @@
   * bump home-assistant-frontend-20201202.0
   * add gTTS-2.2.1
   * add pykulersky-0.4.0
+  * update icmplib-2.0
 
 2020-12-01
   * bump colorlog-4.6.2
