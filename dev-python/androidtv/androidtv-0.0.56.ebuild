@@ -21,7 +21,7 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}]
 	>=dev-python/adb-shell-0.2.1[${PYTHON_USEDEP}]
 	>=dev-python/aiofiles-0.4.0[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
