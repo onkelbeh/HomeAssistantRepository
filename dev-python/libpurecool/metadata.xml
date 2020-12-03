@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">libpurecool</remote-id>
     <maintainer status="unknown">
-      <email>charles.blonde@gmail.com</email>
-      <name>Charles Blonde</name>
+      <email>etheralm@users.noreply.github.com</email>
+      <name>Etheralm</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
