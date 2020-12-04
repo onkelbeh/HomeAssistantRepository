@@ -1,3 +1,6 @@
+2020-12-04
+  * bump home-assistant-frontend-20201203.0
+
 2020-12-03
   * bump pysml-0.0.3
   * update libpurecool-0.6.4
