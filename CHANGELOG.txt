@@ -1,7 +1,9 @@
-2020-12-05
+2020-12-05 homeassistant-0.118.5
   * bump home-assistant-frontend-20201204.0
   * bump pyzerproc-0.3.0
   * dg pyatv-0.7.3
+  * update homeassistant-1.0.0_beta0
+  * update homeassistant-0.118.5
 
 2020-12-04
   * bump home-assistant-frontend-20201203.0
