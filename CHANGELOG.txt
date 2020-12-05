@@ -1,3 +1,6 @@
+2020-12-05
+  * bump home-assistant-frontend-20201204.0
+
 2020-12-04
   * bump home-assistant-frontend-20201203.0
   * bump HATasmota-0.1.4
