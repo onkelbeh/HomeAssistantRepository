@@ -1,9 +1,10 @@
-2020-12-05 homeassistant-0.118.5
+2020-12-05 homeassistant-1.0.0_beta1
   * bump home-assistant-frontend-20201204.0
   * bump pyzerproc-0.3.0
   * dg pyatv-0.7.3
   * update homeassistant-1.0.0_beta0
   * update homeassistant-0.118.5
+  * update homeassistant-1.0.0_beta1
 
 2020-12-04
   * bump home-assistant-frontend-20201203.0
@@ -54,11 +55,12 @@
   * update zha-quirks-0.0.47
   * update pyatmo-4.2.0
 
-2020-11-27
+2020-11-27 homeassistant-0.118.4
   * update roombapy-1.6.2, now uses pyproject.toml
   * update poetry-core-1.0.0
   * re-add tqdm-4.49.0 from main repo archive, dropped, but still needed
   * fix roombapy Manifest
+  * update homeassistant-0.118.4
 
 2020-11-25
   * bump HATasmota-0.1.1
