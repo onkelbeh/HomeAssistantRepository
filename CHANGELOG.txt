@@ -5,6 +5,7 @@
   * bump pymyq-2.0.11
   * bump simplisafe-python-9.6.1
   * bump simplisafe-python-9.6.2
+  * bump homematicip-0.13.0
 
 2020-12-05 homeassistant-1.0.0_beta1
   * bump home-assistant-frontend-20201204.0
