@@ -1,3 +1,6 @@
+2020-12-08
+  * update ring-doorbell-0.6.2
+
 2020-12-05 homeassistant-1.0.0_beta1
   * bump home-assistant-frontend-20201204.0
   * bump pyzerproc-0.3.0
