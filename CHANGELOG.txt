@@ -1,3 +1,6 @@
+2020-12-09
+  * update pyarlo-0.2.4
+
 2020-12-08 homeassistant-1.0.0_beta2
   * update ring-doorbell-0.6.2
   * update voluptuous-0.12.1
