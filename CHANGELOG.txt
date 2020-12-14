@@ -12,6 +12,7 @@
   * update HAP-python-3.1.0
   * bump denonavr-0.9.8
   * bump RestrictedPython-5.1
+  * bump youtube_dl-2020.12.7
 
 2020-12-09
   * update pyarlo-0.2.4
