@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..9} )
 
 inherit distutils-r1
 
@@ -16,10 +16,14 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
+DOCS="README.md"
+
 RDEPEND="dev-python/curve25519-donna[${PYTHON_USEDEP}]
 	dev-python/ed25519[${PYTHON_USEDEP}]
-	dev-python/pycryptodome[${PYTHON_USEDEP}]
-	dev-python/zeroconf[${PYTHON_USEDEP}]"
+	dev-python/cryptography[${PYTHON_USEDEP}]
+	dev-python/zeroconf[${PYTHON_USEDEP}]
+	dev-python/base36[${PYTHON_USEDEP}]
+	dev-python/pyqrcode[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
