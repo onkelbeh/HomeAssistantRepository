@@ -1,6 +1,7 @@
 2020-12-14
   * bump openwebifpy-3.2.0
   * bump hass-nabucasa-0.39.0
+  * bump home-assistant-frontend-20201210.0
 
 2020-12-09
   * update pyarlo-0.2.4
