@@ -21,7 +21,6 @@ aio-georss-client==0.6
 aio-georss-gdacs==0.4
 aioambient==1.2.1
 aioasuswrt==1.3.1
-aioazuredevops==1.3.5
 aiocoap==0.4_beta3
 aiodns==2.0.0
 aioeafm==0.1.2
@@ -47,7 +46,6 @@ aionotion==1.1.0
 aionursery==0.3.0
 aiopulse==0.4.2
 aiopvapi==1.6.14
-aiopvpc==2.0.2
 aiopylgtv==0.3.3
 aiorecollect==0.2.2
 aioshelly==0.5.1
@@ -101,8 +99,6 @@ avea==1.5.1
 avion==0.10
 awk==1
 axis==41
-azure-common==1.1.25
-azure-servicebus==0.50.3
 backoff==1.10.0
 baidu-aip==1.6.6.0
 basicmodem==0.7
@@ -217,7 +213,6 @@ directv==0.4.0
 discogs-client==2.3.0
 discord-py==1.5.1
 distro==1.5.0
-dlib==19.18.0
 dlipower==0.7.165
 dnspython==2.0.0
 docopt==0.6.2
@@ -259,8 +254,6 @@ eudev==3.2.9
 evdev==1.1.2
 evohome-async==0.3.5
 expat==2.2.8
-face_recognition==1.2.3
-face_recognition_models==0.3.0
 fastdotcom==0.0.3
 feedparser-homeassistant==5.2.2
 feedparser==6.0.2
@@ -325,7 +318,6 @@ grpc-google-iam-v1==0.12.3
 grpcio==1.31.0
 gstreamer-player==1.1.2
 gTTS-token==1.1.3
-gTTS==2.2.1
 guppy3==3.1.0
 gzip==1.10
 h11==0.11.0
@@ -370,8 +362,6 @@ hyperlink==20.0.1
 i2csense==0.0.4
 iammeter==0.1.7
 iaqualink==0.3.4
-ibm-cloud-sdk-core==1.0.0
-ibm-watson==4.0.1
 ibmiotf==0.3.4
 idna-ssl==1.1.0
 idna==2.10
@@ -404,7 +394,6 @@ jsonrpc-async==1.1.1
 jsonrpc-base==1.1.0
 jsonrpc-websocket==1.2.1
 kaiterra-async-client==0.0.2
-keba-kecontact==1.1.0
 keyring==21.4.0
 kiwiki-client==0.1.1
 konnected==1.2.0
@@ -449,7 +438,6 @@ lmnotify==0.0.4
 locationsharinglib==4.1.0
 logi-circle==0.2.2
 lomond==0.3.3
-london-tube-status==0.2
 luftdaten==0.6.4
 lupupy==0.0.18
 lw12==0.9.2
@@ -466,7 +454,6 @@ matrix-client==0.3.2
 mawk==1.3.4_p20200106
 maxcube-api==0.1.0
 mbddns==0.1.2
-mcstatus==2.3.0
 MechanicalSoup==0.6.0
 messagebird==1.2.0
 meteoalertapi==0.1.6
@@ -479,8 +466,6 @@ monotonic==1.5
 mpc==1.2.1
 mpfr==4.1.0
 ms-cv==0.1.1
-msrest==0.6.19
-msrestazure==0.6.4
 mt_940==4.19.0
 multidict==5.0.0
 mutagen==1.45.1
@@ -652,7 +637,6 @@ pyedimax==0.2.1
 pyEight==0.1.5
 pyelftools==0.26
 pyEmby==1.7
-pyenvisalink==4.0
 pyephember==0.3.1
 PyEssent==0.14
 pyeverlights==0.1.0
@@ -970,7 +954,6 @@ sqlitedict==1.6.0
 sseclient-py==1.7
 starkbank-ecdsa==1.0.0
 starline==0.1.3
-starlingbank==3.2
 statsd==3.2.1
 steamodd==4.21
 stevedore==3.2.2
@@ -1021,7 +1004,6 @@ txaio==20.4.1
 typing-extensions==3.7.4.3
 tzlocal==2.1
 u-msgpack==2.7.1
-uamqp==1.2.11
 udev==245.5
 uEagle==0.0.2
 ujson==4.0.1
@@ -1049,7 +1031,6 @@ voluptuous==0.12.0
 voluptuous==0.12.1
 volvooncall==0.8.12
 vsure==1.5.4
-vtjp==0.1.14
 vultr==0.1.2
 wakeonlan==1.1.6
 waqiasync==1.0.0
@@ -1092,9 +1073,8 @@ youtube_dl==2020.11.12
 zbar==0.23
 zeep==4.0.0
 zengge==0.2
-zeroconf==0.28.6
 zeroconf==0.28.7
-zha-quirks==0.0.48
+zha-quirks==0.0.49
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
 zigpy-cc==0.5.2

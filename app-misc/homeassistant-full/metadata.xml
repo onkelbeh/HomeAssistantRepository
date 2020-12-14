@@ -65,8 +65,6 @@
     <flag name="awair">Library to integrate the Awair GraphQL API into Home Assistant</flag>
     <flag name="aws">Interact with Amazon Web Services</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
-    <flag name="azure_devops">Allows you to control and monitor your Azure DevOps instance in Home Assistant</flag>
-    <flag name="azure_service_bus">Allows you to send messages to Azure Service Bus from within Home Assistant</flag>
     <flag name="baidu">Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi</flag>
     <flag name="bbb_gpio">Base for all BeagleBone Black related GPIO platforms</flag>
     <flag name="bbox">Presence detection from Bbox Modem Router from Bouygues Telecom</flag>
@@ -145,8 +143,6 @@
     <flag name="discogs">Discogs Client for Home Assistant</flag>
     <flag name="discord">Send messages to the user using Discord from Home Assistant</flag>
     <flag name="discovery">Automatically configure zeroconf/mDNS and UPnP devices in Home Assistant</flag>
-    <flag name="dlib_face_detect">Image processing platform for Home Assistant</flag>
-    <flag name="dlib_face_identify">image processing platform allows you to use the Dlib</flag>
     <flag name="dlink">Allows you to control the state of your D-Link Wi-Fi Smart Plugs</flag>
     <flag name="dlna_dmr">Allows you to control a DLNA Digital Media Renderer</flag>
     <flag name="dnsip">will expose an IP address, fetched via DNS resolution, as its value</flag>
@@ -187,7 +183,6 @@
     <flag name="entur_public_transport">entur_public_transport sensor gives real-time departure information</flag>
     <flag name="environment_canada">Access meteorological data from Environment Canada from Home Assistant</flag>
     <flag name="envirophat">Display information collected by an Enviro pHAT add-on board</flag>
-    <flag name="envisalink">Link Envisalink devices to Home Assistant</flag>
     <flag name="ephember">The ephember climate platform lets you control EPH Controls thermostats</flag>
     <flag name="epson">The epson platform allows you to control a Epson projector</flag>
     <flag name="epsonworkforce">monitor the ink levels of a Epson Workforce printer</flag>
@@ -252,7 +247,6 @@
     <flag name="google">Intergrate Google Calendar into Home Assistant</flag>
     <flag name="google_maps">google_maps platform allows you to detect presence</flag>
     <flag name="google_pubsub">Send events to Google Cloud Pub/Sub from Home Assistant</flag>
-    <flag name="google_translate">google_translate text-to-speech platform for Home Assistant</flag>
     <flag name="google_travel_time">provides travel time from the Google Distance Matrix API</flag>
     <flag name="gpmdp">Allows you to control a GPMDP instance from Home Assistant</flag>
     <flag name="gpsd">GPS information collected by gpsd and a GPS receiver</flag>
@@ -325,7 +319,6 @@
     <flag name="joaoapps_join">joaoapps_join integration exposes services from Join</flag>
     <flag name="juicenet">pulls data from a JuiceNet charging station</flag>
     <flag name="kaiterra">view the readings from your Laser Egg or Sensedge device</flag>
-    <flag name="keba">integrates your Keba charging station (wallbox)</flag>
     <flag name="keenetic_ndms2">presence detection for Keenetic Routers</flag>
     <flag name="kef">KEF wireless speakers</flag>
     <flag name="keyboard">The keyboard integration simulates key presses on the host machine</flag>
@@ -353,7 +346,6 @@
     <flag name="lirc">Python bindings for LIRC</flag>
     <flag name="litejet">allows a computer to control the system via LiteJet’s third party protocol</flag>
     <flag name="logi_circle">integrate your Logi Circle cameras in Home Assistant</flag>
-    <flag name="london_underground">display the status of London underground lines</flag>
     <flag name="loopenergy">Integrate your Loop Energy meter information into Home Assistant</flag>
     <flag name="luci">fetch connected devices from your OpenWrt</flag>
     <flag name="luftdaten">query the open data API of luftdaten.info to monitor air quality</flag>
@@ -384,7 +376,6 @@
     <flag name="miflora">miflora sensor platform allows one to monitor plant soil and air conditions</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
     <flag name="mill">A python3 library to communicate with Mill</flag>
-    <flag name="minecraft_server">retrieve information from a Minecraft server</flag>
     <flag name="minio">This integration adds interaction with Minio</flag>
     <flag name="mitemp_bt">mitemp_bt sensor platform allows one to monitor room temperature and humidity</flag>
     <flag name="mobile_app">allows Home Assistant mobile apps to easily integrate with Home Assistant</flag>
@@ -405,7 +396,6 @@
     <flag name="mythicbeastsdns">automatically update your dynamic DNS entry at Mythic Beasts</flag>
     <flag name="n26">allows you to track your N26 account</flag>
     <flag name="nad">allows you to control a NAD receiver through RS232, TCP and Telnet</flag>
-    <flag name="namecheapdns">automatically update your dynamic DNS entry at namecheapdns</flag>
     <flag name="nanoleaf">allows you to control Nanoleaf Light Panels from Home Assistant</flag>
     <flag name="neato">Python package for controlling Neato pybotvac Connected vacuum robot</flag>
     <flag name="nederlandse_spoorwegen">train service in the Netherlands</flag>
@@ -498,7 +488,6 @@
     <flag name="pulseaudio_loopback">whole home audio system based upon PulseAudio</flag>
     <flag name="pushbullet">sensor platform reads messages from Pushbullet</flag>
     <flag name="pushover">allows integrations to send messages to the user using Pushover</flag>
-    <flag name="pvpc_hourly_pricing">hourly price of electricity in Spain from PVPC</flag>
     <flag name="python_script">write Python scripts that are exposed as services in Home Assistant</flag>
     <flag name="qbittorrent">monitor your downloads with qBittorrent from within Home Assistant</flag>
     <flag name="qld_bushfire">GeoRSS feed containing bushfire alerts for Queensland</flag>
@@ -616,7 +605,6 @@
     <flag name="ssdp">will scan the network for supported devices and services (Upnp)</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="starline">retrieve data of your StarLine security system from the StarLine portal</flag>
-    <flag name="starlingbank">monitor your account balance data as sensors</flag>
     <flag name="startca">Integrate your Start.ca account information into Home Assistant</flag>
     <flag name="statsd">transfer all state changes to an external StatsD instance</flag>
     <flag name="steam_online">allows you to track the online status of public Steam accounts</flag>
@@ -693,7 +681,6 @@
     <flag name="usgs_earthquakes_feed">a GeoJSON feed provided by the U.S. Geological Survey</flag>
     <flag name="uvc">allows you to integrate UniFi Video Camera (UVC) into Home Assistant</flag>
     <flag name="vallox">control any Vallox ventilation unit</flag>
-    <flag name="vasttrafik">traveling details for the larger Göteborg area in Sweden from the Västtrafik</flag>
     <flag name="velbus">supports the Velbus USB, serial and TCP/IP gateway</flag>
     <flag name="velux">allows you to connect to a Velux KLF 200 interface</flag>
     <flag name="venstar">allows you to control Venstar thermostats from Home Assistant</flag>
@@ -717,7 +704,6 @@
     <flag name="waqi">will query World Air Quality Index service</flag>
     <flag name="waterfurnace">Python interface for waterfurnace geothermal systems</flag>
     <flag name="watson_iot">link Home Assistant with an IBM Watson IoT Platform instance</flag>
-    <flag name="watson_tts">text-to-speech platform that works with IBM Watson Cloud</flag>
     <flag name="waze_travel_time">waze_travel_time sensor provides travel time from the Waze</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>
     <flag name="wemo">discover and control WeMo devices</flag>

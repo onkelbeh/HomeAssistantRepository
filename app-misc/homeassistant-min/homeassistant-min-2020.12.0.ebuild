@@ -27,7 +27,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 KEYWORDS="amd64 arm arm64 x86 amd64-linux x86-linux"
-IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github +homekit influxdb kodi maxcube mikrotik +mobile_app +mqtt +mysql +notify_events +otp owntracks +ping +python_script qnap +recorder +rest samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl tasmota test tradfri +version +wake_on_lan workday yamaha yamaha_musiccast +zwave"
+IUSE="androidtv axis +caldav cli coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github +homekit influxdb kodi maxcube mikrotik +mobile_app +mqtt +mysql +notify_events +otp owntracks +ping +python_script qnap qvr_pro +recorder +rest samsungtv +scrape shelly signal_messenger +snmp socat sonos +sql +ssl tasmota test tradfri +version +wake_on_lan workday yamaha yamaha_musiccast +zwave"
 
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
@@ -54,13 +54,13 @@ RDEPEND="${RDEPEND}
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2020.6.20[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
-	~dev-python/cryptography-3.2[${PYTHON_USEDEP}]
+	~dev-python/cryptography-3.2.1[${PYTHON_USEDEP}]
 	~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]
 	~dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
-	~dev-python/hass-nabucasa-0.37.2[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20201111.2[${PYTHON_USEDEP}]
+	~dev-python/hass-nabucasa-0.39.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20201212.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.18.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.16.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/importlib_metadata-1.6.0[${PYTHON_USEDEP}]' python3_7)
@@ -68,7 +68,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/netdisco-2.8.2[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
 	~dev-python/pillow-7.2.0[${PYTHON_USEDEP}]
-	>=dev-python/pip-8.0.3[${PYTHON_USEDEP}]
+	<dev-python/pip-20.3.0
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
 	~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}]
@@ -82,7 +82,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-serialize-2.4.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.4.2[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.28.6[${PYTHON_USEDEP}]"
+	~dev-python/zeroconf-0.28.7[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -98,7 +98,7 @@ RDEPEND="${RDEPEND}
 
 # Module requirements from useflags
 RDEPEND="${RDEPEND}
-	androidtv? ( ~dev-python/adb-shell-0.2.1[${PYTHON_USEDEP}] ~dev-python/androidtv-0.0.54[${PYTHON_USEDEP}] ~dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}] )
+	androidtv? ( ~dev-python/adb-shell-0.2.1[${PYTHON_USEDEP}] ~dev-python/androidtv-0.0.56[${PYTHON_USEDEP}] ~dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}] )
 	axis? ( ~dev-python/axis-41[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.6.1[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli )
@@ -123,6 +123,7 @@ RDEPEND="${RDEPEND}
 	ping? ( ~dev-python/icmplib-1.2.2[${PYTHON_USEDEP}] )
 	python_script? ( ~dev-python/RestrictedPython-5.0[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.3.0[${PYTHON_USEDEP}] )
+	qvr_pro? ( ~dev-python/pyqvrpro-0.52[${PYTHON_USEDEP}] )
 	recorder? ( ~dev-python/sqlalchemy-1.3.20[${PYTHON_USEDEP}] )
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-1.4.0[${PYTHON_USEDEP}] )
@@ -131,10 +132,10 @@ RDEPEND="${RDEPEND}
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.4[${PYTHON_USEDEP}] )
 	snmp? ( ~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
-	sonos? ( ~dev-python/pysonos-0.0.36[${PYTHON_USEDEP}] )
+	sonos? ( ~dev-python/pysonos-0.0.37[${PYTHON_USEDEP}] )
 	sql? ( ~dev-python/sqlalchemy-1.3.20[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
-	tasmota? ( ~dev-python/HATasmota-0.0.32[${PYTHON_USEDEP}] )
+	tasmota? ( ~dev-python/HATasmota-0.1.4[${PYTHON_USEDEP}] )
 	tradfri? ( ~dev-python/pytradfri-7.0.4[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-3.4.2[${PYTHON_USEDEP}] )
 	wake_on_lan? ( ~dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}] )
@@ -153,7 +154,7 @@ BDEPEND="${RDEPEND}
 		~dev-python/mock-open-1.4.0[${PYTHON_USEDEP}]
 		~dev-python/mypy-0.790[${PYTHON_USEDEP}]
 		~dev-python/pipdeptree-1.0.0[${PYTHON_USEDEP}]
-		~dev-python/pre-commit-2.8.2[${PYTHON_USEDEP}]
+		~dev-python/pre-commit-2.9.2[${PYTHON_USEDEP}]
 		~dev-python/pylint-strict-informational-0.1[${PYTHON_USEDEP}]
 		~dev-python/pylint-2.6.0[${PYTHON_USEDEP}]
 		~dev-python/pytest-aiohttp-0.3.0[${PYTHON_USEDEP}]
@@ -214,3 +215,4 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
+
