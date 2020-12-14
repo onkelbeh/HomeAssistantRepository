@@ -17,6 +17,7 @@
   * bump aiorecollect-1.0.1
   * update homeassistant-1.0.0_beta6
   * update homeassistant-2020.12.0
+  * fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/192
 
 2020-12-09
   * update pyarlo-0.2.4

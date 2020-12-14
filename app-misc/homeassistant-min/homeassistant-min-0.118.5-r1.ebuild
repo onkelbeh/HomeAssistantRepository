@@ -54,7 +54,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2020.6.20[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
-	~dev-python/cryptography-3.2.1[${PYTHON_USEDEP}]
+	~dev-python/cryptography-3.2[${PYTHON_USEDEP}]
 	~dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]
 	~dev-python/distro-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/emoji-0.5.4[${PYTHON_USEDEP}]
@@ -215,4 +215,3 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
-
