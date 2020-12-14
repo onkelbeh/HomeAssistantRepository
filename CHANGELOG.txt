@@ -8,6 +8,7 @@
   * update spiderpy-1.4.2
   * bump home-assistant-frontend-20201212.0
   * update zeroconf-0.28.7
+  * bump zha-quirks-0.0.49
 
 2020-12-09
   * update pyarlo-0.2.4
