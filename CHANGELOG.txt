@@ -5,6 +5,7 @@
   * update pyserial-3.5 from main repo
   * bump pyserial-asyncio-0.5
   * bump aiounifi-26
+  * update spiderpy-1.4.2
 
 2020-12-09
   * update pyarlo-0.2.4
