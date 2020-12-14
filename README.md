@@ -14,6 +14,8 @@ New Ebuild, generated for `0.115.3` and later, currently holds **45** USE Flags.
 
 ### `app-misc/homeassistant-full`
 
+WARNING: This one currently breaks emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
+
 This Ebuild contains **746** USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Who would blame me for this at 800 USE Flags ;-)
 
 ### Commons for all three Main Ebuilds
