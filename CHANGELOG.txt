@@ -3,6 +3,7 @@
   * bump hass-nabucasa-0.39.0
   * bump home-assistant-frontend-20201210.0
   * update pyserial-3.5 from main repo
+  * bump pyserial-asyncio-0.5
 
 2020-12-09
   * update pyarlo-0.2.4
