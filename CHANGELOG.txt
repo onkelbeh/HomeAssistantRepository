@@ -6,6 +6,7 @@
   * bump pyserial-asyncio-0.5
   * bump aiounifi-26
   * update spiderpy-1.4.2
+  * bump home-assistant-frontend-20201212.0
 
 2020-12-09
   * update pyarlo-0.2.4
