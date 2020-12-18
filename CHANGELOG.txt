@@ -1,6 +1,7 @@
 2020-12-18
   * bump envoy-reader-0.17.1
   * update envoy-reader-0.18.1
+  * add bandit-1.7.0
 
 2020-12-14 homeassistant-2020.12.0
   * bump openwebifpy-3.2.0
