@@ -12,8 +12,9 @@
   * update pybotvac-0.0.19
   * bump roonapi-0.0.28
   * bump pymyq-2.0.12
-  * update python-telegram-bot-13.1
   * bump envoy-reader-0.17.3
+  * fix some metadata.xml
+  * update python-telegram-bot-13.1
 
 2020-12-14 homeassistant-2020.12.0
   * bump openwebifpy-3.2.0
