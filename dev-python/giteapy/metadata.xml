@@ -8,6 +8,7 @@
   <upstream>
     <remote-id type="pypi">giteapy</remote-id>
     <maintainer status="unknown">
+      <name>unknown</name>
       <email>rh@dblue.ai</email>
     </maintainer>
   </upstream>
