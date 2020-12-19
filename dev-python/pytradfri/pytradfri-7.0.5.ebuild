@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6..8} )
+PYTHON_COMPAT=( python3_{6..9} )
 
 inherit distutils-r1
 
@@ -16,8 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/aiocoap-0.4_alpha1[${PYTHON_USEDEP}]
-	~dev-python/dtlssocket-0.1.7[${PYTHON_USEDEP}]"
+RDEPEND="~dev-python/aiocoap-0.4_beta3[${PYTHON_USEDEP}]
+	~dev-python/dtlssocket-0.1.11[${PYTHON_USEDEP}]"
 
 DOCS="README.md"
 
@@ -30,6 +30,7 @@ DEPEND="${DEPEND}
 		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 		dev-python/coveralls[${PYTHON_USEDEP}]
 		dev-python/flake8[${PYTHON_USEDEP}]
+		~dev-python/black-20.8_beta1[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

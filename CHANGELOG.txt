@@ -1,5 +1,6 @@
 2020-12-19
   * update dtlssocket-0.1.11, dtlssocket-0.1.12
+  * update pytradfri-7.0.5
 
 2020-12-18 homeassistant-2020.12.1
   * bump envoy-reader-0.17.1
