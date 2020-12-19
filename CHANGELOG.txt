@@ -1,4 +1,7 @@
-2020-12-18
+2020-12-19
+  * update dtlssocket-0.1.11, dtlssocket-0.1.12
+
+2020-12-18 homeassistant-2020.12.1
   * bump envoy-reader-0.17.1
   * update envoy-reader-0.18.1
   * add bandit-1.7.0
