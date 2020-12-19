@@ -7,7 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyserial</remote-id>
-    <docs>https://pythonhosted.org/pyserial/</docs>
     <maintainer status="unknown">
       <email>cliechti@gmx.net</email>
       <name>Chris Liechti</name>
