@@ -2,6 +2,7 @@
   * update dtlssocket-0.1.11, dtlssocket-0.1.12
   * update pytradfri-7.0.5
   * update pyps4-2ndscreen-1.2.0
+  * update pyiqvia-0.3.1
 
 2020-12-18 homeassistant-2020.12.1
   * bump envoy-reader-0.17.1
