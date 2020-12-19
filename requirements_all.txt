@@ -47,7 +47,7 @@ aionursery==0.3.0
 aiopulse==0.4.2
 aiopvapi==1.6.14
 aiopylgtv==0.3.3
-aiorecollect==0.2.2
+aiorecollect==1.0.1
 aioshelly==0.5.1
 aiosqlite==0.16.0
 aioswitcher==1.2.1
@@ -88,7 +88,7 @@ atenpdu==0.3.0
 atomicwrites==1.4.0
 attr==2.4.48
 attrs==19.3.0
-attrs==20.2.0
+attrs==20.3.0
 auroranoaa==0.0.2
 aurorapy==0.2.6
 Authlib==0.15
@@ -124,11 +124,11 @@ bluez==5.55
 bme680==1.0.5
 bomradarloop==0.1.5
 bond-api==0.1.8
-boto3==1.16.9
+boto3==1.16.16
 boto3==1.9.252
 botocore==1.12.252
-botocore==1.19.9
-bottle==0.12.18
+botocore==1.19.16
+bottle==0.12.19
 bottleneck==1.3.2
 bravia-tv==1.0.8
 broadlink==0.16.0
@@ -185,10 +185,11 @@ crccheck==0.6
 crcmod==1.7
 crimereports==1.0.1
 croniter==0.3.34
+cryptography==3.2
 cryptography==3.2.1
 csrmesh==0.9.0
 cups==2.3.3
-curl==7.72.0
+curl==7.74.0
 c_rehash==1.7
 datadog==0.15.0
 datapoint==0.9.5
@@ -218,17 +219,17 @@ dnspython==2.0.0
 docopt==0.6.2
 DoorBirdPy==2.1.0
 dovado==0.4.1
-dsmr-parser==0.23
+dsmr-parser==0.25
 dtlssocket==0.1.10
 dweepy==0.3.0
 dynalite-devices==0.1.46
 eagle200-reader==0.2.4
 ebusdpy==0.0.16
-ecdsa==0.16.0
+ecdsa==0.16.1
 ecoaliface==0.4.0
 eebrightbox==0.0.4
 elementpath==2.0.4
-elfutils==0.181
+elfutils==0.182
 elgato==1.0.0
 eliqonline==1.2.2
 elkm1-lib==0.8.8
@@ -240,7 +241,7 @@ enturclient==0.2.1
 enum-compat==0.0.3
 env-canada==0.2.4
 envirophat==0.0.6
-envoy-reader==0.17.0
+envoy-reader==0.17.3
 envs==1.3
 ephem==3.7.7.0
 ephem==3.7.7.1
@@ -327,7 +328,7 @@ habitipy==0.2.0
 hangups==0.4.11
 hass-nabucasa==0.39.0
 hass-splunk==0.1.1
-HATasmota==0.1.4
+HATasmota==0.1.6
 haversine==2.1.2
 hbmqtt==0.9.5
 hdate==0.9.12
@@ -443,7 +444,7 @@ lupupy==0.0.18
 lw12==0.9.2
 lxml==4.6.2
 lyft_rides==0.2
-lz4==1.9.2
+lz4==1.9.3
 lz4==3.0.2
 magicseaweed==1.0.3
 markdown==3.3.3
@@ -497,7 +498,7 @@ nuimo==0.1.0
 numato-gpio==0.8.0
 numexpr==2.7.2
 numpy==1.19.2
-numpy==1.19.3
+numpy==1.19.4
 oasatelematics==0.3
 oauth2client==4.0.0
 oauth2client==4.1.3
@@ -542,6 +543,7 @@ pifacedigitalio==3.0.5
 piglow==1.2.4
 pilight==0.1.1
 pillow==7.2.0
+pillow==8.0.1
 pip==20.2.4
 pizzapi==0.0.3
 platformio==4.3.4
@@ -619,6 +621,7 @@ pycoolmasternet-async==0.1.2
 pycountry-convert==0.7.2
 pycparser==2.20
 pycryptodome==3.9.8
+pycryptodome==3.9.9
 pycryptodomex==3.9.4
 pycsspeechtts==1.0.4
 pycups==1.9.73
@@ -871,7 +874,7 @@ requests-oauth==0.4.1
 requests-oauthlib==1.3.0
 requests-toolbelt==0.9.1
 requests==2.25.0
-responses==0.12.0
+responses==0.12.1
 rfc3986==1.4.0
 rfk101py==0.0.1
 rflink==0.0.55
@@ -902,7 +905,7 @@ satel-integra==0.3.4
 schiene==0.23
 scipy==1.5.2
 scsgate==0.1.0
-secretstorage==3.1.2
+secretstorage==3.2.0
 semantic_version==2.8.5
 semver==2.13.0
 sendgrid==6.4.6
@@ -989,7 +992,7 @@ tmb==0.0.4
 todoist-python==8.0.0
 toml==0.10.1
 toonapi==0.2.0
-total-connect-client==0.55.1
+total-connect-client==0.55
 tp-connected==0.0.4
 tqdm==4.51.0
 transmissionrpc==0.11

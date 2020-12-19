@@ -135,7 +135,7 @@ RDEPEND="${RDEPEND}
 	sonos? ( ~dev-python/pysonos-0.0.37[${PYTHON_USEDEP}] )
 	sql? ( ~dev-python/sqlalchemy-1.3.20[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
-	tasmota? ( ~dev-python/HATasmota-0.1.4[${PYTHON_USEDEP}] )
+	tasmota? ( ~dev-python/HATasmota-0.1.6[${PYTHON_USEDEP}] )
 	tradfri? ( ~dev-python/pytradfri-7.0.4[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-3.4.2[${PYTHON_USEDEP}] )
 	wake_on_lan? ( ~dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}] )
