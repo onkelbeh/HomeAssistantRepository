@@ -9,6 +9,7 @@
   * update pyzerproc-0.4.4
   * bump androidtv-0.0.57
   * update venstarcolortouch-0.13
+  * update pydaikin-2.4.0
 
 2020-12-19
   * update dtlssocket-0.1.11, dtlssocket-0.1.12

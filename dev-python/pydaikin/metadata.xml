@@ -9,7 +9,7 @@
     <remote-id type="pypi">pydaikin</remote-id>
     <maintainer status="unknown">
       <email>mustang@yadan.org</email>
-      <name>Yari Adan</name>
+      <name>Fredrik Erlandsson &lt;fredrik.e+pydaikin@gmail.com&gt;, Matthias Lemainque &lt;matthias.lemainque+pydaikin@gmail.com&gt;</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
