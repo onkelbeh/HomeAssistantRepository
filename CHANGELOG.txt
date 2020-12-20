@@ -8,6 +8,7 @@
   * add bleak-0.10.0
   * update pyzerproc-0.4.4
   * bump androidtv-0.0.57
+  * update venstarcolortouch-0.13
 
 2020-12-19
   * update dtlssocket-0.1.11, dtlssocket-0.1.12
