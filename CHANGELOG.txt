@@ -1,6 +1,7 @@
 2020-12-20
   * update tornado-6.1
   * update esptool-3.0
+  * bump platformio-5.0.3
 
 2020-12-19
   * update dtlssocket-0.1.11, dtlssocket-0.1.12
