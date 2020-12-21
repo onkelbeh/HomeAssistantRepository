@@ -1,5 +1,6 @@
 2020-12-21
   * update meteofrance-api-1.0.1
+  * bump denonavr-0.9.9
 
 2020-12-20
   * update tornado-6.1
