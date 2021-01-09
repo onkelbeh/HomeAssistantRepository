@@ -64,6 +64,7 @@
   * update pychromecast-7.7.1
   * bump python-ecobee-api-0.2.8
   * bump pychromecast-7.7.2
+  * dg google-nest-sdm-0.2.6
 
 2020-12-21
   * update meteofrance-api-1.0.1
