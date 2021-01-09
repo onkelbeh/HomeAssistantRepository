@@ -49,6 +49,7 @@
   * bump pre-commit-2.9.3
   * update locationsharinglib-4.1.5
   * update surepy-0.4.0
+  * bump pyRFXtrx-0.26.1
 
 2020-12-21
   * update meteofrance-api-1.0.1
