@@ -20,6 +20,8 @@
   * add (still needed) watchdog-0.8.3
   * update homeassistant-2020.12.2
 
+  * update psutil-5.8.0
+
 2020-12-21
   * update meteofrance-api-1.0.1
   * bump denonavr-0.9.9
