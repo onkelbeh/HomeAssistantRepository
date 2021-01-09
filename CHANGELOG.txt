@@ -41,6 +41,7 @@
   * update sqlalchemy-1.3.22 (from main repo)
   * update slixmpp-1.6.0
   * bump pyowm-3.1.1
+  * update alpha-vantage-2.3.1
 
 2020-12-21
   * update meteofrance-api-1.0.1
