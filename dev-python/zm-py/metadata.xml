@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">zm-py</remote-id>
+    <maintainer status="unknown">
+      <email>rohan@rohankapoor.com</email>
+      <name>Rohan Kapoor</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
