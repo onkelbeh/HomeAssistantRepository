@@ -53,6 +53,7 @@
   * update xknx-0.16.0
   * bump python-tado-0.10.0
   * bump denonavr-0.9.10
+  * bump roonapi-0.0.30
 
 2020-12-21
   * update meteofrance-api-1.0.1
