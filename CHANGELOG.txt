@@ -45,6 +45,7 @@
   * update volkszaehler-0.2.1
   * bump pyhomematic-0.1.71
   * update sentry-sdk-0.19.5
+  * bump debugpy-1.2.1
 
 2020-12-21
   * update meteofrance-api-1.0.1
