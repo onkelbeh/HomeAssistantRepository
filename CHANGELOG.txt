@@ -26,6 +26,7 @@
   * bump zha-quirks-0.0.50
   * update zm-py-0.5.2
   * add pyairnow-1.1.0
+  * bump vsure-1.6.1
 
 2020-12-21
   * update meteofrance-api-1.0.1
