@@ -16,6 +16,7 @@
   * bump skybellpy-0.6.3
   * bump home-assistant-frontend-20201229.0
   * bump env-canada-0.2.5, update env-canada-0.3.1
+  * update pycarwings2-2.10
 
 2020-12-21
   * update meteofrance-api-1.0.1
