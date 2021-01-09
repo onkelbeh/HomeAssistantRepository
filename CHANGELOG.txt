@@ -74,6 +74,7 @@
   * clean up home-assistant-frontend-*
   * fix static colorlog dep
   * update esphome-1.15.3-r3 (for homeassistant-2021.1.0)
+  * bump pymyq-2.0.13
 
 2020-12-21
   * update meteofrance-api-1.0.1
