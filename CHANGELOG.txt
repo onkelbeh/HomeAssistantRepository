@@ -22,6 +22,7 @@
 
   * update psutil-5.8.0
   * bump youtube_dl-2020.12.29
+  * update sendgrid-6.4.8
 
 2020-12-21
   * update meteofrance-api-1.0.1

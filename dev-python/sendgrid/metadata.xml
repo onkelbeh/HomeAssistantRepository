@@ -8,7 +8,7 @@
   <upstream>
     <remote-id type="pypi">sendgrid</remote-id>
     <maintainer status="unknown">
-      <email>dx@sendgrid.com</email>
+      <email>help@twilio.com</email>
       <name>Elmer Thomas, Yamil Asusta</name>
     </maintainer>
   </upstream>
