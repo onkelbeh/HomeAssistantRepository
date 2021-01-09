@@ -66,6 +66,7 @@
   * bump pychromecast-7.7.2
   * dg google-nest-sdm-0.2.6
   * bump pydaikin-2.4.1
+  * bump plugwise-0.8.5
 
 2020-12-21
   * update meteofrance-api-1.0.1
