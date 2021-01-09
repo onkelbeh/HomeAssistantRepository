@@ -32,6 +32,9 @@
   * update py-canary-0.5.1
   * update pytradfri-7.0.6
   * bump zha-quirks-0.0.51
+  * update zigpy-deconz-0.11.1
+  * bump zigpy-0.29.0
+  * add pubnub-4.8.0
 
 2020-12-21
   * update meteofrance-api-1.0.1
