@@ -60,6 +60,7 @@
   * update caldav-0.7.1
   * bump pypck-0.7.8
   * bump openwebifpy-3.2.7
+  * bump home-assistant-frontend-20201229.1
 
 2020-12-21
   * update meteofrance-api-1.0.1
