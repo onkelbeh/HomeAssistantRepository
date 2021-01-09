@@ -39,6 +39,7 @@
   * update elkm1-lib-0.8.10
   * update upb-lib-0.4.12
   * update sqlalchemy-1.3.22 (from main repo)
+  * update slixmpp-1.6.0
 
 2020-12-21
   * update meteofrance-api-1.0.1
