@@ -1,5 +1,6 @@
 2021-01-09
   * update pyzerproc-0.4.7
+  * update aiokef-0.2.17
 
 2020-12-21
   * update meteofrance-api-1.0.1
