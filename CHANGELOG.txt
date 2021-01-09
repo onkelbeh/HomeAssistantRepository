@@ -43,6 +43,7 @@
   * bump pyowm-3.1.1
   * update alpha-vantage-2.3.1
   * update volkszaehler-0.2.1
+  * bump pyhomematic-0.1.71
 
 2020-12-21
   * update meteofrance-api-1.0.1
