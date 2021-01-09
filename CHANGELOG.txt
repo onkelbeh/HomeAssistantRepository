@@ -30,6 +30,7 @@
   * add vol-0.1.1
   * update py-august-0.25.2
   * update py-canary-0.5.1
+  * update pytradfri-7.0.6
 
 2020-12-21
   * update meteofrance-api-1.0.1
