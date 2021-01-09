@@ -28,6 +28,7 @@
   * add pyairnow-1.1.0
   * bump vsure-1.6.1
   * add vol-0.1.1
+  * update py-august-0.25.2
 
 2020-12-21
   * update meteofrance-api-1.0.1
