@@ -9,6 +9,7 @@
   * bump huawei-lte-api-1.4.17
   * update huawei-lte-api-1.4.17
   * update pydeconz-77
+  * update google-nest-sdm-0.2.7
 
 2020-12-21
   * update meteofrance-api-1.0.1
