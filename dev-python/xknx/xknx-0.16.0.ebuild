@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6..8} )
+PYTHON_COMPAT=( python3_{6..9} )
 
 inherit distutils-r1
 
@@ -19,7 +19,8 @@ IUSE="test"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/netifaces-0.10.9
-	>=dev-python/pyyaml-5.1"
+	>=dev-python/pyyaml-5.1
+	>=dev-python/voluptuous-0.12.0"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -30,4 +31,9 @@ BDEPEND="${REDEPEND}
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
+}
+
+src_prepare() {
+	sed "s/packages=find_packages()/packages=find_packages(exclude=['test','test.*'])/g" -i setup.py || die
+	eapply_user
 }
