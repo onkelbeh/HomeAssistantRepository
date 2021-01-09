@@ -37,6 +37,7 @@
   * add pubnub-4.8.0
   * update pubnubsub-handler-1.0.9
   * update elkm1-lib-0.8.10
+  * update upb-lib-0.4.12
 
 2020-12-21
   * update meteofrance-api-1.0.1
