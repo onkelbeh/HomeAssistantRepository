@@ -14,6 +14,7 @@
   * bump envoy-reader-0.18.2
   * bump envoy-reader-0.18.3
   * bump skybellpy-0.6.3
+  * bump home-assistant-frontend-20201229.0
 
 2020-12-21
   * update meteofrance-api-1.0.1
