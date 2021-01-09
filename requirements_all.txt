@@ -169,6 +169,7 @@ coinbase==2.1.0
 coinmarketcap==5.0.3
 colorama==0.4.4
 colorlog==4.2.1
+colorlog==4.5.0
 colorlog==4.6.2
 colorthief==0.2.1
 colorzero==1.1

@@ -89,7 +89,7 @@ RDEPEND="${RDEPEND}
 # some moved to suggested USE Flags
 
 RDEPEND="${RDEPEND}
-	~dev-python/colorlog-4.2.1[${PYTHON_USEDEP}]
+	~dev-python/colorlog-4.5.0[${PYTHON_USEDEP}]
 	~dev-python/gTTS-token-1.1.3[${PYTHON_USEDEP}]
 	>=dev-python/multidict-4.5.2[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.19.1[${PYTHON_USEDEP}]
