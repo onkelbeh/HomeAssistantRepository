@@ -5,6 +5,7 @@
   * update hyperion-py-0.6.1
   * bump motionblinds-0.4.7
   * update pywemo-0.5.6
+  * update python-mpd2-3.0.1
 
 2020-12-21
   * update meteofrance-api-1.0.1
