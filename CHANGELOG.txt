@@ -13,6 +13,7 @@
   * update pyotgw-1.0_beta1
   * bump envoy-reader-0.18.2
   * bump envoy-reader-0.18.3
+  * bump skybellpy-0.6.3
 
 2020-12-21
   * update meteofrance-api-1.0.1
