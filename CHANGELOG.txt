@@ -1,3 +1,8 @@
+2021-01-19
+  * bump google-nest-sdm-0.2.8
+  * add zwave-js-server-python-0.6.0
+  * bump zwave-js-server-python-0.11.0
+
 2021-01-09 homeassistant-2021.1.1
   * update pyzerproc-0.4.7
   * update aiokef-0.2.17
