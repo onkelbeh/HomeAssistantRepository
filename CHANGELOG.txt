@@ -6,6 +6,7 @@
   * update aioshelly-0.5.3
   * bump zwave-js-server-python-0.7.1
   * bump axis-42
+  * bump bimmer_connected-0.7.14
 
 2021-01-09 homeassistant-2021.1.1
   * update pyzerproc-0.4.7
