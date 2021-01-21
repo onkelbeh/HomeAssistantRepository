@@ -5,6 +5,8 @@
   * bump zwave-js-server-python-0.10.0
   * update python-izone-1.1.3
   * bump zwave-js-server-python-0.11.0
+  * bump zigpy-0.30.0
+  * bump zigpy-0.31.0
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
