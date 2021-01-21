@@ -22,6 +22,7 @@
   * update pybotvac-0.0.20
   * bump PyViCare-0.2.5
   * update pyatmo-4.2.2
+  * bump hyperion-py-0.7.0
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
