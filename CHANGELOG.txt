@@ -16,6 +16,7 @@
   * update gogogate2-api-3.0.0
   * update roonapi-0.0.31
   * bump xknx-0.16.1
+  * update HATasmota-0.2.5
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
