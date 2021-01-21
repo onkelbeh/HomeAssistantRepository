@@ -34,7 +34,6 @@ aioharmony==0.2.6
 aiohomekit==0.2.60
 aiohttp-cors==0.7.0
 aiohttp==3.6.2
-aiohttp==3.7.1
 aiohttp==3.7.3
 aiohue==2.1.0
 aioimaplib==0.7.15
@@ -1077,7 +1076,6 @@ xmlschema==1.3.1
 xmltodict==0.12.0
 xs1-api-client==3.0.0
 yalesmartalarmclient==0.1.6
-yarl==1.4.2
 yarl==1.6.3
 yeelight==0.5.4
 yeelightsunflower==0.0.10

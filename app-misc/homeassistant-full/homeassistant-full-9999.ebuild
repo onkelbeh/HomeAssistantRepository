@@ -45,7 +45,7 @@ RDEPEND="${RDEPEND}
 # Home Assistant Core dependencies
 # from package_constraints.txt
 RDEPEND="${RDEPEND}
-	~dev-python/aiohttp-3.7.1[${PYTHON_USEDEP}]
+	~dev-python/aiohttp-3.7.3[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/astral-1.10.1[${PYTHON_USEDEP}]
 	~dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
@@ -82,7 +82,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/urllib3-1.24.3[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.4.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
-	~dev-python/yarl-1.4.2[${PYTHON_USEDEP}]
+	~dev-python/yarl-1.6.3[${PYTHON_USEDEP}]
 	~dev-python/zeroconf-0.28.8[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
