@@ -28,6 +28,7 @@
   * update homeassistant-2021.1.2
   * add pytest-xdist-2.1.0 from main repo archive (still needed)
   * update homeassistant-2021.1.3
+  * update homeassistant-2021.1.4
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
