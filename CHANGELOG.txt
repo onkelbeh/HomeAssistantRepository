@@ -15,6 +15,7 @@
   * bump pypck-0.7.9
   * update gogogate2-api-3.0.0
   * update roonapi-0.0.31
+  * bump xknx-0.16.1
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
