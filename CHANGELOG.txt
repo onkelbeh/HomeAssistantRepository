@@ -24,6 +24,7 @@
   * update pyatmo-4.2.2
   * bump hyperion-py-0.7.0
   * add pillow-7.2.0 from main repo archive (still needed)
+  * add jsonpickle-1.4.1-r1 from main repo archive (still needed)
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
