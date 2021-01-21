@@ -17,6 +17,7 @@
   * update roonapi-0.0.31
   * bump xknx-0.16.1
   * update HATasmota-0.2.5
+  * bump zha-quirks-0.0.52
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
