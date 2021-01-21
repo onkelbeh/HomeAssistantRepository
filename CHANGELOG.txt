@@ -23,6 +23,7 @@
   * bump PyViCare-0.2.5
   * update pyatmo-4.2.2
   * bump hyperion-py-0.7.0
+  * add pillow-7.2.0 from main repo archive (still needed)
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
