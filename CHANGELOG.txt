@@ -2,6 +2,7 @@
   * add scapy-2.4.4
   * bump maxcube-api-0.3.0
   * bump zwave-js-server-python-0.9.0
+  * bump zwave-js-server-python-0.10.0
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
