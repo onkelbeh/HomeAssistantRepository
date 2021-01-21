@@ -13,6 +13,7 @@
   * bump google-nest-sdm-0.2.9
   * update pyTibber-0.16.1
   * bump pypck-0.7.9
+  * update gogogate2-api-3.0.0
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
