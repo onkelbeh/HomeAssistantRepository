@@ -3,8 +3,7 @@
 
 EAPI=7
 
-DISTUTILS_USE_SETUPTOOLS=rdepend
-PYTHON_COMPAT=( python2_7 python3_{6,7,8,9} pypy3 )
+PYTHON_COMPAT=( python3_{6,7,8,9} pypy3 )
 
 inherit distutils-r1
 
@@ -14,30 +13,29 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 SLOT="0"
 LICENSE="MIT"
-KEYWORDS="~alpha amd64 ~arm arm64 hppa ~ia64 ppc ppc64 ~s390 sparc x86"
-IUSE="test"
-RESTRICT="!test? ( test )"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ppc ppc64 ~riscv ~s390 sparc x86 ~x64-macos"
 
-# pleaes do not depend on pytest to avoid unnecessary USEDEP enforcement
+# please do not depend on pytest to avoid unnecessary USEDEP enforcement
 RDEPEND="
 	dev-python/execnet[${PYTHON_USEDEP}]
+	dev-python/psutil[${PYTHON_USEDEP}]
 	dev-python/pytest-forked[${PYTHON_USEDEP}]
-	dev-python/six[${PYTHON_USEDEP}]
 "
 
 BDEPEND="
 	dev-python/setuptools_scm[${PYTHON_USEDEP}]
 	test? (
-		${RDEPEND}
 		dev-python/filelock[${PYTHON_USEDEP}]
 	)
 "
 
-PATCHES=(
-	"${FILESDIR}"/pytest-xdist-1.32.0-timeout.patch
-)
+distutils_enable_tests pytest
 
 python_test() {
-	distutils_install_for_testing
-	pytest -vv testing || die "Tests failed under ${EPYTHON}"
+	distutils_install_for_testing --via-root
+	# Skip a broken test
+	# https://github.com/pytest-dev/pytest-xdist/issues/601
+	pytest -vv testing --deselect \
+		testing/acceptance_test.py::TestWarnings::test_warning_captured_deprecated_in_pytest_6 \
+		|| die "Tests failed under ${EPYTHON}"
 }

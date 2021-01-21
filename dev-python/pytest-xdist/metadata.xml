@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer type="project">
-		<email>python@gentoo.org</email>
-		<name>Python</name>
-	</maintainer>
-	<stabilize-allarches/>
-	<upstream>
-		<remote-id type="pypi">pxml</remote-id>
-		<remote-id type="github">metagriffin/pxml</remote-id>
-		<remote-id type="bitbucket">pytest-dev/pytest-xdist</remote-id>
-	</upstream>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pytest-xdist</remote-id>
+    <maintainer status="unknown">
+      <email>pytest-dev@python.org,holger@merlinux.eu</email>
+      <name>holger krekel and contributors</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
