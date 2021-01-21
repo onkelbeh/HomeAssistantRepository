@@ -8,6 +8,7 @@
   * bump zigpy-0.30.0
   * bump zigpy-0.31.0
   * bump pycomfoconnect-0.4
+  * bump python-mpd2-3.0.3
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
