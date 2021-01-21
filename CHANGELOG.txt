@@ -1,5 +1,6 @@
 2021-01-21
   * add scapy-2.4.4
+  * bump maxcube-api-0.3.0
 
 2021-01-19
   * bump google-nest-sdm-0.2.8
