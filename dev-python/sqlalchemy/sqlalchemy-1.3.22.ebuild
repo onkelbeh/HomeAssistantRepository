@@ -29,13 +29,13 @@ BDEPEND="
 	)
 "
 
-PATCHES=(
+#PATCHES=(
 	# Ported part of those commits to fix failing tests:
 	# https://github.com/sqlalchemy/sqlalchemy/commit/c68f9fb87868c45fcadcc942ce4a35f10ff2f7ea
 	# https://github.com/sqlalchemy/sqlalchemy/commit/a9b068ae564e5e775e312373088545b75aeaa1b0
 	# https://github.com/sqlalchemy/sqlalchemy/commit/9e31fc74089cf565df5f275d22eb8ae5414d6e45
-	"${FILESDIR}/sqlalchemy-1.3.20-pypy3.patch"
-)
+	# "${FILESDIR}/sqlalchemy-1.3.20-pypy3.patch"
+#)
 
 distutils_enable_tests pytest
 

@@ -54,6 +54,7 @@
   * bump home-assistant-frontend-20210127.6
   * bump rova-0.2.1
   * update pyAtome-0.1.1.ebuild set LICENSE="Apache-2.0"
+  * sqlalchemy-1.3.22: remove obsolete Patch
 
 2021-01-21
   * add scapy-2.4.4
