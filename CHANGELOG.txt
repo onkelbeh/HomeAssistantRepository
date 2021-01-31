@@ -25,6 +25,7 @@
     - rxv-0.5.1
     - esptool-2.7, esptool-2.6
   * bump zwave-js-server-python-0.13.0
+  * bump homematicip-0.13.1
 
 2021-01-21
   * add scapy-2.4.4
