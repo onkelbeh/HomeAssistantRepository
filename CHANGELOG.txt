@@ -11,6 +11,7 @@
   * bump aiolifx-0.6.9
   * bump youtube_dl-2021.1.16
   * update pywemo-0.6.1
+  * bump radiotherm-2.1.0
 
 2021-01-21
   * add scapy-2.4.4
