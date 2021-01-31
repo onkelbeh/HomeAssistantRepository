@@ -48,6 +48,7 @@
   * update pysmappee-0.2.16
   * bump home-assistant-frontend-20210127.3 & home-assistant-frontend-20210127.5
   * bump simplisafe-python-9.6.4
+  * bump youtube_dl-2021.1.24.1
 
 2021-01-21
   * add scapy-2.4.4
