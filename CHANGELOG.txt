@@ -38,6 +38,8 @@
   * bump zigpy-0.32.0
   * update zha-quirks-0.0.53
   * update pillow-8.1.0
+  * add aiolip-1.0.1
+  * bump pylutron-caseta-0.9.0
 
 2021-01-21
   * add scapy-2.4.4
