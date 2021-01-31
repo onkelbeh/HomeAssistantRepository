@@ -44,6 +44,7 @@
   * bump zwave-js-server-python-0.14.1
   * update pytile-5.1.0
   * bump pyinsteon-1.0.9
+  * update httpcore-0.12.3
 
 2021-01-21
   * add scapy-2.4.4
