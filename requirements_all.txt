@@ -41,6 +41,7 @@ aiokafka==0.6.0
 aiokef==0.2.16
 aiolifx-effects==0.2.2
 aiolifx==0.6.7
+aiolifx==0.6.9
 aionotify==0.2.0
 aionotion==1.1.0
 aionursery==0.3.0
@@ -125,10 +126,10 @@ bluez==5.55
 bme680==1.0.5
 bomradarloop==0.1.5
 bond-api==0.1.8
-boto3==1.16.36
+boto3==1.16.43
 boto3==1.9.252
 botocore==1.12.252
-botocore==1.19.36
+botocore==1.19.43
 bottle==0.12.19
 bottleneck==1.3.2
 bravia-tv==1.0.8
@@ -183,7 +184,7 @@ construct==2.9.45
 convertdate==2.2.1
 cookies==2.2.1
 coronavirus==1.1.1
-coverage==5.3
+coverage==5.3.1
 crccheck==0.6
 crcmod==1.7
 crimereports==1.0.1
@@ -382,6 +383,7 @@ inflect==5.0.2
 inflection==0.5.1
 influxdb-client==1.8.0
 influxdb==5.2.3
+intelhex==2.3.0
 iperf3==0.1.11
 iso8601==0.1.12
 isodate==0.6.0
@@ -399,7 +401,7 @@ jsonrpc-async==1.1.1
 jsonrpc-base==1.1.0
 jsonrpc-websocket==1.2.1
 kaiterra-async-client==0.0.2
-keyring==21.5.0
+keyring==21.7.0
 kiwiki-client==0.1.1
 konnected==1.2.0
 korean-lunar-calendar==0.2.1
@@ -427,6 +429,7 @@ libpyvivotek==0.4.0
 librouteros==3.0.0
 libsodium==1.0.18
 libsoundtouch==0.8.0
+libtomcrypt==1.18.2
 libudev==232
 libunistring==0.9.10
 libusb1==1.7
@@ -603,14 +606,14 @@ pyarlo==0.2.4
 pyasn1-modules==0.2.8
 pyasn1==0.4.8
 pyatag==0.3.4.4
-pyatmo==4.2.1
+pyatmo==4.2.2
 pyAtome==0.1.1
 pyatv==0.7.5
 pybbox==0.0.5_alpha0
 pyblackbird==0.5
 pybluez==0.22
 pybluez==0.23
-pybotvac==0.0.19
+pybotvac==0.0.20
 pycares==3.1.1
 pycarwings2==2.10
 pyCEC==0.4.14
@@ -808,7 +811,7 @@ python-juicenet==1.0.1
 python-lirc==1.2.3
 python-magic==0.4.18
 python-miio==0.5.4
-python-mpd2==3.0.1
+python-mpd2==3.0.3
 python-mystrom==1.1.2
 python-nest==4.1.0
 python-nmap==0.6.1
@@ -856,6 +859,7 @@ pywilight==0.0.65
 pyxeoma==1.4.1
 PyXiaomiGateway==0.13.4
 pyyaml==5.3.1
+pyyaml==5.4.1
 pyzbar==0.1.7
 pyzerproc==0.4.7
 qnapstats==0.3.0
@@ -907,7 +911,7 @@ samsungctl==0.7.1
 samsungtvws==1.4.0
 satel-integra==0.3.4
 schiene==0.23
-scipy==1.5.2
+scipy==1.5.4
 scsgate==0.1.0
 secretstorage==3.3.0
 semantic_version==2.8.5
@@ -993,14 +997,14 @@ text-unidecode==1.3
 thermoworks-smoke==0.1.8
 thingspeak==1.0.0
 tikteck==0.4
-timezone-data==2020d
+timezone-data==2020e
 tmb==0.0.4
 todoist-python==8.0.0
 toml==0.10.2
 toonapi==0.2.0
 total-connect-client==0.55
 tp-connected==0.0.4
-tqdm==4.54.0
+tqdm==4.55.0
 transmissionrpc==0.11
 TravisPy==0.3.5
 tuyaha==0.0.9
@@ -1017,7 +1021,7 @@ u-msgpack==2.7.1
 udev==245.5
 uEagle==0.0.2
 ujson==4.0.1
-unidecode==1.1.1
+unidecode==1.1.2
 unifiled==0.11
 untangle==1.1.1
 upb-lib==0.4.11
@@ -1072,7 +1076,7 @@ xboxapi==2.0.1
 xerces-c==3.2.3
 xfinity-gateway==0.0.4
 xknx==0.15.6
-xmlschema==1.3.1
+xmlschema==1.4.1
 xmltodict==0.12.0
 xs1-api-client==3.0.0
 yalesmartalarmclient==0.1.6
