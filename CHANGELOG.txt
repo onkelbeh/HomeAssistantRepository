@@ -42,6 +42,7 @@
   * bump pylutron-caseta-0.9.0
   * update aioesphomeapi-2.6.4
   * bump zwave-js-server-python-0.14.1
+  * update pytile-5.1.0
 
 2021-01-21
   * add scapy-2.4.4
