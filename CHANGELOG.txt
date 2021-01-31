@@ -35,6 +35,7 @@
   * bump python-velbus-2.1.2
   * bump shodan-1.25.0
   * bump PlexAPI-4.3.0
+  * bump zigpy-0.32.0
 
 2021-01-21
   * add scapy-2.4.4
