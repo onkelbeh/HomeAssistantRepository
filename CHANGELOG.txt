@@ -40,6 +40,7 @@
   * update pillow-8.1.0
   * add aiolip-1.0.1
   * bump pylutron-caseta-0.9.0
+  * update aioesphomeapi-2.6.4
 
 2021-01-21
   * add scapy-2.4.4
