@@ -4,6 +4,7 @@
   * bump pylast-4.1.0
   * update hass-nabucasa-0.41.0
   * bump pycognito-0.1.5
+  * bump sendgrid-6.5.0
 
 2021-01-21
   * add scapy-2.4.4
