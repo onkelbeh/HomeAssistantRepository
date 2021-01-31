@@ -36,6 +36,7 @@
   * bump shodan-1.25.0
   * bump PlexAPI-4.3.0
   * bump zigpy-0.32.0
+  * update zha-quirks-0.0.53
 
 2021-01-21
   * add scapy-2.4.4
