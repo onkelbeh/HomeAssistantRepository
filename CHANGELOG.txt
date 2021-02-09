@@ -22,6 +22,8 @@
   * bump PlexAPI-4.3.1
   * bump aioshelly-0.5.4
   * add pymazda-0.0.8
+  X skipped pyicloud-0.10.2, failed tests, bad dependencies
+  * bump python-mpd2-3.0.4
 
 2021-01-31 homeassistant-2021.1.5
   * bump HATasmota-0.2.6 & HATasmota-0.2.7
