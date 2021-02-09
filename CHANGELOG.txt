@@ -11,6 +11,7 @@
   * add pyplaato-0.0.15
   * update brother-0.2.0
   * bump influxdb-client-1.14.0
+  * bump colorlog-4.7.2
 
 2021-01-31 homeassistant-2021.1.5
   * bump HATasmota-0.2.6 & HATasmota-0.2.7
