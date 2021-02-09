@@ -19,6 +19,7 @@
   * bump zwave-js-server-python-0.16.0
   * bump home-assistant-frontend-20210127.7
   * add freebox-api-0.0.9
+  * bump PlexAPI-4.3.1
 
 2021-01-31 homeassistant-2021.1.5
   * bump HATasmota-0.2.6 & HATasmota-0.2.7
