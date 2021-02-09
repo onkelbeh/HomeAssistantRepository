@@ -29,6 +29,7 @@
   * bump zwave-js-server-python-0.17.2
   * add hijri-converter-2.1.1
   * update holidays-0.10.5.2
+  * update slixmpp-1.7.0
 
 2021-01-31 homeassistant-2021.1.5
   * bump HATasmota-0.2.6 & HATasmota-0.2.7
