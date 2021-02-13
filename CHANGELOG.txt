@@ -12,6 +12,7 @@
   * update pyhiveapi-0.3.4.4
   * bump roonapi-0.0.32
   * bump av-8.0.3
+  * bump aioshelly-0.6.0
 
 2021-02-09
   * bump pychromecast-8.0.0
