@@ -21,6 +21,7 @@
   * bump tesla-powerwall-0.3.5
   * add pkce-1.0.3
   * update pymyq-3.0.1
+  * update ha-philipsjs-1.1.0
 
 2021-02-09
   * bump pychromecast-8.0.0
