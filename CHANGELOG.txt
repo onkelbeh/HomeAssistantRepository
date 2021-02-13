@@ -5,6 +5,7 @@
   * bump vsure-1.7.2
   * bump gTTS-2.2.2
   * bump pre-commit-2.10.1
+  * bump pyvera-0.3.13
 
 2021-02-09
   * bump pychromecast-8.0.0
