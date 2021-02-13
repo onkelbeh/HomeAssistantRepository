@@ -4,6 +4,7 @@
   * bump praw-7.1.3
   * bump vsure-1.7.2
   * bump gTTS-2.2.2
+  * bump pre-commit-2.10.1
 
 2021-02-09
   * bump pychromecast-8.0.0
