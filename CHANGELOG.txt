@@ -17,6 +17,7 @@
   * update teslajsonpy-0.11.5
   * bump pywilight-0.0.68
   * bump HATasmota-0.2.8
+  * bump aiolip-1.1.4
 
 2021-02-09
   * bump pychromecast-8.0.0
