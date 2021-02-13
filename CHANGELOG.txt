@@ -8,6 +8,7 @@
   * bump pyvera-0.3.13
   * bump home-assistant-frontend-20210208.0
   * update bond-api-0.1.9
+  * bump pysmappee-0.2.17
 
 2021-02-09
   * bump pychromecast-8.0.0
