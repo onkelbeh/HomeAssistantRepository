@@ -1,3 +1,6 @@
+2021-02-12
+  * bump aioharmony-0.2.7
+
 2021-02-09
   * bump pychromecast-8.0.0
   * add aiolyric-1.0.5
