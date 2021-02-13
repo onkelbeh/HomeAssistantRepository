@@ -1,5 +1,6 @@
 2021-02-12
   * bump aioharmony-0.2.7
+  * bump xknx-0.16.3
 
 2021-02-09
   * bump pychromecast-8.0.0
