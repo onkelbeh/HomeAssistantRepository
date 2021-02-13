@@ -9,6 +9,7 @@
   * bump home-assistant-frontend-20210208.0
   * update bond-api-0.1.9
   * bump pysmappee-0.2.17
+  * update pyhiveapi-0.3.4.4
 
 2021-02-09
   * bump pychromecast-8.0.0
