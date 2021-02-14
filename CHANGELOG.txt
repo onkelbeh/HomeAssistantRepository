@@ -2,6 +2,7 @@
   * bump brother-0.2.1
   * bump dsmr-parser-0.28
   * bump sentry-sdk-0.20.1
+  * update aioasuswrt-1.3.1-r1
 
 2021-02-12
   * bump aioharmony-0.2.7
