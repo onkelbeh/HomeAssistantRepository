@@ -9,6 +9,7 @@
   * update aioesphomeapi-2.6.3-r2, fix missing requirements.txt
   * bump httplib2-0.18.1
   * update PyRMVtransport-0.2.10
+  * add (from main repo): jinja-2.11.2-r1 (still needed)
 
 2021-02-12
   * bump aioharmony-0.2.7

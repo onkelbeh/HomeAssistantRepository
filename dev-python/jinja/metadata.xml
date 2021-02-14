@@ -2,11 +2,14 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <maintainer type="project">
-    <email>python@gentoo.org</email>
-    <name>Python</name>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">Jinja2</remote-id>
-    <remote-id type="github">pallets/jinja</remote-id>
+    <remote-id type="pypi">Jinja</remote-id>
+    <maintainer status="unknown">
+      <email>armin.ronacher@active-4.com</email>
+      <name>Armin Ronacher</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>
