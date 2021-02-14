@@ -4,6 +4,8 @@
   * bump sentry-sdk-0.20.1
   * update aioasuswrt-1.3.1-r1
   * bump HAP-python-3.3.0
+  * add AEMET-OpenData-0.1.8
+  * remove prezzibenzina-py, won't compile
 
 2021-02-12
   * bump aioharmony-0.2.7
