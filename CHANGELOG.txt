@@ -6,6 +6,7 @@
   * bump HAP-python-3.3.0
   * add AEMET-OpenData-0.1.8
   * remove prezzibenzina-py, won't compile
+  * update aioesphomeapi-2.6.3-r2, fix missing requirements.txt
 
 2021-02-12
   * bump aioharmony-0.2.7

@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -9,7 +9,8 @@ inherit distutils-r1
 
 DESCRIPTION="Python API for interacting with ESPHome devices."
 HOMEPAGE="https://esphome.io/ https://pypi.org/project/aioesphomeapi/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz
+		 https://raw.githubusercontent.com/esphome/${PN}/v${PV}/requirements.txt"
 #SRC_URI="https://github.com/esphome/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
@@ -29,8 +30,9 @@ BDEPEND="${REDEPEND}
 	)"
 
 src_prepare() {
-	sed -e 's;pylint==2.5.3;pylint;' \
-		-i requirements_test.txt || die
+#	sed -e 's;pylint==2.5.3;pylint;' \
+	#		-i requirements_test.txt || die
+	cp ${DISTDIR}/requirements.txt ${S}
 	eapply_user
 }
 
