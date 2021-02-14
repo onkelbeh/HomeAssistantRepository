@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <maintainer type="project">
-    <email>python@gentoo.org</email>
-    <name>Python</name>
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="google-code">httplib2</remote-id>
     <remote-id type="pypi">httplib2</remote-id>
-    <remote-id type="github">jcgregorio/httplib2</remote-id>
+    <maintainer status="unknown">
+      <email>joe@bitworking.org</email>
+      <name>Joe Gregorio</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>

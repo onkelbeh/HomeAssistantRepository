@@ -7,6 +7,7 @@
   * add AEMET-OpenData-0.1.8
   * remove prezzibenzina-py, won't compile
   * update aioesphomeapi-2.6.3-r2, fix missing requirements.txt
+  * bump httplib2-0.18.1
 
 2021-02-12
   * bump aioharmony-0.2.7
