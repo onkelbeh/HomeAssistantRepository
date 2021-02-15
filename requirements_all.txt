@@ -48,7 +48,7 @@ aiopulse==0.4.2
 aiopvapi==1.6.14
 aiopylgtv==0.3.3
 aiorecollect==1.0.1
-aioshelly==0.5.3
+aioshelly==0.5.1_beta0
 aiosqlite==0.16.0
 aioswitcher==1.2.1
 aiounifi==26
@@ -96,6 +96,7 @@ automat==20.2.0
 av==8.0.2
 avea==1.5.1
 avion==0.10
+awesomeversion==21.2.2
 awk==1
 axis==43
 backoff==1.10.0
@@ -183,7 +184,7 @@ construct==2.9.45
 convertdate==2.2.1
 cookies==2.2.1
 coronavirus==1.1.1
-coverage==5.3.1
+coverage==5.4
 crccheck==0.6
 crcmod==1.7
 crimereports==1.0.1
@@ -338,11 +339,12 @@ hbmqtt==0.9.5
 hdate==0.9.12
 heatmiserV3==1.1.18
 herepy==2.0.0
+hijri-converter==2.1.1
 hikvision==0.4
 hkavr==0.0.5
 hlk-sw16==0.0.9
 hole==0.5.1
-holidays==0.10.4
+holidays==0.10.5.2
 home-assistant-cli==0.9.1
 home-assistant-cli==9999
 home-assistant-frontend==20210127.7
@@ -810,7 +812,7 @@ python-lirc==1.2.3
 python-magic==0.4.18
 python-metar==1.4.0
 python-miio==0.5.4
-python-mpd2==3.0.3
+python-mpd2==3.0.4
 python-mystrom==1.1.2
 python-nest==4.1.0
 python-nmap==0.6.1
