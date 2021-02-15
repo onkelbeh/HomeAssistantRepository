@@ -2,6 +2,7 @@
   * add homeassistant-2021.2.0 (experimental, systemd support) as suggested by @Tatsh
   * dg aioshelly-0.5.1_beta0
   * update homeassistant-2021.2.1
+  * update homeassistant-2021.2.2
 
 2021-02-14
   * bump brother-0.2.1

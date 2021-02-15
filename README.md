@@ -329,7 +329,7 @@ I have **no** Google, Amazon or Apple involved in my privacy (at least in this c
 
 ## Some thoughts
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies except of portage are not tested.
-* Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap.
+* Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap. Beginning homeassistant-2021.2.0, handling for systemd was added by request, thanks to @Tatsh for help.
 * I use an own profile based on "amd64/17.1/no-multilib"
 * python-3.8.6 is set as default target.
 * I do no tests anymore on Python 3.6, and only sandbox tests on Python 3.7.
