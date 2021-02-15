@@ -6,6 +6,7 @@
   * dg brother-0.1.21
   * update homeassistant-2021.2.3
   * remove olds
+  * adjust httpcore dependency in httpx-0.16.1
 
 2021-02-14
   * bump brother-0.2.1
