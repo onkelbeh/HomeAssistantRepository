@@ -8,6 +8,7 @@
   * remove olds
   * add a copy of pytest-6.2.2 from main repo and mark it stable
   * adjust httpcore dependency in httpx-0.16.1
+  * bump platformio-5.0.4
 
 2021-02-14
   * bump brother-0.2.1
