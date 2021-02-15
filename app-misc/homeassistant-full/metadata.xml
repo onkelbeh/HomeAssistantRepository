@@ -624,6 +624,7 @@
     <flag name="synology">camera platform to watch the live streams of your Synology Surveillance Station</flag>
     <flag name="synology_dsm">monitor getting various statistics from your Synology NAS</flag>
     <flag name="synology_srm">detect presence by looking at connected devices to a Synology SRM router</flag>
+    <flag name="systemd">internal and developer use</flag>
     <flag name="systemmonitor">monitor your platform</flag>
     <flag name="tado">an interface to the my.tado.com website</flag>
     <flag name="tahoma">interface to the tahomalink.com website. It adds covers, scenes and a sun sensor</flag>

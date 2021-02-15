@@ -189,6 +189,7 @@
     <flag name="philips_js">allows you to control Philips TVs which expose the jointSPACE JSON-API</flag>
     <flag name="pilight">Pilight is a open source solution to communicate with 433 MHz devices</flag>
     <flag name="ping">ICMPLib</flag>
+    <flag name="pi_hole">retrieve statistics and interact with a Pi-hole system</flag>
     <flag name="plex">Python bindings for the Plex API</flag>
     <flag name="plugwise">Plugwise_Smile (Anna/Adam/P1/Stretch) API to use in conjunction with Home Assist</flag>
     <flag name="poolsense">PoolSense is a smart pool monitor</flag>
@@ -230,6 +231,7 @@
     <flag name="ssl">include support for haproxy</flag>
     <flag name="statsd">transfer all state changes to an external StatsD instance</flag>
     <flag name="synology_dsm">monitor getting various statistics from your Synology NAS</flag>
+    <flag name="systemd">internal and developer use</flag>
     <flag name="systemmonitor">monitor your platform</flag>
     <flag name="tasmota">Python module to help parse and construct Tasmota MQTT messages</flag>
     <flag name="tellduslive">cloud platform that connects to your Tellstick</flag>

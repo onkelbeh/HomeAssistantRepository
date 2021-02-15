@@ -51,6 +51,7 @@
     <flag name="sonos">Sonos Media Player Support</flag>
     <flag name="sql">enables you to use an SQL database supported by the sqlalchemy library</flag>
     <flag name="ssl">include support for haproxy</flag>
+    <flag name="systemd">internal and developer use</flag>
     <flag name="tasmota">Python module to help parse and construct Tasmota MQTT messages</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
