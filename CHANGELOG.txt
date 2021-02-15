@@ -6,6 +6,7 @@
   * dg brother-0.1.21
   * update homeassistant-2021.2.3
   * remove olds
+  * add a copy of pytest-6.2.2 from main repo and mark it stable
   * adjust httpcore dependency in httpx-0.16.1
 
 2021-02-14
