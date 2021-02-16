@@ -20,7 +20,7 @@ DOCS="README.rst"
 
 RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
-	dev-python/convertdate[${PYTHON_USEDEP}]
+	>=dev-python/convertdate-2.3.0[${PYTHON_USEDEP}]
 	dev-python/korean-lunar-calendar[${PYTHON_USEDEP}]
 	dev-python/hijri-converter[${PYTHON_USEDEP}]"
 BDEPEND="

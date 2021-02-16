@@ -1,3 +1,7 @@
+2021-02-16
+  * update convertdate-2.3.0
+  * update holidays-0.10.5.2-r1, fix import error
+
 2021-02-15 homeassistant-2021.2.3
   * add homeassistant-2021.2.0 (experimental, systemd support) as suggested by @Tatsh
   * dg aioshelly-0.5.1_beta0
