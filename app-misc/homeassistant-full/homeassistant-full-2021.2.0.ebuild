@@ -78,7 +78,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pyyaml-5.4.1[${PYTHON_USEDEP}]
 	~dev-python/requests-2.25.1[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
-	~dev-python/scapy-2.4.4[${PYTHON_USEDEP}]
+	~net-analyzer/scapy-2.4.4[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-1.3.22[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.24.3[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.4.0[${PYTHON_USEDEP}]

@@ -3,6 +3,12 @@
   * update holidays-0.10.5.2-r1, fix import error
   * add asyncio-mqtt-0.8.0
   * bump urllib3-1.26.3
+  * replace dev-python/scapy with net-analyzer/scapy (dupe)
+
+  2do, unknown origin:
+  ? python_openzwave_mqtt-1.4.0
+  ? asyncio_mqtt-0.8.0
+  ? PlexAPI-4.3.1, plexauth-0.0.6, plexwebsocket-0.0.12
 
 2021-02-15 homeassistant-2021.2.3
   * add homeassistant-2021.2.0 (experimental, systemd support) as suggested by @Tatsh
