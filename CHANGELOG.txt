@@ -2,6 +2,7 @@
   * update convertdate-2.3.0
   * update holidays-0.10.5.2-r1, fix import error
   * add asyncio-mqtt-0.8.0
+  * bump urllib3-1.26.3
 
 2021-02-15 homeassistant-2021.2.3
   * add homeassistant-2021.2.0 (experimental, systemd support) as suggested by @Tatsh
