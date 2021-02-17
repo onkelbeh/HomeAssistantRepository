@@ -4,6 +4,7 @@
   * add asyncio-mqtt-0.8.0
   * bump urllib3-1.26.3
   * replace dev-python/scapy with net-analyzer/scapy (dupe)
+  * re-beta esphome-9999, remove pins (again)
 
   2do, unknown origin:
   ? python_openzwave_mqtt-1.4.0

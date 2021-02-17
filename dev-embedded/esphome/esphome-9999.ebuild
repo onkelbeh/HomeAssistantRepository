@@ -26,7 +26,7 @@ HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="+server test"
 
 RDEPEND="
@@ -69,16 +69,9 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 DOCS="README.md"
 
 src_prepare() {
-	sed -e 's;voluptuous==0.12.0;voluptuous>=0.12.1;' \
-		-i requirements.txt || die
-	sed -e 's;PyYAML==5.3.1;PyYAML==5.4.1;' \
-		-i requirements.txt || die
-	sed -e 's;colorlog==4.6.2;colorlog;' \
-		-i requirements.txt || die
-	sed -e 's;protobuf==3.13.0;protobuf>=3.13.0;' \
-		-i requirements.txt || die
-	sed -e 's;pytz==2020.5;pytz==2021.1;' \
-		-i requirements.txt || die
+	# Make it easy (again)
+	cat requirements.txt | cut -d "=" -f1 > requirements_new.txt
+	mv requirements_new.txt requirements.txt
 	eapply_user
 }
 
