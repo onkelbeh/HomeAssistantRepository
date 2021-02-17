@@ -9,7 +9,7 @@
     <remote-id type="pypi">python-telnet-vlc</remote-id>
     <maintainer status="unknown">
       <email>rodripf@gmail.com</email>
-      <name>stephenmac7, rodripf</name>
+      <name>stephenmac7, rodripf, BilliAlpha, David McClosky</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
