@@ -1,6 +1,7 @@
 2021-02-17
  * bump HATasmota-0.2.9
  * bump blinkpy-0.17.0
+ * bump sense-energy-0.9.0
 
 2021-02-16
   * update convertdate-2.3.0
