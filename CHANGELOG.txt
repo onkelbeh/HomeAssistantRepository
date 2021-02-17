@@ -7,6 +7,7 @@
  * bump aioesphomeapi-2.6.5
  * bump python-telnet-vlc-2.0.1
  * bump python-ecobee-api-0.2.10
+ * add python-smarttub-0.0.6
 
 2021-02-16
   * update convertdate-2.3.0
