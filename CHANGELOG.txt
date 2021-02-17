@@ -5,6 +5,8 @@
  * bump sentry-sdk-0.20.2
  * bump tuyaha-0.0.10
  * bump aioesphomeapi-2.6.5
+ * bump python-telnet-vlc-2.0.1
+ * bump python-ecobee-api-0.2.10
 
 2021-02-16
   * update convertdate-2.3.0
