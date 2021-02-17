@@ -3,6 +3,7 @@
  * bump blinkpy-0.17.0
  * bump sense-energy-0.9.0
  * bump sentry-sdk-0.20.2
+ * bump tuyaha-0.0.10
 
 2021-02-16
   * update convertdate-2.3.0
