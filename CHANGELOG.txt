@@ -60,6 +60,7 @@
  * bump home-assistant-frontend-20210301.0, 20210302.0, 20210302.[3-6]
  * bump simplisafe-python-9.6.8
  * bump python-izone-1.1.4
+ * bump simplisafe-python-9.6.9
 
 2021-02-17
  * bump HATasmota-0.2.9
