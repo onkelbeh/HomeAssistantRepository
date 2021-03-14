@@ -27,6 +27,7 @@
  * bump pymyq-3.0.4
  * add pyclimacell-0.14.0 - pyclimacell-0.18.0
  * add mullvad-api-1.0.0
+ * bump awesomeversion-21.2.3
 
 2021-02-17
  * bump HATasmota-0.2.9
