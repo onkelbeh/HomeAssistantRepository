@@ -40,6 +40,7 @@
  * bump garminconnect-0.1.19
  * bump home-assistant-frontend-20210225.0
  * bump zwave-js-server-python-0.20.0
+ * bump youtube_dl-2021.2.22
 
 2021-02-17
  * bump HATasmota-0.2.9
