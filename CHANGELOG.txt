@@ -56,6 +56,7 @@
  * bump HAP-python-3.3.2
  * update spotipy-2.17.1
  * udpate asyncio-dgram-1.2.0
+ * update mcstatus-5.1.1
 
 2021-02-17
  * bump HATasmota-0.2.9
