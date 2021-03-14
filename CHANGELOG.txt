@@ -54,6 +54,7 @@
  * bump adext-0.4.1, alarmdecoder-1.13.10
  * update simplisafe-python-9.6.7
  * bump HAP-python-3.3.2
+ * update spotipy-2.17.1
 
 2021-02-17
  * bump HATasmota-0.2.9
