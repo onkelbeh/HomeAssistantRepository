@@ -5,6 +5,7 @@
  * update async-upnp-client
  * add openwrt-ubus-rpc-0.0.2, bump openwrt-ubus-rpc-0.0.3
  * bump sentry-sdk-0.20.3
+ * remove cryptography-2.9.2
 
 2021-02-17
  * bump HATasmota-0.2.9
