@@ -16,7 +16,7 @@
  * add pyrituals-0.0.2
  * bump zigpy-znp-0.4.0
  * add stdiomask-0.0.6, add subarulink-0.3.12
- * update python-smarttub-0.0.12
+ * update python-smarttub-0.0.12, bump python-smarttub-0.0.17
 
 2021-02-17
  * bump HATasmota-0.2.9
