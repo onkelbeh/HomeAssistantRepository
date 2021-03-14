@@ -45,6 +45,7 @@
  * bump pychromecast-9.0.0
  * bump bimmer-connected-0.7.15
  * update ha-philipsjs-2.3.0
+ * bump aioshelly-0.6.1
 
 2021-02-17
  * bump HATasmota-0.2.9
