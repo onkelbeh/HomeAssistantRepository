@@ -47,6 +47,7 @@
  * update ha-philipsjs-2.3.0
  * bump aioshelly-0.6.1
  * bump google-nest-sdm-0.2.10, google-nest-sdm-0.2.12
+ * bump home-assistant-frontend-20210226.0
 
 2021-02-17
  * bump HATasmota-0.2.9
