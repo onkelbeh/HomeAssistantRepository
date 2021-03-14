@@ -2,6 +2,7 @@
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
  * update PyRMVtransport-0.3.0, bump PyRMVtransport-0.3.1
  * bump pylutron-0.2.7
+ * update async-upnp-client
 
 2021-02-17
  * bump HATasmota-0.2.9
