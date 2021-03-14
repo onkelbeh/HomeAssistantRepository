@@ -10,6 +10,7 @@
  * update bond-api-0.1.10, bond-api-0.1.11
  * bump zwave-js-server-python-0.18.0
  * bump TwitterAPI-2.6.6
+ * bump rokuecp-0.8.0, bump rokuecp-0.8.1
 
 2021-02-17
  * bump HATasmota-0.2.9
