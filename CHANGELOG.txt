@@ -61,6 +61,8 @@
  * bump simplisafe-python-9.6.8
  * bump python-izone-1.1.4
  * bump simplisafe-python-9.6.9
+ * update bellows-0.22.0
+ * update pure-pcapy3-1.0.1-r1
 
 2021-02-17
  * bump HATasmota-0.2.9
