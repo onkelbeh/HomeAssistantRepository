@@ -1,3 +1,6 @@
+2021-03-14
+ * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
+
 2021-02-17
  * bump HATasmota-0.2.9
  * bump blinkpy-0.17.0
