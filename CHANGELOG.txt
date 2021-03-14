@@ -52,6 +52,7 @@
  * bump zha-quirks-0.0.54
  * bump HAP-python-3.3.1, HAP-python-3.4.0
  * bump adext-0.4.1, alarmdecoder-1.13.10
+ * update simplisafe-python-9.6.7
 
 2021-02-17
  * bump HATasmota-0.2.9
