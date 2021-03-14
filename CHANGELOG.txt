@@ -49,6 +49,7 @@
  * bump google-nest-sdm-0.2.10, google-nest-sdm-0.2.12
  * bump home-assistant-frontend-20210226.0
  * bump airly-1.1.0
+ * bump zha-quirks-0.0.54
 
 2021-02-17
  * bump HATasmota-0.2.9
