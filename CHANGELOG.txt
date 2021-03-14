@@ -73,6 +73,7 @@
  * bump pyotgw-1.1_beta1
  * bump pykulersky-0.5.2
  * bump zigpy-0.33.0
+ * bump amcrest-1.7.1, amcrest-1.7.2
 
 2021-02-17
  * bump HATasmota-0.2.9
