@@ -29,6 +29,7 @@
  * add mullvad-api-1.0.0
  * bump awesomeversion-21.2.3
  * bump PlexAPI-4.4.0, PlexAPI-4.4.1
+ * add faadelays-0.0.6
 
 2021-02-17
  * bump HATasmota-0.2.9
