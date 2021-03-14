@@ -20,6 +20,7 @@
  * add pykmtronic-0.0.3
  * update samsungtvws-1.6.0
  * add pylitterbot-2021.2.5
+ * bump home-assistant-frontend-20210222.0
 
 2021-02-17
  * bump HATasmota-0.2.9
