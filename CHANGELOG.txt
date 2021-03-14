@@ -22,6 +22,7 @@
  * add pylitterbot-2021.2.5
  * bump home-assistant-frontend-20210222.0
  * update pyisy-2.1.1
+ * bump accuweather-0.1.0
 
 2021-02-17
  * bump HATasmota-0.2.9
