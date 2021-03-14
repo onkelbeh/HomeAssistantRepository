@@ -32,6 +32,7 @@
  * add faadelays-0.0.6
  * bump home-assistant-frontend-20210222.0
  * bump zwave-js-server-python-0.19.0
+ * bump TwitterAPI-2.6.8, TwitterAPI-2.6.9
 
 2021-02-17
  * bump HATasmota-0.2.9
