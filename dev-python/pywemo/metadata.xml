@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">pywemo</remote-id>
     <maintainer status="unknown">
-      <email>mail@gregdowling.com</email>
-      <name>Greg Dowling</name>
+      <email>pywemo@esev.com</email>
+      <name>Eric Severance</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
