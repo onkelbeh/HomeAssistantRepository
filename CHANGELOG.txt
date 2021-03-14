@@ -67,6 +67,7 @@
  * bump python-smarttub-0.0.19
  * bump solax-0.2.6
  * bump zwave-js-server-python-0.21.0
+ * bump zwave-js-server-python-0.21.1
 
 2021-02-17
  * bump HATasmota-0.2.9
