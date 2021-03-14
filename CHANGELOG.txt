@@ -57,6 +57,7 @@
  * update spotipy-2.17.1
  * udpate asyncio-dgram-1.2.0
  * update mcstatus-5.1.1
+ * bump home-assistant-frontend-20210301.0, 20210302.0, 20210302.[3-6]
 
 2021-02-17
  * bump HATasmota-0.2.9
