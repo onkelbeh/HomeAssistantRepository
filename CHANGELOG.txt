@@ -14,6 +14,7 @@
  * bump xknx-0.17.0, xknx-0.17.1, xknx-0.17.2
  * bump pywemo-0.6.3
  * add pyrituals-0.0.2
+ * bump zigpy-znp-0.4.0
 
 2021-02-17
  * bump HATasmota-0.2.9
