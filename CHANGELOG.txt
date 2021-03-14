@@ -64,6 +64,7 @@
  * update bellows-0.22.0
  * update pure-pcapy3-1.0.1-r1
  * bump zwave-js-server-python-0.20.1
+ * bump python-smarttub-0.0.19
 
 2021-02-17
  * bump HATasmota-0.2.9
