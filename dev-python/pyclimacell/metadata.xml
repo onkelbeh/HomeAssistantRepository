@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyclimacell</remote-id>
+    <maintainer status="unknown">
+      <email>7243222+raman325@users.noreply.github.com</email>
+      <name>raman325</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

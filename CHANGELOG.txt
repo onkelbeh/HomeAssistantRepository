@@ -25,6 +25,7 @@
  * bump accuweather-0.1.0
  * bump pylitejet-0.3.0
  * bump pymyq-3.0.4
+ * add pyclimacell-0.14.0 - pyclimacell-0.18.0
 
 2021-02-17
  * bump HATasmota-0.2.9
