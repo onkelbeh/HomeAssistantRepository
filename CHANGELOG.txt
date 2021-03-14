@@ -43,6 +43,7 @@
  * bump youtube_dl-2021.2.22
  * bump pychromecast-8.1.2, pychromecast-9.1.1
  * bump pychromecast-9.0.0
+ * bump bimmer-connected-0.7.15
 
 2021-02-17
  * bump HATasmota-0.2.9

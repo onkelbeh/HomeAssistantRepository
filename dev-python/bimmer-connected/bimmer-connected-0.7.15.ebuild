@@ -1,22 +1,24 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{7..9} )
 
 inherit distutils-r1
-MY_P=${PN/-/_}-${PV}
 
 DESCRIPTION="Library to read data from the BMW Connected Drive portal"
 HOMEPAGE="https://github.com/bimmerconnected/bimmer_connected https://pypi.org/project/bimmer-connected/"
+MY_P=${PN/-/_}-${PV}
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
+S=${WORKDIR}/${MY_P}
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
-S=${WORKDIR}/${MY_P}
+
+DOCS="README.rst"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="
