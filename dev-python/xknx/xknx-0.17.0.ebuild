@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6..9} )
+PYTHON_COMPAT=( python3_{7..9} )
 
 inherit distutils-r1
 
@@ -31,9 +31,4 @@ BDEPEND="${REDEPEND}
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
-}
-
-src_prepare() {
-	sed "s/packages=find_packages()/packages=find_packages(exclude=['test','test.*'])/g" -i setup.py || die
-	eapply_user
 }

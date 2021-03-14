@@ -11,6 +11,7 @@
  * bump zwave-js-server-python-0.18.0
  * bump TwitterAPI-2.6.6
  * bump rokuecp-0.8.0, bump rokuecp-0.8.1
+ * bump xknx-0.17.0, xknx-0.17.1, xknx-0.17.2
 
 2021-02-17
  * bump HATasmota-0.2.9
