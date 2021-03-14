@@ -12,6 +12,7 @@
  * bump TwitterAPI-2.6.6
  * bump rokuecp-0.8.0, bump rokuecp-0.8.1
  * bump xknx-0.17.0, xknx-0.17.1, xknx-0.17.2
+ * bump pywemo-0.6.3
 
 2021-02-17
  * bump HATasmota-0.2.9
