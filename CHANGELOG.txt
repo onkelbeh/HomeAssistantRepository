@@ -41,6 +41,7 @@
  * bump home-assistant-frontend-20210225.0
  * bump zwave-js-server-python-0.20.0
  * bump youtube_dl-2021.2.22
+ * bump pychromecast-8.1.2, pychromecast-9.1.1
 
 2021-02-17
  * bump HATasmota-0.2.9

@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -20,8 +20,7 @@ IUSE="test"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-3.0.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/protobuf-python-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.25.1[${PYTHON_USEDEP}]
 	>=dev-python/casttube-0.2.0[${PYTHON_USEDEP}]"
 BDEPEND="
