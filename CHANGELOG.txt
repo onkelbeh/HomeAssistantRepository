@@ -22,6 +22,9 @@
  * bump pyTibber-0.16.2
  * bump pyhomematic-0.1.72
  * bump home-assistant-frontend-20210314.0
+ * update accuweather-0.1.1
+ * update gios-0.2.1
+ * bump (commit 89efe6e) maxcube-api-0.4.1
 
 2021-03-14
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
