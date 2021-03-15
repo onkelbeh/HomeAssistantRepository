@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7,8} )
+PYTHON_COMPAT=( python3_{7..9} )
 
 inherit distutils-r1
 
@@ -17,22 +17,19 @@ KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="dev-python/click[${PYTHON_USEDEP}]
-	dev-python/click-log[${PYTHON_USEDEP}]
+	>=dev-python/click-log-0.2.1[${PYTHON_USEDEP}]
 	~dev-python/pure-pcapy3-1.0.1[${PYTHON_USEDEP}]
 	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.20.1[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+	>=dev-python/zigpy-0.21.0[${PYTHON_USEDEP}]"
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
-src_prepare() {
-	sed -e 's;click-log==0.2.0;click-log;' \
-			-i setup.py || die
-	eapply_user
-}
+
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
