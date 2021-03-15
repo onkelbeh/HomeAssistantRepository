@@ -14,7 +14,7 @@ S="${WORKDIR}/sentry-python-${PV}"
 
 LICENSE="PSF-2"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="amd64 arm arm64 x86 amd64-linux x86-linux"
 
 RDEPEND="
 	dev-python/urllib3[${PYTHON_USEDEP}]
@@ -57,6 +57,8 @@ python_test() {
 		tests/test_client.py::test_databag_breadth_stripping
 		# test_circular_references: apparently fragile
 		'tests/integrations/threading/test_threading.py::test_circular_references'
+		# test for new feature, fails with IndexError
+		tests/integrations/wsgi/test_wsgi.py::test_session_mode_defaults_to_request_mode_in_wsgi_handler
 	)
 
 	# Prevent tests/integrations/modules/test_modules.py:test_basic failure

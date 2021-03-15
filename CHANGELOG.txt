@@ -4,6 +4,7 @@
  * bump pymysensors-0.21.0
  * bump elgato-2.0.1
  * update pillow-8.1.2
+ * update sentry-sdk-1.0.0
 
 2021-03-14
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
