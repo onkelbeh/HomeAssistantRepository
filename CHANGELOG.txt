@@ -3,6 +3,7 @@
  * bump pylitterbot-2021.2.8
  * bump pymysensors-0.21.0
  * bump elgato-2.0.1
+ * update pillow-8.1.2
 
 2021-03-14
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
