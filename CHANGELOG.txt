@@ -26,6 +26,7 @@
  * update gios-0.2.1
  * bump (commit 89efe6e) maxcube-api-0.4.1
  * bump pymazda-0.0.9
+ * bump openwrt-luci-rpc-1.1.8
 
 2021-03-14
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
