@@ -15,6 +15,7 @@
  * bump devolo-home-control-api-0.17.0
  * update pyatv-0.7.7
  * update hass-nabucasa-0.42.0
+ * bump home-assistant-frontend-20210313.0
 
 2021-03-14
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
