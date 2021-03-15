@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">upcloud-api</remote-id>
     <maintainer status="unknown">
-      <email>mika.lackman@upcloud.com</email>
-      <name>Mika Lackman</name>
+      <email>hello@upcloud.com</email>
+      <name>UpCloud</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
