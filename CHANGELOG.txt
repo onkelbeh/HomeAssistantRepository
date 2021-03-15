@@ -8,6 +8,7 @@
  * update evohome-async-0.3.8
  * update incomfort-client-0.4.4
  * bump numato-gpio-0.10.0
+ * update adguardhome-0.5.0
 
 2021-03-14
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
