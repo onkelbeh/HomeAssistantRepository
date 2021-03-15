@@ -30,6 +30,7 @@
  * bump pyhiveapi-0.3.9, pyhiveapi-0.3.13
  * add unasync-0.5.0
  * update qnapstats-0.3.1
+ * bump vsure-1.7.3
 
 2021-03-14
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
