@@ -21,6 +21,7 @@
  * bump python-miio-0.5.5
  * bump pyTibber-0.16.2
  * bump pyhomematic-0.1.72
+ * bump home-assistant-frontend-20210314.0
 
 2021-03-14
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
