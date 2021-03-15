@@ -18,6 +18,7 @@
  * bump home-assistant-frontend-20210313.0
  * bump aiolyric-1.0.6
  * update bellows-0.23.0
+ * bump python-miio-0.5.5
 
 2021-03-14
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
