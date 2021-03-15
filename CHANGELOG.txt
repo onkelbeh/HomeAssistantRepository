@@ -28,6 +28,7 @@
  * bump pymazda-0.0.9
  * bump openwrt-luci-rpc-1.1.8
  * bump pyhiveapi-0.3.9, pyhiveapi-0.3.13
+ * add unasync-0.5.0
 
 2021-03-14
  * add aiohttp-3.7.3 from main repo, still needed, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/198
