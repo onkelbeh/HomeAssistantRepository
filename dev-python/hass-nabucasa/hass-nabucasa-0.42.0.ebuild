@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6..8} )
+PYTHON_COMPAT=( python3_{7..9} )
 
 inherit distutils-r1
 
@@ -16,9 +16,11 @@ SLOT="0"
 KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/pycognito-0.1.4[${PYTHON_USEDEP}]
+DOCS="README.md"
+
+RDEPEND="~dev-python/pycognito-0.1.5[${PYTHON_USEDEP}]
 	~dev-python/snitun-0.20[${PYTHON_USEDEP}]
-	~app-crypt/acme-1.8.0
+	~app-crypt/acme-1.12.0
 	>=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
