@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">aiohttp</remote-id>
+    <maintainer status="unknown">
+      <email>aio-libs@googlegroups.com</email>
+      <name>Nikolay Kim &lt;fafhrd91@gmail.com&gt;, Andrew Svetlov &lt;andrew.svetlov@gmail.com&gt;</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
