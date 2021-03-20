@@ -11,6 +11,7 @@ adb-shell==0.2.1
 adext==0.4.1
 adguardhome==0.4.2
 advantage-air==0.2.1
+AEMET-OpenData==0.1.8
 afsapi==0.0.4
 agent-py==0.0.23
 aio-geojson-client==0.13
@@ -32,6 +33,7 @@ aioguardian==1.0.4
 aioharmony==0.2.7
 aiohomekit==0.2.60
 aiohttp-cors==0.7.0
+aiohttp==3.7.3
 aiohttp==3.7.4
 aiohttp==3.7.4_p0
 aiohue==2.1.0
@@ -41,6 +43,7 @@ aiokef==0.2.16
 aiolifx-effects==0.2.2
 aiolifx==0.6.9
 aiolip==1.1.4
+aiolyric==1.0.5
 aionotify==0.2.0
 aionotion==1.1.0
 aionursery==0.3.0
@@ -259,6 +262,7 @@ eudev==3.2.10
 evdev==1.1.2
 evohome-async==0.3.5
 expat==2.2.10
+faadelays==0.0.6
 fastdotcom==0.0.3
 feedparser==6.0.2
 ffmpeg==4.3.2
@@ -347,7 +351,7 @@ hole==0.5.1
 holidays==0.10.5.2
 home-assistant-cli==0.9.1
 home-assistant-cli==9999
-home-assistant-frontend==20210302.3
+home-assistant-frontend==20210302.4
 homeassistant
 homeconnect==0.6.3
 horimote==0.4.1
@@ -358,6 +362,7 @@ httplib2==0.19.0
 httpsig==1.3.0
 httpx==0.16.1
 huawei-lte-api==1.4.17
+huisbaasje-client==0.1.0
 hwids==20201207
 Hydrawiser==0.2
 hyper-h2==4.0.0
@@ -470,10 +475,12 @@ miflora==0.7.0
 millheater==0.4.0
 minio==4.0.9
 monotonic==1.5
+motionblinds==0.4.8
 mpc==1.2.1
 mpfr==4.1.0
 ms-cv==0.1.1
 mt_940==4.19.0
+mullvad-api==1.0.0
 multidict==5.1.0
 mutagen==1.45.1
 mychevy==2.1.1
@@ -513,6 +520,7 @@ objgraph==3.4.1
 oemthermostat==1.1.1
 olefile==0.46
 omnilogic==0.4.2
+ondilo==0.2.0
 onvif-zeep-async==1.0.0
 open-garage==0.1.4
 openerz-api==0.1.0
@@ -599,6 +607,7 @@ pyads==3.2.2
 pyaehw4a1==0.3.9
 pyaes==1.6.1
 pyaftership==0.1.2
+pyairnow==1.1.0
 pyairvisual==5.0.4
 pyalmond==0.0.2
 pyarlo==0.2.4
@@ -620,6 +629,7 @@ pycfdns==1.2.1
 pychannels==1.0.0
 pychromecast==8.1.2
 pycketcasts==1.0.0
+pyclimacell==0.14.0
 pycmus==0.1.1
 pycognito==0.1.5
 pycomfoconnect==0.4
@@ -651,6 +661,7 @@ PyEssent==0.14
 pyeverlights==0.1.0
 pyEzviz==0.1.5.2
 pyfido==2.1.1
+pyfireservicerota==0.0.40
 pyflexit==0.3
 pyflic-homeassistant==0.4
 PyFlick==0.0.2
@@ -685,7 +696,9 @@ pyjsparser==2.7.1
 pyjwt==1.7.1
 pyjwt==2.0.1
 pykira==0.1.1
+pykmtronic==0.0.3
 pykodi==0.2.1
+pykulersky==0.4.0
 pykwb==0.0.8
 pylacrosse==0.4
 pylast==4.1.0
@@ -693,12 +706,14 @@ pylaunches==1.0.0
 pylgnetcast-homeassistant==0.2.0
 pylibrespot-java==0.1.0
 pylitejet==0.3.0
+pylitterbot==2021.2.5
 pyloopenergy==0.2.1
 pylutron-caseta==0.9.0
 pylutron==0.2.7
 pymailgunner==1.4
 pymata-express==1.19
 PyMata==2.20
+pymazda==0.0.8
 pymediaroom==0.6.4.1
 PyMeeus==0.3.7
 pymelcloud==2.5.2
@@ -738,6 +753,7 @@ pyparsing==2.4.7
 pypca==0.0.7
 pypck==0.7.9
 pypjlink2==1.2.1
+pyplaato==0.0.15
 pypoint==2.0.0
 pyprof2calltree==1.4.5
 pyps4-2ndscreen==1.2.0
@@ -752,6 +768,7 @@ pyrepetier==3.0.5
 pyrfc3339==1.1
 pyRFXtrx==0.26.1
 pyrisco==0.3.1
+pyrituals==0.0.2
 PyRMVtransport==0.3.1
 pyruckus==0.12
 pysabnzbd==1.1.0
@@ -818,6 +835,7 @@ python-openzwave-mqtt==1.4.0
 python-qbittorrent==0.4.2
 python-ripple-api==0.0.3
 python-slugify==4.0.1
+python-smarttub==0.0.17
 python-sochain-api==0.0.2
 python-socketio==4.6.0
 python-songpal==0.12
@@ -961,15 +979,18 @@ spotcrime==1.0.4
 spotipy==2.16.1
 sqlalchemy==1.3.23
 sqlitedict==1.6.0
+srpenergy==1.3.2
 sseclient-py==1.7
 starkbank-ecdsa==1.0.0
 starline==0.1.5
 statsd==3.2.1
+stdiomask==0.0.6
 steamodd==4.21
 stevedore==3.3.0
 stookalert==0.1.4
 streamlabswater==1.0.1
 stringcase==1.2.0
+subarulink==0.3.12
 sucks==0.9.4
 sunwatcher==0.2.1
 surepy==0.4.0
@@ -1007,6 +1028,7 @@ TravisPy==0.3.5
 tuyaha==0.0.10
 twentemilieu==0.3.0
 twilio==6.32.0
+twinkly-client==0.0.2
 twisted==20.3.0
 TwitterAPI==2.6.6
 txaio==18.7.1
@@ -1099,3 +1121,4 @@ zipp==3.4.0
 zlib==1.2.11
 zm-py==0.5.2
 zope-interface==5.2.0
+zwave-js-server-python==0.21.0
