@@ -3,6 +3,7 @@
  * update withings-api-2.3.2
  * bump bellows-0.23.1
  * bump youtube_dl-2021.3.14
+ * update ha-philipsjs-2.3.2
 
 2021-03-15
  * add a copy (from main repo) of acme-1.11.0, still needed
