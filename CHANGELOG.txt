@@ -19,6 +19,8 @@
  * remove pytest-aiohttp from all deps
  * bump ndms2-client-0.1.1
  * update pytile-5.2.0
+ * remove pytest-aiohttp from all core packages
+ * remove dev-python/scapy (dupe to net-analyzer/scapy)
 
 2021-03-15
  * add a copy (from main repo) of acme-1.11.0, still needed
