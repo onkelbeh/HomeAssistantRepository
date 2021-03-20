@@ -61,7 +61,7 @@ aladdin-connect==0.3
 alarmdecoder==1.13.10
 alpha-vantage==2.3.1
 Ambiclimate==0.2.1
-amcrest==1.7.0
+amcrest==1.7.1
 androidtv==0.0.57
 anel-pwrctrl-homeassistant==0.0.1
 anthemav==1.1.10
@@ -72,6 +72,7 @@ apprise==0.8.9
 aprslib==0.6.46
 aqualogic==1.0
 arcam-fmj==0.5.3
+argcomplete==1.12.2
 argh==0.26.2
 arpack==3.8.0
 arris-tg2492lg==1.1.0
@@ -332,7 +333,7 @@ guppy3==3.1.0
 gzip==1.10
 h11==0.12.0
 ha-ffmpeg==3.0.2
-ha-philipsjs==2.3.0
+ha-philipsjs==2.3.1
 habitipy==0.2.0
 hangups==0.4.11
 hass-nabucasa==0.41.0
@@ -351,7 +352,7 @@ hole==0.5.1
 holidays==0.10.5.2
 home-assistant-cli==0.9.1
 home-assistant-cli==9999
-home-assistant-frontend==20210302.4
+home-assistant-frontend==20210302.5
 homeassistant
 homeconnect==0.6.3
 horimote==0.4.1
@@ -746,7 +747,7 @@ pyopenuv==1.0.9
 pyopnsense==0.2.0
 pyoppleio==1.0.5
 PyOTA==2.0.5
-pyotgw==1.0_beta1
+pyotgw==1.1_beta1
 pyowm==3.1.1
 pyownet==0.10.0
 pyparsing==2.4.7
@@ -1121,4 +1122,4 @@ zipp==3.4.0
 zlib==1.2.11
 zm-py==0.5.2
 zope-interface==5.2.0
-zwave-js-server-python==0.21.0
+zwave-js-server-python==0.21.1
