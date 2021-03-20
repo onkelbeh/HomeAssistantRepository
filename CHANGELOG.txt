@@ -26,6 +26,7 @@
  * bump motionblinds-0.4.8
  * update homeassistant-2021.3.1
  * update homeassistant-2021.3.2
+ * update homeassistant-2021.3.3
 
 2021-03-15
  * add a copy (from main repo) of acme-1.11.0, still needed
