@@ -21,6 +21,7 @@
  * update pytile-5.2.0
  * remove pytest-aiohttp from all core packages
  * remove dev-python/scapy (dupe to net-analyzer/scapy)
+ * update homeassistant-2021.3.0
 
 2021-03-15
  * add a copy (from main repo) of acme-1.11.0, still needed

@@ -136,6 +136,7 @@
     <flag name="deutsche_bahn">will give you the departure time of the next train for the given connection</flag>
     <flag name="devolo_home_control">Add Devolo Home-control to Home Assistant</flag>
     <flag name="dexcom">View your CGM data from Dexcom from Home Assistant</flag>
+    <flag name="dhcp"/>
     <flag name="dht">Get the current temperature and humidity from a DHT11, DHT22 or AM2302 device</flag>
     <flag name="digitalloggers">Switch platform controls the state of your Digital Loggers switches</flag>
     <flag name="digital_ocean">Access information about your Digital Ocean droplets from Home Assistant</flag>

@@ -372,7 +372,6 @@ BDEPEND="${RDEPEND}
 		~dev-python/pre-commit-2.8.2[${PYTHON_USEDEP}]
 		~dev-python/pylint-strict-informational-0.1[${PYTHON_USEDEP}]
 		~dev-python/pylint-2.6.0[${PYTHON_USEDEP}]
-		~dev-python/pytest-aiohttp-0.3.0[${PYTHON_USEDEP}]
 		~dev-python/pytest-cov-2.10.1[${PYTHON_USEDEP}]
 		~dev-python/pytest-sugar-0.9.4[${PYTHON_USEDEP}]
 		~dev-python/pytest-test-groups-1.0.3[${PYTHON_USEDEP}]
