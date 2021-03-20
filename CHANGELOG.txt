@@ -10,6 +10,7 @@
  * bump aiopylgtv-0.4.0
  * bump pyCEC-0.5.1
  * update py17track-3.2.1
+ * bump pyvesync-1.3.1
 
 2021-03-15
  * add a copy (from main repo) of acme-1.11.0, still needed

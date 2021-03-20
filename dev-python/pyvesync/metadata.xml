@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">pyvesync</remote-id>
     <maintainer status="unknown">
-      <email>markaperdue@gmail.com</email>
-      <name>Mark Perdue</name>
+      <email>webdjoe@gmail.com</email>
+      <name>Mark Perdue, Joe Trabulsy</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
