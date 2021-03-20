@@ -6,6 +6,7 @@
  * update ha-philipsjs-2.3.2
  * add screenlogicpy-0.2.0
  * bump home-assistant-frontend-20210316.0
+ * bump aioesphomeapi-2.6.6
 
 2021-03-15
  * add a copy (from main repo) of acme-1.11.0, still needed
