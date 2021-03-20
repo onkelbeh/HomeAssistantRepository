@@ -7,5 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">py17track</remote-id>
+    <maintainer status="unknown">
+      <email>bachya1208@gmail.com</email>
+      <name>Aaron Bach</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>
