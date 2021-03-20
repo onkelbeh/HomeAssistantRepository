@@ -25,7 +25,6 @@ DEPEND="${REDEPEND}
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/freezegun[${PYTHON_USEDEP}]
-		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

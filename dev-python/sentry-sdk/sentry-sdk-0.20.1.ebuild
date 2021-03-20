@@ -31,7 +31,6 @@ BDEPEND="
 		dev-python/gevent[${PYTHON_USEDEP}]
 		dev-python/jsonschema[${PYTHON_USEDEP}]
 		dev-python/pyrsistent[${PYTHON_USEDEP}]
-		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 		dev-python/pytest-django[${PYTHON_USEDEP}]
 		dev-python/pytest-forked[${PYTHON_USEDEP}]
 		dev-python/pytest-localserver[${PYTHON_USEDEP}]

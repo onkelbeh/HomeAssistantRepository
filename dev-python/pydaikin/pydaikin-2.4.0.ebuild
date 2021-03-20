@@ -25,7 +25,6 @@ BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/freezegun[${PYTHON_USEDEP}]
-		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
