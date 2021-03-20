@@ -562,7 +562,7 @@ pip==19.0.2
 pizzapi==0.0.3
 pkce==1.0.3
 platformio==4.3.4
-PlexAPI==4.4.0
+PlexAPI==4.4.1
 plexauth==0.0.6
 plexwebsocket==0.0.12
 plugwise==0.8.5
