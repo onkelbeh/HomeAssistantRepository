@@ -26,6 +26,7 @@
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
     <flag name="github">GitHub sensor integrates data from GitHub to monitor your favorite repositories</flag>
     <flag name="homekit">Integrate HomeKit controller and accessory in Home Assistant</flag>
+    <flag name="hyperion">integrate your Hyperion into Home Assistant</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
     <flag name="kodi">control a Kodi multimedia system</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
