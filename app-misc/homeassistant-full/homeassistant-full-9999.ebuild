@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -45,7 +45,7 @@ RDEPEND="${RDEPEND}
 # Home Assistant Core dependencies
 # from package_constraints.txt
 RDEPEND="${RDEPEND}
-	=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
+	~dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/astral-1.10.1[${PYTHON_USEDEP}]
 	~dev-python/async-upnp-client-0.14.13[${PYTHON_USEDEP}]
@@ -924,4 +924,3 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
-
