@@ -1,5 +1,8 @@
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
+ * pin aiohttp-3.7.4 (avoid 3.7.4_p0)
+ * default PlexAPI (it is loaded anyway)
+ * update homeassistant-2021.3.4-r1
 
 2021-03-20
  * bump xknx-0.17.3

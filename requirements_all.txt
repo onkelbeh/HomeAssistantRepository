@@ -913,6 +913,7 @@ roombapy==1.6.2
 roonapi==0.0.32
 rova==0.2.1
 RPi-GPIO==0.7.0
+RPi-GPIO==0.7.1_alpha4
 rpi-rf==0.9.7
 rsa==4.7.1
 ruamel-yaml-clib==0.2.2

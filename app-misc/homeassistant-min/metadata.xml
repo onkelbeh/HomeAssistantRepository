@@ -37,6 +37,7 @@
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ping">ICMPLib</flag>
+    <flag name="plex">Python bindings for the Plex API</flag>
     <flag name="python_script">write Python scripts that are exposed as services in Home Assistant</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="qvr_pro">QVR Pro allows you to connect to cams configured on your QNAP NAS</flag>
