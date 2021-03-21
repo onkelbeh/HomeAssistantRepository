@@ -1,3 +1,6 @@
+2021-03-21
+ * bump RPi-GPIO-0.7.1_alpha4
+
 2021-03-20
  * bump xknx-0.17.3
  * update withings-api-2.3.2
