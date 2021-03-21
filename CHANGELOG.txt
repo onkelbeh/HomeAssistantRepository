@@ -7,6 +7,7 @@
  * fix bad copyright date (from template)
  * bump asyncio-mqtt-0.8.1
  * update esphome-1.16.2
+ * clean up
 
 2021-03-20
  * bump xknx-0.17.3
