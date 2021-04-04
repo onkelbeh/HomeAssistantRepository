@@ -40,6 +40,7 @@
  * bump pypoint-2.1.0
  * bump pysonos-0.0.41
  * bump screenlogicpy-0.2.1, screenlogicpy-0.3.0
+ * bump snapcast-2.1.2
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
