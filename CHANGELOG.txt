@@ -24,6 +24,7 @@
  * add homepluscontrol-0.0.5
  * update httpx-0.17.1
  * bump icmplib-2.1.1
+ * bump meteofrance-api-1.0.2
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
