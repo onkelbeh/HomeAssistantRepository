@@ -36,6 +36,7 @@
  * bump pyhiveapi-0.4.1
  * bump pykodi-0.2.3
  * bump pylast-4.2.0
+ * bump pynanoleaf-0.1.0
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
