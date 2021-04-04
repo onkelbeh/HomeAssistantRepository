@@ -43,6 +43,11 @@
  * bump snapcast-2.1.2
  * bump synologydsm-api-1.0.2
  * bump xknx-0.17.4, xknx-0.17.5
+ * add yalexs-1.1.4
+ * bump yalexs-1.1.5
+ * bump yalexs-1.1.6
+ * bump yalexs-1.1.9
+ * bump yalexs-1.1.10
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
