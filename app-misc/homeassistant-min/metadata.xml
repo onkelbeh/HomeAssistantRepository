@@ -28,6 +28,7 @@
     <flag name="homekit">Integrate HomeKit controller and accessory in Home Assistant</flag>
     <flag name="hyperion">integrate your Hyperion into Home Assistant</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
+    <flag name="knx">Asynchronous Library for the KNX protocol</flag>
     <flag name="kodi">control a Kodi multimedia system</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
@@ -62,6 +63,8 @@
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
     <flag name="yamaha">Library for Yamaha RX-* Receivers</flag>
     <flag name="yamaha_musiccast">add support for Yamaha MusicCast devices</flag>
+    <flag name="zeroconf">will scan the network for supported devices and services</flag>
     <flag name="zwave">Support for Z-Wave Devices (uncomplete)</flag>
+    <flag name="zwave_js">control a Z-Wave network via the Z-Wave JS driver</flag>
   </use>
 </pkgmetadata>

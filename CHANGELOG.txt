@@ -57,6 +57,7 @@
  * update pytest-6.2.3
  * update homeassistant-2021.4.0_beta4
  * bump holidays-0.11.1
+ * pin aiohttp (post0-hack)
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4

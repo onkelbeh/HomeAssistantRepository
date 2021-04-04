@@ -272,10 +272,12 @@
     <flag name="yamaha_musiccast">add support for Yamaha MusicCast devices</flag>
     <flag name="yeelight">allows you to control your Yeelight Wifi bulbs</flag>
     <flag name="yi">allows you to utilize Yi Home Cameras within Home Assistant</flag>
+    <flag name="zeroconf">will scan the network for supported devices and services</flag>
     <flag name="zerproc">discovers nearby Zerproc lights</flag>
     <flag name="zha">Support for ZHA/deconz based Zigbee/ZNet Devices</flag>
     <flag name="zhong_hong">lets you control Zhonghong HVAC Gateway Controller thermostats</flag>
     <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
     <flag name="zwave">Support for Z-Wave Devices (uncomplete)</flag>
+    <flag name="zwave_js">control a Z-Wave network via the Z-Wave JS driver</flag>
   </use>
 </pkgmetadata>
