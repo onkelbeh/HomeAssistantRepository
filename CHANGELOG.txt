@@ -29,6 +29,8 @@
  * bump numpy-1.20.2
  * bump omnilogic-0.4.3
  * bump PlexAPI-4.5.0, PlexAPI-4.5.1
+ * bump plexwebsocket-0.0.13
+ * bump pydeconz-78
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
