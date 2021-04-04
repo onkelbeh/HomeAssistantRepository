@@ -1,4 +1,4 @@
-2021-04-04
+2021-04-04 homeassistant-2021.4.0_beta4
  * add aiodiscover-1.1.0
  * bump aiodiscover-1.1.2
  * bump aiodiscover-1.2.0
@@ -55,6 +55,8 @@
  * add pyupgrade-2.11.0
  * bump pre-commit-2.11.1
  * update pytest-6.2.3
+ * update homeassistant-2021.4.0_beta4
+ * bump holidays-0.11.1
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
