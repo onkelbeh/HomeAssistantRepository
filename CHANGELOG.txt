@@ -26,6 +26,7 @@
  * bump icmplib-2.1.1
  * bump meteofrance-api-1.0.2
  * bump motionblinds-0.4.10
+ * bump numpy-1.20.2
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
