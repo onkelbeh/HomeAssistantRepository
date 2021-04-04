@@ -8,6 +8,7 @@
  * update aioshelly-0.6.2
  * update aqualogic-2.6
  * bump python-didl-lite-1.2.6
+ * bump async-upnp-client-0.16.0
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
