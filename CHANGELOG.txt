@@ -38,6 +38,7 @@
  * bump pylast-4.2.0
  * bump pynanoleaf-0.1.0
  * bump pypoint-2.1.0
+ * bump pysonos-0.0.41
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
