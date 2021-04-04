@@ -22,6 +22,7 @@
  * bump home-assistant-frontend-20210402.0
  * bump home-assistant-frontend-20210402.1
  * add homepluscontrol-0.0.5
+ * update dev-python/httpx-0.17.1
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
