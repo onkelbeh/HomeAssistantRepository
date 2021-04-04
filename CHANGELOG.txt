@@ -15,6 +15,12 @@
  * bump devolo-home-control-api-0.17.1
  * bump freebox-api-0.0.10
  * bump HAP-python-3.4.1
+ * bump home-assistant-frontend-20210324.0
+ * bump home-assistant-frontend-20210328.0
+ * bump home-assistant-frontend-20210330.0
+ * bump home-assistant-frontend-20210331.0
+ * bump home-assistant-frontend-20210402.0
+ * bump home-assistant-frontend-20210402.1
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
