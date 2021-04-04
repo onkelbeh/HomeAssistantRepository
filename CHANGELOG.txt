@@ -5,6 +5,7 @@
  * bump aiodiscover-1.3.0
  * bump aiodiscover-1.3.2
  * bump aiodiscover-1.3.3
+ * update aioshelly-0.6.2
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
