@@ -31,6 +31,7 @@
  * bump PlexAPI-4.5.0, PlexAPI-4.5.1
  * bump plexwebsocket-0.0.13
  * bump pydeconz-78
+ * bump pyeconet-0.1.13
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
