@@ -12,6 +12,7 @@
  * bump axis-44
  * bump colorlog-4.8.0
  * bump denonavr-0.10.5
+ * bump devolo-home-control-api-0.17.1
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
