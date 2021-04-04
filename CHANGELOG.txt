@@ -54,6 +54,7 @@
  * add tokenize-rt-4.1.0
  * add pyupgrade-2.11.0
  * bump pre-commit-2.11.1
+ * update pytest-6.2.3
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
