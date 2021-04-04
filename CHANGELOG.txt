@@ -52,6 +52,7 @@
  * bump zigpy-deconz-0.12.0
  * update zwave-js-server-python-0.23.0
  * add tokenize-rt-4.1.0
+ * add pyupgrade-2.11.0
 
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
