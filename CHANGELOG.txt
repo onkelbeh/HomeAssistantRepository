@@ -1,3 +1,6 @@
+2021-04-04
+ * add aiodiscover-1.1.0
+
 2021-03-21
  * bump RPi-GPIO-0.7.1_alpha4
  * pin aiohttp-3.7.4 (avoid 3.7.4_p0)
