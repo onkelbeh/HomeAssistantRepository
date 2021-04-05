@@ -2,6 +2,8 @@
  * bump zwave-js-server-python-0.23.1
  * update wakeonlan-2.0.0
  * bump bond-api-0.1.12
+ * add aioemonitor-1.0.5
+ * re-add still needed HAP-python-3.1.0
 
 2021-04-04 homeassistant-2021.4.0_beta4
  * add aiodiscover-1.1.0
