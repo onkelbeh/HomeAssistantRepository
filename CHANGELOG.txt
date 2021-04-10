@@ -9,6 +9,7 @@
  * homeassistant-2021.4.1
  * bump zha-quirks-0.0.56
  * bump jsonrpc-base-2.0.0
+ * update jsonrpc-async-2.0.0
 
 2021-04-05
  * bump zwave-js-server-python-0.23.1
