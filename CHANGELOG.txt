@@ -7,11 +7,11 @@
  * update homeassistant-2021.4.0
  * bump home-assistant-frontend-20210407.2
  * homeassistant-2021.4.1
- * bump zha-quirks-0.0.56
  * bump jsonrpc-base-2.0.0
  * update jsonrpc-async-2.0.0
  * update jsonrpc-websocket-3.0.0
  * update pykodi-0.2.5
+ * bump zha-quirks-0.0.56
 
 2021-04-05
  * bump zwave-js-server-python-0.23.1
