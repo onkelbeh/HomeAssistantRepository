@@ -283,6 +283,7 @@
     <flag name="homematicip_cloud">A python wrapper for the homematicIP REST API (Access Point Based)</flag>
     <flag name="homeworks">Lutron Homeworks Series 4 &amp; 8 systems via RS232</flag>
     <flag name="home_connect">Home Connect standard for Bosch and Siemens</flag>
+    <flag name="home_plus_control"/>
     <flag name="honeywell">Integrates US-based Honeywell Total Connect Comfort (TCC) climate systems</flag>
     <flag name="horizon">Allows you to control a Unitymedia Horizon HD Recorder from Home Assistant</flag>
     <flag name="hp_ilo">Query HP Integrated Lights out XML interfaces from Home Assistant</flag>
@@ -557,6 +558,7 @@
     <flag name="satel_integra">Satel Integra alarm panel to leverage</flag>
     <flag name="schluter">integrate your Schluter-DITRA-HEAT-E-WiFi electric floor heating thermostat</flag>
     <flag name="scrape">scraping information from websites</flag>
+    <flag name="screenlogic"/>
     <flag name="scsgate">allows to interact with the MyHome system from BTicino/Legrande</flag>
     <flag name="season">display astronomical or meteorological season (Spring, Summer, Autumn, Winter)</flag>
     <flag name="sendgrid">Notification platform sends email notifications via SendGrid</flag>

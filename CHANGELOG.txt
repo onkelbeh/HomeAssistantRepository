@@ -1,8 +1,10 @@
-2021-04-10
+2021-04-10 homeassistant-2021.4.1
  * remove /update EAPI5 Ebuilds
  * re-add geopy-1.21.0
  * bump pychromecast-9.1.2
  * bump speedtest-cli-2.1.2
+ * bump home-assistant-frontend-20210407.1
+ * update homeassistant-2021.4.1
 
 2021-04-05
  * bump zwave-js-server-python-0.23.1
