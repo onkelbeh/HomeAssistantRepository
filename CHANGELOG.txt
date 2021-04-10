@@ -11,6 +11,7 @@
  * bump jsonrpc-base-2.0.0
  * update jsonrpc-async-2.0.0
  * update jsonrpc-websocket-3.0.0
+ * update pykodi-0.2.5
 
 2021-04-05
  * bump zwave-js-server-python-0.23.1
