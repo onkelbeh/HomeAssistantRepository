@@ -1,4 +1,4 @@
-2021-04-10 homeassistant-2021.4.0
+2021-04-10 homeassistant-2021.4.2
  * remove /update EAPI5 Ebuilds
  * re-add geopy-1.21.0
  * bump pychromecast-9.1.2
@@ -6,12 +6,14 @@
  * bump home-assistant-frontend-20210407.1
  * update homeassistant-2021.4.0
  * bump home-assistant-frontend-20210407.2
- * homeassistant-2021.4.1
+ * update homeassistant-2021.4.1
  * bump jsonrpc-base-2.0.0
  * update jsonrpc-async-2.0.0
  * update jsonrpc-websocket-3.0.0
  * update pykodi-0.2.5
  * bump zha-quirks-0.0.56
+ * bump home-assistant-frontend-20210407.3
+ * update homeassistant-2021.4.2
 
 2021-04-05
  * bump zwave-js-server-python-0.23.1

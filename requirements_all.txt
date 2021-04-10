@@ -350,7 +350,7 @@ hole==0.5.1
 holidays==0.10.5.2
 home-assistant-cli==0.9.1
 home-assistant-cli==9999
-home-assistant-frontend==20210407.2
+home-assistant-frontend==20210407.3
 homeassistant
 homeconnect==0.6.3
 homepluscontrol==0.0.5
@@ -400,9 +400,9 @@ josepy==1.7.0
 Js2Py==0.66
 jsonpath-ng==1.5.1
 jsonpickle==2.0.0
-jsonrpc-async==1.1.1
-jsonrpc-base==1.1.0
-jsonrpc-websocket==1.2.1
+jsonrpc-async==2.0.0
+jsonrpc-base==2.0.0
+jsonrpc-websocket==3.0.0
 kaiterra-async-client==0.0.2
 keyring==23.0.0
 kiwiki-client==0.1.1
@@ -690,7 +690,7 @@ pyjwt==1.7.1
 pyjwt==2.0.1
 pykira==0.1.1
 pykmtronic==0.0.3
-pykodi==0.2.3
+pykodi==0.2.5
 pykulersky==0.5.2
 pykwb==0.0.8
 pylacrosse==0.4
@@ -1102,7 +1102,7 @@ zbar==0.23.1
 zeep==4.0.0
 zengge==0.2
 zeroconf==0.29.0
-zha-quirks==0.0.55
+zha-quirks==0.0.56
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
 zigpy-cc==0.5.2
