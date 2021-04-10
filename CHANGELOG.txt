@@ -19,6 +19,7 @@
  * update homeassistant-2021.4.3
  * bump pysonos-0.0.42
  * bump hdate-0.10.2
+ * update vilfo-api-client-0.3.2-r1 (fixes https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/169)
 
 2021-04-05
  * bump zwave-js-server-python-0.23.1
