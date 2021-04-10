@@ -182,7 +182,7 @@ RDEPEND="${RDEPEND}
 	delijn? ( ~dev-python/pydelijn-0.6.1[${PYTHON_USEDEP}] )
 	denonavr? ( ~dev-python/denonavr-0.9.10[${PYTHON_USEDEP}] ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
 	deutsche_bahn? ( ~dev-python/schiene-0.23[${PYTHON_USEDEP}] )
-	devolo_home_control? ( ~dev-python/devolo-home-control-api-0.17.1[${PYTHON_USEDEP}] )
+	devolo_home_control? ( ~dev-python/devolo-home-control-api-0.17.3[${PYTHON_USEDEP}] )
 	dexcom? ( ~dev-python/pydexcom-0.2.0[${PYTHON_USEDEP}] )
 	dht? ( ~dev-python/Adafruit-DHT-1.4.0[${PYTHON_USEDEP}] )
 	discogs? ( ~dev-python/discogs-client-2.3.0[${PYTHON_USEDEP}] )

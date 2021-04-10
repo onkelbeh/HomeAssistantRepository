@@ -1,4 +1,4 @@
-2021-04-10 homeassistant-2021.4.2
+2021-04-10 homeassistant-2021.4.3
  * remove /update EAPI5 Ebuilds
  * re-add geopy-1.21.0
  * bump pychromecast-9.1.2
@@ -16,6 +16,7 @@
  * update homeassistant-2021.4.2
  * update devolo-home-control-api-0.17.3
  * bump python-smarttub-0.0.23
+ * update homeassistant-2021.4.3
 
 2021-04-05
  * bump zwave-js-server-python-0.23.1

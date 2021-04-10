@@ -46,7 +46,7 @@ RDEPEND="${RDEPEND}
 # from package_constraints.txt
 RDEPEND="${RDEPEND}
 	~dev-python/aiodiscover-1.3.3[${PYTHON_USEDEP}]
-	~dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
+	~dev-python/aiohttp-3.7.4_p0[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/astral-1.10.1[${PYTHON_USEDEP}]
 	~dev-python/async-upnp-client-0.16.0[${PYTHON_USEDEP}]
