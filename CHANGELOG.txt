@@ -14,6 +14,7 @@
  * bump zha-quirks-0.0.56
  * bump home-assistant-frontend-20210407.3
  * update homeassistant-2021.4.2
+ * update devolo-home-control-api-0.17.3
 
 2021-04-05
  * bump zwave-js-server-python-0.23.1
