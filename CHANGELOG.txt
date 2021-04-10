@@ -2,6 +2,7 @@
  * remove /update EAPI5 Ebuilds
  * re-add geopy-1.21.0
  * bump pychromecast-9.1.2
+ * bump speedtest-cli-2.1.2
 
 2021-04-05
  * bump zwave-js-server-python-0.23.1
