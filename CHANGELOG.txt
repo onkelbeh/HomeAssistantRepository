@@ -18,6 +18,7 @@
  * bump python-smarttub-0.0.23
  * update homeassistant-2021.4.3
  * bump pysonos-0.0.42
+ * bump hdate-0.10.2
 
 2021-04-05
  * bump zwave-js-server-python-0.23.1
