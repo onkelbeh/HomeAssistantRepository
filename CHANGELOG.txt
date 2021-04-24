@@ -1,4 +1,4 @@
-2021-04-24 homeassistant-2021.4.4
+2021-04-24 homeassistant-2021.4.5
  * bump aiohomekit-0.2.61
  * bump maxcube-api-0.4.2
  * bump nexia-0.9.6
@@ -6,6 +6,7 @@
  * update homeassistant-2021.4.4
  * bump spotipy-2.18.0
  * bump aiodiscover-1.3.4
+ * update homeassistant-2021.4.5
 
 2021-04-10 homeassistant-2021.4.3
  * remove /update EAPI5 Ebuilds
