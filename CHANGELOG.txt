@@ -1,5 +1,6 @@
 2021-04-24
  * bump aiohomekit-0.2.61
+ * bump maxcube-api-0.4.2
 
 2021-04-10 homeassistant-2021.4.3
  * remove /update EAPI5 Ebuilds
