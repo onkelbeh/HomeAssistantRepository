@@ -9,6 +9,7 @@
  * update homeassistant-2021.4.5
  * update PyMetno-0.8.2
  * update homeassistant-2021.4.6
+ * add async-dns-1.1.10 (fixes https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/201)
 
 2021-04-10 homeassistant-2021.4.3
  * remove /update EAPI5 Ebuilds
