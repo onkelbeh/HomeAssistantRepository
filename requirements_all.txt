@@ -711,7 +711,7 @@ pymazda==0.0.9
 pymediaroom==0.6.4.1
 PyMeeus==0.3.7
 pymelcloud==2.5.2
-PyMetno==0.8.1
+PyMetno==0.8.2
 pymfy==0.9.3
 pymitv==1.4.3
 pymochad==0.2.0
