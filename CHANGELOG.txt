@@ -5,6 +5,7 @@
  * bump ha-philipsjs-2.7.0
  * update homeassistant-2021.4.4
  * bump spotipy-2.18.0
+ * bump aiodiscover-1.3.4
 
 2021-04-10 homeassistant-2021.4.3
  * remove /update EAPI5 Ebuilds
