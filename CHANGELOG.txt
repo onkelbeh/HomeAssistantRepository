@@ -13,6 +13,7 @@
  * bump brother-1.0.0
  * update pyclimacell-0.18.2
  * update pycognito-2021.3.1
+ * update hass-nabucasa-0.43.0
 
 2021-04-24 homeassistant-2021.4.6
  * bump aiohomekit-0.2.61
