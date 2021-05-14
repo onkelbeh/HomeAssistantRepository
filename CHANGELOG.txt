@@ -32,6 +32,7 @@
  * bump growattServer-0.1.0
  * add adafruit-circuitpython-dht-3.6.0
  * bump aiohue-2.3.0
+ * bump hyperion-py-0.7.4
 
 2021-04-24 homeassistant-2021.4.6
  * bump aiohomekit-0.2.61
