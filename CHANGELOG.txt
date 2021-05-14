@@ -19,6 +19,7 @@
  * update aiodiscover-1.4.0, add pyroute2-0.5.18
  * bump fritzconnection-1.4.2
  * bump async-upnp-client-0.16.2
+ * bump dsmr-parser-0.29
 
 2021-04-24 homeassistant-2021.4.6
  * bump aiohomekit-0.2.61
