@@ -22,6 +22,7 @@
  * bump dsmr-parser-0.29
  * bump python-ecobee-api-0.2.11
  * bump pyeconet-0.1.14
+ * bump pysml-0.0.5
 
 2021-04-24 homeassistant-2021.4.6
  * bump aiohomekit-0.2.61
