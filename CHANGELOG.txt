@@ -15,6 +15,7 @@
  * update pycognito-2021.3.1
  * update hass-nabucasa-0.43.0
  * restore (still needed) acme-1.12.0 from commit 266c660
+ * bump pydeconz-79
 
 2021-04-24 homeassistant-2021.4.6
  * bump aiohomekit-0.2.61
