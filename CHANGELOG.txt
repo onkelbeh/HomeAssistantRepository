@@ -26,6 +26,8 @@
  * bump envoy-reader-0.18.4
  * bump pyEzviz-0.1.8.7
  * bump faadelays-0.0.7
+ * bump httplib2-0.19.0
+ * bump greeclimate-0.11.4, bump pycryptodome-3.9.8
 
 2021-04-24 homeassistant-2021.4.6
  * bump aiohomekit-0.2.61
