@@ -1,5 +1,6 @@
 2021-14-05
  * update astral-2.2
+ * update watchdog-2.0.3
 
 2021-04-24 homeassistant-2021.4.6
  * bump aiohomekit-0.2.61
