@@ -18,7 +18,9 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND=""
+RDEPEND=">=dev-python/dnspython-2.1.0[${PYTHON_USEDEP}]
+	dev-python/ifaddr[${PYTHON_USEDEP}]
+	>=dev-python/pyroute2-0.5.18[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
