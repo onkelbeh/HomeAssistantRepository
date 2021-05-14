@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI="7"
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{7..9} )
 
 inherit distutils-r1
 
@@ -14,17 +14,18 @@ SRC_URI="https://github.com/StevenLooman/${MY_PN}/archive/${PV}.tar.gz -> ${P}.t
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
-RDEPEND="
-		>=dev-python/voluptuous-0.11.1[${PYTHON_USEDEP}]
-		>=dev-python/aiohttp-3.3.2[${PYTHON_USEDEP}]
-		>=dev-python/async_timeout-3.0.0[${PYTHON_USEDEP}]
-		~dev-python/python-didl-lite-1.2.3[${PYTHON_USEDEP}]
-		>=dev-python/defusedxml-0.5.0[${PYTHON_USEDEP}]
-		"
-DEPEND="${REDEPEND}
+DOCS="README.rst"
+
+RDEPEND=">=dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
+	>=dev-python/async_timeout-3.0.0[${PYTHON_USEDEP}]
+	>=dev-python/python-didl-lite-1.2.6[${PYTHON_USEDEP}]
+	>=dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]"
+
+BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
