@@ -18,7 +18,8 @@ IUSE="test"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
+	dev-python/pytz[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

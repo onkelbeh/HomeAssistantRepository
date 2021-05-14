@@ -11,6 +11,7 @@
  * update pubnub-5.1.3
  * update yalexs-1.1.4
  * bump brother-1.0.0
+ * update pyclimacell-0.18.2
 
 2021-04-24 homeassistant-2021.4.6
  * bump aiohomekit-0.2.61
