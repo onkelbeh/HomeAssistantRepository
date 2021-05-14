@@ -5,6 +5,7 @@
  * bump wakeonlan-2.0.1
  * bump pyairvisual-5.0.8
  * bump aioambient-1.2.4
+ * update adb-shell-0.3.1
 
 2021-04-24 homeassistant-2021.4.6
  * bump aiohomekit-0.2.61
