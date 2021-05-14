@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -20,8 +20,7 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/httpx-0.12.1[${PYTHON_USEDEP}]
-	>=dev-python/requests-async-0.6.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/httpx-0.12.1[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -32,4 +31,9 @@ DEPEND="${REDEPEND}
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
+}
+
+src_prepare() {
+	sed -i "s/packages=setuptools.find_packages()/packages=setuptools.find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
+	eapply_user
 }
