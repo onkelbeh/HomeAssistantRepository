@@ -33,6 +33,7 @@
  * bump zwave-js-server-python-0.24.0
  * rename pre-commit to dev-vcs
  * update astroid-2.5.5 (from main repo)
+ * bump home-assistant-frontend-20210504.0, remove many olds
 
 2021-05-14
  * update astral-2.2
