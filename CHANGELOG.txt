@@ -17,6 +17,7 @@
  * bump pysmappee-0.2.25
  * bump python-smarttub-0.0.24
  * bump pysonos-0.0.44
+ * bump surepy-0.6.0
 
 2021-05-14
  * update astral-2.2
