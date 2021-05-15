@@ -39,6 +39,7 @@
  * update homeassistant-2021.5.1
  * bump androidtv-0.0.59
  * bump ovoenergy-1.1.12
+ * update ha-philipsjs-2.7.3
 
 2021-05-14
  * update astral-2.2
