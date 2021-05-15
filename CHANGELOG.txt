@@ -45,6 +45,7 @@
  * update homeassistant-2021.5.2
  * add mutesync-0.0.2
  * add motioneye-client-0.3.6
+ * add PyMetEireann-0.2
 
 2021-05-14
  * update astral-2.2
