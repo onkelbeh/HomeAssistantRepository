@@ -35,4 +35,9 @@ RDEPEND="${DEPEND}
 		>=dev-python/tabulate-0.8.3[${PYTHON_MULTI_USEDEP}]
 		<dev-python/tabulate-1[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/marshmallow-2.20.5[${PYTHON_MULTI_USEDEP}]
+		~dev-python/aiofiles-0.6.0[${PYTHON_MULTI_USEDEP}]
+		~dev-python/ajsonrpc-1.1.0[${PYTHON_MULTI_USEDEP}]
+		~dev-python/starlette-0.14.2[${PYTHON_MULTI_USEDEP}]
+		~dev-python/uvicorn-0.13.4[${PYTHON_MULTI_USEDEP}]
+		~dev-python/wsproto-1.0.0[${PYTHON_MULTI_USEDEP}]
 	')"

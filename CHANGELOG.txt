@@ -57,6 +57,9 @@
  * update maxcube-api-0.4.3
  * update platformio-5.1.1.ebuild
  * update esphome-1.17.2
+ * add starlette-0.14.2
+ * add ajsonrpc-1.1.0
+ * update missing platformio-5.1.1 deps
 
 2021-05-14
  * update astral-2.2
