@@ -52,6 +52,7 @@
  * bump denonavr (is partly in main repo)
  * update homeassistant-2021.5.3
  * update aioasuswrt-1.3.4
+ * update pyhaversion-21.5.0
 
 2021-05-14
  * update astral-2.2
