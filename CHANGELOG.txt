@@ -1,4 +1,4 @@
-2021-05-15 homeassistant-2021.5.1
+2021-05-15 homeassistant-2021.5.2
  * update pyialarm-1.5
  * bump pykmtronic-0.3.0
  * bump xknx-0.18.1
@@ -42,6 +42,7 @@
  * update ha-philipsjs-2.7.3
  * bump pysonos-0.0.45
  * bump HATasmota-0.2.12
+ * update homeassistant-2021.5.2
 
 2021-05-14
  * update astral-2.2
