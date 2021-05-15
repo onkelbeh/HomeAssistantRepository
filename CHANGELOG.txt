@@ -22,6 +22,7 @@
  * bump HATasmota-0.2.11
  * update teslajsonpy-0.18.3
  * bump TwitterAPI-2.7.2
+ * bump pyvlx-0.2.19
 
 2021-05-14
  * update astral-2.2
