@@ -13,6 +13,7 @@
  * bump screenlogicpy-0.4.1
  * update simplisafe-python-9.6.10
  * update pysma-0.4.3
+ * bump roonapi-0.0.36
 
 2021-05-14
  * update astral-2.2
