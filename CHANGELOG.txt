@@ -60,6 +60,7 @@
  * add starlette-0.14.2
  * add ajsonrpc-1.1.0
  * update missing platformio-5.1.1 deps
+ * add License to somecomfort-0.5.2 (https://github.com/kk7ds/somecomfort/issues/27)
 
 2021-05-14
  * update astral-2.2
