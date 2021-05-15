@@ -31,6 +31,7 @@
  * update aiobotocore-1.2.2
  * bump zha-quirks-0.0.57
  * bump zwave-js-server-python-0.24.0
+ * rename pre-commit to dev-vcs
 
 2021-05-14
  * update astral-2.2
