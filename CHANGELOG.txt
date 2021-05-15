@@ -27,6 +27,7 @@
  * update python-miio-0.5.6
  * update yeelight-0.6.2
  * bump bellows-0.24.0
+ * restored boto3-1.16.52 from main repo
 
 2021-05-14
  * update astral-2.2
