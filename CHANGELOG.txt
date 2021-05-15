@@ -38,6 +38,7 @@
  * update respx-0.17.0
  * update homeassistant-2021.5.1
  * bump androidtv-0.0.59
+ * bump ovoenergy-1.1.12
 
 2021-05-14
  * update astral-2.2
