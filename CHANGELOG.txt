@@ -35,6 +35,7 @@
  * update astroid-2.5.5 (from main repo)
  * bump home-assistant-frontend-20210504.0, remove many olds
  * restore pylint-2.8.0 from main repo
+ * update respx-0.17.0
 
 2021-05-14
  * update astral-2.2
