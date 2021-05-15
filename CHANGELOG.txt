@@ -12,6 +12,7 @@
  * update roombapy-1.6.3
  * bump screenlogicpy-0.4.1
  * update simplisafe-python-9.6.10
+ * update pysma-0.4.3
 
 2021-05-14
  * update astral-2.2
