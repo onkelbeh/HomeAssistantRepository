@@ -48,6 +48,7 @@
  * add PyMetEireann-0.2
  * add python-picnic-api-1.1.0
  * add kostal-plenticore-0.2.0
+ * bump aiohue-2.3.1
 
 2021-05-14
  * update astral-2.2
