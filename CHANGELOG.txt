@@ -1,4 +1,4 @@
-2021-05-x15
+2021-05-15 homeassistant-2021.5.1
  * update pyialarm-1.5
  * bump pykmtronic-0.3.0
  * bump xknx-0.18.1
@@ -36,6 +36,7 @@
  * bump home-assistant-frontend-20210504.0, remove many olds
  * restore pylint-2.8.0 from main repo
  * update respx-0.17.0
+ * update homeassistant-2021.5.1
 
 2021-05-14
  * update astral-2.2
