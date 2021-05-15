@@ -32,6 +32,7 @@
  * bump zha-quirks-0.0.57
  * bump zwave-js-server-python-0.24.0
  * rename pre-commit to dev-vcs
+ * update astroid-2.5.5 (from main repo)
 
 2021-05-14
  * update astral-2.2
