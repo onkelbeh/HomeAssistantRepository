@@ -20,6 +20,7 @@
  * bump surepy-0.6.0
  * bump swisshydrodata-0.1.0
  * bump HATasmota-0.2.11
+ * update teslajsonpy-0.18.3
 
 2021-05-14
  * update astral-2.2
