@@ -1,5 +1,6 @@
 2021-05-x15
  * update pyialarm-1.5
+ * bump pykmtronic-0.3.0
 
 2021-05-14
  * update astral-2.2
