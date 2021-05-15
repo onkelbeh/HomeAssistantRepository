@@ -43,6 +43,7 @@
  * bump pysonos-0.0.45
  * bump HATasmota-0.2.12
  * update homeassistant-2021.5.2
+ * add mutesync-0.0.2
 
 2021-05-14
  * update astral-2.2
