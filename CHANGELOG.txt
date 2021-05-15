@@ -54,6 +54,7 @@
  * update aioasuswrt-1.3.4
  * update pyhaversion-21.5.0
  * update homeassistant-2021.5.4
+ * update maxcube-api-0.4.3
 
 2021-05-14
  * update astral-2.2
