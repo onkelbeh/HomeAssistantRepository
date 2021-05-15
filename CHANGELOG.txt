@@ -6,6 +6,7 @@
  * bump youtube_dl-2021.4.17
  * bump PyMetno-0.8.3
  * update pymodbus-2.5.1
+ * update pynuki-1.4.1
 
 2021-05-14
  * update astral-2.2
