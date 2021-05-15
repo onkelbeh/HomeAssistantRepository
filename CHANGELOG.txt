@@ -9,6 +9,7 @@
  * update pynuki-1.4.1
  * bump omnilogic-0.4.5
  * bump aiorecollect-1.0.4
+ * update roombapy-1.6.3
 
 2021-05-14
  * update astral-2.2
