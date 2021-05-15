@@ -19,6 +19,7 @@
  * bump pysonos-0.0.44
  * bump surepy-0.6.0
  * bump swisshydrodata-0.1.0
+ * bump HATasmota-0.2.11
 
 2021-05-14
  * update astral-2.2
