@@ -1,4 +1,4 @@
-2021-05-15 homeassistant-2021.5.2
+2021-05-15 homeassistant-2021.5.3
  * update pyialarm-1.5
  * bump pykmtronic-0.3.0
  * bump xknx-0.18.1
@@ -50,6 +50,7 @@
  * add kostal-plenticore-0.2.0
  * bump aiohue-2.3.1
  * bump denonavr (is partly in main repo)
+ * update homeassistant-2021.5.3
 
 2021-05-14
  * update astral-2.2

@@ -117,6 +117,7 @@
     <flag name="coinmarketcap">Displays various details about a cryptocurrency provided by CoinMarketCap</flag>
     <flag name="color_extractor">color_extractor extracts the predominant color from a given image</flag>
     <flag name="comfoconnect">Comfoconnect integration lets you control Zehnder ComfoAir</flag>
+    <flag name="compensation">Compensation integration consumes the state from other sensors</flag>
     <flag name="concord232">Provides integration with GE, Interlogix (and other brands) alarm panels</flag>
     <flag name="control4">Allows you to control and monitor lights from your local Control4 system</flag>
     <flag name="coolmaster">The coolmaster climate platform lets you control HVAC through CoolMasterNet</flag>
@@ -178,6 +179,7 @@
     <flag name="elkm1">Elk-M1 is a home security and automation controller</flag>
     <flag name="elv">control the state of your ELV PCA 301 smart switch</flag>
     <flag name="emby">The emby platform allows you to control a Emby multimedia system</flag>
+    <flag name="emonitor">SiteSage Emonitor allows local power monitoring on a per circuit basis</flag>
     <flag name="emulated_hue">Emulated_hue integration provides a virtual Philips Hue bridge</flag>
     <flag name="emulated_kasa">Emulates a TP-Link Kasa smart plug and announces the power usage</flag>
     <flag name="emulated_roku">Emulate Roku API for Harmony and Android remotes</flag>
@@ -337,6 +339,7 @@
     <flag name="knx">Asynchronous Library for the KNX protocol</flag>
     <flag name="kodi">control a Kodi multimedia system</flag>
     <flag name="konnected">connect wired sensors and switches to a Konnected Alarm Panel</flag>
+    <flag name="kostal_plenticore">allows you to get data from Kostal Plenticore solar inverters</flag>
     <flag name="kulersky">connects Brightech Kuler Sky floor lamps to Home Assistant</flag>
     <flag name="kwb">integrates the sensors of KWB Easyfire pellet central heating units </flag>
     <flag name="lacrosse">using the data provided by a Jeelink USB dongle or this Arduino sketch</flag>
@@ -383,6 +386,7 @@
     <flag name="meteoalarm">watch for weather alerts in europe from MeteoAlarm</flag>
     <flag name="meteo_france">uses the meteorological data from Meteo-France</flag>
     <flag name="metoffice">weather platform uses the Met Office’s DataPoint API</flag>
+    <flag name="met_eireann">Met Éireann (The Irish Meteorological Service) Public Weather Forecast API</flag>
     <flag name="mfi">sensor platform to allow you to monitor mFi mPort interface and sensors</flag>
     <flag name="mhz19">small non-dispersive infrared sensor that can measure CO2 level</flag>
     <flag name="microsoft">text-to-speech platform uses the TTS engine of the Microsoft Speech Service</flag>
@@ -396,11 +400,13 @@
     <flag name="modbus">sensors and switches controlled over MODBUS serial, TCP, and UDP connections</flag>
     <flag name="modem_callerid">Uses an available modem for collecting caller ID information</flag>
     <flag name="monoprice">Python API for talking to Monoprice 6-zone amplifier</flag>
+    <flag name="motioneye">integrate your motionEye server into Home Assistant</flag>
     <flag name="motion_blinds">control Motion Blinds from Coulisse B.V.</flag>
     <flag name="mpd">allows you to control a Music Player Daemon from Home Assistant</flag>
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
     <flag name="msteams">send notifications from Home Assistant to a team channel in Microsoft Teams</flag>
     <flag name="mullvad">Mullvad VPN integration pulls Mullvad VPN status information</flag>
+    <flag name="mutesync">mutesync integration for Home Assistant connects to the mütesync virtual button</flag>
     <flag name="mvglive">departure times bus, tram, subway, train of Munich public transport network</flag>
     <flag name="mychevy">communicates with the my.chevrolet website using the javascript API</flag>
     <flag name="mycroft">allows you to send notifications and more to Mycroft from Home Assistant</flag>
@@ -481,6 +487,7 @@
     <flag name="pencom">Pencom is a computer-controlled relay, I/O and custom boards</flag>
     <flag name="philips_js">allows you to control Philips TVs which expose the jointSPACE JSON-API</flag>
     <flag name="pi4ioe5v9xxxx">support for the quasi-bidirectional devices pi4ioe5v9xxxx I2C I/O port expander</flag>
+    <flag name="picnic">get information from Picnic about orders, deliveries and cart content</flag>
     <flag name="piglow">control the Piglow lights on your Raspberry Pi from within Home Assistant</flag>
     <flag name="pilight">Pilight is a open source solution to communicate with 433 MHz devices</flag>
     <flag name="ping">ICMPLib</flag>

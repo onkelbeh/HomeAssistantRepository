@@ -18,6 +18,7 @@
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
     <flag name="caldav">Integrate a CalDAV (RFC4791) calendar in Home Assistant</flag>
     <flag name="cli">Set a dependency for Home Assistant Cli hass-cli (lots of modules required)</flag>
+    <flag name="compensation">Compensation integration consumes the state from other sensors</flag>
     <flag name="coronavirus">Add sensors for COVID-19 infections from Johns Hopkins University</flag>
     <flag name="darksky">Use dark sky weather data from Home Assistant</flag>
     <flag name="dwd_weather_warnings">dwd_weather_warnings sensor platform uses DWD for  warnings</flag>
