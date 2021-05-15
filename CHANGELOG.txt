@@ -55,6 +55,7 @@
  * update pyhaversion-21.5.0
  * update homeassistant-2021.5.4
  * update maxcube-api-0.4.3
+ * update platformio-5.1.1.ebuild
 
 2021-05-14
  * update astral-2.2
