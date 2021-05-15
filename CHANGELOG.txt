@@ -41,6 +41,7 @@
  * bump ovoenergy-1.1.12
  * update ha-philipsjs-2.7.3
  * bump pysonos-0.0.45
+ * bump HATasmota-0.2.12
 
 2021-05-14
  * update astral-2.2
