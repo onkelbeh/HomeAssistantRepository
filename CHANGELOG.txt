@@ -23,6 +23,7 @@
  * update teslajsonpy-0.18.3
  * bump TwitterAPI-2.7.2
  * bump pyvlx-0.2.19
+ * bump xbox-webapi-2.0.11
 
 2021-05-14
  * update astral-2.2
