@@ -21,6 +21,8 @@ DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/transitions[${PYTHON_USEDEP}]
 	dev-python/websockets[${PYTHON_USEDEP}]
+	dev-python/docopt[${PYTHON_USEDEP}]
+	dev-python/passlib[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
