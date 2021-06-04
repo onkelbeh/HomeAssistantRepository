@@ -1,3 +1,6 @@
+2021-06-04
+ * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
+
 2021-05-15 homeassistant-2021.5.4
  * update pyialarm-1.5
  * bump pykmtronic-0.3.0
