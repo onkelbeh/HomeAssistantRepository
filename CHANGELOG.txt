@@ -1,5 +1,6 @@
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
+ * re-add cryptography-3.3.2 from main archive, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/203
 
 2021-05-15 homeassistant-2021.5.4
  * update pyialarm-1.5
