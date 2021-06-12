@@ -68,6 +68,7 @@
   * update python-juicenet-1.0.2
   * update python-smarttub-0.0.25
   * update pyvesync-1.4.0
+  * update pywilight-0.0.70
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
