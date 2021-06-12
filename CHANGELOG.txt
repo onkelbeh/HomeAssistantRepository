@@ -18,6 +18,7 @@
   * update apprise-0.9.3
   * update async-upnp-client-0.18.0
   * update awesomeversion-21.4.0
+  * add beacontools-1.2.3
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
