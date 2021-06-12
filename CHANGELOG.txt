@@ -84,6 +84,7 @@
   * update youtube_dl-2021.4.26
   * update zeroconf-0.31.0
   * update zigpy-znp-0.5.1
+  * update zwave-js-server-python-0.26.1
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
