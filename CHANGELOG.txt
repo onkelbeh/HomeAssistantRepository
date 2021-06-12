@@ -45,6 +45,7 @@
   * update millheater-0.4.1
   * update netdisco-2.8.3
   * update nexia-0.9.7
+  * update numpy-1.20.3-r1
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
