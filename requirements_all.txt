@@ -50,7 +50,7 @@ aionursery==0.3.0
 aiopulse==0.4.2
 aiopvapi==1.6.14
 aiopylgtv==0.4.0
-aiorecollect==1.0.4
+aiorecollect==1.0.5
 aioshelly==0.6.4
 aiosqlite==0.16.0
 aioswitcher==1.2.1
@@ -234,7 +234,7 @@ ecdsa==0.16.1
 ecoaliface==0.4.0
 eebrightbox==0.0.4
 elementpath==2.2.2
-elfutils==0.183
+elfutils==0.184
 elgato==2.1.1
 eliqonline==1.2.2
 elkm1-lib==0.8.10
@@ -280,7 +280,7 @@ fritzconnection==1.4.2
 future==0.18.2
 gammu==1.41.0
 garages-amsterdam==2.1.1
-garminconnect-aio==0.1.1
+garminconnect-aio==0.1.4
 gatt==0.2.7
 gawk==5.1.0
 gcc==10.3.0
@@ -677,7 +677,7 @@ pyHik==0.2.8
 pyhiveapi==0.4.2
 pyhomeworks==0.0.6
 pyHS100==0.3.5.2
-pyialarm==1.7
+pyialarm==1.8.1
 pyinsteon==1.0.9
 pyintesishome==1.7.6
 pyipma==2.0.5

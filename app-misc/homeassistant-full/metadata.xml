@@ -141,7 +141,7 @@
     <flag name="deutsche_bahn">will give you the departure time of the next train for the given connection</flag>
     <flag name="devolo_home_control">Add Devolo Home-control to Home Assistant</flag>
     <flag name="dexcom">View your CGM data from Dexcom from Home Assistant</flag>
-    <flag name="dhcp"/>
+    <flag name="dhcp">will watch the network for DHCP requests for supported devices and services</flag>
     <flag name="dht">Get the current temperature and humidity from a DHT11, DHT22 or AM2302 device</flag>
     <flag name="digitalloggers">Switch platform controls the state of your Digital Loggers switches</flag>
     <flag name="digital_ocean">Access information about your Digital Ocean droplets from Home Assistant</flag>
@@ -287,7 +287,7 @@
     <flag name="homematicip_cloud">A python wrapper for the homematicIP REST API (Access Point Based)</flag>
     <flag name="homeworks">Lutron Homeworks Series 4 &amp; 8 systems via RS232</flag>
     <flag name="home_connect">Home Connect standard for Bosch and Siemens</flag>
-    <flag name="home_plus_control"/>
+    <flag name="home_plus_control">allows you to control a range of Legrand in-wall switches and power outlets</flag>
     <flag name="honeywell">Integrates US-based Honeywell Total Connect Comfort (TCC) climate systems</flag>
     <flag name="horizon">Allows you to control a Unitymedia Horizon HD Recorder from Home Assistant</flag>
     <flag name="hp_ilo">Query HP Integrated Lights out XML interfaces from Home Assistant</flag>
@@ -496,7 +496,7 @@
     <flag name="picnic">get information from Picnic about orders, deliveries and cart content</flag>
     <flag name="piglow">control the Piglow lights on your Raspberry Pi from within Home Assistant</flag>
     <flag name="pilight">Pilight is a open source solution to communicate with 433 MHz devices</flag>
-    <flag name="ping">ICMPLib</flag>
+    <flag name="ping">use the great ICMPLib for Presence Detection and as a binary Sensor</flag>
     <flag name="pi_hole">retrieve statistics and interact with a Pi-hole system</flag>
     <flag name="pjlink">control projectors with support for the PJLink protocol from Home Assistant</flag>
     <flag name="plaato">sets up integration with Plaato Airlock and Keg</flag>
@@ -571,7 +571,7 @@
     <flag name="satel_integra">Satel Integra alarm panel to leverage</flag>
     <flag name="schluter">integrate your Schluter-DITRA-HEAT-E-WiFi electric floor heating thermostat</flag>
     <flag name="scrape">scraping information from websites</flag>
-    <flag name="screenlogic"/>
+    <flag name="screenlogic">allows you to integrate your Pentair IntelliTouch or EasyTouch pool controller</flag>
     <flag name="scsgate">allows to interact with the MyHome system from BTicino/Legrande</flag>
     <flag name="season">display astronomical or meteorological season (Spring, Summer, Autumn, Winter)</flag>
     <flag name="sendgrid">Notification platform sends email notifications via SendGrid</flag>

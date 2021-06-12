@@ -96,6 +96,7 @@
     <flag name="deutsche_bahn">will give you the departure time of the next train for the given connection</flag>
     <flag name="devolo_home_control">Add Devolo Home-control to Home Assistant</flag>
     <flag name="dexcom">View your CGM data from Dexcom from Home Assistant</flag>
+    <flag name="dhcp">will watch the network for DHCP requests for supported devices and services</flag>
     <flag name="dht">Get the current temperature and humidity from a DHT11, DHT22 or AM2302 device</flag>
     <flag name="discogs">Discogs Client for Home Assistant</flag>
     <flag name="discord">Send messages to the user using Discord from Home Assistant</flag>
@@ -190,7 +191,7 @@
     <flag name="panasonic_viera">panasonic_viera platform allows you to control a Panasonic Viera TV</flag>
     <flag name="philips_js">allows you to control Philips TVs which expose the jointSPACE JSON-API</flag>
     <flag name="pilight">Pilight is a open source solution to communicate with 433 MHz devices</flag>
-    <flag name="ping">ICMPLib</flag>
+    <flag name="ping">use the great ICMPLib for Presence Detection and as a binary Sensor</flag>
     <flag name="pi_hole">retrieve statistics and interact with a Pi-hole system</flag>
     <flag name="plex">Python bindings for the Plex API</flag>
     <flag name="plugwise">Plugwise_Smile (Anna/Adam/P1/Stretch) API to use in conjunction with Home Assist</flag>
