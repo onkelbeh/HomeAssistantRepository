@@ -1,4 +1,4 @@
-2021-06-12 homeassistant-2021.6.3
+2021-06-12 homeassistant-2021.6.4
   * update AEMET-OpenData-0.2.1
   * update HAP-python-3.5.0
   * update HATasmota-0.2.14
@@ -113,6 +113,7 @@
   * bump pyialarm-1.8.1
   * bump aiorecollect-1.0.4
   * update homeassistant-min-2021.6.3
+  * update homeassistant-min-2021.6.4
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
