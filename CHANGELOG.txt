@@ -1,3 +1,6 @@
+2021-06-12
+  * update AEMET-OpenData-0.2.1
+
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
  * re-add cryptography-3.3.2 from main archive, fix https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/203
