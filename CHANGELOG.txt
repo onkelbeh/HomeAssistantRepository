@@ -56,6 +56,7 @@
   * update pyialarm-1.7
   * update pyiqvia-1.0.0
   * update pyisy-3.0.0
+  * add pylgnetcast-0.3.3
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
