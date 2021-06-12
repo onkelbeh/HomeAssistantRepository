@@ -27,6 +27,7 @@
   * update discord-py-1.7.2
   * update dlipower-1.0.176
   * update elgato-2.1.0
+  * update envoy-reader-0.19.0
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
