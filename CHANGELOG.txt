@@ -111,6 +111,7 @@
   * update dwdwfsapi-1.0.4
   * bump garminconnect-aio-0.1.4
   * bump pyialarm-1.8.1
+  * bump aiorecollect-1.0.4
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
