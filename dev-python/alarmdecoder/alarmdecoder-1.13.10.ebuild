@@ -3,11 +3,11 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python interface for the AlarmDecoder (AD2) family of alarm devices which includes the AD2USB, AD2SERIAL and AD2PI."
+DESCRIPTION="Python interface for the AlarmDecoder (AD2) family of alarm devices."
 HOMEPAGE="https://github.com/nutechsoftware/alarmdecoder https://pypi.org/project/alarmdecoder/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
@@ -18,7 +18,8 @@ IUSE="test"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/pyserial-2.7[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/pyserial-2.7[${PYTHON_USEDEP}]
+	>=dev-python/future-1-14.3[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
