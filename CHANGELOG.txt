@@ -61,6 +61,7 @@
   * update pymazda-0.1.6
   * update pymelcloud-2.5.3
   * update pymodbus-2.5.2
+  * update pyrituals-0.0.3
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
