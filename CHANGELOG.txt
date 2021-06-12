@@ -13,6 +13,7 @@
   * update aiohomekit-0.2.67
   * update aiohttp-3.7.4_p0 (still _post0)
   * update aiohue-2.5.0
+  * update aioshelly-0.6.4
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
