@@ -88,7 +88,7 @@
   * update backoff-1.10.0
   * update demjson-2.2.4
   * add aiosyncthing-0.6.3
-  * add boschshcpy-0.2.19
+  * add boschshcpy-0.2.19, boschshcpy-0.2.17
   * add garages-amsterdam-2.1.1
   * add garminconnect-aio-0.1.1
   * add krakenex-2.1.0
