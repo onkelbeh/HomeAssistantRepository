@@ -32,6 +32,7 @@
   * update evdev-1.4.0
   * update evohome-async-0.3.15
   * update freesms-0.2.0
+  * update garminconnect-0.1.19
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
