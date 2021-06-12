@@ -43,7 +43,7 @@ aiokef==0.2.16
 aiolifx-effects==0.2.2
 aiolifx==0.6.9
 aiolip==1.1.4
-aiolyric==1.0.6
+aiolyric==1.0.7
 aionotify==0.2.0
 aionotion==1.1.0
 aionursery==0.3.0
@@ -173,7 +173,7 @@ coinbase==2.1.0
 coinmarketcap==5.0.3
 colorama==0.4.4
 coloredlogs==15.0.1
-colorlog==4.8.0
+colorlog==5.0.1
 colorthief==0.2.1
 colorzero==1.1
 concord232==0.15
@@ -235,7 +235,7 @@ ecoaliface==0.4.0
 eebrightbox==0.0.4
 elementpath==2.2.2
 elfutils==0.183
-elgato==2.1.0
+elgato==2.1.1
 eliqonline==1.2.2
 elkm1-lib==0.8.10
 emoji==1.2.0
@@ -371,7 +371,7 @@ hyperion-py==0.7.4
 hyperlink==21.0.0
 i2csense==0.0.4
 iammeter==0.1.7
-iaqualink==0.3.4
+iaqualink==0.3.90
 ibmiotf==0.3.4
 idna==3.1
 ifaddr==0.1.7
@@ -714,6 +714,7 @@ pymediaroom==0.6.4.1
 PyMeeus==0.3.7
 pymelcloud==2.5.3
 PyMetEireann==0.2
+pymeteoclimatic==0.0.6
 PyMetno==0.8.3
 pymfy==0.9.3
 pymitv==1.4.3
@@ -1103,7 +1104,7 @@ xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
 xfinity-gateway==0.0.4
-xknx==0.18.2
+xknx==0.18.4
 xmlschema==1.6.2
 xmltodict==0.12.0
 xs1-api-client==3.0.0

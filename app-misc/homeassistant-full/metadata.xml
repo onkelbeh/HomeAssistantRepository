@@ -387,6 +387,7 @@
     <flag name="message_bird">MessageBird's REST API</flag>
     <flag name="met">met platform uses the Met.no web service as a source for meteorological data</flag>
     <flag name="meteoalarm">watch for weather alerts in europe from MeteoAlarm</flag>
+    <flag name="meteoclimatic">use Meteoclimatic web service as a source for meteorological data</flag>
     <flag name="meteo_france">uses the meteorological data from Meteo-France</flag>
     <flag name="metoffice">weather platform uses the Met Office’s DataPoint API</flag>
     <flag name="met_eireann">Met Éireann (The Irish Meteorological Service) Public Weather Forecast API</flag>
