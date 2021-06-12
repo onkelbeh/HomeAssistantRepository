@@ -59,6 +59,7 @@
   * add pylgnetcast-0.3.3
   * update pylutron-caseta-0.10.0
   * update pymazda-0.1.6
+  * update pymelcloud-2.5.3
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
