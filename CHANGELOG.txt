@@ -102,6 +102,7 @@
   * update homeassistant-2021.6.1
   * bump elgato-2.1.1
   * bump iaqualink-0.3.90
+  * bump xknx-0.18.4
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
