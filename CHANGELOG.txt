@@ -52,6 +52,7 @@
   * update pyTibber-0.17.0
   * update pyatmo-5.0.1
   * add pyflic-2.0.3
+  * update pyhiveapi-0.4.2
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
