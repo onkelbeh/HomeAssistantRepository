@@ -20,6 +20,7 @@
   * update awesomeversion-21.4.0
   * add beacontools-1.2.3
   * update blebox-uniapi-1.3.3
+  * update bravia-tv-1.0.8
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
