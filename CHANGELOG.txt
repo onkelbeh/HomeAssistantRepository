@@ -10,6 +10,7 @@
   * update adext-0.4.2
   * update aiodiscover-1.4.2
   * update aioesphomeapi-2.8.0
+  * update aiohomekit-0.2.67
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
