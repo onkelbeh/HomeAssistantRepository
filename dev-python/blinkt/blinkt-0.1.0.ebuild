@@ -16,7 +16,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=""
+RDEPEND="dev-python/transitions[${PYTHON_USEDEP}]
+	dev-python/websockets[${PYTHON_USEDEP}]
+	dev-python/docopt[${PYTHON_USEDEP}]
+	dev-python/passlib[${PYTHON_USEDEP}"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
