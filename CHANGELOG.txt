@@ -80,6 +80,7 @@
   * update watchdog-2.1.2
   * update xknx-0.18.2
   * update yalesmartalarmclient-0.3.3
+  * update yeelight-0.6.3
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
