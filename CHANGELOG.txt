@@ -35,6 +35,7 @@
   * update garminconnect-0.1.19
   * update geojson-client-0.6
   * update geopy-2.1.0
+  * update gios-1.0.1
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
