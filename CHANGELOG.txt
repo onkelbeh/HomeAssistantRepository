@@ -5,6 +5,7 @@
   * update PyRMVtransport-0.3.2
   * update PySyncThru-0.7.3
   * update PyTurboJPEG-1.5.0
+  * update TwitterAPI-2.7.3
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
