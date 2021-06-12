@@ -90,6 +90,7 @@
   * add aiosyncthing-0.6.3
   * add boschshcpy-0.2.19
   * add garages-amsterdam-2.1.1
+  * add garminconnect-aio-0.1.1
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
