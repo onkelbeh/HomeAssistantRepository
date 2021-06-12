@@ -93,6 +93,7 @@
   * add garminconnect-aio-0.1.1
   * add krakenex-2.1.0
   * add nettigo-air-monitor-0.2.6
+  * add pykrakenapi-0.2.1
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
