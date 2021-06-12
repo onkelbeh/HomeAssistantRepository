@@ -77,6 +77,7 @@
   * update tesla-powerwall-0.3.10
   * update upcloud-api-2.0.0
   * update venstarcolortouch-0.14
+  * update watchdog-2.1.2
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
