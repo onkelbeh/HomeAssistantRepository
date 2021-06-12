@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1 multiprocessing
 
@@ -23,9 +23,6 @@ RDEPEND="
 	dev-python/chardet[${PYTHON_USEDEP}]
 	>=dev-python/multidict-4.5.0[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.0[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep '
-		dev-python/idna-ssl[${PYTHON_USEDEP}]
-	' python3_6)
 	dev-python/typing-extensions[${PYTHON_USEDEP}]
 "
 BDEPEND="
