@@ -105,6 +105,7 @@
   * bump xknx-0.18.4
   * bump aiolyric-1.0.7
   * add pymeteoclimatic-0.0.6
+  * update home-assistant-cli-0.9.3, home-assistant-cli-9999
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
