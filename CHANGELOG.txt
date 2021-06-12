@@ -100,6 +100,7 @@
   * add systembridge-1.1.5, bump systembridge-1.2.4
   * add wallbox-0.4.4.ebuild, bump wallbox-0.4.5.ebuild
   * update homeassistant-2021.6.1
+  * bump elgato-2.1.1
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
