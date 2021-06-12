@@ -104,6 +104,7 @@
   * bump iaqualink-0.3.90
   * bump xknx-0.18.4
   * bump aiolyric-1.0.7
+  * add pymeteoclimatic-0.0.6
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
