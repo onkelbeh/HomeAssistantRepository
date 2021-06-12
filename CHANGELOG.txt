@@ -49,6 +49,7 @@
   * update openhomedevice-2.0.1
   * update poetry-1.1.6
   * update praw-7.2.0
+  * update pyTibber-0.17.0
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
