@@ -97,6 +97,7 @@
   * add pysiaalarm-3.0.0
   * add aiosyncthing-0.5.1
   * bump aiosyncthing-0.6.3
+  * add systembridge-1.1.5, bump systembridge-1.2.4
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
