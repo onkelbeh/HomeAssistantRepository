@@ -75,6 +75,7 @@
   * update smhi-pkg-1.0.15
   * update starkbank-ecdsa-1.1.1
   * update tesla-powerwall-0.3.10
+  * update upcloud-api-2.0.0
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
