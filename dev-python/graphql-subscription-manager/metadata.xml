@@ -9,7 +9,7 @@
     <remote-id type="pypi">graphql-subscription-manager</remote-id>
     <maintainer status="unknown">
       <email>mail@dahoiv.net</email>
-      <name>Daniel Hoyer Iversen</name>
+      <name>Daniel Hjelseth Høyer</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

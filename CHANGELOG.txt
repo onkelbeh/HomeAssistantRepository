@@ -37,6 +37,7 @@
   * update geopy-2.1.0
   * update gios-1.0.1
   * update goalzero-0.1.7
+  * update graphql-subscription-manager-0.4.0
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
