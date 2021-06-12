@@ -158,6 +158,7 @@
     <flag name="kef">KEF wireless speakers</flag>
     <flag name="knx">Asynchronous Library for the KNX protocol</flag>
     <flag name="kodi">control a Kodi multimedia system</flag>
+    <flag name="kraken">allows you to monitor exchange rates on kraken.com</flag>
     <flag name="linode">allows you to access the information about your Linode systems</flag>
     <flag name="loopenergy">Integrate your Loop Energy meter information into Home Assistant</flag>
     <flag name="luci">fetch connected devices from your OpenWrt</flag>

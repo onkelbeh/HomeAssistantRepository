@@ -89,6 +89,7 @@
     <flag name="bmw_connected_drive">Retrieve data from the BMW Connected Drive</flag>
     <flag name="bom">Weather platform uses the Australian Bureau of Meteorology (BOM) as a source for</flag>
     <flag name="bond">Asynchronous Python wrapper library over Bond Local API</flag>
+    <flag name="bosch_shc">integrate your Bosch SHC into Home Assistant</flag>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
     <flag name="broadlink">Allows you to interact with Broadlink remote control devices</flag>
     <flag name="brother">Read current data from your local Brother printer</flag>
@@ -234,6 +235,7 @@
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
     <flag name="frontier_silicon">Support for Internet Radios based on the Frontier Silicon chipset</flag>
     <flag name="futurenow">Allows you to use P5 FutureNow relay/dimmer units as lights</flag>
+    <flag name="garages_amsterdam">measure the occupancy of Amsterdam parking garages in the Netherlands</flag>
     <flag name="garmin_connect">The Garmin Connect sensor allows you to expose data from Garmin Connect</flag>
     <flag name="gc100">The Global Caché GC-100 can be integrated into Home Assistant</flag>
     <flag name="gdacs">lets you use a GeoRSS feed provided by GDACS</flag>
@@ -340,6 +342,7 @@
     <flag name="kodi">control a Kodi multimedia system</flag>
     <flag name="konnected">connect wired sensors and switches to a Konnected Alarm Panel</flag>
     <flag name="kostal_plenticore">allows you to get data from Kostal Plenticore solar inverters</flag>
+    <flag name="kraken">allows you to monitor exchange rates on kraken.com</flag>
     <flag name="kulersky">connects Brightech Kuler Sky floor lamps to Home Assistant</flag>
     <flag name="kwb">integrates the sensors of KWB Easyfire pellet central heating units </flag>
     <flag name="lacrosse">using the data provided by a Jeelink USB dongle or this Arduino sketch</flag>
@@ -417,6 +420,7 @@
     <flag name="mythicbeastsdns">automatically update your dynamic DNS entry at Mythic Beasts</flag>
     <flag name="n26">allows you to track your N26 account</flag>
     <flag name="nad">allows you to control a NAD receiver through RS232, TCP and Telnet</flag>
+    <flag name="nam">get temperature, humidity, pressure , air quality from Nettigo devices</flag>
     <flag name="nanoleaf">allows you to control Nanoleaf Light Panels from Home Assistant</flag>
     <flag name="neato">Python package for controlling Neato pybotvac Connected vacuum robot</flag>
     <flag name="nederlandse_spoorwegen">train service in the Netherlands</flag>
@@ -428,6 +432,7 @@
     <flag name="netgear">detect presence by looking at connected devices to a NETGEAR device</flag>
     <flag name="netgear_lte">observe and control NETGEAR LTE modems</flag>
     <flag name="netio">Binding library for Koukaam netio devices</flag>
+    <flag name="network">provides network configuration for integrations such as Zeroconf</flag>
     <flag name="neurio_energy">Integrate your Neurio meter information into Home Assistant</flag>
     <flag name="nexia">allows you to integrate your Nexia thermostats into Home Assistant</flag>
     <flag name="nextbus"> will give you the next departure time and associated data fro NextBus</flag>
@@ -583,6 +588,7 @@
     <flag name="shiftr">transfer details collected with Home Assistant to Shiftr.io</flag>
     <flag name="shodan">Shodan is a search engine for Internet-connected devices</flag>
     <flag name="sht31">allows you to get the current temperature and humidity from a Sensirion SHT31</flag>
+    <flag name="sia">provides integration with several alarm systems that implement the SIA Protocol</flag>
     <flag name="sighthound">Detect people in camera images using Sighthound Cloud</flag>
     <flag name="signal_messenger">add Support for Moxie's Signal API</flag>
     <flag name="simplepush">deliver notifications from Home Assistant to your Android device</flag>
@@ -633,6 +639,7 @@
     <flag name="ssdp">will scan the network for supported devices and services (Upnp)</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="starline">retrieve data of your StarLine security system from the StarLine portal</flag>
+    <flag name="starlingbank">monitor your account balance data as sensors</flag>
     <flag name="startca">Integrate your Start.ca account information into Home Assistant</flag>
     <flag name="statsd">transfer all state changes to an external StatsD instance</flag>
     <flag name="steam_online">allows you to track the online status of public Steam accounts</flag>
@@ -649,12 +656,14 @@
     <flag name="switchbot">allows you to control SwitchBot devices from Home Assistant</flag>
     <flag name="switcher_kis">allows you to control the Switcher V2 Water Heater</flag>
     <flag name="switchmate">allows you to control Switchmate devices from Home Assistant</flag>
+    <flag name="syncthing">allows you to monitor states of your synced folders from Syncthing</flag>
     <flag name="syncthru">allows you to read current data from your local Samsung printer</flag>
     <flag name="synology">camera platform to watch the live streams of your Synology Surveillance Station</flag>
     <flag name="synology_dsm">monitor getting various statistics from your Synology NAS</flag>
     <flag name="synology_srm">detect presence by looking at connected devices to a Synology SRM router</flag>
     <flag name="systemd">internal and developer use</flag>
     <flag name="systemmonitor">monitor your platform</flag>
+    <flag name="system_bridge">System Bridge runs on your local machine to share system information via its AP</flag>
     <flag name="tado">an interface to the my.tado.com website</flag>
     <flag name="tahoma">interface to the tahomalink.com website. It adds covers, scenes and a sun sensor</flag>
     <flag name="tankerkoenig">monitor the fuel prices with tankerkoenig.de</flag>
@@ -700,6 +709,7 @@
     <flag name="twinkly">control Twinkly LED string from Home Assistant</flag>
     <flag name="twitch">monitor Twitch channel status from within Home Assistant</flag>
     <flag name="twitter">notification platform uses Twitter to deliver notifications from Home Assistant</flag>
+    <flag name="ubee">getting stats from Ubee routers</flag>
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="unifiled">control lights from a UniFi LED by Ubiquiti Networks controller</flag>
     <flag name="unifi_direct">detect presence by looking at devices connected to a UniFi AP</flag>
@@ -732,6 +742,7 @@
     <flag name="vultr">access information about and interact with your Vultr subscriptions</flag>
     <flag name="w800rf32">supports W800RF32 devices by WGL Designs</flag>
     <flag name="wake_on_lan">enables the ability to send magic packets to Wake on LAN capable devices</flag>
+    <flag name="wallbox">pulls data from the MyWallbox Portal for your Wallbox charging station</flag>
     <flag name="waqi">will query World Air Quality Index service</flag>
     <flag name="waterfurnace">Python interface for waterfurnace geothermal systems</flag>
     <flag name="watson_iot">link Home Assistant with an IBM Watson IoT Platform instance</flag>
