@@ -107,6 +107,8 @@
   * add pymeteoclimatic-0.0.6
   * update home-assistant-cli-0.9.3, home-assistant-cli-9999
   * update homeassistant-2021.6.2, remove many olds, allow Python 3.9 (not fully tested)
+  * remove broken homeassistant-min-2021.5.3-r1.ebuild
+  * update dwdwfsapi-1.0.4
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
