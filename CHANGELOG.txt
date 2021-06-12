@@ -40,6 +40,7 @@
   * update graphql-subscription-manager-0.4.0
   * update growattServer-1.0.1
   * bump home-assistant-frontend-20210603.0
+  * add ismartgate-4.0.0
 
 2021-06-04
  * cleanup PYTHON_COMPAT, remove unused Ebuilds (https://bugs.gentoo.org/793464)
