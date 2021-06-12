@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -20,7 +20,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.12.0[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
