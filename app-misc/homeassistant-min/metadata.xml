@@ -14,8 +14,13 @@
     </maintainer>
   </upstream>
   <use>
+    <flag name="accuweather">Uses the AccuWeather web service as a source for weather data</flag>
+    <flag name="airly">Uses the Airly web service as a source for air quality data</flag>
+    <flag name="alpha_vantage">The alpha_vantage sensor platform uses Alpha Vantage to monitor the stock market</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
+    <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
+    <flag name="bluetooth_le_tracker">Tracks Bluetooth low-energy devices periodically based on interval_seconds value</flag>
     <flag name="caldav">Integrate a CalDAV (RFC4791) calendar in Home Assistant</flag>
     <flag name="cli">Set a dependency for Home Assistant Cli hass-cli (lots of modules required)</flag>
     <flag name="compensation">Compensation integration consumes the state from other sensors</flag>
@@ -36,17 +41,21 @@
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
     <flag name="mobile_app">allows Home Assistant mobile apps to easily integrate with Home Assistant</flag>
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
+    <flag name="myq">lets you control MyQ-Enabled garage doors</flag>
+    <flag name="mysensors">combines devices like Arduino, ESP8266, Raspberry Pi, NRF24L01+ and RFM69</flag>
     <flag name="mysql">set dependencies to install MySQL Libraries for use with HomeAssistant</flag>
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ping">use the great ICMPLib for Presence Detection and as a binary Sensor</flag>
     <flag name="plex">Python bindings for the Plex API</flag>
+    <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
     <flag name="python_script">write Python scripts that are exposed as services in Home Assistant</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="qvr_pro">QVR Pro allows you to connect to cams configured on your QNAP NAS</flag>
     <flag name="recorder">storing details in a database per sqlalchemy</flag>
     <flag name="rest">rest sensor platform for data exposed by a RESTful API</flag>
+    <flag name="ring">integrate your ring.com devices</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
     <flag name="scrape">scraping information from websites</flag>
     <flag name="shelly">Shelly devices</flag>
@@ -57,11 +66,16 @@
     <flag name="sql">enables you to use an SQL database supported by the sqlalchemy library</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="systemd">internal and developer use</flag>
+    <flag name="systemmonitor">monitor your platform</flag>
     <flag name="tasmota">Python module to help parse and construct Tasmota MQTT messages</flag>
     <flag name="test">internal and developer use</flag>
+    <flag name="tile">API for Tile Bluetooth trackers</flag>
+    <flag name="tplink">control your TP-Link Smart Home Devices</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
     <flag name="version">display the current Home Assistant versions</flag>
     <flag name="wake_on_lan">enables the ability to send magic packets to Wake on LAN capable devices</flag>
+    <flag name="wemo">discover and control WeMo devices</flag>
+    <flag name="whois">perform daily WHOIS lookups</flag>
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
     <flag name="yamaha">Library for Yamaha RX-* Receivers</flag>
     <flag name="yamaha_musiccast">add support for Yamaha MusicCast devices</flag>
