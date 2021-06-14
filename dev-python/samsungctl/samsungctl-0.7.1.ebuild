@@ -18,7 +18,7 @@ IUSE="test websocket"
 
 DOCS="README.rst"
 
-RDEPEND="websocket? (dev-python/websocket-client[${PYTHON_USEDEP}])"
+RDEPEND="websocket? ( dev-python/websocket-client[${PYTHON_USEDEP}] )"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
