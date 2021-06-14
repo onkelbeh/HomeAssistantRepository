@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">rxv</remote-id>
+    <maintainer status="unknown">
+      <email>github@wuub.net</email>
+      <name>Wojciech Bederski</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>

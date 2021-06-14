@@ -1,24 +1,32 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
-PYTHON_COMPAT=( python3_{7,8} )
+EAPI="7"
+
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
 DESCRIPTION="Remote control Samsung televisions via TCP/IP connection"
-HOMEPAGE="https://github.com/Ape/samsungctl"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+HOMEPAGE="https://github.com/Ape/samsungctl https://pypi.org/project/samsungctl/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
-IUSE=""
+IUSE="test websocket"
 
-DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
-RDEPEND=""
+DOCS="README.rst"
+
+RDEPEND="websocket? (dev-python/websocket-client[${PYTHON_USEDEP}])"
+BDEPEND="
+	dev-python/setuptools[${PYTHON_USEDEP}]
+	test? (
+		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/pytest[${PYTHON_USEDEP}]
+	)"
 
 python_test() {
-	unset PYTHONPATH
-	nosetests -v || die "Tests failed"
+	nosetests --verbose || die
+	py.test -v -v || die
 }
