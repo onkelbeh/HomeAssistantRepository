@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_{4,5,6,7,8} pypy{,3} )
+PYTHON_COMPAT=( python2_7 python3_{4..10} pypy{,3} )
 PYTHON_REQ_USE="ssl(+),threads(+)"
 
 inherit eutils bash-completion-r1 distutils-r1
