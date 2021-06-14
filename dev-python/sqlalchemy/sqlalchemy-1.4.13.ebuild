@@ -3,10 +3,10 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( pypy3 python3_{6..9} )
+PYTHON_COMPAT=( pypy3 python3_{7..9} )
 PYTHON_REQ_USE="sqlite?"
 
-inherit distutils-r1 optfeature
+inherit distutils-r1 multiprocessing optfeature
 
 MY_PN="SQLAlchemy"
 MY_P="${MY_PN}-${PV/_beta/b}"
@@ -18,9 +18,14 @@ S="${WORKDIR}/${MY_P}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="alpha amd64 arm arm64 hppa ia64 mips ppc ppc64 s390 sparc x86 amd64-linux x86-linux ppc-macos x64-macos x64-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
 IUSE="examples +sqlite test"
 
+RDEPEND="
+	$(python_gen_cond_dep '
+		dev-python/importlib_metadata[${PYTHON_USEDEP}]
+	' python3_7 pypy3)
+"
 # Use pytest-xdist to speed up tests
 BDEPEND="
 	test? (
@@ -29,25 +34,19 @@ BDEPEND="
 	)
 "
 
-#PATCHES=(
-	# Ported part of those commits to fix failing tests:
-	# https://github.com/sqlalchemy/sqlalchemy/commit/c68f9fb87868c45fcadcc942ce4a35f10ff2f7ea
-	# https://github.com/sqlalchemy/sqlalchemy/commit/a9b068ae564e5e775e312373088545b75aeaa1b0
-	# https://github.com/sqlalchemy/sqlalchemy/commit/9e31fc74089cf565df5f275d22eb8ae5414d6e45
-	# "${FILESDIR}/sqlalchemy-1.3.20-pypy3.patch"
-#)
-
 distutils_enable_tests pytest
 
-python_test() {
-	# Use all CPUs with pytest-xdist
-	pytest -n auto -vv || die "Tests failed with ${EPYTHON}"
+src_prepare() {
+	# remove optional/partial dep on greenlet, greenlet is not very portable
+	sed -i -e '/greenlet/d' setup.cfg || die
+
+	distutils-r1_src_prepare
 }
 
-python_prepare_all() {
+python_test() {
 	# Disable tests hardcoding function call counts specific to Python versions.
-	rm -r test/aaa_profiling || die
-	distutils-r1_python_prepare_all
+	epytest --ignore test/aaa_profiling \
+		-n "$(makeopts_jobs "${MAKEOPTS}" "$(get_nproc)")"
 }
 
 python_install_all() {
