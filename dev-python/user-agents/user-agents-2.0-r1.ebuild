@@ -17,6 +17,7 @@ KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
 DEPEND="
+	~dev-python/ua-parser-0.10.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)
