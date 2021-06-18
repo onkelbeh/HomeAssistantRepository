@@ -32,30 +32,37 @@ IUSE="+server test"
 RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-	  ~dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
-	  ~dev-python/pyyaml-5.4.1[${PYTHON_USEDEP}]
-	  ~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
-	  ~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
-	  dev-python/colorlog[${PYTHON_USEDEP}]
-	  server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
-	  ~dev-libs/protobuf-3.14.0
-	  ~dev-python/protobuf-python-3.14.0[${PYTHON_USEDEP}]
-	  ~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
-	  ~dev-python/pytz-2021.1[${PYTHON_USEDEP}]
-	  ~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	  server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
-	  ~dev-embedded/platformio-5.0.4
-	  ~dev-embedded/esptool-2.8[${PYTHON_USEDEP}]
-	  ~dev-python/click-7.1.2[${PYTHON_USEDEP}]
+		~dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
+		~dev-python/pyyaml-5.4.1[${PYTHON_USEDEP}]
+		~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
+		~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
+		dev-python/colorlog[${PYTHON_USEDEP}]
+		server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
+		~dev-libs/protobuf-3.17.0
+		~dev-python/protobuf-python-3.17.0[${PYTHON_USEDEP}]
+		~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
+		~dev-python/pytz-2021.1[${PYTHON_USEDEP}]
+		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
+		server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
+		~dev-embedded/platformio-5.1.1
+		~dev-embedded/esptool-2.8[${PYTHON_USEDEP}]
+		~dev-python/click-7.1.2[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20210617.1[${PYTHON_USEDEP}]
 	')"
 
-	BDEPEND="
-	  $(python_gen_cond_dep '
-		  dev-python/setuptools[${PYTHON_MULTI_USEDEP}]
-		  test? (
+BDEPEND="
+	$(python_gen_cond_dep '
+		dev-python/setuptools[${PYTHON_MULTI_USEDEP}]
+		test? (
 			dev-python/nose[${PYTHON_MULTI_USEDEP}]
-			dev-python/pytest[${PYTHON_MULTI_USEDEP}] )
-		')"
+			dev-python/pytest[${PYTHON_MULTI_USEDEP}]
+			dev-python/pytest-cov[${PYTHON_MULTI_USEDEP}]
+			dev-python/pytest-mock[${PYTHON_MULTI_USEDEP}]
+			dev-python/pytest-asyncio[${PYTHON_MULTI_USEDEP}]
+			dev-python/asyncmock[${PYTHON_MULTI_USEDEP}]
+			dev-python/hypothesis[${PYTHON_MULTI_USEDEP}]
+			)
+	')"
 
 DISABLE_AUTOFORMATTING=1
 DOC_CONTENTS="
@@ -99,3 +106,23 @@ pkg_postinst() {
 		readme.gentoo_print_elog
 	fi
 }
+RDEPEND="
+	server? ( acct-group/${PN} acct-user/${PN} )
+	$(python_gen_cond_dep '
+	  ~dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
+	  ~dev-python/pyyaml-5.4.1[${PYTHON_USEDEP}]
+	  ~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
+	  ~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
+	  dev-python/colorlog[${PYTHON_USEDEP}]
+	  server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
+	  ~dev-libs/protobuf-3.17.0
+	  ~dev-python/protobuf-python-3.17.0[${PYTHON_USEDEP}]
+	  ~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
+	  ~dev-python/pytz-2021.1[${PYTHON_USEDEP}]
+	  ~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
+	  server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
+	  ~dev-embedded/platformio-5.1.1
+	  ~dev-embedded/esptool-2.8[${PYTHON_USEDEP}]
+	  ~dev-python/click-7.1.2[${PYTHON_USEDEP}]
+	  ~dev-python/esphome-dashboard-20210617.1[${PYTHON_USEDEP}]
+	')"
