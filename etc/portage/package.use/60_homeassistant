@@ -1,4 +1,6 @@
-app-misc/homeassistant androidtv atv axis darksky enigma esphome frontend fronius growl holidays influxdb maxcube maxcube_hack musiccast mikrotik mysql mqtt recorder tradfri rxv samsungtv signal socat sonos ssl qnap wwlln z-wave
+# */*::HomeAssistantRepository test
+
+app-misc/homeassistant* androidtv axis caldav cli compensation coronavirus darksky dwd_weather_warnings enigma2 esphome fronius http hyperion influxdb knx kodi kraken maxcube maxcube_hack mikrotik mqtt mysql otp owntracks ping qnap recorder rest samsungtv scrape shelly signal_messenger snmp socat sonos sql ssl tasmota test tradfri version whois workday yamaha yamaha_musiccast zwave github qvr_pro ozw
 
 dev-lang/python sqlite
 dev-libs/libxslt python
