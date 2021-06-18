@@ -28,9 +28,7 @@ DEPEND="${DEPEND}
 	  dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		>=dev-python/pytest-timeout-1.2.0[${PYTHON_USEDEP}]
-		dev-python/coveralls[${PYTHON_USEDEP}]
 		dev-python/flake8[${PYTHON_USEDEP}]
-		~dev-python/black-20.8_beta1[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
