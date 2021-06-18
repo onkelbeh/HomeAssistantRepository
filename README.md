@@ -2,21 +2,21 @@
 
 ## 2020/09/25: Publishing new Main Ebuilds
 
-Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold.
+Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new, here, start with app-misc/homeassistant-min
 
 ### `app-misc/homeassistant`
 
-This is the Ebuild we have since `0.97.0`, it currently holds **261** USE Flags. As soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure.
+This is the Ebuild we have since `0.97.0`, it currently holds **268** USE Flags. As soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure.
 
 ### `app-misc/homeassistant-min`
 
-New Ebuild, generated for `0.115.3` and later, currently holds **45** USE Flags. These are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release.
+New Ebuild, generated for `0.115.3` and later, currently holds **74** USE Flags. These are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release.
 
 ### `app-misc/homeassistant-full`
 
 WARNING: This one currently breaks emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
 
-This Ebuild contains **746** USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Who would blame me for this at 800 USE Flags ;-)
+This Ebuild contains **774** USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. This will be tested from time to time. Who would blame me for this at 800 USE Flags ;-)
 
 ### Commons for all three Main Ebuilds
 
@@ -64,16 +64,10 @@ PyPI `SDIST` tar.gz source release would be preferred, because I can automatical
 PyPI/GitHub/Sourceforge).
 
 ## Python 3.9 Support
-Just cloned a box for first tests. but it is too early to try bigger things, most of the dependencies from Main Repo are ready, but some are still missing. Forking them only for adding compatibility would get out of hand. So we'll just wait a bit... things are moving fast.
+My production box now runs Python 3.9.5_p2 (18.6.2021). Some important modules are OK, but a lot of them are still lacking 3.9 support, I will upgrade them if they are touched, if you find your favorite components missing, just open a ticket and drop me a list. Also ESPHome-1.19.1 runs (with a small hack in platformio). During compile tests, I have all available tests turned on.
 
-## Python 3.8 Support
-Since 0.114.4 (09/2020) everything compiles fine on Python 3.8. Still some smaller things to clean up. I upgraded my production box to Python 3.8 ONLY on 2020/09/12. Everything looks good. I am doing most of the tests/work on such a box with Python 3.8 only. During compile tests, I have all available tests turned on. ESPHome runs on the same box (and in the same environment) with some small patches (included in my Ebuild), the current `esphome-9999` doesn't even need a `src_prepare()`.
-
-## ... Python 3.7
-You will need at least Python 3.7.7 for running Home Assistant on Gentoo Linux. If you are new here, forget about 3.7, set it up straight on Python 3.8. With 0.108.0 I will discontinue compile tests for 3.7 (and better start with 3.9). I won't do any production tests anymore on Python 3.7.
-
-## Python 2.7 on Gentoo
-In August 2020 I discovered that it is now possible to remove Python 2.7 completely. I have done this on all my test servers and my Home Assistant Box. All still work like a charm.
+## Python <= 3.8 Support
+Since Python 3.8 support is dropped, I will do no further tests on it, you should upgrade soon.
 
 ## ~arm64
 By user request, I have populated an ~arm64 KEYWORD on all Ebuilds, which is (currently) completely untested. I know of at least two guys using it, but I got no feedback yet. Some day I will prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
@@ -84,7 +78,7 @@ By another request, I merged ~arm KEYWORD from @ivecera on all Ebuilds at 0.117.
 ## Nearly all Home Assistant Components are now included
 Except of some modules with uncorrectable errors (e.g. hard drive crashes, lost sources) I believe all possible integrations for Home Assistant and their stated dependencies are included as Ebuilds, based on the integrations list from `/usr/lib/python3.8/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule.
 
-Currrently missing (0.115.3):
+Currrently missing (2021.6):
 * azure-eventhub-5.1.0
 * azure-servicebus-0.50.1
 * google-cloud-texttospeech-0.4.0 (no potential need, there are good alternatives on the market)
@@ -92,9 +86,7 @@ Currrently missing (0.115.3):
 * opencv-python-headless-4.3.0.36
 * pyuptimerobot-0.0.5 (unmaintained, could not find a valid source)
 
-In some cases I added small patches to the Ebuilds, some packages have versions pinned without any reason. For me its OK, if the packages compile and complete *all* their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups.
-
-I am continuously filing pull requests to reduce the amount of needed patches. Most of them are caused by missing files in SDIST archives and/or having wrong package exclude masks in `setup.py`.
+In some cases I added small patches to the Ebuilds, some packages have versions pinned without any reason. Mostly, I copy hard pinnings without questioning, in very problematic cases I open a ticket at the problem's origin. For me its OK, if the packages compile and complete their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups. I am continuously filing pull requests to reduce the amount of needed patches. Most of them are caused by missing files in SDIST archives and/or having wrong package exclude masks in `setup.py`.
 
 ## Why I don't (want to) use a virtual environment for Home Assistant
 On Gentoo, we have a very powerful package manager. So I (now) try to put everything Home Assistant uses into Ebuilds.
@@ -134,14 +126,8 @@ Sorry, due to technical reasons, I currently cannot offer public ssh access to m
 
 Sure, you can submit **issues** and **pull requests** on both sites, but I prefer them on my own server (requires registration).
 
-## Installation on Python 3.7 or Python 3.8
-Since Python 3.7 is default target since 05/2020, installation is very easy now.
-
-But, **before** installing on 3.7, please think about using 3.8, this will save you the migration from 3.7 -> 3.8. And: you will notice an appreciable improvement in frontend performance.
-
-Anyway, we will be forced to have 3.8 very soon: https://github.com/home-assistant/core/commit/8d94dff75ced3b00641ef3b7aed58f309bed3b08
-
-If you insist on 3.7, simply decrease all version numbers in the manual below by 1 :-)
+## Installation on Python 3.9
+Since Python 3.9 is default target since 05/2021, installation is very easy now.
 
 ### Let's get started:
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure **not to interfere** with your main Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default. Others use `/usr/local/portage/homeassistant`
@@ -163,15 +149,16 @@ $ cat /etc/locale.gen
 de_DE ISO-8859-1
 de_DE@euro UTF-8
 ```
+If you change your locales, recompile glibc.
 It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`. The clean way is to let `portage` build your own.
 
-Check your `/etc/portage/make.conf` for the correct Python Targets:
+Check your `/etc/portage/make.conf` to freeze correct Python Targets:
 ```sh
-USE_PYTHON="3.8"
-PYTHON_TARGETS="python3_8"
-PYTHON_SINGLE_TARGET="python3_8"
+USE_PYTHON="3.9"
+PYTHON_TARGETS="python3_9"
+PYTHON_SINGLE_TARGET="python3_9"
 ```
-Run `eselect python` to put Python 3.8 on position 1
+Run `eselect python` to put Python 3.9 on position 1
 
 Finally install Home Assistant:
 ```sh
@@ -181,13 +168,17 @@ $ rc-update add homeassistant
 
 It could be necessary to install some components by hand, there are too many components to mask all in USE Flags. If you use a component which you want to be added as a USE Flag, send a pull request, or just let me know.
 
-## Upgrading to Python 3.8 from a pre 3.8 system (same as it was from Python 3.6 to 3.7).
+## Upgrading to Python 3.9 from a pre 3.9 system (same as it was from Python 3.6 to 3.7, and 3.7 to 3.8).
 
 ### The fastest way:
 
 * Remove app-misc/homeassistant (emerge -cav)
 * run `emerge --depclean -a`, this will remove all dependent packages
-* update your naked core system as described below
+* update your naked core system as described below, or just run a
+```sh
+$ emerge -tauvDUN @world --autounmask=y --changed-deps --changed-use --newuse --deep --with-bdeps=y 
+```
+
 * reinstall app-misc/homeassistant with only the new Python Version
 
 This avoids a lot of recompiling all Home Assistant deps, and a lot of dependency trouble. Very recommended. I did not, but I just wanted to see if the hard way works too ;-)
@@ -198,15 +189,15 @@ Make sure your system is up to date:
 ```sh
 $ emerge -tauvDUN @world
 ```
-Install Python 3.8:
+Install Python 3.9:
 ```sh
-$ emerge -tav dev-lang/python:3.8
+$ emerge -tav dev-lang/python:3.9
 ```
 Edit your `/etc/portage/make.conf` to set the new Python Targets, make sure you have **both** versions active now:
 ```sh
-USE_PYTHON="3.8 3.7"
-PYTHON_TARGETS="python3_8 python3_7"
-PYTHON_SINGLE_TARGET="python3_8"
+USE_PYTHON="3.9 3.8"
+PYTHON_TARGETS="python3_9 python3_8"
+PYTHON_SINGLE_TARGET="python3_9"
 ```
 
 Run `eselect python` to put Python 3.8 on position 1, perhaps you'll have to edit `/etc/python-exec/python-exec.conf`.
@@ -219,27 +210,27 @@ $ emerge --depclean
 ```
 If everything is clean, double check with:
 
-* `eix --installed-with-use python_targets_python3_7` (<- old version)
-* `eix --installed-without-use python_targets_python3_8` (<- new version)
+* `eix --installed-with-use python_targets_python3_8` (<- old version)
+* `eix --installed-without-use python_targets_python3_9` (<- new version)
 
 or
 
-* `diff <(equery h python_targets_python3_7) <(equery h python_targets_python3_8)`
-* `diff <(equery h python_single_target_python3_7) <(equery h python_single_target_python3_8)`
+* `diff <(equery h python_targets_python3_8) <(equery h python_targets_python3_9)`
+* `diff <(equery h python_single_target_python3_8) <(equery h python_single_target_python3_9)`
 
 
 Help it with:
 ```sh
-eix -I# --installed-without-use python_targets_python3_8 | xargs emerge -1tv
+eix -I# --installed-without-use python_targets_python3_9 | xargs emerge -1tv
 ```
 
 Now you have all Python packages for both versions installed, time to get rid of the packages compiled for the old Python:
 
 Edit your `/etc/portage/make.conf` to remove old Python Targets:
 ```sh
-USE_PYTHON="3.8"
-PYTHON_TARGETS="python3_8"
-PYTHON_SINGLE_TARGET="python3_8"
+USE_PYTHON="3.9"
+PYTHON_TARGETS="python3_9"
+PYTHON_SINGLE_TARGET="python3_9"
 ```
 Run the Update again:
 
@@ -249,14 +240,12 @@ Run the Update again:
 # emerge --depclean
 ```
 
-Sometimes I had dependencies `portage` didn't respect, in some cases it seems not to know in which Python's site-packages modules are already installed. Install them manually (after compile errors). Once all packages are updated, you can remove the older Python targets in `package.use` and run another upgrade to remove now obsolete support for old Python versions. This will save hard disk space and compile time.
-
 It does not make sense to compile all this stuff **for more than one** Python target.
 
 Check if all is gone:
 
 ```sh
-# eix --installed-with-use python_targets_python3_7
+# eix --installed-with-use python_targets_python3_8
 ```
 
 Recompile all packages which are still present in the old Python. Repeat until all have vanished.
@@ -264,30 +253,26 @@ Recompile all packages which are still present in the old Python. Repeat until a
 ### Remove the old Python
 
 ```sh
-# emerge -cav /dev-lang/python:3.7
+# emerge -cav /dev-lang/python:3.8
 ```
 
 ### Tools that might help to clean up:
 
 ```sh
-$ eix --installed-with-use python_targets_python3_7
-$ diff <(equery h python_targets_python3_7) <(equery h python_targets_python3_8)
+$ eix --installed-with-use python_targets_python3_8
+$ diff <(equery h python_targets_python3_8) <(equery h python_targets_python3_9)
 ```
 
 ## To-dos
-- If it moves, compile it :-)
-- update the missing component descriptions for `metadata.xml`
 - Publish my ESPHome Configurations
-- Add test support for Python 3.9 in new dev branches
-- Add more libraries if I need it or someone asks for
-- Write a real good installation page for the home-assistant.io Documentation and get it added there.
+- Add test support for Python 3.10
+- Add more libraries of fix Python 3.9 support if I need it or someone asks for.
 - Convince the world to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
 ## Experiments in progress:
 * grafana with influxdb, will have to use it at work soon and have to get used to it anyway, fits much better for irregular measurements than Cacti/RRD.
 * remote IOS authentication with [haproxy](https://www.haproxy.org) and client certificates.
 * play with [Node-RED](https://nodered.org/), there are user requests for it, but my skills are too low for this Ebuild :-)
-* first tests with Python 3.9 are in progress
 
 ## some Background...
 I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 30GB Disk from a small FC SAN (HP MSA). Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. Currently 10.2.29 without problems. Influxdb and Graphana are also on the same box. You'll find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
@@ -341,6 +326,8 @@ The repository itself is released under GPL-3, all work on the depending compone
 grep -r "LICENSE=" | cut -d ":" -f2 | sort | uniq -c | sed 's;LICENSE=";|;' | sed 's;";|;' | sed 's/ //g' | xargs -L1 printf '|%s\n'
 ```
 
+(outdated)
+
 | Count | License |
 | ------ | ------ |
 |3|AGPL-3|
@@ -388,4 +375,4 @@ I did my best to keep these clean. If a valid license was published on
 PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings have been adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last update 14.11.2020
+Last update 15.6.2021
