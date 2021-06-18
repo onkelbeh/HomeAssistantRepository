@@ -2,7 +2,7 @@
 
 ## 2020/09/25: Publishing new Main Ebuilds
 
-Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new, here, start with app-misc/homeassistant-min
+Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new here, start with app-misc/homeassistant-min
 
 ### `app-misc/homeassistant`
 
@@ -56,7 +56,7 @@ If not, please report it [here](https://git.edevau.net/onkelbeh/HomeAssistantRep
 
 Please let me know if anything is wrong or dependencies are missing, since I use only some of the components myself.
 
-From time to time a fresh compile test on empty boxes (one with Python 3.8 and one with Python 3.7) is run to catch general faults, last good (full) compile test was September 2020 with `v0.115.0`. It was not possible to fix everything, work is in progress, some [open problems](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues) remain.
+From time to time a fresh compile test on empty boxes (one with Python 3.9 and one with Python 3.10) is run to catch general faults. Every new Ebuild has to pass all its tests, modules without tests are comitted after they compile without errors.
 
 ## Authors welcome
 If you are an author of an integration / component or other stuff related to Home Assistant and I have your stuff not added already, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on GitHub are OK, but a
