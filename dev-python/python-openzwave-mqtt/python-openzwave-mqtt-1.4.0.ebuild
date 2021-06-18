@@ -18,7 +18,7 @@ IUSE="test +async"
 
 DOCS="README.md"
 
-RDEPEND="async? ( asyncio-mqtt-0.9.1[${PYTHON_USEDEP}] )"
+RDEPEND="async? ( dev-python/asyncio-mqtt[${PYTHON_USEDEP}] )"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
