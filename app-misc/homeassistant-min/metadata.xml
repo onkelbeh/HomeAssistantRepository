@@ -16,12 +16,14 @@
   <use>
     <flag name="accuweather">Uses the AccuWeather web service as a source for weather data</flag>
     <flag name="airly">Uses the Airly web service as a source for air quality data</flag>
+    <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
     <flag name="alpha_vantage">The alpha_vantage sensor platform uses Alpha Vantage to monitor the stock market</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
     <flag name="bluetooth_le_tracker">Tracks Bluetooth low-energy devices periodically based on interval_seconds value</flag>
     <flag name="caldav">Integrate a CalDAV (RFC4791) calendar in Home Assistant</flag>
+    <flag name="cast">Let Home Assitant talk to Google Chromecast</flag>
     <flag name="cli">Set a dependency for Home Assistant Cli hass-cli (lots of modules required)</flag>
     <flag name="compensation">Compensation integration consumes the state from other sensors</flag>
     <flag name="coronavirus">Add sensors for COVID-19 infections from Johns Hopkins University</flag>
@@ -32,6 +34,8 @@
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
     <flag name="github">GitHub sensor integrates data from GitHub to monitor your favorite repositories</flag>
     <flag name="homekit">Integrate HomeKit controller and accessory in Home Assistant</flag>
+    <flag name="homekit_controller">Allows you to connect accessories with the “Works with HomeKit” logo</flag>
+    <flag name="http">Serves all files and data required for the Home Assistant frontend</flag>
     <flag name="hyperion">integrate your Hyperion into Home Assistant</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
     <flag name="knx">Asynchronous Library for the KNX protocol</flag>
@@ -63,6 +67,7 @@
     <flag name="snmp">Presence Detection, Sensor, Switch via SNMP</flag>
     <flag name="socat">Set a flag to install socat and socat-zwave startscript</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
+    <flag name="speedtestdotnet">speedtest.net support</flag>
     <flag name="sql">enables you to use an SQL database supported by the sqlalchemy library</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="systemd">internal and developer use</flag>
