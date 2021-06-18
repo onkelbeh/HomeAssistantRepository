@@ -1,29 +1,34 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI="7"
 
-PYTHON_COMPAT=( python{2_7,3_{6,7,8}} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Utility to communicate with the ROM bootloader in Espressif ESP8266 and ESP32"
-HOMEPAGE="https://github.com/espressif/esptool"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+DESCRIPTION="A serial utility to communicate & flash code to Espressif ESP8266 & ESP32 chips."
+HOMEPAGE="https://github.com/espressif/esptool https://pypi.org/project/esptool/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL-2+"
+LICENSE="GPLv2+"
 SLOT="0"
-KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
-IUSE=""
+KEYWORDS="amd64 ~arm arm64 x86 ~amd64-linux ~x86-linux"
+IUSE="test"
 
-DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
-RDEPEND="${DEPEND}
-	dev-python/ecdsa[${PYTHON_USEDEP}]
+DOCS=""
+
+RDEPEND=">=dev-python/pyserial-3.0[${PYTHON_USEDEP}]
 	dev-python/pyaes[${PYTHON_USEDEP}]
-	>=dev-python/pyserial-2.5[${PYTHON_USEDEP}]"
-
-RESTRICT="test" # Uses a device connected to the serial port
+	dev-python/ecdsa[${PYTHON_USEDEP}]"
+BDEPEND="
+	dev-python/setuptools[${PYTHON_USEDEP}]
+	test? (
+		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/pytest[${PYTHON_USEDEP}]
+	)"
 
 python_test() {
-	${EPYTHON} test/test_esptool.py || die
+	nosetests --verbose || die
+	py.test -v -v || die
 }
