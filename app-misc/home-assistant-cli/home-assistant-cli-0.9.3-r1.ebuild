@@ -25,7 +25,7 @@ IUSE="test"
 
 RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
 		 >=dev-python/click-log-0.3.2[${PYTHON_USEDEP}]
-		 >=dev-python/click-8.0[${PYTHON_USEDEP}]
+		 dev-python/click[${PYTHON_USEDEP}]
 		 >=dev-python/dateparser-0.7.1[${PYTHON_USEDEP}]
 		 >=dev-python/jinja-2.10[${PYTHON_USEDEP}]
 		 >=dev-python/jsonpath-ng-1.5.1[${PYTHON_USEDEP}]
@@ -59,8 +59,7 @@ BDEPEND="
 
 src_prepare() {
 	sed -i -e "s/'ruamel.yaml>=0.16.5,<0.17'/'ruamel.yaml>=0.15.100'/" setup.py || die "Sed version helper failed!"
-	# sed -i -e 's;jsonpath-rw>=1.4.0,<2;jsonpath-ng>=1.5.1;' setup.py || die "Sed on jsonpath-rw in setup-py failed."
-	# sed -i -e 's;jsonpath_rw;jsonpath_ng;' homeassistant_cli/helper.py || die "Sed on helper.py failed."
+	sed -i -e "s/'click>=8,<9'/'click'/" setup.py || die "click version helper failed!"
 	eapply_user
 }
 
