@@ -20,7 +20,8 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
-	dev-python/urllib3[${PYTHON_USEDEP}]"
+	dev-python/urllib3[${PYTHON_USEDEP}]
+	dev-python/cookies[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
