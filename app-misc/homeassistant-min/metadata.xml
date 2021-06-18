@@ -51,6 +51,7 @@
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
+    <flag name="ozw">Open Zwave MQTT</flag>
     <flag name="ping">use the great ICMPLib for Presence Detection and as a binary Sensor</flag>
     <flag name="plex">Python bindings for the Plex API</flag>
     <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
