@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">ua-parser</remote-id>
+    <maintainer status="unknown">
+      <email>no-reply@pbs.org</email>
+      <name>PBS</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
