@@ -18,6 +18,7 @@ IUSE="test"
 
 RDEPEND=""
 DEPEND="${REDEPEND}
+    dev-python/pycryptodomex[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
