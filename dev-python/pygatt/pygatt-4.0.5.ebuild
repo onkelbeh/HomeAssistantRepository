@@ -16,13 +16,15 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
+DOCS="README.rst"
+
 RDEPEND="dev-python/pyserial[${PYTHON_USEDEP}]
 	dev-python/enum-compat[${PYTHON_USEDEP}]"
-BDEPEND="dev-python/nose[${PYTHON_USEDEP}]"
+BDEPEND="dev-python/nose[${PYTHON_USEDEP}]
+	dev-python/coverage[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/coverage[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
