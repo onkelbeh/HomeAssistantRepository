@@ -153,6 +153,7 @@
     <flag name="insteon">allowing linked INSTEON devices to be used</flag>
     <flag name="intesishome">communications with IntesisHome Smart AC Controllers</flag>
     <flag name="ipma">ipma weather platform</flag>
+    <flag name="ipp">read current data from your networked printer</flag>
     <flag name="islamic_prayer_times">integration displays the various prayer times for Muslims as sensors</flag>
     <flag name="jewish_calendar">jewish_calendar</flag>
     <flag name="joaoapps_join">joaoapps_join integration exposes services from Join</flag>
@@ -185,6 +186,7 @@
     <flag name="nx584">NX584/NX8E Interface Library and Server</flag>
     <flag name="opengarage">opengarage cover platform lets you control the open-source OpenGarage.io device</flag>
     <flag name="opensensemap">query the open data API of openSenseMap.org air quality sensor station</flag>
+    <flag name="openweathermap">uses OpenWeatherMap as a source for current meteorological data</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ozw">Open Zwave MQTT</flag>
@@ -229,6 +231,7 @@
     <flag name="somfy">Somfy devices via their online service</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
     <flag name="speedtestdotnet">speedtest.net support</flag>
+    <flag name="spotify">Spotify media player integration allows you to control Spotify playback</flag>
     <flag name="sql">enables you to use an SQL database supported by the sqlalchemy library</flag>
     <flag name="squeezebox">library to control Logitech Media Server</flag>
     <flag name="ssl">include support for haproxy</flag>

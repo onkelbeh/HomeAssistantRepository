@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8,9} )
+PYTHON_COMPAT=( python3_{8..10} )
 inherit readme.gentoo-r1 eutils distutils-r1 systemd
 
 MY_PN=homeassistant
@@ -20,7 +20,7 @@ else
 	S="${WORKDIR}/core-${MY_PV}"
 fi
 
-DESCRIPTION="Open-source home automation platform running on Python 3.8"
+DESCRIPTION="Open-source home automation platform running on Python 3.9"
 HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssistantRepository/"
 
 LICENSE="Apache-2.0"
@@ -92,12 +92,17 @@ RDEPEND="${RDEPEND}
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
+#
+# auth/mfa_modules/totp.py:REQUIREMENTS = ["pyotp==2.3.0", "PyQRCode==1.2.1"]
+# scripts/check_config.py:REQUIREMENTS = ("colorlog==5.0.1",)
 
 RDEPEND="${RDEPEND}
 	~dev-python/colorlog-5.0.1[${PYTHON_USEDEP}]
 	~dev-python/gTTS-token-1.1.3[${PYTHON_USEDEP}]
 	>=dev-python/multidict-4.5.2[${PYTHON_USEDEP}]
 	~dev-python/numpy-1.20.3[${PYTHON_USEDEP}]
+	>=dev-python/pyotp-2.3.0[${PYTHON_USEDEP}]
+	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
 	dev-python/pycparser[${PYTHON_USEDEP}]
 	>=dev-python/websocket-client-0.56.0[${PYTHON_USEDEP}]
 	~media-libs/mutagen-1.45.1"
