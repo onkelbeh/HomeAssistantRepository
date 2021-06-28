@@ -14,22 +14,24 @@ HOMEPAGE="https://www.logilab.org/project/pylint
 	https://pypi.org/project/pylint/
 	https://github.com/pycqa/pylint/"
 SRC_URI="
-	https://github.com/pycqa/pylint/archive/${P}.tar.gz"
-S=${WORKDIR}/${PN}-${P}
+	https://github.com/pycqa/pylint/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ia64 ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="~alpha amd64 arm arm64 ~ia64 ppc ppc64 sparc x86"
 IUSE="examples"
 
 RDEPEND="
 	<dev-python/astroid-2.7[${PYTHON_USEDEP}]
-	>=dev-python/astroid-2.5.2[${PYTHON_USEDEP}]
+	>=dev-python/astroid-2.5.6[${PYTHON_USEDEP}]
 	>=dev-python/isort-4.2.5[${PYTHON_USEDEP}]
 	<dev-python/isort-6[${PYTHON_USEDEP}]
 	>=dev-python/mccabe-0.6[${PYTHON_USEDEP}]
 	<dev-python/mccabe-0.7[${PYTHON_USEDEP}]
 	>=dev-python/toml-0.7.1[${PYTHON_USEDEP}]
+"
+BDEPEND="
+	dev-python/setuptools_scm[${PYTHON_USEDEP}]
 "
 
 PATCHES=(
@@ -39,6 +41,8 @@ PATCHES=(
 distutils_enable_sphinx doc --no-autodoc
 distutils_enable_tests pytest
 
+export SETUPTOOLS_SCM_PRETEND_VERSION=${PV}
+
 python_test() {
 	local skipped_tests=(
 		# No need to run the benchmarks
@@ -47,12 +51,6 @@ python_test() {
 		tests/test_import_graph.py::test_missing_graphviz
 		# TODO
 		'tests/lint/unittest_expand_modules.py::test_expand_modules[files_or_modules1-expected1]'
-	)
-	[[ ${EPYTHON} == python3.8 ]] && skipped_tests+=(
-		# TODO
-		'tests/test_functional.py::test_functional[typing_deprecated_alias]'
-		'tests/test_functional.py::test_functional[typing_consider_using_alias]'
-		'tests/test_functional.py::test_functional[typing_consider_using_alias_without_future]'
 	)
 	# Specify the test directory explicitly to avoid import file mismatches
 	epytest tests ${skipped_tests[@]/#/--deselect }
