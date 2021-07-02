@@ -19,7 +19,7 @@ IUSE="test"
 DOCS="README.md"
 
 RDEPEND="~dev-python/pycognito-2021.3.1[${PYTHON_USEDEP}]
-	~dev-python/snitun-0.24[${PYTHON_USEDEP}]
+	~dev-python/snitun-0.24.0[${PYTHON_USEDEP}]
 	~app-crypt/acme-1.15.0
 	>=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
