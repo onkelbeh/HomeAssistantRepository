@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -21,7 +21,7 @@ RDEPEND="dev-python/click[${PYTHON_USEDEP}]
 	~dev-python/pure-pcapy3-1.0.1[${PYTHON_USEDEP}]
 	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.21.0[${PYTHON_USEDEP}]"
+	>=dev-python/zigpy-0.34.0[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
