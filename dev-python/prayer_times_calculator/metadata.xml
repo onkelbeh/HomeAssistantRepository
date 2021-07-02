@@ -6,7 +6,7 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">prayer_times_calculator</remote-id>
+    <remote-id type="pypi">prayer-times-calculator</remote-id>
     <maintainer status="unknown">
       <email>umair.chagani@gmail.com</email>
       <name>Umair Chagani</name>
