@@ -32,6 +32,7 @@
     <flag name="almond">Almond is an open, privacy-preserving virtual assistant by Stanford Open Virtual</flag>
     <flag name="alpha_vantage">The alpha_vantage sensor platform uses Alpha Vantage to monitor the stock market</flag>
     <flag name="amazon_polly">Text-to-speech platform that works with Amazon Polly</flag>
+    <flag name="ambee">Asynchronous Python client for the Ambee API</flag>
     <flag name="ambiclimate">Communicate with Ambiclimate devices</flag>
     <flag name="ambient_station">Retrieves local weather information from Ambient Weather</flag>
     <flag name="amcrest">Integrate your Amcrest or Dahua IP camera</flag>
@@ -190,6 +191,7 @@
     <flag name="entur_public_transport">entur_public_transport sensor gives real-time departure information</flag>
     <flag name="environment_canada">Access meteorological data from Environment Canada from Home Assistant</flag>
     <flag name="envirophat">Display information collected by an Enviro pHAT add-on board</flag>
+    <flag name="envisalink">Link Envisalink devices to Home Assistant</flag>
     <flag name="ephember">The ephember climate platform lets you control EPH Controls thermostats</flag>
     <flag name="epson">The epson platform allows you to control a Epson projector</flag>
     <flag name="epsonworkforce">monitor the ink levels of a Epson Workforce printer</flag>
@@ -223,10 +225,12 @@
     <flag name="flux_led">flux_led support is integrated into Home Assistant as a light platform</flag>
     <flag name="folder_watcher">publishing events on the bus on the creation/deletion/modification of files</flag>
     <flag name="foobot">fetch air quality data from your Foobot device</flag>
+    <flag name="forecast_solar">Asynchronous Python client for getting forecast solar information</flag>
     <flag name="forked_daapd">allows you to control your forked-daapd server from Home Assistant</flag>
     <flag name="fortios">device tracking of devices with a MAC address connected to a FortiGate</flag>
     <flag name="foscam">watch the live stream of your Foscam IP camera</flag>
     <flag name="freebox">allows you to observe and control Freebox router</flag>
+    <flag name="freedompro">Python library for Freedompro API</flag>
     <flag name="free_mobile">free_mobile platform is using the French mobile operator Free Mobile to send SMS</flag>
     <flag name="fritz">The fritz platform offers presence detection for Home Assistant</flag>
     <flag name="fritzbox">Allows you to integrate the switch and climate devices in Home Assistant</flag>
@@ -257,6 +261,7 @@
     <flag name="google">Intergrate Google Calendar into Home Assistant</flag>
     <flag name="google_maps">google_maps platform allows you to detect presence</flag>
     <flag name="google_pubsub">Send events to Google Cloud Pub/Sub from Home Assistant</flag>
+    <flag name="google_translate">google_translate text-to-speech platform for Home Assistant</flag>
     <flag name="google_travel_time">provides travel time from the Google Distance Matrix API</flag>
     <flag name="gpmdp">Allows you to control a GPMDP instance from Home Assistant</flag>
     <flag name="gpsd">GPS information collected by gpsd and a GPS receiver</flag>
@@ -331,6 +336,7 @@
     <flag name="joaoapps_join">joaoapps_join integration exposes services from Join</flag>
     <flag name="juicenet">pulls data from a JuiceNet charging station</flag>
     <flag name="kaiterra">view the readings from your Laser Egg or Sensedge device</flag>
+    <flag name="keba">integrates your Keba charging station (wallbox)</flag>
     <flag name="keenetic_ndms2">presence detection for Keenetic Routers</flag>
     <flag name="kef">KEF wireless speakers</flag>
     <flag name="keyboard">The keyboard integration simulates key presses on the host machine</flag>
@@ -363,6 +369,7 @@
     <flag name="litejet">allows a computer to control the system via LiteJet’s third party protocol</flag>
     <flag name="litterrobot">Wi-Fi-enabled, automatic, self-cleaning litter box for cats</flag>
     <flag name="logi_circle">integrate your Logi Circle cameras in Home Assistant</flag>
+    <flag name="london_underground">display the status of London underground lines</flag>
     <flag name="loopenergy">Integrate your Loop Energy meter information into Home Assistant</flag>
     <flag name="luci">fetch connected devices from your OpenWrt</flag>
     <flag name="luftdaten">query the open data API of luftdaten.info to monitor air quality</flag>
@@ -397,12 +404,14 @@
     <flag name="miflora">miflora sensor platform allows one to monitor plant soil and air conditions</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
     <flag name="mill">A python3 library to communicate with Mill</flag>
+    <flag name="minecraft_server">retrieve information from a Minecraft server</flag>
     <flag name="minio">This integration adds interaction with Minio</flag>
     <flag name="mitemp_bt">mitemp_bt sensor platform allows one to monitor room temperature and humidity</flag>
     <flag name="mobile_app">allows Home Assistant mobile apps to easily integrate with Home Assistant</flag>
     <flag name="mochad">main integration to integrate all Mochad X10 platforms</flag>
     <flag name="modbus">sensors and switches controlled over MODBUS serial, TCP, and UDP connections</flag>
     <flag name="modem_callerid">Uses an available modem for collecting caller ID information</flag>
+    <flag name="modern_forms">Asynchronous Python client for Modern Forms fans</flag>
     <flag name="monoprice">Python API for talking to Monoprice 6-zone amplifier</flag>
     <flag name="motioneye">integrate your motionEye server into Home Assistant</flag>
     <flag name="motion_blinds">control Motion Blinds from Coulisse B.V.</flag>
@@ -422,6 +431,7 @@
     <flag name="n26">allows you to track your N26 account</flag>
     <flag name="nad">allows you to control a NAD receiver through RS232, TCP and Telnet</flag>
     <flag name="nam">get temperature, humidity, pressure , air quality from Nettigo devices</flag>
+    <flag name="namecheapdns">automatically update your dynamic DNS entry at namecheapdns</flag>
     <flag name="nanoleaf">allows you to control Nanoleaf Light Panels from Home Assistant</flag>
     <flag name="neato">Python package for controlling Neato pybotvac Connected vacuum robot</flag>
     <flag name="nederlandse_spoorwegen">train service in the Netherlands</flag>
@@ -518,6 +528,7 @@
     <flag name="pulseaudio_loopback">whole home audio system based upon PulseAudio</flag>
     <flag name="pushbullet">sensor platform reads messages from Pushbullet</flag>
     <flag name="pushover">allows integrations to send messages to the user using Pushover</flag>
+    <flag name="pvpc_hourly_pricing">hourly price of electricity in Spain from PVPC</flag>
     <flag name="python_script">write Python scripts that are exposed as services in Home Assistant</flag>
     <flag name="qbittorrent">monitor your downloads with qBittorrent from within Home Assistant</flag>
     <flag name="qld_bushfire">GeoRSS feed containing bushfire alerts for Queensland</flag>
@@ -711,6 +722,7 @@
     <flag name="twitch">monitor Twitch channel status from within Home Assistant</flag>
     <flag name="twitter">notification platform uses Twitter to deliver notifications from Home Assistant</flag>
     <flag name="ubee">getting stats from Ubee routers</flag>
+    <flag name="ubus">a presence detection scanner for OpenWrt using ubus</flag>
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="unifiled">control lights from a UniFi LED by Ubiquiti Networks controller</flag>
     <flag name="unifi_direct">detect presence by looking at devices connected to a UniFi AP</flag>
@@ -723,6 +735,7 @@
     <flag name="usgs_earthquakes_feed">a GeoJSON feed provided by the U.S. Geological Survey</flag>
     <flag name="uvc">allows you to integrate UniFi Video Camera (UVC) into Home Assistant</flag>
     <flag name="vallox">control any Vallox ventilation unit</flag>
+    <flag name="vasttrafik">traveling details for the larger Göteborg area in Sweden from the Västtrafik</flag>
     <flag name="velbus">supports the Velbus USB, serial and TCP/IP gateway</flag>
     <flag name="velux">allows you to connect to a Velux KLF 200 interface</flag>
     <flag name="venstar">allows you to control Venstar thermostats from Home Assistant</flag>
