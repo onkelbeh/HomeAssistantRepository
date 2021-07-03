@@ -100,6 +100,7 @@
     <flag name="dht">Get the current temperature and humidity from a DHT11, DHT22 or AM2302 device</flag>
     <flag name="discogs">Discogs Client for Home Assistant</flag>
     <flag name="discord">Send messages to the user using Discord from Home Assistant</flag>
+    <flag name="discovery">Automatically configure zeroconf/mDNS and UPnP devices in Home Assistant</flag>
     <flag name="doorbird">The doorbird implementation allows you to integrate your DoorBird device</flag>
     <flag name="dunehd">control a Dune HD media player</flag>
     <flag name="dwd_weather_warnings">dwd_weather_warnings sensor platform uses DWD for  warnings</flag>
