@@ -1,6 +1,5 @@
 abodepy==1.2.0
 accuweather==0.2.0
-acme==1.15.0
 Adafruit-Blinka==5.5.3
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.0.1
@@ -34,7 +33,7 @@ aioflo==0.4.1
 aioftp==0.12.0
 aioguardian==1.0.4
 aioharmony==0.2.7
-aiohomekit==0.4.0
+aiohomekit==0.4.2
 aiohttp-cors==0.7.0
 aiohttp==3.7.3
 aiohttp==3.7.4_p0
@@ -160,7 +159,7 @@ cachetools==4.2.2
 casttube==0.2.0
 cattrs==0.9.0
 cblas==3.8
-cbor2==5.2.0
+cbor2==5.4.0
 cbor==1.0.0
 certifi==10001
 cffi==1.14.5
@@ -235,7 +234,7 @@ dweepy==0.3.0
 dynalite-devices==0.1.46
 eagle200-reader==0.2.4
 ebusdpy==0.0.16
-ecdsa==0.16.1
+ecdsa==0.17.0
 ecoaliface==0.4.0
 eebrightbox==0.0.4
 elementpath==2.2.2
@@ -304,7 +303,7 @@ georss-generic-client==0.6
 georss-ign-sismologia-client==0.3
 georss-qld-bushfire-alert-client==0.5
 getmac==0.8.2
-gios==1.0.1
+gios==1.0.2
 gitterpy==0.1.7
 glances_api==0.2.0
 glib==2.68.2
@@ -313,7 +312,7 @@ gmp==6.2.1
 goalzero==0.1.7
 google-api-core==1.28.0
 google-api-python-client==1.6.4
-google-auth==1.30.0
+google-auth==1.30.2
 google-cloud-pubsub==2.1.0
 google-nest-sdm==0.2.12
 googleapis-common-protos==1.53.0
@@ -354,7 +353,7 @@ hlk-sw16==0.0.9
 hole==0.5.1
 holidays==0.11.1
 home-assistant-cli==0.9.3
-home-assistant-frontend==20210630.0
+home-assistant-frontend==20210706.0
 homeassistant
 homeconnect==0.6.3
 homepluscontrol==0.0.5
@@ -380,7 +379,7 @@ i2csense==0.0.4
 iammeter==0.1.7
 iaqualink==0.3.90
 ibmiotf==0.3.4
-idna==3.1
+idna==3.2
 ifaddr==0.1.7
 iglo==1.2.7
 ihcsdk==2.7.0
@@ -401,7 +400,6 @@ jdatetime==3.4.0
 jeepney==0.6.0
 jinja==3.0.1
 jmespath==0.10.0
-josepy==1.8.0
 Js2Py==0.66
 jsonpath-ng==1.5.2
 jsonpickle==2.0.0
@@ -512,7 +510,7 @@ nessclient==0.9.15
 netaddr==0.8.0
 netdata==0.2.0
 netdisco==2.9.0
-netifaces==0.10.9
+netifaces==0.11.0
 netmap==0.7.0.2
 nettigo-air-monitor==1.0.0
 neurio==0.3.1
@@ -531,7 +529,7 @@ numpy==1.20.3
 oasatelematics==0.3
 oauth2client==4.0.0
 oauth2client==4.1.3
-oauthlib==3.1.0
+oauthlib==3.1.1
 objgraph==3.4.1
 oemthermostat==1.1.1
 olefile==0.46
@@ -662,7 +660,7 @@ pydroid-ipcam==0.8
 pyebox==1.1.4
 pyeconet==0.1.14
 pyedimax==0.2.1
-pyEight==0.1.8
+pyEight==0.1.9
 pyelftools==0.27
 pyEmby==1.7
 pyenvisalink==4.0
@@ -753,7 +751,6 @@ pynx584==0.5
 pynzbgetapi==0.2.0
 pyobihai==1.3.1
 pyombi==0.1.10
-pyopenssl==20.0.1
 pyopenuv==1.0.9
 pyopnsense==0.2.0
 pyoppleio==1.0.5
@@ -779,7 +776,6 @@ pyrail==0.0.3
 pyrainbird==0.4.2
 pyrecswitch==1.0.2
 pyrepetier==3.0.5
-pyrfc3339==1.1
 pyRFXtrx==0.27.0
 pyrisco==0.3.1
 pyrituals==0.0.4
@@ -798,7 +794,7 @@ Pysher==1.0.1
 pysiaalarm==3.0.0
 pysignalclirestapi==0.3.4
 pyskyqhub==0.1.3
-pysma==0.6.1
+pysma==0.6.2
 pysmappee==0.2.25
 pysmartapp==0.3.3
 pysmartthings==0.7.6
@@ -842,7 +838,7 @@ python-join-api==0.0.6
 python-jose==3.2.0
 python-juicenet==1.0.2
 python-lirc==1.2.3
-python-magic==0.4.22
+python-magic==0.4.24
 python-metar==1.4.0
 python-miio==0.5.6
 python-mpd2==3.0.4
@@ -935,7 +931,6 @@ rpi-rf==0.9.7
 rsa==4.7.2
 ruamel-yaml-clib==0.2.2
 ruamel-yaml==0.15.100
-ruamel-yaml==0.16.13
 ruamel-yaml==0.17.9
 russound-rio==0.1.7
 russound==0.1.9
@@ -1139,7 +1134,7 @@ youtube_dl==2021.4.26
 zbar==0.23.1
 zeep==4.0.0
 zengge==0.2
-zeroconf==0.32.0
+zeroconf==0.32.1
 zha-quirks==0.0.58
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
@@ -1148,7 +1143,7 @@ zigpy-deconz==0.12.0
 zigpy-xbee==0.13.0
 zigpy-zigate==0.7.3
 zigpy-znp==0.5.1
-zigpy==0.35.0
+zigpy==0.35.1
 zipp==3.4.1
 zlib==1.2.11
 zm-py==0.5.2
