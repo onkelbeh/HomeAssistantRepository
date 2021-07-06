@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -15,6 +15,8 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+
+DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
@@ -32,13 +34,4 @@ BDEPEND="${REDEPEND}
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
-}
-
-src_prepare() {
-	echo "aiohttp" > requirements.txt || die
-	echo "pylint" > requirements-test.txt || die
-	echo "pytest" >> requirements-test.txt || die
-	echo "pytest-asyncio" >> requirements-test.txt || die
-	echo "pytest-cov" >> requirements-test.txt || die
-	eapply_user
 }
