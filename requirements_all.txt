@@ -353,7 +353,7 @@ hlk-sw16==0.0.9
 hole==0.5.1
 holidays==0.11.1
 home-assistant-cli==0.9.3
-home-assistant-frontend==20210706.0
+home-assistant-frontend==20210707.0
 homeassistant
 homeconnect==0.6.3
 homepluscontrol==0.0.5
@@ -1133,7 +1133,7 @@ zbar==0.23.1
 zeep==4.0.0
 zengge==0.2
 zeroconf==0.32.1
-zha-quirks==0.0.58
+zha-quirks==0.0.59
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
 zigpy-cc==0.5.2
