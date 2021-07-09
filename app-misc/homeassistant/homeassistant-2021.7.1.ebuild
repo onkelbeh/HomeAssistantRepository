@@ -26,7 +26,7 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 amd64-linux x86-linux"
 IUSE="abode accuweather acer_projector acmeda adguard ads aftership agent_dvr airly airvisual aladdin_connect alarmdecoder almond alpha_vantage ambiclimate ambient_station amcrest ampio androidtv android_ip_webcam anel_pwrctrl anthemav apache_kafka apcupsd apple_tv apprise aquostv arcam_fmj aruba asuswrt aten_pe atome august aurora_abb_powerone avea avion -avri awair axis baidu -beewi_smartclim bh1750 bitcoin bizkaibus blackbird blebox blink blinksticklight blinkt blockchain bluetooth_le_tracker bluetooth_tracker bme280 bme680 bmw_connected_drive bom bond braviatv broadlink brother brottsplatskartan brunt bsblan bt_home_hub_5 bt_smarthub buienradar +caldav canary cast cisco_mobility_express cli co2signal compensation coronavirus daikin darksky deconz delijn denonavr deutsche_bahn devolo_home_control dexcom dhcp dht discogs discord discovery doorbird dunehd +dwd_weather_warnings dynalite dyson ecobee elv emulated_roku enigma2 enocean enphase_envoy environment_canada esphome everlights evohome fibaro flume flunearyou flux_led foobot fortios freebox fritz fritzbox fritzbox_callmonitor fritzbox_netmonitor fronius garmin_connect gios github gogogate2 greeneye_monitor growatt_server guardian harman_kardon_avr harmony heos here_travel_time +homekit homekit_controller -homematic -homematicip_cloud hp_ilo http hue hydrawise iaqualink ihc imap incomfort influxdb insteon intesishome ipma ipp islamic_prayer_times jewish_calendar joaoapps_join kef knx kodi kraken linode loopenergy luci luftdaten maxcube media_extractor meteo_france mfi miflora mikrotik -mitemp_bt +mobile_app +mqtt myq +mysql nad nederlandse_spoorwegen netatmo netdata +notify_events nuki nws nx584 opengarage opensensemap openweathermap +otp owntracks ozw panasonic_viera philips_js pilight +ping pi_hole +plex plugwise poolsense powerwall ps4 +python_script qnap qvr_pro rachio rainbird rainmachine +recorder rejseplanen +rest ring roku roomba roon samsungtv +scrape shelly shodan signal_messenger simplisafe skybell sma smappee smarthab smartthings +snmp socat socialblade solax somfy sonos speedtestdotnet spotify +sql squeezebox +ssl statsd synology_dsm systemd systemmonitor tasmota tellduslive tesla test tile toon totalconnect tplink tradfri tuya unifi unifi_direct upnp vallox velbus velux vera +version vicare vizio +wake_on_lan waqi waze_travel_time webostv wemo whois wink withings wled workday xbox_live xiaomi_aqara xiaomi_miio xiaomi_tv xs1 yamaha yamaha_musiccast yeelight yi zeroconf zerproc zha zhong_hong zoneminder +zwave zwave_js"
 
 # external deps
@@ -65,7 +65,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	>=dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.44.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20210630.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20210707.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.13.3[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.18.0[${PYTHON_USEDEP}]
@@ -87,7 +87,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-serialize-2.4.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.6.3[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.32.0[${PYTHON_USEDEP}]"
+	~dev-python/zeroconf-0.32.1[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -207,7 +207,7 @@ RDEPEND="${RDEPEND}
 	enocean? ( ~dev-python/enocean-0.50.1[${PYTHON_USEDEP}] )
 	enphase_envoy? ( ~dev-python/envoy-reader-0.19.0[${PYTHON_USEDEP}] )
 	environment_canada? ( ~dev-python/env-canada-0.2.5[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-4.0.1[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-5.0.0[${PYTHON_USEDEP}] )
 	everlights? ( ~dev-python/pyeverlights-0.1.0[${PYTHON_USEDEP}] )
 	evohome? ( ~dev-python/evohome-async-0.3.15[${PYTHON_USEDEP}] )
 	fibaro? ( ~dev-python/fiblary3-0.1.7[${PYTHON_USEDEP}] )
@@ -223,7 +223,7 @@ RDEPEND="${RDEPEND}
 	fritzbox_netmonitor? ( ~dev-python/fritzconnection-1.4.2[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.5.2[${PYTHON_USEDEP}] )
 	garmin_connect? ( ~dev-python/garminconnect-ha-0.1.6[${PYTHON_USEDEP}] )
-	gios? ( ~dev-python/gios-1.0.1[${PYTHON_USEDEP}] )
+	gios? ( ~dev-python/gios-1.0.2[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/PyGithub-1.43.8[${PYTHON_USEDEP}] )
 	gogogate2? ( ~dev-python/ismartgate-4.0.0[${PYTHON_USEDEP}] )
 	greeneye_monitor? ( ~dev-python/greeneye-monitor-2.1[${PYTHON_USEDEP}] )
@@ -233,8 +233,8 @@ RDEPEND="${RDEPEND}
 	harmony? ( ~dev-python/aioharmony-0.2.7[${PYTHON_USEDEP}] )
 	heos? ( ~dev-python/pyheos-0.7.2[${PYTHON_USEDEP}] )
 	here_travel_time? ( ~dev-python/herepy-2.0.0[${PYTHON_USEDEP}] )
-	homekit? ( ~dev-python/HAP-python-3.5.0[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] ~dev-python/PyTurboJPEG-1.5.0[${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-0.4.0[${PYTHON_USEDEP}] )
+	homekit? ( ~dev-python/HAP-python-3.5.1[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] ~dev-python/PyTurboJPEG-1.5.0[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-0.4.2[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.73[${PYTHON_USEDEP}] )
 	homematicip_cloud? ( ~dev-python/homematicip-0.13.1[${PYTHON_USEDEP}] )
 	hp_ilo? ( ~dev-python/python-hpilo-4.3[${PYTHON_USEDEP}] )
@@ -314,9 +314,9 @@ RDEPEND="${RDEPEND}
 	shelly? ( ~dev-python/aioshelly-0.6.4[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.25.0[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.4[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-10.0.0[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-11.0.1[${PYTHON_USEDEP}] )
 	skybell? ( ~dev-python/skybellpy-0.6.3[${PYTHON_USEDEP}] )
-	sma? ( ~dev-python/pysma-0.6.1[${PYTHON_USEDEP}] )
+	sma? ( ~dev-python/pysma-0.6.2[${PYTHON_USEDEP}] )
 	smappee? ( ~dev-python/pysmappee-0.2.25[${PYTHON_USEDEP}] )
 	smarthab? ( ~dev-python/SmartHab-0.21[${PYTHON_USEDEP}] )
 	smartthings? ( ~dev-python/pysmartapp-0.3.3[${PYTHON_USEDEP}] ~dev-python/pysmartthings-0.7.6[${PYTHON_USEDEP}] )
@@ -324,7 +324,7 @@ RDEPEND="${RDEPEND}
 	socat? ( net-misc/socat )
 	socialblade? ( ~dev-python/socialbladeclient-0.5[${PYTHON_USEDEP}] )
 	solax? ( ~dev-python/solax-0.2.6[${PYTHON_USEDEP}] )
-	somfy? ( ~dev-python/pymfy-0.9.3[${PYTHON_USEDEP}] )
+	somfy? ( ~dev-python/pymfy-0.11.0[${PYTHON_USEDEP}] )
 	sonos? ( ~dev-python/pysonos-0.0.51[${PYTHON_USEDEP}] )
 	speedtestdotnet? ( ~net-analyzer/speedtest-cli-2.1.3[${PYTHON_USEDEP}] )
 	spotify? ( ~dev-python/spotipy-2.18.0[${PYTHON_USEDEP}] )
@@ -357,7 +357,7 @@ RDEPEND="${RDEPEND}
 	waqi? ( ~dev-python/waqiasync-1.0.0[${PYTHON_USEDEP}] )
 	waze_travel_time? ( ~dev-python/WazeRouteCalculator-0.12[${PYTHON_USEDEP}] )
 	webostv? ( ~dev-python/aiopylgtv-0.4.0[${PYTHON_USEDEP}] )
-	wemo? ( ~dev-python/pywemo-0.6.3[${PYTHON_USEDEP}] )
+	wemo? ( ~dev-python/pywemo-0.6.5[${PYTHON_USEDEP}] )
 	whois? ( ~dev-python/python-whois-0.7.3[${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.9[${PYTHON_USEDEP}] ~dev-python/python-wink-1.10.5[${PYTHON_USEDEP}] )
 	withings? ( ~dev-python/withings-api-2.3.2[${PYTHON_USEDEP}] )
@@ -372,9 +372,9 @@ RDEPEND="${RDEPEND}
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.8.0[${PYTHON_USEDEP}] )
 	yeelight? ( ~dev-python/yeelight-0.6.3[${PYTHON_USEDEP}] )
 	yi? ( ~dev-python/aioftp-0.12.0[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/zeroconf-0.32.0[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/zeroconf-0.32.1[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.25.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.58[${PYTHON_USEDEP}] ~dev-python/zigpy-cc-0.5.2[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.12.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.35.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.13.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.7.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.5.1[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.25.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.59[${PYTHON_USEDEP}] ~dev-python/zigpy-cc-0.5.2[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.12.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.35.1[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.13.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.7.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.5.1[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.5.2[${PYTHON_USEDEP}] )
 	zwave? ( ~dev-python/homeassistant-pyozw-0.1.10[${PYTHON_USEDEP}] ~dev-python/PyDispatcher-2.0.5[${PYTHON_USEDEP}] )

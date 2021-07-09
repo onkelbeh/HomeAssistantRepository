@@ -26,7 +26,7 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 amd64-linux x86-linux"
 IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth_le_tracker +caldav cast cli compensation coronavirus darksky +dwd_weather_warnings enigma2 esphome fronius github +homekit homekit_controller http hyperion influxdb knx kodi kraken maxcube mikrotik +mobile_app +mqtt myq mysensors +mysql +notify_events +otp owntracks ozw +ping +plex ps4 +python_script qnap qvr_pro +recorder +rest ring samsungtv +scrape shelly signal_messenger +snmp socat sonos speedtestdotnet +sql +ssl systemd systemmonitor tasmota test tile tplink tradfri +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf +zwave zwave_js"
 
 # external deps
@@ -65,7 +65,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	>=dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.44.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20210706.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20210707.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.13.3[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.18.0[${PYTHON_USEDEP}]
@@ -124,7 +124,7 @@ RDEPEND="${RDEPEND}
 	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
 	dwd_weather_warnings? ( ~dev-python/dwdwfsapi-1.0.4[${PYTHON_USEDEP}] )
 	enigma2? ( ~dev-python/openwebifpy-3.2.7[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-4.0.1[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-5.0.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.5.2[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/PyGithub-1.43.8[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-3.5.1[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] ~dev-python/PyTurboJPEG-1.5.0[${PYTHON_USEDEP}] )
@@ -172,7 +172,7 @@ RDEPEND="${RDEPEND}
 	tradfri? ( ~dev-python/pytradfri-7.0.6[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-21.5.0[${PYTHON_USEDEP}] )
 	wake_on_lan? ( ~dev-python/wakeonlan-2.0.1[${PYTHON_USEDEP}] )
-	wemo? ( ~dev-python/pywemo-0.6.3[${PYTHON_USEDEP}] )
+	wemo? ( ~dev-python/pywemo-0.6.5[${PYTHON_USEDEP}] )
 	whois? ( ~dev-python/python-whois-0.7.3[${PYTHON_USEDEP}] )
 	workday? ( ~dev-python/holidays-0.11.1[${PYTHON_USEDEP}] )
 	yamaha? ( ~dev-python/rxv-0.6.0[${PYTHON_USEDEP}] )
