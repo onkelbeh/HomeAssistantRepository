@@ -3,26 +3,23 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python API for Yale Access (formerly August) Smart Lock and Doorbell"
-HOMEPAGE="https://github.com/bdraco/yalexs https://pypi.org/project/yalexs/"
+DESCRIPTION="Reverse engineered implementation of the CSRMesh bridge protocol"
+HOMEPAGE="https://github.com/nkaminski/csrmesh https://pypi.org/project/csrmesh/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-DOCS="README.md"
+DOCS=""
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/python-dateutil[${PYTHON_USEDEP}]
-	dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/aiofiles[${PYTHON_USEDEP}]
-	dev-python/pubnub[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/bluepy[${PYTHON_USEDEP}]
+	dev-python/pycryptodomex[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

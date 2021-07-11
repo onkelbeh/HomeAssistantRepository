@@ -1,14 +1,14 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="A clean, async-friendly library for the Ambient Weather API"
-HOMEPAGE="https://github.com/bachya/aioambient https://pypi.org/project/aioambient/"
+DESCRIPTION="PubNub Real-time push service in the cloud"
+HOMEPAGE="http://pubnub.com https://github.com/pubnub/python/ https://pypi.org/project/pubnub/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -16,10 +16,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/aiodns[${PYTHON_USEDEP}]
+DOCS=""
+
+RDEPEND=">=dev-python/pycryptodomex-3.3[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.4[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/python-socketio[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+	dev-python/cbor2[${PYTHON_USEDEP}]"
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

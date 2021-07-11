@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">pyaftership</remote-id>
     <maintainer status="unknown">
-      <email>ludeeus@gmail.com</email>
-      <name>Joakim Sorensen</name>
+      <email>hi@ludeeus.dev</email>
+      <name>Ludeeus</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

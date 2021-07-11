@@ -3,12 +3,12 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python API for Yale Access (formerly August) Smart Lock and Doorbell"
-HOMEPAGE="https://github.com/bdraco/yalexs https://pypi.org/project/yalexs/"
+DESCRIPTION="asyncio client for the Awair GraphQL API"
+HOMEPAGE="https://github.com/ahayworth/python_awair https://pypi.org/project/python-awair/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -18,11 +18,9 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/python-dateutil[${PYTHON_USEDEP}]
-	dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/aiofiles[${PYTHON_USEDEP}]
-	dev-python/pubnub[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
+	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
+	dev-python/async_timeout[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

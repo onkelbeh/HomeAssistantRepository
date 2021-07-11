@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6..8} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -19,7 +19,7 @@ IUSE="test"
 RDEPEND="dev-python/hyper-h2[${PYTHON_USEDEP}]
 	dev-python/hyperframe[${PYTHON_USEDEP}]
 	dev-python/rfc3986[${PYTHON_USEDEP}]
-	dev-python/brotlipy[${PYTHON_USEDEP}]"
+	app-arch/brotli[python]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
