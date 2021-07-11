@@ -3,12 +3,12 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
 DESCRIPTION="Dyson Pure Cool/Hot+Cool Link and 360 eye robot vacuum devices Python library"
-HOMEPAGE="https://libpurecool.readthedocs.io https://pypi.org/project/libpurecool/"
+HOMEPAGE="https://github.com/etheralm/libpurecool https://libpurecool.readthedocs.io https://pypi.org/project/libpurecool/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
