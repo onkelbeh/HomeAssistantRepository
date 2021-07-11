@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -15,6 +15,8 @@ LICENSE="CC-BY-NC-SA-4.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+
+DOCS="README.md"
 
 RDEPEND=""
 DEPEND="${REDEPEND}
