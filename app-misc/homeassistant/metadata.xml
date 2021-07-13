@@ -50,7 +50,6 @@
     <flag name="aurora_abb_powerone">This implements a direct RS485 connection to a solar inverter in the PVI-3.0/3.6</flag>
     <flag name="avea">Library for Elgato Avea bulbs</flag>
     <flag name="avion">Support for the Avi-on Bluetooth dimmer switch Avi-on</flag>
-    <flag name="avri">Query the next scheduled waste pickup and the type of waste from Avri</flag>
     <flag name="awair">Library to integrate the Awair GraphQL API into Home Assistant</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
     <flag name="baidu">Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi</flag>
@@ -69,7 +68,6 @@
     <flag name="bme280">Bosch BME280 Environmental sensor connected via I2c bus (SDA, SCL pins)</flag>
     <flag name="bme680">Read temperature, humidity, pressure and gas resistance values of a Bosch BME680</flag>
     <flag name="bmw_connected_drive">Retrieve data from the BMW Connected Drive</flag>
-    <flag name="bom">Weather platform uses the Australian Bureau of Meteorology (BOM) as a source for</flag>
     <flag name="bond">Asynchronous Python wrapper library over Bond Local API</flag>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
     <flag name="broadlink">Allows you to interact with Broadlink remote control devices</flag>
@@ -107,7 +105,6 @@
     <flag name="dynalite">Dynalite DyNET interface forHome Assistant </flag>
     <flag name="dyson">integrate all Dyson related platforms into Home Assistant</flag>
     <flag name="ecobee">Talk to Ecobee thermostats from Home Assistant</flag>
-    <flag name="elv">control the state of your ELV PCA 301 smart switch</flag>
     <flag name="emulated_roku">Emulate Roku API for Harmony and Android remotes</flag>
     <flag name="enigma2">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="enocean">Support for Enocean devices in Home Assistant</flag>
@@ -228,7 +225,6 @@
     <flag name="smartthings">use the SmartThings Cloud API</flag>
     <flag name="snmp">Presence Detection, Sensor, Switch via SNMP</flag>
     <flag name="socat">Set a flag to install socat and socat-zwave startscript</flag>
-    <flag name="socialblade">monitor Youtube Channels</flag>
     <flag name="solax">Solax inverter API client</flag>
     <flag name="somfy">Somfy devices via their online service</flag>
     <flag name="sonos">Sonos Media Player Support</flag>

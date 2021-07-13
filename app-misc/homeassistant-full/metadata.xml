@@ -64,7 +64,6 @@
     <flag name="aurora_abb_powerone">This implements a direct RS485 connection to a solar inverter in the PVI-3.0/3.6</flag>
     <flag name="avea">Library for Elgato Avea bulbs</flag>
     <flag name="avion">Support for the Avi-on Bluetooth dimmer switch Avi-on</flag>
-    <flag name="avri">Query the next scheduled waste pickup and the type of waste from Avri</flag>
     <flag name="awair">Library to integrate the Awair GraphQL API into Home Assistant</flag>
     <flag name="aws">Interact with Amazon Web Services</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
@@ -88,7 +87,6 @@
     <flag name="bme680">Read temperature, humidity, pressure and gas resistance values of a Bosch BME680</flag>
     <flag name="bmp280">Get temperature and pressure values of a Bosch BMP280 Environmental sensor conne</flag>
     <flag name="bmw_connected_drive">Retrieve data from the BMW Connected Drive</flag>
-    <flag name="bom">Weather platform uses the Australian Bureau of Meteorology (BOM) as a source for</flag>
     <flag name="bond">Asynchronous Python wrapper library over Bond Local API</flag>
     <flag name="bosch_shc">integrate your Bosch SHC into Home Assistant</flag>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
@@ -116,7 +114,6 @@
     <flag name="cmus">Allows you to control a cmus music player from Home Assistant</flag>
     <flag name="co2signal">Queries the CO2Signal API for the CO2 intensity of a specific region</flag>
     <flag name="coinbase">Lets you access account balances and exchange rates from coinbase</flag>
-    <flag name="coinmarketcap">Displays various details about a cryptocurrency provided by CoinMarketCap</flag>
     <flag name="color_extractor">color_extractor extracts the predominant color from a given image</flag>
     <flag name="comfoconnect">Comfoconnect integration lets you control Zehnder ComfoAir</flag>
     <flag name="compensation">Compensation integration consumes the state from other sensors</flag>
@@ -126,7 +123,6 @@
     <flag name="coronavirus">Add sensors for COVID-19 infections from Johns Hopkins University</flag>
     <flag name="cppm_tracker">Detect presence by looking at connected devices to Aruba Clearpass</flag>
     <flag name="cpuspeed">The cpuspeed sensor platform to allow you to monitor the current CPU speed</flag>
-    <flag name="crimereports">crimereports sensor allows one to track reported incidents from Home Assistant</flag>
     <flag name="cups">Using the open source printing system CUPS to show details about your printers</flag>
     <flag name="daikin">Integrate Daikin wireless controllers into Home Assistant</flag>
     <flag name="danfoss_air">The danfoss_air integration accesses information from your Danfoss Air HRV unit</flag>
@@ -243,7 +239,6 @@
     <flag name="garmin_connect">The Garmin Connect sensor allows you to expose data from Garmin Connect</flag>
     <flag name="gc100">The Global Caché GC-100 can be integrated into Home Assistant</flag>
     <flag name="gdacs">lets you use a GeoRSS feed provided by GDACS</flag>
-    <flag name="geizhals">geizhals sensor will give you the best price of a product from Geizhals</flag>
     <flag name="geniushub">geniushub integration links Home Assistant with your Genius Hub CH/DHW</flag>
     <flag name="geonetnz_quakes">Use a GeoJSON feed provided by New Zealand’s GeoNet in Home Assistant</flag>
     <flag name="geonetnz_volcano">GeoJSON feed provided by New Zealand’s GeoNet</flag>
@@ -268,7 +263,6 @@
     <flag name="gree">Discover, connect and control Gree based minisplit systems</flag>
     <flag name="greeneye_monitor">Allows you to create sensors for the various data channels of the GEM</flag>
     <flag name="greenwave">Communicates with the Greenwave Reality (TCP Connected) Gateway</flag>
-    <flag name="griddy">Allows you to integrate your Griddy price data in Home Assistant</flag>
     <flag name="growatt_server">Talk to growatt server from Home Assistant</flag>
     <flag name="gstreamer">Allows you to play audio via a gstreamer pipeline from Home Assistant</flag>
     <flag name="gtfs">gtfs sensor will give you the next departure time</flag>
@@ -360,7 +354,6 @@
     <flag name="lg_soundbar">allows you to control LG Soundbars from Home Assistant</flag>
     <flag name="life360">detect presence using the unofficial API of Life360</flag>
     <flag name="lifx">The lifx integration allows you to integrate your LIFX into Home Assistant</flag>
-    <flag name="lifx_legacy">The lifx integration allows you to integrate your LIFX into Home Assistant</flag>
     <flag name="lightwave">WiFi link for controlling Lightwave lights, switches and TRVs</flag>
     <flag name="limitlessled">control your LimitlessLED lights from within Home Assistant</flag>
     <flag name="linode">allows you to access the information about your Linode systems</flag>
@@ -428,7 +421,6 @@
     <flag name="mysql">set dependencies to install MySQL Libraries for use with HomeAssistant</flag>
     <flag name="mystrom">Python API for interacting with myStrom devices</flag>
     <flag name="mythicbeastsdns">automatically update your dynamic DNS entry at Mythic Beasts</flag>
-    <flag name="n26">allows you to track your N26 account</flag>
     <flag name="nad">allows you to control a NAD receiver through RS232, TCP and Telnet</flag>
     <flag name="nam">get temperature, humidity, pressure , air quality from Nettigo devices</flag>
     <flag name="namecheapdns">automatically update your dynamic DNS entry at namecheapdns</flag>
@@ -461,7 +453,6 @@
     <flag name="nsw_fuel_station">uses the NSW Fuel Check App data as a source for current fuel price data</flag>
     <flag name="nsw_rural_fire_service_feed">integrate a GeoJSON feed provided by the NSW Rural Fire Service</flag>
     <flag name="nuheat">control your connected NuHeat Signature floor heating thermostats</flag>
-    <flag name="nuimo_controller"> connect to a Nuimo device for receiving input events</flag>
     <flag name="nuki">control Nuki Smart Locks</flag>
     <flag name="numato">base for all related GPIO platforms of the Numato 32 Port USB GPIO expander</flag>
     <flag name="nut">monitor a UPS (battery backup) by using data from a NUT (Network UPS Tools)</flag>
@@ -524,7 +515,6 @@
     <flag name="proxmoxve">poll data from Proxmox VE virtualization environment</flag>
     <flag name="proxy">pass another camera’s output through post-processing routines</flag>
     <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
-    <flag name="ptvsd">allows you to use the Visual Studio Code PTVSD debugger</flag>
     <flag name="pulseaudio_loopback">whole home audio system based upon PulseAudio</flag>
     <flag name="pushbullet">sensor platform reads messages from Pushbullet</flag>
     <flag name="pushover">allows integrations to send messages to the user using Pushover</flag>
@@ -577,7 +567,6 @@
     <flag name="russound_rnet">control Russound devices that make use of the RNET protocol</flag>
     <flag name="sabnzbd">monitor and control your downloads with SABnzbd from within Home Assistant</flag>
     <flag name="saj">poll a SAJ solar inverter and present the values as sensors</flag>
-    <flag name="salt">presence detection by looking at connected devices to a Salt Fiber Box router</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
     <flag name="satel_integra">Satel Integra alarm panel to leverage</flag>
     <flag name="schluter">integrate your Schluter-DITRA-HEAT-E-WiFi electric floor heating thermostat</flag>
@@ -626,7 +615,6 @@
     <flag name="snmp">Presence Detection, Sensor, Switch via SNMP</flag>
     <flag name="socat">Set a flag to install socat and socat-zwave startscript</flag>
     <flag name="sochain">displays supported cryptocurrency wallet balances</flag>
-    <flag name="socialblade">monitor Youtube Channels</flag>
     <flag name="solaredge">details from your SolarEdge solar power setup</flag>
     <flag name="solaredge_local">uses the local API available on some SolarEdge Inverters</flag>
     <flag name="solarlog">uses the open JSON interface on Solar-Log PV monitoring systems</flag>
@@ -643,7 +631,6 @@
     <flag name="speedtestdotnet">speedtest.net support</flag>
     <flag name="spider">integrate all Itho Daalderop Spider related platforms</flag>
     <flag name="splunk">log all state changes to an external Splunk database</flag>
-    <flag name="spotcrime">SpotCrime is no longer handing out API keys to integrate their services</flag>
     <flag name="spotify">Spotify media player integration allows you to control Spotify playback</flag>
     <flag name="sql">enables you to use an SQL database supported by the sqlalchemy library</flag>
     <flag name="squeezebox">library to control Logitech Media Server</flag>
@@ -670,7 +657,6 @@
     <flag name="switchmate">allows you to control Switchmate devices from Home Assistant</flag>
     <flag name="syncthing">allows you to monitor states of your synced folders from Syncthing</flag>
     <flag name="syncthru">allows you to read current data from your local Samsung printer</flag>
-    <flag name="synology">camera platform to watch the live streams of your Synology Surveillance Station</flag>
     <flag name="synology_dsm">monitor getting various statistics from your Synology NAS</flag>
     <flag name="synology_srm">detect presence by looking at connected devices to a Synology SRM router</flag>
     <flag name="systemd">internal and developer use</flag>
@@ -721,7 +707,6 @@
     <flag name="twinkly">control Twinkly LED string from Home Assistant</flag>
     <flag name="twitch">monitor Twitch channel status from within Home Assistant</flag>
     <flag name="twitter">notification platform uses Twitter to deliver notifications from Home Assistant</flag>
-    <flag name="ubee">getting stats from Ubee routers</flag>
     <flag name="ubus">a presence detection scanner for OpenWrt using ubus</flag>
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="unifiled">control lights from a UniFi LED by Ubiquiti Networks controller</flag>
@@ -776,7 +761,6 @@
     <flag name="xbox">A library to authenticate with Windows Live/Xbox Live and use their API</flag>
     <flag name="xbox_live">track Xbox profiles</flag>
     <flag name="xeoma">Python wrapper for Xeoma web server API</flag>
-    <flag name="xfinity">Query an Xfinity Gateway from Home Assistant</flag>
     <flag name="xiaomi_aqara">allows you to integrate Xiaomi Aqara-compatible devices</flag>
     <flag name="xiaomi_miio">add support for Xiaomi smart appliances</flag>
     <flag name="xiaomi_tv">The xiaomi_tv platform allows you to control a Xiaomi TV</flag>
@@ -788,7 +772,6 @@
     <flag name="yandex_transport">will give you the time until the next departure time from a bus/tramway/etc stop</flag>
     <flag name="yeelight">allows you to control your Yeelight Wifi bulbs</flag>
     <flag name="yeelightsunflower">allows you to control your Yeelight Sunflower light bulbs</flag>
-    <flag name="yessssms">YesssSMS let's you send SMS via yesss.at's website</flag>
     <flag name="yi">allows you to utilize Yi Home Cameras within Home Assistant</flag>
     <flag name="zabbix">integration to connect to a Zabbix monitoring instance via the Zabbix API</flag>
     <flag name="zengge">Python API for controlling Zengge LED bulbs</flag>
