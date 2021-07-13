@@ -3,14 +3,15 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-MY_PN=${PN/-/_}
 DESCRIPTION="Library to control Panasonic Viera TVs"
 HOMEPAGE="https://github.com/florianholzapfel/panasonic-viera https://pypi.org/project/panasonic-viera/"
+MY_PN=${PN/-/_}
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -25,8 +26,6 @@ DEPEND="${REDEPEND}
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 python_test() {
 	nosetests --verbose || die

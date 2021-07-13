@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -18,7 +18,7 @@ KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="~dev-python/btlewrap-0.0.8[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
@@ -26,6 +26,11 @@ DEPEND="${REDEPEND}
 	)"
 
 S="${WORKDIR}/${MY_PN}-${PV}"
+
+src_prepare() {
+	sed "s/packages=find_packages()/packages=find_packages(exclude=['test','test.*'])/g" -i setup.py || die
+	eapply_user
+}
 
 python_test() {
 	nosetests --verbose || die

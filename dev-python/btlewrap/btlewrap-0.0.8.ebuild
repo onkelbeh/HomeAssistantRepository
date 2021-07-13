@@ -3,28 +3,33 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Asyncio Python library for connecting to and controlling the Logitech Harmony"
-HOMEPAGE="https://github.com/ehendrix23/aioharmony https://pypi.org/project/aioharmony/"
+DESCRIPTION="wrapper around different bluetooth low energy backends"
+HOMEPAGE="https://github.com/ChristianKuehnel/btlewrap https://pypi.org/project/btlewrap/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/aiohttp
-	dev-python/async_timeout
-	dev-python/slixmpp"
-DEPEND="${REDEPEND}
+DOCS="README.rst"
+
+RDEPEND=""
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
+
+src_prepare() {
+	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['test','test.*'])/g" -i setup.py || die
+	eapply_user
+}
 
 python_test() {
 	nosetests --verbose || die

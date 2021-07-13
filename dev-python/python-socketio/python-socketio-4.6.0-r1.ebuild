@@ -3,12 +3,12 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
 DESCRIPTION="Socket.IO server"
-HOMEPAGE="https://github.com/miguelgrinberg/python-socketio/ https://pypi.org/project/python-socketio/"
+HOMEPAGE="http://github.com/miguelgrinberg/python-socketio/ https://pypi.org/project/python-socketio/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,7 +19,7 @@ IUSE="test"
 DOCS="README.rst"
 
 RDEPEND=""
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
