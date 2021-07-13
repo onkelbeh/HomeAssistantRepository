@@ -19,12 +19,15 @@ IUSE="test"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.32.0[${PYTHON_USEDEP}]"
+	>=dev-python/zeroconf-0.32.0[${PYTHON_USEDEP}]
+	>=dev-python/commentjson-0.9.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
