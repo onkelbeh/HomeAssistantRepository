@@ -18,7 +18,7 @@ IUSE="test"
 
 DOCS="README.rst"
 
-RDEPEND=""
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
