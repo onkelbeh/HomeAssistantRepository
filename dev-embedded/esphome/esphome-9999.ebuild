@@ -37,8 +37,8 @@ RDEPEND="
 		~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
 		~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
 		server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
-		~dev-libs/protobuf-3.17.0
-		~dev-python/protobuf-python-3.17.0[${PYTHON_USEDEP}]
+		~dev-libs/protobuf-3.17.3
+		~dev-python/protobuf-python-3.17.3[${PYTHON_USEDEP}]
 		~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
 		~dev-python/pytz-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
