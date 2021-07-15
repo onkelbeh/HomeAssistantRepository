@@ -5,21 +5,21 @@ EAPI="7"
 
 PYTHON_COMPAT=( python3_{8..10} )
 
-inherit distutils-r1
+inherit distutils-r1 git-r3
 
 DESCRIPTION="Unofficial wrapper around Avri endpoints"
 HOMEPAGE="https://github.com/timvancann/pyavri https://pypi.org/project/avri-api/"
 
-# no SDIST, no releases on github, see
-#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 MY_PN="pyavri"
-SRC_URI="https://github.com/onkelbeh/${MY_PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-S=${WORKDIR}/${MY_PN}-${PV}
+EGIT_REPO_URI="https://github.com/timvancann/${MY_PN}.git"
+EGIT_COMMIT="90f9cdb808f0d59181c6318ab06badee6c0e0b6a"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+
+DOCS="README.md"
 
 RDEPEND=">=dev-python/requests-2.22.0[${PYTHON_USEDEP}]
 	>=dev-python/pyfunctional-1.3.0[${PYTHON_USEDEP}]"
@@ -28,6 +28,7 @@ BDEPEND="${REDEPEND}
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		>=dev-python/requests-mock-1.8.0[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
