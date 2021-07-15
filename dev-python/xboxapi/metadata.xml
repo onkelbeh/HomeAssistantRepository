@@ -7,9 +7,5 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">xboxapi</remote-id>
-    <maintainer status="unknown">
-      <email>support@xboxapi.com</email>
-      <name>XboxAPI.com</name>
-    </maintainer>
   </upstream>
 </pkgmetadata>
