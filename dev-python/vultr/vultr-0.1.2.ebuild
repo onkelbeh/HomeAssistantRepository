@@ -3,22 +3,23 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
 DESCRIPTION="Vultr.com API Client"
 HOMEPAGE="https://github.com/spry-group/python-vultr https://pypi.org/project/vultr/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.zip"
-#SRC_URI="https://github.com/onkelbeh/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
+DOCS="README.rst"
+
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
