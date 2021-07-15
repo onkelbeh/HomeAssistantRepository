@@ -3,26 +3,24 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
-inherit distutils-r1
+inherit distutils-r1 git-r3
 
 DESCRIPTION="Pusher websocket client for python, based on Erik Kulyk's PythonPusherClient"
 HOMEPAGE="https://github.com/nlsdfnbch/Pysher https://pypi.org/project/Pysher/"
-#SRC_URI="https://github.com/nlsdfnbch/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-# add the missing version
-SRC_URI="https://github.com/onkelbeh/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+EGIT_REPO_URI="https://github.com/deepbrook/Pysher.git"
+EGIT_COMMIT="f73f8e5cf6f2556925030bf924e6adf9beef7943"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/autobahn-18.7.1[${PYTHON_USEDEP}]
-	dev-python/six[${PYTHON_USEDEP}]
-	~dev-python/txaio-18.7.1[${PYTHON_USEDEP}]
-	>=dev-python/websocket-client-0.51.0[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+DOCS="README.md"
+
+RDEPEND=">=dev-python/websocket-client-0.48.0[${PYTHON_USEDEP}]"
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
