@@ -1,8 +1,8 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
-PYTHON_COMPAT=( python3_{6,7,8} )
+EAPI="7"
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -31,6 +31,13 @@ DEPEND="${RDEPEND}
 "
 
 S="${WORKDIR}"/${P/_p/-post}
+
+src_prepare() {
+	# and it tries to install a 'tests' package at top level.... tsss...
+	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
+	eapply_user
+
+}
 
 python_prepare() {
 	# keyring is not fuly supported by pypy yet, because dbus-python can't support pypy

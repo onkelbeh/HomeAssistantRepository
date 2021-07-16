@@ -6,7 +6,7 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">glances_api</remote-id>
+    <remote-id type="pypi">glances-api</remote-id>
     <maintainer status="unknown">
       <email>fabian@affolter-engineering.ch</email>
       <name>Fabian Affolter</name>
