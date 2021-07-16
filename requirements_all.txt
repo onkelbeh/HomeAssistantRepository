@@ -1,12 +1,12 @@
 abodepy==1.2.0
 accuweather==0.2.0
-acme==1.15.0
-Adafruit-Blinka==5.5.3
+acme==9999
+Adafruit-Blinka==6.11.1
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.0.1
 adafruit-circuitpython-dht==3.6.0
 adafruit-circuitpython-mcp230xx==2.2.2
-Adafruit-PureIO==0.2.3
+Adafruit-PureIO==1.1.9
 adb-shell==0.3.4
 adext==0.4.2
 adguardhome==0.5.0
@@ -100,7 +100,6 @@ attrs==21.2.0
 auroranoaa==0.0.2
 aurorapy==0.2.6
 Authlib==0.15
-autobahn==18.7.1
 automat==20.2.0
 av==8.0.3
 avea==1.5.1
@@ -118,6 +117,7 @@ beacontools==1.2.3
 beautifulsoup==4.9.3
 bellows==0.25.0
 bimmer-connected==0.7.15
+bitarray==2.1.3
 bitstring==3.1.7
 bizkaibus==0.1.1
 blas==3.8
@@ -161,7 +161,6 @@ casttube==0.2.0
 cattrs==1.7.1
 cblas==3.8
 cbor2==5.4.0
-cbor==1.0.0
 certifi==10001
 cffi==1.14.5
 chardet==4.0.0
@@ -357,6 +356,7 @@ homepluscontrol==0.0.5
 horimote==0.4.1
 hpack==4.0.0
 html5lib==1.1
+httmock==1.4.0
 httpcore==0.13.3
 httpcore==0.13.6
 httplib2==0.19.0
@@ -364,6 +364,7 @@ httplib2==0.19.1
 httpsig==1.3.0
 httpx==0.16.1
 httpx==0.18.0
+huawei-lte-api==1.4.18
 huisbaasje-client==0.1.0
 hwids==20201207
 Hydrawiser==0.2
@@ -430,7 +431,7 @@ libidn2==2.3.1
 libidn==1.37
 libintl==0
 libintl==0.21
-libpaper==1.1.24_p5
+libpaper==1.1.28
 libpcre==8.44
 libpurecool==0.6.4
 libpyfoscam==1.0
@@ -461,8 +462,6 @@ lupupy==0.0.18
 lw12==0.9.2
 lxml==4.6.3
 lyft_rides==0.2
-lz4==1.9.3
-lz4==3.1.3
 magicseaweed==1.0.3
 markdown==3.3.4
 markupsafe==2.0.1
@@ -579,7 +578,7 @@ prettytable==2.1.0
 ProgettiHWSW==0.1.1
 proliphix==0.4.1
 prometheus_client==0.7.1
-proto-plus==1.11.0
+proto-plus==1.19.0
 protobuf-python==3.17.3
 protobuf==3.17.3
 proxmoxer==1.1.1
@@ -597,7 +596,6 @@ py-melissa-climate==2.1.4
 py-nextbusnext==0.1.4
 py-nightscout==1.2.2
 py-schluter==0.1.7
-py-ubjson==0.16.1
 py-zabbix==1.1.7
 py17track==3.2.1
 pyads==3.2.2
@@ -613,7 +611,7 @@ pyasn1==0.4.8
 pyatag==0.3.5.3
 pyatmo==5.2.0
 pyAtome==0.1.1
-pyatv==0.7.7
+pyatv==0.8.1
 pybbox==0.0.5_alpha0
 pyblackbird==0.5
 pybluez==0.22
@@ -633,6 +631,7 @@ pycomfoconnect==0.4
 pyControl4==0.0.6
 pycoolmasternet-async==0.1.2
 pycountry-convert==0.7.2
+pycountry==20.7.3
 pycparser==2.20
 pycryptodome==3.10.1
 pycryptodomex==3.10.1
@@ -641,7 +640,7 @@ pycups==1.9.73
 pycurl==7.43.0.6
 pydaikin==2.4.4
 pydanfossair==0.1.0
-pydantic==1.6.1
+pydantic==1.8.2
 pydeconz==81
 pydelijn==0.6.1
 pydexcom==0.2.0
@@ -659,7 +658,7 @@ PyEssent==0.14
 pyeverlights==0.1.0
 pyEzviz==0.1.8.9
 pyfido==2.1.1
-pyfireservicerota==0.0.42
+pyfireservicerota==0.0.43
 pyflexit==0.3
 pyflic==2.0.3
 PyFlick==0.0.2
@@ -682,7 +681,7 @@ pyhiveapi==0.4.2
 pyhomeworks==0.0.6
 pyHS100==0.3.5.2
 pyialarm==1.9.0
-pyinsteon==1.0.11
+pyinsteon==1.0.12
 pyintesishome==1.7.6
 pyipma==2.0.5
 pyipp==0.11.0
@@ -752,7 +751,7 @@ pyowm==3.2.0
 pyownet==0.10.0
 pyparsing==2.4.7
 pypca==0.0.7
-pypck==0.7.9
+pypck==0.7.10
 pypjlink2==1.2.1
 pyplaato==0.0.15
 pypoint==2.1.0
@@ -764,7 +763,7 @@ pyquery==1.4.3
 pyqvrpro==0.52
 pyqwikswitch==0.93
 pyrail==0.0.3
-pyrainbird==0.4.2
+pyrainbird==0.4.3
 pyrecswitch==1.0.2
 pyrepetier==3.0.5
 pyrfc3339==1.1
@@ -786,7 +785,7 @@ Pysher==1.0.1
 pysiaalarm==3.0.0
 pysignalclirestapi==0.3.4
 pyskyqhub==0.1.3
-pysma==0.6.2
+pysma==0.6.4
 pysmappee==0.2.25
 pysmartapp==0.3.3
 pysmartthings==0.7.6
@@ -829,7 +828,6 @@ python-izone==1.1.6
 python-join-api==0.0.6
 python-jose==3.3.0
 python-juicenet==1.0.2
-python-lirc==1.2.3
 python-magic==0.4.24
 python-metar==1.4.0
 python-miio==0.5.6
@@ -855,6 +853,7 @@ python-velbus==2.1.2
 python-vlc==1.1.2
 python-whois==0.7.3
 python-wink==1.10.5
+python-xlib==0.30
 pythonegardia==1.0.40
 python_opendata_transport==0.2.1
 pyTibber==0.18.0
@@ -966,8 +965,6 @@ smbus-cffi==0.5.1
 smbus2==0.3.0
 smhi-pkg==1.0.15
 snapcast==2.1.3
-snappy==0.6.0
-snappy==1.1.8
 sniffio==1.1.0
 snitun==0.24.0
 socat==1.7.4.1
@@ -1041,14 +1038,11 @@ twilio==6.32.0
 twinkly-client==0.0.2
 twisted==21.2.0
 TwitterAPI==2.7.3
-txaio==18.7.1
-txaio==21.2.1
 txdbus==1.1.2
 typing-extensions==3.10.0.0
 tzlocal==2.1
-u-msgpack==2.7.1
 ua-parser==0.10.0
-udev==245.5
+udev==248
 uEagle==0.0.2
 ujson==4.0.2
 unasync==0.5.0
@@ -1101,7 +1095,6 @@ withings-api==2.3.2
 wled==0.7.1
 wolf_smartset==0.1.11
 wrapt==1.12.1
-wsaccel==0.6.3
 WSDiscovery==2.0.0
 wsproto==1.0.0
 xbee-helper==0.0.7

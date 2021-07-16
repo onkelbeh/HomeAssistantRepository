@@ -358,7 +358,6 @@
     <flag name="limitlessled">control your LimitlessLED lights from within Home Assistant</flag>
     <flag name="linode">allows you to access the information about your Linode systems</flag>
     <flag name="linux_battery">sensor platform is using the information stored in /sys/class/power_supply/</flag>
-    <flag name="lirc">Python bindings for LIRC</flag>
     <flag name="litejet">allows a computer to control the system via LiteJet’s third party protocol</flag>
     <flag name="litterrobot">Wi-Fi-enabled, automatic, self-cleaning litter box for cats</flag>
     <flag name="logi_circle">integrate your Logi Circle cameras in Home Assistant</flag>
