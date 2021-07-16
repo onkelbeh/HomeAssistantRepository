@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -16,8 +16,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND=""
-DEPEND="${REDEPEND}
+#DOCS="README.md"
+
+RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]"
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">Adafruit-PureIO</remote-id>
     <maintainer status="unknown">
-      <email>support@adafruit.com</email>
-      <name>Tony DiCola / Adafruit Industries</name>
+      <email>circuitpython@adafruit.com</email>
+      <name>Adafruit Industries</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
