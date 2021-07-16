@@ -9,7 +9,7 @@
     <remote-id type="pypi">aionotify</remote-id>
     <maintainer status="unknown">
       <email>raphael.barrois+aionotify@polytechnique.org</email>
-      <name>Raphae«l Barrois</name>
+      <name>Raphaël Barrois</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

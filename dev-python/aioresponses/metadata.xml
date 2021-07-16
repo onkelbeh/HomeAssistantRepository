@@ -6,10 +6,10 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">pymailgunner</remote-id>
+    <remote-id type="pypi">aioresponses</remote-id>
     <maintainer status="unknown">
-      <email>philipp@schmitt.co</email>
-      <name>Philipp Schmitt</name>
+      <email>p.nuckowski@gmail.com</email>
+      <name>Pawel Nuckowski</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

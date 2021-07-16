@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Control iGlo based RGB lights"
-HOMEPAGE="http://github.com/jesserockz/python-iglo https://pypi.org/project/iglo/"
+HOMEPAGE="https://github.com/jesserockz/python-iglo https://pypi.org/project/iglo/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
