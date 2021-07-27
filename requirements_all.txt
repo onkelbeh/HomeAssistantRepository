@@ -257,7 +257,7 @@ epson-projector==0.4.2
 epsonprinter==0.0.9
 eselect-awk==0.3
 esphome
-esphome-dashboard==20210623.0
+esphome-dashboard==20210719.0
 esptool==2.8
 eternalegypt==0.0.12
 eudev==3.2.10
