@@ -8,7 +8,7 @@
   <upstream>
     <remote-id type="pypi">backoff</remote-id>
     <maintainer status="unknown">
-      <email>rgreen@goscoutgo.com</email>
+      <email>rgreen@aquent.com</email>
       <name>Bob Green</name>
     </maintainer>
   </upstream>
