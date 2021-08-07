@@ -9,8 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Higher level Datagram support for Asyncio"
 HOMEPAGE="https://github.com/jsbronder/asyncio-dgram https://pypi.org/project/asyncio-dgram/"
-
-SRC_URI="https://github.com/jsbronder/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -25,7 +24,6 @@ BDEPEND="
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
