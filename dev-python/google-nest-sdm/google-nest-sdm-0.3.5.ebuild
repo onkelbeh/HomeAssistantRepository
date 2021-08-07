@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -20,7 +20,7 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.7.3[${PYTHON_USEDEP}]
 	>=dev-python/google-auth-1.22.0[${PYTHON_USEDEP}]
 	>=dev-python/google-auth-oauthlib-0.4.1[${PYTHON_USEDEP}]
 	>=dev-python/google-cloud-pubsub-2.1.0[${PYTHON_USEDEP}]
