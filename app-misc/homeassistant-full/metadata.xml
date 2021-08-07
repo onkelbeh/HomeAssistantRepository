@@ -18,6 +18,7 @@
     <flag name="accuweather">Uses the AccuWeather web service as a source for weather data</flag>
     <flag name="acer_projector">Allows you to control the state of RS232 connected projectors from Acer</flag>
     <flag name="acmeda">Control and monitor covers via your Rolelase Acmeda Automate hub</flag>
+    <flag name="adax">Integrates Adax heater into Home Assistant</flag>
     <flag name="adguard">Monitor your ad- and tracker-blocking DNS server</flag>
     <flag name="ads">Beckhoff automation devices running TwinCAT</flag>
     <flag name="advantage_air">API helper for Advantage Air's MyAir and e-zone API</flag>
@@ -215,6 +216,7 @@
     <flag name="flexit">Integrates Flexit Air Conditioning unit into Home Assistant</flag>
     <flag name="flic">The flic platform allows you to receive click events from flic smart buttons</flag>
     <flag name="flick_electric">Flick Electric Co is a power company in New Zealand</flag>
+    <flag name="flipr">Flipr is a smart pool monitor (Cloud Polling)</flag>
     <flag name="flo">The flo integration integrates Flo by Moen smart water shutoff valves</flag>
     <flag name="flume">monitors the real-time status of your home water meter</flag>
     <flag name="flunearyou">allows users in the US to get information from Flu Near You</flag>
@@ -511,6 +513,7 @@
     <flag name="progettihwsw">brings the automation experience with ProgettiHWSW boards</flag>
     <flag name="proliphix">control Proliphix thermostat from Home Assistant</flag>
     <flag name="prometheus">The prometheus integration exposes metrics in a format which Prometheus can read</flag>
+    <flag name="prosegur">Prosegur Smart Alarms (Cloud Polling)</flag>
     <flag name="proxmoxve">poll data from Proxmox VE virtualization environment</flag>
     <flag name="proxy">pass another camera’s output through post-processing routines</flag>
     <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
@@ -541,6 +544,7 @@
     <flag name="rejseplanen">travel details for Danish public transport</flag>
     <flag name="remember_the_milk">create tasks in Remember The Milk (RTM) from Home Assistant</flag>
     <flag name="remote_rpi_gpio">base for all related GPIO platforms in Home Assistant</flag>
+    <flag name="renault">integration with the MyRenault cloud service</flag>
     <flag name="repetier">Repetier-Server is a 3D printer/CNC server, able to control multiple devices</flag>
     <flag name="rest">rest sensor platform for data exposed by a RESTful API</flag>
     <flag name="rflink">The rflink integration supports devices that use RFLink gateway firmware</flag>
