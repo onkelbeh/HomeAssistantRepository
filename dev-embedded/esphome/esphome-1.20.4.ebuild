@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 DISTUTILS_SINGLE_IMPL=1
 
 inherit readme.gentoo-r1 distutils-r1
@@ -23,11 +23,14 @@ fi
 
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
 HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
+KEYWORDS="amd64 ~arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="+server test"
+
+DOCS="README.md"
 
 RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
@@ -36,26 +39,32 @@ RDEPEND="
 	  ~dev-python/pyyaml-5.4.1[${PYTHON_USEDEP}]
 	  ~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
 	  ~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
-	  dev-python/colorlog[${PYTHON_USEDEP}]
 	  server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
-	  ~dev-libs/protobuf-3.14.0
-	  ~dev-python/protobuf-python-3.14.0[${PYTHON_USEDEP}]
+	  ~dev-libs/protobuf-3.17.3
+	  ~dev-python/protobuf-python-3.17.3[${PYTHON_USEDEP}]
 	  ~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
 	  ~dev-python/pytz-2021.1[${PYTHON_USEDEP}]
 	  ~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 	  server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
-	  ~dev-embedded/platformio-5.0.4
-	  ~dev-embedded/esptool-2.8[${PYTHON_USEDEP}]
+	  ~dev-embedded/platformio-5.1.1
+	  ~dev-embedded/esptool-3.1[${PYTHON_USEDEP}]
 	  ~dev-python/click-7.1.2[${PYTHON_USEDEP}]
+	  ~dev-embedded/esphome-dashboard-20210728.0[${PYTHON_USEDEP}]
 	')"
 
-	BDEPEND="
-	  $(python_gen_cond_dep '
-		  dev-python/setuptools[${PYTHON_MULTI_USEDEP}]
-		  test? (
+BDEPEND="
+	$(python_gen_cond_dep '
+		dev-python/setuptools[${PYTHON_MULTI_USEDEP}]
+		test? (
 			dev-python/nose[${PYTHON_MULTI_USEDEP}]
-			dev-python/pytest[${PYTHON_MULTI_USEDEP}] )
-		')"
+			dev-python/pytest[${PYTHON_MULTI_USEDEP}]
+			dev-python/pytest-cov[${PYTHON_MULTI_USEDEP}]
+			dev-python/pytest-mock[${PYTHON_MULTI_USEDEP}]
+			dev-python/pytest-asyncio[${PYTHON_MULTI_USEDEP}]
+			dev-python/asyncmock[${PYTHON_MULTI_USEDEP}]
+			dev-python/hypothesis[${PYTHON_MULTI_USEDEP}]
+			)
+	')"
 
 DISABLE_AUTOFORMATTING=1
 DOC_CONTENTS="
@@ -65,22 +74,6 @@ dashboard command line arguments are configured in: /etc/conf.d/${PN}
 logging is to: /var/log/${PN}/{dashboard,warnings}.log
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
-
-DOCS="README.md"
-
-src_prepare() {
-	sed -e 's;voluptuous==0.12.0;voluptuous>=0.12.1;' \
-		-i requirements.txt || die
-	sed -e 's;PyYAML==5.3.1;PyYAML==5.4.1;' \
-		-i requirements.txt || die
-	sed -e 's;colorlog==4.6.2;colorlog;' \
-		-i requirements.txt || die
-	sed -e 's;protobuf==3.13.0;protobuf>=3.13.0;' \
-		-i requirements.txt || die
-	sed -e 's;pytz==2020.5;pytz==2021.1;' \
-		-i requirements.txt || die
-	eapply_user
-}
 
 python_install_all() {
 	dodoc ${DOCS}
@@ -96,13 +89,13 @@ python_install_all() {
 	fi
 }
 
-python_test() {
-	nosetests --verbose || die
-	py.test -v -v || die
-}
-
 pkg_postinst() {
 	if use server; then
 		readme.gentoo_print_elog
 	fi
+}
+
+python_test() {
+	nosetests --verbose || die
+	py.test -v -v || die
 }
