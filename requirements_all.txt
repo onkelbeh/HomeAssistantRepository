@@ -1139,7 +1139,7 @@ youtube_dl==2021.4.26
 zbar==0.23.1
 zeep==4.0.0
 zengge==0.2
-zeroconf==0.33.2
+zeroconf==0.33.4
 zha-quirks==0.0.59
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
