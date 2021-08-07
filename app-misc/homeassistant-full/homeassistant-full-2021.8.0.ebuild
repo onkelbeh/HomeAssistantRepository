@@ -99,7 +99,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/colorlog-5.0.1[${PYTHON_USEDEP}]
 	~dev-python/gTTS-token-1.1.3[${PYTHON_USEDEP}]
 	>=dev-python/multidict-4.5.2[${PYTHON_USEDEP}]
-	~dev-python/numpy-1.20.3[${PYTHON_USEDEP}]
+	~dev-python/numpy-1.21.1[${PYTHON_USEDEP}]
 	>=dev-python/pyotp-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
 	dev-python/pycparser[${PYTHON_USEDEP}]
