@@ -47,7 +47,7 @@ RDEPEND="
 	  ~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 	  server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
 	  ~dev-embedded/platformio-5.1.1
-	  ~dev-embedded/esptool-3.1[${PYTHON_USEDEP}]
+	  ~dev-embedded/esptool-2.8[${PYTHON_USEDEP}]
 	  ~dev-python/click-7.1.2[${PYTHON_USEDEP}]
 	  ~dev-embedded/esphome-dashboard-20210728.0[${PYTHON_USEDEP}]
 	')"
@@ -84,7 +84,7 @@ python_install_all() {
 		keepdir "/var/log/${PN}"
 		fowners -R "${PN}:${PN}" "/var/log/${PN}"
 		newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
-		newinitd "${FILESDIR}/${PN}.init.d-r2" "${PN}"
+		newinitd "${FILESDIR}/${PN}.init.d-r3" "${PN}"
 		readme.gentoo_create_doc
 	fi
 }
