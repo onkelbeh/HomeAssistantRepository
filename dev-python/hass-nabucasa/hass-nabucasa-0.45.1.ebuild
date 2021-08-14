@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{6..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -16,9 +16,11 @@ SLOT="0"
 KEYWORDS="amd64 ~arm arm64 x86 amd64-linux x86-linux"
 IUSE="test"
 
-RDEPEND="~dev-python/pycognito-0.1.5[${PYTHON_USEDEP}]
-	~dev-python/snitun-0.20[${PYTHON_USEDEP}]
-	~app-crypt/acme-1.11.0
+DOCS="README.md"
+
+RDEPEND="~dev-python/pycognito-2021.3.1[${PYTHON_USEDEP}]
+	~dev-python/snitun-0.27.0[${PYTHON_USEDEP}]
+	~app-crypt/acme-1.17.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
