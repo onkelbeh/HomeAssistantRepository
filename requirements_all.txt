@@ -1,6 +1,6 @@
 abodepy==1.2.0
 accuweather==0.2.0
-acme==9999
+acme==1.17.0
 Adafruit-Blinka==6.11.1
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.0.1
@@ -120,7 +120,7 @@ bcrypt==3.1.7
 beacontools==1.2.3
 beautifulsoup==4.9.3
 bellows==0.26.0
-bimmer-connected==0.7.16
+bimmer-connected==0.7.18
 bitarray==2.2.2
 bitstring==3.1.7
 bizkaibus==0.1.1
@@ -140,8 +140,8 @@ bme680==1.0.5
 bond-api==0.1.12
 boschshcpy==0.2.19
 boto3==1.16.52
-boto3==1.17.104
-botocore==1.20.104
+boto3==1.17.112
+botocore==1.20.112
 bottle==0.12.19
 bottleneck==1.3.2
 bravia-tv==1.0.11
@@ -206,7 +206,7 @@ cryptography==3.4.7
 csrmesh==0.10.0
 cssselect==1.1.0
 cups==2.3.3_p2
-curl==7.77.0
+curl==7.78.0
 c_rehash==1.7
 dacite==1.6.0
 datadog==0.15.0
@@ -343,7 +343,7 @@ ha-ffmpeg==3.0.2
 ha-philipsjs==2.7.4
 habitipy==0.2.0
 hangups==0.4.14
-hass-nabucasa==0.44.0
+hass-nabucasa==0.45.1
 hass-splunk==0.1.1
 HATasmota==0.2.20
 haversine==2.3.1
@@ -359,7 +359,7 @@ hole==0.5.1
 holidays==0.11.2
 home-assistant-cli==0.9.4
 home-assistant-cli==9999
-home-assistant-frontend==20210804.0
+home-assistant-frontend==20210809.0
 homeassistant
 homeassistant-pyozw==0.1.10
 homeconnect==0.6.3
@@ -447,7 +447,7 @@ libpurecool==0.6.4
 libpyfoscam==1.0
 libpyvivotek==0.4.0
 librouteros==3.0.0
-libsodium==1.0.18
+libsodium==1.0.18_p20210617
 libsoundtouch==0.8.0
 libtomcrypt==1.18.2
 libudev==232
@@ -873,7 +873,7 @@ python-velbus==2.1.2
 python-vlc==1.1.2
 python-whois==0.7.3
 python-wink==1.10.5
-python-xlib==0.30
+python-xlib==0.31
 pythonegardia==1.0.40
 python_opendata_transport==0.2.1
 pyTibber==0.19.0
@@ -988,9 +988,9 @@ smbus2==0.3.0
 smhi-pkg==1.0.15
 snapcast==2.1.3
 sniffio==1.2.0
-snitun==0.24.0
+snitun==0.27.0
 socat==1.7.4.1
-soco==0.23.2
+soco==0.23.3
 solaredge-local==0.2.0
 solaredge==0.0.2
 solax==0.2.6
