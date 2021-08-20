@@ -265,7 +265,7 @@ epsonprinter==0.0.9
 eselect-awk==0.3
 esphome
 esphome-dashboard==20210728.0
-esptool==2.8
+esptool==3.1
 eternalegypt==0.0.12
 eudev==3.2.10
 evdev==1.4.0
@@ -620,7 +620,6 @@ py-zabbix==1.1.7
 py17track==3.2.1
 pyads==3.2.2
 pyaehw4a1==0.3.9
-pyaes==1.6.1
 pyaftership==0.1.2
 pyairnow==1.1.0
 pyairvisual==5.0.9
@@ -916,6 +915,7 @@ raspihats==2.2.3
 raspyrfm-client==1.2.8
 ratelimit==2.2.1
 readlike==0.1.2
+reedsolomon==1.5.4
 regenmaschine==3.1.5
 regex==2021.7.6
 renault-api==0.1.4
