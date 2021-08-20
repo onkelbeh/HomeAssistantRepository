@@ -120,7 +120,7 @@ bcrypt==3.1.7
 beacontools==1.2.3
 beautifulsoup==4.9.3
 bellows==0.26.0
-bimmer-connected==0.7.18
+bimmer-connected==0.7.19
 bitarray==2.2.2
 bitstring==3.1.7
 bizkaibus==0.1.1
@@ -737,7 +737,7 @@ pymazda==0.2.0
 pymediaroom==0.6.4.1
 PyMeeus==0.5.11
 pymelcloud==2.5.3
-PyMetEireann==0.2
+PyMetEireann==2021.8.0
 pymeteoclimatic==0.0.6
 PyMetno==0.8.3
 pymfy==0.11.0
