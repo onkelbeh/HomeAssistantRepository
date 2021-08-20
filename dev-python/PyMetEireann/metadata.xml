@@ -7,5 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyMetEireann</remote-id>
+    <maintainer status="unknown">
+      <email>hello@dylangore.ie</email>
+      <name>Dylan Gore</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>
