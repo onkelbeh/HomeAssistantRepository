@@ -7,7 +7,7 @@ adafruit-circuitpython-busdevice==5.0.1
 adafruit-circuitpython-dht==3.6.0
 adafruit-circuitpython-mcp230xx==2.2.2
 Adafruit-PureIO==1.1.9
-adax==0.0.1
+adax==0.1.1
 adb-shell==0.3.4
 adext==0.4.2
 adguardhome==0.5.0
@@ -99,7 +99,6 @@ asynctest==0.13.0
 async_timeout==3.0.1
 atenpdu==0.3.0
 atomicwrites==1.4.0
-attr==2.5.1
 attrs==21.2.0
 audio-metadata==0.11.1
 auroranoaa==0.0.2
@@ -126,7 +125,7 @@ bitarray==2.2.2
 bitstring==3.1.7
 bizkaibus==0.1.1
 blas==3.8
-bleach==3.3.0
+bleach==3.3.1
 bleak==0.10.0
 blebox-uniapi==1.3.3
 blinker==1.4
@@ -141,8 +140,8 @@ bme680==1.0.5
 bond-api==0.1.12
 boschshcpy==0.2.19
 boto3==1.16.52
-boto3==1.17.112
-botocore==1.20.112
+boto3==1.18.7
+botocore==1.21.7
 bottle==0.12.19
 bottleneck==1.3.2
 bravia-tv==1.0.11
@@ -159,7 +158,7 @@ btlewrap==0.1.0
 btsmarthub-devicelist==0.2.0
 buienradar==1.0.4
 busybox==1.32.1
-c-ares==1.17.1
+c-ares==1.17.2
 ca-certificates==20210119.3.66
 cached-property==1.5.2
 cachetools==4.2.2
@@ -168,7 +167,7 @@ cattrs==1.7.1
 cblas==3.8
 cbor2==5.4.0
 certifi==10001
-cffi==1.14.5
+cffi==1.14.6
 chardet==4.0.0
 circuit-webhook==1.0.1
 ciscomobilityexpress==0.3.9
@@ -226,7 +225,7 @@ demjson==2.2.4
 denonavr==0.10.8
 deprecation==2.1.0
 devolo-home-control-api==0.17.4
-dialog==1.3.20200327
+dialog==1.3.20210621
 dicttoxml==1.7.4
 directv==0.4.0
 discogs-client==2.3.0
@@ -528,6 +527,7 @@ nextcloudmonitor==1.1.0
 niko-home-control==0.2.1
 niluclient==0.1.2
 noaa-coops==0.1.8
+notifications-android-tv==0.1.3
 nsapi==3.0.5
 nsw-fuel-api-client==1.1.0
 nuheat==0.3.0
@@ -562,6 +562,7 @@ paho-mqtt==1.5.1
 panacotta==0.1
 panasonic-viera==0.3.6
 pandas==1.3.0
+pandas==1.3.1
 paramiko==2.7.2
 pbr==5.6.0
 pcal9535a==0.7
@@ -614,7 +615,7 @@ py-melissa-climate==2.1.4
 py-nextbusnext==0.1.4
 py-nightscout==1.2.2
 py-schluter==0.1.7
-py-synologydsm-api==1.0.3
+py-synologydsm-api==1.0.4
 py-zabbix==1.1.7
 py17track==3.2.1
 pyads==3.2.2
@@ -637,7 +638,7 @@ pybluez==0.22
 pybluez==0.23
 pybotvac==0.0.21
 pycares==4.0.0
-pycarwings2==2.10
+pycarwings2==2.11
 pyCEC==0.5.1
 pycfdns==1.2.1
 pychannels==1.0.0
@@ -746,7 +747,7 @@ pymodbus==2.5.2
 pymonoprice==0.3
 pymsteams==0.1.12
 PyMVGLive==1.1.4
-pymyq==3.0.4
+pymyq==3.1.2
 pymysensors==0.21.0
 pynacl==1.4.0
 pynanoleaf==0.1.0
@@ -831,7 +832,7 @@ python-awair==0.2.1
 python-blockchain-api==0.0.2
 python-cffi==1
 python-clementine-remote==1.0.1
-python-dateutil==2.8.1
+python-dateutil==2.8.2
 python-didl-lite==1.2.6
 python-digitalocean==1.13.2
 python-ecobee-api==0.2.11
@@ -906,7 +907,7 @@ PyXiaomiGateway==0.13.4
 pyyaml==5.4.1
 pyzbar==0.1.7
 pyzerproc==0.4.8
-qnapstats==0.3.1
+qnapstats==0.4.0
 quantum-gateway==0.0.5
 RachioPy==1.0.3
 radiotherm==2.1.0
@@ -950,7 +951,7 @@ russound-rio==0.1.7
 russound==0.1.9
 Rx==3.1.0
 rxv==0.6.0
-s3transfer==0.4.2
+s3transfer==0.5.0
 samsungctl==0.7.1
 samsungtvws==1.6.0
 satel-integra==0.3.4
@@ -972,7 +973,7 @@ sharkiqpy==0.1.8
 sharp_aquos_rc==0.3.2
 shodan==1.25.0
 simplehound==0.3
-simplejson==3.17.2
+simplejson==3.17.3
 simplepush==1.1.4
 simplisafe-python==11.0.3
 sisyphus-control==3.0
@@ -1039,7 +1040,7 @@ tellduslive==0.10.11
 tellsticknet==0.1.2
 temescal==0.3
 temperusb==1.5.3
-tenacity==7.0.0
+tenacity==8.0.1
 tesla-powerwall==0.3.10
 teslajsonpy==0.18.3
 text-unidecode==1.3
@@ -1067,7 +1068,7 @@ typing-extensions==3.10.0.0
 typing-inspect==0.7.1
 tzlocal==2.1
 ua-parser==0.10.0
-udev==248
+udev==249
 uEagle==0.0.2
 ujson==4.0.2
 unasync==0.5.0
@@ -1141,7 +1142,7 @@ youtube_dl==2021.4.26
 zbar==0.23.1
 zeep==4.0.0
 zengge==0.2
-zeroconf==0.34.3
+zeroconf==0.35.0
 zha-quirks==0.0.59
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0

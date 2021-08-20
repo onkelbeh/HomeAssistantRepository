@@ -441,6 +441,7 @@
     <flag name="nexia">allows you to integrate your Nexia thermostats into Home Assistant</flag>
     <flag name="nextbus"> will give you the next departure time and associated data fro NextBus</flag>
     <flag name="nextcloud">pulls summary Nextcloud information into Home Assistant</flag>
+    <flag name="nfandroidtv">Notifications for Android TV and Notifications for Fire TV</flag>
     <flag name="nightscout">allows you to view your CGM data from Nightscout</flag>
     <flag name="niko_home_control">platform allows you to integrate your Niko Home Control</flag>
     <flag name="nilu">An API client for getting pollution data from NILU sensor stations in Norway</flag>
