@@ -26,6 +26,8 @@ RDEPEND=">=dev-python/bitstring-3.1.6[${PYTHON_USEDEP}]
 	<=dev-python/reedsolomon-1.5.4[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/pip[${PYTHON_USEDEP}]
+	dev-python/wheel[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

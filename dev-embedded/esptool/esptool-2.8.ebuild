@@ -16,13 +16,15 @@ SLOT="0"
 KEYWORDS="amd64 ~arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-DOCS=""
+DOCS="README.md"
 
 RDEPEND=">=dev-python/pyserial-3.0[${PYTHON_USEDEP}]
 	dev-python/pyaes[${PYTHON_USEDEP}]
 	dev-python/ecdsa[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/pip[${PYTHON_USEDEP}]
+	dev-python/wheel[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
