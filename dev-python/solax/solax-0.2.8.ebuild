@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -20,8 +20,8 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
-	dev-python/setuptools[${PYTHON_USEDEP}]
+BDEPEND="
+	dev-python/setuptools_scm[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
