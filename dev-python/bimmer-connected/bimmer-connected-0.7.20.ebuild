@@ -15,7 +15,7 @@ S=${WORKDIR}/${MY_P}
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 amd64-linux ~x86-linux"
 IUSE="test"
 
 DOCS="README.rst"
@@ -27,6 +27,8 @@ BDEPEND="
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
