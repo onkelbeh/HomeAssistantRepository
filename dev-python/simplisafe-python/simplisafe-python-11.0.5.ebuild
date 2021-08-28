@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -20,12 +20,16 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
+	>=dev-python/backoff-1.11.1[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
+		dev-python/aioresponses[${PYTHON_USEDEP}]
+		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
