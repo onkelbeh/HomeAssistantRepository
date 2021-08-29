@@ -20,7 +20,7 @@ else
 	S="${WORKDIR}/core-${MY_PV}"
 fi
 
-DESCRIPTION="Open-source home automation platform running on Python 3.9"
+DESCRIPTION="Open-source home automation platform running on Python."
 HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssistantRepository/"
 
 LICENSE="Apache-2.0"
@@ -31,7 +31,7 @@ IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis
 
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
-	|| ( dev-lang/python:3.8 dev-lang/python:3.9 )
+	|| ( dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:3.10 )
 	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
@@ -82,6 +82,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]
 	~dev-python/pyudev-0.22.0[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-5.4.1[${PYTHON_USEDEP}]
+	~dev-python/regex-2021.8.28[${PYTHON_USEDEP}]
 	~dev-python/requests-2.25.1[${PYTHON_USEDEP}]
 	~dev-python/ruamel-yaml-0.15.100[${PYTHON_USEDEP}]
 	~net-analyzer/scapy-2.4.5
@@ -100,9 +101,7 @@ RDEPEND="${RDEPEND}
 
 RDEPEND="${RDEPEND}
 	~dev-python/colorlog-5.0.1[${PYTHON_USEDEP}]
-	~dev-python/gTTS-token-1.1.3[${PYTHON_USEDEP}]
 	>=dev-python/multidict-4.5.2[${PYTHON_USEDEP}]
-	~dev-python/numpy-1.21.1[${PYTHON_USEDEP}]
 	>=dev-python/pyotp-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
 	dev-python/pycparser[${PYTHON_USEDEP}]
