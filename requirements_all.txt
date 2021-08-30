@@ -562,7 +562,7 @@ oru==0.1.11
 orvibo==1.1.1
 ovoenergy==1.1.12
 oyaml==1.0
-p1monitor==0.2.0
+p1monitor==1.0.0
 packaging==21.0
 paho-mqtt==1.5.1
 panacotta==0.1
@@ -924,7 +924,7 @@ ratelimit==2.2.1
 readlike==0.1.2
 reedsolomon==1.5.4
 regenmaschine==3.1.5
-regex==2021.7.6
+regex==2021.8.28
 renault-api==0.1.4
 ReParser==1.4.3
 requests-file==1.5.1
@@ -982,7 +982,7 @@ shodan==1.25.0
 simplehound==0.3
 simplejson==3.17.3
 simplepush==1.1.4
-simplisafe-python==11.0.5
+simplisafe-python==11.0.6
 sisyphus-control==3.0
 six==1.16.0
 skybellpy==0.6.3
@@ -1035,7 +1035,7 @@ surepy==0.7.0
 swisshydrodata==0.1.0
 synology-srm==0.2.0
 systembridge==2.0.6
-systemd==248.6
+systemd==249.2
 sysvinit==2.99
 tabulate==0.8.9
 tahoma-api==0.0.16

@@ -243,9 +243,8 @@ $ diff <(equery h python_targets_python3_8) <(equery h python_targets_python3_9)
 # Some background
 
 ## My environment
-I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 30GB Disk from a small FC SAN (HP MSA). Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. Influxdb and Graphana are also on the same box. I cannot imagine how somone can run this stuff an a Raspberry Pi. You'll find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
-
-Some of my devices are connected via Eclipse Mosquitto (https://mosquitto.org/), I use the stable version coming with the original distribution (2.0.11), no SSL inside my isolated IOT Vlan, so no need to upgrade.
+I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 30GB Disk from a small FC SAN (HP MSA). Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. Influxdb and Graphana are also on the same box. I cannot imagine how someone can run this stuff an a Raspberry Pi. You'll find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
+Also, a list of all components aka USEFlags is generated with every release (https://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/master/DOMAINTABLE.md)
 
 ## Python 3.9 Support
 My production box now runs Python 3.9.6_p1 (29.8.2021). Most modules are OK with 3.9 support, I will upgrade them if they are touched, if you find your favorite components missing, just open a ticket and drop me a list. Also ESPHome-2021.8.2 runs (with a small hack in platformio). During compile tests, I have all available tests turned on.
@@ -331,12 +330,12 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 The repository itself is released under GPL-3, all work on the depending components under the licenses they came from.
-There are 1979 Ebuilds in total, 1967 have 52 different licenses assigned.
+There are 1984 Ebuilds in total, 1972 have 52 different licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1125|
-|Apache-2.0|366|
+|MIT|1127|
+|Apache-2.0|369|
 |BSD|137|
 |GPL-3|117|
 |LGPL-3|33|
@@ -388,9 +387,9 @@ There are 1979 Ebuilds in total, 1967 have 52 different licenses assigned.
 |CC0-1.0|1|
 |GPL-1|1|
 
-(Last counted: 29/08/2021)
+(Last counted: 30/08/2021)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 29/08/2021
+Last updated: 30/08/2021
