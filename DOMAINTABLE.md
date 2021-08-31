@@ -306,6 +306,7 @@
 |insteon|allowing linked INSTEON devices to be used|N|Y|Y|0.39|
 |intesishome|communications with IntesisHome Smart AC Controllers|N|Y|Y|0.104|
 |iota|IOTA is a new blockless distributed ledger|N|N|Y|0.62|
+|iotawatt|None|N|N|Y|2021.9.0b6|
 |iperf3|iperf3 sensor integration allows you to measure network bandwidth|N|N|Y|0.71|
 |ipma|ipma weather platform|N|Y|Y|0.72|
 |ipp|read current data from your networked printer|N|Y|Y|0.108|

@@ -320,6 +320,7 @@
     <flag name="insteon">allowing linked INSTEON devices to be used</flag>
     <flag name="intesishome">communications with IntesisHome Smart AC Controllers</flag>
     <flag name="iota">IOTA is a new blockless distributed ledger</flag>
+    <flag name="iotawatt"/>
     <flag name="iperf3">iperf3 sensor integration allows you to measure network bandwidth</flag>
     <flag name="ipma">ipma weather platform</flag>
     <flag name="ipp">read current data from your networked printer</flag>

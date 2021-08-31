@@ -30,7 +30,7 @@ The Ebuild we have since `0.97.0`, ss soon as I know that at least one user is a
 ### `app-misc/homeassistant-full`
 
 WARNING: This one currently breaks (caused by shell limitations) emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
-This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **780** USE Flags.
+This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **781** USE Flags.
 
 ### Commons for all three Main Ebuilds
 
@@ -330,12 +330,12 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 The repository itself is released under GPL-3, all work on the depending components under the licenses they came from.
-There are 1984 Ebuilds in total, 1972 have 52 different licenses assigned.
+There are 1988 Ebuilds in total, 1976 have 52 different licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1127|
-|Apache-2.0|369|
+|MIT|1128|
+|Apache-2.0|371|
 |BSD|137|
 |GPL-3|117|
 |LGPL-3|33|
@@ -347,9 +347,9 @@ There are 1984 Ebuilds in total, 1972 have 52 different licenses assigned.
 |Unlicense|10|
 |PSF-2|9|
 |BSD-2|8|
+|GPL-3.0|7|
 |Apache 2.0|6|
 |MPL-2.0|6|
-|GPL-3.0|6|
 |GPL|5|
 |\|\| ( MIT Apache-2.0 )|5|
 |EPL-1.0|5|
@@ -387,9 +387,9 @@ There are 1984 Ebuilds in total, 1972 have 52 different licenses assigned.
 |CC0-1.0|1|
 |GPL-1|1|
 
-(Last counted: 30/08/2021)
+(Last counted: 31/08/2021)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 30/08/2021
+Last updated: 31/08/2021
