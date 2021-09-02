@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -18,7 +18,7 @@ IUSE="test"
 
 #DOCS="README.md"
 
-RDEPEND=""
+RDEPEND=">=dev-python/construct-2.5.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=dev-python/construct-2.5.2[${PYTHON_USEDEP}]
