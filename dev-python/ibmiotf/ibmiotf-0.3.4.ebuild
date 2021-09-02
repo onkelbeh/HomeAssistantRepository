@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -16,13 +16,16 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
+DOCS="README.rst"
+
 RDEPEND=">=dev-python/iso8601-0.1.12[${PYTHON_USEDEP}]
-	>=dev-python/pytz-2018.9[${PYTHON_USEDEP}]
-	>=dev-python/pyyaml-3.13[${PYTHON_USEDEP}]
-	>=dev-python/paho-mqtt-1.4.0[${PYTHON_USEDEP}]
-	>=dev-python/requests-2.21.0[${PYTHON_USEDEP}]
-	>=dev-python/requests-toolbelt-0.8.0[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+	>=dev-python/paho-mqtt-1.3.1[${PYTHON_USEDEP}]
+	>=dev-python/pytz-2017.3[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.18.4[${PYTHON_USEDEP}]
+	>=dev-python/requests-toolbelt-0.8.0[${PYTHON_USEDEP}]
+	>=dev-python/dicttoxml-1.7.4[${PYTHON_USEDEP}]
+	>=dev-python/xmltodict-0.11.0[${PYTHON_USEDEP}]"
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
