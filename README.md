@@ -21,11 +21,11 @@ PyPI/GitHub/Sourceforge).
 Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new here, start with app-misc/homeassistant-min
 ### `app-misc/homeassistant-min`
 
-New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, it currently holds **74** USE Flags.
+New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, it currently holds **75** USE Flags.
 
 ### `app-misc/homeassistant`
 
-The Ebuild we have since `0.97.0`, ss soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure. It currently holds **271** USE Flags.
+The Ebuild we have since `0.97.0`, ss soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure. It currently holds **272** USE Flags.
 
 ### `app-misc/homeassistant-full`
 
@@ -330,15 +330,15 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 The repository itself is released under GPL-3, all work on the depending components under the licenses they came from.
-There are 1988 Ebuilds in total, 1976 have 52 different licenses assigned.
+There are 1990 Ebuilds in total, 1978 have 52 different licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1128|
+|MIT|1132|
 |Apache-2.0|371|
 |BSD|137|
 |GPL-3|117|
-|LGPL-3|33|
+|LGPL-3|31|
 |GPL-2|17|
 |all-rights-reserved|16|
 |GPL-3+|14|
@@ -387,9 +387,9 @@ There are 1988 Ebuilds in total, 1976 have 52 different licenses assigned.
 |CC0-1.0|1|
 |GPL-1|1|
 
-(Last counted: 31/08/2021)
+(Last counted: 02/09/2021)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 31/08/2021
+Last updated: 02/09/2021

@@ -63,6 +63,7 @@
     <flag name="ring">integrate your ring.com devices</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
     <flag name="scrape">scraping information from websites</flag>
+    <flag name="season">display astronomical or meteorological season (Spring, Summer, Autumn, Winter)</flag>
     <flag name="shelly">Shelly devices</flag>
     <flag name="signal_messenger">add Support for Moxie's Signal API</flag>
     <flag name="snmp">Presence Detection, Sensor, Switch via SNMP</flag>

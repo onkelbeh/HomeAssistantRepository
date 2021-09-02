@@ -30,7 +30,7 @@ aiodns==3.0.0
 aioeafm==0.1.2
 aioeagle==1.1.0
 aioemonitor==1.0.5
-aioesphomeapi==7.0.0
+aioesphomeapi==8.0.0
 aiofiles==0.6.0
 aiofiles==0.7.0
 aioflo==0.4.1
@@ -1152,7 +1152,7 @@ youtube_dl==2021.4.26
 zbar==0.23.1
 zeep==4.1.0
 zengge==0.2
-zeroconf==0.36.1
+zeroconf==0.36.2
 zha-quirks==0.0.60
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0

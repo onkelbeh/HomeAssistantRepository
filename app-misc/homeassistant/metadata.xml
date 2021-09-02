@@ -216,6 +216,7 @@
     <flag name="roon">allows you to control RoonLabs music players</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
     <flag name="scrape">scraping information from websites</flag>
+    <flag name="season">display astronomical or meteorological season (Spring, Summer, Autumn, Winter)</flag>
     <flag name="shelly">Shelly devices</flag>
     <flag name="shodan">Shodan is a search engine for Internet-connected devices</flag>
     <flag name="signal_messenger">add Support for Moxie's Signal API</flag>

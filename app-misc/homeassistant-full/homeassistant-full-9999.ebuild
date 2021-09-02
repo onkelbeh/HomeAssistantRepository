@@ -290,7 +290,7 @@ RDEPEND="${RDEPEND}
 	epson? ( ~dev-python/epson-projector-0.4.2[${PYTHON_USEDEP}] )
 	epsonworkforce? ( ~dev-python/epsonprinter-0.0.9[${PYTHON_USEDEP}] )
 	eq3btsmart? ( ~dev-python/construct-2.10.56[${PYTHON_USEDEP}] ~dev-python/python-eq3bt-0.1.11[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-7.0.0[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-8.0.0[${PYTHON_USEDEP}] )
 	essent? ( ~dev-python/PyEssent-0.14[${PYTHON_USEDEP}] )
 	etherscan? ( ~dev-python/python-etherscan-api-0.0.3[${PYTHON_USEDEP}] )
 	eufy? ( ~dev-python/lakeside-0.12[${PYTHON_USEDEP}] )

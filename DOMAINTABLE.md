@@ -567,7 +567,7 @@
 |scrape|scraping information from websites|Y|Y|Y|0.31|
 |screenlogic|allows you to integrate your Pentair IntelliTouch or EasyTouch pool controller|N|N|Y|2021.4|
 |scsgate|allows to interact with the MyHome system from BTicino/Legrande|N|N|Y|0.13|
-|season|display astronomical or meteorological season (Spring, Summer, Autumn, Winter)|N|N|Y|0.53|
+|season|display astronomical or meteorological season (Spring, Summer, Autumn, Winter)|Y|Y|Y|0.53|
 |sendgrid|Notification platform sends email notifications via SendGrid|N|N|Y|0.14|
 |sense|Integrate your Sense meter information into Home Assistant|N|N|Y|0.82|
 |sensehat|lets you control the Sense HAT board’s 8x8 RGB LED matrix on your Raspberry Pi|N|N|Y|0.44|
