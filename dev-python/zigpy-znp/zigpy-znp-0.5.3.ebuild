@@ -11,7 +11,7 @@ DESCRIPTION="A library for zigpy which communicates with TI ZNP radios"
 HOMEPAGE="https://github.com/zigpy/zigpy-znp https://pypi.org/project/zigpy-znp/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL-3.0"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86 amd64-linux ~x86-linux"
 IUSE="test"

@@ -13,7 +13,7 @@
 |agent_dvr|Agent DVR is a free* software DVR solution|N|Y|Y|0.110|
 |airly|Uses the Airly web service as a source for air quality data|Y|Y|Y|0.101|
 |airnow|AirNow web service as a source for air quality data|N|N|Y|2021.2|
-|airtouch4|None|N|N|Y|2021.9.0b1|
+|airtouch4|control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller|N|N|Y|2021.9.0b1|
 |airvisual|Airvisual sensor platform queries the AirVisual cloud API for air quality data|Y|Y|Y|0.53|
 |aladdin_connect|The aladdin_connect cover platform lets you control Genie Aladdin Connect garage|N|Y|Y|0.75|
 |alarmdecoder|AlarmDecoder extended|N|Y|Y|0.43|
@@ -199,7 +199,7 @@
 |firmata|Firmata can be used to add digital inputs and outputs to Home Assistant|N|N|Y|0.114|
 |fitbit|The Fitbit sensor allows you to expose data from Fitbit to Home Assistant|N|N|Y|0.19|
 |fixer|current exchange rate from Fixer.io using data from ECB|N|N|Y|0.23|
-|fjaraskupan|None|N|N|Y|2021.9.0b1|
+|fjaraskupan|Fjäråskupan allows you to control your Bluetooth equipped kitchen fan|N|N|Y|2021.9.0b1|
 |fleetgo|integrate your vehicles equipped with FleetGO hardware into Home Assistant|N|N|Y|0.76|
 |flexit|Integrates Flexit Air Conditioning unit into Home Assistant|N|N|Y|0.47|
 |flic|The flic platform allows you to receive click events from flic smart buttons|N|N|Y|0.35|
@@ -307,7 +307,7 @@
 |insteon|allowing linked INSTEON devices to be used|N|Y|Y|0.39|
 |intesishome|communications with IntesisHome Smart AC Controllers|N|Y|Y|0.104|
 |iota|IOTA is a new blockless distributed ledger|N|N|Y|0.62|
-|iotawatt|None|N|N|Y|2021.9.0b6|
+|iotawatt|Integration for the IoTaWatt Open WiFi Electricity Monitor|N|N|Y|2021.9.0b6|
 |iperf3|iperf3 sensor integration allows you to measure network bandwidth|N|N|Y|0.71|
 |ipma|ipma weather platform|N|Y|Y|0.72|
 |ipp|read current data from your networked printer|N|Y|Y|0.108|
@@ -479,7 +479,7 @@
 |ovo_energy|allows you to monitor your energy consumption data|N|N|Y|0.114|
 |owntracks|OwnTracks: track your location and send it directly to Home Assistant|Y|Y|Y|0.7.4|
 |ozw|Open Zwave MQTT|Y|Y|Y|0.110|
-|p1_monitor|None|N|N|Y|2021.9.0b1|
+|p1_monitor|The P1 Monitor integration integrates the P1 Monitor API platform|N|N|Y|2021.9.0b1|
 |panasonic_bluray|allows you to control a Panasonic Blu-Ray player|N|N|Y|0.83|
 |panasonic_viera|panasonic_viera platform allows you to control a Panasonic Viera TV|N|Y|Y|0.17|
 |pandora|Pandora account, you can control it from Home Assistant with this media player|N|N|Y|0.22|
@@ -688,7 +688,7 @@
 |tplink_lte|allows you to observe and control TP-Link LTE routers|N|N|Y|0.83|
 |traccar|uses GPS for tracking and has support for over 1500 different types of devices|N|N|Y|0.83|
 |trackr|trackr platform allows you to detect presence using TrackR devices|N|N|Y|0.36|
-|tractive|None|N|N|Y|2021.9.0b1|
+|tractive|Tractive is an Austrian company develops real-time location trackers for pets|N|N|Y|2021.9.0b1|
 |tradfri|Control/observe IKEA Tradfri devices|Y|Y|Y|0.43|
 |trafikverket_train|Retrieve train departure information from Trafikverket|N|N|Y|0.96|
 |trafikverket_weatherstation|weather information provided by Trafikverket weather stations in Sweden|N|N|Y|0.66|
@@ -712,8 +712,8 @@
 |upc_connect|presence detection by looking at  a Connect Box|N|N|Y|0.36|
 |updater|binary sensor will check daily for new releases|N|N|Y|0.8|
 |upnp|support UPnP/Internet Gateway Device (IGD) Protocol|N|Y|Y|0.18|
-|uptimerobot|None|N|N|Y|0.72|
-|usb|None|N|N|Y|2021.9.0b1|
+|uptimerobot|provides binary sensors from your monitors from Uptime Robot|N|N|Y|0.72|
+|usb|USB Discovery integration will watch the host for USB devices|N|N|Y|2021.9.0b1|
 |uscis|updates on your USCIS case using your case/receipt number|N|N|Y|0.68|
 |usgs_earthquakes_feed|a GeoJSON feed provided by the U.S. Geological Survey|N|N|Y|0.84|
 |uvc|allows you to integrate UniFi Video Camera (UVC) into Home Assistant|N|N|Y|0.13|
@@ -772,7 +772,7 @@
 |yeelight|allows you to control your Yeelight Wifi bulbs|N|Y|Y|0.32|
 |yeelightsunflower|allows you to control your Yeelight Sunflower light bulbs|N|N|Y|0.39|
 |yi|allows you to utilize Yi Home Cameras within Home Assistant|N|Y|Y|0.56|
-|youless|None|N|N|Y|2021.8.0|
+|youless|allows you to read the meter values from sensors created by YouLess|N|N|Y|2021.8.0|
 |zabbix|integration to connect to a Zabbix monitoring instance via the Zabbix API|N|N|Y|0.37|
 |zengge|Python API for controlling Zengge LED bulbs|N|N|Y|0.36|
 |zeroconf|will scan the network for supported devices and services|Y|Y|Y|0.18|
