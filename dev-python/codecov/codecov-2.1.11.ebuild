@@ -11,7 +11,7 @@ DESCRIPTION="Hosted coverage reports for GitHub, Bitbucket and Gitlab"
 HOMEPAGE="https://github.com/codecov/codecov-python https://pypi.org/project/codecov/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache 2.0"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

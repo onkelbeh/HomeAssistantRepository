@@ -330,12 +330,12 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 The repository itself is released under GPL-3, all work on the depending components under the licenses they came from.
-There are 1976 Ebuilds in total, 1964 have 52 different licenses assigned.
+There are 1976 Ebuilds in total, 1964 have 51 different licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
 |MIT|1116|
-|Apache-2.0|376|
+|Apache-2.0|383|
 |BSD|135|
 |GPL-3|116|
 |LGPL-3|31|
@@ -347,7 +347,6 @@ There are 1976 Ebuilds in total, 1964 have 52 different licenses assigned.
 |Unlicense|10|
 |PSF-2|9|
 |BSD-2|8|
-|Apache 2.0|7|
 |GPL-3.0|7|
 |MPL-2.0|6|
 |GPL|5|
