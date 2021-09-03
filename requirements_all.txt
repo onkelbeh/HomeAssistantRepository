@@ -325,6 +325,7 @@ google-api-python-client==1.6.4
 google-auth-oauthlib==0.4.5
 google-auth==1.34.0
 google-cloud-pubsub==2.1.0
+google-cloud-texttospeech==0.4.0
 google-nest-sdm==0.3.6
 googleapis-common-protos==1.53.0
 googlemaps==2.5.1
@@ -390,6 +391,8 @@ hyperlink==21.0.0
 i2csense==0.0.4
 iammeter==0.1.7
 iaqualink==0.3.90
+ibm-cloud-sdk-core==3.11.3
+ibm-watson==5.2.2
 ibmiotf==0.3.4
 idna==3.2
 ifaddr==0.1.7
@@ -833,6 +836,7 @@ PySwitchmate==0.4.6
 PySyncThru==0.7.3
 pytankerkoenig==0.0.6
 pytautulli==21.8.1
+pytest-runner==5.2
 pytfiac==0.4
 pythinkingcleaner==0.0.3
 python-awair==0.2.1
@@ -859,7 +863,7 @@ python-jose==3.3.0
 python-juicenet==1.0.2
 python-magic==0.4.24
 python-metar==1.4.0
-python-miio==0.5.7
+python-miio==0.5.8
 python-mpd2==3.0.4
 python-mystrom==1.1.2
 python-nest==4.1.0
@@ -895,6 +899,7 @@ PyTransportNSW==0.1.1
 pytz==2021.1
 pytzdata==2020.1
 pyudev==0.22.0
+pyuptimerobot==21.9.0
 pyusb==1.2.1
 PyUserInput==0.1.11
 pyvera==0.3.13

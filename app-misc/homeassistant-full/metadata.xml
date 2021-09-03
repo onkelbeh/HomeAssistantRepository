@@ -258,6 +258,7 @@
     <flag name="goalzero">Access Goal Zero REST Api from Home Assistant</flag>
     <flag name="gogogate2">Control Gogogate2-Enabled garage doors from Home Assistant</flag>
     <flag name="google">Intergrate Google Calendar into Home Assistant</flag>
+    <flag name="google_cloud">allows you to use Google Cloud Platform API</flag>
     <flag name="google_maps">google_maps platform allows you to detect presence</flag>
     <flag name="google_pubsub">Send events to Google Cloud Pub/Sub from Home Assistant</flag>
     <flag name="google_translate">google_translate text-to-speech platform for Home Assistant</flag>
@@ -725,6 +726,7 @@
     <flag name="upc_connect">presence detection by looking at  a Connect Box</flag>
     <flag name="updater">binary sensor will check daily for new releases</flag>
     <flag name="upnp">support UPnP/Internet Gateway Device (IGD) Protocol</flag>
+    <flag name="uptimerobot"/>
     <flag name="usb"/>
     <flag name="uscis">updates on your USCIS case using your case/receipt number</flag>
     <flag name="usgs_earthquakes_feed">a GeoJSON feed provided by the U.S. Geological Survey</flag>
@@ -755,6 +757,7 @@
     <flag name="waqi">will query World Air Quality Index service</flag>
     <flag name="waterfurnace">Python interface for waterfurnace geothermal systems</flag>
     <flag name="watson_iot">link Home Assistant with an IBM Watson IoT Platform instance</flag>
+    <flag name="watson_tts">text-to-speech platform that works with IBM Watson Cloud</flag>
     <flag name="waze_travel_time">waze_travel_time sensor provides travel time from the Waze</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>
     <flag name="wemo">discover and control WeMo devices</flag>

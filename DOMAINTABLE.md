@@ -244,6 +244,7 @@
 |goalzero|Access Goal Zero REST Api from Home Assistant|N|N|Y|0.116|
 |gogogate2|Control Gogogate2-Enabled garage doors from Home Assistant|N|Y|Y|0.67|
 |google|Intergrate Google Calendar into Home Assistant|N|N|Y|0.33|
+|google_cloud|allows you to use Google Cloud Platform API|N|N|Y|0.95|
 |google_maps|google_maps platform allows you to detect presence|N|N|Y|0.67|
 |google_pubsub|Send events to Google Cloud Pub/Sub from Home Assistant|N|N|Y|0.88|
 |google_translate|google_translate text-to-speech platform for Home Assistant|N|N|Y|0.35|
@@ -711,6 +712,7 @@
 |upc_connect|presence detection by looking at  a Connect Box|N|N|Y|0.36|
 |updater|binary sensor will check daily for new releases|N|N|Y|0.8|
 |upnp|support UPnP/Internet Gateway Device (IGD) Protocol|N|Y|Y|0.18|
+|uptimerobot|None|N|N|Y|0.72|
 |usb|None|N|N|Y|2021.9.0b1|
 |uscis|updates on your USCIS case using your case/receipt number|N|N|Y|0.68|
 |usgs_earthquakes_feed|a GeoJSON feed provided by the U.S. Geological Survey|N|N|Y|0.84|
@@ -741,6 +743,7 @@
 |waqi|will query World Air Quality Index service|N|Y|Y|0.34|
 |waterfurnace|Python interface for waterfurnace geothermal systems|N|N|Y|0.62|
 |watson_iot|link Home Assistant with an IBM Watson IoT Platform instance|N|N|Y|0.72|
+|watson_tts|text-to-speech platform that works with IBM Watson Cloud|N|N|Y|0.94|
 |waze_travel_time|waze_travel_time sensor provides travel time from the Waze|N|Y|Y|0.67|
 |webostv|allows you to control a LG webOS Smart TV|N|Y|Y|0.18|
 |wemo|discover and control WeMo devices|Y|Y|Y||
