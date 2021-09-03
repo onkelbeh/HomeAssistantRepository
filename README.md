@@ -329,65 +329,51 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 * play with [Node-RED](https://nodered.org/), there are user requests for it, but my skills are too low for this Ebuild :-)
 
 ## Licenses
-The repository itself is released under GPL-3, all work on the depending components under the licenses they came from.
-There are 1976 Ebuilds in total, 1964 have 50 different licenses assigned.
+This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
+There are 1976 Ebuilds in total, 1964 of them have in total 1979 (36 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1116|
-|Apache-2.0|383|
-|BSD|135|
-|GPL-3|123|
-|LGPL-3|31|
-|GPL-2|17|
+|MIT|1124|
+|Apache-2.0|397|
+|BSD|139|
+|GPL-3|128|
+|LGPL-3|32|
+|GPL-2|20|
 |all-rights-reserved|16|
 |GPL-3+|14|
+|BSD-2|14|
 |LGPL-3+|13|
+|Unlicense|12|
 |LGPL-2.1|11|
-|Unlicense|10|
 |PSF-2|9|
-|BSD-2|8|
 |MPL-2.0|6|
-|GPL|5|
-|\|\| ( MIT Apache-2.0 )|5|
 |EPL-1.0|4|
 |HPND|4|
 |AGPL-3+|3|
 |LGPL-2+|3|
 |LGPL-2.1+|3|
-|\|\| ( Apache-2.0 BSD-2 )|3|
 |BSD-4|3|
 |public-domain|3|
 |GPL-2+|3|
-|GPLv2+|2|
 |ECL-2.0|2|
 |ISC|2|
 |NEWLIB|2|
-|\|\| ( Apache-2.0 BSD )|2|
-|\|\| ( Apache-2.0 MIT )|2|
 |EPL-2.0|2|
-|BSD-2 Unlicense|2|
 |ZPL|1|
 |LGPL-2|1|
-|\|\| ( MIT GPL-3 )|1|
-|BSD License|1|
 |Boost-1.0|1|
-|BSD-3|1|
 |AGPL-3|1|
-|PSF-2.4|1|
+|PSF-2.3|1|
 |CC-BY-NC-SA-3.0|1|
-|BSD-2-Clause|1|
-|LGPLv3|1|
 |CC-BY-NC-SA-4.0|1|
 |OSL-2.0|1|
-|GPL2|1|
-|Apache 2|1|
 |CC0-1.0|1|
 |GPL-1|1|
 
 (Last counted: 03/09/2021)
 
-I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. Authors have been asked for clarification, some still did not respond. These were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
+I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
 Last updated: 03/09/2021

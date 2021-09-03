@@ -11,7 +11,7 @@ DESCRIPTION="A simple Python module to retrieve battery information"
 HOMEPAGE="https://github.com/nicolargo/batinfo https://pypi.org/project/batinfo/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="LGPLv3"
+LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

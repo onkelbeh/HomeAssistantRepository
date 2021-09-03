@@ -11,7 +11,7 @@ DESCRIPTION="Extension to the standard mock framework to support support async"
 HOMEPAGE="https://github.com/timsavage/asyncmock https://pypi.org/project/asyncmock/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD-3"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

@@ -11,7 +11,7 @@ DESCRIPTION="CalDAV (RFC4791) client library"
 HOMEPAGE="https://github.com/python-caldav/caldav https://pypi.org/project/caldav/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86 amd64-linux x86-linux"
 IUSE="test"

@@ -11,7 +11,7 @@ DESCRIPTION="Jalali datetime binding for python"
 HOMEPAGE="https://github.com/slashmili/python-jalali https://pypi.org/project/jdatetime/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="PSF-2.4"
+LICENSE="PSF-2.3"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"

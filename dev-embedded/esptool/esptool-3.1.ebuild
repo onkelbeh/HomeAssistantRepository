@@ -11,7 +11,7 @@ DESCRIPTION="A serial utility to communicate & flash code to Espressif ESP8266 &
 HOMEPAGE="https://github.com/espressif/esptool https://pypi.org/project/esptool/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPLv2+"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 ~arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
