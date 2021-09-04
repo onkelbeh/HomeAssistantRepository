@@ -444,7 +444,7 @@ libffi==3.3
 libgudev==234
 libiconv==0
 libiconv==1.15
-libidn2==2.3.1
+libidn2==2.3.2
 libidn==1.37
 libintl==0
 libintl==0.21
@@ -1098,7 +1098,7 @@ urllib3==1.26.6
 urwid==2.1.1
 uscisstatus==0.1.1
 user-agents==2.0
-util-linux==2.36.2
+util-linux==2.37.2
 uvcclient==0.11.0
 uvicorn==0.13.4
 vallox-websocket-api==2.8.1

@@ -27,7 +27,7 @@
     <flag name="agent_dvr">Agent DVR is a free* software DVR solution</flag>
     <flag name="airly">Uses the Airly web service as a source for air quality data</flag>
     <flag name="airnow">AirNow web service as a source for air quality data</flag>
-    <flag name="airtouch4"/>
+    <flag name="airtouch4">control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller</flag>
     <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
     <flag name="aladdin_connect">The aladdin_connect cover platform lets you control Genie Aladdin Connect garage</flag>
     <flag name="alarmdecoder">AlarmDecoder extended</flag>
@@ -213,7 +213,7 @@
     <flag name="firmata">Firmata can be used to add digital inputs and outputs to Home Assistant</flag>
     <flag name="fitbit">The Fitbit sensor allows you to expose data from Fitbit to Home Assistant</flag>
     <flag name="fixer">current exchange rate from Fixer.io using data from ECB</flag>
-    <flag name="fjaraskupan"/>
+    <flag name="fjaraskupan">Fjäråskupan allows you to control your Bluetooth equipped kitchen fan</flag>
     <flag name="fleetgo">integrate your vehicles equipped with FleetGO hardware into Home Assistant</flag>
     <flag name="flexit">Integrates Flexit Air Conditioning unit into Home Assistant</flag>
     <flag name="flic">The flic platform allows you to receive click events from flic smart buttons</flag>
@@ -321,7 +321,7 @@
     <flag name="insteon">allowing linked INSTEON devices to be used</flag>
     <flag name="intesishome">communications with IntesisHome Smart AC Controllers</flag>
     <flag name="iota">IOTA is a new blockless distributed ledger</flag>
-    <flag name="iotawatt"/>
+    <flag name="iotawatt">Integration for the IoTaWatt Open WiFi Electricity Monitor</flag>
     <flag name="iperf3">iperf3 sensor integration allows you to measure network bandwidth</flag>
     <flag name="ipma">ipma weather platform</flag>
     <flag name="ipp">read current data from your networked printer</flag>
@@ -493,7 +493,7 @@
     <flag name="ovo_energy">allows you to monitor your energy consumption data</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ozw">Open Zwave MQTT</flag>
-    <flag name="p1_monitor"/>
+    <flag name="p1_monitor">The P1 Monitor integration integrates the P1 Monitor API platform</flag>
     <flag name="panasonic_bluray">allows you to control a Panasonic Blu-Ray player</flag>
     <flag name="panasonic_viera">panasonic_viera platform allows you to control a Panasonic Viera TV</flag>
     <flag name="pandora">Pandora account, you can control it from Home Assistant with this media player</flag>
@@ -702,7 +702,7 @@
     <flag name="tplink_lte">allows you to observe and control TP-Link LTE routers</flag>
     <flag name="traccar">uses GPS for tracking and has support for over 1500 different types of devices</flag>
     <flag name="trackr">trackr platform allows you to detect presence using TrackR devices</flag>
-    <flag name="tractive"/>
+    <flag name="tractive">Tractive is an Austrian company develops real-time location trackers for pets</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
     <flag name="trafikverket_train">Retrieve train departure information from Trafikverket</flag>
     <flag name="trafikverket_weatherstation">weather information provided by Trafikverket weather stations in Sweden</flag>
@@ -726,8 +726,8 @@
     <flag name="upc_connect">presence detection by looking at  a Connect Box</flag>
     <flag name="updater">binary sensor will check daily for new releases</flag>
     <flag name="upnp">support UPnP/Internet Gateway Device (IGD) Protocol</flag>
-    <flag name="uptimerobot"/>
-    <flag name="usb"/>
+    <flag name="uptimerobot">provides binary sensors from your monitors from Uptime Robot</flag>
+    <flag name="usb">USB Discovery integration will watch the host for USB devices</flag>
     <flag name="uscis">updates on your USCIS case using your case/receipt number</flag>
     <flag name="usgs_earthquakes_feed">a GeoJSON feed provided by the U.S. Geological Survey</flag>
     <flag name="uvc">allows you to integrate UniFi Video Camera (UVC) into Home Assistant</flag>
@@ -786,7 +786,7 @@
     <flag name="yeelight">allows you to control your Yeelight Wifi bulbs</flag>
     <flag name="yeelightsunflower">allows you to control your Yeelight Sunflower light bulbs</flag>
     <flag name="yi">allows you to utilize Yi Home Cameras within Home Assistant</flag>
-    <flag name="youless"/>
+    <flag name="youless">allows you to read the meter values from sensors created by YouLess</flag>
     <flag name="zabbix">integration to connect to a Zabbix monitoring instance via the Zabbix API</flag>
     <flag name="zengge">Python API for controlling Zengge LED bulbs</flag>
     <flag name="zeroconf">will scan the network for supported devices and services</flag>

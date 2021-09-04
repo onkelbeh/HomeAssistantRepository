@@ -18,7 +18,7 @@ PyPI/GitHub/Sourceforge).
 
 ## 2020/09/25: Publishing new Main Ebuilds
 
-Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new here, start with app-misc/homeassistant-min
+Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new here, start with app-misc/homeassistant-min.
 ### `app-misc/homeassistant-min`
 
 New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, it currently holds **75** USE Flags.
@@ -31,6 +31,8 @@ The Ebuild we have since `0.97.0`, ss soon as I know that at least one user is a
 
 WARNING: This one currently breaks (caused by shell limitations) emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
 This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **784** USE Flags.
+
+A list of all components aka USEFlags is generated with every release [DOMAINTABLE.md](DOMAINTABLE.md)
 
 ### Commons for all three Main Ebuilds
 
@@ -240,11 +242,10 @@ $ eix --installed-with-use python_targets_python3_8
 $ diff <(equery h python_targets_python3_8) <(equery h python_targets_python3_9)
 ```
 
-# Some background
+# My VMs/boxes and Stuff I use
 
 ## My environment
 I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 30GB Disk from a small FC SAN (HP MSA). Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. Influxdb and Graphana are also on the same box. I cannot imagine how someone can run this stuff an a Raspberry Pi. You'll find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
-Also, a list of all components aka USEFlags is generated with every release (https://git.edevau.net/onkelbeh/HomeAssistantRepository/src/branch/master/DOMAINTABLE.md)
 
 ## Python 3.9 Support
 My production box now runs Python 3.9.6_p1 (29.8.2021). Most modules are OK with 3.9 support, I will upgrade them if they are touched, if you find your favorite components missing, just open a ticket and drop me a list. Also ESPHome-2021.8.2 runs (with a small hack in platformio). During compile tests, I have all available tests turned on.
@@ -287,6 +288,8 @@ Along MQTT I am actively using (and therefore testing) the following platforms/c
 * EQ3-Max! (I accidently bought some, so I have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` USE Flag to Home Assistant, then the patch will be applied before installation. Recently I saw some other interesting soft for this hardware. Perhaps I'll try one of these, and forget about `maxcube-api`.
 * Axis Camera (1, a few more to come)
 * yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/) (removed by YR's request in 2021)
+
+# Some background
 
 ## Why I don't (want to) use a virtual environment for Home Assistant
 On Gentoo, we have a very powerful package manager. So I (now) try to put everything Home Assistant uses into Ebuilds.
@@ -371,9 +374,9 @@ There are 1976 Ebuilds in total, 1964 of them have in total 1979 (36 different) 
 |CC0-1.0|1|
 |GPL-1|1|
 
-(Last counted: 03/09/2021)
+(Last counted: 04/09/2021)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 03/09/2021
+Last updated: 04/09/2021
