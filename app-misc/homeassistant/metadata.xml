@@ -118,6 +118,7 @@
     <flag name="flunearyou">allows users in the US to get information from Flu Near You</flag>
     <flag name="flux_led">flux_led support is integrated into Home Assistant as a light platform</flag>
     <flag name="foobot">fetch air quality data from your Foobot device</flag>
+    <flag name="forecast_solar">Asynchronous Python client for getting forecast solar information</flag>
     <flag name="fortios">device tracking of devices with a MAC address connected to a FortiGate</flag>
     <flag name="freebox">allows you to observe and control Freebox router</flag>
     <flag name="fritz">The fritz platform offers presence detection for Home Assistant</flag>
@@ -160,6 +161,7 @@
     <flag name="knx">Asynchronous Library for the KNX protocol</flag>
     <flag name="kodi">control a Kodi multimedia system</flag>
     <flag name="kraken">allows you to monitor exchange rates on kraken.com</flag>
+    <flag name="lifx">The lifx integration allows you to integrate your LIFX into Home Assistant</flag>
     <flag name="linode">allows you to access the information about your Linode systems</flag>
     <flag name="litterrobot">Wi-Fi-enabled, automatic, self-cleaning litter box for cats</flag>
     <flag name="loopenergy">Integrate your Loop Energy meter information into Home Assistant</flag>

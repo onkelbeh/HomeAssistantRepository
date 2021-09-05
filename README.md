@@ -21,11 +21,11 @@ PyPI/GitHub/Sourceforge).
 Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new here, start with app-misc/homeassistant-min.
 ### `app-misc/homeassistant-min`
 
-New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, it currently holds **75** USE Flags.
+New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, it currently holds **76** USE Flags.
 
 ### `app-misc/homeassistant`
 
-The Ebuild we have since `0.97.0`, ss soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure. It currently holds **272** USE Flags.
+The Ebuild we have since `0.97.0`, ss soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure. It currently holds **274** USE Flags.
 
 ### `app-misc/homeassistant-full`
 
@@ -104,6 +104,16 @@ You will find this Repository at
 Sorry, due to technical reasons, I currently cannot offer public ssh access to my git server.
 
 Sure, you can submit **issues** and **pull requests** on both sites, but I prefer them on my own server (requires registration).
+
+## Python versions
+### Python 3.9
+My production box now runs Python 3.9.6_p1 (29.8.2021). Most modules are OK with 3.9 support, some are not completed yet. I will upgrade them if they are touched, if you find your favorite components missing, just open a ticket and drop me a list. During compile tests, I have all available tests turned on.
+
+### Python <= 3.8 Support
+SOuld still work, but since Python 3.8 support is dropped, I will do no further tests on it, you should upgrade soon.
+
+### Python 3.10 Support
+Currently not usable in production, my testbox compiles a lot of modules now, but some important things are still missing.
 
 ## Installation on Python 3.9
 Since Python 3.9 is default target since 05/2021, installation is very easy now.
@@ -245,49 +255,152 @@ $ diff <(equery h python_targets_python3_8) <(equery h python_targets_python3_9)
 # My VMs/boxes and Stuff I use
 
 ## My environment
-I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 30GB Disk from a small FC SAN (HP MSA). Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. Influxdb and Graphana are also on the same box. I cannot imagine how someone can run this stuff an a Raspberry Pi. You'll find a list of the integrations I use myself on my production box [here](https://github.com/onkelbeh/HomeAssistantRepository/blob/master/etc/portage/package.use/60_homeassistant).
+I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-2630 v2 @ 2.60GHz and 30GB Disk from a small FC SAN (HP MSA). Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. Influxdb and Graphana are also on the same box. I cannot imagine how someone can run this stuff an a Raspberry Pi.
 
-## Python 3.9 Support
-My production box now runs Python 3.9.6_p1 (29.8.2021). Most modules are OK with 3.9 support, I will upgrade them if they are touched, if you find your favorite components missing, just open a ticket and drop me a list. Also ESPHome-2021.8.2 runs (with a small hack in platformio). During compile tests, I have all available tests turned on.
-
-## Python <= 3.8 Support
-Since Python 3.8 support is dropped, I will do no further tests on it, you should upgrade soon.
-
-## Python 3.10 Support
-Currently not usable in production, my testbox compiles a lot of modules now, but some important things are still missing.
+## My machines
+Currently I have three VM's running:
+### Production
+Python 3.9.6_p1
+4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
+### Dev / Test
+Python 3.9.6_p1
+4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
+### Dev / Test2
+Python 3.10.0_rc1_p2
+4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 
 ## Hardware I use
-Along MQTT I am actively using (and therefore testing) the following platforms/components:
-* some (~9) Z-Wave devices, mostly Fibaro Roller Shutter 3 with a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. I would not buy the Fibaro stuff again, because of their weird firmware policy. You need to have their expensive (and otherwise useless) gateway to make an update. The cheap chinese stuff will do better. And they are very badly shielded.
-  - in the vm run `socat pty,link=/dev/ttyUSB0,raw,user=homeassistant,group=dialout,mode=777 tcp:[ip of usbhost]:3333`
-  - at the usb host run `ser2net` with `3333:raw:0:/dev/ttyACM0:115200 8DATABITS NONE 1STOPBIT`
-* some Zigbee devices from Xioami, via an CC2531 USB stick from Amazon -> `zigbee2mqtt`
-* a bunch of OneWire and I2C Sensors (mostly via ESPHome and MQTT) and
-* ESPHome - see description above - (https://esphome.io/ & https://github.com/esphome/esphome/)
-* ESPEasy (https://www.letscontrolit.com/wiki/index.php/ESPEasy/). I formerly used it to avoid some serious design problems in Tasmota, but since I use ESPHome, these devices live only until they have to be touched for some reason, their firmware will get replaced with ESPHome.
-* Sonoff/Tasmota (mostly via MQTT) (https://github.com/arendst/Sonoff-Tasmota), same here: as soon a device has to be touched, its firmware will be replaced with Otto Winter's ESPHome.
-  * Sonoff S20
-  * Sonoff 4ch
-  * Sonoff Dual
-  * Sonoff RF Bridge with remote Switches
-  * Sonoff Touch
-  * Sonoff Basic (Wifi not working well with ESPHome or Tasmota in newer versions)
-  * Sonoff Pow R2
-  The Sonoff Pow (and R2) will stay with Tasmota for a while, because I have no good implementation of Tasmota's energy summary in ESPHome.
-* Experimenting with Shelly Devices, a friend has some Shelly 1/2, bought a Pro, but this one has a Chip from TI, no ESP, so we'll have to use the original Firmware.
+
+Here's a rough overview about the stuff I use, sorted by USEFlags:
+
+### androidtv
+
+### axis
+Axis Camera (1, a few more to come), i do not use this integration anymore, it had a problem with my old cam's, migrated it to qvr_pro.
+
+### caldav
+Calendar (connected to a locally run ownCloud, OC not in this Repository) (https://owncloud.org/), use it for a very intelligent Alarmclock and to control heating on home office days.
+
+### cli
+
+### compensation
+
+### coronavirus
+
+### darksky
+since yr.no weather was removed by YR's request in early 2021, I use darksky.
+
+### dwd_weather_warnings 
+
+### enigma2
+Enigma2 on Dreambox (2 left) (https://wiki.blue-panel.com/index.php/Enigma2)
+
+### esphome
+ESPHome - see description above - (https://esphome.io/ & https://github.com/esphome/esphome/)
 * Now all of my HC-SR501 PIR Sensors and some of my traditional light switches are connected to two big input arrays I built into old CAT6 patch panels with an ESP12 and 4 PCF8574 I2C I/O Expanders, this makes 24 I/O lines per panel. All these panels run ESPHome.
-* Yamaha RXV (4 devices)
-* SamsungTV (partly _not_ working anymore due to Samsung's newest firmware 'improvements', at least I can read its status for controlling lights & the shutters)
-* Some Tradfri lights
-* 4 IKEA Shutters, which finally can be bought now. A bit expensive, but nice and easy to install.
-* Sonos (had many, sold most of them, because they destroyed a formerly very cool Gui, only two boxes left)
-* Calendar (connected to a locally run ownCloud, OC not in this Repository) (https://owncloud.org/)
-* Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/)
-* Enigma2 on Dreambox (2 left) (https://wiki.blue-panel.com/index.php/Enigma2)
-* Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
-* EQ3-Max! (I accidently bought some, so I have to use them until they die, 8 devices and a cube). Currently the integration `maxcube-api` is broken, added a hack to keep them running, just add `maxcube_hack` USE Flag to Home Assistant, then the patch will be applied before installation. Recently I saw some other interesting soft for this hardware. Perhaps I'll try one of these, and forget about `maxcube-api`.
-* Axis Camera (1, a few more to come)
-* yr.no weather (best reliable forecast you can get for low money) (https://www.yr.no/) (removed by YR's request in 2021)
+* OneWire and I2C Sensors
+* Sonoff S20
+* Sonoff 4ch
+* Sonoff Dual
+* Sonoff RF Bridge with remote Switches
+* Sonoff Touch
+As soon as a device with an esp inside gets touched, it will be migrated to ESPHome.
+
+### forecast_solar
+
+### fronius
+
+### github
+
+### http
+
+### hyperion
+Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
+
+### influxdb
+
+### knx
+
+### kodi
+Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/), very happy with it.
+
+### kraken
+
+### maxcube
+EQ3-Max! (I accidently bought some, so I have to use them until they die, 8 devices and a cube). When a thermostat dies, it gets replaced with a devolo z-wave model.
+
+### mikrotik
+
+### mqtt
+The Sonoff Pow (and R2) will stay with Tasmota for a while, because I have no good implementation of Tasmota's energy summary in ESPHome. I have connectd these via MQTT.
+Some Zigbee devices via an CC2531 USB stick from Amazon and `zigbee2mqtt`. Since zigbee2mqtt, a lot of new devices are here now:
+* some Xioami motion sensors (Aquara)
+* an Aquara environment sensor
+* lots of Sonoff's window Sensors
+* all the IKEA stuff (4 shutters, some lighting and all the buttons that came with them)
+
+### mysql
+
+### otp
+
+### owntracks
+
+### ping
+
+### qnap
+
+### qvr_pro
+
+### recorder
+
+### rest
+
+### samsungtv
+SamsungTV (partly _not_ working anymore due to Samsung's newest firmware 'improvements', at least I can read its status for controlling lights & the shutters)
+
+### scrape
+
+### season
+
+### shelly
+Experimenting with Shelly Devices, a friend has some Shelly 1/2, bought a Pro, but this one has a Chip from TI, no ESP, so we'll have to use the original Firmware, connected to MQTT.
+Due to the fact that Fibaro's shutter controllers do not work very well, I now have a couple of Shelly 2.5 to control the shutters. These work good, looks like a 'install & forget' thing.
+
+### signal_messenger
+
+### snmp
+
+### sonos
+Sonos (had many, sold most of them, because they destroyed a formerly very cool Gui, only two boxes left)
+
+### sql
+
+### ssl
+
+### tasmota
+except some Sonoff Pow R2 all former Tasmota stuff was migrated to ESPHome. I had not yet the time to transfer the power statistics.
+
+### test
+
+### tradfri
+Some Tradfri lights, and 4 IKEA Shutters. A bit expensive, but nice and easy to install. I do not use the Gateway anymore, the integration cause problems from time to time. I have all IKEA devices connected via zigbee2mqtt.
+
+### version
+
+### whois
+
+### workday
+
+### yamaha
+
+### yamaha_musiccast
+Yamaha RXV (4 devices)
+
+### zwave
+had a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. Have migrated it to zwavejs2mqtt.
+
+### zwave_js
+migration was easier than expected, after finding the right module. Have some Fibaro shutter controllers and (currently) 2 devolo thermostats. I would not buy the Fibaro stuff again, because of their weird firmware policy. You need to have their expensive (and otherwise useless) gateway to make an update. The cheap chinese stuff will do better. And they are very badly shielded.
 
 # Some background
 
@@ -333,12 +446,12 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1976 Ebuilds in total, 1964 of them have in total 1979 (36 different) licenses assigned.
+There are 1983 Ebuilds in total, 1971 of them have in total 1986 (36 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1124|
-|Apache-2.0|397|
+|MIT|1125|
+|Apache-2.0|403|
 |BSD|139|
 |GPL-3|128|
 |LGPL-3|32|
@@ -374,9 +487,9 @@ There are 1976 Ebuilds in total, 1964 of them have in total 1979 (36 different) 
 |CC0-1.0|1|
 |GPL-1|1|
 
-(Last counted: 04/09/2021)
+(Last counted: 05/09/2021)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 04/09/2021
+Last updated: 05/09/2021

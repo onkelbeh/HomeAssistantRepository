@@ -31,6 +31,7 @@
     <flag name="dwd_weather_warnings">dwd_weather_warnings sensor platform uses DWD for  warnings</flag>
     <flag name="enigma2">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
+    <flag name="forecast_solar">Asynchronous Python client for getting forecast solar information</flag>
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
     <flag name="github">GitHub sensor integrates data from GitHub to monitor your favorite repositories</flag>
     <flag name="homekit">Integrate HomeKit controller and accessory in Home Assistant</flag>

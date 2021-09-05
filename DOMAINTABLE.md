@@ -211,7 +211,7 @@
 |flux_led|flux_led support is integrated into Home Assistant as a light platform|N|Y|Y|0.25|
 |folder_watcher|publishing events on the bus on the creation/deletion/modification of files|N|N|Y|0.67|
 |foobot|fetch air quality data from your Foobot device|N|Y|Y|0.66|
-|forecast_solar|Asynchronous Python client for getting forecast solar information|N|N|Y|2021.7|
+|forecast_solar|Asynchronous Python client for getting forecast solar information|Y|Y|Y|2021.7|
 |forked_daapd|allows you to control your forked-daapd server from Home Assistant|N|N|Y|0.110|
 |fortios|device tracking of devices with a MAC address connected to a FortiGate|N|Y|Y|0.97|
 |foscam|watch the live stream of your Foscam IP camera|N|N|Y|0.7.3|
@@ -345,7 +345,7 @@
 |lg_netcast|allows you to control a LG Smart TV running NetCast 3.0|N|N|Y|0.20|
 |lg_soundbar|allows you to control LG Soundbars from Home Assistant|N|N|Y|0.81|
 |life360|detect presence using the unofficial API of Life360|N|N|Y|0.95|
-|lifx|The lifx integration allows you to integrate your LIFX into Home Assistant|N|N|Y|0.81|
+|lifx|The lifx integration allows you to integrate your LIFX into Home Assistant|N|Y|Y|0.81|
 |lightwave|WiFi link for controlling Lightwave lights, switches and TRVs|N|N|Y|0.84|
 |limitlessled|control your LimitlessLED lights from within Home Assistant|N|N|Y|0.7|
 |linode|allows you to access the information about your Linode systems|N|Y|Y|0.57|
