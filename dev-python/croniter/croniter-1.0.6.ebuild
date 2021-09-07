@@ -18,7 +18,8 @@ IUSE="test"
 
 DOCS="README.rst"
 
-RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]
+	dev-python/natsort"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
