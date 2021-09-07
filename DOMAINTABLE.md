@@ -52,6 +52,7 @@
 |aurora_abb_powerone|This implements a direct RS485 connection to a solar inverter in the PVI-3.0/3.6|N|Y|Y|0.96|
 |avea|Library for Elgato Avea bulbs|N|Y|Y|0.97|
 |avion|Support for the Avi-on Bluetooth dimmer switch Avi-on|N|Y|Y|0.37|
+|avri|Query the next scheduled waste pickup and the type of waste from Avri|N|N|Y|0.107|
 |awair|Library to integrate the Awair GraphQL API into Home Assistant|N|Y|Y|0.84|
 |aws|Interact with Amazon Web Services|N|N|Y|0.91|
 |axis|Communicating with newer devices from Axis Communications|Y|Y|Y|0.45|
@@ -60,7 +61,7 @@
 |bbox|Presence detection from Bbox Modem Router from Bouygues Telecom|N|N|Y|0.31|
 |beewi_smartclim|BeeWi SmartClim BLE is a Bluetooth Low Energy sensor device|N|Y|Y|0.99|
 |bh1750|Allows you to read the ambient light level in Lux from a BH1750FVI sensor connec|N|Y|Y|0.48|
-|bitcoin|Displays various details about the Bitcoin network|N|Y|Y|0.7|
+|bitcoin|Displays various details about the Bitcoin network|N|Y|Y||
 |bizkaibus|The bizkaibus sensor will give you the time until the next bus in the selected s|N|Y|Y|0.93|
 |blackbird|Control Monoprice Blackbird Matrix Switch using a serial connection|N|Y|Y|0.68|
 |blebox|BleBox produces small, low-power, surprisingly affordable, feature-rich WiFi dev|N|Y|Y|0.110|
@@ -87,6 +88,7 @@
 |bt_smarthub|Presence detection by looking at BT Smart Hub based routers|N|Y|Y|0.82|
 |buienradar|Integrate buienradar weather data into Home Assistant|N|Y|Y|0.47|
 |caldav|Integrate a CalDAV (RFC4791) calendar in Home Assistant|Y|Y|Y|0.60|
+|camera|None|N|N|Y|0.7|
 |canary|Allows you to integrate your Canary devices from Home Assistant|N|Y|Y|0.60|
 |cast|Let Home Assitant talk to Google Chromecast|Y|Y|Y||
 |channels|Allows you to control Channels from Home Assistant|N|N|Y|0.65|
@@ -134,6 +136,8 @@
 |discogs|Discogs Client for Home Assistant|N|Y|Y|0.61|
 |discord|Send messages to the user using Discord from Home Assistant|N|Y|Y|0.37|
 |discovery|Automatically configure zeroconf/mDNS and UPnP devices in Home Assistant|N|Y|Y|0.7|
+|dlib_face_detect|Image processing platform for Home Assistant|N|N|Y|0.44|
+|dlib_face_identify|image processing platform allows you to use the Dlib|N|N|Y|0.44|
 |dlink|Allows you to control the state of your D-Link Wi-Fi Smart Plugs|N|N|Y|0.14|
 |dlna_dmr|Allows you to control a DLNA Digital Media Renderer|N|N|Y|0.76|
 |dnsip|will expose an IP address, fetched via DNS resolution, as its value|N|N|Y|0.40|
@@ -226,7 +230,7 @@
 |frontier_silicon|Support for Internet Radios based on the Frontier Silicon chipset|N|N|Y|0.40|
 |futurenow|Allows you to use P5 FutureNow relay/dimmer units as lights|N|N|Y|0.75|
 |garages_amsterdam|measure the occupancy of Amsterdam parking garages in the Netherlands|N|N|Y|2021.6|
-|garmin_connect|The Garmin Connect sensor allows you to expose data from Garmin Connect|N|Y|Y|0.105|
+|garmin_connect|The Garmin Connect sensor allows you to expose data from Garmin Connect|N|Y|Y||
 |gc100|The Global Caché GC-100 can be integrated into Home Assistant|N|N|Y|0.57|
 |gdacs|lets you use a GeoRSS feed provided by GDACS|N|N|Y|0.106|
 |geniushub|geniushub integration links Home Assistant with your Genius Hub CH/DHW|N|N|Y|0.92|
@@ -267,7 +271,7 @@
 |heos|Controlling HEOS devices through the HEOS CLI Protocol from Home Assistant|N|Y|Y|0.92|
 |here_travel_time|here_travel_time sensor provides travel time from the HERE Routing API|N|Y|Y|0.100|
 |hikvision|Parses the event stream of a Hikvision IP Camera for Home Assistant|N|N|Y|0.35|
-|hikvisioncam|Allows you to control your motion detection settings from Home Assistant|N|N|Y|0.7|
+|hikvisioncam|Allows you to control your motion detection settings from Home Assistant|N|N|Y||
 |hisense_aehw4a1|Give Wi-Fi connectivity to some Hisense ACs|N|N|Y|0.103|
 |hive|Set up and integrate all supported Hive devices in Home Assistant|N|N|Y|0.59|
 |hlk_sw16|HLK-SW16 by Hi-Link is a simple networkable 16 port relay device|N|N|Y|0.84|
@@ -282,7 +286,7 @@
 |horizon|Allows you to control a Unitymedia Horizon HD Recorder from Home Assistant|N|N|Y|0.72|
 |hp_ilo|Query HP Integrated Lights out XML interfaces from Home Assistant|N|Y|Y|0.27|
 |html5|html5 enables you to receive push notifications to Chrome or Firefox|N|N|Y|0.27|
-|http|Serves all files and data required for the Home Assistant frontend|Y|Y|Y|0.7|
+|http|Serves all files and data required for the Home Assistant frontend|Y|Y|Y||
 |htu21d|Read the temperature and humidity from a HTU21D sensor (I2C)|N|N|Y|0.48|
 |huawei_lte|allows you to observe and control Huawei LTE devices|N|N|Y|0.79|
 |hue|talk to Philips Hue|N|Y|Y|0.60|
@@ -346,8 +350,9 @@
 |lg_soundbar|allows you to control LG Soundbars from Home Assistant|N|N|Y|0.81|
 |life360|detect presence using the unofficial API of Life360|N|N|Y|0.95|
 |lifx|The lifx integration allows you to integrate your LIFX into Home Assistant|N|Y|Y|0.81|
+|lifx_legacy|The lifx integration allows you to integrate your LIFX into Home Assistant|N|N|Y|None|
 |lightwave|WiFi link for controlling Lightwave lights, switches and TRVs|N|N|Y|0.84|
-|limitlessled|control your LimitlessLED lights from within Home Assistant|N|N|Y|0.7|
+|limitlessled|control your LimitlessLED lights from within Home Assistant|N|N|Y||
 |linode|allows you to access the information about your Linode systems|N|Y|Y|0.57|
 |linux_battery|sensor platform is using the information stored in /sys/class/power_supply/|N|N|Y|0.28|
 |litejet|allows a computer to control the system via LiteJet’s third party protocol|N|N|Y|0.32|
@@ -355,7 +360,7 @@
 |logi_circle|integrate your Logi Circle cameras in Home Assistant|N|N|Y|0.79|
 |london_underground|display the status of London underground lines|N|N|Y|0.49|
 |loopenergy|Integrate your Loop Energy meter information into Home Assistant|N|Y|Y|0.17|
-|luci|fetch connected devices from your OpenWrt|N|Y|Y|0.7|
+|luci|fetch connected devices from your OpenWrt|N|Y|Y||
 |luftdaten|query the open data API of luftdaten.info to monitor air quality|N|Y|Y|0.82|
 |lupusec|Lupusec alarm control panel and ultimately all connected sensors|N|N|Y|0.83|
 |lutron|communicating with the Lutron main hub|N|N|Y|0.37|
@@ -400,7 +405,7 @@
 |motioneye|integrate your motionEye server into Home Assistant|N|N|Y|2021.5|
 |motion_blinds|control Motion Blinds from Coulisse B.V.|N|N|Y|2020.12|
 |mpd|allows you to control a Music Player Daemon from Home Assistant|N|N|Y||
-|mqtt|install MQTT Broker and dependencies|Y|Y|Y|0.7|
+|mqtt|install MQTT Broker and dependencies|Y|Y|Y||
 |msteams|send notifications from Home Assistant to a team channel in Microsoft Teams|N|N|Y|0.101|
 |mullvad|Mullvad VPN integration pulls Mullvad VPN status information|N|N|Y|2021.3|
 |mutesync|mutesync integration for Home Assistant connects to the mütesync virtual button|N|N|Y|2021.5|
@@ -713,9 +718,10 @@
 |updater|binary sensor will check daily for new releases|N|N|Y|0.8|
 |upnp|support UPnP/Internet Gateway Device (IGD) Protocol|N|Y|Y|0.18|
 |uptimerobot|provides binary sensors from your monitors from Uptime Robot|N|N|Y|0.72|
-|usb|USB Discovery integration will watch the host for USB devices|N|N|Y|2021.9.0b1|
+|usb|USB Discovery integration will watch the host for USB devices|N|N|Y|2021.9|
 |uscis|updates on your USCIS case using your case/receipt number|N|N|Y|0.68|
 |usgs_earthquakes_feed|a GeoJSON feed provided by the U.S. Geological Survey|N|N|Y|0.84|
+|utility_meter|None|N|N|Y|0.87|
 |uvc|allows you to integrate UniFi Video Camera (UVC) into Home Assistant|N|N|Y|0.13|
 |vallox|control any Vallox ventilation unit|N|Y|Y|0.96|
 |vasttrafik|traveling details for the larger Göteborg area in Sweden from the Västtrafik|N|N|Y|0.30|

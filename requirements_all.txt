@@ -130,7 +130,7 @@ bitarray==2.2.2
 bitstring==3.1.9
 bizkaibus==0.1.1
 blas==3.8
-bleach==3.3.1
+bleach==4.0.0
 bleak==0.10.0
 blebox-uniapi==1.3.3
 blinker==1.4
@@ -208,6 +208,7 @@ coverage==5.5
 crccheck==1.0
 crcmod==1.7
 croniter==1.0.15
+croniter==1.0.6
 cryptography==3.3.2
 cryptography==3.4.7
 csrmesh==0.10.0
@@ -237,6 +238,7 @@ directv==0.4.0
 discogs-client==2.3.0
 discord-py==1.7.2
 distro==1.5.0
+dlib==19.18.0
 dlipower==0.7.165
 dnspython==2.1.0
 docopt==0.6.2
@@ -277,6 +279,8 @@ evdev==1.4.0
 evohome-async==0.3.15
 expat==2.4.1
 faadelays==0.0.7
+face_recognition==1.2.3
+face_recognition_models==0.3.0
 fastdotcom==0.0.3
 feedparser==6.0.2
 ffmpeg==4.4
@@ -399,7 +403,7 @@ ifaddr==0.1.7
 iglo==1.2.7
 ihcsdk==2.7.0
 imageio==2.6.1
-importlib_metadata==4.6.1
+importlib_metadata==4.6.4
 incomfort-client==0.4.4
 incremental==21.3.0
 inflect==5.3.0
@@ -465,6 +469,7 @@ libusb==1.0.24
 libxml2==2.9.12
 libxslt==1.1.34
 life360==4.1.1
+liffylights==0.9.4
 lightify==1.0.7.3
 lightwave==0.19
 limitlessled==1.1.3
@@ -743,7 +748,7 @@ pylutron==0.2.8
 pymailgunner==1.4
 pymata-express==1.19
 PyMata==2.20
-pymazda==0.2.0
+pymazda==0.2.1
 pymediaroom==0.6.4.1
 PyMeeus==0.5.11
 pymelcloud==2.5.3
@@ -896,6 +901,7 @@ pytrackr==0.0.5
 pytradfri==7.0.6
 pytrafikverket==0.1.6.2
 PyTransportNSW==0.1.1
+PyTurboJPEG==1.5.2
 pytz==2021.1
 pytzdata==2020.1
 pyudev==0.22.0
@@ -939,6 +945,7 @@ requests-oauth==0.4.1
 requests-oauthlib==1.3.0
 requests-toolbelt==0.9.1
 requests==2.25.1
+requests==2.26.0
 responses==0.13.3
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
@@ -1068,7 +1075,7 @@ toml==0.10.2
 toonapi==0.2.0
 total-connect-client==0.57
 tp-connected==0.0.4
-tqdm==4.61.2
+tqdm==4.62.0
 transmissionrpc==0.11
 TravisPy==0.3.5
 tuyaha==0.0.10
@@ -1144,7 +1151,7 @@ xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
 xknx==0.18.9
-xmlschema==1.6.4
+xmlschema==1.7.0
 xmltodict==0.12.0
 xs1-api-client==3.0.0
 yalesmartalarmclient==0.3.4

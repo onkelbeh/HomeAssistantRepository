@@ -66,6 +66,7 @@
     <flag name="aurora_abb_powerone">This implements a direct RS485 connection to a solar inverter in the PVI-3.0/3.6</flag>
     <flag name="avea">Library for Elgato Avea bulbs</flag>
     <flag name="avion">Support for the Avi-on Bluetooth dimmer switch Avi-on</flag>
+    <flag name="avri">Query the next scheduled waste pickup and the type of waste from Avri</flag>
     <flag name="awair">Library to integrate the Awair GraphQL API into Home Assistant</flag>
     <flag name="aws">Interact with Amazon Web Services</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
@@ -101,6 +102,7 @@
     <flag name="bt_smarthub">Presence detection by looking at BT Smart Hub based routers</flag>
     <flag name="buienradar">Integrate buienradar weather data into Home Assistant</flag>
     <flag name="caldav">Integrate a CalDAV (RFC4791) calendar in Home Assistant</flag>
+    <flag name="camera"/>
     <flag name="canary">Allows you to integrate your Canary devices from Home Assistant</flag>
     <flag name="cast">Let Home Assitant talk to Google Chromecast</flag>
     <flag name="channels">Allows you to control Channels from Home Assistant</flag>
@@ -148,6 +150,8 @@
     <flag name="discogs">Discogs Client for Home Assistant</flag>
     <flag name="discord">Send messages to the user using Discord from Home Assistant</flag>
     <flag name="discovery">Automatically configure zeroconf/mDNS and UPnP devices in Home Assistant</flag>
+    <flag name="dlib_face_detect">Image processing platform for Home Assistant</flag>
+    <flag name="dlib_face_identify">image processing platform allows you to use the Dlib</flag>
     <flag name="dlink">Allows you to control the state of your D-Link Wi-Fi Smart Plugs</flag>
     <flag name="dlna_dmr">Allows you to control a DLNA Digital Media Renderer</flag>
     <flag name="dnsip">will expose an IP address, fetched via DNS resolution, as its value</flag>
@@ -360,6 +364,7 @@
     <flag name="lg_soundbar">allows you to control LG Soundbars from Home Assistant</flag>
     <flag name="life360">detect presence using the unofficial API of Life360</flag>
     <flag name="lifx">The lifx integration allows you to integrate your LIFX into Home Assistant</flag>
+    <flag name="lifx_legacy">The lifx integration allows you to integrate your LIFX into Home Assistant</flag>
     <flag name="lightwave">WiFi link for controlling Lightwave lights, switches and TRVs</flag>
     <flag name="limitlessled">control your LimitlessLED lights from within Home Assistant</flag>
     <flag name="linode">allows you to access the information about your Linode systems</flag>
@@ -730,6 +735,7 @@
     <flag name="usb">USB Discovery integration will watch the host for USB devices</flag>
     <flag name="uscis">updates on your USCIS case using your case/receipt number</flag>
     <flag name="usgs_earthquakes_feed">a GeoJSON feed provided by the U.S. Geological Survey</flag>
+    <flag name="utility_meter"/>
     <flag name="uvc">allows you to integrate UniFi Video Camera (UVC) into Home Assistant</flag>
     <flag name="vallox">control any Vallox ventilation unit</flag>
     <flag name="vasttrafik">traveling details for the larger Göteborg area in Sweden from the Västtrafik</flag>
