@@ -61,7 +61,7 @@ aiopylgtv==0.4.0
 aiorecollect==1.0.8
 aioshelly==0.6.4
 aiosqlite==0.17.0
-aioswitcher==2.0.4
+aioswitcher==2.0.5
 aiosyncthing==0.5.1
 aiotractive==0.5.2
 aiounifi==26
@@ -525,6 +525,7 @@ nad-receiver==0.2.0
 namespace-google==1
 namespace-ruamel==1
 namespace-zope==1
+natsort==7.1.1
 nclib==0.8.3
 ncurses==6.2
 ndms2-client==0.1.1

@@ -102,7 +102,7 @@
     <flag name="bt_smarthub">Presence detection by looking at BT Smart Hub based routers</flag>
     <flag name="buienradar">Integrate buienradar weather data into Home Assistant</flag>
     <flag name="caldav">Integrate a CalDAV (RFC4791) calendar in Home Assistant</flag>
-    <flag name="camera"/>
+    <flag name="camera">The camera integration allows you to use IP cameras with Home Assistant</flag>
     <flag name="canary">Allows you to integrate your Canary devices from Home Assistant</flag>
     <flag name="cast">Let Home Assitant talk to Google Chromecast</flag>
     <flag name="channels">Allows you to control Channels from Home Assistant</flag>
@@ -735,7 +735,7 @@
     <flag name="usb">USB Discovery integration will watch the host for USB devices</flag>
     <flag name="uscis">updates on your USCIS case using your case/receipt number</flag>
     <flag name="usgs_earthquakes_feed">a GeoJSON feed provided by the U.S. Geological Survey</flag>
-    <flag name="utility_meter"/>
+    <flag name="utility_meter">integration provides functionality to track consumptions of various utilities</flag>
     <flag name="uvc">allows you to integrate UniFi Video Camera (UVC) into Home Assistant</flag>
     <flag name="vallox">control any Vallox ventilation unit</flag>
     <flag name="vasttrafik">traveling details for the larger Göteborg area in Sweden from the Västtrafik</flag>

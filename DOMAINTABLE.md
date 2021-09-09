@@ -88,7 +88,7 @@
 |bt_smarthub|Presence detection by looking at BT Smart Hub based routers|N|Y|Y|0.82|
 |buienradar|Integrate buienradar weather data into Home Assistant|N|Y|Y|0.47|
 |caldav|Integrate a CalDAV (RFC4791) calendar in Home Assistant|Y|Y|Y|0.60|
-|camera|None|N|N|Y|0.7|
+|camera|The camera integration allows you to use IP cameras with Home Assistant|N|N|Y|0.7|
 |canary|Allows you to integrate your Canary devices from Home Assistant|N|Y|Y|0.60|
 |cast|Let Home Assitant talk to Google Chromecast|Y|Y|Y||
 |channels|Allows you to control Channels from Home Assistant|N|N|Y|0.65|
@@ -721,7 +721,7 @@
 |usb|USB Discovery integration will watch the host for USB devices|N|N|Y|2021.9|
 |uscis|updates on your USCIS case using your case/receipt number|N|N|Y|0.68|
 |usgs_earthquakes_feed|a GeoJSON feed provided by the U.S. Geological Survey|N|N|Y|0.84|
-|utility_meter|None|N|N|Y|0.87|
+|utility_meter|integration provides functionality to track consumptions of various utilities|Y|Y|Y|0.87|
 |uvc|allows you to integrate UniFi Video Camera (UVC) into Home Assistant|N|N|Y|0.13|
 |vallox|control any Vallox ventilation unit|N|Y|Y|0.96|
 |vasttrafik|traveling details for the larger Göteborg area in Sweden from the Västtrafik|N|N|Y|0.30|
@@ -788,5 +788,5 @@
 |zhong_hong|lets you control Zhonghong HVAC Gateway Controller thermostats|N|Y|Y|0.72|
 |ziggo_mediabox_xl|allows you to control a Ziggo Mediabox XL|N|N|Y|0.60|
 |zoneminder|Support for ZoneMinder Cameras|N|Y|Y|0.31|
-|zwave|Support for Z-Wave Devices (uncomplete)|Y|Y|Y|0.7|
+|zwave|Support for Z-Wave Devices (uncomplete)|N|Y|Y|0.7|
 |zwave_js|control a Z-Wave network via the Z-Wave JS driver|Y|Y|Y|2021.2|

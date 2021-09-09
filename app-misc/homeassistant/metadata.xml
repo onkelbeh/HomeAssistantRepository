@@ -255,6 +255,7 @@
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="unifi_direct">detect presence by looking at devices connected to a UniFi AP</flag>
     <flag name="upnp">support UPnP/Internet Gateway Device (IGD) Protocol</flag>
+    <flag name="utility_meter">integration provides functionality to track consumptions of various utilities</flag>
     <flag name="vallox">control any Vallox ventilation unit</flag>
     <flag name="velbus">supports the Velbus USB, serial and TCP/IP gateway</flag>
     <flag name="velux">allows you to connect to a Velux KLF 200 interface</flag>

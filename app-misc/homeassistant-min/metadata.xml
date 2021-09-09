@@ -80,6 +80,7 @@
     <flag name="tile">API for Tile Bluetooth trackers</flag>
     <flag name="tplink">control your TP-Link Smart Home Devices</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
+    <flag name="utility_meter">integration provides functionality to track consumptions of various utilities</flag>
     <flag name="version">display the current Home Assistant versions</flag>
     <flag name="wake_on_lan">enables the ability to send magic packets to Wake on LAN capable devices</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
@@ -88,7 +89,6 @@
     <flag name="yamaha">Library for Yamaha RX-* Receivers</flag>
     <flag name="yamaha_musiccast">add support for Yamaha MusicCast devices</flag>
     <flag name="zeroconf">will scan the network for supported devices and services</flag>
-    <flag name="zwave">Support for Z-Wave Devices (uncomplete)</flag>
     <flag name="zwave_js">control a Z-Wave network via the Z-Wave JS driver</flag>
   </use>
 </pkgmetadata>
