@@ -1,8 +1,8 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
-PYTHON_COMPAT=( python3_{6,7,8} )
+EAPI="7"
+PYTHON_COMPAT=( python3_{8..10} )
 DISTUTILS_USE_SETUPTOOLS=rdepend
 
 inherit distutils-r1
@@ -29,7 +29,7 @@ DEPEND="
 		>=dev-python/testscenarios-0.4[${PYTHON_USEDEP}]
 		>=dev-python/testtools-2.2.0[${PYTHON_USEDEP}]
 		>=dev-python/oslotest-3.2.0[${PYTHON_USEDEP}]
-		>=dev-python/beautifulsoup-4.6.0[${PYTHON_USEDEP}]
+		>=dev-python/beautifulsoup4-4.6.0[${PYTHON_USEDEP}]
 		>=dev-python/pylint-1.4.5[${PYTHON_USEDEP}]
 	)"
 RDEPEND="

@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -17,12 +17,12 @@ KEYWORDS="~amd64 ~arm ~x86"
 IUSE="examples test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="
-	>=dev-python/beautifulsoup-4.0[${PYTHON_USEDEP}]
-	>=dev-python/requests-2.0[${PYTHON_USEDEP}]
+DOCS="README.rst"
+
+RDEPEND=">=dev-python/beautifulsoup4-4.7[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.22[${PYTHON_USEDEP}]
 	>=dev-python/six-1.4[${PYTHON_USEDEP}]
-	dev-python/lxml[${PYTHON_USEDEP}]
-"
+	dev-python/lxml[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		${RDEPEND}
@@ -30,8 +30,7 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-httpbin[${PYTHON_USEDEP}]
 		dev-python/pytest-mock[${PYTHON_USEDEP}]
-	)
-"
+	)"
 
 distutils_enable_sphinx docs
 

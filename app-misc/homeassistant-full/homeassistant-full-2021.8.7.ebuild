@@ -669,7 +669,7 @@ RDEPEND="${RDEPEND}
 	samsungtv? ( ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-1.6.0[${PYTHON_USEDEP}] ~dev-python/wakeonlan-2.0.1[${PYTHON_USEDEP}] )
 	satel_integra? ( ~dev-python/satel-integra-0.3.4[${PYTHON_USEDEP}] )
 	schluter? ( ~dev-python/py-schluter-0.1.7[${PYTHON_USEDEP}] )
-	scrape? ( ~dev-python/beautifulsoup-4.9.3[${PYTHON_USEDEP}] )
+	scrape? ( ~dev-python/beautifulsoup4-4.9.3[${PYTHON_USEDEP}] )
 	screenlogic? ( ~dev-python/screenlogicpy-0.4.1[${PYTHON_USEDEP}] )
 	scsgate? ( ~dev-python/scsgate-0.1.0[${PYTHON_USEDEP}] )
 	season? ( ~dev-python/ephem-3.7.7.0[${PYTHON_USEDEP}] )

@@ -156,7 +156,7 @@ RDEPEND="${RDEPEND}
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	ring? ( ~dev-python/ring-doorbell-0.6.2[${PYTHON_USEDEP}] )
 	samsungtv? ( ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-1.6.0[${PYTHON_USEDEP}] ~dev-python/wakeonlan-2.0.1[${PYTHON_USEDEP}] )
-	scrape? ( ~dev-python/beautifulsoup-4.9.3[${PYTHON_USEDEP}] )
+	scrape? ( ~dev-python/beautifulsoup4-4.9.3[${PYTHON_USEDEP}] )
 	shelly? ( ~dev-python/aioshelly-0.6.4[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.4[${PYTHON_USEDEP}] )
 	snmp? ( ~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}] )

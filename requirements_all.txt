@@ -123,7 +123,7 @@ basicmodem==0.7
 batinfo==0.4.2
 bcrypt==3.1.7
 beacontools==1.2.3
-beautifulsoup==4.9.3
+beautifulsoup4==4.9.3
 bellows==0.27.0
 bimmer-connected==0.7.20
 bitarray==2.3.2

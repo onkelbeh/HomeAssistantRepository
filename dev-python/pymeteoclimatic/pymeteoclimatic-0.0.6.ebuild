@@ -19,7 +19,7 @@ IUSE="test"
 DOCS="README.md"
 
 RDEPEND="dev-python/lxml[${PYTHON_USEDEP}]
-	dev-python/beautifulsoup[${PYTHON_USEDEP}]"
+	dev-python/beautifulsoup4[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

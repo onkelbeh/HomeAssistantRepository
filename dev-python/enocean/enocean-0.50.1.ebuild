@@ -17,7 +17,7 @@ KEYWORDS="amd64 arm x86 amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND=">=dev-python/pyserial-3.0[${PYTHON_USEDEP}]
-	>=dev-python/beautifulsoup-4.3.2[${PYTHON_USEDEP}]"
+	>=dev-python/beautifulsoup4-4.3.2[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

@@ -19,7 +19,7 @@ IUSE="test"
 DOCS=""
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/beautifulsoup:4[${PYTHON_USEDEP}]"
+	dev-python/beautifulsoup4[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
