@@ -25,8 +25,10 @@ RDEPEND="${DEPEND}
 	$(python_gen_cond_dep '
 		>dev-python/bottle-0.12[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/click-5[${PYTHON_MULTI_USEDEP}]
-		<dev-python/click-8[${PYTHON_MULTI_USEDEP}]
+		<dev-python/click-9[${PYTHON_MULTI_USEDEP}]
 		dev-python/colorama[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/marshmallow-2.20.5[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/pyelftools-0.27[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/pyserial-3[${PYTHON_MULTI_USEDEP}]
 		<dev-python/pyserial-4[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/requests-2.4[${PYTHON_MULTI_USEDEP}]
@@ -34,10 +36,15 @@ RDEPEND="${DEPEND}
 		<dev-python/semantic_version-3[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/tabulate-0.8.3[${PYTHON_MULTI_USEDEP}]
 		<dev-python/tabulate-1[${PYTHON_MULTI_USEDEP}]
-		>=dev-python/marshmallow-2.20.5[${PYTHON_MULTI_USEDEP}]
-		~dev-python/aiofiles-0.6.0[${PYTHON_MULTI_USEDEP}]
-		~dev-python/ajsonrpc-1.1.0[${PYTHON_MULTI_USEDEP}]
-		~dev-python/starlette-0.14.2[${PYTHON_MULTI_USEDEP}]
-		~dev-python/uvicorn-0.13.4[${PYTHON_MULTI_USEDEP}]
-		~dev-python/wsproto-1.0.0[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/aiofiles-0.7.0[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/ajsonrpc-1.1.0[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/starlette-0.16.0[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/uvicorn-0.15.0[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/wsproto-1.0.0[${PYTHON_MULTI_USEDEP}]
+		dev-python/zeroconf[${PYTHON_MULTI_USEDEP}]
 	')"
+
+src_prepare() {
+	sed -i -e 's/"zeroconf==0.36.*"/"zeroconf"/' setup.py || die "zeroconf version helper failed!"
+	eapply_user
+}
