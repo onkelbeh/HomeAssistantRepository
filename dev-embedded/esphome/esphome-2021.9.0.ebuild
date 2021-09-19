@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 DISTUTILS_SINGLE_IMPL=1
 
 inherit readme.gentoo-r1 distutils-r1
@@ -17,35 +17,36 @@ else
 	MY_P=${P/_beta/b}
 	MY_PV=${PV/_beta/b}
 	SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
-	#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
 	S="${WORKDIR}/${MY_P}/"
 fi
 
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
 HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-#KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 ~arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="+server test"
+
+DOCS="README.md"
 
 RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-		~dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
-		~dev-python/pyyaml-5.4.1[${PYTHON_USEDEP}]
-		~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
-		~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
-		server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
-		~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
-		~dev-python/pytz-2021.1[${PYTHON_USEDEP}]
-		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-		server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
-		~dev-embedded/platformio-5.2.0
-		~dev-embedded/esptool-3.1[${PYTHON_USEDEP}]
-		~dev-python/click-8.0.1[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20210908.0[${PYTHON_USEDEP}]
-		~dev-python/aioesphomeapi-9.1.0[${PYTHON_USEDEP}]
+	  ~dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
+	  ~dev-python/pyyaml-5.4.1[${PYTHON_USEDEP}]
+	  ~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
+	  ~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
+	  server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
+	  ~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
+	  ~dev-python/pytz-2021.1[${PYTHON_USEDEP}]
+	  ~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
+	  ~dev-embedded/platformio-5.2.0
+	  ~dev-embedded/esptool-3.1[${PYTHON_USEDEP}]
+	  dev-python/click[${PYTHON_USEDEP}]
+	  ~dev-embedded/esphome-dashboard-20210908.0[${PYTHON_USEDEP}]
+	  ~dev-python/aioesphomeapi-9.0.0[${PYTHON_USEDEP}]
 	')"
 
 BDEPEND="
@@ -71,12 +72,8 @@ logging is to: /var/log/${PN}/{dashboard,warnings}.log
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
-DOCS="README.md"
-
 src_prepare() {
-	# Make it easy (again)
-	cat requirements.txt | cut -d "=" -f1 > requirements_new.txt
-	mv requirements_new.txt requirements.txt
+	sed "s/click==7.1.2/click/g" -i requirements.txt || die
 	eapply_user
 }
 
@@ -94,13 +91,13 @@ python_install_all() {
 	fi
 }
 
-python_test() {
-	nosetests --verbose || die
-	py.test -v -v || die
-}
-
 pkg_postinst() {
 	if use server; then
 		readme.gentoo_print_elog
 	fi
+}
+
+python_test() {
+	nosetests --verbose || die
+	py.test -v -v || die
 }
