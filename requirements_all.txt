@@ -61,7 +61,7 @@ aiopylgtv==0.4.0
 aiorecollect==1.0.8
 aioshelly==0.6.4
 aiosqlite==0.17.0
-aioswitcher==2.0.5
+aioswitcher==2.0.6
 aiosyncthing==0.5.1
 aiotractive==0.5.2
 aiounifi==26
@@ -336,8 +336,8 @@ graphql-subscription-manager==0.4.0
 greeclimate==0.11.8
 greeneye-monitor==2.1
 greenwavereality==0.5.1
-grep==3.5
-growattServer==1.0.1
+grep==3.7
+growattServer==1.1.0
 grpc-google-iam-v1==0.12.3
 grpcio==1.31.0
 gstreamer-player==1.1.2
@@ -374,7 +374,7 @@ horimote==0.4.1
 hpack==4.0.0
 html5lib==1.1
 httmock==1.4.0
-httpcore==0.13.6
+httpcore==0.13.7
 httplib2==0.19.0
 httplib2==0.19.1
 httpsig==1.3.0
@@ -420,13 +420,10 @@ Js2Py==0.66
 jsonpath-ng==1.5.2
 jsonpickle==2.0.0
 jsonpointer==2.1
-jsonrpc-async==2.0.0
-jsonrpc-base==2.0.0
-jsonrpc-websocket==3.0.0
 jsonschema==3.2.0
 kaiterra-async-client==0.0.2
 keba-kecontact==1.1.0
-keyring==23.0.1
+keyring==23.1.0
 kiwiki-client==0.1.1
 konnected==1.2.0
 korean-lunar-calendar==0.2.1
@@ -653,7 +650,7 @@ pycarwings2==2.11
 pyCEC==0.5.1
 pycfdns==1.2.1
 pychannels==1.0.0
-pychromecast==9.2.0
+pychromecast==9.2.1
 pycketcasts==1.0.0
 pyclimacell==0.18.2
 pycmus==0.1.1
@@ -726,7 +723,7 @@ pyjwt==1.7.1
 pyjwt==2.1.0
 pykira==0.1.1
 pykmtronic==0.3.0
-pykodi==0.2.5
+pykodi==0.2.6
 pykrakenapi==0.1.8
 pykulersky==0.5.2
 pykwb==0.0.8
@@ -772,7 +769,7 @@ pynzbgetapi==0.2.0
 pyobihai==1.3.1
 pyombi==0.1.10
 pyopenssl==20.0.1
-pyopenuv==2.2.0
+pyopenuv==2.2.1
 pyopnsense==0.2.0
 pyoppleio==1.0.5
 PyOTA==2.0.5
@@ -852,7 +849,7 @@ python-eq3bt==0.1.11
 python-etherscan-api==0.0.3
 python-family-hub-local==0.0.2
 python-forecastio==1.4.0
-python-gammu==3.1
+python-gammu==3.2.3
 python-gc100==1.0.3_alpha0
 python-gitlab==1.6.0
 python-hpilo==4.3
@@ -1043,7 +1040,7 @@ surepy==0.7.0
 swisshydrodata==0.1.0
 synology-srm==0.2.0
 systembridge==2.0.6
-systemd==249.2
+systemd==249.4
 sysvinit==2.99
 tabulate==0.8.9
 tahoma-api==0.0.16
@@ -1083,11 +1080,12 @@ txdbus==1.1.2
 typing-extensions==3.10.0.0
 typing-inspect==0.7.1
 tzlocal==2.1
+tzlocal==3.0
 ua-parser==0.10.0
 udev==217
 udev==249
 uEagle==0.0.2
-ujson==4.0.2
+ujson==4.1.0
 unasync==0.5.0
 unidecode==1.2.0
 unifiled==0.11
