@@ -18,7 +18,8 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND=""
+RDEPEND=">=dev-python/anyio-3.0.0[${PYTHON_USEDEP}]
+	<dev-python/anyio-4.0.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
