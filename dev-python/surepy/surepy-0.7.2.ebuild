@@ -16,11 +16,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-DOCS=""
+DOCS="README.md"
 
 RDEPEND=">=dev-python/async_timeout-3.0.1[${PYTHON_USEDEP}]
-	>=dev-python/aiohttp-3.6.3[${PYTHON_USEDEP}]
-	>=dev-python/requests-2.24.0[${PYTHON_USEDEP}]"
+	>=dev-python/click-7.1.2[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.24.0[${PYTHON_USEDEP}]
+	>=dev-python/rich-10.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/setuptools_scm[${PYTHON_USEDEP}]
