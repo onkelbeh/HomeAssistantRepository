@@ -19,6 +19,7 @@ IUSE="test"
 DOCS="README.rst"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/httpx[${PYTHON_USEDEP}]
 	dev-python/argcomplete[${PYTHON_USEDEP}]
 	dev-python/urllib3[${PYTHON_USEDEP}]
 	dev-python/typing-extensions[${PYTHON_USEDEP}]"
