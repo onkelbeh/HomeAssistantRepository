@@ -27,6 +27,7 @@
     <flag name="agent_dvr">Agent DVR is a free* software DVR solution</flag>
     <flag name="airly">Uses the Airly web service as a source for air quality data</flag>
     <flag name="airnow">AirNow web service as a source for air quality data</flag>
+    <flag name="airthings"/>
     <flag name="airtouch4">control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller</flag>
     <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
     <flag name="aladdin_connect">The aladdin_connect cover platform lets you control Genie Aladdin Connect garage</flag>
@@ -35,6 +36,7 @@
     <flag name="alpha_vantage">The alpha_vantage sensor platform uses Alpha Vantage to monitor the stock market</flag>
     <flag name="amazon_polly">Text-to-speech platform that works with Amazon Polly</flag>
     <flag name="ambee">Asynchronous Python client for the Ambee API</flag>
+    <flag name="amberelectric">Interface to the Amber Electric API, allowing you to download current and foreca</flag>
     <flag name="ambiclimate">Communicate with Ambiclimate devices</flag>
     <flag name="ambient_station">Retrieves local weather information from Ambient Weather</flag>
     <flag name="amcrest">Integrate your Amcrest or Dahua IP camera</flag>
@@ -127,6 +129,7 @@
     <flag name="coronavirus">Add sensors for COVID-19 infections from Johns Hopkins University</flag>
     <flag name="cppm_tracker">Detect presence by looking at connected devices to Aruba Clearpass</flag>
     <flag name="cpuspeed">The cpuspeed sensor platform to allow you to monitor the current CPU speed</flag>
+    <flag name="crownstone"/>
     <flag name="cups">Using the open source printing system CUPS to show details about your printers</flag>
     <flag name="daikin">Integrate Daikin wireless controllers into Home Assistant</flag>
     <flag name="danfoss_air">The danfoss_air integration accesses information from your Danfoss Air HRV unit</flag>
@@ -764,9 +767,11 @@
     <flag name="waterfurnace">Python interface for waterfurnace geothermal systems</flag>
     <flag name="watson_iot">link Home Assistant with an IBM Watson IoT Platform instance</flag>
     <flag name="watson_tts">text-to-speech platform that works with IBM Watson Cloud</flag>
+    <flag name="watttime"/>
     <flag name="waze_travel_time">waze_travel_time sensor provides travel time from the Waze</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
+    <flag name="whirlpool"/>
     <flag name="whois">perform daily WHOIS lookups</flag>
     <flag name="wiffi">allows you to connect your STALL WIFFI devices directly</flag>
     <flag name="wilight">The wilight integration is to integrate WiLight devices with Home Assistant</flag>

@@ -13,6 +13,7 @@
 |agent_dvr|Agent DVR is a free* software DVR solution|N|Y|Y|0.110|
 |airly|Uses the Airly web service as a source for air quality data|Y|Y|Y|0.101|
 |airnow|AirNow web service as a source for air quality data|N|N|Y|2021.2|
+|airthings|A python3 library to communicate with Aws|N|N|Y|2021.10.0b2|
 |airtouch4|control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller|N|N|Y|2021.9.0b1|
 |airvisual|Airvisual sensor platform queries the AirVisual cloud API for air quality data|Y|Y|Y|0.53|
 |aladdin_connect|The aladdin_connect cover platform lets you control Genie Aladdin Connect garage|N|Y|Y|0.75|
@@ -21,6 +22,7 @@
 |alpha_vantage|The alpha_vantage sensor platform uses Alpha Vantage to monitor the stock market|Y|Y|Y|0.60|
 |amazon_polly|Text-to-speech platform that works with Amazon Polly|N|N|Y|0.37|
 |ambee|Asynchronous Python client for the Ambee API|N|N|Y|2021.7|
+|amberelectric|Interface to the Amber Electric API, allowing you to download current and foreca|N|N|Y|2021.10.0b2|
 |ambiclimate|Communicate with Ambiclimate devices|N|Y|Y|0.93|
 |ambient_station|Retrieves local weather information from Ambient Weather|N|Y|Y|0.85|
 |amcrest|Integrate your Amcrest or Dahua IP camera|N|Y|Y|0.49|
@@ -113,6 +115,7 @@
 |coronavirus|Add sensors for COVID-19 infections from Johns Hopkins University|Y|Y|Y|0.106|
 |cppm_tracker|Detect presence by looking at connected devices to Aruba Clearpass|N|N|Y|0.90|
 |cpuspeed|The cpuspeed sensor platform to allow you to monitor the current CPU speed|N|N|Y||
+|crownstone|None|N|N|Y|2021.10.0b2|
 |cups|Using the open source printing system CUPS to show details about your printers|N|N|Y|0.32|
 |daikin|Integrate Daikin wireless controllers into Home Assistant|N|Y|Y|0.59|
 |danfoss_air|The danfoss_air integration accesses information from your Danfoss Air HRV unit|N|N|Y|0.87|
@@ -702,7 +705,7 @@
 |travisci|integrate the test build results reported by Travis-CI working|N|N|Y|0.56|
 |trend|sensors which show the trend of numeric state orstate_attributes|N|N|Y|0.28|
 |tts|Audio metadata tag reader and writer implemented in pure Python|N|N|Y|0.35|
-|tuya|integrate all Tuya Smart related platforms|N|Y|Y|0.74|
+|tuya|integrate all Tuya Smart related platforms|N|Y|Y||
 |twentemilieu|allows you to track the next scheduled waste pickups by Twente Milieu|N|N|Y|0.97|
 |twilio|enables the sending of notifications via SMS and the creation of calls|N|N|Y|0.40|
 |twinkly|control Twinkly LED string from Home Assistant|N|N|Y|2020.12|
@@ -750,9 +753,11 @@
 |waterfurnace|Python interface for waterfurnace geothermal systems|N|N|Y|0.62|
 |watson_iot|link Home Assistant with an IBM Watson IoT Platform instance|N|N|Y|0.72|
 |watson_tts|text-to-speech platform that works with IBM Watson Cloud|N|N|Y|0.94|
+|watttime|Cloud based Climate Trace Service|N|N|Y|2021.10.0b2|
 |waze_travel_time|waze_travel_time sensor provides travel time from the Waze|N|Y|Y|0.67|
 |webostv|allows you to control a LG webOS Smart TV|N|Y|Y|0.18|
 |wemo|discover and control WeMo devices|Y|Y|Y||
+|whirlpool|None|N|N|Y|2021.10.0b2|
 |whois|perform daily WHOIS lookups|Y|Y|Y|0.57|
 |wiffi|allows you to connect your STALL WIFFI devices directly|N|N|Y|0.110|
 |wilight|The wilight integration is to integrate WiLight devices with Home Assistant|N|N|Y|0.115|
