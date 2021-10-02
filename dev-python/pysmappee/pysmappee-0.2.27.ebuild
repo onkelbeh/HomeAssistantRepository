@@ -22,7 +22,8 @@ RDEPEND=">=dev-python/cachetools-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.23.0[${PYTHON_USEDEP}]
-	>=dev-python/requests-oauthlib-1.3.0[${PYTHON_USEDEP}]"
+	>=dev-python/requests-oauthlib-1.3.0[${PYTHON_USEDEP}]
+	>=dev-python/schedule-1.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
