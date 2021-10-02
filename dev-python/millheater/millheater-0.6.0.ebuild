@@ -18,8 +18,9 @@ IUSE="test"
 
 DOCS=""
 
-RDEPEND=">=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
-	>=dev-python/async_timeout-1.4.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
+	>=dev-python/async_timeout-1.4.0[${PYTHON_USEDEP}]
+	dev-python/cryptography[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
