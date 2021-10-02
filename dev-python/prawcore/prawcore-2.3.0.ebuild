@@ -3,22 +3,22 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="PRAW, an acronym for Python Reddit API Wrapper, is a python package that allows for simple access to reddit's API."
-HOMEPAGE="https://praw.readthedocs.org/ https://pypi.org/project/praw/"
+DESCRIPTION="Low-level communication layer for PRAW 4+."
+HOMEPAGE="https://github.com/praw-dev/prawcore https://pypi.org/project/prawcore/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD-2"
+LICENSE="Simplified BSD License"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/websocket-client-0.54.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/requests-2.6.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
