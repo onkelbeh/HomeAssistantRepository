@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -18,13 +18,17 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND=""
+RDEPEND=">=dev-python/dnspython-2.1.0[${PYTHON_USEDEP}]
+	dev-python/ifaddr[${PYTHON_USEDEP}]
+	>=dev-python/pyroute2-0.5.18[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
