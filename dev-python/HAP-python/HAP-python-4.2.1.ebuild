@@ -13,14 +13,12 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 amd64-linux ~x86-linux"
 IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/curve25519-donna[${PYTHON_USEDEP}]
-	dev-python/ed25519[${PYTHON_USEDEP}]
-	dev-python/cryptography[${PYTHON_USEDEP}]
+RDEPEND="dev-python/cryptography[${PYTHON_USEDEP}]
 	dev-python/zeroconf[${PYTHON_USEDEP}]
 	dev-python/h11[${PYTHON_USEDEP}]
 	dev-python/base36[${PYTHON_USEDEP}]
