@@ -19,7 +19,7 @@ IUSE="test"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
-	>=dev-python/certifi[${PYTHON_USEDEP}]"
+	dev-python/certifi[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
