@@ -9,7 +9,7 @@
     <remote-id type="pypi">cryptography</remote-id>
     <maintainer status="unknown">
       <email>cryptography-dev@python.org</email>
-      <name>The cryptography developers</name>
+      <name>The Python Cryptographic Authority and individual contributors</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
