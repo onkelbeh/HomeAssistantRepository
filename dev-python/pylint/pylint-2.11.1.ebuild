@@ -1,11 +1,10 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 PYTHON_REQ_USE="threads(+)"
-DISTUTILS_USE_SETUPTOOLS=rdepend
 
 inherit distutils-r1
 
@@ -18,20 +17,18 @@ SRC_URI="
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 ~ia64 ppc ppc64 sparc x86"
+KEYWORDS="~alpha amd64 arm arm64 ~ia64 ~m68k ppc ppc64 ~riscv sparc x86"
 IUSE="examples"
 
 RDEPEND="
-	<dev-python/astroid-2.7[${PYTHON_USEDEP}]
-	>=dev-python/astroid-2.5.6[${PYTHON_USEDEP}]
+	<dev-python/astroid-2.8[${PYTHON_USEDEP}]
+	>=dev-python/astroid-2.7.2[${PYTHON_USEDEP}]
 	>=dev-python/isort-4.2.5[${PYTHON_USEDEP}]
 	<dev-python/isort-6[${PYTHON_USEDEP}]
 	>=dev-python/mccabe-0.6[${PYTHON_USEDEP}]
 	<dev-python/mccabe-0.7[${PYTHON_USEDEP}]
+	>=dev-python/platformdirs-2.2.0[${PYTHON_USEDEP}]
 	>=dev-python/toml-0.7.1[${PYTHON_USEDEP}]
-"
-BDEPEND="
-	dev-python/setuptools_scm[${PYTHON_USEDEP}]
 "
 
 PATCHES=(
@@ -41,19 +38,13 @@ PATCHES=(
 distutils_enable_sphinx doc --no-autodoc
 distutils_enable_tests pytest
 
-export SETUPTOOLS_SCM_PRETEND_VERSION=${PV}
-
 python_test() {
-	local skipped_tests=(
+	local EPYTEST_DESELECT=(
 		# No need to run the benchmarks
 		tests/benchmark/test_baseline_benchmarks.py
-		# Fails when graphviz is installed (?!)
-		tests/test_import_graph.py::test_missing_graphviz
-		# TODO
-		'tests/lint/unittest_expand_modules.py::test_expand_modules[files_or_modules1-expected1]'
 	)
 	# Specify the test directory explicitly to avoid import file mismatches
-	epytest tests ${skipped_tests[@]/#/--deselect }
+	epytest tests
 }
 
 python_install_all() {
