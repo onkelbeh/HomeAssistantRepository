@@ -27,7 +27,7 @@
     <flag name="agent_dvr">Agent DVR is a free* software DVR solution</flag>
     <flag name="airly">Uses the Airly web service as a source for air quality data</flag>
     <flag name="airnow">AirNow web service as a source for air quality data</flag>
-    <flag name="airthings"/>
+    <flag name="airthings">A python3 library to communicate with Aws</flag>
     <flag name="airtouch4">control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller</flag>
     <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
     <flag name="aladdin_connect">The aladdin_connect cover platform lets you control Genie Aladdin Connect garage</flag>
@@ -767,7 +767,7 @@
     <flag name="waterfurnace">Python interface for waterfurnace geothermal systems</flag>
     <flag name="watson_iot">link Home Assistant with an IBM Watson IoT Platform instance</flag>
     <flag name="watson_tts">text-to-speech platform that works with IBM Watson Cloud</flag>
-    <flag name="watttime"/>
+    <flag name="watttime">Cloud based Climate Trace Service</flag>
     <flag name="waze_travel_time">waze_travel_time sensor provides travel time from the Waze</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>
     <flag name="wemo">discover and control WeMo devices</flag>

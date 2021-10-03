@@ -128,7 +128,7 @@ baselayout==2.7
 batinfo==0.4.2
 bcrypt==3.1.7
 beacontools==1.2.3
-beautifulsoup4==4.9.3
+beautifulsoup4==4.10.0
 bellows==0.28.0
 bimmer-connected==0.7.20
 bitarray==2.3.2
@@ -262,6 +262,7 @@ elementpath==2.2.3
 elgato==2.1.1
 eliqonline==1.2.2
 elkm1-lib==1.0.0
+emoji==1.5.0
 emulated-roku==0.2.1
 enocean==0.50.1
 entrypoints==0.3
@@ -374,7 +375,7 @@ hole==0.5.1
 holidays==0.11.3.1
 home-assistant-cli==0.9.4
 home-assistant-cli==9999
-home-assistant-frontend==20210930.0
+home-assistant-frontend==20211002.0
 homeassistant
 homeassistant-pyozw==0.1.10
 homeconnect==0.6.3
@@ -448,7 +449,7 @@ libcrypt==1
 libcst==0.3.13
 libfastjson==0.99.9
 libffi==3.3
-libgudev==234
+libgudev==237
 libiconv==0
 libiconv==1.15
 libidn2==2.3.2
@@ -552,7 +553,7 @@ nsw-fuel-api-client==1.1.0
 nuheat==0.3.0
 numato-gpio==0.10.0
 numexpr==2.7.3
-numpy==1.21.1
+numpy==1.21.2
 oasatelematics==0.3
 oauth2client==4.0.0
 oauth2client==4.1.3
@@ -706,7 +707,7 @@ pyfireservicerota==0.0.43
 pyflexit==0.3
 pyflic==2.0.3
 PyFlick==0.0.2
-PyFlume==0.5.5
+PyFlume==0.6.5
 pyflunearyou==2.0.2
 pyfnip==0.2
 pyforked-daapd==0.1.11
@@ -776,7 +777,7 @@ pynetgear==0.7.0
 pynetio==0.1.9.1
 pynuki==1.4.1
 pynut2==2.1.2
-pynws==1.3.0
+pynws==1.3.1
 pynx584==0.5
 pynzbgetapi==0.2.0
 pyobihai==1.3.1
@@ -795,7 +796,7 @@ pypca==0.0.7
 pypck==0.7.10
 pypjlink2==1.2.1
 pyplaato==0.0.15
-pypoint==2.1.0
+pypoint==2.2.0
 pyprof2calltree==1.4.5
 pyprosegur==0.0.5
 pyps4-2ndscreen==1.2.0
@@ -1173,7 +1174,7 @@ youtube_dl==2021.4.26
 zbar==0.23.1
 zeep==4.1.0
 zengge==0.2
-zeroconf==0.36.2
+zeroconf==0.36.7
 zha-quirks==0.0.62
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
