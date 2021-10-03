@@ -26,6 +26,7 @@ RDEPEND=">=dev-python/websockets-9.1[${PYTHON_USEDEP}]
 		 <dev-python/construct-3.0.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/wheel[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/mock[${PYTHON_USEDEP}]
