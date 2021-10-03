@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Python module for Rollease Acmeda Automate integration."
 HOMEPAGE="https://github.com/atmurray/aiopulse https://pypi.org/project/aiopulse/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/atmurray/${PN}/archive/refs/tags/v${PV}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
