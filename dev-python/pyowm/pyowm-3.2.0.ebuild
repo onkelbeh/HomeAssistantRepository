@@ -22,20 +22,13 @@ RDEPEND=">=dev-python/requests-2.20.0[${PYTHON_USEDEP}]
 	>=dev-python/geojson-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/PySocks-1.7.1[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
-	dev-python/coverage[${PYTHON_USEDEP}]
-	dev-python/coveralls[${PYTHON_USEDEP}]
-	>=dev-python/pip-18.0[${PYTHON_USEDEP}]
-	dev-python/pytest[${PYTHON_USEDEP}]
-	dev-python/recommonmark[${PYTHON_USEDEP}]
-	dev-python/sphinx[${PYTHON_USEDEP}]
-	dev-python/tox[${PYTHON_USEDEP}]
-	dev-python/tox-travis[${PYTHON_USEDEP}]
-	dev-python/virtualenv[${PYTHON_USEDEP}]
-	dev-python/twine[${PYTHON_USEDEP}]
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/coveralls[${PYTHON_USEDEP}]
+		dev-python/coverage[${PYTHON_USEDEP}]
+		dev-python/tox[${PYTHON_USEDEP}]
+		dev-python/tox-travis[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
