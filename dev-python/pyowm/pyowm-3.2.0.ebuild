@@ -25,10 +25,6 @@ BDEPEND="${REDEPEND}
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/coveralls[${PYTHON_USEDEP}]
-		dev-python/coverage[${PYTHON_USEDEP}]
-		dev-python/tox[${PYTHON_USEDEP}]
-		dev-python/tox-travis[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
