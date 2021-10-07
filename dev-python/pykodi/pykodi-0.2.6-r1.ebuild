@@ -16,9 +16,11 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-DOCS=""
+DOCS="README.md"
 
-RDEPEND=""
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+	>=dev-python/jsonrpc-async-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/jsonrpc-websocket-1.2.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
