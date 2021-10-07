@@ -23,8 +23,10 @@
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
     <flag name="bluetooth_le_tracker">Tracks Bluetooth low-energy devices periodically based on interval_seconds value</flag>
     <flag name="caldav">Integrate a CalDAV (RFC4791) calendar in Home Assistant</flag>
+    <flag name="camera">The camera integration allows you to use IP cameras with Home Assistant</flag>
     <flag name="cast">Let Home Assitant talk to Google Chromecast</flag>
     <flag name="cli">Set a dependency for Home Assistant Cli hass-cli (lots of modules required)</flag>
+    <flag name="co2signal">Queries the CO2Signal API for the CO2 intensity of a specific region</flag>
     <flag name="compensation">Compensation integration consumes the state from other sensors</flag>
     <flag name="coronavirus">Add sensors for COVID-19 infections from Johns Hopkins University</flag>
     <flag name="darksky">Use dark sky weather data from Home Assistant</flag>

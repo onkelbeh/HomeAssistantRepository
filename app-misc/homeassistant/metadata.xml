@@ -79,6 +79,7 @@
     <flag name="bt_smarthub">Presence detection by looking at BT Smart Hub based routers</flag>
     <flag name="buienradar">Integrate buienradar weather data into Home Assistant</flag>
     <flag name="caldav">Integrate a CalDAV (RFC4791) calendar in Home Assistant</flag>
+    <flag name="camera">The camera integration allows you to use IP cameras with Home Assistant</flag>
     <flag name="canary">Allows you to integrate your Canary devices from Home Assistant</flag>
     <flag name="cast">Let Home Assitant talk to Google Chromecast</flag>
     <flag name="cisco_mobility_express">ciscomobilityexpress support for Home Assistant</flag>

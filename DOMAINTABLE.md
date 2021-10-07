@@ -90,7 +90,7 @@
 |bt_smarthub|Presence detection by looking at BT Smart Hub based routers|N|Y|Y|0.82|
 |buienradar|Integrate buienradar weather data into Home Assistant|N|Y|Y|0.47|
 |caldav|Integrate a CalDAV (RFC4791) calendar in Home Assistant|Y|Y|Y|0.60|
-|camera|The camera integration allows you to use IP cameras with Home Assistant|N|N|Y|0.7|
+|camera|The camera integration allows you to use IP cameras with Home Assistant|Y|Y|Y|0.7|
 |canary|Allows you to integrate your Canary devices from Home Assistant|N|Y|Y|0.60|
 |cast|Let Home Assitant talk to Google Chromecast|Y|Y|Y||
 |channels|Allows you to control Channels from Home Assistant|N|N|Y|0.65|
@@ -104,7 +104,7 @@
 |cloud|Quickly integrate your local Home Assistant with various cloud services|N|N|Y|0.60|
 |cloudflare|With the cloudflare integration, you can keep your Cloudflare records up to date|N|N|Y|0.74|
 |cmus|Allows you to control a cmus music player from Home Assistant|N|N|Y|0.23|
-|co2signal|Queries the CO2Signal API for the CO2 intensity of a specific region|N|Y|Y|0.87|
+|co2signal|Queries the CO2Signal API for the CO2 intensity of a specific region|Y|Y|Y|0.87|
 |coinbase|Lets you access account balances and exchange rates from coinbase|N|N|Y|0.61|
 |color_extractor|color_extractor extracts the predominant color from a given image|N|N|Y|0.118|
 |comfoconnect|Comfoconnect integration lets you control Zehnder ComfoAir|N|N|Y|0.48|
