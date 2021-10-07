@@ -19,7 +19,8 @@ IUSE="test"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/protobuf-python-3.12.2[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.32.0[${PYTHON_USEDEP}]"
+	>=dev-python/zeroconf-0.28.0[${PYTHON_USEDEP}]
+	>=dev-python/noiseprotocol-0.3.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
