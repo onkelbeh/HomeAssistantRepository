@@ -453,19 +453,19 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1983 Ebuilds in total, 1971 of them have in total 1986 (36 different) licenses assigned.
+There are 1992 Ebuilds in total, 1980 of them have in total 1995 (36 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1140|
-|Apache-2.0|387|
-|BSD|143|
+|MIT|1141|
+|Apache-2.0|393|
+|BSD|144|
 |GPL-3|122|
 |LGPL-3|32|
 |GPL-2|20|
 |all-rights-reserved|17|
 |GPL-3+|15|
-|LGPL-3+|14|
+|LGPL-3+|15|
 |BSD-2|14|
 |Unlicense|12|
 |LGPL-2.1|11|
@@ -494,9 +494,9 @@ There are 1983 Ebuilds in total, 1971 of them have in total 1986 (36 different) 
 |CC0-1.0|1|
 |GPL-1|1|
 
-(Last counted: 07/10/2021)
+(Last counted: 12/10/2021)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 07/10/2021
+Last updated: 12/10/2021
