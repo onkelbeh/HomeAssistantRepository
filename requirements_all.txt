@@ -51,7 +51,7 @@ aiolifx==0.7.0
 aiolip==1.1.6
 aiolyric==1.0.7
 aiomodernforms==0.1.8
-aiomusiccast==0.9.2
+aiomusiccast==0.10.0
 aionanoleaf==0.0.3
 aionotify==0.2.0
 aionotion==3.0.2
@@ -1171,12 +1171,12 @@ yalexs==1.1.13
 yarl==1.6.3
 yeelight==0.7.7
 yeelightsunflower==0.0.10
-youless-api==0.13
-youtube_dl==2021.4.26
+youless-api==0.14
+youtube_dl==2021.6.6
 zbar==0.23.1
 zeep==4.1.0
 zengge==0.2
-zeroconf==0.36.7
+zeroconf==0.36.8
 zha-quirks==0.0.62
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
