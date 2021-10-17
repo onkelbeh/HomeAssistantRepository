@@ -17,7 +17,6 @@ else
 	MY_P=${P/_beta/b}
 	MY_PV=${PV/_beta/b}
 	SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
-	#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
 	S="${WORKDIR}/${MY_P}/"
 fi
 
@@ -35,21 +34,19 @@ DOCS="README.md"
 RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-	  ~dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
+	  dev-python/voluptuous[${PYTHON_USEDEP}]
 	  ~dev-python/pyyaml-5.4.1[${PYTHON_USEDEP}]
 	  ~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
 	  ~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
 	  server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
-	  ~dev-libs/protobuf-3.17.3
-	  ~dev-python/protobuf-python-3.17.3[${PYTHON_USEDEP}]
 	  ~dev-python/tzlocal-2.1[${PYTHON_USEDEP}]
 	  ~dev-python/pytz-2021.1[${PYTHON_USEDEP}]
 	  ~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	  server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
-	  ~dev-embedded/platformio-5.1.1
-	  ~dev-embedded/esptool-2.8[${PYTHON_USEDEP}]
-	  ~dev-python/click-7.1.2[${PYTHON_USEDEP}]
-	  ~dev-embedded/esphome-dashboard-20210719.0[${PYTHON_USEDEP}]
+	  ~dev-embedded/platformio-5.2.0
+	  ~dev-embedded/esptool-3.1[${PYTHON_USEDEP}]
+	  dev-python/click[${PYTHON_USEDEP}]
+	  ~dev-embedded/esphome-dashboard-20210908.0[${PYTHON_USEDEP}]
+	  >=dev-python/aioesphomeapi-9.1.4[${PYTHON_USEDEP}]
 	')"
 
 BDEPEND="
@@ -75,6 +72,13 @@ logging is to: /var/log/${PN}/{dashboard,warnings}.log
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
+src_prepare() {
+	sed "s/aioesphomeapi==9.1.4/aioesphomeapi/g" -i requirements.txt || die
+	sed "s/click==7.1.2/click/g" -i requirements.txt || die
+	sed "s/voluptuous==0.12.1/voluptuous/g" -i requirements.txt || die
+	eapply_user
+}
+
 python_install_all() {
 	dodoc ${DOCS}
 	distutils-r1_python_install_all
@@ -84,7 +88,7 @@ python_install_all() {
 		keepdir "/var/log/${PN}"
 		fowners -R "${PN}:${PN}" "/var/log/${PN}"
 		newconfd "${FILESDIR}/${PN}.conf.d" "${PN}"
-		newinitd "${FILESDIR}/${PN}.init.d-r2" "${PN}"
+		newinitd "${FILESDIR}/${PN}.init.d-r3" "${PN}"
 		readme.gentoo_create_doc
 	fi
 }

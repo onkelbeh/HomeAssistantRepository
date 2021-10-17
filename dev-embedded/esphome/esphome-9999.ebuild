@@ -33,19 +33,19 @@ RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
 		~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
-		~dev-python/pyyaml-5.4.1[${PYTHON_USEDEP}]
+		~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
 		~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
 		~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
 		server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
 		~dev-python/tzlocal-3.0[${PYTHON_USEDEP}]
-		~dev-python/pytz-2021.1[${PYTHON_USEDEP}]
+		>=dev-python/pytz-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 		server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
-		~dev-embedded/platformio-5.2.0
+		~dev-embedded/platformio-5.2.1
 		~dev-embedded/esptool-3.1[${PYTHON_USEDEP}]
-		~dev-python/click-8.0.1[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20210927.0[${PYTHON_USEDEP}]
-		~dev-python/aioesphomeapi-9.1.2[${PYTHON_USEDEP}]
+		~dev-python/click-8.0.3[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20211015.0[${PYTHON_USEDEP}]
+		~dev-python/aioesphomeapi-10.0.0[${PYTHON_USEDEP}]
 	')"
 
 BDEPEND="
