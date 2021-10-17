@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-DOCS="README.rst"
+DOCS="README.md"
 
 RDEPEND="dev-python/future[${PYTHON_USEDEP}]
 	dev-python/ifaddr[${PYTHON_USEDEP}]"
