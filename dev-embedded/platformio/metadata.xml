@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">platformio</remote-id>
     <maintainer status="unknown">
-      <email>contact@platformio.org</email>
-      <name>PlatformIO</name>
+      <email>contact@piolabs.com</email>
+      <name>PlatformIO Labs</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
