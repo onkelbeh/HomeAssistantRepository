@@ -18,7 +18,7 @@ IUSE="test"
 
 DOCS="README.rst"
 
-RDEPEND=""
+RDEPEND="!net-misc/wakeonlan"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
