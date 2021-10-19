@@ -115,7 +115,7 @@
 |coronavirus|Add sensors for COVID-19 infections from Johns Hopkins University|Y|Y|Y|0.106|
 |cppm_tracker|Detect presence by looking at connected devices to Aruba Clearpass|N|N|Y|0.90|
 |cpuspeed|The cpuspeed sensor platform to allow you to monitor the current CPU speed|N|N|Y||
-|crownstone|None|N|N|Y|2021.10.0b2|
+|crownstone|allows you to control your Crownstones via cloud or using a USB dongle|N|N|Y|2021.10.0b2|
 |cups|Using the open source printing system CUPS to show details about your printers|N|N|Y|0.32|
 |daikin|Integrate Daikin wireless controllers into Home Assistant|N|Y|Y|0.59|
 |danfoss_air|The danfoss_air integration accesses information from your Danfoss Air HRV unit|N|N|Y|0.87|
@@ -757,7 +757,7 @@
 |waze_travel_time|waze_travel_time sensor provides travel time from the Waze|N|Y|Y|0.67|
 |webostv|allows you to control a LG webOS Smart TV|N|Y|Y|0.18|
 |wemo|discover and control WeMo devices|Y|Y|Y||
-|whirlpool|None|N|N|Y|2021.10.0b2|
+|whirlpool|integrates Whirlpool 6th Sense Live appliances|N|N|Y|2021.10.0b2|
 |whois|perform daily WHOIS lookups|Y|Y|Y|0.57|
 |wiffi|allows you to connect your STALL WIFFI devices directly|N|N|Y|0.110|
 |wilight|The wilight integration is to integrate WiLight devices with Home Assistant|N|N|Y|0.115|

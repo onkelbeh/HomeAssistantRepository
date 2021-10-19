@@ -172,7 +172,7 @@ RDEPEND="${RDEPEND}
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
 	systemmonitor? ( ~dev-python/psutil-5.8.0[${PYTHON_USEDEP}] )
 	tasmota? ( ~dev-python/HATasmota-0.2.20[${PYTHON_USEDEP}] )
-	tile? ( ~dev-python/pytile-5.2.3[${PYTHON_USEDEP}] )
+	tile? ( ~dev-python/pytile-5.2.4[${PYTHON_USEDEP}] )
 	tplink? ( ~dev-python/python-kasa-0.4.0[${PYTHON_USEDEP}] )
 	tradfri? ( ~dev-python/pytradfri-7.0.6[${PYTHON_USEDEP}] )
 	utility_meter? ( ~dev-python/croniter-1.0.6[${PYTHON_USEDEP}] )
@@ -182,7 +182,7 @@ RDEPEND="${RDEPEND}
 	whois? ( ~dev-python/python-whois-0.7.3[${PYTHON_USEDEP}] )
 	workday? ( ~dev-python/holidays-0.11.3.1[${PYTHON_USEDEP}] )
 	yamaha? ( ~dev-python/rxv-0.6.0[${PYTHON_USEDEP}] )
-	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.9.2[${PYTHON_USEDEP}] )
+	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.10.0[${PYTHON_USEDEP}] )
 	zeroconf? ( ~dev-python/zeroconf-0.36.8[${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/zwave-js-server-python-0.31.3[${PYTHON_USEDEP}] )"
 
