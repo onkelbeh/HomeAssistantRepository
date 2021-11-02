@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI="8"
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -19,7 +19,7 @@ IUSE="test"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/protobuf-python-3.12.2[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.28.0[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.36.0[${PYTHON_USEDEP}]
 	>=dev-python/noiseprotocol-0.3.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
