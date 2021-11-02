@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -26,14 +26,11 @@ BDEPEND="${REDEPEND}
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pylint[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
-}
-
-src_prepare() {
-	sed "s/packages=find_packages()/packages=find_packages(exclude=['tests'])/g" -i setup.py || die
-	eapply_user
 }
