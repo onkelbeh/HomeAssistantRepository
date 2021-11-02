@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -18,8 +18,9 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/Authlib[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+RDEPEND="~dev-python/httpx-0.19.0[${PYTHON_USEDEP}]
+	dev-python/Authlib[${PYTHON_USEDEP}]"
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
