@@ -19,7 +19,7 @@ IUSE="test"
 DOCS="README.rst"
 
 RDEPEND="dev-python/pytz[${PYTHON_USEDEP}]
-	d>=ev-python/pastral-2.2${PYTHON_USEDEP}]"
+	>=dev-python/astral-2.2${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
