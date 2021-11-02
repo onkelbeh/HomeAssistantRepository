@@ -7,9 +7,5 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">brother</remote-id>
-    <maintainer status="unknown">
-      <email>maciej.bieniek@gmail.com</email>
-      <name>Maciej Bieniek</name>
-    </maintainer>
   </upstream>
 </pkgmetadata>
