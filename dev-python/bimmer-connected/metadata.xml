@@ -7,9 +7,5 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bimmer-connected</remote-id>
-    <maintainer status="unknown">
-      <email>bietenbak@yahoo.com</email>
-      <name>gerard33</name>
-    </maintainer>
   </upstream>
 </pkgmetadata>
