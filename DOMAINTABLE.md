@@ -362,6 +362,7 @@
 |litterrobot|Wi-Fi-enabled, automatic, self-cleaning litter box for cats|N|Y|Y|2021.3|
 |logi_circle|integrate your Logi Circle cameras in Home Assistant|N|N|Y|0.79|
 |london_underground|display the status of London underground lines|N|N|Y|0.49|
+|lookin|None|N|N|Y|2021.11.0b4|
 |loopenergy|Integrate your Loop Energy meter information into Home Assistant|N|Y|Y|0.17|
 |luci|fetch connected devices from your OpenWrt|N|Y|Y||
 |luftdaten|query the open data API of luftdaten.info to monitor air quality|N|Y|Y|0.82|

@@ -49,6 +49,7 @@ aiokef==0.2.16
 aiolifx-effects==0.2.2
 aiolifx==0.7.0
 aiolip==1.1.6
+aiolookin==0.0.3
 aiolyric==1.0.7
 aiomodernforms==0.1.8
 aiomusiccast==0.11.0
@@ -172,6 +173,7 @@ c-ares==1.17.2
 ca-certificates==20210119.3.66
 cached-property==1.5.2
 cachetools==4.2.4
+casttube==0.2.0
 cattrs==1.7.1
 cblas==3.8
 cbor2==5.4.1
@@ -208,7 +210,7 @@ convertdate==2.3.0
 cookies==2.2.1
 coreutils==8.32
 coronavirus==1.1.1
-coverage==5.5
+coverage==6.0.2
 crccheck==1.0
 crcmod==1.7
 croniter==1.0.15
@@ -379,7 +381,7 @@ hole==0.5.1
 holidays==0.11.3.1
 home-assistant-cli==0.9.4
 home-assistant-cli==9999
-home-assistant-frontend==20211028.0
+home-assistant-frontend==20211103.0
 homeassistant
 homeassistant-pyozw==0.1.10
 homeconnect==0.6.3
@@ -513,7 +515,7 @@ meteofrance-api==1.0.2
 mficlient==0.3.0
 micloud==0.4
 miflora==0.7.0
-millheater==0.7.3
+millheater==0.7.4
 miniaudio==1.44
 minio==4.0.9
 more-itertools==8.10.0
@@ -673,6 +675,7 @@ pycarwings2==2.12
 pyCEC==0.5.1
 pycfdns==1.2.1
 pychannels==1.0.0
+pychromecast==9.3.1
 pycketcasts==1.0.0
 pyclimacell==0.18.2
 pycmus==0.1.1
@@ -730,7 +733,7 @@ pyHik==0.3.0
 pyhiveapi==0.4.2
 pyhomeworks==0.0.6
 pyialarm==1.9.0
-pyinsteon==1.0.12
+pyinsteon==1.0.13
 pyintesishome==1.7.6
 pyipma==2.0.5
 pyipp==0.11.0
@@ -793,7 +796,7 @@ pyopnsense==0.2.0
 pyoppleio==1.0.5
 PyOTA==2.0.5
 pyotgw==1.1_beta1
-pyotp==2.3.0
+pyotp==2.6.0
 pyowm==3.2.0
 pyownet==0.10.0
 pyparsing==2.4.7
@@ -1180,7 +1183,7 @@ youtube_dl==2021.6.6
 zbar==0.23.1
 zeep==4.1.0
 zengge==0.2
-zeroconf==0.36.8
+zeroconf==0.36.11
 zha-quirks==0.0.63
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
