@@ -58,7 +58,7 @@ aionotify==0.2.0
 aionotion==3.0.2
 aiopulse==0.4.2
 aiopvapi==1.6.14
-aiopvpc==2.2.0
+aiopvpc==2.2.1
 aiopylgtv==0.4.0
 aiorecollect==1.0.8
 aioserial==1.3.0
@@ -107,6 +107,7 @@ asyncclick==8.0.1.3
 asyncio-dgram==2.1.0
 asyncpysupla==0.0.5
 asyncssh==2.7.0
+asyncstdlib==3.10.2
 asynctest==0.13.0
 async_timeout==3.0.1
 atenpdu==0.3.0
@@ -301,11 +302,12 @@ fixerio==1.0.0_alpha0
 fjaraskupan==1.0.2
 flask==2.0.1
 flipr-api==1.4.1
-flux-led==0.24.13
+flux-led==0.24.14
 foobot_async==1.0.0
 forecast-solar==2.1.0
 fortiosapi==1.0.5
 fortran==0
+fqdn==1.5.1
 freebox-api==0.0.10
 freeimage==3.18.0
 freesms==0.2.0
@@ -426,6 +428,7 @@ iperf3==0.1.11
 ismartgate==4.0.4
 iso8601==0.1.16
 isodate==0.6.0
+isoduration==20.11.0
 itsdangerous==2.0.1
 jeepney==0.7.1
 jinja==3.0.2
@@ -438,7 +441,7 @@ jsonpointer==2.1
 jsonrpc-async==2.0.0
 jsonrpc-base==2.0.0
 jsonrpc-websocket==3.0.0
-jsonschema==3.2.0
+jsonschema==4.1.2
 kaiterra-async-client==0.0.2
 keba-kecontact==1.1.0
 keyring==23.2.1
@@ -527,7 +530,7 @@ ms-cv==0.1.1
 msgpack==1.0.2
 mt_940==4.19.0
 mullvad-api==1.0.0
-multidict==5.1.0
+multidict==5.2.0
 mutagen==1.45.1
 mutesync==0.0.1
 mychevy==2.1.1
@@ -571,6 +574,7 @@ oemthermostat==1.1.1
 olefile==0.46
 omnilogic==0.4.5
 ondilo==0.2.0
+onkyo-eiscp==1.2.7
 onvif-zeep-async==1.2.0
 open-garage==0.1.6
 openerz-api==0.1.0
@@ -916,6 +920,7 @@ pytrafikverket==0.1.6.2
 PyTransportNSW==0.1.1
 PyTurboJPEG==1.6.1
 pytz==2021.1
+pytz==2021.3
 pytzdata==2020.1
 pyudev==0.22.0
 pyuptimerobot==21.9.0
@@ -991,7 +996,7 @@ satel-integra==0.3.4
 scapy==2.4.5
 schedule==1.1.0
 schiene==0.23
-scipy==1.6.3
+scipy==1.7.1
 screenlogicpy==0.4.1
 scsgate==0.1.0
 secretstorage==3.3.1
@@ -1125,7 +1130,7 @@ util-linux==2.37.2
 uvcclient==0.11.0
 uvicorn==0.15.0_p20210913
 vallox-websocket-api==2.8.1
-velbus-aio==2021.10.7
+velbus-aio==2021.11.0
 venstarcolortouch==0.14
 vilfo-api-client==0.3.2
 vincenty==0.1.4
@@ -1161,7 +1166,7 @@ wirelesstagpy==0.5.0
 withings-api==2.3.2
 wled==0.8.0
 wolf_smartset==0.1.11
-wrapt==1.12.1
+wrapt==1.13.2
 WSDiscovery==2.0.0
 wsproto==1.0.0
 xbee-helper==0.0.7
