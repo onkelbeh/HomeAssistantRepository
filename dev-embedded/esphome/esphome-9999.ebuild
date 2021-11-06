@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=7
 
 PYTHON_COMPAT=( python3_{7..9} )
 DISTUTILS_SINGLE_IMPL=1
@@ -34,18 +34,18 @@ RDEPEND="
 	$(python_gen_cond_dep '
 		~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
 		~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
-		~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
+		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 		~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
 		server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
-		~dev-python/tzlocal-3.0[${PYTHON_USEDEP}]
+		~dev-python/tzlocal-4.1[${PYTHON_USEDEP}]
 		>=dev-python/pytz-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 		server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
-		~dev-embedded/platformio-5.2.1
-		~dev-embedded/esptool-3.1[${PYTHON_USEDEP}]
+		~dev-embedded/platformio-5.2.2
+		~dev-embedded/esptool-3.2[${PYTHON_USEDEP}]
 		~dev-python/click-8.0.3[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20211015.0[${PYTHON_USEDEP}]
-		~dev-python/aioesphomeapi-10.0.0[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20211021.0[${PYTHON_USEDEP}]
+		~dev-python/aioesphomeapi-10.2.0[${PYTHON_USEDEP}]
 	')"
 
 BDEPEND="
