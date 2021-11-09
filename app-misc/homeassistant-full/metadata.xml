@@ -376,7 +376,7 @@
     <flag name="litterrobot">Wi-Fi-enabled, automatic, self-cleaning litter box for cats</flag>
     <flag name="logi_circle">integrate your Logi Circle cameras in Home Assistant</flag>
     <flag name="london_underground">display the status of London underground lines</flag>
-    <flag name="lookin"/>
+    <flag name="lookin">Integrates LOOKin devices into Home Assistant</flag>
     <flag name="loopenergy">Integrate your Loop Energy meter information into Home Assistant</flag>
     <flag name="luci">fetch connected devices from your OpenWrt</flag>
     <flag name="luftdaten">query the open data API of luftdaten.info to monitor air quality</flag>

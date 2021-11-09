@@ -71,13 +71,13 @@ You will find the detailed changes in commit: https://git.edevau.net/onkelbeh/Ho
 ## Nearly all Home Assistant Components are now included
 Except of some modules with uncorrectable errors (e.g. hard drive crashes, lost sources) I believe all possible integrations for Home Assistant and their stated dependencies are included as Ebuilds, based on the integrations list from `/usr/lib/python3.8/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule.
 
-Currrently missing (2021.6):
+Currrently missing (2021.11):
+* ha-av (cannot find a valid source for the requested version)
 * azure-eventhub-5.1.0
 * azure-servicebus-0.50.1
 * google-cloud-texttospeech-0.4.0 (no potential need, there are good alternatives on the market)
 * google-cloud-pubsub-0.39.1
 * opencv-python-headless-4.3.0.36
-* pyuptimerobot-0.0.5 (unmaintained, could not find a valid source)
 
 In some cases I added small patches to the Ebuilds, some packages have versions pinned without any reason. Mostly, I copy hard pinnings without questioning, in very problematic cases I open a ticket at the problem's origin. For me its OK, if the packages compile and complete their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups. I am continuously filing pull requests to reduce the amount of needed patches. Most of them are caused by missing files in SDIST archives and/or having wrong package exclude masks in `setup.py`.
 
@@ -107,10 +107,10 @@ Sure, you can submit **issues** and **pull requests** on both sites, but I prefe
 
 ## Python versions
 ### Python 3.9
-My production box now runs Python 3.9.6_p1 (29.8.2021). Most modules are OK with 3.9 support, some are not completed yet. I will upgrade them if they are touched, if you find your favorite components missing, just open a ticket and drop me a list. During compile tests, I have all available tests turned on.
+My production box currently runs Python 3.9.7_p1 (9.11.2021). Most modules are OK with 3.9 support, some are not completed yet. I will upgrade them if they are touched, if you find your favorite components missing, just open a ticket and drop me a list. During compile tests, I have all available tests turned on.
 
 ### Python <= 3.8 Support
-SOuld still work, but since Python 3.8 support is dropped, I will do no further tests on it, you should upgrade soon.
+Should still work, but since Python 3.8 support is dropped, I will do no further tests on it, you should upgrade soon.
 
 ### Python 3.10 Support
 Currently not usable in production, my testbox compiles a lot of modules now, but some important things are still missing.
@@ -337,7 +337,7 @@ EQ3-Max! (I accidently bought some, so I have to use them until they die, 8 devi
 ### mikrotik
 presence detection, query the connected mac addresses from the CAP AC.
 
-### mqtt
+### mqtt (also Zigbee)
 The Sonoff Pow (and R2) will stay with Tasmota for a while, because I have no good implementation of Tasmota's energy summary in ESPHome. I have connectd these via MQTT.
 Some Zigbee devices via an CC2531 USB stick from Amazon and `zigbee2mqtt`. Since zigbee2mqtt, a lot of new devices are here now:
 * some Xioami motion sensors (Aquara)
@@ -407,7 +407,21 @@ Yamaha RXV (4 devices)
 had a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. Have migrated it to zwavejs2mqtt.
 
 ### zwave_js
-migration was easier than expected, after finding the right module. Have some Fibaro shutter controllers and (currently) 2 devolo thermostats. I would not buy the Fibaro stuff again, because of their weird firmware policy. You need to have their expensive (and otherwise useless) gateway to make an update. The cheap chinese stuff will do better. And they are very badly shielded.
+migration was easier than expected, after finding the right module. I now use zwavejs2mqtt. Had some issues with MEEUZB1, so I had to get the TI interface. I came along with another stick, so I now have a spare to do some experiments with. I'll try to put this in an ebuild. Though, installation it quite easy:
+
+ cd /opt
+ git clone https://github.com/zwave-js/zwavejs2mqtt
+ cd zwavejs2mqtt
+ yarn install
+ yarn run build
+ yarn start
+
+Currently I have no autostart, I just let it run in a screen session.
+It does not run in my HA VM, I have a HPE mircoserver, where the stick is directly attached. It communicates with HA through it's API, MQTT is disabled.
+
+
+### Z-Wave in general
+Have some Fibaro shutter controllers and (currently) 2 devolo thermostats. I would not buy the Fibaro stuff again, because of their weird firmware policy. You need to have their expensive (and otherwise useless) gateway to make an update. The cheap chinese stuff will do better. And they are very badly shielded.
 
 # Some background
 
@@ -453,18 +467,18 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 2051 Ebuilds in total, 2039 of them have in total 2054 (36 different) licenses assigned.
+There are 2049 Ebuilds in total, 2037 of them have in total 2052 (36 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1180|
-|Apache-2.0|399|
+|MIT|1183|
+|Apache-2.0|393|
 |BSD|148|
 |GPL-3|128|
 |LGPL-3|32|
 |GPL-2|21|
+|LGPL-3+|18|
 |all-rights-reserved|17|
-|LGPL-3+|17|
 |GPL-3+|16|
 |BSD-2|14|
 |LGPL-2.1|12|
@@ -494,9 +508,9 @@ There are 2051 Ebuilds in total, 2039 of them have in total 2054 (36 different) 
 |CC0-1.0|1|
 |GPL-1|1|
 
-(Last counted: 06/11/2021)
+(Last counted: 09/11/2021)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 06/11/2021
+Last updated: 09/11/2021

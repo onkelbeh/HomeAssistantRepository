@@ -36,7 +36,7 @@ aiofiles==0.7.0
 aioflo==0.4.1
 aioftp==0.12.0
 aiogithubapi==21.8.0
-aioguardian==1.0.8
+aioguardian==2021.11.0
 aioharmony==0.2.8
 aiohomekit==0.6.3
 aiohttp-cors==0.7.0
@@ -62,7 +62,7 @@ aiopvpc==2.2.1
 aiopylgtv==0.4.0
 aiorecollect==1.0.8
 aioserial==1.3.0
-aioshelly==1.0.2
+aioshelly==1.0.4
 aiosqlite==0.17.0
 aioswitcher==2.0.6
 aiosyncthing==0.5.1
@@ -178,7 +178,7 @@ casttube==0.2.0
 cattrs==1.7.1
 cblas==3.8
 cbor2==5.4.1
-certifi==10001
+certifi==2999
 cffi==1.14.6
 chardet==4.0.0
 charset_normalizer==2.0.6
@@ -189,7 +189,7 @@ clearpasspy==1.0.2
 cleo==0.8.1
 click-log==0.3.2
 click-plugins==1.1.1
-click==8.0.1
+click==8.0.3
 clx-sdk-xms==1.0.0
 CO2Signal==0.4.2
 coinbase==2.1.0
@@ -281,7 +281,7 @@ epson-projector==0.4.2
 epsonprinter==0.0.9
 eselect-awk==0.3
 esphome
-esphome-dashboard==20210908.0
+esphome-dashboard==20211021.0
 esprima==4.0.1
 esptool==3.1
 eternalegypt==0.0.12
@@ -302,7 +302,7 @@ fixerio==1.0.0_alpha0
 fjaraskupan==1.0.2
 flask==2.0.1
 flipr-api==1.4.1
-flux-led==0.24.14
+flux-led==0.24.17
 foobot_async==1.0.0
 forecast-solar==2.1.0
 fortiosapi==1.0.5
@@ -383,7 +383,7 @@ hole==0.5.1
 holidays==0.11.3.1
 home-assistant-cli==0.9.4
 home-assistant-cli==9999
-home-assistant-frontend==20211103.0
+home-assistant-frontend==20211108.0
 homeassistant
 homeassistant-pyozw==0.1.10
 homeconnect==0.6.3
@@ -592,6 +592,7 @@ oyaml==1.0
 p1monitor==1.0.0
 packaging==21.0
 paho-mqtt==1.5.1
+paho-mqtt==1.6.1
 panacotta==0.1
 panasonic-viera==0.3.6
 pandas==1.3.0
@@ -618,7 +619,7 @@ pip==19.0.2
 pizzapi==0.0.3
 pkce==1.0.3
 platformdirs==2.4.0
-platformio==5.2.0
+platformio==5.2.1
 plugwise==0.8.5
 plumbum==1.7.0
 plumlightpad==0.0.11
@@ -922,6 +923,7 @@ PyTurboJPEG==1.6.1
 pytz==2021.1
 pytz==2021.3
 pytzdata==2020.1
+pytz_deprecation_shim==0.1.0_p0
 pyudev==0.22.0
 pyuptimerobot==21.9.0
 pyusb==1.2.1
@@ -1050,7 +1052,7 @@ sqlitedict==1.6.0
 srpenergy==1.3.2
 sseclient-py==1.7
 starkbank-ecdsa==1.1.1
-starlette==0.16.0
+starlette==0.17.0
 starline==0.1.5
 starlingbank==3.2
 statsd==3.2.1
@@ -1093,7 +1095,7 @@ tmb==0.0.4
 todoist-python==8.0.0
 toml==0.10.2
 toonapi==0.2.1
-total-connect-client==2021.8.3
+total-connect-client==2021.11.2
 tp-connected==0.0.4
 tqdm==4.62.3
 transmissionrpc==0.11
@@ -1107,8 +1109,8 @@ TwitterAPI==2.7.5
 txdbus==1.1.2
 typing-extensions==3.10.0.2
 typing-inspect==0.7.1
-tzlocal==2.1
 tzlocal==3.0
+tzlocal==4.1
 ua-parser==0.10.0
 udev==217
 udev==249
@@ -1130,7 +1132,7 @@ util-linux==2.37.2
 uvcclient==0.11.0
 uvicorn==0.15.0_p20210913
 vallox-websocket-api==2.8.1
-velbus-aio==2021.11.0
+velbus-aio==2021.11.6
 venstarcolortouch==0.14
 vilfo-api-client==0.3.2
 vincenty==0.1.4
