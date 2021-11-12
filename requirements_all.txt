@@ -1,6 +1,6 @@
 abodepy==1.2.0
 accuweather==0.3.0
-acme==1.18.0
+acme==9999
 Adafruit-Blinka==6.11.1
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.0.1
@@ -172,7 +172,6 @@ buienradar==1.0.4
 busybox==1.33.1
 c-ares==1.17.2
 ca-certificates==20210119.3.66
-cached-property==1.5.2
 cachetools==4.2.4
 casttube==0.2.0
 cattrs==1.7.1
@@ -294,6 +293,7 @@ face_recognition==1.2.3
 face_recognition_models==0.3.0
 fastdotcom==0.0.3
 feedparser==6.0.2
+ffmpeg==4.4
 fiblary3==0.1.7
 file==5.40
 fints==1.0.1
@@ -357,12 +357,16 @@ grep==3.7
 growattServer==1.1.0
 grpc-google-iam-v1==0.12.3
 grpcio==1.31.0
+gst-plugins-base==1.18.4
+gst-plugins-libav==1.18.4
 gstreamer-player==1.1.2
+gstreamer==1.18.4
 gTTS==2.2.3
 guppy3==3.1.0
 gzip==1.10
 h11==0.12.0
 h2==4.0.0
+ha-av==8.0.4_rc1
 ha-ffmpeg==3.0.2
 ha-philipsjs==2.7.5
 habitipy==0.2.0
@@ -383,7 +387,7 @@ hole==0.5.1
 holidays==0.11.3.1
 home-assistant-cli==0.9.4
 home-assistant-cli==9999
-home-assistant-frontend==20211108.0
+home-assistant-frontend==20211109.0
 homeassistant
 homeassistant-pyozw==0.1.10
 homeconnect==0.6.3
@@ -426,6 +430,7 @@ intelhex==2.3.0
 iotawattpy==0.1.0
 iperf3==0.1.11
 ismartgate==4.0.4
+iso-codes==4.7.0
 iso8601==0.1.16
 isodate==0.6.0
 isoduration==20.11.0
