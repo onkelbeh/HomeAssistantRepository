@@ -326,6 +326,8 @@ storing the temperatures from the DS18B20 (heating system & room temps).
 
 ### knx
 
+I used a couple of chinese relay cards controlled with PCF8574 I2C extenders over an ESP32 with ESPHome. Caused by capacitive load, some EMV trouble on the I2C bus led me to bury this efforts, so I now ordered a bunch of KNX actors from MDT. I decided that it would be nice to have current measuremt, too, so I took the "MDT AMI-1216.02 Schaltaktor 12fach 16/20A C-Last Industrie mit Strommessung", the MDT SCN-IP000.03 IP Interface and the matching MDT STV-0320.02 320 mA power supply. and I addad an MDT BE-04230.02 binary input array with 4 220V inputs.
+
 ### kodi
 Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/), very happy with it.
 
@@ -469,18 +471,18 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 2053 Ebuilds in total, 2041 of them have in total 2056 (36 different) licenses assigned.
+There are 2036 Ebuilds in total, 2024 of them have in total 2039 (36 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1183|
-|Apache-2.0|395|
-|BSD|149|
-|GPL-3|129|
+|MIT|1177|
+|Apache-2.0|389|
+|BSD|150|
+|GPL-3|127|
 |LGPL-3|32|
 |GPL-2|21|
-|LGPL-3+|18|
 |all-rights-reserved|17|
+|LGPL-3+|17|
 |GPL-3+|16|
 |BSD-2|14|
 |LGPL-2.1|12|
@@ -488,7 +490,6 @@ There are 2053 Ebuilds in total, 2041 of them have in total 2056 (36 different) 
 |PSF-2|9|
 |MPL-2.0|7|
 |EPL-1.0|5|
-|HPND|4|
 |AGPL-3+|3|
 |LGPL-2+|3|
 |LGPL-2.1+|3|
@@ -504,15 +505,16 @@ There are 2053 Ebuilds in total, 2041 of them have in total 2056 (36 different) 
 |Boost-1.0|1|
 |AGPL-3|1|
 |PSF-2.3|1|
+|HPND|1|
 |CC-BY-NC-SA-3.0|1|
 |CC-BY-NC-SA-4.0|1|
 |OSL-2.0|1|
 |CC0-1.0|1|
 |GPL-1|1|
 
-(Last counted: 12/11/2021)
+(Last counted: 20/11/2021)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 12/11/2021
+Last updated: 20/11/2021

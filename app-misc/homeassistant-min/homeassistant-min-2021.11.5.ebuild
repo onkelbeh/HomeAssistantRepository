@@ -66,12 +66,12 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	>=dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.50.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20211103.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20211109.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
 	~dev-python/jinja-3.0.2[${PYTHON_USEDEP}]
-	~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}]
+	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/pandas-1.3.0[${PYTHON_USEDEP}]
 	~dev-python/pillow-8.2.0[${PYTHON_USEDEP}]
 	<dev-python/pip-20.3.0
@@ -91,7 +91,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
 	~dev-python/websockets-9.1[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.6.3[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.36.11[${PYTHON_USEDEP}]"
+	~dev-python/zeroconf-0.36.13[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -143,7 +143,7 @@ RDEPEND="${RDEPEND}
 	maxcube? ( ~dev-python/maxcube-api-0.4.3[${PYTHON_USEDEP}] )
 	mikrotik? ( ~dev-python/librouteros-3.0.0[${PYTHON_USEDEP}] )
 	mobile_app? ( ~dev-python/pynacl-1.4.0[${PYTHON_USEDEP}] ~dev-python/emoji-1.5.0[${PYTHON_USEDEP}] )
-	mqtt? ( ~dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}] )
+	mqtt? ( ~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}] )
 	myq? ( ~dev-python/pymyq-3.1.4[${PYTHON_USEDEP}] )
 	mysensors? ( ~dev-python/pymysensors-0.21.0[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysql-connector-python[${PYTHON_USEDEP}] dev-python/mysqlclient[${PYTHON_USEDEP}] )
@@ -163,7 +163,7 @@ RDEPEND="${RDEPEND}
 	samsungtv? ( ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-1.6.0[${PYTHON_USEDEP}] ~dev-python/wakeonlan-2.0.1[${PYTHON_USEDEP}] )
 	scrape? ( ~dev-python/beautifulsoup4-4.10.0[${PYTHON_USEDEP}] )
 	season? ( ~dev-python/ephem-3.7.7.0[${PYTHON_USEDEP}] )
-	shelly? ( ~dev-python/aioshelly-1.0.2[${PYTHON_USEDEP}] )
+	shelly? ( ~dev-python/aioshelly-1.0.4[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.4[${PYTHON_USEDEP}] )
 	snmp? ( ~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
@@ -184,7 +184,7 @@ RDEPEND="${RDEPEND}
 	workday? ( ~dev-python/holidays-0.11.3.1[${PYTHON_USEDEP}] )
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.11.0[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/zeroconf-0.36.11[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/zeroconf-0.36.13[${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/zwave-js-server-python-0.31.3[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}

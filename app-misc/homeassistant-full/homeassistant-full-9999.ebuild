@@ -91,7 +91,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
 	~dev-python/websockets-9.1[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.6.3[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.36.11[${PYTHON_USEDEP}]"
+	~dev-python/zeroconf-0.36.13[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -325,7 +325,7 @@ RDEPEND="${RDEPEND}
 	flo? ( ~dev-python/aioflo-0.4.1[${PYTHON_USEDEP}] )
 	flume? ( ~dev-python/PyFlume-0.6.5[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-2.0.2[${PYTHON_USEDEP}] )
-	flux_led? ( ~dev-python/flux-led-0.24.17[${PYTHON_USEDEP}] )
+	flux_led? ( ~dev-python/flux-led-0.24.24[${PYTHON_USEDEP}] )
 	folder_watcher? ( ~dev-python/watchdog-2.1.6[${PYTHON_USEDEP}] )
 	foobot? ( ~dev-python/foobot_async-1.0.0[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.1.0[${PYTHON_USEDEP}] )
@@ -368,7 +368,7 @@ RDEPEND="${RDEPEND}
 	google_travel_time? ( ~dev-python/googlemaps-2.5.1[${PYTHON_USEDEP}] )
 	gpmdp? ( ~dev-python/websocket-client-0.54.0[${PYTHON_USEDEP}] )
 	gpsd? ( ~dev-python/gps3-0.33.3[${PYTHON_USEDEP}] )
-	gree? ( ~dev-python/greeclimate-0.12.3[${PYTHON_USEDEP}] )
+	gree? ( ~dev-python/greeclimate-0.12.5[${PYTHON_USEDEP}] )
 	greeneye_monitor? ( ~dev-python/greeneye-monitor-2.1[${PYTHON_USEDEP}] )
 	greenwave? ( ~dev-python/greenwavereality-0.5.1[${PYTHON_USEDEP}] )
 	growatt_server? ( ~dev-python/growattServer-1.1.0[${PYTHON_USEDEP}] )
@@ -472,7 +472,7 @@ RDEPEND="${RDEPEND}
 	litterrobot? ( ~dev-python/pylitterbot-2021.10.1[${PYTHON_USEDEP}] )
 	logi_circle? ( ~dev-python/logi-circle-0.2.2[${PYTHON_USEDEP}] )
 	london_underground? ( ~dev-python/london-tube-status-0.2[${PYTHON_USEDEP}] )
-	lookin? ( ~dev-python/aiolookin-0.0.3[${PYTHON_USEDEP}] )
+	lookin? ( ~dev-python/aiolookin-0.0.4[${PYTHON_USEDEP}] )
 	loopenergy? ( ~dev-python/pyloopenergy-0.2.1[${PYTHON_USEDEP}] )
 	luci? ( ~dev-python/openwrt-luci-rpc-1.1.8[${PYTHON_USEDEP}] )
 	luftdaten? ( ~dev-python/luftdaten-0.6.5[${PYTHON_USEDEP}] )
@@ -495,7 +495,7 @@ RDEPEND="${RDEPEND}
 	melcloud? ( ~dev-python/pymelcloud-2.5.4[${PYTHON_USEDEP}] )
 	melissa? ( ~dev-python/py-melissa-climate-2.1.4[${PYTHON_USEDEP}] )
 	message_bird? ( ~dev-python/messagebird-1.2.0[${PYTHON_USEDEP}] )
-	met? ( ~dev-python/PyMetno-0.8.3[${PYTHON_USEDEP}] )
+	met? ( ~dev-python/PyMetno-0.8.4[${PYTHON_USEDEP}] )
 	meteoalarm? ( ~dev-python/meteoalertapi-0.2.0[${PYTHON_USEDEP}] )
 	meteoclimatic? ( ~dev-python/pymeteoclimatic-0.0.6[${PYTHON_USEDEP}] )
 	meteo_france? ( ~dev-python/meteofrance-api-1.0.2[${PYTHON_USEDEP}] )
@@ -558,7 +558,7 @@ RDEPEND="${RDEPEND}
 	nmap_tracker? ( ~dev-python/netmap-0.7.0.2[${PYTHON_USEDEP}] ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] ~dev-python/mac-vendor-lookup-0.1.11[${PYTHON_USEDEP}] )
 	nmbs? ( ~dev-python/pyrail-0.0.3[${PYTHON_USEDEP}] )
 	noaa_tides? ( ~dev-python/noaa-coops-0.1.8[${PYTHON_USEDEP}] )
-	norway_air? ( ~dev-python/PyMetno-0.8.3[${PYTHON_USEDEP}] )
+	norway_air? ( ~dev-python/PyMetno-0.8.4[${PYTHON_USEDEP}] )
 	notify_events? ( ~dev-python/notify-events-1.0.4[${PYTHON_USEDEP}] )
 	notion? ( ~dev-python/aionotion-3.0.2[${PYTHON_USEDEP}] )
 	nsw_fuel_station? ( ~dev-python/nsw-fuel-api-client-1.1.0[${PYTHON_USEDEP}] )
@@ -837,7 +837,7 @@ RDEPEND="${RDEPEND}
 	uvc? ( ~dev-python/uvcclient-0.11.0[${PYTHON_USEDEP}] )
 	vallox? ( ~dev-python/vallox-websocket-api-2.8.1[${PYTHON_USEDEP}] )
 	vasttrafik? ( ~dev-python/vtjp-0.1.14[${PYTHON_USEDEP}] )
-	velbus? ( ~dev-python/velbus-aio-2021.11.6[${PYTHON_USEDEP}] )
+	velbus? ( ~dev-python/velbus-aio-2021.11.7[${PYTHON_USEDEP}] )
 	velux? ( ~dev-python/pyvlx-0.2.19[${PYTHON_USEDEP}] )
 	venstar? ( ~dev-python/venstarcolortouch-0.14[${PYTHON_USEDEP}] )
 	vera? ( ~dev-python/pyvera-0.3.13[${PYTHON_USEDEP}] )
@@ -895,7 +895,7 @@ RDEPEND="${RDEPEND}
 	youless? ( ~dev-python/youless-api-0.15[${PYTHON_USEDEP}] )
 	zabbix? ( ~dev-python/py-zabbix-1.1.7[${PYTHON_USEDEP}] )
 	zengge? ( ~dev-python/zengge-0.2[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/zeroconf-0.36.11[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/zeroconf-0.36.13[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
 	zestimate? ( ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	zha? ( ~dev-python/bellows-0.28.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.63[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.13.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.39.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.7.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.5.4[${PYTHON_USEDEP}] )
