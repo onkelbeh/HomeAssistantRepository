@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6..9} )
+PYTHON_COMPAT=( python3_{8..10} pypy3 )
 PYTHON_REQ_USE='tk?,threads(+)'
 
 inherit distutils-r1 toolchain-funcs virtualx
@@ -18,13 +18,12 @@ S="${WORKDIR}/${MY_P}"
 
 LICENSE="HPND"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~ppc ppc64 sparc x86 ~amd64-linux ~x86-linux"
-IUSE="examples imagequant jpeg jpeg2k lcms test tiff tk truetype webp xcb zlib"
-REQUIRED_USE="test? ( jpeg tiff )"
+KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ppc ppc64 ~riscv sparc x86 ~amd64-linux ~x86-linux"
+IUSE="examples imagequant +jpeg jpeg2k lcms test tiff tk truetype webp xcb zlib"
+REQUIRED_USE="test? ( jpeg jpeg2k tiff )"
 RESTRICT="!test? ( test )"
 
-RDEPEND="
-	dev-python/olefile[${PYTHON_USEDEP}]
+DEPEND="
 	imagequant? ( media-gfx/libimagequant:0 )
 	jpeg? ( virtual/jpeg:0 )
 	jpeg2k? ( media-libs/openjpeg:2= )
@@ -34,16 +33,19 @@ RDEPEND="
 	webp? ( media-libs/libwebp:0= )
 	xcb? ( x11-libs/libxcb )
 	zlib? ( sys-libs/zlib:0= )"
-DEPEND="${RDEPEND}
-	dev-python/setuptools[${PYTHON_USEDEP}]
+RDEPEND="${DEPEND}
+	dev-python/olefile[${PYTHON_USEDEP}]"
+BDEPEND="
+	virtual/pkgconfig
 	test? (
+		${RDEPEND}
 		dev-python/pytest[${PYTHON_USEDEP}]
-		media-gfx/imagemagick[png]
+		|| (
+			media-gfx/imagemagick[png]
+			media-gfx/graphicsmagick[png]
+		)
 	)
 "
-
-distutils_enable_sphinx docs \
-	dev-python/sphinx_rtd_theme
 
 python_configure_all() {
 	# It's important that these flags are also passed during the install phase
@@ -75,14 +77,10 @@ python_configure_all() {
 	tc-export PKG_CONFIG
 }
 
-src_test() {
-	virtx distutils-r1_src_test
-}
-
 python_test() {
 	"${EPYTHON}" selftest.py --installed || die "selftest failed with ${EPYTHON}"
 	# no:relaxed: pytest-relaxed plugin make our tests fail. deactivate if installed
-	pytest -vv -p no:relaxed || die "Tests fail with ${EPYTHON}"
+	virtx epytest -p no:relaxed
 }
 
 python_install() {
