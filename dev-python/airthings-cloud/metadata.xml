@@ -9,7 +9,7 @@
     <remote-id type="pypi">airthings-cloud</remote-id>
     <maintainer status="unknown">
       <email>github@dahoiv.net</email>
-      <name>Tibber</name>
+      <name>Daniel Hjelseth Høyer</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
