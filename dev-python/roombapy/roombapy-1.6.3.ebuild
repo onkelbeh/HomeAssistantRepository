@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -15,7 +15,7 @@ SRC_URI="https://github.com/pschmitt/roombapy/archive/${PV}.tar.gz -> ${P}.tar.g
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="test +opencv pillow mqtt"
+IUSE="test opencv pillow +mqtt"
 
 DOCS="README.md"
 
@@ -34,4 +34,9 @@ BDEPEND="
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
+}
+
+src_prepare() {
+	sed -i "s/exclude/# exclude/g" -i pyproject.toml || die
+	eapply_user
 }
