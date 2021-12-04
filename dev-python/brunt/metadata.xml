@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">brunt</remote-id>
     <maintainer status="unknown">
-      <email>eduardvanvalkenburg@outlook.com</email>
-      <name>Eduard van Valkenburg</name>
+      <email>edvan@microsoft.com</email>
+      <name>E.A. van Valkenburg</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
