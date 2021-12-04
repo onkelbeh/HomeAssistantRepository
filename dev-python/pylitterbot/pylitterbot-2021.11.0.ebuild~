@@ -18,8 +18,8 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/Authlib[${PYTHON_USEDEP}]
-	dev-python/httpx[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/Authlib-0.15.5[${PYTHON_USEDEP}]
+	>=dev-python/httpx-0.18.2[${PYTHON_USEDEP}]
 	dev-python/pytz[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
