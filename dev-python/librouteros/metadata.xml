@@ -5,4 +5,11 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">librouteros</remote-id>
+    <maintainer status="unknown">
+      <email>lukasz.kostka@netng.pl</email>
+      <name>Łukasz Kostka</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>
