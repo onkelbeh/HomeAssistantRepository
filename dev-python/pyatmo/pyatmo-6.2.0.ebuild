@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -18,7 +18,7 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.7.4_p0[${PYTHON_USEDEP}]
 	>=dev-python/oauthlib-3.1[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.24[${PYTHON_USEDEP}]
 	>=dev-python/requests-oauthlib-1.3[${PYTHON_USEDEP}]"
