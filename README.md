@@ -30,7 +30,7 @@ The Ebuild we have since `0.97.0`, ss soon as I know that at least one user is a
 ### `app-misc/homeassistant-full`
 
 WARNING: This one currently breaks (caused by shell limitations) emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
-This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **796** USE Flags.
+This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **806** USE Flags.
 
 A list of all components aka USEFlags is generated with every release [DOMAINTABLE.md](DOMAINTABLE.md)
 
@@ -49,7 +49,7 @@ Best you start using the `app-misc/homeassistant-min` Ebuild. If you have it run
 * Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap. Beginning homeassistant-2021.2.0, handling for systemd was added by request, thanks to @Tatsh for help.
 * I use an own profile based on "amd64/17.1/no-multilib"
 * I currently run tests only on Python 3.9, and am starting to try builds on Python 3.10.
-* python-3.9.7 is set as default target.
+* python-3.9.9 is set as default target.
 
 # Bigger Changes
 
@@ -260,10 +260,10 @@ I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-
 ## My machines
 Currently I have three VM's running:
 ### Production
-Python 3.9.7_p1
+Python 3.9.8
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test
-Python 3.9.7_p1
+Python 3.9.8
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test2
 Python 3.10.0_p1
@@ -319,14 +319,24 @@ query my Fronius solar inverters via their integrated wifi chip.
 ### http
 
 ### hyperion
-Hyperion with APA102 (very cool stuff) (https://hyperion-project.org/)
-
+Hyperion (aka hyperion.ng) with APA102 (very cool stuff) (https://hyperion-project.org/)
+I am now stuck at Kodi 18.9 but that's worth it.
 ### influxdb
 storing the temperatures from the DS18B20 (heating system & room temps).
 
-### knx
+### KNX
 
-I used a couple of chinese relay cards controlled with PCF8574 I2C extenders over an ESP32 with ESPHome. Caused by capacitive load, some EMV trouble on the I2C bus led me to bury this efforts, so I now ordered a bunch of KNX actors from MDT. I decided that it would be nice to have current measuremt, too, so I took the "MDT AMI-1216.02 Schaltaktor 12fach 16/20A C-Last Industrie mit Strommessung", the MDT SCN-IP000.03 IP Interface and the matching MDT STV-0320.02 320 mA power supply. and I addad an MDT BE-04230.02 binary input array with 4 220V inputs.
+I used a couple of chinese relay cards controlled with PCF8574 I2C extenders attached to an ESP32 with ESPHome. Caused by capacitive load (mostly chinese LED stuff), some EMV trouble on the I2C bus led me to bury this efforts, took some money and ordered a bunch of KNX actors from MDT. I decided that it would be nice to have current measurementt, too, so I took the "MDT AMI-1216.02 Schaltaktor 12fach 16/20A C-Last Industrie mit Strommessung", the MDT SCN-IP000.03 IP Interface and the matching MDT STV-0320.02 320 mA power supply. and I added an MDT BE-04230.02 binary input array with 4 220V inputs (which was too small after a few days). I am very happy with it. After finishing the big click in ETS, the replacement only took a few hours.
+I am now running the following components, all from MDT:
+
+* MDT SCN-IP000.03 IP Interface
+* MDT STV-0320.02 bus power supply 320mA
+* MDT BE-04230.02 binary input 4x REG 230VAC
+* MDT BE-16230.02 binary input 16x REG 230VAC
+* MDT AMI-1216.02 switch 12x 16/20A C-Last Industrie with current measurement (4x)
+* MDT AKS-1210.03 switch 12x 10A C-Last (to turn off some unused stuff during the night)
+
+Integration in Home Assistant was very easy, everything worked as expected from the first attempt.
 
 ### kodi
 Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/), very happy with it.
@@ -471,36 +481,36 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 2036 Ebuilds in total, 2024 of them have in total 2039 (36 different) licenses assigned.
+There are 2027 Ebuilds in total, 2016 of them have in total 2026 (36 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1177|
-|Apache-2.0|389|
-|BSD|150|
-|GPL-3|127|
+|MIT|1181|
+|Apache-2.0|390|
+|BSD|143|
+|GPL-3|112|
 |LGPL-3|32|
-|GPL-2|21|
+|GPL-2|22|
+|LGPL-3+|20|
 |all-rights-reserved|17|
-|LGPL-3+|17|
 |GPL-3+|16|
 |BSD-2|14|
-|LGPL-2.1|12|
+|LGPL-2.1|13|
 |Unlicense|10|
 |PSF-2|9|
-|MPL-2.0|7|
 |EPL-1.0|5|
+|MPL-2.0|4|
 |AGPL-3+|3|
 |LGPL-2+|3|
 |LGPL-2.1+|3|
+|ISC|3|
 |BSD-4|3|
 |public-domain|3|
+|ZPL|2|
 |ECL-2.0|2|
-|ISC|2|
 |NEWLIB|2|
 |EPL-2.0|2|
 |GPL-2+|2|
-|ZPL|1|
 |LGPL-2|1|
 |Boost-1.0|1|
 |AGPL-3|1|
@@ -512,9 +522,9 @@ There are 2036 Ebuilds in total, 2024 of them have in total 2039 (36 different) 
 |CC0-1.0|1|
 |GPL-1|1|
 
-(Last counted: 20/11/2021)
+(Last counted: 05/12/2021)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 20/11/2021
+Last updated: 05/12/2021

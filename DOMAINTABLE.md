@@ -59,6 +59,7 @@
 |aws|Interact with Amazon Web Services|N|N|Y|0.91|
 |axis|Communicating with newer devices from Axis Communications|Y|Y|Y|0.45|
 |baidu|Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi|N|Y|Y|0.59|
+|balboa|None|N|N|Y|2021.12.0b0|
 |bbb_gpio|Base for all BeagleBone Black related GPIO platforms|N|N|Y|0.36|
 |bbox|Presence detection from Bbox Modem Router from Bouygues Telecom|N|N|Y|0.31|
 |beewi_smartclim|BeeWi SmartClim BLE is a Bluetooth Low Energy sensor device|N|Y|Y|0.99|
@@ -89,6 +90,7 @@
 |bt_home_hub_5|Offers presence detection by looking at connected devices to a BT Home |N|Y|Y|0.22|
 |bt_smarthub|Presence detection by looking at BT Smart Hub based routers|N|Y|Y|0.82|
 |buienradar|Integrate buienradar weather data into Home Assistant|N|Y|Y|0.47|
+|button|None|N|N|Y|2021.12.0b0|
 |caldav|Integrate a CalDAV (RFC4791) calendar in Home Assistant|Y|Y|Y|0.60|
 |camera|The camera integration allows you to use IP cameras with Home Assistant|Y|Y|Y|0.7|
 |canary|Allows you to integrate your Canary devices from Home Assistant|N|Y|Y|0.60|
@@ -130,6 +132,7 @@
 |denonavr|Automation Library for Denon AVR receivers|N|Y|Y|0.7.2|
 |deutsche_bahn|will give you the departure time of the next train for the given connection|N|Y|Y|0.14|
 |devolo_home_control|Add Devolo Home-control to Home Assistant|N|Y|Y|0.110|
+|devolo_home_network|None|N|N|Y|2021.12.0b0|
 |dexcom|View your CGM data from Dexcom from Home Assistant|N|Y|Y|0.113|
 |dhcp|will watch the network for DHCP requests for supported devices and services|N|Y|Y|2021.2|
 |dht|Get the current temperature and humidity from a DHT11, DHT22 or AM2302 device|N|Y|Y|0.7|
@@ -192,6 +195,7 @@
 |etherscan|displays Ether and ERC-20 token balances from Etherscan.io|N|N|Y|0.47|
 |eufy|eufy integration is the main integration to integrate various eufy devices|N|N|Y|0.68|
 |everlights|Library for controlling an EverLights lighting system|N|Y|Y|0.87|
+|evil_genius_labs|None|N|N|Y|2021.12.0b0|
 |evohome|links with all non-US Honeywell Total Connect Comfort (TCC) CH/DHW systems|N|Y|Y|0.80|
 |ezviz|ezviz sensor platform uses the EzvizLife API to interact with the devices|N|N|Y|0.107|
 |faa_delays|delays at US Airports based on the FAA’s National Airspace System Status|N|N|Y|2021.3|
@@ -325,6 +329,7 @@
 |isy994|controller that is capable of controlling Insteon and X10 devices|N|N|Y|0.28|
 |itach|control IR devices with a Global Caché iTach Device and GC-100 devices|N|N|Y|0.39|
 |izone|control of a local iZone ducted reverse-cycle climate control device|N|N|Y|0.100|
+|jellyfin|None|N|N|Y|2021.12.0b0|
 |jewish_calendar|jewish_calendar|N|Y|Y|0.79|
 |joaoapps_join|joaoapps_join integration exposes services from Join|N|Y|Y|0.24|
 |juicenet|pulls data from a JuiceNet charging station|N|N|Y|0.47|
@@ -538,6 +543,7 @@
 |rainmachine|integrate all platforms related to RainMachine smart Wi-Fi sprinkler controllers|N|Y|Y|0.69|
 |raspihats|The base for all related Raspihats platforms in Home Assistant|N|N|Y|0.45|
 |raspyrfm|adds support for cheap RC 433 MHz outlets via one of the supported gateways|N|N|Y|0.85|
+|rdw|None|N|N|Y|2021.12.0b0|
 |recollect_waste|track the next scheduled waste pickup and what type of waste from Recollect|N|N|Y|0.87|
 |recorder|storing details in a database per sqlalchemy|Y|Y|Y||
 |recswitch|allows you to control the Ankuoo REC Switch devices from Home Assistant|N|N|Y|0.81|
@@ -550,6 +556,7 @@
 |rest|rest sensor platform for data exposed by a RESTful API|Y|Y|Y|0.7.4|
 |rflink|The rflink integration supports devices that use RFLink gateway firmware|N|N|Y|0.38|
 |rfxtrx|supports RFXtrx 433 MHz  devices by RFXCOM|N|N|Y||
+|ridwell|None|N|N|Y|2021.12.0b0|
 |ring|integrate your ring.com devices|Y|Y|Y|0.42|
 |ripple|The ripple sensor platform displays Ripple wallet balances from Ripple.com|N|N|Y|0.47|
 |risco|This integration connects with Risco Alarms over Risco Cloud|N|N|Y|0.115|
@@ -668,6 +675,7 @@
 |system_bridge|System Bridge runs on your local machine to share system information via its AP|N|N|Y|2021.6|
 |tado|an interface to the my.tado.com website|N|N|Y|0.41|
 |tahoma|interface to the tahomalink.com website. It adds covers, scenes and a sun sensor|N|N|Y|0.59|
+|tailscale|None|N|N|Y|2021.12.0b0|
 |tankerkoenig|monitor the fuel prices with tankerkoenig.de|N|N|Y|0.107|
 |tank_utility|Add Tank Utility propane tank monitors to Home Assistant|N|N|Y|0.53|
 |tapsaff|provides the ‘Taps Aff’ status for a given location within the UK|N|N|Y|0.47|
@@ -679,6 +687,7 @@
 |tellstick|integrates TellStick devices into Home Assistant|N|N|Y||
 |temper|get the current temperature from a TEMPer device|N|N|Y||
 |tesla|integration with the Tesla cloud service|N|Y|Y|0.53|
+|tesla_wall_connector|None|N|N|Y|2021.12.0b0|
 |test|internal and developer use|Y|Y|Y|None|
 |tfiac|integrates several vendors air conditioning systems into Home Assistant|N|N|Y|0.91|
 |thermoworks_smoke|pulls data for your ThermoWorks Smoke Thermometer|N|N|Y|0.81|
@@ -690,6 +699,7 @@
 |tmb|Library that interacts with TMB API|N|N|Y|0.104|
 |todoist|connect to your Todoist Projects and generate binary sensors|N|N|Y|0.54|
 |tof|uses an invisible laser to measure distance with millimeter resolution|N|N|Y|0.90|
+|tolo|None|N|N|Y|2021.12.0b0|
 |toon|client for the Quby ToonAPI|N|Y|Y|0.56|
 |totalconnect|provides connectivity with the Honeywell TotalConnect alarm systems|N|Y|Y|0.42|
 |touchline|lets you control ROTH Touchline floor heating thermostats|N|N|Y|0.61|
