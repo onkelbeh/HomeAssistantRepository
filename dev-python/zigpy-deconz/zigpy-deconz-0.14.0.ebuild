@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -19,7 +19,7 @@ IUSE="test"
 DOCS="README.md"
 
 RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
-		 >=dev-python/zigpy-0.24.0[${PYTHON_USEDEP}]"
+	>=dev-python/zigpy-0.40.0[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
