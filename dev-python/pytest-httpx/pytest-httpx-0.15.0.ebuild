@@ -20,7 +20,7 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="d>=ev-python/httÃpx-0.21.0${PYTHON_USEDEP}]"
+RDEPEND="d>=ev-python/httpx-0.21.0${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
