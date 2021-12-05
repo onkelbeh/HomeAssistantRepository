@@ -8,7 +8,7 @@
   <upstream>
     <remote-id type="pypi">netdata</remote-id>
     <maintainer status="unknown">
-      <email>fabian@affolter-engineering.ch</email>
+      <email>mail@fabian-affolter.ch</email>
       <name>Fabian Affolter</name>
     </maintainer>
   </upstream>
