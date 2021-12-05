@@ -20,7 +20,7 @@ IUSE="test"
 
 DOCS=""
 
-RDEPEND="dev-python/zeep[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/zeep-4.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
