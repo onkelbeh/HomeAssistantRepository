@@ -11,7 +11,7 @@ DESCRIPTION="ISO 4217 currency data package for Python"
 HOMEPAGE="https://github.com/dahlia/iso4217 https://pypi.org/project/iso4217/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Public Domain"
+LICENSE="public-domain"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
