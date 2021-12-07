@@ -346,7 +346,7 @@ google-auth-oauthlib==0.4.6
 google-auth==2.3.3
 google-cloud-pubsub==2.1.0
 google-cloud-texttospeech==0.4.0
-google-nest-sdm==0.4.4
+google-nest-sdm==0.4.5
 googleapis-common-protos==1.53.0
 googlemaps==2.5.1
 goslide-api==0.5.1
@@ -375,7 +375,7 @@ habitipy==0.2.0
 hangups==0.4.14
 hass-nabucasa==0.50.0
 hass-splunk==0.1.1
-HATasmota==0.3.0
+HATasmota==0.3.1
 haversine==2.3.1
 hbmqtt==0.9.5
 hdate==0.10.4
@@ -662,7 +662,7 @@ py-nightscout==1.2.2
 py-schluter==0.1.7
 py-synologydsm-api==1.0.4
 py-zabbix==1.1.7
-py17track==2021.12.1
+py17track==2021.12.2
 pyads==3.2.2
 pyaehw4a1==0.3.9
 pyaes==1.6.1
@@ -903,7 +903,6 @@ python-miio==0.5.9.1
 python-mpd2==3.0.4
 python-mystrom==1.1.2
 python-nest==4.1.0
-python-openzwave-mqtt==1.4.0
 python-picnic-api==1.1.0
 python-qbittorrent==0.4.2
 python-ripple-api==0.0.3
