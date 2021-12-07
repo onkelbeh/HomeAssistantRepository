@@ -291,8 +291,9 @@ Calendar (connected to a locally run ownCloud, OC not in this Repository) (https
 ### darksky
 since yr.no weather was removed by YR's request in early 2021, I use darksky.
 
-### dwd_weather_warnings 
+### dwd_weather_warnings
 
+currently not working....
 ### enigma2
 Enigma2 on Dreambox (2 left) (https://wiki.blue-panel.com/index.php/Enigma2)
 
@@ -326,7 +327,7 @@ storing the temperatures from the DS18B20 (heating system & room temps).
 
 ### KNX
 
-I used a couple of chinese relay cards controlled with PCF8574 I2C extenders attached to an ESP32 with ESPHome. Caused by capacitive load (mostly chinese LED stuff), some EMV trouble on the I2C bus led me to bury this efforts, took some money and ordered a bunch of KNX actors from MDT. I decided that it would be nice to have current measurementt, too, so I took the "MDT AMI-1216.02 Schaltaktor 12fach 16/20A C-Last Industrie mit Strommessung", the MDT SCN-IP000.03 IP Interface and the matching MDT STV-0320.02 320 mA power supply. and I added an MDT BE-04230.02 binary input array with 4 220V inputs (which was too small after a few days). I am very happy with it. After finishing the big click in ETS, the replacement only took a few hours.
+I used a couple of chinese relay cards controlled with PCF8574 I2C extenders attached to an ESP32 with ESPHome. Caused by capacitive load (mostly chinese LED stuff), some EMV trouble on the I2C bus led me to bury this efforts, took some money and ordered a bunch of KNX actors from MDT. I decided that it would be nice to have current measurement, so I took the "MDT AMI-1216.02 Schaltaktor 12fach 16/20A C-Last Industrie mit Strommessung", the MDT SCN-IP000.03 IP Interface and the matching MDT STV-0320.02 320 mA power supply for a first start. And I added an MDT BE-04230.02 binary input array with 4 220V inputs (which was too small after a few days). I am very happy with it. After finishing the big click in ETS, the replacement only took a few hours.
 I am now running the following components, all from MDT:
 
 * MDT SCN-IP000.03 IP Interface
@@ -336,7 +337,7 @@ I am now running the following components, all from MDT:
 * MDT AMI-1216.02 switch 12x 16/20A C-Last Industrie with current measurement (4x)
 * MDT AKS-1210.03 switch 12x 10A C-Last (to turn off some unused stuff during the night)
 
-Integration in Home Assistant was very easy, everything worked as expected from the first attempt.
+Integration in Home Assistant was very easy, everything worked as expected from the first attempt. Everything up and perfectly running after ~1 week.
 
 ### kodi
 Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/), very happy with it.
@@ -394,6 +395,7 @@ Sonos (had many, sold most of them, because they destroyed a formerly very cool 
 
 ### sql
 
+Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. The socket seems much faster then the network link, especially on big operations, e.g. opening the history tab. It takes approx. 10 seconds to pull a complete week with ~1200 entities (if it doesn't freeze the browser), a single day opens in ~2 seconds.
 ### ssl
 
 ### tasmota
@@ -419,23 +421,24 @@ Yamaha RXV (4 devices)
 had a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. Have migrated it to zwavejs2mqtt.
 
 ### zwave_js
-migration was easier than expected, after finding the right module. I now use zwavejs2mqtt. Had some issues with MEEUZB1, so I had to get the TI interface. I came along with another stick, so I now have a spare to do some experiments with. I'll try to put this in an ebuild. Though, installation it quite easy:
 
-Â´Â´Â´bash
+Migration to `zwave_js` was easier than expected, after finding the right module. I now use zwavejs2mqtt. Had some issues with MEEUZB1, so I had to get the TI interface. I came along with another stick, so I now have a spare to do some experiments with. I'll try to put this in an ebuild. Though, installation it quite easy:
+
+```bash
 cd /opt
 git clone https://github.com/zwave-js/zwavejs2mqtt
 cd zwavejs2mqtt
 yarn install
 yarn run build
 yarn start
-Â´Â´Â´
+```
 
 Currently I have no autostart, I just let it run in a screen session.
 It does not run in my HA VM, I have a HPE mircoserver, where the stick is directly attached. It communicates with HA through it's API, MQTT is disabled.
 
-
 ### Z-Wave in general
-Have some Fibaro shutter controllers and (currently) 2 devolo thermostats. I would not buy the Fibaro stuff again, because of their weird firmware policy. You need to have their expensive (and otherwise useless) gateway to make an update. The cheap chinese stuff will do better. And they are very badly shielded.
+
+Have some Fibaro shutter controllers and (currently) 2 devolo thermostats. I would not buy the Fibaro stuff again, because of their weird firmware policy. You need to have their expensive (and otherwise useless) gateway to make an update. The cheap chinese stuff will do better. And the Fibraos are very badly shielded. The last two shutters I installed are now connected to Shelly-2.5, these are cheaper and work as they should.
 
 # Some background
 
@@ -470,8 +473,8 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## To-dos
 - Publish my ESPHome Configurations
-- Add test support for Python 3.10
-- Add more libraries of fix Python 3.9 support if I need it or someone asks for.
+- Do more tests with Python 3.10
+- Add more libraries or fix Python 3.9 support if I need it or someone asks for.
 - Convince the world to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
 ## Experiments in progress:
@@ -481,14 +484,14 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 2035 Ebuilds in total, 2024 of them have in total 2034 (36 different) licenses assigned.
+There are 2036 Ebuilds in total, 2025 of them have in total 2038 (36 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1183|
-|Apache-2.0|396|
+|MIT|1184|
+|Apache-2.0|397|
 |BSD|143|
-|GPL-3|112|
+|GPL-3|113|
 |LGPL-3|32|
 |GPL-2|22|
 |LGPL-3+|20|
@@ -500,12 +503,12 @@ There are 2035 Ebuilds in total, 2024 of them have in total 2034 (36 different) 
 |PSF-2|9|
 |EPL-1.0|5|
 |MPL-2.0|4|
+|public-domain|4|
 |AGPL-3+|3|
 |LGPL-2+|3|
 |LGPL-2.1+|3|
 |ISC|3|
 |BSD-4|3|
-|public-domain|3|
 |ZPL|2|
 |ECL-2.0|2|
 |NEWLIB|2|
@@ -522,9 +525,9 @@ There are 2035 Ebuilds in total, 2024 of them have in total 2034 (36 different) 
 |CC0-1.0|1|
 |GPL-1|1|
 
-(Last counted: 05/12/2021)
+(Last counted: 07/12/2021)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 05/12/2021
+Last updated: 07/12/2021

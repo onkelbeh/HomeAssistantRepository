@@ -67,7 +67,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	>=dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.50.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20211203.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20211206.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.21.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
@@ -291,7 +291,7 @@ RDEPEND="${RDEPEND}
 	emulated_roku? ( ~dev-python/emulated-roku-0.2.1[${PYTHON_USEDEP}] )
 	enigma2? ( ~dev-python/openwebifpy-3.2.7[${PYTHON_USEDEP}] )
 	enocean? ( ~dev-python/enocean-0.50.1[${PYTHON_USEDEP}] )
-	enphase_envoy? ( ~dev-python/envoy-reader-0.20.0[${PYTHON_USEDEP}] )
+	enphase_envoy? ( ~dev-python/envoy-reader-0.20.1[${PYTHON_USEDEP}] )
 	entur_public_transport? ( ~dev-python/enturclient-0.2.2[${PYTHON_USEDEP}] )
 	environment_canada? ( ~dev-python/env-canada-0.5.18[${PYTHON_USEDEP}] )
 	envirophat? ( ~dev-python/envirophat-0.0.6[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
@@ -329,7 +329,7 @@ RDEPEND="${RDEPEND}
 	flo? ( ~dev-python/aioflo-2021.11.0[${PYTHON_USEDEP}] )
 	flume? ( ~dev-python/PyFlume-0.6.5[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-2.0.2[${PYTHON_USEDEP}] )
-	flux_led? ( ~dev-python/flux-led-0.25.16[${PYTHON_USEDEP}] )
+	flux_led? ( ~dev-python/flux-led-0.25.17[${PYTHON_USEDEP}] )
 	folder_watcher? ( ~dev-python/watchdog-2.1.6[${PYTHON_USEDEP}] )
 	foobot? ( ~dev-python/foobot_async-1.0.0[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.1.0[${PYTHON_USEDEP}] )
@@ -406,7 +406,7 @@ RDEPEND="${RDEPEND}
 	http? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] )
 	htu21d? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	huawei_lte? ( ~dev-python/huawei-lte-api-1.4.18[${PYTHON_USEDEP}] ~dev-python/stringcase-1.2.0[${PYTHON_USEDEP}] ~dev-python/url-normalize-1.4.1[${PYTHON_USEDEP}] )
-	hue? ( ~dev-python/aiohue-3.0.1[${PYTHON_USEDEP}] )
+	hue? ( ~dev-python/aiohue-3.0.2[${PYTHON_USEDEP}] )
 	huisbaasje? ( ~dev-python/huisbaasje-client-0.1.0[${PYTHON_USEDEP}] )
 	hunterdouglas_powerview? ( ~dev-python/aiopvapi-1.6.14[${PYTHON_USEDEP}] )
 	hvv_departures? ( ~dev-python/pygti-0.9.2[${PYTHON_USEDEP}] )
@@ -544,7 +544,7 @@ RDEPEND="${RDEPEND}
 	nederlandse_spoorwegen? ( ~dev-python/nsapi-3.0.5[${PYTHON_USEDEP}] )
 	nello? ( ~dev-python/pynello-2.0.3[${PYTHON_USEDEP}] )
 	ness_alarm? ( ~dev-python/nessclient-0.9.15[${PYTHON_USEDEP}] )
-	nest? ( ~dev-python/python-nest-4.1.0[${PYTHON_USEDEP}] ~dev-python/google-nest-sdm-0.4.2[${PYTHON_USEDEP}] )
+	nest? ( ~dev-python/python-nest-4.1.0[${PYTHON_USEDEP}] ~dev-python/google-nest-sdm-0.4.4[${PYTHON_USEDEP}] )
 	netatmo? ( ~dev-python/pyatmo-6.2.0[${PYTHON_USEDEP}] )
 	netdata? ( ~dev-python/netdata-1.0.1[${PYTHON_USEDEP}] )
 	netgear? ( ~dev-python/pynetgear-0.7.0[${PYTHON_USEDEP}] )
@@ -714,7 +714,7 @@ RDEPEND="${RDEPEND}
 	sighthound? ( ~dev-python/pillow-8.2.0[${PYTHON_USEDEP}] ~dev-python/simplehound-0.3[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.4[${PYTHON_USEDEP}] )
 	simplepush? ( ~dev-python/simplepush-1.1.4[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-2021.11.2[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-2021.12.0[${PYTHON_USEDEP}] )
 	sinch? ( ~dev-python/clx-sdk-xms-1.0.0[${PYTHON_USEDEP}] )
 	sisyphus? ( ~dev-python/sisyphus-control-3.0[${PYTHON_USEDEP}] )
 	skybeacon? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
@@ -898,7 +898,7 @@ RDEPEND="${RDEPEND}
 	yale_smart_alarm? ( ~dev-python/yalesmartalarmclient-0.3.4[${PYTHON_USEDEP}] )
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.2[${PYTHON_USEDEP}] )
-	yandex_transport? ( ~dev-python/aioymaps-1.2.1[${PYTHON_USEDEP}] )
+	yandex_transport? ( ~dev-python/aioymaps-1.2.2[${PYTHON_USEDEP}] )
 	yeelight? ( ~dev-python/yeelight-0.7.8[${PYTHON_USEDEP}] ~dev-python/async-upnp-client-0.22.12[${PYTHON_USEDEP}] )
 	yeelightsunflower? ( ~dev-python/yeelightsunflower-0.0.10[${PYTHON_USEDEP}] )
 	yi? ( ~dev-python/aioftp-0.12.0[${PYTHON_USEDEP}] )
