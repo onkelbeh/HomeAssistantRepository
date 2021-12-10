@@ -27,7 +27,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus darksky +dwd_weather_warnings enigma2 esphome forecast_solar fronius github +homekit homekit_controller http hyperion influxdb knx kodi kraken maxcube mikrotik +mobile_app +mqtt myq mysensors +mysql +notify_events +otp owntracks ozw +ping +plex ps4 +python_script qnap qvr_pro +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +sql +ssl systemd systemmonitor tasmota test tile tplink tradfri utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf +zwave_js"
+IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus darksky +dwd_weather_warnings enigma2 esphome forecast_solar fronius github +homekit homekit_controller http hyperion influxdb knx kodi kraken maxcube mikrotik +mobile_app +mqtt myq mysensors +mysql +notify_events +otp owntracks -ozw +ping +plex ps4 +python_script qnap qvr_pro +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +sql +ssl systemd systemmonitor tasmota test tile tplink tradfri utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf +zwave_js"
 
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
@@ -67,7 +67,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	>=dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.50.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20211206.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20211209.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.21.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
@@ -173,7 +173,7 @@ RDEPEND="${RDEPEND}
 	sql? ( ~dev-python/sqlalchemy-1.4.27[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
 	systemmonitor? ( ~dev-python/psutil-5.8.0[${PYTHON_USEDEP}] )
-	tasmota? ( ~dev-python/HATasmota-0.3.0[${PYTHON_USEDEP}] )
+	tasmota? ( ~dev-python/HATasmota-0.3.1[${PYTHON_USEDEP}] )
 	tile? ( ~dev-python/pytile-5.2.4[${PYTHON_USEDEP}] )
 	tplink? ( ~dev-python/python-kasa-0.4.0[${PYTHON_USEDEP}] )
 	tradfri? ( ~dev-python/pytradfri-7.2.1[${PYTHON_USEDEP}] )

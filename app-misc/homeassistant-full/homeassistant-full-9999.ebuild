@@ -67,7 +67,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	>=dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.50.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20211206.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20211209.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.21.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
@@ -329,7 +329,7 @@ RDEPEND="${RDEPEND}
 	flo? ( ~dev-python/aioflo-2021.11.0[${PYTHON_USEDEP}] )
 	flume? ( ~dev-python/PyFlume-0.6.5[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-2.0.2[${PYTHON_USEDEP}] )
-	flux_led? ( ~dev-python/flux-led-0.25.17[${PYTHON_USEDEP}] )
+	flux_led? ( ~dev-python/flux-led-0.26.3[${PYTHON_USEDEP}] )
 	folder_watcher? ( ~dev-python/watchdog-2.1.6[${PYTHON_USEDEP}] )
 	foobot? ( ~dev-python/foobot_async-1.0.0[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.1.0[${PYTHON_USEDEP}] )
@@ -784,7 +784,7 @@ RDEPEND="${RDEPEND}
 	system_bridge? ( ~dev-python/systembridge-2.2.3[${PYTHON_USEDEP}] )
 	tado? ( ~dev-python/python-tado-0.12.0[${PYTHON_USEDEP}] )
 	tahoma? ( ~dev-python/tahoma-api-0.0.16[${PYTHON_USEDEP}] )
-	tailscale? ( ~dev-python/tailscale-0.1.3[${PYTHON_USEDEP}] )
+	tailscale? ( ~dev-python/tailscale-0.1.4[${PYTHON_USEDEP}] )
 	tankerkoenig? ( ~dev-python/pytankerkoenig-0.0.6[${PYTHON_USEDEP}] )
 	tank_utility? ( ~dev-python/tank_utility-1.4.0[${PYTHON_USEDEP}] )
 	tapsaff? ( ~dev-python/tapsaff-0.2.1[${PYTHON_USEDEP}] )
@@ -796,7 +796,7 @@ RDEPEND="${RDEPEND}
 	tellstick? ( ~dev-python/tellcore-net-0.4[${PYTHON_USEDEP}] ~dev-python/tellcore-py-1.1.2[${PYTHON_USEDEP}] )
 	temper? ( ~dev-python/temperusb-1.5.3[${PYTHON_USEDEP}] )
 	tesla? ( ~dev-python/teslajsonpy-0.18.3[${PYTHON_USEDEP}] )
-	tesla_wall_connector? ( ~dev-python/tesla-wall-connector-1.0.0[${PYTHON_USEDEP}] )
+	tesla_wall_connector? ( ~dev-python/tesla-wall-connector-1.0.1[${PYTHON_USEDEP}] )
 	tfiac? ( ~dev-python/pytfiac-0.4[${PYTHON_USEDEP}] )
 	thermoworks_smoke? ( ~dev-python/stringcase-1.2.0[${PYTHON_USEDEP}] ~dev-python/thermoworks-smoke-0.1.8[${PYTHON_USEDEP}] )
 	thingspeak? ( ~dev-python/thingspeak-1.0.0[${PYTHON_USEDEP}] )
@@ -908,7 +908,7 @@ RDEPEND="${RDEPEND}
 	zeroconf? ( ~dev-python/zeroconf-0.37.0[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
 	zestimate? ( ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.29.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.64[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.42.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.7.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.6.3[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.29.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.64[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.42.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.7.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.6.4[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	ziggo_mediabox_xl? ( ~dev-python/ziggo-mediabox-xl-1.1.0[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.5.2[${PYTHON_USEDEP}] )
