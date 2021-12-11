@@ -387,9 +387,8 @@ hkavr==0.0.5
 hlk-sw16==0.0.9
 hole==0.7.0
 holidays==0.11.3.1
-home-assistant-cli==0.9.4
 home-assistant-cli==9999
-home-assistant-frontend==20211209.0
+home-assistant-frontend==20211211.0
 homeassistant
 homeassistant-pyozw==0.1.10
 homeconnect==0.6.3
@@ -622,7 +621,7 @@ piglow==1.2.4
 pilight==0.1.1
 pillow==8.2.0
 pillow==8.4.0
-pip==19.0.2
+pip==20.2.4
 pizzapi==0.0.3
 pkce==1.0.3
 platformdirs==2.4.0
