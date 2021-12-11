@@ -45,7 +45,7 @@ RDEPEND="
 	  ~dev-embedded/platformio-5.2.2
 	  ~dev-embedded/esptool-3.2[${PYTHON_USEDEP}]
 	  dev-python/click[${PYTHON_USEDEP}]
-	  ~dev-embedded/esphome-dashboard-20211021.0[${PYTHON_USEDEP}]
+	  ~dev-embedded/esphome-dashboard-20211021.1[${PYTHON_USEDEP}]
 	  dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 	  ~dev-python/zeroconf-0.36.13[${PYTHON_USEDEP}]
 	  ~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
