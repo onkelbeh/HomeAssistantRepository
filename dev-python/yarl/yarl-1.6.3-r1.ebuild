@@ -2,7 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-PYTHON_COMPAT=( python3_{6..9} pypy3 )
+
+PYTHON_COMPAT=( python3_{7..10} pypy3 )
 
 inherit distutils-r1
 
@@ -17,13 +18,19 @@ KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ppc ppc64 ~riscv ~s390 sparc x86 ~x6
 RDEPEND="
 	>=dev-python/multidict-4.0[${PYTHON_USEDEP}]
 	>=dev-python/idna-2.0[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep '
-		>=dev-python/typing-extensions-3.7.4[${PYTHON_USEDEP}]
-	' python3_{6,7} pypy3)
 "
 
 distutils_enable_tests pytest
+distutils_enable_sphinx docs \
+	dev-python/alabaster
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-1.4.2-test-without-coverage.patch
 )
+
+python_test() {
+	cd tests || die
+	# broken by CPython CVE fix
+	epytest \
+		--deselect tests/test_url_query.py::test_semicolon_as_separator
+}
