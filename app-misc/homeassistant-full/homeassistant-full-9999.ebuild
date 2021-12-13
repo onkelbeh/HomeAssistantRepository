@@ -67,7 +67,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	>=dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.50.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20211211.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20211212.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.21.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
@@ -406,9 +406,9 @@ RDEPEND="${RDEPEND}
 	http? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] )
 	htu21d? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	huawei_lte? ( ~dev-python/huawei-lte-api-1.4.18[${PYTHON_USEDEP}] ~dev-python/stringcase-1.2.0[${PYTHON_USEDEP}] ~dev-python/url-normalize-1.4.1[${PYTHON_USEDEP}] )
-	hue? ( ~dev-python/aiohue-3.0.2[${PYTHON_USEDEP}] )
+	hue? ( ~dev-python/aiohue-3.0.3[${PYTHON_USEDEP}] )
 	huisbaasje? ( ~dev-python/huisbaasje-client-0.1.0[${PYTHON_USEDEP}] )
-	hunterdouglas_powerview? ( ~dev-python/aiopvapi-1.6.14[${PYTHON_USEDEP}] )
+	hunterdouglas_powerview? ( ~dev-python/aiopvapi-1.6.19[${PYTHON_USEDEP}] )
 	hvv_departures? ( ~dev-python/pygti-0.9.2[${PYTHON_USEDEP}] )
 	hydrawise? ( ~dev-python/Hydrawiser-0.2[${PYTHON_USEDEP}] )
 	hyperion? ( ~dev-python/hyperion-py-0.7.4[${PYTHON_USEDEP}] )
@@ -544,7 +544,7 @@ RDEPEND="${RDEPEND}
 	nederlandse_spoorwegen? ( ~dev-python/nsapi-3.0.5[${PYTHON_USEDEP}] )
 	nello? ( ~dev-python/pynello-2.0.3[${PYTHON_USEDEP}] )
 	ness_alarm? ( ~dev-python/nessclient-0.9.15[${PYTHON_USEDEP}] )
-	nest? ( ~dev-python/python-nest-4.1.0[${PYTHON_USEDEP}] ~dev-python/google-nest-sdm-0.4.5[${PYTHON_USEDEP}] )
+	nest? ( ~dev-python/python-nest-4.1.0[${PYTHON_USEDEP}] ~dev-python/google-nest-sdm-0.4.6[${PYTHON_USEDEP}] )
 	netatmo? ( ~dev-python/pyatmo-6.2.0[${PYTHON_USEDEP}] )
 	netdata? ( ~dev-python/netdata-1.0.1[${PYTHON_USEDEP}] )
 	netgear? ( ~dev-python/pynetgear-0.7.0[${PYTHON_USEDEP}] )
