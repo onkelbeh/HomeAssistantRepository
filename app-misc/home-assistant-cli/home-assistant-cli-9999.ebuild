@@ -57,9 +57,10 @@ BDEPEND="
 	)"
 
 src_prepare() {
-	sed -i -e "s/'ruamel.yaml>=0.16.5,<0.18'/'ruamel.yaml>=0.15.100'/" setup.py || die "Sed version helper failed!"
+	sed -i -e "s/'regex>=2021.10.8'/'regex'/" setup.py || die "regex version helper failed!"
+	sed -i -e "s/'ruamel.yaml>=0.16.5,<0.18'/'ruamel.yaml>=0.15.100'/" setup.py || die "ruamel.yaml version helper failed!"
 	sed -i -e "s/'click>=8,<9'/'click'/" setup.py || die "click version helper failed!"
-	sed -i -e "s/'dateparser>=0.7.1,<0.8'/'dateparser>=0.7.1'/" setup.py || die "click version helper failed!"
+	sed -i -e "s/'dateparser>=0.7.1,<0.8'/'dateparser>=0.7.1'/" setup.py || die "dateparser version helper failed!"
 	eapply_user
 }
 
