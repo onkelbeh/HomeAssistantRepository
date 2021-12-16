@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 DISTUTILS_SINGLE_IMPL=1
 
 inherit readme.gentoo-r1 distutils-r1
@@ -17,7 +17,6 @@ else
 	MY_P=${P/_beta/b}
 	MY_PV=${PV/_beta/b}
 	SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
-	#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
 	S="${WORKDIR}/${MY_P}/"
 fi
 
@@ -38,14 +37,15 @@ RDEPEND="
 		~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
 		server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
 		~dev-python/tzlocal-4.1[${PYTHON_USEDEP}]
-		>=dev-python/pytz-2021.1[${PYTHON_USEDEP}]
+		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-		server? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
 		~dev-embedded/platformio-5.2.2
 		~dev-embedded/esptool-3.2[${PYTHON_USEDEP}]
 		~dev-python/click-8.0.3[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20211021.0[${PYTHON_USEDEP}]
-		~dev-python/aioesphomeapi-10.2.0[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20211211.0[${PYTHON_USEDEP}]
+		~dev-python/aioesphomeapi-10.6.0[${PYTHON_USEDEP}]
+		dev-python/zeroconf[${PYTHON_USEDEP}]
+		~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
 	')"
 
 BDEPEND="
