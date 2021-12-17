@@ -43,7 +43,7 @@ aiohttp-cors==0.7.0
 aiohttp==3.7.3
 aiohttp==3.7.4_p0
 aiohttp==3.8.1
-aiohue==3.0.5
+aiohue==3.0.6
 aioimaplib==0.9.0
 aiokafka==0.6.0
 aiokef==0.2.16
@@ -164,7 +164,7 @@ broadlink==0.18.0
 brother==1.1.0
 brotli==1.0.9
 brottsplatskartan==0.0.1
-brunt==1.0.1
+brunt==1.0.2
 bsblan==0.4.0
 bt-proximity==0.2.1
 bthomehub5-devicelist==0.1.1
@@ -260,7 +260,7 @@ dsmr-parser==0.30
 dtlssocket==0.1.12
 dweepy==0.3.0
 dynalite-devices==0.1.46
-ebusdpy==0.0.16
+ebusdpy==0.0.17
 ecdsa==0.17.0
 ecoaliface==0.4.0
 eebrightbox==0.0.4
@@ -296,7 +296,7 @@ face_recognition==1.2.3
 face_recognition_models==0.3.0
 fastdotcom==0.0.3
 feedparser==6.0.2
-ffmpeg==4.4
+ffmpeg==4.4.1
 fiblary3==0.1.7
 file==5.41
 fints==1.0.1
@@ -305,7 +305,7 @@ fixerio==1.0.0_alpha0
 fjaraskupan==1.0.2
 flask==2.0.2
 flipr-api==1.4.1
-flux-led==0.26.7
+flux-led==0.26.15
 foobot_async==1.0.0
 forecast-solar==2.1.0
 fortiosapi==1.0.5
@@ -346,7 +346,7 @@ google-auth-oauthlib==0.4.6
 google-auth==2.3.3
 google-cloud-pubsub==2.1.0
 google-cloud-texttospeech==0.4.0
-google-nest-sdm==0.4.8
+google-nest-sdm==0.4.9
 googleapis-common-protos==1.53.0
 googlemaps==2.5.1
 goslide-api==0.5.1
