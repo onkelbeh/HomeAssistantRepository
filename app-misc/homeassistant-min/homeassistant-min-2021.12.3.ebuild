@@ -197,7 +197,7 @@ BDEPEND="${RDEPEND}
 		~dev-python/mock-open-1.4.0[${PYTHON_USEDEP}]
 		~dev-python/mypy-0.910[${PYTHON_USEDEP}]
 		~dev-python/pipdeptree-2.2.0[${PYTHON_USEDEP}]
-		~dev-vcs/pre-commit-2.16.0
+		dev-vcs/pre-commit
 		~dev-python/pylint-strict-informational-0.1[${PYTHON_USEDEP}]
 		~dev-python/pylint-2.12.1[${PYTHON_USEDEP}]
 		~dev-python/pytest-cov-2.12.1[${PYTHON_USEDEP}]
@@ -260,4 +260,3 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
-
