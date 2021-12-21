@@ -168,6 +168,7 @@
 |edimax|switch platform allows you to control the state of your Edimax switches|N|N|Y||
 |edl21|edl21 integration lets you read German EDL21 smart meters using SML|N|N|Y|0.107|
 |ee_brightbox|presence detection by looking at connected devices to a EE Bright Box 2 router|N|N|Y|0.87|
+|efergy|Integrate your Efergy meter information into Home Assistant|N|N|Y||
 |egardia|Control an Egardia/Woonveilig alarm control panel from Home Assistant|N|N|Y|0.65|
 |eight_sleep|Fetch data from your Eight Sleep smart cover or mattress|N|N|Y|0.44|
 |elgato|The Elgato Key Light sets the bar for high-end studio lighting|N|N|Y|0.104|
@@ -191,7 +192,7 @@
 |epsonworkforce|monitor the ink levels of a Epson Workforce printer|N|N|Y|0.92|
 |eq3btsmart|Integrate EQ3 Bluetooth Smart Thermostats in Home Assistant|N|N|Y|0.18|
 |esphome|Support for esphome sensors, covers and switches and it's dashboard|Y|Y|Y|0.85|
-|essent|communicate with the (undocumented) API of Dutch energy provider Essent|N|N|Y|0.93|
+|essent|communicate with the (undocumented) API of Dutch energy provider Essent|N|N|Y||
 |etherscan|displays Ether and ERC-20 token balances from Etherscan.io|N|N|Y|0.47|
 |eufy|eufy integration is the main integration to integrate various eufy devices|N|N|Y|0.68|
 |everlights|Library for controlling an EverLights lighting system|N|Y|Y|0.87|
@@ -234,6 +235,7 @@
 |fritzbox_callmonitor|monitors the call monitor exposed by AVM FRITZ!Box routers on TCP port 1012|N|Y|Y|0.27|
 |fritzbox_netmonitor|sensor monitors the network statistics exposed by AVM FRITZ!Box routers|N|Y|Y|0.36|
 |fronius|Add (very basic) Support for Fronius Symo JSON Api to Home Assistant|Y|Y|Y|0.96|
+|frontend|official frontend to control Home Assistant|Y|Y|Y|0.7|
 |frontier_silicon|Support for Internet Radios based on the Frontier Silicon chipset|N|N|Y|0.40|
 |futurenow|Allows you to use P5 FutureNow relay/dimmer units as lights|N|N|Y|0.75|
 |garages_amsterdam|measure the occupancy of Amsterdam parking garages in the Netherlands|N|N|Y|2021.6|
@@ -317,7 +319,7 @@
 |influxdb|transfer sensor data to a local InfluxDB database|Y|Y|Y|0.9|
 |insteon|allowing linked INSTEON devices to be used|N|Y|Y|0.39|
 |intesishome|communications with IntesisHome Smart AC Controllers|N|Y|Y|0.104|
-|iota|IOTA is a new blockless distributed ledger|N|N|Y|0.62|
+|iota|IOTA is a new blockless distributed ledger|N|N|Y||
 |iotawatt|Integration for the IoTaWatt Open WiFi Electricity Monitor|N|N|Y|2021.9.0b6|
 |iperf3|iperf3 sensor integration allows you to measure network bandwidth|N|N|Y|0.71|
 |ipma|ipma weather platform|N|Y|Y|0.72|
@@ -330,7 +332,7 @@
 |itach|control IR devices with a Global Caché iTach Device and GC-100 devices|N|N|Y|0.39|
 |izone|control of a local iZone ducted reverse-cycle climate control device|N|N|Y|0.100|
 |jellyfin|exposes a Jellyfin server as a Media Source in Home Assistant|N|N|Y|2021.12.0b0|
-|jewish_calendar|jewish_calendar|N|Y|Y|0.79|
+|jewish_calendar|Displays information related to the Jewish Calendar as a variety of sensors|N|Y|Y|0.79|
 |joaoapps_join|joaoapps_join integration exposes services from Join|N|Y|Y|0.24|
 |juicenet|pulls data from a JuiceNet charging station|N|N|Y|0.47|
 |kaiterra|view the readings from your Laser Egg or Sensedge device|N|N|Y|0.100|
@@ -368,14 +370,14 @@
 |logi_circle|integrate your Logi Circle cameras in Home Assistant|N|N|Y|0.79|
 |london_underground|display the status of London underground lines|N|N|Y|0.49|
 |lookin|Integrates LOOKin devices into Home Assistant|N|N|Y|2021.11.0b4|
-|loopenergy|Integrate your Loop Energy meter information into Home Assistant|N|Y|Y|0.17|
+|loopenergy|Integrate your Loop Energy meter information into Home Assistant|N|Y|Y||
 |luci|fetch connected devices from your OpenWrt|N|Y|Y||
 |luftdaten|query the open data API of luftdaten.info to monitor air quality|N|Y|Y|0.82|
 |lupusec|Lupusec alarm control panel and ultimately all connected sensors|N|N|Y|0.83|
 |lutron|communicating with the Lutron main hub|N|N|Y|0.37|
 |lutron_caseta|for communicating with the Lutron Caseta Smart Bridge|N|N|Y|0.41|
 |lw12wifi|Library to control the Lagute LW-12 WiFi LED controller|N|N|Y|0.71|
-|lyft|Unofficial Lyft Rides API Python SDK|N|N|Y|0.41|
+|lyft|Unofficial Lyft Rides API Python SDK|N|N|Y||
 |lyric|Honeywell Lyric thermostat platform|N|N|Y|2021.3|
 |magicseaweed|Provides API wrapper to magicseaweed.com.|N|N|Y|0.75|
 |mailgun|A simple mailgun client - pymailgun fork with Python 3 support|N|N|Y|0.38|
@@ -386,7 +388,7 @@
 |mazda|Mazda Connected Services integration|N|N|Y|2021.3|
 |mcp23017|base for all related mcp23017 platforms in Home Assistant|N|N|Y|0.94|
 |mediaroom|control a Mediaroom Set-Top Box (STB) from Home Assistant|N|N|Y|0.63|
-|media_extractor|support for youtube_dl|N|Y|Y|0.49|
+|media_extractor|Gets a stream URL and sends it to a media player entity|N|Y|Y|0.49|
 |melcloud|Python MELCloud interface|N|N|Y|0.106|
 |melissa|main integration to connect to a Melissa Climate A/C control|N|N|Y|0.63|
 |message_bird|MessageBird's REST API|N|N|Y|0.16|
@@ -419,7 +421,7 @@
 |mullvad|Mullvad VPN integration pulls Mullvad VPN status information|N|N|Y|2021.3|
 |mutesync|mutesync integration for Home Assistant connects to the mütesync virtual button|N|N|Y|2021.5|
 |mvglive|departure times bus, tram, subway, train of Munich public transport network|N|N|Y|0.42|
-|mychevy|communicates with the my.chevrolet website using the javascript API|N|N|Y|0.62|
+|mychevy|communicates with the my.chevrolet website using the javascript API|N|N|Y||
 |mycroft|allows you to send notifications and more to Mycroft from Home Assistant|N|N|Y|0.53|
 |myq|lets you control MyQ-Enabled garage doors|Y|Y|Y|0.39|
 |mysensors|combines devices like Arduino, ESP8266, Raspberry Pi, NRF24L01+ and RFM69|Y|N|Y|0.73|
@@ -432,7 +434,7 @@
 |nanoleaf|allows you to control Nanoleaf Light Panels from Home Assistant|N|N|Y|0.67|
 |neato|Python package for controlling Neato pybotvac Connected vacuum robot|N|N|Y|0.33|
 |nederlandse_spoorwegen|train service in the Netherlands|N|Y|Y|0.57|
-|nello|The nello platform allows you to control Nello intercoms|N|N|Y|0.52|
+|nello|The nello platform allows you to control Nello intercoms|N|N|Y||
 |ness_alarm|integrate a Ness D8x/D16x alarm system|N|N|Y|0.85|
 |nest|main integration to integrate all Nest related platforms|N|N|Y|0.7|
 |netatmo|Access to Netatmo weather station data|N|Y|Y|0.20|
@@ -467,6 +469,7 @@
 |nzbget|monitor and control your downloads with NZBGet|N|N|Y|0.17|
 |oasa_telematics|bus and trolley arrival times for Greek public transport for Athens|N|N|Y|0.92|
 |obihai|view the call status for your Obihai devices|N|N|Y|0.99|
+|octoprint|The main integration to integrate OctoPrint sensors|Y|Y|Y|0.19|
 |oem|ESP8266 based “WiFi MQTT Relay / Thermostat” sold by OpenEnergyMonitor|N|N|Y|0.39|
 |ohmconnect| show you the current OhmConnect status for the given OhmConnect ID|N|N|Y|0.26|
 |ombi|The Ombi integration monitors data from your Ombi instance|N|N|Y|0.100|
@@ -671,12 +674,12 @@
 |synology_dsm|monitor getting various statistics from your Synology NAS|N|Y|Y|0.32|
 |synology_srm|detect presence by looking at connected devices to a Synology SRM router|N|N|Y|0.87|
 |systemd|internal and developer use|Y|Y|Y|None|
-|systemmonitor|monitor your platform|Y|Y|Y||
+|systemmonitor|Allows you to monitor disk usage, memory usage, CPU usage, and running processes|Y|Y|Y||
 |system_bridge|System Bridge runs on your local machine to share system information via its AP|N|N|Y|2021.6|
 |tado|an interface to the my.tado.com website|N|N|Y|0.41|
 |tahoma|interface to the tahomalink.com website. It adds covers, scenes and a sun sensor|N|N|Y|0.59|
 |tailscale|monitor and automate on the state of the devices in your Tailscale VPN|N|N|Y|2021.12.0b0|
-|tankerkoenig|monitor the fuel prices with tankerkoenig.de|N|N|Y|0.107|
+|tankerkoenig|monitor the fuel prices with tankerkoenig.de|Y|Y|Y|0.107|
 |tank_utility|Add Tank Utility propane tank monitors to Home Assistant|N|N|Y|0.53|
 |tapsaff|provides the ‘Taps Aff’ status for a given location within the UK|N|N|Y|0.47|
 |tasmota|Python module to help parse and construct Tasmota MQTT messages|Y|Y|Y|0.117|
@@ -686,7 +689,7 @@
 |tellduslive|cloud platform that connects to your Tellstick|N|Y|Y|0.11|
 |tellstick|integrates TellStick devices into Home Assistant|N|N|Y||
 |temper|get the current temperature from a TEMPer device|N|N|Y||
-|tesla|integration with the Tesla cloud service|N|Y|Y|0.53|
+|tesla|integration with the Tesla cloud service|N|Y|Y||
 |tesla_wall_connector|allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi|N|N|Y|2021.12.0b0|
 |test|internal and developer use|Y|Y|Y|None|
 |tfiac|integrates several vendors air conditioning systems into Home Assistant|N|N|Y|0.91|
@@ -706,7 +709,7 @@
 |tplink|control your TP-Link Smart Home Devices|Y|Y|Y|0.89|
 |tplink_lte|allows you to observe and control TP-Link LTE routers|N|N|Y|0.83|
 |traccar|uses GPS for tracking and has support for over 1500 different types of devices|N|N|Y|0.83|
-|trackr|trackr platform allows you to detect presence using TrackR devices|N|N|Y|0.36|
+|trackr|trackr platform allows you to detect presence using TrackR devices|N|N|Y||
 |tractive|Tractive is an Austrian company develops real-time location trackers for pets|N|N|Y|2021.9.0b1|
 |tradfri|Control/observe IKEA Tradfri devices|Y|Y|Y|0.43|
 |trafikverket_train|Retrieve train departure information from Trafikverket|N|N|Y|0.96|
@@ -716,7 +719,7 @@
 |travisci|integrate the test build results reported by Travis-CI working|N|N|Y|0.56|
 |trend|sensors which show the trend of numeric state orstate_attributes|N|N|Y|0.28|
 |tts|Audio metadata tag reader and writer implemented in pure Python|N|N|Y|0.35|
-|tuya|integrate all Tuya Smart related platforms|N|Y|Y||
+|tuya|integrate all Tuya Smart related platforms|N|Y|Y|0.74|
 |twentemilieu|allows you to track the next scheduled waste pickups by Twente Milieu|N|N|Y|0.97|
 |twilio|enables the sending of notifications via SMS and the creation of calls|N|N|Y|0.40|
 |twinkly|control Twinkly LED string from Home Assistant|N|N|Y|2020.12|

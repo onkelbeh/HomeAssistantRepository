@@ -35,6 +35,7 @@
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
     <flag name="forecast_solar">Asynchronous Python client for getting forecast solar information</flag>
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
+    <flag name="frontend">official frontend to control Home Assistant</flag>
     <flag name="github">GitHub sensor integrates data from GitHub to monitor your favorite repositories</flag>
     <flag name="homekit">Integrate HomeKit controller and accessory in Home Assistant</flag>
     <flag name="homekit_controller">Allows you to connect accessories with the “Works with HomeKit” logo</flag>
@@ -52,6 +53,7 @@
     <flag name="mysensors">combines devices like Arduino, ESP8266, Raspberry Pi, NRF24L01+ and RFM69</flag>
     <flag name="mysql">set dependencies to install MySQL Libraries for use with HomeAssistant</flag>
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
+    <flag name="octoprint">The main integration to integrate OctoPrint sensors</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ozw">Open Zwave MQTT</flag>
@@ -76,7 +78,8 @@
     <flag name="sql">enables you to use an SQL database supported by the sqlalchemy library</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="systemd">internal and developer use</flag>
-    <flag name="systemmonitor">monitor your platform</flag>
+    <flag name="systemmonitor">Allows you to monitor disk usage, memory usage, CPU usage, and running processes</flag>
+    <flag name="tankerkoenig">monitor the fuel prices with tankerkoenig.de</flag>
     <flag name="tasmota">Python module to help parse and construct Tasmota MQTT messages</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tile">API for Tile Bluetooth trackers</flag>
