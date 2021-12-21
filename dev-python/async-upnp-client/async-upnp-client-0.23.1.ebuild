@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -22,15 +22,18 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
 	>=dev-python/async_timeout-3.0.0[${PYTHON_USEDEP}]
-	>=dev-python/python-didl-lite-1.2.6[${PYTHON_USEDEP}]
+	<dev-python/async_timeout-5.0.0[${PYTHON_USEDEP}]
+	>=dev-python/python-didl-lite-1.3.2[${PYTHON_USEDEP}]
 	>=dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]"
 
 BDEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/coverage[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/asyncmock[${PYTHON_USEDEP}]
 	)"
 
