@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -32,4 +32,10 @@ BDEPEND="
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
+}
+
+# fill empty package version
+src_prepare() {
+	sed 's/os.environ.get("PACKAGE_VERSION")/"'${PV}'"/g' -i setup.py || die
+	eapply_user
 }
