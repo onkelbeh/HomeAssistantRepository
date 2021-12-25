@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..9} )
 inherit distutils-r1
 
 DESCRIPTION="Python client for Sentry"
@@ -35,21 +35,25 @@ BDEPEND="
 		dev-python/pytest-forked[${PYTHON_USEDEP}]
 		dev-python/pytest-localserver[${PYTHON_USEDEP}]
 		dev-python/werkzeug[${PYTHON_USEDEP}]
+		dev-python/zope-event[${PYTHON_USEDEP}]
 	)
 "
 
 distutils_enable_tests pytest
 
 python_test() {
-	local deselect=(
+	local EPYTEST_IGNORE=(
 		# tests require Internet access
 		tests/integrations/httpx/test_httpx.py
 		tests/integrations/requests/test_requests.py
 		tests/integrations/stdlib/test_httplib.py
 		# wtf is it supposed to do?!
 		tests/integrations/gcp/test_gcp.py
+	)
+
+	local EPYTEST_DESELECT=(
 		# hangs
-		'tests/test_transport.py::test_transport_works[eventlet'
+		'tests/test_transport.py::test_transport_works'
 		# TODO
 		'tests/test_basics.py::test_auto_enabling_integrations_catches_import_error'
 		tests/test_client.py::test_databag_depth_stripping
@@ -57,6 +61,7 @@ python_test() {
 		tests/test_client.py::test_databag_breadth_stripping
 		# incompatible version?
 		tests/integrations/falcon/test_falcon.py
+		tests/integrations/sqlalchemy/test_sqlalchemy.py::test_too_large_event_truncated
 		# test_circular_references: apparently fragile
 		'tests/integrations/threading/test_threading.py::test_circular_references'
 		# test for new feature, fails with IndexError
@@ -67,5 +72,5 @@ python_test() {
 	# Needs to detect sentry-sdk in the installed modules
 	distutils_install_for_testing
 
-	epytest ${deselect[@]/#/--deselect }
+	epytest
 }
