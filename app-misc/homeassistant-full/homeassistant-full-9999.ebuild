@@ -67,7 +67,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
 	>=dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.50.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20211220.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20211227.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.21.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
@@ -92,7 +92,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
 	~dev-python/websockets-9.1[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.6.3[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.37.0[${PYTHON_USEDEP}]"
+	~dev-python/zeroconf-0.38.1[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -345,7 +345,7 @@ RDEPEND="${RDEPEND}
 	fritzbox_callmonitor? ( ~dev-python/fritzconnection-1.7.2[${PYTHON_USEDEP}] )
 	fritzbox_netmonitor? ( ~dev-python/fritzconnection-1.4.2[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20211220.0[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20211227.0[${PYTHON_USEDEP}] )
 	frontier_silicon? ( ~dev-python/afsapi-0.0.4[${PYTHON_USEDEP}] )
 	futurenow? ( ~dev-python/pyfnip-0.2[${PYTHON_USEDEP}] )
 	garages_amsterdam? ( ~dev-python/garages-amsterdam-2.1.1[${PYTHON_USEDEP}] )
@@ -677,7 +677,7 @@ RDEPEND="${RDEPEND}
 	rmvtransport? ( ~dev-python/PyRMVtransport-0.3.3[${PYTHON_USEDEP}] )
 	rocketchat? ( ~dev-python/rocketchat-API-0.6.1[${PYTHON_USEDEP}] )
 	roku? ( ~dev-python/rokuecp-0.8.4[${PYTHON_USEDEP}] )
-	roomba? ( ~dev-python/roombapy-1.6.4[${PYTHON_USEDEP}] )
+	roomba? ( ~dev-python/roombapy-1.6.5[${PYTHON_USEDEP}] )
 	roon? ( ~dev-python/roonapi-0.0.38[${PYTHON_USEDEP}] )
 	route53? ( ~dev-python/boto3-1.16.52[${PYTHON_USEDEP}] )
 	rova? ( ~dev-python/rova-0.2.1[${PYTHON_USEDEP}] )
@@ -748,7 +748,7 @@ RDEPEND="${RDEPEND}
 	somfy_mylink? ( ~dev-python/somfy-mylink-synergy-1.0.6[${PYTHON_USEDEP}] )
 	sonarr? ( ~dev-python/sonarr-0.3.0[${PYTHON_USEDEP}] )
 	songpal? ( ~dev-python/python-songpal-0.12[${PYTHON_USEDEP}] )
-	sonos? ( ~dev-python/soco-0.25.1[${PYTHON_USEDEP}] )
+	sonos? ( ~dev-python/soco-0.25.2[${PYTHON_USEDEP}] )
 	sony_projector? ( ~dev-python/pySDCP-1[${PYTHON_USEDEP}] )
 	soundtouch? ( ~dev-python/libsoundtouch-0.8.0[${PYTHON_USEDEP}] )
 	spc? ( ~dev-python/pyspcwebgw-0.4.0[${PYTHON_USEDEP}] )
@@ -827,7 +827,7 @@ RDEPEND="${RDEPEND}
 	travisci? ( ~dev-python/TravisPy-0.3.5[${PYTHON_USEDEP}] )
 	trend? ( ~dev-python/numpy-1.21.4[${PYTHON_USEDEP}] )
 	tts? ( ~media-libs/mutagen-1.45.1 )
-	tuya? ( ~dev-python/tuya-iot-py-sdk-0.6.3[${PYTHON_USEDEP}] )
+	tuya? ( ~dev-python/tuya-iot-py-sdk-0.6.6[${PYTHON_USEDEP}] )
 	twentemilieu? ( ~dev-python/twentemilieu-0.5.0[${PYTHON_USEDEP}] )
 	twilio? ( ~dev-python/twilio-6.32.0[${PYTHON_USEDEP}] )
 	twinkly? ( ~dev-python/twinkly-client-0.0.2[${PYTHON_USEDEP}] )
@@ -905,10 +905,10 @@ RDEPEND="${RDEPEND}
 	yeelight? ( ~dev-python/yeelight-0.7.8[${PYTHON_USEDEP}] ~dev-python/async-upnp-client-0.23.1[${PYTHON_USEDEP}] )
 	yeelightsunflower? ( ~dev-python/yeelightsunflower-0.0.10[${PYTHON_USEDEP}] )
 	yi? ( ~dev-python/aioftp-0.12.0[${PYTHON_USEDEP}] )
-	youless? ( ~dev-python/youless-api-0.15[${PYTHON_USEDEP}] )
+	youless? ( ~dev-python/youless-api-0.16[${PYTHON_USEDEP}] )
 	zabbix? ( ~dev-python/py-zabbix-1.1.7[${PYTHON_USEDEP}] )
 	zengge? ( ~dev-python/zengge-0.2[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/zeroconf-0.37.0[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/zeroconf-0.38.1[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
 	zestimate? ( ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	zha? ( ~dev-python/bellows-0.29.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.65[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.42.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.7.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.6.4[${PYTHON_USEDEP}] )
