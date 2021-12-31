@@ -7,18 +7,18 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python module to talk to Philips Hue."
-HOMEPAGE="https://github.com/home-assistant-libs/aiohue https://pypi.org/project/aiohue/"
+DESCRIPTION="Simple, easy-to-use throttler for asyncio"
+HOMEPAGE="https://github.com/hallazzang/asyncio-throttle https://pypi.org/project/asyncio-throttle/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 x86 amd64-linux x86-linux"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
+RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
