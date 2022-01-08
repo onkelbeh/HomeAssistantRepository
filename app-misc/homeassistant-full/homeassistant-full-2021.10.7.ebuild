@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -621,7 +621,7 @@ RDEPEND="${RDEPEND}
 	profiler? ( ~dev-python/pyprof2calltree-1.4.5[${PYTHON_USEDEP}] ~dev-python/guppy3-3.1.0[${PYTHON_USEDEP}] ~dev-python/objgraph-3.4.1[${PYTHON_USEDEP}] )
 	progettihwsw? ( ~dev-python/ProgettiHWSW-0.1.1[${PYTHON_USEDEP}] )
 	proliphix? ( ~dev-python/proliphix-0.4.1[${PYTHON_USEDEP}] )
-	prometheus? ( ~dev-python/prometheus-client-0.7.1[${PYTHON_USEDEP}] )
+	prometheus? ( ~dev-python/prometheus_client-0.7.1[${PYTHON_USEDEP}] )
 	prosegur? ( ~dev-python/pyprosegur-0.0.5[${PYTHON_USEDEP}] )
 	proxmoxve? ( ~dev-python/proxmoxer-1.1.1[${PYTHON_USEDEP}] )
 	proxy? ( ~dev-python/pillow-8.2.0[${PYTHON_USEDEP}] )
