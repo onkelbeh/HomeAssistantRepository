@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -26,7 +26,7 @@ BDEPEND="
 RDEPEND="${DEPEND}
 	$(python_gen_cond_dep '
 		>dev-python/bottle-0.12[${PYTHON_MULTI_USEDEP}]
-		>=dev-python/click-7.1.2[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/click-8.0.0[${PYTHON_MULTI_USEDEP}]
 		!=dev-python/click-8.0.2[${PYTHON_MULTI_USEDEP}]
 		<dev-python/click-9.0.0[${PYTHON_MULTI_USEDEP}]
 		dev-python/colorama[${PYTHON_MULTI_USEDEP}]
@@ -36,13 +36,11 @@ RDEPEND="${DEPEND}
 		>=dev-python/requests-2.4[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/semantic_version-2.8.1[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/tabulate-0.8.3[${PYTHON_MULTI_USEDEP}]
-		<dev-python/tabulate-1[${PYTHON_MULTI_USEDEP}]
-		>=dev-python/aiofiles-0.7.0[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/aiofiles-0.8.0[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/ajsonrpc-1.1.0[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/starlette-0.17.0[${PYTHON_MULTI_USEDEP}]
-		<dev-python/starlette-0.18.0[${PYTHON_MULTI_USEDEP}]
-		>=dev-python/uvicorn-0.15.0[${PYTHON_MULTI_USEDEP}]
-		<dev-python/uvicorn-0.16.0[${PYTHON_MULTI_USEDEP}]
+		>=dev-python/uvicorn-0.17.0[${PYTHON_MULTI_USEDEP}]
+		<dev-python/uvicorn-0.18.0[${PYTHON_MULTI_USEDEP}]
 		>=dev-python/wsproto-1.0.0[${PYTHON_MULTI_USEDEP}]
 		dev-python/zeroconf[${PYTHON_MULTI_USEDEP}]
 	')"
