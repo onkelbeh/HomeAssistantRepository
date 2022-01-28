@@ -355,7 +355,7 @@ RDEPEND="${RDEPEND}
 	github? ( ~dev-python/aiogithubapi-21.8.0[${PYTHON_USEDEP}] )
 	gitlab_ci? ( ~dev-python/python-gitlab-1.6.0[${PYTHON_USEDEP}] )
 	gitter? ( ~dev-python/gitterpy-0.1.7[${PYTHON_USEDEP}] )
-	glances? ( ~dev-python/glances_api-0.2.0[${PYTHON_USEDEP}] )
+	glances? ( ~dev-python/glances-api-0.2.0[${PYTHON_USEDEP}] )
 	gntp? ( ~dev-python/gntp-1.0.3[${PYTHON_USEDEP}] )
 	goalfeed? ( ~dev-python/Pysher-1.0.1[${PYTHON_USEDEP}] )
 	goalzero? ( ~dev-python/goalzero-0.2.0[${PYTHON_USEDEP}] )
