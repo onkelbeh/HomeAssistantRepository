@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -29,9 +29,4 @@ BDEPEND="
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
-}
-
-src_prepare() {
-	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests*'])/g" -i setup.py || die
-	eapply_user
 }
