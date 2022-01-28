@@ -1,9 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -16,13 +16,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-# botocore>=1.13.14,<1.13.15
+DOCS="README.rst"
 
 RDEPEND=">=dev-python/aiohttp-3.3.1[${PYTHON_USEDEP}]
 	>=dev-python/wrapt-1.10.10[${PYTHON_USEDEP}]
-	>=dev-python/botocore-1.13.14[${PYTHON_USEDEP}]
-	<dev-python/botocore-1.13.15[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+	~dev-python/boto3-1.20.24[${PYTHON_USEDEP}]
+	>=dev-python/aioitertools-0.5.1[${PYTHON_USEDEP}]"
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
