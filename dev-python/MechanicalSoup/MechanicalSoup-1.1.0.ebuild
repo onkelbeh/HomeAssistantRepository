@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="A python library for automating interaction with websites"
 HOMEPAGE="https://pypi.org/project/MechanicalSoup/"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.zip"
+SRC_URI="https://github.com/${PN}/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,7 +21,6 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/beautifulsoup4-4.7[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.22[${PYTHON_USEDEP}]
-	>=dev-python/six-1.4[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
