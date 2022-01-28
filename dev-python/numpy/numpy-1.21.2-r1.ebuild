@@ -3,16 +3,14 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 PYTHON_REQ_USE="threads(+)"
 
 FORTRAN_NEEDED=lapack
 
-DISTUTILS_USE_SETUPTOOLS=rdepend
+inherit distutils-r1 flag-o-matic fortran-2 toolchain-funcs
 
-inherit distutils-r1 flag-o-matic fortran-2 multiprocessing toolchain-funcs
-
-DOC_PV="1.16.4"
+DOC_PV=${PV}
 DESCRIPTION="Fast array and numerical python library"
 HOMEPAGE="https://numpy.org/"
 SRC_URI="
@@ -24,7 +22,7 @@ SRC_URI="
 	)"
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc x86 amd64-linux x86-linux ~ppc-macos ~x64-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
 IUSE="doc lapack"
 
 RDEPEND="
@@ -36,7 +34,7 @@ RDEPEND="
 BDEPEND="
 	${RDEPEND}
 	app-arch/unzip
-	>=dev-python/cython-0.29.21[${PYTHON_USEDEP}]
+	>=dev-python/cython-0.29.24[${PYTHON_USEDEP}]
 	lapack? ( virtual/pkgconfig )
 	test? (
 		>=dev-python/hypothesis-5.8.0[${PYTHON_USEDEP}]
@@ -46,8 +44,8 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}"/numpy-1.20.1-no-hardcode-blasv2.patch
-	"${FILESDIR}"/numpy-1.20.2-fix-ccompiler-tests.patch
+	"${FILESDIR}"/numpy-1.21.0-no-hardcode-blasv2.patch
+	"${FILESDIR}"/numpy-1.21.3-unaligned-array.patch
 )
 
 distutils_enable_tests pytest
@@ -116,12 +114,15 @@ python_compile() {
 }
 
 python_test() {
+	local deselect=(
+		numpy/typing/tests/test_typing.py::test_reveal[arrayterator.py]
+	)
+
 	distutils_install_for_testing --single-version-externally-managed \
 		--record "${TMPDIR}/record.txt" ${NUMPY_FCONFIG}
 
 	cd "${TEST_DIR}/lib" || die
-	epytest \
-		--deselect 'numpy/typing/tests/test_typing.py::test_fail[array_constructors.py]'
+	epytest ${deselect[@]/#/--deselect }
 }
 
 python_install() {
