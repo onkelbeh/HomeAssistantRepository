@@ -9,7 +9,7 @@
     <remote-id type="pypi">holidays</remote-id>
     <maintainer status="unknown">
       <email>maurizio.montel@gmail.com</email>
-      <name>dr-prodigy</name>
+      <name>dr-prodigy (formerly ryanss)</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
