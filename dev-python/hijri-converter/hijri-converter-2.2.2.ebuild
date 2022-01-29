@@ -7,16 +7,16 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Accurate Hijri-Gregorian date converter based on the Umm al-Qura calendar"
+DESCRIPTION="Accurate Hijri-Gregorian dates converter based on the Umm al-Qura calendar"
 HOMEPAGE="https://github.com/dralshehri/hijri-converter https://pypi.org/project/hijri-converter/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 x86 amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-DOCS="README.rst"
+DOCS="README.md"
 
 RDEPEND=""
 BDEPEND="
