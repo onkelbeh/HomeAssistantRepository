@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -29,6 +29,9 @@ BDEPEND="
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-mock[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
