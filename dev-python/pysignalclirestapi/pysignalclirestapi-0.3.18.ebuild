@@ -9,14 +9,17 @@ inherit distutils-r1
 
 DESCRIPTION="Small python library for the Signal Cli REST API"
 HOMEPAGE="https://github.com/bbernhard/pysignalclirestapi https://pypi.org/project/pysignalclirestapi/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/bbernhard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
+DOCS="README.md"
+
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/future[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
