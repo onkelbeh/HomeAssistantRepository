@@ -1,7 +1,7 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -20,8 +20,8 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/websockets-7.0[${PYTHON_USEDEP}]
-		 <dev-python/websockets-9.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/websockets-9.1[${PYTHON_USEDEP}]
+		 <dev-python/websockets-11.0[${PYTHON_USEDEP}]
 		 >=dev-python/construct-2.9.0[${PYTHON_USEDEP}]
 		 <dev-python/construct-3.0.0[${PYTHON_USEDEP}]"
 BDEPEND="
@@ -29,7 +29,9 @@ BDEPEND="
 	dev-python/wheel[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/asynctest[${PYTHON_USEDEP}]
 	)"
 
 S=${WORKDIR}/${MY_PN}-${PV}
