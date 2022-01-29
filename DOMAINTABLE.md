@@ -44,6 +44,7 @@
 |arlo|Allows you to integrate your Arlo devices into Home Assistant|N|N|Y|0.46|
 |arris_tg2492lg|Presence detection from an Arris TG2492LG router|N|N|Y|0.109|
 |aruba|Presence detection by looking at connected devices to an Aruba Instant device|N|Y|Y|0.7|
+|aseko_pool_live|None|N|N|Y|2022.2.0b1|
 |asterisk_mbox|asterisk_mbox Asterisk Voicemail integration|N|N|Y|0.51|
 |asuswrt|Api wrapper for Asuswrt|N|Y|Y|0.83|
 |atag|Connect to Atag One thermostats, reporting and setting its status|N|N|Y|0.109|
@@ -52,6 +53,7 @@
 |august|The august integration allows you to integrate your August devices in Home Assis|N|Y|Y|0.64|
 |aurora|The aurora platform uses the NOAA Aurora Forecast service to let you know if an |N|N|Y|0.39|
 |aurora_abb_powerone|This implements a direct RS485 connection to a solar inverter in the PVI-3.0/3.6|N|Y|Y|0.96|
+|aussie_broadband|None|N|N|Y|2022.2.0b1|
 |avea|Library for Elgato Avea bulbs|N|Y|Y|0.97|
 |avion|Support for the Avi-on Bluetooth dimmer switch Avi-on|N|Y|Y|0.37|
 |avri|Query the next scheduled waste pickup and the type of waste from Avri|N|N|Y|0.107|
@@ -174,6 +176,7 @@
 |elgato|The Elgato Key Light sets the bar for high-end studio lighting|N|N|Y|0.104|
 |eliqonline|Integrate your ELIQ Online smart meter information|N|N|Y|0.10|
 |elkm1|Elk-M1 is a home security and automation controller|N|N|Y|0.81|
+|elmax|None|N|N|Y|2022.2.0b1|
 |elv|control the state of your ELV PCA 301 smart switch|N|N|Y|0.95|
 |emby|The emby platform allows you to control a Emby multimedia system|N|N|Y|0.32|
 |emonitor|SiteSage Emonitor allows local power monitoring on a per circuit basis|N|N|Y|2021.5|
@@ -256,6 +259,7 @@
 |goalfeed|Use your Goalfeed account to trigger events in Home Assistant|N|N|Y|0.63|
 |goalzero|Access Goal Zero REST Api from Home Assistant|N|N|Y|0.116|
 |gogogate2|Control Gogogate2-Enabled garage doors from Home Assistant|N|Y|Y|0.67|
+|goodwe|None|N|N|Y|2022.2.0b1|
 |google|Intergrate Google Calendar into Home Assistant|N|N|Y|0.33|
 |google_cloud|allows you to use Google Cloud Platform API|N|N|Y|0.95|
 |google_maps|google_maps platform allows you to detect presence|N|N|Y|0.67|
@@ -288,6 +292,7 @@
 |homekit_controller|Allows you to connect accessories with the “Works with HomeKit” logo|Y|Y|Y|0.68|
 |homematic|An API for the homematicip cloud|N|Y|Y|0.23|
 |homematicip_cloud|A python wrapper for the homematicIP REST API (Access Point Based)|N|Y|Y|0.66|
+|homewizard|None|N|N|Y|2022.2.0b1|
 |homeworks|Lutron Homeworks Series 4 & 8 systems via RS232|N|N|Y|0.85|
 |home_connect|Home Connect standard for Bosch and Siemens|N|N|Y|0.110|
 |home_plus_control|allows you to control a range of Legrand in-wall switches and power outlets|N|N|Y|2021.4|
@@ -318,6 +323,7 @@
 |incomfort|client for Intergas InComfort/InTouch Lan2RF systems|N|Y|Y|0.93|
 |influxdb|transfer sensor data to a local InfluxDB database|Y|Y|Y|0.9|
 |insteon|allowing linked INSTEON devices to be used|N|Y|Y|0.39|
+|intellifire|None|N|N|Y|2022.2.0b1|
 |intesishome|communications with IntesisHome Smart AC Controllers|N|Y|Y|0.104|
 |iota|IOTA is a new blockless distributed ledger|N|N|Y||
 |iotawatt|Integration for the IoTaWatt Open WiFi Electricity Monitor|N|N|Y|2021.9.0b6|
@@ -451,6 +457,7 @@
 |nightscout|allows you to view your CGM data from Nightscout|N|N|Y|0.115|
 |niko_home_control|platform allows you to integrate your Niko Home Control|N|N|Y|0.82|
 |nilu|An API client for getting pollution data from NILU sensor stations in Norway|N|N|Y|0.87|
+|nina|None|N|N|Y|2022.2.0b1|
 |nissan_leaf|integration with the NissanConnect EV cloud service|N|N|Y|0.89|
 |nmap_tracker|Presence detection for Home Assistant with nmap|N|N|Y|0.7|
 |nmbs|Python wrapper for the iRail API|N|N|Y|0.85|
@@ -474,6 +481,7 @@
 |ohmconnect| show you the current OhmConnect status for the given OhmConnect ID|N|N|Y|0.26|
 |ombi|The Ombi integration monitors data from your Ombi instance|N|N|Y|0.100|
 |omnilogic|Hayward Onmilogic pool control system|N|N|Y|0.116|
+|oncue|None|N|N|Y|2022.2.0b1|
 |ondilo_ico|ICO continuously analyzes the water quality of your pool/spa|N|N|Y|2021.2|
 |onewire|supports sensors which that using the One wire (1-wire) bus for communication|N|N|Y|0.12|
 |onkyo|allows you to control a Onkyo, Integra and some recent Pioneer receivers|N|Y|Y|0.17|
@@ -486,6 +494,7 @@
 |opentherm_gw|control the OpenTherm Gateway from Home Assistant|N|N|Y|0.81|
 |openuv|The openuv integration displays UV and Ozone data from openuv.io|N|N|Y|0.76|
 |openweathermap|uses OpenWeatherMap as a source for current meteorological data|N|Y|Y|0.32|
+|open_meteo|None|N|N|Y|2022.2.0b1|
 |opnsense|Presence Detection with data from OPNsense  firewall|N|N|Y|0.105|
 |opple|allows you to control the state of your Opple smart light|N|N|Y|0.80|
 |orangepi_gpio|The orangepi_gpio integration is the base for all related GPIO platforms|N|N|Y|0.93|
@@ -493,6 +502,7 @@
 |orvibo|allows you to toggle your (dangerous) Orvibo S20 Wifi Smart Sockets|N|N|Y|0.8|
 |osramlightify|allows you to integrate your Osram Lightify into Home Assistant|N|N|Y|0.21|
 |otp|generates One-Time Passwords according to RFC6238|Y|Y|Y|0.49|
+|overkiz|None|N|N|Y|2022.2.0b1|
 |ovo_energy|allows you to monitor your energy consumption data|N|N|Y|0.114|
 |owntracks|OwnTracks: track your location and send it directly to Home Assistant|Y|Y|Y|0.7.4|
 |ozw|Open Zwave MQTT|Y|Y|Y|0.110|
@@ -529,6 +539,7 @@
 |pulseaudio_loopback|whole home audio system based upon PulseAudio|N|N|Y|0.16|
 |pushbullet|sensor platform reads messages from Pushbullet|N|N|Y|0.44|
 |pushover|allows integrations to send messages to the user using Pushover|N|N|Y||
+|pvoutput|None|N|N|Y|0.33|
 |pvpc_hourly_pricing|hourly price of electricity in Spain from PVPC|N|N|Y|0.108|
 |python_script|write Python scripts that are exposed as services in Home Assistant|Y|Y|Y|0.47|
 |qbittorrent|monitor your downloads with qBittorrent from within Home Assistant|N|N|Y|0.84|
@@ -576,6 +587,7 @@
 |rpi_pfio|base for all related PiFace Digital I/O (PFIO) platforms in Home Assistant|N|N|Y|0.45|
 |rpi_power|monitor your Raspis Power Supply|N|N|Y|0.116|
 |rpi_rf|control devices over 433/315MHz LPD/SRD signals on a RPi|N|N|Y|0.19|
+|rtsp_to_webrtc|None|N|N|Y|2022.2.0b1|
 |ruckus_unleashed|Python API to interact with a Ruckus Unleashed device|N|N|Y|0.117|
 |russound_rio|control Russound devices that make use of the RIO protocol|N|N|Y|0.49|
 |russound_rnet|control Russound devices that make use of the RNET protocol|N|N|Y|0.25|
@@ -591,6 +603,7 @@
 |sendgrid|Notification platform sends email notifications via SendGrid|N|N|Y|0.14|
 |sense|Integrate your Sense meter information into Home Assistant|N|N|Y|0.82|
 |sensehat|lets you control the Sense HAT board’s 8x8 RGB LED matrix on your Raspberry Pi|N|N|Y|0.44|
+|senseme|None|N|N|Y|2022.2.0b1|
 |sensibo|Integrates Sensibo Air Conditioning controller into Home Assistant|N|N|Y|0.44|
 |sentry|The free Sentry account allows 5000 events per month|N|N|Y|0.104|
 |serial|use data provided by a device connected to the serial port of the system|N|N|Y|0.56|
@@ -655,6 +668,7 @@
 |starlingbank|monitor your account balance data as sensors|N|N|Y|0.79|
 |startca|Integrate your Start.ca account information into Home Assistant|N|N|Y|0.64|
 |statsd|transfer all state changes to an external StatsD instance|N|Y|Y|0.12|
+|steamist|None|N|N|Y|2022.2.0b1|
 |steam_online|allows you to track the online status of public Steam accounts|N|N|Y|0.14|
 |stiebel_eltron|integral ventilation or heat pump units of STIEBEL ELTRON|N|N|Y|0.92|
 |stookalert|queries the RIVM Stookalert API for unfavorable weather conditions|N|N|Y|0.104|
@@ -728,6 +742,7 @@
 |ubus|a presence detection scanner for OpenWrt using ubus|N|N|Y|0.7.6|
 |unifi|talk with a Ubiquiti unifi Controller|N|Y|Y|0.81|
 |unifiled|control lights from a UniFi LED by Ubiquiti Networks controller|N|N|Y|0.102|
+|unifiprotect|None|N|N|Y|2022.2.0b1|
 |unifi_direct|detect presence by looking at devices connected to a UniFi AP|N|Y|Y|0.59|
 |upb|Library for interacting with UPB PIM|N|N|Y|0.110|
 |upcloud|allows you to access the information about your UpCloud servers|N|N|Y|0.65|

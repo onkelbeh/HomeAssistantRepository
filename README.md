@@ -30,7 +30,7 @@ The Ebuild we have since `0.97.0`, ss soon as I know that at least one user is a
 ### `app-misc/homeassistant-full`
 
 WARNING: This one currently breaks (caused by shell limitations) emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
-This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **809** USE Flags.
+This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **824** USE Flags.
 
 A list of all components aka USEFlags is generated with every release [DOMAINTABLE.md](DOMAINTABLE.md)
 
@@ -260,13 +260,13 @@ I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-
 ## My machines
 Currently I have three VM's running:
 ### Production
-Python 3.9.9
+Python 3.9.9-r1
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test
-Python 3.9.9
+Python 3.9.9-r1
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test2
-Python 3.10.0_p1
+Python 3.10.0_p1-r4
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 
 ## Hardware I use
@@ -341,6 +341,7 @@ Integration in Home Assistant was very easy, everything worked as expected from 
 
 ### kodi
 Kodi on Raspberry (3, all with OSMC) (https://osmc.tv/download/), very happy with it.
+Currently I am stuck at Kodi 18.9, because hyperion-ng does not work with Kodi 19 yet.
 
 ### kraken
 
@@ -484,22 +485,22 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 2018 Ebuilds in total, 2007 of them have in total 2020 (36 different) licenses assigned.
+There are 2060 Ebuilds in total, 2048 of them have in total 2061 (35 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1190|
-|Apache-2.0|380|
+|MIT|1221|
+|Apache-2.0|384|
 |BSD|135|
-|GPL-3|116|
+|GPL-3|118|
 |LGPL-3|32|
-|GPL-2|22|
-|LGPL-3+|22|
+|LGPL-3+|24|
+|GPL-2|23|
 |all-rights-reserved|17|
 |GPL-3+|16|
 |BSD-2|12|
+|Unlicense|11|
 |LGPL-2.1|11|
-|Unlicense|10|
 |PSF-2|9|
 |EPL-1.0|5|
 |MPL-2.0|4|
@@ -508,12 +509,12 @@ There are 2018 Ebuilds in total, 2007 of them have in total 2020 (36 different) 
 |AGPL-3+|3|
 |LGPL-2+|3|
 |BSD-4|3|
+|GPL-2+|3|
 |ZPL|2|
 |ECL-2.0|2|
 |ISC|2|
 |NEWLIB|2|
 |EPL-2.0|2|
-|GPL-2+|2|
 |LGPL-2|1|
 |Boost-1.0|1|
 |AGPL-3|1|
@@ -523,11 +524,10 @@ There are 2018 Ebuilds in total, 2007 of them have in total 2020 (36 different) 
 |CC-BY-NC-SA-4.0|1|
 |OSL-2.0|1|
 |CC0-1.0|1|
-|GPL-1|1|
 
-(Last counted: 20/01/2022)
+(Last counted: 29/01/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 20/01/2022
+Last updated: 29/01/2022
