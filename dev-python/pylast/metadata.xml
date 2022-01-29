@@ -9,7 +9,7 @@
     <remote-id type="pypi">pylast</remote-id>
     <maintainer status="unknown">
       <email>amr.hassan@gmail.com</email>
-      <name>Amr Hassan &lt;amr.hassan@gmail.com&gt; and Contributors</name>
+      <name>Hugo van Kemenade</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
