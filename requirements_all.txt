@@ -78,7 +78,7 @@ aiotractive==0.5.2
 aiounifi==30
 aiovlc==0.1.0
 aiowatttime==0.1.1
-aiowebostv==0.1.1
+aiowebostv==0.1.2
 aioymaps==1.2.2
 airly==1.1.0
 airthings-cloud==0.1.0
@@ -121,6 +121,7 @@ async_timeout==4.0.2
 atenpdu==0.3.2
 atomicwrites==1.4.0
 attrs==21.2.0
+attrs==21.4.0
 auroranoaa==0.0.2
 aurorapy==0.2.6
 Authlib==0.15.5
@@ -297,7 +298,7 @@ eternalegypt==0.0.12
 eudev==3.2.11
 evdev==1.4.0
 evohome-async==0.3.15
-expat==2.4.3
+expat==2.4.4
 faadelays==0.0.7
 face_recognition==1.2.3
 face_recognition_models==0.3.0
@@ -1039,7 +1040,7 @@ shodan==1.26.1
 simplehound==0.3
 simplejson==3.17.5
 simplepush==1.1.4
-simplisafe-python==2021.12.2
+simplisafe-python==2022.1.0
 siobrultech-protocols==0.5.0
 sisyphus-control==3.1.2
 six==1.16.0
@@ -1071,6 +1072,7 @@ spiderpy==1.6.1
 spidev==3.5
 spotipy==2.19.0
 sqlalchemy==1.4.27
+sqlalchemy==1.4.29
 srpenergy==1.3.2
 srptools==1.0.1
 sseclient-py==1.7
@@ -1207,7 +1209,7 @@ XBee==2.3.2
 xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
-xknx==0.19.0
+xknx==0.19.1
 xmlschema==1.9.2
 xmltodict==0.12.0
 xs1-api-client==3.0.0
