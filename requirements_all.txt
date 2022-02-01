@@ -10,8 +10,9 @@ Adafruit-PureIO==1.1.9
 Adax-local==0.1.3
 adax==0.2.0
 adb-shell==0.4.0
+adb-shell==0.4.2
 adext==0.4.2
-adguardhome==0.5.0
+adguardhome==0.5.1
 advantage-air==0.2.5
 AEMET-OpenData==0.2.1
 afsapi==0.0.4
@@ -45,8 +46,8 @@ aiohttp-cors==0.7.0
 aiohttp==3.7.3
 aiohttp==3.7.4_p0
 aiohttp==3.8.1
-aiohue==3.0.11
-aiohwenergy==0.7.0
+aiohue==4.0.1
+aiohwenergy==0.8.0
 aioimaplib==0.9.0
 aiokafka==0.6.0
 aiokef==0.2.16
@@ -91,7 +92,7 @@ ambee==0.4.0
 amberelectric==1.0.3
 Ambiclimate==0.2.1
 amcrest==1.9.3
-androidtv==0.0.60
+androidtv==0.0.61
 anel-pwrctrl-homeassistant==0.0.1
 anthemav==1.2.0
 anyio==3.5.0
@@ -680,7 +681,7 @@ pyarlo==0.2.4
 pyasn1-modules==0.2.8
 pyasn1==0.4.8
 pyatag==0.3.5.3
-pyatmo==6.2.2
+pyatmo==6.2.4
 pyAtome==0.1.1
 pyatv==0.10.0
 pyaussiebb==0.0.9
@@ -807,7 +808,7 @@ pymyq==3.1.4
 pymysensors==0.22.1
 pynacl==1.4.0
 pynello==2.0.3
-pynetgear==0.9.0
+pynetgear==0.9.1
 pynetio==0.1.9.1
 PyNINA==0.1.4
 pynuki==1.5.2
@@ -825,7 +826,7 @@ pyoppleio==1.0.5
 PyOTA==2.0.5
 pyotgw==1.1_beta1
 pyotp==2.6.0
-pyoverkiz==1.3.1
+pyoverkiz==1.3.2
 pyowm==3.2.0
 pyownet==0.10.0
 pyparsing==2.4.7
@@ -837,7 +838,7 @@ pyplaato==0.0.15
 pypoint==2.3.0
 pyprof2calltree==1.4.5
 pyprosegur==0.0.5
-pyps4-2ndscreen==1.2.0
+pyps4-2ndscreen==1.3.1
 pypubsub==4.0.3
 pyqrcode==1.2.1
 pyquery==1.4.3
@@ -911,7 +912,7 @@ python-izone==1.2.3
 python-join-api==0.0.6
 python-jose==3.3.0
 python-juicenet==1.0.2
-python-kasa==0.4.0
+python-kasa==0.4.1
 python-magic==0.4.24
 python-metar==1.4.0
 python-miio==0.5.9.2
@@ -1100,7 +1101,7 @@ sysvinit==2.99
 tabulate==0.8.9
 tahoma-api==0.0.16
 tailer==0.4.1
-tailscale==0.1.6
+tailscale==0.2.0
 tank_utility==1.4.0
 tapsaff==0.2.1
 tellcore-net==0.4
@@ -1199,7 +1200,7 @@ whois==0.9.13
 wiffi==1.1.0
 wirelesstagpy==0.8.1
 withings-api==2.3.2
-wled==0.12.0
+wled==0.13.0
 wolf_smartset==0.1.11
 wrapt==1.13.2
 WSDiscovery==2.0.0
@@ -1214,7 +1215,7 @@ xmlschema==1.9.2
 xmltodict==0.12.0
 xs1-api-client==3.0.0
 yalesmartalarmclient==0.3.7
-yalexs==1.1.19
+yalexs==1.1.20
 yarl==1.7.2
 yeelight==0.7.8
 yeelightsunflower==0.0.10
@@ -1222,7 +1223,7 @@ youless-api==0.16
 zbar==0.23.1
 zeep==4.1.0
 zengge==0.2
-zeroconf==0.38.1
+zeroconf==0.38.3
 zha-quirks==0.0.66
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
