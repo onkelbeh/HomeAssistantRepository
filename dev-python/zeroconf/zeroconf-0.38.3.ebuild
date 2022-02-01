@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,12 +8,8 @@ inherit distutils-r1
 
 MY_P=python-zeroconf-${PV}
 DESCRIPTION="Pure Python Multicast DNS Service Discovery Library (Bonjour/Avahi compatible)"
-HOMEPAGE="
-	https://github.com/jstasiak/python-zeroconf/
-	https://pypi.org/project/zeroconf/"
-SRC_URI="
-	https://github.com/jstasiak/python-zeroconf/archive/${PV}.tar.gz
-		-> ${MY_P}.gh.tar.gz"
+HOMEPAGE="https://github.com/jstasiak/python-zeroconf/ https://pypi.org/project/zeroconf/"
+SRC_URI="https://github.com/jstasiak/python-zeroconf/archive/${PV}.tar.gz -> ${MY_P}.gh.tar.gz"
 S=${WORKDIR}/${MY_P}
 
 LICENSE="LGPL-2.1"
