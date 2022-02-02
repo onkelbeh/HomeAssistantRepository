@@ -85,7 +85,7 @@ airly==1.1.0
 airthings-cloud==0.1.0
 airtouch4pyapi==1.0.5
 ajsonrpc==1.2.0
-aladdin-connect==0.3
+aladdin-connect==0.4
 alarmdecoder==1.13.11
 alpha-vantage==2.3.1
 ambee==0.4.0
@@ -392,7 +392,7 @@ hlk-sw16==0.0.9
 hole==0.7.0
 holidays==0.12
 home-assistant-cli==9999
-home-assistant-frontend==20220201.0
+home-assistant-frontend==20220202.0
 homeassistant
 homeassistant-pyozw==0.1.10
 homeconnect==0.6.3
@@ -783,7 +783,7 @@ pylibrespot-java==0.1.0
 pylitejet==0.3.0
 pylitterbot==2021.12.0
 pyloopenergy==0.2.1
-pylutron-caseta==0.13.0
+pylutron-caseta==0.13.1
 pylutron==0.2.8
 pymailgunner==1.4
 pymata-express==1.19
@@ -1162,7 +1162,7 @@ uvcclient==0.11.0
 uvicorn==0.17.0
 vallox-websocket-api==2.9.0
 vehicle==0.3.1
-velbus-aio==2021.11.7
+velbus-aio==2022.2.1
 venstarcolortouch==0.15
 vilfo-api-client==0.3.2
 vincenty==0.1.4

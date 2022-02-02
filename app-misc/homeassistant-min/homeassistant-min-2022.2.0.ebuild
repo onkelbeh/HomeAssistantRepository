@@ -45,54 +45,59 @@ RDEPEND="${RDEPEND}
 # Home Assistant Core dependencies
 # from package_constraints.txt
 RDEPEND="${RDEPEND}
-	~dev-python/aiodiscover-1.4.5[${PYTHON_USEDEP}]
+	~dev-python/aiodiscover-1.4.7[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
-	>=dev-python/anyio-3.3.1[${PYTHON_USEDEP}]
+	~dev-python/anyio-3.5.0[${PYTHON_USEDEP}]
 	~dev-python/astral-2.2[${PYTHON_USEDEP}]
-	~dev-python/async-upnp-client-0.23.1[${PYTHON_USEDEP}]
-	~dev-python/async_timeout-4.0.0[${PYTHON_USEDEP}]
+	~dev-python/async-upnp-client-0.23.4[${PYTHON_USEDEP}]
+	~dev-python/async_timeout-4.0.2[${PYTHON_USEDEP}]
 	~dev-python/atomicwrites-1.4.0[${PYTHON_USEDEP}]
 	~dev-python/attrs-21.2.0[${PYTHON_USEDEP}]
-	~dev-python/awesomeversion-21.11.0[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep 'dev-python/backports-zoneinfo[${PYTHON_USEDEP}]' python3_8)
+	~dev-python/awesomeversion-22.1.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2021.5.30[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.2.0[${PYTHON_USEDEP}]
 	~dev-python/cryptography-35.0.0[${PYTHON_USEDEP}]
-	~dev-python/emoji-1.5.0[${PYTHON_USEDEP}]
-	~dev-python/google-api-core-1.31.2[${PYTHON_USEDEP}]
-	~dev-python/google-cloud-pubsub-2.1.0[${PYTHON_USEDEP}]
-	~dev-python/grpcio-1.31.0[${PYTHON_USEDEP}]
-	>=dev-python/h11-0.12.0[${PYTHON_USEDEP}]
-	~dev-python/hass-nabucasa-0.50.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20211229.0[${PYTHON_USEDEP}]
+	~dev-python/emoji-1.6.3[${PYTHON_USEDEP}]
+	~dev-python/grpcio-1.43.0[${PYTHON_USEDEP}]
+	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
+	~dev-python/hass-nabucasa-0.52.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220202.0[${PYTHON_USEDEP}]
+	~dev-python/httpcore-0.14.5[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
-	~dev-python/httpx-0.21.0[${PYTHON_USEDEP}]
+	~dev-python/httpx-0.21.3[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
 	~dev-python/jinja-3.0.3[${PYTHON_USEDEP}]
+	~dev-python/libcst-0.3.23[${PYTHON_USEDEP}]
+	<dev-python/multidict-6.0.0[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/pandas-1.3.0[${PYTHON_USEDEP}]
-	~dev-python/pillow-8.2.0[${PYTHON_USEDEP}]
+	~dev-python/pillow-9.0.0[${PYTHON_USEDEP}]
 	<dev-python/pip-20.3.0
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]
 	~dev-python/pynacl-1.4.0[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
+	>=dev-python/python-engineio-3.13.1[${PYTHON_USEDEP}]
+	<dev-python/python-engineio-4[${PYTHON_USEDEP}]
 	~dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]
+	>=dev-python/python-socketio-4.6.0[${PYTHON_USEDEP}]
+	<dev-python/python-socketio-5.0[${PYTHON_USEDEP}]
 	~dev-python/pyudev-0.22.0[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
 	~dev-python/regex-2021.8.28[${PYTHON_USEDEP}]
-	~dev-python/requests-2.26.0[${PYTHON_USEDEP}]
+	~dev-python/requests-2.27.1[${PYTHON_USEDEP}]
 	~net-analyzer/scapy-2.4.5
 	~dev-python/sqlalchemy-1.4.27[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-3.10.0.2[${PYTHON_USEDEP}]
+	<dev-python/typing-extensions-5.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.5.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
-	~dev-python/websockets-9.1[${PYTHON_USEDEP}]
-	~dev-python/yarl-1.6.3[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.38.1[${PYTHON_USEDEP}]"
+	~dev-python/yarl-1.7.2[${PYTHON_USEDEP}]
+	~dev-python/zeroconf-0.38.3[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -115,48 +120,48 @@ RDEPEND="${RDEPEND}
 	airly? ( ~dev-python/airly-1.1.0[${PYTHON_USEDEP}] )
 	airvisual? ( ~dev-python/pyairvisual-5.0.9[${PYTHON_USEDEP}] )
 	alpha_vantage? ( ~dev-python/alpha-vantage-2.3.1[${PYTHON_USEDEP}] )
-	androidtv? ( ~dev-python/adb-shell-0.4.0[${PYTHON_USEDEP}] ~dev-python/androidtv-0.0.60[${PYTHON_USEDEP}] ~dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}] )
+	androidtv? ( ~dev-python/adb-shell-0.4.0[${PYTHON_USEDEP}] ~dev-python/androidtv-0.0.61[${PYTHON_USEDEP}] ~dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}] )
 	android_ip_webcam? ( ~dev-python/pydroid-ipcam-0.8[${PYTHON_USEDEP}] )
 	axis? ( ~dev-python/axis-44[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
-	caldav? ( ~dev-python/caldav-0.7.1[${PYTHON_USEDEP}] )
-	camera? ( ~dev-python/PyTurboJPEG-1.6.3[${PYTHON_USEDEP}] )
-	cast? ( ~dev-python/pychromecast-10.2.2[${PYTHON_USEDEP}] )
+	caldav? ( ~dev-python/caldav-0.8.2[${PYTHON_USEDEP}] )
+	camera? ( ~dev-python/PyTurboJPEG-1.6.5[${PYTHON_USEDEP}] )
+	cast? ( ~dev-python/pychromecast-10.2.3[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli )
 	co2signal? ( ~dev-python/CO2Signal-0.4.2[${PYTHON_USEDEP}] )
 	compensation? ( ~dev-python/numpy-1.21.4[${PYTHON_USEDEP}] )
 	coronavirus? ( ~dev-python/coronavirus-1.1.1[${PYTHON_USEDEP}] )
 	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
-	dwd_weather_warnings? ( ~dev-python/dwdwfsapi-1.0.4[${PYTHON_USEDEP}] )
+	dwd_weather_warnings? ( ~dev-python/dwdwfsapi-1.0.5[${PYTHON_USEDEP}] )
 	enigma2? ( ~dev-python/openwebifpy-3.2.7[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-10.6.0[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-10.8.1[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.1.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20211229.0[${PYTHON_USEDEP}] )
-	github? ( ~dev-python/aiogithubapi-21.11.0[${PYTHON_USEDEP}] )
-	homekit? ( ~dev-python/HAP-python-4.3.0[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-0.6.4[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20220202.0[${PYTHON_USEDEP}] )
+	github? ( ~dev-python/aiogithubapi-22.1.0[${PYTHON_USEDEP}] )
+	homekit? ( ~dev-python/HAP-python-4.4.0[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-0.6.11[${PYTHON_USEDEP}] )
 	http? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] )
 	hyperion? ( ~dev-python/hyperion-py-0.7.4[${PYTHON_USEDEP}] )
-	influxdb? ( ~dev-python/influxdb-5.2.3[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.14.0[${PYTHON_USEDEP}] )
-	knx? ( ~dev-python/xknx-0.18.15[${PYTHON_USEDEP}] )
+	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
+	knx? ( ~dev-python/xknx-0.19.1[${PYTHON_USEDEP}] )
 	kodi? ( ~dev-python/pykodi-0.2.7[${PYTHON_USEDEP}] )
 	kraken? ( ~dev-python/krakenex-2.1.0[${PYTHON_USEDEP}] ~dev-python/pykrakenapi-0.1.8[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.4.3[${PYTHON_USEDEP}] )
 	mikrotik? ( ~dev-python/librouteros-3.2.0[${PYTHON_USEDEP}] )
-	mobile_app? ( ~dev-python/pynacl-1.4.0[${PYTHON_USEDEP}] ~dev-python/emoji-1.5.0[${PYTHON_USEDEP}] )
+	mobile_app? ( ~dev-python/pynacl-1.4.0[${PYTHON_USEDEP}] ~dev-python/emoji-1.6.3[${PYTHON_USEDEP}] )
 	mqtt? ( ~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}] )
 	myq? ( ~dev-python/pymyq-3.1.4[${PYTHON_USEDEP}] )
 	mysensors? ( ~dev-python/pymysensors-0.22.1[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysql-connector-python[${PYTHON_USEDEP}] dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	notify_events? ( ~dev-python/notify-events-1.0.4[${PYTHON_USEDEP}] )
-	octoprint? ( ~dev-python/pyoctoprintapi-0.1.6[${PYTHON_USEDEP}] )
+	octoprint? ( ~dev-python/pyoctoprintapi-0.1.7[${PYTHON_USEDEP}] )
 	otp? ( ~dev-python/pyotp-2.6.0[${PYTHON_USEDEP}] )
 	owntracks? ( ~dev-python/pynacl-1.4.0[${PYTHON_USEDEP}] )
 	ozw? ( ~dev-python/python-openzwave-mqtt-1.4.0[${PYTHON_USEDEP}] )
 	ping? ( ~dev-python/icmplib-3.0[${PYTHON_USEDEP}] )
-	plex? ( ~dev-python/PlexAPI-4.7.1[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
-	ps4? ( ~dev-python/pyps4-2ndscreen-1.2.0[${PYTHON_USEDEP}] )
+	plex? ( ~dev-python/PlexAPI-4.9.1[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
+	ps4? ( ~dev-python/pyps4-2ndscreen-1.3.1[${PYTHON_USEDEP}] )
 	python_script? ( ~dev-python/RestrictedPython-5.2[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.4.0[${PYTHON_USEDEP}] )
 	qvr_pro? ( ~dev-python/pyqvrpro-0.52[${PYTHON_USEDEP}] )
@@ -166,30 +171,30 @@ RDEPEND="${RDEPEND}
 	samsungtv? ( ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-1.6.0[${PYTHON_USEDEP}] ~dev-python/wakeonlan-2.0.1[${PYTHON_USEDEP}] )
 	scrape? ( ~dev-python/beautifulsoup4-4.10.0[${PYTHON_USEDEP}] )
 	season? ( ~dev-python/ephem-3.7.7.0[${PYTHON_USEDEP}] )
-	shelly? ( ~dev-python/aioshelly-1.0.5[${PYTHON_USEDEP}] )
-	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.4[${PYTHON_USEDEP}] )
+	shelly? ( ~dev-python/aioshelly-1.0.8[${PYTHON_USEDEP}] )
+	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.18[${PYTHON_USEDEP}] )
 	snmp? ( ~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
-	sonos? ( ~dev-python/soco-0.25.2[${PYTHON_USEDEP}] )
+	sonos? ( ~dev-python/soco-0.26.0[${PYTHON_USEDEP}] )
 	speedtestdotnet? ( ~net-analyzer/speedtest-cli-2.1.3[${PYTHON_USEDEP}] )
 	sql? ( ~dev-python/sqlalchemy-1.4.27[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
 	systemmonitor? ( ~dev-python/psutil-5.8.0[${PYTHON_USEDEP}] )
 	tankerkoenig? ( ~dev-python/pytankerkoenig-0.0.6[${PYTHON_USEDEP}] )
 	tasmota? ( ~dev-python/HATasmota-0.3.1[${PYTHON_USEDEP}] )
-	tile? ( ~dev-python/pytile-2021.12.0[${PYTHON_USEDEP}] )
-	tplink? ( ~dev-python/python-kasa-0.4.0[${PYTHON_USEDEP}] )
-	tradfri? ( ~dev-python/pytradfri-7.2.1[${PYTHON_USEDEP}] )
+	tile? ( ~dev-python/pytile-2022.1.0[${PYTHON_USEDEP}] )
+	tplink? ( ~dev-python/python-kasa-0.4.1[${PYTHON_USEDEP}] )
+	tradfri? ( ~dev-python/pytradfri-8.0.1[${PYTHON_USEDEP}] )
 	utility_meter? ( ~dev-python/croniter-1.0.6[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-21.11.1[${PYTHON_USEDEP}] )
 	wake_on_lan? ( ~dev-python/wakeonlan-2.0.1[${PYTHON_USEDEP}] )
 	wemo? ( ~dev-python/pywemo-0.7.0[${PYTHON_USEDEP}] )
-	whois? ( ~dev-python/python-whois-0.7.3[${PYTHON_USEDEP}] )
-	workday? ( ~dev-python/holidays-0.11.3.1[${PYTHON_USEDEP}] )
+	whois? ( ~dev-python/whois-0.9.13[${PYTHON_USEDEP}] )
+	workday? ( ~dev-python/holidays-0.12[${PYTHON_USEDEP}] )
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
-	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.2[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/zeroconf-0.38.1[${PYTHON_USEDEP}] )
-	zwave_js? ( ~dev-python/zwave-js-server-python-0.33.0[${PYTHON_USEDEP}] )"
+	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.3[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/zeroconf-0.38.3[${PYTHON_USEDEP}] )
+	zwave_js? ( ~dev-python/zwave-js-server-python-0.34.0[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}
 	test? (
@@ -198,17 +203,17 @@ BDEPEND="${RDEPEND}
 		~dev-python/freezegun-1.1.0[${PYTHON_USEDEP}]
 		~dev-python/jsonpickle-1.4.1[${PYTHON_USEDEP}]
 		~dev-python/mock-open-1.4.0[${PYTHON_USEDEP}]
-		~dev-python/mypy-0.910[${PYTHON_USEDEP}]
-		~dev-python/pipdeptree-2.2.0[${PYTHON_USEDEP}]
-		~dev-vcs/pre-commit-2.16.0
+		~dev-python/mypy-0.931[${PYTHON_USEDEP}]
+		~dev-python/pipdeptree-2.2.1[${PYTHON_USEDEP}]
+		~dev-vcs/pre-commit-2.17.0
 		~dev-python/pylint-strict-informational-0.1[${PYTHON_USEDEP}]
-		~dev-python/pylint-2.12.1[${PYTHON_USEDEP}]
+		~dev-python/pylint-2.12.2[${PYTHON_USEDEP}]
 		~dev-python/pytest-cov-2.12.1[${PYTHON_USEDEP}]
 		~dev-python/pytest-freezegun-0.4.2[${PYTHON_USEDEP}]
 		~dev-python/pytest-socket-0.4.1[${PYTHON_USEDEP}]
 		~dev-python/pytest-sugar-0.9.4[${PYTHON_USEDEP}]
 		~dev-python/pytest-test-groups-1.0.3[${PYTHON_USEDEP}]
-		~dev-python/pytest-timeout-2.0.1[${PYTHON_USEDEP}]
+		~dev-python/pytest-timeout-2.1.0[${PYTHON_USEDEP}]
 		~dev-python/pytest-xdist-2.4.0[${PYTHON_USEDEP}]
 		~dev-python/pytest-6.2.5[${PYTHON_USEDEP}]
 		~dev-python/requests-mock-1.9.2[${PYTHON_USEDEP}]
