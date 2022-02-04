@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,7 +9,13 @@ inherit distutils-r1
 
 DESCRIPTION="The Home Assistant frontend"
 HOMEPAGE="https://github.com/home-assistant/frontend https://pypi.org/project/home-assistant-frontend/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+
+# SDIST missing on Pypi
+#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+# use Github instead
+MY_PN="frontend"
+SRC_URI="https://github.com/home-assistant/${MY_PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
