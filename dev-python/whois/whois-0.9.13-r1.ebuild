@@ -18,7 +18,7 @@ IUSE="test"
 
 #DOCS="README.md"
 
-RDEPEND=""
+RDEPEND="!dev-python/python-whois[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
