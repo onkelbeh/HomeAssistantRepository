@@ -27,7 +27,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 KEYWORDS="amd64 arm arm64 x86 amd64-linux x86-linux"
-IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus darksky +dwd_weather_warnings enigma2 esphome forecast_solar fronius +frontend github +homekit homekit_controller http hyperion influxdb knx kodi kraken maxcube mikrotik +mobile_app +mqtt myq mysensors +mysql +notify_events octoprint +otp owntracks -ozw +ping +plex ps4 +python_script qnap qvr_pro +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tplink tradfri utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf +zwave_js"
+IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus darksky +dwd_weather_warnings enigma2 esphome forecast_solar fronius +frontend github +homekit homekit_controller http hyperion influxdb knx kodi kraken maxcube mikrotik +mobile_app +mqtt myq mysensors +mysql +notify_events octoprint +otp owntracks -ozw +ping +plex ps4 +python_script qnap qvr_pro +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tplink tradfri utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf +zwave_js"
 
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
@@ -106,12 +106,12 @@ RDEPEND="${RDEPEND}
 # scripts/check_config.py:REQUIREMENTS = ("colorlog==5.0.1",)
 
 RDEPEND="${RDEPEND}
-	~dev-python/colorlog-5.0.1[${PYTHON_USEDEP}]
-	>=dev-python/multidict-4.5.2[${PYTHON_USEDEP}]
-	>=dev-python/pyotp-2.3.0[${PYTHON_USEDEP}]
+	~dev-python/colorlog-6.6.0[${PYTHON_USEDEP}]
+	>=dev-python/multidict-5.2.0[${PYTHON_USEDEP}]
+	>=dev-python/pyotp-2.6.0[${PYTHON_USEDEP}]
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
 	dev-python/pycparser[${PYTHON_USEDEP}]
-	>=dev-python/websocket-client-0.56.0[${PYTHON_USEDEP}]
+	>=dev-python/websocket-client-0.57.0[${PYTHON_USEDEP}]
 	~media-libs/mutagen-1.45.1"
 
 # Module requirements from useflags
@@ -177,6 +177,7 @@ RDEPEND="${RDEPEND}
 	socat? ( net-misc/socat )
 	sonos? ( ~dev-python/soco-0.26.2[${PYTHON_USEDEP}] )
 	speedtestdotnet? ( ~net-analyzer/speedtest-cli-2.1.3[${PYTHON_USEDEP}] )
+	spotify? ( ~dev-python/spotipy-2.19.0[${PYTHON_USEDEP}] )
 	sql? ( ~dev-python/sqlalchemy-1.4.27[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
 	systemmonitor? ( ~dev-python/psutil-5.8.0[${PYTHON_USEDEP}] )

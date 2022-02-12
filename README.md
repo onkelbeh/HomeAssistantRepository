@@ -21,7 +21,7 @@ PyPI/GitHub/Sourceforge).
 Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new here, start with app-misc/homeassistant-min.
 ### `app-misc/homeassistant-min`
 
-New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, it currently holds **81** USE Flags.
+New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, it currently holds **82** USE Flags.
 
 ### `app-misc/homeassistant`
 
@@ -485,17 +485,17 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 2070 Ebuilds in total, 2059 of them have in total 2072 (35 different) licenses assigned.
+There are 2062 Ebuilds in total, 2051 of them have in total 2064 (35 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1231|
-|Apache-2.0|382|
+|MIT|1227|
+|Apache-2.0|379|
 |BSD|137|
 |GPL-3|119|
 |LGPL-3|32|
 |LGPL-3+|23|
-|GPL-2|22|
+|GPL-2|21|
 |all-rights-reserved|17|
 |GPL-3+|16|
 |BSD-2|12|

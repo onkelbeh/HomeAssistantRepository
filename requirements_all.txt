@@ -332,9 +332,11 @@ gawk==5.1.0
 gdb==11.1
 geniushub-client==0.6.30
 gentoo-functions==0.14
+GeographicLib==1.52
 geojson-client==0.6
 geojson==2.5.0
 geopy==2.1.0
+geopy==2.2.0
 georss-client==0.14
 georss-generic-client==0.6
 georss-ign-sismologia-client==0.3

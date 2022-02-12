@@ -658,7 +658,7 @@
 |speedtestdotnet|speedtest.net support|Y|Y|Y|0.13|
 |spider|integrate all Itho Daalderop Spider related platforms|N|N|Y|0.75|
 |splunk|log all state changes to an external Splunk database|N|N|Y|0.13|
-|spotify|Spotify media player integration allows you to control Spotify playback|N|Y|Y|0.43|
+|spotify|Spotify media player integration allows you to control Spotify playback|Y|Y|Y|0.43|
 |sql|enables you to use an SQL database supported by the sqlalchemy library|Y|Y|Y|0.63|
 |squeezebox|library to control Logitech Media Server|N|Y|Y||
 |srp_energy|SRP Energy integration hourly energy usage report|N|N|Y|2020.12|

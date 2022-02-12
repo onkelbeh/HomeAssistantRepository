@@ -75,6 +75,7 @@
     <flag name="socat">Set a flag to install socat and socat-zwave startscript</flag>
     <flag name="sonos">Sonos Media Player Support</flag>
     <flag name="speedtestdotnet">speedtest.net support</flag>
+    <flag name="spotify">Spotify media player integration allows you to control Spotify playback</flag>
     <flag name="sql">enables you to use an SQL database supported by the sqlalchemy library</flag>
     <flag name="ssl">include support for haproxy</flag>
     <flag name="systemd">internal and developer use</flag>
