@@ -44,15 +44,15 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	dev-python/zeroconf[${PYTHON_USEDEP}]
 	~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]"
 
-BDEPEND="dev-python/setuptools[${PYTHON_MULTI_USEDEP}]
+BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/nose[${PYTHON_MULTI_USEDEP}]
-		dev-python/pytest[${PYTHON_MULTI_USEDEP}]
-		dev-python/pytest-cov[${PYTHON_MULTI_USEDEP}]
-		dev-python/pytest-mock[${PYTHON_MULTI_USEDEP}]
-		dev-python/pytest-asyncio[${PYTHON_MULTI_USEDEP}]
-		dev-python/asyncmock[${PYTHON_MULTI_USEDEP}]
-		dev-python/hypothesis[${PYTHON_MULTI_USEDEP}]
+		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-mock[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/asyncmock[${PYTHON_USEDEP}]
+		dev-python/hypothesis[${PYTHON_USEDEP}]
 	)"
 
 DISABLE_AUTOFORMATTING=1
