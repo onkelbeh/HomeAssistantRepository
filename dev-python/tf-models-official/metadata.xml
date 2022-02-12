@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">tf-models-official</remote-id>
+    <maintainer status="unknown">
+      <email>no-reply@google.com</email>
+      <name>Google Inc.</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
