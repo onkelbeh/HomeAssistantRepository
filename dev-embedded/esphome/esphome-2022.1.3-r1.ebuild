@@ -75,7 +75,7 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
 src_prepare() {
-	sed "s/aioesphomeapi==10.8.1/aioesphomeapi/g" -i requirements.txt || die
+	sed "s/aioesphomeapi==10.6.0/aioesphomeapi/g" -i requirements.txt || die
 	sed "s/click==8.0.3/click/g" -i requirements.txt || die
 	sed "s/zeroconf==0.37.0/zeroconf/g" -i requirements.txt || die
 	eapply_user

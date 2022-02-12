@@ -1,10 +1,9 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
-DISTUTILS_SINGLE_IMPL=1
 
 inherit readme.gentoo-r1 distutils-r1
 
@@ -28,39 +27,33 @@ LICENSE="MIT"
 SLOT="0"
 IUSE="+server test"
 
-RDEPEND="
-	server? ( acct-group/${PN} acct-user/${PN} )
-	$(python_gen_cond_dep '
-		~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
-		~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
-		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
-		~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
-		server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
-		~dev-python/tzlocal-4.1[${PYTHON_USEDEP}]
-		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
-		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-		~dev-embedded/platformio-5.2.4
-		~dev-embedded/esptool-3.2[${PYTHON_USEDEP}]
-		~dev-python/click-8.0.3[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20220116.0[${PYTHON_USEDEP}]
-		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
-		dev-python/zeroconf[${PYTHON_USEDEP}]
-		~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
-	')"
+RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
+	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
+	~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
+	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
+	~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
+	server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
+	~dev-python/tzlocal-4.1[${PYTHON_USEDEP}]
+	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
+	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
+	~dev-embedded/platformio-5.2.4
+	~dev-embedded/esptool-3.2[${PYTHON_USEDEP}]
+	~dev-python/click-8.0.3[${PYTHON_USEDEP}]
+	~dev-embedded/esphome-dashboard-20220116.0[${PYTHON_USEDEP}]
+	dev-python/aioesphomeapi[${PYTHON_USEDEP}]
+	dev-python/zeroconf[${PYTHON_USEDEP}]
+	~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]"
 
-BDEPEND="
-	$(python_gen_cond_dep '
-		dev-python/setuptools[${PYTHON_MULTI_USEDEP}]
-		test? (
-			dev-python/nose[${PYTHON_MULTI_USEDEP}]
-			dev-python/pytest[${PYTHON_MULTI_USEDEP}]
-			dev-python/pytest-cov[${PYTHON_MULTI_USEDEP}]
-			dev-python/pytest-mock[${PYTHON_MULTI_USEDEP}]
-			dev-python/pytest-asyncio[${PYTHON_MULTI_USEDEP}]
-			dev-python/asyncmock[${PYTHON_MULTI_USEDEP}]
-			dev-python/hypothesis[${PYTHON_MULTI_USEDEP}]
-			)
-	')"
+BDEPEND="dev-python/setuptools[${PYTHON_MULTI_USEDEP}]
+	test? (
+		dev-python/nose[${PYTHON_MULTI_USEDEP}]
+		dev-python/pytest[${PYTHON_MULTI_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_MULTI_USEDEP}]
+		dev-python/pytest-mock[${PYTHON_MULTI_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_MULTI_USEDEP}]
+		dev-python/asyncmock[${PYTHON_MULTI_USEDEP}]
+		dev-python/hypothesis[${PYTHON_MULTI_USEDEP}]
+	)"
 
 DISABLE_AUTOFORMATTING=1
 DOC_CONTENTS="
