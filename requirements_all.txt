@@ -91,7 +91,7 @@ alpha-vantage==2.3.1
 ambee==0.4.0
 amberelectric==1.0.3
 Ambiclimate==0.2.1
-amcrest==1.9.3
+amcrest==1.9.4
 androidtv==0.0.63
 anel-pwrctrl-homeassistant==0.0.1
 anthemav==1.2.0
@@ -1038,7 +1038,7 @@ shodan==1.26.1
 simplehound==0.3
 simplejson==3.17.5
 simplepush==1.1.4
-simplisafe-python==2022.2.0
+simplisafe-python==2022.2.1
 siobrultech-protocols==0.5.0
 sisyphus-control==3.1.2
 six==1.16.0
