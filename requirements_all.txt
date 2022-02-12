@@ -68,7 +68,7 @@ aiorecollect==1.0.8
 aioridwell==2021.12.2
 aiosenseme==0.6.1
 aioserial==1.3.0
-aioshelly==1.0.8
+aioshelly==1.0.9
 aioshutil==1.1
 aiosignal==1.2.0
 aiosqlite==0.17.0
@@ -314,7 +314,7 @@ fixerio==1.0.0_alpha0
 fjaraskupan==1.0.2
 flask==2.0.2
 flipr-api==1.4.1
-flux-led==0.28.20
+flux-led==0.28.21
 foobot_async==1.0.0
 forecast-solar==2.1.0
 fortiosapi==1.0.5
@@ -432,7 +432,7 @@ inflection==0.5.1
 influxdb-client==1.24.0
 influxdb==5.3.1
 intelhex==2.3.0
-intellifire4py==0.5
+intellifire4py==0.6
 iotawattpy==0.1.0
 iperf3==0.1.11
 ismartgate==4.0.4
@@ -578,7 +578,7 @@ nuheat==0.3.0
 numato-gpio==0.10.0
 numexpr==2.8.1
 numpy==1.21.4
-numpy==1.21.5
+numpy==1.22.2
 oasatelematics==0.3
 oauth2client==4.1.3
 oauthlib==3.1.1
@@ -977,7 +977,7 @@ raspyrfm-client==1.2.8
 ratelimit==2.2.1
 re2==0.2021.11.01
 readlike==0.1.2
-readline==8.1_p1
+readline==8.1_p2
 redis==4.0.2
 reedsolomon==1.5.4
 regenmaschine==2022.1.0
@@ -1038,7 +1038,7 @@ shodan==1.26.1
 simplehound==0.3
 simplejson==3.17.5
 simplepush==1.1.4
-simplisafe-python==2022.1.0
+simplisafe-python==2022.2.0
 siobrultech-protocols==0.5.0
 sisyphus-control==3.1.2
 six==1.16.0
@@ -1056,7 +1056,7 @@ snapcast==2.1.3
 sniffio==1.2.0
 snitun==0.30.0
 socat==1.7.4.2
-soco==0.26.0
+soco==0.26.2
 solaredge-local==0.2.0
 solaredge==0.0.2
 solax==0.2.9
@@ -1131,7 +1131,7 @@ ttls==1.4.2
 tuya-iot-py-sdk==0.6.6
 twentemilieu==0.5.0
 twilio==6.32.0
-twisted==21.7.0
+twisted==22.1.0
 TwitterAPI==2.7.5
 txdbus==1.1.2
 typing-extensions==4.0.1
@@ -1207,7 +1207,7 @@ XBee==2.3.2
 xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
-xknx==0.19.1
+xknx==0.19.2
 xmlschema==1.9.2
 xmltodict==0.12.0
 xs1-api-client==3.0.0
@@ -1217,6 +1217,7 @@ yarl==1.7.2
 yeelight==0.7.8
 yeelightsunflower==0.0.10
 youless-api==0.16
+youtube-dl==2021.12.17
 zbar==0.23.1
 zeep==4.1.0
 zengge==0.2
