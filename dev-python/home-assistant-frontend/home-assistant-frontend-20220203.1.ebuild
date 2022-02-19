@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="The Home Assistant frontend"
 HOMEPAGE="https://github.com/home-assistant/frontend https://pypi.org/project/home-assistant-frontend/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://hasf.edevau.net/${P:0:1}/${PN}/${P}.tar.xz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
