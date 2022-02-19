@@ -40,7 +40,6 @@
 |aqualogic|Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller|N|N|Y|0.80|
 |aquostv|The aquostv platform allows you to control a Sharp Aquos TV|N|Y|Y|0.35|
 |arcam_fmj|Control Arcam receivers from Home Assistant|N|Y|Y|0.96|
-|arduino|Arduino device family are microcontroller boards|N|N|Y||
 |arlo|Allows you to integrate your Arlo devices into Home Assistant|N|N|Y|0.46|
 |arris_tg2492lg|Presence detection from an Arris TG2492LG router|N|N|Y|0.109|
 |aruba|Presence detection by looking at connected devices to an Aruba Instant device|N|Y|Y|0.7|
@@ -66,7 +65,7 @@
 |bbox|Presence detection from Bbox Modem Router from Bouygues Telecom|N|N|Y|0.31|
 |beewi_smartclim|BeeWi SmartClim BLE is a Bluetooth Low Energy sensor device|N|Y|Y|0.99|
 |bh1750|Allows you to read the ambient light level in Lux from a BH1750FVI sensor connec|N|Y|Y|0.48|
-|bitcoin|Displays various details about the Bitcoin network|N|Y|Y||
+|bitcoin|Displays various details about the Bitcoin network|N|Y|Y|0.7|
 |bizkaibus|The bizkaibus sensor will give you the time until the next bus in the selected s|N|Y|Y|0.93|
 |blackbird|Control Monoprice Blackbird Matrix Switch using a serial connection|N|Y|Y|0.68|
 |blebox|BleBox produces small, low-power, surprisingly affordable, feature-rich WiFi dev|N|Y|Y|0.110|

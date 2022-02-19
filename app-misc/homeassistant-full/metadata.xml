@@ -54,7 +54,6 @@
     <flag name="aqualogic">Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller</flag>
     <flag name="aquostv">The aquostv platform allows you to control a Sharp Aquos TV</flag>
     <flag name="arcam_fmj">Control Arcam receivers from Home Assistant</flag>
-    <flag name="arduino">Arduino device family are microcontroller boards</flag>
     <flag name="arlo">Allows you to integrate your Arlo devices into Home Assistant</flag>
     <flag name="arris_tg2492lg">Presence detection from an Arris TG2492LG router</flag>
     <flag name="aruba">Presence detection by looking at connected devices to an Aruba Instant device</flag>

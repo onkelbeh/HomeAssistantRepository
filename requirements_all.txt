@@ -3,7 +3,6 @@ accuweather==0.3.0
 acme==1.22.0
 Adafruit-Blinka==6.11.1
 adafruit-circuitpython-bmp280==3.1.1
-adafruit-circuitpython-busdevice==5.0.1
 adafruit-circuitpython-dht==3.7.0
 adafruit-circuitpython-mcp230xx==2.2.2
 Adafruit-PureIO==1.1.9
@@ -46,7 +45,7 @@ aiohttp-cors==0.7.0
 aiohttp==3.7.3
 aiohttp==3.7.4_p0
 aiohttp==3.8.1
-aiohue==4.2.0
+aiohue==4.2.1
 aiohwenergy==0.8.0
 aioimaplib==0.9.0
 aiokafka==0.6.0
@@ -203,12 +202,10 @@ colorama==0.4.4
 coloredlogs==15.0.1
 colorlog==6.6.0
 colorthief==0.2.1
-colorzero==1.1
 colour==0.1.5
 commentjson==0.9.0
 commonmark==0.9.1
 concord232==0.15
-config==0.5.0
 configargparse==0.11.0
 connect-box==0.2.8
 constantly==15.1.0
@@ -221,7 +218,7 @@ coverage==6.2
 crccheck==1.0
 crcmod==1.7
 croniter==1.0.6
-croniter==1.1.0
+croniter==1.2.0
 crownstone-cloud==1.4.9
 crownstone-core==3.0.1
 crownstone-sse==2.0.3
@@ -245,10 +242,9 @@ decorator==5.1.1
 deepmerge==1.0.1
 defusedxml==0.7.1
 deluge-client==1.7.1
-demjson==2.2.4
 devolo-home-control-api==0.17.4
 devolo-plc-api==0.7.1
-dialog==1.3.20211107
+dialog==1.3.20211214
 dicttoxml==1.7.4
 directv==0.4.0
 discogs-client==2.3.0
@@ -318,7 +314,6 @@ forecast-solar==2.1.0
 fortiosapi==1.0.5
 fqdn==1.5.1
 freebox-api==0.0.10
-freeimage==3.18.0
 freesms==0.2.0
 fritzconnection==1.4.2
 frozenlist==1.2.0
@@ -326,10 +321,10 @@ future==0.18.2
 gammu==1.41.0
 garages-amsterdam==3.0.0
 garminconnect-ha==0.1.6
-gawk==5.1.0
+gawk==5.1.1
 gdb==11.1
 geniushub-client==0.6.30
-gentoo-functions==0.14
+gentoo-functions==0.15
 GeographicLib==1.52
 geojson-client==0.6
 geojson==2.5.0
@@ -392,7 +387,7 @@ hlk-sw16==0.0.9
 hole==0.7.0
 holidays==0.12
 home-assistant-cli==9999
-home-assistant-frontend==20220203.0
+home-assistant-frontend==20220203.1
 homeassistant
 homeassistant-pyozw==0.1.10
 homeconnect==0.6.3
@@ -424,7 +419,6 @@ idna==3.3
 ifaddr==0.1.7
 iglo==1.2.7
 ihcsdk==2.7.6
-imageio==2.6.1
 importlib_metadata==4.10.1
 incomfort-client==0.4.4
 incremental==21.3.0
@@ -539,7 +533,6 @@ minio==5.0.10
 motionblinds==0.5.12
 motioneye-client==0.3.12
 mpfr==4.1.0_p13
-ms-cv==0.1.1
 msgpack==1.0.3
 mt_940==4.19.0
 mullvad-api==1.0.0
@@ -554,7 +547,6 @@ namespace-google==1
 namespace-ruamel==1
 namespace-zope==1
 natsort==8.0.2
-nclib==0.8.3
 ncurses==6.2_p20210619
 ndms2-client==0.1.1
 nessclient==0.9.15
@@ -602,7 +594,6 @@ openwrt-ubus-rpc==0.0.2
 oru==0.1.11
 orvibo==1.1.1
 ovoenergy==1.1.12
-oyaml==0.9
 p1monitor==1.0.1
 packaging==21.3
 paho-mqtt==1.6.1
@@ -618,8 +609,6 @@ pencompy==0.0.3
 pexpect==4.6.0
 pexpect==4.8.0
 phone-modem==0.1.1
-phx-class-registry==3.0.5
-phx-filters==2.0.2
 pi4ioe5v9xxxx==0.0.2
 pifacecommon==4.2.2
 pifacedigitalio==3.0.5
@@ -628,7 +617,6 @@ pilight==0.1.1
 pillow==9.0.1
 pip==20.2.4
 pizzapi==0.0.3
-pkce==1.0.3
 platformdirs==2.4.1
 platformio==5.2.4
 plugwise==0.8.5
@@ -757,7 +745,7 @@ pyhiveapi==0.4.2
 pyhomeworks==0.0.6
 pyhumps==3.5.0
 pyialarm==1.9.0
-pyinsteon==1.0.14
+pyinsteon==1.0.16
 pyintesishome==1.7.6
 pyipma==2.0.5
 pyipp==0.11.0
@@ -786,7 +774,6 @@ pylutron-caseta==0.13.1
 pylutron==0.2.8
 pymailgunner==1.4
 pymata-express==1.19
-PyMata==2.20
 pymazda==0.3.2
 pymediaroom==0.6.4.1
 PyMeeus==0.5.11
@@ -851,7 +838,7 @@ pyrisco==0.3.1
 pyrituals==0.0.6
 PyRMVtransport==0.3.3
 pyroute2==0.6.5
-pyrsistent==0.18.0
+pyrsistent==0.18.1
 pyruckus==0.12
 pysabnzbd==1.1.0
 pysaj==0.0.16
@@ -1051,7 +1038,6 @@ slixmpp==1.7.1
 smart-meter-texas==0.4.7
 SmartHab==0.21
 smbus-cffi==0.5.1
-smbus2==0.3.0
 smhi-pkg==1.0.15
 snapcast==2.1.3
 sniffio==1.2.0
@@ -1074,12 +1060,11 @@ sqlalchemy==1.4.29
 srpenergy==1.3.2
 srptools==1.0.1
 sseclient-py==1.7.2
-starkbank-ecdsa==1.1.1
+starkbank-ecdsa==1.0.0
 starlette==0.17.0
 starline==0.1.5
 starlingbank==3.2
 statsd==3.2.1
-stdiomask==0.0.6
 steamodd==4.21
 stevedore==3.4.0
 stookalert==0.1.4
@@ -1104,7 +1089,6 @@ tapsaff==0.2.1
 tellcore-net==0.4
 tellcore-py==1.1.2
 tellduslive==0.10.11
-tellsticknet==0.1.2
 temescal==0.3
 temperusb==1.5.3
 tenacity==8.0.1
@@ -1115,7 +1099,7 @@ text-unidecode==1.3
 thermoworks-smoke==0.1.8
 thingspeak==1.0.0
 tikteck==0.4
-timezone-data==2021a
+timezone-data==2021e
 titlecase==2.3
 tmb==0.0.4
 todoist-python==8.0.0
@@ -1133,7 +1117,6 @@ twentemilieu==0.5.0
 twilio==6.32.0
 twisted==22.1.0
 TwitterAPI==2.7.5
-txdbus==1.1.2
 typing-extensions==4.0.1
 typing-inspect==0.7.1
 tzdata==2021.5
@@ -1142,7 +1125,7 @@ ua-parser==0.10.0
 udev==217
 udev==249.6
 uEagle==0.0.2
-ujson==5.0.0
+ujson==5.1.0
 unasync==0.5.0
 unidecode==1.3.0
 unifi-discovery==1.1.2
@@ -1158,7 +1141,7 @@ uscisstatus==0.1.1
 user-agents==2.0
 util-linux==2.37.4
 uvcclient==0.11.0
-uvicorn==0.17.0
+uvicorn==0.17.3
 vallox-websocket-api==2.9.0
 vehicle==0.3.1
 velbus-aio==2022.2.1
