@@ -147,6 +147,7 @@
 |dlib_face_identify|image processing platform allows you to use the Dlib|N|N|Y|0.44|
 |dlink|Allows you to control the state of your D-Link Wi-Fi Smart Plugs|N|N|Y|0.14|
 |dlna_dmr|Allows you to control a DLNA Digital Media Renderer|N|N|Y|0.76|
+|dlna_dms|None|N|N|Y|2022.3.0b3|
 |dnsip|will expose an IP address, fetched via DNS resolution, as its value|N|N|Y|0.40|
 |dominos|dominos integration allows you to order Dominos Pizza|N|N|Y|0.59|
 |doods| image processing integration allows you to detect and recognize objects|N|N|Y|0.100|
@@ -212,6 +213,7 @@
 |fireservicerota|scheduling and dispatching system for firefighters|N|N|Y|2020.12|
 |firmata|Firmata can be used to add digital inputs and outputs to Home Assistant|N|N|Y|0.114|
 |fitbit|The Fitbit sensor allows you to expose data from Fitbit to Home Assistant|N|N|Y|0.19|
+|fivem|None|N|N|Y|2022.3.0b3|
 |fixer|current exchange rate from Fixer.io using data from ECB|N|N|Y|0.23|
 |fjaraskupan|Fjäråskupan allows you to control your Bluetooth equipped kitchen fan|N|N|Y|2021.9.0b1|
 |fleetgo|integrate your vehicles equipped with FleetGO hardware into Home Assistant|N|N|Y|0.76|
@@ -417,6 +419,7 @@
 |modbus|sensors and switches controlled over MODBUS serial, TCP, and UDP connections|N|N|Y||
 |modem_callerid|Uses an available modem for collecting caller ID information|N|N|Y|0.40|
 |modern_forms|Asynchronous Python client for Modern Forms fans|N|N|Y|2021.7|
+|moehlenhoff_alpha2|None|N|N|Y|2022.3.0b3|
 |monoprice|Python API for talking to Monoprice 6-zone amplifier|N|N|Y|0.56|
 |motioneye|integrate your motionEye server into Home Assistant|N|N|Y|2021.5|
 |motion_blinds|control Motion Blinds from Coulisse B.V.|N|N|Y|2020.12|
@@ -536,6 +539,7 @@
 |proxy|pass another camera’s output through post-processing routines|N|N|Y|0.65|
 |ps4|allows you to control a Sony PlayStation 4 console|Y|Y|Y|0.89|
 |pulseaudio_loopback|whole home audio system based upon PulseAudio|N|N|Y|0.16|
+|pure_energie|None|N|N|Y|2022.3.0b3|
 |pushbullet|sensor platform reads messages from Pushbullet|N|N|Y|0.44|
 |pushover|allows integrations to send messages to the user using Pushover|N|N|Y||
 |pvoutput|The PVOutput integration|N|N|Y|0.33|
@@ -550,6 +554,7 @@
 |qwikswitch|the main integration to integrate various QwikSwitch devices with Home Assistant|N|N|Y|0.20|
 |rachio|The rachio platform allows you to control your Rachio irrigation system|N|Y|Y|0.73|
 |radiotherm|control a thermostat from Radio Thermostat or 3M Filtrete|N|N|Y|0.7.6|
+|radio_browser|None|Y|Y|Y|2022.3.0b3|
 |rainbird|allows interacting with LNK WiFi module of the Rain Bird Irrigation system|N|Y|Y|0.61|
 |raincloud|allows you to integrate your Melnor RainCloud sprinkler system in Home Assistant|N|N|Y|0.55|
 |rainforest_eagle|platform for Rainforest Automation’s Eagle-200 and Legacy Eagle energy gateways|N|N|Y|0.97|
@@ -792,6 +797,7 @@
 |wink|support for Wink Z-Wave Plus Smart Hub|N|Y|Y||
 |wirelesstag|integrate your wirelesstag.net sensors tags|N|N|Y|0.68|
 |withings|add support for Withings Health API|N|Y|Y|0.99|
+|wiz|None|N|N|Y|2022.3.0b3|
 |wled|add support for Aircookie's WLED|N|Y|Y|0.102|
 |wolflink|uses the Wolf Smart-Set for your heating system status|N|N|Y|0.114|
 |workday|generating country, province and state specific sets of holidays on the fly|Y|Y|Y|0.41|
@@ -823,3 +829,4 @@
 |zoneminder|Support for ZoneMinder Cameras|N|Y|Y|0.31|
 |zwave|Support for Z-Wave Devices (uncomplete)|N|Y|Y|0.7|
 |zwave_js|control a Z-Wave network via the Z-Wave JS driver|Y|Y|Y|2021.2|
+|zwave_me|None|N|N|Y|2022.3.0b3|

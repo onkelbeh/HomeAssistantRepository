@@ -161,6 +161,7 @@
     <flag name="dlib_face_identify">image processing platform allows you to use the Dlib</flag>
     <flag name="dlink">Allows you to control the state of your D-Link Wi-Fi Smart Plugs</flag>
     <flag name="dlna_dmr">Allows you to control a DLNA Digital Media Renderer</flag>
+    <flag name="dlna_dms"/>
     <flag name="dnsip">will expose an IP address, fetched via DNS resolution, as its value</flag>
     <flag name="dominos">dominos integration allows you to order Dominos Pizza</flag>
     <flag name="doods"> image processing integration allows you to detect and recognize objects</flag>
@@ -226,6 +227,7 @@
     <flag name="fireservicerota">scheduling and dispatching system for firefighters</flag>
     <flag name="firmata">Firmata can be used to add digital inputs and outputs to Home Assistant</flag>
     <flag name="fitbit">The Fitbit sensor allows you to expose data from Fitbit to Home Assistant</flag>
+    <flag name="fivem"/>
     <flag name="fixer">current exchange rate from Fixer.io using data from ECB</flag>
     <flag name="fjaraskupan">Fjäråskupan allows you to control your Bluetooth equipped kitchen fan</flag>
     <flag name="fleetgo">integrate your vehicles equipped with FleetGO hardware into Home Assistant</flag>
@@ -431,6 +433,7 @@
     <flag name="modbus">sensors and switches controlled over MODBUS serial, TCP, and UDP connections</flag>
     <flag name="modem_callerid">Uses an available modem for collecting caller ID information</flag>
     <flag name="modern_forms">Asynchronous Python client for Modern Forms fans</flag>
+    <flag name="moehlenhoff_alpha2"/>
     <flag name="monoprice">Python API for talking to Monoprice 6-zone amplifier</flag>
     <flag name="motioneye">integrate your motionEye server into Home Assistant</flag>
     <flag name="motion_blinds">control Motion Blinds from Coulisse B.V.</flag>
@@ -550,6 +553,7 @@
     <flag name="proxy">pass another camera’s output through post-processing routines</flag>
     <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
     <flag name="pulseaudio_loopback">whole home audio system based upon PulseAudio</flag>
+    <flag name="pure_energie"/>
     <flag name="pushbullet">sensor platform reads messages from Pushbullet</flag>
     <flag name="pushover">allows integrations to send messages to the user using Pushover</flag>
     <flag name="pvoutput">The PVOutput integration</flag>
@@ -564,6 +568,7 @@
     <flag name="qwikswitch">the main integration to integrate various QwikSwitch devices with Home Assistant</flag>
     <flag name="rachio">The rachio platform allows you to control your Rachio irrigation system</flag>
     <flag name="radiotherm">control a thermostat from Radio Thermostat or 3M Filtrete</flag>
+    <flag name="radio_browser"/>
     <flag name="rainbird">allows interacting with LNK WiFi module of the Rain Bird Irrigation system</flag>
     <flag name="raincloud">allows you to integrate your Melnor RainCloud sprinkler system in Home Assistant</flag>
     <flag name="rainforest_eagle">platform for Rainforest Automation’s Eagle-200 and Legacy Eagle energy gateways</flag>
@@ -806,6 +811,7 @@
     <flag name="wink">support for Wink Z-Wave Plus Smart Hub</flag>
     <flag name="wirelesstag">integrate your wirelesstag.net sensors tags</flag>
     <flag name="withings">add support for Withings Health API</flag>
+    <flag name="wiz"/>
     <flag name="wled">add support for Aircookie's WLED</flag>
     <flag name="wolflink">uses the Wolf Smart-Set for your heating system status</flag>
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
@@ -837,5 +843,6 @@
     <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
     <flag name="zwave">Support for Z-Wave Devices (uncomplete)</flag>
     <flag name="zwave_js">control a Z-Wave network via the Z-Wave JS driver</flag>
+    <flag name="zwave_me"/>
   </use>
 </pkgmetadata>
