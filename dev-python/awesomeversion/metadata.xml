@@ -8,7 +8,7 @@
   <upstream>
     <remote-id type="pypi">awesomeversion</remote-id>
     <maintainer status="unknown">
-      <email>hi@ludeeus.dev</email>
+      <email>ludeeus@ludeeus.dev</email>
       <name>Ludeeus</name>
     </maintainer>
   </upstream>
