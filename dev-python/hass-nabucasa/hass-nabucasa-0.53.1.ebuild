@@ -1,7 +1,7 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -18,9 +18,9 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND="~dev-python/pycognito-2021.3.1[${PYTHON_USEDEP}]
-	~dev-python/snitun-0.30.0[${PYTHON_USEDEP}]
-	>=app-crypt/acme-1.18.0[${PYTHON_USEDEP}]
+RDEPEND="~dev-python/pycognito-2022.1.0[${PYTHON_USEDEP}]
+	~dev-python/snitun-0.31.0[${PYTHON_USEDEP}]
+	>=app-crypt/acme-1.22.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
@@ -39,6 +39,6 @@ python_test() {
 }
 
 src_prepare() {
-	sed -i "s/acme==1.18.0/acme/g" -i setup.py || die
+	sed -i "s/acme==1.22.0/acme/g" -i setup.py || die
 	eapply_user
 }
