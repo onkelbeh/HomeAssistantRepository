@@ -18,7 +18,7 @@ IUSE="test"
 
 DOCS="README.rst"
 
-RDEPEND=""
+RDEPEND="dev-python/d2to1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
