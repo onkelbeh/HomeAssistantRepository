@@ -7,5 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">envs</remote-id>
+    <maintainer status="unknown">
+      <email>bjinwright@qwigo.com</email>
+      <name>Brian Jinwright</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>
