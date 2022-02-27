@@ -280,7 +280,7 @@ env-canada==0.5.20
 envirophat==0.0.6
 envoy-reader==0.20.1
 envoy-utils==0.0.1
-envs==1.3
+envs==1.4
 ephem==3.7.7.0
 epson-projector==0.4.2
 epsonprinter==0.0.9
@@ -374,7 +374,7 @@ ha-ffmpeg==3.0.2
 ha-philipsjs==2.7.6
 habitipy==0.2.0
 hangups==0.4.17
-hass-nabucasa==0.53.1
+hass-nabucasa==0.54.0
 hass-splunk==0.1.1
 HATasmota==0.3.1
 haversine==2.3.1
@@ -389,7 +389,7 @@ hlk-sw16==0.0.9
 hole==0.7.0
 holidays==0.13
 home-assistant-cli==9999
-home-assistant-frontend==20220224.0
+home-assistant-frontend==20220226.0
 homeassistant
 homeassistant-pyozw==0.1.10
 homeconnect==0.6.3
