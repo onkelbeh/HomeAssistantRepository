@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
-inherit readme.gentoo-r1 distutils-r1
+inherit readme.gentoo-r1 distutils-r1 udev
 
 if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
@@ -36,10 +36,10 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	~dev-python/tzlocal-4.1[${PYTHON_USEDEP}]
 	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	~dev-embedded/platformio-5.2.4
+	~dev-embedded/platformio-5.2.5
 	~dev-embedded/esptool-3.2[${PYTHON_USEDEP}]
 	~dev-python/click-8.0.3[${PYTHON_USEDEP}]
-	~dev-embedded/esphome-dashboard-20220116.0[${PYTHON_USEDEP}]
+	~dev-embedded/esphome-dashboard-20220219.0[${PYTHON_USEDEP}]
 	dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 	dev-python/zeroconf[${PYTHON_USEDEP}]
 	~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]"
@@ -72,6 +72,8 @@ src_prepare() {
 	mv requirements_new.txt requirements.txt
 	eapply_user
 }
+
+distutils_enable_tests pytest
 
 python_install_all() {
 	dodoc ${DOCS}
