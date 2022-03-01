@@ -105,7 +105,7 @@ arcam-fmj==0.12.0
 argcomplete==2.0.0
 argh==0.26.2
 arris-tg2492lg==1.2.1
-arrow==1.2.1
+arrow==1.2.2
 asgiref==3.4.1
 asmog==0.0.6
 asterisk_mbox==0.5.0
@@ -254,7 +254,7 @@ discovery30303==0.2.1
 distro==1.5.0
 dlib==19.18.0
 dlipower==0.7.165
-dnspython==2.1.0
+dnspython==2.2.0
 docopt==0.6.2
 DoorBirdPy==2.1.0
 dovado==0.4.1
@@ -317,7 +317,7 @@ fqdn==1.5.1
 freebox-api==0.0.10
 freesms==0.2.0
 fritzconnection==1.4.2
-frozenlist==1.2.0
+frozenlist==1.3.0
 future==0.18.2
 gammu==1.41.0
 garages-amsterdam==3.0.0
@@ -369,6 +369,7 @@ gTTS==2.2.3
 guppy3==3.1.2
 gzip==1.11
 h11==0.12.0
+h11==0.13.0
 h2==4.1.0
 ha-ffmpeg==3.0.2
 ha-philipsjs==2.7.6
@@ -403,6 +404,7 @@ httplib2==0.19.0
 httplib2==0.20.2
 httpsig==1.3.0
 httpx==0.21.3
+httpx==0.22.0
 huawei-lte-api==1.4.18
 huisbaasje-client==0.1.0
 humanfriendly==10.0
@@ -449,7 +451,7 @@ jsonpointer==2.2
 jsonrpc-async==2.1.0
 jsonrpc-base==2.1.0
 jsonrpc-websocket==3.1.1
-jsonschema==4.3.3
+jsonschema==4.4.0
 kaiterra-async-client==0.0.2
 kconfiglib==13.7.1
 keba-kecontact==1.1.0
@@ -696,7 +698,7 @@ pycoolmasternet-async==0.1.2
 pycountry-convert==0.7.2
 pycountry==22.1.10
 pycparser==2.21
-pycryptodome==3.12.0
+pycryptodome==3.14.1
 pycryptodomex==3.10.1
 pycsspeechtts==1.0.4
 pycups==1.9.73
@@ -814,10 +816,10 @@ pyoppleio==1.0.5
 PyOTA==2.0.5
 pyotgw==1.1_beta1
 pyotp==2.6.0
-pyoverkiz==1.3.8
+pyoverkiz==1.3.9
 pyowm==3.2.0
 pyownet==0.10.0
-pyparsing==3.0.6
+pyparsing==3.0.7
 pypca==0.0.7
 pypck==0.7.14
 pypjlink2==1.2.1
@@ -971,8 +973,8 @@ readlike==0.1.2
 readline==8.1_p2
 reedsolomon==1.5.4
 regenmaschine==2022.1.0
-regex==2021.11.10
 regex==2021.8.28
+regex==2022.1.18
 renault-api==0.1.9
 ReParser==1.4.3
 requests-file==1.5.1
@@ -1017,7 +1019,7 @@ schiene==0.23
 screenlogicpy==0.5.4
 scsgate==0.1.0
 secretstorage==3.3.1
-semantic_version==2.8.5
+semantic_version==2.9.0
 semver==2.13.0
 sendgrid==6.8.2
 sense-energy==0.10.2
@@ -1058,12 +1060,12 @@ speedtest-cli==2.1.3
 spiderpy==1.6.1
 spidev==3.5
 sqlalchemy==1.4.27
-sqlalchemy==1.4.29
+sqlalchemy==1.4.31
 srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
 starkbank-ecdsa==1.0.0
-starlette==0.17.0
+starlette==0.18.0
 starline==0.1.5
 starlingbank==3.2
 statsd==3.2.1
@@ -1121,7 +1123,7 @@ twilio==6.32.0
 twisted==22.1.0
 twitchAPI==2.5.2
 TwitterAPI==2.7.5
-typing-extensions==4.0.1
+typing-extensions==4.1.1
 typing-inspect==0.7.1
 tzdata==2021.5
 tzlocal==4.1
@@ -1207,7 +1209,7 @@ youtube-dl==2021.12.17
 zbar==0.23.1
 zeep==4.1.0
 zengge==0.2
-zeroconf==0.38.3
+zeroconf==0.38.4
 zha-quirks==0.0.67
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
