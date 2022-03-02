@@ -64,7 +64,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.44.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.54.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220226.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220301.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.14.5[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.21.3[${PYTHON_USEDEP}]
@@ -97,7 +97,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-serialize-2.5.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.7.2[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.38.3[${PYTHON_USEDEP}]"
+	~dev-python/zeroconf-0.38.4[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -137,7 +137,7 @@ RDEPEND="${RDEPEND}
 	esphome? ( ~dev-python/aioesphomeapi-10.8.2[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.1.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20220226.0[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20220301.0[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/aiogithubapi-22.2.3[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.4.0[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
 	homekit_controller? ( ~dev-python/aiohomekit-0.7.14[${PYTHON_USEDEP}] )
@@ -160,7 +160,7 @@ RDEPEND="${RDEPEND}
 	owntracks? ( ~dev-python/pynacl-1.4.0[${PYTHON_USEDEP}] )
 	ozw? ( ~dev-python/python-openzwave-mqtt-1.4.0[${PYTHON_USEDEP}] )
 	ping? ( ~dev-python/icmplib-3.0[${PYTHON_USEDEP}] )
-	plex? ( ~dev-python/PlexAPI-4.9.2[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
+	plex? ( ~dev-python/PlexAPI-4.10.0[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
 	ps4? ( ~dev-python/pyps4-2ndscreen-1.3.1[${PYTHON_USEDEP}] )
 	python_script? ( ~dev-python/RestrictedPython-5.2[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.4.0[${PYTHON_USEDEP}] )
@@ -194,7 +194,7 @@ RDEPEND="${RDEPEND}
 	workday? ( ~dev-python/holidays-0.13[${PYTHON_USEDEP}] )
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.3[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/zeroconf-0.38.3[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/zeroconf-0.38.4[${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/zwave-js-server-python-0.35.1[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}

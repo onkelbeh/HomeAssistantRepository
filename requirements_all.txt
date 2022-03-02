@@ -308,7 +308,7 @@ fivem-api==0.1.2
 fixerio==1.0.0_alpha0
 fjaraskupan==1.0.2
 flask==2.0.2
-flipr-api==1.4.1
+flipr-api==1.4.2
 flux-led==0.28.27
 foobot_async==1.0.0
 forecast-solar==2.1.0
@@ -390,7 +390,7 @@ hlk-sw16==0.0.9
 hole==0.7.0
 holidays==0.13
 home-assistant-cli==9999
-home-assistant-frontend==20220226.0
+home-assistant-frontend==20220301.0
 homeassistant
 homeassistant-pyozw==0.1.10
 homeconnect==0.6.3
@@ -489,8 +489,8 @@ libunistring==0.9.10
 libusb1==2.0.1
 libusb==1
 libusb==1.0.24
-libxml2==2.9.12
-libxslt==1.1.34
+libxml2==2.9.13
+libxslt==1.1.35
 libyaml==0.2.5
 life360==4.1.1
 liffylights==0.9.4
@@ -918,7 +918,7 @@ python-smarttub==0.0.29
 python-sochain-api==0.0.2
 python-socketio==4.6.0
 python-socketio==5.3.0
-python-songpal==0.14
+python-songpal==0.14.1
 python-tado==0.12.0
 python-telegram-bot==13.1
 python-vlc==1.1.2

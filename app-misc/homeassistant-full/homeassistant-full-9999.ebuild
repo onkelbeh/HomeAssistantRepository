@@ -64,7 +64,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.44.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.54.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220226.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220301.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.14.5[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.21.3[${PYTHON_USEDEP}]
@@ -335,7 +335,7 @@ RDEPEND="${RDEPEND}
 	flexit? ( ~dev-python/pyflexit-0.3[${PYTHON_USEDEP}] )
 	flic? ( ~dev-python/pyflic-2.0.3[${PYTHON_USEDEP}] )
 	flick_electric? ( ~dev-python/PyFlick-0.0.2[${PYTHON_USEDEP}] )
-	flipr? ( ~dev-python/flipr-api-1.4.1[${PYTHON_USEDEP}] )
+	flipr? ( ~dev-python/flipr-api-1.4.2[${PYTHON_USEDEP}] )
 	flo? ( ~dev-python/aioflo-2021.11.0[${PYTHON_USEDEP}] )
 	flume? ( ~dev-python/PyFlume-0.6.5[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-2.0.2[${PYTHON_USEDEP}] )
@@ -354,7 +354,7 @@ RDEPEND="${RDEPEND}
 	fritzbox_callmonitor? ( ~dev-python/fritzconnection-1.8.0[${PYTHON_USEDEP}] )
 	fritzbox_netmonitor? ( ~dev-python/fritzconnection-1.4.2[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20220226.0[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20220301.0[${PYTHON_USEDEP}] )
 	frontier_silicon? ( ~dev-python/afsapi-0.0.4[${PYTHON_USEDEP}] )
 	futurenow? ( ~dev-python/pyfnip-0.2[${PYTHON_USEDEP}] )
 	garages_amsterdam? ( ~dev-python/garages-amsterdam-3.0.0[${PYTHON_USEDEP}] )
@@ -769,7 +769,7 @@ RDEPEND="${RDEPEND}
 	somfy? ( ~dev-python/pymfy-0.11.0[${PYTHON_USEDEP}] )
 	somfy_mylink? ( ~dev-python/somfy-mylink-synergy-1.0.6[${PYTHON_USEDEP}] )
 	sonarr? ( ~dev-python/aiopyarr-22.2.2[${PYTHON_USEDEP}] )
-	songpal? ( ~dev-python/python-songpal-0.14[${PYTHON_USEDEP}] )
+	songpal? ( ~dev-python/python-songpal-0.14.1[${PYTHON_USEDEP}] )
 	sonos? ( ~dev-python/soco-0.26.3[${PYTHON_USEDEP}] )
 	sony_projector? ( ~dev-python/pySDCP-1[${PYTHON_USEDEP}] )
 	soundtouch? ( ~dev-python/libsoundtouch-0.8.0[${PYTHON_USEDEP}] )

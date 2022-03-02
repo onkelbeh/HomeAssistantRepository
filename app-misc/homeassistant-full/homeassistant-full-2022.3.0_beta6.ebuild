@@ -64,7 +64,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.44.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.54.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220226.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220301.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.14.5[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.21.3[${PYTHON_USEDEP}]
@@ -97,7 +97,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-serialize-2.5.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.7.2[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.38.3[${PYTHON_USEDEP}]"
+	~dev-python/zeroconf-0.38.4[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -335,7 +335,7 @@ RDEPEND="${RDEPEND}
 	flexit? ( ~dev-python/pyflexit-0.3[${PYTHON_USEDEP}] )
 	flic? ( ~dev-python/pyflic-2.0.3[${PYTHON_USEDEP}] )
 	flick_electric? ( ~dev-python/PyFlick-0.0.2[${PYTHON_USEDEP}] )
-	flipr? ( ~dev-python/flipr-api-1.4.1[${PYTHON_USEDEP}] )
+	flipr? ( ~dev-python/flipr-api-1.4.2[${PYTHON_USEDEP}] )
 	flo? ( ~dev-python/aioflo-2021.11.0[${PYTHON_USEDEP}] )
 	flume? ( ~dev-python/PyFlume-0.6.5[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-2.0.2[${PYTHON_USEDEP}] )
@@ -354,7 +354,7 @@ RDEPEND="${RDEPEND}
 	fritzbox_callmonitor? ( ~dev-python/fritzconnection-1.8.0[${PYTHON_USEDEP}] )
 	fritzbox_netmonitor? ( ~dev-python/fritzconnection-1.4.2[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20220226.0[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20220301.0[${PYTHON_USEDEP}] )
 	frontier_silicon? ( ~dev-python/afsapi-0.0.4[${PYTHON_USEDEP}] )
 	futurenow? ( ~dev-python/pyfnip-0.2[${PYTHON_USEDEP}] )
 	garages_amsterdam? ( ~dev-python/garages-amsterdam-3.0.0[${PYTHON_USEDEP}] )
@@ -619,7 +619,7 @@ RDEPEND="${RDEPEND}
 	orvibo? ( ~dev-python/orvibo-1.1.1[${PYTHON_USEDEP}] )
 	osramlightify? ( ~dev-python/lightify-1.0.7.3[${PYTHON_USEDEP}] )
 	otp? ( ~dev-python/pyotp-2.6.0[${PYTHON_USEDEP}] )
-	overkiz? ( ~dev-python/pyoverkiz-1.3.8[${PYTHON_USEDEP}] )
+	overkiz? ( ~dev-python/pyoverkiz-1.3.9[${PYTHON_USEDEP}] )
 	ovo_energy? ( ~dev-python/ovoenergy-1.2.0[${PYTHON_USEDEP}] )
 	owntracks? ( ~dev-python/pynacl-1.4.0[${PYTHON_USEDEP}] )
 	ozw? ( ~dev-python/python-openzwave-mqtt-1.4.0[${PYTHON_USEDEP}] )
@@ -638,7 +638,7 @@ RDEPEND="${RDEPEND}
 	pi_hole? ( ~dev-python/hole-0.7.0[${PYTHON_USEDEP}] )
 	pjlink? ( ~dev-python/pypjlink2-1.2.1[${PYTHON_USEDEP}] )
 	plaato? ( ~dev-python/pyplaato-0.0.15[${PYTHON_USEDEP}] )
-	plex? ( ~dev-python/PlexAPI-4.9.2[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
+	plex? ( ~dev-python/PlexAPI-4.10.0[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
 	plugwise? ( ~dev-python/plugwise-0.16.6[${PYTHON_USEDEP}] )
 	plum_lightpad? ( ~dev-python/plumlightpad-0.0.11[${PYTHON_USEDEP}] )
 	pocketcasts? ( ~dev-python/pycketcasts-1.0.0[${PYTHON_USEDEP}] )
@@ -769,7 +769,7 @@ RDEPEND="${RDEPEND}
 	somfy? ( ~dev-python/pymfy-0.11.0[${PYTHON_USEDEP}] )
 	somfy_mylink? ( ~dev-python/somfy-mylink-synergy-1.0.6[${PYTHON_USEDEP}] )
 	sonarr? ( ~dev-python/aiopyarr-22.2.2[${PYTHON_USEDEP}] )
-	songpal? ( ~dev-python/python-songpal-0.14[${PYTHON_USEDEP}] )
+	songpal? ( ~dev-python/python-songpal-0.14.1[${PYTHON_USEDEP}] )
 	sonos? ( ~dev-python/soco-0.26.3[${PYTHON_USEDEP}] )
 	sony_projector? ( ~dev-python/pySDCP-1[${PYTHON_USEDEP}] )
 	soundtouch? ( ~dev-python/libsoundtouch-0.8.0[${PYTHON_USEDEP}] )
@@ -933,7 +933,7 @@ RDEPEND="${RDEPEND}
 	youless? ( ~dev-python/youless-api-0.16[${PYTHON_USEDEP}] )
 	zabbix? ( ~dev-python/py-zabbix-1.1.7[${PYTHON_USEDEP}] )
 	zengge? ( ~dev-python/zengge-0.2[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/zeroconf-0.38.3[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/zeroconf-0.38.4[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
 	zestimate? ( ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	zha? ( ~dev-python/bellows-0.29.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.67[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.43.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.8.0[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.7.0[${PYTHON_USEDEP}] )

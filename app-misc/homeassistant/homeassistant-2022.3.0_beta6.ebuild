@@ -64,7 +64,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.44.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.54.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220226.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220301.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.14.5[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.21.3[${PYTHON_USEDEP}]
@@ -97,7 +97,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-serialize-2.5.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.7.2[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.38.3[${PYTHON_USEDEP}]"
+	~dev-python/zeroconf-0.38.4[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -229,7 +229,7 @@ RDEPEND="${RDEPEND}
 	fritzbox_callmonitor? ( ~dev-python/fritzconnection-1.8.0[${PYTHON_USEDEP}] )
 	fritzbox_netmonitor? ( ~dev-python/fritzconnection-1.4.2[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20220226.0[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20220301.0[${PYTHON_USEDEP}] )
 	garmin_connect? ( ~dev-python/garminconnect-ha-0.1.6[${PYTHON_USEDEP}] )
 	gios? ( ~dev-python/gios-2.1.0[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/aiogithubapi-22.2.3[${PYTHON_USEDEP}] )
@@ -303,7 +303,7 @@ RDEPEND="${RDEPEND}
 	pilight? ( ~dev-python/pilight-0.1.1[${PYTHON_USEDEP}] )
 	ping? ( ~dev-python/icmplib-3.0[${PYTHON_USEDEP}] )
 	pi_hole? ( ~dev-python/hole-0.7.0[${PYTHON_USEDEP}] )
-	plex? ( ~dev-python/PlexAPI-4.9.2[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
+	plex? ( ~dev-python/PlexAPI-4.10.0[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
 	plugwise? ( ~dev-python/plugwise-0.16.6[${PYTHON_USEDEP}] )
 	poolsense? ( ~dev-python/poolsense-0.0.8[${PYTHON_USEDEP}] )
 	powerwall? ( ~dev-python/tesla-powerwall-0.3.17[${PYTHON_USEDEP}] )
@@ -386,7 +386,7 @@ RDEPEND="${RDEPEND}
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.3[${PYTHON_USEDEP}] )
 	yeelight? ( ~dev-python/yeelight-0.7.9[${PYTHON_USEDEP}] ~dev-python/async-upnp-client-0.23.5[${PYTHON_USEDEP}] )
 	yi? ( ~dev-python/aioftp-0.12.0[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/zeroconf-0.38.3[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/zeroconf-0.38.4[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
 	zha? ( ~dev-python/bellows-0.29.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.67[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.43.0[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.8.0[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.7.0[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
