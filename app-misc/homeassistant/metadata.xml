@@ -210,6 +210,7 @@
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
     <flag name="qvr_pro">QVR Pro allows you to connect to cams configured on your QNAP NAS</flag>
     <flag name="rachio">The rachio platform allows you to control your Rachio irrigation system</flag>
+    <flag name="radio_browser">use the directory of radio stations collected on Radio Browser in Home Assistant</flag>
     <flag name="rainbird">allows interacting with LNK WiFi module of the Rain Bird Irrigation system</flag>
     <flag name="rainmachine">integrate all platforms related to RainMachine smart Wi-Fi sprinkler controllers</flag>
     <flag name="recorder">storing details in a database per sqlalchemy</flag>

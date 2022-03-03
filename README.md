@@ -28,16 +28,16 @@ The frontend team discontinued offering an SDIST build via Pypi, caused by space
 Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new here, start with app-misc/homeassistant-min.
 ### `app-misc/homeassistant-min`
 
-New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, it currently holds **82** USE Flags.
+New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, it currently holds **83** USE Flags.
 
 ### `app-misc/homeassistant`
 
-The Ebuild we have since `0.97.0`, ss soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure. It currently holds **279** USE Flags.
+The Ebuild we have since `0.97.0`, ss soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure. It currently holds **280** USE Flags.
 
 ### `app-misc/homeassistant-full`
 
 WARNING: This one currently breaks (caused by shell limitations) emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
-This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **830** USE Flags.
+This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **829** USE Flags.
 
 A list of all components aka USEFlags is generated with every release [DOMAINTABLE.md](DOMAINTABLE.md)
 
@@ -492,12 +492,12 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1858 Ebuilds in total, 1847 of them have in total 1856 (34 different) licenses assigned.
+There are 1855 Ebuilds in total, 1844 of them have in total 1853 (34 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
 |MIT|1101|
-|Apache-2.0|363|
+|Apache-2.0|360|
 |BSD|113|
 |GPL-3|108|
 |LGPL-3|27|
@@ -531,9 +531,9 @@ There are 1858 Ebuilds in total, 1847 of them have in total 1856 (34 different) 
 |OSL-2.0|1|
 |CC0-1.0|1|
 
-(Last counted: 02/03/2022)
+(Last counted: 03/03/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 02/03/2022
+Last updated: 03/03/2022
