@@ -6,6 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 DESCRIPTION="Easy access of environment variables from Python with support for strings, booleans, list, tuples, and dicts."
 HOMEPAGE="https://github.com/bjinwright/envs https://pypi.org/project/envs/"
@@ -16,12 +17,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="cli test"
 
-DOCS="README.md"
+# missing DOCS="README.md"
 
 RDEPEND="cli? (
-			  >=dev-python/jinja2-2.8[${PYTHON_USEDEP}]
-			  >=dev-python/click-6.6[${PYTHON_USEDEP}]
-			  >=dev-python/terminaltables-3.0.0[${PYTHON_USEDEP}]
+			  >=dev-python/jinja-3.0.3[${PYTHON_USEDEP}]
+			  >=dev-python/click-8.0.3[${PYTHON_USEDEP}]
+			  >=dev-python/terminaltables-3.1.10[${PYTHON_USEDEP}]
 			  )"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
