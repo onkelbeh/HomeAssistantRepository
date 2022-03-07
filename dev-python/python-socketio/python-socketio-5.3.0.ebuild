@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Socket.IO server"
-HOMEPAGE="http://github.com/miguelgrinberg/python-socketio/ https://pypi.org/project/python-socketio/"
+HOMEPAGE="https://github.com/miguelgrinberg/python-socketio/ https://pypi.org/project/python-socketio/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

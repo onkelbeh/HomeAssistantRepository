@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..9} )
 inherit distutils-r1
 
 DESCRIPTION="Interface to the unofficial EcoNet API"
-HOMEPAGE="http://github.com/w1ll1am23/pyeconet https://pypi.org/project/pyeconet/"
+HOMEPAGE="https://github.com/w1ll1am23/pyeconet https://pypi.org/project/pyeconet/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

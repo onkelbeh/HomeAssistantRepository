@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="ASync SleepIQ API"
-HOMEPAGE="http://github.com/kbickar/asyncsleepiq https://pypi.org/project/asyncsleepiq/"
+HOMEPAGE="https://github.com/kbickar/asyncsleepiq https://pypi.org/project/asyncsleepiq/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

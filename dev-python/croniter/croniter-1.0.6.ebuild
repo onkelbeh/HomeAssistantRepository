@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="croniter provides iteration for datetime object with cron like format"
-HOMEPAGE="http://github.com/kiorky/croniter https://pypi.org/project/croniter/"
+HOMEPAGE="https://github.com/kiorky/croniter https://pypi.org/project/croniter/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

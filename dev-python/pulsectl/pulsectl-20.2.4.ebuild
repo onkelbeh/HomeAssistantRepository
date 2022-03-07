@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Python high-level interface and ctypes-based bindings for PulseAudio (libpulse)"
-HOMEPAGE="http://github.com/mk-fg/python-pulse-control https://pypi.org/project/pulsectl/"
+HOMEPAGE="https://github.com/mk-fg/python-pulse-control https://pypi.org/project/pulsectl/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

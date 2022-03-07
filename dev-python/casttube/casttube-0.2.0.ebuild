@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="YouTube chromecast api"
-HOMEPAGE="http://github.com/ur1katz/casttube https://pypi.org/project/casttube/"
+HOMEPAGE="https://github.com/ur1katz/casttube https://pypi.org/project/casttube/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

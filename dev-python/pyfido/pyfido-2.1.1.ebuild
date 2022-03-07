@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Get your Fido consumption (wwww.fido.ca)"
-HOMEPAGE="http://github.com/titilambert/pyfido https://pypi.org/project/pyfido/"
+HOMEPAGE="https://github.com/titilambert/pyfido https://pypi.org/project/pyfido/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Python bindings for Linux SPI access through spidev"
-HOMEPAGE="http://github.com/doceme/py-spidev https://pypi.org/project/spidev/"
+HOMEPAGE="https://github.com/doceme/py-spidev https://pypi.org/project/spidev/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Convert voluptuous schemas to dictionaries"
-HOMEPAGE="http://github.com/balloob/voluptuous-serialize https://pypi.org/project/voluptuous-serialize/"
+HOMEPAGE="https://github.com/balloob/voluptuous-serialize https://pypi.org/project/voluptuous-serialize/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"

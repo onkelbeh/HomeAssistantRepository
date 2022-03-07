@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="converts and manipulates various color representation (HSL, RVB, web, X11, ...)"
-HOMEPAGE="http://github.com/vaab/colour https://pypi.org/project/colour/"
+HOMEPAGE="https://github.com/vaab/colour https://pypi.org/project/colour/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"

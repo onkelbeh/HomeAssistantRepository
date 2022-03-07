@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Fritz!Box Smarthome Python Library"
-HOMEPAGE="http://github.com/hthiery/python-fritzhome https://pypi.org/project/pyfritzhome/"
+HOMEPAGE="https://github.com/hthiery/python-fritzhome https://pypi.org/project/pyfritzhome/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"

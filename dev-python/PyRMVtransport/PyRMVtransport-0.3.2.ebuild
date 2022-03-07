@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Define module-level imports."
-HOMEPAGE="http://github.com/cgtobi/PyRMVtransport https://pypi.org/project/PyRMVtransport/"
+HOMEPAGE="https://github.com/cgtobi/PyRMVtransport https://pypi.org/project/PyRMVtransport/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
