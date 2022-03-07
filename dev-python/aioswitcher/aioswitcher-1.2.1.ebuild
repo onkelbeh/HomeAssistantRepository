@@ -15,6 +15,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 # only for building outside portage
 # RDEPEND="~dev-python/poetry-1.0.5[${PYTHON_USEDEP}]"

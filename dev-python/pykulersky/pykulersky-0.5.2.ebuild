@@ -15,6 +15,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/click-7.0[${PYTHON_USEDEP}]
 	>=dev-python/pygatt-4.0.5[${PYTHON_USEDEP}]"

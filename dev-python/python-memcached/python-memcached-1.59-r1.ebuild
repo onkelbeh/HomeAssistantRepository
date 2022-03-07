@@ -16,6 +16,7 @@ LICENSE="OSL-2.0"
 SLOT="0"
 KEYWORDS="amd64 ~arm ~arm64 ppc x86 ~amd64-linux ~x86-linux ~x86-macos"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 DEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]

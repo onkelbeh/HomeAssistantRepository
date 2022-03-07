@@ -15,6 +15,7 @@ LICENSE="ISC"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 DOCS=""
 

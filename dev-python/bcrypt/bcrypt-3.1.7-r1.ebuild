@@ -15,6 +15,7 @@ SLOT="0"
 LICENSE="Apache-2.0"
 KEYWORDS="amd64 ~arm ~arm64 x86 amd64-linux x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 COMMON_DEPEND="
 	$(python_gen_cond_dep '>=dev-python/cffi-1.1:=[${PYTHON_USEDEP}]' 'python*')

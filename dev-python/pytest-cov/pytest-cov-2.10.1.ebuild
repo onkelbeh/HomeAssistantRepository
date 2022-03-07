@@ -17,6 +17,7 @@ SLOT="0"
 KEYWORDS="amd64 ~arm ~arm64 ~ia64 ~mips ppc ppc64 s390 sparc x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
+RESTRICT="!test? ( test )"
 
 RDEPEND="
 	>=dev-python/py-1.4.22[${PYTHON_USEDEP}]

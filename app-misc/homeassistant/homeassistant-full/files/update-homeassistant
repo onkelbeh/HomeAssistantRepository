@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# This script will:
+# 1. stop homeassistant if it is running (wait/kill it if it fails to stop)
+# 2. backs up /opt/homeassistant (moves it to: /opt/homeassistant-OLD_VERSION)
+# 3. merges the new version of homeassistant
+# 4. re-starts homeassistant if the merge was successful
+
+prog="homeassistant"
+atom="app-misc/${prog}-bin"
+
+if /etc/init.d/${prog} --ifstarted stop ; then
+    echo "${prog} stopped"
+else
+    echo "failed to stop, sleeping/killing: ${prog}"
+    sleep 10
+    pkill -9 -f "/opt/${prog}/bin/python3"
+    /etc/init.d/${prog} zap
+fi
+
+installed_version()
+{
+    equery --no-color list -F '$fullversion' "${atom}" | tail -1
+}
+
+version=$(installed_version)
+
+if [ -d "/opt/${prog}" ] ; then
+    if [ ! -d "/opt/${prog}-v${version}" ] ; then
+	echo "backing up previous version as v${version}"
+	echo "rollback by: mv /opt/${prog}-v${version} /opt/${prog}"
+	mv "/opt/${prog}" "/opt/${prog}-v${version}"
+    else
+	echo "Previous backup found - (re-)move it manually and run the script again"
+	exit 2
+    fi
+fi
+
+if emerge -v1 "${atom}" ; then
+    echo "${atom} $(installed_version) merge successful"
+    /etc/init.d/${prog} --ifstopped start
+    echo "now check the logs in /var/log/${prog}; e.g."
+    echo "  tail -f /var/log/${prog}/server.log"
+    exit 0
+else
+    echo "${atom} merge failed"
+    exit 1
+fi

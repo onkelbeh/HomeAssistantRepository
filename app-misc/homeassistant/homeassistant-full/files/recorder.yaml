@@ -1,0 +1,4 @@
+recorder:
+  purge_interval: 2
+  purge_keep_days: 10
+  db_url: sqlite:///var/db/homeassistant/home-assistant_v2.db

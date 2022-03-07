@@ -16,6 +16,7 @@ SLOT="0"
 KEYWORDS="amd64 ~arm ~arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
+RESTRICT="!test? ( test )"
 
 RDEPEND="
 	>=dev-python/httplib2-0.9.2[${PYTHON_USEDEP}]

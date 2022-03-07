@@ -15,6 +15,7 @@ LICENSE="public-domain"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/pyyaml[${PYTHON_USEDEP}]
 	>=dev-python/geopy-1.14.0[${PYTHON_USEDEP}]

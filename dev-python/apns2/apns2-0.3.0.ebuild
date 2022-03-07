@@ -15,6 +15,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/pyjwt-1.4.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-1.7.2[${PYTHON_USEDEP}]

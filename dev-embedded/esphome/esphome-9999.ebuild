@@ -26,6 +26,7 @@ HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
 LICENSE="MIT"
 SLOT="0"
 IUSE="+server test"
+RESTRICT="!test? ( test )"
 
 RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]

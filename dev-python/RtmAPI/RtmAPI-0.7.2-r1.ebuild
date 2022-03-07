@@ -15,6 +15,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 # needs(!) httplib2-0.10.3-r1
 RDEPEND="~dev-python/httplib2-0.10.3[${PYTHON_USEDEP}]"

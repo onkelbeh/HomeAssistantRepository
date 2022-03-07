@@ -15,6 +15,7 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/requests-2.4.1[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.6.0[${PYTHON_USEDEP}]"

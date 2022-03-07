@@ -18,6 +18,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
 	>=dev-python/async_timeout-1.4.0[${PYTHON_USEDEP}]"

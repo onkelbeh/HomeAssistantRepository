@@ -15,6 +15,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 RDEPEND="~dev-python/aiocoap-0.4_beta3[${PYTHON_USEDEP}]
 	~dev-python/dtlssocket-0.1.12[${PYTHON_USEDEP}]"

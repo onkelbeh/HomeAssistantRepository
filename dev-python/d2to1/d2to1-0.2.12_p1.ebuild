@@ -12,10 +12,12 @@ HOMEPAGE="https://github.com/embray/d2to1 https://pypi.org/project/d2to1/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${PN}-${PV/_p/.post}.tar.gz"
 S="${WORKDIR}"/${P/_p/.post}
 
-LICENSE="UNKNOWN"
+# taken from https://github.com/embray/d2to1/blob/master/setup.cfg
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 DOCS=""
 

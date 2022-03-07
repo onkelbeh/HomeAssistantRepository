@@ -19,6 +19,7 @@ SLOT="0"
 KEYWORDS="amd64 ~arm ~arm64 ~ppc64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
+RESTRICT="!test? ( test )"
 
 BDEPEND="test? ( dev-python/pyyaml[${PYTHON_USEDEP}] )"
 

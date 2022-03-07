@@ -22,6 +22,7 @@ KEYWORDS="~alpha amd64 ~arm ~arm64 hppa ~ia64 ppc ppc64 ~riscv sparc x86 ~amd64-
 SLOT="0"
 IUSE="test"
 RESTRICT="!test? ( test )"
+RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/setuptools-19.6.2[${PYTHON_USEDEP}]"
 BDEPEND="${RDEPEND}

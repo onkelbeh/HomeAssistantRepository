@@ -16,6 +16,7 @@ SLOT="0"
 KEYWORDS="amd64 ~arm ~arm64 ~s390 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
+RESTRICT="!test? ( test )"
 
 DEPEND="
 	>=dev-python/pbr-2.0.0[${PYTHON_USEDEP}]

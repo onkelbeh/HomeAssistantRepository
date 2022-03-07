@@ -16,6 +16,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 RDEPEND="~dev-python/btlewrap-0.0.8[${PYTHON_USEDEP}]"
 BDEPEND="

@@ -15,6 +15,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 # dev-python/pysha3[${PYTHON_USEDEP}] built_in
 RDEPEND="dev-python/phx-filters[${PYTHON_USEDEP}]

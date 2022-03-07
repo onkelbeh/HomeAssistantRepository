@@ -1,0 +1,11 @@
+[Unit]
+Description=Home Assistant
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/hass --skip-pip --log-no-color --log-rotate-days 9 --log-file /var/log/homeassistant/warnings.log --config /etc/homeassistant
+Group=homeassistant
+User=homeassistant
+
+[Install]
+WantedBy=multi-user.target

@@ -15,6 +15,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/requests-2.22.0[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.8.0[${PYTHON_USEDEP}]"

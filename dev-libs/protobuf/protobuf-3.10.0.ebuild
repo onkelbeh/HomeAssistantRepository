@@ -13,6 +13,7 @@ LICENSE="BSD"
 SLOT="0/17"
 KEYWORDS="alpha amd64 ~arm ~arm64 hppa ia64 ~mips ppc ppc64 s390 sparc x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos"
 IUSE="emacs examples static-libs test zlib"
+RESTRICT="!test? ( test )"
 
 RDEPEND="emacs? ( virtual/emacs )
 	zlib? ( sys-libs/zlib[${MULTILIB_USEDEP}] )"
