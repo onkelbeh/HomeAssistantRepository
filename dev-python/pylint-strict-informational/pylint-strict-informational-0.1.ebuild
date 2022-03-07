@@ -11,7 +11,7 @@ DESCRIPTION="A pylint plugin to make pylint fail on informational messages"
 HOMEPAGE="https://github.com/Polyconseil/pylint-strict-informational https://pypi.org/project/pylint-strict-informational/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
