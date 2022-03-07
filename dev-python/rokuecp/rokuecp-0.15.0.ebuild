@@ -1,7 +1,7 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -18,14 +18,19 @@ IUSE="test"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
+	>=dev-python/awesomeversion-21.10.1[${PYTHON_USEDEP}]
+	>=dev-python/cachetools-4.2.4[${PYTHON_USEDEP}]
+	>=dev-python/backoff-1.9.0[${PYTHON_USEDEP}]
 	>=dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}]
-	>=dev-python/yarl-1.4.2[${PYTHON_USEDEP}]"
+	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/aresponses[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
