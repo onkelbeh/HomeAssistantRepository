@@ -12,4 +12,7 @@
       <name>ESPHome</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="server">add server for ESPHome dashboard</flag>
+  </use>
 </pkgmetadata>
