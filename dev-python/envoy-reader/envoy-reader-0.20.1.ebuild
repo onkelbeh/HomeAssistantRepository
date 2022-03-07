@@ -23,9 +23,9 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/httpx-0.20.0[${PYTHON_USEDEP}]
 	>=dev-python/envoy-utils-0.0.1[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/pytest-runner-5.2[${PYTHON_USEDEP}]
+	>=dev-python/pytest-runner-5.2[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
