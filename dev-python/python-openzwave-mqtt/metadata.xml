@@ -12,4 +12,7 @@
       <name>Charles Garwood</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="async">Build with async support (default)</flag>
+  </use>
 </pkgmetadata>
