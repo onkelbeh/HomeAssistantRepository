@@ -19,7 +19,7 @@ IUSE=""
 BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 RDEPEND=">dev-python/bottle-0.12[${PYTHON_USEDEP}]
 	>=dev-python/click-7.1.2[${PYTHON_USEDEP}]
-	!=dev-python/click-8.0.2[${PYTHON_USEDEP}]
+	!~dev-python/click-8.0.2[${PYTHON_USEDEP}]
 	dev-python/colorama[${PYTHON_USEDEP}]
 	>=dev-python/marshmallow-2.20.5[${PYTHON_USEDEP}]
 	>=dev-python/pyelftools-0.27[${PYTHON_USEDEP}]
