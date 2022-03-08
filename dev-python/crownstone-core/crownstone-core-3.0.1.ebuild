@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION=""
+DESCRIPTION="This is the core of the python lib. It contains shared classes, definitions and utils"
 HOMEPAGE="https://github.com/crownstone/crownstone-lib-python-core https://pypi.org/project/crownstone-core/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

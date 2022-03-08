@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION=""
+DESCRIPTION="Asynchronous Python library to get data from the cloud, and switch Crownstones"
 HOMEPAGE="https://github.com/crownstone/crownstone-lib-python-cloud https://pypi.org/project/crownstone-cloud/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 

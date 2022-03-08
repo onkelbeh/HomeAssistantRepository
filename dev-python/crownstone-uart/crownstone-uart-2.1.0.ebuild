@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION=""
+DESCRIPTION='Official Python lib for Crownstone: "Crownstone Unified System Bridge", or Crownstone USB implementation'
 HOMEPAGE="https://github.com/crownstone/crownstone-lib-python-uart https://pypi.org/project/crownstone-uart/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
