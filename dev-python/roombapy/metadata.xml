@@ -12,4 +12,7 @@
       <name>Philipp Schmitt</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="mqtt">Build with mqtt support</flag>
+  </use>
 </pkgmetadata>

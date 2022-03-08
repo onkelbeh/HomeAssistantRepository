@@ -15,15 +15,12 @@ SRC_URI="https://github.com/pschmitt/roombapy/archive/${PV}.tar.gz -> ${P}.tar.g
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="test opencv pillow +mqtt"
+IUSE="test +mqtt"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="mqtt? ( >=dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}] )
-	opencv? ( =media-libs/opencv-3.4.1-r7[${PYTHON_USEDEP}]
-			  >=dev-python/numpy-1.12.1[${PYTHON_USEDEP}] )
-	pillow? ( >=dev-python/pillow-4.1.1[${PYTHON_USEDEP}] )"
+RDEPEND="mqtt? ( >=dev-python/paho-mqtt-1.5.1[${PYTHON_USEDEP}] )"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=dev-python/pyproject2setuppy-9[${PYTHON_USEDEP}]
