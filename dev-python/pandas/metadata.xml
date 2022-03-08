@@ -12,4 +12,7 @@
       <name>The Pandas Development Team</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="full-support">Pull all packages to give pandas full support</flag>
+  </use>
 </pkgmetadata>
