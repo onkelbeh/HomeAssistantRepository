@@ -12,4 +12,7 @@
       <name>Brian Jinwright</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="cli">add cli support</flag>
+  </use>
 </pkgmetadata>
