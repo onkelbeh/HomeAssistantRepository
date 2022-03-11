@@ -13,7 +13,7 @@ HOMEPAGE="https://python-engineio.readthedocs.org/ https://github.com/miguelgrin
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DOCS="README.rst"
