@@ -1,22 +1,19 @@
 */*::HomeAssistantRepository ~amd64
-#app-misc/homeassistant -* ~amd64
+<dev-embedded/esphome-9999 ~amd64
+<app-misc/homeassistant-9999 ~amd64
 app-misc/home-assistant-cli ~amd64
-dev-db/influxdb ~amd64
 
-# required by app-misc/homeassistant-min-2021.6.4-r1::HomeAssistantRepository
-# required by homeassistant-min (argument)
-=dev-python/httpx-0.18.0 ~amd64
-# required by app-misc/homeassistant-min-2021.6.5::HomeAssistantRepository
-# required by homeassistant-min (argument)
-=dev-python/httpcore-0.13.3 ~amd64
-# required by app-misc/homeassistant-min-2021.6.5::HomeAssistantRepository[test]
-# required by homeassistant-min (argument)
-=dev-vcs/pre-commit-2.13.0 ~amd64
-# required by dev-python/influxdb-client-1.14.0::HomeAssistantRepository
-# required by app-misc/homeassistant-min-2021.6.5::HomeAssistantRepository[influxdb]
+dev-db/influxdb ~amd64
+net-analyzer/fail2ban ~amd64
+
+# required by dev-python/influxdb-client-1.24.0::HomeAssistantRepository
+# required by app-misc/homeassistant-min-2022.3.3::HomeAssistantRepository[influxdb]
 # required by homeassistant-min (argument)
 =dev-python/Rx-3.2.0 ~amd64
-# required by dev-python/androidtv-0.0.59::HomeAssistantRepository
-# required by app-misc/homeassistant-min-2021.6.5::HomeAssistantRepository[androidtv]
+# required by app-misc/homeassistant-min-2022.3.3::HomeAssistantRepository[otp]
 # required by homeassistant-min (argument)
-=dev-python/aiofiles-0.7.0 ~amd64
+=dev-python/pyotp-2.6.0 ~amd64
+# required by dev-python/samsungtvws-1.7.0::HomeAssistantRepository[async]
+# required by app-misc/homeassistant-min-2022.3.3::HomeAssistantRepository[samsungtv]
+# required by homeassistant-min (argument)
+=dev-python/websockets-10.2 ~amd64
