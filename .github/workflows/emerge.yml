@@ -1,0 +1,35 @@
+name: emerge ha-min
+
+on:
+  workflow_dispatch:
+  schedule:
+      - cron: '17 10 * * *' # Daily
+
+jobs:
+  emerge-ha-min:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/antonfischl1980/gentoo-ci:main
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: emerge-sync
+      run: |
+        sudo -u portage git -C /var/db/repos/gentoo pull
+        emerge --sync
+
+    - name: repos.conf/HomeAssistantRepository
+      run: |
+        mkdir -p /etc/portage/repos.conf/
+        echo -en "[HomeAssistantRepository]\nlocation = " >/etc/portage/repos.conf/HomeAssistantRepository.conf
+        pwd -P >> /etc/portage/repos.conf/HomeAssistantRepository.conf
+        cat /etc/portage/repos.conf/*.conf
+
+    - name: /etc/portage/
+      run: |
+        rsync -aHDPSv etc/portage/ /etc/portage/
+
+    - name: emerge
+      run: |
+        emerge --jobs=4 --autounmask=y --autounmask-continue=y app-misc/homeassistant-min
