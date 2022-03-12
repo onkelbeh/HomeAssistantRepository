@@ -22,7 +22,7 @@ With homeassistant-2022.3.0, setup.py was removed from core. We had to switch to
 
 ## 2022/02/12: new frontend builds
 
-The frontend team discontinued offering an SDIST build via Pypi, caused by space limitations there. The source from github only contains the plain source without the build artifacts (from the yarn build), so starting with home-assistant-frontend-20220203.0, we have to build our own. I made some experiments running yarn on the source during install time, but this needs nodejs and yarn on the production boxes, and furthermore, this would eat up a lot of CPU (>25 minutes of build time on bigger hosts). This did not work very well on smaller hosts. I am not an nodejs expert, above all, it seems that yarn does not fit very well into Ebuilds, we would have to allow networking in the sandbox. The (new) Ebuild is changed now to fetch the pre-built yarn/nodejs stuff from my own buildhost, which is very close to the former SDIST on Pypi. As soon as an 'official' SDIST is available again some day, I'll consider to switch back. Thanks to @cdce8p Marc Mueller for helping to get this done.
+The frontend team discontinued offering an SDIST build via Pypi, caused by space limitations there. The source from github only contains the plain source without the build artifacts (from the yarn build), so starting with home-assistant-frontend-20220203.0, we have to build our own. I made some experiments running yarn on the source during install time, but this needs nodejs and yarn on the production boxes, and furthermore, this would eat up a lot of CPU (>25 minutes of build time on bigger hosts). This did not work very well on smaller hosts. I am not an nodejs expert, above all, it seems that yarn does not fit very well into Ebuilds, we would have to allow networking in the sandbox. The (new) Ebuild is changed now to fetch the pre-built yarn/nodejs stuff from my own buildhost. The pre-built frontend is very close to the former SDIST on Pypi, but it does not (yet) include the very newest translations, but we are working on that. Perhaps an 'official' SDIST is available again some day, I'll consider to switch back. Thanks to @cdce8p Marc Mueller for helping to get this done.
 ## 2020/09/25: Publishing new Main Ebuilds
 
 Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new here, start with app-misc/homeassistant-min.
@@ -492,16 +492,16 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1861 Ebuilds in total, 1853 of them have in total 1863 (34 different) licenses assigned.
+There are 1851 Ebuilds in total, 1843 of them have in total 1853 (34 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1104|
-|Apache-2.0|367|
-|BSD|112|
+|MIT|1101|
+|Apache-2.0|363|
+|BSD|108|
 |GPL-3|108|
 |LGPL-3|28|
-|GPL-2|21|
+|GPL-2|22|
 |LGPL-3+|18|
 |GPL-3+|15|
 |all-rights-reserved|13|
@@ -531,9 +531,9 @@ There are 1861 Ebuilds in total, 1853 of them have in total 1863 (34 different) 
 |OSL-2.0|1|
 |CC0-1.0|1|
 
-(Last counted: 08/03/2022)
+(Last counted: 12/03/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 08/03/2022
+Last updated: 12/03/2022
