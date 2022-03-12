@@ -11,5 +11,6 @@ dev-python/sqlalchemy mysql sqlite
 
 dev-python/pillow -test
 dev-python/mac-vendor-lookup -test
+dev-python/attrs -test
 
 app-arch/brotli python
