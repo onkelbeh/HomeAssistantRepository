@@ -33,4 +33,5 @@ jobs:
     - name: emerge
       run: |
         emerge --jobs=4 --autounmask=y --autounmask-continue=y dev-lang/rust-bin
+        emerge --autounmask=y --autounmask-continue=y dev-python/cryptography
         emerge --jobs=4 --autounmask=y --autounmask-continue=y app-misc/homeassistant-min
