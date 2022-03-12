@@ -1,7 +1,7 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} pypy3 )
 
@@ -16,7 +16,6 @@ SLOT="0"
 KEYWORDS="~alpha amd64 ~arm ~arm64 ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
-RESTRICT="!test? ( test )"
 
 RDEPEND="
 	>=dev-python/py-1.4.22[${PYTHON_USEDEP}]
@@ -29,7 +28,6 @@ RDEPEND="
 BDEPEND="
 	test? (
 		${RDEPEND}
-		~dev-python/pytest-cov-${PV}[${PYTHON_USEDEP}]
 		dev-python/virtualenv[${PYTHON_USEDEP}]
 		dev-python/fields[${PYTHON_USEDEP}]
 		>=dev-python/process-tests-2.0.2[${PYTHON_USEDEP}]
