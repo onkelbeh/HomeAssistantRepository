@@ -31,7 +31,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
+RDEPEND="
+	server? ( acct-group/${PN} acct-user/${PN} )
 	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
@@ -40,10 +41,10 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	~dev-python/tzlocal-4.1[${PYTHON_USEDEP}]
 	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	~dev-embedded/platformio-5.2.2
+	~dev-embedded/platformio-5.2.5
 	~dev-embedded/esptool-3.2[${PYTHON_USEDEP}]
 	dev-python/click[${PYTHON_USEDEP}]
-	~dev-embedded/esphome-dashboard-20211211.0[${PYTHON_USEDEP}]
+	~dev-embedded/esphome-dashboard-20220209.0[${PYTHON_USEDEP}]
 	dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 	dev-python/zeroconf[${PYTHON_USEDEP}]
 	~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]"
@@ -57,7 +58,7 @@ BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/asyncmock[${PYTHON_USEDEP}]
 		dev-python/hypothesis[${PYTHON_USEDEP}]
-		)"
+	)"
 
 DISABLE_AUTOFORMATTING=1
 DOC_CONTENTS="
@@ -69,9 +70,9 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
 src_prepare() {
-	sed "s/aioesphomeapi==10.6.0/aioesphomeapi/g" -i requirements.txt || die
+	sed "s/aioesphomeapi==10.8.2/aioesphomeapi/g" -i requirements.txt || die
 	sed "s/click==8.0.3/click/g" -i requirements.txt || die
-	sed "s/zeroconf==0.36.13/zeroconf/g" -i requirements.txt || die
+	sed "s/zeroconf==0.38.3/zeroconf/g" -i requirements.txt || die
 	eapply_user
 }
 

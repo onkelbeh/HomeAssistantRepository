@@ -39,8 +39,8 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 	~dev-embedded/platformio-5.2.5
 	~dev-embedded/esptool-3.2[${PYTHON_USEDEP}]
-	~dev-python/click-8.0.3[${PYTHON_USEDEP}]
-	~dev-embedded/esphome-dashboard-20220219.0[${PYTHON_USEDEP}]
+	~dev-python/click-8.0.4[${PYTHON_USEDEP}]
+	~dev-embedded/esphome-dashboard-20220309.0[${PYTHON_USEDEP}]
 	dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 	dev-python/zeroconf[${PYTHON_USEDEP}]
 	~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]"
