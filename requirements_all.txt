@@ -1,6 +1,6 @@
 abodepy==1.2.0
 accuweather==0.3.0
-acme==1.22.0
+acme==1.23.0
 Adafruit-Blinka==6.11.1
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-dht==3.7.0
@@ -34,7 +34,6 @@ aioeafm==0.1.2
 aioeagle==1.1.0
 aioemonitor==1.0.5
 aioesphomeapi==10.8.2
-aiofiles==0.8.0
 aioflo==2021.11.0
 aioftp==0.12.0
 aiogithubapi==22.2.3
@@ -180,7 +179,6 @@ buienradar==1.0.5
 busybox==1.34.1
 c-ares==1.17.2
 ca-certificates==20210119.3.66
-cachetools==4.2.4
 cachetools==5.0.0
 casttube==0.2.0
 cattrs==1.10.0
@@ -194,13 +192,11 @@ ciscomobilityexpress==0.3.9
 ciso8601==2.2.0
 clearpasspy==1.0.2
 click-log==0.3.2
-click-plugins==1.1.1
-click==8.0.3
+click==8.0.4
 clx-sdk-xms==1.0.0
 CO2Signal==0.4.2
 coinbase==2.1.0
 colorama==0.4.4
-coloredlogs==15.0.1
 colorlog==6.6.0
 colorthief==0.2.1
 colour==0.1.5
@@ -286,7 +282,7 @@ epson-projector==0.4.2
 epsonprinter==0.0.9
 eselect-awk==0.3
 esphome
-esphome-dashboard==20220116.0
+esphome-dashboard==20220209.0
 esprima==4.0.1
 esptool==3.2
 eternalegypt==0.0.12
@@ -326,7 +322,6 @@ gawk==5.1.1
 gdb==11.2
 geniushub-client==0.6.30
 gentoo-functions==0.15
-GeographicLib==1.52
 geojson-client==0.6
 geojson==2.5.0
 geopy==2.1.0
@@ -339,15 +334,14 @@ getmac==0.8.2
 gios==2.1.0
 gitterpy==0.1.7
 glances-api==0.3.4
-glib==2.70.2
+glib==2.70.4
 glibc==2.33
 gmp==6.2.1
 goalzero==0.2.1
 goodwe==0.2.15
 google-api-core==2.3.1
 google-api-python-client==1.6.4
-google-auth-oauthlib==0.4.6
-google-auth==2.3.3
+google-auth==2.6.0
 google-cloud-pubsub==2.9.0
 google-cloud-texttospeech==0.4.0
 google-nest-sdm==1.7.1
@@ -407,7 +401,6 @@ httpx==0.21.3
 httpx==0.22.0
 huawei-lte-api==1.4.18
 huisbaasje-client==0.1.0
-humanfriendly==10.0
 Hydrawiser==0.2
 hyper==0.7.0
 hyperframe==6.0.1
@@ -427,7 +420,6 @@ importlib_metadata==4.10.1
 incomfort-client==0.4.4
 incremental==21.3.0
 inflect==5.3.0
-inflection==0.5.1
 influxdb-client==1.24.0
 influxdb==5.3.1
 intelhex==2.3.0
@@ -463,7 +455,7 @@ kostal-plenticore==0.2.0
 krakenex==2.1.0
 lakeside==0.12
 lark-parser==0.11.3
-libcap==2.62
+libcap==2.63
 libcrypt==2
 libcst==0.3.23
 libfastjson==0.99.9
@@ -514,7 +506,6 @@ magicseaweed==1.0.3
 markdown==3.3.6
 markupsafe==2.0.1
 marshmallow-dataclass==8.5.0
-marshmallow==3.14.0
 Mastodon-py==1.5.1
 matrix-client==0.4.0
 mawk==1.3.4_p20200120
@@ -522,7 +513,6 @@ maxcube-api==0.4.3
 mbddns==0.1.2
 mcstatus==6.0.0
 MechanicalSoup==1.1.0
-mediafile==0.9.0
 messagebird==1.2.0
 meteoalertapi==0.2.0
 meteofrance-api==1.0.2
@@ -623,7 +613,7 @@ pip==21.3.1
 pizzapi==0.0.3
 pkce==1.0.3
 platformdirs==2.4.1
-platformio==5.2.4
+platformio==5.2.5
 plugwise==0.16.6
 plumbum==1.7.2
 plumlightpad==0.0.11
@@ -750,7 +740,7 @@ pyhiveapi==0.4.2
 pyhomeworks==0.0.6
 pyhumps==3.5.0
 pyialarm==1.9.0
-pyinsteon==1.0.16
+pyinsteon==1.0.13
 pyintesishome==1.7.6
 pyipma==2.0.5
 pyipp==0.11.0
@@ -780,7 +770,7 @@ pylutron==0.2.8
 pymailgunner==1.4
 pymata-express==1.19
 pymazda==0.3.2
-pymediaroom==0.6.4.1
+pymediaroom==0.6.5.4
 PyMeeus==0.5.11
 pymelcloud==2.5.6
 PyMetEireann==2021.8.0
@@ -845,7 +835,7 @@ PyRMVtransport==0.3.3
 pyroute2==0.6.5
 pyrsistent==0.18.1
 pyruckus==0.12
-pysabnzbd==1.1.0
+pysabnzbd==1.1.1
 pysaj==0.0.16
 pySDCP==1
 pysensibo==1.0.7
@@ -861,7 +851,6 @@ pysmappee==0.2.29
 pysmartapp==0.3.3
 pysmartthings==0.7.6
 pysmarty==0.8
-pysmi==0.3.4
 pysml==0.0.7
 pysnmp==4.4.12
 PySocks==1.7.1
@@ -962,7 +951,7 @@ pyzerproc==0.4.8
 qnapstats==0.4.0
 quantum-gateway==0.0.6
 RachioPy==1.0.3
-radios==0.1.0
+radios==0.1.1
 radiotherm==2.1.0
 raincloudy==0.0.7
 raspihats==2.2.3
@@ -1019,8 +1008,7 @@ schiene==0.23
 screenlogicpy==0.5.4
 scsgate==0.1.0
 secretstorage==3.3.1
-semantic_version==2.9.0
-semver==2.13.0
+semantic_version==2.8.5
 sendgrid==6.8.2
 sense-energy==0.10.2
 sepaxml==2.2.0
@@ -1065,7 +1053,6 @@ srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
 starkbank-ecdsa==1.0.0
-starlette==0.18.0
 starline==0.1.5
 starlingbank==3.2
 statsd==3.2.1

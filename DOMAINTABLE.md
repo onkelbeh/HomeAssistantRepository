@@ -55,7 +55,6 @@
 |aussie_broadband|displays various service metrics using the Aussie Broadband API|N|N|Y|2022.2.0b1|
 |avea|Library for Elgato Avea bulbs|N|Y|Y|0.97|
 |avion|Support for the Avi-on Bluetooth dimmer switch Avi-on|N|Y|Y|0.37|
-|avri|Query the next scheduled waste pickup and the type of waste from Avri|N|N|Y|0.107|
 |awair|Library to integrate the Awair GraphQL API into Home Assistant|N|Y|Y|0.84|
 |aws|Interact with Amazon Web Services|N|N|Y|0.91|
 |axis|Communicating with newer devices from Axis Communications|Y|Y|Y|0.45|

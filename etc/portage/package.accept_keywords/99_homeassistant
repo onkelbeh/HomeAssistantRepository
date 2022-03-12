@@ -17,3 +17,9 @@ net-analyzer/fail2ban ~amd64
 # required by app-misc/homeassistant-min-2022.3.3::HomeAssistantRepository[samsungtv]
 # required by homeassistant-min (argument)
 =dev-python/websockets-10.2 ~amd64
+# required by app-misc/homeassistant-min-2022.3.4::HomeAssistantRepository
+# required by homeassistant-min (argument)
+=dev-python/anyio-3.5.0 ~amd64
+# required by app-misc/homeassistant-min-2022.3.4::HomeAssistantRepository[test]
+# required by homeassistant-min (argument)
+=dev-python/pytest-7.0.1 ~amd64

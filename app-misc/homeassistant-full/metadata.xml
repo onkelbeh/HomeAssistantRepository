@@ -69,7 +69,6 @@
     <flag name="aussie_broadband">displays various service metrics using the Aussie Broadband API</flag>
     <flag name="avea">Library for Elgato Avea bulbs</flag>
     <flag name="avion">Support for the Avi-on Bluetooth dimmer switch Avi-on</flag>
-    <flag name="avri">Query the next scheduled waste pickup and the type of waste from Avri</flag>
     <flag name="awair">Library to integrate the Awair GraphQL API into Home Assistant</flag>
     <flag name="aws">Interact with Amazon Web Services</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
