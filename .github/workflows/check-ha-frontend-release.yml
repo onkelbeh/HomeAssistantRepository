@@ -38,7 +38,7 @@ jobs:
               owner: 'onkelbeh',
               repo: 'HomeAssistantRepository',
               workflow_id: 'make-ha-frontend-sdist.yml',
-              ref: 'main'
+              ref: 'master'
             })
 
 
