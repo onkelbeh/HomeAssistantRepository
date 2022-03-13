@@ -1,4 +1,4 @@
-name: 'HA Frontend - check new relase'
+name: 'HA Frontend - check new release'
 
 on:
   workflow_dispatch:
