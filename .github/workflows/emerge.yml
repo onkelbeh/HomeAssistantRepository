@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/antonfischl1980/gentoo-ci:main
+      options: --privileged
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
