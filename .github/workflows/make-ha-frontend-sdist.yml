@@ -2,6 +2,11 @@ name: 'HA Frontend - make SDIST'
 
 on:
   workflow_dispatch:
+    inputs:
+      frontend_version:
+        description: 'Home Assistant Frontend Version'
+        required: true
+        default: 'latest'
     
 env:
   PYTHON_VERSION: 3.8
@@ -16,8 +21,13 @@ jobs:
     - name: get-version
       id: get-version
       run: |
-        wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name'
-        echo "::set-output name=version::$(wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name')"
+        if [ "${{ github.event.inputs.frontend_version }}" == "latest"  ];then
+          wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name'
+          echo "::set-output name=version::$(wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name')"
+        else
+          echo "${{ github.event.inputs.frontend_version }}"
+          echo "::set-output name=version::${{ github.event.inputs.frontend_version }}"
+        fi
 
     - name: Checkout frontend repository
       uses: actions/checkout@v3
