@@ -16,8 +16,8 @@ jobs:
     - name: get-version
       id: get-version
       run: |
-        git ls-remote --tags --sort='version:refname' https://github.com/home-assistant/frontend.git|grep -E 'refs/tags/20[2-9][0-9]{5}\.[0-9]$'|tail -1|awk -F / '{print $3}'
-        echo "::set-output name=version::$(git ls-remote --tags --sort='version:refname' https://github.com/home-assistant/frontend.git|grep -E 'refs/tags/20[2-9][0-9]{5}\.[0-9]$'|tail -1|awk -F / '{print $3}')"
+        wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name'
+        echo "::set-output name=version::$(wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name')"
 
     - name: Checkout frontend repository
       uses: actions/checkout@v3
