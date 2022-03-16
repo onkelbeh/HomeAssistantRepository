@@ -14,7 +14,7 @@ jobs:
     - name: Get latest version
       id: latest-version
       run: |
-        git ls-remote --tags --sort="version:refname" https://github.com/home-assistant/frontend.git|grep -E "refs/tags/20[2-9][0-9]{5}\.[0-9]$"|tail -1|awk -F / '{print $3}' > latest-release
+        wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name' > latest-release
         cat latest-release
         echo "::set-output name=latest-version::$(cat latest-release)"
 
