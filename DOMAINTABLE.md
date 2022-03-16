@@ -825,6 +825,5 @@
 |zhong_hong|lets you control Zhonghong HVAC Gateway Controller thermostats|N|Y|Y|0.72|
 |ziggo_mediabox_xl|allows you to control a Ziggo Mediabox XL|N|N|Y|0.60|
 |zoneminder|Support for ZoneMinder Cameras|N|Y|Y|0.31|
-|zwave|Support for Z-Wave Devices (uncomplete)|N|Y|Y|0.7|
 |zwave_js|control a Z-Wave network via the Z-Wave JS driver|Y|Y|Y|2021.2|
 |zwave_me|allows you to control a Z-Wave network via the Z-Wave.Me Z-Way|N|N|Y|2022.3.0b3|

@@ -65,7 +65,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.44.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.54.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220301.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220301.2[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.14.5[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.21.3[${PYTHON_USEDEP}]
@@ -122,7 +122,7 @@ RDEPEND="${RDEPEND}
 	airvisual? ( ~dev-python/pyairvisual-5.0.9[${PYTHON_USEDEP}] )
 	alpha_vantage? ( ~dev-python/alpha-vantage-2.3.1[${PYTHON_USEDEP}] )
 	androidtv? ( ~dev-python/adb-shell-0.4.0[${PYTHON_USEDEP}] ~dev-python/androidtv-0.0.63[${PYTHON_USEDEP}] ~dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}] )
-	android_ip_webcam? ( ~dev-python/pydroid-ipcam-0.8[${PYTHON_USEDEP}] )
+	android_ip_webcam? ( ~dev-python/pydroid-ipcam-1.3.1[${PYTHON_USEDEP}] )
 	axis? ( ~dev-python/axis-44[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.8.2[${PYTHON_USEDEP}] )
@@ -138,10 +138,10 @@ RDEPEND="${RDEPEND}
 	esphome? ( ~dev-python/aioesphomeapi-10.8.2[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.1.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20220301.0[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20220301.2[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/aiogithubapi-22.2.3[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.4.0[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-0.7.15[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-0.7.16[${PYTHON_USEDEP}] )
 	http? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] )
 	hyperion? ( ~dev-python/hyperion-py-0.7.4[${PYTHON_USEDEP}] )
 	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
@@ -166,7 +166,7 @@ RDEPEND="${RDEPEND}
 	python_script? ( ~dev-python/RestrictedPython-5.2[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.4.0[${PYTHON_USEDEP}] )
 	qvr_pro? ( ~dev-python/pyqvrpro-0.52[${PYTHON_USEDEP}] )
-	radio_browser? ( ~dev-python/radios-0.1.0[${PYTHON_USEDEP}] )
+	radio_browser? ( ~dev-python/radios-0.1.1[${PYTHON_USEDEP}] )
 	recorder? ( ~dev-python/sqlalchemy-1.4.27[${PYTHON_USEDEP}] )
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	ring? ( ~dev-python/ring-doorbell-0.7.2[${PYTHON_USEDEP}] )
@@ -197,7 +197,7 @@ RDEPEND="${RDEPEND}
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.3[${PYTHON_USEDEP}] )
 	zeroconf? ( ~dev-python/zeroconf-0.38.4[${PYTHON_USEDEP}] )
-	zwave_js? ( ~dev-python/zwave-js-server-python-0.35.1[${PYTHON_USEDEP}] )"
+	zwave_js? ( ~dev-python/zwave-js-server-python-0.35.2[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}
 	test? (
@@ -269,3 +269,4 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
+
