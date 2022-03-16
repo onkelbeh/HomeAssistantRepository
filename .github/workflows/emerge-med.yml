@@ -1,12 +1,12 @@
-name: emerge ha-min
+name: emerge ha-med
 
 on:
   workflow_dispatch:
   schedule:
-      - cron: '17 10 * * *' # Daily
+      - cron: '15 10 * * *' # Daily
 
 jobs:
-  emerge-ha-min:
+  emerge-ha-med:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/antonfischl1980/gentoo-ci:main
