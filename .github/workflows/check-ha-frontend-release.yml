@@ -1,0 +1,44 @@
+name: 'HA Frontend - check new release'
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *' # @Hourly
+
+jobs:
+  check-new-release:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.check-version.outputs.cache-hit }}
+    steps:
+    - name: Get latest version
+      id: latest-version
+      run: |
+        wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name' > latest-release
+        cat latest-release
+        echo "::set-output name=latest-version::$(cat latest-release)"
+
+    - name: Check if we allready did this version
+      id: check-version
+      uses: actions/cache@v2
+      with:
+        key: ${{ steps.latest-version.outputs.latest-version }} 
+        path: latest-release
+
+  make-ha-frontend-sdist:
+    needs: check-new-release
+    if: ${{ !needs.check-new-release.outputs.skip }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.PAT_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'onkelbeh',
+              repo: 'HomeAssistantRepository',
+              workflow_id: 'make-ha-frontend-sdist.yml',
+              ref: 'master'
+            })
+
+
