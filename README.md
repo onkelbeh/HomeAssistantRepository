@@ -28,7 +28,9 @@ The frontend team discontinued offering an SDIST build via Pypi, caused by space
 Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new here, start with app-misc/homeassistant-min.
 ### `app-misc/homeassistant-min`
 
-New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, it currently holds **83** USE Flags.
+New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, a daily compilation test is run, big thanks to @antonfischl1980, it currently holds **83** USE Flags.
+
+[![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge.yml)
 
 ### `app-misc/homeassistant`
 
