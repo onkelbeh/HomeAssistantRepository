@@ -565,7 +565,6 @@
 |recswitch|allows you to control the Ankuoo REC Switch devices from Home Assistant|N|N|Y|0.81|
 |reddit|integrates data from Reddit to monitor your favorite subreddits|N|N|Y|0.89|
 |rejseplanen|travel details for Danish public transport|N|Y|Y|0.88|
-|remember_the_milk|create tasks in Remember The Milk (RTM) from Home Assistant|N|N|Y|0.57|
 |remote_rpi_gpio|base for all related GPIO platforms in Home Assistant|N|N|Y|0.94|
 |renault|integration with the MyRenault cloud service|N|N|Y|2021.8.0|
 |repetier|Repetier-Server is a 3D printer/CNC server, able to control multiple devices|N|N|Y|0.94|
