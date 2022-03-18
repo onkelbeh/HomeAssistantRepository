@@ -28,13 +28,15 @@ The frontend team discontinued offering an SDIST build via Pypi, caused by space
 Since homeassistant-0.115.3 the **Main Ebuild** is released in three different stages of expansion, only *one* of them can be installed. These three only differ in the amount of USE Flags they hold. If you are new here, start with app-misc/homeassistant-min.
 ### `app-misc/homeassistant-min`
 
-New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **83** USE Flags.
-
 [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge.yml)
 
-### `app-misc/homeassistant`  [![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg?branch=master)]
+New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **83** USE Flags.
 
-(https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)The Ebuild we have since `0.97.0`, as soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure, a daily compilation test is run at Github, big thanks to @antonfischl1980, It currently holds **279** USE Flags.
+### `app-misc/homeassistant`
+
+[![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg?branch=master)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)
+
+The Ebuild we have since `0.97.0`, as soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure, a daily compilation test is run at Github, big thanks to @antonfischl1980, It currently holds **279** USE Flags.
 
 ### `app-misc/homeassistant-full`
 
