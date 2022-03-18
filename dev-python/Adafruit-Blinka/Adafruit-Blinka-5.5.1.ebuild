@@ -7,19 +7,19 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="CircuitPython driver for motor, stepper, and servo based on PCA9685."
-HOMEPAGE="https://github.com/adafruit/Adafruit_CircuitPython_PCA9685 https://pypi.org/project/adafruit-circuitpython-pca9685/"
+DESCRIPTION="CircuitPython APIs for non-CircuitPython versions of Python such as CPython on Linux and MicroPython."
+HOMEPAGE="https://github.com/adafruit/Adafruit_Blinka https://pypi.org/project/Adafruit-Blinka/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~arm ~arm64"
+KEYWORDS="amd64 arm arm64"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="dev-python/Adafruit-Blinka[${PYTHON_USEDEP}]
-	dev-python/adafruit-circuitpython-busdevice[${PYTHON_USEDEP}]
-	dev-python/adafruit-circuitpython-register[${PYTHON_USEDEP}]"
+DOCS="README.rst"
+
+RDEPEND="dev-python/Adafruit-PureIO[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
