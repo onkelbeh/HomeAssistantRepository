@@ -4,9 +4,9 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 inherit distutils-r1
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 DESCRIPTION="Python Wrapper for Unifi Protect API"
 HOMEPAGE="https://github.com/briis/pyunifiprotect https://pypi.org/project/pyunifiprotect/"

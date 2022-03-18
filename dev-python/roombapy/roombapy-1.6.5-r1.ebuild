@@ -1,12 +1,12 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 inherit distutils-r1
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 DESCRIPTION="Python program and library to control Wi-Fi enabled iRobot Roombas"
 HOMEPAGE="https://github.com/pschmitt/roombapy https://pypi.org/project/roombapy/"

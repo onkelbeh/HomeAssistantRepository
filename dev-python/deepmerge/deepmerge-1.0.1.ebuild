@@ -1,12 +1,12 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 inherit distutils-r1
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 DESCRIPTION="a toolset to deeply merge python dictionaries."
 HOMEPAGE="https://github.com/toumorokoshi/deepmerge/ http://deepmerge.readthedocs.io/en/latest/ https://pypi.org/project/deepmerge/"
@@ -18,7 +18,7 @@ KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS=""
+DOCS="README.rst"
 
 RDEPEND=""
 BDEPEND="

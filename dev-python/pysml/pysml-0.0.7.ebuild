@@ -4,13 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 inherit distutils-r1
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 DESCRIPTION="Python library for EDL21 smart meters using Smart Message Language (SML)"
 HOMEPAGE="https://github.com/mtdcr/pysml https://pypi.org/project/pysml/"
-#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 SRC_URI="https://github.com/mtdcr/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"

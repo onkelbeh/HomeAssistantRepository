@@ -4,9 +4,9 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 inherit distutils-r1
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 DESCRIPTION="An asyncio HomeKit client"
 HOMEPAGE="https://github.com/Jc2k/aiohomekit https://pypi.org/project/aiohomekit/"

@@ -4,9 +4,9 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 inherit distutils-r1
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 DESCRIPTION="Easy access of environment variables from Python with support for strings, booleans, list, tuples, and dicts."
 HOMEPAGE="https://github.com/bjinwright/envs https://pypi.org/project/envs/"

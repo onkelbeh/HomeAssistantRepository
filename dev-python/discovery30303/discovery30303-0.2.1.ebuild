@@ -4,9 +4,9 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 inherit distutils-r1
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 DESCRIPTION="Discover devices that respond on port 30303"
 HOMEPAGE="https://github.com/bdraco/discovery30303 https://pypi.org/project/discovery30303/"
