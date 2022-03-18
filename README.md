@@ -496,13 +496,13 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1828 Ebuilds in total, 1820 of them have in total 1829 (34 different) licenses assigned.
+There are 1818 Ebuilds in total, 1810 of them have in total 1819 (33 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1093|
-|Apache-2.0|348|
-|BSD|108|
+|MIT|1089|
+|Apache-2.0|345|
+|BSD|107|
 |GPL-3|107|
 |LGPL-3|27|
 |GPL-2|23|
@@ -523,7 +523,6 @@ There are 1828 Ebuilds in total, 1820 of them have in total 1829 (34 different) 
 |EPL-2.0|3|
 |AGPL-3+|2|
 |ZPL|2|
-|ECL-2.0|2|
 |ISC|2|
 |NEWLIB|2|
 |CC-BY-NC-SA-3.0|2|
