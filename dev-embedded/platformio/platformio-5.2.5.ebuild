@@ -7,10 +7,9 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1 udev
 
-DESCRIPTION="Cross-platform IDE and Unified Debugger."
+DESCRIPTION="A professional collaborative platform for embedded development. Cross-platform IDE and Unified Debugger."
 HOMEPAGE="https://platformio.org https://github.com/platformio/platformio-core/ https://pypi.org/project/platformio/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
-#S="${WORKDIR}"/${PN}-core-${PV}
 
 LICENSE="Apache-2.0"
 SLOT="0"
