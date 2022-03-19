@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Access Netgear routers using their SOAP API"
 HOMEPAGE="https://github.com/MatMaul/pynetgear https://pypi.org/project/pynetgear/"
-SRC_URI="https://github.com/MatMaul/${PN}/archive/refs/tags/${PV}.tar.gz"
+SRC_URI="https://github.com/MatMaul/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

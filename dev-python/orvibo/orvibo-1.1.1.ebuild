@@ -10,7 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Control Orvibo products."
 HOMEPAGE="https://github.com/happyleavesaoc/python-orvibo/ https://pypi.org/project/orvibo/"
 MY_PN="python-orvibo"
-SRC_URI="https://github.com/happyleavesaoc/${MY_PN}/archive/refs/tags/${PV}.tar.gz mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/happyleavesaoc/${MY_PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
