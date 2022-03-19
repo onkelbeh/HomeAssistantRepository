@@ -13,7 +13,4 @@
       <name>dhoomakethu</name>
     </maintainer>
   </upstream>
-  <use>
-    <flag name="serial">Build with serial I/O support</flag>
-  </use>
 </pkgmetadata>
