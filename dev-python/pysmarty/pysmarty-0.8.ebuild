@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -17,7 +17,9 @@ KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=""
+DOCS="README.md"
+
+RDEPEND="dev-python/pymodbus[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -28,4 +30,9 @@ DEPEND="${REDEPEND}
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
+}
+
+src_prepare() {
+	sed -i "s/pymodbus==1.5.2/pymodbus/g" -i requirements.txt || die
+	eapply_user
 }
