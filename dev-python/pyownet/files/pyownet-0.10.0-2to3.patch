@@ -1,0 +1,338 @@
+diff --git a/diags/perf.py b/diags/perf.py
+index 31ce2f9..63ad97d 100644
+--- a/diags/perf.py
++++ b/diags/perf.py
+@@ -1,10 +1,10 @@
+-from __future__ import print_function
++
+ import sys
+ import platform
+ import timeit
+ import argparse
+ if sys.version_info < (3, ):
+-    from urlparse import (urlsplit, urlunsplit)
++    from urllib.parse import (urlsplit, urlunsplit)
+ else:
+     from urllib.parse import (urlsplit, urlunsplit)
+ 
+diff --git a/diags/stress_p.py b/diags/stress_p.py
+index f8e0d75..e4dfc31 100644
+--- a/diags/stress_p.py
++++ b/diags/stress_p.py
+@@ -6,7 +6,7 @@ connection to the owserver.
+ Each persistent connection is queried at increasing intervals of time.
+ """
+ 
+-from __future__ import print_function
++
+ 
+ from pyownet import protocol
+ 
+@@ -20,7 +20,7 @@ from time import strftime, sleep
+ import threading
+ import sys
+ if sys.version_info < (3, ):
+-    from urlparse import (urlsplit, )
++    from urllib.parse import (urlsplit, )
+ else:
+     from urllib.parse import (urlsplit, )
+ 
+diff --git a/diags/stress_ping.py b/diags/stress_ping.py
+index 9d7fe13..89de08a 100644
+--- a/diags/stress_ping.py
++++ b/diags/stress_ping.py
+@@ -4,7 +4,7 @@
+ import sys
+ 
+ if sys.version_info < (3, ):
+-    from urlparse import (urlsplit, )
++    from urllib.parse import (urlsplit, )
+ else:
+     from urllib.parse import (urlsplit, )
+ 
+diff --git a/diags/stress_s.py b/diags/stress_s.py
+index e7f02d1..da92481 100644
+--- a/diags/stress_s.py
++++ b/diags/stress_s.py
+@@ -5,12 +5,12 @@ After about 16384 requests should fail with
+ '[Errno 49] Can't assign requested address'
+ """
+ 
+-from __future__ import print_function
++
+ 
+ import itertools
+ import sys
+ if sys.version_info < (3, ):
+-    from urlparse import (urlsplit, )
++    from urllib.parse import (urlsplit, )
+ else:
+     from urllib.parse import (urlsplit, )
+ 
+diff --git a/diags/stress_t.py b/diags/stress_t.py
+index 3aa7f97..56c4e88 100644
+--- a/diags/stress_t.py
++++ b/diags/stress_t.py
+@@ -4,13 +4,13 @@ This programs parses an owserver URI, constructed in the obvious way:
+ 'owserver://hostname:port/path' and recursively walks down
+ """
+ 
+-from __future__ import print_function
++
+ 
+ import sys
+ import time
+ import argparse
+ if sys.version_info < (3, ):
+-    from urlparse import urlsplit
++    from urllib.parse import urlsplit
+ else:
+     from urllib.parse import urlsplit
+ 
+diff --git a/diags/timing.py b/diags/timing.py
+index a60b04a..e6cee5d 100644
+--- a/diags/timing.py
++++ b/diags/timing.py
+@@ -1,9 +1,9 @@
+-from __future__ import print_function
++
+ import sys
+ import timeit
+ import argparse
+ if sys.version_info < (3, ):
+-    from urlparse import (urlsplit, )
++    from urllib.parse import (urlsplit, )
+ else:
+     from urllib.parse import (urlsplit, )
+ 
+diff --git a/docs/conf.py b/docs/conf.py
+index 97874de..372eb7c 100644
+--- a/docs/conf.py
++++ b/docs/conf.py
+@@ -34,8 +34,8 @@ source_suffix = '.rst'
+ master_doc = 'index'
+ 
+ # General information about the project.
+-project = u'pyownet'
+-copyright = u'2014–2016, Stefano Miccoli'
++project = 'pyownet'
++copyright = '2014–2016, Stefano Miccoli'
+ 
+ # The short X.Y version.
+ version = '0.10'
+@@ -95,8 +95,8 @@ latex_elements = {
+ # (source start file, target name, title,
+ #  author, documentclass [howto, manual, or own class]).
+ latex_documents = [
+-  ('index', 'pyownet.tex', u'pyownet Documentation',
+-   u'Stefano Miccoli', 'manual'),
++  ('index', 'pyownet.tex', 'pyownet Documentation',
++   'Stefano Miccoli', 'manual'),
+ ]
+ 
+ # The name of an image file (relative to this directory) to place at the top of
+@@ -125,8 +125,8 @@ latex_domain_indices = False
+ # One entry per manual page. List of tuples
+ # (source start file, name, description, authors, manual section).
+ man_pages = [
+-    ('index', 'pyownet', u'pyownet Documentation',
+-     [u'Stefano Miccoli'], 1)
++    ('index', 'pyownet', 'pyownet Documentation',
++     ['Stefano Miccoli'], 1)
+ ]
+ 
+ # If true, show URL addresses after external links.
+@@ -139,8 +139,8 @@ man_pages = [
+ # (source start file, target name, title, author,
+ #  dir menu entry, description, category)
+ texinfo_documents = [
+-  ('index', 'pyownet', u'pyownet Documentation',
+-   u'Stefano Miccoli', 'pyownet', 'One line description of project.',
++  ('index', 'pyownet', 'pyownet Documentation',
++   'Stefano Miccoli', 'pyownet', 'One line description of project.',
+    'Miscellaneous'),
+ ]
+ 
+diff --git a/examples/owget.py b/examples/owget.py
+index f5b7c7f..33c4d4e 100644
+--- a/examples/owget.py
++++ b/examples/owget.py
+@@ -19,12 +19,12 @@ Caution:
+ 
+ """
+ 
+-from __future__ import print_function
++
+ 
+ import sys
+ import argparse
+ if sys.version_info < (3, ):
+-    from urlparse import urlsplit
++    from urllib.parse import urlsplit
+ else:
+     from urllib.parse import urlsplit
+ import collections
+diff --git a/examples/scan.py b/examples/scan.py
+index 101c74e..3353013 100644
+--- a/examples/scan.py
++++ b/examples/scan.py
+@@ -6,7 +6,7 @@ print some info on the sensors on owserver at 'server:port'
+ default is 'localhost:4304'
+ 
+ """
+-from __future__ import print_function
++
+ 
+ import sys
+ 
+diff --git a/examples/walk.py b/examples/walk.py
+index c9a4f8d..ab250c7 100644
+--- a/examples/walk.py
++++ b/examples/walk.py
+@@ -20,12 +20,12 @@ Caution:
+ 
+ """
+ 
+-from __future__ import print_function
++
+ 
+ import sys
+ import argparse
+ if sys.version_info < (3, ):
+-    from urlparse import urlsplit
++    from urllib.parse import urlsplit
+ else:
+     from urllib.parse import urlsplit
+ import collections
+diff --git a/setup.py b/setup.py
+index 14c94fc..12d442d 100644
+--- a/setup.py
++++ b/setup.py
+@@ -45,5 +45,4 @@ setup(
+     package_dir={'': 'src'},
+     packages=['pyownet', ],
+     test_suite="tests.test_protocol",
+-    use_2to3=True,
+ )
+diff --git a/src/pyownet/protocol.py b/src/pyownet/protocol.py
+index 8eaeed7..eeb7911 100644
+--- a/src/pyownet/protocol.py
++++ b/src/pyownet/protocol.py
+@@ -40,7 +40,7 @@ function 'proxy'.
+ # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ #
+ 
+-from __future__ import print_function
++
+ 
+ import struct
+ import socket
+@@ -140,7 +140,7 @@ if __debug__:
+ def str2bytez(s):
+     """Transform string to zero-terminated bytes."""
+ 
+-    if not isinstance(s, basestring):
++    if not isinstance(s, str):
+         raise TypeError()
+     return s.encode('ascii') + b'\x00'
+ 
+@@ -148,7 +148,7 @@ def str2bytez(s):
+ def bytes2str(b):
+     """Transform bytes to string."""
+ 
+-    if not isinstance(b, (bytes, bytearray, )):
++    if not isinstance(b, (bytes, bytearray )):
+         raise TypeError()
+     return b.decode('ascii')
+ 
+@@ -271,14 +271,12 @@ class _addfieldprops(type):
+         return super(_addfieldprops, mcs).__new__(mcs, name, bases, namespace)
+ 
+ 
+-class _Header(bytes):
++class _Header(bytes, metaclass=_addfieldprops):
+     """abstract header class, obtained as a 'bytes' subclass
+ 
+     should not be instantiated directly
+     """
+ 
+-    __metaclass__ = _addfieldprops
+-
+     @classmethod
+     def _parse(cls, *args, **kwargs):
+         if args:
+@@ -286,7 +284,7 @@ class _Header(bytes):
+             # FIXME check for args type and semantics
+             assert len(args) == 1
+             assert not kwargs
+-            assert isinstance(msg, (bytes, bytearray, ))
++            assert isinstance(msg, (bytes, bytearray ))
+             assert len(msg) == cls.header_size
+             #
+             vals = cls._struct.unpack(msg)
+@@ -296,7 +294,7 @@ class _Header(bytes):
+                 raise TypeError("constructor got unexpected keyword argument"
+                                 " '%s'" % kwargs.popitem()[0])
+             msg = cls._struct.pack(*vals)
+-        assert isinstance(msg, (bytes, bytearray, ))
++        assert isinstance(msg, (bytes, bytearray ))
+         assert isinstance(vals, tuple)
+         return msg, vals
+ 
+@@ -625,7 +623,7 @@ class _Proxy(object):
+         """
+ 
+         # fixme: check of path type delayed to str2bytez
+-        if not isinstance(data, (bytes, bytearray, )):
++        if not isinstance(data, (bytes, bytearray )):
+             raise TypeError("'data' argument must be binary")
+ 
+         ret, rdata = self.sendmess(MSG_WRITE, str2bytez(path)+data,
+diff --git a/tests/__init__.py b/tests/__init__.py
+index cb818e1..3bf557c 100644
+--- a/tests/__init__.py
++++ b/tests/__init__.py
+@@ -7,7 +7,7 @@ __all__ = ['HOST', 'PORT']
+ import sys
+ import os
+ if sys.version_info < (3, ):
+-    from ConfigParser import ConfigParser
++    from configparser import ConfigParser
+ else:
+     from configparser import ConfigParser
+ 
+diff --git a/tests/eintr.py b/tests/eintr.py
+index 161720f..a4886ca 100644
+--- a/tests/eintr.py
++++ b/tests/eintr.py
+@@ -2,10 +2,10 @@
+ check issue #8
+ """
+ 
+-from __future__ import absolute_import
+-from __future__ import division
+-from __future__ import print_function
+-from __future__ import unicode_literals
++
++
++
++
+ 
+ __all__ = ['main']
+ 
+diff --git a/tests/test_protocol.py b/tests/test_protocol.py
+index 543a4ff..cb10123 100644
+--- a/tests/test_protocol.py
++++ b/tests/test_protocol.py
+@@ -1,7 +1,7 @@
+-from __future__ import absolute_import
+-from __future__ import division
+-from __future__ import print_function
+-from __future__ import unicode_literals
++
++
++
++
+ 
+ import sys
+ if sys.version_info < (2, 7, ):
