@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -24,7 +24,6 @@ RDEPEND="
 	>=dev-python/rsa-3.1.4[${PYTHON_USEDEP}]
 	>=dev-python/six-1.6.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep 'dev-python/keyring[${PYTHON_USEDEP}]' 'python*')
-	!<=dev-python/google-api-python-client-1.1[${PYTHON_USEDEP}]
 "
 DEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]

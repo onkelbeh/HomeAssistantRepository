@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -19,8 +19,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="!dev-python/meteofrance
-	>=dev-python/requests-2.25.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/requests-2.25.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2020.4[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]

@@ -22,8 +22,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/netifaces-0.11.0[${PYTHON_USEDEP}]
 	>=dev-python/dnspython-2.1.0[${PYTHON_USEDEP}]
 	dev-python/ifaddr[${PYTHON_USEDEP}]
-	>=dev-python/pyroute2-0.5.18[${PYTHON_USEDEP}]
-	!~dev-python/pyroute2-0.6.1[${PYTHON_USEDEP}]"
+	>=dev-python/pyroute2-0.5.18[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]

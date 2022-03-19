@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -15,9 +15,9 @@ S="${WORKDIR}"/${MY_PN}-${PV}
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ppc ~ppc64 ~riscv sparc x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 ppc ppc64 ~riscv sparc x86 ~amd64-linux ~x86-linux"
 
-RDEPEND="!dev-python/python-jwt"
+RDEPEND=""
 BDEPEND="
 	test? (
 		>=dev-python/cryptography-3.3.1[${PYTHON_USEDEP}]
