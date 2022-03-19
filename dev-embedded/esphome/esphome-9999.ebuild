@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
-inherit readme.gentoo-r1 distutils-r1 udev
+inherit readme.gentoo-r1 distutils-r1
 
 if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
