@@ -11,7 +11,7 @@ DESCRIPTION="SSE client for Python"
 HOMEPAGE="https://github.com/mpetazzoni/sseclient https://pypi.org/project/sseclient-py/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache Software License v2"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
