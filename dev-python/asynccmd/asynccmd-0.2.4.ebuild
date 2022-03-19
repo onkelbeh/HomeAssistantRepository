@@ -7,21 +7,20 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="A Python library for communicating with SPC Web Gateway."
-HOMEPAGE="https://github.com/mbrrg/pyspcwebgw https://pypi.org/project/pyspcwebgw/"
+DESCRIPTION="Asyncio implementation of Cmd Python lib."
+HOMEPAGE="https://github.com/valentinmk/asynccmd https://pypi.org/project/asynccmd/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.md"
+DOCS="README.rst"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/asynccmd[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+RDEPEND=""
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
