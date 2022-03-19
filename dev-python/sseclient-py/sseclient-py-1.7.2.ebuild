@@ -9,11 +9,11 @@ inherit distutils-r1
 
 DESCRIPTION="SSE client for Python"
 HOMEPAGE="https://github.com/mpetazzoni/sseclient https://pypi.org/project/sseclient-py/"
-SRC_URI="https://github.com/mpetazzoni/sseclient/archive/${P}.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="Apache Software License v2"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
