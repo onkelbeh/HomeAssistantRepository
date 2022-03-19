@@ -1,19 +1,18 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
-
 inherit distutils-r1
-
-MY_PN=${PN/-/_}
-MY_P=${MY_PN}-${PV}
 
 DESCRIPTION="python_openzwave is a python wrapper for the openzwave c++ library."
 HOMEPAGE="https://home-assistant.io/ https://pypi.org/project/homeassistant-pyozw/ https://www.openzwave.net/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.zip -> ${P}.zip
 		 https://raw.githubusercontent.com/home-assistant/python-openzwave/hass/archives/open-zwave-hass-${PV}.zip"
+MY_PN=${PN/-/_}
+MY_P=${MY_PN}-${PV}
+S=${WORKDIR}/${MY_PN}
 
 LICENSE="GPL-3+"
 SLOT="0"
@@ -22,14 +21,13 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND=""
-DEPEND="${REDEPEND}
+BDEPEND="
+	app-arch/unzip
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-S=${WORKDIR}/${MY_PN}
 
 src_unpack() {
 	unpack ${A}

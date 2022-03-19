@@ -21,7 +21,8 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/async_timeout[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
+	app-arch/unzip
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
