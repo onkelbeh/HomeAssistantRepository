@@ -17,13 +17,14 @@ KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE="examples test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+#DOCS="README.rst"
 
 RDEPEND=">=dev-python/beautifulsoup4-4.7[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.22[${PYTHON_USEDEP}]
 	>=dev-python/six-1.4[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]"
 BDEPEND="
+	app-arch/unzip
 	test? (
 		${RDEPEND}
 		>=dev-python/requests-mock-1.3.0[${PYTHON_USEDEP}]
