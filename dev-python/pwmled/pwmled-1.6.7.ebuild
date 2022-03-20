@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="~dev-libs/pigpio-1.78[${PYTHON_USEDEP}]
+RDEPEND="~dev-python/pigpio-1.78[${PYTHON_USEDEP}]
 	~dev-python/Adafruit-Blinka-5.5.1[${PYTHON_USEDEP}]
 	~dev-python/adafruit-circuitpython-pca9685-3.3.2[${PYTHON_USEDEP}]
 	~dev-python/python-singleton-0.1.2[${PYTHON_USEDEP}]"
