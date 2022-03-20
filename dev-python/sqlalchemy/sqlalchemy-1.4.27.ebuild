@@ -1,12 +1,12 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 PYTHON_COMPAT=( pypy3 python3_{8..10} )
 PYTHON_REQ_USE="sqlite?"
 
-inherit distutils-r1 multiprocessing optfeature
+inherit distutils-r1 optfeature
 
 MY_PN="SQLAlchemy"
 MY_P="${MY_PN}-${PV/_beta/b}"
@@ -18,7 +18,7 @@ S="${WORKDIR}/${MY_P}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
 IUSE="examples +sqlite test"
 
 BDEPEND="
@@ -29,17 +29,10 @@ BDEPEND="
 
 distutils_enable_tests pytest
 
-src_prepare() {
-	# remove optional/partial dep on greenlet, greenlet is not very portable
-	sed -i -e '/greenlet/d' setup.cfg || die
-
-	distutils-r1_src_prepare
-}
-
-python_test() {
-	# Disable tests hardcoding function call counts specific to Python versions.
-	epytest --ignore test/aaa_profiling
-}
+EPYTEST_IGNORE=(
+	# hardcode call counts specific to Python versions
+	test/aaa_profiling
+)
 
 python_install_all() {
 	if use examples; then
