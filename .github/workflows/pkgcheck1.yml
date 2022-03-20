@@ -8,7 +8,7 @@ on:
       - cron: '35 13 * * *' # Daily
 
 jobs:
-  repoman:
+  pkgcheck1:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/antonfischl1980/gentoo-ci:main
