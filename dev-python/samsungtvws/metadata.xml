@@ -8,4 +8,7 @@
   <upstream>
     <remote-id type="pypi">samsungtvws</remote-id>
   </upstream>
+  <use>
+    <flag name="async">add async support.</flag>
+  </use>
 </pkgmetadata>

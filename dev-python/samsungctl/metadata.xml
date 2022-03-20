@@ -12,4 +12,7 @@
       <name>Lauri Niskanen</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="websocket">Install websocket-client.</flag>
+  </use>
 </pkgmetadata>

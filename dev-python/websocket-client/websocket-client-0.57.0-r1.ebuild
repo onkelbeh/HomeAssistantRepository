@@ -7,7 +7,6 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-
 DESCRIPTION="WebSocket client for python with hybi13 support"
 HOMEPAGE="https://github.com/websocket-client/websocket-client"
 MY_PN=${PN//-/_}

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="A final implementation of JSONPath for Python that aims to be standard compliant, including arithmetic and binary comparison operators and providing clear AST for metaprogramming."
+DESCRIPTION="A final implementation of JSONPath for Python that aims to be standard compliant."
 HOMEPAGE="https://github.com/h2non/jsonpath-ng https://pypi.org/project/jsonpath-ng/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
