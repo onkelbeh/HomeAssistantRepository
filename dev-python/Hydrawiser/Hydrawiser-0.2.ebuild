@@ -1,13 +1,13 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="A Python library to communicate with Hunter Wi-Fi irrigation controllers (https://www.hunter.com) that support the Hydrawise application (https://www.hydrawise.com)."
+DESCRIPTION="A Python library to communicate with Hunter Wi-Fi irrigation controllers (https://www.hunter.com)"
 HOMEPAGE="https://github.com/ptcryan/hydrawiser https://pypi.org/project/Hydrawiser/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
@@ -17,7 +17,7 @@ KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS=""
+DOCS="README.md"
 
 RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]"
 BDEPEND="
