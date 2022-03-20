@@ -1,7 +1,7 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -18,14 +18,11 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 COMMON_DEPEND="
-	$(python_gen_cond_dep '>=dev-python/cffi-1.1:=[${PYTHON_USEDEP}]' 'python*')
-	$(python_gen_cond_dep '>=virtual/pypy-2.6.0' pypy )
-	>=dev-python/six-1.4.1[${PYTHON_USEDEP}]
-"
+	>=dev-python/cffi-1.1[${PYTHON_USEDEP}]
+	>=dev-python/six-1.4.1[${PYTHON_USEDEP}]"
 DEPEND="${COMMON_DEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	test? ( >=dev-python/pytest-3.2.1[${PYTHON_USEDEP}] )
-"
+	test? ( >=dev-python/pytest-3.2.1[${PYTHON_USEDEP}] )"
 RDEPEND="${COMMON_DEPEND}"
 
 python_test() {
