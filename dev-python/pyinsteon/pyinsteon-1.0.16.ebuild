@@ -22,7 +22,7 @@ DOCS="DESCRIPTION.rst"
 RDEPEND="dev-python/pyserial[${PYTHON_USEDEP}]
 	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/pypubsub[${PYTHON_USEDEP}]
+	dev-python/PyPubSub[${PYTHON_USEDEP}]
 	dev-python/aiofiles[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]"
 BDEPEND="${REDEPEND}
