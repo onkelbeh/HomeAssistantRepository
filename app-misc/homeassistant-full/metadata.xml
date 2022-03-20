@@ -54,6 +54,7 @@
     <flag name="aqualogic">Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller</flag>
     <flag name="aquostv">The aquostv platform allows you to control a Sharp Aquos TV</flag>
     <flag name="arcam_fmj">Control Arcam receivers from Home Assistant</flag>
+    <flag name="arduino">deprecated</flag>
     <flag name="arlo">Allows you to integrate your Arlo devices into Home Assistant</flag>
     <flag name="arris_tg2492lg">Presence detection from an Arris TG2492LG router</flag>
     <flag name="aruba">Presence detection by looking at connected devices to an Aruba Instant device</flag>
@@ -69,6 +70,7 @@
     <flag name="aussie_broadband">displays various service metrics using the Aussie Broadband API</flag>
     <flag name="avea">Library for Elgato Avea bulbs</flag>
     <flag name="avion">Support for the Avi-on Bluetooth dimmer switch Avi-on</flag>
+    <flag name="avri">deprecated</flag>
     <flag name="awair">Library to integrate the Awair GraphQL API into Home Assistant</flag>
     <flag name="aws">Interact with Amazon Web Services</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
@@ -579,7 +581,7 @@
     <flag name="recswitch">allows you to control the Ankuoo REC Switch devices from Home Assistant</flag>
     <flag name="reddit">integrates data from Reddit to monitor your favorite subreddits</flag>
     <flag name="rejseplanen">travel details for Danish public transport</flag>
-    <flag name="remember_the_milk">create tasks in Remember The Milk (RTM) from Home Assistant</flag>
+    <flag name="remember_the_milk">create tasks in Remember The Milk (RTM) (deprecated)</flag>
     <flag name="remote_rpi_gpio">base for all related GPIO platforms in Home Assistant</flag>
     <flag name="renault">integration with the MyRenault cloud service</flag>
     <flag name="repetier">Repetier-Server is a 3D printer/CNC server, able to control multiple devices</flag>
@@ -839,6 +841,7 @@
     <flag name="zhong_hong">lets you control Zhonghong HVAC Gateway Controller thermostats</flag>
     <flag name="ziggo_mediabox_xl">allows you to control a Ziggo Mediabox XL</flag>
     <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
+    <flag name="zwave">Support for Z-Wave Devices (uncomplete)</flag>
     <flag name="zwave_js">control a Z-Wave network via the Z-Wave JS driver</flag>
     <flag name="zwave_me">allows you to control a Z-Wave network via the Z-Wave.Me Z-Way</flag>
   </use>

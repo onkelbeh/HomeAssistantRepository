@@ -193,6 +193,7 @@
     <flag name="opengarage">opengarage cover platform lets you control the open-source OpenGarage.io device</flag>
     <flag name="opensensemap">query the open data API of openSenseMap.org air quality sensor station</flag>
     <flag name="openweathermap">uses OpenWeatherMap as a source for current meteorological data</flag>
+    <flag name="opnsense">Presence Detection with data from OPNsense  firewall</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ozw">Open Zwave MQTT</flag>
@@ -292,6 +293,7 @@
     <flag name="zha">Support for ZHA/deconz based Zigbee/ZNet Devices</flag>
     <flag name="zhong_hong">lets you control Zhonghong HVAC Gateway Controller thermostats</flag>
     <flag name="zoneminder">Support for ZoneMinder Cameras</flag>
+    <flag name="zwave">Support for Z-Wave Devices (uncomplete)</flag>
     <flag name="zwave_js">control a Z-Wave network via the Z-Wave JS driver</flag>
   </use>
 </pkgmetadata>

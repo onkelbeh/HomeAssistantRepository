@@ -4,7 +4,7 @@
 EAPI="7"
 
 PYTHON_COMPAT=( python3_{8..10} )
-inherit readme.gentoo-r1 eutils distutils-r1 systemd
+inherit readme.gentoo-r1 distutils-r1 systemd
 
 MY_PN=homeassistant
 
@@ -27,7 +27,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 KEYWORDS="amd64 arm arm64 x86 amd64-linux x86-linux"
-IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus darksky +dwd_weather_warnings enigma2 esphome forecast_solar fronius +frontend github +homekit homekit_controller http hyperion influxdb knx kodi kraken maxcube mikrotik +mobile_app +mqtt myq mysensors +mysql +notify_events octoprint +otp owntracks -ozw +ping +plex ps4 +python_script qnap qvr_pro +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tplink tradfri utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf +zwave_js"
+IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus darksky +dwd_weather_warnings enigma2 esphome forecast_solar fronius +frontend github +homekit homekit_controller http hyperion influxdb knx kodi kraken maxcube mikrotik +mobile_app +mqtt myq mysensors +mysql +notify_events octoprint +otp owntracks ozw +ping +plex ps4 +python_script qnap qvr_pro +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tplink tradfri utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf +zwave_js"
 RESTRICT="!test? ( test )"
 
 # external deps
