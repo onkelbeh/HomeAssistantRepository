@@ -1,7 +1,7 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/pyserial-2.7[${PYTHON_USEDEP}]
-	>=dev-python/future-1.14.3[${PYTHON_USEDEP}]"
+	dev-python/future[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
