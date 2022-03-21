@@ -16,6 +16,11 @@ If you are an author of an integration / component or other stuff related to Hom
 PyPI `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (
 PyPI/GitHub/Sourceforge).
 
+## 2022-03-21: new Testjobs
+[![pkgcheck](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml) [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml) [![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)
+
+Thanks to @antonfischl1980 for his [gentoo-ci Image](https://github.com/antonfischl1980/gentoo-ci) and lots of help.
+
 ## 2022/02/26: EAPI 8 / pyproject.toml
 
 With homeassistant-2022.3.0, setup.py was removed from core. We had to switch to pyproject.toml. All three main Ebuilds are now using EAPI 8, starting with homeassistant-2022.3.0_beta3.
