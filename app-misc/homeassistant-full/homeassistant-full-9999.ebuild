@@ -56,6 +56,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/async_timeout-4.0.2[${PYTHON_USEDEP}]
 	~dev-python/atomicwrites-1.4.0[${PYTHON_USEDEP}]
 	~dev-python/attrs-21.2.0[${PYTHON_USEDEP}]
+	<dev-python/Authlib-1.0[${PYTHON_USEDEP}]
 	~dev-python/awesomeversion-22.2.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
@@ -607,7 +608,7 @@ RDEPEND="${RDEPEND}
 	openevse? ( ~dev-python/openevsewifi-1.1.0[${PYTHON_USEDEP}] )
 	opengarage? ( ~dev-python/open-garage-0.2.0[${PYTHON_USEDEP}] )
 	openhome? ( ~dev-python/openhomedevice-2.0.1[${PYTHON_USEDEP}] )
-	opensensemap? ( ~dev-python/opensensemap-api-0.1.5[${PYTHON_USEDEP}] )
+	opensensemap? ( ~dev-python/opensensemap-api-0.2.0[${PYTHON_USEDEP}] )
 	opentherm_gw? ( ~dev-python/pyotgw-1.1_beta1[${PYTHON_USEDEP}] )
 	openuv? ( ~dev-python/pyopenuv-2021.11.0[${PYTHON_USEDEP}] )
 	openweathermap? ( ~dev-python/pyowm-3.2.0[${PYTHON_USEDEP}] )
@@ -683,7 +684,7 @@ RDEPEND="${RDEPEND}
 	reddit? ( ~dev-python/praw-7.4.0[${PYTHON_USEDEP}] )
 	rejseplanen? ( ~dev-python/rjpl-0.3.6[${PYTHON_USEDEP}] )
 	remote_rpi_gpio? ( ~dev-python/gpiozero-1.5.1[${PYTHON_USEDEP}] )
-	renault? ( ~dev-python/renault-api-0.1.9[${PYTHON_USEDEP}] )
+	renault? ( ~dev-python/renault-api-0.1.10[${PYTHON_USEDEP}] )
 	repetier? ( ~dev-python/pyrepetierng-0.1.0[${PYTHON_USEDEP}] )
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
 	rflink? ( ~dev-python/rflink-0.0.62[${PYTHON_USEDEP}] )

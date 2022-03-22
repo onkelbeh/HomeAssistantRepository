@@ -144,8 +144,8 @@
 |dlib_face_detect|Image processing platform for Home Assistant|N|N|Y|0.44|
 |dlib_face_identify|image processing platform allows you to use the Dlib|N|N|Y|0.44|
 |dlink|Allows you to control the state of your D-Link Wi-Fi Smart Plugs|N|N|Y|0.14|
-|dlna_dmr|Allows you to control a DLNA Digital Media Renderer|N|N|Y|0.76|
-|dlna_dms|allows you to browse and play media from a DLNA Digital Media Server|N|N|Y|2022.3.0b3|
+|dlna_dmr|Allows you to control a DLNA Digital Media Renderer|Y|Y|Y|0.76|
+|dlna_dms|allows you to browse and play media from a DLNA Digital Media Server|Y|Y|Y|2022.3.0b3|
 |dnsip|will expose an IP address, fetched via DNS resolution, as its value|N|N|Y|0.40|
 |dominos|dominos integration allows you to order Dominos Pizza|N|N|Y|0.59|
 |doods| image processing integration allows you to detect and recognize objects|N|N|Y|0.100|
@@ -204,7 +204,7 @@
 |familyhub|get images of the inside of your Samsung Family Hub refrigerator|N|N|Y|0.70|
 |fastdotcom|uses the Fast.com web service to measure network bandwidth performance|N|N|Y|0.88|
 |feedreader|an RSS/Atom feed reader that polls feeds every hour|N|N|Y|0.18|
-|ffmpeg|allows other Home Assistant integrations to process video and audio streams|N|N|Y|0.29|
+|ffmpeg|allows other Home Assistant integrations to process video and audio streams|Y|Y|Y|0.29|
 |fibaro|Fibaro hub is a controller mainly connecting to Z-Wave devices|N|Y|Y|0.83|
 |fido|Integrate your Fido account information into Home Assistant|N|N|Y|0.39|
 |fints|This only works with banks that support the FinTS (aka. HBCI) standard|N|N|Y|0.70|
@@ -749,7 +749,7 @@
 |upcloud|allows you to access the information about your UpCloud servers|N|N|Y|0.65|
 |upc_connect|presence detection by looking at  a Connect Box|N|N|Y|0.36|
 |updater|binary sensor will check daily for new releases|N|N|Y|0.8|
-|upnp|support UPnP/Internet Gateway Device (IGD) Protocol|N|Y|Y|0.18|
+|upnp|support UPnP/Internet Gateway Device (IGD) Protocol|Y|Y|Y|0.18|
 |uptimerobot|provides binary sensors from your monitors from Uptime Robot|N|N|Y|0.72|
 |usb|USB Discovery integration will watch the host for USB devices|N|N|Y|2021.9|
 |uscis|updates on your USCIS case using your case/receipt number|N|N|Y|0.68|
@@ -820,7 +820,7 @@
 |zeroconf|will scan the network for supported devices and services|Y|Y|Y|0.18|
 |zerproc|discovers nearby Zerproc lights|N|Y|Y|0.110|
 |zestimate|track the Zestimate® value of properties using the Zillow API|N|N|Y|0.65|
-|zha|Support for ZHA/deconz based Zigbee/ZNet Devices|N|Y|Y|0.44|
+|zha|Support for ZHA/deconz based Zigbee/ZNet Devices|Y|Y|Y|0.44|
 |zhong_hong|lets you control Zhonghong HVAC Gateway Controller thermostats|N|Y|Y|0.72|
 |ziggo_mediabox_xl|allows you to control a Ziggo Mediabox XL|N|N|Y|0.60|
 |zoneminder|Support for ZoneMinder Cameras|N|Y|Y|0.31|

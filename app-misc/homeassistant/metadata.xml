@@ -100,6 +100,8 @@
     <flag name="discogs">Discogs Client for Home Assistant</flag>
     <flag name="discord">Send messages to the user using Discord from Home Assistant</flag>
     <flag name="discovery">Automatically configure zeroconf/mDNS and UPnP devices in Home Assistant</flag>
+    <flag name="dlna_dmr">Allows you to control a DLNA Digital Media Renderer</flag>
+    <flag name="dlna_dms">allows you to browse and play media from a DLNA Digital Media Server</flag>
     <flag name="doorbird">The doorbird implementation allows you to integrate your DoorBird device</flag>
     <flag name="dunehd">control a Dune HD media player</flag>
     <flag name="dwd_weather_warnings">dwd_weather_warnings sensor platform uses DWD for  warnings</flag>
@@ -114,6 +116,7 @@
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
     <flag name="everlights">Library for controlling an EverLights lighting system</flag>
     <flag name="evohome">links with all non-US Honeywell Total Connect Comfort (TCC) CH/DHW systems</flag>
+    <flag name="ffmpeg">allows other Home Assistant integrations to process video and audio streams</flag>
     <flag name="fibaro">Fibaro hub is a controller mainly connecting to Z-Wave devices</flag>
     <flag name="flume">monitors the real-time status of your home water meter</flag>
     <flag name="flunearyou">allows users in the US to get information from Flu Near You</flag>
