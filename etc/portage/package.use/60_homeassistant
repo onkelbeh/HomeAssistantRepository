@@ -14,3 +14,4 @@ dev-python/mac-vendor-lookup -test
 dev-python/pytest-cov -test
 app-arch/brotli python
 media-libs/gd fontconfig truetype
+dev-python/attrs -test
