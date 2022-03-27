@@ -25,7 +25,7 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="+server test"
 RESTRICT="!test? ( test )"
 
@@ -41,16 +41,15 @@ RDEPEND="
 	~dev-python/tzlocal-4.1[${PYTHON_USEDEP}]
 	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	~dev-embedded/platformio-5.2.4
+	~dev-embedded/platformio-5.2.5
 	~dev-embedded/esptool-3.2[${PYTHON_USEDEP}]
 	dev-python/click[${PYTHON_USEDEP}]
-	~dev-embedded/esphome-dashboard-20220116.0[${PYTHON_USEDEP}]
+	~dev-embedded/esphome-dashboard-20220309.0[${PYTHON_USEDEP}]
 	dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 	dev-python/zeroconf[${PYTHON_USEDEP}]
 	~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]"
 
-BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
+BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
@@ -71,9 +70,9 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
 src_prepare() {
-	sed "s/aioesphomeapi==10.6.0/aioesphomeapi/g" -i requirements.txt || die
-	sed "s/click==8.0.3/click/g" -i requirements.txt || die
-	sed "s/zeroconf==0.37.0/zeroconf/g" -i requirements.txt || die
+	sed "/aioesphomeapi==/c\aioesphomeapi" -i requirements.txt || die
+	sed "/click==/c\click" -i requirements.txt || die
+	sed "/zeroconf==/c\zeroconf" -i requirements.txt || die
 	eapply_user
 }
 

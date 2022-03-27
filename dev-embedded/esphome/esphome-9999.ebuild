@@ -38,7 +38,7 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 	~dev-embedded/platformio-5.2.5
-	~dev-embedded/esptool-3.2[${PYTHON_USEDEP}]
+	~dev-embedded/esptool-3.3[${PYTHON_USEDEP}]
 	~dev-python/click-8.0.4[${PYTHON_USEDEP}]
 	~dev-embedded/esphome-dashboard-20220309.0[${PYTHON_USEDEP}]
 	dev-python/aioesphomeapi[${PYTHON_USEDEP}]
