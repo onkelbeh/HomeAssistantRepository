@@ -279,10 +279,10 @@ Currently I have three VM's running:
 Python 3.9.9-r1
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test
-Python 3.9.10-r1
+Python 3.9.12
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test2
-Python 3.10.2-r1
+Python 3.10.2-p1
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 
 ## Hardware I use
@@ -290,7 +290,7 @@ Python 3.10.2-r1
 Here's a rough overview about the stuff I use, sorted by USEFlags:
 
 ### androidtv
-Get the Status from my Amazon Fire-TV.
+Get the Status from my Amazon Fire-TV and turn it on in a scene.
 
 ### axis
 Axis Camera (1, a few more to come), i do not use this integration anymore, it had a problem with my old cam's, migrated it to qvr_pro.
@@ -308,10 +308,9 @@ Calendar (connected to a locally run ownCloud, OC not in this Repository) (https
 since yr.no weather was removed by YR's request in early 2021, I use darksky.
 
 ### dwd_weather_warnings
-
 currently not working....
 ### enigma2
-Enigma2 on Dreambox (2 left) (https://wiki.blue-panel.com/index.php/Enigma2)
+Enigma2 on Dreambox (2 left) (https://wiki.blue-panel.com/index.php/Enigma2). Be careful about their standby power consumtion, these 800SE2 eat up 45W during standby.
 
 ### esphome
 ESPHome - see description above - (https://esphome.io/ & https://github.com/esphome/esphome/)
@@ -325,7 +324,7 @@ ESPHome - see description above - (https://esphome.io/ & https://github.com/esph
 As soon as a device with an esp inside gets touched, it will be migrated to ESPHome.
 
 ### forecast_solar
-a forecast of today's solar production, only have a free account.
+a forecast of today's solar production, only have a free account, but it is very useful.
 
 ### fronius
 query my Fronius solar inverters via their integrated wifi chip.
@@ -395,8 +394,6 @@ have installed owntracks on ours Iphones, so HA knows when I leave work and if a
 ### samsungtv
 SamsungTV (partly _not_ working anymore due to Samsung's newest firmware 'improvements', at least I can read its status for controlling lights & the shutters)
 
-### scrape
-
 ### season
 
 ### shelly
@@ -411,7 +408,6 @@ Due to the fact that Fibaro's shutter controllers do not work very well, I now h
 Sonos (had many, sold most of them, because they destroyed a formerly very cool Gui, only two boxes left)
 
 ### sql
-
 Recorder writes to a local mariadb socket, moved this from my 'big' mariadb machine because of some performance issues. The socket seems much faster then the network link, especially on big operations, e.g. opening the history tab. It takes approx. 10 seconds to pull a complete week with ~1200 entities (if it doesn't freeze the browser), a single day opens in ~2 seconds.
 ### ssl
 
@@ -435,7 +431,7 @@ Some Tradfri lights, and 4 IKEA Shutters. A bit expensive, but nice and easy to 
 Yamaha RXV (4 devices)
 
 ### zwave
-had a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. Have migrated it to zwavejs2mqtt.
+had a ZMEEUZB1 Stick connected to my VM with ser2net, socat & OpenZWave. Migrated it to zwavejs2mqtt.
 
 ### zwave_js
 
@@ -491,7 +487,6 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 ## To-dos
 - Publish my ESPHome Configurations
 - Do more tests with Python 3.10
-- Add more libraries or fix Python 3.9 support if I need it or someone asks for.
 - Convince the world to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
 ## Experiments in progress:
@@ -501,7 +496,7 @@ From time to time a fresh compile test on empty boxes (one with Python 3.9 and o
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1692 Ebuilds in total, 1685 of them have in total 1693 (35 different) licenses assigned.
+There are 1691 Ebuilds in total, 1684 of them have in total 1692 (35 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
@@ -510,7 +505,7 @@ There are 1692 Ebuilds in total, 1685 of them have in total 1693 (35 different) 
 |GPL-3|103|
 |BSD|92|
 |LGPL-3|27|
-|GPL-2|22|
+|GPL-2|21|
 |LGPL-3+|17|
 |GPL-3+|14|
 |all-rights-reserved|14|
@@ -541,9 +536,9 @@ There are 1692 Ebuilds in total, 1685 of them have in total 1693 (35 different) 
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
 
-(Last counted: 24/03/2022)
+(Last counted: 27/03/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 24/03/2022
+Last updated: 27/03/2022
