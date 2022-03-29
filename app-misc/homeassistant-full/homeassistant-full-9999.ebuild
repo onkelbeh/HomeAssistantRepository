@@ -62,6 +62,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2021.5.30[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.2.0[${PYTHON_USEDEP}]
+	~dev-python/click-8.0.4[${PYTHON_USEDEP}]
 	~dev-python/cryptography-35.0.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.44.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
@@ -297,7 +298,7 @@ RDEPEND="${RDEPEND}
 	emby? ( ~dev-python/pyEmby-1.8[${PYTHON_USEDEP}] )
 	emonitor? ( ~dev-python/aioemonitor-1.0.5[${PYTHON_USEDEP}] )
 	emulated_hue? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] )
-	emulated_kasa? ( ~dev-python/sense-energy-0.10.3[${PYTHON_USEDEP}] )
+	emulated_kasa? ( ~dev-python/sense-energy-0.10.4[${PYTHON_USEDEP}] )
 	emulated_roku? ( ~dev-python/emulated-roku-0.2.1[${PYTHON_USEDEP}] )
 	enigma2? ( ~dev-python/openwebifpy-3.2.7[${PYTHON_USEDEP}] )
 	enocean? ( ~dev-python/enocean-0.50.1[${PYTHON_USEDEP}] )
@@ -720,7 +721,7 @@ RDEPEND="${RDEPEND}
 	scsgate? ( ~dev-python/scsgate-0.1.0[${PYTHON_USEDEP}] )
 	season? ( ~dev-python/ephem-3.7.7.0[${PYTHON_USEDEP}] )
 	sendgrid? ( ~dev-python/sendgrid-6.8.2[${PYTHON_USEDEP}] )
-	sense? ( ~dev-python/sense-energy-0.10.3[${PYTHON_USEDEP}] )
+	sense? ( ~dev-python/sense-energy-0.10.4[${PYTHON_USEDEP}] )
 	sensehat? ( ~dev-python/python-sense-hat-2.2.0[${PYTHON_USEDEP}] )
 	senseme? ( ~dev-python/aiosenseme-0.6.1[${PYTHON_USEDEP}] )
 	sensibo? ( ~dev-python/pysensibo-1.0.7[${PYTHON_USEDEP}] )
