@@ -25,7 +25,7 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="+server test"
 RESTRICT="!test? ( test )"
 
@@ -70,9 +70,9 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
 src_prepare() {
-	sed "s/aioesphomeapi==10.8.2/aioesphomeapi/g" -i requirements.txt || die
-	sed "s/click==8.0.3/click/g" -i requirements.txt || die
-	sed "s/zeroconf==0.38.3/zeroconf/g" -i requirements.txt || die
+	sed "/aioesphomeapi==/c\aioesphomeapi" -i requirements.txt || die
+	sed "/click==/c\click" -i requirements.txt || die
+	sed "/zeroconf==/c\zeroconf" -i requirements.txt || die
 	eapply_user
 }
 
