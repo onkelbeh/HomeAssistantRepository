@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -19,7 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS=""
 
-RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]
+	>=dev-python/flask-1.1.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
