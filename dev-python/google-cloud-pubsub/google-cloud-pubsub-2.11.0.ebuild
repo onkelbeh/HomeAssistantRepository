@@ -13,15 +13,14 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/google-api-core-1.22.2[${PYTHON_USEDEP}]
-	>=dev-python/libcst-0.3.10[${PYTHON_USEDEP}]
-	>=dev-python/proto-plus-1.7.1[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/google-api-core-1.31.5[${PYTHON_USEDEP}]
+	>=dev-python/proto-plus-1.15.0[${PYTHON_USEDEP}]
 	>=dev-python/grpc-google-iam-v1-0.12.3[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
