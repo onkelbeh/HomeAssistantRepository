@@ -1,7 +1,7 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -13,15 +13,14 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/google-api-core-1.26.0
-	>=dev-python/proto-plus-1.4.0
-	>=dev-python/packaging-14.3"
+RDEPEND=">=dev-python/google-api-core-1.31.5[${PYTHON_USEDEP}]
+	>=dev-python/proto-plus-1.15.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
