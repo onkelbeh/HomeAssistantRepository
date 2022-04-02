@@ -2,24 +2,30 @@
 <dev-embedded/esphome-9999 ~amd64
 <app-misc/homeassistant-9999 ~amd64
 app-misc/home-assistant-cli ~amd64
-
 dev-db/influxdb ~amd64
 net-analyzer/fail2ban ~amd64
 
-# required by dev-python/influxdb-client-1.24.0::HomeAssistantRepository
-# required by app-misc/homeassistant-min-2022.3.3::HomeAssistantRepository[influxdb]
-# required by homeassistant-min (argument)
+=sci-geosciences/GeographicLib-1.52 ~amd64
 =dev-python/Rx-3.2.0 ~amd64
-# required by app-misc/homeassistant-min-2022.3.3::HomeAssistantRepository[otp]
-# required by homeassistant-min (argument)
-=dev-python/pyotp-2.6.0 ~amd64
-# required by dev-python/samsungtvws-1.7.0::HomeAssistantRepository[async]
-# required by app-misc/homeassistant-min-2022.3.3::HomeAssistantRepository[samsungtv]
-# required by homeassistant-min (argument)
-=dev-python/websockets-10.2 ~amd64
-# required by app-misc/homeassistant-min-2022.3.4::HomeAssistantRepository
-# required by homeassistant-min (argument)
+=dev-python/aiofiles-0.8.0-r1 ~amd64
 =dev-python/anyio-3.5.0 ~amd64
-# required by app-misc/homeassistant-min-2022.3.4::HomeAssistantRepository[test]
-# required by homeassistant-min (argument)
+=dev-python/astroid-2.11.2 ~amd64
+=dev-python/asyncstdlib-3.10.4 ~amd64
+=dev-python/click-plugins-1.1.1 ~amd64
+=dev-python/coloredlogs-15.0.1 ~amd64
+=dev-python/denonavr-0.10.10 ~amd64
+=dev-python/freezegun-1.2.1 ~amd64
+=dev-python/fritzconnection-1.8.0 ~amd64
+=dev-python/humanfriendly-10.0 ~amd64
+=dev-python/imageio-2.16.1 ~amd64
+=dev-python/jinja-3.1.0 ~amd64
+=dev-python/mediafile-0.9.0-r1 ~amd64
+=dev-python/mypy-0.942 ~amd64
+=dev-python/pylint-2.13.3 ~amd64
+=dev-python/pyotp-2.6.0 ~amd64
 =dev-python/pytest-7.0.1 ~amd64
+=dev-python/semver-2.13.0 ~amd64
+=dev-python/setuptools_rust-0.12.1 ~amd64
+=dev-python/sqlalchemy-1.4.32 ~amd64
+=dev-python/websockets-10.2 ~amd64
+=sci-geosciences/GeographicLib-1.52 ~amd64
