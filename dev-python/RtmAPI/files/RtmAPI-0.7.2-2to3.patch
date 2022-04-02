@@ -1,0 +1,66 @@
+diff --git a/rtmapi/__init__.py b/rtmapi/__init__.py
+index b2ab7fb..01cb8f5 100644
+--- a/rtmapi/__init__.py
++++ b/rtmapi/__init__.py
+@@ -1,6 +1,6 @@
+ import hashlib
+ import httplib2
+-import urllib
++import urllib.request, urllib.parse, urllib.error
+ import xml.etree.ElementTree as ElementTree
+ 
+ __author__ = "Michael Gruenewald <mail@michaelgruenewald.eu>"
+@@ -117,15 +117,15 @@ class Rtm(object):
+             'Cache-Control': 'no-cache, max-age=0'})
+ 
+     def _make_request_url(self, request_url=None, **params):
+-        all_params = params.items() + [("api_sig", self._sign_request(params))]
+-        params_joined = urllib.urlencode(
++        all_params = list(params.items()) + [("api_sig", self._sign_request(params))]
++        params_joined = urllib.parse.urlencode(
+             [(k, v.encode('utf-8')) for k, v in all_params])
+         return (request_url or self._base_url) + "?" + params_joined
+ 
+     def _sign_request(self, params):
+-        param_pairs = params.items()
++        param_pairs = list(params.items())
+         param_pairs.sort()
+-        request_string = self.shared_secret + u''.join(k + v
++        request_string = self.shared_secret + ''.join(k + v
+                                                        for k, v in param_pairs
+                                                        if v is not None)
+         return hashlib.md5(request_string.encode('utf-8')).hexdigest()
+@@ -208,7 +208,7 @@ class RtmObject(RtmBase):
+     def __getattr__(self, name):
+         if name == "value":
+             return self.__element.text
+-        elif name in self.__element.keys():
++        elif name in list(self.__element.keys()):
+             return self.__element.get(name)
+         elif (self.__name, name) in self.MORE_LISTS:
+             return RtmIterable(self.__element,
+diff --git a/setup.py b/setup.py
+index 9eb6a76..6dd567c 100644
+--- a/setup.py
++++ b/setup.py
+@@ -6,7 +6,7 @@ setup(
+     author_email='mail@michaelgruenewald.eu',
+     description='API package for rememberthemilk.com',
+     long_description=open('README').read(),
+-    license='License :: OSI Approved :: MIT License',
++    license='MIT',
+     url='https://bitbucket.org/rtmapi/rtmapi',
+     version='0.7.2',
+     packages=['rtmapi', ],
+@@ -16,11 +16,6 @@ setup(
+         'License :: OSI Approved :: MIT License',
+         'Operating System :: OS Independent',
+         'Programming Language :: Python',
+-        'Programming Language :: Python :: 2',
+-        'Programming Language :: Python :: 2.6',
+-        'Programming Language :: Python :: 2.7',
+         'Programming Language :: Python :: 3',
+-        'Programming Language :: Python :: 3.1',
+     ],
+-    use_2to3=True,
+ )
