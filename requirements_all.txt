@@ -121,7 +121,7 @@ asynccmd==0.2.4
 asyncio-dgram==2.1.0
 asyncio-throttle==1.0.2
 asyncpysupla==0.0.5
-asyncsleepiq==1.2.1
+asyncsleepiq==1.2.3
 asyncssh==2.9.0
 asyncstdlib==3.10.3
 asynctest==0.13.0
@@ -415,7 +415,7 @@ hlk-sw16==0.0.9
 hole==0.7.0
 holidays==0.13
 home-assistant-cli==9999
-home-assistant-frontend==20220330.0
+home-assistant-frontend==20220401.0
 homeassistant
 homeconnect==0.7.0
 homematicip==1.0.2
@@ -1236,7 +1236,7 @@ whois==0.9.13
 wiffi==1.1.0
 wirelesstagpy==0.8.1
 withings-api==2.4.0
-wled==0.13.1
+wled==0.13.2
 wolf_smartset==0.1.11
 wrapt==1.13.2
 WSDiscovery==2.0.0
@@ -1264,7 +1264,7 @@ zeroconf==0.38.4
 zha-quirks==0.0.69
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
-zigpy-deconz==0.14.0
+zigpy-deconz==0.15.0
 zigpy-xbee==0.14.0
 zigpy-zigate==0.8.0
 zigpy-znp==0.7.0
