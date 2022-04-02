@@ -16,6 +16,7 @@
 |airthings|A python3 library to communicate with Aws|N|N|Y|2021.10.0b2|
 |airtouch4|control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller|N|N|Y|2021.9.0b1|
 |airvisual|Airvisual sensor platform queries the AirVisual cloud API for air quality data|Y|Y|Y|0.53|
+|airzone|None|N|N|Y|2022.4.0b0|
 |aladdin_connect|The aladdin_connect cover platform lets you control Genie Aladdin Connect garage|N|Y|Y|0.75|
 |alarmdecoder|AlarmDecoder extended|N|Y|Y|0.43|
 |almond|Almond is an open, privacy-preserving virtual assistant by Stanford Open Virtual|N|Y|Y|0.102|
@@ -58,6 +59,7 @@
 |awair|Library to integrate the Awair GraphQL API into Home Assistant|N|Y|Y|0.84|
 |aws|Interact with Amazon Web Services|N|N|Y|0.91|
 |axis|Communicating with newer devices from Axis Communications|Y|Y|Y|0.45|
+|backup|None|N|Y|Y|2022.4.0b0|
 |baidu|Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi|N|Y|Y|0.59|
 |balboa|This integration adds support for Balboa Spa WiFi Modules|N|N|Y|2021.12.0b0|
 |bbb_gpio|Base for all BeagleBone Black related GPIO platforms|N|N|Y|0.36|
@@ -341,6 +343,7 @@
 |joaoapps_join|joaoapps_join integration exposes services from Join|N|Y|Y|0.24|
 |juicenet|pulls data from a JuiceNet charging station|N|N|Y|0.47|
 |kaiterra|view the readings from your Laser Egg or Sensedge device|N|N|Y|0.100|
+|kaleidescape|None|N|N|Y|2022.4.0b0|
 |keba|integrates your Keba charging station (wallbox)|N|N|Y|0.98|
 |keenetic_ndms2|presence detection for Keenetic Routers|N|N|Y|0.54|
 |kef|KEF wireless speakers|N|Y|Y|0.104|
@@ -511,6 +514,7 @@
 |panasonic_viera|panasonic_viera platform allows you to control a Panasonic Viera TV|N|Y|Y|0.17|
 |pandora|Pandora account, you can control it from Home Assistant with this media player|N|N|Y|0.22|
 |pcal9535a|pcal9535a integration is the base for all related pcal9535a platforms|N|N|Y|0.102|
+|peco|None|N|N|Y|2022.4.0b0|
 |pencom|Pencom is a computer-controlled relay, I/O and custom boards|N|N|Y|0.85|
 |philips_js|allows you to control Philips TVs which expose the jointSPACE JSON-API|N|Y|Y|0.34|
 |pi4ioe5v9xxxx|support for the quasi-bidirectional devices pi4ioe5v9xxxx I2C I/O port expander|N|N|Y|0.109|
@@ -718,6 +722,7 @@
 |todoist|connect to your Todoist Projects and generate binary sensors|N|N|Y|0.54|
 |tof|uses an invisible laser to measure distance with millimeter resolution|N|N|Y|0.90|
 |tolo|allows you to control your TOLO Sauna and TOLO Steam Bath|N|N|Y|2021.12.0b0|
+|tomorrowio|None|Y|Y|Y|2022.4.0b0|
 |toon|client for the Quby ToonAPI|N|Y|Y|0.56|
 |totalconnect|provides connectivity with the Honeywell TotalConnect alarm systems|N|Y|Y|0.42|
 |touchline|lets you control ROTH Touchline floor heating thermostats|N|N|Y|0.61|
@@ -775,6 +780,7 @@
 |volkszaehler|consuming the system information provided by the Volkszaehler API|N|N|Y|0.78|
 |volumio|allows you to control a Volumio media player|N|N|Y|0.41|
 |volvooncall|offers presence detection as well as sensors such as odometer and fuel leve|N|N|Y|0.39|
+|vulcan|None|N|N|Y|2022.4.0b0|
 |vultr|access information about and interact with your Vultr subscriptions|N|N|Y|0.58|
 |w800rf32|supports W800RF32 devices by WGL Designs|N|N|Y|0.83|
 |wake_on_lan|enables the ability to send magic packets to Wake on LAN capable devices|Y|Y|Y|0.49|

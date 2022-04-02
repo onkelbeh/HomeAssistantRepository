@@ -30,6 +30,7 @@
     <flag name="airthings">A python3 library to communicate with Aws</flag>
     <flag name="airtouch4">control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller</flag>
     <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
+    <flag name="airzone"/>
     <flag name="aladdin_connect">The aladdin_connect cover platform lets you control Genie Aladdin Connect garage</flag>
     <flag name="alarmdecoder">AlarmDecoder extended</flag>
     <flag name="almond">Almond is an open, privacy-preserving virtual assistant by Stanford Open Virtual</flag>
@@ -74,6 +75,7 @@
     <flag name="awair">Library to integrate the Awair GraphQL API into Home Assistant</flag>
     <flag name="aws">Interact with Amazon Web Services</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
+    <flag name="backup"/>
     <flag name="baidu">Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi</flag>
     <flag name="balboa">This integration adds support for Balboa Spa WiFi Modules</flag>
     <flag name="bbb_gpio">Base for all BeagleBone Black related GPIO platforms</flag>
@@ -357,6 +359,7 @@
     <flag name="joaoapps_join">joaoapps_join integration exposes services from Join</flag>
     <flag name="juicenet">pulls data from a JuiceNet charging station</flag>
     <flag name="kaiterra">view the readings from your Laser Egg or Sensedge device</flag>
+    <flag name="kaleidescape"/>
     <flag name="keba">integrates your Keba charging station (wallbox)</flag>
     <flag name="keenetic_ndms2">presence detection for Keenetic Routers</flag>
     <flag name="kef">KEF wireless speakers</flag>
@@ -527,6 +530,7 @@
     <flag name="panasonic_viera">panasonic_viera platform allows you to control a Panasonic Viera TV</flag>
     <flag name="pandora">Pandora account, you can control it from Home Assistant with this media player</flag>
     <flag name="pcal9535a">pcal9535a integration is the base for all related pcal9535a platforms</flag>
+    <flag name="peco"/>
     <flag name="pencom">Pencom is a computer-controlled relay, I/O and custom boards</flag>
     <flag name="philips_js">allows you to control Philips TVs which expose the jointSPACE JSON-API</flag>
     <flag name="pi4ioe5v9xxxx">support for the quasi-bidirectional devices pi4ioe5v9xxxx I2C I/O port expander</flag>
@@ -735,6 +739,7 @@
     <flag name="todoist">connect to your Todoist Projects and generate binary sensors</flag>
     <flag name="tof">uses an invisible laser to measure distance with millimeter resolution</flag>
     <flag name="tolo">allows you to control your TOLO Sauna and TOLO Steam Bath</flag>
+    <flag name="tomorrowio"/>
     <flag name="toon">client for the Quby ToonAPI</flag>
     <flag name="totalconnect">provides connectivity with the Honeywell TotalConnect alarm systems</flag>
     <flag name="touchline">lets you control ROTH Touchline floor heating thermostats</flag>
@@ -792,6 +797,7 @@
     <flag name="volkszaehler">consuming the system information provided by the Volkszaehler API</flag>
     <flag name="volumio">allows you to control a Volumio media player</flag>
     <flag name="volvooncall">offers presence detection as well as sensors such as odometer and fuel leve</flag>
+    <flag name="vulcan"/>
     <flag name="vultr">access information about and interact with your Vultr subscriptions</flag>
     <flag name="w800rf32">supports W800RF32 devices by WGL Designs</flag>
     <flag name="wake_on_lan">enables the ability to send magic packets to Wake on LAN capable devices</flag>
