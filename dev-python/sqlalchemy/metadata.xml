@@ -12,4 +12,7 @@
       <name>Mike Bayer</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="asyncio">add asyncio helper support</flag>
+  </use>
 </pkgmetadata>
