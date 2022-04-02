@@ -508,7 +508,7 @@
 |overkiz|The Overkiz (by Somfy) integration platform|N|N|Y|2022.2.0b1|
 |ovo_energy|allows you to monitor your energy consumption data|N|N|Y|0.114|
 |owntracks|OwnTracks: track your location and send it directly to Home Assistant|Y|Y|Y|0.7.4|
-|ozw|Open Zwave MQTT|Y|Y|Y|0.110|
+|ozw|Open Zwave MQTT|M|M|Y|0.110|
 |p1_monitor|The P1 Monitor integration integrates the P1 Monitor API platform|N|N|Y|2021.9.0b1|
 |panasonic_bluray|allows you to control a Panasonic Blu-Ray player|N|N|Y|0.83|
 |panasonic_viera|panasonic_viera platform allows you to control a Panasonic Viera TV|N|Y|Y|0.17|
@@ -731,7 +731,7 @@
 |traccar|uses GPS for tracking and has support for over 1500 different types of devices|N|N|Y|0.83|
 |trackr|trackr platform allows you to detect presence using TrackR devices|N|N|Y||
 |tractive|Tractive is an Austrian company develops real-time location trackers for pets|N|N|Y|2021.9.0b1|
-|tradfri|Control/observe IKEA Tradfri devices|Y|Y|Y|0.43|
+|tradfri|Control/observe IKEA Tradfri devices|N|N|Y|0.43|
 |trafikverket_train|Retrieve train departure information from Trafikverket|N|N|Y|0.96|
 |trafikverket_weatherstation|weather information provided by Trafikverket weather stations in Sweden|N|N|Y|0.66|
 |transmission|transmission integration allows you to monitor your downloads with Transmission|N|N|Y|0.87|
