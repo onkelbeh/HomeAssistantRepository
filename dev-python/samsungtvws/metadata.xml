@@ -9,6 +9,7 @@
     <remote-id type="pypi">samsungtvws</remote-id>
   </upstream>
   <use>
-    <flag name="async">add async support.</flag>
+    <flag name="async">use aiohttp/websocket</flag>
+    <flag name="encrypted">add support for encrypted communication</flag>
   </use>
 </pkgmetadata>
