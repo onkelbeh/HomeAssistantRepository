@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION=""A python client library for the Kaleidescape System Control Protocol.""
+DESCRIPTION="A python client library for the Kaleidescape System Control Protocol."
 HOMEPAGE="https://github.com/SteveEasley/pykaleidescape https://pypi.org/project/pykaleidescape/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
