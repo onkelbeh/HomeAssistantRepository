@@ -13,7 +13,7 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -23,9 +23,7 @@ RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
 	>=dev-python/backoff-1.11.1[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
-	<dev-python/voluptuous-0.13.0[${PYTHON_USEDEP}]
-	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
-	<dev-python/websockets-11[${PYTHON_USEDEP}]"
+	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
