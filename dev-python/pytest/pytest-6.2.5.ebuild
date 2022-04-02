@@ -3,9 +3,7 @@
 
 EAPI=7
 
-DISTUTILS_USE_SETUPTOOLS=rdepend
-PYTHON_COMPAT=( python3_{7..9} pypy3 )
-
+PYTHON_COMPAT=( python3_{8..10} pypy3 )
 inherit distutils-r1
 
 DESCRIPTION="Simple powerful testing with Python"
@@ -14,26 +12,23 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm ~arm64 hppa ~ia64 ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~x64-macos"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~x64-macos"
 IUSE="test"
-RESTRICT="!test? ( test )"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
 	>=dev-python/attrs-19.2.0[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '
 		dev-python/importlib_metadata[${PYTHON_USEDEP}]
-	' python3_7 pypy3)
+	' pypy3)
 	dev-python/iniconfig[${PYTHON_USEDEP}]
 	>=dev-python/more-itertools-4.0.0[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
 	>=dev-python/pluggy-0.12[${PYTHON_USEDEP}]
-	<dev-python/pluggy-1
 	>=dev-python/py-1.8.2[${PYTHON_USEDEP}]
-	dev-python/toml[${PYTHON_USEDEP}]
+	dev-python/tomli[${PYTHON_USEDEP}]
 "
-# flake cause a number of tests to fail
-DEPEND="
+BDEPEND="
 	>=dev-python/setuptools_scm-3.4[${PYTHON_USEDEP}]
 	test? (
 		${RDEPEND}
@@ -43,21 +38,18 @@ DEPEND="
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/requests[${PYTHON_USEDEP}]
 		dev-python/xmlschema[${PYTHON_USEDEP}]
-		!!dev-python/flaky
 	)"
 
-python_prepare_all() {
-	# fragile to warnings from other packages (setuptools)
-	# little value for us to run it
-	sed -i -e 's:test_no_warnings:_&:' \
-		testing/test_meta.py || die
-
-	distutils-r1_python_prepare_all
+src_test() {
+	# workaround new readline defaults
+	echo "set enable-bracketed-paste off" > "${T}"/inputrc || die
+	local -x INPUTRC="${T}"/inputrc
+	distutils-r1_src_test
 }
 
 python_test() {
 	distutils_install_for_testing --via-root
 
-	"${EPYTHON}" -m pytest -vv --lsof -rfsxX ||
+	"${EPYTHON}" -m pytest -vv --lsof -rfsxX -p no:pkgcore -p no:flaky ||
 		die "Tests failed with ${EPYTHON}"
 }
