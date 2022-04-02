@@ -19,7 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/netifaces-0.10.9"
+RDEPEND=">=dev-python/cryptography-35.0.0[${PYTHON_USEDEP}]
+	>=dev-python/netifaces-0.10.9[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
