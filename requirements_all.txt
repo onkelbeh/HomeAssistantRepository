@@ -1,6 +1,6 @@
 abodepy==1.2.0
 accuweather==0.3.0
-acme==1.23.0
+acme==1.24.0
 Adafruit-Blinka==7.1.1
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.1.8
@@ -290,7 +290,7 @@ enocean==0.50.1
 entrypoints==0.4
 enturclient==0.2.3
 enum-compat==0.0.3
-env-canada==0.5.20
+env-canada==0.5.21
 envirophat==0.0.6
 envoy-reader==0.20.1
 envoy-utils==0.0.1
@@ -399,7 +399,7 @@ h2==4.1.0
 ha-ffmpeg==3.0.2
 ha-philipsjs==2.7.6
 habitipy==0.2.0
-hangups==0.4.17
+hangups==0.4.18
 hass-nabucasa==0.54.0
 hass-splunk==0.1.1
 HATasmota==0.4.0
@@ -665,7 +665,7 @@ pizzapi==0.0.3
 pkce==1.0.3
 platformdirs==2.5.1
 platformio==5.2.5
-plugwise==0.17.2
+plugwise==0.17.3
 plumbum==1.7.2
 plumlightpad==0.0.11
 ply==3.11
@@ -1050,6 +1050,7 @@ rova==0.3.0
 RPi-GPIO==0.7.1_alpha4
 rpi-rf==0.9.7
 rsa==4.8
+RtmAPI==0.7.2
 rtsp-to-webrtc==0.5.0
 ruamel-yaml-clib==0.2.6
 ruamel-yaml==0.17.21
@@ -1253,7 +1254,7 @@ xs1-api-client==3.0.0
 yalesmartalarmclient==0.3.8
 yalexs==1.1.23
 yarl==1.7.2
-yeelight==0.7.9
+yeelight==0.7.10
 yeelightsunflower==0.0.10
 youless-api==0.16
 youtube-dl==2021.12.17

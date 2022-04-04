@@ -262,6 +262,7 @@
     <flag name="garmin_connect">The Garmin Connect sensor allows you to expose data from Garmin Connect</flag>
     <flag name="gc100">The Global Caché GC-100 can be integrated into Home Assistant</flag>
     <flag name="gdacs">lets you use a GeoRSS feed provided by GDACS</flag>
+    <flag name="generic"/>
     <flag name="geniushub">geniushub integration links Home Assistant with your Genius Hub CH/DHW</flag>
     <flag name="geonetnz_quakes">Use a GeoJSON feed provided by New Zealand’s GeoNet in Home Assistant</flag>
     <flag name="geonetnz_volcano">GeoJSON feed provided by New Zealand’s GeoNet</flag>

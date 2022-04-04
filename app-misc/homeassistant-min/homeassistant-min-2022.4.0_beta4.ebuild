@@ -28,7 +28,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus darksky dlna_dmr dlna_dms +dwd_weather_warnings enigma2 esphome ffmpeg forecast_solar fronius +frontend github +homekit homekit_controller http hyperion influxdb knx kodi kraken maxcube mikrotik +mobile_app +mqtt myq mysensors +mysql +notify_events octoprint +otp owntracks ozw +ping +plex ps4 +python_script qnap qvr_pro radio_browser +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tomorrowio tplink tradfri upnp utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf zha +zwave_js"
+IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus darksky dlna_dmr dlna_dms +dwd_weather_warnings enigma2 esphome ffmpeg forecast_solar fronius +frontend github +homekit homekit_controller http hyperion influxdb knx kodi kraken maxcube mikrotik +mobile_app +mqtt myq mysensors +mysql +notify_events octoprint +otp owntracks +ping +plex ps4 +python_script qnap qvr_pro radio_browser +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tomorrowio tplink upnp utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf zha +zwave_js"
 RESTRICT="!test? ( test )"
 
 # external deps
@@ -68,7 +68,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.45.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.54.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220330.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220401.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.14.7[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.22.0[${PYTHON_USEDEP}]
@@ -131,7 +131,7 @@ RDEPEND="${RDEPEND}
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.8.2[${PYTHON_USEDEP}] )
 	camera? ( ~dev-python/PyTurboJPEG-1.6.6[${PYTHON_USEDEP}] )
-	cast? ( ~dev-python/pychromecast-10.3.0[${PYTHON_USEDEP}] )
+	cast? ( ~dev-python/pychromecast-11.0.0[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli )
 	co2signal? ( ~dev-python/CO2Signal-0.4.2[${PYTHON_USEDEP}] )
 	compensation? ( ~dev-python/numpy-1.21.4[${PYTHON_USEDEP}] )
@@ -145,7 +145,7 @@ RDEPEND="${RDEPEND}
 	ffmpeg? ( ~dev-python/ha-ffmpeg-3.0.2[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.2.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20220330.0[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20220401.0[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/aiogithubapi-22.2.4[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.4.0[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
 	homekit_controller? ( ~dev-python/aiohomekit-0.7.16[${PYTHON_USEDEP}] )
@@ -166,7 +166,6 @@ RDEPEND="${RDEPEND}
 	octoprint? ( ~dev-python/pyoctoprintapi-0.1.8[${PYTHON_USEDEP}] )
 	otp? ( ~dev-python/pyotp-2.6.0[${PYTHON_USEDEP}] )
 	owntracks? ( ~dev-python/pynacl-1.5.0[${PYTHON_USEDEP}] )
-	ozw? ( ~dev-python/python-openzwave-mqtt-1.4.0[${PYTHON_USEDEP}] )
 	ping? ( ~dev-python/icmplib-3.0[${PYTHON_USEDEP}] )
 	plex? ( ~dev-python/PlexAPI-4.10.1[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
 	ps4? ( ~dev-python/pyps4-2ndscreen-1.3.1[${PYTHON_USEDEP}] )
@@ -194,7 +193,6 @@ RDEPEND="${RDEPEND}
 	tasmota? ( ~dev-python/HATasmota-0.4.0[${PYTHON_USEDEP}] )
 	tile? ( ~dev-python/pytile-2022.2.0[${PYTHON_USEDEP}] )
 	tplink? ( ~dev-python/python-kasa-0.4.2[${PYTHON_USEDEP}] )
-	tradfri? ( ~dev-python/pytradfri-9.0.0[${PYTHON_USEDEP}] )
 	upnp? ( ~dev-python/async-upnp-client-0.27.0[${PYTHON_USEDEP}] )
 	utility_meter? ( ~dev-python/croniter-1.0.6[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-22.2.0[${PYTHON_USEDEP}] )
@@ -205,7 +203,7 @@ RDEPEND="${RDEPEND}
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.3[${PYTHON_USEDEP}] )
 	zeroconf? ( ~dev-python/zeroconf-0.38.4[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.29.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.69[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.44.1[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.8.0[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.7.0[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.29.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.69[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.15.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.44.1[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.8.0[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.7.0[${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/zwave-js-server-python-0.35.2[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}
