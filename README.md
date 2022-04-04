@@ -16,6 +16,11 @@ If you are an author of an integration / component or other stuff related to Hom
 PyPI `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (
 PyPI/GitHub/Sourceforge).
 
+Currently some help on the nodejs Ebuilds would be very welcome:
+* node-red
+* zigbee2mqtt
+* zwave-js-server (W.I.P, see https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/269)
+
 ## 2022-03-21: new Testjobs
 [![pkgcheck](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml) [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml) [![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)
 
@@ -46,7 +51,7 @@ The Ebuild we have since `0.97.0`, as soon as I know that at least one user is a
 ### `app-misc/homeassistant-full`
 
 WARNING: This one currently breaks (caused by shell limitations) emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
-This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **832** USE Flags.
+This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **834** USE Flags.
 
 A list of all components aka USEFlags is generated with every release [DOMAINTABLE.md](DOMAINTABLE.md)
 
@@ -69,33 +74,29 @@ Best you start using the `app-misc/homeassistant-min` Ebuild. If you have it run
 
 # Bigger Changes
 
-## ~arm64
-By user request, I have populated an ~arm64 KEYWORD on all Ebuilds, which is (currently) completely untested. I know of at least two guys using it, but I got no feedback yet. Some day I will prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
+## arm64 builds
+By user request, I have populated an ~arm64 KEYWORD on all Ebuilds, which is (currently) completely untested. I know of at least two guys using it, but I got no feedback yet. Some day I will prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit). 
 
 ## ~arm
-By another request, I merged ~arm KEYWORD from @ivecera on all Ebuilds at 0.117.6. This guy is running an Odroid XU4. I updated all my scripts to keep it running.
+By another request, I merged arm KEYWORD from @ivecera on all Ebuilds at 0.117.6. This guy is running an Odroid XU4. I updated all my scripts to keep it running. arm & arm64 keywords are treated now like the ones for amd64, though absolutely untested.
 
 ## Breaking Change: many USE Flags changed in 0.115.0
 
 Beginning with `0.115.0_beta10` many USE Flags have changed.
-All USE Flags have *exactly* the same name as the components `domain` in Home Assistant now. OK, this is a hard cut, but overdue. Mostly caused by the creation of an automated import routine, at first I planned to keep the old names, the replacement class was already written, but during data collection I discovered that the original domain names aren't so bad anyway.
-
-Some outdated components have disappeared forever.
-
-You will find the detailed changes in commit: https://git.edevau.net/onkelbeh/HomeAssistantRepository/commit/3fec35c803e6061e0186df2af4e914e5791b53cc, scroll down to `metadata.xml`. But `emerge` will also tell.
+All USE Flags have *exactly* the same name as the components `domain` in Home Assistant now. OK, this is a hard cut, but overdue. Mostly caused by the creation of an automated import routine, at first I planned to keep the old names, the replacement class was already written, but during data collection I discovered that the original domain names aren't so bad anyway. You will find the detailed changes in commit: https://git.edevau.net/onkelbeh/HomeAssistantRepository/commit/3fec35c803e6061e0186df2af4e914e5791b53cc, scroll down to `metadata.xml`. But `emerge` will also tell.
 
 ## Nearly all Home Assistant Components are now included
 Except of some modules with uncorrectable errors (e.g. hard drive crashes, lost sources) I believe all possible integrations for Home Assistant and their stated dependencies are included as Ebuilds, based on the integrations list from `/usr/lib/python3.8/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule.
 
-Currrently missing (2021.11):
-* ha-av (cannot find a valid source for the requested version)
-* azure-eventhub-5.1.0
-* azure-servicebus-0.50.1
-* google-cloud-texttospeech-0.4.0 (no potential need, there are good alternatives on the market)
-* google-cloud-pubsub-0.39.1
+Currrently missing (2022.4):
+* aioazuredevops-1.3.5
+* azure-eventhub-5.7.0
+* azure-servicebus-0.50.3
+* python-lirc-1.2.3
 * opencv-python-headless-4.3.0.36
+* tensorflow
 
-In some cases I added small patches to the Ebuilds, some packages have versions pinned without any reason. Mostly, I copy hard pinnings without questioning, in very problematic cases I open a ticket at the problem's origin. For me its OK, if the packages compile and complete their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups. I am continuously filing pull requests to reduce the amount of needed patches. Most of them are caused by missing files in SDIST archives and/or having wrong package exclude masks in `setup.py`.
+In some cases I had to add patches to the Ebuilds, some packages have versions pinned without any reason. Mostly, I copy hard pinnings without questioning, in very problematic cases I open a ticket at the problem's origin. For me its OK, if the packages compile and complete their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups. I am continuously filing pull requests to reduce the amount of needed patches. Most of them are caused by missing files in SDIST archives and/or having wrong package exclude masks in `setup.py`.
 
 # Other things you find here
 
@@ -482,7 +483,7 @@ If not, please report it [here](https://git.edevau.net/onkelbeh/HomeAssistantRep
 
 Please let me know if anything is wrong or dependencies are missing, since I use only some of the components myself.
 
-From time to time a fresh compile test on empty boxes (one with Python 3.9 and one with Python 3.10) is run to catch general faults. Every new Ebuild has to pass all its tests, modules without tests are comitted after they compile without errors.
+A daily compile test is run at Github with Python 3.9 to catch general faults. Every new Ebuild has to pass all its tests.
 
 ## To-dos
 - Publish my ESPHome Configurations
@@ -500,10 +501,10 @@ There are 1699 Ebuilds in total, 1692 of them have in total 1700 (35 different) 
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1034|
+|MIT|1033|
 |Apache-2.0|315|
 |GPL-3|102|
-|BSD|90|
+|BSD|91|
 |LGPL-3|27|
 |GPL-2|21|
 |LGPL-3+|17|
@@ -536,9 +537,9 @@ There are 1699 Ebuilds in total, 1692 of them have in total 1700 (35 different) 
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
 
-(Last counted: 03/04/2022)
+(Last counted: 04/04/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 03/04/2022
+Last updated: 04/04/2022
