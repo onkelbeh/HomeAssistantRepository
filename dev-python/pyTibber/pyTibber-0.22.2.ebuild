@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,7 +13,7 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
 	>=dev-python/async_timeout-1.4.0[${PYTHON_USEDEP}]
-	>=dev-python/graphql-subscription-manager-0.4.0[${PYTHON_USEDEP}]
+	>=dev-python/graphql-subscription-manager-0.4.3[${PYTHON_USEDEP}]
 	dev-python/pytz[${PYTHON_USEDEP}]
 	dev-python/python-dateutil[${PYTHON_USEDEP}]"
 BDEPEND="

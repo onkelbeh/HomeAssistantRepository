@@ -7,9 +7,9 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="A python3 library to communicate with Tibber"
-HOMEPAGE="https://github.com/Danielhiversen/pyTibber https://pypi.org/project/pyTibber/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+DESCRIPTION="Access Netgear routers using their SOAP API"
+HOMEPAGE="https://github.com/MatMaul/pynetgear https://pypi.org/project/pynetgear/"
+SRC_URI="https://github.com/MatMaul/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,17 +19,18 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
-	>=dev-python/async_timeout-1.4.0[${PYTHON_USEDEP}]
-	>=dev-python/graphql-subscription-manager-0.4.0[${PYTHON_USEDEP}]
-	dev-python/pytz[${PYTHON_USEDEP}]
-	dev-python/python-dateutil[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
+
+src_prepare() {
+	echo "requests>=2.0" >> requirements.txt || die
+	eapply_user
+}
 
 python_test() {
 	nosetests --verbose || die
