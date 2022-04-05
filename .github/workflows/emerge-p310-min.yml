@@ -1,0 +1,47 @@
+name: emerge ha-min on 3.10
+
+on:
+  workflow_dispatch:
+  schedule:
+      - cron: '15 10 * * *' # Daily
+
+jobs:
+  emerge-ha-min-310:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/antonfischl1980/gentoo-ci:main
+      options: --privileged
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: emerge-sync
+      run: |
+        sudo -u portage git -C /var/db/repos/gentoo pull
+        emerge --sync
+
+    - name: repos.conf/HomeAssistantRepository
+      run: |
+        mkdir -p /etc/portage/repos.conf/
+        echo -en "[HomeAssistantRepository]\nlocation = " >/etc/portage/repos.conf/HomeAssistantRepository.conf
+        pwd -P >> /etc/portage/repos.conf/HomeAssistantRepository.conf
+        cat /etc/portage/repos.conf/*.conf
+
+    - name: Switch to Python 3.10
+      run: |
+        echo "USE_PYTHON=\"3.10 3.9\"" >>/etc/portage/make.conf
+        echo "PYTHON_TARGETS=\"python3_10 python3_9\"" >>/etc/portage/make.conf
+        echo "PYTHON_SINGLE_TARGET=\"python3_10\"" >>/etc/portage/make.conf
+        emerge --jobs=4 -tv app-eselect/eselect-python app-portage/eix
+        eselect python set python3.10
+        eix-update
+        eix -I# --installed-without-use python_targets_python3_10 | xargs emerge --jobs=4 -1tv
+
+    - name: /etc/portage/
+      run: |
+        rsync -aHDPSv etc/portage/ /etc/portage/
+
+    - name: emerge
+      run: |
+        emerge --jobs=4 --autounmask=y --autounmask-continue=y dev-lang/rust-bin
+        emerge --jobs=4 --autounmask=y --autounmask-continue=y app-misc/homeassistant-min
