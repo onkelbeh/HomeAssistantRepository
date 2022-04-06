@@ -900,7 +900,7 @@ Pysher==1.0.7
 pysiaalarm==3.0.2
 pysignalclirestapi==0.3.18
 pyskyqhub==0.1.4
-pysma==0.6.10
+pysma==0.6.11
 pysmappee==0.2.29
 pysmartapp==0.3.3
 pysmartthings==0.7.6

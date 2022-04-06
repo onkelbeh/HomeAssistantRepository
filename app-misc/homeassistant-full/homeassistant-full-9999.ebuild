@@ -757,7 +757,7 @@ RDEPEND="${RDEPEND}
 	slack? ( ~dev-python/slackclient-2.5.0[${PYTHON_USEDEP}] )
 	sleepiq? ( ~dev-python/asyncsleepiq-1.2.3[${PYTHON_USEDEP}] )
 	slide? ( ~dev-python/goslide-api-0.5.1[${PYTHON_USEDEP}] )
-	sma? ( ~dev-python/pysma-0.6.10[${PYTHON_USEDEP}] )
+	sma? ( ~dev-python/pysma-0.6.11[${PYTHON_USEDEP}] )
 	smappee? ( ~dev-python/pysmappee-0.2.29[${PYTHON_USEDEP}] )
 	smarthab? ( ~dev-python/SmartHab-0.21[${PYTHON_USEDEP}] )
 	smartthings? ( ~dev-python/pysmartapp-0.3.3[${PYTHON_USEDEP}] ~dev-python/pysmartthings-0.7.6[${PYTHON_USEDEP}] )
