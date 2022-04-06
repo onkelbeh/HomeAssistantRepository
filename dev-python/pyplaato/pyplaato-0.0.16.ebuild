@@ -32,3 +32,8 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+src_prepare() {
+	sed -i "s/packages=setuptools.find_packages()/packages=setuptools.find_packages(exclude=['tests','tests.*'])/g" setup.py || die
+	eapply_user
+}
