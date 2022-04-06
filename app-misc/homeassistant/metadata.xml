@@ -52,6 +52,7 @@
     <flag name="avion">Support for the Avi-on Bluetooth dimmer switch Avi-on</flag>
     <flag name="awair">Library to integrate the Awair GraphQL API into Home Assistant</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
+    <flag name="backup">allows you to create and download backups for your Home Assistant Core</flag>
     <flag name="baidu">Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi</flag>
     <flag name="beewi_smartclim">BeeWi SmartClim BLE is a Bluetooth Low Energy sensor device</flag>
     <flag name="bh1750">Allows you to read the ambient light level in Lux from a BH1750FVI sensor connec</flag>
@@ -256,6 +257,7 @@
     <flag name="tesla">integration with the Tesla cloud service</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tile">API for Tile Bluetooth trackers</flag>
+    <flag name="tomorrowio">Allows you to obtain weather, air quality, pollen, and fire information from the</flag>
     <flag name="toon">client for the Quby ToonAPI</flag>
     <flag name="totalconnect">provides connectivity with the Honeywell TotalConnect alarm systems</flag>
     <flag name="tplink">control your TP-Link Smart Home Devices</flag>
