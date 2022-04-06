@@ -47,7 +47,6 @@ aioguardian==2021.11.0
 aioharmony==0.2.9
 aiohomekit==0.7.16
 aiohttp-cors==0.7.0
-aiohttp==3.7.3
 aiohttp==3.8.1
 aiohue==4.4.1
 aiohwenergy==0.8.0
@@ -415,7 +414,7 @@ hlk-sw16==0.0.9
 hole==0.7.0
 holidays==0.13
 home-assistant-cli==9999
-home-assistant-frontend==20220401.0
+home-assistant-frontend==20220405.0
 homeassistant
 homeconnect==0.7.0
 homematicip==1.0.2
@@ -740,7 +739,7 @@ pycountry-convert==0.7.2
 pycountry==22.1.10
 pycparser==2.21
 pycryptodome==3.14.1
-pycryptodomex==3.10.1
+pycryptodomex==3.14.1
 pycsspeechtts==1.0.4
 pycups==1.9.73
 pycurl==7.44.1
@@ -799,7 +798,7 @@ pyipp==0.11.0
 pyiqvia==2021.11.0
 pyirishrail==0.0.2
 pyiss==1.0.1
-pyisy==3.0.5
+pyisy==3.0.6
 pyitachip2ir==0.0.7
 pyjsparser==2.7.1_p20190421
 pyjwt==2.1.0
@@ -841,7 +840,7 @@ pymyq==3.1.4
 pymysensors==0.22.1
 pynacl==1.5.0
 pynello==2.0.3
-pynetgear==0.9.3
+pynetgear==0.9.4
 pynetio==0.1.9.1
 PyNINA==0.1.7
 pynuki==1.5.2
@@ -866,7 +865,7 @@ pyparsing==3.0.7
 pypca==0.0.7
 pypck==0.7.14
 pypjlink2==1.2.1
-pyplaato==0.0.15
+pyplaato==0.0.16
 pypoint==2.3.0
 pyprof2calltree==1.4.5
 pyprosegur==0.0.5
@@ -945,7 +944,7 @@ python-izone==1.2.3
 python-join-api==0.0.9
 python-jose==3.3.0
 python-juicenet==1.1.0
-python-kasa==0.4.2
+python-kasa==0.4.3
 python-magic==0.4.25
 python-metar==1.4.0
 python-miio==0.5.11
@@ -1247,7 +1246,7 @@ XBee==2.3.2
 xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
-xknx==0.20.0
+xknx==0.20.1
 xmlschema==1.9.2
 xmltodict==0.12.0
 xs1-api-client==3.0.0

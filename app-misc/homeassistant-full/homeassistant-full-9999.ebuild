@@ -68,7 +68,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.45.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.54.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220401.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220405.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.14.7[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.22.0[${PYTHON_USEDEP}]
@@ -360,7 +360,7 @@ RDEPEND="${RDEPEND}
 	fritzbox_callmonitor? ( ~dev-python/fritzconnection-1.8.0[${PYTHON_USEDEP}] )
 	fritzbox_netmonitor? ( ~dev-python/fritzconnection-1.4.2[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20220401.0[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20220405.0[${PYTHON_USEDEP}] )
 	frontier_silicon? ( ~dev-python/afsapi-0.0.4[${PYTHON_USEDEP}] )
 	futurenow? ( ~dev-python/pyfnip-0.2[${PYTHON_USEDEP}] )
 	garages_amsterdam? ( ~dev-python/garages-amsterdam-3.0.0[${PYTHON_USEDEP}] )
@@ -457,7 +457,7 @@ RDEPEND="${RDEPEND}
 	irish_rail_transport? ( ~dev-python/pyirishrail-0.0.2[${PYTHON_USEDEP}] )
 	islamic_prayer_times? ( ~dev-python/prayer-times-calculator-0.0.5[${PYTHON_USEDEP}] )
 	iss? ( ~dev-python/pyiss-1.0.1[${PYTHON_USEDEP}] )
-	isy994? ( ~dev-python/pyisy-3.0.5[${PYTHON_USEDEP}] )
+	isy994? ( ~dev-python/pyisy-3.0.6[${PYTHON_USEDEP}] )
 	itach? ( ~dev-python/pyitachip2ir-0.0.7[${PYTHON_USEDEP}] )
 	izone? ( ~dev-python/python-izone-1.2.3[${PYTHON_USEDEP}] )
 	jellyfin? ( ~dev-python/jellyfin-apiclient-python-1.7.2[${PYTHON_USEDEP}] )
@@ -474,7 +474,7 @@ RDEPEND="${RDEPEND}
 	kira? ( ~dev-python/pykira-0.1.1[${PYTHON_USEDEP}] )
 	kiwi? ( ~dev-python/kiwiki-client-0.1.1[${PYTHON_USEDEP}] )
 	kmtronic? ( ~dev-python/pykmtronic-0.3.0[${PYTHON_USEDEP}] )
-	knx? ( ~dev-python/xknx-0.20.0[${PYTHON_USEDEP}] )
+	knx? ( ~dev-python/xknx-0.20.1[${PYTHON_USEDEP}] )
 	kodi? ( ~dev-python/pykodi-0.2.7[${PYTHON_USEDEP}] )
 	konnected? ( ~dev-python/konnected-1.2.0[${PYTHON_USEDEP}] )
 	kostal_plenticore? ( ~dev-python/kostal-plenticore-0.2.0[${PYTHON_USEDEP}] )
@@ -570,7 +570,7 @@ RDEPEND="${RDEPEND}
 	nest? ( ~dev-python/python-nest-4.2.0[${PYTHON_USEDEP}] ~dev-python/google-nest-sdm-1.8.0[${PYTHON_USEDEP}] )
 	netatmo? ( ~dev-python/pyatmo-6.2.4[${PYTHON_USEDEP}] )
 	netdata? ( ~dev-python/netdata-1.0.1[${PYTHON_USEDEP}] )
-	netgear? ( ~dev-python/pynetgear-0.9.3[${PYTHON_USEDEP}] )
+	netgear? ( ~dev-python/pynetgear-0.9.4[${PYTHON_USEDEP}] )
 	netgear_lte? ( ~dev-python/eternalegypt-0.0.12[${PYTHON_USEDEP}] )
 	netio? ( ~dev-python/pynetio-0.1.9.1[${PYTHON_USEDEP}] )
 	network? ( ~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}] )
@@ -646,7 +646,7 @@ RDEPEND="${RDEPEND}
 	ping? ( ~dev-python/icmplib-3.0[${PYTHON_USEDEP}] )
 	pi_hole? ( ~dev-python/hole-0.7.0[${PYTHON_USEDEP}] )
 	pjlink? ( ~dev-python/pypjlink2-1.2.1[${PYTHON_USEDEP}] )
-	plaato? ( ~dev-python/pyplaato-0.0.15[${PYTHON_USEDEP}] )
+	plaato? ( ~dev-python/pyplaato-0.0.16[${PYTHON_USEDEP}] )
 	plex? ( ~dev-python/PlexAPI-4.10.1[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
 	plugwise? ( ~dev-python/plugwise-0.17.3[${PYTHON_USEDEP}] )
 	plum_lightpad? ( ~dev-python/plumlightpad-0.0.11[${PYTHON_USEDEP}] )
@@ -847,7 +847,7 @@ RDEPEND="${RDEPEND}
 	toon? ( ~dev-python/toonapi-0.2.1[${PYTHON_USEDEP}] )
 	totalconnect? ( ~dev-python/total-connect-client-2022.2.1[${PYTHON_USEDEP}] )
 	touchline? ( ~dev-python/pytouchline-0.7[${PYTHON_USEDEP}] )
-	tplink? ( ~dev-python/python-kasa-0.4.2[${PYTHON_USEDEP}] )
+	tplink? ( ~dev-python/python-kasa-0.4.3[${PYTHON_USEDEP}] )
 	tplink_lte? ( ~dev-python/tp-connected-0.0.4[${PYTHON_USEDEP}] )
 	traccar? ( ~dev-python/pytraccar-0.10.0[${PYTHON_USEDEP}] ~dev-python/stringcase-1.2.0[${PYTHON_USEDEP}] )
 	trackr? ( ~dev-python/pytrackr-0.0.5[${PYTHON_USEDEP}] )
@@ -890,7 +890,7 @@ RDEPEND="${RDEPEND}
 	vera? ( ~dev-python/pyvera-0.3.13[${PYTHON_USEDEP}] )
 	verisure? ( ~dev-python/vsure-1.7.3[${PYTHON_USEDEP}] )
 	versasense? ( ~dev-python/pyversasense-0.0.6[${PYTHON_USEDEP}] )
-	version? ( ~dev-python/pyhaversion-22.2.0[${PYTHON_USEDEP}] )
+	version? ( ~dev-python/pyhaversion-22.4.0[${PYTHON_USEDEP}] )
 	vesync? ( ~dev-python/pyvesync-1.4.2[${PYTHON_USEDEP}] )
 	vicare? ( ~dev-python/PyViCare-2.16.1[${PYTHON_USEDEP}] )
 	vilfo? ( ~dev-python/vilfo-api-client-0.3.2[${PYTHON_USEDEP}] )
