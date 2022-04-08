@@ -8,10 +8,10 @@ inherit distutils-r1
 
 DESCRIPTION="python_openzwave is a python wrapper for the openzwave c++ library."
 HOMEPAGE="https://home-assistant.io/ https://pypi.org/project/homeassistant-pyozw/ https://www.openzwave.net/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.zip -> ${P}.zip
-		 https://raw.githubusercontent.com/home-assistant/python-openzwave/hass/archives/open-zwave-hass-${PV}.zip"
 MY_PN=${PN/-/_}
 MY_P=${MY_PN}-${PV}
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.zip -> ${P}.zip
+	https://raw.githubusercontent.com/home-assistant/python-openzwave/hass/archives/open-zwave-hass-${PV}.zip"
 S=${WORKDIR}/${MY_PN}
 
 LICENSE="GPL-3+"
@@ -30,9 +30,10 @@ BDEPEND="
 	)"
 
 src_unpack() {
-	unpack ${A}
-	mkdir ${MY_PN}/openzwave-embed
-	mv open-zwave-hass ${MY_PN}/openzwave-embed/
+	unpack "${P}.zip"
+	unpack "open-zwave-hass-${PV}.zip"
+	mkdir "${MY_PN}/openzwave-embed"
+	mv open-zwave-hass "${MY_PN}/openzwave-embed/"
 }
 
 python_test() {
