@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..9} )
 inherit distutils-r1
@@ -15,13 +15,9 @@ KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 SLOT="0"
 IUSE="doc examples"
 
-RDEPEND="
-	net-print/cups
-"
-DEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
-	${RDEPEND}
-"
+RDEPEND="net-print/cups"
+DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
+	${RDEPEND}"
 
 # epydoc kinda sucks and supports python2 only (it's dead too),
 # and since we're dealing with a binary module we need exact version
@@ -43,7 +39,7 @@ python_compile_all() {
 python_install_all() {
 	if use examples; then
 		dodoc -r examples
-		docompress -x /usr/share/doc/${PF}/examples
+		docompress -x "/usr/share/doc/${PF}/examples"
 	fi
 	distutils-r1_python_install_all
 }
