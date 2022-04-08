@@ -58,7 +58,7 @@ src_compile() {
 }
 
 python_test() {
-	nosetests -w ${PN} || die
+	nosetests -w "${PN}" || die
 }
 
 python_install_all() {
