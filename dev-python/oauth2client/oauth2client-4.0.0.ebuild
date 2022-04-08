@@ -44,7 +44,7 @@ python_prepare() {
 	# oauth2client -> keyring -> secretstorage -> dbus-python
 	# https://github.com/mitya57/secretstorage/issues/10
 	case $PYTHON in
-		pypy|*pypy|*pypy3|pypy3) \
+		pypy|*pypy|*pypy3) \
 			find "${BUILD_DIR}/.." -name '*keyring*py' -delete ;;
 	esac
 }
