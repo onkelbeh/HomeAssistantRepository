@@ -246,7 +246,7 @@
 |garmin_connect|The Garmin Connect sensor allows you to expose data from Garmin Connect|N|Y|Y||
 |gc100|The Global Caché GC-100 can be integrated into Home Assistant|N|N|Y|0.57|
 |gdacs|lets you use a GeoRSS feed provided by GDACS|N|N|Y|0.106|
-|generic|The generic camera platform allows you to integrate any IP camera or other URL i|N|N|Y||
+|generic|The generic camera platform allows you to integrate any IP camera or other URL|N|N|Y||
 |geniushub|geniushub integration links Home Assistant with your Genius Hub CH/DHW|N|N|Y|0.92|
 |geonetnz_quakes|Use a GeoJSON feed provided by New Zealand’s GeoNet in Home Assistant|N|N|Y|0.98|
 |geonetnz_volcano|GeoJSON feed provided by New Zealand’s GeoNet|N|N|Y|0.103|
@@ -344,7 +344,7 @@
 |joaoapps_join|joaoapps_join integration exposes services from Join|N|Y|Y|0.24|
 |juicenet|pulls data from a JuiceNet charging station|N|N|Y|0.47|
 |kaiterra|view the readings from your Laser Egg or Sensedge device|N|N|Y|0.100|
-|kaleidescape|The Kaleidescape integration allows for the automation of Kaleidescape movie pla|N|N|Y|2022.4.0b0|
+|kaleidescape|The Kaleidescape integration allows automation of Kaleidescape movie player|N|N|Y|2022.4.0b0|
 |keba|integrates your Keba charging station (wallbox)|N|N|Y|0.98|
 |keenetic_ndms2|presence detection for Keenetic Routers|N|N|Y|0.54|
 |kef|KEF wireless speakers|N|Y|Y|0.104|
@@ -515,7 +515,7 @@
 |panasonic_viera|panasonic_viera platform allows you to control a Panasonic Viera TV|N|Y|Y|0.17|
 |pandora|Pandora account, you can control it from Home Assistant with this media player|N|N|Y|0.22|
 |pcal9535a|pcal9535a integration is the base for all related pcal9535a platforms|N|N|Y|0.102|
-|peco|PECO is a public utility company that provides electricity to the Philadelphia m|N|N|Y|2022.4.0b0|
+|peco|provides electricity outage data from PECO Philadelphia power company|N|N|Y|2022.4.0b0|
 |pencom|Pencom is a computer-controlled relay, I/O and custom boards|N|N|Y|0.85|
 |philips_js|allows you to control Philips TVs which expose the jointSPACE JSON-API|N|Y|Y|0.34|
 |pi4ioe5v9xxxx|support for the quasi-bidirectional devices pi4ioe5v9xxxx I2C I/O port expander|N|N|Y|0.109|
@@ -724,7 +724,7 @@
 |todoist|connect to your Todoist Projects and generate binary sensors|N|N|Y|0.54|
 |tof|uses an invisible laser to measure distance with millimeter resolution|N|N|Y|0.90|
 |tolo|allows you to control your TOLO Sauna and TOLO Steam Bath|N|N|Y|2021.12.0b0|
-|tomorrowio|Allows you to obtain weather, air quality, pollen, and fire information from the|Y|Y|Y|2022.4.0b0|
+|tomorrowio|obtain weather, air quality, pollen, and fire information fro tomorrow.io|Y|Y|Y|2022.4.0b0|
 |toon|client for the Quby ToonAPI|N|Y|Y|0.56|
 |totalconnect|provides connectivity with the Honeywell TotalConnect alarm systems|N|Y|Y|0.42|
 |touchline|lets you control ROTH Touchline floor heating thermostats|N|N|Y|0.61|
