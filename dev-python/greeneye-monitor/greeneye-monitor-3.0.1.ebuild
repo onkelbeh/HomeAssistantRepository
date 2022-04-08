@@ -21,7 +21,7 @@ DOCS="README.rst"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	~dev-python/siobrultech-protocols-0.5.0[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

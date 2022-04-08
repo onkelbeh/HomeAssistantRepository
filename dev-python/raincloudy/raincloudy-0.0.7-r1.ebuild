@@ -23,7 +23,7 @@ RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/beautifulsoup4[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.22[${PYTHON_USEDEP}]
 	~dev-python/html5lib-1.1[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

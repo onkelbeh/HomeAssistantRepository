@@ -23,7 +23,7 @@ RDEPEND="dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/hbmqtt[${PYTHON_USEDEP}]
 	<=dev-python/websockets-8.1[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

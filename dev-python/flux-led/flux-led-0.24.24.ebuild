@@ -19,7 +19,7 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/webcolors[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (

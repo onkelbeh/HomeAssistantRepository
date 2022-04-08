@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/pytz-2014.10
 		 >=dev-python/PyMeeus-0.3.6.1"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

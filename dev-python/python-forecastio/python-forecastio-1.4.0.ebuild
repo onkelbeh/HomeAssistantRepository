@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/responses[${PYTHON_USEDEP}]
 		 dev-python/coverage[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

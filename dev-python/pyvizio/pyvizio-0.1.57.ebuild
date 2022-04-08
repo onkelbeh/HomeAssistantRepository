@@ -26,7 +26,7 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/tabulate-0.8.6[${PYTHON_USEDEP}]
 	dev-python/xmltodict[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.24.4[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

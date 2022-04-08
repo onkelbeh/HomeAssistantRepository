@@ -21,7 +21,7 @@ RDEPEND="dev-python/bleach[${PYTHON_USEDEP}]
 	dev-python/mt_940[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	>=dev-python/sepaxml-2.0[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

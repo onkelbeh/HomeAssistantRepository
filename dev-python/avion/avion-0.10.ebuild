@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 RDEPEND=">=dev-python/requests-2.18.4[${PYTHON_USEDEP}]
 	>=dev-python/bluepy-1.1.4[${PYTHON_USEDEP}]
 	>=dev-python/csrmesh-0.9.0[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

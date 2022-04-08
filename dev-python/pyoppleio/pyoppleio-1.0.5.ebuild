@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 #DOCS="README.md"
 
 RDEPEND="dev-python/crc16[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

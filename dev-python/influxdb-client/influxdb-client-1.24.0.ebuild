@@ -28,7 +28,7 @@ RDEPEND=">=dev-python/Rx-3.0.1
 	>=dev-python/urllib3-1.15.1
 	>=dev-python/pytz-2019.1
 "
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

@@ -21,7 +21,7 @@ RESTRICT="!test? ( test )"
 # RDEPEND="~dev-python/poetry-1.0.5[${PYTHON_USEDEP}]"
 
 RDEPEND=""
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/future[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

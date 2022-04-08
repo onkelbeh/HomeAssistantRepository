@@ -24,7 +24,7 @@ DOCS="README.rst"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/semver-2.9.1[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

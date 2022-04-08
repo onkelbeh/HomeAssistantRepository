@@ -24,7 +24,7 @@ RDEPEND="dev-python/cryptography[${PYTHON_USEDEP}]
 	dev-python/h11[${PYTHON_USEDEP}]
 	dev-python/base36[${PYTHON_USEDEP}]
 	dev-python/pyqrcode[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

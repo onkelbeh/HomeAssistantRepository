@@ -18,7 +18,7 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/RPi-GPIO[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

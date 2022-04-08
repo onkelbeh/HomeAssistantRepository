@@ -28,7 +28,7 @@ RDEPEND=">=dev-python/arrow-1.0.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-oauthlib-1.2[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.7.2[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-3.7.4.2[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

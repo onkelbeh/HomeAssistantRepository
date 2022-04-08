@@ -18,7 +18,7 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/six-1.10.0[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

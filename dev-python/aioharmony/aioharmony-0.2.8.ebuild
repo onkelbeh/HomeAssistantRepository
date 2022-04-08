@@ -22,7 +22,7 @@ DOCS="README.rst"
 RDEPEND="dev-python/aiohttp
 	dev-python/async_timeout
 	dev-python/slixmpp"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

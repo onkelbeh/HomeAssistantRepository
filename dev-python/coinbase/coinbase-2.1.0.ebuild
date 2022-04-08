@@ -22,7 +22,7 @@ DOCS="PYPIREADME.rst"
 RDEPEND=">=dev-python/requests-2.5[${PYTHON_USEDEP}]
 	>=dev-python/six-1.9[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.4.11[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

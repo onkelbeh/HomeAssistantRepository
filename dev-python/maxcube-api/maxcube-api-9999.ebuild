@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 MY_PN="maxcube"
 
 RDEPEND=""
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

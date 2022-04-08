@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/libusb1-1.0.16[${PYTHON_USEDEP}]
 		 dev-python/rsa[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)

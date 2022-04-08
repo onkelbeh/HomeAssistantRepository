@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 RDEPEND=">=dev-python/websockets-8.1[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.17.0[${PYTHON_USEDEP}]
 	dev-python/sqlitedict[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

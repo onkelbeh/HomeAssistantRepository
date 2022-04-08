@@ -23,7 +23,7 @@ RDEPEND="dev-python/convertdate
 		 dev-python/pytz
 		 dev-python/regex
 		 dev-python/tzlocal"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/wheel[${PYTHON_USEDEP}]
 	test? (

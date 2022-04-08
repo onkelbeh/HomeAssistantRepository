@@ -22,7 +22,7 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/requests-2.18[${PYTHON_USEDEP}]
 	>=dev-python/click-6[${PYTHON_USEDEP}]
 	>=dev-python/websocket-client-0.47[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]

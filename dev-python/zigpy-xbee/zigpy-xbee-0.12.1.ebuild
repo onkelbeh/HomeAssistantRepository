@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
 	>=dev-python/zigpy-0.20_alpha1[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

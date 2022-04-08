@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND=""
 BDEPEND="dev-python/setuptools_scm[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

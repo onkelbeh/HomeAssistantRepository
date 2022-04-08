@@ -22,7 +22,7 @@ RDEPEND=">=dev-python/geojson-2.4.0[${PYTHON_USEDEP}]
 	>=dev-python/haversine-1.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2018.04[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.20.0[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

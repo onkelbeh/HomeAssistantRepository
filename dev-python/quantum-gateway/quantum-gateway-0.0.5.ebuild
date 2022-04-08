@@ -21,7 +21,7 @@ RESTRICT="!test? ( test )"
 S=${WORKDIR}/${MY_P}
 
 RDEPEND=""
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

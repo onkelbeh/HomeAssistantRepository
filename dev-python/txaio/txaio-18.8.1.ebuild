@@ -18,7 +18,7 @@ IUSE="test doc"
 RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/six[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	doc? (
 		>=dev-python/sphinx-1.2.3[${PYTHON_USEDEP}]

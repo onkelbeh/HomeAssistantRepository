@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/pyserial[${PYTHON_USEDEP}]
 		 >=dev-python/cffi-1.1.0[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/tox[${PYTHON_USEDEP}]

@@ -21,7 +21,7 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/construct-2.9.52[${PYTHON_USEDEP}]
 	<dev-python/construct-2.11[${PYTHON_USEDEP}]"
-DEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
