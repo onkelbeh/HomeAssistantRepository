@@ -262,7 +262,7 @@
     <flag name="garmin_connect">The Garmin Connect sensor allows you to expose data from Garmin Connect</flag>
     <flag name="gc100">The Global Caché GC-100 can be integrated into Home Assistant</flag>
     <flag name="gdacs">lets you use a GeoRSS feed provided by GDACS</flag>
-    <flag name="generic">The generic camera platform allows you to integrate any IP camera or other URL i</flag>
+    <flag name="generic">The generic camera platform allows you to integrate any IP camera or other URL</flag>
     <flag name="geniushub">geniushub integration links Home Assistant with your Genius Hub CH/DHW</flag>
     <flag name="geonetnz_quakes">Use a GeoJSON feed provided by New Zealand’s GeoNet in Home Assistant</flag>
     <flag name="geonetnz_volcano">GeoJSON feed provided by New Zealand’s GeoNet</flag>
@@ -360,7 +360,7 @@
     <flag name="joaoapps_join">joaoapps_join integration exposes services from Join</flag>
     <flag name="juicenet">pulls data from a JuiceNet charging station</flag>
     <flag name="kaiterra">view the readings from your Laser Egg or Sensedge device</flag>
-    <flag name="kaleidescape">The Kaleidescape integration allows for the automation of Kaleidescape movie pla</flag>
+    <flag name="kaleidescape">The Kaleidescape integration allows automation of Kaleidescape movie player</flag>
     <flag name="keba">integrates your Keba charging station (wallbox)</flag>
     <flag name="keenetic_ndms2">presence detection for Keenetic Routers</flag>
     <flag name="kef">KEF wireless speakers</flag>
@@ -531,7 +531,7 @@
     <flag name="panasonic_viera">panasonic_viera platform allows you to control a Panasonic Viera TV</flag>
     <flag name="pandora">Pandora account, you can control it from Home Assistant with this media player</flag>
     <flag name="pcal9535a">pcal9535a integration is the base for all related pcal9535a platforms</flag>
-    <flag name="peco">PECO is a public utility company that provides electricity to the Philadelphia m</flag>
+    <flag name="peco">provides electricity outage data from PECO Philadelphia power company</flag>
     <flag name="pencom">Pencom is a computer-controlled relay, I/O and custom boards</flag>
     <flag name="philips_js">allows you to control Philips TVs which expose the jointSPACE JSON-API</flag>
     <flag name="pi4ioe5v9xxxx">support for the quasi-bidirectional devices pi4ioe5v9xxxx I2C I/O port expander</flag>
@@ -740,7 +740,7 @@
     <flag name="todoist">connect to your Todoist Projects and generate binary sensors</flag>
     <flag name="tof">uses an invisible laser to measure distance with millimeter resolution</flag>
     <flag name="tolo">allows you to control your TOLO Sauna and TOLO Steam Bath</flag>
-    <flag name="tomorrowio">Allows you to obtain weather, air quality, pollen, and fire information from the</flag>
+    <flag name="tomorrowio">obtain weather, air quality, pollen, and fire information fro tomorrow.io</flag>
     <flag name="toon">client for the Quby ToonAPI</flag>
     <flag name="totalconnect">provides connectivity with the Honeywell TotalConnect alarm systems</flag>
     <flag name="touchline">lets you control ROTH Touchline floor heating thermostats</flag>

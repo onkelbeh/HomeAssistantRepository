@@ -257,7 +257,7 @@
     <flag name="tesla">integration with the Tesla cloud service</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tile">API for Tile Bluetooth trackers</flag>
-    <flag name="tomorrowio">Allows you to obtain weather, air quality, pollen, and fire information from the</flag>
+    <flag name="tomorrowio">obtain weather, air quality, pollen, and fire information fro tomorrow.io</flag>
     <flag name="toon">client for the Quby ToonAPI</flag>
     <flag name="totalconnect">provides connectivity with the Honeywell TotalConnect alarm systems</flag>
     <flag name="tplink">control your TP-Link Smart Home Devices</flag>
