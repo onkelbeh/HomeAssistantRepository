@@ -44,5 +44,5 @@ python_test() {
 		tests/test_pytest_cov.py::test_dist_missing_data
 	)
 
-	epytest ${deselect[@]/#/--deselect }
+	epytest "${deselect[@]/#/--deselect }"
 }
