@@ -31,7 +31,7 @@ DEPEND="
 	)"
 
 S="${WORKDIR}/${MY_P}"
-PYTHON_MODULES="${MY_PN}"
+PYTHON_MODULES="${PN}"
 
 python_test() {
 	nosetests --verbose || die
