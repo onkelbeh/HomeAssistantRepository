@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -140,7 +140,7 @@ python_test() {
 		--record "${TMPDIR}/record.txt" ${NUMPY_FCONFIG}
 
 	cd "${TEST_DIR}/lib" || die
-	epytest ${deselect[@]/#/--deselect }
+	epytest "${deselect[@]/#/--deselect }"
 }
 
 python_install() {
