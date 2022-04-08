@@ -69,7 +69,7 @@ DOCS="README.md"
 
 src_prepare() {
 	# Make it easy (again)
-	cat requirements.txt | cut -d "=" -f1 > requirements_new.txt
+	cut -d "=" -f1 < requirements.txt > requirements_new.txt
 	mv requirements_new.txt requirements.txt
 	eapply_user
 }
