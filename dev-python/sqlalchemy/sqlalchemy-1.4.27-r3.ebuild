@@ -38,7 +38,7 @@ EPYTEST_IGNORE=(
 
 src_prepare() {
 	if ! use asyncio ; then
-		eapply "${FILESDIR}"/${PN}-1.4.27-drop-greenlet.patch
+		eapply "${FILESDIR}/${PN}-1.4.27-drop-greenlet.patch"
 	fi
 
 	distutils-r1_src_prepare
