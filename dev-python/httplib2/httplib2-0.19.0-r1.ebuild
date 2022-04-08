@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -47,6 +47,6 @@ python_test() {
 
 	# tests in python* are replaced by tests/
 	# upstream fails at cleaning up stuff
-	pytest -vv ${deselect[@]/#/--deselect } tests ||
+	pytest -vv "${deselect[@]/#/--deselect }" tests ||
 		die "Tests fail with ${EPYTHON}"
 }
