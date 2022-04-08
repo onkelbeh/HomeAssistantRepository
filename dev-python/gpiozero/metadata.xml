@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">gpiozero</remote-id>
+    <doc>https://pythonhosted.org/gpiozero/</doc>
     <maintainer status="unknown">
-      <email>ben@raspberrypi.org</email>
+      <email>ben@bennuttall.com</email>
       <name>Ben Nuttall</name>
     </maintainer>
   </upstream>
