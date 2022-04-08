@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
 
@@ -33,6 +33,6 @@ python_test() {
 }
 
 src_prepare() {
-	cp ${DISTDIR}/requirements.txt ${S} || die
+	cp "${DISTDIR}/requirements.txt" "${S}" || die
 	eapply_user
 }
