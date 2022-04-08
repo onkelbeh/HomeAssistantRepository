@@ -31,7 +31,7 @@ python_install_all() {
 	use doc && local HTML_DOCS=( doc/_build/html/. )
 	if use examples; then
 		dodoc -r examples
-		docompress -x /usr/share/doc/${PF}/examples
+		docompress -x "/usr/share/doc/${PF}/examples"
 	fi
 	distutils-r1_python_install_all
 }
