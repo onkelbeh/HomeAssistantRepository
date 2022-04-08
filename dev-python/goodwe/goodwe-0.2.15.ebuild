@@ -34,7 +34,7 @@ python_test() {
 }
 
 src_prepare() {
-	echo ${PV} > VERSION || die
+	echo "${PV}" > VERSION || die
 	echo "[options.packages.find]" >> setup.cfg || die
 	echo "exclude = tests*" >> setup.cfg || die
 	default
