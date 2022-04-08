@@ -39,8 +39,9 @@ Since homeassistant-0.115.3 the **Main Ebuild** is released in three different s
 ### `app-misc/homeassistant-min`
 
 [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml)
+[![emerge ha-min on 3.10](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-p310-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-p310-min.yml)
 
-New Ebuild, generated for `0.115.3` and later, intended for production use, these are the USE Flags I use in production myself. These all will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **87** USE Flags.
+These are the USE Flags I use in production myself. All will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **87** USE Flags.
 
 ### `app-misc/homeassistant`
 
