@@ -25,7 +25,7 @@ RDEPEND="dev-python/pyserial[${PYTHON_USEDEP}]
 	dev-python/PyPubSub[${PYTHON_USEDEP}]
 	dev-python/aiofiles[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

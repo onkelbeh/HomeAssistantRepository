@@ -24,7 +24,7 @@ DOCS="README.md"
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	>=dev-python/websocket-client-0.58.0[${PYTHON_USEDEP}]
 	dev-python/zeroconf[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (

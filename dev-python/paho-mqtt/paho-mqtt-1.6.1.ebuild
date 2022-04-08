@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=""
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (

@@ -22,7 +22,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/requests-2.20.0[${PYTHON_USEDEP}]
 	>=dev-python/geojson-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/PySocks-1.7.1[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

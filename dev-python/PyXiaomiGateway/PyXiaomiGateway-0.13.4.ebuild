@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/cryptography-2.1.1"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

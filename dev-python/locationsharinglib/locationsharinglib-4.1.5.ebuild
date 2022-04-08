@@ -23,7 +23,7 @@ RDEPEND="dev-python/coloredlogs
 	dev-python/requests
 	dev-python/cachetools
 	dev-python/pytz"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

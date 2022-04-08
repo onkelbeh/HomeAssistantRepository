@@ -22,7 +22,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/requests-2.25.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.15.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.26.0[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

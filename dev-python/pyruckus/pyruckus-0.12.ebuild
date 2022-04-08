@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/pexpect-4.0[${PYTHON_USEDEP}]
 	>=dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

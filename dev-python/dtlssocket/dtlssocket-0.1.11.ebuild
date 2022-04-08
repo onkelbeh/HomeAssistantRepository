@@ -22,7 +22,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/cython[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	>=dev-python/setuptools-18.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

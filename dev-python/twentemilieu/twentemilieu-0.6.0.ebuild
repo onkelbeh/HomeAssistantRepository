@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]

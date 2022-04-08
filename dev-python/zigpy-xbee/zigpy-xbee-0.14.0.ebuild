@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
 	>=dev-python/zigpy-0.23.0[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

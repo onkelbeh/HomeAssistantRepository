@@ -19,7 +19,7 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/httpx[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

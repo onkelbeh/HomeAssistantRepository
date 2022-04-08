@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/python-metar[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

@@ -21,7 +21,7 @@ DOCS="README.rst"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/sseclient-py[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

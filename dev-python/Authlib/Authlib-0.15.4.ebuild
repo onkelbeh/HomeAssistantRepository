@@ -21,7 +21,7 @@ DOCS="README.rst"
 
 RDEPEND="dev-python/cryptography[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

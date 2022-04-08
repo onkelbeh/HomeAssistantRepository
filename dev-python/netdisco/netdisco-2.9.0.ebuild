@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.30.0[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

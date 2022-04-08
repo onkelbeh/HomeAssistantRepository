@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/requests-futures[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/setuptools-markdown[${PYTHON_USEDEP}]
 	dev-python/pypandoc[${PYTHON_USEDEP}]

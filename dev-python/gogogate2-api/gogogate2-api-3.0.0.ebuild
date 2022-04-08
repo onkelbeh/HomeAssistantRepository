@@ -25,7 +25,7 @@ RDEPEND=">=dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.23.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-3.7.4.2[${PYTHON_USEDEP}]
 	>=dev-python/httpx-0.16.1[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

@@ -28,7 +28,7 @@ RDEPEND=">=dev-python/voluptuous-0.12.1[${PYTHON_USEDEP}]
 	>=dev-python/python-didl-lite-1.3.2[${PYTHON_USEDEP}]
 	>=dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]"
 
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

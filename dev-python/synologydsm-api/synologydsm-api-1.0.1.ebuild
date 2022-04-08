@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/requests-2.24.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.25.10[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

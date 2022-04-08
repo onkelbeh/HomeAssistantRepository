@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/pyserial-2.7[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

@@ -21,7 +21,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/six-1.15.0[${PYTHON_USEDEP}]
 	serial? ( >=dev-python/pyserial-3.4[${PYTHON_USEDEP}] )"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

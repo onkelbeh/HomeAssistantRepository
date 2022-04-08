@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=""
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

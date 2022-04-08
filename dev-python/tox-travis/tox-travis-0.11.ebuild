@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/tox-2.0[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

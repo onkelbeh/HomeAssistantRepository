@@ -21,7 +21,7 @@ RDEPEND="dev-python/h2[${PYTHON_USEDEP}]
 	dev-python/hyperframe[${PYTHON_USEDEP}]
 	dev-python/rfc3986[${PYTHON_USEDEP}]
 	app-arch/brotli[python]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

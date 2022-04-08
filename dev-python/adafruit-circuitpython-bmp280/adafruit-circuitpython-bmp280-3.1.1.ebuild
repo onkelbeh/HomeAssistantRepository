@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/Adafruit-Blinka[${PYTHON_USEDEP}]
 	dev-python/adafruit-circuitpython-busdevice[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

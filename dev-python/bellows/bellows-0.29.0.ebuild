@@ -23,7 +23,7 @@ RDEPEND="dev-python/click[${PYTHON_USEDEP}]
 	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
 	>=dev-python/zigpy-0.37.0[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

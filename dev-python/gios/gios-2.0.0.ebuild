@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/dacite[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	dev-python/pytest-cov[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]

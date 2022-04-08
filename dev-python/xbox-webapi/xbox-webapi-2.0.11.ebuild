@@ -24,7 +24,7 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/ms-cv[${PYTHON_USEDEP}]
 	dev-python/pydantic[${PYTHON_USEDEP}]
 	dev-python/ecdsa[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]

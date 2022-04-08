@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/six-1.9.0[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/setuptools_scm[${PYTHON_USEDEP}]
 	test? (

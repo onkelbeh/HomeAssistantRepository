@@ -23,7 +23,7 @@ RDEPEND="dev-python/appdirs[${PYTHON_USEDEP}]
 >=dev-python/attrs-18.1.0[${PYTHON_USEDEP}]
 >=dev-python/click-6.5[${PYTHON_USEDEP}]
 >=dev-python/toml-0.9.4[${PYTHON_USEDEP}]"
-BDEPEND="${REDEPEND}
+BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
