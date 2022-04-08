@@ -46,7 +46,7 @@ python_prepare_all() {
 		-i setup.py || die
 
 	# do not rely on bundled deps in botocore (sic!)
-	find -name '*.py' -exec sed -i \
+	find . -name '*.py' -exec sed -i \
 		-e 's:from botocore[.]vendored import:import:' \
 		-e 's:from botocore[.]vendored[.]:from :' \
 		{} + || die
