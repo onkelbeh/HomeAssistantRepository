@@ -37,6 +37,6 @@ python_test() {
 
 # fill empty package version
 src_prepare() {
-	sed 's/os.environ.get("PACKAGE_VERSION")/"'${PV}'"/g' -i setup.py || die
+	sed 's/os.environ.get("PACKAGE_VERSION")/"${PV}"/g' -i setup.py || die
 	eapply_user
 }
