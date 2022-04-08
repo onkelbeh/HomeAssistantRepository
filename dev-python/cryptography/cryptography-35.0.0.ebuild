@@ -63,7 +63,7 @@ VEC_P=cryptography_vectors-$(ver_cut 1-3)
 DESCRIPTION="Library providing cryptographic recipes and primitives"
 HOMEPAGE="https://github.com/pyca/cryptography/ https://pypi.org/project/cryptography/"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
-	$(cargo_crate_uris ${CRATES})
+	$(cargo_crate_uris "${CRATES}")
 	test? ( mirror://pypi/c/cryptography_vectors/${VEC_P}.tar.gz )"
 
 # MIT and BSD-3-Clause come from rust dependencies, some dependencies are also Apache 2.0 exclusively,
