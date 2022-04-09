@@ -1,6 +1,14 @@
 # Home Assistant for Gentoo
 ## without Docker & Virtual Environments
 
+
+[![pkgcheck](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml)
+[![shellcheck](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/shellcheck.yml)
+[![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml)
+[![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)
+[![emerge ha-min on 3.10](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-p310-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-p310-min.yml)
+
+
 https://www.home-assistant.io/
 https://github.com/home-assistant/home-assistant
 

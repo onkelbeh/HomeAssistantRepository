@@ -733,7 +733,7 @@
 |traccar|uses GPS for tracking and has support for over 1500 different types of devices|N|N|Y|0.83|
 |trackr|trackr platform allows you to detect presence using TrackR devices|N|N|Y||
 |tractive|Tractive is an Austrian company develops real-time location trackers for pets|N|N|Y|2021.9.0b1|
-|tradfri|Control/observe IKEA Tradfri devices|N|N|Y|0.43|
+|tradfri|Control/observe IKEA Tradfri devices|M|M|Y|0.43|
 |trafikverket_train|Retrieve train departure information from Trafikverket|N|N|Y|0.96|
 |trafikverket_weatherstation|weather information provided by Trafikverket weather stations in Sweden|N|N|Y|0.66|
 |transmission|transmission integration allows you to monitor your downloads with Transmission|N|N|Y|0.87|
