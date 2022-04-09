@@ -18,7 +18,7 @@ jobs:
     - name: Run shellcheck
       uses: ludeeus/action-shellcheck@master
       env:
-        SHELLCHECK_OPTS: -s bash -e SC2034 -e SC2016 -e SC2191 -e SC2037
+        SHELLCHECK_OPTS: -s bash -e SC2034 -e SC2016
       with:
         additional_files: '*.ebuild'
         ignore_paths: opencv pillow numpy
