@@ -194,6 +194,7 @@
     <flag name="nx584">NX584/NX8E Interface Library and Server</flag>
     <flag name="octoprint">The main integration to integrate OctoPrint sensors</flag>
     <flag name="onkyo">allows you to control a Onkyo, Integra and some recent Pioneer receivers</flag>
+    <flag name="onvif">allows you to use an ONVIF Profile S conformant device</flag>
     <flag name="opengarage">opengarage cover platform lets you control the open-source OpenGarage.io device</flag>
     <flag name="opensensemap">query the open data API of openSenseMap.org air quality sensor station</flag>
     <flag name="openweathermap">uses OpenWeatherMap as a source for current meteorological data</flag>
@@ -261,6 +262,7 @@
     <flag name="toon">client for the Quby ToonAPI</flag>
     <flag name="totalconnect">provides connectivity with the Honeywell TotalConnect alarm systems</flag>
     <flag name="tplink">control your TP-Link Smart Home Devices</flag>
+    <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
     <flag name="tuya">integrate all Tuya Smart related platforms</flag>
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="unifi_direct">detect presence by looking at devices connected to a UniFi AP</flag>

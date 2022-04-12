@@ -489,7 +489,7 @@
 |ondilo_ico|ICO continuously analyzes the water quality of your pool/spa|N|N|Y|2021.2|
 |onewire|supports sensors which that using the One wire (1-wire) bus for communication|N|N|Y|0.12|
 |onkyo|allows you to control a Onkyo, Integra and some recent Pioneer receivers|N|Y|Y|0.17|
-|onvif|allows you to use an ONVIF Profile S conformant device|N|N|Y|0.47|
+|onvif|allows you to use an ONVIF Profile S conformant device|Y|Y|Y|0.47|
 |openerz| uses OpenERZ API to access data from Entsorgung und Recycling Zürich (ERZ)|N|N|Y|0.109|
 |openevse|an OpenEVSE Charging station equipped with an ESP8266-based Wi-Fi|N|N|Y|0.38|
 |opengarage|opengarage cover platform lets you control the open-source OpenGarage.io device|N|Y|Y|0.44|
