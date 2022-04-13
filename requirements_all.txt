@@ -257,7 +257,7 @@ defusedxml==0.7.1
 deluge-client==1.7.1
 demjson3==3.0.5
 denonavr==0.10.10
-devolo-home-control-api==0.17.4
+devolo-home-control-api==0.18.1
 devolo-plc-api==0.7.1
 dialog==1.3.20211214
 dicttoxml==1.7.4
@@ -1022,7 +1022,7 @@ regenmaschine==2022.1.0
 regex==2021.8.28
 regex==2022.3.15
 related==0.7.2
-renault-api==0.1.10
+renault-api==0.1.11
 ReParser==1.4.3
 requests-file==1.5.1
 requests-futures==1.0.0
@@ -1246,7 +1246,7 @@ XBee==2.3.2
 xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
-xknx==0.20.1
+xknx==0.20.2
 xmlschema==1.9.2
 xmltodict==0.12.0
 xs1-api-client==3.0.0
@@ -1261,14 +1261,14 @@ zbar==0.23.90
 zeep==4.1.0
 zengge==0.2
 zeroconf==0.38.4
-zha-quirks==0.0.71
+zha-quirks==0.0.72
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
-zigpy-deconz==0.15.0
+zigpy-deconz==0.14.0
 zigpy-xbee==0.14.0
 zigpy-zigate==0.8.0
 zigpy-znp==0.7.0
-zigpy==0.44.1
+zigpy==0.44.2
 zipp==3.7.0
 zlib==1.2.11
 zm-py==0.5.2
