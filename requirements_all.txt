@@ -320,7 +320,7 @@ fitbit==0.3.1
 fivem-api==0.1.2
 fixerio==1.0.0_alpha0
 fjaraskupan==1.0.2
-flask==2.0.2
+flask==2.0.3
 flipr-api==1.4.2
 flux-led==0.28.27
 fnvhash==0.1.0
@@ -1170,7 +1170,7 @@ ttls==1.4.3
 tuya-iot-py-sdk==0.6.6
 twentemilieu==0.6.0
 twilio==6.32.0
-twisted==22.1.0
+twisted==22.4.0
 twitchAPI==2.5.2
 TwitterAPI==2.7.5
 txdbus==1.1.2
