@@ -3,7 +3,7 @@ name: emerge ha-med
 on:
   workflow_dispatch:
   schedule:
-      - cron: '15 10 * * *' # Daily
+      - cron: '15 9 * * *' # Daily
 
 jobs:
   emerge-ha-med:

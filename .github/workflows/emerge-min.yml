@@ -3,7 +3,7 @@ name: emerge ha-min
 on:
   workflow_dispatch:
   schedule:
-      - cron: '17 10 * * *' # Daily
+      - cron: '15 8 * * *' # Daily
 
 jobs:
   emerge-ha-min:
@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    
+
     - name: emerge-sync
       run: |
         sudo -u portage git -C /var/db/repos/gentoo pull

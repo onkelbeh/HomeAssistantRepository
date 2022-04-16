@@ -3,7 +3,7 @@ name: repoman
 on:
   workflow_dispatch:
   schedule:
-      - cron: '15 17 * * *' # Daily
+      - cron: '15 15 * * *' # Daily
 
 jobs:
   repoman:
@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    
+
     - name: emerge-sync
       run: |
         sudo -u portage git -C /var/db/repos/gentoo pull
