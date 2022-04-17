@@ -133,7 +133,6 @@ auroranoaa==0.0.2
 aurorapy==0.2.6
 Authlib==0.15.5
 automat==20.2.0
-av==8.1.0
 avea==1.5.1
 avion==0.10
 awesomeversion==22.2.0
@@ -267,7 +266,7 @@ discovery30303==0.2.1
 distro==1.5.0
 dlib==19.18.0
 dlipower==0.7.165
-dnspython==2.2.0
+dnspython==2.2.1
 docopt==0.6.2
 DoorBirdPy==2.1.0
 dovado==0.4.1
@@ -365,7 +364,7 @@ gmp==6.2.1
 gntp==1.0.3
 goalzero==0.2.1
 goodwe==0.2.15
-google-api-core==2.5.0
+google-api-core==2.7.1
 google-api-python-client==2.38.0
 google-auth-httplib2==0.1.0
 google-auth-oauthlib==0.5.1
@@ -388,13 +387,17 @@ gridnet==4.0.0
 growattServer==1.1.0
 grpc-google-iam-v1==0.12.3
 grpcio==1.45.0
+gst-plugins-base==1.18.6
+gst-plugins-libav==1.18.6
 gstreamer-player==1.1.2
+gstreamer==1.18.6
 gTTS==2.2.4
 guppy3==3.1.2
 gzip==1.12
 h11==0.12.0
 h11==0.13.0
 h2==4.1.0
+ha-av==9.1.1_p3
 ha-ffmpeg==3.0.2
 ha-philipsjs==2.7.6
 habitipy==0.2.0
@@ -457,6 +460,7 @@ intellifire4py==1.0.2
 iotawattpy==0.1.0
 iperf3==0.1.11
 ismartgate==4.0.4
+iso-codes==4.9.0
 iso4217==1.6.20180829
 iso8601==1.0.2
 isodate==0.6.1
@@ -468,8 +472,8 @@ jaraco-text==3.7.0
 jeepney==0.7.1
 jellyfin-apiclient-python==1.7.2
 jinja==3.1.0
-jmespath==0.10.0
-josepy==1.12.0
+jmespath==1.0.0
+josepy==1.13.0
 jpeg==100
 js2py==0.71
 jsonpath-ng==1.5.2
@@ -611,7 +615,7 @@ nuheat==0.3.0
 numato-gpio==0.10.0
 numexpr==2.8.1
 numpy==1.21.4
-numpy==1.22.2
+numpy==1.22.3
 oasatelematics==0.3
 oauth2client==4.1.3
 oauthlib==3.2.0
@@ -626,7 +630,7 @@ open-garage==0.2.0
 open-meteo==0.2.1
 openerz-api==0.1.0
 openevsewifi==1.1.0
-openhomedevice==2.0.1
+openhomedevice==2.0.2
 opensensemap-api==0.2.0
 openssl==1.1.1n
 openwebifpy==3.2.7
@@ -823,7 +827,7 @@ pylutron-caseta==0.13.1
 pylutron==0.2.8
 pymailgunner==1.4
 pymata-express==1.19
-pymazda==0.3.2
+pymazda==0.3.3
 pymediaroom==0.6.5.4
 PyMeeus==0.5.11
 pymelcloud==2.5.6
@@ -1038,7 +1042,7 @@ rfc3986==2.0.0
 rfc3987==1.3.8
 rfk101py==0.0.1
 rflink==0.0.62
-rich==11.2.0
+rich==12.0.0
 ring-doorbell==0.7.2
 ritassist==0.9.2
 rjpl==0.3.6
@@ -1184,7 +1188,7 @@ udev==249.6
 uEagle==0.0.2
 ujson==5.1.0
 unasync==0.5.0
-unidecode==1.3.3
+unidecode==1.3.4
 unifi-discovery==1.1.2
 unifiled==0.11
 untangle==1.1.1
@@ -1238,7 +1242,7 @@ wirelesstagpy==0.8.1
 withings-api==2.4.0
 wled==0.13.2
 wolf_smartset==0.1.11
-wrapt==1.13.2
+wrapt==1.14.0
 WSDiscovery==2.0.0
 wsproto==1.1.0
 xbee-helper==0.0.7
@@ -1246,8 +1250,8 @@ XBee==2.3.2
 xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
-xknx==0.20.2
-xmlschema==1.9.2
+xknx==0.20.3
+xmlschema==1.10.0
 xmltodict==0.12.0
 xs1-api-client==3.0.0
 yalesmartalarmclient==0.3.8
