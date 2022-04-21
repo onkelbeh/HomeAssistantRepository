@@ -47,7 +47,7 @@ RDEPEND="${RDEPEND}
 # Home Assistant Core dependencies
 # from package_constraints.txt
 RDEPEND="${RDEPEND}
-	~dev-python/aiodiscover-1.4.8[${PYTHON_USEDEP}]
+	~dev-python/aiodiscover-1.4.9[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/anyio-3.5.0[${PYTHON_USEDEP}]
@@ -256,7 +256,7 @@ RDEPEND="${RDEPEND}
 	devolo_home_control? ( ~dev-python/devolo-home-control-api-0.18.1[${PYTHON_USEDEP}] )
 	devolo_home_network? ( ~dev-python/devolo-plc-api-0.7.1[${PYTHON_USEDEP}] )
 	dexcom? ( ~dev-python/pydexcom-0.2.3[${PYTHON_USEDEP}] )
-	dhcp? ( ~net-analyzer/scapy-2.4.5 ~dev-python/aiodiscover-1.4.8[${PYTHON_USEDEP}] )
+	dhcp? ( ~net-analyzer/scapy-2.4.5 ~dev-python/aiodiscover-1.4.9[${PYTHON_USEDEP}] )
 	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] )
 	digitalloggers? ( ~dev-python/dlipower-0.7.165[${PYTHON_USEDEP}] )
 	digital_ocean? ( ~dev-python/python-digitalocean-1.13.2[${PYTHON_USEDEP}] )
@@ -296,7 +296,7 @@ RDEPEND="${RDEPEND}
 	eight_sleep? ( ~dev-python/pyEight-0.2.0[${PYTHON_USEDEP}] )
 	elgato? ( ~dev-python/elgato-3.0.0[${PYTHON_USEDEP}] )
 	eliqonline? ( ~dev-python/eliqonline-1.2.2[${PYTHON_USEDEP}] )
-	elkm1? ( ~dev-python/elkm1-lib-1.2.0[${PYTHON_USEDEP}] )
+	elkm1? ( ~dev-python/elkm1-lib-1.2.2[${PYTHON_USEDEP}] )
 	elmax? ( ~dev-python/elmax-api-0.0.2[${PYTHON_USEDEP}] )
 	elv? ( ~dev-python/pypca-0.0.7[${PYTHON_USEDEP}] )
 	emby? ( ~dev-python/pyEmby-1.8[${PYTHON_USEDEP}] )
@@ -412,7 +412,7 @@ RDEPEND="${RDEPEND}
 	hive? ( ~dev-python/pyhiveapi-0.4.2[${PYTHON_USEDEP}] )
 	hlk_sw16? ( ~dev-python/hlk-sw16-0.0.9[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.4.0[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-0.7.16[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-0.7.17[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.77[${PYTHON_USEDEP}] )
 	homematicip_cloud? ( ~dev-python/homematicip-1.0.2[${PYTHON_USEDEP}] )
 	homewizard? ( ~dev-python/aiohwenergy-0.8.0[${PYTHON_USEDEP}] )
@@ -707,7 +707,7 @@ RDEPEND="${RDEPEND}
 	rocketchat? ( ~dev-python/rocketchat-API-0.6.1[${PYTHON_USEDEP}] )
 	roku? ( ~dev-python/rokuecp-0.16.0[${PYTHON_USEDEP}] )
 	roomba? ( ~dev-python/roombapy-1.6.5[${PYTHON_USEDEP}] )
-	roon? ( ~dev-python/roonapi-0.0.38[${PYTHON_USEDEP}] )
+	roon? ( ~dev-python/roonapi-0.1.1[${PYTHON_USEDEP}] )
 	route53? ( ~dev-python/boto3-1.20.24[${PYTHON_USEDEP}] )
 	rova? ( ~dev-python/rova-0.3.0[${PYTHON_USEDEP}] )
 	rpi_gpio? ( ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] )
@@ -869,7 +869,7 @@ RDEPEND="${RDEPEND}
 	ubus? ( ~dev-python/openwrt-ubus-rpc-0.0.2[${PYTHON_USEDEP}] )
 	unifi? ( ~dev-python/aiounifi-31[${PYTHON_USEDEP}] )
 	unifiled? ( ~dev-python/unifiled-0.11[${PYTHON_USEDEP}] )
-	unifiprotect? ( ~dev-python/pyunifiprotect-3.3.0[${PYTHON_USEDEP}] ~dev-python/unifi-discovery-1.1.2[${PYTHON_USEDEP}] )
+	unifiprotect? ( ~dev-python/pyunifiprotect-3.4.0[${PYTHON_USEDEP}] ~dev-python/unifi-discovery-1.1.2[${PYTHON_USEDEP}] )
 	unifi_direct? ( ~dev-python/pexpect-4.6.0[${PYTHON_USEDEP}] )
 	upb? ( ~dev-python/upb-lib-0.4.12[${PYTHON_USEDEP}] )
 	upcloud? ( ~dev-python/upcloud-api-2.0.0[${PYTHON_USEDEP}] )
@@ -947,7 +947,7 @@ RDEPEND="${RDEPEND}
 	zeroconf? ( ~dev-python/zeroconf-0.38.4[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
 	zestimate? ( ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.29.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.72[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.44.2[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.8.0[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.7.0[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.29.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.72[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.44.2[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.7.4[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.7.0[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	ziggo_mediabox_xl? ( ~dev-python/ziggo-mediabox-xl-1.1.0[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.5.2[${PYTHON_USEDEP}] )
