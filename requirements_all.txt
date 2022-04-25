@@ -33,7 +33,7 @@ aiobotocore==2.1.0
 aiocache==0.11.1
 aiocoap==0.4.3
 aioconsole==0.3.2
-aiodiscover==1.4.9
+aiodiscover==1.4.11
 aiodns==3.0.0
 aioeafm==0.1.2
 aioeagle==1.1.0
@@ -330,7 +330,7 @@ fortiosapi==1.0.5
 fqdn==1.5.1
 freebox-api==0.0.10
 freesms==0.2.0
-freetype==2.11.1
+freetype==2.12.0
 fritzconnection==1.4.2
 fritzconnection==1.8.0
 frozenlist==1.3.0
@@ -584,7 +584,6 @@ mychevy==2.1.1
 mycroftapi==2.0
 mypy_extensions==0.4.3
 nad-receiver==0.3.0
-namespace-google==1
 natsort==8.1.0
 nclib==1.0.1
 ncurses==6.2_p20210619
@@ -867,7 +866,7 @@ pyparsing==3.0.7
 pypca==0.0.7
 pypck==0.7.14
 pypjlink2==1.2.1
-pyplaato==0.0.16
+pyplaato==0.0.18
 pypoint==2.3.0
 pyprof2calltree==1.4.5
 pyprosegur==0.0.5
@@ -887,7 +886,7 @@ pyRFXtrx==0.28.0
 pyrisco==0.3.1
 pyrituals==0.0.6
 PyRMVtransport==0.3.3
-pyroute2==0.6.5
+pyroute2==0.6.9
 pyrsistent==0.18.1
 pyruckus==0.12
 pysabnzbd==1.1.1
@@ -1248,7 +1247,7 @@ XBee==2.3.2
 xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
-xknx==0.20.3
+xknx==0.20.4
 xmlschema==1.10.0
 xmltodict==0.12.0
 xs1-api-client==3.0.0
