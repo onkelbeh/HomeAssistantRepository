@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="|| ( >=dev-python/pysnmp-4.3.2[${PYTHON_USEDEP}] dev-python/pysnmplib${PYTHON_USEDEP}] )"
+RDEPEND="|| ( >=dev-python/pysnmp-4.3.2[${PYTHON_USEDEP}] dev-python/pysnmplib[${PYTHON_USEDEP}] )"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
