@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/redis-3.5.3[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/redis-py-3.5.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.25.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.15.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.26.0[${PYTHON_USEDEP}]"
