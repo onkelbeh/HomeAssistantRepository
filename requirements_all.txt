@@ -148,7 +148,7 @@ batinfo==0.4.2
 bcrypt==3.1.7
 bcrypt==3.2.0
 beacontools==1.2.3
-beautifulsoup4==4.10.0
+beautifulsoup4==4.11.1
 beewi-smartclim==0.0.10
 bellows==0.29.0
 bimmer-connected==0.8.12
@@ -341,7 +341,7 @@ gammu==1.41.0
 garages-amsterdam==3.0.0
 garminconnect-ha==0.1.6
 gawk==5.1.1
-gcal-sync==0.6.2
+gcal-sync==0.6.3
 gcloud==0.18.3
 gd==2.3.2
 geniushub-client==0.6.30
@@ -399,7 +399,7 @@ habitipy==0.2.0
 hangups==0.4.18
 hass-nabucasa==0.54.0
 hass-splunk==0.1.1
-HATasmota==0.4.0
+HATasmota==0.4.1
 haversine==2.3.1
 hbmqtt==0.9.5
 hdate==0.10.4
@@ -412,7 +412,7 @@ hlk-sw16==0.0.9
 hole==0.7.0
 holidays==0.13
 home-assistant-cli==9999
-home-assistant-frontend==20220427.0
+home-assistant-frontend==20220429.0
 homeassistant
 homeconnect==0.7.0
 homematicip==1.0.2
@@ -449,6 +449,7 @@ inflect==5.4.0
 inflection==0.5.1
 influxdb-client==1.24.0
 influxdb==5.3.1
+insteon-frontend-home-assistant==0.1.0
 intelhex==2.3.0
 intellifire4py==1.0.2
 iotawattpy==0.1.0
@@ -654,7 +655,7 @@ pifacedigitalio==3.0.5
 piglow==1.2.4
 pigpio==1.78
 pilight==0.1.1
-pillow==9.0.1
+pillow==9.1.0
 pip==22.0.4
 pizzapi==0.0.3
 pkce==1.0.3
@@ -679,6 +680,7 @@ proto-plus==1.20.3
 protobuf-python==3.19.3
 protobuf==3.19.3
 proxmoxer==1.1.1
+psutil==5.9.0
 ptyprocess==0.7.0
 pubnub==6.0.0
 pubnubsub-handler==1.0.9
@@ -741,7 +743,7 @@ pycurl==7.44.1
 pydaikin==2.7.0
 pydanfossair==0.1.0
 pydantic==1.9.0
-pydeconz==90
+pydeconz==91
 pydelijn==1.0.0
 pydexcom==0.2.3
 pydoods==1.0.2
@@ -785,7 +787,7 @@ pyhomeworks==0.0.6
 pyhumps==3.5.0
 pyialarm==1.9.0
 pyicloud==1.0.0
-pyinsteon==1.0.13
+pyinsteon==1.1.0_beta3
 pyintesishome==1.7.6
 pyipma==2.0.5
 pyipp==0.11.0
@@ -1104,7 +1106,7 @@ speak2mary==1.4.0
 speedtest-cli==2.1.3
 spiderpy==1.6.1
 spidev==3.5
-sqlalchemy==1.4.32
+sqlalchemy==1.4.35
 srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
@@ -1256,14 +1258,14 @@ zbar==0.23.90
 zeep==4.1.0
 zengge==0.2
 zeroconf==0.38.4
-zha-quirks==0.0.72
+zha-quirks==0.0.73
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
-zigpy-deconz==0.14.0
+zigpy-deconz==0.16.0
 zigpy-xbee==0.14.0
 zigpy-zigate==0.7.4
 zigpy-znp==0.7.0
-zigpy==0.44.2
+zigpy==0.45.1
 zipp==3.7.0
 zlib==1.2.11
 zm-py==0.5.2
