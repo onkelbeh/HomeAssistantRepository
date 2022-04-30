@@ -21,7 +21,8 @@ DOCS="README.md"
 
 RDEPEND="dev-python/anyio[${PYTHON_USEDEP}]
 	dev-python/importlib_metadata[${PYTHON_USEDEP}]
-	>=dev-python/asyncclick-8.0[${PYTHON_USEDEP}]"
+	>=dev-python/asyncclick-8.0[${PYTHON_USEDEP}]
+	dev-python/pydantic[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
