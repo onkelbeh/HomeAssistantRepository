@@ -19,7 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="media-video/ffmpeg
+RDEPEND="!dev-python/ha-av
+	media-video/ffmpeg
 	dev-python/ha-ffmpeg[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
