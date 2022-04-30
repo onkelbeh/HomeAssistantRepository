@@ -19,7 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/websocket-client-0.54.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/prawcore-2.1[${PYTHON_USEDEP}]
+	>=dev-python/websocket-client-0.54.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
