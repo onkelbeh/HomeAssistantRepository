@@ -286,13 +286,13 @@ I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-
 ## My machines
 Currently I have three VM's running:
 ### Production
-Python 3.9.11
+Python 3.9.12
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test
 Python 3.9.12
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test2
-Python 3.10.3
+Python 3.10.4
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 
 ## Hardware I use
@@ -546,9 +546,9 @@ There are 1713 Ebuilds in total, 1706 of them have in total 1710 (35 different) 
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
 
-(Last counted: 30/04/2022)
+(Last counted: 01/05/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 30/04/2022
+Last updated: 01/05/2022
