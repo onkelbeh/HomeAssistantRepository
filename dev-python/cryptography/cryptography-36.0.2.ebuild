@@ -95,7 +95,7 @@ BDEPEND="
 		>=dev-python/hypothesis-1.11.4[${PYTHON_USEDEP}]
 		dev-python/iso8601[${PYTHON_USEDEP}]
 		dev-python/pretend[${PYTHON_USEDEP}]
-		dev-python/pyasn1-modules[${PYTHON_USEDEP}]
+		|| ( dev-python/pysnmp-pyasn1-modules[${PYTHON_USEDEP}] dev-python/pyasn1-modules[${PYTHON_USEDEP}] )
 		dev-python/pytest-subtests[${PYTHON_USEDEP}]
 		dev-python/pytest-xdist[${PYTHON_USEDEP}]
 		dev-python/pytz[${PYTHON_USEDEP}]
