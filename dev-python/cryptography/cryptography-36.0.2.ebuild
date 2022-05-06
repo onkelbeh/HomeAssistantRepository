@@ -78,7 +78,7 @@ SRC_URI="
 # and some are Apache 2.0 or MIT
 LICENSE="Apache-2.0 MIT BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~riscv"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 
 RDEPEND="
 	>=dev-libs/openssl-1.0.2o-r6:0=
@@ -106,7 +106,7 @@ BDEPEND="
 QA_FLAGS_IGNORED="usr/lib.*/py.*/site-packages/cryptography/hazmat/bindings/_rust.*.so"
 
 PATCHES=(
-	"${FILESDIR}"/${P}-pyo3-bump.patch
+	"${FILESDIR}/${P}-pyo3-bump.patch"
 )
 
 distutils_enable_tests pytest
