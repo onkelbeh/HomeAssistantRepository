@@ -19,10 +19,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-# only allow the replacement virtual
-RDEPEND="!!>dev-python/pysmi-0.3.4-r9
-	!!<dev-python/pysmi-0.3.4-r9
-	>=dev-python/ply-3.11[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/ply-3.11[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.26.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]

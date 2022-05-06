@@ -19,9 +19,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-# only allow the replacement virtual
-RDEPEND="!!>dev-python/pyasn1-0.4.8-r9
-	!!<dev-python/pyasn1-0.4.8-r9"
+RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
