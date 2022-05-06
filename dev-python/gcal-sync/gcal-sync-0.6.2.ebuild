@@ -33,4 +33,4 @@ python_test() {
 	py.test -v -v || die
 }
 
-PATCHES=( ${FILESDIR}/gcal-sync-0.6.2-no_tests.patch )
+PATCHES=( "${FILESDIR}/gcal-sync-0.6.2-no_tests.patch" )
