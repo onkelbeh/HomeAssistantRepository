@@ -66,9 +66,8 @@ HOMEPAGE="
 	https://github.com/pyca/cryptography/
 	https://pypi.org/project/cryptography/
 "
-SRC_URI="
-	mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
-	$(cargo_crate_uris ${CRATES})
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
+	$(cargo_crate_uris "${CRATES}")
 	test? (
 		mirror://pypi/c/cryptography_vectors/${VEC_P}.tar.gz
 	)
