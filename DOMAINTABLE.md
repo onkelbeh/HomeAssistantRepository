@@ -396,6 +396,7 @@
 |maxcube|eQ-3 ELV MAX Cube Python API|Y|Y|Y|0.40|
 |mazda|Mazda Connected Services integration|N|N|Y|2021.3|
 |mcp23017|base for all related mcp23017 platforms in Home Assistant|N|N|Y|0.94|
+|meater|communication with the Meater Temperature Probe from Apption Labs|None|None|Y|2022.5.0b0|
 |mediaroom|control a Mediaroom Set-Top Box (STB) from Home Assistant|N|N|Y|0.63|
 |media_extractor|Gets a stream URL and sends it to a media player entity|N|Y|Y|0.49|
 |melcloud|Python MELCloud interface|N|N|Y|0.106|
@@ -551,6 +552,7 @@
 |qbittorrent|monitor your downloads with qBittorrent from within Home Assistant|N|N|Y|0.84|
 |qld_bushfire|GeoRSS feed containing bushfire alerts for Queensland|N|N|Y|0.95|
 |qnap|Python API for obtaining QNAP NAS system stats|Y|Y|Y|0.38|
+|qnap_qsw|This integration interacts with the local API of QNAP QSW managed switches|N|N|Y|2022.5.0b0|
 |qrcode|enables QR code recognition from cameras|N|N|Y|0.87|
 |quantum_gateway|device tracker platform for Verizon Fios|N|N|Y|0.81|
 |qvr_pro|QVR Pro allows you to connect to cams configured on your QNAP NAS|Y|Y|Y|0.107|
@@ -613,6 +615,7 @@
 |senseme|Integrates SenseME devices into Home Assistant|N|N|Y|2022.2.0b1|
 |sensibo|Integrates Sensibo Air Conditioning controller into Home Assistant|N|N|Y|0.44|
 |sentry|The free Sentry account allows 5000 events per month|N|N|Y|0.104|
+|senz|allows you to control and monitor your nVent RAYCHEM SENZ-WIFI thermostats|N|N|Y|2022.5.0b0|
 |serial|use data provided by a device connected to the serial port of the system|N|N|Y|0.56|
 |serial_pm|Particulate matter sensors measure the amount of very small particles in the air|N|N|Y|0.26|
 |sesame|allows you to control your Sesame smart locks made by CANDY HOUSE, Inc.|N|N|Y|0.47|
@@ -636,6 +639,7 @@
 |slack|The slack platform delivers notifications from Home Assistant to Slack|N|N|Y||
 |sleepiq|lets you view sensor data from SleepIQ by SleepNumber|N|N|Y|0.29|
 |slide|integrate your slide.store devices in Home Assistant using the official API|N|N|Y|0.99|
+|slimproto|allows you to control a Squeezebox music player directly from Home Assistant|N|N|Y|2022.5.0b0|
 |sma|add Support for SMA Solar WebConnect|N|Y|Y|0.36|
 |smappee|integrate Smappee monitors, plugs and switches|N|Y|Y|0.64|
 |smarthab|control your lights and shutters with the SmartHab integration|N|Y|Y|0.94|
@@ -734,6 +738,7 @@
 |trackr|trackr platform allows you to detect presence using TrackR devices|N|N|Y||
 |tractive|Tractive is an Austrian company develops real-time location trackers for pets|N|N|Y|2021.9.0b1|
 |tradfri|Control/observe IKEA Tradfri devices|M|M|Y|0.43|
+|trafikverket_ferry|Retrieve ferry departure information from Trafikverket|N|N|Y|2022.5.0b0|
 |trafikverket_train|Retrieve train departure information from Trafikverket|N|N|Y|0.96|
 |trafikverket_weatherstation|weather information provided by Trafikverket weather stations in Sweden|N|N|Y|0.66|
 |transmission|transmission integration allows you to monitor your downloads with Transmission|N|N|Y|0.87|

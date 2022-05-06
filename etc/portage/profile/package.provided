@@ -1,0 +1,5 @@
+# Workaround for replacing pysnmp with pysnmplib
+dev-python/pysnmp-4.4.12-r2
+dev-python/pyasn1-1.1.2
+dev-python/pyasn1-modules-0.2.8-r1
+dev-python/pysmi-0.3.4

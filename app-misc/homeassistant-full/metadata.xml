@@ -412,6 +412,7 @@
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="mazda">Mazda Connected Services integration</flag>
     <flag name="mcp23017">base for all related mcp23017 platforms in Home Assistant</flag>
+    <flag name="meater">communication with the Meater Temperature Probe from Apption Labs</flag>
     <flag name="mediaroom">control a Mediaroom Set-Top Box (STB) from Home Assistant</flag>
     <flag name="media_extractor">Gets a stream URL and sends it to a media player entity</flag>
     <flag name="melcloud">Python MELCloud interface</flag>
@@ -567,6 +568,7 @@
     <flag name="qbittorrent">monitor your downloads with qBittorrent from within Home Assistant</flag>
     <flag name="qld_bushfire">GeoRSS feed containing bushfire alerts for Queensland</flag>
     <flag name="qnap">Python API for obtaining QNAP NAS system stats</flag>
+    <flag name="qnap_qsw">This integration interacts with the local API of QNAP QSW managed switches</flag>
     <flag name="qrcode">enables QR code recognition from cameras</flag>
     <flag name="quantum_gateway">device tracker platform for Verizon Fios</flag>
     <flag name="qvr_pro">QVR Pro allows you to connect to cams configured on your QNAP NAS</flag>
@@ -629,6 +631,7 @@
     <flag name="senseme">Integrates SenseME devices into Home Assistant</flag>
     <flag name="sensibo">Integrates Sensibo Air Conditioning controller into Home Assistant</flag>
     <flag name="sentry">The free Sentry account allows 5000 events per month</flag>
+    <flag name="senz">allows you to control and monitor your nVent RAYCHEM SENZ-WIFI thermostats</flag>
     <flag name="serial">use data provided by a device connected to the serial port of the system</flag>
     <flag name="serial_pm">Particulate matter sensors measure the amount of very small particles in the air</flag>
     <flag name="sesame">allows you to control your Sesame smart locks made by CANDY HOUSE, Inc.</flag>
@@ -652,6 +655,7 @@
     <flag name="slack">The slack platform delivers notifications from Home Assistant to Slack</flag>
     <flag name="sleepiq">lets you view sensor data from SleepIQ by SleepNumber</flag>
     <flag name="slide">integrate your slide.store devices in Home Assistant using the official API</flag>
+    <flag name="slimproto">allows you to control a Squeezebox music player directly from Home Assistant</flag>
     <flag name="sma">add Support for SMA Solar WebConnect</flag>
     <flag name="smappee">integrate Smappee monitors, plugs and switches</flag>
     <flag name="smarthab">control your lights and shutters with the SmartHab integration</flag>
@@ -750,6 +754,7 @@
     <flag name="trackr">trackr platform allows you to detect presence using TrackR devices</flag>
     <flag name="tractive">Tractive is an Austrian company develops real-time location trackers for pets</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
+    <flag name="trafikverket_ferry">Retrieve ferry departure information from Trafikverket</flag>
     <flag name="trafikverket_train">Retrieve train departure information from Trafikverket</flag>
     <flag name="trafikverket_weatherstation">weather information provided by Trafikverket weather stations in Sweden</flag>
     <flag name="transmission">transmission integration allows you to monitor your downloads with Transmission</flag>

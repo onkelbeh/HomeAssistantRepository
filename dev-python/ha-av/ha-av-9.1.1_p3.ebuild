@@ -22,7 +22,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="media-plugins/gst-plugins-libav"
+RDEPEND="!dev-python/av
+	media-plugins/gst-plugins-libav"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
