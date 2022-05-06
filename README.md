@@ -29,6 +29,17 @@ Currently some help on the nodejs Ebuilds would be very welcome:
 * zigbee2mqtt
 * zwave-js-server (W.I.P, see https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/269)
 
+## 2022-05-06: file collisions with pysnmp
+With 2022.5.0, Home Assistant and some components started using `pysnmplib`, which causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
+```
+# Workaround for replacing pysnmp with pysnmplib
+dev-python/pysnmp-4.4.12-r2
+dev-python/pyasn1-1.1.2
+dev-python/pyasn1-modules-0.2.8-r1
+dev-python/pysmi-0.3.4
+```
+to `etc/portage/profile/package.provided`, so portage assumes you have them installed. Then, run `emerge --depclean -a` to remove them, and install `dev-python/pysnmplib`.
+
 ## 2022-03-21: new Testjobs
 [![pkgcheck](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml) [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml) [![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)
 
@@ -506,14 +517,14 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1732 Ebuilds in total, 1725 of them have in total 1729 (35 different) licenses assigned.
+There are 1732 Ebuilds in total, 1725 of them have in total 1732 (35 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1050|
-|Apache-2.0|318|
+|MIT|1051|
+|Apache-2.0|319|
 |GPL-3|106|
-|BSD|93|
+|BSD|94|
 |LGPL-3|28|
 |GPL-2|22|
 |LGPL-3+|16|

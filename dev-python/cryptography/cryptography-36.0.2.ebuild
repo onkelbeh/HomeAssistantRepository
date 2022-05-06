@@ -75,7 +75,7 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
 
 # MIT and BSD-3-Clause come from rust dependencies, some dependencies are also Apache 2.0 exclusively,
 # and some are Apache 2.0 or MIT
-LICENSE="Apache-2.0 MIT BSD"
+LICENSE="|| ( Apache-2.0 MIT )"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 
