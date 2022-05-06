@@ -30,7 +30,7 @@ Currently some help on the nodejs Ebuilds would be very welcome:
 * zwave-js-server (W.I.P, see https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/269)
 
 ## 2022-05-06: file collisions with pysnmp
-With 2022.5.0, Home Assistant and some components started using `pysnmplib`, which causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
+With 2022.5.0, Home Assistant and some components started using `pysnmplib`, this causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
 ```
 # Workaround for replacing pysnmp with pysnmplib
 dev-python/pysnmp-4.4.12-r2
@@ -38,7 +38,7 @@ dev-python/pyasn1-1.1.2
 dev-python/pyasn1-modules-0.2.8-r1
 dev-python/pysmi-0.3.4
 ```
-to `etc/portage/profile/package.provided`, so portage assumes you have them installed. Then, run `emerge --depclean -a` to remove them, and install `dev-python/pysnmplib`.
+to `/etc/portage/profile/package.provided`, so portage assumes you have them installed. Then, run `emerge --depclean -a` to remove them, and install `dev-python/pysnmplib`.
 
 ## 2022-03-21: new Testjobs
 [![pkgcheck](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml) [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml) [![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)
