@@ -29,17 +29,17 @@ IUSE="+server test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
-	~dev-python/voluptuous-0.12.2[${PYTHON_USEDEP}]
+	~dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
 	server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
-	~dev-python/tzlocal-4.1[${PYTHON_USEDEP}]
+	~dev-python/tzlocal-4.2[${PYTHON_USEDEP}]
 	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 	~dev-embedded/platformio-5.2.5
 	~dev-embedded/esptool-3.3[${PYTHON_USEDEP}]
-	~dev-python/click-8.0.4[${PYTHON_USEDEP}]
+	~dev-python/click-8.1.2[${PYTHON_USEDEP}]
 	~dev-embedded/esphome-dashboard-20220309.0[${PYTHON_USEDEP}]
 	dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 	dev-python/zeroconf[${PYTHON_USEDEP}]
@@ -100,3 +100,5 @@ pkg_postinst() {
 		readme.gentoo_print_elog
 	fi
 }
+
+distutils_enable_tests pytest
