@@ -358,7 +358,7 @@ georss-qld-bushfire-alert-client==0.5
 getmac==0.8.2
 gios==2.1.0
 gitterpy==0.1.7
-glances-api==0.3.4
+glances-api==0.3.5
 glib==2.70.4
 glibc==2.34
 gmp==6.2.1
@@ -1206,6 +1206,7 @@ vincenty==0.1.4
 vol==0.1.1
 volkszaehler==0.3.2
 voluptuous-serialize==2.5.0
+voluptuous==0.12.2
 voluptuous==0.13.1
 volvooncall==0.10.0
 vsure==1.7.3
@@ -1257,7 +1258,7 @@ youtube-dl==2021.12.17
 zbar==0.23.90
 zeep==4.1.0
 zengge==0.2
-zeroconf==0.38.4
+zeroconf==0.38.5
 zha-quirks==0.0.73
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
