@@ -769,6 +769,7 @@
     <flag name="twitch">monitor Twitch channel status from within Home Assistant</flag>
     <flag name="twitter">notification platform uses Twitter to deliver notifications from Home Assistant</flag>
     <flag name="ubus">a presence detection scanner for OpenWrt using ubus</flag>
+    <flag name="ukraine_alarm">uses the Ukraine Alarm web service to offer air-raid siren notifications</flag>
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="unifiled">control lights from a UniFi LED by Ubiquiti Networks controller</flag>
     <flag name="unifiprotect">Camera feeds and Sensor data from a UniFi Protect application</flag>
