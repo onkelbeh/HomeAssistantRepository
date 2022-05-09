@@ -753,6 +753,7 @@
 |twitch|monitor Twitch channel status from within Home Assistant|N|N|Y|0.10|
 |twitter|notification platform uses Twitter to deliver notifications from Home Assistant|N|N|Y|0.12|
 |ubus|a presence detection scanner for OpenWrt using ubus|N|N|Y|0.7.6|
+|ukraine_alarm|uses the Ukraine Alarm web service to offer air-raid siren notifications|N|N|Y|2022.5.3|
 |unifi|talk with a Ubiquiti unifi Controller|N|Y|Y|0.81|
 |unifiled|control lights from a UniFi LED by Ubiquiti Networks controller|N|N|Y|0.102|
 |unifiprotect|Camera feeds and Sensor data from a UniFi Protect application|N|N|Y|2022.2.0b1|
