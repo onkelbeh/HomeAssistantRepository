@@ -13,6 +13,7 @@ HOMEPAGE="https://github.com/Kane610/deconz https://pypi.org/project/pydeconz/"
 #SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 MY_PN="deconz"
 SRC_URI="https://github.com/Kane610/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"

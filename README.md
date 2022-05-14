@@ -2,11 +2,15 @@
 ## without Docker & Virtual Environments
 
 
+[![OS](https://img.shields.io/badge/OS-Gentoo%20Linux-blue)](https://www.gentoo.org/)
 [![pkgcheck](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml)
 [![shellcheck](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/shellcheck.yml)
 [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml)
 [![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)
 [![emerge ha-min on 3.10](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-p310-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-p310-min.yml)
+[![weekly commits](https://img.shields.io/github/commit-activity/w/onkelbeh/HomeAssistantRepository)](https://github.com/onkelbeh/HomeAssistantRepository/commits/)
+[![monthly commits](https://img.shields.io/github/commit-activity/m/onkelbeh/HomeAssistantRepository)](https://github.com/onkelbeh/HomeAssistantRepository/commits/)
+[![version](https://img.shields.io/github/v/release/onkelbeh/HomeAssistantRepository)](https://github.com/onkelbeh/HomeAssistantRepository/releases)
 
 
 https://www.home-assistant.io/
