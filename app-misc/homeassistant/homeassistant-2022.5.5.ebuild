@@ -69,7 +69,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.45.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.54.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220504.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220504.1[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.14.7[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.22.0[${PYTHON_USEDEP}]
@@ -180,7 +180,7 @@ RDEPEND="${RDEPEND}
 	bond? ( ~dev-python/bond-api-0.1.16[${PYTHON_USEDEP}] )
 	braviatv? ( ~dev-python/bravia-tv-1.0.11[${PYTHON_USEDEP}] )
 	broadlink? ( ~dev-python/broadlink-0.18.1[${PYTHON_USEDEP}] )
-	brother? ( ~dev-python/brother-1.2.0[${PYTHON_USEDEP}] )
+	brother? ( ~dev-python/brother-1.1.0[${PYTHON_USEDEP}] )
 	brottsplatskartan? ( ~dev-python/brottsplatskartan-0.0.1[${PYTHON_USEDEP}] )
 	brunt? ( ~dev-python/brunt-1.2.0[${PYTHON_USEDEP}] )
 	bsblan? ( ~dev-python/bsblan-0.5.0[${PYTHON_USEDEP}] )
@@ -189,8 +189,8 @@ RDEPEND="${RDEPEND}
 	buienradar? ( ~dev-python/buienradar-1.0.5[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.8.2[${PYTHON_USEDEP}] )
 	camera? ( ~dev-python/PyTurboJPEG-1.6.6[${PYTHON_USEDEP}] )
-	canary? ( ~dev-python/py-canary-0.5.1[${PYTHON_USEDEP}] )
-	cast? ( ~dev-python/pychromecast-12.1.1[${PYTHON_USEDEP}] )
+	canary? ( ~dev-python/py-canary-0.5.2[${PYTHON_USEDEP}] )
+	cast? ( ~dev-python/pychromecast-12.1.2[${PYTHON_USEDEP}] )
 	cisco_mobility_express? ( ~dev-python/ciscomobilityexpress-0.3.9[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli )
 	co2signal? ( ~dev-python/CO2Signal-0.4.2[${PYTHON_USEDEP}] )
@@ -198,7 +198,7 @@ RDEPEND="${RDEPEND}
 	coronavirus? ( ~dev-python/coronavirus-1.1.1[${PYTHON_USEDEP}] )
 	daikin? ( ~dev-python/pydaikin-2.7.0[${PYTHON_USEDEP}] )
 	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
-	deconz? ( ~dev-python/pydeconz-91[${PYTHON_USEDEP}] )
+	deconz? ( ~dev-python/pydeconz-92[${PYTHON_USEDEP}] )
 	delijn? ( ~dev-python/pydelijn-1.0.0[${PYTHON_USEDEP}] )
 	denonavr? ( ~dev-python/denonavr-0.10.11[${PYTHON_USEDEP}] )
 	deutsche_bahn? ( ~dev-python/schiene-0.23[${PYTHON_USEDEP}] )
@@ -239,7 +239,7 @@ RDEPEND="${RDEPEND}
 	fritzbox_callmonitor? ( ~dev-python/fritzconnection-1.8.0[${PYTHON_USEDEP}] )
 	fritzbox_netmonitor? ( ~dev-python/fritzconnection-1.4.2[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
-	frontend? ( ~dev-python/home-assistant-frontend-20220504.0[${PYTHON_USEDEP}] )
+	frontend? ( ~dev-python/home-assistant-frontend-20220504.1[${PYTHON_USEDEP}] )
 	garmin_connect? ( ~dev-python/garminconnect-ha-0.1.6[${PYTHON_USEDEP}] )
 	gios? ( ~dev-python/gios-2.1.0[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/aiogithubapi-22.2.4[${PYTHON_USEDEP}] )
@@ -339,13 +339,13 @@ RDEPEND="${RDEPEND}
 	shelly? ( ~dev-python/aioshelly-2.0.0[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.27.0[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.18[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-2022.5.0[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-2022.5.1[${PYTHON_USEDEP}] )
 	skybell? ( ~dev-python/skybellpy-0.6.3[${PYTHON_USEDEP}] )
 	sma? ( ~dev-python/pysma-0.6.11[${PYTHON_USEDEP}] )
 	smappee? ( ~dev-python/pysmappee-0.2.29[${PYTHON_USEDEP}] )
 	smarthab? ( ~dev-python/SmartHab-0.21[${PYTHON_USEDEP}] )
 	smartthings? ( ~dev-python/pysmartapp-0.3.3[${PYTHON_USEDEP}] ~dev-python/pysmartthings-0.7.6[${PYTHON_USEDEP}] )
-	snmp? ( ~dev-python/pysnmplib-5.0.10[${PYTHON_USEDEP}] )
+	snmp? ( ~dev-python/pysnmp-4.4.12[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
 	solax? ( ~dev-python/solax-0.2.9[${PYTHON_USEDEP}] )
 	somfy? ( ~dev-python/pymfy-0.11.0[${PYTHON_USEDEP}] )
@@ -365,7 +365,7 @@ RDEPEND="${RDEPEND}
 	tile? ( ~dev-python/pytile-2022.2.0[${PYTHON_USEDEP}] )
 	tomorrowio? ( ~dev-python/pytomorrowio-0.3.3[${PYTHON_USEDEP}] )
 	toon? ( ~dev-python/toonapi-0.2.1[${PYTHON_USEDEP}] )
-	totalconnect? ( ~dev-python/total-connect-client-2022.3[${PYTHON_USEDEP}] )
+	totalconnect? ( ~dev-python/total-connect-client-2022.5[${PYTHON_USEDEP}] )
 	tplink? ( ~dev-python/python-kasa-0.5.0[${PYTHON_USEDEP}] )
 	tuya? ( ~dev-python/tuya-iot-py-sdk-0.6.6[${PYTHON_USEDEP}] )
 	unifi? ( ~dev-python/aiounifi-31[${PYTHON_USEDEP}] )

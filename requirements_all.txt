@@ -155,7 +155,7 @@ bimmer-connected==0.8.12
 bitarray==2.4.1
 bitstring==3.1.9
 bizkaibus==0.1.1
-bleach==4.1.0
+bleach==5.0.0
 bleak==0.14.2
 blebox-uniapi==1.3.3
 blinker==1.4
@@ -170,13 +170,13 @@ bme680==1.0.5
 bond-api==0.1.16
 boschshcpy==0.2.30
 boto3==1.20.24
-boto3==1.22.4
-botocore==1.25.4
+boto3==1.22.9
+botocore==1.25.9
 bottle==0.12.19
 bottleneck==1.3.4
 bravia-tv==1.0.11
 broadlink==0.18.1
-brother==1.2.0
+brother==1.1.0
 brotli==1.0.9
 brottsplatskartan==0.0.1
 brunt==1.2.0
@@ -241,7 +241,7 @@ cryptography==36.0.2
 csrmesh==0.10.0
 cssselect==1.1.0
 cups==2.3.3_p2
-curl==7.79.1
+curl==7.83.1
 c_rehash==1.7
 d2to1==0.2.12_p1
 dacite==1.6.0
@@ -584,7 +584,7 @@ mypy_extensions==0.4.3
 nad-receiver==0.3.0
 natsort==8.1.0
 nclib==1.0.1
-ncurses==6.3_p20211106
+ncurses==6.3_p20220423
 ndms2-client==0.1.1
 nessclient==0.9.15
 netaddr==0.8.0
@@ -626,7 +626,7 @@ openerz-api==0.1.0
 openevsewifi==1.1.0
 openhomedevice==2.0.2
 opensensemap-api==0.2.0
-openssl==1.1.1n
+openssl==1.1.1o
 openwebifpy==3.2.7
 openwrt-luci-rpc==1.1.11
 openwrt-ubus-rpc==0.0.2
@@ -800,6 +800,7 @@ pyisy==3.0.6
 pyitachip2ir==0.0.7
 pyjsparser==2.7.1_p20190421
 pyjwt==2.3.0
+pyjwt==2.4.0
 pykaleidescape==1.0.1
 pykira==0.1.1
 pykmtronic==0.3.0
@@ -927,7 +928,7 @@ python-clementine-remote==1.0.1
 python-dateutil==2.8.2
 python-didl-lite==1.3.2
 python-digitalocean==1.13.2
-python-dotenv==0.19.2
+python-dotenv==0.20.0
 python-ecobee-api==0.2.14
 python-engineio==3.14.2
 python-eq3bt==0.1.11
@@ -981,13 +982,13 @@ PyTurboJPEG==1.6.6
 pytz==2022.1
 pytz_deprecation_shim==0.1.0_p0
 pyudev==0.22.0
-pyunifiprotect==3.4.1
+pyunifiprotect==3.5.1
 pyuptimerobot==22.2.0
 pyusb==1.2.1
 PyUserInput==0.1.11
 pyvera==0.3.13
 pyversasense==0.0.6
-pyvesync==2.0.2
+pyvesync==2.0.3
 PyViCare==2.16.1
 pyvizio==0.1.57
 pyvlx==0.2.19
@@ -1030,7 +1031,6 @@ requests==2.27.1
 responses==0.20.0
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
-rfc3986==1.5.0
 rfc3986==2.0.0
 rfc3987==1.3.8
 rfk101py==0.0.1
@@ -1087,7 +1087,7 @@ six==1.16.0
 skybellpy==0.6.3
 slackclient==2.5.0
 sleekxmppfs==1.3.4
-slixmpp==1.8.1
+slixmpp==1.8.2
 smart-meter-texas==0.4.7
 SmartHab==0.21
 smbus-cffi==0.5.1
@@ -1103,7 +1103,7 @@ solaredge==0.0.2
 solax==0.2.9
 somecomfort==0.8.0
 somfy-mylink-synergy==1.0.6
-soupsieve==2.3.1
+soupsieve==2.3.2
 speak2mary==1.4.0
 speedtest-cli==2.1.3
 spiderpy==1.6.1
@@ -1198,7 +1198,7 @@ uscisstatus==0.1.1
 user-agents==2.0
 util-linux==2.37.4
 uvcclient==0.11.0
-uvicorn==0.17.5
+uvicorn==0.17.6
 vallox-websocket-api==2.11.0
 vehicle==0.4.0
 velbus-aio==2022.2.4
