@@ -13,7 +13,7 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -23,8 +23,7 @@ RDEPEND=">=dev-python/bitstring-3.1.6[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-2.1.4[${PYTHON_USEDEP}]
 	>=dev-python/ecdsa-0.16.0[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.0[${PYTHON_USEDEP}]
-	>=dev-python/reedsolomon-1.5.3[${PYTHON_USEDEP}]
-	<=dev-python/reedsolomon-1.5.4[${PYTHON_USEDEP}]"
+	>=dev-python/reedsolomon-1.5.3[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pip[${PYTHON_USEDEP}]
@@ -37,4 +36,10 @@ BDEPEND="
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
+}
+
+# reedsolo>=1.5.3,<=1.5.4
+src_prepare() {
+	sed -i "s/reedsolo>=1.5.3,<=1.5.4/reedsolo>=1.5.3/g" -i setup.py || die
+	eapply_user
 }
