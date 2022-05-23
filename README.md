@@ -34,7 +34,7 @@ Currently some help on the nodejs Ebuilds would be very welcome:
 * zwave-js-server (W.I.P, see https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/269)
 
 ## 2022-05-15 pysnmplib changes revoked
-Change from pysnmp to pysnmplib has been revoked in https://github.com/home-assistant/core/pull/71901, relased with 2022.5.5
+Change from pysnmp to pysnmplib has been revoked in https://github.com/home-assistant/core/pull/71901, released with 2022.5.5
 
 ## 2022-05-06: file collisions with pysnmp
 With 2022.5.0, Home Assistant and some components started using `pysnmplib`, this causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
