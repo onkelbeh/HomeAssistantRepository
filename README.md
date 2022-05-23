@@ -33,6 +33,9 @@ Currently some help on the nodejs Ebuilds would be very welcome:
 * zigbee2mqtt
 * zwave-js-server (W.I.P, see https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/269)
 
+## 2022-05-15 pysnmplib changes revoked
+Change from pysnmp to pysnmplib has been revoked in https://github.com/home-assistant/core/pull/71901, relased with 2022.5.5
+
 ## 2022-05-06: file collisions with pysnmp
 With 2022.5.0, Home Assistant and some components started using `pysnmplib`, this causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
 ```
@@ -561,9 +564,9 @@ There are 1739 Ebuilds in total, 1732 of them have in total 1739 (35 different) 
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
 
-(Last counted: 22/05/2022)
+(Last counted: 23/05/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 22/05/2022
+Last updated: 23/05/2022
