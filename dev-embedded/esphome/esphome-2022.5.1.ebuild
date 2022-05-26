@@ -17,18 +17,22 @@ else
 	MY_PV=${PV/_beta/b}
 	SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/${MY_P}/"
-	KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
 fi
 
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
 HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="+server test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
+DOCS="README.md"
+
+RDEPEND="
+	server? ( acct-group/${PN} acct-user/${PN} )
 	~dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]
 	~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
@@ -38,8 +42,8 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 	~dev-embedded/platformio-5.2.5
-	~dev-embedded/esptool-3.3.1[${PYTHON_USEDEP}]
-	~dev-python/click-8.1.3[${PYTHON_USEDEP}]
+	~dev-embedded/esptool-3.3[${PYTHON_USEDEP}]
+	dev-python/click[${PYTHON_USEDEP}]
 	~dev-embedded/esphome-dashboard-20220508.0[${PYTHON_USEDEP}]
 	dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 	dev-python/zeroconf[${PYTHON_USEDEP}]
@@ -65,16 +69,12 @@ logging is to: /var/log/${PN}/{dashboard,warnings}.log
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
-DOCS="README.md"
-
 src_prepare() {
-	# Make it easy (again)
-	cut -d "=" -f1 < requirements.txt > requirements_new.txt
-	mv requirements_new.txt requirements.txt
+	sed "/aioesphomeapi==/c\aioesphomeapi" -i requirements.txt || die
+	sed "/click==/c\click" -i requirements.txt || die
+	sed "/zeroconf==/c\zeroconf" -i requirements.txt || die
 	eapply_user
 }
-
-distutils_enable_tests pytest
 
 python_install_all() {
 	dodoc ${DOCS}
@@ -90,15 +90,15 @@ python_install_all() {
 	fi
 }
 
-python_test() {
-	nosetests --verbose || die
-	py.test -v -v || die
-}
-
 pkg_postinst() {
 	if use server; then
 		readme.gentoo_print_elog
 	fi
+}
+
+python_test() {
+	nosetests --verbose || die
+	py.test -v -v || die
 }
 
 distutils_enable_tests pytest
