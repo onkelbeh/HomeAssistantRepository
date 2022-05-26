@@ -13,7 +13,7 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -33,4 +33,4 @@ python_test() {
 	py.test -v -v || die
 }
 
-PATCHES=( "${FILESDIR}/gcal-sync-0.6.2-no_tests.patch" )
+distutils_enable_tests pytest
