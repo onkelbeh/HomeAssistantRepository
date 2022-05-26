@@ -10,7 +10,9 @@ inherit distutils-r1
 DESCRIPTION="Python OWFS client library (owserver protocol)"
 HOMEPAGE="https://github.com/miccoli/pyownet https://pypi.org/project/pyownet/"
 SRC_URI="https://github.com/miccoli/${PN}/archive/refs/tags/v${PV}.post1.tar.gz -> ${P}.tar.gz"
-S=${WORKDIR}/${PN}-${PV}.post1/
+MY_PV=${PV/_p/.post}
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${PN}-${MY_PV}.tar.gz"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="LGPL-3"
 SLOT="0"
@@ -31,6 +33,7 @@ BDEPEND="
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
+	tests/test_protocol || die
 }
 
 PATCHES=( "${FILESDIR}/pyownet-${PV}-2to3.patch" )
