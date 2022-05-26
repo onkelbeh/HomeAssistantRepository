@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -20,7 +20,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/requests-oauthlib-1.1.0[${PYTHON_USEDEP}]
-	dev-python/simplejson[${PYTHON_USEDEP}]
 	dev-python/pkce[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
@@ -33,7 +32,10 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
 src_prepare() {
-	sed -i "s/setuptools-git-versioning//g" -i setup.py || die
+	sed -i "s/setuptools-git-versioning<1.8.0//g" -i setup.py || die
 	eapply_user
 }
+
+distutils_enable_tests pytest
