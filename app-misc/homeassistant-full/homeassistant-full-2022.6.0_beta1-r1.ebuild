@@ -1037,3 +1037,5 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
+
+distutils_enable_tests pytest

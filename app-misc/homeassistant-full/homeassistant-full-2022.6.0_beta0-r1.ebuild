@@ -204,7 +204,7 @@ RDEPEND="${RDEPEND}
 	bme680? ( ~dev-python/bme680-1.0.5[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	bmp280? ( ~dev-python/adafruit-circuitpython-bmp280-3.1.1[${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] )
 	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.9.0[${PYTHON_USEDEP}] )
-	bond? ( ~dev-python/bond-async-0.1.20[${PYTHON_USEDEP}] )
+	bond? ( ~dev-python/bond-api-0.1.18[${PYTHON_USEDEP}] )
 	bosch_shc? ( ~dev-python/boschshcpy-0.2.30[${PYTHON_USEDEP}] )
 	braviatv? ( ~dev-python/bravia-tv-1.0.11[${PYTHON_USEDEP}] )
 	broadlink? ( ~dev-python/broadlink-0.18.2[${PYTHON_USEDEP}] )
@@ -347,7 +347,7 @@ RDEPEND="${RDEPEND}
 	flo? ( ~dev-python/aioflo-2021.11.0[${PYTHON_USEDEP}] )
 	flume? ( ~dev-python/PyFlume-0.6.5[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-2.0.2[${PYTHON_USEDEP}] )
-	flux_led? ( ~dev-python/flux-led-0.28.30[${PYTHON_USEDEP}] )
+	flux_led? ( ~dev-python/flux-led-0.28.29[${PYTHON_USEDEP}] )
 	folder_watcher? ( ~dev-python/watchdog-2.1.8[${PYTHON_USEDEP}] )
 	foobot? ( ~dev-python/foobot_async-1.0.0[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.2.0[${PYTHON_USEDEP}] )
@@ -1037,3 +1037,5 @@ python_install_all() {
 pkg_postinst() {
 	readme.gentoo_print_elog
 }
+
+distutils_enable_tests pytest
