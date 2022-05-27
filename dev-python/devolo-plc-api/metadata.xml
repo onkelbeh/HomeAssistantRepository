@@ -8,7 +8,12 @@
   <upstream>
     <remote-id type="pypi">devolo-plc-api</remote-id>
     <maintainer status="unknown">
-      <email>Markus Bong &lt;m.bong@famabo.de&gt;, Guido Schmitz &lt;guido.schmitz@fedaix.de&gt;</email>
+      <email>m.bong@famabo.de</email>
+      <name>Markus Bong</name>
+    </maintainer>
+    <maintainer status="unknown">
+      <email>guido.schmitz@fedaix.de</email>
+      <name>Guido Schmitz</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
