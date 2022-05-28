@@ -256,7 +256,6 @@
     <flag name="fritzbox_callmonitor">monitors the call monitor exposed by AVM FRITZ!Box routers on TCP port 1012</flag>
     <flag name="fritzbox_netmonitor">sensor monitors the network statistics exposed by AVM FRITZ!Box routers</flag>
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
-    <flag name="frontend">official frontend to control Home Assistant</flag>
     <flag name="frontier_silicon">Support for Internet Radios based on the Frontier Silicon chipset</flag>
     <flag name="futurenow">Allows you to use P5 FutureNow relay/dimmer units as lights</flag>
     <flag name="garages_amsterdam">measure the occupancy of Amsterdam parking garages in the Netherlands</flag>

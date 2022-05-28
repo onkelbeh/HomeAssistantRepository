@@ -17,6 +17,7 @@ net-analyzer/fail2ban ~amd64
 =dev-python/denonavr-0.10.10 ~amd64
 =dev-python/freezegun-1.2.1 ~amd64
 =dev-python/fritzconnection-1.8.0 ~amd64
+=dev-python/httpcore-0.15.0 ~amd64
 =dev-python/humanfriendly-10.0 ~amd64
 =dev-python/imageio-2.16.1 ~amd64
 =dev-python/jinja-3.1.2 ~amd64

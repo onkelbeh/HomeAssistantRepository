@@ -240,7 +240,6 @@
 |fritzbox_callmonitor|monitors the call monitor exposed by AVM FRITZ!Box routers on TCP port 1012|N|Y|Y|0.27|
 |fritzbox_netmonitor|sensor monitors the network statistics exposed by AVM FRITZ!Box routers|N|Y|Y|0.36|
 |fronius|Add (very basic) Support for Fronius Symo JSON Api to Home Assistant|Y|Y|Y|0.96|
-|frontend|official frontend to control Home Assistant|Y|Y|Y|0.7|
 |frontier_silicon|Support for Internet Radios based on the Frontier Silicon chipset|N|N|Y|0.40|
 |futurenow|Allows you to use P5 FutureNow relay/dimmer units as lights|N|N|Y|0.75|
 |garages_amsterdam|measure the occupancy of Amsterdam parking garages in the Netherlands|N|N|Y|2021.6|

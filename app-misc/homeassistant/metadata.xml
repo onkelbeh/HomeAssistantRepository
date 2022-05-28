@@ -131,7 +131,6 @@
     <flag name="fritzbox_callmonitor">monitors the call monitor exposed by AVM FRITZ!Box routers on TCP port 1012</flag>
     <flag name="fritzbox_netmonitor">sensor monitors the network statistics exposed by AVM FRITZ!Box routers</flag>
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
-    <flag name="frontend">official frontend to control Home Assistant</flag>
     <flag name="garmin_connect">The Garmin Connect sensor allows you to expose data from Garmin Connect</flag>
     <flag name="gios">Source for air quality data for Home Assistant</flag>
     <flag name="github">GitHub sensor integrates data from GitHub to monitor your favorite repositories</flag>
