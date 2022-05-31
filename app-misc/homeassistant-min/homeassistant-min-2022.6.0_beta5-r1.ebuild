@@ -165,7 +165,7 @@ RDEPEND="${RDEPEND}
 	otp? ( ~dev-python/pyotp-2.6.0[${PYTHON_USEDEP}] )
 	owntracks? ( ~dev-python/pynacl-1.5.0[${PYTHON_USEDEP}] )
 	ping? ( ~dev-python/icmplib-3.0[${PYTHON_USEDEP}] )
-	plex? ( ~dev-python/PlexAPI-4.11.1[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
+	plex? ( ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
 	ps4? ( ~dev-python/pyps4-2ndscreen-1.3.1[${PYTHON_USEDEP}] )
 	python_script? ( ~dev-python/RestrictedPython-5.2[${PYTHON_USEDEP}] )
 	qnap? ( ~dev-python/qnapstats-0.4.0[${PYTHON_USEDEP}] )
@@ -188,7 +188,7 @@ RDEPEND="${RDEPEND}
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
 	systemmonitor? ( ~dev-python/psutil-5.9.0[${PYTHON_USEDEP}] )
 	tankerkoenig? ( ~dev-python/pytankerkoenig-0.0.6[${PYTHON_USEDEP}] )
-	tasmota? ( ~dev-python/HATasmota-0.5.0[${PYTHON_USEDEP}] )
+	tasmota? ( ~dev-python/HATasmota-0.5.1[${PYTHON_USEDEP}] )
 	tile? ( ~dev-python/pytile-2022.2.0[${PYTHON_USEDEP}] )
 	tomorrowio? ( ~dev-python/pytomorrowio-0.3.3[${PYTHON_USEDEP}] )
 	tplink? ( ~dev-python/python-kasa-0.5.0[${PYTHON_USEDEP}] )
@@ -203,7 +203,7 @@ RDEPEND="${RDEPEND}
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.3[${PYTHON_USEDEP}] )
 	zeroconf? ( ~dev-python/zeroconf-0.38.6[${PYTHON_USEDEP}] )
 	zha? ( ~dev-python/bellows-0.30.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.74[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.16.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.45.1[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.7.4[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.7.0[${PYTHON_USEDEP}] )
-	zwave_js? ( ~dev-python/zwave-js-server-python-0.37.0[${PYTHON_USEDEP}] )"
+	zwave_js? ( ~dev-python/zwave-js-server-python-0.37.1[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}
 	test? (

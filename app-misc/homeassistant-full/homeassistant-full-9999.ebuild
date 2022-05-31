@@ -649,7 +649,7 @@ RDEPEND="${RDEPEND}
 	pi_hole? ( ~dev-python/hole-0.7.0[${PYTHON_USEDEP}] )
 	pjlink? ( ~dev-python/pypjlink2-1.2.1[${PYTHON_USEDEP}] )
 	plaato? ( ~dev-python/pyplaato-0.0.18[${PYTHON_USEDEP}] )
-	plex? ( ~dev-python/PlexAPI-4.11.1[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
+	plex? ( ~dev-python/PlexAPI-4.11.2[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
 	plugwise? ( ~dev-python/plugwise-0.18.5[${PYTHON_USEDEP}] )
 	plum_lightpad? ( ~dev-python/plumlightpad-0.0.11[${PYTHON_USEDEP}] )
 	pocketcasts? ( ~dev-python/pycketcasts-1.0.0[${PYTHON_USEDEP}] )
@@ -685,7 +685,7 @@ RDEPEND="${RDEPEND}
 	rainbird? ( ~dev-python/pyrainbird-0.4.3[${PYTHON_USEDEP}] )
 	raincloud? ( ~dev-python/raincloudy-0.0.7[${PYTHON_USEDEP}] )
 	rainforest_eagle? ( ~dev-python/aioeagle-1.1.0[${PYTHON_USEDEP}] ~dev-python/eagle100-0.1.1[${PYTHON_USEDEP}] )
-	rainmachine? ( ~dev-python/regenmaschine-2022.5.0[${PYTHON_USEDEP}] )
+	rainmachine? ( ~dev-python/regenmaschine-2022.5.1[${PYTHON_USEDEP}] )
 	raspihats? ( ~dev-python/raspihats-2.2.3[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	raspyrfm? ( ~dev-python/raspyrfm-client-1.2.8[${PYTHON_USEDEP}] )
 	rdw? ( ~dev-python/vehicle-0.4.0[${PYTHON_USEDEP}] )
@@ -752,7 +752,7 @@ RDEPEND="${RDEPEND}
 	sighthound? ( ~dev-python/pillow-9.1.1[${PYTHON_USEDEP}] ~dev-python/simplehound-0.3[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.18[${PYTHON_USEDEP}] )
 	simplepush? ( ~dev-python/simplepush-1.1.4[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-2022.5.1[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-2022.5.2[${PYTHON_USEDEP}] )
 	sinch? ( ~dev-python/clx-sdk-xms-1.0.0[${PYTHON_USEDEP}] )
 	sisyphus? ( ~dev-python/sisyphus-control-3.1.2[${PYTHON_USEDEP}] )
 	skybeacon? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
@@ -960,7 +960,7 @@ RDEPEND="${RDEPEND}
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	ziggo_mediabox_xl? ( ~dev-python/ziggo-mediabox-xl-1.1.0[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.5.2[${PYTHON_USEDEP}] )
-	zwave_js? ( ~dev-python/zwave-js-server-python-0.37.0[${PYTHON_USEDEP}] )
+	zwave_js? ( ~dev-python/zwave-js-server-python-0.37.1[${PYTHON_USEDEP}] )
 	zwave_me? ( ~dev-python/zwave-me-ws-0.2.4[${PYTHON_USEDEP}] ~dev-python/url-normalize-1.4.1[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}
