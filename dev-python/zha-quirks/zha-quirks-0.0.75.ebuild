@@ -13,13 +13,13 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/zigpy-0.42.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/zigpy-0.45.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -31,3 +31,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
