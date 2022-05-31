@@ -1,3 +1,0 @@
-#!/bin/bash
-
-/usr/bin/hass -c /etc/homeassistant/ --script check_config
