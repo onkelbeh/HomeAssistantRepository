@@ -55,7 +55,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/atomicwrites-1.4.0[${PYTHON_USEDEP}]
 	~dev-python/attrs-21.2.0[${PYTHON_USEDEP}]
 	<dev-python/Authlib-1.0[${PYTHON_USEDEP}]
-	~dev-python/awesomeversion-22.5.1[${PYTHON_USEDEP}]
+	~dev-python/awesomeversion-22.5.2[${PYTHON_USEDEP}]
 	<dev-python/backoff-2.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
@@ -173,7 +173,7 @@ RDEPEND="${RDEPEND}
 	bluetooth_tracker? ( ~dev-python/bt-proximity-0.2.1[${PYTHON_USEDEP}] ~dev-python/pybluez-0.22[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[${PYTHON_USEDEP}] )
 	bme680? ( ~dev-python/bme680-1.0.5[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
-	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.9.0[${PYTHON_USEDEP}] )
+	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.9.3[${PYTHON_USEDEP}] )
 	bond? ( ~dev-python/bond-async-0.1.20[${PYTHON_USEDEP}] )
 	braviatv? ( ~dev-python/bravia-tv-1.0.11[${PYTHON_USEDEP}] )
 	broadlink? ( ~dev-python/broadlink-0.18.2[${PYTHON_USEDEP}] )
@@ -355,7 +355,7 @@ RDEPEND="${RDEPEND}
 	synology_dsm? ( ~dev-python/py-synologydsm-api-1.0.8[${PYTHON_USEDEP}] )
 	systemmonitor? ( ~dev-python/psutil-5.9.0[${PYTHON_USEDEP}] )
 	tankerkoenig? ( ~dev-python/pytankerkoenig-0.0.6[${PYTHON_USEDEP}] )
-	tasmota? ( ~dev-python/HATasmota-0.5.0[${PYTHON_USEDEP}] )
+	tasmota? ( ~dev-python/HATasmota-0.5.1[${PYTHON_USEDEP}] )
 	tellduslive? ( ~dev-python/tellduslive-0.10.11[${PYTHON_USEDEP}] )
 	tesla? ( ~dev-python/teslajsonpy-0.18.3[${PYTHON_USEDEP}] )
 	tile? ( ~dev-python/pytile-2022.2.0[${PYTHON_USEDEP}] )
