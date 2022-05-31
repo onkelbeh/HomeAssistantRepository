@@ -22,6 +22,7 @@ net-analyzer/fail2ban ~amd64
 =dev-python/humanfriendly-10.0 ~amd64
 =dev-python/imageio-2.16.1 ~amd64
 =dev-python/jinja-3.1.2 ~amd64
+=dev-python/loguru-0.6.0 ~amd64
 =dev-python/mediafile-0.9.0-r1 ~amd64
 =dev-python/mypy-0.942 ~amd64
 =dev-python/pillow-9.1.1 ~amd64
