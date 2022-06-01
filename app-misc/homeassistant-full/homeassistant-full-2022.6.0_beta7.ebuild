@@ -67,7 +67,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.46.1[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.54.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220526.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220531.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.15.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
@@ -408,7 +408,7 @@ RDEPEND="${RDEPEND}
 	hikvision? ( ~dev-python/pyHik-0.3.0[${PYTHON_USEDEP}] )
 	hikvisioncam? ( ~dev-python/hikvision-0.4[${PYTHON_USEDEP}] )
 	hisense_aehw4a1? ( ~dev-python/pyaehw4a1-0.3.9[${PYTHON_USEDEP}] )
-	hive? ( ~dev-python/pyhiveapi-0.4.2[${PYTHON_USEDEP}] )
+	hive? ( ~dev-python/pyhiveapi-0.5.4[${PYTHON_USEDEP}] )
 	hlk_sw16? ( ~dev-python/hlk-sw16-0.0.9[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.4.0[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
 	homekit_controller? ( ~dev-python/aiohomekit-0.7.17[${PYTHON_USEDEP}] )
@@ -649,7 +649,7 @@ RDEPEND="${RDEPEND}
 	pi_hole? ( ~dev-python/hole-0.7.0[${PYTHON_USEDEP}] )
 	pjlink? ( ~dev-python/pypjlink2-1.2.1[${PYTHON_USEDEP}] )
 	plaato? ( ~dev-python/pyplaato-0.0.18[${PYTHON_USEDEP}] )
-	plex? ( ~dev-python/PlexAPI-4.11.1[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
+	plex? ( ~dev-python/PlexAPI-4.11.2[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.13[${PYTHON_USEDEP}] )
 	plugwise? ( ~dev-python/plugwise-0.18.5[${PYTHON_USEDEP}] )
 	plum_lightpad? ( ~dev-python/plumlightpad-0.0.11[${PYTHON_USEDEP}] )
 	pocketcasts? ( ~dev-python/pycketcasts-1.0.0[${PYTHON_USEDEP}] )
@@ -685,7 +685,7 @@ RDEPEND="${RDEPEND}
 	rainbird? ( ~dev-python/pyrainbird-0.4.3[${PYTHON_USEDEP}] )
 	raincloud? ( ~dev-python/raincloudy-0.0.7[${PYTHON_USEDEP}] )
 	rainforest_eagle? ( ~dev-python/aioeagle-1.1.0[${PYTHON_USEDEP}] ~dev-python/eagle100-0.1.1[${PYTHON_USEDEP}] )
-	rainmachine? ( ~dev-python/regenmaschine-2022.5.0[${PYTHON_USEDEP}] )
+	rainmachine? ( ~dev-python/regenmaschine-2022.5.1[${PYTHON_USEDEP}] )
 	raspihats? ( ~dev-python/raspihats-2.2.3[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	raspyrfm? ( ~dev-python/raspyrfm-client-1.2.8[${PYTHON_USEDEP}] )
 	rdw? ( ~dev-python/vehicle-0.4.0[${PYTHON_USEDEP}] )
@@ -752,7 +752,7 @@ RDEPEND="${RDEPEND}
 	sighthound? ( ~dev-python/pillow-9.1.1[${PYTHON_USEDEP}] ~dev-python/simplehound-0.3[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.18[${PYTHON_USEDEP}] )
 	simplepush? ( ~dev-python/simplepush-1.1.4[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-2022.5.1[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-2022.5.2[${PYTHON_USEDEP}] )
 	sinch? ( ~dev-python/clx-sdk-xms-1.0.0[${PYTHON_USEDEP}] )
 	sisyphus? ( ~dev-python/sisyphus-control-3.1.2[${PYTHON_USEDEP}] )
 	skybeacon? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
@@ -956,11 +956,11 @@ RDEPEND="${RDEPEND}
 	zeroconf? ( ~dev-python/zeroconf-0.38.6[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
 	zestimate? ( ~dev-python/xmltodict-0.12.0[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.30.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.74[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.16.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.45.1[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.7.4[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.7.0[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.30.0[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.75[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.16.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.45.1[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.14.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.7.4[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.7.0[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	ziggo_mediabox_xl? ( ~dev-python/ziggo-mediabox-xl-1.1.0[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.5.2[${PYTHON_USEDEP}] )
-	zwave_js? ( ~dev-python/zwave-js-server-python-0.37.0[${PYTHON_USEDEP}] )
+	zwave_js? ( ~dev-python/zwave-js-server-python-0.37.1[${PYTHON_USEDEP}] )
 	zwave_me? ( ~dev-python/zwave-me-ws-0.2.4[${PYTHON_USEDEP}] ~dev-python/url-normalize-1.4.1[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}
