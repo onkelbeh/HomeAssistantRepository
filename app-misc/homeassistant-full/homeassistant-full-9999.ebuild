@@ -81,6 +81,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pillow-9.1.1[${PYTHON_USEDEP}]
 	<dev-python/pip-22.1.0
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
+	!~dev-python/pydantic-1.9.1[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-2.4.0[${PYTHON_USEDEP}]
 	~dev-python/pynacl-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
@@ -94,7 +95,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/regex-2021.8.28[${PYTHON_USEDEP}]
 	~dev-python/requests-2.27.1[${PYTHON_USEDEP}]
 	~net-analyzer/scapy-2.4.5
-	~dev-python/sqlalchemy-1.4.36[${PYTHON_USEDEP}]
+	~dev-python/sqlalchemy-1.4.37[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-3.10.0.2[${PYTHON_USEDEP}]
 	<dev-python/typing-extensions-5.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]
@@ -547,7 +548,7 @@ RDEPEND="${RDEPEND}
 	moehlenhoff_alpha2? ( ~dev-python/moehlenhoff-alpha2-1.2.1[${PYTHON_USEDEP}] )
 	monoprice? ( ~dev-python/pymonoprice-0.3[${PYTHON_USEDEP}] )
 	motioneye? ( ~dev-python/motioneye-client-0.3.12[${PYTHON_USEDEP}] )
-	motion_blinds? ( ~dev-python/motionblinds-0.6.7[${PYTHON_USEDEP}] )
+	motion_blinds? ( ~dev-python/motionblinds-0.6.8[${PYTHON_USEDEP}] )
 	mpd? ( ~dev-python/python-mpd2-3.0.5[${PYTHON_USEDEP}] )
 	mqtt? ( ~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}] )
 	msteams? ( ~dev-python/pymsteams-0.1.12[${PYTHON_USEDEP}] )
@@ -690,7 +691,7 @@ RDEPEND="${RDEPEND}
 	raspyrfm? ( ~dev-python/raspyrfm-client-1.2.8[${PYTHON_USEDEP}] )
 	rdw? ( ~dev-python/vehicle-0.4.0[${PYTHON_USEDEP}] )
 	recollect_waste? ( ~dev-python/aiorecollect-1.0.8[${PYTHON_USEDEP}] )
-	recorder? ( ~dev-python/sqlalchemy-1.4.36[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/lru-dict-1.1.7[${PYTHON_USEDEP}] )
+	recorder? ( ~dev-python/sqlalchemy-1.4.37[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/lru-dict-1.1.7[${PYTHON_USEDEP}] )
 	recswitch? ( ~dev-python/pyrecswitch-1.0.2[${PYTHON_USEDEP}] )
 	reddit? ( ~dev-python/praw-7.5.0[${PYTHON_USEDEP}] )
 	rejseplanen? ( ~dev-python/rjpl-0.3.6[${PYTHON_USEDEP}] )
@@ -792,7 +793,7 @@ RDEPEND="${RDEPEND}
 	spider? ( ~dev-python/spiderpy-1.6.1[${PYTHON_USEDEP}] )
 	splunk? ( ~dev-python/hass-splunk-0.1.1[${PYTHON_USEDEP}] )
 	spotify? ( ~dev-python/spotipy-2.19.0[${PYTHON_USEDEP}] )
-	sql? ( ~dev-python/sqlalchemy-1.4.36[${PYTHON_USEDEP}] )
+	sql? ( ~dev-python/sqlalchemy-1.4.37[${PYTHON_USEDEP}] )
 	squeezebox? ( ~dev-python/pysqueezebox-0.5.5[${PYTHON_USEDEP}] )
 	srp_energy? ( ~dev-python/srpenergy-1.3.6[${PYTHON_USEDEP}] )
 	ssdp? ( ~dev-python/async-upnp-client-0.30.1[${PYTHON_USEDEP}] )
