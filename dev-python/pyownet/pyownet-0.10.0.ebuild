@@ -33,4 +33,4 @@ python_test() {
 	py.test -v -v || die
 }
 
-PATCHES=( "${FILESDIR}"/pyownet-0.10.0-2to3.patch )
+PATCHES=( "${FILESDIR}/pyownet-${PV}-2to3.patch" )

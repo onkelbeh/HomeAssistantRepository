@@ -60,6 +60,7 @@
 |aws|Interact with Amazon Web Services|N|N|Y|0.91|
 |axis|Communicating with newer devices from Axis Communications|Y|Y|Y|0.45|
 |backup|allows you to create and download backups for your Home Assistant Core|N|Y|Y|2022.4.0b0|
+|baf|None|N|N|Y|2022.6.0b0|
 |baidu|Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi|N|Y|Y|0.59|
 |balboa|This integration adds support for Balboa Spa WiFi Modules|N|N|Y|2021.12.0b0|
 |bbb_gpio|Base for all BeagleBone Black related GPIO platforms|N|N|Y|0.36|
@@ -239,7 +240,6 @@
 |fritzbox_callmonitor|monitors the call monitor exposed by AVM FRITZ!Box routers on TCP port 1012|N|Y|Y|0.27|
 |fritzbox_netmonitor|sensor monitors the network statistics exposed by AVM FRITZ!Box routers|N|Y|Y|0.36|
 |fronius|Add (very basic) Support for Fronius Symo JSON Api to Home Assistant|Y|Y|Y|0.96|
-|frontend|official frontend to control Home Assistant|Y|Y|Y|0.7|
 |frontier_silicon|Support for Internet Radios based on the Frontier Silicon chipset|N|N|Y|0.40|
 |futurenow|Allows you to use P5 FutureNow relay/dimmer units as lights|N|N|Y|0.75|
 |garages_amsterdam|measure the occupancy of Amsterdam parking garages in the Netherlands|N|N|Y|2021.6|
@@ -248,6 +248,7 @@
 |gdacs|lets you use a GeoRSS feed provided by GDACS|N|N|Y|0.106|
 |generic|The generic camera platform allows you to integrate any IP camera or other URL|N|N|Y||
 |geniushub|geniushub integration links Home Assistant with your Genius Hub CH/DHW|N|N|Y|0.92|
+|geocaching|None|N|N|Y|2022.6.0b0|
 |geonetnz_quakes|Use a GeoJSON feed provided by New Zealand’s GeoNet in Home Assistant|N|N|Y|0.98|
 |geonetnz_volcano|GeoJSON feed provided by New Zealand’s GeoNet|N|N|Y|0.103|
 |geo_json_events|geo_json_events platform lets you integrate GeoJSON feeds|N|N|Y|0.79|
@@ -312,6 +313,7 @@
 |hydrawise|communicate with Hunter Wi-Fi irrigation controllers|N|Y|Y|0.71|
 |hyperion|integrate your Hyperion into Home Assistant|Y|N|Y|0.7.6|
 |ialarm|A simple library to interface with iAlarm systems, built for Home-Assistant|N|N|Y|2021.5|
+|ialarm_xr|None|N|N|Y|2022.6.0b0|
 |iammeter|real-time readings of WEM3080, WEM3162 & WEM3080T) meters|N|N|Y|0.107|
 |iaqualink|iAqualink by Jandy allows you to control your pool via cloud service|N|Y|Y|0.99|
 |icloud|iCloud allows users to track their location on iOS devices|N|N|Y|0.10|
@@ -364,6 +366,7 @@
 |lametric|LaMetric Time smart clock listen to web radio and display notifications|N|N|Y|0.49|
 |lastfm|lastfm sensor platform will allow you to see whenever a user starts scrobbling|N|N|Y|0.20|
 |launch_library|information about the next planned space launch|N|N|Y|0.83|
+|laundrify|None|N|N|Y|2022.6.0b0|
 |lcn|allows you to connect to LCN hardware devices|N|N|Y|0.85|
 |lg_netcast|allows you to control a LG Smart TV running NetCast 3.0|N|N|Y|0.20|
 |lg_soundbar|allows you to control LG Soundbars from Home Assistant|N|N|Y|0.81|
@@ -396,7 +399,7 @@
 |maxcube|eQ-3 ELV MAX Cube Python API|Y|Y|Y|0.40|
 |mazda|Mazda Connected Services integration|N|N|Y|2021.3|
 |mcp23017|base for all related mcp23017 platforms in Home Assistant|N|N|Y|0.94|
-|meater|communication with the Meater Temperature Probe from Apption Labs|None|None|Y|2022.5.0b0|
+|meater|communication with the Meater Temperature Probe from Apption Labs|N|N|Y|2022.5.0b0|
 |mediaroom|control a Mediaroom Set-Top Box (STB) from Home Assistant|N|N|Y|0.63|
 |media_extractor|Gets a stream URL and sends it to a media player entity|N|Y|Y|0.49|
 |melcloud|Python MELCloud interface|N|N|Y|0.106|
@@ -812,6 +815,7 @@
 |wled|add support for Aircookie's WLED|N|Y|Y|0.102|
 |wolflink|uses the Wolf Smart-Set for your heating system status|N|N|Y|0.114|
 |workday|generating country, province and state specific sets of holidays on the fly|Y|Y|Y|0.41|
+|ws66i|None|N|N|Y|2022.6.0b0|
 |xbee|send and receive commands to and from other devices on the Zigbee|N|N|Y|0.12|
 |xbox|A library to authenticate with Windows Live/Xbox Live and use their API|N|N|Y|0.117|
 |xbox_live|track Xbox profiles|N|Y|Y|0.28|
@@ -828,6 +832,7 @@
 |yeelight|allows you to control your Yeelight Wifi bulbs|N|Y|Y|0.32|
 |yeelightsunflower|allows you to control your Yeelight Sunflower light bulbs|N|N|Y|0.39|
 |yi|allows you to utilize Yi Home Cameras within Home Assistant|N|Y|Y|0.56|
+|yolink|None|N|N|Y|2022.6.0b0|
 |youless|allows you to read the meter values from sensors created by YouLess|N|N|Y|2021.8.0|
 |zabbix|integration to connect to a Zabbix monitoring instance via the Zabbix API|N|N|Y|0.37|
 |zengge|Python API for controlling Zengge LED bulbs|N|N|Y|0.36|

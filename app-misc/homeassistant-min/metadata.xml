@@ -38,7 +38,6 @@
     <flag name="ffmpeg">allows other Home Assistant integrations to process video and audio streams</flag>
     <flag name="forecast_solar">Asynchronous Python client for getting forecast solar information</flag>
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
-    <flag name="frontend">official frontend to control Home Assistant</flag>
     <flag name="github">GitHub sensor integrates data from GitHub to monitor your favorite repositories</flag>
     <flag name="homekit">Integrate HomeKit controller and accessory in Home Assistant</flag>
     <flag name="homekit_controller">Allows you to connect accessories with the “Works with HomeKit” logo</flag>
