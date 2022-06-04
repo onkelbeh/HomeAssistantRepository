@@ -152,7 +152,7 @@ beacontools==1.2.3
 beautifulsoup4==4.11.1
 beewi-smartclim==0.0.10
 bellows==0.30.0
-bimmer-connected==0.9.3
+bimmer-connected==0.9.4
 bitarray==2.4.1
 bitstring==3.1.9
 bizkaibus==0.1.1
@@ -842,7 +842,7 @@ pymyq==3.1.4
 pymysensors==0.22.1
 pynacl==1.5.0
 pynello==2.0.3
-pynetgear==0.10.0
+pynetgear==0.10.4
 pynetio==0.1.9.1
 PyNINA==0.1.8
 pynuki==1.5.2
@@ -865,7 +865,7 @@ pyowm==3.2.0
 pyownet==0.10.0
 pyparsing==3.0.9
 pypca==0.0.7
-pypck==0.7.14
+pypck==0.7.15
 pypjlink2==1.2.1
 pyplaato==0.0.18
 pypoint==2.3.0
