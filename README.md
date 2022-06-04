@@ -524,7 +524,7 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1768 Ebuilds in total, 1761 of them have in total 1768 (35 different) licenses assigned.
+There are 1767 Ebuilds in total, 1760 of them have in total 1767 (35 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
@@ -547,13 +547,13 @@ There are 1768 Ebuilds in total, 1761 of them have in total 1768 (35 different) 
 |LGPL-2.1+|3|
 |PSF-2|3|
 |GPL-2+|3|
-|EPL-2.0|3|
 |AGPL-3+|2|
 |ZPL|2|
 |ISC|2|
 |NEWLIB|2|
 |CC-BY-NC-SA-3.0|2|
 |MPL-2.0|2|
+|EPL-2.0|2|
 |ECL-2.0|1|
 |Boost-1.0|1|
 |AGPL-3|1|
@@ -564,9 +564,9 @@ There are 1768 Ebuilds in total, 1761 of them have in total 1768 (35 different) 
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
 
-(Last counted: 04/06/2022)
+(Last counted: 05/06/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 04/06/2022
+Last updated: 05/06/2022

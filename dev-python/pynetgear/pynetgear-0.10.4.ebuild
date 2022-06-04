@@ -13,7 +13,7 @@ SRC_URI="https://github.com/MatMaul/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -27,7 +27,14 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
+src_prepare() {
+	echo "requests>=2.0" >> requirements.txt || die
+	eapply_user
+}
+
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
