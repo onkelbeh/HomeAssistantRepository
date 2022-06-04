@@ -76,7 +76,7 @@
     <flag name="aws">Interact with Amazon Web Services</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
     <flag name="backup">allows you to create and download backups for your Home Assistant Core</flag>
-    <flag name="baf"/>
+    <flag name="baf">Integrates Big Ass Fans devices into Home Assistant</flag>
     <flag name="baidu">Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi</flag>
     <flag name="balboa">This integration adds support for Balboa Spa WiFi Modules</flag>
     <flag name="bbb_gpio">Base for all BeagleBone Black related GPIO platforms</flag>
@@ -264,7 +264,7 @@
     <flag name="gdacs">lets you use a GeoRSS feed provided by GDACS</flag>
     <flag name="generic">The generic camera platform allows you to integrate any IP camera or other URL</flag>
     <flag name="geniushub">geniushub integration links Home Assistant with your Genius Hub CH/DHW</flag>
-    <flag name="geocaching"/>
+    <flag name="geocaching">The Geocaching integration pulls data from your Geocaching.com account</flag>
     <flag name="geonetnz_quakes">Use a GeoJSON feed provided by New Zealand’s GeoNet in Home Assistant</flag>
     <flag name="geonetnz_volcano">GeoJSON feed provided by New Zealand’s GeoNet</flag>
     <flag name="geo_json_events">geo_json_events platform lets you integrate GeoJSON feeds</flag>
@@ -329,7 +329,7 @@
     <flag name="hydrawise">communicate with Hunter Wi-Fi irrigation controllers</flag>
     <flag name="hyperion">integrate your Hyperion into Home Assistant</flag>
     <flag name="ialarm">A simple library to interface with iAlarm systems, built for Home-Assistant</flag>
-    <flag name="ialarm_xr"/>
+    <flag name="ialarm_xr">Provides connectivity with the Antifurto365 iAlarmXR alarm systems</flag>
     <flag name="iammeter">real-time readings of WEM3080, WEM3162 &amp; WEM3080T) meters</flag>
     <flag name="iaqualink">iAqualink by Jandy allows you to control your pool via cloud service</flag>
     <flag name="icloud">iCloud allows users to track their location on iOS devices</flag>
@@ -382,7 +382,7 @@
     <flag name="lametric">LaMetric Time smart clock listen to web radio and display notifications</flag>
     <flag name="lastfm">lastfm sensor platform will allow you to see whenever a user starts scrobbling</flag>
     <flag name="launch_library">information about the next planned space launch</flag>
-    <flag name="laundrify"/>
+    <flag name="laundrify">Monitor the status of your washing machine or dryer using a laundrify WiFi power</flag>
     <flag name="lcn">allows you to connect to LCN hardware devices</flag>
     <flag name="lg_netcast">allows you to control a LG Smart TV running NetCast 3.0</flag>
     <flag name="lg_soundbar">allows you to control LG Soundbars from Home Assistant</flag>
@@ -831,7 +831,7 @@
     <flag name="wled">add support for Aircookie's WLED</flag>
     <flag name="wolflink">uses the Wolf Smart-Set for your heating system status</flag>
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
-    <flag name="ws66i"/>
+    <flag name="ws66i">Control the Soundavo Whole-Home Audio Amplifier via local network</flag>
     <flag name="xbee">send and receive commands to and from other devices on the Zigbee</flag>
     <flag name="xbox">A library to authenticate with Windows Live/Xbox Live and use their API</flag>
     <flag name="xbox_live">track Xbox profiles</flag>
@@ -848,7 +848,7 @@
     <flag name="yeelight">allows you to control your Yeelight Wifi bulbs</flag>
     <flag name="yeelightsunflower">allows you to control your Yeelight Sunflower light bulbs</flag>
     <flag name="yi">allows you to utilize Yi Home Cameras within Home Assistant</flag>
-    <flag name="yolink"/>
+    <flag name="yolink">Integrates YoLink Devices into Home Assistant</flag>
     <flag name="youless">allows you to read the meter values from sensors created by YouLess</flag>
     <flag name="zabbix">integration to connect to a Zabbix monitoring instance via the Zabbix API</flag>
     <flag name="zengge">Python API for controlling Zengge LED bulbs</flag>
