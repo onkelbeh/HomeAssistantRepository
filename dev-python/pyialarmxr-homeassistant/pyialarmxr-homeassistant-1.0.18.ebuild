@@ -4,31 +4,30 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
-DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
-DESCRIPTION="A simple API for RainMachine sprinkler controllers"
-HOMEPAGE="https://github.com/bachya/regenmaschine https://pypi.org/project/regenmaschine/"
+DESCRIPTION="A simple library to interface with iAlarmXR systems, built for use with Home Assistant"
+HOMEPAGE="https://github.com/bigmoby/pyialarmxr https://pypi.org/project/pyialarmxr-homeassistant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]"
+RDEPEND="!dev-python/pyialarmxr[${PYTHON_USEDEP}]
+	!dev-python/pyialarm[${PYTHON_USEDEP}]
+	dev-python/lxml[${PYTHON_USEDEP}]
+	dev-python/xmltodict[${PYTHON_USEDEP}]"
 BDEPEND="
+	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
-		dev-python/pytest-cov[${PYTHON_USEDEP}]
-		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
-		dev-python/asynctest[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

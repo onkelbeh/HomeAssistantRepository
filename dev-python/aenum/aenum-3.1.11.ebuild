@@ -7,19 +7,19 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Client for interaction of the LOOKin device with the Home Assistant"
-HOMEPAGE="https://github.com/ANMalko/aiolookin https://pypi.org/project/aiolookin/"
+DESCRIPTION="Advanced Enumerations (compatible with Python's stdlib Enum), NamedTuples, and NamedConstants"
+HOMEPAGE="https://github.com/ethanfurman/aenum https://pypi.org/project/aenum/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.md"
+DOCS="aenum/doc/aenum.rst"
 
-RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]"
+RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -31,3 +31,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest

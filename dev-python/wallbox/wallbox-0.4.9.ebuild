@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Client for interaction of the LOOKin device with the Home Assistant"
-HOMEPAGE="https://github.com/ANMalko/aiolookin https://pypi.org/project/aiolookin/"
+DESCRIPTION="Module for interacting with Wallbox EV charger api"
+HOMEPAGE="https://github.com/cliviu74/wallbox https://pypi.org/project/wallbox/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,7 +19,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/requests-2.22.0[${PYTHON_USEDEP}]
+	>=dev-python/simplejson-3.16.0[${PYTHON_USEDEP}]
+	>=dev-python/aenum-3.1.8[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -31,3 +33,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
