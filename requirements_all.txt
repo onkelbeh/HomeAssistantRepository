@@ -117,7 +117,7 @@ asgiref==3.5.0
 asmog==0.0.6
 asterisk_mbox==0.5.0
 astral==2.2
-async-upnp-client==0.30.1
+async-upnp-client==0.31.1
 asyncclick==8.0.1.3
 asynccmd==0.2.4
 asyncio-dgram==2.1.0
@@ -549,6 +549,7 @@ magicseaweed==1.0.3
 markdown==3.3.6
 markupsafe==2.1.1
 marshmallow-dataclass==8.5.0
+marshmallow==3.16.0
 Mastodon-py==1.5.1
 matrix-client==0.4.0
 mawk==1.3.4_p20200120
@@ -887,7 +888,6 @@ pyRFXtrx==0.29.0
 pyrisco==0.3.1
 pyrituals==0.0.6
 PyRMVtransport==0.3.3
-pyroute2==0.6.9
 pyrsistent==0.18.1
 pyruckus==0.12
 pysabnzbd==1.1.1
@@ -998,7 +998,7 @@ pyvolumio==0.1.5
 pyW215==0.7.0
 pyW800rf32==0.1
 pywebpush==1.9.2
-pywemo==0.8.1
+pywemo==0.9.1
 pywilight==0.0.70
 pywizlight==0.5.13
 pyws66i==1.1
@@ -1116,6 +1116,7 @@ srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
 starkbank-ecdsa==1.0.0
+starlette==0.18.0
 starline==0.1.5
 starlingbank==3.2
 statsd==3.2.1
@@ -1274,7 +1275,7 @@ zigpy-zigate==0.7.4
 zigpy-znp==0.7.0
 zigpy==0.45.1
 zipp==3.8.0
-zlib==1.2.11
+zlib==1.2.12
 zm-py==0.5.2
 zope-interface==5.4.0
 zwave-me-ws==0.2.4
