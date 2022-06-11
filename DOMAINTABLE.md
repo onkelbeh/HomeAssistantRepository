@@ -393,7 +393,7 @@
 |lyric|Honeywell Lyric thermostat platform|N|N|Y|2021.3|
 |magicseaweed|Provides API wrapper to magicseaweed.com.|N|N|Y|0.75|
 |mailgun|A simple mailgun client - pymailgun fork with Python 3 support|N|N|Y|0.38|
-|mariadb|set dependencies for mariadb-connector-python|Y|Y|Y|2022.6.3|
+|mariadb|set dependencies for mariadb|Y|Y|Y|2022.6.3|
 |marytts|text-to-speech platform uses MaryTTS Text-to-Speech engine|N|N|Y|0.43|
 |mastodon|uses Mastodon to deliver notifications from Home Assistant|N|N|Y|0.67|
 |matrix|allows you to send messages to matrix rooms|N|N|Y|0.69|
