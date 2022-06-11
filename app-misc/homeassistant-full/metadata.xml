@@ -409,7 +409,7 @@
     <flag name="lyric">Honeywell Lyric thermostat platform</flag>
     <flag name="magicseaweed">Provides API wrapper to magicseaweed.com.</flag>
     <flag name="mailgun">A simple mailgun client - pymailgun fork with Python 3 support</flag>
-    <flag name="mariadb">set dependencies for mariadb-connector-python</flag>
+    <flag name="mariadb">set dependencies for mariadb</flag>
     <flag name="marytts">text-to-speech platform uses MaryTTS Text-to-Speech engine</flag>
     <flag name="mastodon">uses Mastodon to deliver notifications from Home Assistant</flag>
     <flag name="matrix">allows you to send messages to matrix rooms</flag>
