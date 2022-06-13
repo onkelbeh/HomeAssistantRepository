@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..11} pypy3 )
+PYTHON_COMPAT=( python3_{8..10} )
 PYTHON_REQ_USE="ssl(+),threads(+)"
 
 inherit bash-completion-r1 distutils-r1 multiprocessing
@@ -34,7 +34,7 @@ SRC_URI="
 "
 
 LICENSE="MIT"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
+KEYWORDS="amd64 arm arm64 x86"
 SLOT="0"
 IUSE="vanilla"
 
@@ -88,11 +88,6 @@ python_compile_all() {
 }
 
 python_test() {
-	if ! has "${EPYTHON}" python3.{8..10} ]]; then
-		einfo "Skipping tests on ${EPYTHON} since virtualenv-16 is broken"
-		return 0
-	fi
-
 	local EPYTEST_DESELECT=(
 		tests/functional/test_install.py::test_double_install_fail
 		tests/functional/test_list.py::test_multiple_exclude_and_normalization
