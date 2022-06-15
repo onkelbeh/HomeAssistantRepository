@@ -7,11 +7,11 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Discover Unifi Devices"
-HOMEPAGE="https://github.com/bdraco/unifi-discovery https://pypi.org/project/unifi-discovery/"
+DESCRIPTION="A Python library to interface with the Hive API"
+HOMEPAGE="https://github.com/Pyhive/pyhiveapi https://pypi.org/project/pyhiveapi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -19,8 +19,14 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
-	>=dev-python/pyroute2-0.6.5[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/pyquery[${PYTHON_USEDEP}]
+	dev-python/boto3[${PYTHON_USEDEP}]
+	dev-python/botocore[${PYTHON_USEDEP}]
+	dev-python/pyquery[${PYTHON_USEDEP}]
+	dev-python/unasync[${PYTHON_USEDEP}]
+	dev-python/loguru[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -32,3 +38,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
