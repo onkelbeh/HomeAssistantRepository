@@ -7,26 +7,24 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Big Ass Fans i6/Haiku protocol asynchronous Python library"
-HOMEPAGE="https://github.com/jfroy/aiobafi6 https://pypi.org/project/aiobafi6/"
+DESCRIPTION="The Insteon frontend for Home Assistant"
+HOMEPAGE="https://github.com/teharris1/insteon-panel https://pypi.org/project/insteon-frontend-home-assistant/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/protobuf-python-3.20[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.38.0[${PYTHON_USEDEP}]"
+RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

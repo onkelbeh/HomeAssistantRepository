@@ -29,7 +29,7 @@ aioairzone==0.4.4
 aioambient==2021.11.0
 aioaseko==0.0.2
 aioasuswrt==1.4.0
-aiobafi6==0.5.0
+aiobafi6==0.6.0
 aiobotocore==2.1.0
 aiocache==0.11.1
 aiocoap==0.4.3
@@ -59,7 +59,7 @@ aiolifx==0.7.1
 aiolookin==0.1.1
 aiolyric==1.0.8
 aiomodernforms==0.1.8
-aiomusiccast==0.14.3
+aiomusiccast==0.14.4
 aionanoleaf==0.2.0
 aionotify==0.2.0
 aionotion==3.0.2
@@ -83,7 +83,7 @@ aiosteamist==0.3.1
 aioswitcher==2.0.6
 aiosyncthing==0.5.1
 aiotractive==0.5.4
-aiounifi==31
+aiounifi==32
 aiovlc==0.1.0
 aiowatttime==0.1.1
 aiowebostv==0.2.0
@@ -171,8 +171,8 @@ bme680==1.0.5
 bond-async==0.1.22
 boschshcpy==0.2.30
 boto3==1.20.24
-boto3==1.23.10
-botocore==1.26.10
+boto3==1.24.7
+botocore==1.27.7
 bottle==0.12.21
 bottleneck==1.3.4
 bravia-tv==1.0.11
@@ -191,9 +191,9 @@ buienradar==1.0.5
 busybox==1.34.1
 c-ares==1.17.2
 ca-certificates==20210119.3.66
-cachetools==5.0.0
+cachetools==5.2.0
 casttube==0.2.0
-cattrs==1.10.0
+cattrs==22.1.0
 cbor2==5.4.3
 cchardet==2.1.7
 certifi==3021.3.16
@@ -228,12 +228,12 @@ construct==2.10.68
 convertdate==2.3.0
 coreutils==8.32
 coronavirus==1.1.1
-coverage==6.4
+coverage==6.4.1
 crc16==0.1.1
 crccheck==1.1
 crcmod==1.7
 croniter==1.0.6
-croniter==1.3.4
+croniter==1.3.5
 crownstone-cloud==1.4.9
 crownstone-core==3.0.1
 crownstone-sse==2.0.3
@@ -263,6 +263,7 @@ demjson3==3.0.5
 devolo-home-control-api==0.18.2
 devolo-plc-api==0.8.0
 dialog==1.3.20220414
+dicttoxml==1.7.4
 directv==0.4.0
 discogs-client==2.3.0
 discovery30303==0.2.1
@@ -283,7 +284,7 @@ ebusdpy==0.0.17
 ecdsa==0.17.0
 ecoaliface==0.4.0
 eebrightbox==0.0.4
-elementpath==2.5.1
+elementpath==2.5.3
 elgato==3.0.0
 eliqonline==1.2.2
 elkm1-lib==2.0.0
@@ -374,7 +375,7 @@ google-auth==2.6.6
 google-cloud-pubsub==2.11.0
 google-cloud-texttospeech==2.11.0
 google-nest-sdm==1.8.0
-googleapis-common-protos==1.56.0
+googleapis-common-protos==1.56.2
 googlemaps==2.5.1
 goslide-api==0.5.1
 gpiozero==1.6.2
@@ -386,7 +387,7 @@ greeneye-monitor==3.0.3
 greenwavereality==0.5.1
 grep==3.7
 gridnet==4.0.0
-growattServer==1.1.0
+growattServer==1.2.2
 grpc-google-iam-v1==0.12.3
 grpcio-status==1.46.1
 grpcio==1.46.1
@@ -452,7 +453,7 @@ incremental==21.3.0
 inflect==5.6.0
 influxdb-client==1.24.0
 influxdb==5.3.1
-insteon-frontend-home-assistant==0.1.0
+insteon-frontend-home-assistant==0.1.1
 intelhex==2.3.0
 intellifire4py==1.0.2
 iotawattpy==0.1.0
@@ -546,7 +547,7 @@ lxml==4.8.0
 lyft_rides==0.2
 mac-vendor-lookup==0.1.11
 magicseaweed==1.0.3
-markdown==3.3.6
+markdown==3.3.7
 markupsafe==2.1.1
 marshmallow-dataclass==8.5.0
 marshmallow==3.16.0
@@ -575,7 +576,7 @@ more-itertools==8.13.0
 motionblinds==0.6.8
 motioneye-client==0.3.12
 ms-cv==0.1.1
-msgpack==1.0.3
+msgpack==1.0.4
 mt_940==4.23.0
 mullvad-api==1.0.0
 multidict==6.0.2
@@ -598,7 +599,7 @@ netifaces==0.11.0
 netmap==0.7.0.2
 nettigo-air-monitor==1.2.4
 neurio==0.3.1
-nexia==1.0.1
+nexia==1.0.2
 nextcloudmonitor==1.1.0
 nextcord==2.0.0_alpha8
 niko-home-control==0.2.1
@@ -646,7 +647,7 @@ panacotta==0.1
 panasonic-viera==0.3.6
 pandas==1.4.2
 paramiko==2.11.0
-pbr==5.8.0
+pbr==5.9.0
 pcal9535a==0.7
 pdunehd==1.3.2
 peco==0.0.29
@@ -677,12 +678,12 @@ poolsense==0.0.8
 praw==7.5.0
 prawcore==2.3.0
 prayer-times-calculator==0.0.5
-prettytable==3.2.0
+prettytable==3.3.0
 procps==3.3.17
 ProgettiHWSW==0.1.1
 proliphix==0.4.1
 prometheus_client==0.7.1
-proto-plus==1.20.3
+proto-plus==1.20.5
 protobuf-python==3.20.1
 protobuf==3.20.1
 proxmoxer==1.1.1
@@ -794,7 +795,7 @@ pyhumps==3.5.0
 pyialarm==1.9.0
 pyialarmxr-homeassistant==1.0.18
 pyicloud==1.0.0
-pyinsteon==1.1.0
+pyinsteon==1.1.1
 pyintesishome==1.7.6
 pyipma==2.0.5
 pyipp==0.11.0
@@ -860,7 +861,6 @@ pyopnsense==0.2.0
 pyoppleio==1.0.5
 PyOTA==2.0.5
 pyotgw==1.1_beta1
-pyotp==2.6.0
 pyoverkiz==1.4.0
 pyowm==3.2.0
 pyownet==0.10.0
@@ -959,7 +959,7 @@ python-picnic-api==1.1.0
 python-qbittorrent==0.4.2
 python-ripple-api==0.0.3
 python-slugify==4.0.1
-python-slugify==6.1.1
+python-slugify==6.1.2
 python-smarttub==0.0.32
 python-sochain-api==0.0.2
 python-socketio==4.6.0
@@ -1058,7 +1058,7 @@ russound-rio==0.1.7
 russound==0.1.9
 Rx==3.2.0
 rxv==0.7.0
-s3transfer==0.5.2
+s3transfer==0.6.0
 samsungctl==0.7.1
 samsungtvws==2.5.0
 satel-integra==0.3.4
@@ -1122,7 +1122,7 @@ starlingbank==3.2
 statsd==3.2.1
 stdiomask==0.0.6
 steamodd==4.21
-stevedore==3.4.0
+stevedore==3.5.0
 stookalert==0.1.4
 streamlabswater==1.0.1
 strict-rfc3339==0.7
@@ -1186,7 +1186,7 @@ ua-parser==0.10.0
 uasiren==0.0.1
 udev==217
 udev==250
-ujson==5.2.0
+ujson==5.3.0
 unasync==0.5.0
 unidecode==1.3.4
 unifi-discovery==1.1.4
@@ -1242,7 +1242,7 @@ wirelesstagpy==0.8.1
 withings-api==2.4.0
 wled==0.13.2
 wolf_smartset==0.1.11
-wrapt==1.14.0
+wrapt==1.14.1
 WSDiscovery==2.0.0
 wsproto==1.1.0
 xbee-helper==0.0.7
@@ -1251,7 +1251,7 @@ xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
 xknx==0.21.3
-xmlschema==1.10.0
+xmlschema==1.11.1
 xmltodict==0.12.0
 xmltodict==0.13.0
 xs1-api-client==3.0.0
