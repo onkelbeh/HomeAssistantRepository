@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
 	>=dev-python/zigpy-0.40.0[${PYTHON_USEDEP}]
-	dev-python/async_timeout[${PYTHON_USEDEP}]
+	dev-python/async-timeout[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
 	dev-python/jsonschema[${PYTHON_USEDEP}]"

@@ -51,7 +51,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/anyio-3.6.1[${PYTHON_USEDEP}]
 	~dev-python/astral-2.2[${PYTHON_USEDEP}]
 	~dev-python/async-upnp-client-0.31.1[${PYTHON_USEDEP}]
-	~dev-python/async_timeout-4.0.2[${PYTHON_USEDEP}]
+	~dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
 	~dev-python/atomicwrites-1.4.0[${PYTHON_USEDEP}]
 	~dev-python/attrs-21.2.0[${PYTHON_USEDEP}]
 	<dev-python/Authlib-1.0[${PYTHON_USEDEP}]

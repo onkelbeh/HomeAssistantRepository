@@ -23,7 +23,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="dev-python/async_timeout[${PYTHON_USEDEP}]
+RDEPEND="dev-python/async-timeout[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
 	<dev-python/aiohttp-4[${PYTHON_USEDEP}]"
 BDEPEND="

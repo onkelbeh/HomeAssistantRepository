@@ -21,7 +21,7 @@ DOCS="README.rst"
 
 RDEPEND="~dev-python/configargparse-0.11.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.7[${PYTHON_USEDEP}]
-	dev-python/async_timeout[${PYTHON_USEDEP}]
+	dev-python/async-timeout[${PYTHON_USEDEP}]
 	>=dev-python/appdirs-1.4[${PYTHON_USEDEP}]
 	~dev-python/readlike-0.1.2[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.6.0[${PYTHON_USEDEP}]

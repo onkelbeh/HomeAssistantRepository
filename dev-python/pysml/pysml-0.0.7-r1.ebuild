@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/async_timeout-4.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/async-timeout-4.0[${PYTHON_USEDEP}]
 	>=dev-python/bitstring-3.1.5[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}]"
 BDEPEND="

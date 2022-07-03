@@ -126,7 +126,7 @@ asyncpysupla==0.0.5
 asyncsleepiq==1.2.3
 asyncssh==2.9.0
 asynctest==0.13.0
-async_timeout==4.0.2
+async-timeout==4.0.2
 atenpdu==0.3.2
 atomicwrites==1.4.0
 attrs==21.2.0

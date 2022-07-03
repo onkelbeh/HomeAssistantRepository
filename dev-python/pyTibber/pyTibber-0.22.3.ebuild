@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
-	>=dev-python/async_timeout-1.4.0[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-1.4.0[${PYTHON_USEDEP}]
 	>=dev-python/graphql-subscription-manager-0.4.3[${PYTHON_USEDEP}]
 	dev-python/pytz[${PYTHON_USEDEP}]
 	dev-python/python-dateutil[${PYTHON_USEDEP}]"

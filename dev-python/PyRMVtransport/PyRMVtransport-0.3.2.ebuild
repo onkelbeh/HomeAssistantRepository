@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/async_timeout[${PYTHON_USEDEP}]
+RDEPEND="dev-python/async-timeout[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]
 	dev-python/httpx[${PYTHON_USEDEP}]"
 BDEPEND="

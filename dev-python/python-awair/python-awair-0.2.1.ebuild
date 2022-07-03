@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
-	dev-python/async_timeout[${PYTHON_USEDEP}]"
+	dev-python/async-timeout[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

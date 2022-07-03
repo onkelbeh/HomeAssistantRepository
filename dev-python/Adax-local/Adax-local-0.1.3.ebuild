@@ -26,7 +26,7 @@ RESTRICT="!test? ( test )"
 DOCS=""
 
 RDEPEND=">=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
-	>=dev-python/async_timeout-1.4.0[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-1.4.0[${PYTHON_USEDEP}]
 	dev-python/bleak[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
