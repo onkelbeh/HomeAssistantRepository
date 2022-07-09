@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">blebox-uniapi</remote-id>
     <maintainer status="unknown">
-      <email>the_gadget_mobile@yahoo.com</email>
-      <name>Gadget Mobile</name>
+      <email>opensource@blebox.eu</email>
+      <name>BleBox</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
