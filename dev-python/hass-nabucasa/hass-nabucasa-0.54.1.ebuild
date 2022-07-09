@@ -13,25 +13,26 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 x86 amd64-linux x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="~dev-python/pycognito-2022.1.0[${PYTHON_USEDEP}]
-	~dev-python/snitun-0.30.0[${PYTHON_USEDEP}]
-	>=app-crypt/acme-1.22.0[${PYTHON_USEDEP}]
+RDEPEND="~dev-python/pycognito-2022.5.0[${PYTHON_USEDEP}]
+	~dev-python/snitun-0.31.0[${PYTHON_USEDEP}]
+	>=app-crypt/acme-1.28.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
-	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
-	~dev-python/atomicwrites-1.4.0[${PYTHON_USEDEP}]"
+	~dev-python/atomicwrites-homeassistant-1.4.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-timeout[${PYTHON_USEDEP}]
+		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
@@ -39,7 +40,4 @@ python_test() {
 	py.test -v -v || die
 }
 
-src_prepare() {
-	sed -i "s/acme==1.22.0/acme/g" -i setup.py || die
-	eapply_user
-}
+distutils_enable_tests pytest
