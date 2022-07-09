@@ -16,7 +16,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
-DEPEND="!dev-python/atomicwrites[${PYTHON_USEDEP}]"
+#DEPEND="!dev-python/atomicwrites[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
 distutils_enable_sphinx docs dev-python/sphinx_rtd_theme
