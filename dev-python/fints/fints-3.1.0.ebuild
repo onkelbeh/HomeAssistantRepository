@@ -17,6 +17,8 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
+DOCS="README.md"
+
 RDEPEND="dev-python/bleach[${PYTHON_USEDEP}]
 	dev-python/mt_940[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
@@ -32,3 +34,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
