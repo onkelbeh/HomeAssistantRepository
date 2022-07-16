@@ -12,18 +12,20 @@ HOMEPAGE="https://github.com/Kane610/deconz https://pypi.org/project/pydeconz/"
 # No such file or directory: 'requirements.txt'
 #SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 MY_PN="deconz"
-S="${WORKDIR}/${MY_PN}-${PV}"
 SRC_URI="https://github.com/Kane610/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/async-timeout[${PYTHON_USEDEP}]
+	dev-python/orjson[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
