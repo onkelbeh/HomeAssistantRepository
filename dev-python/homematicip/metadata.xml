@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">homematicip</remote-id>
     <maintainer status="unknown">
-      <email>stieg@corona-bytes.net</email>
-      <name>Heimo Stieg</name>
+      <email>post@thomas-hahn.org</email>
+      <name>Thomas Hahn</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
