@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,13 +9,13 @@ inherit distutils-r1
 
 DESCRIPTION="API for Tesla Powerwall"
 HOMEPAGE="https://github.com/jrester/tesla_powerwall https://pypi.org/project/tesla-powerwall/"
-MY_PN=${PN//-/_}
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+MY_PN=${PN/-/_}
+SRC_URI="https://github.com/jrester/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -35,7 +35,4 @@ python_test() {
 	py.test -v -v || die
 }
 
-src_prepare() {
-	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests*'])/g" -i setup.py || die
-	eapply_user
-}
+distutils_enable_tests pytest
