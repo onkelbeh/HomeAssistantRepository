@@ -8,8 +8,7 @@
   <upstream>
     <remote-id type="pypi">home-assistant-frontend</remote-id>
     <maintainer status="unknown">
-      <email>hello@home-assistant.io</email>
-      <name>The Home Assistant Authors</name>
+      <email>The Home Assistant Authors &lt;hello@home-assistant.io&gt;</email>
     </maintainer>
   </upstream>
 </pkgmetadata>

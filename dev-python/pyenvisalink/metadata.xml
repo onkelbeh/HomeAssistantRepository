@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">pyenvisalink</remote-id>
     <maintainer status="unknown">
-      <email>dcinnamon@gmail.com</email>
-      <name>Dan Cinnamon</name>
+      <email>ufodone@gmail.com</email>
+      <name>David O'Neill</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

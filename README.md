@@ -33,11 +33,8 @@ Currently some help on the nodejs Ebuilds would be very welcome:
 * zigbee2mqtt
 * zwave-js-server (W.I.P, see https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/269)
 
-## 2022-05-15 pysnmplib changes revoked
-Change from pysnmp to pysnmplib has been revoked in https://github.com/home-assistant/core/pull/71901, released with 2022.5.5
-
-## 2022-05-06: file collisions with pysnmp
-With 2022.5.0, Home Assistant and some components started using `pysnmplib`, this causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
+## 2022-07: file collisions with pysnmp
+With 2022.7.0, Home Assistant and some components started again using `pysnmplib`, this causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
 ```
 # Workaround for replacing pysnmp with pysnmplib
 dev-python/pysnmp-4.4.12-r2
@@ -524,24 +521,24 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1769 Ebuilds in total, 1762 of them have in total 1769 (35 different) licenses assigned.
+There are 1801 Ebuilds in total, 1794 of them have in total 1802 (35 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1077|
-|Apache-2.0|320|
-|GPL-3|108|
-|BSD|99|
-|LGPL-3|28|
-|GPL-2|23|
+|MIT|1088|
+|Apache-2.0|330|
+|GPL-3|109|
+|BSD|103|
+|LGPL-3|30|
+|GPL-2|22|
 |LGPL-3+|18|
+|BSD-2|14|
 |GPL-3+|14|
 |all-rights-reserved|13|
-|BSD-2|9|
 |LGPL-2.1|7|
 |Unlicense|6|
+|public-domain|5|
 |EPL-1.0|5|
-|public-domain|4|
 |LGPL-2+|3|
 |BSD-4|3|
 |LGPL-2.1+|3|
@@ -564,9 +561,9 @@ There are 1769 Ebuilds in total, 1762 of them have in total 1769 (35 different) 
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
 
-(Last counted: 03/07/2022)
+(Last counted: 19/07/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 03/07/2022
+Last updated: 19/07/2022
