@@ -9,7 +9,11 @@ inherit distutils-r1
 
 DESCRIPTION="Python API for controlling Insteon devices"
 HOMEPAGE="https://github.com/pyinsteon/pyinsteon https://pypi.org/project/pyinsteon/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+MY_P=${P/_beta/b}
+MY_PV=${PV/_beta/b}
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
+S="${WORKDIR}/${MY_P}"
+PYTHON_MODULES="${PN}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -36,3 +40,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
