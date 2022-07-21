@@ -9,13 +9,9 @@ PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1 optfeature toolchain-funcs
 
 DESCRIPTION="A Pythonic binding for the libxml2 and libxslt libraries"
-HOMEPAGE="
-	https://lxml.de/
-	https://pypi.org/project/lxml/
-	https://github.com/lxml/lxml
-"
+HOMEPAGE="https://lxml.de/ https://pypi.org/project/lxml/ https://github.com/lxml/lxml"
 SRC_URI="https://github.com/lxml/lxml/archive/${P}.tar.gz -> ${P}.gh.tar.gz"
-S="${WORKDIR}"/lxml-${P}
+S="${WORKDIR}/lxml-${P}"
 
 LICENSE="BSD"
 SLOT="0"
@@ -46,9 +42,7 @@ BDEPEND="
 	)
 "
 
-PATCHES=(
-	"${FILESDIR}"/${PN}-4.6.0-tests-pypy.patch
-)
+PATCHES=( "${FILESDIR}/${PN}-4.6.0-tests-pypy.patch" )
 
 python_check_deps() {
 	use doc || return 0
@@ -79,7 +73,8 @@ python_compile_all() {
 }
 
 python_test() {
-	local dir=${BUILD_DIR}/test$(python_get_sitedir)/lxml
+	local dir
+	dir=${BUILD_DIR}/test$(python_get_sitedir)/lxml
 	local -x PATH=${BUILD_DIR}/test/usr/bin:${PATH}
 
 	cp -al "${BUILD_DIR}"/{install,test} || die
@@ -87,7 +82,7 @@ python_test() {
 	cp -al src/lxml/html/tests "${dir}/html/" || die
 	ln -rs "${S}"/doc "${dir}"/../../ || die
 
-	"${EPYTHON}" test.py -vv --all-levels -p || die "Test ${test} fails with ${EPYTHON}"
+	"${EPYTHON}" test.py -vv --all-levels -p || die "Test fails with ${EPYTHON}"
 }
 
 python_install_all() {

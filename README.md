@@ -147,17 +147,17 @@ Sorry, due to technical reasons, I currently cannot offer public ssh access to m
 Sure, you can submit **issues** and **pull requests** on both sites, but I prefer them on my own server (requires registration).
 
 ## Python versions
-### Python 3.9
-My production box currently runs Python 3.9.7_p1 (9.11.2021). Most modules are OK with 3.9 support, some are not completed yet. I will upgrade them if they are touched, if you find your favorite components missing, just open a ticket and drop me a list. During compile tests, I have all available tests turned on.
+### Python 3.10
+My production box currently runs Python 3.10.5 (21.7.2022). Most modules are OK with 3.10 support.
 
-### Python <= 3.8 Support
-Should still work, but since Python 3.8 support is dropped, I will do no further tests on it, you should upgrade soon.
+### Python 3.11
+3.11 support will be added if they are touched, if you find your favorite components missing, just open a ticket and drop me a list. During compile tests, I have all available tests turned on.
 
-### Python 3.10 Support
-Currently not usable in production, my testbox compiles a lot of modules now, but some important things are still missing.
+### Python <= 3.9 Support
+Should still work, but since Python 3.8 support is dropped, I will do no further tests on it, you should upgrade now.
+Python 3.9 support will also be dropped soon.
 
-## Installation on Python 3.9
-Since Python 3.9 is default target since 05/2021, installation is very easy now.
+## Installation on Python 3.10
 
 ### Let's get started:
 First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure **not to interfere** with your main Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default. Others use `/usr/local/portage/homeassistant`
@@ -184,11 +184,11 @@ It will make things easier if you take the example files from `/etc/portage/pack
 
 Check your `/etc/portage/make.conf` to freeze correct Python Targets:
 ```sh
-USE_PYTHON="3.9"
-PYTHON_TARGETS="python3_9"
-PYTHON_SINGLE_TARGET="python3_9"
+USE_PYTHON="3.10"
+PYTHON_TARGETS="python3_10"
+PYTHON_SINGLE_TARGET="python3_10"
 ```
-Run `eselect python` to put Python 3.9 on position 1
+Edit `/etc/python-exec/python-exec.conf` to put Python 3.10 on top position.
 
 Finally install Home Assistant:
 ```sh
@@ -198,20 +198,21 @@ $ rc-update add homeassistant
 
 It could be necessary to install some components by hand, there are too many components to mask all in USE Flags. If you use a component which you want to be added as a USE Flag, send a pull request, or just let me know.
 
-## Upgrading to Python 3.9 from a pre 3.9 system (same as it was from Python 3.6 to 3.7, and 3.7 to 3.8).
+## Upgrading to Python 3.10 from a 3.9 system (same as it was from Python 3.6 to 3.7, and 3.7 to 3.8, and 3.8 to 3.9).
 
 ### The fastest way:
 
 * Remove app-misc/homeassistant (emerge -cav)
+* if you are using esphome, remove it, too.
 * run `emerge --depclean -a`, this will remove all dependent packages
 * update your naked core system as described below, or just run a
 ```sh
 $ emerge -tauvDUN @world --autounmask=y --changed-deps --changed-use --newuse --deep --with-bdeps=y
 ```
 
-* reinstall app-misc/homeassistant with only the new Python Version
+* reinstall app-misc/homeassistant for only the new Python Version
 
-This avoids a lot of recompiling all Home Assistant deps, and a lot of dependency trouble. Very recommended. I did not, but I just wanted to see if the hard way works too ;-)
+This avoids a lot of recompiling all Home Assistant deps, and a lot of dependency trouble. A naked box is significant easier to upgrade, Very recommended. I did not, but I just wanted to see if the hard way still works, too ;-)
 
 ### The upgrade steps:
 
@@ -219,18 +220,18 @@ Make sure your system is up to date:
 ```sh
 $ emerge -tauvDUN @world
 ```
-Install Python 3.9:
+Install Python 3.10:
 ```sh
-$ emerge -tav dev-lang/python:3.9
+$ emerge -tav dev-lang/python:3.10
 ```
 Edit your `/etc/portage/make.conf` to set the new Python Targets, make sure you have **both** versions active now:
 ```sh
-USE_PYTHON="3.9 3.8"
-PYTHON_TARGETS="python3_9 python3_8"
-PYTHON_SINGLE_TARGET="python3_9"
+USE_PYTHON="3.10 3.9"
+PYTHON_TARGETS="python3_10 python3_9"
+PYTHON_SINGLE_TARGET="python3_10"
 ```
 
-Run `eselect python` to put Python 3.8 on position 1, perhaps you'll have to edit `/etc/python-exec/python-exec.conf`.
+Run `eselect python` to put Python 3.10 on position 1, perhaps you'll have to edit `/etc/python-exec/python-exec.conf`.
 
 Run the Update:
 ```sh
@@ -240,27 +241,27 @@ $ emerge --depclean
 ```
 If everything is clean, double check with:
 
-* `eix --installed-with-use python_targets_python3_8` (<- old version)
-* `eix --installed-without-use python_targets_python3_9` (<- new version)
+* `eix --installed-with-use python_targets_python3_9` (<- old version)
+* `eix --installed-without-use python_targets_python3_10` (<- new version)
 
 or
 
-* `diff <(equery h python_targets_python3_8) <(equery h python_targets_python3_9)`
-* `diff <(equery h python_single_target_python3_8) <(equery h python_single_target_python3_9)`
+* `diff <(equery h python_targets_python3_9) <(equery h python_targets_python3_10)`
+* `diff <(equery h python_single_target_python3_9) <(equery h python_single_target_python3_10)`
 
 
 Help it with:
 ```sh
-eix -I# --installed-without-use python_targets_python3_9 | xargs emerge -1tv
+eix -I# --installed-without-use python_targets_python3_10 | xargs emerge -1tv
 ```
 
 Now you have all Python packages for both versions installed, time to get rid of the packages compiled for the old Python:
 
 Edit your `/etc/portage/make.conf` to remove old Python Targets:
 ```sh
-USE_PYTHON="3.9"
-PYTHON_TARGETS="python3_9"
-PYTHON_SINGLE_TARGET="python3_9"
+USE_PYTHON="3.10"
+PYTHON_TARGETS="python3_10"
+PYTHON_SINGLE_TARGET="python3_10"
 ```
 Run the Update again:
 
@@ -270,27 +271,31 @@ Run the Update again:
 # emerge --depclean
 ```
 
-It does not make sense to compile all this stuff **for more than one** Python target.
+It does not make sense to compile all this stuff for more than **one** Python target.
 
 Check if all is gone:
 
 ```sh
-# eix --installed-with-use python_targets_python3_8
+# eix --installed-with-use python_targets_python3_9
 ```
 
 Recompile all packages which are still present in the old Python. Repeat until all have vanished.
+On some boxes I had to recompile python-exec before a depclean removed the old Python:
+```sh
+# emerge -1tv dev-lang/python-exec --usepkg-exclude=*
+```
 
 ### Remove the old Python
 
 ```sh
-# emerge -cav /dev-lang/python:3.8
+# emerge -cav /dev-lang/python:3.9
 ```
 
 ### Tools that might help to clean up:
 
 ```sh
-$ eix --installed-with-use python_targets_python3_8
-$ diff <(equery h python_targets_python3_8) <(equery h python_targets_python3_9)
+$ eix --installed-with-use python_targets_python3_9
+$ diff <(equery h python_targets_python3_9) <(equery h python_targets_python3_10)
 ```
 
 # My VMs/boxes and Stuff I use
@@ -301,10 +306,10 @@ I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-
 ## My machines
 Currently I have three VM's running:
 ### Production
-Python 3.9.13
+Python 3.10.5
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test
-Python 3.9.13/3.10.5
+Python 3.10.5
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test2
 Python 3.10.5/3.11.0
@@ -521,19 +526,19 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1803 Ebuilds in total, 1796 of them have in total 1804 (35 different) licenses assigned.
+There are 1815 Ebuilds in total, 1808 of them have in total 1818 (35 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1090|
-|Apache-2.0|330|
+|MIT|1097|
+|Apache-2.0|334|
 |GPL-3|109|
 |BSD|103|
 |LGPL-3|30|
-|GPL-2|22|
+|GPL-2|24|
 |LGPL-3+|18|
+|GPL-3+|15|
 |BSD-2|14|
-|GPL-3+|14|
 |all-rights-reserved|13|
 |LGPL-2.1|7|
 |Unlicense|6|
@@ -561,9 +566,9 @@ There are 1803 Ebuilds in total, 1796 of them have in total 1804 (35 different) 
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
 
-(Last counted: 20/07/2022)
+(Last counted: 21/07/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 20/07/2022
+Last updated: 21/07/2022
