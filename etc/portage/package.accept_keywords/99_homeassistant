@@ -34,7 +34,7 @@ net-analyzer/fail2ban ~amd64
 =dev-python/watchdog-2.1.8 ~amd64
 =dev-python/websockets-10.2 ~amd64
 =dev-python/zeroconf-0.38.6 ~amd64
-=sci-geosciences/GeographicLib-1.52 ~amd64
+~sci-geosciences/GeographicLib-1.52 ~amd64
 
 =dev-python/numpy-1.23.0 ~amd64
 =dev-python/denonavr-0.10.11 ~amd64
