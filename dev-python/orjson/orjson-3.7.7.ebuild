@@ -55,6 +55,7 @@ SLOT="0"
 IUSE="debug"
 
 BDEPEND="
+	dev-util/maturin[${PYTHON_USEDEP}]
 	test? (
 		dev-python/arrow[${PYTHON_USEDEP}]
 		dev-python/orjson[${PYTHON_USEDEP}]
@@ -63,7 +64,6 @@ BDEPEND="
 		dev-python/pytz[${PYTHON_USEDEP}]
 		$(python_gen_cond_dep 'dev-python/numpy[${PYTHON_USEDEP}]' python3_{8..10})
 		$(python_gen_cond_dep '>=dev-python/xxhash-1.4.3[${PYTHON_USEDEP}]' python3_8)
-		dev-util/maturin[${PYTHON_USEDEP}]
 	)"
 
 src_unpack() {
