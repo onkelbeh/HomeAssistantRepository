@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 	>=dev-python/bitarray-2.1.2[${PYTHON_USEDEP}]
-	~dev-python/chacha20poly1305-reuseable-0.0.3[${PYTHON_USEDEP}]
+	>=dev-python/chacha20poly1305-reuseable-0.0.3[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-36.0.2[${PYTHON_USEDEP}]
 	>=dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
 	>=dev-python/mediafile-0.8.1[${PYTHON_USEDEP}]
