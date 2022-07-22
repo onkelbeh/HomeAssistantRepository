@@ -63,6 +63,7 @@ BDEPEND="
 		dev-python/pytz[${PYTHON_USEDEP}]
 		$(python_gen_cond_dep 'dev-python/numpy[${PYTHON_USEDEP}]' python3_{8..10})
 		$(python_gen_cond_dep '>=dev-python/xxhash-1.4.3[${PYTHON_USEDEP}]' python3_8)
+		dev-util/maturin[${PYTHON_USEDEP}]
 	)"
 
 src_unpack() {
