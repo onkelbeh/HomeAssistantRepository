@@ -7,11 +7,9 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Epson projector support for Python"
-HOMEPAGE="https://github.com/pszafer/epson_projector https://pypi.org/project/epson-projector/"
-MY_PN=${PN/-/_}
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
+DESCRIPTION="access public transport information in hamburg, germany."
+HOMEPAGE="https://github.com/vigonotion/pygti https://pypi.org/project/pygti/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,9 +19,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.3.0[${PYTHON_USEDEP}]
-	>=dev-python/pyserial-asyncio-0.4[${PYTHON_USEDEP}]
-	>=dev-python/async-timeout-3.0.0[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/voluptuous[${PYTHON_USEDEP}]
+	dev-python/pytz[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -35,3 +33,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest

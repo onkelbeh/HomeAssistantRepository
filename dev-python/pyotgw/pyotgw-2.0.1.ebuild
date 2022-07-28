@@ -7,13 +7,13 @@ PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
-DESCRIPTION="Epson projector support for Python"
-HOMEPAGE="https://github.com/pszafer/epson_projector https://pypi.org/project/epson-projector/"
-MY_PN=${PN/-/_}
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
+DESCRIPTION="A library to interface with the opentherm gateway through serial or network connection."
+HOMEPAGE="https://github.com/mvn23/pyotgw https://pypi.org/project/pyotgw/"
+MY_P="${PN}-${PV/_beta/b}"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_P}"
 
-LICENSE="MIT"
+LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -21,9 +21,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.3.0[${PYTHON_USEDEP}]
-	>=dev-python/pyserial-asyncio-0.4[${PYTHON_USEDEP}]
-	>=dev-python/async-timeout-3.0.0[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -35,3 +33,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
