@@ -64,6 +64,7 @@
     <flag name="blinksticklight">The blinkstick platform lets you control your Blinkstick lights</flag>
     <flag name="blinkt">The blinkt light platform lets you control the Blinkt! board, featuring eight su</flag>
     <flag name="blockchain">Displays Bitcoin wallet balances from blockchain.info</flag>
+    <flag name="bluetooth">The Bluetooth integration will detect nearby Bluetooth devices</flag>
     <flag name="bluetooth_le_tracker">Tracks Bluetooth low-energy devices periodically based on interval_seconds value</flag>
     <flag name="bluetooth_tracker">Discovers new devices on boot and tracks Bluetooth devices periodically</flag>
     <flag name="bme280">Bosch BME280 Environmental sensor connected via I2c bus (SDA, SCL pins)</flag>
