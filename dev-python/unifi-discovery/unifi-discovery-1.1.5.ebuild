@@ -3,7 +3,8 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
@@ -32,3 +33,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
