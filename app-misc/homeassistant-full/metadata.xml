@@ -92,6 +92,7 @@
     <flag name="blinkt">The blinkt light platform lets you control the Blinkt! board, featuring eight su</flag>
     <flag name="blockchain">Displays Bitcoin wallet balances from blockchain.info</flag>
     <flag name="bluesound">Allows you to control your Bluesound HiFi wireless speakers and audio integratio</flag>
+    <flag name="bluetooth">The Bluetooth integration will detect nearby Bluetooth devices</flag>
     <flag name="bluetooth_le_tracker">Tracks Bluetooth low-energy devices periodically based on interval_seconds value</flag>
     <flag name="bluetooth_tracker">Discovers new devices on boot and tracks Bluetooth devices periodically</flag>
     <flag name="bme280">Bosch BME280 Environmental sensor connected via I2c bus (SDA, SCL pins)</flag>
@@ -285,6 +286,7 @@
     <flag name="google_pubsub">Send events to Google Cloud Pub/Sub from Home Assistant</flag>
     <flag name="google_translate">google_translate text-to-speech platform for Home Assistant</flag>
     <flag name="google_travel_time">provides travel time from the Google Distance Matrix API</flag>
+    <flag name="govee_ble">Integrates Govee BLE devices into Home Assistant</flag>
     <flag name="gpmdp">Allows you to control a GPMDP instance from Home Assistant</flag>
     <flag name="gpsd">GPS information collected by gpsd and a GPS receiver</flag>
     <flag name="gree">Discover, connect and control Gree based minisplit systems</flag>
@@ -342,6 +344,7 @@
     <flag name="imap">observing your IMAP server and reporting the amount of unread emails</flag>
     <flag name="incomfort">client for Intergas InComfort/InTouch Lan2RF systems</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
+    <flag name="inkbird">Integrates INKBIRD devices into Home Assistant</flag>
     <flag name="insteon">allowing linked INSTEON devices to be used</flag>
     <flag name="intellifire">integrate IntelliFire Wi-Fi fireplace modules</flag>
     <flag name="intesishome">communications with IntesisHome Smart AC Controllers</flag>
@@ -437,6 +440,7 @@
     <flag name="minecraft_server">retrieve information from a Minecraft server</flag>
     <flag name="minio">This integration adds interaction with Minio</flag>
     <flag name="mitemp_bt">mitemp_bt sensor platform allows one to monitor room temperature and humidity</flag>
+    <flag name="moat">Integrates Moat devices into Home Assistant</flag>
     <flag name="mobile_app">allows Home Assistant mobile apps to easily integrate with Home Assistant</flag>
     <flag name="mochad">main integration to integrate all Mochad X10 platforms</flag>
     <flag name="modbus">sensors and switches controlled over MODBUS serial, TCP, and UDP connections</flag>
@@ -478,6 +482,7 @@
     <flag name="nexia">allows you to integrate your Nexia thermostats into Home Assistant</flag>
     <flag name="nextbus"> will give you the next departure time and associated data fro NextBus</flag>
     <flag name="nextcloud">pulls summary Nextcloud information into Home Assistant</flag>
+    <flag name="nextdns">allows you to monitor NextDNS statistics</flag>
     <flag name="nfandroidtv">Notifications for Android TV and Notifications for Fire TV</flag>
     <flag name="nightscout">allows you to view your CGM data from Nightscout</flag>
     <flag name="niko_home_control">platform allows you to integrate your Niko Home Control</flag>
@@ -634,6 +639,7 @@
     <flag name="sensehat">lets you control the Sense HAT board’s 8x8 RGB LED matrix on your Raspberry Pi</flag>
     <flag name="senseme">Integrates SenseME devices into Home Assistant</flag>
     <flag name="sensibo">Integrates Sensibo Air Conditioning controller into Home Assistant</flag>
+    <flag name="sensorpush">Integrates SensorPush devices into Home Assistant</flag>
     <flag name="sentry">The free Sentry account allows 5000 events per month</flag>
     <flag name="senz">allows you to control and monitor your nVent RAYCHEM SENZ-WIFI thermostats</flag>
     <flag name="serial">use data provided by a device connected to the serial port of the system</flag>
@@ -838,6 +844,7 @@
     <flag name="xbox_live">track Xbox profiles</flag>
     <flag name="xeoma">Python wrapper for Xeoma web server API</flag>
     <flag name="xiaomi_aqara">allows you to integrate Xiaomi Aqara-compatible devices</flag>
+    <flag name="xiaomi_ble">Integrates devices that implement the Xiaomi Mijia BLE MiBeacon protocol</flag>
     <flag name="xiaomi_miio">add support for Xiaomi smart appliances</flag>
     <flag name="xiaomi_tv">The xiaomi_tv platform allows you to control a Xiaomi TV</flag>
     <flag name="xmpp">Python 3 library for XMPP</flag>

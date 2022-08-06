@@ -76,6 +76,7 @@
 |blinkt|The blinkt light platform lets you control the Blinkt! board, featuring eight su|N|Y|Y|0.44|
 |blockchain|Displays Bitcoin wallet balances from blockchain.info|N|Y|Y|0.47|
 |bluesound|Allows you to control your Bluesound HiFi wireless speakers and audio integratio|N|N|Y|0.51|
+|bluetooth|The Bluetooth integration will detect nearby Bluetooth devices|Y|Y|Y|2022.8.1|
 |bluetooth_le_tracker|Tracks Bluetooth low-energy devices periodically based on interval_seconds value|Y|Y|Y|0.27|
 |bluetooth_tracker|Discovers new devices on boot and tracks Bluetooth devices periodically|N|Y|Y|0.18|
 |bme280|Bosch BME280 Environmental sensor connected via I2c bus (SDA, SCL pins)|N|Y|Y|0.48|
@@ -269,6 +270,7 @@
 |google_pubsub|Send events to Google Cloud Pub/Sub from Home Assistant|N|N|Y|0.88|
 |google_translate|google_translate text-to-speech platform for Home Assistant|N|N|Y|0.35|
 |google_travel_time|provides travel time from the Google Distance Matrix API|N|N|Y|0.19|
+|govee_ble|Integrates Govee BLE devices into Home Assistant|N|N|Y|2022.8.1|
 |gpmdp|Allows you to control a GPMDP instance from Home Assistant|N|N|Y|0.20|
 |gpsd|GPS information collected by gpsd and a GPS receiver|N|N|Y|0.26|
 |gree|Discover, connect and control Gree based minisplit systems|N|N|Y|0.117|
@@ -326,6 +328,7 @@
 |imap|observing your IMAP server and reporting the amount of unread emails|N|Y|Y|0.25|
 |incomfort|client for Intergas InComfort/InTouch Lan2RF systems|N|Y|Y|0.93|
 |influxdb|transfer sensor data to a local InfluxDB database|Y|Y|Y|0.9|
+|inkbird|Integrates INKBIRD devices into Home Assistant|N|N|Y|2022.8.1|
 |insteon|allowing linked INSTEON devices to be used|N|Y|Y|0.39|
 |intellifire|integrate IntelliFire Wi-Fi fireplace modules|N|N|Y|2022.2.0b1|
 |intesishome|communications with IntesisHome Smart AC Controllers|N|Y|Y|0.104|
@@ -421,6 +424,7 @@
 |minecraft_server|retrieve information from a Minecraft server|N|N|Y|0.106|
 |minio|This integration adds interaction with Minio|N|N|Y|0.98|
 |mitemp_bt|mitemp_bt sensor platform allows one to monitor room temperature and humidity|N|Y|Y|0.69|
+|moat|Integrates Moat devices into Home Assistant|N|N|Y|2022.8.1|
 |mobile_app|allows Home Assistant mobile apps to easily integrate with Home Assistant|Y|Y|Y|0.89|
 |mochad|main integration to integrate all Mochad X10 platforms|N|N|Y|0.32|
 |modbus|sensors and switches controlled over MODBUS serial, TCP, and UDP connections|N|N|Y||
@@ -462,6 +466,7 @@
 |nexia|allows you to integrate your Nexia thermostats into Home Assistant|N|N|Y|0.108|
 |nextbus| will give you the next departure time and associated data fro NextBus|N|N|Y|0.93|
 |nextcloud|pulls summary Nextcloud information into Home Assistant|N|N|Y|0.108|
+|nextdns|allows you to monitor NextDNS statistics|N|N|Y|2022.8.1|
 |nfandroidtv|Notifications for Android TV and Notifications for Fire TV|N|N|Y|0.32|
 |nightscout|allows you to view your CGM data from Nightscout|N|N|Y|0.115|
 |niko_home_control|platform allows you to integrate your Niko Home Control|N|N|Y|0.82|
@@ -618,6 +623,7 @@
 |sensehat|lets you control the Sense HAT board’s 8x8 RGB LED matrix on your Raspberry Pi|N|N|Y|0.44|
 |senseme|Integrates SenseME devices into Home Assistant|N|N|Y|2022.2.0b1|
 |sensibo|Integrates Sensibo Air Conditioning controller into Home Assistant|N|N|Y|0.44|
+|sensorpush|Integrates SensorPush devices into Home Assistant|N|N|Y|2022.8.1|
 |sentry|The free Sentry account allows 5000 events per month|N|N|Y|0.104|
 |senz|allows you to control and monitor your nVent RAYCHEM SENZ-WIFI thermostats|N|N|Y|2022.5.0b0|
 |serial|use data provided by a device connected to the serial port of the system|N|N|Y|0.56|
@@ -822,6 +828,7 @@
 |xbox_live|track Xbox profiles|N|Y|Y|0.28|
 |xeoma|Python wrapper for Xeoma web server API|N|N|Y|0.62|
 |xiaomi_aqara|allows you to integrate Xiaomi Aqara-compatible devices|N|Y|Y|0.57|
+|xiaomi_ble|Integrates devices that implement the Xiaomi Mijia BLE MiBeacon protocol|N|N|Y|2022.8.1|
 |xiaomi_miio|add support for Xiaomi smart appliances|N|Y|Y|0.51|
 |xiaomi_tv|The xiaomi_tv platform allows you to control a Xiaomi TV|N|Y|Y|0.64|
 |xmpp|Python 3 library for XMPP|N|N|Y||

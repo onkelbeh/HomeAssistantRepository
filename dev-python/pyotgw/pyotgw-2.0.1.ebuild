@@ -3,14 +3,14 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
 DESCRIPTION="A library to interface with the opentherm gateway through serial or network connection."
 HOMEPAGE="https://github.com/mvn23/pyotgw https://pypi.org/project/pyotgw/"
 MY_P="${PN}-${PV/_beta/b}"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
 S="${WORKDIR}/${MY_P}"
 
 LICENSE="GPL-3+"
