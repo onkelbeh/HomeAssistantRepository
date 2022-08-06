@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -17,10 +17,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS=""
+DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.3.2[${PYTHON_USEDEP}]
-	>=dev-python/lxml-3.6.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.3.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
