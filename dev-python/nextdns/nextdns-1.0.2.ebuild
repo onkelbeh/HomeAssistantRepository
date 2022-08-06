@@ -7,19 +7,20 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="ECMAScript parsing infrastructure for multipurpose analysis in Python"
-HOMEPAGE="https://github.com/Kronuz/esprima-python https://pypi.org/project/esprima/"
+DESCRIPTION="Python wrapper for NextDNS API."
+HOMEPAGE="https://github.com/bieniu/nextdns https://pypi.org/project/nextdns/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-#DOCS="README.rst"
+DOCS="README.md"
 
-RDEPEND=""
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/orjson[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
