@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">pytraccar</remote-id>
     <maintainer status="unknown">
-      <email>ludeeus@gmail.com</email>
-      <name>Joakim Sorensen</name>
+      <email>ludeeus@ludeeus.dev</email>
+      <name>Ludeeus</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
