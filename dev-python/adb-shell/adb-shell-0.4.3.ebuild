@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -15,7 +15,7 @@ S=${WORKDIR}/${MY_P}
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test usb"
 RESTRICT="!test? ( test )"
 
@@ -23,7 +23,7 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/aiofiles-0.4.0[${PYTHON_USEDEP}]
 	dev-python/cryptography[${PYTHON_USEDEP}]
-	dev-python/pyasn1[${PYTHON_USEDEP}]
+	|| ( dev-python/pyasn1[${PYTHON_USEDEP}] dev-python/pysnmp-pyasn1[${PYTHON_USEDEP}] )
 	dev-python/rsa[${PYTHON_USEDEP}]
 	usb? ( >=dev-python/libusb1-1.0.16[${PYTHON_USEDEP}] )"
 BDEPEND="
