@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_{8..11} )
 inherit distutils-r1
 
 DESCRIPTION="Cryptographic library for Python"
-HOMEPAGE="https://www.pycryptodome.org https://pypi.org/project/pycryptodomex/"
+HOMEPAGE="https://github.com/Legrandin/pycryptodome/ https://www.pycryptodome.org https://pypi.org/project/pycryptodomex/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
@@ -31,3 +31,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
