@@ -19,8 +19,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/google-api-core-1.31.5[${PYTHON_USEDEP}]
-	>=dev-python/proto-plus-1.15.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/google-api-core-1.32.0[${PYTHON_USEDEP}]
+	>=dev-python/proto-plus-1.15.0[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-python-3.19.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -32,3 +33,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
