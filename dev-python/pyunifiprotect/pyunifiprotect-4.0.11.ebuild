@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
@@ -20,12 +20,15 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+RDEPEND="dev-python/aiofiles[${PYTHON_USEDEP}]
+	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aioshutil[${PYTHON_USEDEP}]
+	dev-python/orjson[${PYTHON_USEDEP}]
+	dev-python/pillow[${PYTHON_USEDEP}]
 	dev-python/pydantic[${PYTHON_USEDEP}]
 	dev-python/pyjwt[${PYTHON_USEDEP}]
-	dev-python/python-dotenv[${PYTHON_USEDEP}]
-	dev-python/pytz[${PYTHON_USEDEP}]"
+	dev-python/pytz[${PYTHON_USEDEP}]
+	dev-python/typer[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
