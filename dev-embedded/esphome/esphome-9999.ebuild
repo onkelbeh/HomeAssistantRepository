@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit readme.gentoo-r1 distutils-r1
 
@@ -17,7 +17,7 @@ else
 	MY_PV=${PV/_beta/b}
 	SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/${MY_P}/"
-	KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 fi
 
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
@@ -37,7 +37,7 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	~dev-python/tzlocal-4.2[${PYTHON_USEDEP}]
 	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	~dev-embedded/platformio-5.2.5
+	~dev-embedded/platformio-6.0.2[${PYTHON_USEDEP}]
 	~dev-embedded/esptool-3.3.1[${PYTHON_USEDEP}]
 	~dev-python/click-8.1.3[${PYTHON_USEDEP}]
 	~dev-embedded/esphome-dashboard-20220508.0[${PYTHON_USEDEP}]
