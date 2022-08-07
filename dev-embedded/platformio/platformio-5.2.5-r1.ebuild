@@ -33,8 +33,8 @@ RDEPEND=">=dev-python/aiofiles-0.8.0[${PYTHON_USEDEP}]
 	>=dev-python/tabulate-0.8.3[${PYTHON_USEDEP}]
 	<dev-python/tabulate-1[${PYTHON_USEDEP}]
 	>=dev-python/marshmallow-2.20.5[${PYTHON_USEDEP}]
-	>=dev-python/starlette-0.18[${PYTHON_USEDEP}]
-	>=dev-python/uvicorn-0.17[${PYTHON_USEDEP}]
+	~dev-python/starlette-0.18.0[${PYTHON_USEDEP}]
+	~dev-python/uvicorn-0.17.6[${PYTHON_USEDEP}]
 	dev-python/wsproto[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.38[${PYTHON_USEDEP}]
 	virtual/udev"
@@ -65,6 +65,8 @@ distutils_enable_tests pytest
 
 src_prepare() {
 	sed "s/zeroconf==0.38.\*/zeroconf/g" -i setup.py || die
+	sed "s/wsproto==1.0.\*/wsproto/g" -i setup.py || die
+	sed "s/semantic_version==2.9.\*/semantic_version/g" -i setup.py || die
 	eapply_user
 }
 
