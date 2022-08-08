@@ -9,8 +9,6 @@ inherit distutils-r1
 
 DESCRIPTION="A Python library for communicating with deCONZ REST-API from Dresden Elektronik"
 HOMEPAGE="https://github.com/Kane610/deconz https://pypi.org/project/pydeconz/"
-# No such file or directory: 'requirements.txt'
-#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 MY_PN="deconz"
 SRC_URI="https://github.com/Kane610/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
