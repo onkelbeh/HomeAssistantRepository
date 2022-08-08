@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="A library which communicates with ZiGate radios for zigpy"
-HOMEPAGE="https://github.com/zigpy/zigpy-zigate https://pypi.org/project/zigpy-zigate/"
+DESCRIPTION="Library implementing a ZigBee stack"
+HOMEPAGE="https://github.com/zigpy/zigpy https://pypi.org/project/zigpy/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"
@@ -17,16 +17,19 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=">=dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	>=dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}]
-	>=dev-python/pyusb-1.1.0[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.47.0[${PYTHON_USEDEP}]"
+DOCS="README.md"
+
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+	>=dev-python/aiosqlite-0.16.0[${PYTHON_USEDEP}]
+	dev-python/crccheck[${PYTHON_USEDEP}]
+	dev-python/cryptography[${PYTHON_USEDEP}]
+	dev-python/voluptuous[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

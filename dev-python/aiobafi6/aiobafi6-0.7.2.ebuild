@@ -2,25 +2,26 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
+DISTUTILS_USE_PEP517=poetry
 
 PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="A library which communicates with ZiGate radios for zigpy"
-HOMEPAGE="https://github.com/zigpy/zigpy-zigate https://pypi.org/project/zigpy-zigate/"
+DESCRIPTION="Big Ass Fans i6/Haiku protocol asynchronous Python library"
+HOMEPAGE="https://github.com/jfroy/aiobafi6 https://pypi.org/project/aiobafi6/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL-3"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=">=dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	>=dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}]
-	>=dev-python/pyusb-1.1.0[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.47.0[${PYTHON_USEDEP}]"
+DOCS="README.md"
+
+RDEPEND=">=dev-python/protobuf-python-3.20[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.38.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
