@@ -31,7 +31,7 @@ AIOAladdinConnect==0.1.41
 aioambient==2021.11.0
 aioaseko==0.0.2
 aioasuswrt==1.4.0
-aiobafi6==0.7.0
+aiobafi6==0.7.2
 aiobotocore==2.1.0
 aiocache==0.11.1
 aiocoap==0.4.3
@@ -154,7 +154,7 @@ bcrypt==3.2.2
 beacontools==1.2.3
 beautifulsoup4==4.11.1
 beewi-smartclim==0.0.10
-bellows==0.31.2
+bellows==0.31.3
 bimmer-connected==0.10.1
 bitarray==2.5.1
 bitstring==3.1.9
@@ -234,7 +234,7 @@ construct==2.10.68
 convertdate==2.3.0
 coreutils==8.32
 coronavirus==1.1.1
-coverage==6.4.1
+coverage==6.4.2
 crc16==0.1.1
 crccheck==1.1
 crcmod==1.7
@@ -308,9 +308,9 @@ epson-projector==0.4.6
 epsonprinter==0.0.9
 eselect-awk==0.3
 esphome
-esphome-dashboard==20220309.0
+esphome-dashboard==20220508.0
 esprima==4.0.1
-esptool==3.3
+esptool==3.3.1
 eternalegypt==0.0.12
 eudev==3.2.11
 evdev==1.4.0
@@ -366,7 +366,7 @@ getmac==0.8.2
 gios==2.1.0
 gitterpy==0.1.7
 glances-api==0.3.5
-glib==2.72.2
+glib==2.72.3
 glibc==2.35
 gmp==6.2.1
 gntp==1.0.3
@@ -386,7 +386,7 @@ gpiozero==1.6.2
 gps3==0.33.3
 graphql-subscription-manager==0.4.3
 graphviz==2.50.0
-greeclimate==1.2.0
+greeclimate==1.3.0
 greeneye-monitor==3.0.3
 greenwavereality==0.5.1
 grep==3.7
@@ -760,7 +760,7 @@ pydaikin==2.7.0
 pydanfossair==0.1.0
 pydantic==1.9.0
 pydantic==1.9.1
-pydeconz==101
+pydeconz==102
 pydelijn==1.0.0
 pydexcom==0.2.3
 pydoods==1.0.2
@@ -930,7 +930,7 @@ pyspcwebgw==0.4.0
 pysqueezebox==0.5.5
 pystiebeleltron==0.0.1
 pysuez==0.1.19
-PySwitchbot==0.17.3
+PySwitchbot==0.18.4
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6
@@ -1217,7 +1217,7 @@ uscisstatus==0.1.1
 user-agents==2.0
 util-linux==2.37.4
 uvcclient==0.11.0
-uvicorn==0.18.2
+uvicorn==0.17.6
 vallox-websocket-api==2.12.0
 vehicle==0.4.0
 velbus-aio==2022.6.2
@@ -1288,9 +1288,9 @@ zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
 zigpy-deconz==0.18.0
 zigpy-xbee==0.15.0
-zigpy-zigate==0.9.0
+zigpy-zigate==0.9.1
 zigpy-znp==0.8.1
-zigpy==0.48.0
+zigpy==0.49.0
 zipp==3.8.0
 zlib==1.2.12
 zm-py==0.5.2
