@@ -20,7 +20,8 @@ RESTRICT="!test? ( test )"
 RDEPEND=">=dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}]
 	>=dev-python/pyusb-1.1.0[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.47.0[${PYTHON_USEDEP}]"
+	>=dev-python/zigpy-0.47.0[${PYTHON_USEDEP}]
+	dev-python/gpiozero[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
