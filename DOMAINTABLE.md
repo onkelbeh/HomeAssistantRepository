@@ -432,6 +432,7 @@
 |modern_forms|Asynchronous Python client for Modern Forms fans|N|N|Y|2021.7|
 |moehlenhoff_alpha2|allows you to control a Möhlenhoff Alpha 2 temperature control system|N|N|Y|2022.3.0b3|
 |monoprice|Python API for talking to Monoprice 6-zone amplifier|N|N|Y|0.56|
+|mosquitto|Set a runtime dependency for Mosquitto MQTT broker|Y|Y|Y|2022.8.3|
 |motioneye|integrate your motionEye server into Home Assistant|N|N|Y|2021.5|
 |motion_blinds|control Motion Blinds from Coulisse B.V.|N|N|Y|2020.12|
 |mpd|allows you to control a Music Player Daemon from Home Assistant|N|N|Y||

@@ -448,6 +448,7 @@
     <flag name="modern_forms">Asynchronous Python client for Modern Forms fans</flag>
     <flag name="moehlenhoff_alpha2">allows you to control a Möhlenhoff Alpha 2 temperature control system</flag>
     <flag name="monoprice">Python API for talking to Monoprice 6-zone amplifier</flag>
+    <flag name="mosquitto">Set a runtime dependency for Mosquitto MQTT broker</flag>
     <flag name="motioneye">integrate your motionEye server into Home Assistant</flag>
     <flag name="motion_blinds">control Motion Blinds from Coulisse B.V.</flag>
     <flag name="mpd">allows you to control a Music Player Daemon from Home Assistant</flag>

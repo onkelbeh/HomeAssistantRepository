@@ -1,6 +1,6 @@
 abodepy==1.2.0
 accuweather==0.3.0
-acme==1.28.0
+acme==1.29.0
 Adafruit-Blinka==7.1.1
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.1.8
@@ -48,7 +48,7 @@ aioftp==0.12.0
 aiogithubapi==22.2.4
 aioguardian==2022.7.0
 aioharmony==0.2.9
-aiohomekit==1.2.5
+aiohomekit==1.2.8
 aiohttp-cors==0.7.0
 aiohttp==3.8.1
 aiohue==4.4.2
@@ -160,7 +160,7 @@ bitarray==2.5.1
 bitstring==3.1.9
 bizkaibus==0.1.1
 bleach==5.0.1
-bleak-retry-connector==1.4.0
+bleak-retry-connector==1.5.0
 bleak==0.15.1
 blebox-uniapi==2.0.2
 blinker==1.4
@@ -177,8 +177,8 @@ bme680==1.0.5
 bond-async==0.1.22
 boschshcpy==0.2.30
 boto3==1.20.24
-boto3==1.24.31
-botocore==1.27.31
+boto3==1.24.36
+botocore==1.27.36
 bottle==0.12.21
 bottleneck==1.3.5
 bravia-tv==1.0.11
@@ -258,6 +258,7 @@ dateparser==1.0.0
 dbus-next==0.2.3
 dbus==1.12.22
 debianutils==5.7
+debugpy==1.6.2
 decora-wifi==1.4
 decora==0.6
 decorator==5.1.1
@@ -351,6 +352,7 @@ gawk==5.1.1
 gcal-sync==0.10.0
 gcloud==0.18.3
 gd==2.3.3
+gdb==11.2
 geniushub-client==0.6.30
 gentoo-functions==0.15
 geocachingapi==0.2.1
@@ -381,7 +383,7 @@ google-nest-sdm==2.0.0
 googleapis-common-protos==1.56.4
 googlemaps==2.5.1
 goslide-api==0.5.1
-govee-ble==0.12.6
+govee-ble==0.14.0
 gpiozero==1.6.2
 gps3==0.33.3
 graphql-subscription-manager==0.4.3
@@ -460,10 +462,10 @@ ihcsdk==2.7.6
 importlib_metadata==4.12.0
 incomfort-client==0.4.4
 incremental==21.3.0
-inflect==5.6.0
+inflect==5.6.2
 influxdb-client==1.24.0
 influxdb==5.3.1
-inkbird-ble==0.5.1
+inkbird-ble==0.5.2
 insteon-frontend-home-assistant==0.2.0
 intelhex==2.3.0
 intellifire4py==2.0.1
@@ -585,6 +587,7 @@ moehlenhoff-alpha2==1.2.1
 more-itertools==8.13.0
 motionblinds==0.6.11
 motioneye-client==0.3.12
+mpfr==4.1.0_p13
 ms-cv==0.1.1
 msgpack==1.0.4
 mt_940==4.26.0
@@ -599,6 +602,7 @@ mypy_extensions==0.4.3
 nad-receiver==0.3.0
 natsort==8.1.0
 nclib==1.0.1
+ncurses==6.3_p20220423
 ndms2-client==0.1.1
 nessclient==0.10.0
 netaddr==0.8.0
@@ -762,6 +766,7 @@ pydantic==1.9.0
 pydantic==1.9.1
 pydeconz==102
 pydelijn==1.0.0
+pydevd==2.8.0
 pydexcom==0.2.3
 pydoods==1.0.2
 pydroid-ipcam==1.3.1
@@ -997,7 +1002,7 @@ PyTurboJPEG==1.6.7
 pytz==2022.1
 pytz_deprecation_shim==0.1.0_p0
 pyudev==0.23.2
-pyunifiprotect==4.0.11
+pyunifiprotect==4.0.12
 pyuptimerobot==22.2.0
 pyusb==1.2.1
 PyUserInput==0.1.11
@@ -1031,10 +1036,11 @@ raspyrfm-client==1.2.8
 ratelimit==2.2.1
 re2==0.2021.11.01
 readlike==0.1.2
+readline==8.1_p2
 reedsolomon==1.5.4
 regenmaschine==2022.7.1
 regex==2021.8.28
-regex==2022.6.2
+regex==2022.7.9
 related==0.7.2
 renault-api==0.1.11
 ReParser==1.4.3
@@ -1089,7 +1095,7 @@ sense-energy==0.10.4
 sensor-state-data==2.0.2
 sensorpush-ble==1.5.1
 sepaxml==2.2.0
-setuptools==62.6.0
+setuptools==63.1.0
 sgmllib3k==1.0.0
 sharkiq==0.0.1
 sharp_aquos_rc==0.3.2
