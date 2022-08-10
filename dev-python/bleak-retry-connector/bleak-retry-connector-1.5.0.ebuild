@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="Parser for INKBIRD BLE devices"
-HOMEPAGE="https://github.com/bluetooth-devices/inkbird-ble https://pypi.org/project/inkbird-ble/"
+DESCRIPTION="A connector for Bleak Clients that handles transient connection failures"
+HOMEPAGE="https://github.com/bluetooth-devices/bleak-retry-connector https://pypi.org/project/bleak-retry-connector/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,13 +19,14 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/sensor-state-data-2.0.2[${PYTHON_USEDEP}]
-	>=dev-python/bluetooth-sensor-state-data-1.5.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/bleak-0.14.3[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 

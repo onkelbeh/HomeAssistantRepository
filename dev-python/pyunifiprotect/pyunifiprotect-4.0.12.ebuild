@@ -4,11 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="Parser for INKBIRD BLE devices"
-HOMEPAGE="https://github.com/bluetooth-devices/inkbird-ble https://pypi.org/project/inkbird-ble/"
+DESCRIPTION="Unofficial UniFi Protect Python API and CLI"
+HOMEPAGE="https://github.com/briis/pyunifiprotect https://pypi.org/project/pyunifiprotect/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,13 +20,22 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/sensor-state-data-2.0.2[${PYTHON_USEDEP}]
-	>=dev-python/bluetooth-sensor-state-data-1.5.0[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/aiofiles[${PYTHON_USEDEP}]
+	dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/aioshutil[${PYTHON_USEDEP}]
+	dev-python/orjson[${PYTHON_USEDEP}]
+	dev-python/pillow[${PYTHON_USEDEP}]
+	dev-python/pydantic[${PYTHON_USEDEP}]
+	dev-python/pyjwt[${PYTHON_USEDEP}]
+	dev-python/pytz[${PYTHON_USEDEP}]
+	dev-python/typer[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/packaging[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
