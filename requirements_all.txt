@@ -48,10 +48,10 @@ aioftp==0.12.0
 aiogithubapi==22.2.4
 aioguardian==2022.7.0
 aioharmony==0.2.9
-aiohomekit==1.2.9
+aiohomekit==1.2.11
 aiohttp-cors==0.7.0
 aiohttp==3.8.1
-aiohue==4.4.2
+aiohue==4.5.0
 aioimaplib==1.0.0
 aioitertools==0.8.0
 aiokafka==0.7.2
@@ -155,12 +155,12 @@ beacontools==1.2.3
 beautifulsoup4==4.11.1
 beewi-smartclim==0.0.10
 bellows==0.32.0
-bimmer-connected==0.10.1
+bimmer-connected==0.10.2
 bitarray==2.5.1
 bitstring==3.1.9
 bizkaibus==0.1.1
 bleach==5.0.1
-bleak-retry-connector==1.5.0
+bleak-retry-connector==1.8.0
 bleak==0.15.1
 blebox-uniapi==2.0.2
 blinker==1.4
@@ -170,7 +170,8 @@ blinkt==0.1.0
 blockchain==1.4.4
 bluepy==1.3.0
 bluetooth-adapters==0.1.3
-bluetooth-sensor-state-data==1.5.0
+bluetooth-data-tools==0.1.2
+bluetooth-sensor-state-data==1.6.0
 bluez==5.64
 bme280spi==0.2.0
 bme680==1.0.5
@@ -234,7 +235,7 @@ construct==2.10.68
 convertdate==2.3.0
 coreutils==8.32
 coronavirus==1.1.1
-coverage==6.4.2
+coverage==6.4.3
 crc16==0.1.1
 crccheck==1.1
 crcmod==1.7
@@ -287,7 +288,7 @@ dweepy==0.3.0
 dynalite-devices==0.1.46
 eagle100==0.1.1
 ebusdpy==0.0.17
-ecdsa==0.17.0
+ecdsa==0.18.0
 ecoaliface==0.4.0
 eebrightbox==0.0.4
 elementpath==2.5.3
@@ -324,13 +325,13 @@ fastdotcom==0.0.3
 feedparser==6.0.10
 ffmpeg==4.4.2
 fiblary3==0.1.8
-file==5.42
+file==5.41
 fints==3.1.0
 fitbit==0.3.1
 fivem-api==0.1.2
 fixerio==1.0.0_alpha0
 fjaraskupan==1.0.2
-flask==2.1.2
+flask==2.1.3
 flipr-api==1.4.2
 flux-led==0.28.30
 fnvhash==0.1.0
@@ -376,7 +377,7 @@ goalzero==0.2.1
 goodwe==0.2.18
 google-api-core==2.8.2
 google-auth-oauthlib==0.5.2
-google-auth==2.9.0
+google-auth==2.9.1
 google-cloud-pubsub==2.11.0
 google-cloud-texttospeech==2.12.0
 google-nest-sdm==2.0.0
@@ -431,7 +432,7 @@ home-assistant-bluetooth==1.4.0
 home-assistant-cli==9999
 home-assistant-frontend==20220802.0
 homeassistant
-homeconnect==0.7.1
+homeconnect==0.7.2
 homematicip==1.0.7
 homepluscontrol==0.0.5
 horimote==0.4.1
@@ -465,7 +466,7 @@ incremental==21.3.0
 inflect==5.6.2
 influxdb-client==1.24.0
 influxdb==5.3.1
-inkbird-ble==0.5.2
+inkbird-ble==0.5.5
 insteon-frontend-home-assistant==0.2.0
 intelhex==2.3.0
 intellifire4py==2.0.1
@@ -494,7 +495,7 @@ jsonpointer==2.3
 jsonrpc-async==2.1.0
 jsonrpc-base==2.1.0
 jsonrpc-websocket==3.1.1
-jsonschema==4.6.2
+jsonschema==4.7.2
 justbackoff==0.6.0
 kafka-python==2.0.2
 kaiterra-async-client==1.0.0
@@ -935,7 +936,7 @@ pyspcwebgw==0.4.0
 pysqueezebox==0.5.5
 pystiebeleltron==0.0.1
 pysuez==0.1.19
-PySwitchbot==0.18.4
+PySwitchbot==0.18.10
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6
@@ -1057,7 +1058,7 @@ rfc3986==2.0.0
 rfc3987==1.3.8
 rfk101py==0.0.1
 rflink==0.0.63
-rich==12.4.4
+rich==12.5.1
 ring-doorbell==0.7.2
 ritassist==0.9.2
 rjpl==0.3.6
@@ -1092,10 +1093,10 @@ semantic_version==2.10.0
 semver==2.13.0
 sendgrid==6.8.2
 sense-energy==0.10.4
-sensor-state-data==2.0.2
-sensorpush-ble==1.5.1
+sensor-state-data==2.2.0
+sensorpush-ble==1.5.2
 sepaxml==2.2.0
-setuptools==63.1.0
+setuptools==63.2.0
 sgmllib3k==1.0.0
 sharkiq==0.0.1
 sharp_aquos_rc==0.3.2
@@ -1142,7 +1143,7 @@ starlingbank==3.2
 statsd==3.2.1
 stdiomask==0.0.6
 steamodd==4.21
-stevedore==3.5.0
+stevedore==4.0.0
 stookalert==0.1.4
 streamlabswater==1.0.1
 strict-rfc3339==0.7
@@ -1153,7 +1154,7 @@ sunwatcher==0.2.1
 surepy==0.7.2
 swisshydrodata==0.1.0
 synology-srm==0.2.0
-systembridgeconnector==3.3.2
+systembridgeconnector==3.4.4
 systemd-utils==250.7
 systemd==251.2
 sysvinit==3.01
@@ -1271,7 +1272,7 @@ xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
 xiaomi-ble==0.6.4
-xknx==0.22.1
+xknx==1.0.0
 xmlschema==1.11.3
 xmltodict==0.13.0
 xs1-api-client==3.0.0
@@ -1297,7 +1298,7 @@ zigpy-xbee==0.15.0
 zigpy-zigate==0.9.1
 zigpy-znp==0.8.1
 zigpy==0.49.1
-zipp==3.8.0
+zipp==3.8.1
 zlib==1.2.12
 zm-py==0.5.2
 zope-interface==5.4.0
