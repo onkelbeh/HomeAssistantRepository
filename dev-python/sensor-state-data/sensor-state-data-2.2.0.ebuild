@@ -3,12 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python module to talk to Philips Hue."
-HOMEPAGE="https://github.com/home-assistant-libs/aiohue https://pypi.org/project/aiohue/"
+DESCRIPTION="Models for storing and converting Sensor Data state"
+HOMEPAGE="https://github.com/bluetooth-devices/sensor-state-data https://pypi.org/project/sensor-state-data/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
@@ -19,9 +19,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/asyncio-throttle[${PYTHON_USEDEP}]
-	dev-python/awesomeversion[${PYTHON_USEDEP}]"
+RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -33,3 +31,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest

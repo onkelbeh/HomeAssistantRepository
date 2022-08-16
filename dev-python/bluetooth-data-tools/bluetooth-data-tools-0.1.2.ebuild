@@ -7,11 +7,11 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="A connector for Bleak Clients that handles transient connection failures"
-HOMEPAGE="https://github.com/bluetooth-devices/bleak-retry-connector https://pypi.org/project/bleak-retry-connector/"
+DESCRIPTION="Tools for converting bluetooth data and packets"
+HOMEPAGE="https://github.com/bdraco/bluetooth-data-tools https://pypi.org/project/bluetooth-data-tools/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -19,8 +19,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/bleak-0.14.3[${PYTHON_USEDEP}]
-	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]"
+RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

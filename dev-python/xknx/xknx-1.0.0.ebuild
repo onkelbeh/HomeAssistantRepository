@@ -7,11 +7,9 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="System Bridge Connector"
-HOMEPAGE="https://github.com/timmo001/system-bridge https://pypi.org/project/systembridgeconnector/"
-MY_PN="system-bridge"
-SRC_URI="https://github.com/timmo001/${MY_PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
-S=${WORKDIR}/${MY_PN}-${PV}/connector
+DESCRIPTION="An Asynchronous Library for the KNX protocol. Documentation: https://xknx.io/"
+HOMEPAGE="https://github.com/XKNX/xknx/ https://xknx.io/ https://pypi.org/project/xknx/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,11 +17,10 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="../README.md"
+DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
-	>=dev-python/incremental-21.3.0[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-1.9.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/cryptography-35.0.0[${PYTHON_USEDEP}]
+	>=dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

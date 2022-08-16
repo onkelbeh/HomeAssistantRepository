@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -21,8 +21,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/requests-2.24.0[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]
+RDEPEND="dev-python/httpx[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
@@ -39,3 +38,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest

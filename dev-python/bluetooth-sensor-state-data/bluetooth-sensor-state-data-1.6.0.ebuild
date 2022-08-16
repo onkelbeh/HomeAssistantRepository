@@ -7,11 +7,11 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="A library to communicate with Switchbot"
-HOMEPAGE="https://github.com/Danielhiversen/pySwitchbot/ https://pypi.org/project/PySwitchbot/"
+DESCRIPTION="Models for storing and converting Bluetooth Sensor State Data"
+HOMEPAGE="https://github.com/bluetooth-devices/bluetooth-sensor-state-data https://pypi.org/project/bluetooth-sensor-state-data/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -19,14 +19,14 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/bleak[${PYTHON_USEDEP}]
-	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/bleak-retry-connector-1.4.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/home-assistant-bluetooth-1.3.0[${PYTHON_USEDEP}]
+	>=dev-python/sensor-state-data-2.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
