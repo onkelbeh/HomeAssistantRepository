@@ -37,6 +37,7 @@
     <flag name="enigma2">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
     <flag name="ffmpeg">allows other Home Assistant integrations to process video and audio streams</flag>
+    <flag name="file">Store notifications as a file</flag>
     <flag name="forecast_solar">Asynchronous Python client for getting forecast solar information</flag>
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
     <flag name="github">GitHub sensor integrates data from GitHub to monitor your favorite repositories</flag>

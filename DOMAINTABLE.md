@@ -211,6 +211,7 @@
 |ffmpeg|allows other Home Assistant integrations to process video and audio streams|Y|Y|Y|0.29|
 |fibaro|Fibaro hub is a controller mainly connecting to Z-Wave devices|N|Y|Y|0.83|
 |fido|Integrate your Fido account information into Home Assistant|N|N|Y|0.39|
+|file|Store notifications as a file|Y|Y|Y||
 |fints|This only works with banks that support the FinTS (aka. HBCI) standard|N|N|Y|0.70|
 |fireservicerota|scheduling and dispatching system for firefighters|N|N|Y|2020.12|
 |firmata|Firmata can be used to add digital inputs and outputs to Home Assistant|N|N|Y|0.114|
