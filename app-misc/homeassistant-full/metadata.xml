@@ -227,6 +227,7 @@
     <flag name="ffmpeg">allows other Home Assistant integrations to process video and audio streams</flag>
     <flag name="fibaro">Fibaro hub is a controller mainly connecting to Z-Wave devices</flag>
     <flag name="fido">Integrate your Fido account information into Home Assistant</flag>
+    <flag name="file">Store notifications as a file</flag>
     <flag name="fints">This only works with banks that support the FinTS (aka. HBCI) standard</flag>
     <flag name="fireservicerota">scheduling and dispatching system for firefighters</flag>
     <flag name="firmata">Firmata can be used to add digital inputs and outputs to Home Assistant</flag>
