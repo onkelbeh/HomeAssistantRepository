@@ -24,7 +24,7 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="examples"
 
-# Make sure to check https://github.com/PyCQA/pylint/blob/main/setup.cfg#L43 on bumps
+# Make sure to check https://github.com/PyCQA/pylint/blob/main/pyproject.toml#L34 on bumps
 # Adjust dep bounds!
 RDEPEND="
 	<dev-python/astroid-2.12[${PYTHON_USEDEP}]
@@ -35,11 +35,13 @@ RDEPEND="
 	>=dev-python/mccabe-0.6[${PYTHON_USEDEP}]
 	<dev-python/mccabe-0.8[${PYTHON_USEDEP}]
 	>=dev-python/platformdirs-2.2.0[${PYTHON_USEDEP}]
-	>=dev-python/tomli-1.1.0[${PYTHON_USEDEP}]
 	>=dev-python/tomlkit-0.10.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '
 		dev-python/typing-extensions[${PYTHON_USEDEP}]
 	' 3.8 3.9)
+	$(python_gen_cond_dep '
+		>=dev-python/tomli-1.1.0[${PYTHON_USEDEP}]
+	' 3.8 3.9 3.10)
 "
 BDEPEND="
 	test? (
