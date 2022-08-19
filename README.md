@@ -306,10 +306,10 @@ Currently I have three VM's running:
 Python 3.10.5
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test
-Python 3.10.5
+Python 3.9.13 / 3.10.5
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test2
-Python 3.10.5/3.11.0
+Python 3.10.5 / 3.11.0
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 
 ## Hardware I use
@@ -563,9 +563,9 @@ There are 1856 Ebuilds in total, 1849 of them have in total 1861 (35 different) 
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
 
-(Last counted: 18/08/2022)
+(Last counted: 19/08/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 18/08/2022
+Last updated: 19/08/2022
