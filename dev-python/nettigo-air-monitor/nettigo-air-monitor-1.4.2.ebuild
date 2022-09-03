@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -21,8 +21,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.7.0[${PYTHON_USEDEP}]
-	~dev-python/dacite-1.6.0[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/dacite[${PYTHON_USEDEP}]
+	dev-python/aqipy-atmotech[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
@@ -35,3 +36,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
