@@ -379,6 +379,7 @@
 |launch_library|information about the next planned space launch|N|N|Y|0.83|
 |laundrify|Monitor the status of your washing machine or dryer using a laundrify WiFi power|N|N|Y|2022.6.0b0|
 |lcn|allows you to connect to LCN hardware devices|N|N|Y|0.85|
+|led_ble|None|N|N|Y|2022.9.0b3|
 |lg_netcast|allows you to control a LG Smart TV running NetCast 3.0|N|N|Y|0.20|
 |lg_soundbar|allows you to control LG Soundbars from Home Assistant|N|N|Y|0.81|
 |life360|detect presence using the unofficial API of Life360|N|N|Y|0.95|
