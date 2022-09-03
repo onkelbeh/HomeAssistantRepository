@@ -561,6 +561,7 @@
 |prosegur|Prosegur Smart Alarms (Cloud Polling)|N|N|Y|2021.8.0|
 |proxmoxve|poll data from Proxmox VE virtualization environment|N|N|Y|0.103|
 |proxy|pass another camera’s output through post-processing routines|N|N|Y|0.65|
+|prusalink|None|N|N|Y|2022.9.0b3|
 |ps4|allows you to control a Sony PlayStation 4 console|Y|Y|Y|0.89|
 |pulseaudio_loopback|whole home audio system based upon PulseAudio|N|N|Y|0.16|
 |pure_energie|integrates the Pure Energie Monitor device with Home Assistant|N|N|Y|2022.3.0b3|
