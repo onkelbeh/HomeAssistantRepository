@@ -571,6 +571,7 @@
 |pvpc_hourly_pricing|hourly price of electricity in Spain from PVPC|N|N|Y|0.108|
 |python_script|write Python scripts that are exposed as services in Home Assistant|Y|Y|Y|0.47|
 |qbittorrent|monitor your downloads with qBittorrent from within Home Assistant|N|N|Y|0.84|
+|qingping|None|N|N|Y|2022.9.0b3|
 |qld_bushfire|GeoRSS feed containing bushfire alerts for Queensland|N|N|Y|0.95|
 |qnap|Python API for obtaining QNAP NAS system stats|Y|Y|Y|0.38|
 |qnap_qsw|This integration interacts with the local API of QNAP QSW managed switches|N|N|Y|2022.5.0b0|
