@@ -636,6 +636,7 @@
 |sensehat|lets you control the Sense HAT board’s 8x8 RGB LED matrix on your Raspberry Pi|N|N|Y|0.44|
 |senseme|Integrates SenseME devices into Home Assistant|N|N|Y|2022.2.0b1|
 |sensibo|Integrates Sensibo Air Conditioning controller into Home Assistant|N|N|Y|0.44|
+|sensorpro|None|N|N|Y|2022.9.0b3|
 |sensorpush|Integrates SensorPush devices into Home Assistant|N|N|Y|2022.8.1|
 |sentry|The free Sentry account allows 5000 events per month|N|N|Y|0.104|
 |senz|allows you to control and monitor your nVent RAYCHEM SENZ-WIFI thermostats|N|N|Y|2022.5.0b0|
