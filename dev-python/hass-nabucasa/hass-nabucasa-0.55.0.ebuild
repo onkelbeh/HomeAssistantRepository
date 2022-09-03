@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -19,14 +19,13 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="~dev-python/pycognito-2022.1.0[${PYTHON_USEDEP}]
+RDEPEND="~dev-python/pycognito-2022.8.0[${PYTHON_USEDEP}]
 	~dev-python/snitun-0.31.0[${PYTHON_USEDEP}]
-	>=app-crypt/acme-1.22.0[${PYTHON_USEDEP}]
+	>=app-crypt/acme-1.29.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
-	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
-	~dev-python/atomicwrites-1.4.0[${PYTHON_USEDEP}]"
+	~dev-python/atomicwrites-homeassistant-1.4.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -41,7 +40,4 @@ python_test() {
 	py.test -v -v || die
 }
 
-src_prepare() {
-	sed -i "s/acme==1.22.0/acme/g" -i setup.py || die
-	eapply_user
-}
+distutils_enable_tests pytest
