@@ -353,6 +353,7 @@
 |jewish_calendar|Displays information related to the Jewish Calendar as a variety of sensors|N|Y|Y|0.79|
 |joaoapps_join|joaoapps_join integration exposes services from Join|N|Y|Y|0.24|
 |juicenet|pulls data from a JuiceNet charging station|N|N|Y|0.47|
+|justnimbus|None|N|N|Y|2022.9.0b3|
 |kaiterra|view the readings from your Laser Egg or Sensedge device|N|N|Y|0.100|
 |kaleidescape|The Kaleidescape integration allows automation of Kaleidescape movie player|N|N|Y|2022.4.0b0|
 |keba|integrates your Keba charging station (wallbox)|N|N|Y|0.98|
@@ -371,6 +372,7 @@
 |kulersky|connects Brightech Kuler Sky floor lamps to Home Assistant|N|N|Y|2020.12|
 |kwb|integrates the sensors of KWB Easyfire pellet central heating units |N|N|Y|0.40|
 |lacrosse|using the data provided by a Jeelink USB dongle or this Arduino sketch|N|N|Y|0.58|
+|lacrosse_view|None|N|N|Y|2022.9.0b3|
 |lametric|LaMetric Time smart clock listen to web radio and display notifications|N|N|Y|0.49|
 |lastfm|lastfm sensor platform will allow you to see whenever a user starts scrobbling|N|N|Y|0.20|
 |launch_library|information about the next planned space launch|N|N|Y|0.83|
