@@ -91,6 +91,7 @@
 |brottsplatskartan|brottsplatskartan sensor allows one to track reported incidents|N|Y|Y|0.85|
 |brunt|The brunt platform allows one to control Blind Engines by Brunt|N|Y|Y|0.75|
 |bsblan|This integration integrates BSBLan device into Home Assistant|N|Y|Y|0.110|
+|bthome|None|N|N|Y|2022.9.0b3|
 |bt_home_hub_5|Offers presence detection by looking at connected devices to a BT Home |N|Y|Y|0.22|
 |bt_smarthub|Presence detection by looking at BT Smart Hub based routers|N|Y|Y|0.82|
 |buienradar|Integrate buienradar weather data into Home Assistant|N|Y|Y|0.47|
@@ -168,6 +169,7 @@
 |ecobee|Talk to Ecobee thermostats from Home Assistant|N|Y|Y|0.9|
 |econet|consuming the information provided by a EcoNet enabled Rheem water heater|N|N|Y|0.61|
 |ecovacs|ecovacs integration to integrate all Ecovacs (Deebot) vacuums|N|N|Y|0.77|
+|ecowitt|None|N|N|Y|2022.9.0b3|
 |eddystone_temperature|reads temperature information from Eddystone beacons|N|N|Y|0.42|
 |edimax|switch platform allows you to control the state of your Edimax switches|N|N|Y||
 |edl21|edl21 integration lets you read German EDL21 smart meters using SML|N|N|Y|0.107|
@@ -196,6 +198,7 @@
 |epson|The epson platform allows you to control a Epson projector|N|N|Y|0.72|
 |epsonworkforce|monitor the ink levels of a Epson Workforce printer|N|N|Y|0.92|
 |eq3btsmart|Integrate EQ3 Bluetooth Smart Thermostats in Home Assistant|N|N|Y|0.18|
+|escea|None|N|N|Y|2022.9.0b3|
 |esphome|Support for esphome sensors, covers and switches and it's dashboard|Y|Y|Y|0.85|
 |essent|communicate with the (undocumented) API of Dutch energy provider Essent|N|N|Y||
 |etherscan|displays Ether and ERC-20 token balances from Etherscan.io|N|N|Y|0.47|
@@ -243,6 +246,7 @@
 |fritzbox_netmonitor|sensor monitors the network statistics exposed by AVM FRITZ!Box routers|N|Y|Y|0.36|
 |fronius|Add (very basic) Support for Fronius Symo JSON Api to Home Assistant|Y|Y|Y|0.96|
 |frontier_silicon|Support for Internet Radios based on the Frontier Silicon chipset|N|N|Y|0.40|
+|fully_kiosk|None|N|N|Y|2022.9.0b3|
 |futurenow|Allows you to use P5 FutureNow relay/dimmer units as lights|N|N|Y|0.75|
 |garages_amsterdam|measure the occupancy of Amsterdam parking garages in the Netherlands|N|N|Y|2021.6|
 |garmin_connect|The Garmin Connect sensor allows you to expose data from Garmin Connect|N|Y|Y||
