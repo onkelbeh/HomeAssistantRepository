@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -37,6 +37,8 @@ python_test() {
 }
 
 src_prepare() {
-	echo -ne "aioconsole>=0.3.1\naiohttp>=3.7.2\nwebsockets>=8.1\n" >> requirements.txt || die
+	sed -i "s/packages=setuptools.find_packages()/packages=setuptools.find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
 	eapply_user
 }
+
+distutils_enable_tests pytest
