@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">pyunifiprotect</remote-id>
     <maintainer status="unknown">
-      <email>bjarne@briis.com</email>
-      <name>Bjarne Riis</name>
+      <email>cbailey@mort.is</email>
+      <name>Christopher Bailey</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
