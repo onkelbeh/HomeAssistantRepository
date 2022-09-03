@@ -374,6 +374,7 @@
 |lacrosse|using the data provided by a Jeelink USB dongle or this Arduino sketch|N|N|Y|0.58|
 |lacrosse_view|None|N|N|Y|2022.9.0b3|
 |lametric|LaMetric Time smart clock listen to web radio and display notifications|N|N|Y|0.49|
+|landisgyr_heat_meter|None|N|N|Y|2022.9.0b3|
 |lastfm|lastfm sensor platform will allow you to see whenever a user starts scrobbling|N|N|Y|0.20|
 |launch_library|information about the next planned space launch|N|N|Y|0.83|
 |laundrify|Monitor the status of your washing machine or dryer using a laundrify WiFi power|N|N|Y|2022.6.0b0|
