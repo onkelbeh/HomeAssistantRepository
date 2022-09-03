@@ -417,6 +417,7 @@
 |media_extractor|Gets a stream URL and sends it to a media player entity|N|Y|Y|0.49|
 |melcloud|Python MELCloud interface|N|N|Y|0.106|
 |melissa|main integration to connect to a Melissa Climate A/C control|N|N|Y|0.63|
+|melnor|None|N|N|Y|2022.9.0b3|
 |message_bird|MessageBird's REST API|N|N|Y|0.16|
 |met|met platform uses the Met.no web service as a source for meteorological data|N|N|Y|0.79|
 |meteoalarm|watch for weather alerts in europe from MeteoAlarm|N|N|Y|0.93|
