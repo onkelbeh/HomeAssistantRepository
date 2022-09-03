@@ -742,6 +742,7 @@
 |tesla_wall_connector|allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi|N|N|Y|2021.12.0b0|
 |test|internal and developer use|Y|Y|Y|None|
 |tfiac|integrates several vendors air conditioning systems into Home Assistant|N|N|Y|0.91|
+|thermobeacon|None|N|N|Y|2022.9.0b3|
 |thermopro|None|N|N|Y|2022.9.0b3|
 |thermoworks_smoke|pulls data for your ThermoWorks Smoke Thermometer|N|N|Y|0.81|
 |thingspeak|makes Home Assistant communicate with the ThingSpeak API|N|N|Y|0.32|
