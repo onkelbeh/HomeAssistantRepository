@@ -849,6 +849,7 @@
 |xiaomi_tv|The xiaomi_tv platform allows you to control a Xiaomi TV|N|Y|Y|0.64|
 |xmpp|Python 3 library for XMPP|N|N|Y||
 |xs1|get and set values of the EZcontrol XS1 Gateway|N|Y|Y|0.88|
+|yalexs_ble|None|N|N|Y|2022.9.0b3|
 |yale_smart_alarm|Yale Smart Alarm systems and Smart Hub through Yale’s API|N|N|Y|0.78|
 |yamaha|Library for Yamaha RX-* Receivers|Y|Y|Y|0.16|
 |yamaha_musiccast|add support for Yamaha MusicCast devices|Y|Y|Y|0.53|
