@@ -75,6 +75,7 @@
 |blinksticklight|The blinkstick platform lets you control your Blinkstick lights|N|Y|Y|0.7.5|
 |blinkt|The blinkt light platform lets you control the Blinkt! board, featuring eight su|N|Y|Y|0.44|
 |blockchain|Displays Bitcoin wallet balances from blockchain.info|N|Y|Y|0.47|
+|bluemaestro|None|N|N|Y|2022.9.0b4|
 |bluesound|Allows you to control your Bluesound HiFi wireless speakers and audio integratio|N|N|Y|0.51|
 |bluetooth|The Bluetooth integration will detect nearby Bluetooth devices|Y|Y|Y|2022.8.1|
 |bluetooth_le_tracker|Tracks Bluetooth low-energy devices periodically based on interval_seconds value|Y|Y|Y|0.27|
