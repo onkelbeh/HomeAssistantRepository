@@ -6,10 +6,10 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">sleekxmppfs</remote-id>
+    <remote-id type="pypi">py-sucks</remote-id>
     <maintainer status="unknown">
-      <email>aszymanik@gmail.com</email>
-      <name>Alex Szymanik</name>
+      <email>sucks-users@googlegroups.com</email>
+      <name>William Pietri</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
