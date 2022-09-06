@@ -191,7 +191,7 @@ brottsplatskartan==0.0.1
 brunt==1.2.0
 bsblan==0.5.0
 bt-proximity==0.2.1
-bthome-ble==0.5.2
+bthome-ble==1.0.0
 bthomehub5-devicelist==0.1.1
 btlewrap==0.1.0
 btsmarthub-devicelist==0.2.0
@@ -387,7 +387,7 @@ google-nest-sdm==2.0.0
 googleapis-common-protos==1.56.4
 googlemaps==2.5.1
 goslide-api==0.5.1
-govee-ble==0.17.1
+govee-ble==0.17.2
 gpiozero==1.6.2
 gps3==0.33.3
 graphql-subscription-manager==0.6.1
@@ -433,7 +433,7 @@ holidays==0.14.2
 home-assistant-bluetooth==1.3.0
 home-assistant-bluetooth==1.4.0
 home-assistant-cli==9999
-home-assistant-frontend==20220902.0
+home-assistant-frontend==20220905.0
 homeassistant
 homeconnect==0.7.2
 homematicip==1.0.7
@@ -517,7 +517,7 @@ lacrosse-view==0.0.9
 lakeside==0.12
 lark==1.1.2
 laundrify-aio==1.1.2
-led-ble==0.6.0
+led-ble==0.7.0
 libcap==2.64
 libcrypt==2
 libcst==0.3.23
@@ -709,6 +709,7 @@ proto-plus==1.22.1
 protobuf-python==3.20.1
 protobuf==3.20.1
 proxmoxer==1.3.1
+psutil-home-assistant==0.0.1
 psutil==5.9.1
 ptyprocess==0.7.0
 pubnub==6.4.1
@@ -748,7 +749,7 @@ pybbox==0.0.5_alpha0
 pyblackbird==0.5
 pybluez==0.22
 pybotvac==0.0.23
-pybravia==0.2.0
+pybravia==0.2.1
 pycares==4.2.1
 pycarwings2==2.13
 pyCEC==0.5.2
@@ -1290,7 +1291,7 @@ xmltodict==0.13.0
 xs1-api-client==3.0.0
 xxhash==0.8.1
 xxhash==3.0.0
-yalesmartalarmclient==0.3.8
+yalesmartalarmclient==0.3.9
 yalexs-ble==1.6.4
 yalexs==1.2.1
 yarl==1.7.2

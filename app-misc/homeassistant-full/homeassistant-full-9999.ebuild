@@ -71,7 +71,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.55.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.3.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220902.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220905.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.15.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
@@ -88,6 +88,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pandas-1.4.3[${PYTHON_USEDEP}]
 	~dev-python/pillow-9.2.0[${PYTHON_USEDEP}]
 	<dev-python/pip-22.1.0
+	~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}]
 	!~dev-python/pubnub-6.4.0[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
 	!~dev-python/pydantic-1.9.1[${PYTHON_USEDEP}]
@@ -215,13 +216,13 @@ RDEPEND="${RDEPEND}
 	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.10.2[${PYTHON_USEDEP}] )
 	bond? ( ~dev-python/bond-async-0.1.22[${PYTHON_USEDEP}] )
 	bosch_shc? ( ~dev-python/boschshcpy-0.2.30[${PYTHON_USEDEP}] )
-	braviatv? ( ~dev-python/pybravia-0.2.0[${PYTHON_USEDEP}] )
+	braviatv? ( ~dev-python/pybravia-0.2.1[${PYTHON_USEDEP}] )
 	broadlink? ( ~dev-python/broadlink-0.18.2[${PYTHON_USEDEP}] )
 	brother? ( ~dev-python/brother-1.2.3[${PYTHON_USEDEP}] )
 	brottsplatskartan? ( ~dev-python/brottsplatskartan-0.0.1[${PYTHON_USEDEP}] )
 	brunt? ( ~dev-python/brunt-1.2.0[${PYTHON_USEDEP}] )
 	bsblan? ( ~dev-python/bsblan-0.5.0[${PYTHON_USEDEP}] )
-	bthome? ( ~dev-python/bthome-ble-0.5.2[${PYTHON_USEDEP}] )
+	bthome? ( ~dev-python/bthome-ble-1.0.0[${PYTHON_USEDEP}] )
 	bt_home_hub_5? ( ~dev-python/bthomehub5-devicelist-0.1.1[${PYTHON_USEDEP}] )
 	bt_smarthub? ( ~dev-python/btsmarthub-devicelist-0.2.0[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.5[${PYTHON_USEDEP}] )
@@ -405,7 +406,7 @@ RDEPEND="${RDEPEND}
 	google_pubsub? ( ~dev-python/google-cloud-pubsub-2.11.0[${PYTHON_USEDEP}] )
 	google_translate? ( ~dev-python/gTTS-2.2.4[${PYTHON_USEDEP}] )
 	google_travel_time? ( ~dev-python/googlemaps-2.5.1[${PYTHON_USEDEP}] )
-	govee_ble? ( ~dev-python/govee-ble-0.17.1[${PYTHON_USEDEP}] )
+	govee_ble? ( ~dev-python/govee-ble-0.17.2[${PYTHON_USEDEP}] )
 	gpmdp? ( ~dev-python/websocket-client-0.54.0[${PYTHON_USEDEP}] )
 	gpsd? ( ~dev-python/gps3-0.33.3[${PYTHON_USEDEP}] )
 	gree? ( ~dev-python/greeclimate-1.3.0[${PYTHON_USEDEP}] )
@@ -509,7 +510,7 @@ RDEPEND="${RDEPEND}
 	launch_library? ( ~dev-python/pylaunches-1.3.0[${PYTHON_USEDEP}] )
 	laundrify? ( ~dev-python/laundrify-aio-1.1.2[${PYTHON_USEDEP}] )
 	lcn? ( ~dev-python/pypck-0.7.15[${PYTHON_USEDEP}] )
-	led_ble? ( ~dev-python/led-ble-0.6.0[${PYTHON_USEDEP}] )
+	led_ble? ( ~dev-python/led-ble-0.7.0[${PYTHON_USEDEP}] )
 	lg_netcast? ( ~dev-python/pylgnetcast-0.3.7[${PYTHON_USEDEP}] )
 	lg_soundbar? ( ~dev-python/temescal-0.5[${PYTHON_USEDEP}] )
 	life360? ( ~dev-python/life360-4.1.1[${PYTHON_USEDEP}] )
@@ -976,7 +977,7 @@ RDEPEND="${RDEPEND}
 	xmpp? ( ~dev-python/slixmpp-1.8.2[${PYTHON_USEDEP}] )
 	xs1? ( ~dev-python/xs1-api-client-3.0.0[${PYTHON_USEDEP}] )
 	yalexs_ble? ( ~dev-python/yalexs-ble-1.6.4[${PYTHON_USEDEP}] )
-	yale_smart_alarm? ( ~dev-python/yalesmartalarmclient-0.3.8[${PYTHON_USEDEP}] )
+	yale_smart_alarm? ( ~dev-python/yalesmartalarmclient-0.3.9[${PYTHON_USEDEP}] )
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.4[${PYTHON_USEDEP}] )
 	yandex_transport? ( ~dev-python/aioymaps-1.2.2[${PYTHON_USEDEP}] )
