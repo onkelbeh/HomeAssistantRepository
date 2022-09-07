@@ -60,7 +60,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
 	~dev-python/bleak-0.16.0[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-adapters-0.3.4[${PYTHON_USEDEP}]
-	~dev-python/bluetooth-auto-recovery-0.3.0[${PYTHON_USEDEP}]
+	~dev-python/bluetooth-auto-recovery-0.3.1[${PYTHON_USEDEP}]
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2021.5.30[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.2.0[${PYTHON_USEDEP}]
@@ -71,7 +71,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.55.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.3.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20220905.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20220906.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.15.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
@@ -112,7 +112,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-serialize-2.5.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.7.2[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.39.0[${PYTHON_USEDEP}]"
+	~dev-python/zeroconf-0.39.1[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -180,14 +180,14 @@ RDEPEND="${RDEPEND}
 	blinksticklight? ( ~dev-python/BlinkStick-1.2.0[${PYTHON_USEDEP}] )
 	blinkt? ( ~dev-python/blinkt-0.1.0[${PYTHON_USEDEP}] )
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-0.16.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.3.4[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.0[${PYTHON_USEDEP}] )
+	bluetooth? ( ~dev-python/bleak-0.16.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.3.4[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.1[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	bluetooth_tracker? ( ~dev-python/bt-proximity-0.2.1[${PYTHON_USEDEP}] ~dev-python/pybluez-0.22[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[${PYTHON_USEDEP}] )
 	bme680? ( ~dev-python/bme680-1.0.5[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.10.2[${PYTHON_USEDEP}] )
 	bond? ( ~dev-python/bond-async-0.1.22[${PYTHON_USEDEP}] )
-	braviatv? ( ~dev-python/pybravia-0.2.1[${PYTHON_USEDEP}] )
+	braviatv? ( ~dev-python/pybravia-0.2.2[${PYTHON_USEDEP}] )
 	broadlink? ( ~dev-python/broadlink-0.18.2[${PYTHON_USEDEP}] )
 	brother? ( ~dev-python/brother-1.2.3[${PYTHON_USEDEP}] )
 	brottsplatskartan? ( ~dev-python/brottsplatskartan-0.0.1[${PYTHON_USEDEP}] )
@@ -407,7 +407,7 @@ RDEPEND="${RDEPEND}
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.4[${PYTHON_USEDEP}] )
 	yeelight? ( ~dev-python/yeelight-0.7.10[${PYTHON_USEDEP}] ~dev-python/async-upnp-client-0.31.2[${PYTHON_USEDEP}] )
 	yi? ( ~dev-python/aioftp-0.12.0[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/zeroconf-0.39.0[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/zeroconf-0.39.1[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
 	zha? ( ~dev-python/bellows-0.33.1[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.79[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.18.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.50.2[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.15.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.9.2[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.8.2[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
@@ -416,6 +416,7 @@ RDEPEND="${RDEPEND}
 
 BDEPEND="${RDEPEND}
 	test? (
+		~dev-python/astroid-2.12.5[${PYTHON_USEDEP}]
 		~dev-python/codecov-2.1.12[${PYTHON_USEDEP}]
 		~dev-python/coverage-6.4.4[${PYTHON_USEDEP}]
 		~dev-python/freezegun-1.2.1[${PYTHON_USEDEP}]
