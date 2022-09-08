@@ -75,6 +75,7 @@
 |blinksticklight|The blinkstick platform lets you control your Blinkstick lights|N|Y|Y|0.7.5|
 |blinkt|The blinkt light platform lets you control the Blinkt! board, featuring eight su|N|Y|Y|0.44|
 |blockchain|Displays Bitcoin wallet balances from blockchain.info|N|Y|Y|0.47|
+|bluemaestro|Integrates BlueMaestro devices into Home Assistant|N|N|Y|2022.9.0b4|
 |bluesound|Allows you to control your Bluesound HiFi wireless speakers and audio integratio|N|N|Y|0.51|
 |bluetooth|The Bluetooth integration will detect nearby Bluetooth devices|Y|Y|Y|2022.8.1|
 |bluetooth_le_tracker|Tracks Bluetooth low-energy devices periodically based on interval_seconds value|Y|Y|Y|0.27|
@@ -91,6 +92,7 @@
 |brottsplatskartan|brottsplatskartan sensor allows one to track reported incidents|N|Y|Y|0.85|
 |brunt|The brunt platform allows one to control Blind Engines by Brunt|N|Y|Y|0.75|
 |bsblan|This integration integrates BSBLan device into Home Assistant|N|Y|Y|0.110|
+|bthome|Integrates BTHome BLE devices into Home Assistant|N|N|Y|2022.9.0b3|
 |bt_home_hub_5|Offers presence detection by looking at connected devices to a BT Home |N|Y|Y|0.22|
 |bt_smarthub|Presence detection by looking at BT Smart Hub based routers|N|Y|Y|0.82|
 |buienradar|Integrate buienradar weather data into Home Assistant|N|Y|Y|0.47|
@@ -168,6 +170,7 @@
 |ecobee|Talk to Ecobee thermostats from Home Assistant|N|Y|Y|0.9|
 |econet|consuming the information provided by a EcoNet enabled Rheem water heater|N|N|Y|0.61|
 |ecovacs|ecovacs integration to integrate all Ecovacs (Deebot) vacuums|N|N|Y|0.77|
+|ecowitt|add Ecowitt Weather station to your Home Assistant|N|N|Y|2022.9.0b3|
 |eddystone_temperature|reads temperature information from Eddystone beacons|N|N|Y|0.42|
 |edimax|switch platform allows you to control the state of your Edimax switches|N|N|Y||
 |edl21|edl21 integration lets you read German EDL21 smart meters using SML|N|N|Y|0.107|
@@ -196,6 +199,7 @@
 |epson|The epson platform allows you to control a Epson projector|N|N|Y|0.72|
 |epsonworkforce|monitor the ink levels of a Epson Workforce printer|N|N|Y|0.92|
 |eq3btsmart|Integrate EQ3 Bluetooth Smart Thermostats in Home Assistant|N|N|Y|0.18|
+|escea|allows monitoring and control of local Escea fireplaces|N|N|Y|2022.9.0b3|
 |esphome|Support for esphome sensors, covers and switches and it's dashboard|Y|Y|Y|0.85|
 |essent|communicate with the (undocumented) API of Dutch energy provider Essent|N|N|Y||
 |etherscan|displays Ether and ERC-20 token balances from Etherscan.io|N|N|Y|0.47|
@@ -243,6 +247,7 @@
 |fritzbox_netmonitor|sensor monitors the network statistics exposed by AVM FRITZ!Box routers|N|Y|Y|0.36|
 |fronius|Add (very basic) Support for Fronius Symo JSON Api to Home Assistant|Y|Y|Y|0.96|
 |frontier_silicon|Support for Internet Radios based on the Frontier Silicon chipset|N|N|Y|0.40|
+|fully_kiosk|Fully Kiosk Browser control in Home Assistant|N|N|Y|2022.9.0b3|
 |futurenow|Allows you to use P5 FutureNow relay/dimmer units as lights|N|N|Y|0.75|
 |garages_amsterdam|measure the occupancy of Amsterdam parking garages in the Netherlands|N|N|Y|2021.6|
 |garmin_connect|The Garmin Connect sensor allows you to expose data from Garmin Connect|N|Y|Y||
@@ -349,6 +354,7 @@
 |jewish_calendar|Displays information related to the Jewish Calendar as a variety of sensors|N|Y|Y|0.79|
 |joaoapps_join|joaoapps_join integration exposes services from Join|N|Y|Y|0.24|
 |juicenet|pulls data from a JuiceNet charging station|N|N|Y|0.47|
+|justnimbus|queries the JustNumbus API used by the JustNimbus web dashboard|N|N|Y|2022.9.0b3|
 |kaiterra|view the readings from your Laser Egg or Sensedge device|N|N|Y|0.100|
 |kaleidescape|The Kaleidescape integration allows automation of Kaleidescape movie player|N|N|Y|2022.4.0b0|
 |keba|integrates your Keba charging station (wallbox)|N|N|Y|0.98|
@@ -367,11 +373,14 @@
 |kulersky|connects Brightech Kuler Sky floor lamps to Home Assistant|N|N|Y|2020.12|
 |kwb|integrates the sensors of KWB Easyfire pellet central heating units |N|N|Y|0.40|
 |lacrosse|using the data provided by a Jeelink USB dongle or this Arduino sketch|N|N|Y|0.58|
+|lacrosse_view|allows access to LaCrosse sensors|N|N|Y|2022.9.0b3|
 |lametric|LaMetric Time smart clock listen to web radio and display notifications|N|N|Y|0.49|
+|landisgyr_heat_meter|read the meter values from Ultraheat devices by Landis & Gyr|N|N|Y|2022.9.0b3|
 |lastfm|lastfm sensor platform will allow you to see whenever a user starts scrobbling|N|N|Y|0.20|
 |launch_library|information about the next planned space launch|N|N|Y|0.83|
 |laundrify|Monitor the status of your washing machine or dryer using a laundrify WiFi power|N|N|Y|2022.6.0b0|
 |lcn|allows you to connect to LCN hardware devices|N|N|Y|0.85|
+|led_ble|Integrates multiple brands of Bluetooth Low Energy LED devices into Home Assista|N|N|Y|2022.9.0b3|
 |lg_netcast|allows you to control a LG Smart TV running NetCast 3.0|N|N|Y|0.20|
 |lg_soundbar|allows you to control LG Soundbars from Home Assistant|N|N|Y|0.81|
 |life360|detect presence using the unofficial API of Life360|N|N|Y|0.95|
@@ -409,6 +418,7 @@
 |media_extractor|Gets a stream URL and sends it to a media player entity|N|Y|Y|0.49|
 |melcloud|Python MELCloud interface|N|N|Y|0.106|
 |melissa|main integration to connect to a Melissa Climate A/C control|N|N|Y|0.63|
+|melnor|allows you to control your Melnor Bluetooth watering valves|N|N|Y|2022.9.0b3|
 |message_bird|MessageBird's REST API|N|N|Y|0.16|
 |met|met platform uses the Met.no web service as a source for meteorological data|N|N|Y|0.79|
 |meteoalarm|watch for weather alerts in europe from MeteoAlarm|N|N|Y|0.93|
@@ -552,6 +562,7 @@
 |prosegur|Prosegur Smart Alarms (Cloud Polling)|N|N|Y|2021.8.0|
 |proxmoxve|poll data from Proxmox VE virtualization environment|N|N|Y|0.103|
 |proxy|pass another camera’s output through post-processing routines|N|N|Y|0.65|
+|prusalink|PrusaLink integration allows you to monitor your Prusa 3D printer|N|N|Y|2022.9.0b3|
 |ps4|allows you to control a Sony PlayStation 4 console|Y|Y|Y|0.89|
 |pulseaudio_loopback|whole home audio system based upon PulseAudio|N|N|Y|0.16|
 |pure_energie|integrates the Pure Energie Monitor device with Home Assistant|N|N|Y|2022.3.0b3|
@@ -561,6 +572,7 @@
 |pvpc_hourly_pricing|hourly price of electricity in Spain from PVPC|N|N|Y|0.108|
 |python_script|write Python scripts that are exposed as services in Home Assistant|Y|Y|Y|0.47|
 |qbittorrent|monitor your downloads with qBittorrent from within Home Assistant|N|N|Y|0.84|
+|qingping|Integrates Qingping devices into Home Assistant|N|N|Y|2022.9.0b3|
 |qld_bushfire|GeoRSS feed containing bushfire alerts for Queensland|N|N|Y|0.95|
 |qnap|Python API for obtaining QNAP NAS system stats|Y|Y|Y|0.38|
 |qnap_qsw|This integration interacts with the local API of QNAP QSW managed switches|N|N|Y|2022.5.0b0|
@@ -625,6 +637,7 @@
 |sensehat|lets you control the Sense HAT board’s 8x8 RGB LED matrix on your Raspberry Pi|N|N|Y|0.44|
 |senseme|Integrates SenseME devices into Home Assistant|N|N|Y|2022.2.0b1|
 |sensibo|Integrates Sensibo Air Conditioning controller into Home Assistant|N|N|Y|0.44|
+|sensorpro|Integrates SensorPro devices into Home Assistant|N|N|Y|2022.9.0b3|
 |sensorpush|Integrates SensorPush devices into Home Assistant|N|N|Y|2022.8.1|
 |sentry|The free Sentry account allows 5000 events per month|N|N|Y|0.104|
 |senz|allows you to control and monitor your nVent RAYCHEM SENZ-WIFI thermostats|N|N|Y|2022.5.0b0|
@@ -730,6 +743,8 @@
 |tesla_wall_connector|allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi|N|N|Y|2021.12.0b0|
 |test|internal and developer use|Y|Y|Y|None|
 |tfiac|integrates several vendors air conditioning systems into Home Assistant|N|N|Y|0.91|
+|thermobeacon|Integrates ThermoBeacon devices into Home Assistant|N|N|Y|2022.9.0b3|
+|thermopro|Integrates ThermoPro devices into Home Assistant|N|N|Y|2022.9.0b3|
 |thermoworks_smoke|pulls data for your ThermoWorks Smoke Thermometer|N|N|Y|0.81|
 |thingspeak|makes Home Assistant communicate with the ThingSpeak API|N|N|Y|0.32|
 |thinkingcleaner|displays information about your Thinking Cleaner add-on|N|N|Y|0.18|
@@ -835,6 +850,7 @@
 |xiaomi_tv|The xiaomi_tv platform allows you to control a Xiaomi TV|N|Y|Y|0.64|
 |xmpp|Python 3 library for XMPP|N|N|Y||
 |xs1|get and set values of the EZcontrol XS1 Gateway|N|Y|Y|0.88|
+|yalexs_ble|Integrates Yale Access Bluetooth devices into Home Assistant|N|N|Y|2022.9.0b3|
 |yale_smart_alarm|Yale Smart Alarm systems and Smart Hub through Yale’s API|N|N|Y|0.78|
 |yamaha|Library for Yamaha RX-* Receivers|Y|Y|Y|0.16|
 |yamaha_musiccast|add support for Yamaha MusicCast devices|Y|Y|Y|0.53|

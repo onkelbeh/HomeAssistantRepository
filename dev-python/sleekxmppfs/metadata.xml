@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">sleekxmppfs</remote-id>
     <maintainer status="unknown">
-      <email>OverloadUT@gmail.com</email>
-      <name>Greg Laabs</name>
+      <email>aszymanik@gmail.com</email>
+      <name>Alex Szymanik</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

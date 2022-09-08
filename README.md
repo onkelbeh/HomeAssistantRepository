@@ -73,7 +73,7 @@ The Ebuild we have since `0.97.0`, as soon as I know that at least one user is a
 ### `app-misc/homeassistant-full`
 
 WARNING: This one currently breaks (caused by shell limitations) emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
-This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **855** USE Flags.
+This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **871** USE Flags.
 
 A list of all components aka USEFlags is generated with every release [DOMAINTABLE.md](DOMAINTABLE.md)
 
@@ -92,7 +92,7 @@ Best you start using the `app-misc/homeassistant-min` Ebuild. If you have it run
 * Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap. Beginning homeassistant-2021.2.0, handling for systemd was added by request, thanks to @Tatsh for help.
 * I use an own profile based on "amd64/17.1/no-multilib"
 * Sunce 2022.07.06, I run detailed tests on Python 3.10 only, and am starting to try builds on Python 3.11.
-* python-3.10.5 is set as default target.
+* python-3.10.6 is set as default target.
 
 # Bigger Changes
 
@@ -523,20 +523,20 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1861 Ebuilds in total, 1854 of them have in total 1866 (35 different) licenses assigned.
+There are 1882 Ebuilds in total, 1875 of them have in total 1887 (35 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1125|
-|Apache-2.0|347|
-|GPL-3|112|
+|MIT|1137|
+|Apache-2.0|354|
+|GPL-3|115|
 |BSD|104|
 |LGPL-3|29|
 |GPL-2|25|
-|LGPL-3+|18|
-|GPL-3+|17|
+|LGPL-3+|17|
+|GPL-3+|16|
 |BSD-2|14|
-|all-rights-reserved|13|
+|all-rights-reserved|14|
 |Unlicense|7|
 |LGPL-2.1|7|
 |public-domain|5|
@@ -563,9 +563,9 @@ There are 1861 Ebuilds in total, 1854 of them have in total 1866 (35 different) 
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
 
-(Last counted: 26/08/2022)
+(Last counted: 08/09/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 26/08/2022
+Last updated: 08/09/2022

@@ -12,4 +12,7 @@
       <name>Theodor Lindquist</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="mqtt">Set MQTT Depedency</flag>
+  </use>
 </pkgmetadata>
