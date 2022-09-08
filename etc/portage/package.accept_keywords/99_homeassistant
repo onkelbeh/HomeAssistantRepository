@@ -46,3 +46,4 @@ net-analyzer/fail2ban ~amd64
 =dev-python/pychromecast-12.1.4 ~amd64
 
 =dev-python/numexpr-2.8.1-r1 ~amd64
+>=sci-geosciences/GeographicLib-1.52-r1 ~amd64
