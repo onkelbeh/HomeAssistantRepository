@@ -17,3 +17,4 @@ media-libs/gd fontconfig truetype
 dev-python/attrs -test
 dev-python/pytest -test
 dev-python/orjson -test
+sci-geosciences/GeographicLib python
