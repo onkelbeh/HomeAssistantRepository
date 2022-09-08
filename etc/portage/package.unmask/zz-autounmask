@@ -1,0 +1,46 @@
+# package.unmask# required by app-misc/homeassistant-2021.10.0_beta3::HomeAssistantRepository[bluetooth_tracker]
+# required by =app-misc/homeassistant-2021.10.0_beta3 (argument)
+# /usr/portage/gentoo/profiles/package.mask:
+# Jakov Smolić <jsmolic@gentoo.org> (2021-09-09)
+# Relies on setuptools' deprecated use_2to3 option.
+# Last release in 2019, no revdeps.
+# Removal on 2021-10-09. Bug #812233
+=dev-python/pybluez-0.22
+# required by app-misc/homeassistant-2021.11.0::HomeAssistantRepository[onkyo]
+# required by @selected
+# required by @world (argument)
+# /usr/portage/gentoo/profiles/package.mask:
+# Arthur Zamarin <arthurzam@gentoo.org> (2021-10-10)
+# Inactive upstream with reported bugs. Has issues with python 3.9
+# and python 3.10.
+# Extra bugs: #798252 #812734
+# Removal on 2021-11-09.  Bug #817392.
+=dev-python/onkyo-eiscp-1.2.7
+# required by app-misc/homeassistant-min-2022.6.4::HomeAssistantRepository[test,mysql]
+# required by homeassistant-min (argument)
+# /usr/portage/gentoo/profiles/package.mask:
+# Michał Górny <mgorny@gentoo.org> (2022-06-05)
+# Pending bump since January.  No Python 3.10 compat.  Tests restricted.
+# Uses PEP517-incompatible hacks to build.  Hard requires dev-db/mysql
+# (and blocks dev-db/mariad).  No revdeps in Gentoo.
+# Use dev-python/mysqlclient instead.
+# Removal on 2022-07-05.  Bug #845756.
+=dev-python/mysql-connector-python-8.0.28-r1
+# required by dev-python/zwave-js-server-python-0.37.1::HomeAssistantRepository[test]
+# required by app-misc/homeassistant-min-2022.6.7::HomeAssistantRepository[zwave_js,test]
+# required by homeassistant-min (argument)
+# /etc/portage/package.mask/pydantic:
+=dev-python/pydantic-1.9.1
+# required by dev-python/pyqrcode (argument)
+# /usr/portage/gentoo/profiles/package.mask:
+# Michał Górny <mgorny@gentoo.org> (2022-08-30)
+# Flask-Security-Too is a package with high maintenance cost
+# and no revdeps in ::gentoo.  The next version bump (once more)
+# introduces more dependencies.
+#
+# The remaining listed packages are used exclusively by this package
+# (or its tests).  If you find one of them useful, please let us know
+# and we'll keep it.
+#
+# Removal on 2022-09-29.  Bug #867415.
+=dev-python/pyqrcode-1.2.1-r2
