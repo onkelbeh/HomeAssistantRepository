@@ -3,12 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python Library for the Velbus protocol based on asyncio"
-HOMEPAGE="https://github.com/Cereal2nd/velbus-aio https://pypi.org/project/velbus-aio/"
+DESCRIPTION="Recover bluetooth adapters that are in an stuck state"
+HOMEPAGE="https://github.com/bluetooth-devices/bluetooth-auto-recovery https://pypi.org/project/bluetooth-auto-recovery/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,13 +19,15 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}]
-	>=dev-python/backoff-1.10.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/PyRIC-0.1.6.3[${PYTHON_USEDEP}]
+	>=dev-python/btsocket-0.2.0[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
