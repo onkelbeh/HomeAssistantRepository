@@ -164,7 +164,7 @@ RDEPEND="${RDEPEND}
 	apns? ( ~dev-python/apns2-0.3.0[${PYTHON_USEDEP}] )
 	apple_tv? ( ~dev-python/pyatv-0.10.3[${PYTHON_USEDEP}] )
 	apprise? ( ~dev-python/apprise-0.9.9[${PYTHON_USEDEP}] )
-	aprs? ( ~dev-python/aprslib-0.7.0[${PYTHON_USEDEP}] ~dev-python/geopy-2.1.0[${PYTHON_USEDEP}] )
+	aprs? ( ~dev-python/aprslib-0.7.0[${PYTHON_USEDEP}] ~sci-geosciences/geopy-2.1.0[${PYTHON_USEDEP}] )
 	aqualogic? ( ~dev-python/aqualogic-2.6[${PYTHON_USEDEP}] )
 	aquostv? ( ~dev-python/sharp_aquos_rc-0.3.2[${PYTHON_USEDEP}] )
 	arcam_fmj? ( ~dev-python/arcam-fmj-0.12.0[${PYTHON_USEDEP}] )

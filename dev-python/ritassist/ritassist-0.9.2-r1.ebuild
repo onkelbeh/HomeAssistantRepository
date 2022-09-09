@@ -3,24 +3,23 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="Communicate with VOC"
-HOMEPAGE="https://github.com/molobrakos/volvooncall https://pypi.org/project/volvooncall/"
+DESCRIPTION="RitAssist API Access"
+HOMEPAGE="https://github.com/depl0y/ritassist-py https://pypi.org/project/ritassist/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="public-domain"
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=">=dev-python/geopy-1.14.0[${PYTHON_USEDEP}]
-	dev-python/certifi[${PYTHON_USEDEP}]
-	dev-python/hbmqtt[${PYTHON_USEDEP}]
-	dev-python/aiohttp[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/ciso8601[${PYTHON_USEDEP}]
+	sci-geosciences/geopy[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
