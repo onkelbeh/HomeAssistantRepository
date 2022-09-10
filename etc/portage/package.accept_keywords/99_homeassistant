@@ -43,26 +43,24 @@ net-analyzer/fail2ban ~amd64
 =dev-python/numexpr-2.8.1-r1 ~amd64
 >=sci-geosciences/GeographicLib-1.52-r1 ~amd64
 
-The following keyword changes are necessary to proceed:
- (see "package.accept_keywords" in the portage(5) man page for more details)
- # required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test]
- # required by app-misc/homeassistant-min (argument)
- =dev-python/coverage-6.4.4 ~amd64
- # required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test,zeroconf]
- # required by app-misc/homeassistant-min (argument)
- =dev-python/zeroconf-0.39.1 ~amd64
- # required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test]
- # required by app-misc/homeassistant-min (argument)
- =dev-python/astroid-2.12.5 ~amd64
- # required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test]
- # required by app-misc/homeassistant-min (argument)
- =dev-python/pylint-2.15.0 ~amd64
- # required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test,sql,recorder]
- # required by app-misc/homeassistant-min (argument)
- =dev-python/sqlalchemy-1.4.40 ~amd64
- # required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test]
- # required by app-misc/homeassistant-min (argument)
- =dev-python/pytest-sugar-0.9.5 ~amd64
- # required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test,compensation]
- # required by app-misc/homeassistant-min (argument)
- =dev-python/numpy-1.23.2 ~amd64
+# required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test]
+# required by app-misc/homeassistant-min (argument)
+=dev-python/coverage-6.4.4 ~amd64
+# required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test,zeroconf]
+# required by app-misc/homeassistant-min (argument)
+=dev-python/zeroconf-0.39.1 ~amd64
+# required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test]
+# required by app-misc/homeassistant-min (argument)
+=dev-python/astroid-2.12.5 ~amd64
+# required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test]
+# required by app-misc/homeassistant-min (argument)
+=dev-python/pylint-2.15.0 ~amd64
+# required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test,sql,recorder]
+# required by app-misc/homeassistant-min (argument)
+=dev-python/sqlalchemy-1.4.40 ~amd64
+# required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test]
+# required by app-misc/homeassistant-min (argument)
+=dev-python/pytest-sugar-0.9.5 ~amd64
+# required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test,compensation]
+# required by app-misc/homeassistant-min (argument)
+=dev-python/numpy-1.23.2 ~amd64
