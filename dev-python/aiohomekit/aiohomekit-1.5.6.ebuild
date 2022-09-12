@@ -26,7 +26,7 @@ RDEPEND=">=dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
 	>=dev-python/aiocoap-0.4.1[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.14.2[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.0.4[${PYTHON_USEDEP}]
-	>=dev-python/bleak-retry-connector-1.11.0[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-1.14.0[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.7.8[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]"
 BDEPEND="
