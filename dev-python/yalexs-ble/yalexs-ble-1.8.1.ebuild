@@ -4,11 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
-DESCRIPTION="Library implementing a ZigBee stack"
-HOMEPAGE="https://github.com/zigpy/zigpy https://pypi.org/project/zigpy/"
+DESCRIPTION="Bluetooth control of Yale and August locks"
+HOMEPAGE="https://github.com/bdraco/yalexs-ble https://pypi.org/project/yalexs-ble/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"
@@ -19,16 +20,14 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/aiosqlite-0.16.0[${PYTHON_USEDEP}]
-	dev-python/crccheck[${PYTHON_USEDEP}]
-	dev-python/cryptography[${PYTHON_USEDEP}]
-	dev-python/voluptuous[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/bleak-0.14.3[${PYTHON_USEDEP}]
+	>=dev-python/pycryptodome-3.15.0[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-1.14.0[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
-		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
@@ -36,3 +35,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest

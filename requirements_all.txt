@@ -40,7 +40,7 @@ aiodiscover==1.4.11
 aiodns==3.0.0
 aioeafm==0.1.2
 aioeagle==1.1.0
-aioecowitt==2022.8.3
+aioecowitt==2022.9.1
 aioemonitor==1.0.5
 aioesphomeapi==10.13.0
 aiofiles==0.8.0
@@ -49,7 +49,7 @@ aioftp==0.12.0
 aiogithubapi==22.2.4
 aioguardian==2022.7.0
 aioharmony==0.2.9
-aiohomekit==1.5.2
+aiohomekit==1.5.6
 aiohttp-cors==0.7.0
 aiohttp==3.8.1
 aiohue==4.5.0
@@ -160,7 +160,7 @@ bitarray==2.6.0
 bitstring==3.1.9
 bizkaibus==0.1.1
 bleach==5.0.1
-bleak-retry-connector==1.11.0
+bleak-retry-connector==1.14.0
 bleak==0.16.0
 blebox-uniapi==2.0.2
 blinker==1.5
@@ -170,7 +170,7 @@ blinkt==0.1.0
 blockchain==1.4.4
 bluemaestro-ble==0.2.0
 bluepy==1.3.0
-bluetooth-adapters==0.3.5
+bluetooth-adapters==0.4.1
 bluetooth-auto-recovery==0.3.2
 bluetooth-data-tools==0.1.2
 bluetooth-sensor-state-data==1.6.0
@@ -258,6 +258,7 @@ dacite==1.6.0
 datadog==0.15.0
 datapoint==0.9.8
 dateparser==1.0.0
+dbus-fast==1.4.0
 dbus-next==0.2.3
 dbus==1.14.0
 debianutils==5.7
@@ -283,7 +284,7 @@ dlipower==0.7.165
 dnspython==2.2.1
 docopt==0.6.2
 DoorBirdPy==2.1.0
-double-conversion==3.2.0
+double-conversion==3.2.1
 dovado==0.4.1
 dsmr-parser==0.33
 dtlssocket==0.1.12
@@ -335,7 +336,7 @@ fitbit==0.3.1
 fivem-api==0.1.2
 fixerio==1.0.0_alpha0
 fjaraskupan==2.0.0
-flask==2.2.1
+flask==2.2.2
 flipr-api==1.4.2
 flux-led==0.28.32
 fnvhash==0.1.0
@@ -478,7 +479,7 @@ intellifire4py==2.0.1
 iotawattpy==0.1.0
 iperf3==0.1.11
 ismartgate==4.0.4
-iso-codes==4.10.0
+iso-codes==4.11.0
 iso4217==1.11.20220401
 iso8601==1.0.2
 isodate==0.6.1
@@ -507,7 +508,7 @@ kafka-python==2.0.2
 kaiterra-async-client==1.0.0
 kconfiglib==13.7.1
 keba-kecontact==1.1.0
-keyring==23.7.0
+keyring==23.8.2
 keyrings_alt==4.1.0
 kiwiki-client==0.1.1
 konnected==1.2.0
@@ -518,7 +519,7 @@ lacrosse-view==0.0.9
 lakeside==0.12
 lark==1.1.2
 laundrify-aio==1.1.2
-led-ble==0.7.1
+led-ble==0.9.1
 libcap==2.65
 libcrypt==2
 libcst==0.3.23
@@ -594,7 +595,7 @@ miniaudio==1.45
 minio==5.0.10
 moat-ble==0.1.1
 moehlenhoff-alpha2==1.2.1
-more-itertools==8.13.0
+more-itertools==8.14.0
 motionblinds==0.6.12
 motioneye-client==0.3.12
 ms-cv==0.1.1
@@ -752,7 +753,7 @@ pyblackbird==0.5
 pybluez==0.22
 pybotvac==0.0.23
 pybravia==0.2.2
-pycares==4.2.1
+pycares==4.2.2
 pycarwings2==2.13
 pyCEC==0.5.2
 pycfdns==1.2.2
@@ -786,7 +787,7 @@ pyeconet==0.1.15
 pyedimax==0.2.1
 pyefergy==22.1.1
 pyEight==0.3.0
-pyelftools==0.28
+pyelftools==0.29
 pyEmby==1.8
 pyenvisalink==4.6
 pyephember==0.3.1
@@ -812,7 +813,7 @@ pygments==2.12.0
 pygraphviz==1.9
 pygtfs==0.1.6
 pygti==0.9.3
-pyhamcrest==2.0.3
+pyhamcrest==2.0.4
 pyheos==0.7.2
 pyHik==0.3.0
 pyhiveapi==0.5.13
@@ -923,7 +924,7 @@ pyruckus==0.16
 pysabnzbd==1.1.1
 pysaj==0.0.16
 pySDCP==1
-pysensibo==1.0.19
+pysensibo==1.0.20
 pyserial-asyncio==0.6
 pyserial==3.5
 pysesame2==1.0.1
@@ -948,7 +949,7 @@ pyspcwebgw==0.4.0
 pysqueezebox==0.6.0
 pystiebeleltron==0.0.1
 pysuez==0.1.19
-PySwitchbot==0.18.27
+PySwitchbot==0.19.5
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6
@@ -1052,7 +1053,7 @@ ratelimit==2.2.1
 re2==0.2022.06.01
 readlike==0.1.2
 reedsolomon==1.5.4
-regenmaschine==2022.9.0
+regenmaschine==2022.9.1
 regex==2021.8.28
 regex==2022.7.25
 related==0.7.2
@@ -1193,7 +1194,7 @@ thermopro-ble==0.4.3
 thermoworks-smoke==0.1.8
 thingspeak==1.0.0
 tikteck==0.4
-timezone-data==2022a
+timezone-data==2022c
 titlecase==2.3
 tmb==0.0.4
 todoist-python==8.0.0
@@ -1296,7 +1297,7 @@ xs1-api-client==3.0.0
 xxhash==0.8.1
 xxhash==3.0.0
 yalesmartalarmclient==0.3.9
-yalexs-ble==1.6.4
+yalexs-ble==1.8.1
 yalexs==1.2.1
 yarl==1.7.2
 yarl==1.8.1
@@ -1312,11 +1313,11 @@ zeroconf==0.39.1
 zha-quirks==0.0.79
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
-zigpy-deconz==0.18.0
+zigpy-deconz==0.18.1
 zigpy-xbee==0.15.0
 zigpy-zigate==0.9.2
 zigpy-znp==0.8.2
-zigpy==0.50.2
+zigpy==0.50.3
 zipp==3.8.1
 zlib==1.2.12
 zm-py==0.5.2
