@@ -19,8 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/bleak-0.15.1[${PYTHON_USEDEP}]
-	>=dev-python/bleak-retry-connector-1.11.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/bleak-0.17.0[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-1.15.0[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
 	>=dev-python/flux-led-0.28.32[${PYTHON_USEDEP}]"
 BDEPEND="
