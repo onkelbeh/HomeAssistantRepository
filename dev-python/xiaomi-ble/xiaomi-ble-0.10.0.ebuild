@@ -24,8 +24,9 @@ RDEPEND=">=dev-python/home-assistant-bluetooth-1.3.0[${PYTHON_USEDEP}]
 	>=dev-python/sensor-state-data-2.1.2[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-sensor-state-data-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodomex-3.15.0[${PYTHON_USEDEP}]
-	>=dev-python/bleak-retry-connector-1.11.0[${PYTHON_USEDEP}]
-	>=dev-python/bluetooth-data-tools-0.1.2[${PYTHON_USEDEP}]"
+	>=dev-python/bleak-retry-connector-1.15.0[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-data-tools-0.1.2[${PYTHON_USEDEP}]
+	>=dev-python/bleak-0.17.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
