@@ -7,11 +7,11 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="Control a wide range of LED BLE devices"
-HOMEPAGE="https://github.com/bluetooth-devices/led-ble https://pypi.org/project/led-ble/"
+DESCRIPTION="A library to communicate with Switchbot"
+HOMEPAGE="https://github.com/Danielhiversen/pySwitchbot/ https://pypi.org/project/PySwitchbot/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -19,16 +19,14 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/bleak-0.15.1[${PYTHON_USEDEP}]
-	>=dev-python/bleak-retry-connector-1.11.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/bleak-0.17.0[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/flux-led-0.28.32[${PYTHON_USEDEP}]"
+	>=dev-python/bleak-retry-connector-1.15.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

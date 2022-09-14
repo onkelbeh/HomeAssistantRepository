@@ -4,11 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
-DESCRIPTION="Library to communicate with the Viessmann ViCare API"
-HOMEPAGE="https://github.com/somm15/PyViCare https://pypi.org/project/PyViCare/"
+DESCRIPTION="Manage Xiaomi BLE devices"
+HOMEPAGE="https://github.com/bluetooth-devices/xiaomi-ble https://pypi.org/project/xiaomi-ble/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
@@ -19,8 +20,13 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/requests-oauthlib-1.1.0[${PYTHON_USEDEP}]
-	dev-python/pkce[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/home-assistant-bluetooth-1.3.0[${PYTHON_USEDEP}]
+	>=dev-python/sensor-state-data-2.1.2[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-sensor-state-data-1.5.0[${PYTHON_USEDEP}]
+	>=dev-python/pycryptodomex-3.15.0[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-1.15.0[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-data-tools-0.1.2[${PYTHON_USEDEP}]
+	>=dev-python/bleak-0.17.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -31,11 +37,6 @@ BDEPEND="
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
-}
-
-src_prepare() {
-	sed -i "s/setuptools-git-versioning<1.8.0//g" -i setup.py || die
-	eapply_user
 }
 
 distutils_enable_tests pytest

@@ -3,24 +3,25 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="Library to communicate with the Viessmann ViCare API"
-HOMEPAGE="https://github.com/somm15/PyViCare https://pypi.org/project/PyViCare/"
+DESCRIPTION="Bluetooth Low Energy platform Agnostic Klient"
+HOMEPAGE="https://github.com/hbldh/bleak https://pypi.org/project/bleak/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.md"
+DOCS="README.rst"
 
-RDEPEND=">=dev-python/requests-oauthlib-1.1.0[${PYTHON_USEDEP}]
-	dev-python/pkce[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-4.2.0[${PYTHON_USEDEP}]
+	>=dev-python/dbus-fast-1.4.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -32,7 +33,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
-src_prepare() {
-	sed -i "s/setuptools-git-versioning//g" -i setup.py || die
-	eapply_user
-}
+
+distutils_enable_tests pytest

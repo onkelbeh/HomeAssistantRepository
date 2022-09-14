@@ -7,11 +7,11 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="Discover hosts by arp and ptr lookup"
-HOMEPAGE="https://github.com/bdraco/aiodiscover https://pypi.org/project/aiodiscover/"
+DESCRIPTION="A connector for Bleak Clients that handles transient connection failures"
+HOMEPAGE="https://github.com/bluetooth-devices/bleak-retry-connector https://pypi.org/project/bleak-retry-connector/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -19,21 +19,21 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/netifaces-0.11.0[${PYTHON_USEDEP}]
-	>=dev-python/dnspython-2.1.0[${PYTHON_USEDEP}]
-	dev-python/ifaddr[${PYTHON_USEDEP}]
-	>=dev-python/pyroute2-0.6.9[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/bleak-0.15.1[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
+	>=dev-python/dbus-fast-1.4.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
