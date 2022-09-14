@@ -36,7 +36,7 @@ aiobotocore==2.1.0
 aiocache==0.11.1
 aiocoap==0.4.3
 aioconsole==0.5.1
-aiodiscover==1.4.11
+aiodiscover==1.4.13
 aiodns==3.0.0
 aioeafm==0.1.2
 aioeagle==1.1.0
@@ -49,7 +49,7 @@ aioftp==0.12.0
 aiogithubapi==22.2.4
 aioguardian==2022.7.0
 aioharmony==0.2.9
-aiohomekit==1.5.6
+aiohomekit==1.5.7
 aiohttp-cors==0.7.0
 aiohttp==3.8.1
 aiohue==4.5.0
@@ -160,18 +160,19 @@ bitarray==2.6.0
 bitstring==3.1.9
 bizkaibus==0.1.1
 bleach==5.0.1
-bleak-retry-connector==1.14.0
-bleak==0.16.0
+bleak-retry-connector==1.15.1
+bleak-retry-connector==1.16.0
+bleak==0.17.0
 blebox-uniapi==2.0.2
 blinker==1.5
-blinkpy==0.19.0
+blinkpy==0.19.2
 BlinkStick==1.2.0
 blinkt==0.1.0
 blockchain==1.4.4
 bluemaestro-ble==0.2.0
 bluepy==1.3.0
 bluetooth-adapters==0.4.1
-bluetooth-auto-recovery==0.3.2
+bluetooth-auto-recovery==0.3.3
 bluetooth-data-tools==0.1.2
 bluetooth-sensor-state-data==1.6.0
 bluez==5.64
@@ -259,7 +260,6 @@ datadog==0.15.0
 datapoint==0.9.8
 dateparser==1.0.0
 dbus-fast==1.4.0
-dbus-next==0.2.3
 dbus==1.14.0
 debianutils==5.7
 decora-wifi==1.4
@@ -388,7 +388,7 @@ google-nest-sdm==2.0.0
 googleapis-common-protos==1.56.4
 googlemaps==2.5.1
 goslide-api==0.5.1
-govee-ble==0.17.2
+govee-ble==0.17.3
 gpiozero==1.6.2
 gps3==0.33.3
 graphql-subscription-manager==0.6.1
@@ -403,10 +403,10 @@ growattServer==1.2.2
 grpc-google-iam-v1==0.12.3
 grpcio-status==1.48.0
 grpcio==1.48.0
-gst-plugins-base==1.20.2
-gst-plugins-libav==1.20.2
+gst-plugins-base==1.20.3
+gst-plugins-libav==1.20.3
 gstreamer-player==1.1.2
-gstreamer==1.20.2
+gstreamer==1.20.3
 gTTS==2.2.4
 guppy3==3.1.2
 gzip==1.12
@@ -435,7 +435,7 @@ holidays==0.14.2
 home-assistant-bluetooth==1.3.0
 home-assistant-bluetooth==1.4.0
 home-assistant-cli==9999
-home-assistant-frontend==20220907.0
+home-assistant-frontend==20220907.1
 homeassistant
 homeconnect==0.7.2
 homematicip==1.0.7
@@ -519,7 +519,7 @@ lacrosse-view==0.0.9
 lakeside==0.12
 lark==1.1.2
 laundrify-aio==1.1.2
-led-ble==0.9.1
+led-ble==0.10.0
 libcap==2.65
 libcrypt==2
 libcst==0.3.23
@@ -825,7 +825,7 @@ pyialarmxr-homeassistant==1.0.18
 pyicloud==1.0.0
 pyinsteon==1.2.0
 pyintesishome==1.8.0
-pyipma==3.0.2
+pyipma==3.0.4
 pyipp==0.11.0
 pyiqvia==2022.4.0
 pyirishrail==0.0.2
@@ -949,7 +949,7 @@ pyspcwebgw==0.4.0
 pysqueezebox==0.6.0
 pystiebeleltron==0.0.1
 pysuez==0.1.19
-PySwitchbot==0.19.5
+PySwitchbot==0.19.8
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6
@@ -1024,7 +1024,7 @@ PyUserInput==0.1.11
 pyvera==0.3.13
 pyversasense==0.0.6
 pyvesync==2.0.3
-PyViCare==2.16.2
+PyViCare==2.17.0
 pyvizio==0.1.57
 pyvlx==0.2.20
 pyvolumio==0.1.5
@@ -1289,7 +1289,7 @@ XBee==2.3.2
 xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
-xiaomi-ble==0.9.0
+xiaomi-ble==0.10.0
 xknx==1.0.2
 xmlschema==2.0.1
 xmltodict==0.13.0
@@ -1297,7 +1297,7 @@ xs1-api-client==3.0.0
 xxhash==0.8.1
 xxhash==3.0.0
 yalesmartalarmclient==0.3.9
-yalexs-ble==1.8.1
+yalexs-ble==1.9.0
 yalexs==1.2.1
 yarl==1.7.2
 yarl==1.8.1
