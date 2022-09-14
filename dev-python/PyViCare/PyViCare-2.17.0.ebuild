@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -32,7 +32,10 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
 src_prepare() {
-	sed -i "s/setuptools-git-versioning//g" -i setup.py || die
+	sed -i "s/setuptools-git-versioning<1.8.0//g" -i setup.py || die
 	eapply_user
 }
+
+distutils_enable_tests pytest
