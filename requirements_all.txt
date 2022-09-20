@@ -49,7 +49,7 @@ aioftp==0.12.0
 aiogithubapi==22.2.4
 aioguardian==2022.7.0
 aioharmony==0.2.9
-aiohomekit==1.5.7
+aiohomekit==1.5.9
 aiohttp-cors==0.7.0
 aiohttp==3.8.1
 aiohue==4.5.0
@@ -160,8 +160,7 @@ bitarray==2.6.0
 bitstring==3.1.9
 bizkaibus==0.1.1
 bleach==5.0.1
-bleak-retry-connector==1.15.1
-bleak-retry-connector==1.16.0
+bleak-retry-connector==1.17.1
 bleak==0.17.0
 blebox-uniapi==2.0.2
 blinker==1.5
@@ -210,7 +209,7 @@ certifi==3021.3.16
 cffi==1.15.1
 chacha20poly1305-reuseable==0.0.4
 chardet==5.0.0
-charset_normalizer==2.1.0
+charset_normalizer==2.1.1
 circuit-webhook==1.0.1
 ciscomobilityexpress==0.3.9
 ciso8601==2.2.0
@@ -262,6 +261,7 @@ dateparser==1.0.0
 dbus-fast==1.4.0
 dbus==1.14.0
 debianutils==5.7
+debugpy==1.6.3
 decora-wifi==1.4
 decora==0.6
 decorator==5.1.1
@@ -269,7 +269,7 @@ deepdiff==5.8.1
 deepmerge==1.0.1
 defusedxml==0.7.1
 deluge-client==1.7.1
-demetriek==0.2.2
+demetriek==0.2.4
 demjson3==3.0.5
 devolo-home-control-api==0.18.2
 devolo-plc-api==0.8.0
@@ -295,7 +295,7 @@ ebusdpy==0.0.17
 ecdsa==0.18.0
 ecoaliface==0.4.0
 eebrightbox==0.0.4
-elementpath==3.0.1
+elementpath==3.0.2
 elgato==3.0.0
 eliqonline==1.2.2
 elkm1-lib==2.0.2
@@ -358,6 +358,7 @@ gawk==5.1.1
 gcal-sync==0.10.0
 gcloud==0.18.3
 gd==2.3.3
+gdb==11.2
 geniushub-client==0.6.30
 gentoo-functions==0.17
 geocachingapi==0.2.1
@@ -381,7 +382,7 @@ goalzero==0.2.1
 goodwe==0.2.18
 google-api-core==2.8.2
 google-auth-oauthlib==0.5.2
-google-auth==2.10.0
+google-auth==2.11.0
 google-cloud-pubsub==2.11.0
 google-cloud-texttospeech==2.12.1
 google-nest-sdm==2.0.0
@@ -501,7 +502,7 @@ jsonpointer==2.3
 jsonrpc-async==2.1.0
 jsonrpc-base==2.1.0
 jsonrpc-websocket==3.1.1
-jsonschema==4.9.1
+jsonschema==4.10.2
 justbackoff==0.6.0
 justnimbus==0.6.0
 kafka-python==2.0.2
@@ -519,7 +520,7 @@ lacrosse-view==0.0.9
 lakeside==0.12
 lark==1.1.2
 laundrify-aio==1.1.2
-led-ble==0.10.0
+led-ble==0.10.1
 libcap==2.65
 libcrypt==2
 libcst==0.3.23
@@ -598,6 +599,7 @@ moehlenhoff-alpha2==1.2.1
 more-itertools==8.14.0
 motionblinds==0.6.12
 motioneye-client==0.3.12
+mpfr==4.1.0_p13
 ms-cv==0.1.1
 msgpack==1.0.4
 mt_940==4.26.0
@@ -612,6 +614,7 @@ mypy_extensions==0.4.3
 nad-receiver==0.3.0
 natsort==8.1.0
 nclib==1.0.1
+ncurses==6.3_p20220423
 ndms2-client==0.1.1
 nessclient==0.10.0
 netaddr==0.8.0
@@ -671,7 +674,7 @@ panasonic-viera==0.3.6
 pandas==1.4.3
 paramiko==2.11.0
 passlib==1.7.4
-pbr==5.9.0
+pbr==5.10.0
 pcal9535a==0.7
 pdunehd==1.3.2
 peco==0.0.29
@@ -779,6 +782,7 @@ pydantic==1.9.0
 pydantic==1.9.1
 pydeconz==104
 pydelijn==1.0.0
+pydevd==2.8.0
 pydexcom==0.2.3
 pydoods==1.0.2
 pydroid-ipcam==2.0.0
@@ -809,8 +813,8 @@ pyfritzhome==0.6.5
 PyFronius==0.7.1
 pyfttt==0.3.2
 pygatt==4.0.5
-pygments==2.12.0
-pygraphviz==1.9
+pygments==2.13.0
+pygraphviz==1.10
 pygtfs==0.1.6
 pygti==0.9.3
 pyhamcrest==2.0.4
@@ -915,7 +919,7 @@ pyrepetierng==0.1.0
 pyrfc3339==1.1
 pyRFXtrx==0.30.0
 PyRIC==0.1.6.3
-pyrisco==0.5.4
+pyrisco==0.5.5
 pyrituals==0.0.6
 PyRMVtransport==0.3.3
 pyroute2==0.7.2
@@ -949,7 +953,7 @@ pyspcwebgw==0.4.0
 pysqueezebox==0.6.0
 pystiebeleltron==0.0.1
 pysuez==0.1.19
-PySwitchbot==0.19.8
+PySwitchbot==0.19.9
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6
@@ -997,7 +1001,7 @@ python-smarttub==0.0.33
 python-sochain-api==0.0.2
 python-socketio==4.6.0
 python-socketio==5.3.0
-python-songpal==0.15
+python-songpal==0.15.1
 python-tado==0.12.0
 python-telegram-bot==13.1
 python-vlc==1.1.2
@@ -1014,7 +1018,7 @@ pytradfri==9.0.0
 pytrafikverket==0.2.0.1
 PyTransportNSW==0.1.1
 PyTurboJPEG==1.6.7
-pytz==2022.1
+pytz==2022.2.1
 pytz_deprecation_shim==0.1.0_p0
 pyudev==0.23.2
 pyunifiprotect==4.2.0
@@ -1040,7 +1044,7 @@ PyXiaomiGateway==0.13.4
 pyyaml==6.0
 pyzbar==0.1.7
 pyzerproc==0.4.8
-qingping-ble==0.6.0
+qingping-ble==0.7.0
 qnapstats==0.4.0
 quantum-gateway==0.0.8
 RachioPy==1.0.3
@@ -1052,10 +1056,11 @@ raspyrfm-client==1.2.8
 ratelimit==2.2.1
 re2==0.2022.06.01
 readlike==0.1.2
+readline==8.1_p2
 reedsolomon==1.5.4
 regenmaschine==2022.9.1
 regex==2021.8.28
-regex==2022.7.25
+regex==2022.8.17
 related==0.7.2
 renault-api==0.1.11
 ReParser==1.4.3
@@ -1101,7 +1106,7 @@ schedule==1.1.0
 schiene==0.23
 screenlogicpy==0.5.4
 scsgate==0.1.0
-secretstorage==3.3.2
+secretstorage==3.3.3
 securetar==2022.2.0
 semantic_version==2.10.0
 semver==2.13.0
@@ -1169,7 +1174,7 @@ surepy==0.7.2
 swisshydrodata==0.1.0
 synology-srm==0.2.0
 systembridgeconnector==3.4.4
-systemd-utils==251.3
+systemd-utils==251.4
 systemd==251.3
 sysvinit==3.01
 tabulate==0.8.10
@@ -1189,7 +1194,7 @@ tesla-powerwall==0.3.18
 tesla-wall-connector==1.0.2
 teslajsonpy==0.18.3
 text-unidecode==1.3
-thermobeacon-ble==0.3.1
+thermobeacon-ble==0.3.2
 thermopro-ble==0.4.3
 thermoworks-smoke==0.1.8
 thingspeak==1.0.0
@@ -1291,13 +1296,13 @@ xboxapi==2.0.1
 xerces-c==3.2.3
 xiaomi-ble==0.10.0
 xknx==1.0.2
-xmlschema==2.0.1
+xmlschema==2.0.2
 xmltodict==0.13.0
 xs1-api-client==3.0.0
 xxhash==0.8.1
 xxhash==3.0.0
 yalesmartalarmclient==0.3.9
-yalexs-ble==1.9.0
+yalexs-ble==1.9.2
 yalexs==1.2.1
 yarl==1.7.2
 yarl==1.8.1
