@@ -22,13 +22,15 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/bleak-0.14.3[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.15.0[${PYTHON_USEDEP}]
-	>=dev-python/bleak-retry-connector-1.14.0[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-1.17.1[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
