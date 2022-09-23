@@ -64,3 +64,6 @@ net-analyzer/fail2ban ~amd64
 # required by app-misc/homeassistant-min-2022.9.1::HomeAssistantRepository[test,compensation]
 # required by app-misc/homeassistant-min (argument)
 =dev-python/numpy-1.23.2 ~amd64
+
+# required by dev-python/dbus-fast-1.5.1
+~dev-python/poetry-core-1.2.0 ~amd64

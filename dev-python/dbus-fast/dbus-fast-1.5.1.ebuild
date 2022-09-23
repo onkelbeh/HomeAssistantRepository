@@ -23,7 +23,7 @@ DOCS="README.md"
 RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/poetry-core[${PYTHON_USEDEP}]
+	>=dev-python/poetry-core-1.1.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
