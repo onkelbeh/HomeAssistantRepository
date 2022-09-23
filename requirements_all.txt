@@ -43,17 +43,18 @@ aioeagle==1.1.0
 aioecowitt==2022.9.1
 aioemonitor==1.0.5
 aioesphomeapi==10.13.0
+aiofile==3.8.1
 aiofiles==0.8.0
 aioflo==2021.11.0
 aioftp==0.12.0
 aiogithubapi==22.2.4
 aioguardian==2022.7.0
 aioharmony==0.2.9
-aiohomekit==1.5.9
+aiohomekit==1.5.12
 aiohttp-cors==0.7.0
 aiohttp==3.8.1
 aiohue==4.5.0
-aioimaplib==1.0.0
+aioimaplib==1.0.1
 aioitertools==0.8.0
 aiokafka==0.7.2
 aiokef==0.2.16
@@ -155,7 +156,7 @@ beacontools==1.2.3
 beautifulsoup4==4.11.1
 beewi-smartclim==0.0.10
 bellows==0.33.1
-bimmer-connected==0.10.2
+bimmer-connected==0.10.4
 bitarray==2.6.0
 bitstring==3.1.9
 bizkaibus==0.1.1
@@ -201,6 +202,7 @@ busybox==1.34.1
 c-ares==1.18.1
 ca-certificates==20211016.3.80
 cachetools==5.2.0
+caio==0.9.8
 casttube==0.2.0
 cattrs==22.1.0
 cbor2==5.4.3
@@ -258,7 +260,7 @@ dacite==1.6.0
 datadog==0.15.0
 datapoint==0.9.8
 dateparser==1.0.0
-dbus-fast==1.4.0
+dbus-fast==1.5.1
 dbus==1.14.0
 debianutils==5.7
 debugpy==1.6.3
@@ -321,7 +323,7 @@ eternalegypt==0.0.12
 eudev==3.2.11
 evdev==1.4.0
 evohome-async==0.3.15
-expat==2.4.8
+expat==2.4.9
 faadelays==0.0.7
 face_recognition==1.2.3
 face_recognition_models==0.3.0
@@ -779,7 +781,7 @@ pycups==1.9.73
 pydaikin==2.7.0
 pydanfossair==0.1.0
 pydantic==1.9.0
-pydantic==1.9.1
+pydantic==1.9.2
 pydeconz==104
 pydelijn==1.0.0
 pydevd==2.8.0
@@ -953,7 +955,7 @@ pyspcwebgw==0.4.0
 pysqueezebox==0.6.0
 pystiebeleltron==0.0.1
 pysuez==0.1.19
-PySwitchbot==0.19.9
+PySwitchbot==0.19.10
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6

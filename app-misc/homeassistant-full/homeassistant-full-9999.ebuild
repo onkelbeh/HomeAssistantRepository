@@ -66,7 +66,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/certifi-2021.5.30[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.2.0[${PYTHON_USEDEP}]
 	~dev-python/cryptography-37.0.4[${PYTHON_USEDEP}]
-	~dev-python/dbus-fast-1.4.0[${PYTHON_USEDEP}]
+	~dev-python/dbus-fast-1.5.1[${PYTHON_USEDEP}]
 	~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-status-1.48.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.48.0[${PYTHON_USEDEP}]
@@ -209,13 +209,13 @@ RDEPEND="${RDEPEND}
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
 	bluemaestro? ( ~dev-python/bluemaestro-ble-0.2.0[${PYTHON_USEDEP}] )
 	bluesound? ( ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-0.17.0[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-1.17.1[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.4.1[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.3[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.4.0[${PYTHON_USEDEP}] )
+	bluetooth? ( ~dev-python/bleak-0.17.0[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-1.17.1[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.4.1[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.3[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.5.1[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	bluetooth_tracker? ( ~dev-python/bt-proximity-0.2.1[${PYTHON_USEDEP}] ~dev-python/pybluez-0.22[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[${PYTHON_USEDEP}] )
 	bme680? ( ~dev-python/bme680-1.0.5[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	bmp280? ( ~dev-python/adafruit-circuitpython-bmp280-3.1.1[${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] )
-	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.10.2[${PYTHON_USEDEP}] )
+	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.10.4[${PYTHON_USEDEP}] )
 	bond? ( ~dev-python/bond-async-0.1.22[${PYTHON_USEDEP}] )
 	bosch_shc? ( ~dev-python/boschshcpy-0.2.30[${PYTHON_USEDEP}] )
 	braviatv? ( ~dev-python/pybravia-0.2.2[${PYTHON_USEDEP}] )
@@ -432,7 +432,7 @@ RDEPEND="${RDEPEND}
 	hive? ( ~dev-python/pyhiveapi-0.5.13[${PYTHON_USEDEP}] )
 	hlk_sw16? ( ~dev-python/hlk-sw16-0.0.9[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.5.0[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-1.5.9[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-1.5.12[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.77[${PYTHON_USEDEP}] )
 	homematicip_cloud? ( ~dev-python/homematicip-1.0.7[${PYTHON_USEDEP}] )
 	homewizard? ( ~dev-python/python-homewizard-energy-1.1.0[${PYTHON_USEDEP}] )
@@ -463,7 +463,7 @@ RDEPEND="${RDEPEND}
 	ign_sismologia? ( ~dev-python/georss-ign-sismologia-client-0.3[${PYTHON_USEDEP}] )
 	ihc? ( ~dev-python/defusedxml-0.7.1[${PYTHON_USEDEP}] ~dev-python/ihcsdk-2.7.6[${PYTHON_USEDEP}] )
 	image? ( ~dev-python/pillow-9.2.0[${PYTHON_USEDEP}] )
-	imap? ( ~dev-python/aioimaplib-1.0.0[${PYTHON_USEDEP}] )
+	imap? ( ~dev-python/aioimaplib-1.0.1[${PYTHON_USEDEP}] )
 	incomfort? ( ~dev-python/incomfort-client-0.4.4[${PYTHON_USEDEP}] )
 	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
 	inkbird? ( ~dev-python/inkbird-ble-0.5.5[${PYTHON_USEDEP}] )
@@ -846,7 +846,7 @@ RDEPEND="${RDEPEND}
 	surepetcare? ( ~dev-python/surepy-0.7.2[${PYTHON_USEDEP}] )
 	swiss_hydrological_data? ( ~dev-python/swisshydrodata-0.1.0[${PYTHON_USEDEP}] )
 	swiss_public_transport? ( ~dev-python/python-opendata-transport-0.3.0[${PYTHON_USEDEP}] )
-	switchbot? ( ~dev-python/PySwitchbot-0.19.9[${PYTHON_USEDEP}] )
+	switchbot? ( ~dev-python/PySwitchbot-0.19.10[${PYTHON_USEDEP}] )
 	switcher_kis? ( ~dev-python/aioswitcher-2.0.6[${PYTHON_USEDEP}] )
 	switchmate? ( ~dev-python/PySwitchmate-0.5.1[${PYTHON_USEDEP}] )
 	syncthing? ( ~dev-python/aiosyncthing-0.5.1[${PYTHON_USEDEP}] )

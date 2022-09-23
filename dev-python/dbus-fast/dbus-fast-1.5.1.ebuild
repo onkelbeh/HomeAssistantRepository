@@ -4,30 +4,36 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
-DESCRIPTION="Python asyncio IMAP4rev1 client library"
-HOMEPAGE="https://github.com/bamthomas/aioimaplib https://pypi.org/project/aioimaplib/"
-SRC_URI="https://github.com/bamthomas/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
+DESCRIPTION="A faster version of dbus-next"
+HOMEPAGE="https://github.com/bluetooth-devices/dbus-fast https://pypi.org/project/dbus-fast/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL-3"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
 RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	>=dev-python/poetry-core-1.1.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
