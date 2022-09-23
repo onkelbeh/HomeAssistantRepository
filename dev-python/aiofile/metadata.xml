@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">aiofile</remote-id>
+    <maintainer status="unknown">
+      <email>me@mosquito.su</email>
+      <name>Dmitry Orlov &lt;me@mosquito.su&gt;</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

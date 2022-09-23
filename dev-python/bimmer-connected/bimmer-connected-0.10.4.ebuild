@@ -23,7 +23,8 @@ DOCS="README.rst"
 
 RDEPEND="dev-python/httpx[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.4[${PYTHON_USEDEP}]
-	>=dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]"
+	>=dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]
+	dev-python/aiofile[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pbr[${PYTHON_USEDEP}]
