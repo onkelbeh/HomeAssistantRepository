@@ -96,6 +96,7 @@ RDEPEND="${RDEPEND}
 	!~dev-python/pydantic-1.9.1[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-2.4.0[${PYTHON_USEDEP}]
 	~dev-python/pynacl-1.5.0[${PYTHON_USEDEP}]
+	~dev-python/pyopenssl-22.0.0[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 	>=dev-python/python-engineio-3.13.1[${PYTHON_USEDEP}]
 	<dev-python/python-engineio-4[${PYTHON_USEDEP}]
@@ -182,7 +183,7 @@ RDEPEND="${RDEPEND}
 	atag? ( ~dev-python/pyatag-0.3.5.3[${PYTHON_USEDEP}] )
 	aten_pe? ( ~dev-python/atenpdu-0.3.2[${PYTHON_USEDEP}] )
 	atome? ( ~dev-python/pyAtome-0.1.1[${PYTHON_USEDEP}] )
-	august? ( ~dev-python/yalexs-1.2.1[${PYTHON_USEDEP}] )
+	august? ( ~dev-python/yalexs-1.2.2[${PYTHON_USEDEP}] )
 	aurora? ( ~dev-python/auroranoaa-0.0.2[${PYTHON_USEDEP}] )
 	aurora_abb_powerone? ( ~dev-python/aurorapy-0.2.7[${PYTHON_USEDEP}] )
 	aussie_broadband? ( ~dev-python/pyaussiebb-0.0.15[${PYTHON_USEDEP}] )
@@ -217,7 +218,7 @@ RDEPEND="${RDEPEND}
 	bmp280? ( ~dev-python/adafruit-circuitpython-bmp280-3.1.1[${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] )
 	bmw_connected_drive? ( ~dev-python/bimmer-connected-0.10.4[${PYTHON_USEDEP}] )
 	bond? ( ~dev-python/bond-async-0.1.22[${PYTHON_USEDEP}] )
-	bosch_shc? ( ~dev-python/boschshcpy-0.2.30[${PYTHON_USEDEP}] )
+	bosch_shc? ( ~dev-python/boschshcpy-0.2.35[${PYTHON_USEDEP}] )
 	braviatv? ( ~dev-python/pybravia-0.2.2[${PYTHON_USEDEP}] )
 	broadlink? ( ~dev-python/broadlink-0.18.2[${PYTHON_USEDEP}] )
 	brother? ( ~dev-python/brother-1.2.3[${PYTHON_USEDEP}] )
@@ -408,7 +409,7 @@ RDEPEND="${RDEPEND}
 	google_pubsub? ( ~dev-python/google-cloud-pubsub-2.11.0[${PYTHON_USEDEP}] )
 	google_translate? ( ~dev-python/gTTS-2.2.4[${PYTHON_USEDEP}] )
 	google_travel_time? ( ~dev-python/googlemaps-2.5.1[${PYTHON_USEDEP}] )
-	govee_ble? ( ~dev-python/govee-ble-0.17.3[${PYTHON_USEDEP}] )
+	govee_ble? ( ~dev-python/govee-ble-0.19.0[${PYTHON_USEDEP}] )
 	gpmdp? ( ~dev-python/websocket-client-0.54.0[${PYTHON_USEDEP}] )
 	gpsd? ( ~dev-python/gps3-0.33.3[${PYTHON_USEDEP}] )
 	gree? ( ~dev-python/greeclimate-1.3.0[${PYTHON_USEDEP}] )
@@ -473,7 +474,7 @@ RDEPEND="${RDEPEND}
 	iota? ( ~dev-python/PyOTA-2.0.5[${PYTHON_USEDEP}] )
 	iotawatt? ( ~dev-python/iotawattpy-0.1.0[${PYTHON_USEDEP}] )
 	iperf3? ( ~dev-python/iperf3-0.1.11[${PYTHON_USEDEP}] )
-	ipma? ( ~dev-python/pyipma-3.0.4[${PYTHON_USEDEP}] )
+	ipma? ( ~dev-python/pyipma-3.0.5[${PYTHON_USEDEP}] )
 	ipp? ( ~dev-python/pyipp-0.11.0[${PYTHON_USEDEP}] )
 	iqvia? ( ~dev-python/numpy-1.23.2[${PYTHON_USEDEP}] ~dev-python/pyiqvia-2022.4.0[${PYTHON_USEDEP}] )
 	irish_rail_transport? ( ~dev-python/pyirishrail-0.0.2[${PYTHON_USEDEP}] )
@@ -575,7 +576,7 @@ RDEPEND="${RDEPEND}
 	monoprice? ( ~dev-python/pymonoprice-0.3[${PYTHON_USEDEP}] )
 	mosquitto? ( app-misc/mosquitto )
 	motioneye? ( ~dev-python/motioneye-client-0.3.12[${PYTHON_USEDEP}] )
-	motion_blinds? ( ~dev-python/motionblinds-0.6.12[${PYTHON_USEDEP}] )
+	motion_blinds? ( ~dev-python/motionblinds-0.6.13[${PYTHON_USEDEP}] )
 	mpd? ( ~dev-python/python-mpd2-3.0.5[${PYTHON_USEDEP}] )
 	mqtt? ( ~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}] )
 	msteams? ( ~dev-python/pymsteams-0.1.12[${PYTHON_USEDEP}] )

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="Library to retrieve information from Instituto Portuguges do Mar e Atmosfera."
+DESCRIPTION="Python library to retrieve information from Instituto PortuguÃªs do Mar e Atmosfera"
 HOMEPAGE="https://github.com/dgomes/pyipma https://pypi.org/project/pyipma/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
