@@ -367,6 +367,10 @@ I am now stuck at Kodi 18.9 but that's worth it.
 ### influxdb
 storing the temperatures from the DS18B20 (heating system & room temps).
 
+### kia_uvo
+
+Retrieves Data from Hyundai Cloud Service.
+
 ### KNX
 
 I used a couple of chinese relay cards controlled with PCF8574 I2C extenders attached to an ESP32 with ESPHome. Caused by capacitive load (mostly chinese LED stuff), some EMV trouble on the I2C bus led me to bury this efforts, took some money and ordered a bunch of KNX actors from MDT. I decided that it would be nice to have current measurement, so I took the "MDT AMI-1216.02 Schaltaktor 12fach 16/20A C-Last Industrie mit Strommessung", the MDT SCN-IP000.03 IP Interface and the matching MDT STV-0320.02 320 mA power supply for a first start. And I added an MDT BE-04230.02 binary input array with 4 220V inputs (which was too small after a few days). I am very happy with it. After finishing the big click in ETS, the replacement only took a few hours.
@@ -393,6 +397,11 @@ EQ3-Max! (I accidently bought some, so I have to use them until they die, 8 devi
 ### mikrotik
 presence detection, query the connected mac addresses from the CAP AC.
 
+### modbus
+
+* Eastron SDM630 Powermeters
+* Waveshare RS485 to ETH (B) Gateway
+
 ### mqtt (also Zigbee)
 The Sonoff Pow (and R2) will stay with Tasmota for a while, because I have no good implementation of Tasmota's energy summary in ESPHome. I have connectd these via MQTT.
 Some Zigbee devices via an CC2531 USB stick from Amazon and `zigbee2mqtt`. Since zigbee2mqtt, a lot of new devices are here now:
@@ -403,6 +412,12 @@ Some Zigbee devices via an CC2531 USB stick from Amazon and `zigbee2mqtt`. Since
 
 ### mysql
 using a local mariadb for the recorder.
+
+### openwbmqtt
+
+Use the version from https://github.com/ChristophCaina/openwbmqtt, which has some enhancements and has renamed NumberEntities (https://community.home-assistant.io/t/depricated-numberentity-features/440282).
+
+* OpenWB series2 (custom), no display, 11kW, Type-B FI, Addon, no phase switch (Kona)
 
 ### otp
 
@@ -563,9 +578,9 @@ There are 1908 Ebuilds in total, 1901 of them have in total 1913 (35 different) 
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
 
-(Last counted: 28/09/2022)
+(Last counted: 30/09/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 28/09/2022
+Last updated: 30/09/2022
