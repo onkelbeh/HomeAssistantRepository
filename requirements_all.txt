@@ -96,7 +96,6 @@ aioymaps==1.2.2
 airly==1.1.0
 airthings-cloud==0.1.0
 airtouch4pyapi==1.0.5
-ajsonrpc==1.2.0
 alarmdecoder==1.13.11
 alpha-vantage==2.3.1
 ambee==0.4.0
@@ -118,7 +117,6 @@ arcam-fmj==0.12.0
 argcomplete==2.0.0
 arris-tg2492lg==1.2.1
 arrow==1.2.2
-asgiref==3.5.2
 asmog==0.0.6
 asterisk_mbox==0.5.0
 astral==2.2
@@ -183,7 +181,6 @@ boschshcpy==0.2.35
 boto3==1.20.24
 boto3==1.24.74
 botocore==1.27.74
-bottle==0.12.23
 bottleneck==1.3.5
 broadlink==0.18.2
 brother==2.0.0
@@ -259,7 +256,7 @@ d2to1==0.2.12_p1
 dacite==1.6.0
 datadog==0.15.0
 datapoint==0.9.8
-dateparser==1.0.0
+dateparser==1.1.1
 dbus-fast==1.18.0
 dbus==1.14.0
 debianutils==5.7
@@ -316,7 +313,7 @@ epson-projector==0.5.0
 epsonprinter==0.0.9
 eselect-awk==0.3
 esphome
-esphome-dashboard==20220508.0
+esphome-dashboard==20220925.0
 esprima==4.0.1
 esptool==3.3.1
 eternalegypt==0.0.12
@@ -496,7 +493,7 @@ jinja==3.1.2
 jmespath==1.0.1
 josepy==1.13.0
 js2py==0.71_p20210918
-jsonpath-ng==1.5.2
+jsonpath-ng==1.5.3
 jsonpickle==2.2.0
 jsonpointer==2.3
 jsonrpc-async==2.1.0
@@ -696,7 +693,6 @@ pip==22.0.4
 pizzapi==0.0.3
 pkce==1.0.3
 platformdirs==2.5.2
-platformio==5.2.5
 plugwise==0.18.7
 plumbum==1.7.2
 plumlightpad==0.0.11
@@ -792,7 +788,6 @@ pyeconet==0.1.15
 pyedimax==0.2.1
 pyefergy==22.1.1
 pyEight==0.3.0
-pyelftools==0.29
 pyEmby==1.8
 pyenvisalink==4.6
 pyephember==0.3.1
@@ -1061,7 +1056,7 @@ readline==8.1_p2
 reedsolomon==1.5.4
 regenmaschine==2022.9.1
 regex==2021.8.28
-regex==2022.8.17
+regex==2022.9.13
 related==0.7.2
 renault-api==0.1.11
 ReParser==1.4.3
@@ -1109,7 +1104,6 @@ screenlogicpy==0.5.4
 scsgate==0.1.0
 secretstorage==3.3.3
 securetar==2022.2.0
-semantic_version==2.10.0
 semver==2.13.0
 sendgrid==6.8.2
 sense-energy==0.10.4
@@ -1158,7 +1152,6 @@ srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
 starkbank-ecdsa==1.0.0
-starlette==0.18.0
 starline==0.1.5
 starlingbank==3.2
 statsd==3.2.1
@@ -1248,7 +1241,6 @@ uscisstatus==0.1.1
 user-agents==2.0
 util-linux==2.37.4
 uvcclient==0.11.0
-uvicorn==0.17.6
 vallox-websocket-api==2.12.0
 vehicle==0.4.0
 velbus-aio==2022.9.1
@@ -1289,7 +1281,6 @@ wled==0.14.1
 wolf_smartset==0.1.11
 wrapt==1.14.1
 WSDiscovery==2.0.0
-wsproto==1.2.0
 xbee-helper==0.0.7
 XBee==2.3.2
 xbox-webapi==2.0.11

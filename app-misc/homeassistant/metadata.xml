@@ -183,6 +183,7 @@
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
     <flag name="mitemp_bt">mitemp_bt sensor platform allows one to monitor room temperature and humidity</flag>
     <flag name="mobile_app">allows Home Assistant mobile apps to easily integrate with Home Assistant</flag>
+    <flag name="modbus">sensors and switches controlled over MODBUS serial, TCP, and UDP connections</flag>
     <flag name="mosquitto">Set a runtime dependency for Mosquitto MQTT broker</flag>
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
     <flag name="myq">lets you control MyQ-Enabled garage doors</flag>
