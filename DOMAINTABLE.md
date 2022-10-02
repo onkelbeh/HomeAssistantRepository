@@ -438,7 +438,7 @@
 |moat|Integrates Moat devices into Home Assistant|N|N|Y|2022.8.1|
 |mobile_app|allows Home Assistant mobile apps to easily integrate with Home Assistant|Y|Y|Y|0.89|
 |mochad|main integration to integrate all Mochad X10 platforms|N|N|Y|0.32|
-|modbus|sensors and switches controlled over MODBUS serial, TCP, and UDP connections|N|N|Y||
+|modbus|sensors and switches controlled over MODBUS serial, TCP, and UDP connections|Y|Y|Y||
 |modem_callerid|Uses an available modem for collecting caller ID information|N|N|Y|0.40|
 |modern_forms|Asynchronous Python client for Modern Forms fans|N|N|Y|2021.7|
 |moehlenhoff_alpha2|allows you to control a Möhlenhoff Alpha 2 temperature control system|N|N|Y|2022.3.0b3|
