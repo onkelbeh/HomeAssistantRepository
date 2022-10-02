@@ -338,7 +338,7 @@ RDEPEND="${RDEPEND}
 	radio_browser? ( ~dev-python/radios-0.1.1[${PYTHON_USEDEP}] )
 	rainbird? ( ~dev-python/pyrainbird-0.4.3[${PYTHON_USEDEP}] )
 	rainmachine? ( ~dev-python/regenmaschine-2022.9.1[${PYTHON_USEDEP}] )
-	recorder? ( ~dev-python/sqlalchemy-1.4.40[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] )
+	recorder? ( ~dev-python/sqlalchemy-1.4.41[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] )
 	rejseplanen? ( ~dev-python/rjpl-0.3.6[${PYTHON_USEDEP}] )
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
 	ring? ( ~dev-python/ring-doorbell-0.7.2[${PYTHON_USEDEP}] )

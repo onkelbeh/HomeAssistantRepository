@@ -721,7 +721,7 @@ RDEPEND="${RDEPEND}
 	raspyrfm? ( ~dev-python/raspyrfm-client-1.2.8[${PYTHON_USEDEP}] )
 	rdw? ( ~dev-python/vehicle-0.4.0[${PYTHON_USEDEP}] )
 	recollect_waste? ( ~dev-python/aiorecollect-1.0.8[${PYTHON_USEDEP}] )
-	recorder? ( ~dev-python/sqlalchemy-1.4.40[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] )
+	recorder? ( ~dev-python/sqlalchemy-1.4.41[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] )
 	recswitch? ( ~dev-python/pyrecswitch-1.0.2[${PYTHON_USEDEP}] )
 	reddit? ( ~dev-python/praw-7.5.0[${PYTHON_USEDEP}] )
 	rejseplanen? ( ~dev-python/rjpl-0.3.6[${PYTHON_USEDEP}] )
