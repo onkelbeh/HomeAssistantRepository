@@ -20,13 +20,15 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/typing-extensions-4.2.0[${PYTHON_USEDEP}]
-	dev-python/dbus-next[${PYTHON_USEDEP}]"
+	>=dev-python/dbus-fast-1.4.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
+		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
