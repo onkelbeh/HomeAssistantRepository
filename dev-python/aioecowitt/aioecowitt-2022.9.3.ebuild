@@ -33,10 +33,4 @@ python_test() {
 	py.test -v -v || die
 }
 
-src_prepare() {
-	# fix typo https://github.com/home-assistant-libs/aioecowitt/pull/10
-	sed -i "s/test/tests/g" -i setup.py || die
-	eapply_user
-}
-
 distutils_enable_tests pytest
