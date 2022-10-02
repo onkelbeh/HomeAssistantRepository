@@ -42,7 +42,7 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 		~dev-embedded/platformio-6.0.2[${PYTHON_SINGLE_USEDEP}]
 		~dev-embedded/esptool-3.3.1[${PYTHON_USEDEP}]
 		~dev-python/click-8.1.3[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20220508.0[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20220925.0[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
 		~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
@@ -78,8 +78,6 @@ src_prepare() {
 	mv requirements_new.txt requirements.txt
 	eapply_user
 }
-
-distutils_enable_tests pytest
 
 python_install_all() {
 	dodoc ${DOCS}
