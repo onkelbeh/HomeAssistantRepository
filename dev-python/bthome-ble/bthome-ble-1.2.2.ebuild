@@ -4,6 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
@@ -19,15 +20,16 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/bluetooth-sensor-state-data-1.5.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/bluetooth-sensor-state-data-1.6.0[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodomex-3.15.0[${PYTHON_USEDEP}]
-	>=dev-python/sensor-state-data-2.5.0[${PYTHON_USEDEP}]
+	>=dev-python/sensor-state-data-2.7.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-0.1.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
