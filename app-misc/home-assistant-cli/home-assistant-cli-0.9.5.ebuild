@@ -31,7 +31,7 @@ RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
 		 >=dev-python/jinja-2.10[${PYTHON_USEDEP}]
 		 >=dev-python/jsonpath-ng-1.5.1[${PYTHON_USEDEP}]
 		 >=dev-python/netdisco-3.0.0[${PYTHON_USEDEP}]
-		 >=dev-python/regex-2022.9[${PYTHON_USEDEP}]
+		 dev-python/regex[${PYTHON_USEDEP}]
 		 >=dev-python/ruamel-yaml-0.17[${PYTHON_USEDEP}]
 		 <dev-python/ruamel-yaml-0.18[${PYTHON_USEDEP}]
 		 >=dev-python/requests-2.28.0[${PYTHON_USEDEP}]
@@ -57,12 +57,10 @@ BDEPEND="
 		>=dev-python/twine-1.13.0[${PYTHON_USEDEP}]
 	)"
 
-#src_prepare() {
-#	sed -i -e "s/'ruamel.yaml>=0.16.5,<0.18'/'ruamel.yaml>=0.15.100'/" setup.py || die "Sed version helper failed!"
-#	sed -i -e "s/'click>=8,<9'/'click'/" setup.py || die "click version helper failed!"
-#	sed -i -e "s/'dateparser>=0.7.1,<0.8'/'dateparser>=0.7.1'/" setup.py || die "click version helper failed!"
-#	eapply_user
-#}
+src_prepare() {
+	sed -i -e "s/'regex>=2022.9'/'regex'/" setup.py || die "regex version helper failed!"
+	eapply_user
+}
 
 python_test() {
 	nosetests --verbose || die
