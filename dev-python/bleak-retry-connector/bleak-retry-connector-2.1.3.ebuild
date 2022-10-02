@@ -19,9 +19,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/bleak-0.15.1[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/bleak-0.18.0[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/dbus-fast-1.4.0[${PYTHON_USEDEP}]"
+	>=dev-python/dbus-fast-1.14.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

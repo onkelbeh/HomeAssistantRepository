@@ -19,7 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/pysnmplib[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/dacite[${PYTHON_USEDEP}]
+	dev-python/pysnmplib[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]

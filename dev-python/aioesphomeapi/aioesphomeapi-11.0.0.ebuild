@@ -7,36 +7,34 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="Python wrapper for EcoWitt Protocol"
-HOMEPAGE="https://github.com/home-assistant-libs/aioecowitt https://pypi.org/project/aioecowitt/"
+DESCRIPTION="Python API for interacting with ESPHome devices."
+HOMEPAGE="https://github.com/esphome/aioesphomeapi https://esphome.io/ https://pypi.org/project/aioesphomeapi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.md"
+DOCS="README.rst"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/meteocalc-1.1.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/protobuf-python-3.12.2[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.36.0[${PYTHON_USEDEP}]
+	>=dev-python/noiseprotocol-0.3.1[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-4.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pylint[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
-}
-
-src_prepare() {
-	# fix typo https://github.com/home-assistant-libs/aioecowitt/pull/10
-	sed -i "s/test/tests/g" -i setup.py || die
-	eapply_user
 }
 
 distutils_enable_tests pytest

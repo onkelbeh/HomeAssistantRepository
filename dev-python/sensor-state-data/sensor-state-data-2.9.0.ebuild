@@ -4,11 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
-DESCRIPTION="Python wrapper for getting data from Brother laser and inkjet printers via SNMP."
-HOMEPAGE="https://github.com/bieniu/brother https://pypi.org/project/brother/"
+DESCRIPTION="Models for storing and converting Sensor Data state"
+HOMEPAGE="https://github.com/bluetooth-devices/sensor-state-data https://pypi.org/project/sensor-state-data/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
@@ -19,13 +20,13 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/pysnmplib[${PYTHON_USEDEP}]"
+RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
