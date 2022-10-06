@@ -17,6 +17,7 @@ media-libs/gd fontconfig truetype
 dev-python/attrs -test
 dev-python/pytest -test
 dev-python/orjson -test
+dev-python/pandas -test
 sci-geosciences/GeographicLib python
 
  >=x11-base/xorg-server-21.1.4 xvfb
