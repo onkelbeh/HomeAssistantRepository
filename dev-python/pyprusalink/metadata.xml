@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">pyprusalink</remote-id>
     <maintainer status="unknown">
-      <email>hello@home-assistant.io</email>
       <name>The Home Assistant Authors</name>
+      <email>hello@home-assistant.io</email>
     </maintainer>
   </upstream>
 </pkgmetadata>
