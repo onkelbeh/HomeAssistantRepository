@@ -9,7 +9,7 @@
     <remote-id type="pypi">aioswitcher</remote-id>
     <maintainer status="unknown">
       <email>tomer.figenblat@gmail.com</email>
-      <name>Tomer Figenblat</name>
+      <name>Shay Levy</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

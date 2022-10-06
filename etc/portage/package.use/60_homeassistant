@@ -18,3 +18,10 @@ dev-python/attrs -test
 dev-python/pytest -test
 dev-python/orjson -test
 sci-geosciences/GeographicLib python
+
+ >=x11-base/xorg-server-21.1.4 xvfb
+ >=dev-python/numpy-1.23.2 lapack
+ >=media-libs/libglvnd-1.4.0 X
+ >=sys-auth/pambase-20220214 elogind
+ >=virtual/imagemagick-tools-0-r1 tiff jpeg
+ >=media-gfx/imagemagick-7.1.0.44 tiff jpeg

@@ -290,6 +290,7 @@
     <flag name="google_cloud">allows you to use Google Cloud Platform API</flag>
     <flag name="google_maps">google_maps platform allows you to detect presence</flag>
     <flag name="google_pubsub">Send events to Google Cloud Pub/Sub from Home Assistant</flag>
+    <flag name="google_sheets">allows you to connect your Google Drive to Home Assistant</flag>
     <flag name="google_translate">google_translate text-to-speech platform for Home Assistant</flag>
     <flag name="google_travel_time">provides travel time from the Google Distance Matrix API</flag>
     <flag name="govee_ble">Integrates Govee BLE devices into Home Assistant</flag>
@@ -340,6 +341,7 @@
     <flag name="ialarm_xr">Provides connectivity with the Antifurto365 iAlarmXR alarm systems</flag>
     <flag name="iammeter">real-time readings of WEM3080, WEM3162 &amp; WEM3080T) meters</flag>
     <flag name="iaqualink">iAqualink by Jandy allows you to control your pool via cloud service</flag>
+    <flag name="ibeacon">Adding iBeacon Tracker to your Home Assistant instance</flag>
     <flag name="icloud">iCloud allows users to track their location on iOS devices</flag>
     <flag name="idteck_prox">This integration works with Proximity Readers (RFID card readers)</flag>
     <flag name="ifttt">With the IFTTT component, you can trigger applets through the “Webhooks” service</flag>
@@ -376,8 +378,10 @@
     <flag name="keba">integrates your Keba charging station (wallbox)</flag>
     <flag name="keenetic_ndms2">presence detection for Keenetic Routers</flag>
     <flag name="kef">KEF wireless speakers</flag>
+    <flag name="kegtron">Integrates Kegtron Smart Keg Monitor (Gen 1) devices into Home Assistant</flag>
     <flag name="keyboard">The keyboard integration simulates key presses on the host machine</flag>
     <flag name="keyboard_remote">Receive signals from a keyboard and use it as a remote control</flag>
+    <flag name="keymitt_ble">allows you to locally control a MicroBot Push</flag>
     <flag name="kira">main integration to integrate Keene Electronics IR over IP Kira modules</flag>
     <flag name="kiwi">open your KIWI Smart Locks and Smart Entry Devices</flag>
     <flag name="kmtronic">IP-connected relays</flag>
@@ -399,6 +403,7 @@
     <flag name="led_ble">Integrates multiple brands of Bluetooth Low Energy LED devices into Home Assista</flag>
     <flag name="lg_netcast">allows you to control a LG Smart TV running NetCast 3.0</flag>
     <flag name="lg_soundbar">allows you to control LG Soundbars from Home Assistant</flag>
+    <flag name="lidarr">The Lidarr integration pulls data from a given Lidarr instance</flag>
     <flag name="life360">detect presence using the unofficial API of Life360</flag>
     <flag name="lifx">The lifx integration allows you to integrate your LIFX into Home Assistant</flag>
     <flag name="lifx_legacy">The lifx integration allows you to integrate your LIFX into Home Assistant</flag>
@@ -496,6 +501,7 @@
     <flag name="nextcloud">pulls summary Nextcloud information into Home Assistant</flag>
     <flag name="nextdns">allows you to monitor NextDNS statistics</flag>
     <flag name="nfandroidtv">Notifications for Android TV and Notifications for Fire TV</flag>
+    <flag name="nibe_heatpump">control and monitor Nibe Heat Pumps in Home Assistant</flag>
     <flag name="nightscout">allows you to view your CGM data from Nightscout</flag>
     <flag name="niko_home_control">platform allows you to integrate your Niko Home Control</flag>
     <flag name="nilu">An API client for getting pollution data from NILU sensor stations in Norway</flag>
@@ -504,6 +510,7 @@
     <flag name="nmap_tracker">Presence detection for Home Assistant with nmap</flag>
     <flag name="nmbs">Python wrapper for the iRail API</flag>
     <flag name="noaa_tides">prediction for the tides for any location in the United States</flag>
+    <flag name="nobo_hub">Integrates Nobo Ecohub into Home Assistant</flag>
     <flag name="norway_air">A library to communicate with the met.no api</flag>
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
     <flag name="notion">retrieves data from Notion wireless home monitoring sensor kits</flag>
@@ -732,6 +739,7 @@
     <flag name="surepetcare">information on your Sure Petcare Connect Pet or Cat Flap</flag>
     <flag name="swiss_hydrological_data">details (temperature, level, and discharge) of rivers and lakes in Switzerland</flag>
     <flag name="swiss_public_transport">give you the next three SBB departure times from a given location</flag>
+    <flag name="switchbee">library to control SwitchBee smart home devices</flag>
     <flag name="switchbot">allows you to control SwitchBot devices from Home Assistant</flag>
     <flag name="switcher_kis">allows you to control the Switcher V2 Water Heater</flag>
     <flag name="switchmate">allows you to control Switchmate devices from Home Assistant</flag>
@@ -767,6 +775,7 @@
     <flag name="tibber">a sensor with the current electricity price</flag>
     <flag name="tikteck">Support for the Bluetooth smart bulb from Tikteck</flag>
     <flag name="tile">API for Tile Bluetooth trackers</flag>
+    <flag name="tilt_ble">Integrates Tilt Hydrometer BLE devices into Home Assistant</flag>
     <flag name="tmb">Library that interacts with TMB API</flag>
     <flag name="todoist">connect to your Todoist Projects and generate binary sensors</flag>
     <flag name="tof">uses an invisible laser to measure distance with millimeter resolution</flag>

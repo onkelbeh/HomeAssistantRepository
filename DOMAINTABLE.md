@@ -274,6 +274,7 @@
 |google_cloud|allows you to use Google Cloud Platform API|N|N|Y|0.95|
 |google_maps|google_maps platform allows you to detect presence|N|N|Y|0.67|
 |google_pubsub|Send events to Google Cloud Pub/Sub from Home Assistant|N|N|Y|0.88|
+|google_sheets|allows you to connect your Google Drive to Home Assistant|N|N|Y|2022.10.0|
 |google_translate|google_translate text-to-speech platform for Home Assistant|N|N|Y|0.35|
 |google_travel_time|provides travel time from the Google Distance Matrix API|N|N|Y|0.19|
 |govee_ble|Integrates Govee BLE devices into Home Assistant|N|N|Y|2022.8.1|
@@ -324,6 +325,7 @@
 |ialarm_xr|Provides connectivity with the Antifurto365 iAlarmXR alarm systems|N|N|Y|2022.6.0b0|
 |iammeter|real-time readings of WEM3080, WEM3162 & WEM3080T) meters|N|N|Y|0.107|
 |iaqualink|iAqualink by Jandy allows you to control your pool via cloud service|N|Y|Y|0.99|
+|ibeacon|Adding iBeacon Tracker to your Home Assistant instance|N|N|Y|2022.10.0|
 |icloud|iCloud allows users to track their location on iOS devices|N|N|Y|0.10|
 |idteck_prox|This integration works with Proximity Readers (RFID card readers)|N|N|Y|0.85|
 |ifttt|With the IFTTT component, you can trigger applets through the “Webhooks” service|N|N|Y|0.8|
@@ -360,8 +362,10 @@
 |keba|integrates your Keba charging station (wallbox)|N|N|Y|0.98|
 |keenetic_ndms2|presence detection for Keenetic Routers|N|N|Y|0.54|
 |kef|KEF wireless speakers|N|Y|Y|0.104|
+|kegtron|Integrates Kegtron Smart Keg Monitor (Gen 1) devices into Home Assistant|N|N|Y|2022.10.0|
 |keyboard|The keyboard integration simulates key presses on the host machine|N|N|Y||
 |keyboard_remote|Receive signals from a keyboard and use it as a remote control|N|N|Y|0.29|
+|keymitt_ble|allows you to locally control a MicroBot Push|N|N|Y|2022.10.0|
 |kira|main integration to integrate Keene Electronics IR over IP Kira modules|N|N|Y|0.45|
 |kiwi|open your KIWI Smart Locks and Smart Entry Devices|N|N|Y|0.72|
 |kmtronic|IP-connected relays|N|N|Y|2021.3|
@@ -383,6 +387,7 @@
 |led_ble|Integrates multiple brands of Bluetooth Low Energy LED devices into Home Assista|N|N|Y|2022.9.0b3|
 |lg_netcast|allows you to control a LG Smart TV running NetCast 3.0|N|N|Y|0.20|
 |lg_soundbar|allows you to control LG Soundbars from Home Assistant|N|N|Y|0.81|
+|lidarr|The Lidarr integration pulls data from a given Lidarr instance|N|N|Y|2022.10.0|
 |life360|detect presence using the unofficial API of Life360|N|N|Y|0.95|
 |lifx|The lifx integration allows you to integrate your LIFX into Home Assistant|N|Y|Y|0.81|
 |lifx_legacy|The lifx integration allows you to integrate your LIFX into Home Assistant|N|N|Y|None|
@@ -480,6 +485,7 @@
 |nextcloud|pulls summary Nextcloud information into Home Assistant|N|N|Y|0.108|
 |nextdns|allows you to monitor NextDNS statistics|N|N|Y|2022.8.1|
 |nfandroidtv|Notifications for Android TV and Notifications for Fire TV|N|N|Y|0.32|
+|nibe_heatpump|control and monitor Nibe Heat Pumps in Home Assistant|N|N|Y|2022.10.0|
 |nightscout|allows you to view your CGM data from Nightscout|N|N|Y|0.115|
 |niko_home_control|platform allows you to integrate your Niko Home Control|N|N|Y|0.82|
 |nilu|An API client for getting pollution data from NILU sensor stations in Norway|N|N|Y|0.87|
@@ -488,6 +494,7 @@
 |nmap_tracker|Presence detection for Home Assistant with nmap|N|N|Y|0.7|
 |nmbs|Python wrapper for the iRail API|N|N|Y|0.85|
 |noaa_tides|prediction for the tides for any location in the United States|N|N|Y|0.75|
+|nobo_hub|Integrates Nobo Ecohub into Home Assistant|N|N|Y|2022.10.0|
 |norway_air|A library to communicate with the met.no api|N|N|Y|0.88|
 |notify_events|The Notify.Events service is a platform for the notify component|Y|Y|Y|0.112|
 |notion|retrieves data from Notion wireless home monitoring sensor kits|N|N|Y|0.96|
@@ -716,6 +723,7 @@
 |surepetcare|information on your Sure Petcare Connect Pet or Cat Flap|N|N|Y|0.104|
 |swiss_hydrological_data|details (temperature, level, and discharge) of rivers and lakes in Switzerland|N|N|Y|0.22|
 |swiss_public_transport|give you the next three SBB departure times from a given location|N|N|Y||
+|switchbee|library to control SwitchBee smart home devices|N|N|Y|2022.10.0|
 |switchbot|allows you to control SwitchBot devices from Home Assistant|N|N|Y|0.78|
 |switcher_kis|allows you to control the Switcher V2 Water Heater|N|N|Y|0.93|
 |switchmate|allows you to control Switchmate devices from Home Assistant|N|N|Y|0.78|
@@ -751,6 +759,7 @@
 |tibber|a sensor with the current electricity price|N|N|Y|0.8|
 |tikteck|Support for the Bluetooth smart bulb from Tikteck|N|N|Y|0.36|
 |tile|API for Tile Bluetooth trackers|Y|Y|Y|0.58|
+|tilt_ble|Integrates Tilt Hydrometer BLE devices into Home Assistant|N|N|Y|2022.10.0|
 |tmb|Library that interacts with TMB API|N|N|Y|0.104|
 |todoist|connect to your Todoist Projects and generate binary sensors|N|N|Y|0.54|
 |tof|uses an invisible laser to measure distance with millimeter resolution|N|N|Y|0.90|
