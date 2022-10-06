@@ -119,13 +119,13 @@ RDEPEND="${RDEPEND}
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
 #
-# auth/mfa_modules/totp.py:REQUIREMENTS = ["pyotp==2.6.0", "PyQRCode==1.2.1"]
+# auth/mfa_modules/totp.py:REQUIREMENTS = ["pyotp==2.7.0", "PyQRCode==1.2.1"]
 # scripts/check_config.py:REQUIREMENTS = ("colorlog==6.6.0",)
 
 RDEPEND="${RDEPEND}
 	~dev-python/colorlog-6.6.0[${PYTHON_USEDEP}]
 	>=dev-python/multidict-5.2.0[${PYTHON_USEDEP}]
-	~dev-python/pyotp-2.6.0[${PYTHON_USEDEP}]
+	~dev-python/pyotp-2.7.0[${PYTHON_USEDEP}]
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
 	dev-python/pycparser[${PYTHON_USEDEP}]
 	>=dev-python/websocket-client-0.57.0[${PYTHON_USEDEP}]
