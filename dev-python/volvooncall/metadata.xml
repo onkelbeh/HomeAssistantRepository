@@ -12,4 +12,8 @@
       <name>decompil3d</name>
     </maintainer>
   </upstream>
-</pkgmetadata>
+  <use>
+    <flag name="mqtt">add support for MQTT</flag>
+    <flag name="console">add support for console</flag>
+  </use>
+  </pkgmetadata>
