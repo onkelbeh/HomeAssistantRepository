@@ -3,11 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="Async Python3.7+ package to access the Tomorrow.io API"
+DESCRIPTION="Async Python3.9+ package to access the Tomorrow.io API"
 HOMEPAGE="https://github.com/raman325/pytomorrowio https://pypi.org/project/pytomorrowio/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
@@ -31,3 +31,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
