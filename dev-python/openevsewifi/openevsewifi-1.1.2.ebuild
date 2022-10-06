@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="A python library communicating with the ESP8266-based wifi module from OpenEVSE"
+DESCRIPTION="A python library for communicating with the ESP8266-based wifi module from OpenEVSE"
 HOMEPAGE="https://github.com/miniconfig/python-openevse-wifi https://pypi.org/project/openevsewifi/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
@@ -19,7 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/requests-2.23.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/requests-2.23.0[${PYTHON_USEDEP}]
+	>=dev-python/deprecated-1.2.10[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -32,3 +33,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
