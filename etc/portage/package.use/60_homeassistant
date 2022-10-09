@@ -20,9 +20,9 @@ dev-python/orjson -test
 dev-python/pandas -test
 sci-geosciences/GeographicLib python
 
- >=x11-base/xorg-server-21.1.4 xvfb
- >=dev-python/numpy-1.23.2 lapack
- >=media-libs/libglvnd-1.4.0 X
- >=sys-auth/pambase-20220214 elogind
- >=virtual/imagemagick-tools-0-r1 tiff jpeg
- >=media-gfx/imagemagick-7.1.0.44 tiff jpeg
+x11-base/xorg-server xvfb
+dev-python/numpy lapack
+media-libs/libglvnd X
+sys-auth/pambase elogind
+virtual/imagemagick-tools tiff jpeg
+media-gfx/imagemagick tiff jpeg
