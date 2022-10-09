@@ -88,7 +88,7 @@ aiosteamist==0.3.2
 aioswitcher==3.0.0
 aiosyncthing==0.5.1
 aiotractive==0.5.4
-aiounifi==37
+aiounifi==38
 aiovlc==0.1.0
 aiowatttime==0.1.1
 aiowebostv==0.2.1
@@ -154,7 +154,7 @@ bcrypt==4.0.0
 beacontools==1.2.3
 beautifulsoup4==4.11.1
 beewi-smartclim==0.0.10
-bellows==0.34.1
+bellows==0.34.2
 bimmer-connected==0.10.4
 bitarray==2.6.0
 bitstring==3.1.9
@@ -754,7 +754,7 @@ pyarlo==0.2.4
 pyasn1-modules==0.2.8
 pyasn1==0.4.8
 pyatag==0.3.5.3
-pyatmo==7.1.0
+pyatmo==7.1.1
 pyAtome==0.1.1
 pyatv==0.10.3
 pyaussiebb==0.0.15
@@ -784,7 +784,7 @@ pycryptodome==3.15.0
 pycryptodomex==3.15.0
 pycsspeechtts==1.0.4
 pycups==1.9.73
-pydaikin==2.7.0
+pydaikin==2.7.2
 pydanfossair==0.1.0
 pydantic==1.10.2
 pydantic==1.9.0
@@ -873,7 +873,7 @@ PyMetEireann==2021.8.0
 pymeteoclimatic==0.0.6
 PyMetno==0.9.0
 pymfy==0.11.0
-PyMicroBot==0.0.6
+PyMicroBot==0.0.8
 pymitv==1.4.3
 pymochad==0.2.0
 pymodbus==2.5.3
@@ -903,7 +903,7 @@ pyoppleio==1.0.5
 PyOTA==2.0.5
 pyotgw==2.0.3
 pyotp==2.7.0
-pyoverkiz==1.5.3
+pyoverkiz==1.5.5
 pyowm==3.2.0
 pyownet==0.10.0
 pyparsing==3.0.9
@@ -1231,7 +1231,7 @@ twisted==22.4.0
 twitchAPI==2.5.2
 TwitterAPI==2.7.12
 typer==0.6.1
-typing-extensions==4.3.0
+typing-extensions==4.4.0
 typing-inspect==0.7.1
 tzdata==2022.2
 tzlocal==4.2
@@ -1327,10 +1327,10 @@ zha-quirks==0.0.82
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
 zigpy-deconz==0.19.0
-zigpy-xbee==0.16.0
-zigpy-zigate==0.10.0
-zigpy-znp==0.9.0
-zigpy==0.51.2
+zigpy-xbee==0.16.1
+zigpy-zigate==0.10.1
+zigpy-znp==0.9.1
+zigpy==0.51.3
 zipp==3.8.1
 zlib==1.2.12
 zm-py==0.5.2
