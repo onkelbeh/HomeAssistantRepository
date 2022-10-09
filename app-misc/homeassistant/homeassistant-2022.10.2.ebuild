@@ -73,7 +73,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.56.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.3.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20221005.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20221006.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.15.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
@@ -108,7 +108,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/requests-2.28.1[${PYTHON_USEDEP}]
 	~net-analyzer/scapy-2.4.5
 	~dev-python/sqlalchemy-1.4.41[${PYTHON_USEDEP}]
-	>=dev-python/typing-extensions-3.10.0.2[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-4.4.0[${PYTHON_USEDEP}]
 	<dev-python/typing-extensions-5.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.5.0[${PYTHON_USEDEP}]
@@ -196,7 +196,7 @@ RDEPEND="${RDEPEND}
 	brunt? ( ~dev-python/brunt-1.2.0[${PYTHON_USEDEP}] )
 	bsblan? ( ~dev-python/bsblan-0.5.0[${PYTHON_USEDEP}] )
 	bt_home_hub_5? ( ~dev-python/bthomehub5-devicelist-0.1.1[${PYTHON_USEDEP}] )
-	bt_smarthub? ( ~dev-python/btsmarthub-devicelist-0.2.2[${PYTHON_USEDEP}] )
+	bt_smarthub? ( ~dev-python/btsmarthub-devicelist-0.2.3[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.5[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.9.1[${PYTHON_USEDEP}] )
 	camera? ( ~dev-python/PyTurboJPEG-1.6.7[${PYTHON_USEDEP}] )
@@ -207,7 +207,7 @@ RDEPEND="${RDEPEND}
 	co2signal? ( ~dev-python/CO2Signal-0.4.2[${PYTHON_USEDEP}] )
 	compensation? ( ~dev-python/numpy-1.23.2[${PYTHON_USEDEP}] )
 	coronavirus? ( ~dev-python/coronavirus-1.1.1[${PYTHON_USEDEP}] )
-	daikin? ( ~dev-python/pydaikin-2.7.0[${PYTHON_USEDEP}] )
+	daikin? ( ~dev-python/pydaikin-2.7.2[${PYTHON_USEDEP}] )
 	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
 	deconz? ( ~dev-python/pydeconz-104[${PYTHON_USEDEP}] )
 	delijn? ( ~dev-python/pydelijn-1.0.0[${PYTHON_USEDEP}] )
@@ -306,7 +306,7 @@ RDEPEND="${RDEPEND}
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	nad? ( ~dev-python/nad-receiver-0.3.0[${PYTHON_USEDEP}] )
 	nederlandse_spoorwegen? ( ~dev-python/nsapi-3.0.5[${PYTHON_USEDEP}] )
-	netatmo? ( ~dev-python/pyatmo-7.1.0[${PYTHON_USEDEP}] )
+	netatmo? ( ~dev-python/pyatmo-7.1.1[${PYTHON_USEDEP}] )
 	netdata? ( ~dev-python/netdata-1.0.1[${PYTHON_USEDEP}] )
 	notify_events? ( ~dev-python/notify-events-1.0.4[${PYTHON_USEDEP}] )
 	nuki? ( ~dev-python/pynuki-1.5.2[${PYTHON_USEDEP}] )
@@ -380,7 +380,7 @@ RDEPEND="${RDEPEND}
 	totalconnect? ( ~dev-python/total-connect-client-2022.5[${PYTHON_USEDEP}] )
 	tplink? ( ~dev-python/python-kasa-0.5.0[${PYTHON_USEDEP}] )
 	tuya? ( ~dev-python/tuya-iot-py-sdk-0.6.6[${PYTHON_USEDEP}] )
-	unifi? ( ~dev-python/aiounifi-37[${PYTHON_USEDEP}] )
+	unifi? ( ~dev-python/aiounifi-38[${PYTHON_USEDEP}] )
 	unifi_direct? ( ~dev-python/pexpect-4.6.0[${PYTHON_USEDEP}] )
 	upnp? ( ~dev-python/async-upnp-client-0.31.2[${PYTHON_USEDEP}] ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
 	utility_meter? ( ~dev-python/croniter-1.0.6[${PYTHON_USEDEP}] )
@@ -412,7 +412,7 @@ RDEPEND="${RDEPEND}
 	yi? ( ~dev-python/aioftp-0.21.3[${PYTHON_USEDEP}] )
 	zeroconf? ( ~dev-python/zeroconf-0.39.1[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.34.1[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.82[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.2[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.0[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.0[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.34.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.82[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.3[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.1[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.1[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.1[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.5.2[${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/zwave-js-server-python-0.43.0[${PYTHON_USEDEP}] )"

@@ -73,7 +73,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.56.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.3.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20221005.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20221006.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.15.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
@@ -108,7 +108,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/requests-2.28.1[${PYTHON_USEDEP}]
 	~net-analyzer/scapy-2.4.5
 	~dev-python/sqlalchemy-1.4.41[${PYTHON_USEDEP}]
-	>=dev-python/typing-extensions-3.10.0.2[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-4.4.0[${PYTHON_USEDEP}]
 	<dev-python/typing-extensions-5.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.5.0[${PYTHON_USEDEP}]
@@ -220,7 +220,7 @@ RDEPEND="${RDEPEND}
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.4[${PYTHON_USEDEP}] )
 	zeroconf? ( ~dev-python/zeroconf-0.39.1[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.34.1[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.82[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.2[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.0[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.0[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.34.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.82[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.3[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.1[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.1[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.1[${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/zwave-js-server-python-0.43.0[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}

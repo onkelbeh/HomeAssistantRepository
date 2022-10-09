@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">typing-extensions</remote-id>
+    <maintainer status="unknown">
+      <name>"Guido van Rossum, Jukka Lehtosalo, Lukasz Langa, Michael Lee</name>
+      <email>levkivskyi@gmail.com</email>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

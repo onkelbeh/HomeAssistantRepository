@@ -4,28 +4,34 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
-DESCRIPTION="A library which communicates with ZiGate radios for zigpy"
-HOMEPAGE="https://github.com/zigpy/zigpy-zigate https://pypi.org/project/zigpy-zigate/"
+DESCRIPTION="Async Python client to interact with internal OverKiz API (e.g. used by Somfy TaHoma)."
+HOMEPAGE="https://github.com/iMicknl/python-overkiz-api https://pypi.org/project/pyoverkiz/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL-3"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=">=dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	>=dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}]
-	>=dev-python/pyusb-1.1.0[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.47.0[${PYTHON_USEDEP}]"
+DOCS="README.md"
+
+RDEPEND=">=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
+	>=dev-python/pyhumps-3.0.2[${PYTHON_USEDEP}]
+	>=dev-python/backoff-1.10.0[${PYTHON_USEDEP}]
+	>=dev-python/attrs-21.2.0[${PYTHON_USEDEP}]
+	>=dev-python/boto3-1.18.59[${PYTHON_USEDEP}]
+	>=dev-python/warrant-lite-1.0.4[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
