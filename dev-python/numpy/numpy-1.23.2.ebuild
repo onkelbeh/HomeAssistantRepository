@@ -1,9 +1,9 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 PYTHON_REQ_USE="threads(+)"
 
 FORTRAN_NEEDED=lapack
@@ -11,18 +11,25 @@ FORTRAN_NEEDED=lapack
 inherit distutils-r1 flag-o-matic fortran-2 toolchain-funcs
 
 DOC_PV=${PV}
+# For when docs aren't ready yet, set to last version
+#DOC_PV=1.23.0
 DESCRIPTION="Fast array and numerical python library"
-HOMEPAGE="https://numpy.org/"
+HOMEPAGE="
+	https://numpy.org/
+	https://github.com/numpy/numpy/
+	https://pypi.org/project/numpy/
+"
 SRC_URI="
-	mirror://pypi/${PN:0:1}/${PN}/${P}.zip
+	mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
 	doc? (
 		https://numpy.org/doc/$(ver_cut 1-2 ${DOC_PV})/numpy-html.zip -> numpy-html-${DOC_PV}.zip
 		https://numpy.org/doc/$(ver_cut 1-2 ${DOC_PV})/numpy-ref.pdf -> numpy-ref-${DOC_PV}.pdf
 		https://numpy.org/doc/$(ver_cut 1-2 ${DOC_PV})/numpy-user.pdf -> numpy-user-${DOC_PV}.pdf
-	)"
+	)
+"
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="doc lapack"
 
 RDEPEND="
@@ -33,9 +40,13 @@ RDEPEND="
 "
 BDEPEND="
 	${RDEPEND}
-	app-arch/unzip
-	>=dev-python/cython-0.29.24[${PYTHON_USEDEP}]
-	lapack? ( virtual/pkgconfig )
+	>=dev-python/cython-0.29.30[${PYTHON_USEDEP}]
+	lapack? (
+		virtual/pkgconfig
+	)
+	doc? (
+		app-arch/unzip
+	)
 	test? (
 		>=dev-python/hypothesis-5.8.0[${PYTHON_USEDEP}]
 		>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
@@ -44,9 +55,7 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}"/numpy-1.21.0-no-hardcode-blasv2.patch
-	"${FILESDIR}"/numpy-1.21.4-build-compiler-args-ceph.patch
-	"${FILESDIR}"/numpy-1.21.4-copy-python-3.9.patch
+	"${FILESDIR}"/numpy-1.22.0-no-hardcode-blasv2.patch
 )
 
 distutils_enable_tests pytest
@@ -59,6 +68,10 @@ src_unpack() {
 }
 
 python_prepare_all() {
+	# Allow use with setuptools 60.x
+	# See numpy-1.22.1-revert-setuptools-upper-bound.patch for details
+	export SETUPTOOLS_USE_DISTUTILS=stdlib
+
 	if use lapack; then
 		local incdir="${EPREFIX}"/usr/include
 		local libdir="${EPREFIX}"/usr/$(get_libdir)
@@ -99,12 +112,6 @@ python_prepare_all() {
 	# don't version f2py, we will handle it.
 	sed -i -e '/f2py_exe/s: + os\.path.*$::' numpy/f2py/setup.py || die
 
-	# disable fuzzed tests
-	find numpy/*/tests -name '*.py' -exec sed -i \
-		-e 's:def \(.*_fuzz\):def _\1:' {} + || die
-	# very memory- and disk-hungry
-	sed -i -e 's:test_large_zip:_&:' numpy/lib/tests/test_io.py || die
-
 	distutils-r1_python_prepare_all
 }
 
@@ -115,24 +122,42 @@ python_compile() {
 }
 
 python_test() {
-	local deselect=(
-		numpy/typing/tests/test_typing.py::test_reveal[arrayterator.py]
+	local EPYTEST_DESELECT=(
+		# very disk- and memory-hungry
+		numpy/lib/tests/test_io.py::test_large_zip
+
+		# precision problems
+		numpy/core/tests/test_umath_accuracy.py::TestAccuracy::test_validate_transcendentals
+
+		# runs the whole test suite recursively, that's just crazy
+		numpy/core/tests/test_mem_policy.py::test_new_policy
+
+		# very slow, unlikely to be practically useful
+		numpy/typing/tests/test_typing.py
 	)
 
 	if use arm && [[ $(uname -m || echo "unknown") == "armv8l" ]] ; then
 		# Degenerate case. arm32 chroot on arm64.
 		# bug #774108
-		deselect+=(
+		EPYTEST_DESELECT+=(
 			numpy/core/tests/test_cpu_features.py::Test_ARM_Features::test_features
 		)
 	fi
 
 	if use x86 ; then
-		deselect+=(
+		EPYTEST_DESELECT+=(
 			# https://github.com/numpy/numpy/issues/18388
 			numpy/core/tests/test_umath.py::TestRemainder::test_float_remainder_overflow
 			# https://github.com/numpy/numpy/issues/18387
 			numpy/random/tests/test_generator_mt19937.py::TestRandomDist::test_pareto
+			# more precision problems
+			numpy/core/tests/test_einsum.py::TestEinsum::test_einsum_sums_int16
+		)
+	fi
+	if use arm || use x86 ; then
+		EPYTEST_DESELECT+=(
+			# too large for 32-bit platforms
+			numpy/core/tests/test_ufunc.py::TestUfunc::test_identityless_reduction_huge_array
 		)
 	fi
 
@@ -140,7 +165,7 @@ python_test() {
 		--record "${TMPDIR}/record.txt" ${NUMPY_FCONFIG}
 
 	cd "${TEST_DIR}/lib" || die
-	epytest "${deselect[@]/#/--deselect }"
+	epytest -k "not _fuzz"
 }
 
 python_install() {
