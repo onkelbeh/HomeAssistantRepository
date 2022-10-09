@@ -9,16 +9,25 @@ PYTHON_COMPAT=( python3_{8..11} )
 inherit distutils-r1
 
 DESCRIPTION="Python client for Sentry"
-HOMEPAGE="https://sentry.io/ https://pypi.org/project/sentry-sdk/"
-SRC_URI="https://github.com/getsentry/sentry-python/archive/${PV}.tar.gz -> ${P}.gh.tar.gz"
+HOMEPAGE="
+	https://sentry.io/
+	https://github.com/getsentry/sentry-python/
+	https://pypi.org/project/sentry-sdk/
+"
+SRC_URI="
+	https://github.com/getsentry/sentry-python/archive/${PV}.tar.gz
+		-> ${P}.gh.tar.gz
+"
 S="${WORKDIR}/sentry-python-${PV}"
 
 LICENSE="PSF-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
-RDEPEND="dev-python/urllib3[${PYTHON_USEDEP}]
-	dev-python/certifi[${PYTHON_USEDEP}]"
+RDEPEND="
+	dev-python/urllib3[${PYTHON_USEDEP}]
+	dev-python/certifi[${PYTHON_USEDEP}]
+"
 BDEPEND="
 	test? (
 		dev-python/asttokens[${PYTHON_USEDEP}]
@@ -38,7 +47,8 @@ BDEPEND="
 		$(python_gen_cond_dep '
 			dev-python/eventlet[${PYTHON_USEDEP}]
 		' python3_{8..9})
-	)"
+	)
+"
 
 distutils_enable_tests pytest
 
@@ -47,12 +57,18 @@ EPYTEST_IGNORE=(
 	tests/integrations/httpx/test_httpx.py
 	tests/integrations/requests/test_requests.py
 	tests/integrations/stdlib/test_httplib.py
+	tests/integrations/flask/test_flask.py
+	tests/integrations/django/test_basic.py
 	# wtf is it supposed to do?!
 	tests/integrations/gcp/test_gcp.py
 	# broken by rq-1.10.1 (optional dep)
 	tests/integrations/rq/test_rq.py
 	# fastapi is not packaged
 	tests/integrations/asgi/test_fastapi.py
+	# TODO
+	tests/integrations/bottle
+	# requires python-multipart (TODO: package it)
+	tests/integrations/starlette
 )
 
 EPYTEST_DESELECT=(
@@ -65,6 +81,8 @@ EPYTEST_DESELECT=(
 	tests/test_client.py::test_databag_breadth_stripping
 	tests/integrations/asgi/test_asgi.py::test_auto_session_tracking_with_aggregates
 	tests/integrations/asgi/test_asgi.py::test_websocket
+	tests/integrations/aiohttp/test_aiohttp.py::test_transaction_style
+	tests/integrations/aiohttp/test_aiohttp.py::test_traces_sampler_gets_request_object_in_sampling_context
 	# incompatible version?
 	tests/integrations/falcon/test_falcon.py
 	tests/integrations/sqlalchemy/test_sqlalchemy.py::test_too_large_event_truncated
@@ -74,4 +92,5 @@ EPYTEST_DESELECT=(
 	tests/integrations/wsgi/test_wsgi.py::test_session_mode_defaults_to_request_mode_in_wsgi_handler
 	# TODO
 	tests/integrations/wsgi/test_wsgi.py::test_auto_session_tracking_with_aggregates
+	tests/integrations/wsgi/test_wsgi.py::test_profile_sent_when_profiling_enabled
 )
