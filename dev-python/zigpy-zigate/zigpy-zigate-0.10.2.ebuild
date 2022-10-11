@@ -7,24 +7,27 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
-DESCRIPTION="A library to communicate with Switchbot"
-HOMEPAGE="https://github.com/Danielhiversen/pySwitchbot/ https://pypi.org/project/PySwitchbot/"
+DESCRIPTION="A library which communicates with ZiGate radios for zigpy"
+HOMEPAGE="https://github.com/zigpy/zigpy-zigate https://pypi.org/project/zigpy-zigate/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.md"
-
-RDEPEND="dev-python/bleak[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/pyserial-3.5[${PYTHON_USEDEP}]
+	>=dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}]
+	>=dev-python/pyusb-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/zigpy-0.51.0[${PYTHON_USEDEP}]
+	dev-python/gpiozero[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
