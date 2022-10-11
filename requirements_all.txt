@@ -88,7 +88,7 @@ aiosteamist==0.3.2
 aioswitcher==3.0.0
 aiosyncthing==0.5.1
 aiotractive==0.5.4
-aiounifi==38
+aiounifi==39
 aiovlc==0.1.0
 aiowatttime==0.1.1
 aiowebostv==0.2.1
@@ -171,7 +171,7 @@ blockchain==1.4.4
 bluemaestro-ble==0.2.0
 bluepy==1.3.0
 bluetooth-adapters==0.6.0
-bluetooth-auto-recovery==0.3.3
+bluetooth-auto-recovery==0.3.4
 bluetooth-data-tools==0.1.2
 bluetooth-sensor-state-data==1.6.0
 bluez==5.64
@@ -180,8 +180,8 @@ bme680==1.0.5
 bond-async==0.1.22
 boschshcpy==0.2.35
 boto3==1.20.24
-boto3==1.24.74
-botocore==1.27.74
+boto3==1.24.80
+botocore==1.27.80
 bottleneck==1.3.5
 broadlink==0.18.2
 brother==2.0.0
@@ -245,7 +245,7 @@ crc16==0.1.1
 crccheck==1.1
 crcmod==1.7
 croniter==1.0.6
-croniter==1.3.5
+croniter==1.3.7
 crownstone-cloud==1.4.9
 crownstone-core==3.0.1
 crownstone-sse==2.0.4
@@ -440,7 +440,7 @@ holidays==0.16
 home-assistant-bluetooth==1.3.0
 home-assistant-bluetooth==1.4.0
 home-assistant-cli==9999
-home-assistant-frontend==20221006.0
+home-assistant-frontend==20221010.0
 homeassistant
 homeconnect==0.7.2
 homematicip==1.0.7
@@ -649,7 +649,7 @@ numpy==1.23.2
 numpy==1.23.3
 oasatelematics==0.3
 oauth2client==4.1.3
-oauthlib==3.2.0
+oauthlib==3.2.1
 objgraph==3.5.0
 oemthermostat==1.1.1
 olefile==0.46
@@ -822,12 +822,12 @@ pyfttt==0.3.2
 pygatt==4.0.5
 pygments==2.13.0
 pygraphviz==1.10
-pygtfs==0.1.6
+pygtfs==0.1.7
 pygti==0.9.3
 pyhamcrest==2.0.4
 pyheos==0.7.2
 pyHik==0.3.0
-pyhiveapi==0.5.13
+pyhiveapi==0.5.14
 pyhomematic==0.1.77
 pyhomeworks==0.0.6
 pyhumps==3.5.0
@@ -932,7 +932,7 @@ PyRIC==0.1.6.3
 pyrisco==0.5.5
 pyrituals==0.0.6
 PyRMVtransport==0.3.3
-pyroute2==0.7.2
+pyroute2==0.7.3
 pyrsistent==0.18.1
 pyruckus==0.16
 pysabnzbd==1.1.1
@@ -964,7 +964,7 @@ pysqueezebox==0.6.0
 pystiebeleltron==0.0.1
 pysuez==0.1.19
 pyswitchbee==1.5.5
-PySwitchbot==0.19.13
+PySwitchbot==0.19.15
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6
@@ -1227,7 +1227,7 @@ ttls==1.4.3
 tuya-iot-py-sdk==0.6.6
 twentemilieu==0.6.1
 twilio==6.32.0
-twisted==22.4.0
+twisted==22.8.0
 twitchAPI==2.5.2
 TwitterAPI==2.7.12
 typer==0.6.1
@@ -1305,7 +1305,7 @@ xboxapi==2.0.1
 xerces-c==3.2.3
 xiaomi-ble==0.10.0
 xknx==1.1.0
-xmlschema==2.0.3
+xmlschema==2.0.4
 xmltodict==0.13.0
 xs1-api-client==3.0.0
 xxhash==0.8.1
@@ -1327,8 +1327,8 @@ zha-quirks==0.0.82
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
 zigpy-deconz==0.19.0
-zigpy-xbee==0.16.1
-zigpy-zigate==0.10.1
+zigpy-xbee==0.16.2
+zigpy-zigate==0.10.2
 zigpy-znp==0.9.1
 zigpy==0.51.3
 zipp==3.8.1
