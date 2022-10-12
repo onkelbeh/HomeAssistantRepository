@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{8..10} )
 PYTHON_REQ_USE="threads(+)"
 
 inherit distutils-r1
@@ -21,25 +21,27 @@ SRC_URI="
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
 IUSE="examples"
 
-# Make sure to check https://github.com/PyCQA/pylint/blob/main/setup.cfg#L43 on bumps
+# Make sure to check https://github.com/PyCQA/pylint/blob/main/pyproject.toml#L34 on bumps
 # Adjust dep bounds!
 RDEPEND="
-	<dev-python/astroid-2.12[${PYTHON_USEDEP}]
-	>=dev-python/astroid-2.11.6[${PYTHON_USEDEP}]
+	<dev-python/astroid-2.14[${PYTHON_USEDEP}]
+	>=dev-python/astroid-2.12.4[${PYTHON_USEDEP}]
 	>=dev-python/dill-0.2[${PYTHON_USEDEP}]
 	>=dev-python/isort-4.2.5[${PYTHON_USEDEP}]
 	<dev-python/isort-6[${PYTHON_USEDEP}]
 	>=dev-python/mccabe-0.6[${PYTHON_USEDEP}]
 	<dev-python/mccabe-0.8[${PYTHON_USEDEP}]
 	>=dev-python/platformdirs-2.2.0[${PYTHON_USEDEP}]
-	>=dev-python/tomli-1.1.0[${PYTHON_USEDEP}]
 	>=dev-python/tomlkit-0.10.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '
 		dev-python/typing-extensions[${PYTHON_USEDEP}]
 	' 3.8 3.9)
+	$(python_gen_cond_dep '
+		>=dev-python/tomli-1.1.0[${PYTHON_USEDEP}]
+	' 3.8 3.9 3.10)
 "
 BDEPEND="
 	test? (
