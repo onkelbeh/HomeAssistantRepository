@@ -8,8 +8,8 @@
   <upstream>
     <remote-id type="pypi">aioitertools</remote-id>
     <maintainer status="unknown">
-      <email>john@noswap.com</email>
-      <name>John Reese</name>
+      <email>amy@noswap.com</email>
+      <name>Amethyst Reese</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
