@@ -3,12 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
 DESCRIPTION="Converts a Python dictionary or other native data type into a valid XML string."
-HOMEPAGE="https://github.com/quandyfactory/dicttoxml https://pypi.org/project/dicttoxml2/"
+HOMEPAGE="https://github.com/Ousret/dicttoxml https://pypi.org/project/dicttoxml2/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-2"
