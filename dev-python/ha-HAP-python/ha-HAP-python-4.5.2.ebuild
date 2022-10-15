@@ -3,12 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
 DESCRIPTION="HomeKit Accessory Protocol implementation in python"
-HOMEPAGE="https://github.com/ikalchev/HAP-python https://pypi.org/project/HAP-python/"
+HOMEPAGE="https://github.com/ikalchev/HAP-python https://pypi.org/project/ha-HAP-python/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
@@ -19,11 +19,12 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/cryptography[${PYTHON_USEDEP}]
+RDEPEND="!dev-python/HAP-python
+	dev-python/cryptography[${PYTHON_USEDEP}]
+	dev-python/chacha20poly1305-reuseable[${PYTHON_USEDEP}]
+	>=dev-python/orjson-3.7.2[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.36.2[${PYTHON_USEDEP}]
-	dev-python/h11[${PYTHON_USEDEP}]
-	dev-python/base36[${PYTHON_USEDEP}]
-	dev-python/pyqrcode[${PYTHON_USEDEP}]"
+	dev-python/h11[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -35,3 +36,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest

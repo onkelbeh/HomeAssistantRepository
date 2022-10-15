@@ -6,10 +6,6 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">urwid</remote-id>
-    <maintainer status="unknown">
-      <email>ian@excess.org</email>
-      <name>Ian Ward</name>
-    </maintainer>
+    <remote-id type="pypi">ha-HAP-python</remote-id>
   </upstream>
 </pkgmetadata>
