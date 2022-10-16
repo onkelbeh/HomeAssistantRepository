@@ -46,3 +46,5 @@ python_configure_all() {
 	GRPC_PYTHON_BUILD_EXT_COMPILER_JOBS="$(makeopts_jobs)"
 	export GRPC_PYTHON_BUILD_EXT_COMPILER_JOBS
 }
+
+distutils_enable_tests pytest
