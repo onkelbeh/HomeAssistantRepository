@@ -32,6 +32,14 @@ Currently some help on the nodejs Ebuilds would be very welcome:
 * zigbee2mqtt
 * zwave-js-server (W.I.P, see https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/269)
 
+## 2022-10: reworked all Ebuilds, same KEYWORDS on all Ebuilds
+Overdue for long, went through all Ebuilds, removed unused and old versions. All Ebuilds now have default tests turned on, and got Python 3.11 compatibility assigned. Some could not be tested yet on 3.11 (missing external dependencies). Ebuilds now are maintained with `pkgdev` instead of `repoman` and are check against `pkgcheck` before release. For easier compilations tests and maintainance, all Ebuilds will get
+```
+KEYWORDS="amd64 arm arm64 x86"
+```
+no matter of the platform they are designed to run on, e.g. on a Raspberry Pi. Please choose your modules wisely :-)
+I will keep the best last two major versions of all three main Ebuilds and 2-3 versions of the current, when other Ebuilds are touched, unreferenced versions will be removed.
+
 ## 2022-07: file collisions with pysnmp
 With 2022.7.0, Home Assistant and some components started again using `pysnmplib`, this causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
 ```
@@ -538,7 +546,7 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1606 Ebuilds in total, 1599 of them have in total 1611 (34 different) licenses assigned.
+There are 1605 Ebuilds in total, 1598 of them have in total 1610 (34 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
@@ -551,7 +559,7 @@ There are 1606 Ebuilds in total, 1599 of them have in total 1611 (34 different) 
 |all-rights-reserved|14|
 |BSD-2|13|
 |GPL-3+|13|
-|LGPL-3+|13|
+|LGPL-3+|12|
 |LGPL-2.1|6|
 |Unlicense|5|
 |LGPL-2.1+|4|
