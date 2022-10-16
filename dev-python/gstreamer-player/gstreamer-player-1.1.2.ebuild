@@ -20,6 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS=""
 
 RDEPEND=">=media-libs/mutagen-1.36.2[${PYTHON_USEDEP}]
+	>=dev-python/pygobject-3.42.2[${PYTHON_USEDEP}]
 	>=dev-python/lxml-3.6.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
