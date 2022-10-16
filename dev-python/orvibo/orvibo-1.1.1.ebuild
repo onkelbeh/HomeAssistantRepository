@@ -3,25 +3,24 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
 DESCRIPTION="Control Orvibo products."
 HOMEPAGE="https://github.com/happyleavesaoc/python-orvibo/ https://pypi.org/project/orvibo/"
 MY_PN="python-orvibo"
-SRC_URI="https://github.com/happyleavesaoc/${MY_PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/happyleavesaoc/${MY_PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -33,3 +32,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
