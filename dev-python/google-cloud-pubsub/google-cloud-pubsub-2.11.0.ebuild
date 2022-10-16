@@ -35,3 +35,8 @@ python_test() {
 }
 
 distutils_enable_tests pytest
+
+python_install_all() {
+	distutils-r1_python_install_all
+	find "${ED}" -name '*.pth' -delete || die
+}
