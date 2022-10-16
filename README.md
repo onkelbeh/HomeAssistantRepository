@@ -33,11 +33,12 @@ Currently some help on the nodejs Ebuilds would be very welcome:
 * zwave-js-server (W.I.P, see https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/269)
 
 ## 2022-10: reworked all Ebuilds, same KEYWORDS on all Ebuilds
-Overdue for long, went through all Ebuilds, removed unused and old versions. All Ebuilds now have default tests turned on, and got Python 3.11 compatibility assigned. Some could not be tested yet on 3.11 (missing external dependencies). Ebuilds now are maintained with `pkgdev` instead of `repoman` and are check against `pkgcheck` before release. For easier compilations tests and maintainance, all Ebuilds will get
+Overdue for long, went through all Ebuilds, removed unused and old versions. All Ebuilds now have default tests turned on, and got Python 3.11 compatibility assigned. Some could not be tested yet on 3.11 (missing external dependencies). Ebuilds now are maintained with `pkgdev` instead of `repoman` and are checked against `pkgcheck` before release. For easier compilation tests and maintainance, all Ebuilds will now have
 ```
 KEYWORDS="amd64 arm arm64 x86"
 ```
 no matter of the platform they are designed to run on, e.g. on a Raspberry Pi. Please choose your modules wisely :-)
+
 I will keep the best last two major versions of all three main Ebuilds and 2-3 versions of the current, when other Ebuilds are touched, unreferenced versions will be removed.
 
 ## 2022-07: file collisions with pysnmp
