@@ -9,7 +9,7 @@
     <remote-id type="pypi">grpc-google-iam-v1</remote-id>
     <maintainer status="unknown">
       <email>googleapis-packages@google.com</email>
-      <name>Google Inc</name>
+      <name>Google LLC</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
