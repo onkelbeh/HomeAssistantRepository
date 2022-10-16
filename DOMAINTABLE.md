@@ -9,7 +9,7 @@
 |ads|Beckhoff automation devices running TwinCAT|N|Y|Y|0.60|
 |advantage_air|API helper for Advantage Air's MyAir and e-zone API|N|N|Y|0.117|
 |aemet| AEMET OpenData meteorological data|N|N|Y|2021.3|
-|aftership|The aftership platform allows one to track deliveries by AfterShip|N|Y|Y|0.85|
+|aftership|The aftership platform allows one to track deliveries by AfterShip|Y|Y|Y|0.85|
 |agent_dvr|Agent DVR is a free* software DVR solution|N|Y|Y|0.110|
 |airly|Uses the Airly web service as a source for air quality data|Y|Y|Y|0.101|
 |airnow|AirNow web service as a source for air quality data|N|N|Y|2021.2|
