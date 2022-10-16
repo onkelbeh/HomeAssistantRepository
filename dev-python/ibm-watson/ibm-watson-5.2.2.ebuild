@@ -22,7 +22,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]
 	<dev-python/requests-3.0[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.5.3[${PYTHON_USEDEP}]
-	~dev-python/websocket-client-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/websocket-client-1.1.0[${PYTHON_USEDEP}]
 	>=dev-python/ibm-cloud-sdk-core-3.3.6[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
