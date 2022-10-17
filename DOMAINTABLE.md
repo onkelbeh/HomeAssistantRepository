@@ -526,7 +526,7 @@
 |opensensemap|query the open data API of openSenseMap.org air quality sensor station|N|Y|Y|0.85|
 |opentherm_gw|control the OpenTherm Gateway from Home Assistant|N|N|Y|0.81|
 |openuv|The openuv integration displays UV and Ozone data from openuv.io|N|N|Y|0.76|
-|openweathermap|uses OpenWeatherMap as a source for current meteorological data|N|Y|Y|0.32|
+|openweathermap|uses OpenWeatherMap as a source for current meteorological data|Y|Y|Y|0.32|
 |open_meteo|integrates the free weather forecast from Open-Meteo|N|N|Y|2022.2.0b1|
 |opnsense|Presence Detection with data from OPNsense  firewall|N|Y|Y|0.105|
 |opple|allows you to control the state of your Opple smart light|N|N|Y|0.80|
