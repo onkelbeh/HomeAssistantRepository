@@ -1,9 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1 vcs-snapshot
 
@@ -13,7 +13,7 @@ SRC_URI="https://github.com/twilio/${PN}-python/archive/${PV}.tar.gz -> ${P}.tar
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 
 IUSE="test"
 RESTRICT="!test? ( test )"
@@ -25,9 +25,10 @@ CDEPEND="dev-python/six[${PYTHON_USEDEP}]
 RDEPEND="${CDEPEND}"
 DEPEND="test? (
 			${CDEPEND}
-			dev-python/nose[${PYTHON_USEDEP}]
 		)"
 
 python_test() {
 	nosetests tests || die "Tests fail with ${EPYTHON}"
 }
+
+distutils_enable_tests pytest
