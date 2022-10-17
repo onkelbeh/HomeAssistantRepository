@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 inherit distutils-r1
 
 DESCRIPTION="Alternative regular expression module to replace re"
@@ -12,7 +12,7 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="doc"
 
 PATCHES=(
@@ -32,3 +32,5 @@ python_install_all() {
 
 	distutils-r1_python_install_all
 }
+
+distutils_enable_tests pytest
