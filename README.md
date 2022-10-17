@@ -551,10 +551,10 @@ There are 1521 Ebuilds in total, 1514 of them have in total 1525 (34 different) 
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|890|
+|MIT|889|
 |Apache-2.0|307|
 |GPL-3|93|
-|BSD|89|
+|BSD|90|
 |LGPL-3|25|
 |GPL-2|19|
 |all-rights-reserved|14|
