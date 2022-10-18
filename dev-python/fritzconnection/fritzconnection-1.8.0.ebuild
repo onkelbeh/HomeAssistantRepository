@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 inherit distutils-r1
 
 DESCRIPTION="Lib/tool to communicate with AVM FRITZ! devices using TR-064 protocol over UPnP"
@@ -15,8 +15,8 @@ if [[ "${PV}" == "9999" ]]; then
 	EGIT_REPO_URI="https://github.com/kbr/fritzconnection"
 	inherit git-r3
 else
-	SRC_URI="https://github.com/kbr/fritzconnection/archive/${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
+	SRC_URI="https://github.com/kbr/fritzconnection/archive/${PV}.tar.gz -> ${P}.gh.tar.gz"
+KEYWORDS="amd64 arm arm64 x86"
 fi
 
 RDEPEND=">=dev-python/requests-2.22[${PYTHON_USEDEP}]"
