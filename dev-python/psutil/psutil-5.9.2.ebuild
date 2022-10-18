@@ -39,3 +39,5 @@ python_compile() {
 	local MAKEOPTS=-j1
 	distutils-r1_python_compile
 }
+
+distutils_enable_tests pytest

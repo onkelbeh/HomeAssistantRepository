@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -15,7 +15,7 @@ S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -40,3 +40,5 @@ src_prepare() {
 	sed 's/os.environ.get("PACKAGE_VERSION")/"'"${PV}"'"/g' -i setup.py || die
 	eapply_user
 }
+
+distutils_enable_tests pytest

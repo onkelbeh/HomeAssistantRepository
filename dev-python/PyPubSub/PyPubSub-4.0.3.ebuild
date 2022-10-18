@@ -10,7 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Python Publish-Subscribe Package"
 HOMEPAGE="https://github.com/schollii/pypubsub https://pypi.org/project/PyPubSub/"
 MY_PN="pypubsub"
-SRC_URI="https://github.com/schollii/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/schollii/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="BSD"
@@ -33,3 +33,5 @@ python_test() {
 	nosetests --verbose || die
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest

@@ -1,16 +1,16 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 inherit distutils-r1
 
 DESCRIPTION="Python client library for MariaDB/MySQL"
 HOMEPAGE="https://dev.mysql.com/downloads/connector/python/"
-SRC_URI="https://github.com/mysql/mysql-connector-python/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/mysql/mysql-connector-python/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
-KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="examples test"

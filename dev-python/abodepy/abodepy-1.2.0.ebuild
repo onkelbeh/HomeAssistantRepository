@@ -3,17 +3,17 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
 DESCRIPTION="An Abode alarm Python library running on Python 3."
 HOMEPAGE="https://github.com/MisterWil/abodepy https://pypi.org/project/abodepy/"
-SRC_URI="https://github.com/MisterWil/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/MisterWil/${PN}/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="doc test"
 RESTRICT="!test? ( test )"
 
@@ -50,3 +50,5 @@ python_install_all() {
 			 use doc && local HTML_DOCS=( docs/_build/html/. )
 			 distutils-r1_python_install_all
 }
+
+distutils_enable_tests pytest

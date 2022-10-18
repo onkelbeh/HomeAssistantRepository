@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ifaddr</remote-id>
+    <doc>https://pythonhosted.org/ifaddr/</doc>
     <maintainer status="unknown">
       <email>scm@smurn.org</email>
       <name>Stefan C. Mueller</name>

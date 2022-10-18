@@ -24,3 +24,5 @@ python_test() {
 	cd "${S}"/src || die
 	"${EPYTHON}" test_typing_extensions.py -v || die "tests failed under ${EPYTHON}"
 }
+
+distutils_enable_tests pytest

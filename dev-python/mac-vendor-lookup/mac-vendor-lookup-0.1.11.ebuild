@@ -3,19 +3,19 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
 DESCRIPTION="Find the vendor for a given MAC address"
 HOMEPAGE="https://github.com/bauerj/mac_vendor_lookup https://pypi.org/project/mac-vendor-lookup/"
 MY_PN=${PN//-/_}
-SRC_URI="https://github.com/bauerj/${MY_PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/bauerj/${MY_PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -39,3 +39,5 @@ src_prepare() {
 	xzcat "${FILESDIR}/mac-vendors.txt.xz" > "${S}/mac-vendors.txt" || die
 	eapply_user
 }
+
+distutils_enable_tests pytest

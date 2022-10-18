@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -33,4 +33,4 @@ python_test() {
 	py.test -v -v || die
 }
 
-distutils_enable_tests pytest
+distutils_enable_tests unittest

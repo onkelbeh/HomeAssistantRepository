@@ -7,9 +7,8 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">crccheck</remote-id>
-    <doc>https://pythonhosted.org/crccheck/</doc>
     <maintainer status="unknown">
-      <email>martin@scharrer-online.de</email>
+      <email>martin.scharrer@web.de</email>
       <name>Martin Scharrer</name>
     </maintainer>
   </upstream>

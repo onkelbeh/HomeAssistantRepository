@@ -32,6 +32,15 @@ Currently some help on the nodejs Ebuilds would be very welcome:
 * zigbee2mqtt
 * zwave-js-server (W.I.P, see https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/269)
 
+## 2022-10: reworked all Ebuilds, same KEYWORDS on all Ebuilds
+Overdue for long, went through all Ebuilds, removed unused and old versions. All Ebuilds now have default tests turned on, and got Python 3.11 compatibility assigned. Some could not be tested yet on 3.11 (missing external dependencies). Ebuilds now are maintained with `pkgdev` instead of `repoman` and are checked against `pkgcheck` before release. For easier compilation tests and maintainance, all Ebuilds will now have
+```
+KEYWORDS="amd64 arm arm64 x86"
+```
+no matter of the platform they are designed to run on, e.g. on a Raspberry Pi. Please choose your modules wisely :-)
+
+I will keep the best last two major versions of all three main Ebuilds and 2-3 versions of the current, when other Ebuilds are touched, their unreferenced versions will be removed.
+
 ## 2022-07: file collisions with pysnmp
 With 2022.7.0, Home Assistant and some components started again using `pysnmplib`, this causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
 ```
@@ -62,7 +71,7 @@ Since homeassistant-0.115.3 the **Main Ebuild** is released in three different s
 
 [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml)
 
-These are the USE Flags I use in production myself. All will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **92** USE Flags.
+These are the USE Flags I use in production myself. All will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **94** USE Flags.
 
 ### `app-misc/homeassistant`
 
@@ -538,49 +547,48 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1925 Ebuilds in total, 1918 of them have in total 1930 (35 different) licenses assigned.
+There are 1446 Ebuilds in total, 1439 of them have in total 1449 (34 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1165|
-|Apache-2.0|359|
-|GPL-3|122|
-|BSD|106|
-|LGPL-3|30|
-|GPL-2|24|
-|GPL-3+|17|
-|LGPL-3+|16|
-|all-rights-reserved|15|
-|BSD-2|14|
-|Unlicense|7|
-|LGPL-2.1|7|
-|EPL-1.0|5|
+|MIT|836|
+|Apache-2.0|297|
+|GPL-3|91|
+|BSD|86|
+|LGPL-3|22|
+|GPL-2|19|
+|all-rights-reserved|14|
+|GPL-3+|12|
+|BSD-2|10|
+|LGPL-3+|10|
+|LGPL-2.1|6|
+|MPL-2.0|5|
+|Unlicense|5|
 |LGPL-2.1+|4|
 |public-domain|4|
-|MPL-2.0|3|
-|LGPL-2+|3|
 |PSF-2|3|
-|BSD-4|3|
-|GPL-2+|3|
+|EPL-1.0|3|
 |AGPL-3+|2|
-|ZPL|2|
+|LGPL-2+|2|
 |ISC|2|
-|CC-BY-NC-SA-3.0|2|
+|BSD-4|2|
 |EPL-2.0|2|
+|ZPL|1|
 |ECL-2.0|1|
 |Boost-1.0|1|
 |AGPL-3|1|
-|PSF-2.3|1|
 |PSFL|1|
 |NEWLIB|1|
 |HPND|1|
+|CC-BY-NC-SA-3.0|1|
 |LGPL-2|1|
 |CC-BY-NC-SA-4.0|1|
 |CC0-1.0|1|
+|GPL-2+|1|
 
-(Last counted: 15/10/2022)
+(Last counted: 18/10/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 15/10/2022
+Last updated: 18/10/2022
