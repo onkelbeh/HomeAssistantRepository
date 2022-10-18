@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Rain Bird Controller"
 HOMEPAGE="https://github.com/jbarrancos/pyrainbird/ https://pypi.org/project/pyrainbird/"
-SRC_URI="https://github.com/jbarrancos/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/jbarrancos/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -24,12 +24,10 @@ RDEPEND="dev-python/pycryptodome[${PYTHON_USEDEP}]
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
-	nosetests --verbose || die
 	py.test -v -v || die
 }
 
