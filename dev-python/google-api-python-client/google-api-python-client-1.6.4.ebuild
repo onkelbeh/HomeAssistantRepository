@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -13,7 +13,7 @@ SRC_URI="https://github.com/google/google-api-python-client/archive/v${PV}.tar.g
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 x86"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -30,7 +30,6 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	test? (
 		dev-python/google-auth-httplib2[${PYTHON_USEDEP}]
-		dev-python/nose[${PYTHON_USEDEP}]
 	)"
 
 python_prepare_all() {
