@@ -26,7 +26,6 @@ DOCS="README.md"
 DEPEND="${DEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-	  dev-python/nose[${PYTHON_USEDEP}]
 	  dev-python/pytest[${PYTHON_USEDEP}]
 	  dev-python/pytest-cov[${PYTHON_USEDEP}]
 	  >=dev-python/pytest-timeout-2.1.0[${PYTHON_USEDEP}]
@@ -34,7 +33,6 @@ DEPEND="${DEPEND}
 	)"
 
 python_test() {
-	nosetests --verbose || die
 	py.test -v -v || die
 }
 
