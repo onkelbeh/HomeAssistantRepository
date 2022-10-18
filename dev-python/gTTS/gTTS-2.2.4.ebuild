@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="gTTS (Google Text-to-Speech), a Python library and CLI tool to interface with Google Translate text-to-speech API"
 HOMEPAGE="https://github.com/pndurette/gTTS https://pypi.org/project/gTTS/"
-SRC_URI="https://github.com/pndurette/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/pndurette/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -25,13 +25,11 @@ RDEPEND="dev-python/six[${PYTHON_USEDEP}]
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
-	nosetests --verbose || die
 	py.test -v -v || die
 }
 
