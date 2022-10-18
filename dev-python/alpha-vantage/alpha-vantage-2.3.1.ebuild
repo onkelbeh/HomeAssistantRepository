@@ -26,7 +26,6 @@ BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]
-		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/requests-mock[${PYTHON_USEDEP}]
 	)"
@@ -34,7 +33,6 @@ BDEPEND="
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 python_test() {
-	nosetests --verbose || die
 	py.test -v -v || die
 }
 
