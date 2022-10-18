@@ -40,6 +40,7 @@ KEYWORDS="amd64 arm arm64 x86"
 no matter of the platform they are designed to run on, e.g. on a Raspberry Pi. Please choose your modules wisely :-)
 
 I will keep the best last two major versions of all three main Ebuilds and 2-3 versions of the current, when other Ebuilds are touched, their unreferenced versions will be removed.
+As soon as 80% have been completed, `dev-python/nose` was deprecated (which was referenced in ALL Ebuilds) :-( 800 more packages to touch...
 
 ## 2022-07: file collisions with pysnmp
 With 2022.7.0, Home Assistant and some components started again using `pysnmplib`, this causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
