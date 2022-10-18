@@ -25,7 +25,6 @@ RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/nose[${PYTHON_USEDEP}]
 		>=dev-python/pytest-6.2.5[${PYTHON_USEDEP}]
 		>=dev-python/aresponses-2.0.0[${PYTHON_USEDEP}]
 		>=dev-python/asynctest-0.13.0[${PYTHON_USEDEP}]
@@ -34,7 +33,6 @@ BDEPEND="
 	)"
 
 python_test() {
-	nosetests --verbose || die
 	py.test -v -v || die
 }
 

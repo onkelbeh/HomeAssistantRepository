@@ -20,7 +20,7 @@ https://github.com/home-assistant/home-assistant
 ## Origin: Ireland, Home: Bavaria
 Once this was a fork of Paul Healy's `https://cgit.gentoo.org/user/lmiphay.git/tree/app-misc/homeassistant-bin`, which seemed unmaintained to me. At first I just wanted to compile it for my personal use. This happened at Home Assistant 0.77 in September 2018. Some friends told me they wanted to use/see it, so I placed it on my public git server, and was caught by surprise by several hundred page views in the very first days. I'll do my best to keep it close to the official releases, though it might get slower during summers. After three months it had ~170 ebuilds, Nov 2019 > 1599 Ebuilds in > 830 packages are on file, 970 packages in 2380 Ebuilds in September 2020. As long as I certainly do not count automatically consolidated collections, this Overlay has grown to one of the largest [Gentoo Repos](https://qa-reports.gentoo.org/output/repos/) during the last year.
 
-If you have questions or suggestions: contact me, **any** help is very welcome. If you want to help or contribute, please [join me](https://git.edevau.net/user/sign_up).
+If you have questions or suggestions: contact me, **any** help is very welcome. If you want to help or contribute, please [join us](https://git.edevau.net/user/sign_up).
 
 ## Authors welcome
 If you are an author of an integration / component or other stuff related to Home Assistant and I have your stuff not added already, please file a pull request, or just drop me a note. For adding a component, I need a release file in tar.gz or zip format. Tagged releases on GitHub are OK, but a
@@ -40,6 +40,7 @@ KEYWORDS="amd64 arm arm64 x86"
 no matter of the platform they are designed to run on, e.g. on a Raspberry Pi. Please choose your modules wisely :-)
 
 I will keep the best last two major versions of all three main Ebuilds and 2-3 versions of the current, when other Ebuilds are touched, their unreferenced versions will be removed.
+As soon as 80% have been completed, `dev-python/nose` was deprecated (which was referenced in ALL Ebuilds) :-( 800 more packages to touch...
 
 ## 2022-07: file collisions with pysnmp
 With 2022.7.0, Home Assistant and some components started again using `pysnmplib`, this causes file collisions with `pysnmp`, which is referred by many packages from Gentoo. `pysnmp` uses the same namespace as `pysnmplib`, and should be compatible. To avoid the collisions, add the following packages
@@ -547,12 +548,12 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1446 Ebuilds in total, 1439 of them have in total 1449 (34 different) licenses assigned.
+There are 1445 Ebuilds in total, 1438 of them have in total 1447 (34 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|836|
-|Apache-2.0|297|
+|MIT|835|
+|Apache-2.0|296|
 |GPL-3|91|
 |BSD|86|
 |LGPL-3|22|
@@ -586,9 +587,9 @@ There are 1446 Ebuilds in total, 1439 of them have in total 1449 (34 different) 
 |CC0-1.0|1|
 |GPL-2+|1|
 
-(Last counted: 18/10/2022)
+(Last counted: 19/10/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 18/10/2022
+Last updated: 19/10/2022

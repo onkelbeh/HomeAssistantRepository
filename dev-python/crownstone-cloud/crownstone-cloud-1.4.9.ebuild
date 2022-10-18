@@ -26,12 +26,10 @@ BDEPEND="
 	test? (
 		>=dev-python/codecov-2.1.10[${PYTHON_USEDEP}]
 		>=dev-python/asynctest-0.13.0[${PYTHON_USEDEP}]
-		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
-	nosetests --verbose || die
 	py.test -v -v || die
 }
 

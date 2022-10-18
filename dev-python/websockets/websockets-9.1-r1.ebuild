@@ -3,20 +3,20 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
 DESCRIPTION="Library for building WebSocket servers and clients in Python"
 HOMEPAGE="https://websockets.readthedocs.io/"
 SRC_URI="
-	https://github.com/aaugustin/${PN}/archive/${PV}.tar.gz -> ${P}-src.tar.gz
+	https://github.com/aaugustin/${PN}/archive/${PV}.tar.gz -> ${P}-src.gh.tar.gz
 	https://dev.gentoo.org/~sbraz/${P}-python-3.10-support.patch.gz
 "
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 
 distutils_enable_tests unittest
 

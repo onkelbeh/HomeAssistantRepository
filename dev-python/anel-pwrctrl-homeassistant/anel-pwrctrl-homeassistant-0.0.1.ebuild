@@ -18,18 +18,15 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=""
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
 S="${WORKDIR}/${MY_PN}-${PV}.dev2"
 
 python_test() {
-	nosetests --verbose || die
 	py.test -v -v || die
 }
 

@@ -25,13 +25,16 @@ RDEPEND=">=dev-python/google-api-core-1.32.0[${PYTHON_USEDEP}]
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
-	nosetests --verbose || die
 	py.test -v -v || die
 }
 
 distutils_enable_tests pytest
+
+python_install_all() {
+	distutils-r1_python_install_all
+	find "${ED}" -name '*.pth' -delete || die
+}

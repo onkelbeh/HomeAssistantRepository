@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="A Python wrapper around the HERE APIs"
 HOMEPAGE="https://github.com/abdullahselek/HerePy https://pypi.org/project/herepy/"
-SRC_URI="https://github.com/abdullahselek/HerePy/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/abdullahselek/HerePy/archive/${PV}.tar.gz -> ${P}.gh.tar.gz"
 MY_PN="HerePy"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
@@ -26,13 +26,11 @@ RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-runner[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
-	nosetests --verbose || die
 	py.test -v -v || die
 }
 
