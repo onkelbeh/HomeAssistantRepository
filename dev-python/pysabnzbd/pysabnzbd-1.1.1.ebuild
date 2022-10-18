@@ -10,7 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Python wrapper for SABnzbd API"
 HOMEPAGE="https://github.com/jeradM/pysabnzbd https://pypi.org/project/pysabnzbd/"
 COMMIT="8e6cd1869c8cc99a4560ea1b178f0a1efd89e460"
-SRC_URI="https://github.com/jeradM/pysabnzbd/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/jeradM/pysabnzbd/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz"
 S="${WORKDIR}/${PN}-${COMMIT}"
 
 LICENSE="MIT"
