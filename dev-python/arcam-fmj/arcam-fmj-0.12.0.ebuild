@@ -25,14 +25,12 @@ BDEPEND="
 	test? (
 		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/coveralls[${PYTHON_USEDEP}]
-		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
-	nosetests --verbose || die
 	py.test -v -v || die
 }
 
