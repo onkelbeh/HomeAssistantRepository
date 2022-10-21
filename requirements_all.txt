@@ -6,8 +6,13 @@ adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.1.8
 adafruit-circuitpython-dht==3.7.0
 adafruit-circuitpython-mcp230xx==2.2.2
+adafruit-circuitpython-pca9685==3.3.2
+adafruit-circuitpython-register==1.9.8
 adafruit-circuitpython-typing==1.3.0
+Adafruit-GPIO==1.0.3
 Adafruit-PureIO==1.1.9
+Adafruit-SHT31==1.0.2
+Adafruit_BBIO==1.1.1
 Adax-local==0.1.4
 adax==0.2.0
 adb-shell==0.4.3
@@ -50,12 +55,12 @@ aioftp==0.21.3
 aiogithubapi==22.2.4
 aioguardian==2022.7.0
 aioharmony==0.2.9
-aiohomekit==2.0.1
+aiohomekit==2.0.2
 aiohttp-cors==0.7.0
 aiohttp==3.8.1
 aiohue==4.5.0
 aioimaplib==1.0.1
-aioitertools==0.8.0
+aioitertools==0.11.0
 aiokafka==0.7.2
 aiokef==0.2.16
 aiolifx-effects==0.2.2
@@ -125,7 +130,7 @@ async-timeout==4.0.2
 async-upnp-client==0.31.2
 asyncclick==8.0.1.3
 asynccmd==0.2.4
-asyncio-dgram==2.1.0
+asyncio-dgram==2.1.2
 asyncio-throttle==1.0.2
 asyncpysupla==0.0.5
 asyncsleepiq==1.2.3
@@ -138,6 +143,7 @@ attrs==22.1.0
 auroranoaa==0.0.2
 aurorapy==0.2.7
 Authlib==0.15.5
+Authlib==1.1.0
 automat==20.2.0
 avea==1.5.1
 avion==0.10
@@ -155,13 +161,16 @@ beacontools==1.2.3
 beautifulsoup4==4.11.1
 beewi-smartclim==0.0.10
 bellows==0.34.2
+bidict==0.22.0
 bimmer-connected==0.10.4
 bitarray==2.6.0
 bitstring==3.1.9
 bizkaibus==0.1.1
 bleach==5.0.1
 bleak-retry-connector==2.1.3
+bleak-retry-connector==2.3.1
 bleak==0.18.1
+bleak==0.19.0
 blebox-uniapi==2.0.2
 blinker==1.5
 blinkpy==0.19.2
@@ -171,7 +180,7 @@ blockchain==1.4.4
 bluemaestro-ble==0.2.0
 bluepy==1.3.0
 bluetooth-adapters==0.6.0
-bluetooth-auto-recovery==0.3.4
+bluetooth-auto-recovery==0.3.6
 bluetooth-data-tools==0.1.2
 bluetooth-sensor-state-data==1.6.0
 bluez==5.64
@@ -201,7 +210,6 @@ c-ares==1.18.1
 ca-certificates==20211016.3.80
 cachetools==5.2.0
 caio==0.9.8
-casttube==0.2.0
 cattrs==22.1.0
 cbor2==5.4.3
 cchardet==2.1.7
@@ -231,18 +239,18 @@ commentjson==0.9.0
 commonmark==0.9.1
 concord232==0.15
 config==0.5.1
-configargparse==0.11.0
+ConfigArgParse==1.5.3
 connect-box==0.2.8
 connio==0.2.0
 constantly==15.1.0
 construct==2.10.56
 construct==2.10.68
-convertdate==2.3.0
+convertdate==2.4.0
 coreutils==8.32
 coronavirus==1.1.1
 coverage==6.4.4
 crc16==0.1.1
-crccheck==1.1
+crccheck==1.3.0
 crcmod==1.7
 croniter==1.0.6
 croniter==1.3.7
@@ -254,6 +262,7 @@ cryptography==38.0.1
 csrmesh==0.10.0
 cssselect==1.1.0
 cups==2.4.2
+curl==7.84.0
 c_rehash==1.7
 d2to1==0.2.12_p1
 dacite==1.6.0
@@ -276,7 +285,8 @@ demjson3==3.0.5
 deprecated==1.2.13
 devolo-home-control-api==0.18.2
 devolo-plc-api==0.8.0
-dicttoxml2==2.0.0
+dialog==1.3.20220728
+dicttoxml2==2.1.0
 dicttoxml==1.7.4
 directv==0.4.0
 discogs-client==2.3.0
@@ -350,11 +360,13 @@ forecast-solar==2.2.0
 fortiosapi==1.0.5
 fqdn==1.5.1
 freebox-api==0.0.10
+freeimage==3.18.0
 freesms==0.2.0
 freetype==2.12.1
 fritzconnection==1.4.2
 frozenlist==1.3.1
 future==0.18.2
+gammu==1.41.0
 garages-amsterdam==3.0.0
 garminconnect-ha==0.1.6
 gawk==5.1.1
@@ -369,11 +381,12 @@ GeographicLib==1.52
 geojson==2.5.0
 geopy==2.1.0
 geopy==2.2.0
-georss-client==0.14
+georss-client==0.15
 georss-generic-client==0.6
 georss-ign-sismologia-client==0.3
 georss-qld-bushfire-alert-client==0.5
 getmac==0.8.2
+getmac==0.8.3
 gios==2.1.0
 gitterpy==0.1.7
 glances-api==0.4.1
@@ -382,6 +395,8 @@ glibc==2.35
 gmp==6.2.1
 gntp==1.0.3
 goalzero==0.2.1
+gobject-introspection-common==1.72.0
+gobject-introspection==1.72.0
 goodwe==0.2.18
 google-api-core==2.8.2
 google-auth-oauthlib==0.5.2
@@ -404,7 +419,7 @@ greenwavereality==0.5.1
 grep==3.7
 gridnet==4.0.0
 growattServer==1.2.2
-grpc-google-iam-v1==0.12.3
+grpc-google-iam-v1==0.12.4
 grpcio-status==1.48.0
 grpcio==1.48.0
 gspread==5.5.0
@@ -448,6 +463,8 @@ homepluscontrol==0.0.5
 horimote==0.4.1
 hpack==4.0.0
 html5lib==1.1
+httmock==1.4.0
+http-ece==1.1.0
 httpcore==0.15.0
 httplib2==0.20.4
 httpsig==1.3.0
@@ -470,6 +487,7 @@ ifaddr==0.1.7
 ifaddr==0.2.0
 iglo==1.2.7
 ihcsdk==2.7.6
+imageio==2.22.0
 importlib_metadata==4.12.0
 incomfort-client==0.4.4
 incremental==21.3.0
@@ -480,9 +498,10 @@ influxdb==5.3.1
 inkbird-ble==0.5.5
 insteon-frontend-home-assistant==0.2.0
 intelhex==2.3.0
-intellifire4py==2.0.1
+intellifire4py==2.2.1
 iotawattpy==0.1.0
 iperf3==0.1.11
+iperf==3.11
 ismartgate==4.0.4
 iso-codes==4.11.0
 iso4217==1.11.20220401
@@ -531,6 +550,7 @@ libcrypt==2
 libcst==0.3.23
 libfastjson==0.99.9
 libffi==3.4.2
+libgudev==237
 libiconv==0
 libiconv==1.15
 libidn2==2.3.3
@@ -538,8 +558,10 @@ libidn==1.41
 libintl==0
 libintl==0.21
 libjpeg-turbo==2.1.3
+liblinear==243
 libltdl==2.4.7
 libpaper==1.1.28
+libpcap==1.10.1
 libpcre==8.45
 libpng==1.6.37
 libpurecool==0.6.4
@@ -549,7 +571,9 @@ librouteros==3.2.0
 libsodium==1.0.18_p20220618
 libsoundtouch==0.8.0
 libtomcrypt==1.18.2
+libudev==232
 libunistring==0.9.10
+libusb1==3.0.0
 libusb==1
 libusb==1.0.26
 libxml2==2.10.2
@@ -577,7 +601,7 @@ mac-vendor-lookup==0.1.11
 magicseaweed==1.0.3
 markdown==3.4.1
 markupsafe==2.1.1
-marshmallow-dataclass==8.5.0
+marshmallow-dataclass==8.5.9
 marshmallow==3.16.0
 Mastodon-py==1.5.1
 matrix-client==0.4.0
@@ -586,7 +610,7 @@ maxcube-api==0.4.3
 mbddns==0.1.2
 mcstatus==6.0.0
 meater-python==0.0.8
-MechanicalSoup==1.1.0
+MechanicalSoup==1.2.0
 mediafile==0.9.0
 melnor-bluetooth==0.0.20
 messagebird==1.2.0
@@ -636,6 +660,7 @@ nextdns==1.1.1
 nibe==0.5.0
 niko-home-control==0.2.1
 niluclient==0.1.2
+nmap==7.93
 noaa-coops==0.1.8
 noiseprotocol==0.3.1
 notifications-android-tv==0.1.5
@@ -649,7 +674,7 @@ numpy==1.23.2
 numpy==1.23.3
 oasatelematics==0.3
 oauth2client==4.1.3
-oauthlib==3.2.1
+oauthlib==3.2.2
 objgraph==3.5.0
 oemthermostat==1.1.1
 olefile==0.46
@@ -667,6 +692,7 @@ openssl==1.1.1q
 openwebifpy==3.2.7
 openwrt-luci-rpc==1.1.11
 openwrt-ubus-rpc==0.0.2
+OPi-GPIO==0.5.2
 ordered-set==4.1.0
 orjson==3.7.11
 oru==0.1.11
@@ -702,8 +728,10 @@ pillow==9.2.0
 pip==22.0.4
 pizzapi==0.0.3
 pkce==1.0.3
+pkgconf==1.8.0
+pkgconfig==2
 platformdirs==2.5.2
-plugwise==0.21.3
+plugwise==0.21.4
 plumbum==1.7.2
 plumlightpad==0.0.11
 ply==3.11
@@ -734,6 +762,7 @@ pure-python-adb==0.3.0
 pushbullet-py==0.11.0
 pushover_complete==1.1.1
 pvo==0.2.2
+pwmled==1.6.10
 py-canary==0.5.3
 py-melissa-climate==2.1.4
 py-nextbusnext==0.1.5
@@ -741,6 +770,7 @@ py-nightscout==1.2.2
 py-schluter==0.1.7
 py-sucks==0.9.8
 py-synologydsm-api==1.0.8
+py-vapid==1.8.2
 py-zabbix==1.1.7
 py17track==2021.12.2
 pyads==3.2.2
@@ -762,6 +792,7 @@ pybalboa==0.13
 pybbox==0.0.5_alpha0
 pyblackbird==0.5
 pybluez==0.22
+pybluez==0.23
 pybotvac==0.0.23
 pybravia==0.2.3
 pycares==4.2.2
@@ -784,6 +815,7 @@ pycryptodome==3.15.0
 pycryptodomex==3.15.0
 pycsspeechtts==1.0.4
 pycups==1.9.73
+pycurl==7.45.1
 pydaikin==2.7.2
 pydanfossair==0.1.0
 pydantic==1.10.2
@@ -821,6 +853,7 @@ PyFronius==0.7.1
 pyfttt==0.3.2
 pygatt==4.0.5
 pygments==2.13.0
+pygobject==3.42.2
 pygraphviz==1.10
 pygtfs==0.1.7
 pygti==0.9.3
@@ -905,7 +938,7 @@ pyotgw==2.0.3
 pyotp==2.7.0
 pyoverkiz==1.5.5
 pyowm==3.2.0
-pyownet==0.10.0
+pyownet==0.10.0_p1
 pyparsing==3.0.9
 pypca==0.0.7
 pypck==0.7.15
@@ -985,6 +1018,7 @@ python-etherscan-api==0.0.3
 python-family-hub-local==0.0.2
 python-forecastio==1.4.0
 python-fullykiosk==0.0.11
+python-gammu==3.2.4
 python-gc100==1.0.3_alpha0
 python-gitlab==1.6.0
 python-homewizard-energy==1.1.0
@@ -1006,6 +1040,7 @@ python-openzwave-mqtt==1.4.0
 python-picnic-api==1.1.0
 python-qbittorrent==0.4.2
 python-ripple-api==0.0.3
+python-singleton==0.1.2
 python-slugify==4.0.1
 python-slugify==6.1.2
 python-smarttub==0.0.33
@@ -1064,7 +1099,6 @@ radiotherm==2.1.0
 raincloudy==0.0.7
 raspihats==2.2.3
 raspyrfm-client==1.2.8
-ratelimit==2.2.1
 re2==0.2022.06.01
 readlike==0.1.2
 readline==8.1_p2
@@ -1097,6 +1131,7 @@ rokuecp==0.17.0
 roombapy==1.6.5
 roonapi==0.1.1
 rova==0.3.0
+rpi-bad-power==0.1.0
 RPi-GPIO==0.7.1_alpha4
 rpi-rf==0.9.7
 rsa==4.9
@@ -1145,7 +1180,6 @@ slixmpp==1.8.2
 smart-meter-texas==0.4.7
 SmartHab==0.21
 smbus-cffi==0.5.1
-smbus2==0.4.1
 smhi-pkg==1.0.16
 snapcast==2.1.3
 sniffio==1.3.0
@@ -1214,7 +1248,6 @@ titlecase==2.3
 tmb==0.0.4
 todoist-python==8.0.0
 tololib==0.1.0_beta3
-toml==0.10.2
 tomli==2.0.1
 toonapi==0.2.1
 total-connect-client==2022.10
@@ -1250,6 +1283,9 @@ untangle==1.2.1
 uonet-request-signer-hebe==0.1.1
 upb-lib==0.4.12
 upcloud-api==2.0.0
+uplink-protobuf==0.1.0
+uplink==0.9.7
+uritemplate==4.1.1
 uri_template==1.2.0
 url-normalize==1.4.3
 urllib3==1.26.12
@@ -1264,6 +1300,7 @@ velbus-aio==2022.10.2
 venstarcolortouch==0.18
 vilfo-api-client==0.3.2
 vincenty==0.1.4
+VL53L1X2==0.1.5
 vol==0.1.1
 volkszaehler==0.3.2
 voluptuous-serialize==2.5.0
@@ -1323,7 +1360,7 @@ zbar==0.23.90
 zeep==4.1.0
 zengge==0.2
 zeroconf==0.39.1
-zha-quirks==0.0.82
+zha-quirks==0.0.83
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
 zigpy-deconz==0.19.0
