@@ -46,7 +46,7 @@ RDEPEND="
 	dev-python/click[${PYTHON_USEDEP}]
 	~dev-embedded/esphome-dashboard-20220508.0[${PYTHON_USEDEP}]
 	dev-python/aioesphomeapi[${PYTHON_USEDEP}]
-	dev-python/zeroconf[${PYTHON_USEDEP}]
+	dev-python/python-zeroconf[${PYTHON_USEDEP}]
 	~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]"
 
 BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
