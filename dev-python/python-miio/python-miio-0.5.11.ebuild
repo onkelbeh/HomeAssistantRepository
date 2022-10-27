@@ -22,7 +22,7 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/click-7.0[${PYTHON_USEDEP}]
 	dev-python/cryptography[${PYTHON_USEDEP}]
 	>=dev-python/construct-2.10.56[${PYTHON_USEDEP}]
-	dev-python/zeroconf[${PYTHON_USEDEP}]
+	dev-python/python-zeroconf[${PYTHON_USEDEP}]
 	dev-python/attrs[${PYTHON_USEDEP}]
 	dev-python/pytz[${PYTHON_USEDEP}]
 	dev-python/appdirs[${PYTHON_USEDEP}]

@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/requests-2.21.0-r1[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.21.3[${PYTHON_USEDEP}]
+	>=dev-python/python-zeroconf-0.21.3[${PYTHON_USEDEP}]
 	>=dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]

@@ -21,7 +21,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/protobuf-python-3.20[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.38.0[${PYTHON_USEDEP}]"
+	>=dev-python/python-zeroconf-0.38.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
