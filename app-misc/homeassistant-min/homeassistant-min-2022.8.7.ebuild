@@ -109,7 +109,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-serialize-2.5.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.7.2[${PYTHON_USEDEP}]
-	~dev-python/zeroconf-0.38.7[${PYTHON_USEDEP}]"
+	~dev-python/python-zeroconf-0.38.7[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -213,7 +213,7 @@ RDEPEND="${RDEPEND}
 	workday? ( ~dev-python/holidays-0.14.2[${PYTHON_USEDEP}] )
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.4[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/zeroconf-0.38.7[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/python-zeroconf-0.38.7[${PYTHON_USEDEP}] )
 	zha? ( ~dev-python/bellows-0.33.1[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.78[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.18.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.50.2[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.15.0[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.9.2[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.8.2[${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/zwave-js-server-python-0.39.0[${PYTHON_USEDEP}] )"
 
