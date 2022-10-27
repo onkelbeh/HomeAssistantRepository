@@ -29,14 +29,9 @@ BDEPEND="
 	dev-python/pip[${PYTHON_USEDEP}]
 	dev-python/wheel[${PYTHON_USEDEP}]
 	test? (
-		dev-python/nose[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/unittest[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	nosetests --verbose || die
-	py.test -v -v || die
-}
 
 # reedsolo>=1.5.3,<=1.5.4
 src_prepare() {
@@ -44,4 +39,4 @@ src_prepare() {
 	eapply_user
 }
 
-distutils_enable_tests pytest
+distutils_enable_tests unittest
