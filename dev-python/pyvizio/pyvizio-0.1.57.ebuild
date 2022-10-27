@@ -25,7 +25,7 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/jsonpickle[${PYTHON_USEDEP}]
 	>=dev-python/tabulate-0.8.6[${PYTHON_USEDEP}]
 	dev-python/xmltodict[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.24.4[${PYTHON_USEDEP}]"
+	>=dev-python/python-zeroconf-0.24.4[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

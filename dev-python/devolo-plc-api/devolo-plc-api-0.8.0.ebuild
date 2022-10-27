@@ -23,7 +23,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/httpx-0.18[${PYTHON_USEDEP}]
 	dev-python/protobuf-python[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.32.0[${PYTHON_USEDEP}]"
+	>=dev-python/python-zeroconf-0.32.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

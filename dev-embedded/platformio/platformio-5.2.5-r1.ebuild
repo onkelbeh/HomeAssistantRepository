@@ -36,7 +36,7 @@ RDEPEND=">=dev-python/aiofiles-0.8.0[${PYTHON_USEDEP}]
 	~dev-python/starlette-0.18.0[${PYTHON_USEDEP}]
 	~dev-python/uvicorn-0.17.6[${PYTHON_USEDEP}]
 	dev-python/wsproto[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.38[${PYTHON_USEDEP}]
+	>=dev-python/python-zeroconf-0.38[${PYTHON_USEDEP}]
 	virtual/udev"
 DEPEND="virtual/udev"
 BDEPEND="test? ( dev-python/jsondiff[${PYTHON_USEDEP}] )"

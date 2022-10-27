@@ -23,7 +23,7 @@ RDEPEND="!dev-python/HAP-python
 	dev-python/cryptography[${PYTHON_USEDEP}]
 	dev-python/chacha20poly1305-reuseable[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.7.2[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.36.2[${PYTHON_USEDEP}]
+	>=dev-python/python-zeroconf-0.36.2[${PYTHON_USEDEP}]
 	dev-python/h11[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]

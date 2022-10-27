@@ -30,7 +30,7 @@ RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-3.19.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.23.0[${PYTHON_USEDEP}]
 	>=dev-python/srptools-0.2.0[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.38.1[${PYTHON_USEDEP}]"
+	>=dev-python/python-zeroconf-0.38.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
