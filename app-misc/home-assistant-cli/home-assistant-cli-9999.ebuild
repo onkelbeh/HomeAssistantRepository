@@ -39,7 +39,6 @@ RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/nose[${PYTHON_USEDEP}]
 		>=dev-python/codecov-2.0.15[${PYTHON_USEDEP}]
 		>=dev-python/coveralls-1.2.0[${PYTHON_USEDEP}]
 		>=dev-python/flake8-docstrings-1.3.0[${PYTHON_USEDEP}]
@@ -60,11 +59,6 @@ BDEPEND="
 src_prepare() {
 	sed -i -e "s/'regex>=2022.9'/'regex'/" setup.py || die "regex version helper failed!"
 	eapply_user
-}
-
-python_test() {
-	nosetests --verbose || die
-	py.test -v -v || die
 }
 
 distutils_enable_tests pytest

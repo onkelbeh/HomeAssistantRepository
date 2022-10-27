@@ -39,7 +39,6 @@ RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/nose[${PYTHON_USEDEP}]
 		>=dev-python/codecov-2.0.15[${PYTHON_USEDEP}]
 		>=dev-python/coveralls-1.2.0[${PYTHON_USEDEP}]
 		>=dev-python/flake8-docstrings-1.3.0[${PYTHON_USEDEP}]
@@ -62,9 +61,4 @@ src_prepare() {
 	sed -i -e "s/'click>=8,<9'/'click'/" setup.py || die "click version helper failed!"
 	sed -i -e "s/'dateparser>=0.7.1,<0.8'/'dateparser>=0.7.1'/" setup.py || die "click version helper failed!"
 	eapply_user
-}
-
-python_test() {
-	nosetests --verbose || die
-	py.test -v -v || die
 }
