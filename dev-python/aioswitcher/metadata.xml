@@ -8,7 +8,7 @@
   <upstream>
     <remote-id type="pypi">aioswitcher</remote-id>
     <maintainer status="unknown">
-      <email>tomer.figenblat@gmail.com</email>
+      <email>tomer@tomfi.info</email>
       <name>Shay Levy</name>
     </maintainer>
   </upstream>
