@@ -47,5 +47,5 @@ net-analyzer/fail2ban ~amd64
 =dev-python/sqlalchemy-1.4.41 ~amd64
 =dev-python/watchdog-2.1.8 ~amd64
 =dev-python/websockets-10.2 ~amd64
-=dev-python/python-zeroconf-0.39.1 ~amd64
+=dev-python/python-zeroconf-0.39.3 ~amd64
 >=sci-geosciences/GeographicLib-1.52 ~amd64
