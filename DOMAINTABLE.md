@@ -14,6 +14,7 @@
 |airly|Uses the Airly web service as a source for air quality data|Y|Y|Y|0.101|
 |airnow|AirNow web service as a source for air quality data|N|N|Y|2021.2|
 |airthings|A python3 library to communicate with Aws|N|N|Y|2021.10.0b2|
+|airthings_ble|None|N|N|Y|2022.11.0b3|
 |airtouch4|control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller|N|N|Y|2021.9.0b1|
 |airvisual|Airvisual sensor platform queries the AirVisual cloud API for air quality data|Y|Y|Y|0.53|
 |airzone|This integration allows getting values from the local API of Airzone HVAC zoning|N|N|Y|2022.4.0b0|
