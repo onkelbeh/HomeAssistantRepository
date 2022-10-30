@@ -35,3 +35,5 @@ src_prepare() {
 	sed 's/setup_requires=\["setuptools-git-version"\]/setup_requires=\[\]/g' -i setup.py || die
 	eapply_user
 }
+
+distutils_enable_tests pytest
