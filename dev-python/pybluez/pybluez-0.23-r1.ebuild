@@ -27,6 +27,8 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
+PATCHES=( "${FILESDIR}/${P}_2to3.patch" )
+
 python_test() {
 	py.test -v -v || die
 }
