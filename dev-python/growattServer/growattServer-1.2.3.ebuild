@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -26,11 +26,4 @@ BDEPEND="
 
 DOCS="README.md"
 
-src_prepare() {
-	sed "s/tag = os.environ\['LATEST_TAG'\]/tag = '${PV}'/g" -i setup.py || die
-	eapply_user
-}
-
-python_test() {
-	py.test -v -v || die
-}
+distutils_enable_tests pytest
