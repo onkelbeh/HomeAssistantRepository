@@ -684,6 +684,7 @@
 |sms|allows having a local execution SMS notification via Gammu|N|N|Y|0.105|
 |snapcast|The snapcast platform allows you to control Snapcast from Home Assistant|N|N|Y|0.13|
 |snmp|Presence Detection, Sensor, Switch via SNMP|Y|Y|Y|0.57|
+|snooz|None|N|N|Y|2022.11.0b3|
 |socat|Set a flag to install socat and socat-zwave startscript|Y|Y|Y|None|
 |sochain|displays supported cryptocurrency wallet balances|N|N|Y|0.61|
 |solaredge|details from your SolarEdge solar power setup|N|N|Y|0.85|
