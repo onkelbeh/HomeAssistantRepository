@@ -9,11 +9,12 @@
 |ads|Beckhoff automation devices running TwinCAT|N|Y|Y|0.60|
 |advantage_air|API helper for Advantage Air's MyAir and e-zone API|N|N|Y|0.117|
 |aemet| AEMET OpenData meteorological data|N|N|Y|2021.3|
-|aftership|The aftership platform allows one to track deliveries by AfterShip|Y|Y|Y|0.85|
+|aftership|The aftership platform allows one to track deliveries by AfterShip|N|Y|Y|0.85|
 |agent_dvr|Agent DVR is a free* software DVR solution|N|Y|Y|0.110|
 |airly|Uses the Airly web service as a source for air quality data|Y|Y|Y|0.101|
 |airnow|AirNow web service as a source for air quality data|N|N|Y|2021.2|
 |airthings|A python3 library to communicate with Aws|N|N|Y|2021.10.0b2|
+|airthings_ble|None|N|N|Y|2022.11.0b3|
 |airtouch4|control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller|N|N|Y|2021.9.0b1|
 |airvisual|Airvisual sensor platform queries the AirVisual cloud API for air quality data|Y|Y|Y|0.53|
 |airzone|This integration allows getting values from the local API of Airzone HVAC zoning|N|N|Y|2022.4.0b0|
@@ -526,10 +527,11 @@
 |opensensemap|query the open data API of openSenseMap.org air quality sensor station|N|Y|Y|0.85|
 |opentherm_gw|control the OpenTherm Gateway from Home Assistant|N|N|Y|0.81|
 |openuv|The openuv integration displays UV and Ozone data from openuv.io|N|N|Y|0.76|
-|openweathermap|uses OpenWeatherMap as a source for current meteorological data|Y|Y|Y|0.32|
+|openweathermap|uses OpenWeatherMap as a source for current meteorological data|N|Y|Y|0.32|
 |open_meteo|integrates the free weather forecast from Open-Meteo|N|N|Y|2022.2.0b1|
 |opnsense|Presence Detection with data from OPNsense  firewall|N|Y|Y|0.105|
 |opple|allows you to control the state of your Opple smart light|N|N|Y|0.80|
+|oralb|None|N|N|Y|2022.11.0b3|
 |orangepi_gpio|The orangepi_gpio integration is the base for all related GPIO platforms|N|N|Y|0.93|
 |oru|fetches your current energy usage from your ORU smart meter|N|N|Y|0.101|
 |orvibo|allows you to toggle your (dangerous) Orvibo S20 Wifi Smart Sockets|N|N|Y|0.8|
@@ -683,6 +685,7 @@
 |sms|allows having a local execution SMS notification via Gammu|N|N|Y|0.105|
 |snapcast|The snapcast platform allows you to control Snapcast from Home Assistant|N|N|Y|0.13|
 |snmp|Presence Detection, Sensor, Switch via SNMP|Y|Y|Y|0.57|
+|snooz|None|N|N|Y|2022.11.0b3|
 |socat|Set a flag to install socat and socat-zwave startscript|Y|Y|Y|None|
 |sochain|displays supported cryptocurrency wallet balances|N|N|Y|0.61|
 |solaredge|details from your SolarEdge solar power setup|N|N|Y|0.85|

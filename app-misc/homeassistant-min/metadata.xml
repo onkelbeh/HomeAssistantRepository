@@ -15,7 +15,6 @@
   </upstream>
   <use>
     <flag name="accuweather">Uses the AccuWeather web service as a source for weather data</flag>
-    <flag name="aftership">The aftership platform allows one to track deliveries by AfterShip</flag>
     <flag name="airly">Uses the Airly web service as a source for air quality data</flag>
     <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
     <flag name="alpha_vantage">The alpha_vantage sensor platform uses Alpha Vantage to monitor the stock market</flag>
@@ -63,7 +62,6 @@
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
     <flag name="octoprint">The main integration to integrate OctoPrint sensors</flag>
     <flag name="onvif">allows you to use an ONVIF Profile S conformant device</flag>
-    <flag name="openweathermap">uses OpenWeatherMap as a source for current meteorological data</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ping">use the great ICMPLib for Presence Detection and as a binary Sensor</flag>
