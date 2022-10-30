@@ -25,10 +25,10 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
+		dev-python/aioresponses[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
-		dev-python/aioresponses[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
