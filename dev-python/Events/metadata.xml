@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">Events</remote-id>
+    <maintainer status="unknown">
+      <email>nicola@nicolaiarocci.com</email>
+      <name>Nicola Iarocci</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
