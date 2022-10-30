@@ -7,32 +7,35 @@ PYTHON_COMPAT=( python3_{8..11} )
 
 CARGO_OPTIONAL=1
 CRATES="
-	ahash-0.7.6
+	ahash-0.8.0
 	arrayvec-0.7.2
 	associative-cache-1.0.1
 	autocfg-1.1.0
 	beef-0.5.2
 	bytecount-0.6.3
+	castaway-0.2.2
 	cc-1.0.73
 	cfg-if-1.0.0
-	chrono-0.4.19
+	chrono-0.4.22
+	compact_str-0.6.1
 	encoding_rs-0.8.31
 	getrandom-0.2.7
 	inlinable_string-0.1.15
-	itoa-1.0.2
-	libc-0.2.126
+	itoa-1.0.4
+	libc-0.2.136
 	libm-0.1.4
 	num-integer-0.1.45
 	num-traits-0.2.15
-	once_cell-1.12.0
+	once_cell-1.15.0
 	packed_simd_2-0.3.8
-	pyo3-build-config-0.16.5
-	pyo3-ffi-0.16.5
-	ryu-1.0.10
-	serde-1.0.137
-	serde_json-1.0.81
+	pyo3-build-config-0.17.2
+	pyo3-ffi-0.17.2
+	rustversion-1.0.9
+	ryu-1.0.11
+	serde-1.0.147
+	serde_json-1.0.87
 	simdutf8-0.1.4
-	smallvec-1.8.1
+	smallvec-1.10.0
 	target-lexicon-0.12.4
 	version_check-0.9.4
 	wasi-0.11.0+wasi-snapshot-preview1
@@ -54,6 +57,8 @@ KEYWORDS="amd64 arm arm64 x86"
 SLOT="0"
 IUSE="debug"
 
+RDEPEND="dev-python/flask[${PYTHON_USEDEP}]
+	dev-python/httpx[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-util/maturin[${PYTHON_USEDEP}]
 	test? (
@@ -62,7 +67,7 @@ BDEPEND="
 		dev-python/pendulum[${PYTHON_USEDEP}]
 		dev-python/psutil[${PYTHON_USEDEP}]
 		dev-python/pytz[${PYTHON_USEDEP}]
-		$(python_gen_cond_dep 'dev-python/numpy[${PYTHON_USEDEP}]' python3_{8..10})
+		$(python_gen_cond_dep 'dev-python/numpy[${PYTHON_USEDEP}]' python3_{8..11})
 		$(python_gen_cond_dep '>=dev-python/xxhash-1.4.3[${PYTHON_USEDEP}]' python3_8)
 	)"
 
