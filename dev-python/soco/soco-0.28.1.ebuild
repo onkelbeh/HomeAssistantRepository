@@ -22,6 +22,7 @@ DOCS="README.rst"
 RDEPEND="dev-python/appdirs[${PYTHON_USEDEP}]
 	dev-python/ifaddr[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/lxml[${PYTHON_USEDEP}]
 	dev-python/xmltodict[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
@@ -34,3 +35,5 @@ BDEPEND="
 python_test() {
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
