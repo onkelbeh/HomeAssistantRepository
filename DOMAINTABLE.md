@@ -530,6 +530,7 @@
 |open_meteo|integrates the free weather forecast from Open-Meteo|N|N|Y|2022.2.0b1|
 |opnsense|Presence Detection with data from OPNsense  firewall|N|Y|Y|0.105|
 |opple|allows you to control the state of your Opple smart light|N|N|Y|0.80|
+|oralb|None|N|N|Y|2022.11.0b3|
 |orangepi_gpio|The orangepi_gpio integration is the base for all related GPIO platforms|N|N|Y|0.93|
 |oru|fetches your current energy usage from your ORU smart meter|N|N|Y|0.101|
 |orvibo|allows you to toggle your (dangerous) Orvibo S20 Wifi Smart Sockets|N|N|Y|0.8|
