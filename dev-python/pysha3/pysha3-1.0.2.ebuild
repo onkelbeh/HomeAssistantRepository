@@ -11,7 +11,7 @@ DESCRIPTION="SHA-3 (Keccak) for Python 2.7 - 3.5"
 HOMEPAGE="https://github.com/tiran/pysha3 https://pypi.org/project/pysha3/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="PSFL"
+LICENSE="PSF-2.4"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
