@@ -10,9 +10,7 @@ inherit distutils-r1
 
 DESCRIPTION="Asynchronous Python client for BSBLAN"
 HOMEPAGE="https://github.com/liudger/python-bsblan https://pypi.org/project/python-bsblan/"
-MY_PN=${PN/-/_}
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
