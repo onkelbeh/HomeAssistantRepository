@@ -155,10 +155,10 @@ Sure, you can submit **issues** and **pull requests** on both sites, but I prefe
 
 ## Python versions
 ### Python 3.10
-My production box currently runs Python 3.10.5 (21.7.2022). Most modules are OK with 3.10 support.
+My production box currently runs Python 3.10.8 (31.10.2022). All modules are OK with 3.10 support.
 
 ### Python 3.11
-3.11 support will be added if they are touched, if you find your favorite components missing, just open a ticket and drop me a list. During compile tests, I have all available tests turned on.
+3.11 support will be added if possible whenever a module is touched, most already work, some external deps are still mising.
 
 ### Python <= 3.9 Support
 Should still work, but since Python 3.8 support is dropped, I will do no further tests on it, you should upgrade now.
@@ -167,10 +167,11 @@ Python 3.9 support will also be dropped soon.
 ## Installation on Python 3.10
 
 ### Let's get started:
-First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure **not to interfere** with your main Gentoo repo, which is at `/usr/portage/gentoo` in my boxes, because I _always_ have more than one repo active by default. Others use `/usr/local/portage/homeassistant`
+First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your main Gentoo repo, which recently moved to `/var/db/repos/gentoo` in my boxes. See [Migrating to new repository data locations](https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Migrating_to_new_repository_data_locations) for additional information.
+
 ```
 [HomeAssistantRepository]
-location = /usr/portage/homeassistant
+location = /var/db/repos/homeassistant
 sync-type = git
 sync-uri = https://git.edevau.net/onkelbeh/HomeAssistantRepository.git
 auto-sync = yes
