@@ -17,7 +17,7 @@ if [[ ${PV} == *9999* ]]; then
 else
 	MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
-	SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
+	SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
 	S="${WORKDIR}/core-${MY_PV}"
 fi
 
@@ -27,7 +27,7 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86"
-IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus darksky dlna_dmr dlna_dms +dwd_weather_warnings enigma2 esphome ffmpeg file forecast_solar fronius github +homekit homekit_controller http hyperion influxdb knx kodi kraken +mariadb maxcube mikrotik +mobile_app modbus +mosquitto +mqtt myq mysensors -mysql +notify_events octoprint onvif +otp owntracks +ping +plex ps4 +python_script qnap qvr_pro radio_browser +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tomorrowio tplink upnp utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf zha +zwave_js"
+IUSE="accuweather airly airvisual alpha_vantage androidtv android_ip_webcam axis bluetooth bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus darksky dlna_dmr dlna_dms +dwd_weather_warnings enigma2 esphome ffmpeg file forecast_solar fronius github +homekit homekit_controller http hyperion influxdb knx kodi kraken +mariadb maxcube mikrotik +mobile_app modbus +mosquitto +mqtt myq mysensors mysql +notify_events octoprint onvif +otp owntracks +ping +plex ps4 +python_script qnap qvr_pro radio_browser +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tomorrowio tplink upnp utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf zha +zwave_js"
 RESTRICT="!test? ( test )"
 
 # external deps
@@ -73,13 +73,12 @@ RDEPEND="${RDEPEND}
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.56.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.6.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20221027.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20221031.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.15.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
 	>=dev-python/hyperframe-5.2.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
-	!~dev-python/iso4217-1.10.20220401[${PYTHON_USEDEP}]
 	~dev-python/jinja-3.1.2[${PYTHON_USEDEP}]
 	~dev-python/libcst-0.3.23[${PYTHON_USEDEP}]
 	~dev-python/lru-dict-1.1.8[${PYTHON_USEDEP}]
@@ -91,9 +90,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pillow-9.2.0[${PYTHON_USEDEP}]
 	<dev-python/pip-22.1.0
 	~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}]
-	!~dev-python/pubnub-6.4.0[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
-	!~dev-python/pydantic-1.9.1[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-2.5.0[${PYTHON_USEDEP}]
 	~dev-python/pynacl-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
@@ -114,7 +111,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/voluptuous-serialize-2.5.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]
 	~dev-python/yarl-1.8.1[${PYTHON_USEDEP}]
-	~dev-python/python-zeroconf-0.39.3[${PYTHON_USEDEP}]"
+	~dev-python/python-zeroconf-0.39.4[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 # some moved to suggested USE Flags
@@ -153,14 +150,14 @@ RDEPEND="${RDEPEND}
 	dlna_dms? ( ~dev-python/async-upnp-client-0.32.1[${PYTHON_USEDEP}] )
 	dwd_weather_warnings? ( ~dev-python/dwdwfsapi-1.0.5[${PYTHON_USEDEP}] )
 	enigma2? ( ~dev-python/openwebifpy-3.2.7[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-11.4.1[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-11.4.2[${PYTHON_USEDEP}] )
 	ffmpeg? ( ~dev-python/ha-ffmpeg-3.0.2[${PYTHON_USEDEP}] )
 	file? ( ~dev-python/file-read-backwards-2.0.0[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.2.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/aiogithubapi-22.10.1[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/ha-HAP-python-4.5.2[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-2.2.9[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-2.2.10[${PYTHON_USEDEP}] )
 	http? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] )
 	hyperion? ( ~dev-python/hyperion-py-0.7.5[${PYTHON_USEDEP}] )
 	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
@@ -219,7 +216,7 @@ RDEPEND="${RDEPEND}
 	workday? ( ~dev-python/holidays-0.16[${PYTHON_USEDEP}] )
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.4[${PYTHON_USEDEP}] )
-	zeroconf? ( ~dev-python/python-zeroconf-0.39.3[${PYTHON_USEDEP}] )
+	zeroconf? ( ~dev-python/python-zeroconf-0.39.4[${PYTHON_USEDEP}] )
 	zha? ( ~dev-python/bellows-0.34.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.84[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.5[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.2[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.2[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.1[${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/zwave-js-server-python-0.43.0[${PYTHON_USEDEP}] )"
 

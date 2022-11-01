@@ -167,7 +167,13 @@ Python 3.9 support will also be dropped soon.
 ## Installation on Python 3.10
 
 ### Let's get started:
-First add the Overlay to `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your main Gentoo repo, which recently moved to `/var/db/repos/gentoo` in my boxes. See [Migrating to new repository data locations](https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Migrating_to_new_repository_data_locations) for additional information.
+First add the Overlay:
+
+#### manual
+
+Create `/etc/portage/repos.conf/homeassistant.conf`, make sure not to interfere with your main Gentoo repo, which recently moved to `/var/db/repos/gentoo` in my boxes. See [Migrating to new repository data locations](https://wiki.gentoo.org/wiki/User:Sam/Portage_help/Migrating_to_new_repository_data_locations) for additional information.
+
+Example:
 
 ```
 [HomeAssistantRepository]
@@ -177,17 +183,35 @@ sync-uri = https://git.edevau.net/onkelbeh/HomeAssistantRepository.git
 auto-sync = yes
 sync-rsync-verify-metamanifest = no
 ```
-Sync it:
+
+#### Layman
+
+``` sh
+layman -a HomeAssistantRepository
+```
+
+#### eselect-repository
+
+``` sh
+eselect repository enable HomeAssistantRepository
+```
+
+### Installation:
+
+Sync the overlay:
+
 ```sh
 $ emerge --sync
 ```
+
 Make sure you have a proper locale setting. I use
 ```sh
 $ cat /etc/locale.gen
 de_DE ISO-8859-1
 de_DE@euro UTF-8
 ```
-If you change your locales, recompile glibc.
+
+If you change your locales, run `locale-gen`.
 It will make things easier if you take the example files from `/etc/portage/package.accept_keywords/99_homeassistant` and `/etc/portage/package.use/60_homeassistant` and copy it to your `/etc/portage`. The clean way is to let `portage` build your own.
 
 Check your `/etc/portage/make.conf` to freeze correct Python Targets:
@@ -204,7 +228,7 @@ $ emerge -tav app-misc/homeassistant
 $ rc-update add homeassistant
 ```
 
-It could be necessary to install some components by hand, there are too many components to mask all in USE Flags. If you use a component which you want to be added as a USE Flag, send a pull request, or just let me know.
+Done.
 
 ## Upgrading to Python 3.10 from a 3.9 system (same as it was from Python 3.6 to 3.7, and 3.7 to 3.8, and 3.8 to 3.9).
 
@@ -549,13 +573,13 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1518 Ebuilds in total, 1511 of them have in total 1519 (34 different) licenses assigned.
+There are 1521 Ebuilds in total, 1514 of them have in total 1522 (34 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|882|
-|Apache-2.0|310|
-|GPL-3|96|
+|MIT|883|
+|Apache-2.0|311|
+|GPL-3|97|
 |BSD|88|
 |LGPL-3|23|
 |GPL-2|19|
@@ -588,9 +612,9 @@ There are 1518 Ebuilds in total, 1511 of them have in total 1519 (34 different) 
 |CC0-1.0|1|
 |GPL-2+|1|
 
-(Last counted: 31/10/2022)
+(Last counted: 01/11/2022)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 31/10/2022
+Last updated: 01/11/2022
