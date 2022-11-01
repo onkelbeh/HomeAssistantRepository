@@ -37,7 +37,7 @@ RDEPEND="
 	~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/colorama-0.4.4[${PYTHON_USEDEP}]
-	server? ( ~www-servers/tornado-6.1[${PYTHON_USEDEP}] )
+	server? ( ~dev-python/tornado-6.1[${PYTHON_USEDEP}] )
 	~dev-python/tzlocal-4.2[${PYTHON_USEDEP}]
 	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
