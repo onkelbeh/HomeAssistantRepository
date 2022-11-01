@@ -4,7 +4,7 @@
 =dev-python/bottle-0.12.16 ~amd64
 =dev-python/colorama-0.3.9-r1 ~amd64
 =dev-python/lockfile-0.12.2-r1 ~amd64
-=www-servers/tornado-5.1.1 ~amd64
+=dev-python/tornado-5.1.1 ~amd64
 =dev-python/twisted-18.7.0 ~amd64
 =dev-python/automat-0.7.0 ~amd64
 =dev-python/constantly-15.1.0-r1 ~amd64

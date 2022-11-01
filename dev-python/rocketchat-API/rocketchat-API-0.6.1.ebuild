@@ -9,8 +9,8 @@ inherit distutils-r1
 
 DESCRIPTION="Python API wrapper for Rocket.Chat"
 HOMEPAGE="https://github.com/jadolg/rocketchat_API https://pypi.org/project/rocketchat-API/"
-MY_PN=${PN//-/_}
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+MY_PN=${PN/-/_}
+SRC_URI="https://github.com/jadolg/${MY_PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
