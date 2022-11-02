@@ -17,7 +17,7 @@ if [[ ${PV} == *9999* ]]; then
 else
 	MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
-	SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
+	SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
 	S="${WORKDIR}/core-${MY_PV}"
 fi
 
