@@ -39,14 +39,14 @@ RDEPEND="
 		~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
 		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 		~dev-python/colorama-0.4.5[${PYTHON_USEDEP}]
-		server? ( ~dev-python/tornado-6.2[${PYTHON_USEDEP}] )
+		server? ( ~dev-python/tornado-6.1[${PYTHON_USEDEP}] )
 		~dev-python/tzlocal-4.2[${PYTHON_USEDEP}]
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-		~dev-embedded/platformio-6.1.4[${PYTHON_SINGLE_USEDEP}]
+		~dev-embedded/platformio-6.0.2[${PYTHON_SINGLE_USEDEP}]
 		~dev-embedded/esptool-3.3.1[${PYTHON_USEDEP}]
 		~dev-python/click-8.1.3[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20221020.0[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20221007.0[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/python-zeroconf[${PYTHON_USEDEP}]
 		~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
