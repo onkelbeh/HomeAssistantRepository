@@ -79,7 +79,6 @@ RDEPEND="${RDEPEND}
 	~dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
 	>=dev-python/hyperframe-5.2.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
-	!~dev-python/iso4217-1.10.20220401[${PYTHON_USEDEP}]
 	~dev-python/jinja-3.1.2[${PYTHON_USEDEP}]
 	~dev-python/libcst-0.3.23[${PYTHON_USEDEP}]
 	~dev-python/lru-dict-1.1.8[${PYTHON_USEDEP}]
@@ -91,9 +90,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pillow-9.2.0[${PYTHON_USEDEP}]
 	<dev-python/pip-22.1.0
 	~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}]
-	!~dev-python/pubnub-6.4.0[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
-	!~dev-python/pydantic-1.9.1[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-2.4.0[${PYTHON_USEDEP}]
 	~dev-python/pynacl-1.5.0[${PYTHON_USEDEP}]
 	~dev-python/pyopenssl-22.0.0[${PYTHON_USEDEP}]
