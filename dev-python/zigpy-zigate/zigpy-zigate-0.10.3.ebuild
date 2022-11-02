@@ -25,6 +25,7 @@ RDEPEND=">=dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
+		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"

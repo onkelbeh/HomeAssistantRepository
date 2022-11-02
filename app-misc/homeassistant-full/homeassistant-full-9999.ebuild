@@ -58,7 +58,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/awesomeversion-22.9.0[${PYTHON_USEDEP}]
 	>=dev-python/backoff-2.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
-	~dev-python/bleak-retry-connector-2.8.1[${PYTHON_USEDEP}]
+	~dev-python/bleak-retry-connector-2.8.2[${PYTHON_USEDEP}]
 	~dev-python/bleak-0.19.1[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-adapters-0.6.0[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}]
@@ -66,14 +66,14 @@ RDEPEND="${RDEPEND}
 	>=dev-python/certifi-2021.5.30[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.2.0[${PYTHON_USEDEP}]
 	~dev-python/cryptography-38.0.1[${PYTHON_USEDEP}]
-	~dev-python/dbus-fast-1.60.0[${PYTHON_USEDEP}]
+	~dev-python/dbus-fast-1.61.1[${PYTHON_USEDEP}]
 	~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-status-1.48.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.48.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.56.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.6.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20221031.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20221102.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.15.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
@@ -207,7 +207,7 @@ RDEPEND="${RDEPEND}
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
 	bluemaestro? ( ~dev-python/bluemaestro-ble-0.2.0[${PYTHON_USEDEP}] )
 	bluesound? ( ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-0.19.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.8.1[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.6.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.60.0[${PYTHON_USEDEP}] )
+	bluetooth? ( ~dev-python/bleak-0.19.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.8.2[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.6.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.61.1[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	bluetooth_tracker? ( ~dev-python/bt-proximity-0.2.1[${PYTHON_USEDEP}] ~dev-python/pybluez-0.22[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[${PYTHON_USEDEP}] )
@@ -431,7 +431,7 @@ RDEPEND="${RDEPEND}
 	hive? ( ~dev-python/pyhiveapi-0.5.14[${PYTHON_USEDEP}] )
 	hlk_sw16? ( ~dev-python/hlk-sw16-0.0.9[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/ha-HAP-python-4.5.2[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-2.2.11[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-2.2.13[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.77[${PYTHON_USEDEP}] )
 	homematicip_cloud? ( ~dev-python/homematicip-1.0.7[${PYTHON_USEDEP}] )
 	homewizard? ( ~dev-python/python-homewizard-energy-1.1.0[${PYTHON_USEDEP}] )
@@ -1002,7 +1002,7 @@ RDEPEND="${RDEPEND}
 	zeroconf? ( ~dev-python/python-zeroconf-0.39.4[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
 	zestimate? ( ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.34.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.84[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.5[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.2[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.2[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.1[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.34.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.84[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.5[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.2[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.1[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	ziggo_mediabox_xl? ( ~dev-python/ziggo-mediabox-xl-1.1.0[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.5.2[${PYTHON_USEDEP}] )
