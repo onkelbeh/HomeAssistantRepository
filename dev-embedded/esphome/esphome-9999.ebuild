@@ -16,7 +16,7 @@ if [[ ${PV} == *9999* ]]; then
 else
 	MY_P=${P/_beta/b}
 	MY_PV=${PV/_beta/b}
-	SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.gh.tar.gz"
 	S="${WORKDIR}/${MY_P}/"
 KEYWORDS="amd64 arm arm64 x86"
 fi
