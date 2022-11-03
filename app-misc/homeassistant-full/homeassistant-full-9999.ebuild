@@ -73,7 +73,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.56.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.6.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20221102.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20221102.1[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.15.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
@@ -133,7 +133,7 @@ RDEPEND="${RDEPEND}
 	accuweather? ( ~dev-python/accuweather-0.4.0[${PYTHON_USEDEP}] )
 	acer_projector? ( ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] )
 	acmeda? ( ~dev-python/aiopulse-0.4.3[${PYTHON_USEDEP}] )
-	adax? ( ~dev-python/adax-0.2.0[${PYTHON_USEDEP}] ~dev-python/Adax-local-0.1.4[${PYTHON_USEDEP}] )
+	adax? ( ~dev-python/adax-0.2.0[${PYTHON_USEDEP}] ~dev-python/Adax-local-0.1.5[${PYTHON_USEDEP}] )
 	adguard? ( ~dev-python/adguardhome-0.5.1[${PYTHON_USEDEP}] )
 	ads? ( ~dev-python/pyads-3.2.2[${PYTHON_USEDEP}] )
 	advantage_air? ( ~dev-python/advantage-air-0.4.1[${PYTHON_USEDEP}] )
@@ -400,7 +400,7 @@ RDEPEND="${RDEPEND}
 	goalzero? ( ~dev-python/goalzero-0.2.1[${PYTHON_USEDEP}] )
 	gogogate2? ( ~dev-python/ismartgate-4.0.4[${PYTHON_USEDEP}] )
 	goodwe? ( ~dev-python/goodwe-0.2.18[${PYTHON_USEDEP}] )
-	google? ( ~dev-python/gcal-sync-2.2.2[${PYTHON_USEDEP}] ~dev-python/oauth2client-4.1.3[${PYTHON_USEDEP}] )
+	google? ( ~dev-python/gcal-sync-2.2.3[${PYTHON_USEDEP}] ~dev-python/oauth2client-4.1.3[${PYTHON_USEDEP}] )
 	google_cloud? ( ~dev-python/google-cloud-texttospeech-2.12.3[${PYTHON_USEDEP}] )
 	google_maps? ( ~dev-python/locationsharinglib-4.1.5[${PYTHON_USEDEP}] )
 	google_pubsub? ( ~dev-python/google-cloud-pubsub-2.13.10[${PYTHON_USEDEP}] )

@@ -13,7 +13,7 @@ Adafruit-GPIO==1.0.3
 Adafruit-PureIO==1.1.9
 Adafruit-SHT31==1.0.2
 Adafruit_BBIO==1.1.1
-Adax-local==0.1.4
+Adax-local==0.1.5
 adax==0.2.0
 adb-shell==0.4.3
 adext==0.4.2
@@ -370,7 +370,7 @@ gammu==1.41.0
 garages-amsterdam==3.0.0
 garminconnect-ha==0.1.6
 gawk==5.1.1
-gcal-sync==2.2.2
+gcal-sync==2.2.3
 gcloud==0.18.3
 gd==2.3.3
 gdb==11.2
@@ -454,7 +454,7 @@ hole==0.7.0
 holidays==0.16
 home-assistant-bluetooth==1.6.0
 home-assistant-cli==9999
-home-assistant-frontend==20221102.0
+home-assistant-frontend==20221102.1
 homeassistant
 homeconnect==0.7.2
 homematicip==1.0.7
@@ -1264,7 +1264,7 @@ ttls==1.4.3
 tuya-iot-py-sdk==0.6.6
 twentemilieu==0.6.1
 twilio==6.32.0
-twisted==22.8.0
+twisted==22.10.0
 twitchAPI==2.5.2
 TwitterAPI==2.7.12
 typer==0.6.1
