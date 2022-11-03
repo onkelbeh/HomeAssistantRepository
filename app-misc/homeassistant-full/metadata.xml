@@ -451,12 +451,10 @@
     <flag name="mfi">sensor platform to allow you to monitor mFi mPort interface and sensors</flag>
     <flag name="mhz19">small non-dispersive infrared sensor that can measure CO2 level</flag>
     <flag name="microsoft">text-to-speech platform uses the TTS engine of the Microsoft Speech Service</flag>
-    <flag name="miflora">miflora sensor platform allows one to monitor plant soil and air conditions</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
     <flag name="mill">A python3 library to communicate with Mill</flag>
     <flag name="minecraft_server">retrieve information from a Minecraft server</flag>
     <flag name="minio">This integration adds interaction with Minio</flag>
-    <flag name="mitemp_bt">mitemp_bt sensor platform allows one to monitor room temperature and humidity</flag>
     <flag name="moat">Integrates Moat devices into Home Assistant</flag>
     <flag name="mobile_app">allows Home Assistant mobile apps to easily integrate with Home Assistant</flag>
     <flag name="mochad">main integration to integrate all Mochad X10 platforms</flag>

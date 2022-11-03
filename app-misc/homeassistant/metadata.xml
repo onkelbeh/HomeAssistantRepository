@@ -179,9 +179,7 @@
     <flag name="media_extractor">Gets a stream URL and sends it to a media player entity</flag>
     <flag name="meteo_france">uses the meteorological data from Meteo-France</flag>
     <flag name="mfi">sensor platform to allow you to monitor mFi mPort interface and sensors</flag>
-    <flag name="miflora">miflora sensor platform allows one to monitor plant soil and air conditions</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
-    <flag name="mitemp_bt">mitemp_bt sensor platform allows one to monitor room temperature and humidity</flag>
     <flag name="mobile_app">allows Home Assistant mobile apps to easily integrate with Home Assistant</flag>
     <flag name="modbus">sensors and switches controlled over MODBUS serial, TCP, and UDP connections</flag>
     <flag name="mosquitto">Set a runtime dependency for Mosquitto MQTT broker</flag>
