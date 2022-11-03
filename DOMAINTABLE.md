@@ -435,12 +435,10 @@
 |mfi|sensor platform to allow you to monitor mFi mPort interface and sensors|N|Y|Y|0.13|
 |mhz19|small non-dispersive infrared sensor that can measure CO2 level|N|N|Y|0.27|
 |microsoft|text-to-speech platform uses the TTS engine of the Microsoft Speech Service|N|N|Y|0.57|
-|miflora|miflora sensor platform allows one to monitor plant soil and air conditions|N|Y|Y|0.29|
 |mikrotik|add support for MikroTik RouterOS API|Y|Y|Y|0.44|
 |mill|A python3 library to communicate with Mill|N|N|Y|0.81|
 |minecraft_server|retrieve information from a Minecraft server|N|N|Y|0.106|
 |minio|This integration adds interaction with Minio|N|N|Y|0.98|
-|mitemp_bt|mitemp_bt sensor platform allows one to monitor room temperature and humidity|N|Y|Y|0.69|
 |moat|Integrates Moat devices into Home Assistant|N|N|Y|2022.8.1|
 |mobile_app|allows Home Assistant mobile apps to easily integrate with Home Assistant|Y|Y|Y|0.89|
 |mochad|main integration to integrate all Mochad X10 platforms|N|N|Y|0.32|
