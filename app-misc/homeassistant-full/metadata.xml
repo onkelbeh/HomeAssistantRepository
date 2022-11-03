@@ -28,7 +28,7 @@
     <flag name="airly">Uses the Airly web service as a source for air quality data</flag>
     <flag name="airnow">AirNow web service as a source for air quality data</flag>
     <flag name="airthings">A python3 library to communicate with Aws</flag>
-    <flag name="airthings_ble"/>
+    <flag name="airthings_ble">Integrates Airthings BLE sensors into Home Assistant</flag>
     <flag name="airtouch4">control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller</flag>
     <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
     <flag name="airzone">This integration allows getting values from the local API of Airzone HVAC zoning</flag>
@@ -547,7 +547,7 @@
     <flag name="open_meteo">integrates the free weather forecast from Open-Meteo</flag>
     <flag name="opnsense">Presence Detection with data from OPNsense  firewall</flag>
     <flag name="opple">allows you to control the state of your Opple smart light</flag>
-    <flag name="oralb"/>
+    <flag name="oralb">Integrates Oral-B devices into Home Assistant</flag>
     <flag name="orangepi_gpio">The orangepi_gpio integration is the base for all related GPIO platforms</flag>
     <flag name="oru">fetches your current energy usage from your ORU smart meter</flag>
     <flag name="orvibo">allows you to toggle your (dangerous) Orvibo S20 Wifi Smart Sockets</flag>
@@ -701,7 +701,7 @@
     <flag name="sms">allows having a local execution SMS notification via Gammu</flag>
     <flag name="snapcast">The snapcast platform allows you to control Snapcast from Home Assistant</flag>
     <flag name="snmp">Presence Detection, Sensor, Switch via SNMP</flag>
-    <flag name="snooz"/>
+    <flag name="snooz">Integrates SNOOZ devices into Home Assistant</flag>
     <flag name="socat">Set a flag to install socat and socat-zwave startscript</flag>
     <flag name="sochain">displays supported cryptocurrency wallet balances</flag>
     <flag name="solaredge">details from your SolarEdge solar power setup</flag>
