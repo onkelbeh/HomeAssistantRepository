@@ -7,7 +7,7 @@ on:
         description: 'Home Assistant Frontend Version'
         required: true
         default: 'latest'
-    
+
 env:
   PYTHON_VERSION: 3.8
   NODE_VERSION: 14
@@ -23,10 +23,10 @@ jobs:
       run: |
         if [ "${{ github.event.inputs.frontend_version }}" == "latest"  ];then
           wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name'
-          echo "::set-output name=version::$(wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name')"
+          echo "{version}=$(wget -qO - https://api.github.com/repos/home-assistant/frontend/releases/latest|jq -r '.tag_name') >> $GITHUB_OUTPUT"
         else
           echo "${{ github.event.inputs.frontend_version }}"
-          echo "::set-output name=version::${{ github.event.inputs.frontend_version }}"
+          echo "{version}=${{ github.event.inputs.frontend_version }} >> $GITHUB_OUTPUT"
         fi
 
     - name: Checkout frontend repository
@@ -85,5 +85,3 @@ jobs:
         title: new HA Frontend ${{ steps.get-version.outputs.version }}
         body: |
           SDIST uploaded to nextcloud
-
-
