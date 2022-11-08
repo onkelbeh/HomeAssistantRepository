@@ -4,14 +4,15 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
-DESCRIPTION="API For huawei LAN/WAN LTE Modems"
-HOMEPAGE="https://github.com/Salamek/huawei-lte-api https://pypi.org/project/huawei-lte-api/"
+DESCRIPTION="Python package for controlling a Litter-Robot Connect self-cleaning litter box."
+HOMEPAGE="https://github.com/natekspencer/pylitterbot https://pypi.org/project/pylitterbot/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="LGPL-3"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -19,14 +20,17 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-		 dev-python/pycryptodomex[${PYTHON_USEDEP}]
-		 dev-python/xmltodict[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
+	>=dev-python/deepdiff-6.2.1[${PYTHON_USEDEP}]
+	>=dev-python/pyjwt-2.4.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-freezegun[${PYTHON_USEDEP}]
+		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

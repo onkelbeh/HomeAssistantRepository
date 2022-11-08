@@ -4,14 +4,15 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="Library implementing Zigpy quirks for ZHA in Home Assistant"
-HOMEPAGE="https://github.com/dmulcahey/zha-device-handlers https://pypi.org/project/zha-quirks/"
+DESCRIPTION="Interface Library for Venstar ColorTouch Thermostat API v5"
+HOMEPAGE="https://github.com/hpeyerl/venstar_colortouch https://pypi.org/project/venstarcolortouch/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -19,7 +20,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/zigpy-0.51.1[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/requests-2.14.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
