@@ -31,7 +31,7 @@ RDEPEND="
 python_prepare_all() {
 	# make cryptodome-friendly
 	sed -i -e 's:pycryptodomex:pycryptodome:' setup.py || die
-	find -name '*.py' -exec \
+	find . -name '*.py' -exec \
 		sed -i -e 's:Cryptodome:Crypto:g' {} + || die
 
 	distutils-r1_python_prepare_all
