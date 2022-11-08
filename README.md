@@ -338,13 +338,13 @@ I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-
 ## My machines
 Currently I have three VM's running:
 ### Production
-Python 3.10.8
+Python 3.10.8_p2
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test
-Python 3.9.13 / 3.10.8
+Python 3.10.8_p2 / 3.11.0_p1
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test2
-Python 3.10.8 / 3.11.0
+Python 3.10.8_p2 / 3.11.0_p1
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 
 ## Hardware I use
