@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -18,16 +18,20 @@ if [[ "${PV}" == "9999" ]]; then
 	inherit git-r3
 else
 	SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
-	KEYWORDS="amd64"
+KEYWORDS="amd64 arm arm64 x86"
 fi
 
-DEPEND="net-dns/libidn"
+DEPEND="
+	net-dns/libidn
+"
 RDEPEND="
 	dev-python/aiodns[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/cryptography[${PYTHON_USEDEP}]
 	dev-python/defusedxml[${PYTHON_USEDEP}]
 	dev-python/pyasn1-modules[${PYTHON_USEDEP}]
 	dev-python/pyasn1[${PYTHON_USEDEP}]
-	${DEPEND}"
+	${DEPEND}
+"
 
 distutils_enable_tests unittest

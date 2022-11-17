@@ -50,7 +50,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/anyio-3.6.1[${PYTHON_USEDEP}]
 	~dev-python/astral-2.2[${PYTHON_USEDEP}]
-	~dev-python/async-upnp-client-0.32.1[${PYTHON_USEDEP}]
+	~dev-python/async-upnp-client-0.32.2[${PYTHON_USEDEP}]
 	~dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
 	~dev-python/atomicwrites-homeassistant-1.4.1[${PYTHON_USEDEP}]
 	~dev-python/attrs-21.2.0[${PYTHON_USEDEP}]
@@ -58,14 +58,14 @@ RDEPEND="${RDEPEND}
 	~dev-python/awesomeversion-22.9.0[${PYTHON_USEDEP}]
 	>=dev-python/backoff-2.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
-	~dev-python/bleak-retry-connector-2.8.2[${PYTHON_USEDEP}]
-	~dev-python/bleak-0.19.1[${PYTHON_USEDEP}]
-	~dev-python/bluetooth-adapters-0.6.0[${PYTHON_USEDEP}]
+	~dev-python/bleak-retry-connector-2.8.4[${PYTHON_USEDEP}]
+	~dev-python/bleak-0.19.2[${PYTHON_USEDEP}]
+	~dev-python/bluetooth-adapters-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}]
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2021.5.30[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.2.0[${PYTHON_USEDEP}]
-	~dev-python/cryptography-38.0.1[${PYTHON_USEDEP}]
+	~dev-python/cryptography-38.0.3[${PYTHON_USEDEP}]
 	~dev-python/dbus-fast-1.61.1[${PYTHON_USEDEP}]
 	~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-status-1.48.0[${PYTHON_USEDEP}]
@@ -73,7 +73,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/h11-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.56.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.6.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20221102.1[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20221108.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.15.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
@@ -104,7 +104,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/regex-2021.8.28[${PYTHON_USEDEP}]
 	~dev-python/requests-2.28.1[${PYTHON_USEDEP}]
 	~net-analyzer/scapy-2.4.5
-	~dev-python/sqlalchemy-1.4.42[${PYTHON_USEDEP}]
+	~dev-python/sqlalchemy-1.4.44[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.4.0[${PYTHON_USEDEP}]
 	<dev-python/typing-extensions-5.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]
@@ -131,12 +131,12 @@ RDEPEND="${RDEPEND}
 RDEPEND="${RDEPEND}
 	accuweather? ( ~dev-python/accuweather-0.4.0[${PYTHON_USEDEP}] )
 	airly? ( ~dev-python/airly-1.1.0[${PYTHON_USEDEP}] )
-	airvisual? ( ~dev-python/pyairvisual-2022.7.0[${PYTHON_USEDEP}] )
+	airvisual? ( ~dev-python/pyairvisual-2022.11.1[${PYTHON_USEDEP}] )
 	alpha_vantage? ( ~dev-python/alpha-vantage-2.3.1[${PYTHON_USEDEP}] )
 	androidtv? ( ~dev-python/adb-shell-0.4.3[${PYTHON_USEDEP}] ~dev-python/androidtv-0.0.69[${PYTHON_USEDEP}] ~dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}] )
 	android_ip_webcam? ( ~dev-python/pydroid-ipcam-2.0.0[${PYTHON_USEDEP}] )
 	axis? ( ~dev-python/axis-44[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-0.19.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.8.2[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.6.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.61.1[${PYTHON_USEDEP}] )
+	bluetooth? ( ~dev-python/bleak-0.19.2[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.8.4[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.7.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.61.1[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-0.9.1[${PYTHON_USEDEP}] )
 	camera? ( ~dev-python/PyTurboJPEG-1.6.7[${PYTHON_USEDEP}] )
@@ -146,18 +146,18 @@ RDEPEND="${RDEPEND}
 	compensation? ( ~dev-python/numpy-1.23.2[${PYTHON_USEDEP}] )
 	coronavirus? ( ~dev-python/coronavirus-1.1.1[${PYTHON_USEDEP}] )
 	darksky? ( ~dev-python/python-forecastio-1.4.0[${PYTHON_USEDEP}] )
-	dlna_dmr? ( ~dev-python/async-upnp-client-0.32.1[${PYTHON_USEDEP}] )
-	dlna_dms? ( ~dev-python/async-upnp-client-0.32.1[${PYTHON_USEDEP}] )
+	dlna_dmr? ( ~dev-python/async-upnp-client-0.32.2[${PYTHON_USEDEP}] )
+	dlna_dms? ( ~dev-python/async-upnp-client-0.32.2[${PYTHON_USEDEP}] )
 	dwd_weather_warnings? ( ~dev-python/dwdwfsapi-1.0.5[${PYTHON_USEDEP}] )
 	enigma2? ( ~dev-python/openwebifpy-3.2.7[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-11.4.2[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-11.4.3[${PYTHON_USEDEP}] )
 	ffmpeg? ( ~dev-python/ha-ffmpeg-3.0.2[${PYTHON_USEDEP}] )
 	file? ( ~dev-python/file-read-backwards-2.0.0[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.2.0[${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.1[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/aiogithubapi-22.10.1[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/ha-HAP-python-4.5.2[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-2.2.13[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-2.2.19[${PYTHON_USEDEP}] )
 	http? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] )
 	hyperion? ( ~dev-python/hyperion-py-0.7.5[${PYTHON_USEDEP}] )
 	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
@@ -186,10 +186,10 @@ RDEPEND="${RDEPEND}
 	qnap? ( ~dev-python/qnapstats-0.4.0[${PYTHON_USEDEP}] )
 	qvr_pro? ( ~dev-python/pyqvrpro-0.52[${PYTHON_USEDEP}] )
 	radio_browser? ( ~dev-python/radios-0.1.1[${PYTHON_USEDEP}] )
-	recorder? ( ~dev-python/sqlalchemy-1.4.42[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] )
+	recorder? ( ~dev-python/sqlalchemy-1.4.44[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] )
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
 	ring? ( ~dev-python/ring-doorbell-0.7.2[${PYTHON_USEDEP}] )
-	samsungtv? ( ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-2.5.0[${PYTHON_USEDEP}] ~dev-python/wakeonlan-2.1.0[${PYTHON_USEDEP}] ~dev-python/async-upnp-client-0.32.1[${PYTHON_USEDEP}] )
+	samsungtv? ( ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-2.5.0[${PYTHON_USEDEP}] ~dev-python/wakeonlan-2.1.0[${PYTHON_USEDEP}] ~dev-python/async-upnp-client-0.32.2[${PYTHON_USEDEP}] )
 	scrape? ( ~dev-python/beautifulsoup4-4.11.1[${PYTHON_USEDEP}] ~dev-python/lxml-4.9.1[${PYTHON_USEDEP}] )
 	season? ( ~dev-python/ephem-4.1.2[${PYTHON_USEDEP}] )
 	shelly? ( ~dev-python/aioshelly-4.1.2[${PYTHON_USEDEP}] )
@@ -199,7 +199,7 @@ RDEPEND="${RDEPEND}
 	sonos? ( ~dev-python/soco-0.28.1[${PYTHON_USEDEP}] )
 	speedtestdotnet? ( ~net-analyzer/speedtest-cli-2.1.3[${PYTHON_USEDEP}] )
 	spotify? ( ~dev-python/spotipy-2.20.0[${PYTHON_USEDEP}] )
-	sql? ( ~dev-python/sqlalchemy-1.4.42[${PYTHON_USEDEP}] )
+	sql? ( ~dev-python/sqlalchemy-1.4.44[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
 	systemmonitor? ( ~dev-python/psutil-5.9.3[${PYTHON_USEDEP}] )
 	tankerkoenig? ( ~dev-python/pytankerkoenig-0.0.6[${PYTHON_USEDEP}] )
@@ -207,7 +207,7 @@ RDEPEND="${RDEPEND}
 	tile? ( ~dev-python/pytile-2022.2.0[${PYTHON_USEDEP}] )
 	tomorrowio? ( ~dev-python/pytomorrowio-0.3.5[${PYTHON_USEDEP}] )
 	tplink? ( ~dev-python/python-kasa-0.5.0[${PYTHON_USEDEP}] )
-	upnp? ( ~dev-python/async-upnp-client-0.32.1[${PYTHON_USEDEP}] ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
+	upnp? ( ~dev-python/async-upnp-client-0.32.2[${PYTHON_USEDEP}] ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
 	utility_meter? ( ~dev-python/croniter-1.0.6[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-22.8.0[${PYTHON_USEDEP}] )
 	wake_on_lan? ( ~dev-python/wakeonlan-2.1.0[${PYTHON_USEDEP}] )
@@ -217,7 +217,7 @@ RDEPEND="${RDEPEND}
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.4[${PYTHON_USEDEP}] )
 	zeroconf? ( ~dev-python/python-zeroconf-0.39.4[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.34.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.84[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.5[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.2[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.1[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.34.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.86[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.5[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.2[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.1[${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/zwave-js-server-python-0.43.0[${PYTHON_USEDEP}] )"
 
 BDEPEND="${RDEPEND}

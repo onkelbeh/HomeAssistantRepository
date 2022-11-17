@@ -8,29 +8,26 @@ DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="A package to talk to growatt server"
-HOMEPAGE="https://github.com/indykoning/PyPi_GrowattServer https://pypi.org/project/growattServer/"
+DESCRIPTION="A python library for syncing Google Calendar to local storage"
+HOMEPAGE="https://github.com/allenporter/gcal_sync https://pypi.org/project/gcal-sync/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
+DOCS="README.md"
+
+RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-1.9.0[${PYTHON_USEDEP}]
+	>=dev-python/ical-4.1.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-DOCS="README.md"
-
-src_prepare() {
-	sed "s/tag = os.environ\['LATEST_TAG'\]/tag = '${PV}'/g" -i setup.py || die
-	eapply_user
-}
 
 python_test() {
 	py.test -v -v || die
