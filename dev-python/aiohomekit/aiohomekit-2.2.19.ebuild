@@ -23,7 +23,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
 	>=dev-python/python-zeroconf-0.32.0[${PYTHON_USEDEP}]
 	>=dev-python/commentjson-0.9.0[${PYTHON_USEDEP}]
-	>=dev-python/aiocoap-0.4.1[${PYTHON_USEDEP}]
+	>=dev-python/aiocoap-0.4.4[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.0.4[${PYTHON_USEDEP}]
 	>=dev-python/bleak-retry-connector-2.3.0[${PYTHON_USEDEP}]
