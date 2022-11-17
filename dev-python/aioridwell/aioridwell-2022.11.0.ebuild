@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/pyjwt-2.4.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2021.3[${PYTHON_USEDEP}]
 	>=dev-python/titlecase-2.3[${PYTHON_USEDEP}]"
