@@ -40,6 +40,7 @@ aiobafi6==0.7.2
 aiobotocore==2.1.0
 aiocache==0.11.1
 aiocoap==0.4.3
+aiocoap==0.4.4
 aioconsole==0.5.1
 aiodiscover==1.4.13
 aiodns==3.0.0
@@ -49,13 +50,12 @@ aioecowitt==2022.9.3
 aioemonitor==1.0.5
 aioesphomeapi==11.4.3
 aiofile==3.8.1
-aiofiles==0.8.0
 aioflo==2021.11.0
 aioftp==0.21.3
 aiogithubapi==22.10.1
 aioguardian==2022.7.0
 aioharmony==0.2.9
-aiohomekit==2.2.18
+aiohomekit==2.2.19
 aiohttp-cors==0.7.0
 aiohttp==3.8.1
 aiohttp==3.8.3
@@ -81,7 +81,7 @@ aiopvpc==3.0.0
 aiopyarr==22.11.0
 aioqsw==0.2.2
 aiorecollect==1.0.8
-aioridwell==2022.3.0
+aioridwell==2022.11.0
 aiosenseme==0.6.1
 aiosenz==1.0.0
 aioserial==1.3.0
@@ -101,7 +101,7 @@ aiowatttime==0.1.1
 aiowebostv==0.2.1
 aioymaps==1.2.2
 airly==1.1.0
-airthings-ble==0.5.2
+airthings-ble==0.5.3
 airthings-cloud==0.1.0
 airtouch4pyapi==1.0.5
 ajsonrpc==1.2.0
@@ -154,12 +154,12 @@ avion==0.10
 awesomeversion==22.9.0
 awk==1
 axis==44
-backoff==2.1.2
+backoff==2.2.1
 baidu-aip==1.6.6.0
-baselayout==2.8
+baselayout==2.9
 batinfo==0.4.2
 bcrypt==3.1.7
-bcrypt==4.0.0
+bcrypt==4.0.1
 beacontools==1.2.3
 beautifulsoup4==4.11.1
 beewi-smartclim==0.0.10
@@ -170,7 +170,7 @@ bitarray==2.6.0
 bitstring==3.1.9
 bizkaibus==0.1.1
 bleach==5.0.1
-bleak-retry-connector==2.8.3
+bleak-retry-connector==2.8.4
 bleak==0.19.2
 blebox-uniapi==2.1.3
 blinker==1.5
@@ -190,8 +190,8 @@ bme680==1.0.5
 bond-async==0.1.22
 boschshcpy==0.2.35
 boto3==1.20.24
-boto3==1.24.96
-botocore==1.27.96
+boto3==1.25.5
+botocore==1.28.5
 bottle==0.12.23
 bottleneck==1.3.5
 broadlink==0.18.2
@@ -230,7 +230,6 @@ clx-sdk-xms==1.0.0
 CO2Signal==0.4.2
 coinbase==2.1.0
 colorama==0.4.5
-coloredlogs==15.0.1
 colorlog==6.6.0
 colorlog==6.7.0
 colorthief==0.2.1
@@ -271,7 +270,7 @@ datadog==0.15.0
 datapoint==0.9.8
 dateparser==1.1.1
 dbus-fast==1.61.1
-dbus==1.14.0
+dbus==1.15.2
 debianutils==5.7
 debugpy==1.6.3
 decora-wifi==1.4
@@ -362,7 +361,6 @@ forecast-solar==2.2.0
 fortiosapi==1.0.5
 fqdn==1.5.1
 freebox-api==1.0.1
-freeimage==3.18.0
 freesms==0.2.0
 freetype==2.12.1
 fritzconnection==1.4.2
@@ -372,7 +370,7 @@ gammu==1.41.0
 garages-amsterdam==3.0.0
 garminconnect-ha==0.1.6
 gawk==5.1.1
-gcal-sync==4.0.0
+gcal-sync==4.0.2
 gcloud==0.18.3
 gd==2.3.3
 gdb==11.2
@@ -393,7 +391,7 @@ gios==2.1.0
 gitterpy==0.1.7
 glances-api==0.4.1
 glib==2.74.1
-glibc==2.35
+glibc==2.36
 gmp==6.2.1
 gntp==1.0.3
 goalzero==0.2.1
@@ -419,7 +417,7 @@ greeneye-monitor==3.0.3
 greenwavereality==0.5.1
 grep==3.7
 gridnet==4.0.0
-growattServer==1.2.3
+growattServer==1.2.4
 grpc-google-iam-v1==0.12.4
 grpcio-status==1.48.0
 grpcio==1.48.0
@@ -470,8 +468,6 @@ httpcore==0.15.0
 httplib2==0.20.4
 httpsig==1.3.0
 httpx==0.23.0
-huawei-lte-api==1.6.3
-humanfriendly==10.0
 Hydrawiser==0.2
 hyper==0.7.0
 hyperframe==6.0.1
@@ -490,7 +486,6 @@ ifaddr==0.1.7
 ifaddr==0.2.0
 iglo==1.2.7
 ihcsdk==2.7.6
-imageio==2.22.0
 importlib_metadata==4.13.0
 incomfort-client==0.4.4
 incremental==21.3.0
@@ -544,7 +539,7 @@ kostal-plenticore==0.2.0
 krakenex==2.1.0
 lacrosse-view==0.0.9
 lakeside==0.12
-lark==1.1.2
+lark==1.1.3
 laundrify-aio==1.1.2
 led-ble==1.0.0
 libc==1
@@ -583,7 +578,7 @@ libusb==1.0.26
 libxml2==2.10.3
 libxslt==1.1.37
 libyaml==0.2.5
-life360==5.1.1
+life360==5.3.0
 liffylights==0.9.4
 lightify==1.0.7.3
 lightwave==0.20
@@ -606,7 +601,6 @@ magicseaweed==1.0.3
 markdown==3.4.1
 markupsafe==2.1.1
 marshmallow-dataclass==8.5.9
-marshmallow==3.16.0
 Mastodon-py==1.5.1
 matrix-client==0.4.0
 mawk==1.3.4_p20200120
@@ -698,7 +692,7 @@ openwebifpy==3.2.7
 openwrt-luci-rpc==1.1.11
 openwrt-ubus-rpc==0.0.2
 OPi-GPIO==0.5.2
-oralb-ble==0.13.0
+oralb-ble==0.14.2
 ordered-set==4.1.0
 orjson==3.8.1
 oru==0.1.11
@@ -731,6 +725,7 @@ piglow==1.2.4
 pigpio==1.78
 pilight==0.1.1
 pillow==9.2.0
+pillow==9.3.0
 pip==22.0.4
 pizzapi==0.0.3
 pkce==1.0.3
@@ -739,7 +734,7 @@ pkgconfig==2
 platformdirs==2.5.2
 platformio==6.0.2
 plugwise==0.25.7
-plumbum==1.7.2
+plumbum==1.8.0
 plumlightpad==0.0.11
 ply==3.11
 pmsensor==0.4
@@ -771,6 +766,7 @@ pushover_complete==1.1.1
 pvo==0.2.2
 pwmled==1.6.10
 py-canary==0.5.3
+py-cpuinfo==8.0.0
 py-melissa-climate==2.1.4
 py-nextbusnext==0.1.5
 py-nightscout==1.2.2
@@ -1004,7 +1000,7 @@ pysqueezebox==0.6.1
 pystiebeleltron==0.0.1
 pysuez==0.1.19
 pyswitchbee==1.5.5
-PySwitchbot==0.20.2
+PySwitchbot==0.20.5
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6
@@ -1123,7 +1119,7 @@ requests-file==1.5.1
 requests-futures==1.0.0
 requests-oauth==0.4.1
 requests-oauthlib==1.3.1
-requests-toolbelt==0.9.1
+requests-toolbelt==0.10.1
 requests==2.28.1
 responses==0.21.0
 rfc3339-validator==0.1.4
@@ -1189,6 +1185,7 @@ six==1.16.0
 slackclient==2.5.0
 sleekxmppfs==1.4.1
 slixmpp==1.8.2
+slixmpp==1.8.3
 smart-meter-texas==0.4.7
 SmartHab==0.21
 smbus-cffi==0.5.1
@@ -1213,7 +1210,6 @@ srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
 starkbank-ecdsa==1.0.0
-starlette==0.20.4
 starline==0.1.5
 starlingbank==3.2
 statsd==3.2.1
@@ -1233,7 +1229,7 @@ systembridgeconnector==3.4.4
 systemd-utils==251.4
 systemd==251.4
 sysvinit==3.05
-tabulate==0.8.10
+tabulate==0.9.0
 tahoma-api==0.0.16
 tailer==0.4.1
 tailscale==0.2.0
@@ -1374,7 +1370,7 @@ youtube-dl==2021.12.17
 zbar==0.23.90
 zeep==4.1.0
 zengge==0.2
-zha-quirks==0.0.85
+zha-quirks==0.0.86
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
 zigpy-deconz==0.19.0
@@ -1382,8 +1378,8 @@ zigpy-xbee==0.16.2
 zigpy-zigate==0.10.3
 zigpy-znp==0.9.1
 zigpy==0.51.5
-zipp==3.8.1
+zipp==3.10.0
 zlib==1.2.12
 zm-py==0.5.2
-zope-interface==5.4.0
+zope-interface==5.5.0
 zwave-me-ws==0.2.6
