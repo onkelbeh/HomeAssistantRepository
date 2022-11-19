@@ -19,11 +19,12 @@ RESTRICT="!test? ( test )"
 
 #DOCS="README.md"
 
-RDEPEND=">=dev-python/poetry-0.12[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
