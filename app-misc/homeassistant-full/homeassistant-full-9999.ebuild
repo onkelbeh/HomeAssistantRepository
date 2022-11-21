@@ -58,7 +58,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/awesomeversion-22.9.0[${PYTHON_USEDEP}]
 	>=dev-python/backoff-2.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
-	~dev-python/bleak-retry-connector-2.8.4[${PYTHON_USEDEP}]
+	~dev-python/bleak-retry-connector-2.8.5[${PYTHON_USEDEP}]
 	~dev-python/bleak-0.19.2[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-adapters-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}]
@@ -207,7 +207,7 @@ RDEPEND="${RDEPEND}
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
 	bluemaestro? ( ~dev-python/bluemaestro-ble-0.2.0[${PYTHON_USEDEP}] )
 	bluesound? ( ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-0.19.2[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.8.4[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.7.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.61.1[${PYTHON_USEDEP}] )
+	bluetooth? ( ~dev-python/bleak-0.19.2[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.8.5[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.7.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.61.1[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	bluetooth_tracker? ( ~dev-python/bt-proximity-0.2.1[${PYTHON_USEDEP}] ~dev-python/pybluez-0.22[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[${PYTHON_USEDEP}] )
@@ -361,7 +361,7 @@ RDEPEND="${RDEPEND}
 	flo? ( ~dev-python/aioflo-2021.11.0[${PYTHON_USEDEP}] )
 	flume? ( ~dev-python/PyFlume-0.6.5[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-2.0.2[${PYTHON_USEDEP}] )
-	flux_led? ( ~dev-python/flux-led-0.28.32[${PYTHON_USEDEP}] )
+	flux_led? ( ~dev-python/flux-led-0.28.34[${PYTHON_USEDEP}] )
 	folder_watcher? ( ~dev-python/watchdog-2.1.9[${PYTHON_USEDEP}] )
 	foobot? ( ~dev-python/foobot_async-1.0.0[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.2.0[${PYTHON_USEDEP}] )
@@ -499,7 +499,7 @@ RDEPEND="${RDEPEND}
 	kira? ( ~dev-python/pykira-0.1.1[${PYTHON_USEDEP}] )
 	kiwi? ( ~dev-python/kiwiki-client-0.1.1[${PYTHON_USEDEP}] )
 	kmtronic? ( ~dev-python/pykmtronic-0.3.0[${PYTHON_USEDEP}] )
-	knx? ( ~dev-python/xknx-1.2.0[${PYTHON_USEDEP}] )
+	knx? ( ~dev-python/xknx-1.2.1[${PYTHON_USEDEP}] )
 	kodi? ( ~dev-python/pykodi-0.2.7[${PYTHON_USEDEP}] )
 	konnected? ( ~dev-python/konnected-1.2.0[${PYTHON_USEDEP}] )
 	kostal_plenticore? ( ~dev-python/kostal-plenticore-0.2.0[${PYTHON_USEDEP}] )
@@ -722,7 +722,7 @@ RDEPEND="${RDEPEND}
 	rainbird? ( ~dev-python/pyrainbird-0.4.3[${PYTHON_USEDEP}] )
 	raincloud? ( ~dev-python/raincloudy-0.0.7[${PYTHON_USEDEP}] )
 	rainforest_eagle? ( ~dev-python/aioeagle-1.1.0[${PYTHON_USEDEP}] ~dev-python/eagle100-0.1.1[${PYTHON_USEDEP}] )
-	rainmachine? ( ~dev-python/regenmaschine-2022.10.0[${PYTHON_USEDEP}] )
+	rainmachine? ( ~dev-python/regenmaschine-2022.11.0[${PYTHON_USEDEP}] )
 	raspihats? ( ~dev-python/raspihats-2.2.3[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	raspyrfm? ( ~dev-python/raspyrfm-client-1.2.8[${PYTHON_USEDEP}] )
 	rdw? ( ~dev-python/vehicle-0.4.0[${PYTHON_USEDEP}] )
@@ -801,7 +801,7 @@ RDEPEND="${RDEPEND}
 	sleepiq? ( ~dev-python/asyncsleepiq-1.2.3[${PYTHON_USEDEP}] )
 	slide? ( ~dev-python/goslide-api-0.5.1[${PYTHON_USEDEP}] )
 	slimproto? ( ~dev-python/aioslimproto-2.1.1[${PYTHON_USEDEP}] )
-	sma? ( ~dev-python/pysma-0.7.2[${PYTHON_USEDEP}] )
+	sma? ( ~dev-python/pysma-0.7.3[${PYTHON_USEDEP}] )
 	smappee? ( ~dev-python/pysmappee-0.2.29[${PYTHON_USEDEP}] )
 	smarthab? ( ~dev-python/SmartHab-0.21[${PYTHON_USEDEP}] )
 	smartthings? ( ~dev-python/pysmartapp-0.3.3[${PYTHON_USEDEP}] ~dev-python/pysmartthings-0.7.6[${PYTHON_USEDEP}] )
@@ -943,7 +943,7 @@ RDEPEND="${RDEPEND}
 	versasense? ( ~dev-python/pyversasense-0.0.6[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-22.8.0[${PYTHON_USEDEP}] )
 	vesync? ( ~dev-python/pyvesync-2.0.3[${PYTHON_USEDEP}] )
-	vicare? ( ~dev-python/PyViCare-2.17.0[${PYTHON_USEDEP}] )
+	vicare? ( ~dev-python/PyViCare-2.19.0[${PYTHON_USEDEP}] )
 	vilfo? ( ~dev-python/vilfo-api-client-0.3.2[${PYTHON_USEDEP}] )
 	vivotek? ( ~dev-python/libpyvivotek-0.4.0[${PYTHON_USEDEP}] )
 	vizio? ( ~dev-python/pyvizio-0.1.57[${PYTHON_USEDEP}] )

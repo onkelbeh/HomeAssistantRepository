@@ -4,11 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
-DESCRIPTION="An Asynchronous Library for the KNX protocol. Documentation: https://xknx.io/"
-HOMEPAGE="https://github.com/XKNX/xknx/ https://xknx.io/ https://pypi.org/project/xknx/"
+DESCRIPTION="A simple API for RainMachine sprinkler controllers"
+HOMEPAGE="https://github.com/bachya/regenmaschine https://pypi.org/project/regenmaschine/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,12 +20,15 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/cryptography-35.0.0[${PYTHON_USEDEP}]
-	>=dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
+		dev-python/aresponses[${PYTHON_USEDEP}]
+		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

@@ -170,7 +170,7 @@ bitarray==2.6.0
 bitstring==3.1.9
 bizkaibus==0.1.1
 bleach==5.0.1
-bleak-retry-connector==2.8.4
+bleak-retry-connector==2.8.5
 bleak==0.19.2
 blebox-uniapi==2.1.3
 blinker==1.5
@@ -208,7 +208,7 @@ btsocket==0.2.0
 buienradar==1.0.5
 busybox==1.34.1
 c-ares==1.18.1
-ca-certificates==20211016.3.80
+ca-certificates==20211016.3.83
 cachetools==5.2.0
 caio==0.9.8
 cbor2==5.4.3
@@ -248,7 +248,7 @@ construct==2.10.68
 convertdate==2.4.0
 coreutils==8.32
 coronavirus==1.1.1
-coverage==6.4.4
+coverage==6.5.0
 crc16==0.1.1
 crccheck==1.3.0
 crcmod==1.7
@@ -326,7 +326,7 @@ envs==1.4
 ephem==4.1.2
 epson-projector==0.5.0
 epsonprinter==0.0.9
-eselect-awk==0.3
+eselect-awk==0.4
 esphome
 esphome-dashboard==20221007.0
 esprima==4.0.1
@@ -353,7 +353,7 @@ fixerio==1.0.0_alpha0
 fjaraskupan==2.2.0
 flask==2.2.2
 flipr-api==1.4.2
-flux-led==0.28.32
+flux-led==0.28.34
 fnvhash==0.1.0
 fontconfig==2.14.0
 foobot_async==1.0.0
@@ -399,7 +399,7 @@ gobject-introspection-common==1.74.0
 gobject-introspection==1.74.0
 goodwe==0.2.18
 google-api-core==2.8.2
-google-auth==2.12.0
+google-auth==2.13.0
 google-cloud-pubsub==2.13.10
 google-cloud-texttospeech==2.12.3
 google-nest-sdm==2.0.0
@@ -488,7 +488,7 @@ iglo==1.2.7
 ihcsdk==2.7.6
 importlib_metadata==4.13.0
 incomfort-client==0.4.4
-incremental==21.3.0
+incremental==22.10.0
 inflect==6.0.0
 inflection==0.5.1
 influxdb-client==1.24.0
@@ -507,6 +507,7 @@ iso8601==1.1.0
 isodate==0.6.1
 isoduration==20.11.0
 itsdangerous==2.1.2
+jaraco-classes==3.2.3
 jaraco-context==4.1.2
 jaraco-functools==3.5.2
 jaraco-text==3.9.1
@@ -530,7 +531,7 @@ kaiterra-async-client==1.0.0
 kconfiglib==13.7.1
 keba-kecontact==1.1.0
 kegtron-ble==0.4.0
-keyring==23.9.1
+keyring==23.9.3
 keyrings_alt==4.1.0
 kiwiki-client==0.1.1
 konnected==1.2.0
@@ -562,7 +563,7 @@ libpaper==1.1.28
 libpcap==1.10.1
 libpcre2==10.40
 libpcre==8.45
-libpng==1.6.37
+libpng==1.6.38
 libpurecool==0.6.4
 libpyfoscam==1.0
 libpyvivotek==0.4.0
@@ -623,7 +624,7 @@ miniaudio==1.45
 minio==5.0.10
 moat-ble==0.1.1
 moehlenhoff-alpha2==1.2.1
-more-itertools==8.14.0
+more-itertools==9.0.0
 motionblinds==0.6.13
 motioneye-client==0.3.12
 mpfr==4.1.0_p13
@@ -670,7 +671,7 @@ nuheat==0.3.0
 numato-gpio==0.10.0
 numexpr==2.8.3
 numpy==1.23.2
-numpy==1.23.3
+numpy==1.23.4
 oasatelematics==0.3
 oauth2client==4.1.3
 oauthlib==3.2.2
@@ -738,7 +739,6 @@ plumbum==1.8.0
 plumlightpad==0.0.11
 ply==3.11
 pmsensor==0.4
-poetry==1.1.6
 poolsense==0.0.8
 praw==7.5.0
 prawcore==2.3.0
@@ -982,7 +982,7 @@ Pysher==1.0.7
 pysiaalarm==3.0.2
 pysignalclirestapi==0.3.18
 pyskyqhub==0.1.4
-pysma==0.7.2
+pysma==0.7.3
 pysmappee==0.2.29
 pysmartapp==0.3.3
 pysmartthings==0.7.6
@@ -1080,7 +1080,7 @@ PyUserInput==0.1.11
 pyvera==0.3.13
 pyversasense==0.0.6
 pyvesync==2.0.3
-PyViCare==2.17.0
+PyViCare==2.19.0
 pyvizio==0.1.57
 pyvlx==0.2.20
 pyvolumio==0.1.5
@@ -1109,7 +1109,7 @@ re2==0.2022.06.01
 readlike==0.1.2
 readline==8.1_p2
 reedsolomon==1.5.4
-regenmaschine==2022.10.0
+regenmaschine==2022.11.0
 regex==2021.8.28
 regex==2022.9.13
 related==0.7.2
@@ -1148,7 +1148,6 @@ ruamel-yaml-clib==0.2.6
 ruamel-yaml==0.17.21
 russound-rio==0.1.8
 russound==0.1.9
-Rx==3.2.0
 rxv==0.7.0
 s3transfer==0.6.0
 samsungctl==0.7.1
@@ -1182,7 +1181,6 @@ simplisafe-python==2022.7.1
 siobrultech-protocols==0.5.0
 sisyphus-control==3.1.2
 six==1.16.0
-slackclient==2.5.0
 sleekxmppfs==1.4.1
 slixmpp==1.8.2
 slixmpp==1.8.3
@@ -1205,7 +1203,7 @@ speak2mary==1.4.0
 speedtest-cli==2.1.3
 spiderpy==1.6.1
 spidev==3.5
-sqlalchemy==1.4.42
+sqlalchemy==1.4.44
 srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
@@ -1215,7 +1213,7 @@ starlingbank==3.2
 statsd==3.2.1
 stdiomask==0.0.6
 steamodd==4.21
-stevedore==4.0.0
+stevedore==4.0.2
 stookalert==0.1.4
 streamlabswater==1.0.1
 strict-rfc3339==0.7
@@ -1352,12 +1350,12 @@ xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
 xiaomi-ble==0.10.0
-xknx==1.2.0
+xknx==1.2.1
 xmlschema==2.1.1
 xmltodict==0.13.0
 xs1-api-client==3.0.0
 xxhash==0.8.1
-xxhash==3.0.0
+xxhash==3.1.0
 yalesmartalarmclient==0.3.9
 yalexs-ble==1.9.5
 yalexs==1.2.6

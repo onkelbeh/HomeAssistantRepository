@@ -4,15 +4,15 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
-DISTUTILS_USE_PEP517=poetry
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="A simple API for RainMachine sprinkler controllers"
-HOMEPAGE="https://github.com/bachya/regenmaschine https://pypi.org/project/regenmaschine/"
+DESCRIPTION="Library to communicate with the Viessmann ViCare API"
+HOMEPAGE="https://github.com/somm15/PyViCare https://pypi.org/project/PyViCare/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -20,18 +20,21 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/requests-oauthlib-1.1.0[${PYTHON_USEDEP}]
+	dev-python/pkce[${PYTHON_USEDEP}]"
 BDEPEND="
+	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
-		dev-python/pytest-cov[${PYTHON_USEDEP}]
-		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
-		dev-python/asynctest[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
 	py.test -v -v || die
+}
+
+src_prepare() {
+	sed -i "s/setuptools-git-versioning<1.8.0//g" -i setup.py || die
+	eapply_user
 }
 
 distutils_enable_tests pytest

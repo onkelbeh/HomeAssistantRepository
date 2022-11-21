@@ -4,11 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="Library to interface an SMA Solar WebConnect module"
-HOMEPAGE="https://github.com/kellerza/pysma https://pypi.org/project/pysma/"
+DESCRIPTION="An Asynchronous Library for the KNX protocol. Documentation: https://xknx.io/"
+HOMEPAGE="https://github.com/XKNX/xknx/ https://xknx.io/ https://pypi.org/project/xknx/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,9 +20,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.3[${PYTHON_USEDEP}]
-	>=dev-python/attrs-18[${PYTHON_USEDEP}]
-	<dev-python/jmespath-2[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/cryptography-35.0.0[${PYTHON_USEDEP}]
+	>=dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -31,3 +31,5 @@ BDEPEND="
 python_test() {
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest

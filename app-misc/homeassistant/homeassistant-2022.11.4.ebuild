@@ -58,7 +58,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/awesomeversion-22.9.0[${PYTHON_USEDEP}]
 	>=dev-python/backoff-2.0[${PYTHON_USEDEP}]
 	~dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
-	~dev-python/bleak-retry-connector-2.8.3[${PYTHON_USEDEP}]
+	~dev-python/bleak-retry-connector-2.8.5[${PYTHON_USEDEP}]
 	~dev-python/bleak-0.19.2[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-adapters-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}]
@@ -104,7 +104,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/regex-2021.8.28[${PYTHON_USEDEP}]
 	~dev-python/requests-2.28.1[${PYTHON_USEDEP}]
 	~net-analyzer/scapy-2.4.5
-	~dev-python/sqlalchemy-1.4.42[${PYTHON_USEDEP}]
+	~dev-python/sqlalchemy-1.4.44[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.4.0[${PYTHON_USEDEP}]
 	<dev-python/typing-extensions-5.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]
@@ -179,7 +179,7 @@ RDEPEND="${RDEPEND}
 	blinksticklight? ( ~dev-python/BlinkStick-1.2.0[${PYTHON_USEDEP}] )
 	blinkt? ( ~dev-python/blinkt-0.1.0[${PYTHON_USEDEP}] )
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-0.19.2[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.8.3[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.7.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.61.1[${PYTHON_USEDEP}] )
+	bluetooth? ( ~dev-python/bleak-0.19.2[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.8.5[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.7.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.3.6[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.61.1[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	bluetooth_tracker? ( ~dev-python/bt-proximity-0.2.1[${PYTHON_USEDEP}] ~dev-python/pybluez-0.22[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[${PYTHON_USEDEP}] )
@@ -238,7 +238,7 @@ RDEPEND="${RDEPEND}
 	file? ( ~dev-python/file-read-backwards-2.0.0[${PYTHON_USEDEP}] )
 	flume? ( ~dev-python/PyFlume-0.6.5[${PYTHON_USEDEP}] )
 	flunearyou? ( ~dev-python/pyflunearyou-2.0.2[${PYTHON_USEDEP}] )
-	flux_led? ( ~dev-python/flux-led-0.28.32[${PYTHON_USEDEP}] )
+	flux_led? ( ~dev-python/flux-led-0.28.34[${PYTHON_USEDEP}] )
 	foobot? ( ~dev-python/foobot_async-1.0.0[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.2.0[${PYTHON_USEDEP}] )
 	fortios? ( ~dev-python/fortiosapi-1.0.5[${PYTHON_USEDEP}] )
@@ -253,14 +253,14 @@ RDEPEND="${RDEPEND}
 	github? ( ~dev-python/aiogithubapi-22.10.1[${PYTHON_USEDEP}] )
 	gogogate2? ( ~dev-python/ismartgate-4.0.4[${PYTHON_USEDEP}] )
 	greeneye_monitor? ( ~dev-python/greeneye-monitor-3.0.3[${PYTHON_USEDEP}] )
-	growatt_server? ( ~dev-python/growattServer-1.2.3[${PYTHON_USEDEP}] )
+	growatt_server? ( ~dev-python/growattServer-1.2.4[${PYTHON_USEDEP}] )
 	guardian? ( ~dev-python/aioguardian-2022.7.0[${PYTHON_USEDEP}] )
 	harman_kardon_avr? ( ~dev-python/hkavr-0.0.5[${PYTHON_USEDEP}] )
 	harmony? ( ~dev-python/aioharmony-0.2.9[${PYTHON_USEDEP}] )
 	heos? ( ~dev-python/pyheos-0.7.2[${PYTHON_USEDEP}] )
 	here_travel_time? ( ~dev-python/herepy-2.0.0[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/ha-HAP-python-4.5.2[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-2.2.18[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-2.2.19[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.77[${PYTHON_USEDEP}] )
 	homematicip_cloud? ( ~dev-python/homematicip-1.0.7[${PYTHON_USEDEP}] )
 	hp_ilo? ( ~dev-python/python-hpilo-4.3[${PYTHON_USEDEP}] )
@@ -280,7 +280,7 @@ RDEPEND="${RDEPEND}
 	jewish_calendar? ( ~dev-python/hdate-0.10.4[${PYTHON_USEDEP}] )
 	joaoapps_join? ( ~dev-python/python-join-api-0.0.9[${PYTHON_USEDEP}] )
 	kef? ( ~dev-python/aiokef-0.2.16[${PYTHON_USEDEP}] ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
-	knx? ( ~dev-python/xknx-1.2.0[${PYTHON_USEDEP}] )
+	knx? ( ~dev-python/xknx-1.2.1[${PYTHON_USEDEP}] )
 	kodi? ( ~dev-python/pykodi-0.2.7[${PYTHON_USEDEP}] )
 	kraken? ( ~dev-python/krakenex-2.1.0[${PYTHON_USEDEP}] ~dev-python/pykrakenapi-0.1.8[${PYTHON_USEDEP}] )
 	lifx? ( ~dev-python/aiolifx-0.8.6[${PYTHON_USEDEP}] ~dev-python/aiolifx-effects-0.3.0[${PYTHON_USEDEP}] ~dev-python/aiolifx-themes-0.2.0[${PYTHON_USEDEP}] )
@@ -334,8 +334,8 @@ RDEPEND="${RDEPEND}
 	rachio? ( ~dev-python/RachioPy-1.0.3[${PYTHON_USEDEP}] )
 	radio_browser? ( ~dev-python/radios-0.1.1[${PYTHON_USEDEP}] )
 	rainbird? ( ~dev-python/pyrainbird-0.4.3[${PYTHON_USEDEP}] )
-	rainmachine? ( ~dev-python/regenmaschine-2022.10.0[${PYTHON_USEDEP}] )
-	recorder? ( ~dev-python/sqlalchemy-1.4.42[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] )
+	rainmachine? ( ~dev-python/regenmaschine-2022.11.0[${PYTHON_USEDEP}] )
+	recorder? ( ~dev-python/sqlalchemy-1.4.44[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] )
 	rejseplanen? ( ~dev-python/rjpl-0.3.6[${PYTHON_USEDEP}] )
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
 	ring? ( ~dev-python/ring-doorbell-0.7.2[${PYTHON_USEDEP}] )
@@ -350,7 +350,7 @@ RDEPEND="${RDEPEND}
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.18[${PYTHON_USEDEP}] )
 	simplisafe? ( ~dev-python/simplisafe-python-2022.7.1[${PYTHON_USEDEP}] )
 	skybell? ( ~dev-python/aioskybell-22.7.0[${PYTHON_USEDEP}] )
-	sma? ( ~dev-python/pysma-0.7.2[${PYTHON_USEDEP}] )
+	sma? ( ~dev-python/pysma-0.7.3[${PYTHON_USEDEP}] )
 	smappee? ( ~dev-python/pysmappee-0.2.29[${PYTHON_USEDEP}] )
 	smarthab? ( ~dev-python/SmartHab-0.21[${PYTHON_USEDEP}] )
 	smartthings? ( ~dev-python/pysmartapp-0.3.3[${PYTHON_USEDEP}] ~dev-python/pysmartthings-0.7.6[${PYTHON_USEDEP}] )
@@ -361,7 +361,7 @@ RDEPEND="${RDEPEND}
 	sonos? ( ~dev-python/soco-0.28.1[${PYTHON_USEDEP}] )
 	speedtestdotnet? ( ~net-analyzer/speedtest-cli-2.1.3[${PYTHON_USEDEP}] )
 	spotify? ( ~dev-python/spotipy-2.20.0[${PYTHON_USEDEP}] )
-	sql? ( ~dev-python/sqlalchemy-1.4.42[${PYTHON_USEDEP}] )
+	sql? ( ~dev-python/sqlalchemy-1.4.44[${PYTHON_USEDEP}] )
 	squeezebox? ( ~dev-python/pysqueezebox-0.6.1[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
 	statsd? ( ~dev-python/statsd-3.2.1[${PYTHON_USEDEP}] )
@@ -386,7 +386,7 @@ RDEPEND="${RDEPEND}
 	velux? ( ~dev-python/pyvlx-0.2.20[${PYTHON_USEDEP}] )
 	vera? ( ~dev-python/pyvera-0.3.13[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-22.8.0[${PYTHON_USEDEP}] )
-	vicare? ( ~dev-python/PyViCare-2.17.0[${PYTHON_USEDEP}] )
+	vicare? ( ~dev-python/PyViCare-2.19.0[${PYTHON_USEDEP}] )
 	vizio? ( ~dev-python/pyvizio-0.1.57[${PYTHON_USEDEP}] )
 	wake_on_lan? ( ~dev-python/wakeonlan-2.1.0[${PYTHON_USEDEP}] )
 	waqi? ( ~dev-python/waqiasync-1.0.0[${PYTHON_USEDEP}] )
@@ -409,7 +409,7 @@ RDEPEND="${RDEPEND}
 	yi? ( ~dev-python/aioftp-0.21.3[${PYTHON_USEDEP}] )
 	zeroconf? ( ~dev-python/python-zeroconf-0.39.4[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.34.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.85[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.5[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.2[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.1[${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/bellows-0.34.2[${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.86[${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.19.0[${PYTHON_USEDEP}] ~dev-python/zigpy-0.51.5[${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.16.2[${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.10.3[${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.9.1[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.9[${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.5.2[${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] ~dev-python/zwave-js-server-python-0.43.0[${PYTHON_USEDEP}] )"

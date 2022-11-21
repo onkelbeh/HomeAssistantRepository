@@ -21,6 +21,11 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
+RDEPEND="
+	$(python_gen_cond_dep '
+		dev-python/tomli[${PYTHON_USEDEP}]
+	' 3.{8..10})
+"
 BDEPEND="
 	test? (
 		dev-python/flaky[${PYTHON_USEDEP}]
