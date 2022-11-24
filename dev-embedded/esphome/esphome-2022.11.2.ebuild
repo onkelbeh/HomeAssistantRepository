@@ -18,18 +18,22 @@ else
 	MY_PV=${PV/_beta/b}
 	SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.gh.tar.gz"
 	S="${WORKDIR}/${MY_P}/"
-KEYWORDS="amd64 arm arm64 x86"
 fi
 
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
 HOMEPAGE="https://github.com/esphome/esphome https://pypi.org/project/esphome/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="+server test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
+DOCS="README.md"
+
+RDEPEND="
+	server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
 		~dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]
 		~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
@@ -69,12 +73,11 @@ logging is to: /var/log/${PN}/{dashboard,warnings}.log
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
-DOCS="README.md"
-
 src_prepare() {
-	# Make it easy (again)
-	cut -d "=" -f1 < requirements.txt > requirements_new.txt
-	mv requirements_new.txt requirements.txt
+	sed "/aioesphomeapi==/c\aioesphomeapi" -i requirements.txt || die
+	sed "/click==/c\click" -i requirements.txt || die
+	sed "/colorama==/c\colorama" -i requirements.txt || die
+	sed "/zeroconf==/c\zeroconf" -i requirements.txt || die
 	eapply_user
 }
 
