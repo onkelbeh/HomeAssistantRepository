@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pysensibo</remote-id>
+    <remote-id type="github">andrey-git/pysensibo</remote-id>
     <maintainer status="unknown">
       <email>andrey-git@users.noreply.github.com</email>
       <name>andrey-git</name>
