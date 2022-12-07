@@ -10,7 +10,9 @@ inherit distutils-r1
 
 DESCRIPTION="BThome BLE support"
 HOMEPAGE="https://github.com/bluetooth-devices/bthome-ble https://pypi.org/project/bthome-ble/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+MY_PN=${PN/-/_}
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -20,9 +22,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/bluetooth-sensor-state-data-1.5.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/bluetooth-sensor-state-data-1.6.0[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodomex-3.15.0[${PYTHON_USEDEP}]
-	>=dev-python/sensor-state-data-2.5.0[${PYTHON_USEDEP}]
+	>=dev-python/sensor-state-data-2.10.1[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-0.1.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
