@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">apprise</remote-id>
+    <remote-id type="github">caronc/apprise</remote-id>
     <maintainer status="unknown">
       <email>lead2gold@gmail.com</email>
       <name>Chris Caron</name>
