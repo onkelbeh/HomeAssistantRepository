@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">graphql-core</remote-id>
+    <remote-id type="github">graphql-python/graphql-core</remote-id>
+    <maintainer status="unknown">
+      <email>cito@online.de</email>
+      <name>Christoph Zwerschke</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
