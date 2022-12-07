@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">async-upnp-client</remote-id>
+    <remote-id type="github">StevenLooman/async_upnp_client</remote-id>
     <maintainer status="unknown">
       <email>steven.looman@gmail.com</email>
       <name>Steven Looman</name>
