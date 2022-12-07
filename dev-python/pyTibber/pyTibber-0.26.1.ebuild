@@ -4,6 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -21,8 +22,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-1.4.0[${PYTHON_USEDEP}]
-	>=dev-python/graphql-subscription-manager-0.4.3[${PYTHON_USEDEP}]
-	dev-python/pytz[${PYTHON_USEDEP}]
+	dev-python/gql[${PYTHON_USEDEP}]
 	dev-python/python-dateutil[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
@@ -33,3 +33,5 @@ BDEPEND="
 python_test() {
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
