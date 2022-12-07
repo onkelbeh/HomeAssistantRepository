@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bluetooth-data-tools</remote-id>
+    <remote-id type="github">bdraco/bluetooth-data-tools</remote-id>
     <maintainer status="unknown">
       <email>nick@koston.org</email>
       <name>J. Nick Koston</name>

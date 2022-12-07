@@ -10,7 +10,9 @@ inherit distutils-r1
 
 DESCRIPTION="Tools for converting bluetooth data and packets"
 HOMEPAGE="https://github.com/bdraco/bluetooth-data-tools https://pypi.org/project/bluetooth-data-tools/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+MY_PN=${PN//-/_}
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
