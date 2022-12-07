@@ -4,17 +4,22 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_TESTED=( python3_{8..11} pypy3 )
+PYTHON_COMPAT=( "${PYTHON_TESTED[@]}" )
 
 inherit distutils-r1 multiprocessing
 
 DESCRIPTION="Simple powerful testing with Python"
-HOMEPAGE="https://pytest.org/"
+HOMEPAGE="
+	https://pytest.org/
+	https://github.com/pytest-dev/pytest/
+	https://pypi.org/project/pytest/
+"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -31,14 +36,17 @@ BDEPEND="
 	>=dev-python/setuptools_scm-6.2.3[${PYTHON_USEDEP}]
 	test? (
 		${RDEPEND}
-		dev-python/argcomplete[${PYTHON_USEDEP}]
-		>=dev-python/hypothesis-3.56[${PYTHON_USEDEP}]
-		dev-python/mock[${PYTHON_USEDEP}]
-		>=dev-python/pygments-2.7.2[${PYTHON_USEDEP}]
-		dev-python/pytest-xdist[${PYTHON_USEDEP}]
-		dev-python/requests[${PYTHON_USEDEP}]
-		dev-python/xmlschema[${PYTHON_USEDEP}]
-	)"
+		$(python_gen_cond_dep '
+			dev-python/argcomplete[${PYTHON_USEDEP}]
+			>=dev-python/hypothesis-3.56[${PYTHON_USEDEP}]
+			dev-python/mock[${PYTHON_USEDEP}]
+			>=dev-python/pygments-2.7.2[${PYTHON_USEDEP}]
+			dev-python/pytest-xdist[${PYTHON_USEDEP}]
+			dev-python/requests[${PYTHON_USEDEP}]
+			dev-python/xmlschema[${PYTHON_USEDEP}]
+		' "${PYTHON_TESTED[@]}")
+	)
+"
 
 src_test() {
 	# workaround new readline defaults
@@ -48,6 +56,11 @@ src_test() {
 }
 
 python_test() {
+	if ! has "${EPYTHON}" "${PYTHON_TESTED[@]/_/.}"; then
+		einfo "Skipping tests on ${EPYTHON}"
+		return
+	fi
+
 	local -x PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
 	local -x COLUMNS=80
 
@@ -70,6 +83,13 @@ python_test() {
 
 		# unstable with xdist
 		testing/test_terminal.py::TestTerminalFunctional::test_verbose_reporting_xdist
+
+		# TODO (XPASS)
+		testing/test_debugging.py::TestDebuggingBreakpoints::test_pdb_not_altered
+		testing/test_debugging.py::TestPDB::test_pdb_interaction_capturing_simple
+		testing/test_debugging.py::TestPDB::test_pdb_interaction_capturing_twice
+		testing/test_debugging.py::TestPDB::test_pdb_with_injected_do_debug
+		testing/test_debugging.py::test_pdb_suspends_fixture_capturing
 	)
 
 	[[ ${EPYTHON} == pypy3 ]] && EPYTEST_DESELECT+=(
@@ -79,5 +99,5 @@ python_test() {
 		testing/test_unraisableexception.py
 	)
 
-	epytest -p xdist -n "$(makeopts_jobs "${MAKEOPTS}" "$(get_nproc)")"
+	epytest -p xdist -n "$(makeopts_jobs)"
 }
