@@ -4,6 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -19,9 +20,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="~dev-python/pycognito-2022.5.0[${PYTHON_USEDEP}]
+RDEPEND="~dev-python/pycognito-2022.8.0[${PYTHON_USEDEP}]
 	~dev-python/snitun-0.31.0[${PYTHON_USEDEP}]
-	>=app-crypt/acme-1.28.0[${PYTHON_USEDEP}]
+	>=app-crypt/acme-1.31.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
