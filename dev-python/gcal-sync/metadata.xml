@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">gcal-sync</remote-id>
+    <remote-id type="github">allenporter/gcal_sync</remote-id>
     <maintainer status="unknown">
       <email>allen.porter@gmail.com</email>
       <name>Allen Porter</name>
