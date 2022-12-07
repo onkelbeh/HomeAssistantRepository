@@ -34,7 +34,7 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 		~dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]
 		~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
 		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
-		~dev-python/colorama-0.4.5[${PYTHON_USEDEP}]
+		dev-python/colorama[${PYTHON_USEDEP}]
 		server? ( ~dev-python/tornado-6.2[${PYTHON_USEDEP}] )
 		~dev-python/tzlocal-4.2[${PYTHON_USEDEP}]
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
