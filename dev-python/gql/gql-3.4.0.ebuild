@@ -4,16 +4,15 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="A library to interface with the opentherm gateway through serial or network connection."
-HOMEPAGE="https://github.com/mvn23/pyotgw https://pypi.org/project/pyotgw/"
-MY_P="${PN}-${PV/_beta/b}"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
-S="${WORKDIR}/${MY_P}"
+DESCRIPTION="GraphQL client for Python"
+HOMEPAGE="https://github.com/graphql-python/gql https://pypi.org/project/gql/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL-3+"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -21,7 +20,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/graphql-core-3.3.0_alpha2[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.6[${PYTHON_USEDEP}]
+	>=dev-python/backoff-1.11.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

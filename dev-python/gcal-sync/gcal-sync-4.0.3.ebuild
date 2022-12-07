@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="A python library for syncing Google Calendar to local storage for use in Home Assistant"
+DESCRIPTION="A python library for syncing Google Calendar to local storage"
 HOMEPAGE="https://github.com/allenporter/gcal_sync https://pypi.org/project/gcal-sync/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
@@ -22,7 +22,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.9.0[${PYTHON_USEDEP}]
-	>=dev-python/ical-4.1.1[${PYTHON_USEDEP}]"
+	>=dev-python/ical-4.2.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

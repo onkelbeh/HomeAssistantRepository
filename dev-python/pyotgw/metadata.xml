@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyotgw</remote-id>
+    <remote-id type="github">mvn23/pyotgw</remote-id>
     <maintainer status="unknown">
       <email>milan@network23.nl</email>
       <name>Milan van Nugteren</name>

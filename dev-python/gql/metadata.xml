@@ -6,11 +6,11 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">ical</remote-id>
-    <remote-id type="github">allenporter/ical</remote-id>
+    <remote-id type="pypi">gql</remote-id>
+    <remote-id type="github">graphql-python/gql</remote-id>
     <maintainer status="unknown">
-      <email>allen.porter@gmail.com</email>
-      <name>Allen Porter</name>
+      <email>me@syrusakbary.com</email>
+      <name>Syrus Akbary</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

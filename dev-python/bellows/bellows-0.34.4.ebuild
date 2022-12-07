@@ -4,11 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="A library which communicates with Deconz radios for zigpy"
-HOMEPAGE="https://github.com/zigpy/zigpy-deconz https://pypi.org/project/zigpy-deconz/"
+DESCRIPTION="Library implementing EZSP"
+HOMEPAGE="https://github.com/zigpy/bellows https://pypi.org/project/bellows/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"
@@ -17,16 +18,17 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.md"
-
-RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.47.0[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/click[${PYTHON_USEDEP}]
+	>=dev-python/click-log-0.2.1[${PYTHON_USEDEP}]
+	~dev-python/pure-pcapy3-1.0.1[${PYTHON_USEDEP}]
+	dev-python/voluptuous[${PYTHON_USEDEP}]
+	>=dev-python/zigpy-0.51.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/asynctest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

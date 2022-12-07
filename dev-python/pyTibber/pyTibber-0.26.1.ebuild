@@ -4,11 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="asyncio-friendly python API for Sensibo"
-HOMEPAGE="https://github.com/andrey-git/pysensibo https://pypi.org/project/pysensibo/"
+DESCRIPTION="A python3 library to communicate with Tibber"
+HOMEPAGE="https://github.com/Danielhiversen/pyTibber https://pypi.org/project/pyTibber/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,7 +20,10 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-1.4.0[${PYTHON_USEDEP}]
+	dev-python/gql[${PYTHON_USEDEP}]
+	dev-python/python-dateutil[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

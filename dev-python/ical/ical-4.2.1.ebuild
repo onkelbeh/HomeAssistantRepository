@@ -8,13 +8,11 @@ DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
-DESCRIPTION="A library to interface with the opentherm gateway through serial or network connection."
-HOMEPAGE="https://github.com/mvn23/pyotgw https://pypi.org/project/pyotgw/"
-MY_P="${PN}-${PV/_beta/b}"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
-S="${WORKDIR}/${MY_P}"
+DESCRIPTION="Python iCalendar implementation (rfc 2445)"
+HOMEPAGE="https://github.com/allenporter/ical https://pypi.org/project/ical/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="GPL-3+"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -22,7 +20,11 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/python-dateutil-2.8.2[${PYTHON_USEDEP}]
+	>=dev-python/tzdata-2022.1[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-1.9.1[${PYTHON_USEDEP}]
+	>=dev-python/pyparsing-3.0.9[${PYTHON_USEDEP}]
+	>=dev-python/emoji-2.2.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

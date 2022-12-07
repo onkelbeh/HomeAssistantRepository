@@ -110,6 +110,7 @@
     <flag name="dynalite">Dynalite DyNET interface forHome Assistant </flag>
     <flag name="dyson">integrate all Dyson related platforms into Home Assistant</flag>
     <flag name="ecobee">Talk to Ecobee thermostats from Home Assistant</flag>
+    <flag name="ecowitt">add Ecowitt Weather station to your Home Assistant</flag>
     <flag name="emulated_roku">Emulate Roku API for Harmony and Android remotes</flag>
     <flag name="enigma2">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="enocean">Support for Enocean devices in Home Assistant</flag>

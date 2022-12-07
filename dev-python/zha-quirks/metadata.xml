@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">zha-quirks</remote-id>
+    <remote-id type="github">dmulcahey/zha-device-handlers</remote-id>
     <maintainer status="unknown">
       <email>david.mulcahey@icloud.com</email>
       <name>David F. Mulcahey</name>

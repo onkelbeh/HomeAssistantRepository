@@ -34,6 +34,7 @@
     <flag name="dlna_dmr">Allows you to control a DLNA Digital Media Renderer</flag>
     <flag name="dlna_dms">allows you to browse and play media from a DLNA Digital Media Server</flag>
     <flag name="dwd_weather_warnings">dwd_weather_warnings sensor platform uses DWD for  warnings</flag>
+    <flag name="ecowitt">add Ecowitt Weather station to your Home Assistant</flag>
     <flag name="enigma2">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="esphome">Support for esphome sensors, covers and switches and it's dashboard</flag>
     <flag name="ffmpeg">allows other Home Assistant integrations to process video and audio streams</flag>
