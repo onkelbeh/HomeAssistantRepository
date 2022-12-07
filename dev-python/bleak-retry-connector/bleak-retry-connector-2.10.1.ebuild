@@ -24,7 +24,8 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/dbus-fast-1.14.0[${PYTHON_USEDEP}]"
+	>=dev-python/dbus-fast-1.14.0[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-adapters-0.12.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
