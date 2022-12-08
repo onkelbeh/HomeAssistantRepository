@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/httpx-0.19.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/httpx-0.23.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
