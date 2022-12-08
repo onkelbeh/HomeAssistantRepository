@@ -22,7 +22,7 @@ DOCS="README.md"
 
 # requirements.txt is not read at all
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/click[${PYTHON_USEDEP}]"
+	dev-python/pynacl[${PYTHON_USEDEP}]"
 
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
