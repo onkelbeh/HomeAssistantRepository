@@ -18,7 +18,7 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
 RDEPEND=">=dev-python/requests-2.24.0[${PYTHON_USEDEP}]
 		>=dev-python/websocket-client-1.0.0[${PYTHON_USEDEP}]
