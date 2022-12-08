@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PlexAPI</remote-id>
+    <remote-id type="github">pkkid/python-plexapi</remote-id>
     <maintainer status="unknown">
       <email>michael.shepanski@gmail.com</email>
       <name>Michael Shepanski</name>
