@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ultraheat-api</remote-id>
+    <remote-id type="github">vpathuis/ultraheat</remote-id>
   </upstream>
 </pkgmetadata>
