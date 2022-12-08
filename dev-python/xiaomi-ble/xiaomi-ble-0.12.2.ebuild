@@ -10,7 +10,9 @@ inherit distutils-r1
 
 DESCRIPTION="Manage Xiaomi BLE devices"
 HOMEPAGE="https://github.com/bluetooth-devices/xiaomi-ble https://pypi.org/project/xiaomi-ble/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+MY_PN=${PN/-/_}
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -21,10 +23,12 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/home-assistant-bluetooth-1.3.0[${PYTHON_USEDEP}]
-	>=dev-python/sensor-state-data-2.1.2[${PYTHON_USEDEP}]
+	>=dev-python/sensor-state-data-2.12.1[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-sensor-state-data-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodomex-3.15.0[${PYTHON_USEDEP}]
-	>=dev-python/bleak-retry-connector-1.4.0[${PYTHON_USEDEP}]"
+	>=dev-python/bleak-retry-connector-1.15.0[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-data-tools-0.1.2[${PYTHON_USEDEP}]
+	>=dev-python/bleak-0.17.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
