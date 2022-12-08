@@ -32,3 +32,5 @@ BDEPEND="
 python_test() {
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
