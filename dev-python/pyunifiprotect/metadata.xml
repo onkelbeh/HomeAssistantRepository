@@ -8,12 +8,7 @@
   <upstream>
     <remote-id type="pypi">pyunifiprotect</remote-id>
     <maintainer status="unknown">
-      <email>nick@koston.org</email>
-      <name>J. Nick Koston</name>
-    </maintainer>
-    <maintainer status="unknown">
-      <name>Christopher Bailey</name>
-      <email>cbailey@mort.is</email>
+      <email>Christopher Bailey &lt;cbailey@mort.is&gt;, "J. Nick Koston" &lt;nick@koston.org&gt;</email>
     </maintainer>
   </upstream>
 </pkgmetadata>
