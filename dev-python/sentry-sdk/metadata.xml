@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">sentry-sdk</remote-id>
+    <remote-id type="github">getsentry/sentry-python</remote-id>
     <maintainer status="unknown">
       <email>hello@sentry.io</email>
       <name>Sentry Team and Contributors</name>
