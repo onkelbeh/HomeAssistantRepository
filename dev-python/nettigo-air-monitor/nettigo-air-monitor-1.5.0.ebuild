@@ -24,6 +24,7 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/dacite[${PYTHON_USEDEP}]
+	dev-python/orjson[${PYTHON_USEDEP}]
 	dev-python/aqipy-atmotech[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
