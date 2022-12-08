@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">hass-nabucasa</remote-id>
+    <remote-id type="github">NabuCasa/hass-nabucasa</remote-id>
     <maintainer status="unknown">
       <email>opensource@nabucasa.com</email>
       <name>Nabu Casa, Inc.</name>

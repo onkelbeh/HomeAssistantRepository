@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyTibber</remote-id>
+    <remote-id type="github">Danielhiversen/pyTibber</remote-id>
     <maintainer status="unknown">
       <email>mail@dahoiv.net</email>
       <name>Daniel Hjelseth Hoyer</name>

@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">yolink-api</remote-id>
+    <remote-id type="github">YoSmart-Inc/yolink-api</remote-id>
   </upstream>
 </pkgmetadata>

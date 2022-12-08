@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">plugwise</remote-id>
+    <remote-id type="github">plugwise/python-plugwise</remote-id>
     <maintainer status="unknown">
       <email>info@compa.nl</email>
       <name>Plugwise-team</name>

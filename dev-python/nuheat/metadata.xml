@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">nuheat</remote-id>
+    <remote-id type="github">broox/python-nuheat</remote-id>
     <maintainer status="unknown">
       <email>derek@broox.com</email>
       <name>Derek Brooks</name>

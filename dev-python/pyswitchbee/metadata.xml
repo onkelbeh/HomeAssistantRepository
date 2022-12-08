@@ -8,8 +8,7 @@
   <upstream>
     <remote-id type="pypi">pyswitchbee</remote-id>
     <maintainer status="unknown">
-      <name>Jafar Atili</name>
-      <email>at.jafar@outlook.com</email>
+      <email>Jafar Atili &lt;at.jafar@outlook.com&gt;</email>
     </maintainer>
   </upstream>
 </pkgmetadata>

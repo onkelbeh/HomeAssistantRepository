@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">janus</remote-id>
+    <remote-id type="github">aio-libs/janus</remote-id>
+    <maintainer status="unknown">
+      <email>andrew.svetlov@gmail.com</email>
+      <name>Andrew Svetlov &lt;andrew.svetlov@gmail.com&gt;</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

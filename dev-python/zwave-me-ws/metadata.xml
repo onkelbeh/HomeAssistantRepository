@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">zwave-me-ws</remote-id>
+    <remote-id type="github">Z-Wave-Me/zwave-me-ws</remote-id>
     <maintainer status="unknown">
       <email>kerbalspacema@gmail.com</email>
       <name>Dmitry Vlasov</name>

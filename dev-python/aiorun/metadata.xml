@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">aiorun</remote-id>
+    <remote-id type="github">cjrh/aiorun</remote-id>
+    <maintainer status="unknown">
+      <email>caleb.hattingh@gmail.com</email>
+      <name>Caleb Hattingh</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

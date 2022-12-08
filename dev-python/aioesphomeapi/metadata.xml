@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aioesphomeapi</remote-id>
+    <remote-id type="github">esphome/aioesphomeapi</remote-id>
     <maintainer status="unknown">
       <email>esphome@nabucasa.com</email>
       <name>Otto Winter</name>

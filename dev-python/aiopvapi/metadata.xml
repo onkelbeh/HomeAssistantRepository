@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiopvapi</remote-id>
+    <remote-id type="github">sander76/aio</remote-id>
   </upstream>
 </pkgmetadata>

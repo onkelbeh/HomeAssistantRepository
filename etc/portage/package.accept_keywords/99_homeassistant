@@ -19,6 +19,7 @@ net-analyzer/fail2ban ~amd64
 =dev-python/denonavr-0.10.11 ~amd64
 =dev-python/freezegun-1.2.1 ~amd64
 =dev-python/fritzconnection-1.10.3 ~amd64
+=dev-python/google-auth-oauthlib-0.7.1 ~amd64
 =dev-python/httpcore-0.15.0 ~amd64
 =dev-python/httpx-0.23.0 ~amd64
 =dev-python/humanfriendly-10.0 ~amd64

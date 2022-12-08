@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">yalexs-ble</remote-id>
+    <remote-id type="github">bdraco/yalexs-ble</remote-id>
     <maintainer status="unknown">
       <email>nick@koston.org</email>
       <name>J. Nick Koston</name>

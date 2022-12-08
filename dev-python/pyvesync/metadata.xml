@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyvesync</remote-id>
+    <remote-id type="github">webdjoe/pyvesync</remote-id>
     <maintainer status="unknown">
       <email>webdjoe@gmail.com</email>
       <name>Mark Perdue, Joe Trabulsy</name>

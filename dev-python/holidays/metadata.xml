@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">holidays</remote-id>
+    <remote-id type="github">dr-prodigy/python-holidays</remote-id>
     <maintainer status="unknown">
       <email>maurizio.montel@gmail.com</email>
       <name>dr-prodigy (formerly ryanss)</name>

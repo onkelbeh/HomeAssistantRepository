@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">wallbox</remote-id>
+    <remote-id type="github">cliviu74/wallbox</remote-id>
     <maintainer status="unknown">
       <email>cliviu74@yahoo.com</email>
       <name>Liviu Chiribuca</name>

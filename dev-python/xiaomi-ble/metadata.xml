@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">xiaomi-ble</remote-id>
+    <remote-id type="github">bluetooth-devices/xiaomi-ble</remote-id>
     <maintainer status="unknown">
       <email>john.carr@unrouted.co.uk</email>
       <name>John Carr</name>

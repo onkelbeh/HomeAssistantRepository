@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiounifi</remote-id>
+    <remote-id type="github">Kane610/aiounifi</remote-id>
     <maintainer status="unknown">
       <email>Kane610@users.noreply.github.com</email>
       <name>Robert Svensson</name>

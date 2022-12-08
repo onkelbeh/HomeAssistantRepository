@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bthome-ble</remote-id>
+    <remote-id type="github">bluetooth-devices/bthome-ble</remote-id>
     <maintainer status="unknown">
       <email>e.klamer@gmail.com</email>
       <name>Ernst Klamer</name>

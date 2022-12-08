@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">home-assistant-bluetooth</remote-id>
+    <remote-id type="github">home-assistant-libs/home-assistant-bluetooth</remote-id>
     <maintainer status="unknown">
       <email>nick@home-assistant.io</email>
       <name>J. Nick Koston</name>
