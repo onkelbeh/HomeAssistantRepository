@@ -27,6 +27,7 @@
     <flag name="agent_dvr">Agent DVR is a free* software DVR solution</flag>
     <flag name="airly">Uses the Airly web service as a source for air quality data</flag>
     <flag name="airnow">AirNow web service as a source for air quality data</flag>
+    <flag name="airq">integrating the sensors provided by your air-Q device</flag>
     <flag name="airthings">A python3 library to communicate with Aws</flag>
     <flag name="airthings_ble">Integrates Airthings BLE sensors into Home Assistant</flag>
     <flag name="airtouch4">control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller</flag>
@@ -55,6 +56,7 @@
     <flag name="aprs">Tracker integration connects to the APRS-IS</flag>
     <flag name="aqualogic">Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller</flag>
     <flag name="aquostv">The aquostv platform allows you to control a Sharp Aquos TV</flag>
+    <flag name="aranet">Integrates Aranet devices into Home Assistant</flag>
     <flag name="arcam_fmj">Control Arcam receivers from Home Assistant</flag>
     <flag name="arduino">deprecated</flag>
     <flag name="arlo">Allows you to integrate your Arlo devices into Home Assistant</flag>
@@ -103,6 +105,7 @@
     <flag name="bmw_connected_drive">Retrieve data from the BMW Connected Drive</flag>
     <flag name="bond">Asynchronous Python wrapper library over Bond Local API</flag>
     <flag name="bosch_shc">integrate your Bosch SHC into Home Assistant</flag>
+    <flag name="brandt"/>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
     <flag name="broadlink">Allows you to interact with Broadlink remote control devices</flag>
     <flag name="brother">Read current data from your local Brother printer</flag>
@@ -233,6 +236,7 @@
     <flag name="fibaro">Fibaro hub is a controller mainly connecting to Z-Wave devices</flag>
     <flag name="fido">Integrate your Fido account information into Home Assistant</flag>
     <flag name="file">Store notifications as a file</flag>
+    <flag name="file_upload">The file upload integration allows various features in the frontend to upload fi</flag>
     <flag name="fints">This only works with banks that support the FinTS (aka. HBCI) standard</flag>
     <flag name="fireservicerota">scheduling and dispatching system for firefighters</flag>
     <flag name="firmata">Firmata can be used to add digital inputs and outputs to Home Assistant</flag>
@@ -306,6 +310,7 @@
     <flag name="guardian">Integrates Elexa Guardian water valve controllers into Home Assistant</flag>
     <flag name="habitica">Allows you to monitor and manage your Habitica profile</flag>
     <flag name="hangouts">Allows you to send messages to Google Hangouts conversations</flag>
+    <flag name="hardware">provides an API which offers information about certain board types, USB dongles,</flag>
     <flag name="harman_kardon_avr">Allows you to control Harman Kardon Network Receivers</flag>
     <flag name="harmony">Logitech Harmony support for Home Assistant</flag>
     <flag name="hdmi_cec">Creates switch entities for HDMI devices in Home Assistant</flag>
@@ -414,6 +419,8 @@
     <flag name="linux_battery">sensor platform is using the information stored in /sys/class/power_supply/</flag>
     <flag name="litejet">allows a computer to control the system via LiteJet’s third party protocol</flag>
     <flag name="litterrobot">Wi-Fi-enabled, automatic, self-cleaning litter box for cats</flag>
+    <flag name="livisi">connect your LIVISI Smart Home Controller (SHC) to Home Assistant</flag>
+    <flag name="local_calendar">create a calendar of events in Home Assistant</flag>
     <flag name="logi_circle">integrate your Logi Circle cameras in Home Assistant</flag>
     <flag name="london_underground">display the status of London underground lines</flag>
     <flag name="lookin">Integrates LOOKin devices into Home Assistant</flag>
@@ -432,6 +439,7 @@
     <flag name="marytts">text-to-speech platform uses MaryTTS Text-to-Speech engine</flag>
     <flag name="mastodon">uses Mastodon to deliver notifications from Home Assistant</flag>
     <flag name="matrix">allows you to send messages to matrix rooms</flag>
+    <flag name="matter">control Matter devices on your local WiFi or Thread network</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="mazda">Mazda Connected Services integration</flag>
     <flag name="mcp23017">base for all related mcp23017 platforms in Home Assistant</flag>
@@ -646,6 +654,7 @@
     <flag name="ruckus_unleashed">Python API to interact with a Ruckus Unleashed device</flag>
     <flag name="russound_rio">control Russound devices that make use of the RIO protocol</flag>
     <flag name="russound_rnet">control Russound devices that make use of the RNET protocol</flag>
+    <flag name="ruuvitag_ble">Integrates Ruuvi’s RuuviTag BLE devices into Home Assistant</flag>
     <flag name="sabnzbd">monitor and control your downloads with SABnzbd from within Home Assistant</flag>
     <flag name="saj">poll a SAJ solar inverter and present the values as sensors</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
@@ -660,6 +669,7 @@
     <flag name="sensehat">lets you control the Sense HAT board’s 8x8 RGB LED matrix on your Raspberry Pi</flag>
     <flag name="senseme">Integrates SenseME devices into Home Assistant</flag>
     <flag name="sensibo">Integrates Sensibo Air Conditioning controller into Home Assistant</flag>
+    <flag name="sensirion_ble">Integrates sensors talking Sensirion’s BLE protocol into Home Assistant</flag>
     <flag name="sensorpro">Integrates SensorPro devices into Home Assistant</flag>
     <flag name="sensorpush">Integrates SensorPush devices into Home Assistant</flag>
     <flag name="sentry">The free Sentry account allows 5000 events per month</flag>
@@ -887,6 +897,7 @@
     <flag name="yolink">Integrates YoLink Devices into Home Assistant</flag>
     <flag name="youless">allows you to read the meter values from sensors created by YouLess</flag>
     <flag name="zabbix">integration to connect to a Zabbix monitoring instance via the Zabbix API</flag>
+    <flag name="zamg">meteorological details published by the Austrian weather service</flag>
     <flag name="zengge">Python API for controlling Zengge LED bulbs</flag>
     <flag name="zeroconf">will scan the network for supported devices and services</flag>
     <flag name="zerproc">discovers nearby Zerproc lights</flag>

@@ -50,6 +50,7 @@
     <flag name="knx">Asynchronous Library for the KNX protocol</flag>
     <flag name="kodi">control a Kodi multimedia system</flag>
     <flag name="kraken">allows you to monitor exchange rates on kraken.com</flag>
+    <flag name="local_calendar">create a calendar of events in Home Assistant</flag>
     <flag name="mariadb">WIP: set dependencies for mariadb-connector-python</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
