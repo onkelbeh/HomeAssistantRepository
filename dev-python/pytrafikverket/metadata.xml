@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pytrafikverket</remote-id>
+    <remote-id type="github">endor-force/pytrafikverket</remote-id>
   </upstream>
 </pkgmetadata>
