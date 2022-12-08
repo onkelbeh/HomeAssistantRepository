@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">sensirion-ble</remote-id>
+    <remote-id type="github">akx/sensirion-ble</remote-id>
+    <maintainer status="unknown">
+      <email>akx@iki.fi</email>
+      <name>Aarni Koskela</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
