@@ -10,10 +10,7 @@ inherit distutils-r1
 
 DESCRIPTION="Python 3 interface to Microsoft Cognitive Services Text To Speech"
 HOMEPAGE="https://github.com/jeroenterheerdt/pycsspeechtts https://pypi.org/project/pycsspeechtts/"
-# PYPI SDIST IS IMCOMPLETE
-COMMITID="44049cb2e1f173eed9d58e61ab97a8b4d40b5e0a"
-SRC_URI="https://github.com/jeroenterheerdt/pycsspeechtts/archive/${COMMITID}.tar.gz -> ${P}.gh.tar.gz"
-S="${WORKDIR}/${PN}-${COMMITID}/src/"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

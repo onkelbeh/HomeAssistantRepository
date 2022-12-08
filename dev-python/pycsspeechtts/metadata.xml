@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pycsspeechtts</remote-id>
+    <remote-id type="github">jeroenterheerdt/pycsspeechtts</remote-id>
   </upstream>
 </pkgmetadata>
