@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiohomekit</remote-id>
+    <remote-id type="github">Jc2k/aiohomekit</remote-id>
     <maintainer status="unknown">
       <email>john.carr@unrouted.co.uk</email>
       <name>John Carr</name>
