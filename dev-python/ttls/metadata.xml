@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ttls</remote-id>
+    <remote-id type="github">jschlyter/ttls</remote-id>
     <maintainer status="unknown">
       <email>jakob@schlyter.se</email>
       <name>Jakob Schlyter</name>
