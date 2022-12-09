@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bluetooth-auto-recovery</remote-id>
-    <remote-id type="github">Bluetooth-Devices/bluetooth-auto-recovery</remote-id>
+    <remote-id type="github">bluetooth-devices/bluetooth-auto-recovery</remote-id>
     <maintainer status="unknown">
       <email>nick@koston.org</email>
       <name>J. Nick Koston</name>
