@@ -10,7 +10,7 @@ inherit distutils-r1
 
 DESCRIPTION="Python program and library to control Wi-Fi enabled iRobot Roombas"
 HOMEPAGE="https://github.com/pschmitt/roombapy https://pypi.org/project/roombapy/"
-SRC_URI="https://github.com/pschmitt/roombapy/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/pschmitt/roombapy/archive/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

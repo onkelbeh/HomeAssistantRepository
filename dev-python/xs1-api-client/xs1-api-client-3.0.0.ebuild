@@ -9,8 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="A library to get and set values of the EZcontrol XS1 Gateway"
 HOMEPAGE="https://github.com/markusressel/xs1-api-client https://pypi.org/project/xs1-api-client/"
-
-SRC_URI="https://github.com/markusressel/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/markusressel/${PN}/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
