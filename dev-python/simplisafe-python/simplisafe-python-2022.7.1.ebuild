@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
 DISTUTILS_USE_PEP517=poetry
-
 inherit distutils-r1
 
 DESCRIPTION="A Python3, async interface to the SimpliSafe API"
