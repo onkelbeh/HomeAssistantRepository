@@ -7,9 +7,9 @@ PYTHON_COMPAT=( python3_{8..11} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1
 
-DESCRIPTION="A Python3, async interface to the SimpliSafe API"
-HOMEPAGE="https://github.com/bachya/simplisafe-python https://pypi.org/project/simplisafe-python/"
-MY_PN=${PN/-/_}
+DESCRIPTION="Recover bluetooth adapters that are in an stuck state"
+HOMEPAGE="https://github.com/bluetooth-devices/bluetooth-auto-recovery https://pypi.org/project/bluetooth-auto-recovery/"
+MY_PN=${PN//-/_}
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
@@ -21,19 +21,14 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
-	>=dev-python/backoff-1.11.1[${PYTHON_USEDEP}]
-	>=dev-python/beautifulsoup4-4.11.1[${PYTHON_USEDEP}]
-	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
-	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
-	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/PyRIC-0.1.6.3[${PYTHON_USEDEP}]
+	>=dev-python/btsocket-0.2.0[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
+	>=dev-python/usb-devices-0.4.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
-		dev-python/aioresponses[${PYTHON_USEDEP}]
-		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 

@@ -185,7 +185,7 @@ blockchain==1.4.4
 bluemaestro-ble==0.2.0
 bluepy==1.3.0
 bluetooth-adapters==0.12.0
-bluetooth-auto-recovery==0.5.4
+bluetooth-auto-recovery==0.5.5
 bluetooth-data-tools==0.3.0
 bluetooth-sensor-state-data==1.6.0
 bluez==5.65
@@ -436,7 +436,6 @@ gstreamer==1.20.3
 gTTS==2.2.4
 guppy3==3.1.2
 gzip==1.12
-h11==0.13.0
 h11==0.14.0
 h2==4.1.0
 ha-av==10.0.0_beta5
@@ -461,7 +460,7 @@ hole==0.7.0
 holidays==0.17.2
 home-assistant-bluetooth==1.8.1
 home-assistant-cli==9999
-home-assistant-frontend==20221207.0
+home-assistant-frontend==20221208.0
 homeassistant
 homeconnect==0.7.2
 homematicip==1.0.11
@@ -471,12 +470,11 @@ hpack==4.0.0
 html5lib==1.1
 httmock==1.4.0
 http-ece==1.1.0
-httpcore==0.15.0
 httpcore==0.16.2
 httplib2==0.20.4
 httplib2==0.21.0
 httpsig==1.3.0
-httpx==0.23.0
+httpx==0.23.1
 humanfriendly==10.0
 Hydrawiser==0.2
 hyper==0.7.0
@@ -490,7 +488,7 @@ ibeacon-ble==1.0.1
 ibm-cloud-sdk-core==3.11.3
 ibm-watson==5.2.2
 ibmiotf==0.3.4
-ical==4.2.1
+ical==4.2.2
 idna==3.4
 ifaddr==0.1.7
 ifaddr==0.2.0
@@ -506,7 +504,7 @@ influxdb==5.3.1
 inkbird-ble==0.5.5
 insteon-frontend-home-assistant==0.2.0
 intelhex==2.3.0
-intellifire4py==2.2.1
+intellifire4py==2.2.2
 iotawattpy==0.1.0
 iperf3==0.1.11
 iperf==3.12
@@ -764,7 +762,7 @@ protobuf-python==4.21.9
 protobuf==21.9
 proxmoxer==1.3.1
 psutil-home-assistant==0.0.1
-psutil==5.9.3
+psutil==5.9.4
 ptyprocess==0.7.0
 pubnub==6.4.1
 pubnubsub-handler==1.0.9
@@ -872,7 +870,7 @@ pygtfs==0.1.7
 pygti==0.9.3
 pyhamcrest==2.0.4
 pyheos==0.7.2
-pyHik==0.3.1
+pyHik==0.3.2
 pyhiveapi==0.5.14
 pyhomematic==0.1.77
 pyhomeworks==0.0.6
@@ -1045,7 +1043,7 @@ python-jose==3.3.0
 python-juicenet==1.1.0
 python-kasa==0.5.0
 python-magic==0.4.27
-python-matter-server==1.0.6
+python-matter-server==1.0.7
 python-metar==1.4.0
 python-miio==0.5.12
 python-mpd2==3.0.5
@@ -1192,7 +1190,7 @@ shodan==1.28.0
 simplehound==0.3
 simplejson==3.17.6
 simplepush==2.1.1
-simplisafe-python==2022.11.2
+simplisafe-python==2022.12.0
 siobrultech-protocols==0.5.0
 sisyphus-control==3.1.2
 six==1.16.0

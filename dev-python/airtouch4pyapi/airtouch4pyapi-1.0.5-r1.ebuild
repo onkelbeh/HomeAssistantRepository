@@ -10,7 +10,7 @@ inherit distutils-r1
 DESCRIPTION="An api allowing control of AC state (temperature, on/off, mode) of an Airtouch 4 controller locally over TCP"
 HOMEPAGE="https://github.com/LonePurpleWolf/airtouch4pyapi https://pypi.org/project/airtouch4pyapi/"
 COMMIT="34783888846783c058fe79cec16feda45504f701"
-SRC_URI="https://github.com/LonePurpleWolf/${PN}/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/LonePurpleWolf/${PN}/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz"
 S="${WORKDIR}/${PN}-${COMMIT}"
 
 LICENSE="MIT"

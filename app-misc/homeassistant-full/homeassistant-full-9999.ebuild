@@ -61,7 +61,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/bleak-retry-connector-2.10.1[${PYTHON_USEDEP}]
 	~dev-python/bleak-0.19.2[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-adapters-0.12.0[${PYTHON_USEDEP}]
-	~dev-python/bluetooth-auto-recovery-0.5.4[${PYTHON_USEDEP}]
+	~dev-python/bluetooth-auto-recovery-0.5.5[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-data-tools-0.3.0[${PYTHON_USEDEP}]
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2021.5.30[${PYTHON_USEDEP}]
@@ -74,7 +74,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/h11-0.14.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.61.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.8.1[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20221207.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20221208.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.16.2[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.1[${PYTHON_USEDEP}]
@@ -211,7 +211,7 @@ RDEPEND="${RDEPEND}
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
 	bluemaestro? ( ~dev-python/bluemaestro-ble-0.2.0[${PYTHON_USEDEP}] )
 	bluesound? ( ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-0.19.2[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.10.1[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.12.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.5.4[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-0.3.0[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.75.0[${PYTHON_USEDEP}] )
+	bluetooth? ( ~dev-python/bleak-0.19.2[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.10.1[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.12.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-0.5.5[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-0.3.0[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.75.0[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	bluetooth_tracker? ( ~dev-python/bt-proximity-0.2.1[${PYTHON_USEDEP}] ~dev-python/pybluez-0.22[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[${PYTHON_USEDEP}] )
@@ -431,7 +431,7 @@ RDEPEND="${RDEPEND}
 	heatmiser? ( ~dev-python/heatmiserV3-1.1.18[${PYTHON_USEDEP}] )
 	heos? ( ~dev-python/pyheos-0.7.2[${PYTHON_USEDEP}] )
 	here_travel_time? ( ~dev-python/here-routing-0.1.1[${PYTHON_USEDEP}] ~dev-python/here-transit-1.0.0[${PYTHON_USEDEP}] )
-	hikvision? ( ~dev-python/pyHik-0.3.1[${PYTHON_USEDEP}] )
+	hikvision? ( ~dev-python/pyHik-0.3.2[${PYTHON_USEDEP}] )
 	hikvisioncam? ( ~dev-python/hikvision-0.4[${PYTHON_USEDEP}] )
 	hisense_aehw4a1? ( ~dev-python/pyaehw4a1-0.3.9[${PYTHON_USEDEP}] )
 	hive? ( ~dev-python/pyhiveapi-0.5.14[${PYTHON_USEDEP}] )
@@ -474,7 +474,7 @@ RDEPEND="${RDEPEND}
 	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
 	inkbird? ( ~dev-python/inkbird-ble-0.5.5[${PYTHON_USEDEP}] )
 	insteon? ( ~dev-python/pyinsteon-1.2.0[${PYTHON_USEDEP}] ~dev-python/insteon-frontend-home-assistant-0.2.0[${PYTHON_USEDEP}] )
-	intellifire? ( ~dev-python/intellifire4py-2.2.1[${PYTHON_USEDEP}] )
+	intellifire? ( ~dev-python/intellifire4py-2.2.2[${PYTHON_USEDEP}] )
 	intesishome? ( ~dev-python/pyintesishome-1.8.0[${PYTHON_USEDEP}] )
 	iota? ( ~dev-python/PyOTA-2.0.5[${PYTHON_USEDEP}] )
 	iotawatt? ( ~dev-python/iotawattpy-0.1.0[${PYTHON_USEDEP}] )
@@ -534,7 +534,7 @@ RDEPEND="${RDEPEND}
 	litejet? ( ~dev-python/pylitejet-0.3.0[${PYTHON_USEDEP}] )
 	litterrobot? ( ~dev-python/pylitterbot-2022.11.0[${PYTHON_USEDEP}] )
 	livisi? ( ~dev-python/aiolivisi-0.0.14[${PYTHON_USEDEP}] )
-	local_calendar? ( ~dev-python/ical-4.2.1[${PYTHON_USEDEP}] )
+	local_calendar? ( ~dev-python/ical-4.2.2[${PYTHON_USEDEP}] )
 	logi_circle? ( ~dev-python/logi-circle-0.2.3[${PYTHON_USEDEP}] )
 	london_underground? ( ~dev-python/london-tube-status-0.5[${PYTHON_USEDEP}] )
 	lookin? ( ~dev-python/aiolookin-0.1.1[${PYTHON_USEDEP}] )
@@ -553,7 +553,7 @@ RDEPEND="${RDEPEND}
 	marytts? ( ~dev-python/speak2mary-1.4.0[${PYTHON_USEDEP}] )
 	mastodon? ( ~dev-python/Mastodon-py-1.5.1[${PYTHON_USEDEP}] )
 	matrix? ( ~dev-python/matrix-client-0.4.0[${PYTHON_USEDEP}] )
-	matter? ( ~dev-python/python-matter-server-1.0.6[${PYTHON_USEDEP}] )
+	matter? ( ~dev-python/python-matter-server-1.0.7[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.4.3[${PYTHON_USEDEP}] )
 	mazda? ( ~dev-python/pymazda-0.3.7[${PYTHON_USEDEP}] )
 	mcp23017? ( ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] ~dev-python/adafruit-circuitpython-mcp230xx-2.2.2[${PYTHON_USEDEP}] )
@@ -802,7 +802,7 @@ RDEPEND="${RDEPEND}
 	sighthound? ( ~dev-python/pillow-9.3.0[${PYTHON_USEDEP}] ~dev-python/simplehound-0.3[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.18[${PYTHON_USEDEP}] )
 	simplepush? ( ~dev-python/simplepush-2.1.1[${PYTHON_USEDEP}] )
-	simplisafe? ( ~dev-python/simplisafe-python-2022.11.2[${PYTHON_USEDEP}] )
+	simplisafe? ( ~dev-python/simplisafe-python-2022.12.0[${PYTHON_USEDEP}] )
 	sinch? ( ~dev-python/clx-sdk-xms-1.0.0[${PYTHON_USEDEP}] )
 	sisyphus? ( ~dev-python/sisyphus-control-3.1.2[${PYTHON_USEDEP}] )
 	skybeacon? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
