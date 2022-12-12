@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
 DISTUTILS_USE_PEP517=setuptools
-
 inherit distutils-r1
 
 DESCRIPTION="aiolifx light effects"
@@ -22,7 +21,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiolifx-0.5.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiolifx-0.8.6[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
