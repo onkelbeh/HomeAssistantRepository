@@ -10,7 +10,9 @@ inherit distutils-r1
 
 DESCRIPTION="Tools to enumerate and find Bluetooth Adapters"
 HOMEPAGE="https://github.com/bluetooth-devices/bluetooth-adapters https://pypi.org/project/bluetooth-adapters/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+MY_PN=${PN/-/_}
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -21,7 +23,11 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
-	>=dev-python/dbus-fast-1.4.0[${PYTHON_USEDEP}]"
+	>=dev-python/dbus-fast-1.21.0[${PYTHON_USEDEP}]
+	>=dev-python/bleak-0.15.1[${PYTHON_USEDEP}]
+	>=dev-python/usb-devices-0.4.1[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
+	>=dev-python/mac-vendor-lookup-0.1.12[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
