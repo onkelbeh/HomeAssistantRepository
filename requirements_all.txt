@@ -1,6 +1,6 @@
 abodepy==1.2.0
 accuweather==0.4.0
-acme==1.31.0
+acme==1.32.0
 Adafruit-Blinka==7.1.1
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.1.8
@@ -59,13 +59,14 @@ aioguardian==2022.7.0
 aioharmony==0.2.9
 aiohomekit==2.4.1
 aiohttp-cors==0.7.0
+aiohttp==3.8.1
 aiohttp==3.8.3
 aiohue==4.5.0
 aioimaplib==1.0.1
 aioitertools==0.11.0
 aiokafka==0.7.2
 aiokef==0.2.16
-aiolifx-effects==0.3.0
+aiolifx-effects==0.3.1
 aiolifx-themes==0.2.0
 aiolifx==0.8.7
 aiolivisi==0.0.14
@@ -88,9 +89,9 @@ aiorun==2022.11.1
 aiosenseme==0.6.1
 aiosenz==1.0.0
 aioserial==1.3.0
-aioshelly==5.1.0
+aioshelly==5.1.1
 aioshutil==1.1
-aiosignal==1.2.0
+aiosignal==1.3.1
 aioskybell==22.7.0
 aioslimproto==2.1.1
 aiosqlite==0.17.0
@@ -114,7 +115,7 @@ ambee==0.4.0
 amberelectric==1.0.4
 Ambiclimate==0.2.1
 amcrest==1.9.7
-androidtv==0.0.69
+androidtv==0.0.70
 anel-pwrctrl-homeassistant==0.0.1
 anthemav==1.4.1
 anyio==3.6.2
@@ -194,8 +195,8 @@ bme680==1.0.5
 bond-async==0.1.22
 boschshcpy==0.2.35
 boto3==1.20.24
-boto3==1.26.8
-botocore==1.29.8
+boto3==1.26.16
+botocore==1.29.16
 bottle==0.12.23
 bottleneck==1.3.5
 broadlink==0.18.3
@@ -370,7 +371,7 @@ freebox-api==1.0.1
 freesms==0.2.0
 freetype==2.12.1
 fritzconnection==1.4.2
-frozenlist==1.3.1
+frozenlist==1.3.3
 future==0.18.2
 gammu==1.41.0
 garages-amsterdam==3.0.0
@@ -532,7 +533,7 @@ jsonpointer==2.3
 jsonrpc-async==2.1.0
 jsonrpc-base==2.1.0
 jsonrpc-websocket==3.1.1
-jsonschema==4.16.0
+jsonschema==4.17.3
 justbackoff==0.6.0
 justnimbus==0.6.0
 kafka-python==2.0.2
@@ -540,7 +541,7 @@ kaiterra-async-client==1.0.0
 kconfiglib==13.7.1
 keba-kecontact==1.1.0
 kegtron-ble==0.4.0
-keyring==23.9.3
+keyring==23.11.0
 keyrings_alt==4.1.0
 kiwiki-client==0.1.1
 konnected==1.2.0
@@ -549,7 +550,7 @@ kostal-plenticore==0.2.0
 krakenex==2.1.0
 lacrosse-view==0.0.9
 lakeside==0.12
-lark==1.1.3
+lark==1.1.4
 laundrify-aio==1.1.2
 led-ble==1.0.0
 libc==1
@@ -560,7 +561,7 @@ libfastjson==0.99.9
 libffi==3.4.4
 libgudev==237
 libiconv==0
-libiconv==1.15
+libiconv==1.17
 libidn2==2.3.3
 libidn==1.41
 libintl==0
@@ -698,7 +699,7 @@ openerz-api==0.1.0
 openevsewifi==1.1.2
 openhomedevice==2.0.2
 opensensemap-api==0.2.0
-openssl==1.1.1q
+openssl==1.1.1s
 openwebifpy==3.2.7
 openwrt-luci-rpc==1.1.11
 openwrt-ubus-rpc==0.0.2
@@ -717,7 +718,7 @@ panacotta==0.1
 panasonic-viera==0.3.6
 pandas==1.4.3
 pandas==1.5.1
-paramiko==2.11.0
+paramiko==2.12.0
 passlib==1.7.4
 pbr==5.11.0
 pcal9535a==0.7
@@ -736,12 +737,12 @@ piglow==1.2.4
 pigpio==1.78
 pilight==0.1.1
 pillow==9.3.0
-pip==22.0.4
+pip==22.3.1
 pizzapi==0.0.3
 pkce==1.0.3
 pkgconf==1.8.0
 pkgconfig==2
-platformdirs==2.5.2
+platformdirs==2.5.4
 platformio==6.0.2
 plugwise==0.25.14
 plumbum==1.8.0
@@ -756,7 +757,7 @@ prettytable==3.5.0
 ProgettiHWSW==0.1.1
 proliphix==0.4.1
 prometheus_client==0.7.1
-prompt_toolkit==3.0.31
+prompt_toolkit==3.0.33
 proto-plus==1.22.1
 protobuf-python==4.21.9
 protobuf==21.9
@@ -811,7 +812,7 @@ pycarwings2==2.13
 pyCEC==0.5.2
 pycfdns==2.0.1
 pychannels==1.2.3
-pychromecast==13.0.1
+pychromecast==13.0.2
 pycketcasts==1.0.1
 pyclimacell==0.18.2
 pycmus==0.1.1
@@ -973,11 +974,11 @@ pyrepetierng==0.1.0
 pyrfc3339==1.1
 pyRFXtrx==0.30.0
 PyRIC==0.1.6.3
-pyrisco==0.5.6
+pyrisco==0.5.7
 pyrituals==0.0.6
 PyRMVtransport==0.3.3
 pyroute2==0.7.3
-pyrsistent==0.18.1
+pyrsistent==0.19.2
 pyruckus==0.16
 pysabnzbd==1.1.1
 pysaj==0.0.16
@@ -1080,7 +1081,7 @@ pytradfri==9.0.0
 pytrafikverket==0.2.2
 PyTransportNSW==0.1.1
 PyTurboJPEG==1.6.7
-pytz==2022.4
+pytz==2022.6
 pytz_deprecation_shim==0.1.0_p0
 pyudev==0.23.2
 pyunifiprotect==4.5.2
@@ -1121,7 +1122,7 @@ readline==8.1_p2
 reedsolomon==1.5.4
 regenmaschine==2022.11.0
 regex==2021.8.28
-regex==2022.9.13
+regex==2022.10.31
 related==0.7.2
 renault-api==0.1.11
 ReParser==1.4.3
@@ -1238,7 +1239,7 @@ swisshydrodata==0.1.0
 synology-srm==0.2.0
 systembridgeconnector==3.4.4
 systemd-utils==251.7
-systemd==251.7
+systemd==251.8
 sysvinit==3.05
 tabulate==0.9.0
 tahoma-api==0.0.16
@@ -1380,7 +1381,7 @@ youless-api==0.16
 youtube-dl==2021.12.17
 zamg==0.1.1
 zbar==0.23.90
-zeep==4.1.0
+zeep==4.2.1
 zengge==0.2
 zha-quirks==0.0.88
 zhong-hong-hvac==1.0.9
@@ -1393,5 +1394,5 @@ zigpy==0.52.3
 zipp==3.10.0
 zlib==1.2.13
 zm-py==0.5.2
-zope-interface==5.5.0
+zope-interface==5.5.2
 zwave-me-ws==0.3.0

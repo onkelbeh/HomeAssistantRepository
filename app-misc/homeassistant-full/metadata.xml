@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">home-assistant</remote-id>
+    <remote-id type="github">home-assistant/core</remote-id>
     <doc>https://www.home-assistant.io/docs/</doc>
     <maintainer>
       <email>hello@home-assistant.io</email>
