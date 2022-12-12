@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">androidtv</remote-id>
+    <remote-id type="github">JeffLIrion/python-androidtv</remote-id>
     <maintainer status="unknown">
       <email>jefflirion@users.noreply.github.com</email>
       <name>Jeff Irion</name>
