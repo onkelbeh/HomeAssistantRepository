@@ -46,7 +46,7 @@ RDEPEND="${RDEPEND}
 # from package_constraints.txt
 RDEPEND="${RDEPEND}
 	~dev-python/aiodiscover-1.4.13[${PYTHON_USEDEP}]
-	~dev-python/aiohttp-3.8.3[${PYTHON_USEDEP}]
+	~dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 	~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}]
 	~dev-python/anyio-3.6.2[${PYTHON_USEDEP}]
 	~dev-python/astral-2.2[${PYTHON_USEDEP}]
@@ -90,7 +90,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/pandas-1.4.3[${PYTHON_USEDEP}]
 	~dev-python/pillow-9.3.0[${PYTHON_USEDEP}]
-	<dev-python/pip-22.1.0
+	<dev-python/pip-22.4.0
 	~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-2.5.0[${PYTHON_USEDEP}]
@@ -161,7 +161,7 @@ RDEPEND="${RDEPEND}
 	ambient_station? ( ~dev-python/aioambient-2021.11.0[${PYTHON_USEDEP}] )
 	amcrest? ( ~dev-python/amcrest-1.9.7[${PYTHON_USEDEP}] )
 	ampio? ( ~dev-python/asmog-0.0.6[${PYTHON_USEDEP}] )
-	androidtv? ( ~dev-python/adb-shell-0.4.3[${PYTHON_USEDEP}] ~dev-python/androidtv-0.0.69[${PYTHON_USEDEP}] ~dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}] )
+	androidtv? ( ~dev-python/adb-shell-0.4.3[${PYTHON_USEDEP}] ~dev-python/androidtv-0.0.70[${PYTHON_USEDEP}] ~dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}] )
 	android_ip_webcam? ( ~dev-python/pydroid-ipcam-2.0.0[${PYTHON_USEDEP}] )
 	anel_pwrctrl? ( ~dev-python/anel-pwrctrl-homeassistant-0.0.1[${PYTHON_USEDEP}] )
 	anthemav? ( ~dev-python/anthemav-1.4.1[${PYTHON_USEDEP}] )
@@ -233,7 +233,7 @@ RDEPEND="${RDEPEND}
 	caldav? ( ~dev-python/caldav-0.9.1[${PYTHON_USEDEP}] )
 	camera? ( ~dev-python/PyTurboJPEG-1.6.7[${PYTHON_USEDEP}] )
 	canary? ( ~dev-python/py-canary-0.5.3[${PYTHON_USEDEP}] )
-	cast? ( ~dev-python/pychromecast-13.0.1[${PYTHON_USEDEP}] )
+	cast? ( ~dev-python/pychromecast-13.0.2[${PYTHON_USEDEP}] )
 	channels? ( ~dev-python/pychannels-1.2.3[${PYTHON_USEDEP}] )
 	circuit? ( ~dev-python/circuit-webhook-1.0.1[${PYTHON_USEDEP}] )
 	cisco_ios? ( ~dev-python/pexpect-4.6.0[${PYTHON_USEDEP}] )
@@ -525,7 +525,7 @@ RDEPEND="${RDEPEND}
 	lg_soundbar? ( ~dev-python/temescal-0.5[${PYTHON_USEDEP}] )
 	lidarr? ( ~dev-python/aiopyarr-22.11.0[${PYTHON_USEDEP}] )
 	life360? ( ~dev-python/life360-5.3.0[${PYTHON_USEDEP}] )
-	lifx? ( ~dev-python/aiolifx-0.8.7[${PYTHON_USEDEP}] ~dev-python/aiolifx-effects-0.3.0[${PYTHON_USEDEP}] ~dev-python/aiolifx-themes-0.2.0[${PYTHON_USEDEP}] )
+	lifx? ( ~dev-python/aiolifx-0.8.7[${PYTHON_USEDEP}] ~dev-python/aiolifx-effects-0.3.1[${PYTHON_USEDEP}] ~dev-python/aiolifx-themes-0.2.0[${PYTHON_USEDEP}] )
 	lifx_legacy? ( ~dev-python/liffylights-0.9.4[${PYTHON_USEDEP}] )
 	lightwave? ( ~dev-python/lightwave-0.20[${PYTHON_USEDEP}] )
 	limitlessled? ( ~dev-python/limitlessled-1.1.3[${PYTHON_USEDEP}] )
@@ -750,7 +750,7 @@ RDEPEND="${RDEPEND}
 	ridwell? ( ~dev-python/aioridwell-2022.11.0[${PYTHON_USEDEP}] )
 	ring? ( ~dev-python/ring-doorbell-0.7.2[${PYTHON_USEDEP}] )
 	ripple? ( ~dev-python/python-ripple-api-0.0.3[${PYTHON_USEDEP}] )
-	risco? ( ~dev-python/pyrisco-0.5.6[${PYTHON_USEDEP}] )
+	risco? ( ~dev-python/pyrisco-0.5.7[${PYTHON_USEDEP}] )
 	rituals_perfume_genie? ( ~dev-python/pyrituals-0.0.6[${PYTHON_USEDEP}] )
 	rmvtransport? ( ~dev-python/PyRMVtransport-0.3.3[${PYTHON_USEDEP}] )
 	rocketchat? ( ~dev-python/rocketchat-API-0.6.1[${PYTHON_USEDEP}] )
@@ -794,7 +794,7 @@ RDEPEND="${RDEPEND}
 	seventeentrack? ( ~dev-python/py17track-2021.12.2[${PYTHON_USEDEP}] )
 	seven_segments? ( ~dev-python/pillow-9.3.0[${PYTHON_USEDEP}] )
 	sharkiq? ( ~dev-python/sharkiq-0.0.1[${PYTHON_USEDEP}] )
-	shelly? ( ~dev-python/aioshelly-5.1.0[${PYTHON_USEDEP}] )
+	shelly? ( ~dev-python/aioshelly-5.1.1[${PYTHON_USEDEP}] )
 	shiftr? ( ~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.28.0[${PYTHON_USEDEP}] )
 	sht31? ( ~dev-python/Adafruit-GPIO-1.0.3[${PYTHON_USEDEP}] ~dev-python/Adafruit-SHT31-1.0.2[${PYTHON_USEDEP}] )
@@ -1029,7 +1029,7 @@ BDEPEND="${RDEPEND}
 		~dev-python/freezegun-1.2.2[${PYTHON_USEDEP}]
 		~dev-python/mock-open-1.4.0[${PYTHON_USEDEP}]
 		~dev-python/mypy-0.991[${PYTHON_USEDEP}]
-		<dev-python/pip-22.1.0
+		~dev-python/pipdeptree-2.3.1[${PYTHON_USEDEP}]
 		~dev-vcs/pre-commit-2.20.0
 		~dev-python/pylint-2.15.7[${PYTHON_USEDEP}]
 		~dev-python/pytest-asyncio-0.20.2[${PYTHON_USEDEP}]

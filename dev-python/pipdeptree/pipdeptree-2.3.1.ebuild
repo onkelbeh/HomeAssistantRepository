@@ -4,15 +4,15 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=hatchling
 
 inherit distutils-r1
 
-DESCRIPTION="Asynchronous library to control Shelly devices."
-HOMEPAGE="https://github.com/home-assistant-libs/aioshelly https://pypi.org/project/aioshelly/"
+DESCRIPTION="Command line utility to show dependency tree of packages."
+HOMEPAGE="https://github.com/tox-dev/pipdeptree https://pypi.org/project/pipdeptree/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -20,12 +20,10 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/requests[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

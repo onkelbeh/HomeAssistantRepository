@@ -4,29 +4,29 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
-
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
-DESCRIPTION="Communicate with an Android TV or Fire TV device via ADB over a network."
-HOMEPAGE="https://github.com/JeffLIrion/python-androidtv/ https://pypi.org/project/androidtv/"
+DESCRIPTION="Asynchronous library to control Shelly devices."
+HOMEPAGE="https://github.com/home-assistant-libs/aioshelly https://pypi.org/project/aioshelly/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test usb"
+IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
-RDEPEND=">=dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}]
-	>=dev-python/adb-shell-0.4.0[${PYTHON_USEDEP}]
-	>=dev-python/adb-shell-0.4.0[usb?,${PYTHON_USEDEP}]
-	>=dev-python/aiofiles-0.4.0[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-data-tools-0.3.0[${PYTHON_USEDEP}]
+	>=dev-python/orjson-3.8.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/requests[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

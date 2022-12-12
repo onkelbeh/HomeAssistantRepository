@@ -5,13 +5,12 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
 DISTUTILS_USE_PEP517=setuptools
-
 inherit distutils-r1
 
-DESCRIPTION="aiolifx light effects"
-HOMEPAGE="https://github.com/amelchio/aiolifx_effects https://pypi.org/project/aiolifx-effects/"
-MY_PN=${PN/-/_}
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="Python module to talk to Google Chromecast."
+HOMEPAGE="https://github.com/balloob/pychromecast https://pypi.org/project/PyChromecast/"
+MY_PN="PyChromecast"
+SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_PN}-${PV}.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
@@ -20,9 +19,11 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.md"
+DOCS="README.rst"
 
-RDEPEND=">=dev-python/aiolifx-0.5.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/protobuf-python-3.19.1[${PYTHON_USEDEP}]
+	>=dev-python/python-zeroconf-0.25.1[${PYTHON_USEDEP}]
+	>=dev-python/casttube-0.2.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
