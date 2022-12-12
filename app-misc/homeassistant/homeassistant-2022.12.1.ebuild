@@ -90,7 +90,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/pandas-1.4.3[${PYTHON_USEDEP}]
 	~dev-python/pillow-9.3.0[${PYTHON_USEDEP}]
-	<dev-python/pip-22.1.0
+	<dev-python/pip-22.4.0
 	~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
 	~dev-python/pyjwt-2.5.0[${PYTHON_USEDEP}]
@@ -426,7 +426,7 @@ BDEPEND="${RDEPEND}
 		~dev-python/freezegun-1.2.2[${PYTHON_USEDEP}]
 		~dev-python/mock-open-1.4.0[${PYTHON_USEDEP}]
 		~dev-python/mypy-0.991[${PYTHON_USEDEP}]
-		<dev-python/pip-22.1.0
+		<dev-python/pip-22.4.0
 		~dev-vcs/pre-commit-2.20.0
 		~dev-python/pylint-2.15.7[${PYTHON_USEDEP}]
 		~dev-python/pytest-asyncio-0.20.2[${PYTHON_USEDEP}]
