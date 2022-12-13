@@ -1,9 +1,10 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
 DESCRIPTION="Audio metadata tag reader and writer implemented in pure Python"
@@ -12,7 +13,7 @@ SRC_URI="https://github.com/quodlibet/mutagen/releases/download/release-${PV}/${
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ~hppa ~ia64 ppc ppc64 ~riscv sparc x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 
 BDEPEND="
 	test? (
@@ -33,5 +34,5 @@ python_test() {
 	local deselect=(
 		tests/quality/test_flake8.py
 	)
-	epytest ${deselect[@]/#/--deselect }
+	epytest "${deselect[@]/#/--deselect }"
 }

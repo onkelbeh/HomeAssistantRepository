@@ -74,7 +74,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/h11-0.14.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.61.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.8.1[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20221212.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20221213.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.16.2[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.1[${PYTHON_USEDEP}]
@@ -233,7 +233,7 @@ RDEPEND="${RDEPEND}
 	caldav? ( ~dev-python/caldav-0.9.1[${PYTHON_USEDEP}] )
 	camera? ( ~dev-python/PyTurboJPEG-1.6.7[${PYTHON_USEDEP}] )
 	canary? ( ~dev-python/py-canary-0.5.3[${PYTHON_USEDEP}] )
-	cast? ( ~dev-python/pychromecast-13.0.3[${PYTHON_USEDEP}] )
+	cast? ( ~dev-python/pychromecast-13.0.4[${PYTHON_USEDEP}] )
 	channels? ( ~dev-python/pychannels-1.2.3[${PYTHON_USEDEP}] )
 	circuit? ( ~dev-python/circuit-webhook-1.0.1[${PYTHON_USEDEP}] )
 	cisco_ios? ( ~dev-python/pexpect-4.6.0[${PYTHON_USEDEP}] )
