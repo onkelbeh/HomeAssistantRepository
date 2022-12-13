@@ -462,7 +462,7 @@ hole==0.7.0
 holidays==0.17.2
 home-assistant-bluetooth==1.8.1
 home-assistant-cli==9999
-home-assistant-frontend==20221212.0
+home-assistant-frontend==20221213.0
 homeassistant
 homeconnect==0.7.2
 homematicip==1.0.11
@@ -813,7 +813,7 @@ pycarwings2==2.13
 pyCEC==0.5.2
 pycfdns==2.0.1
 pychannels==1.2.3
-pychromecast==13.0.3
+pychromecast==13.0.4
 pycketcasts==1.0.1
 pyclimacell==0.18.2
 pycmus==0.1.1
