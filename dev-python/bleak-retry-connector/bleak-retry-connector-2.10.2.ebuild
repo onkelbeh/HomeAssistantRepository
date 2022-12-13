@@ -10,7 +10,9 @@ inherit distutils-r1
 
 DESCRIPTION="A connector for Bleak Clients that handles transient connection failures"
 HOMEPAGE="https://github.com/bluetooth-devices/bleak-retry-connector https://pypi.org/project/bleak-retry-connector/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+MY_PN=${PN//-/_}
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -20,9 +22,10 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/bleak-0.18.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/dbus-fast-1.14.0[${PYTHON_USEDEP}]"
+	>=dev-python/dbus-fast-1.14.0[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-adapters-0.12.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -30,9 +33,5 @@ BDEPEND="
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
