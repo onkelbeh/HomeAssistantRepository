@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
 DISTUTILS_USE_PEP517=setuptools
-
 inherit distutils-r1
 
 DESCRIPTION="Asynchronous library to control Shelly devices."
@@ -22,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-0.3.0[${PYTHON_USEDEP}]
-	dev-python/orjson[${PYTHON_USEDEP}]"
+	>=dev-python/orjson-3.8.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
