@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-songpal</remote-id>
+    <remote-id type="github">rytilahti/python-songpal</remote-id>
     <maintainer status="unknown">
       <email>tpr@iki.fi</email>
       <name>Teemu R</name>

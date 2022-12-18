@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">mychevy</remote-id>
+    <remote-id type="github">sdague/mychevy</remote-id>
     <maintainer status="unknown">
       <email>sean@dague.net</email>
       <name>Sean Dague</name>

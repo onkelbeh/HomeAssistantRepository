@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">sisyphus-control</remote-id>
+    <remote-id type="github">jkeljo/sisyphus-control</remote-id>
   </upstream>
 </pkgmetadata>

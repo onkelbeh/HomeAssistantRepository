@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">mill-local</remote-id>
+    <remote-id type="github">Danielhiversen/pyMillLocal</remote-id>
     <maintainer status="unknown">
       <email>mail@dahoiv.net</email>
       <name>Daniel Hjelseth Høyer</name>

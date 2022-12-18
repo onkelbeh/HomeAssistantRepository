@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyitachip2ir</remote-id>
+    <remote-id type="github">alanfischer/itachip2ir</remote-id>
     <maintainer status="unknown">
       <email>alan@lightningtoads.com</email>
       <name>Alan Fischer</name>

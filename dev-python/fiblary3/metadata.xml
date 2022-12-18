@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">fiblary3</remote-id>
+    <remote-id type="github">pbalogh/fiblary</remote-id>
     <maintainer status="unknown">
       <email>peter.balogh2@gmail.com</email>
       <name>Peter Balogh</name>

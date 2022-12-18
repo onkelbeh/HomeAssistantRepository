@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ovoenergy</remote-id>
+    <remote-id type="github">timmo001/ovoenergy</remote-id>
     <maintainer status="unknown">
       <email>contact@timmo.xyz</email>
-      <name>Timmo</name>
+      <name>Aidan Timson (Timmo)</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

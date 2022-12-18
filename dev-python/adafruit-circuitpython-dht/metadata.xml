@@ -7,9 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">adafruit-circuitpython-dht</remote-id>
+    <remote-id type="github">adafruit/Adafruit_CircuitPython_DHT</remote-id>
     <maintainer status="unknown">
-      <email>circuitpython@adafruit.com</email>
-      <name>Adafruit Industries</name>
+      <email>Adafruit Industries &lt;circuitpython@adafruit.com&gt;</email>
     </maintainer>
   </upstream>
 </pkgmetadata>

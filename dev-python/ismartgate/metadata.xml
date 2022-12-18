@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ismartgate</remote-id>
+    <remote-id type="github">bdraco/ismartgate</remote-id>
     <maintainer status="unknown">
       <email>nick@koston.org</email>
       <name>Robbie Van Gorkom; J. Nick Koston</name>

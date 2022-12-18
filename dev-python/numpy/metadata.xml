@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">numpy</remote-id>
+    <remote-id type="github">numpy/numpy</remote-id>
     <maintainer status="unknown">
       <email>numpy-discussion@python.org</email>
       <name>NumPy Developers</name>

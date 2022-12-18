@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyBluez</remote-id>
+    <remote-id type="github">pybluez/pybluez</remote-id>
     <maintainer status="unknown">
       <email>ashuang@alum.mit.edu</email>
       <name>Piotr Karulis</name>

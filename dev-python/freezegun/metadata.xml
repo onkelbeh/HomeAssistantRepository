@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">freezegun</remote-id>
+    <remote-id type="github">spulec/freezegun</remote-id>
     <maintainer status="unknown">
       <email>spulec@gmail.com</email>
       <name>Steve Pulec</name>

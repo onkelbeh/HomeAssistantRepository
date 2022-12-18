@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">TravisPy</remote-id>
+    <remote-id type="github">menegazzo/travispy</remote-id>
     <maintainer status="unknown">
       <email>menegazzo@gmail.com</email>
       <name>Fabio Menegazzo</name>

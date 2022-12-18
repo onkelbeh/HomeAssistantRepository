@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pywilight</remote-id>
+    <remote-id type="github">leofig-rj/pywilight</remote-id>
     <maintainer status="unknown">
       <email>leoagfig@gmail.com</email>
       <name>Leonardo Figueiro</name>

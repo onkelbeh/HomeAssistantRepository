@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">onvif-zeep-async</remote-id>
+    <remote-id type="github">hunterjm/python-onvif-zeep-async</remote-id>
     <maintainer status="unknown">
       <email>sinchb128@gmail.com</email>
       <name>sinchb</name>

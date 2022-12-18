@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">file-read-backwards</remote-id>
+    <remote-id type="github">RobinNil/file_read_backwards</remote-id>
     <maintainer status="unknown">
       <email>robinsquare42@gmail.com</email>
       <name>Robin Robin</name>

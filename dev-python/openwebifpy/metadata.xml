@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">openwebifpy</remote-id>
+    <remote-id type="github">fbradyirl/openwebifpy</remote-id>
     <maintainer status="unknown">
       <email>fbradyirl@github.io</email>
       <name>Finbarr Brady</name>

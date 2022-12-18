@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">mycroftapi</remote-id>
+    <remote-id type="github">Geeked-Out-Solutions/mycroft_api</remote-id>
   </upstream>
 </pkgmetadata>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">krakenex</remote-id>
+    <remote-id type="github">veox/python3-krakenex</remote-id>
     <maintainer status="unknown">
       <email>veox+packages+spamremove@veox.pw</email>
       <name>Noel Maersk</name>

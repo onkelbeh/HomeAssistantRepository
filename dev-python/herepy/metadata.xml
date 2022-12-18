@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">herepy</remote-id>
+    <remote-id type="github">abdullahselek/HerePy</remote-id>
     <maintainer status="unknown">
-      <email>abdullahselek@gmail.com</email>
+      <email>abdullahselek.os@gmail.com</email>
       <name>Abdullah Selek</name>
     </maintainer>
   </upstream>

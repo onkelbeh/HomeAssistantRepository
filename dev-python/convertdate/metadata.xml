@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">convertdate</remote-id>
+    <remote-id type="github">fitnr/convertdate</remote-id>
     <maintainer status="unknown">
       <email>contact@fakeisthenewreal.org</email>
       <name>Neil Freeman</name>

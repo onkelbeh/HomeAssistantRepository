@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ziggo-mediabox-xl</remote-id>
+    <remote-id type="github">b10m/ziggo_mediabox_xl</remote-id>
     <maintainer status="unknown">
       <email>menno@b10m.net</email>
       <name>Menno Blom</name>

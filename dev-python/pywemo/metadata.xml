@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pywemo</remote-id>
+    <remote-id type="github">pywemo/pywemo</remote-id>
     <maintainer status="unknown">
       <email>pywemo@esev.com</email>
       <name>Eric Severance</name>

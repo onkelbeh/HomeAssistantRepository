@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bme280spi</remote-id>
+    <remote-id type="github">Kuzj/bme280spi</remote-id>
     <maintainer status="unknown">
       <email>kuzj99@gmail.com</email>
       <name>Kuzj</name>

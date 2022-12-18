@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">CO2Signal</remote-id>
+    <remote-id type="github">danielsjf/CO2Signal</remote-id>
   </upstream>
 </pkgmetadata>

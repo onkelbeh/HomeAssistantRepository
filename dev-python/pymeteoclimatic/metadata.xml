@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pymeteoclimatic</remote-id>
+    <remote-id type="github">adrianmo/pymeteoclimatic</remote-id>
     <maintainer status="unknown">
       <email>adrian@morenomartinez.com</email>
       <name>Adrián Moreno</name>

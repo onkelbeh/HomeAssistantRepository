@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">enocean</remote-id>
+    <remote-id type="github">kipe/enocean</remote-id>
     <maintainer status="unknown">
       <email>kipenroskaposti@gmail.com</email>
       <name>Kimmo Huoman</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tikteck</remote-id>
+    <remote-id type="github">mjg59/python-tikteck</remote-id>
     <maintainer status="unknown">
       <email>mjg59@srcf.ucam.org</email>
       <name>Matthew Garrett</name>

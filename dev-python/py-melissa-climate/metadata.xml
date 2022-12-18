@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">py-melissa-climate</remote-id>
+    <remote-id type="github">kennedyshead/py-melissa-climate</remote-id>
     <maintainer status="unknown">
       <email>magnusknutas@gmail.com</email>
       <name>Magnus Knutas</name>

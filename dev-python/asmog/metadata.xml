@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">asmog</remote-id>
+    <remote-id type="github">kstaniek/python-ampio-smog-api</remote-id>
     <maintainer status="unknown">
       <email>kstaniek@gmail.com</email>
       <name>Klaudiusz Staniek</name>

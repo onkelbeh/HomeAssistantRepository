@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">google-cloud-texttospeech</remote-id>
+    <remote-id type="github">googleapis/python-texttospeech</remote-id>
     <maintainer status="unknown">
       <email>googleapis-packages@google.com</email>
       <name>Google LLC</name>

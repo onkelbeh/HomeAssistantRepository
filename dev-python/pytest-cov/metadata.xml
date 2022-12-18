@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pytest-cov</remote-id>
+    <remote-id type="github">pytest-dev/pytest-cov</remote-id>
     <maintainer status="unknown">
       <email>marc.schlaich@gmail.com</email>
       <name>Marc Schlaich</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pykaleidescape</remote-id>
+    <remote-id type="github">SteveEasley/pykaleidescape</remote-id>
     <maintainer status="unknown">
       <email>tardis74@yahoo.com</email>
       <name>Steve Easley</name>

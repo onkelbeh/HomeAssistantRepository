@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">iglo</remote-id>
+    <remote-id type="github">jesserockz/python-iglo</remote-id>
   </upstream>
 </pkgmetadata>

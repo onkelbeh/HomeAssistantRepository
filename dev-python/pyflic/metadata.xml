@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyflic</remote-id>
+    <remote-id type="github">soldag/pyflic</remote-id>
     <maintainer status="unknown">
       <email>soeren_oldag@freenet.de</email>
       <name>soldag</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">iammeter</remote-id>
+    <remote-id type="github">lewei50/iammeter_pip_lib</remote-id>
     <maintainer status="unknown">
       <email>gyangbo@gmail.com</email>
       <name>yangbo1979</name>

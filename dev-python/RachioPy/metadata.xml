@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">RachioPy</remote-id>
+    <remote-id type="github">rfverbruggen/rachiopy</remote-id>
     <maintainer status="unknown">
       <email>rfverbruggen@icloud.com</email>
       <name>Robbert Verbruggen</name>

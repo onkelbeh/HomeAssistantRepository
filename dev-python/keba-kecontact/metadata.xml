@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">keba-kecontact</remote-id>
+    <remote-id type="github">dannerph/keba-kecontact</remote-id>
     <maintainer status="unknown">
       <email>philipp@danner-web.de</email>
       <name>Philipp Danner</name>

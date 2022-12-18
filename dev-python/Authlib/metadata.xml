@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">Authlib</remote-id>
+    <remote-id type="github">lepture/authlib</remote-id>
     <maintainer status="unknown">
       <email>me@lepture.com</email>
       <name>Hsiaoming Yang</name>

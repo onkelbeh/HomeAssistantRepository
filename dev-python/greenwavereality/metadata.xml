@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">greenwavereality</remote-id>
+    <remote-id type="github">dfiel/greenwavereality</remote-id>
     <maintainer status="unknown">
       <email>github@dfiel.com</email>
       <name>David Fiel</name>

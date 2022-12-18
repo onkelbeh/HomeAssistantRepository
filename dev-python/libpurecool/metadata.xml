@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">libpurecool</remote-id>
+    <remote-id type="github">etheralm/libpurecool</remote-id>
     <maintainer status="unknown">
       <email>etheralm@users.noreply.github.com</email>
       <name>Etheralm</name>

@@ -7,12 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">roombapy</remote-id>
+    <remote-id type="github">pschmitt/roombapy</remote-id>
     <maintainer status="unknown">
       <email>philipp@schmitt.co</email>
       <name>Philipp Schmitt</name>
     </maintainer>
   </upstream>
-  <use>
-    <flag name="mqtt">Build with mqtt support</flag>
-  </use>
 </pkgmetadata>

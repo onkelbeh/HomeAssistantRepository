@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">scsgate</remote-id>
+    <remote-id type="github">flavio/scsgate</remote-id>
     <maintainer status="unknown">
       <email>flavio@castelli.me</email>
       <name>Flavio Castelli</name>

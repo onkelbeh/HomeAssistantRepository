@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">afsapi</remote-id>
+    <remote-id type="github">zhelev/python-afsapi</remote-id>
     <maintainer status="unknown">
       <email>krasimir.zhelev@gmail.com</email>
       <name>Krasimir Zhelev</name>

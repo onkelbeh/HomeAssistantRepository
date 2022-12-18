@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">wolf-smartset</remote-id>
+    <remote-id type="github">adamkrol93/wolf-smartset</remote-id>
     <maintainer status="unknown">
       <email>adam.krol93@gmail.com</email>
       <name>Adam Krol</name>

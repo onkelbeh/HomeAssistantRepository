@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">geojson</remote-id>
+    <remote-id type="github">jazzband/geojson</remote-id>
     <maintainer status="unknown">
       <email>ray@strongoutput.com</email>
       <name>Ray Riga</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">snitun</remote-id>
+    <remote-id type="github">NabuCasa/snitun</remote-id>
     <maintainer status="unknown">
       <email>opensource@nabucasa.com</email>
       <name>Nabu Casa, Inc.</name>

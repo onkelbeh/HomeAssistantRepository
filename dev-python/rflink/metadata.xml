@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">rflink</remote-id>
+    <remote-id type="github">aequitas/python-rflink</remote-id>
     <maintainer status="unknown">
       <email>github@ijohan.nl</email>
       <name>Johan Bloemberg</name>

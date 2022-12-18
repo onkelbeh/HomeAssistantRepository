@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">plexauth</remote-id>
+    <remote-id type="github">jjlawren/python-plexauth</remote-id>
     <maintainer status="unknown">
       <email>jjlawren@users.noreply.github.com</email>
       <name>Jason Lawrence</name>

@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyserial-asyncio</remote-id>
+    <remote-id type="github">pyserial/pyserial-asyncio</remote-id>
   </upstream>
 </pkgmetadata>

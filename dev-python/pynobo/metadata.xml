@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pynobo</remote-id>
+    <remote-id type="github">echoromeo/pynobo</remote-id>
   </upstream>
 </pkgmetadata>

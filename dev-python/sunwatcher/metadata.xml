@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">sunwatcher</remote-id>
+    <remote-id type="bitbucket">Lavode/sunwatcher</remote-id>
     <maintainer status="unknown">
       <email>michael@morrolan.ch</email>
       <name>Michael Senn</name>

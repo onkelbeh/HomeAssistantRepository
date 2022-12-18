@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">locationsharinglib</remote-id>
+    <remote-id type="github">costastf/locationsharinglib</remote-id>
     <maintainer status="unknown">
       <email>costas.tyf@gmail.com</email>
       <name>Costas Tyfoxylos</name>

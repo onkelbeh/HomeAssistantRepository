@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">dicttoxml2</remote-id>
+    <remote-id type="github">Ousret/dicttoxml</remote-id>
     <maintainer status="unknown">
       <email>ryan@quandyfactory.com</email>
       <name>Ryan McGreal</name>

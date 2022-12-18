@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">goodwe</remote-id>
+    <remote-id type="github">marcelblijleven/goodwe</remote-id>
     <maintainer status="unknown">
       <email>'marcelblijleven@gmail.com</email>
       <name>Marcel Blijleven, Martin Letenay</name>

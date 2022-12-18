@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">eternalegypt</remote-id>
+    <remote-id type="github">amelchio/eternalegypt</remote-id>
     <maintainer status="unknown">
       <email>amelchio@nogoto.net</email>
       <name>Anders Melchiorsen</name>

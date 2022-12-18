@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">envoy-reader</remote-id>
+    <remote-id type="github">jesserizzo/envoy_reader</remote-id>
     <maintainer status="unknown">
       <email>jesse.rizzo@gmail.com</email>
       <name>Jesse Rizzo</name>

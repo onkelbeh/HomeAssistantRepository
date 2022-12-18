@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">somecomfort</remote-id>
+    <remote-id type="github">kk7ds/somecomfort</remote-id>
     <maintainer status="unknown">
       <email>dsmith+somecomfort@danplanet.com</email>
       <name>Dan Smith</name>

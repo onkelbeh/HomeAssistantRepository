@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">datapoint</remote-id>
+    <remote-id type="github">ejep/datapoint-python</remote-id>
     <maintainer status="unknown">
       <email>emlyn.je.price@gmail.com</email>
       <name>Emlyn Price</name>

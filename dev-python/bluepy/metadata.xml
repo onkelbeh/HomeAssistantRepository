@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bluepy</remote-id>
+    <remote-id type="github">IanHarvey/bluepy</remote-id>
     <maintainer status="unknown">
       <email>website-contact@fenditton.org</email>
       <name>Ian Harvey</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyJWT</remote-id>
+    <remote-id type="github">jpadilla/pyjwt</remote-id>
     <maintainer status="unknown">
       <email>hello@jpadilla.com</email>
       <name>Jose Padilla</name>

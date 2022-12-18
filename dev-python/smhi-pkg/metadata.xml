@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">smhi-pkg</remote-id>
+    <remote-id type="github">joysoftware/pypi_smhi</remote-id>
     <maintainer status="unknown">
       <email>info@joysoftware.org</email>
       <name>helto4real</name>

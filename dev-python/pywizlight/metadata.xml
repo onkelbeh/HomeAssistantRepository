@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pywizlight</remote-id>
+    <remote-id type="github">sbidy/pywizlight</remote-id>
     <maintainer status="unknown">
       <email>sbidy@hotmail.com</email>
       <name>Stephan Traub</name>

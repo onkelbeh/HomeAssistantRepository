@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bizkaibus</remote-id>
+    <remote-id type="github">UgaitzEtxebarria/BizkaibusRTPI</remote-id>
     <maintainer status="unknown">
       <email>etxeba17@gmail.com</email>
       <name>Ugaitz Etxebarria</name>

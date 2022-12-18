@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyrail</remote-id>
+    <remote-id type="gitlab">tjorim/pyrail</remote-id>
     <maintainer status="unknown">
       <email>tielemans.jorim@gmail.com</email>
       <name>Jorim Tielemans</name>

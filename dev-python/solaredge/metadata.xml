@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">solaredge</remote-id>
+    <remote-id type="github">bertouttier/solaredge</remote-id>
     <maintainer status="unknown">
       <email>jan@energieid.be</email>
       <name>Bert Outtier, EnergieID</name>

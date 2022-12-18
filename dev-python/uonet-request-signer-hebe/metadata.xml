@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">uonet-request-signer-hebe</remote-id>
+    <remote-id type="github">wulkanowy/uonet-request-signer</remote-id>
     <maintainer status="unknown">
       <email>kuba@szczodrzynski.pl</email>
       <name>Kuba Szczodrzyński</name>

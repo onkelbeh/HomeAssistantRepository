@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pywebpush</remote-id>
+    <remote-id type="github">web-push-libs/pywebpush</remote-id>
     <maintainer status="unknown">
       <email>src+webpusher@jrconlin.com</email>
       <name>JR Conlin</name>

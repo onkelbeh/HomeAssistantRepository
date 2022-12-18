@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">push-receiver</remote-id>
+    <remote-id type="github">Francesco149/push_receiver</remote-id>
     <maintainer status="unknown">
       <email>lolisamurai@tfwno.gf</email>
       <name>Franc[e]sco</name>

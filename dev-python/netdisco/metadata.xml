@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">netdisco</remote-id>
+    <remote-id type="github">home-assistant/netdisco</remote-id>
     <maintainer status="unknown">
       <email>Paulus@PaulusSchoutsen.nl</email>
       <name>Paulus Schoutsen</name>

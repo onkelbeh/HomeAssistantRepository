@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiovlc</remote-id>
+    <remote-id type="github">MartinHjelmare/aiovlc</remote-id>
     <maintainer status="unknown">
       <email>marhje52@gmail.com</email>
       <name>Martin Hjelmare</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">decora-wifi</remote-id>
+    <remote-id type="github">tlyakhov/python-decora_wifi</remote-id>
     <maintainer status="unknown">
       <email>tlyakhov@gmail.com</email>
       <name>Tim Lyakhovetskiy</name>

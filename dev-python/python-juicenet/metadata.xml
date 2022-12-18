@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-juicenet</remote-id>
+    <remote-id type="github">jesserockz/python-juicenet</remote-id>
   </upstream>
 </pkgmetadata>

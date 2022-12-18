@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pulsectl</remote-id>
+    <remote-id type="github">mk-fg/python-pulse-control</remote-id>
     <maintainer status="unknown">
       <email>mk.fraggod@gmail.com</email>
       <name>George Filipkin, Mike Kazantsev</name>

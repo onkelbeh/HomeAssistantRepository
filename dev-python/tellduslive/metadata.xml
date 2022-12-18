@@ -5,4 +5,12 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">tellduslive</remote-id>
+    <remote-id type="github">molobrakos/tellduslive</remote-id>
+    <maintainer status="unknown">
+      <email>error.errorsson@gmail.com</email>
+      <name>Erik</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>

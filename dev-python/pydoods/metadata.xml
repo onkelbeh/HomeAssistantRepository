@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pydoods</remote-id>
+    <remote-id type="github">snowzach/pydoods</remote-id>
     <maintainer status="unknown">
       <email>doods@prozach.org</email>
       <name>Zach Brown</name>

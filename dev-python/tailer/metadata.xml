@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tailer</remote-id>
+    <remote-id type="github">six8/pytailer</remote-id>
     <maintainer status="unknown">
       <email>six8@devdetails.com</email>
       <name>Mike Thornton</name>

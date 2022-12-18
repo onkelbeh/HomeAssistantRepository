@@ -5,4 +5,12 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">adb-homeassistant</remote-id>
+    <remote-id type="github">google/python-adb</remote-id>
+    <maintainer status="unknown">
+      <email>fahhem@google.com</email>
+      <name>Fahrzin Hemmati</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>

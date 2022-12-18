@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">influxdb</remote-id>
+    <remote-id type="github">influxdb/influxdb-python</remote-id>
   </upstream>
 </pkgmetadata>

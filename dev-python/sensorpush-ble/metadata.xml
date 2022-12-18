@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">sensorpush-ble</remote-id>
+    <remote-id type="github">bluetooth-devices/sensorpush-ble</remote-id>
     <maintainer status="unknown">
       <email>nick@koston.org</email>
       <name>J. Nick Koston</name>

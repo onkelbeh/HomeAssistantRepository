@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyvolumio</remote-id>
+    <remote-id type="github">OnFreund/PyVolumio</remote-id>
     <maintainer status="unknown">
       <email>onfreund@gmail.com</email>
       <name>On Freund</name>

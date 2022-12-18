@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">sharp_aquos_rc</remote-id>
+    <remote-id type="github">jmoore987/sharp_aquos_rc</remote-id>
     <maintainer status="unknown">
       <email>jmoore987@yahoo.com</email>
       <name>Jeffrey Moore</name>

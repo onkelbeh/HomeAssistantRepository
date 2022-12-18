@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">alarmdecoder</remote-id>
+    <remote-id type="github">nutechsoftware/alarmdecoder</remote-id>
     <maintainer status="unknown">
       <email>general@support.nutech.com</email>
       <name>Nu Tech Software Solutions, Inc.</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aio-geojson-geonetnz-quakes</remote-id>
+    <remote-id type="github">exxamalte/python-aio-geojson-geonetnz-quakes</remote-id>
     <maintainer status="unknown">
       <email>coding@subspace.de</email>
       <name>Malte Franken</name>

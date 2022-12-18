@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">messagebird</remote-id>
+    <remote-id type="github">messagebird/python-rest-api</remote-id>
     <maintainer status="unknown">
       <email>support@messagebird.com</email>
       <name>MessageBird</name>

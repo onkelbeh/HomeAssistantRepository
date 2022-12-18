@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyMetEireann</remote-id>
+    <remote-id type="github">DylanGore/PyMetEireann</remote-id>
     <maintainer status="unknown">
       <email>hello@dylangore.ie</email>
       <name>Dylan Gore</name>

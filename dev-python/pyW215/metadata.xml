@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyW215</remote-id>
+    <remote-id type="github">linuxchristian/pyW215</remote-id>
     <maintainer status="unknown">
       <email>christian@junckerbraedstrup.dk</email>
       <name>Christian Juncker Brædstrup</name>

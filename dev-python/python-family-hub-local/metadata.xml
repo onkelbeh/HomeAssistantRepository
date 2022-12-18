@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-family-hub-local</remote-id>
+    <remote-id type="github">Klathmon/python-family-hub-local</remote-id>
     <maintainer status="unknown">
       <email>gregbenner1@gmail.com</email>
       <name>Gregory Benner</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">withings-api</remote-id>
+    <remote-id type="github">vangorra/python_withings_api</remote-id>
     <maintainer status="unknown">
       <email>robbie.van.gorkom@protonmail.com</email>
       <name>Robbie Van Gorkom</name>

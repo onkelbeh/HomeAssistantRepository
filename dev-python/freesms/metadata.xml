@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">freesms</remote-id>
+    <remote-id type="github">bfontaine/freesms</remote-id>
     <maintainer status="unknown">
       <email>b@ptistefontaine.fr</email>
       <name>Baptiste Fontaine</name>

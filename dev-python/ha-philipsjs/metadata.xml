@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ha-philipsjs</remote-id>
+    <remote-id type="github">danielperna84/ha-philipsjs</remote-id>
     <maintainer status="unknown">
       <email>danielperna84@gmail.com</email>
       <name>Daniel Perna</name>

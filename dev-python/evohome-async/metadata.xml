@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">evohome-async</remote-id>
+    <remote-id type="github">zxdavb/evohome-async</remote-id>
     <maintainer status="unknown">
-      <email>zxdavb@bonnes.me</email>
+      <email>zxdavb@gmail.com</email>
       <name>Andrew Stock &amp; David Bonnes</name>
     </maintainer>
   </upstream>

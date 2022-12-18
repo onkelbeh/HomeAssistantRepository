@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyXiaomiGateway</remote-id>
+    <remote-id type="github">Danielhiversen/PyXiaomiGateway</remote-id>
   </upstream>
 </pkgmetadata>

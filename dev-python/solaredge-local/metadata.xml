@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">solaredge-local</remote-id>
+    <remote-id type="github">drobtravels/solaredge-local</remote-id>
   </upstream>
 </pkgmetadata>

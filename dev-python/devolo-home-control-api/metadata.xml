@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">devolo-home-control-api</remote-id>
+    <remote-id type="github">2Fake/devolo_home_control_api</remote-id>
     <maintainer status="unknown">
       <email>m.bong@famabo.de, guido.schmitz@fedaix.de</email>
       <name>Markus Bong, Guido Schmitz</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">notify-events</remote-id>
+    <remote-id type="github">notify-events/python</remote-id>
     <maintainer status="unknown">
       <email>support@notify.events</email>
       <name>Notify.Events</name>

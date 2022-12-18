@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyobihai</remote-id>
+    <remote-id type="github">dshokouhi/pyobihai</remote-id>
     <maintainer status="unknown">
       <email>dshokouhi@gmail.com</email>
       <name>Daniel Shokouhi</name>

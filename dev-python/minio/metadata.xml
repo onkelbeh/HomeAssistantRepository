@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">minio</remote-id>
+    <remote-id type="github">minio/minio-py</remote-id>
     <maintainer status="unknown">
       <email>dev@min.io</email>
       <name>MinIO, Inc.</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyfttt</remote-id>
+    <remote-id type="github">briandconnelly/pyfttt</remote-id>
     <maintainer status="unknown">
       <email>bdc@bconnelly.net</email>
       <name>Brian Connelly</name>

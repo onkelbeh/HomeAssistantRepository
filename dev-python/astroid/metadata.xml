@@ -7,9 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">astroid</remote-id>
+    <remote-id type="github">PyCQA/astroid</remote-id>
     <maintainer status="unknown">
-      <email>code-quality@python.org</email>
-      <name>Python Code Quality Authority</name>
+      <email>Python Code Quality Authority &lt;code-quality@python.org&gt;</email>
     </maintainer>
   </upstream>
 </pkgmetadata>

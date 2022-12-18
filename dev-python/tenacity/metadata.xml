@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tenacity</remote-id>
+    <remote-id type="github">jd/tenacity</remote-id>
     <maintainer status="unknown">
       <email>julien@danjou.info</email>
       <name>Julien Danjou</name>

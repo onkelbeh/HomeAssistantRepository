@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-awair</remote-id>
+    <remote-id type="github">ahayworth/python_awair</remote-id>
     <maintainer status="unknown">
       <email>ahayworth@gmail.com</email>
       <name>Andrew Hayworth</name>

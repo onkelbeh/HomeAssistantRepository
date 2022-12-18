@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-digitalocean</remote-id>
+    <remote-id type="github">koalalorenzo/python-digitalocean</remote-id>
     <maintainer status="unknown">
       <email>lorenzo@setale.me</email>
-      <name>Lorenzo Setale</name>
+      <name>Lorenzo Setale ( http://who.is.lorenzo.setale.me/? )</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

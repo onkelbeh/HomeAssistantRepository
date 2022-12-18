@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ndms2-client</remote-id>
+    <remote-id type="github">foxel/python_ndms2_client</remote-id>
     <maintainer status="unknown">
       <email>foxel@quickfox.ru</email>
       <name>Andrey F. Kupreychik</name>

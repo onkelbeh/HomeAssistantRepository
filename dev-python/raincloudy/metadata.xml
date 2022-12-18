@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">raincloudy</remote-id>
+    <remote-id type="github">tchellomello/raincloudy</remote-id>
     <maintainer status="unknown">
       <email>tchello.mello@gmail.com</email>
       <name>Marcelo Moreira de Mello</name>

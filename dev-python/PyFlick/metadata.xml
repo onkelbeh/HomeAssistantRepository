@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyFlick</remote-id>
+    <remote-id type="github">ZephireNZ/PyFlick</remote-id>
     <maintainer status="unknown">
       <email>brynley+pypi@zephire.nz</email>
       <name>ZephireNZ</name>

@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">hikvision</remote-id>
+    <remote-id type="github">fbradyirl/hikvision</remote-id>
     <maintainer status="unknown">
-      <email>fbradyirl@users.noreply.github.com</email>
+      <email>fbradyirl@github.io</email>
       <name>Finbarr Brady</name>
     </maintainer>
   </upstream>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pytomorrowio</remote-id>
+    <remote-id type="github">raman325/pytomorrowio</remote-id>
     <maintainer status="unknown">
       <email>7243222+raman325@users.noreply.github.com</email>
       <name>raman325</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">atomicwrites-homeassistant</remote-id>
+    <remote-id type="github">untitaker/python-atomicwrites</remote-id>
     <maintainer status="unknown">
       <email>markus@unterwaditzer.net</email>
       <name>Markus Unterwaditzer</name>

@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">avea</remote-id>
+    <remote-id type="github">k0rventen/avea</remote-id>
   </upstream>
 </pkgmetadata>

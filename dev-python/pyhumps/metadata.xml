@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyhumps</remote-id>
+    <remote-id type="github">nficano/humps</remote-id>
     <maintainer status="unknown">
       <email>nficano@gmail.com</email>
       <name>Nick Ficano</name>

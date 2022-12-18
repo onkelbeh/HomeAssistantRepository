@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">py-cpuinfo</remote-id>
+    <remote-id type="github">workhorsy/py-cpuinfo</remote-id>
     <maintainer status="unknown">
       <email>matthew.brennan.jones@gmail.com</email>
       <name>Matthew Brennan Jones</name>

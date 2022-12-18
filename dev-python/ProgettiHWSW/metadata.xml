@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ProgettiHWSW</remote-id>
+    <remote-id type="github">ardaseremet/progettihwsw</remote-id>
     <maintainer status="unknown">
       <email>ardaseremet@outlook.com</email>
       <name>Arda Seremet</name>

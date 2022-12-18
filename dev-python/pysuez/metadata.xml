@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pysuez</remote-id>
+    <remote-id type="github">ooii/pySuez</remote-id>
     <maintainer status="unknown">
       <email>pySuezWater@ooii.io</email>
       <name>Farid N27</name>

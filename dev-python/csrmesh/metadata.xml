@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">csrmesh</remote-id>
+    <remote-id type="github">nkaminski/csrmesh</remote-id>
     <maintainer status="unknown">
       <email>nashkaminski@kaminski.io, tomas@salfischberger.nl</email>
       <name>Nash Kaminski, Tomas Salfischberger</name>

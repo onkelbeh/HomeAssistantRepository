@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyoctoprintapi</remote-id>
+    <remote-id type="github">rfleming71/pyoctoprintapi</remote-id>
     <maintainer status="unknown">
       <email>rfleming71@users.noreply.github.com</email>
       <name>Ryan Fleming</name>

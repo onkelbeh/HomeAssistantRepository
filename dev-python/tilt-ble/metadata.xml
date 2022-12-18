@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tilt-ble</remote-id>
+    <remote-id type="github">Bluetooth-Devices/tilt-ble</remote-id>
     <maintainer status="unknown">
       <email>thompson.p.alex@gmail.com</email>
       <name>Alexander Thompson</name>

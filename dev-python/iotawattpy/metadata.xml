@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">iotawattpy</remote-id>
+    <remote-id type="github">gtdiehl/iotawattpy</remote-id>
     <maintainer status="unknown">
       <email>greg.diehl.gtd@gmail.com</email>
       <name>Greg Diehl</name>

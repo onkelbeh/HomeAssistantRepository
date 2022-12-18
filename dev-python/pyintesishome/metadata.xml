@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyintesishome</remote-id>
+    <remote-id type="github">jnimmo/pyIntesisHome</remote-id>
     <maintainer status="unknown">
       <email>james@nimmo.net.nz</email>
       <name>James Nimmo</name>

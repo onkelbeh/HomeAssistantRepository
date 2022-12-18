@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bond-async</remote-id>
+    <remote-id type="github">bondhome/bond-async</remote-id>
     <maintainer status="unknown">
       <email>mobiledev@olibra.io</email>
       <name>Olibra LLC</name>

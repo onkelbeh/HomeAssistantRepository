@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pytest-sugar</remote-id>
+    <remote-id type="github">Teemu/pytest-sugar</remote-id>
     <maintainer status="unknown">
       <email>orkkiolento@gmail.com, janne.vanhala@gmail.com</email>
       <name>Teemu, Janne Vanhala and others</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">webexteamssdk</remote-id>
+    <remote-id type="github">CiscoDevNet/webexteamssdk</remote-id>
     <maintainer status="unknown">
       <email>chrlunsf@cisco.com</email>
       <name>Chris Lunsford</name>

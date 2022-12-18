@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">HATasmota</remote-id>
+    <remote-id type="github">emontnemery/hatasmota</remote-id>
   </upstream>
 </pkgmetadata>

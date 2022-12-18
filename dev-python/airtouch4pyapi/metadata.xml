@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">airtouch4pyapi</remote-id>
+    <remote-id type="github">LonePurpleWolf/airtouch4pyapi</remote-id>
     <maintainer status="unknown">
       <email>samsinnamon@hotmail.com</email>
       <name>Sam Sinnamon</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-blockchain-api</remote-id>
+    <remote-id type="github">nkgilley/python-blockchain-api</remote-id>
     <maintainer status="unknown">
       <email>nkgilley@gmail.com</email>
       <name>Nolan Gilley</name>

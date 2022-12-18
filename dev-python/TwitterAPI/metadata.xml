@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">TwitterAPI</remote-id>
+    <remote-id type="github">geduldig/TwitterAPI</remote-id>
     <doc>https://pythonhosted.org/TwitterAPI/</doc>
     <maintainer status="unknown">
       <email>boxnumber03@gmail.com</email>

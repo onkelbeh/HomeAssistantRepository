@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pysesame2</remote-id>
+    <remote-id type="github">yagami-cerberus/pysesame2</remote-id>
     <maintainer status="unknown">
       <email>cerberus@candyhouse.co</email>
       <name>Candyhouse Inc</name>

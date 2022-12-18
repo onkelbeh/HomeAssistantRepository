@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyws66i</remote-id>
+    <remote-id type="github">ssaenger/pyws66i</remote-id>
     <maintainer status="unknown">
       <email>shawnsaenger@gmail.com</email>
       <name>Shawn Saenger</name>

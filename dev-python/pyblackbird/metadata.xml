@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyblackbird</remote-id>
+    <remote-id type="github">koolsb/pyblackbird</remote-id>
     <maintainer status="unknown">
       <email>koolsb@my.uwstout.edu</email>
       <name>Ben Kools</name>

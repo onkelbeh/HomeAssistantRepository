@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">maxcube-api</remote-id>
+    <remote-id type="github">hackercowboy/python-maxcube-api</remote-id>
     <maintainer status="unknown">
       <email>david@uebelacker.ch</email>
       <name>David Uebelacker</name>

@@ -7,6 +7,8 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">evdev</remote-id>
+    <remote-id type="github">gvalkov/python-evdev</remote-id>
+    <doc>https://pythonhosted.org/evdev/</doc>
     <maintainer status="unknown">
       <email>georgi.t.valkov@gmail.com</email>
       <name>Georgi Valkov</name>

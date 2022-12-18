@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">accuweather</remote-id>
+    <remote-id type="github">bieniu/accuweather</remote-id>
   </upstream>
 </pkgmetadata>

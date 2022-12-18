@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pushover_complete</remote-id>
+    <remote-id type="github">scolby33/pushover_complete</remote-id>
     <maintainer status="unknown">
       <email>scolby33@gmail.com</email>
       <name>Scott Colby</name>

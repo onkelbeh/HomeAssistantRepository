@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">agent-py</remote-id>
+    <remote-id type="github">ispysoftware/agent-py</remote-id>
     <maintainer status="unknown">
       <email>sean@ispyconnect.com</email>
       <name>Sean Tearney</name>

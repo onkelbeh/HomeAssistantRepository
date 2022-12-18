@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">liffylights</remote-id>
+    <remote-id type="github">TangoAlpha/liffylights</remote-id>
     <maintainer status="unknown">
       <email>liffylights@attwood.org</email>
       <name>TangoAlpha</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pytest-test-groups</remote-id>
+    <remote-id type="github">mark-adams/pytest-test-groups</remote-id>
     <maintainer status="unknown">
       <email>mark@markadams.me</email>
       <name>Mark Adams</name>

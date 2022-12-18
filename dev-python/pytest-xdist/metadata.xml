@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pytest-xdist</remote-id>
+    <remote-id type="github">pytest-dev/pytest-xdist</remote-id>
     <maintainer status="unknown">
       <email>pytest-dev@python.org,holger@merlinux.eu</email>
       <name>holger krekel and contributors</name>

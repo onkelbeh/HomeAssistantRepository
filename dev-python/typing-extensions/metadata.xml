@@ -7,9 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">typing-extensions</remote-id>
+    <remote-id type="github">python/typing_extensions</remote-id>
     <maintainer status="unknown">
-      <name>"Guido van Rossum, Jukka Lehtosalo, Lukasz Langa, Michael Lee</name>
-      <email>levkivskyi@gmail.com</email>
+      <email>"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee" &lt;levkivskyi@gmail.com&gt;</email>
     </maintainer>
   </upstream>
 </pkgmetadata>

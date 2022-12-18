@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">discogs-client</remote-id>
+    <remote-id type="github">discogs/discogs_client</remote-id>
     <maintainer status="unknown">
       <email>api@discogsinc.com</email>
       <name>Discogs</name>

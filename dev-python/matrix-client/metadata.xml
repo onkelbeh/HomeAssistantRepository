@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">matrix-client</remote-id>
+    <remote-id type="github">matrix-org/matrix-python-sdk</remote-id>
     <maintainer status="unknown">
       <email>team@matrix.org</email>
       <name>The Matrix.org Team</name>

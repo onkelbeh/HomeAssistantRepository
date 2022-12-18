@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">psutil</remote-id>
+    <remote-id type="github">giampaolo/psutil</remote-id>
     <maintainer status="unknown">
       <email>g.rodola@gmail.com</email>
       <name>Giampaolo Rodola</name>

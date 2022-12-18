@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">imaplib2</remote-id>
+    <remote-id type="github">jazzband/imaplib2</remote-id>
   </upstream>
 </pkgmetadata>

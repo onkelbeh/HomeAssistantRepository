@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiowatttime</remote-id>
+    <remote-id type="github">bachya/aiowatttime</remote-id>
     <maintainer status="unknown">
       <email>bachya1208@gmail.com</email>
       <name>Aaron Bach</name>

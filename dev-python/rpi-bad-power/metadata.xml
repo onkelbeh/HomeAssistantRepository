@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">rpi-bad-power</remote-id>
+    <remote-id type="github">shenxn/rpi-bad-power</remote-id>
     <maintainer status="unknown">
       <email>s@sxn.dev</email>
       <name>Xiaonan Shen</name>

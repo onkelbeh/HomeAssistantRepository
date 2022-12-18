@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aioslimproto</remote-id>
+    <remote-id type="github">music-assistant/aioslimproto</remote-id>
     <maintainer status="unknown">
       <email>marcelveldt@users.noreply.github.com</email>
       <name>Marcel van der Veldt</name>

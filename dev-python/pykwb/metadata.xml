@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pykwb</remote-id>
+    <remote-id type="github">bimbar/pykwb</remote-id>
     <maintainer status="unknown">
       <email>mpeter@emdev.de</email>
       <name>Markus Peter</name>

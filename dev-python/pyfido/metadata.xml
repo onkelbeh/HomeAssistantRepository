@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyfido</remote-id>
+    <remote-id type="github">titilambert/pyfido</remote-id>
     <maintainer status="unknown">
       <email>titilambert@gmail.com</email>
       <name>Thibault Cohen</name>

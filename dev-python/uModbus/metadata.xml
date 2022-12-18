@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">uModbus</remote-id>
+    <remote-id type="github">AdvancedClimateSystems/umodbus</remote-id>
     <maintainer status="unknown">
       <email>a.oosterhoff@climotion.com</email>
       <name>Auke Willem Oosterhoff</name>

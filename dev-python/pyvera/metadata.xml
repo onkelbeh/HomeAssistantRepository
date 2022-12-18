@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyvera</remote-id>
+    <remote-id type="github">pavoni/pyvera</remote-id>
   </upstream>
 </pkgmetadata>

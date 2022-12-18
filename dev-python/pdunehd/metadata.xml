@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pdunehd</remote-id>
+    <remote-id type="github">valentinalexeev/pdunehd</remote-id>
     <maintainer status="unknown">
       <email>valentin.alekseev@gmail.com</email>
       <name>Valentin Alexeev</name>

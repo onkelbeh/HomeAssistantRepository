@@ -6,7 +6,9 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">face_recognition</remote-id>
+    <remote-id type="pypi">face-recognition</remote-id>
+    <remote-id type="github">ageitgey/face_recognition</remote-id>
+    <doc>https://pythonhosted.org/face-recognition/</doc>
     <maintainer status="unknown">
       <email>ageitgey@gmail.com</email>
       <name>Adam Geitgey</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">curlify</remote-id>
+    <remote-id type="github">oeegor/curlify</remote-id>
     <maintainer status="unknown">
       <email>oeegor@gmail.com</email>
       <name>Egor Orlov</name>

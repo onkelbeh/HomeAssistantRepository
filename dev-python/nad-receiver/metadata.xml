@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">nad-receiver</remote-id>
+    <remote-id type="github">joopert/nad_receiver</remote-id>
   </upstream>
 </pkgmetadata>

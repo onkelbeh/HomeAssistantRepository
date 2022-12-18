@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyarlo</remote-id>
+    <remote-id type="github">tchellomello/python-arlo</remote-id>
     <maintainer status="unknown">
       <email>tchello.mello@gmail.com</email>
       <name>Marcelo Moreira de Mello</name>

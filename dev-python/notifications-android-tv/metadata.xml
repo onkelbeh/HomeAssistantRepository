@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">notifications-android-tv</remote-id>
+    <remote-id type="github">engrbm87/notifications_android_tv</remote-id>
     <maintainer status="unknown">
       <email>engrbm87@gmail.com</email>
-      <name>Rami Mousleh</name>
+      <name>Rami Mosleh</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

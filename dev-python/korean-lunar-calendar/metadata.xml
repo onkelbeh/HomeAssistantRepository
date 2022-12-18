@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">korean-lunar-calendar</remote-id>
+    <remote-id type="github">usingsky/korean_lunar_calendar_py</remote-id>
     <maintainer status="unknown">
       <email>usingsky@gmail.com</email>
       <name>Jinil Lee</name>

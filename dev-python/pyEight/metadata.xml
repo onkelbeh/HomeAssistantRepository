@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyEight</remote-id>
+    <remote-id type="github">mezz64/pyEight</remote-id>
     <maintainer status="unknown">
       <email>mezz64@users.noreply.github.com</email>
       <name>John Mihalic</name>

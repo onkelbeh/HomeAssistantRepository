@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tapsaff</remote-id>
+    <remote-id type="github">bazwilliams/python-taps-aff</remote-id>
     <maintainer status="unknown">
       <email>barry@bjw.me.uk</email>
       <name>Barry John Williams</name>

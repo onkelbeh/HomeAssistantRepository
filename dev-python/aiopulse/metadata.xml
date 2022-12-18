@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiopulse</remote-id>
+    <remote-id type="github">atmurray/aiopulse</remote-id>
     <maintainer status="unknown">
       <email>pypi@atmurray.net</email>
       <name>Alan Murray</name>

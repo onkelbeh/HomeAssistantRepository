@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ReParser</remote-id>
+    <remote-id type="github">xmikos/reparser</remote-id>
     <maintainer status="unknown">
       <email>m.krenek@gmail.com</email>
       <name>Michal Krenek (Mikos)</name>

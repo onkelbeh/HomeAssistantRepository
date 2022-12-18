@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">hijri-converter</remote-id>
+    <remote-id type="github">mhalshehri/hijri-converter</remote-id>
   </upstream>
 </pkgmetadata>

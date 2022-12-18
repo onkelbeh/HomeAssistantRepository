@@ -5,4 +5,12 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">twilio</remote-id>
+    <remote-id type="github">twilio/twilio-python</remote-id>
+    <maintainer status="unknown">
+      <email>help@twilio.com</email>
+      <name>Twilio</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>

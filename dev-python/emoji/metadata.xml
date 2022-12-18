@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">emoji</remote-id>
+    <remote-id type="github">carpedm20/emoji</remote-id>
     <maintainer status="unknown">
       <email>carpedm20@gmail.com</email>
       <name>Taehoon Kim, Kevin Wurster and Tahir Jalilov</name>

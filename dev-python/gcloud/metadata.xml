@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">gcloud</remote-id>
+    <remote-id type="github">GoogleCloudPlatform/gcloud-python</remote-id>
     <maintainer status="unknown">
-      <email>gcloud-python@google.com</email>
+      <email>jjg+gcloud-python at google com</email>
       <name>Google Cloud Platform</name>
     </maintainer>
   </upstream>

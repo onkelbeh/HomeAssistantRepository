@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">iso4217</remote-id>
+    <remote-id type="github">dahlia/iso4217</remote-id>
     <maintainer status="unknown">
       <email>hong.minhee@gmail.com</email>
       <name>Hong Minhee</name>

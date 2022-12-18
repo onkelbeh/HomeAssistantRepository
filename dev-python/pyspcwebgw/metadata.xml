@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyspcwebgw</remote-id>
+    <remote-id type="github">mbrrg/pyspcwebgw</remote-id>
     <maintainer status="unknown">
       <email>mbrrg@users.noreply.github.com</email>
       <name>Martin Berg</name>

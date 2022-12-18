@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-http-client</remote-id>
+    <remote-id type="github">sendgrid/python-http-client</remote-id>
     <maintainer status="unknown">
       <email>help@twilio.com</email>
       <name>Elmer Thomas</name>

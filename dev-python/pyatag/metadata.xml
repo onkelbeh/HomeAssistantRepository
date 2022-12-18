@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyatag</remote-id>
+    <remote-id type="github">MatsNl/pyatag</remote-id>
   </upstream>
 </pkgmetadata>

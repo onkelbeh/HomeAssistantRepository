@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">clx-sdk-xms</remote-id>
+    <remote-id type="github">clxcommunications/sdk-xms-python</remote-id>
     <maintainer status="unknown">
       <email>robert@chaitsa.com</email>
       <name>Robert Helgesson</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pygtfs</remote-id>
+    <remote-id type="github">jarondl/pygtfs</remote-id>
     <maintainer status="unknown">
       <email>me@jarondl.net</email>
       <name>Yaron de Leeuw</name>

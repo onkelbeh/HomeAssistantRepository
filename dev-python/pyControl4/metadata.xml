@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyControl4</remote-id>
+    <remote-id type="github">lawtancool/pyControl4</remote-id>
     <maintainer status="unknown">
-      <email>26829131+lawtancool@users.noreply.github.com</email>
+      <email>contact@lawrencetan.ca</email>
       <name>lawtancool</name>
     </maintainer>
   </upstream>

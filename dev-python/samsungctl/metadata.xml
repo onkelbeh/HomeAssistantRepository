@@ -7,12 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">samsungctl</remote-id>
+    <remote-id type="github">Ape/samsungctl</remote-id>
     <maintainer status="unknown">
       <email>ape@ape3000.com</email>
       <name>Lauri Niskanen</name>
     </maintainer>
   </upstream>
-  <use>
-    <flag name="websocket">Install websocket-client.</flag>
-  </use>
 </pkgmetadata>

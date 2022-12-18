@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">stdlib-list</remote-id>
+    <remote-id type="github">jackmaney/python-stdlib-list</remote-id>
     <maintainer status="unknown">
       <email>jackmaney@gmail.com</email>
       <name>Jack Maney</name>

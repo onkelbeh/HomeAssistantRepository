@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pytest-socket</remote-id>
+    <remote-id type="github">miketheman/pytest-socket</remote-id>
     <maintainer status="unknown">
       <email>miketheman@gmail.com</email>
       <name>Mike Fiedler</name>

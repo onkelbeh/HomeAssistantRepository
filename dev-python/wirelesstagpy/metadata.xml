@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">wirelesstagpy</remote-id>
+    <remote-id type="github">sergeymaysak/wirelesstagpy</remote-id>
     <maintainer status="unknown">
       <email>sergey.maysak@gmail.com</email>
       <name>Sergiy Maysak</name>

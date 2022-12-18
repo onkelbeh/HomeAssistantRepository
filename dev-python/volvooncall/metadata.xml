@@ -7,13 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">volvooncall</remote-id>
+    <remote-id type="github">molobrakos/volvooncall</remote-id>
     <maintainer status="unknown">
       <email>error.errorsson@gmail.com</email>
       <name>decompil3d</name>
     </maintainer>
   </upstream>
-  <use>
-    <flag name="mqtt">add support for MQTT</flag>
-    <flag name="console">add support for console</flag>
-  </use>
-  </pkgmetadata>
+</pkgmetadata>

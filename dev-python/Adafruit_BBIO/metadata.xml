@@ -6,7 +6,8 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">Adafruit_BBIO</remote-id>
+    <remote-id type="pypi">Adafruit-BBIO</remote-id>
+    <remote-id type="github">adafruit/adafruit-beaglebone-io-python</remote-id>
     <maintainer status="unknown">
       <email>justin@adafruit.com</email>
       <name>Justin Cooper</name>

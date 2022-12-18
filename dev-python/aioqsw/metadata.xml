@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aioqsw</remote-id>
+    <remote-id type="github">Noltari/aioqsw</remote-id>
     <maintainer status="unknown">
       <email>noltari@gmail.com</email>
       <name>Álvaro Fernández Rojas</name>

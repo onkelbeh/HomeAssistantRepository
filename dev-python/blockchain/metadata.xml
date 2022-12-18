@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">blockchain</remote-id>
+    <remote-id type="github">blockchain/api-v1-client-python</remote-id>
     <maintainer status="unknown">
       <email>support@blockchain.zendesk.com</email>
       <name>Blockchain.info</name>

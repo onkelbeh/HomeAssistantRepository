@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">beewi-smartclim</remote-id>
+    <remote-id type="github">alemuro/beewi_smartclim</remote-id>
     <maintainer status="unknown">
       <email>hello@aleix.cloud</email>
       <name>alemuro</name>

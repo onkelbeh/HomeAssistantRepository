@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">schedule</remote-id>
+    <remote-id type="github">dbader/schedule</remote-id>
     <maintainer status="unknown">
       <email>mail@dbader.org</email>
       <name>Daniel Bader</name>

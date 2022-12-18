@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">hdate</remote-id>
+    <remote-id type="github">py-libhdate/py-libhdate</remote-id>
     <maintainer status="unknown">
       <email>ttmost@gmail.com</email>
       <name>Tsvi Mostovicz</name>

@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">stookalert</remote-id>
+    <remote-id type="github">fwestenberg/stookalert</remote-id>
   </upstream>
 </pkgmetadata>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tesla-powerwall</remote-id>
+    <remote-id type="github">jrester/tesla_powerwall</remote-id>
     <maintainer status="unknown">
       <email>jrester379@gmail.com</email>
       <name>Jrester</name>

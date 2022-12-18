@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pylibrespot-java</remote-id>
+    <remote-id type="github">uvjustin/pylibrespot-java</remote-id>
     <maintainer status="unknown">
       <email>46082645+uvjustin@users.noreply.github.com</email>
       <name>Justin Wong</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyebox</remote-id>
+    <remote-id type="github">titilambert/pyebox</remote-id>
     <maintainer status="unknown">
       <email>titilambert@gmail.com</email>
       <name>Thibault Cohen</name>

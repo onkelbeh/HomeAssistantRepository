@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">dlib</remote-id>
+    <remote-id type="github">davisking/dlib</remote-id>
     <maintainer status="unknown">
       <email>davis@dlib.net</email>
       <name>Davis King</name>

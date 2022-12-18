@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">eebrightbox</remote-id>
+    <remote-id type="github">krygal/eebrightbox</remote-id>
     <maintainer status="unknown">
       <email>k.galutowski@gmail.com</email>
       <name>Krystian Galutowski</name>

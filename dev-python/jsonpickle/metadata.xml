@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">jsonpickle</remote-id>
+    <remote-id type="github">jsonpickle/jsonpickle</remote-id>
     <maintainer status="unknown">
       <email>davvid@gmail.com</email>
       <name>David Aguilar</name>

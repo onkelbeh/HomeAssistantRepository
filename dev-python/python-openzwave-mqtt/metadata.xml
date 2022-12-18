@@ -7,12 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-openzwave-mqtt</remote-id>
+    <remote-id type="github">cgarwood/python-openzwave-mqtt</remote-id>
     <maintainer status="unknown">
       <email>cgarwood@gmail.com</email>
       <name>Charles Garwood</name>
     </maintainer>
   </upstream>
-  <use>
-    <flag name="async">Build with async support (default)</flag>
-  </use>
 </pkgmetadata>

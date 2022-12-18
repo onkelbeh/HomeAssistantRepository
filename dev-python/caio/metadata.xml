@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">caio</remote-id>
+    <remote-id type="github">mosquito/caio</remote-id>
     <maintainer status="unknown">
       <email>me@mosquito.su</email>
       <name>Dmitry Orlov &lt;me@mosquito.su&gt;</name>

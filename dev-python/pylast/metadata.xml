@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pylast</remote-id>
+    <remote-id type="github">pylast/pylast</remote-id>
     <maintainer status="unknown">
-      <email>amr.hassan@gmail.com</email>
+      <email>"Amr Hassan &lt;amr.hassan@gmail.com&gt; and Contributors" &lt;amr.hassan@gmail.com&gt;</email>
       <name>Hugo van Kemenade</name>
     </maintainer>
   </upstream>

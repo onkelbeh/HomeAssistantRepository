@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">py-sucks</remote-id>
+    <remote-id type="github">mib1185/py-sucks</remote-id>
     <maintainer status="unknown">
       <email>sucks-users@googlegroups.com</email>
       <name>William Pietri</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">fritzconnection</remote-id>
+    <remote-id type="github">kbr/fritzconnection</remote-id>
     <maintainer status="unknown">
       <email>bremer@bremer-media.com</email>
       <name>Klaus Bremer</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-engineio</remote-id>
+    <remote-id type="github">miguelgrinberg/python-engineio</remote-id>
     <doc>https://pythonhosted.org/python-engineio/</doc>
     <maintainer status="unknown">
       <email>miguel.grinberg@gmail.com</email>

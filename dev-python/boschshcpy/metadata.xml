@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">boschshcpy</remote-id>
+    <remote-id type="github">tschamm/boschshcpy</remote-id>
     <maintainer status="unknown">
       <email>cabrust@pm.me, thomas@tschamm.de</email>
       <name>Clemens-Alexander Brust, Thomas Schamm</name>

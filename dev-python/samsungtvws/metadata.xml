@@ -7,9 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">samsungtvws</remote-id>
+    <remote-id type="github">xchwarze/samsung-tv-ws-api</remote-id>
   </upstream>
-  <use>
-    <flag name="async">use aiohttp/websocket</flag>
-    <flag name="encrypted">add support for encrypted communication</flag>
-  </use>
 </pkgmetadata>

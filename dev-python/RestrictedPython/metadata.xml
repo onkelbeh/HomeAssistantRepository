@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">RestrictedPython</remote-id>
+    <remote-id type="github">zopefoundation/RestrictedPython</remote-id>
     <maintainer status="unknown">
       <email>zope-dev@zope.org</email>
       <name>Zope Foundation and Contributors</name>

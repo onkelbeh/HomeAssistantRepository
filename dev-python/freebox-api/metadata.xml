@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">freebox-api</remote-id>
+    <remote-id type="github">hacf-fr/freebox-api</remote-id>
     <maintainer status="unknown">
       <email>luc_touraille@yahoo.fr</email>
       <name>stilllman</name>

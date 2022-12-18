@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-smarttub</remote-id>
+    <remote-id type="github">mdz/python-smarttub</remote-id>
     <maintainer status="unknown">
       <email>mdz@alcor.net</email>
       <name>Matt Zimmerman</name>

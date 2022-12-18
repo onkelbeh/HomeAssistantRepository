@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">twentemilieu</remote-id>
+    <remote-id type="github">frenck/python-twentemilieu</remote-id>
     <maintainer status="unknown">
       <email>opensource@frenck.dev</email>
       <name>Franck Nijhof</name>

@@ -6,10 +6,10 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">python-miio</remote-id>
+    <remote-id type="pypi">construct</remote-id>
     <maintainer status="unknown">
-      <email>tpr@iki.fi</email>
-      <name>Teemu R</name>
+      <email>arek.bulski@gmail.com, tomerfiliba@gmail.com, MostAwesomeDude@gmail.com</email>
+      <name>Arkadiusz Bulski, Tomer Filiba, Corbin Simpson</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

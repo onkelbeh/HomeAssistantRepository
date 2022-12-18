@@ -7,9 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">magicseaweed</remote-id>
-    <maintainer status="unknown">
-      <email>jamescarltonconnell@gmail.com</email>
-      <name>jcconnell</name>
-    </maintainer>
+    <remote-id type="github">jcconnell/python-magicseaweed</remote-id>
   </upstream>
 </pkgmetadata>

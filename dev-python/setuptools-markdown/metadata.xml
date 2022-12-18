@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">setuptools-markdown</remote-id>
+    <remote-id type="github">msabramo/setuptools-markdown</remote-id>
     <maintainer status="unknown">
       <email>marc@marc-abramowitz.com</email>
       <name>Marc Abramowitz</name>

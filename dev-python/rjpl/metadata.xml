@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">rjpl</remote-id>
+    <remote-id type="github">tomatpasser/python-rejseplanen</remote-id>
     <maintainer status="unknown">
       <email>tomatpasser@gmail.com</email>
       <name>Thomas Passer Jensen</name>

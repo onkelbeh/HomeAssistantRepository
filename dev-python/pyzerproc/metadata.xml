@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyzerproc</remote-id>
+    <remote-id type="github">emlove/pyzerproc</remote-id>
     <maintainer status="unknown">
       <email>emily@emlove.me</email>
-      <name>Emily Mills</name>
+      <name>Emily Love Mills</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

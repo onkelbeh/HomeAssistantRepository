@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">coronavirus</remote-id>
+    <remote-id type="github">nabucasa/coronavirus</remote-id>
     <maintainer status="unknown">
       <email>opensource@nabucasa.com</email>
       <name>Nabu Casa</name>

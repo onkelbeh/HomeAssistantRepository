@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pycountry-convert</remote-id>
+    <remote-id type="github">TuneLab/pycountry-convert</remote-id>
     <maintainer status="unknown">
       <email>jefft@tune.com</email>
       <name>TUNE Inc.</name>

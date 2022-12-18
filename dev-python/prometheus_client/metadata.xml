@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">prometheus-client</remote-id>
+    <remote-id type="github">prometheus/client_python</remote-id>
     <maintainer status="unknown">
       <email>brian.brazil@robustperception.io</email>
       <name>Brian Brazil</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">openevsewifi</remote-id>
+    <remote-id type="github">miniconfig/python-openevse-wifi</remote-id>
     <maintainer status="unknown">
       <email>dev@miniconfig.com</email>
       <name>Michelle Avery</name>

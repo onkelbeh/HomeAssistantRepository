@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyalmond</remote-id>
+    <remote-id type="github">stanford-oval/pyalmond</remote-id>
     <maintainer status="unknown">
       <email>gcampagn@cs.stanford.edu</email>
       <name>Giovanni Campagna</name>

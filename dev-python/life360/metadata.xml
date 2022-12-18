@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">life360</remote-id>
+    <remote-id type="github">pnbruckner/life360</remote-id>
     <maintainer status="unknown">
       <email>pnbruckner@gmail.com</email>
       <name>Phil Bruckner</name>

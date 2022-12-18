@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">plexwebsocket</remote-id>
+    <remote-id type="github">jjlawren/python-plexwebsocket</remote-id>
     <maintainer status="unknown">
       <email>jjlawren@users.noreply.github.com</email>
       <name>Jason Lawrence</name>

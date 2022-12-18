@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">py-canary</remote-id>
+    <remote-id type="github">snjoetw/py-canary</remote-id>
     <maintainer status="unknown">
       <email>snjoetw@gmail.com</email>
       <name>snjoetw</name>

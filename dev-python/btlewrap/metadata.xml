@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">btlewrap</remote-id>
+    <remote-id type="github">ChristianKuehnel/btlewrap</remote-id>
     <maintainer status="unknown">
       <email>christian.kuehnel@gmail.com</email>
       <name>Christian Kuehnel</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">zm-py</remote-id>
+    <remote-id type="github">rohankapoorcom/zm-py</remote-id>
     <maintainer status="unknown">
       <email>rohan@rohankapoor.com</email>
       <name>Rohan Kapoor</name>

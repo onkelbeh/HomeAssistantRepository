@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">motionblinds</remote-id>
+    <remote-id type="github">starkillerOG/motion-blinds</remote-id>
     <maintainer status="unknown">
       <email>starkiller.og@gmail.com</email>
       <name>starkillerOG</name>
