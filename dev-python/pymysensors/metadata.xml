@@ -7,12 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pymysensors</remote-id>
+    <remote-id type="github">theolind/pymysensors</remote-id>
     <maintainer status="unknown">
       <email>theodor.lindquist@gmail.com</email>
       <name>Theodor Lindquist</name>
     </maintainer>
   </upstream>
-  <use>
-    <flag name="mqtt">Set MQTT Depedency</flag>
-  </use>
 </pkgmetadata>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">enturclient</remote-id>
+    <remote-id type="github">hfurubotten/enturclient</remote-id>
     <maintainer status="unknown">
       <email>hfurubotten@users.noreply.github.com</email>
       <name>Heine Furubotten</name>

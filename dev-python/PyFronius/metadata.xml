@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyFronius</remote-id>
+    <remote-id type="github">nielstron/pyfronius</remote-id>
     <maintainer status="unknown">
       <email>n.muendler@web.de, mail@gerritbeine.de</email>
       <name>Niels Mündler, Gerrit Beine</name>

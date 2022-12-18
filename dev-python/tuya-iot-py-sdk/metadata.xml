@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tuya-iot-py-sdk</remote-id>
+    <remote-id type="github">tuya/tuya-iot-app-sdk-python</remote-id>
     <maintainer status="unknown">
       <email>developer@tuya.com</email>
       <name>Tuya Inc.</name>

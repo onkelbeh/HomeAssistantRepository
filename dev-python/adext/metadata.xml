@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">adext</remote-id>
+    <remote-id type="github">ajschmidt8/adext</remote-id>
   </upstream>
 </pkgmetadata>

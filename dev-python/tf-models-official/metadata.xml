@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tf-models-official</remote-id>
+    <remote-id type="github">tensorflow/models</remote-id>
     <maintainer status="unknown">
-      <email>no-reply@google.com</email>
+      <email>packages@tensorflow.org</email>
       <name>Google Inc.</name>
     </maintainer>
   </upstream>

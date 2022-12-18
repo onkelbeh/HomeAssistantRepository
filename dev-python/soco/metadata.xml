@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">soco</remote-id>
+    <remote-id type="github">SoCo/SoCo</remote-id>
     <maintainer status="unknown">
       <email>python-soco@googlegroups.com</email>
       <name>The SoCo-Team</name>

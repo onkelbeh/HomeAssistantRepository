@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PsychroLib</remote-id>
+    <remote-id type="github">psychrometrics/psychrolib</remote-id>
     <maintainer status="unknown">
       <email>didierthevenard@users.noreply.github.com</email>
       <name>The PsychroLib Developers</name>

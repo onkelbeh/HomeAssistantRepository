@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ibmiotf</remote-id>
+    <remote-id type="github">ibm-watson-iot/iot-python</remote-id>
     <maintainer status="unknown">
       <email>parkerda@uk.ibm.com</email>
       <name>David Parker</name>

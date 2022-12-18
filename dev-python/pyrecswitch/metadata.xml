@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyrecswitch</remote-id>
+    <remote-id type="github">marcolertora/pyrecswitch</remote-id>
     <maintainer status="unknown">
       <email>marco.lertora@gmail.com</email>
       <name>Marco Lertora</name>

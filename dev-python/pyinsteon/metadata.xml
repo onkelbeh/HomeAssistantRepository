@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyinsteon</remote-id>
+    <remote-id type="github">pyinsteon/pyinsteon</remote-id>
     <maintainer status="unknown">
       <email>pyinsteon@harrisnj.net</email>
       <name>The pyinsteon Development Team</name>

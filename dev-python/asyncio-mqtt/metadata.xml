@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">asyncio-mqtt</remote-id>
+    <remote-id type="github">sbtinstruments/asyncio-mqtt</remote-id>
     <maintainer status="unknown">
-      <email>fpa@sbtinstruments.com</email>
-      <name>Frederik Aalund</name>
+      <email>jonathan.plasse@live.fr</email>
+      <name>Jonathan Plasse</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

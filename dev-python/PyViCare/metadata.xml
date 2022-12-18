@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyViCare</remote-id>
+    <remote-id type="github">somm15/PyViCare</remote-id>
     <maintainer status="unknown">
       <email>mail+pyvicare@gillet.ninja</email>
       <name>Simon Gillet</name>

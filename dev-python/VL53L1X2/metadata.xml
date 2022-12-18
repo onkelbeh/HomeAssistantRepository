@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">VL53L1X2</remote-id>
+    <remote-id type="github">josemotta/vl53l1x-python</remote-id>
     <maintainer status="unknown">
       <email>phil@pimoroni.com</email>
       <name>Phil Howard/Nagy Attila/Jose Motta</name>

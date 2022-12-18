@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">georss-qld-bushfire-alert-client</remote-id>
+    <remote-id type="github">exxamalte/python-georss-qld-bushfire-alert-client</remote-id>
     <maintainer status="unknown">
       <email>coding@subspace.de</email>
       <name>Malte Franken</name>

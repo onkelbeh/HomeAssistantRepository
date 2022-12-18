@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">asyncio-throttle</remote-id>
+    <remote-id type="github">hallazzang/asyncio-throttle</remote-id>
     <maintainer status="unknown">
       <email>hallazzang@gmail.com</email>
       <name>Hanjun Kim</name>

@@ -7,13 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">devolo-plc-api</remote-id>
+    <remote-id type="github">2Fake/devolo_plc_api</remote-id>
     <maintainer status="unknown">
       <email>m.bong@famabo.de</email>
       <name>Markus Bong</name>
-    </maintainer>
-    <maintainer status="unknown">
-      <email>guido.schmitz@fedaix.de</email>
-      <name>Guido Schmitz</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

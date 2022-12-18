@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyaussiebb</remote-id>
+    <remote-id type="github">yaleman/pyaussiebb</remote-id>
     <maintainer status="unknown">
       <email>james@terminaloutcomes.com</email>
       <name>James Hodgkinson</name>

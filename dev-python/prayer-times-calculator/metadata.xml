@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">prayer-times-calculator</remote-id>
+    <remote-id type="github">uchagani/prayer-times-calculator</remote-id>
     <maintainer status="unknown">
       <email>umair.chagani@gmail.com</email>
       <name>Umair Chagani</name>

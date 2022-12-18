@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">xboxapi</remote-id>
+    <remote-id type="github">mKeRix/xboxapi-python</remote-id>
   </upstream>
 </pkgmetadata>

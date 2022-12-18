@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyPubSub</remote-id>
+    <remote-id type="github">schollii/pypubsub</remote-id>
     <maintainer status="unknown">
       <email>oliver.schoenborn@gmail.com</email>
       <name>Oliver Schoenborn (aka "schollii")</name>

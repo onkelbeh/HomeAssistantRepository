@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyMeeus</remote-id>
+    <remote-id type="github">architest/pymeeus</remote-id>
     <maintainer status="unknown">
       <email>dagoberto.salazar@gmail.com</email>
       <name>Dagoberto Salazar</name>

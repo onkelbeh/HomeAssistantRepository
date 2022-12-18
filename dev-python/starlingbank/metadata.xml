@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">starlingbank</remote-id>
+    <remote-id type="github">Dullage/starlingbank</remote-id>
     <maintainer status="unknown">
       <email>adam@dullage.com</email>
       <name>Adam Dullage</name>

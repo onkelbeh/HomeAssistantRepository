@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">hole</remote-id>
+    <remote-id type="github">home-assistant-ecosystem/python-hole</remote-id>
     <maintainer status="unknown">
       <email>fabian@affolter-engineering.ch</email>
       <name>Fabian Affolter</name>

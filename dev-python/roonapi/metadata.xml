@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">roonapi</remote-id>
+    <remote-id type="github">pavoni/pyroon</remote-id>
   </upstream>
 </pkgmetadata>

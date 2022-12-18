@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">guppy3</remote-id>
+    <remote-id type="github">zhuyifei1999/guppy3</remote-id>
     <maintainer status="unknown">
       <email>zhuyifei1999@gmail.com</email>
       <name>YiFei Zhu</name>

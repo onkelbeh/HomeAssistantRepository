@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyMetno</remote-id>
+    <remote-id type="github">Danielhiversen/pyMetno</remote-id>
   </upstream>
 </pkgmetadata>

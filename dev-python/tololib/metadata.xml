@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tololib</remote-id>
+    <remote-id type="gitlab">MatthiasLohr/tololib</remote-id>
     <maintainer status="unknown">
       <email>mail@mlohr.com</email>
       <name>Matthias Lohr</name>

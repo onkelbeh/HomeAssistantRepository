@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bt-proximity</remote-id>
+    <remote-id type="github">FrederikBolding/bluetooth-proximity</remote-id>
     <maintainer status="unknown">
       <email>frederik.bolding@gmail.com</email>
       <name>Frederik Bolding</name>

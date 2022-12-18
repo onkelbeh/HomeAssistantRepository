@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tzdata</remote-id>
+    <remote-id type="github">python/tzdata</remote-id>
     <maintainer status="unknown">
       <email>datetime-sig@python.org</email>
       <name>Python Software Foundation</name>

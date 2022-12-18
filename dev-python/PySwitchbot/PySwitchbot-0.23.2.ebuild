@@ -5,11 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
 DISTUTILS_USE_PEP517=setuptools
-
 inherit distutils-r1
 
-DESCRIPTION="A python3 library to communicate with Tibber"
-HOMEPAGE="https://github.com/Danielhiversen/pyTibber https://pypi.org/project/pyTibber/"
+DESCRIPTION="A library to communicate with Switchbot"
+HOMEPAGE="https://github.com/Danielhiversen/pySwitchbot/ https://pypi.org/project/PySwitchbot/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
@@ -20,10 +19,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.0.6[${PYTHON_USEDEP}]
-	>=dev-python/async-timeout-1.4.0[${PYTHON_USEDEP}]
-	>=dev-python/graphql-subscription-manager-0.6.0[${PYTHON_USEDEP}]
-	dev-python/python-dateutil[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/bleak-0.17.0[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-2.9.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

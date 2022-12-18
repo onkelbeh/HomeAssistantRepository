@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">vsure</remote-id>
+    <remote-id type="github">persandstrom/python-verisure</remote-id>
     <maintainer status="unknown">
       <email>per.j.sandstrom@gmail.com</email>
       <name>Per Sandstrom</name>

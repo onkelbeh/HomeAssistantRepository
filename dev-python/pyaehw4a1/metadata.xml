@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyaehw4a1</remote-id>
+    <remote-id type="github">bannhead/pyaehw4a1</remote-id>
     <maintainer status="unknown">
       <email>davide.varricchio@gmail.com</email>
       <name>Davide Varricchio</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">sleekxmppfs</remote-id>
+    <remote-id type="github">aszymanik/SleekXMPP</remote-id>
     <maintainer status="unknown">
       <email>aszymanik@gmail.com</email>
       <name>Alex Szymanik</name>

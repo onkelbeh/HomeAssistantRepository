@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">eagle100</remote-id>
+    <remote-id type="github">hastarin/eagle100</remote-id>
     <maintainer status="unknown">
       <email>jon.benson@hastarin.com</email>
       <name>Jon Benson</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ibm-cloud-sdk-core</remote-id>
+    <remote-id type="github">IBM/python-sdk-core</remote-id>
     <maintainer status="unknown">
       <email>devxsdk@us.ibm.com</email>
       <name>IBM</name>

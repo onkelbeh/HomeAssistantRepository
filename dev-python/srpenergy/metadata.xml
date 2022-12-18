@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">srpenergy</remote-id>
+    <remote-id type="github">lamoreauxlab/srpenergy-api-client-python</remote-id>
     <maintainer status="unknown">
       <email>bklamoreaux@gmail.com</email>
       <name>Lamoreaux Lab</name>

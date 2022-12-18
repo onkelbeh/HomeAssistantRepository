@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">praw</remote-id>
+    <remote-id type="github">praw-dev/praw</remote-id>
     <maintainer status="unknown">
       <email>bbzbryce@gmail.com</email>
       <name>Bryce Boe</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">gTTS</remote-id>
+    <remote-id type="github">pndurette/gTTS</remote-id>
     <maintainer status="unknown">
       <email>pndurette@gmail.com</email>
       <name>Pierre Nicolas Durette</name>

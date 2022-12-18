@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyeverlights</remote-id>
+    <remote-id type="github">joncar/pyeverlights</remote-id>
     <maintainer status="unknown">
       <email>jon@joncaruana.com</email>
       <name>Jon Caruana</name>

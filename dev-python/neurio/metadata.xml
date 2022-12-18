@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">neurio</remote-id>
+    <remote-id type="github">jordanh/neurio-python</remote-id>
     <maintainer status="unknown">
       <email>jordan.husney@gmail.com</email>
       <name>Jordan Husney</name>

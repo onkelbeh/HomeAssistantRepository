@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyOTA</remote-id>
+    <remote-id type="github">iotaledger/iota</remote-id>
     <maintainer status="unknown">
       <email>phx@phx.ph</email>
       <name>Phoenix Zerin</name>

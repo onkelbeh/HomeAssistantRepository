@@ -6,7 +6,8 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">connect_box</remote-id>
+    <remote-id type="pypi">connect-box</remote-id>
+    <remote-id type="github">home-assistant-ecosystem/python-connect-box</remote-id>
     <maintainer status="unknown">
       <email>fabian@affolter-engineering.ch</email>
       <name>Fabian Affolter</name>

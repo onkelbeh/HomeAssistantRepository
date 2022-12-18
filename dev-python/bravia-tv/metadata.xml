@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bravia-tv</remote-id>
+    <remote-id type="github">dcnielsen90/python-bravia-tv</remote-id>
     <maintainer status="unknown">
       <email>dcnielsen90@gmail.com</email>
       <name>David Nielsen</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">oasatelematics</remote-id>
+    <remote-id type="github">panosmz/oasatelematics</remote-id>
     <maintainer status="unknown">
       <email>p.mazarakis94@gmail.com</email>
       <name>panosmz</name>

@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tmb</remote-id>
+    <remote-id type="github">alemuro/tmb</remote-id>
     <maintainer status="unknown">
-      <email>hola@aleixmurtra.com</email>
+      <email>hello@aleix.cloud</email>
       <name>alemuro</name>
     </maintainer>
   </upstream>

@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyUserInput</remote-id>
+    <remote-id type="github">PyUserInput/PyUserInput</remote-id>
     <maintainer status="unknown">
       <email>pablo.barton@gmail.com</email>
-      <name>Paul Barton pablo.barton@gmail.com, Pepijn de Vos pepijndevos@gmail.com</name>
+      <name>Paul Barton &lt;pablo.barton@gmail.com&gt;, Pepijn de Vos &lt;pepijndevos@gmail.com&gt;</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

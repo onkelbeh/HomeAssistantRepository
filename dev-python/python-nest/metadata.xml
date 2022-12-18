@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-nest</remote-id>
+    <remote-id type="github">jkoelker/python-nest</remote-id>
     <maintainer status="unknown">
       <email>jason@koelker.net</email>
       <name>Jason Kölker</name>

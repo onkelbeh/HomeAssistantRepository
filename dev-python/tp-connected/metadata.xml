@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tp-connected</remote-id>
+    <remote-id type="github">andtos90/tp-connected</remote-id>
   </upstream>
 </pkgmetadata>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">dlipower</remote-id>
+    <remote-id type="github">dwighthubbard/python-dlipower</remote-id>
     <maintainer status="unknown">
       <email>dwight@dwighthubbard.com</email>
       <name>Dwight Hubbard</name>

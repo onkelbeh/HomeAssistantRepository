@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pykira</remote-id>
+    <remote-id type="github">stu-gott/pykira</remote-id>
     <maintainer status="unknown">
       <email>stu-gott@users.noreply.github.com</email>
       <name>Stu Gott</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">yeelightsunflower</remote-id>
+    <remote-id type="github">lindsaymarkward/python-yeelight-sunflower</remote-id>
     <maintainer status="unknown">
       <email>lindsay.ward@jcu.edu.au</email>
       <name>Lindsay Ward</name>

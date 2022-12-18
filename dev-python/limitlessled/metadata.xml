@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">limitlessled</remote-id>
+    <remote-id type="github">happyleavesaoc/python-limitlessled</remote-id>
     <maintainer status="unknown">
       <email>happyleaves.tfr@gmail.com</email>
       <name>happyleaves</name>

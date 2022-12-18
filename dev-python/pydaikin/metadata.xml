@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pydaikin</remote-id>
+    <remote-id type="bitbucket">mustang51/pydaikin</remote-id>
     <maintainer status="unknown">
       <email>mustang@yadan.org</email>
       <name>Fredrik Erlandsson &lt;fredrik.e+pydaikin@gmail.com&gt;, Matthias Lemainque &lt;matthias.lemainque+pydaikin@gmail.com&gt;</name>

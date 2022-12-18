@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bsblan</remote-id>
+    <remote-id type="github">liudger/python-bsblan</remote-id>
     <maintainer status="unknown">
       <email>liudgervr@gmail.com</email>
       <name>Willem-Jan van Rootselaaar</name>

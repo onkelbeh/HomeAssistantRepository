@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">jellyfin-apiclient-python</remote-id>
+    <remote-id type="github">iwalton3/jellyfin-apiclient-python</remote-id>
     <maintainer status="unknown">
       <email>iwalton3@gmail.com</email>
       <name>Ian Walton</name>

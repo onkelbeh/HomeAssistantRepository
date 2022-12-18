@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">chacha20poly1305</remote-id>
+    <remote-id type="github">ph4r05/py-chacha20poly1305</remote-id>
     <maintainer status="unknown">
       <email>dusan.klinec@gmail.com</email>
       <name>Dusan Klinec</name>

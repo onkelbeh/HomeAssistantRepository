@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pycryptodomex</remote-id>
+    <remote-id type="github">Legrandin/pycryptodome</remote-id>
     <maintainer status="unknown">
       <email>helderijs@gmail.com</email>
       <name>Helder Eijs</name>

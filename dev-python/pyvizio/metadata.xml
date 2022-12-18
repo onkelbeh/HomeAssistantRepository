@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyvizio</remote-id>
+    <remote-id type="github">vkorn/pyvizio</remote-id>
     <maintainer status="unknown">
       <email>vladimir.kornev@gmail.com</email>
       <name>Vlad Korniev</name>

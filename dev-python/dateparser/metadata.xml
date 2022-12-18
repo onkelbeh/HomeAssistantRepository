@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">dateparser</remote-id>
+    <remote-id type="github">scrapinghub/dateparser</remote-id>
     <maintainer status="unknown">
-      <email>info@scrapinghub.com</email>
+      <email>opensource@zyte.com</email>
       <name>Scrapinghub</name>
     </maintainer>
   </upstream>

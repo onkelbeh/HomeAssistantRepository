@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aqualogic</remote-id>
+    <remote-id type="github">swilson/aqualogic</remote-id>
     <maintainer status="unknown">
       <email>sean.wilson@live.ca</email>
       <name>Sean Wilson</name>

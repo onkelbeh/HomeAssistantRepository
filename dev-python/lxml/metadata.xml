@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">lxml</remote-id>
+    <remote-id type="github">lxml/lxml</remote-id>
     <maintainer status="unknown">
       <email>lxml-dev@lxml.de</email>
       <name>lxml dev team</name>

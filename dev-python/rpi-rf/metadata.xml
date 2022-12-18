@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">rpi-rf</remote-id>
+    <remote-id type="github">milaq/rpi-rf</remote-id>
     <maintainer status="unknown">
       <email>micha.laqua@gmail.com</email>
       <name>Micha LaQua</name>

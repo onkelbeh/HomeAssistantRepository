@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-gitlab</remote-id>
+    <remote-id type="github">python-gitlab/python-gitlab</remote-id>
     <maintainer status="unknown">
       <email>gauvain@pocentek.net</email>
       <name>Gauvain Pocentek</name>

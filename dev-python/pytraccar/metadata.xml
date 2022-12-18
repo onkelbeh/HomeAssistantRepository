@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pytraccar</remote-id>
+    <remote-id type="github">ludeeus/pytraccar</remote-id>
     <maintainer status="unknown">
       <email>ludeeus@ludeeus.dev</email>
       <name>Ludeeus</name>

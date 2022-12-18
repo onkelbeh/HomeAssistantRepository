@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyRMVtransport</remote-id>
+    <remote-id type="github">cgtobi/PyRMVtransport</remote-id>
     <maintainer status="unknown">
       <email>cgtobi@gmail.com</email>
       <name>cgtobi</name>

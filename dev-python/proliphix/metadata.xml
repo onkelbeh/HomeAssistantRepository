@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">proliphix</remote-id>
+    <remote-id type="github">sdague/proliphix</remote-id>
     <maintainer status="unknown">
       <email>sean@dague.net</email>
       <name>Sean Dague</name>

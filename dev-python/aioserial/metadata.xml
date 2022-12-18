@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aioserial</remote-id>
+    <remote-id type="github">changyuheng/aioserial</remote-id>
     <maintainer status="unknown">
       <email>mr.changyuheng@gmail.com</email>
-      <name>Henry Chang</name>
+      <name>Johann Chang</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

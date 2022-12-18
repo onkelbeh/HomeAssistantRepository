@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyplaato</remote-id>
+    <remote-id type="github">JohNan/pyplaato</remote-id>
     <maintainer status="unknown">
       <email>johan.nanzen@gmail.com</email>
       <name>JohNan</name>

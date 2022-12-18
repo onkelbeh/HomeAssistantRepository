@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">energyflip-client</remote-id>
+    <remote-id type="github">dennisschroer/energyflip-client</remote-id>
     <maintainer status="unknown">
       <email>dev@dennisschroer.nl</email>
       <name>Dennis Schroer</name>

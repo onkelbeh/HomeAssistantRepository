@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">btsocket</remote-id>
+    <remote-id type="github">ukBaz/python_bluezmgmt</remote-id>
     <maintainer status="unknown">
       <email>barry_byford@yahoo.co.uk</email>
       <name>Barry Byford</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">nclib</remote-id>
+    <remote-id type="github">rhelmot/nclib</remote-id>
     <maintainer status="unknown">
       <email>audrey@rhelmot.io</email>
       <name>rhelmot</name>

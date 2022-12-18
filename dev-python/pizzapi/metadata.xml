@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pizzapi</remote-id>
+    <remote-id type="github">aluttik/pizzapi</remote-id>
     <maintainer status="unknown">
       <email>aluttik@gmail.com</email>
       <name>aluttik</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pygatt</remote-id>
+    <remote-id type="github">peplin/pygatt</remote-id>
     <maintainer status="unknown">
       <email>github@rhubarbtech.com</email>
       <name>Chris Peplin &lt;github@rhubarbtech.com&gt;</name>

@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-socketio</remote-id>
+    <remote-id type="github">miguelgrinberg/python-socketio</remote-id>
     <doc>https://pythonhosted.org/python-socketio/</doc>
     <maintainer status="unknown">
-      <email>miguelgrinberg50@gmail.com</email>
+      <email>miguel.grinberg@gmail.com</email>
       <name>Miguel Grinberg</name>
     </maintainer>
   </upstream>

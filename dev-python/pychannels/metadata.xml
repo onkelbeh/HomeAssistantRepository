@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pychannels</remote-id>
+    <remote-id type="github">fancybits/pychannels</remote-id>
     <maintainer status="unknown">
       <email>jon@getchannels.com</email>
       <name>Fancy Bits, LLC</name>

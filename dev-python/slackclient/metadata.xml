@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">slackclient</remote-id>
+    <remote-id type="github">slackapi/python-slack-sdk</remote-id>
     <maintainer status="unknown">
       <email>opensource@slack.com</email>
-      <name>Slack Technologies, Inc.</name>
+      <name>Slack Technologies, LLC</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

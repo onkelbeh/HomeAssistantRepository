@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">nessclient</remote-id>
+    <remote-id type="github">nickw444/nessclient</remote-id>
     <maintainer status="unknown">
       <email>nick@nickwhyte.com</email>
       <name>Nick Whyte</name>

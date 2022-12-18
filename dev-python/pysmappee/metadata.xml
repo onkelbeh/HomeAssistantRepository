@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pysmappee</remote-id>
+    <remote-id type="github">smappee/pysmappee</remote-id>
     <maintainer status="unknown">
       <email>support@smappee.com</email>
       <name>Smappee</name>

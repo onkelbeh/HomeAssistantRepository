@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">vultr</remote-id>
+    <remote-id type="github">spry-group/python-vultr</remote-id>
     <maintainer status="unknown">
       <email>darrel.opry@spry-group.com</email>
       <name>Darrel O'Pry</name>

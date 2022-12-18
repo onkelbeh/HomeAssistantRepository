@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">Ambiclimate</remote-id>
+    <remote-id type="github">Danielhiversen/pyAmbiclimate</remote-id>
     <maintainer status="unknown">
       <email>mail@dahoiv.net</email>
       <name>Daniel Hoyer Iversen</name>

@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiohttp</remote-id>
+    <remote-id type="github">aio-libs/aiohttp</remote-id>
     <maintainer status="unknown">
-      <email>aio-libs@googlegroups.com</email>
-      <name>Nikolay Kim &lt;fafhrd91@gmail.com&gt;, Andrew Svetlov &lt;andrew.svetlov@gmail.com&gt;</name>
+      <email>team@aiohttp.org</email>
+      <name>aiohttp team &lt;team@aiohttp.org&gt;</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

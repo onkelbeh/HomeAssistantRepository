@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">asyncmock</remote-id>
+    <remote-id type="github">timsavage/asyncmock</remote-id>
     <maintainer status="unknown">
       <email>tim@savage.company</email>
       <name>Tim Savage</name>

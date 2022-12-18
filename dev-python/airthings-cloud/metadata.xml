@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">airthings-cloud</remote-id>
+    <remote-id type="github">Danielhiversen/pyAirthings</remote-id>
     <maintainer status="unknown">
       <email>github@dahoiv.net</email>
       <name>Daniel Hjelseth Høyer</name>

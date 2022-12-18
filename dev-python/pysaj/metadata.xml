@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pysaj</remote-id>
+    <remote-id type="github">fredericvl/pysaj</remote-id>
     <maintainer status="unknown">
       <email>frederic.van.linthoudt@gmail.com</email>
       <name>fredericvl</name>

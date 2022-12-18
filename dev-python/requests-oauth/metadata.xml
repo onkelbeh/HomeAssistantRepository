@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">requests-oauth</remote-id>
+    <remote-id type="github">maraujop/requests-oauth</remote-id>
     <maintainer status="unknown">
       <email>miguel.araujo.perez@gmail.com</email>
       <name>Miguel Araujo</name>

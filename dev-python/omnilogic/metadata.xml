@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">omnilogic</remote-id>
+    <remote-id type="github">djtimca/omnilogic-api</remote-id>
     <maintainer status="unknown">
       <email>tim.empringham@live.ca</email>
       <name>Tim Empringham</name>

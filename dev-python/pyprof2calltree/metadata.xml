@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyprof2calltree</remote-id>
+    <remote-id type="github">pwaller/pyprof2calltree</remote-id>
     <maintainer status="unknown">
       <email>p@pwaller.net</email>
       <name>Peter Waller</name>

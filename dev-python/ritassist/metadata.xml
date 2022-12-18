@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ritassist</remote-id>
+    <remote-id type="github">depl0y/ritassist-py</remote-id>
     <maintainer status="unknown">
       <email>wim@wim.me</email>
       <name>Wim Haanstra</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">hkavr</remote-id>
+    <remote-id type="github">Devqon/hkavr</remote-id>
     <maintainer status="unknown">
       <email>s.geerts@live.nl</email>
       <name>Sander Geerts</name>

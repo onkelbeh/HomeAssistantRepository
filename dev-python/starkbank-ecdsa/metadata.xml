@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">starkbank-ecdsa</remote-id>
+    <remote-id type="github">starkbank/ecdsa-python</remote-id>
     <maintainer status="unknown">
       <email>developers@starkbank.com</email>
       <name>Stark Bank</name>

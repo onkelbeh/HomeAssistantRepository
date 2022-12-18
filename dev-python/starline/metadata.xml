@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">starline</remote-id>
+    <remote-id type="github">Anonym-tsk/starline</remote-id>
     <maintainer status="unknown">
       <email>anonym.tsk@gmail.com</email>
       <name>Nikolay Vasilchuk</name>

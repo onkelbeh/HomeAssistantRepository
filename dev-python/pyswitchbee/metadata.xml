@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyswitchbee</remote-id>
+    <remote-id type="github">jafar-atili/pySwitchbee</remote-id>
     <maintainer status="unknown">
       <email>at.jafar@outlook.com</email>
       <name>Jafar Atili</name>

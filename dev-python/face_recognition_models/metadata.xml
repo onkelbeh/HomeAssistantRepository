@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">face_recognition_models</remote-id>
+    <remote-id type="github">ageitgey/face_recognition_models</remote-id>
     <maintainer status="unknown">
       <email>ageitgey@gmail.com</email>
       <name>Adam Geitgey</name>

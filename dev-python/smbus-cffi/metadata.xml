@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">smbus-cffi</remote-id>
+    <remote-id type="github">bivab/smbus-cffi</remote-id>
     <maintainer status="unknown">
       <email>david.schneider@bivab.de</email>
       <name>David Schneider</name>

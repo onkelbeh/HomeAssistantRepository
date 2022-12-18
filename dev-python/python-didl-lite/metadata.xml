@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-didl-lite</remote-id>
+    <remote-id type="github">StevenLooman/python-didl-lite</remote-id>
     <maintainer status="unknown">
       <email>steven.looman@gmail.com</email>
       <name>Steven Looman</name>

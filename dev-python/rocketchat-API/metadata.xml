@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">rocketchat-API</remote-id>
+    <remote-id type="github">jadolg/rocketchat_API</remote-id>
     <maintainer status="unknown">
       <email>diazorozcoj@gmail.com</email>
       <name>Jorge Alberto Díaz Orozco</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">swisshydrodata</remote-id>
+    <remote-id type="github">bouni/swisshydrodata</remote-id>
     <maintainer status="unknown">
       <email>bouni@owee.de</email>
       <name>Bouni</name>

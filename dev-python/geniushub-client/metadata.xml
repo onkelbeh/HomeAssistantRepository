@@ -7,9 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">geniushub-client</remote-id>
+    <remote-id type="github">manzanotti/geniushub-client</remote-id>
     <maintainer status="unknown">
-      <email>zxdavb@gmail.com</email>
-      <name>David Bonnes &amp; Geoff Soord</name>
+      <email>manzo@gorilla-tactics.com</email>
+      <name>Paul Manzotti</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

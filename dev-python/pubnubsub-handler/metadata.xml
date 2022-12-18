@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pubnubsub-handler</remote-id>
+    <remote-id type="github">w1ll1am23/pubnubsub-handler</remote-id>
   </upstream>
 </pkgmetadata>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">huawei-lte-api</remote-id>
+    <remote-id type="github">Salamek/huawei-lte-api</remote-id>
     <maintainer status="unknown">
       <email>adam.schubert@sg1-game.net</email>
       <name>Adam Schubert</name>

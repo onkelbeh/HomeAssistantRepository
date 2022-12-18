@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">py-vapid</remote-id>
+    <remote-id type="github">mozilla-services/vapid</remote-id>
     <maintainer status="unknown">
       <email>src+vapid@jrconlin.com</email>
       <name>JR Conlin</name>

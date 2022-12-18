@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pydroid-ipcam</remote-id>
+    <remote-id type="github">home-assistant-libs/pydroid-ipcam</remote-id>
     <maintainer status="unknown">
       <email>pvizeli@syshack.ch</email>
       <name>Pascal Vizeli</name>

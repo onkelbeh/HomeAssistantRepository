@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ibm-watson</remote-id>
+    <remote-id type="github">watson-developer-cloud/python-sdk</remote-id>
     <maintainer status="unknown">
       <email>watdevex@us.ibm.com</email>
       <name>IBM Watson</name>

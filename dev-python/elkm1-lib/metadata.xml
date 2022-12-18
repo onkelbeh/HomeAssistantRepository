@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">elkm1-lib</remote-id>
+    <remote-id type="github">gwww/elkm1</remote-id>
     <maintainer status="unknown">
       <email>gwwaters+elkm1@gmail.com</email>
       <name>Glenn Waters</name>

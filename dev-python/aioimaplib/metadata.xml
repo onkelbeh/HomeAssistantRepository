@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aioimaplib</remote-id>
+    <remote-id type="github">bamthomas/aioimaplib</remote-id>
     <maintainer status="unknown">
       <email>bruno@barreverte.fr</email>
       <name>Bruno Thomas</name>

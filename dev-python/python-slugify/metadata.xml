@@ -5,4 +5,12 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
+  <upstream>
+    <remote-id type="pypi">python-slugify</remote-id>
+    <remote-id type="github">un33k/python-slugify</remote-id>
+    <maintainer status="unknown">
+      <email>info@neekware.com</email>
+      <name>Val Neekman</name>
+    </maintainer>
+  </upstream>
 </pkgmetadata>

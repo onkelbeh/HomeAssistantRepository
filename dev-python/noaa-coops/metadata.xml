@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">noaa-coops</remote-id>
+    <remote-id type="github">GClunies/noaa_coops</remote-id>
     <maintainer status="unknown">
       <email>greg.clunies@gmail.com</email>
       <name>Greg Clunies</name>

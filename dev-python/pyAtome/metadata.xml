@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyAtome</remote-id>
+    <remote-id type="github">baqs/pyAtome</remote-id>
     <maintainer status="unknown">
       <email>baqs@users.github.com</email>
       <name>Pierre Ourdouille</name>

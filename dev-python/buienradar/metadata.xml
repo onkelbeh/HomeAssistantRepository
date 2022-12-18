@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">buienradar</remote-id>
+    <remote-id type="github">mjj4791/python-buienradar</remote-id>
   </upstream>
 </pkgmetadata>

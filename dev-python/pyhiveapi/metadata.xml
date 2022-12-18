@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyhiveapi</remote-id>
+    <remote-id type="github">Pyhive/pyhiveapi</remote-id>
     <maintainer status="unknown">
       <email>rendili@outlook.com</email>
       <name>Rendili</name>

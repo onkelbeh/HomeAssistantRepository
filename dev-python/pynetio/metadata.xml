@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pynetio</remote-id>
+    <remote-id type="github">eagleamon/pynetio</remote-id>
     <maintainer status="unknown">
       <email>joseph.piron@gmail.com</email>
       <name>Joseph Piron (Joseph Piron)</name>

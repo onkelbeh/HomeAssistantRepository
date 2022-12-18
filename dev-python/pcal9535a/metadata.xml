@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pcal9535a</remote-id>
+    <remote-id type="github">Shulyaka/pcal9535a</remote-id>
     <maintainer status="unknown">
       <email>Shulyaka@gmail.com</email>
       <name>Denis Shulyaka</name>

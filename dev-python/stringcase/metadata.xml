@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">stringcase</remote-id>
+    <remote-id type="github">okunishinishi/python-stringcase</remote-id>
     <maintainer status="unknown">
       <email>okunishitaka.com@gmail.com</email>
       <name>Taka Okunishi</name>

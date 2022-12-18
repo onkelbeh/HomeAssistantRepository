@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">fortiosapi</remote-id>
+    <remote-id type="github">fortinet-solutions-cse/fortiosapi</remote-id>
     <maintainer status="unknown">
       <email>nthomas@fortinet.com</email>
       <name>Nicolas Thomas</name>

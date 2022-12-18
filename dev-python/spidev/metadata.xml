@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">spidev</remote-id>
+    <remote-id type="github">doceme/py-spidev</remote-id>
     <maintainer status="unknown">
       <email>scaudle@doceme.com</email>
       <name>Stephen Caudle</name>

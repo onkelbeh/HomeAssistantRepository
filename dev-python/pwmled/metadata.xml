@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pwmled</remote-id>
+    <remote-id type="github">soldag/python-pwmled</remote-id>
     <maintainer status="unknown">
       <email>soren.oldag@gmail.com</email>
       <name>soldag</name>

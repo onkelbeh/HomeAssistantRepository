@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">london-tube-status</remote-id>
+    <remote-id type="github">robmarkcole/London-tube-status</remote-id>
     <maintainer status="unknown">
       <email>robmarkcole@gmail.com</email>
       <name>Robin Cole</name>

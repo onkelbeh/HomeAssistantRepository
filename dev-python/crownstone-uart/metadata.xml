@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">crownstone-uart</remote-id>
+    <remote-id type="github">crownstone/crownstone-lib-python-uart</remote-id>
   </upstream>
 </pkgmetadata>

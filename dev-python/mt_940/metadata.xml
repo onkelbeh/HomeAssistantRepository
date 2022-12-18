@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">mt-940</remote-id>
+    <remote-id type="github">WoLpH/mt940</remote-id>
     <maintainer status="unknown">
       <email>wolph@wol.ph</email>
       <name>Rick van Hattem (wolph)</name>

@@ -7,13 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pymodbus</remote-id>
+    <remote-id type="github">riptideio/pymodbus</remote-id>
     <doc>https://pythonhosted.org/pymodbus/</doc>
-    <maintainer status="unknown">
-      <email>otlasanju@gmail.com</email>
-      <name>dhoomakethu</name>
-    </maintainer>
   </upstream>
-  <use>
-    <flag name="serial">add modbus serial support</flag>
-  </use>
 </pkgmetadata>

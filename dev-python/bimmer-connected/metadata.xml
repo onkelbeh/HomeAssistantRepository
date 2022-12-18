@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bimmer-connected</remote-id>
+    <remote-id type="github">bimmerconnected/bimmer_connected</remote-id>
   </upstream>
 </pkgmetadata>

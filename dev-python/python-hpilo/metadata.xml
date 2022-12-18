@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-hpilo</remote-id>
+    <remote-id type="github">seveas/python-hpilo</remote-id>
     <maintainer status="unknown">
       <email>dennis@kaarsemaker.net</email>
       <name>Dennis Kaarsemaker</name>

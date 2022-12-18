@@ -1,8 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
   <upstream>
     <remote-id type="pypi">konnected</remote-id>
+    <remote-id type="github">konnected-io/konnected-py</remote-id>
     <maintainer status="unknown">
       <email>help@konnected.io</email>
       <name>Nate Clark, Konnected Inc</name>

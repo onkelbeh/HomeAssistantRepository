@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pybalboa</remote-id>
+    <remote-id type="github">garbled1/pybalboa</remote-id>
     <maintainer status="unknown">
       <email>root@garbled.net</email>
       <name>Tim Rightnour, Nathan Spencer</name>

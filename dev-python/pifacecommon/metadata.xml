@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pifacecommon</remote-id>
+    <remote-id type="github">piface/pifacecommon</remote-id>
     <maintainer status="unknown">
       <email>thomas.preston@openlx.org.uk</email>
       <name>Thomas Preston</name>

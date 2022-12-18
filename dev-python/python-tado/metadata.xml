@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-tado</remote-id>
+    <remote-id type="github">wmalgadey/PyTado</remote-id>
     <maintainer status="unknown">
       <email>chrism0dwk@gmail.com, w.malgadey@gmail.com</email>
       <name>chrism0dwk, w.malgadey</name>

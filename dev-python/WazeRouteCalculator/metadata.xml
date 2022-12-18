@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">WazeRouteCalculator</remote-id>
+    <remote-id type="github">kovacsbalu/WazeRouteCalculator</remote-id>
     <maintainer status="unknown">
       <email>kovacsbalu@gmail.com</email>
       <name>Balint Kovacs</name>

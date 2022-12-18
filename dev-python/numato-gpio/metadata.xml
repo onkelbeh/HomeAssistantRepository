@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">numato-gpio</remote-id>
+    <remote-id type="github">clssn/numato-gpio</remote-id>
     <maintainer status="unknown">
       <email>code@clssn.de</email>
       <name>Henning Classen</name>

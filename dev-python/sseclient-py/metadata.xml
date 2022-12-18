@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">sseclient-py</remote-id>
+    <remote-id type="github">mpetazzoni/sseclient</remote-id>
     <maintainer status="unknown">
       <email>maxime.petazzoni@bulix.org</email>
       <name>Maxime Petazzoni</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">radiotherm</remote-id>
+    <remote-id type="github">mhrivnak/radiotherm</remote-id>
     <maintainer status="unknown">
       <email>mhrivnak@hrivnak.org</email>
       <name>Michael Hrivnak</name>

@@ -7,6 +7,8 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">transmissionrpc</remote-id>
+    <remote-id type="bitbucket">blueluna/transmissionrpc</remote-id>
+    <doc>https://pythonhosted.org/transmissionrpc/</doc>
     <maintainer status="unknown">
       <email>erik.public@gmail.com</email>
       <name>Erik Svensson</name>

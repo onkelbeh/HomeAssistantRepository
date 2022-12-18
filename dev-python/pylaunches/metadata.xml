@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pylaunches</remote-id>
+    <remote-id type="github">ludeeus/pylaunches</remote-id>
     <maintainer status="unknown">
       <email>hi@ludeeus.dev</email>
       <name>Joakim Sorensen</name>

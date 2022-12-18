@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">blebox-uniapi</remote-id>
+    <remote-id type="github">blebox/blebox_uniapi</remote-id>
     <maintainer status="unknown">
       <email>opensource@blebox.eu</email>
       <name>BleBox</name>

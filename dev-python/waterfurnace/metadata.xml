@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">waterfurnace</remote-id>
+    <remote-id type="github">sdague/waterfurnace</remote-id>
     <maintainer status="unknown">
       <email>sean@dague.net</email>
       <name>Sean Dague</name>

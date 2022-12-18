@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">dicttoxml</remote-id>
+    <remote-id type="github">quandyfactory/dicttoxml</remote-id>
     <maintainer status="unknown">
-      <email>ryan@quandyfactory.com</email>
+      <email>Ryan McGreal &lt;ryan@quandyfactory.com&gt;</email>
       <name>Ryan McGreal</name>
     </maintainer>
   </upstream>

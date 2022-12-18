@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">librouteros</remote-id>
+    <remote-id type="github">luqasz/librouteros</remote-id>
     <maintainer status="unknown">
       <email>lukasz.kostka@netng.pl</email>
       <name>Łukasz Kostka</name>

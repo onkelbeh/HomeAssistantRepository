@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pysnooz</remote-id>
+    <remote-id type="github">AustinBrunkhorst/pysnooz</remote-id>
     <maintainer status="unknown">
       <email>pysnooz@alb.dev</email>
       <name>Austin Brunkhorst</name>

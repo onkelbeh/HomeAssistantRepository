@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">statsd</remote-id>
+    <remote-id type="github">jsocol/pystatsd</remote-id>
     <maintainer status="unknown">
-      <email>james@mozilla.com</email>
+      <email>me@jamessocol.com</email>
       <name>James Socol</name>
     </maintainer>
   </upstream>

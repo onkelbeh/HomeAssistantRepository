@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">temperusb</remote-id>
+    <remote-id type="github">padelt/temper-python</remote-id>
     <maintainer status="unknown">
       <email>autosort-github@philipp.adelt.net</email>
       <name>Philipp Adelt</name>

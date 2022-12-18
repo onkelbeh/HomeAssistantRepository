@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">waqiasync</remote-id>
+    <remote-id type="github">andrey-git/waqi-async</remote-id>
     <maintainer status="unknown">
       <email>andrey-git@github.com</email>
       <name>andrey-git</name>

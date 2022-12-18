@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">deepdiff</remote-id>
+    <remote-id type="github">seperman/deepdiff</remote-id>
     <maintainer status="unknown">
       <email>sep@zepworks.com</email>
       <name>Seperman</name>

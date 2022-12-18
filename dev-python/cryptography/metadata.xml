@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">cryptography</remote-id>
+    <remote-id type="github">pyca/cryptography</remote-id>
     <maintainer status="unknown">
       <email>cryptography-dev@python.org</email>
       <name>The Python Cryptographic Authority and individual contributors</name>

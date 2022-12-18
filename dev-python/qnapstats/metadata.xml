@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">qnapstats</remote-id>
+    <remote-id type="github">colinodell/python-qnapstats</remote-id>
     <maintainer status="unknown">
       <email>colinodell@gmail.com</email>
       <name>Colin O'Dell</name>

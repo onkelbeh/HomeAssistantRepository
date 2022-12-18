@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyiss</remote-id>
+    <remote-id type="github">HydrelioxGitHub/pyiss</remote-id>
     <maintainer status="unknown">
       <email>hydreliox@gmail.com</email>
       <name>Hydreliox</name>

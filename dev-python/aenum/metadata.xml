@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aenum</remote-id>
+    <remote-id type="github">ethanfurman/aenum</remote-id>
     <maintainer status="unknown">
       <email>ethan@stoneleaf.us</email>
       <name>Ethan Furman</name>

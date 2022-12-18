@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiolookin</remote-id>
+    <remote-id type="github">ANMalko/aiolookin</remote-id>
     <maintainer status="unknown">
       <email>antonmalko@mail.ru</email>
       <name>Anton Malko</name>

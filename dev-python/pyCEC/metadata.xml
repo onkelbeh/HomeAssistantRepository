@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyCEC</remote-id>
+    <remote-id type="github">konikvranik/pycec</remote-id>
     <maintainer status="unknown">
       <email>hpa@suteren.net</email>
       <name>Petr Vraník</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiokef</remote-id>
+    <remote-id type="github">basnijholt/aiokef</remote-id>
     <maintainer status="unknown">
       <email>bas@nijho.lt</email>
       <name>Bas Nijholt</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiopyarr</remote-id>
+    <remote-id type="github">tkdrob/aiopyarr</remote-id>
     <maintainer status="unknown">
       <email>tkdrob4390@yahoo.com</email>
       <name>Robert Hillis</name>

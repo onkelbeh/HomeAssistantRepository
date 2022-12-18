@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyfireservicerota</remote-id>
+    <remote-id type="github">cyberjunky/python-fireservicerota</remote-id>
     <maintainer status="unknown">
       <email>ron@cyberjunky.nl</email>
       <name>Ron Klinkien</name>

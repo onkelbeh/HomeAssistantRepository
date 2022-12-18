@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyFlume</remote-id>
+    <remote-id type="github">ChrisMandich/PyFlume</remote-id>
     <maintainer status="unknown">
       <email>Chris@Mandich.net</email>
       <name>ChrisMandich</name>

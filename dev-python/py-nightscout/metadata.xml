@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">py-nightscout</remote-id>
+    <remote-id type="github">marciogranzotto/py-nightscout</remote-id>
     <maintainer status="unknown">
       <email>marciogranzotto@gmail.com</email>
       <name>Marcio Granzotto</name>

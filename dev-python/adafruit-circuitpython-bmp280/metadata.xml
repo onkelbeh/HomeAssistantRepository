@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">adafruit-circuitpython-bmp280</remote-id>
+    <remote-id type="github">adafruit/Adafruit_CircuitPython_BMP280</remote-id>
     <maintainer status="unknown">
       <email>circuitpython@adafruit.com</email>
       <name>Adafruit Industries</name>

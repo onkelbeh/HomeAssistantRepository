@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">homeconnect</remote-id>
+    <remote-id type="github">DavidMStraub/homeconnect</remote-id>
     <maintainer status="unknown">
       <email>david.straub@tum.de</email>
       <name>David M. Straub</name>

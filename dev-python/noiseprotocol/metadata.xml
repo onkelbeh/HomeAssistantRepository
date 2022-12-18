@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">noiseprotocol</remote-id>
+    <remote-id type="github">plizonczyk/noiseprotocol</remote-id>
     <maintainer status="unknown">
       <email>plizonczyk.public@gmail.com</email>
       <name>Piotr Lizonczyk</name>

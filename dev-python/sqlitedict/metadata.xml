@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">sqlitedict</remote-id>
+    <remote-id type="github">piskvorky/sqlitedict</remote-id>
     <maintainer status="unknown">
       <email>me@radimrehurek.com</email>
       <name>Radim Rehurek</name>

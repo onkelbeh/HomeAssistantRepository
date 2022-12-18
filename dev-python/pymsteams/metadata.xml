@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pymsteams</remote-id>
+    <remote-id type="github">rveachkc/pymsteams</remote-id>
     <maintainer status="unknown">
       <email>rveach@gmail.com</email>
       <name>Ryan Veach</name>

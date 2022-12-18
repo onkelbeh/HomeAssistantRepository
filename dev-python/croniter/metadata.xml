@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">croniter</remote-id>
+    <remote-id type="github">kiorky/croniter</remote-id>
     <maintainer status="unknown">
       <email>taichino@gmail.com, kiorky@cryptelium.net</email>
       <name>Matsumoto Taichi, kiorky</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">vallox-websocket-api</remote-id>
+    <remote-id type="github">yozik04/vallox_websocket_api</remote-id>
     <maintainer status="unknown">
       <email>yozik04@gmail.com</email>
       <name>Jevgeni Kiski</name>

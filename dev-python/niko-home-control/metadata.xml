@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">niko-home-control</remote-id>
+    <remote-id type="github">NoUseFreak/niko-home-control</remote-id>
     <maintainer status="unknown">
       <email>dries@nousefreak.be</email>
       <name>Dries De Peuter</name>

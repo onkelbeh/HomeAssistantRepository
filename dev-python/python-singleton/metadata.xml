@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-singleton</remote-id>
+    <remote-id type="github">romaryd/python-singleton</remote-id>
     <maintainer status="unknown">
       <email>romary@me.com</email>
       <name>Romary Dupuis</name>

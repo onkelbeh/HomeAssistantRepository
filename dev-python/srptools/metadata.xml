@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">srptools</remote-id>
+    <remote-id type="github">idlesign/srptools</remote-id>
     <maintainer status="unknown">
       <email>idlesign@yandex.ru</email>
       <name>Igor `idle sign` Starikov</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">i2csense</remote-id>
+    <remote-id type="github">azogue/i2csense</remote-id>
     <maintainer status="unknown">
       <email>eugenio.panadero@gmail.com</email>
       <name>Eugenio Panadero</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">adafruit-circuitpython-busdevice</remote-id>
+    <remote-id type="github">adafruit/Adafruit_CircuitPython_BusDevice</remote-id>
     <maintainer status="unknown">
       <email>circuitpython@adafruit.com</email>
       <name>Adafruit Industries</name>

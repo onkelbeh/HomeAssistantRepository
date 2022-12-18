@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">icmplib</remote-id>
+    <remote-id type="github">ValentinBELYN/icmplib</remote-id>
     <maintainer status="unknown">
       <email>valentin-hello@gmx.com</email>
       <name>Valentin BELYN</name>

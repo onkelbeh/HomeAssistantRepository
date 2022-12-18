@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PySyncThru</remote-id>
+    <remote-id type="github">nielstron/pysyncthru</remote-id>
     <maintainer status="unknown">
       <email>n.muendler@web.de</email>
       <name>nielstron</name>

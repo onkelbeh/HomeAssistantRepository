@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">nsw-fuel-api-client</remote-id>
+    <remote-id type="github">nickw444/nsw-fuel-api-client</remote-id>
     <maintainer status="unknown">
       <email>nick@nickwhyte.com</email>
       <name>Nick Whyte</name>

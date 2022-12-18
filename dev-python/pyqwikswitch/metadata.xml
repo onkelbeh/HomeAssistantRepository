@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyqwikswitch</remote-id>
+    <remote-id type="github">kellerza/pyqwikswitch</remote-id>
     <maintainer status="unknown">
       <email>kellerza@gmail.com</email>
       <name>Johann Kellerman</name>

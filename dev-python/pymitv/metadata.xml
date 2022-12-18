@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pymitv</remote-id>
+    <remote-id type="github">simse/pymitv</remote-id>
     <maintainer status="unknown">
       <email>teamangryghast@gmail.com</email>
       <name>Simon Sorensen</name>

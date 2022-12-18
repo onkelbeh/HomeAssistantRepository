@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyTurboJPEG</remote-id>
+    <remote-id type="github">lilohuang/PyTurboJPEG</remote-id>
     <maintainer status="unknown">
       <email>kuso.cc@gmail.com</email>
       <name>Lilo Huang</name>

@@ -7,8 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">synology-srm</remote-id>
+    <remote-id type="github">aerialls/synology-srm</remote-id>
     <maintainer status="unknown">
-      <email>julien@aerialls.io</email>
+      <email>julien@aerialls.eu</email>
       <name>Julien Brochet</name>
     </maintainer>
   </upstream>

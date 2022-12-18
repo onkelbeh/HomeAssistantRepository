@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">fitbit</remote-id>
+    <remote-id type="github">orcasgit/python-fitbit</remote-id>
     <maintainer status="unknown">
       <email>bpitcher@orcasinc.com</email>
       <name>Issac Kelly and ORCAS</name>

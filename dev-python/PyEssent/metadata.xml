@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PyEssent</remote-id>
+    <remote-id type="github">TheLastProject/PyEssent</remote-id>
     <maintainer status="unknown">
       <email>sylvia@hackerchick.me</email>
       <name>Sylvia van Os</name>

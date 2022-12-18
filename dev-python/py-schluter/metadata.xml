@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">py-schluter</remote-id>
+    <remote-id type="github">prairieapps/py-schluter</remote-id>
     <maintainer status="unknown">
       <email>adam@prairieapps.com</email>
       <name>Adam Michaleski</name>

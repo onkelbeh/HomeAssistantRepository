@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">PySwitchmate</remote-id>
+    <remote-id type="github">Danielhiversen/pySwitchmate</remote-id>
   </upstream>
 </pkgmetadata>

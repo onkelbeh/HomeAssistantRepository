@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">haversine</remote-id>
+    <remote-id type="github">mapado/haversine</remote-id>
     <maintainer status="unknown">
       <email>julien.deniau@mapado.com</email>
       <name>Julien Deniau</name>

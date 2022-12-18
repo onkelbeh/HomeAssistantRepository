@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiomodernforms</remote-id>
+    <remote-id type="github">wonderslug/aiomodernforms</remote-id>
     <maintainer status="unknown">
       <email>brian@towles.com</email>
       <name>Brian Towles</name>

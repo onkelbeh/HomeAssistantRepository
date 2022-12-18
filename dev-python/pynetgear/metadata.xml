@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pynetgear</remote-id>
+    <remote-id type="github">MatMaul/pynetgear</remote-id>
     <maintainer status="unknown">
       <email>Paulus@PaulusSchoutsen.nl</email>
       <name>Paulus Schoutsen</name>

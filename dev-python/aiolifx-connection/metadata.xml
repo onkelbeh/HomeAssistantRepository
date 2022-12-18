@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiolifx-connection</remote-id>
+    <remote-id type="github">bdraco/aiolifx_connection</remote-id>
     <maintainer status="unknown">
       <email>nick@koston.org</email>
       <name>J. Nick Koston</name>

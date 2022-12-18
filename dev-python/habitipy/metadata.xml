@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">habitipy</remote-id>
+    <remote-id type="github">ASMfreaK/habitipy</remote-id>
     <maintainer status="unknown">
       <email>cpp.create@gmail.com</email>
       <name>Pavel Pletenev</name>

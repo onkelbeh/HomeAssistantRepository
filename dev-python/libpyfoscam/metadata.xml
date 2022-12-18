@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">libpyfoscam</remote-id>
+    <remote-id type="github">krmarien/python-foscam</remote-id>
     <maintainer status="unknown">
       <email>viswa.swami@gmail.com</email>
       <name>Viswanathan S</name>

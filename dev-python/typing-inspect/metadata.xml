@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">typing-inspect</remote-id>
+    <remote-id type="github">ilevkivskyi/typing_inspect</remote-id>
     <maintainer status="unknown">
       <email>levkivskyi@gmail.com</email>
       <name>Ivan Levkivskyi</name>

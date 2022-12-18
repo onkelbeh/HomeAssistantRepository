@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">grpc-google-iam-v1</remote-id>
+    <remote-id type="github">googleapis/python-grpc-google-iam-v1</remote-id>
     <maintainer status="unknown">
       <email>googleapis-packages@google.com</email>
       <name>Google LLC</name>

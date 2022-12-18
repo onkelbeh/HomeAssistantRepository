@@ -7,6 +7,8 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">raspihats</remote-id>
+    <remote-id type="github">raspihats/raspihats</remote-id>
+    <doc>https://pythonhosted.org/raspihats/</doc>
     <maintainer status="unknown">
       <email>hardhat@raspihats.com</email>
       <name>Florin COSTA</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyfreedompro</remote-id>
+    <remote-id type="github">stefano055415/pyfreedompro</remote-id>
     <maintainer status="unknown">
       <email>stefano055415@gmail.com</email>
       <name>Stefano Cartisano</name>

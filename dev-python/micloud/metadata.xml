@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">micloud</remote-id>
+    <remote-id type="github">squachen/micloud</remote-id>
     <maintainer status="unknown">
       <email>sammy@ssvensson.se</email>
       <name>Sammy Svensson</name>

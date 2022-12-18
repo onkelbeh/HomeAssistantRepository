@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">hbmqtt</remote-id>
+    <remote-id type="github">beerfactory/hbmqtt</remote-id>
     <maintainer status="unknown">
       <email>nico@beerfactory.org</email>
       <name>Nicolas Jouanin</name>

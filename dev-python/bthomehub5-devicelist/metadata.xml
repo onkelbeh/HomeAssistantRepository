@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bthomehub5-devicelist</remote-id>
+    <remote-id type="github">ahobsonsayers/bthomehub5-devicelist</remote-id>
     <maintainer status="unknown">
       <email>ahobsonsayers@gmail.com</email>
       <name>Arran Hobson Sayers</name>

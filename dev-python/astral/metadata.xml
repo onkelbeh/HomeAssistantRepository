@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">astral</remote-id>
+    <remote-id type="github">sffjunkie/astral</remote-id>
     <maintainer status="unknown">
       <email>sffjunkie+code@gmail.com</email>
       <name>Simon Kennedy</name>

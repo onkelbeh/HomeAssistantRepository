@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">renault-api</remote-id>
+    <remote-id type="github">hacf-fr/renault-api</remote-id>
   </upstream>
 </pkgmetadata>

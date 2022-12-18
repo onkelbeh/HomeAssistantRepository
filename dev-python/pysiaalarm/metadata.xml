@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pysiaalarm</remote-id>
+    <remote-id type="github">eavanvalkenburg/pysiaalarm</remote-id>
     <maintainer status="unknown">
       <email>github@vanvalkenburg.eu</email>
       <name>E.A. van Valkenburg</name>

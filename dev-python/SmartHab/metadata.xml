@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">SmartHab</remote-id>
+    <remote-id type="gitlab">outadoc/python-smarthab</remote-id>
     <maintainer status="unknown">
       <email>outadoc@gmail.com</email>
       <name>Baptiste Candellier</name>

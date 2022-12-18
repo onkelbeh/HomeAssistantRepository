@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">vilfo-api-client</remote-id>
+    <remote-id type="github">mannew/vilfo-api-client-python</remote-id>
     <maintainer status="unknown">
       <email>winblad@protonmail.com</email>
       <name>Emanuel Winblad</name>

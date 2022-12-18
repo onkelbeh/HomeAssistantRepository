@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">xmltodict</remote-id>
+    <remote-id type="github">martinblech/xmltodict</remote-id>
     <maintainer status="unknown">
       <email>martinblech@gmail.com</email>
       <name>Martin Blech</name>

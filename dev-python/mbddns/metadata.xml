@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">mbddns</remote-id>
+    <remote-id type="github">thinkl33t/mb-ddns</remote-id>
     <maintainer status="unknown">
       <email>bob@clough.me</email>
       <name>Bob Clough</name>

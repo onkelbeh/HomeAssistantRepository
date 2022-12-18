@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">http-ece</remote-id>
+    <remote-id type="github">martinthomson/encrypted-content-encoding</remote-id>
     <maintainer status="unknown">
       <email>martin.thomson@gmail.com</email>
       <name>Martin Thomson</name>

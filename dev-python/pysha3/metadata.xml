@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pysha3</remote-id>
+    <remote-id type="github">tiran/pysha3</remote-id>
     <maintainer status="unknown">
       <email>christian@python.org</email>
       <name>Christian Heimes</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyqvrpro</remote-id>
+    <remote-id type="github">oblogic7/pyqvrpro</remote-id>
     <maintainer status="unknown">
       <email>matt@obscurelogic.com</email>
       <name>Matt Snyder</name>

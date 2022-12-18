@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">epsonprinter</remote-id>
+    <remote-id type="github">thastealth/epsonprinter</remote-id>
     <maintainer status="unknown">
       <email>author@example.com</email>
       <name>ThaStealth</name>

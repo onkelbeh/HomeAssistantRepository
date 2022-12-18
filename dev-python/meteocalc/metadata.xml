@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">meteocalc</remote-id>
+    <remote-id type="github">malexer/meteocalc</remote-id>
     <maintainer status="unknown">
       <email>alex@markovs.me</email>
       <name>Alex (Oleksii) Markov</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyownet</remote-id>
+    <remote-id type="github">miccoli/pyownet</remote-id>
     <maintainer status="unknown">
       <email>stefano.miccoli@polimi.it</email>
       <name>Stefano Miccoli</name>

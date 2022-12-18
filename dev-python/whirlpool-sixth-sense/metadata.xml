@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">whirlpool-sixth-sense</remote-id>
+    <remote-id type="github">abmantis/whirlpool-sixth-sense</remote-id>
     <maintainer status="unknown">
       <email>amfcalt@gmail.com</email>
       <name>Abílio Costa</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyrepetierng</remote-id>
+    <remote-id type="github">ShadowBr0ther/pyrepetier-ng</remote-id>
     <maintainer status="unknown">
       <email>lb@revin-tech.com</email>
       <name>ShadowBr0ther</name>

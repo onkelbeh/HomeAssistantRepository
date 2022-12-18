@@ -7,10 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyunifiprotect</remote-id>
-    <maintainer status="unknown">
-      <email>nick@koston.org</email>
-      <name>J. Nick Koston</name>
-    </maintainer>
+    <remote-id type="github">AngellusMortis/pyunifiprotect</remote-id>
     <maintainer status="unknown">
       <email>cbailey@mort.is</email>
       <name>Christopher Bailey</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">lmnotify</remote-id>
+    <remote-id type="github">keans/lmnotify</remote-id>
     <maintainer status="unknown">
       <email>keans@gmx.de</email>
       <name>Ansgar Kellner</name>

@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ua-parser</remote-id>
+    <remote-id type="github">ua-parser/uap-python</remote-id>
     <maintainer status="unknown">
       <email>no-reply@pbs.org</email>
       <name>PBS</name>

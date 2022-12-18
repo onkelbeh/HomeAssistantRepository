@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">d2to1</remote-id>
+    <remote-id type="github">embray/d2to1</remote-id>
     <maintainer status="unknown">
       <email>embray@stsci.edu</email>
       <name>Erik M. Bray</name>

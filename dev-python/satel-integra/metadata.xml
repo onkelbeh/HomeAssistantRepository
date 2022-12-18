@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">satel-integra</remote-id>
+    <remote-id type="github">c-soft/satel_integra</remote-id>
     <maintainer status="unknown">
       <email>krzysztof.machelski+pypi@gmail.com</email>
       <name>Krzysztof Machelski</name>

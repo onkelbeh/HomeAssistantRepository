@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">quantum-gateway</remote-id>
+    <remote-id type="github">cisasteelersfan/quantum_gateway</remote-id>
     <maintainer status="unknown">
       <email>colbyrome@gmail.com</email>
       <name>Colby Rome</name>

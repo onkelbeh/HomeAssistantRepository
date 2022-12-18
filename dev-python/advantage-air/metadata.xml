@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">advantage-air</remote-id>
+    <remote-id type="github">Bre77/advantage_air</remote-id>
     <maintainer status="unknown">
       <email>brett@ba.id.au</email>
       <name>Brett Adams</name>

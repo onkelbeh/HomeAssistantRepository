@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pypoint</remote-id>
+    <remote-id type="github">fredrike/pypoint</remote-id>
     <maintainer status="unknown">
       <email>fredrik.e@gmail.com</email>
       <name>Fredrik Erlandsson</name>

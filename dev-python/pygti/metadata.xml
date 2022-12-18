@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pygti</remote-id>
+    <remote-id type="github">vigonotion/pygti</remote-id>
     <maintainer status="unknown">
       <email>mail@vigonotion.com</email>
       <name>Tom Schneider</name>

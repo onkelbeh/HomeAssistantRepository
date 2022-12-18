@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pure-python-adb</remote-id>
+    <remote-id type="github">Swind/pure-python-adb</remote-id>
     <maintainer status="unknown">
       <email>swind@cloudmosa.com</email>
       <name>Swind Ou</name>

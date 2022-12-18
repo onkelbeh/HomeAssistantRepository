@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">asyncclick</remote-id>
+    <remote-id type="github">python-trio/asyncclick</remote-id>
     <maintainer status="unknown">
       <email>&lt;matthias@urlichs.de&gt;</email>
       <name>Matthias Urlichs</name>

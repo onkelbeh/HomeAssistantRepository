@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-gc100</remote-id>
+    <remote-id type="github">davegravy/python-gc100</remote-id>
     <maintainer status="unknown">
       <email>davegravy@gmail.com</email>
       <name>David Grant</name>
