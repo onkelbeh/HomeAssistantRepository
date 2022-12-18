@@ -6,8 +6,8 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="github">home-assistant/frontend</remote-id>
     <remote-id type="pypi">home-assistant-frontend</remote-id>
+    <remote-id type="github">home-assistant/frontend</remote-id>
     <maintainer status="unknown">
       <email>hello@home-assistant.io</email>
       <name>The Home Assistant Authors</name>
