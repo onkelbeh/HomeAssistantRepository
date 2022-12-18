@@ -187,7 +187,7 @@ bluemaestro-ble==0.2.0
 bluepy==1.3.0
 bluetooth-adapters==0.12.0
 bluetooth-adapters==0.14.1
-bluetooth-auto-recovery==1.0.0
+bluetooth-auto-recovery==1.0.3
 bluetooth-data-tools==0.3.0
 bluetooth-sensor-state-data==1.6.0
 bluez==5.65
@@ -196,8 +196,8 @@ bme680==1.0.5
 bond-async==0.1.22
 boschshcpy==0.2.35
 boto3==1.20.24
-boto3==1.26.16
-botocore==1.29.16
+boto3==1.26.20
+botocore==1.29.20
 bottle==0.12.23
 bottleneck==1.3.5
 broadlink==0.18.3
@@ -397,7 +397,7 @@ getmac==0.8.3
 gios==2.1.0
 gitterpy==0.1.7
 glances-api==0.4.1
-glib==2.74.1
+glib==2.74.3
 glibc==2.36
 gmp==6.2.1
 gntp==1.0.3
@@ -407,14 +407,14 @@ gobject-introspection==1.74.0
 goodwe==0.2.18
 google-api-core==2.8.2
 google-auth-oauthlib==0.7.1
-google-auth==2.13.0
+google-auth==2.14.1
 google-cloud-pubsub==2.13.10
 google-cloud-texttospeech==2.12.3
 google-nest-sdm==2.1.0
-googleapis-common-protos==1.56.4
+googleapis-common-protos==1.57.0
 googlemaps==2.5.1
 goslide-api==0.5.1
-govee-ble==0.19.1
+govee-ble==0.19.3
 gpiozero==1.6.2
 gps3==0.33.3
 gql==3.4.0
@@ -431,10 +431,10 @@ grpc-google-iam-v1==0.12.4
 grpcio-status==1.48.0
 grpcio==1.48.0
 gspread==5.5.0
-gst-plugins-base==1.20.3
-gst-plugins-libav==1.20.3
+gst-plugins-base==1.20.4
+gst-plugins-libav==1.20.4
 gstreamer-player==1.1.2
-gstreamer==1.20.3
+gstreamer==1.20.4
 gTTS==2.2.4
 guppy3==3.1.2
 gzip==1.12
@@ -462,7 +462,7 @@ hole==0.7.0
 holidays==0.17.2
 home-assistant-bluetooth==1.8.1
 home-assistant-cli==9999
-home-assistant-frontend==20221213.0
+home-assistant-frontend==20221213.1
 homeassistant
 homeconnect==0.7.2
 homematicip==1.0.11
@@ -490,7 +490,7 @@ ibeacon-ble==1.0.1
 ibm-cloud-sdk-core==3.11.3
 ibm-watson==5.2.2
 ibmiotf==0.3.4
-ical==4.2.2
+ical==4.2.3
 idna==3.4
 ifaddr==0.1.7
 ifaddr==0.2.0
@@ -511,7 +511,7 @@ iotawattpy==0.1.0
 iperf3==0.1.11
 iperf==3.12
 ismartgate==4.0.4
-iso-codes==4.11.0
+iso-codes==4.12.0
 iso4217==1.11.20220401
 iso8601==1.1.0
 isodate==0.6.1
@@ -563,7 +563,7 @@ libffi==3.4.4
 libgudev==237
 libiconv==0
 libiconv==1.17
-libidn2==2.3.3
+libidn2==2.3.4
 libidn==1.41
 libintl==0
 libintl==0.21.1
@@ -655,7 +655,7 @@ mysqlclient==2.1.1
 nad-receiver==0.3.0
 natsort==8.2.0
 nclib==1.0.1
-ncurses==6.3_p20220423
+ncurses==6.3_p20221203
 ndms2-client==0.1.1
 nessclient==0.10.0
 netaddr==0.8.0
@@ -1011,7 +1011,7 @@ pysqueezebox==0.6.1
 pystiebeleltron==0.0.1
 pysuez==0.1.19
 pyswitchbee==1.6.1
-PySwitchbot==0.22.0
+PySwitchbot==0.23.2
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6
@@ -1072,7 +1072,7 @@ python-wink==1.10.5
 python-xlib==0.31
 python-zeroconf==0.39.4
 pythonegardia==1.0.40
-pyTibber==0.26.4
+pyTibber==0.26.5
 pytile==2022.2.0
 pytomorrowio==0.3.5
 pytouchline==0.7
@@ -1156,7 +1156,7 @@ rsa==4.9
 rtimulib==7.2.1
 RtmAPI==0.7.2
 rtsp-to-webrtc==0.5.1
-ruamel-yaml-clib==0.2.6
+ruamel-yaml-clib==0.2.7
 ruamel-yaml==0.17.21
 russound-rio==0.1.8
 russound==0.1.9
@@ -1190,7 +1190,7 @@ sharkiq==0.0.1
 sharp_aquos_rc==0.3.2
 shodan==1.28.0
 simplehound==0.3
-simplejson==3.17.6
+simplejson==3.18.0
 simplepush==2.1.1
 simplisafe-python==2022.12.0
 siobrultech-protocols==0.5.0
@@ -1228,7 +1228,7 @@ starlingbank==3.2
 statsd==3.2.1
 stdiomask==0.0.6
 steamodd==4.21
-stevedore==4.1.0
+stevedore==4.1.1
 stookalert==0.1.4
 streamlabswater==1.0.1
 strict-rfc3339==0.7
@@ -1239,7 +1239,7 @@ surepy==0.8.0
 swisshydrodata==0.1.0
 synology-srm==0.2.0
 systembridgeconnector==3.4.4
-systemd-utils==251.7
+systemd-utils==251.8
 systemd==251.8
 sysvinit==3.05
 tabulate==0.9.0
