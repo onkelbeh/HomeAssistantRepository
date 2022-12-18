@@ -9,7 +9,8 @@
     <remote-id type="pypi">devolo-plc-api</remote-id>
     <remote-id type="github">2Fake/devolo_plc_api</remote-id>
     <maintainer status="unknown">
-      <email>Markus Bong &lt;m.bong@famabo.de&gt;, Guido Schmitz &lt;guido.schmitz@fedaix.de&gt;</email>
+      <email>m.bong@famabo.de</email>
+      <name>Markus Bong</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

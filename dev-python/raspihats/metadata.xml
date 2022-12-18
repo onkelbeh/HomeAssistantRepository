@@ -10,7 +10,8 @@
     <remote-id type="github">raspihats/raspihats</remote-id>
     <doc>https://pythonhosted.org/raspihats/</doc>
     <maintainer status="unknown">
-      <email>Florin COSTA &lt;hardhat@raspihats.com&gt;</email>
+      <email>hardhat@raspihats.com</email>
+      <name>Florin COSTA</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

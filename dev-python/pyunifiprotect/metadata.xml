@@ -9,7 +9,8 @@
     <remote-id type="pypi">pyunifiprotect</remote-id>
     <remote-id type="github">AngellusMortis/pyunifiprotect</remote-id>
     <maintainer status="unknown">
-      <email>Christopher Bailey &lt;cbailey@mort.is&gt;, "J. Nick Koston" &lt;nick@koston.org&gt;</email>
+      <email>cbailey@mort.is</email>
+      <name>Christopher Bailey</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

@@ -9,7 +9,8 @@
     <remote-id type="pypi">adafruit-circuitpython-register</remote-id>
     <remote-id type="github">adafruit/Adafruit_CircuitPython_Register</remote-id>
     <maintainer status="unknown">
-      <email>Adafruit Industries &lt;circuitpython@adafruit.com&gt;</email>
+      <email>circuitpython@adafruit.com</email>
+      <name>Adafruit Industries</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

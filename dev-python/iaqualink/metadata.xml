@@ -9,7 +9,8 @@
     <remote-id type="pypi">iaqualink</remote-id>
     <remote-id type="github">flz/iaqualink-py</remote-id>
     <maintainer status="unknown">
-      <email>Florent Thoumie &lt;florent@thoumie.net&gt;</email>
+      <email>florent@thoumie.net</email>
+      <name>Florent Thoumie</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

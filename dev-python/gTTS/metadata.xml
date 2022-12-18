@@ -9,7 +9,8 @@
     <remote-id type="pypi">gTTS</remote-id>
     <remote-id type="github">pndurette/gTTS</remote-id>
     <maintainer status="unknown">
-      <email>Pierre Nicolas Durette &lt;pndurette@gmail.com&gt;</email>
+      <email>pndurette@gmail.com</email>
+      <name>Pierre Nicolas Durette</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

@@ -9,7 +9,8 @@
     <remote-id type="pypi">asyncio-mqtt</remote-id>
     <remote-id type="github">sbtinstruments/asyncio-mqtt</remote-id>
     <maintainer status="unknown">
-      <email>Jonathan Plasse &lt;jonathan.plasse@live.fr&gt;, Felix Böhm &lt;felix@felixboehm.dev&gt;</email>
+      <email>jonathan.plasse@live.fr</email>
+      <name>Jonathan Plasse</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

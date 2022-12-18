@@ -9,7 +9,8 @@
     <remote-id type="pypi">pyswitchbee</remote-id>
     <remote-id type="github">jafar-atili/pySwitchbee</remote-id>
     <maintainer status="unknown">
-      <email>Jafar Atili &lt;at.jafar@outlook.com&gt;</email>
+      <email>at.jafar@outlook.com</email>
+      <name>Jafar Atili</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
