@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
-
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
 DESCRIPTION="Data validation and settings management using python type hints"
@@ -17,7 +17,7 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS=""
+DOCS="README.md"
 
 RDEPEND="dev-python/typing-extensions[${PYTHON_USEDEP}]"
 BDEPEND="
