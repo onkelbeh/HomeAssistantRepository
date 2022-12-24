@@ -35,7 +35,6 @@ net-analyzer/fail2ban ~amd64
 ~dev-python/poetry-core-1.2.0 ~amd64
 =dev-python/psutil-5.9.3 ~amd64
 =dev-python/pychromecast-12.1.4 ~amd64
-~dev-python/pydantic-1.9.0 ~amd64
 =dev-python/pyjwt-2.5.0 ~amd64
 =dev-python/pylint-2.15.5 ~amd64
 ~dev-python/pyotp-2.7.0 ~amd64
