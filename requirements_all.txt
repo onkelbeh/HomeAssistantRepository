@@ -1,6 +1,6 @@
 abodepy==1.2.0
 accuweather==0.4.0
-acme==1.32.0
+acme==2.0.0
 Adafruit-Blinka==7.1.1
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.1.8
@@ -188,7 +188,7 @@ bluepy==1.3.0
 bluetooth-adapters==0.12.0
 bluetooth-adapters==0.14.1
 bluetooth-auto-recovery==1.0.3
-bluetooth-data-tools==0.3.0
+bluetooth-data-tools==0.3.1
 bluetooth-sensor-state-data==1.6.0
 bluez==5.65
 bme280spi==0.2.0
@@ -374,7 +374,7 @@ freetype==2.12.1
 fritzconnection==1.4.2
 frozenlist==1.3.3
 future==0.18.2
-gammu==1.41.0
+gammu==1.42.0
 garages-amsterdam==3.0.0
 garminconnect-ha==0.1.6
 gawk==5.1.1
@@ -490,7 +490,7 @@ ibeacon-ble==1.0.1
 ibm-cloud-sdk-core==3.11.3
 ibm-watson==5.2.2
 ibmiotf==0.3.4
-ical==4.2.3
+ical==4.2.4
 idna==3.4
 ifaddr==0.1.7
 ifaddr==0.2.0
@@ -502,7 +502,6 @@ incremental==22.10.0
 inflect==6.0.2
 inflection==0.5.1
 influxdb-client==1.24.0
-influxdb==5.3.1
 inkbird-ble==0.5.5
 insteon-frontend-home-assistant==0.2.0
 intelhex==2.3.0
@@ -1072,7 +1071,7 @@ python-wink==1.10.5
 python-xlib==0.31
 python-zeroconf==0.39.4
 pythonegardia==1.0.40
-pyTibber==0.26.5
+pyTibber==0.26.6
 pytile==2022.2.0
 pytomorrowio==0.3.5
 pytouchline==0.7
@@ -1196,6 +1195,7 @@ simplisafe-python==2022.12.0
 siobrultech-protocols==0.5.0
 sisyphus-control==3.1.2
 six==1.16.0
+slackclient==2.5.0
 sleekxmppfs==1.4.1
 slixmpp==1.8.2
 slixmpp==1.8.3

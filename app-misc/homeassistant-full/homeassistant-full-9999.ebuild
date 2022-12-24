@@ -62,7 +62,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/bleak-0.19.2[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-adapters-0.12.0[${PYTHON_USEDEP}]
 	~dev-python/bluetooth-auto-recovery-1.0.3[${PYTHON_USEDEP}]
-	~dev-python/bluetooth-data-tools-0.3.0[${PYTHON_USEDEP}]
+	~dev-python/bluetooth-data-tools-0.3.1[${PYTHON_USEDEP}]
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2021.5.30[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.2.0[${PYTHON_USEDEP}]
@@ -211,7 +211,7 @@ RDEPEND="${RDEPEND}
 	blockchain? ( ~dev-python/python-blockchain-api-0.0.2[${PYTHON_USEDEP}] )
 	bluemaestro? ( ~dev-python/bluemaestro-ble-0.2.0[${PYTHON_USEDEP}] )
 	bluesound? ( ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
-	bluetooth? ( ~dev-python/bleak-0.19.2[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.10.2[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.12.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-1.0.3[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-0.3.0[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.75.0[${PYTHON_USEDEP}] )
+	bluetooth? ( ~dev-python/bleak-0.19.2[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-2.10.2[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.12.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-1.0.3[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-0.3.1[${PYTHON_USEDEP}] ~dev-python/dbus-fast-1.75.0[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	bluetooth_tracker? ( ~dev-python/bt-proximity-0.2.1[${PYTHON_USEDEP}] ~dev-python/pybluez-0.22[${PYTHON_USEDEP}] )
 	bme280? ( ~dev-python/i2csense-0.0.4[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[${PYTHON_USEDEP}] )
@@ -520,7 +520,7 @@ RDEPEND="${RDEPEND}
 	launch_library? ( ~dev-python/pylaunches-1.3.0[${PYTHON_USEDEP}] )
 	laundrify? ( ~dev-python/laundrify-aio-1.1.2[${PYTHON_USEDEP}] )
 	lcn? ( ~dev-python/pypck-0.7.15[${PYTHON_USEDEP}] )
-	led_ble? ( ~dev-python/bluetooth-data-tools-0.3.0[${PYTHON_USEDEP}] ~dev-python/led-ble-1.0.0[${PYTHON_USEDEP}] )
+	led_ble? ( ~dev-python/bluetooth-data-tools-0.3.1[${PYTHON_USEDEP}] ~dev-python/led-ble-1.0.0[${PYTHON_USEDEP}] )
 	lg_netcast? ( ~dev-python/pylgnetcast-0.3.7[${PYTHON_USEDEP}] )
 	lg_soundbar? ( ~dev-python/temescal-0.5[${PYTHON_USEDEP}] )
 	lidarr? ( ~dev-python/aiopyarr-22.11.0[${PYTHON_USEDEP}] )
@@ -534,7 +534,7 @@ RDEPEND="${RDEPEND}
 	litejet? ( ~dev-python/pylitejet-0.3.0[${PYTHON_USEDEP}] )
 	litterrobot? ( ~dev-python/pylitterbot-2022.11.0[${PYTHON_USEDEP}] )
 	livisi? ( ~dev-python/aiolivisi-0.0.14[${PYTHON_USEDEP}] )
-	local_calendar? ( ~dev-python/ical-4.2.3[${PYTHON_USEDEP}] )
+	local_calendar? ( ~dev-python/ical-4.2.4[${PYTHON_USEDEP}] )
 	logi_circle? ( ~dev-python/logi-circle-0.2.3[${PYTHON_USEDEP}] )
 	london_underground? ( ~dev-python/london-tube-status-0.5[${PYTHON_USEDEP}] )
 	lookin? ( ~dev-python/aiolookin-0.1.1[${PYTHON_USEDEP}] )
@@ -895,7 +895,7 @@ RDEPEND="${RDEPEND}
 	thermoworks_smoke? ( ~dev-python/stringcase-1.2.0[${PYTHON_USEDEP}] ~dev-python/thermoworks-smoke-0.1.8[${PYTHON_USEDEP}] )
 	thingspeak? ( ~dev-python/thingspeak-1.0.0[${PYTHON_USEDEP}] )
 	thinkingcleaner? ( ~dev-python/pythinkingcleaner-0.0.3[${PYTHON_USEDEP}] )
-	tibber? ( ~dev-python/pyTibber-0.26.5[${PYTHON_USEDEP}] )
+	tibber? ( ~dev-python/pyTibber-0.26.6[${PYTHON_USEDEP}] )
 	tikteck? ( ~dev-python/tikteck-0.4[${PYTHON_USEDEP}] )
 	tile? ( ~dev-python/pytile-2022.2.0[${PYTHON_USEDEP}] )
 	tilt_ble? ( ~dev-python/tilt-ble-0.2.3[${PYTHON_USEDEP}] )
