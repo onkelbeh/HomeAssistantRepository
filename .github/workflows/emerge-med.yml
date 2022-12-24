@@ -33,5 +33,5 @@ jobs:
 
     - name: emerge
       run: |
-        emerge --jobs=4 --autounmask=y --autounmask-continue=y dev-lang/rust-bin =dev-python/pydantic-1.9.0
+        emerge --jobs=4 --autounmask=y --autounmask-continue=y dev-lang/rust-bin
         emerge --jobs=4 --autounmask=y --autounmask-continue=y app-misc/homeassistant
