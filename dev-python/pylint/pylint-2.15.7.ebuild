@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 PYTHON_REQ_USE="threads(+)"
 
 inherit distutils-r1
@@ -21,14 +21,14 @@ SRC_URI="
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="examples"
 
 # Make sure to check https://github.com/PyCQA/pylint/blob/main/pyproject.toml#L34 on bumps
 # Adjust dep bounds!
 RDEPEND="
 	<dev-python/astroid-2.14[${PYTHON_USEDEP}]
-	>=dev-python/astroid-2.12.4[${PYTHON_USEDEP}]
+	>=dev-python/astroid-2.12.13[${PYTHON_USEDEP}]
 	>=dev-python/dill-0.2[${PYTHON_USEDEP}]
 	>=dev-python/isort-4.2.5[${PYTHON_USEDEP}]
 	<dev-python/isort-6[${PYTHON_USEDEP}]
@@ -67,6 +67,9 @@ python_test() {
 		tests/checkers/unittest_typecheck.py::TestTypeChecker::test_nomember_on_c_extension_error_msg
 		tests/checkers/unittest_typecheck.py::TestTypeChecker::test_nomember_on_c_extension_info_msg
 		tests/config/pylint_config/test_run_pylint_config.py::test_invocation_of_pylint_config
+
+		# apparently fragile, needs unpickleable plugin
+		tests/test_check_parallel.py::TestCheckParallelFramework::test_linter_with_unpickleable_plugins_is_pickleable
 	)
 	epytest
 }
