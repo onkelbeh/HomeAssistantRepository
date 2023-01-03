@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -23,7 +23,8 @@ DOCS="README.md"
 RDEPEND=">=dev-python/async-modbus-0.2.0[${PYTHON_USEDEP}]
 	>=dev-python/construct-2.10.0[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.0[${PYTHON_USEDEP}]
-	>=dev-python/tenacity-8.0.0[${PYTHON_USEDEP}]"
+	>=dev-python/tenacity-8.0.0[${PYTHON_USEDEP}]
+	dev-python/sockio[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
