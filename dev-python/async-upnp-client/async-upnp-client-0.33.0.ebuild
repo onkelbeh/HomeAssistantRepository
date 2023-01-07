@@ -1,17 +1,17 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
 DISTUTILS_USE_PEP517=setuptools
-
 inherit distutils-r1
 
 MY_PN=${PN//-/_}
 DESCRIPTION="Async UPnP Client"
 HOMEPAGE="https://github.com/StevenLooman/async_upnp_client https://pypi.org/project/async-upnp-client/"
 SRC_URI="https://github.com/StevenLooman/${MY_PN}/archive/${PV}.tar.gz -> ${P}.gh.tar.gz"
+S=${WORKDIR}/${MY_PN}-${PV}
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -37,8 +37,6 @@ BDEPEND="
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/asyncmock[${PYTHON_USEDEP}]
 	)"
-
-S=${WORKDIR}/${MY_PN}-${PV}
 
 python_test() {
 	py.test -v -v || die
