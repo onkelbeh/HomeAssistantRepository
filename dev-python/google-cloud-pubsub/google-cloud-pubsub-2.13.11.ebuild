@@ -1,10 +1,10 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
-
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
 DESCRIPTION="Google Cloud Pub/Sub API client library"
@@ -19,9 +19,12 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/google-api-core-1.31.5[${PYTHON_USEDEP}]
-	>=dev-python/proto-plus-1.15.0[${PYTHON_USEDEP}]
-	>=dev-python/grpc-google-iam-v1-0.12.3[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/grpcio-1.38.1[${PYTHON_USEDEP}]
+	>=dev-python/grpcio-status-1.33.2[${PYTHON_USEDEP}]
+	>=dev-python/google-api-core-1.32.0[${PYTHON_USEDEP}]
+	>=dev-python/proto-plus-1.22.0[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-python-3.19.5[${PYTHON_USEDEP}]
+	>=dev-python/grpc-google-iam-v1-0.12.4[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
