@@ -1,11 +1,10 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
 DISTUTILS_USE_PEP517=poetry
-
 inherit distutils-r1
 
 DESCRIPTION="An asyncio HomeKit client"
@@ -23,12 +22,13 @@ DOCS="README.md"
 RDEPEND=">=dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
 	>=dev-python/python-zeroconf-0.32.0[${PYTHON_USEDEP}]
 	>=dev-python/commentjson-0.9.0[${PYTHON_USEDEP}]
-	>=dev-python/aiocoap-0.4.1[${PYTHON_USEDEP}]
-	>=dev-python/bleak-0.17.0[${PYTHON_USEDEP}]
+	>=dev-python/aiocoap-0.4.5[${PYTHON_USEDEP}]
+	>=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.0.4[${PYTHON_USEDEP}]
-	>=dev-python/bleak-retry-connector-1.17.1[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-2.9.0[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.7.8[${PYTHON_USEDEP}]
-	>=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]"
+	>=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
+	>=dev-python/chacha20poly1305-0.0.3[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
