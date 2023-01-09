@@ -829,7 +829,6 @@
     <flag name="upb">Library for interacting with UPB PIM</flag>
     <flag name="upcloud">allows you to access the information about your UpCloud servers</flag>
     <flag name="upc_connect">presence detection by looking at  a Connect Box</flag>
-    <flag name="updater">binary sensor will check daily for new releases</flag>
     <flag name="upnp">support UPnP/Internet Gateway Device (IGD) Protocol</flag>
     <flag name="uptimerobot">provides binary sensors from your monitors from Uptime Robot</flag>
     <flag name="usb">USB Discovery integration will watch the host for USB devices</flag>

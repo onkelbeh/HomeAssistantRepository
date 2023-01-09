@@ -798,7 +798,6 @@
 |upb|Library for interacting with UPB PIM|N|N|Y|0.110|
 |upcloud|allows you to access the information about your UpCloud servers|N|N|Y|0.65|
 |upc_connect|presence detection by looking at  a Connect Box|N|N|Y|0.36|
-|updater|binary sensor will check daily for new releases|N|N|Y|0.8|
 |upnp|support UPnP/Internet Gateway Device (IGD) Protocol|Y|Y|Y|0.18|
 |uptimerobot|provides binary sensors from your monitors from Uptime Robot|N|N|Y|0.72|
 |usb|USB Discovery integration will watch the host for USB devices|N|N|Y|2021.9|
