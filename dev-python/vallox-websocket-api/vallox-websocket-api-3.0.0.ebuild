@@ -1,10 +1,10 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..11} )
-
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
 MY_PN=${PN//-/_}
@@ -12,6 +12,7 @@ MY_P=${MY_PN}-${PV}
 DESCRIPTION="Vallox WebSocket API"
 HOMEPAGE="https://github.com/yozik04/vallox_websocket_api https://pypi.org/project/vallox-websocket-api/"
 SRC_URI="mirror://pypi/${P:0:1}/${MY_PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
+S=${WORKDIR}/${MY_PN}-${PV}
 
 LICENSE="LGPL-3"
 SLOT="0"
@@ -34,8 +35,8 @@ BDEPEND="
 		dev-python/asynctest[${PYTHON_USEDEP}]
 	)"
 
-S=${WORKDIR}/${MY_PN}-${PV}
-
 python_test() {
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
