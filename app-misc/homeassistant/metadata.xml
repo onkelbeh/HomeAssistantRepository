@@ -156,6 +156,7 @@
     <flag name="hydrawise">communicate with Hunter Wi-Fi irrigation controllers</flag>
     <flag name="iaqualink">iAqualink by Jandy allows you to control your pool via cloud service</flag>
     <flag name="ihc">use IHC Python SDK</flag>
+    <flag name="image_upload">handle image assets in Home Assistant</flag>
     <flag name="imap">observing your IMAP server and reporting the amount of unread emails</flag>
     <flag name="incomfort">client for Intergas InComfort/InTouch Lan2RF systems</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
