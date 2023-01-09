@@ -127,8 +127,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pyotp-2.7.0[${PYTHON_USEDEP}]
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
 	dev-python/pycparser[${PYTHON_USEDEP}]
-	>=dev-python/websocket-client-0.57.0[${PYTHON_USEDEP}]
-	~media-libs/mutagen-1.45.1"
+	>=dev-python/websocket-client-0.57.0[${PYTHON_USEDEP}]"
 # Module requirements from useflags
 RDEPEND="${RDEPEND}
 	accuweather? ( ~dev-python/accuweather-0.4.0[${PYTHON_USEDEP}] )
