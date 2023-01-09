@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -27,7 +27,7 @@ RDEPEND="
 
 DEPEND="${RDEPEND}"
 
-PATCHES=( "${FILESDIR}/1.37.1-cc-flag-test-fix.patch" )
+#PATCHES=( "${FILESDIR}/1.37.1-cc-flag-test-fix.patch" )
 
 python_prepare_all() {
 	distutils-r1_python_prepare_all
@@ -46,3 +46,5 @@ python_configure_all() {
 	GRPC_PYTHON_BUILD_EXT_COMPILER_JOBS="$(makeopts_jobs)"
 	export GRPC_PYTHON_BUILD_EXT_COMPILER_JOBS
 }
+
+distutils_enable_tests pytest
