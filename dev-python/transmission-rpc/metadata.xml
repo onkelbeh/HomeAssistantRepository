@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">transmission-rpc</remote-id>
+    <remote-id type="github">Trim21/transmission-rpc</remote-id>
+    <maintainer status="unknown">
+      <email>i@trim21.me</email>
+      <name>Trim21</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

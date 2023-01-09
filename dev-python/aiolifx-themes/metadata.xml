@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiolifx-themes</remote-id>
-    <remote-id type="github">Djelibeybi/aiolifx</remote-id>
+    <remote-id type="github">Djelibeybi/aiolifx-themes</remote-id>
     <maintainer status="unknown">
       <email>me@dje.li</email>
       <name>Avi Miller</name>

@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyrainbird</remote-id>
-    <remote-id type="github">jbarrancos/pyrainbird</remote-id>
+    <remote-id type="github">allenporter/pyrainbird</remote-id>
     <maintainer status="unknown">
       <email>jordy@fusion-ict.nl</email>
       <name>J.J.Barrancos</name>
