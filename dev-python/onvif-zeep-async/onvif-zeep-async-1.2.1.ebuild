@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/httpx-0.19.0[${PYTHON_USEDEP}]
-	>=dev-python/zeep-4.1.0[${PYTHON_USEDEP}]"
+	>=dev-python/zeep-4.1.0[async,${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
