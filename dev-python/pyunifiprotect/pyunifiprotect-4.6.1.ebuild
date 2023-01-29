@@ -1,11 +1,10 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-
 inherit distutils-r1
 
 DESCRIPTION="Unofficial UniFi Protect Python API and CLI"
@@ -24,11 +23,11 @@ RDEPEND="dev-python/aiofiles[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aioshutil[${PYTHON_USEDEP}]
 	dev-python/async-timeout[${PYTHON_USEDEP}]
+	dev-python/dateparser[${PYTHON_USEDEP}]
 	dev-python/orjson[${PYTHON_USEDEP}]
 	dev-python/pillow[${PYTHON_USEDEP}]
 	dev-python/pydantic[${PYTHON_USEDEP}]
 	dev-python/pyjwt[${PYTHON_USEDEP}]
-	dev-python/pytz[${PYTHON_USEDEP}]
 	dev-python/typer[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
