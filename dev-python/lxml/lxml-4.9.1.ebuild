@@ -1,21 +1,25 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{9..11} pypy3 )
 
 inherit distutils-r1 optfeature toolchain-funcs
 
 DESCRIPTION="A Pythonic binding for the libxml2 and libxslt libraries"
-HOMEPAGE="https://lxml.de/ https://pypi.org/project/lxml/ https://github.com/lxml/lxml"
+HOMEPAGE="
+	https://lxml.de/
+	https://pypi.org/project/lxml/
+	https://github.com/lxml/lxml
+"
 SRC_URI="https://github.com/lxml/lxml/archive/${P}.tar.gz -> ${P}.gh.tar.gz"
-S="${WORKDIR}/lxml-${P}"
+S="${WORKDIR}"/lxml-${P}
 
-LICENSE="BSD"
+LICENSE="BSD ElementTree GPL-2 PSF-2"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~x64-cygwin ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
 IUSE="doc examples +threads test"
 RESTRICT="!test? ( test )"
 
@@ -42,7 +46,9 @@ BDEPEND="
 	)
 "
 
-PATCHES=( "${FILESDIR}/${PN}-4.6.0-tests-pypy.patch" )
+PATCHES=(
+	"${FILESDIR}"/${PN}-4.6.0-tests-pypy.patch
+)
 
 python_check_deps() {
 	use doc || return 0
@@ -73,8 +79,7 @@ python_compile_all() {
 }
 
 python_test() {
-	local dir
-	dir=${BUILD_DIR}/test$(python_get_sitedir)/lxml
+	local dir=${BUILD_DIR}/test$(python_get_sitedir)/lxml
 	local -x PATH=${BUILD_DIR}/test/usr/bin:${PATH}
 
 	cp -al "${BUILD_DIR}"/{install,test} || die
@@ -82,7 +87,7 @@ python_test() {
 	cp -al src/lxml/html/tests "${dir}/html/" || die
 	ln -rs "${S}"/doc "${dir}"/../../ || die
 
-	"${EPYTHON}" test.py -vv --all-levels -p || die "Test fails with ${EPYTHON}"
+	"${EPYTHON}" test.py -vv --all-levels -p || die "Test ${test} fails with ${EPYTHON}"
 }
 
 python_install_all() {
