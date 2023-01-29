@@ -1,23 +1,25 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-
 inherit distutils-r1
 
-DESCRIPTION="Life360 Communications Module"
-HOMEPAGE="https://github.com/pnbruckner/life360 https://pypi.org/project/life360/"
+DESCRIPTION="Library to control webOS based LG TV devices"
+HOMEPAGE="https://github.com/home-assistant-libs/aiowebostv https://pypi.org/project/aiowebostv/"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="MIT"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
+DOCS="README.md"
+
+RDEPEND=">=dev-python/websockets-10.3[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -27,3 +29,5 @@ BDEPEND="
 python_test() {
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest

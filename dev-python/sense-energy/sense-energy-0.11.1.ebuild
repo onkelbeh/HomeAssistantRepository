@@ -4,11 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
-DISTUTILS_USE_PEP517=poetry
+DISTUTILS_USE_PEP517=setuptools
+
 inherit distutils-r1
 
-DESCRIPTION="Asynchronous Python client providing Open Data information of Amsterdam"
-HOMEPAGE="https://github.com/klaasnicolaas/python-odp-amsterdam https://pypi.org/project/odp-amsterdam/"
+DESCRIPTION="API for the Sense Energy Monitor"
+HOMEPAGE="https://github.com/scottbonline/sense https://pypi.org/project/sense-energy/"
 MY_PN=${PN//-/_}
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${MY_PN}-${PV}"
@@ -21,14 +22,20 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.0[${PYTHON_USEDEP}]
-	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/websocket-client[${PYTHON_USEDEP}]
+	dev-python/websockets[${PYTHON_USEDEP}]
+	dev-python/aiohttp[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
-		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
-		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
+
+DOCS="README.md"
+
+python_test() {
+	py.test -v -v || die
+}
 
 distutils_enable_tests pytest
