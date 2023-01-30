@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_SINGLE_IMPL=1
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 
 inherit readme.gentoo-r1 distutils-r1
 

@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 inherit distutils-r1
 
 DESCRIPTION="Get CPU info with pure Python 2 & 3"
