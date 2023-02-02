@@ -19,7 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/async-timeout[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/async-timeout[${PYTHON_USEDEP}]
+		media-video/ffmpeg"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
