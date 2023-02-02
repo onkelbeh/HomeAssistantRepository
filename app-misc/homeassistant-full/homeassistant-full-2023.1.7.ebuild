@@ -32,7 +32,7 @@ RESTRICT="!test? ( test )"
 
 # external deps
 RDEPEND="${PYTHON_DEPS} acct-group/${MY_PN} acct-user/${MY_PN}
-	|| ( dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:3.10 )
+	|| ( dev-lang/python:3.9 dev-lang/python:3.10 dev-lang/python:3.11 )
 	app-admin/logrotate
 	dev-db/sqlite
 	dev-libs/libfastjson
@@ -76,7 +76,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/home-assistant-bluetooth-1.9.2[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-frontend-20230110.0[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.16.3[${PYTHON_USEDEP}]
-	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
+	>=dev-python/httplib2-0.20.4[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.23.2[${PYTHON_USEDEP}]
 	>=dev-python/hyperframe-5.2.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
@@ -123,7 +123,6 @@ RDEPEND="${RDEPEND}
 
 RDEPEND="${RDEPEND}
 	~dev-python/colorlog-6.6.0[${PYTHON_USEDEP}]
-	>=dev-python/multidict-5.2.0[${PYTHON_USEDEP}]
 	~dev-python/pyotp-2.8.0[${PYTHON_USEDEP}]
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]
 	dev-python/pycparser[${PYTHON_USEDEP}]
