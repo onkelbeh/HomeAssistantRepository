@@ -301,7 +301,6 @@
     <flag name="google_translate">google_translate text-to-speech platform for Home Assistant</flag>
     <flag name="google_travel_time">provides travel time from the Google Distance Matrix API</flag>
     <flag name="govee_ble">Integrates Govee BLE devices into Home Assistant</flag>
-    <flag name="gpmdp">Allows you to control a GPMDP instance from Home Assistant</flag>
     <flag name="gpsd">GPS information collected by gpsd and a GPS receiver</flag>
     <flag name="gree">Discover, connect and control Gree based minisplit systems</flag>
     <flag name="greeneye_monitor">Allows you to create sensors for the various data channels of the GEM</flag>
@@ -716,7 +715,6 @@
     <flag name="snmp">Presence Detection, Sensor, Switch via SNMP</flag>
     <flag name="snooz">Integrates SNOOZ devices into Home Assistant</flag>
     <flag name="socat">Set a flag to install socat and socat-zwave startscript</flag>
-    <flag name="sochain">displays supported cryptocurrency wallet balances</flag>
     <flag name="solaredge">details from your SolarEdge solar power setup</flag>
     <flag name="solaredge_local">uses the local API available on some SolarEdge Inverters</flag>
     <flag name="solarlog">uses the open JSON interface on Solar-Log PV monitoring systems</flag>
@@ -880,7 +878,6 @@
     <flag name="wolflink">uses the Wolf Smart-Set for your heating system status</flag>
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
     <flag name="ws66i">Control the Soundavo Whole-Home Audio Amplifier via local network</flag>
-    <flag name="xbee">send and receive commands to and from other devices on the Zigbee</flag>
     <flag name="xbox">A library to authenticate with Windows Live/Xbox Live and use their API</flag>
     <flag name="xbox_live">track Xbox profiles</flag>
     <flag name="xeoma">Python wrapper for Xeoma web server API</flag>
