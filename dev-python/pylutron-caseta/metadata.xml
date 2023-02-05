@@ -9,4 +9,7 @@
     <remote-id type="pypi">pylutron-caseta</remote-id>
     <remote-id type="github">gurumitts/pylutron-caseta</remote-id>
   </upstream>
+  <use>
+    <flag name="cli">Install command line tools</flag>
+  </use>
 </pkgmetadata>
