@@ -214,6 +214,7 @@ btsocket==0.2.0
 buienradar==1.0.5
 busybox==1.34.1
 c-ares==1.18.1
+c_rehash==1.7
 ca-certificates==20211016.3.83
 cachetools==5.2.0
 caio==0.9.8
@@ -271,7 +272,6 @@ csrmesh==0.10.0
 cssselect==1.2.0
 cups==2.4.2
 curl==7.86.0
-c_rehash==1.7
 d2to1==0.2.12_p1
 dacite==1.6.0
 datadog==0.15.0
@@ -438,8 +438,8 @@ gstreamer==1.20.4
 gTTS==2.2.4
 guppy3==3.1.2
 gzip==1.12
-h11==0.14.0
 h2==4.1.0
+h11==0.14.0
 ha-av==10.0.0_beta5
 ha-ffmpeg==3.0.2
 ha-philipsjs==2.9.0
@@ -1307,8 +1307,8 @@ upb-lib==0.4.12
 upcloud-api==2.0.0
 uplink-protobuf==0.1.0
 uplink==0.9.7
-uritemplate==4.1.1
 uri_template==1.2.0
+uritemplate==4.1.1
 url-normalize==1.4.3
 urllib3==1.26.12
 urwid==2.1.2
