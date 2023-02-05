@@ -9,6 +9,7 @@ user="homeassistant:homeassistant"
 stdoutlog="/var/log/homeassistant/stdout.log"
 serverlog="/var/log/homeassistant/server.log"
 warningslog="/var/log/homeassistant/warnings.log"
+retry="20"
 
 start_stop_daemon_args="--user $user --stdout $stdoutlog --stderr $serverlog --wait 10"
 
@@ -25,9 +26,7 @@ pidfile=/run/homeassistant.pid
 
 depend() {
     need net
-    # need socat-zwave
-    # need mosquitto
-    after bootmisc
+    after apcupsd asterisk bluetooth cups dhcp esphome influxdb mosquitto mysql netdata prometheus socat-zwave syncthing unifi upsd xabbix zigbee2mqtt zoneminder
 }
 
 start_pre() {

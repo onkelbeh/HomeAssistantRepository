@@ -1,12 +1,13 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 DISTUTILS_OPTIONAL=1
-PYTHON_COMPAT=( python3_{7,8,9} )
+PYTHON_COMPAT=( python3_{9..11} )
 MY_PV=${PV/_rc/-rc}
 MY_P=${PN}-${MY_PV}
+DISTUTILS_USE_PEP517=setuptools
 
 inherit bazel check-reqs cuda distutils-r1 flag-o-matic prefix toolchain-funcs
 
@@ -15,7 +16,7 @@ HOMEPAGE="https://www.tensorflow.org/"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="cuda mpi +python xla"
 CPU_USE_FLAGS_X86="sse sse2 sse3 sse4_1 sse4_2 avx avx2 fma3 fma4"
 for i in $CPU_USE_FLAGS_X86; do
@@ -27,34 +28,34 @@ bazel_external_uris="
 	https://github.com/abseil/abseil-cpp/archive/6f9d96a1f41439ac172ee2ef7ccd8edf0e5d068c.tar.gz -> abseil-cpp-6f9d96a1f41439ac172ee2ef7ccd8edf0e5d068c.tar.gz
 	https://github.com/bazelbuild/bazel-skylib/releases/download/1.0.3/bazel-skylib-1.0.3.tar.gz
 	https://github.com/bazelbuild/bazel-toolchains/archive/92dd8a7a518a2fb7ba992d47c8b38299fe0be825.tar.gz -> bazel-toolchains-92dd8a7a518a2fb7ba992d47c8b38299fe0be825.tar.gz
-	https://github.com/bazelbuild/rules_android/archive/v0.1.1.zip -> bazelbuild-rules_android-v0.1.1.zip
-	https://github.com/bazelbuild/rules_cc/archive/01d4a48911d5e7591ecb1c06d3b8af47fe872371.zip -> bazelbuild-rules_cc-01d4a48911d5e7591ecb1c06d3b8af47fe872371.zip
+	https://github.com/bazelbuild/rules_android/archive/v0.1.1.tar.gz -> bazelbuild-rules_android-v0.1.1.gh.tar.gz
+	https://github.com/bazelbuild/rules_cc/archive/01d4a48911d5e7591ecb1c06d3b8af47fe872371.tar.gz -> bazelbuild-rules_cc-01d4a48911d5e7591ecb1c06d3b8af47fe872371.gh.tar.gz
 	https://github.com/bazelbuild/rules_closure/archive/308b05b2419edb5c8ee0471b67a40403df940149.tar.gz -> bazelbuild-rules_closure-308b05b2419edb5c8ee0471b67a40403df940149.tar.gz
 	https://github.com/bazelbuild/rules_docker/releases/download/v0.10.0/rules_docker-v0.10.0.tar.gz -> bazelbuild-rules_docker-v0.10.0.tar.gz
-	https://github.com/bazelbuild/rules_java/archive/7cf3cefd652008d0a64a419c34c13bdca6c8f178.zip -> bazelbuild-rules_java-7cf3cefd652008d0a64a419c34c13bdca6c8f178.zip
+	https://github.com/bazelbuild/rules_java/archive/7cf3cefd652008d0a64a419c34c13bdca6c8f178.tar.gz -> bazelbuild-rules_java-7cf3cefd652008d0a64a419c34c13bdca6c8f178..gh.tar.gz
 	https://github.com/bazelbuild/rules_proto/archive/97d8af4dc474595af3900dd85cb3a29ad28cc313.tar.gz -> bazelbuild-rules_proto-97d8af4dc474595af3900dd85cb3a29ad28cc313.tar.gz
 	https://github.com/bazelbuild/rules_python/releases/download/0.0.1/rules_python-0.0.1.tar.gz -> bazelbuild-rules_python-0.0.1.tar.gz
 	https://github.com/bazelbuild/rules_swift/archive/3eeeb53cebda55b349d64c9fc144e18c5f7c0eb8.tar.gz -> bazelbuild-rules_swift-3eeeb53cebda55b349d64c9fc144e18c5f7c0eb8.tar.gz
 	https://github.com/dmlc/dlpack/archive/3efc489b55385936531a06ff83425b719387ec63.tar.gz -> dlpack-3efc489b55385936531a06ff83425b719387ec63.tar.gz
 	https://github.com/google/farmhash/archive/816a4ae622e964763ca0862d9dbd19324a1eaf45.tar.gz -> farmhash-816a4ae622e964763ca0862d9dbd19324a1eaf45.tar.gz
-	https://github.com/google/gemmlowp/archive/fda83bdc38b118cc6b56753bd540caa49e570745.zip -> gemmlowp-fda83bdc38b118cc6b56753bd540caa49e570745.zip
+	https://github.com/google/gemmlowp/archive/fda83bdc38b118cc6b56753bd540caa49e570745.tar.gz -> gemmlowp-fda83bdc38b118cc6b56753bd540caa49e570745.gh.tar.gz
 	https://github.com/google/highwayhash/archive/fd3d9af80465e4383162e4a7c5e2f406e82dd968.tar.gz -> highwayhash-fd3d9af80465e4383162e4a7c5e2f406e82dd968.tar.gz
 	https://github.com/google/re2/archive/506cfa4bffd060c06ec338ce50ea3468daa6c814.tar.gz -> re2-506cfa4bffd060c06ec338ce50ea3468daa6c814.tar.gz
-	https://github.com/google/ruy/archive/54774a7a2cf85963777289193629d4bd42de4a59.zip -> ruy-54774a7a2cf85963777289193629d4bd42de4a59.zip
+	https://github.com/google/ruy/archive/54774a7a2cf85963777289193629d4bd42de4a59.tar.gz -> ruy-54774a7a2cf85963777289193629d4bd42de4a59.gh.tar.gz
 	https://github.com/joe-kuo/sobol_data/archive/835a7d7b1ee3bc83e575e302a985c66ec4b65249.tar.gz -> sobol_data-835a7d7b1ee3bc83e575e302a985c66ec4b65249.tar.gz
 	https://github.com/llvm/llvm-project/archive/1f6a57c1a0fad922e04a2b1f414b092d4b0cd8b0.tar.gz -> llvm-1f6a57c1a0fad922e04a2b1f414b092d4b0cd8b0.tar.gz
 	https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.1/openmp-10.0.1.src.tar.xz -> llvmorg-10.0.1-openmp-10.0.1.src.tar.xz
 	https://github.com/mborgerding/kissfft/archive/36dbc057604f00aacfc0288ddad57e3b21cfc1b8.tar.gz -> kissfft-36dbc057604f00aacfc0288ddad57e3b21cfc1b8.tar.gz
-	https://github.com/oneapi-src/oneDNN/archive/v2.2.tar.gz -> oneDNN-v2.2.tar.gz
-	https://github.com/petewarden/OouraFFT/archive/v1.0.tar.gz -> OouraFFT-v1.0.tar.gz
-	https://github.com/pytorch/cpuinfo/archive/5916273f79a21551890fd3d56fc5375a78d1598d.zip -> pytorch-cpuinfo-5916273f79a21551890fd3d56fc5375a78d1598d.zip
+	https://github.com/oneapi-src/oneDNN/archive/v2.2.tar.gz -> oneDNN-v2.2.gh.tar.gz
+	https://github.com/petewarden/OouraFFT/archive/v1.0.tar.gz -> OouraFFT-v1.0.gh.tar.gz
+	https://github.com/pytorch/cpuinfo/archive/5916273f79a21551890fd3d56fc5375a78d1598d.tar.gz -> pytorch-cpuinfo-5916273f79a21551890fd3d56fc5375a78d1598d.gh.tar.gz
 	https://github.com/pytorch/cpuinfo/archive/d5e37adf1406cf899d7d9ec1d317c47506ccb970.tar.gz -> pytorch-cpuinfo-d5e37adf1406cf899d7d9ec1d317c47506ccb970.tar.gz
-	https://github.com/tensorflow/toolchains/archive/v1.1.10.tar.gz -> tensorflow-toolchains-v1.1.10.tar.gz
-	https://gitlab.com/libeigen/eigen/-/archive/f612df273689a19d25b45ca4f8269463207c4fee/eigen-f612df273689a19d25b45ca4f8269463207c4fee.tar.gz
+	https://github.com/tensorflow/toolchains/archive/v1.1.10.tar.gz -> tensorflow-toolchains-v1.1.10.gh.tar.gz
+	https://gitlab.com/libeigen/eigen/-/archive/f612df273689a19d25b45ca4f8269463207c4fee/eigen-f612df273689a19d25b45ca4f8269463207c4fee.tar.bz2
 	cuda? (
-		https://github.com/NVIDIA/cudnn-frontend/archive/360d6e7164dfb7c802493fd1c0464f0d815b852a.zip -> cudnn-frontend-360d6e7164dfb7c802493fd1c0464f0d815b852a.zip
-		https://github.com/NVlabs/cub/archive/1.9.9.zip -> cub-1.9.9.zip
-		https://github.com/nvidia/nccl/archive/v2.8.3-1.tar.gz -> nvidia-nccl-v2.8.3-1.tar.gz
+		https://github.com/NVIDIA/cudnn-frontend/archive/360d6e7164dfb7c802493fd1c0464f0d815b852a.tar.gz -> cudnn-frontend-360d6e7164dfb7c802493fd1c0464f0d815b852a.gh.tar.gz
+		https://github.com/NVlabs/cub/archive/1.9.9.tar.gz -> cub-1.9.9.gh.tar.gz
+		https://github.com/nvidia/nccl/archive/v2.8.3-1.tar.gz -> nvidia-nccl-v2.8.3-1.gh.tar.gz
 	)
 	python? (
 		https://github.com/intel/ARM_NEON_2_x86_SSE/archive/1200fe90bb174a6224a525ee60148671a786a71f.tar.gz -> ARM_NEON_2_x86_SSE-1200fe90bb174a6224a525ee60148671a786a71f.tar.gz
@@ -62,7 +63,7 @@ bazel_external_uris="
 		https://pypi.python.org/packages/bc/cc/3cdb0a02e7e96f6c70bd971bc8a90b8463fda83e264fa9c5c1c98ceabd81/backports.weakref-1.0rc1.tar.gz
 	)"
 
-SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz
+SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.gh.tar.gz
 		https://dev.gentoo.org/~perfinion/patches/tensorflow-patches-${PVR}.tar.bz2
 		${bazel_external_uris}"
 
@@ -117,7 +118,8 @@ RDEPEND="
 		>=sci-libs/keras-preprocessing-1.1.2[${PYTHON_USEDEP}]
 		>=sci-visualization/tensorboard-2.5.0[${PYTHON_USEDEP}]
 	)"
-DEPEND="${RDEPEND}"
+DEPEND="${RDEPEND}
+	${DISTUTILS_DEPS}"
 PDEPEND="python? (
 		>=sci-libs/tensorflow-estimator-2.5.0[${PYTHON_USEDEP}]
 	)"

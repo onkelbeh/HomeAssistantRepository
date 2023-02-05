@@ -33,6 +33,7 @@
     <flag name="airthings_ble">Integrates Airthings BLE sensors into Home Assistant</flag>
     <flag name="airtouch4">control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller</flag>
     <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
+    <flag name="airvisual_pro">allows Home Assistant to retrieve data from an AirVisual Node/Pro unit</flag>
     <flag name="airzone">This integration allows getting values from the local API of Airzone HVAC zoning</flag>
     <flag name="aladdin_connect">The aladdin_connect cover platform lets you control Genie Aladdin Connect garage</flag>
     <flag name="alarmdecoder">AlarmDecoder extended</flag>
@@ -356,6 +357,7 @@
     <flag name="ign_sismologia">a GeoRSS feed provided by the Spanish Instituto Geográfico Nacional</flag>
     <flag name="ihc">use IHC Python SDK</flag>
     <flag name="image">handle image assets in Home Assistant</flag>
+    <flag name="image_upload">handle image assets in Home Assistant</flag>
     <flag name="imap">observing your IMAP server and reporting the amount of unread emails</flag>
     <flag name="incomfort">client for Intergas InComfort/InTouch Lan2RF systems</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
@@ -598,6 +600,7 @@
     <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
     <flag name="pulseaudio_loopback">whole home audio system based upon PulseAudio</flag>
     <flag name="pure_energie">integrates the Pure Energie Monitor device with Home Assistant</flag>
+    <flag name="purpleair">PurpleAir makes sensors that measure hyper-local air quality data</flag>
     <flag name="pushbullet">sensor platform reads messages from Pushbullet</flag>
     <flag name="pushover">allows integrations to send messages to the user using Pushover</flag>
     <flag name="pvoutput">The PVOutput integration</flag>
@@ -630,6 +633,7 @@
     <flag name="remember_the_milk">create tasks in Remember The Milk (RTM) (deprecated)</flag>
     <flag name="remote_rpi_gpio">base for all related GPIO platforms in Home Assistant</flag>
     <flag name="renault">integration with the MyRenault cloud service</flag>
+    <flag name="reolink">The integration allows you to control Reolink NVRs or cameras</flag>
     <flag name="repetier">Repetier-Server is a 3D printer/CNC server, able to control multiple devices</flag>
     <flag name="rest">rest sensor platform for data exposed by a RESTful API</flag>
     <flag name="rflink">The rflink integration supports devices that use RFLink gateway firmware</flag>
@@ -825,7 +829,6 @@
     <flag name="upb">Library for interacting with UPB PIM</flag>
     <flag name="upcloud">allows you to access the information about your UpCloud servers</flag>
     <flag name="upc_connect">presence detection by looking at  a Connect Box</flag>
-    <flag name="updater">binary sensor will check daily for new releases</flag>
     <flag name="upnp">support UPnP/Internet Gateway Device (IGD) Protocol</flag>
     <flag name="uptimerobot">provides binary sensors from your monitors from Uptime Robot</flag>
     <flag name="usb">USB Discovery integration will watch the host for USB devices</flag>

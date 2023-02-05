@@ -7,6 +7,8 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tensorflow</remote-id>
+    <remote-id type="github">oneapi-src/oneDNN</remote-id>
+    <remote-id type="gitlab">libeigen/eigen</remote-id>
     <maintainer status="unknown">
       <email>packages@tensorflow.org</email>
       <name>Google Inc.</name>
