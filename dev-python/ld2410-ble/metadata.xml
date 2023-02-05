@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">ld2410-ble</remote-id>
+    <remote-id type="github">930913/ld2410-ble</remote-id>
+    <maintainer status="unknown">
+      <email>3722064+930913@users.noreply.github.com</email>
+      <name>930913</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
