@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">python-otbr-api</remote-id>
+    <remote-id type="github">home-assistant-libs/python-otbr-api</remote-id>
+    <maintainer status="unknown">
+      <email>hello@home-assistant.io</email>
+      <name>The Home Assistant Authors</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
