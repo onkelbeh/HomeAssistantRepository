@@ -10,7 +10,7 @@
     <remote-id type="github">craigjmidwinter/total-connect-client</remote-id>
     <maintainer status="unknown">
       <email>craig.j.midwinter@gmail.com</email>
-      <name>Craig J. Midwinter</name>
+      <name>"Craig J. Midwinter"</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
