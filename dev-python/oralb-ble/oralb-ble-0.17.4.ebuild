@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -24,7 +24,9 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/bluetooth-sensor-state-data-1.6.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-0.1.2[${PYTHON_USEDEP}]
-	>=dev-python/home-assistant-bluetooth-1.6.0[${PYTHON_USEDEP}]"
+	>=dev-python/bleak-0.19.2[${PYTHON_USEDEP}]
+	>=dev-python/home-assistant-bluetooth-1.6.0[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-2.13.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
