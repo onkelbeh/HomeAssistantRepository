@@ -22,7 +22,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/sensor-state-data-2.6.0[${PYTHON_USEDEP}]
-	>=dev-python/bluetooth-sensor-state-data-1.6.0[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-sensor-state-data-1.6.1[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-0.1.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
