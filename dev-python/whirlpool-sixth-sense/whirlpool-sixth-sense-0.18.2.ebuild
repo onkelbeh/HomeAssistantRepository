@@ -1,10 +1,10 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
-
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
 DESCRIPTION="Unofficial API for Whirlpool's 6th Sense appliances"
@@ -34,7 +34,4 @@ python_test() {
 	py.test -v -v || die
 }
 
-src_prepare() {
-	echo -ne "aioconsole>=0.3.1\naiohttp>=3.7.2\nwebsockets>=8.1\n" >> requirements.txt || die
-	eapply_user
-}
+distutils_enable_tests pytest
