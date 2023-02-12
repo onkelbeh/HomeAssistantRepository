@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -11,7 +11,8 @@ inherit distutils-r1
 DESCRIPTION="Abstract Syntax Tree for logilab packages"
 HOMEPAGE="
 	https://github.com/PyCQA/astroid/
-	https://pypi.org/project/astroid/"
+	https://pypi.org/project/astroid/
+"
 SRC_URI="
 	https://github.com/PyCQA/astroid/archive/v${PV}.tar.gz
 		-> ${P}.gh.tar.gz
