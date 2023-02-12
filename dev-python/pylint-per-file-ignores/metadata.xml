@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pylint-per-file-ignores</remote-id>
+    <remote-id type="github">christopherpickering/pylint-per-file-ignores.git</remote-id>
+    <maintainer status="unknown">
+      <email>christopher@going.bg</email>
+      <name>Christopher Pickering</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
