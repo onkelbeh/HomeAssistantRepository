@@ -13,10 +13,12 @@
 |agent_dvr|Agent DVR is a free* software DVR solution|N|Y|Y|0.110|
 |airly|Uses the Airly web service as a source for air quality data|Y|Y|Y|0.101|
 |airnow|AirNow web service as a source for air quality data|N|N|Y|2021.2|
+|airq|integrating the sensors provided by your air-Q device|N|N|Y|2022.12.0|
 |airthings|A python3 library to communicate with Aws|N|N|Y|2021.10.0b2|
 |airthings_ble|Integrates Airthings BLE sensors into Home Assistant|N|N|Y|2022.11.0b3|
 |airtouch4|control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller|N|N|Y|2021.9.0b1|
 |airvisual|Airvisual sensor platform queries the AirVisual cloud API for air quality data|Y|Y|Y|0.53|
+|airvisual_pro|allows Home Assistant to retrieve data from an AirVisual Node/Pro unit|N|N|Y|2023.1.1|
 |airzone|This integration allows getting values from the local API of Airzone HVAC zoning|N|N|Y|2022.4.0b0|
 |aladdin_connect|The aladdin_connect cover platform lets you control Genie Aladdin Connect garage|N|Y|Y|0.75|
 |alarmdecoder|AlarmDecoder extended|N|Y|Y|0.43|
@@ -41,6 +43,7 @@
 |aprs|Tracker integration connects to the APRS-IS|N|N|Y|0.95|
 |aqualogic|Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller|N|N|Y|0.80|
 |aquostv|The aquostv platform allows you to control a Sharp Aquos TV|N|Y|Y|0.35|
+|aranet|Integrates Aranet devices into Home Assistant|N|N|Y|2022.12.0|
 |arcam_fmj|Control Arcam receivers from Home Assistant|N|Y|Y|0.96|
 |arlo|Allows you to integrate your Arlo devices into Home Assistant|N|N|Y|0.46|
 |arris_tg2492lg|Presence detection from an Arris TG2492LG router|N|N|Y|0.109|
@@ -87,6 +90,7 @@
 |bmw_connected_drive|Retrieve data from the BMW Connected Drive|N|Y|Y|0.64|
 |bond|Asynchronous Python wrapper library over Bond Local API|N|Y|Y|0.113|
 |bosch_shc|integrate your Bosch SHC into Home Assistant|N|N|Y|2021.6|
+|brandt|None|N|N|Y|2022.12.0|
 |braviatv|Control almost all Sony Bravia TV 2013 and newer|N|Y|Y|0.23|
 |broadlink|Allows you to interact with Broadlink remote control devices|N|Y|Y|0.35|
 |brother|Read current data from your local Brother printer|N|Y|Y|0.104|
@@ -171,7 +175,7 @@
 |ecobee|Talk to Ecobee thermostats from Home Assistant|N|Y|Y|0.9|
 |econet|consuming the information provided by a EcoNet enabled Rheem water heater|N|N|Y|0.61|
 |ecovacs|ecovacs integration to integrate all Ecovacs (Deebot) vacuums|N|N|Y|0.77|
-|ecowitt|add Ecowitt Weather station to your Home Assistant|N|N|Y|2022.9.0b3|
+|ecowitt|add Ecowitt Weather station to your Home Assistant|Y|Y|Y|2022.9.0b3|
 |eddystone_temperature|reads temperature information from Eddystone beacons|N|N|Y|0.42|
 |edimax|switch platform allows you to control the state of your Edimax switches|N|N|Y||
 |edl21|edl21 integration lets you read German EDL21 smart meters using SML|N|N|Y|0.107|
@@ -189,6 +193,7 @@
 |emulated_hue|Emulated_hue integration provides a virtual Philips Hue bridge|N|N|Y|0.27|
 |emulated_kasa|Emulates a TP-Link Kasa smart plug and announces the power usage|N|N|Y|0.115|
 |emulated_roku|Emulate Roku API for Harmony and Android remotes|N|Y|Y|0.86|
+|energyzero|integrates the EnergyZero API platform with Home Assistant|N|N|Y|2023.2.1|
 |enigma2|Support for Enigma2 boxes with openwebif support|Y|Y|Y|0.90|
 |enocean|Support for Enocean devices in Home Assistant|N|Y|Y|0.21|
 |enphase_envoy|Reads electricity production and consumption from an Enphase Envoy|N|Y|Y|0.76|
@@ -217,6 +222,7 @@
 |fibaro|Fibaro hub is a controller mainly connecting to Z-Wave devices|N|Y|Y|0.83|
 |fido|Integrate your Fido account information into Home Assistant|N|N|Y|0.39|
 |file|Store notifications as a file|Y|Y|Y||
+|file_upload|The file upload integration allows various features in the frontend to upload fi|N|N|Y|2022.9.0b3|
 |fints|This only works with banks that support the FinTS (aka. HBCI) standard|N|N|Y|0.70|
 |fireservicerota|scheduling and dispatching system for firefighters|N|N|Y|2020.12|
 |firmata|Firmata can be used to add digital inputs and outputs to Home Assistant|N|N|Y|0.114|
@@ -273,6 +279,7 @@
 |goodwe|poll a GoodWe solar inverter over the local network|N|N|Y|2022.2.0b1|
 |google|Intergrate Google Calendar into Home Assistant|N|N|Y|0.33|
 |google_cloud|allows you to use Google Cloud Platform API|N|N|Y|0.95|
+|google_mail|allows you to connect your Google Mail and set an email auto-response|N|N|Y|2023.2.1|
 |google_maps|google_maps platform allows you to detect presence|N|N|Y|0.67|
 |google_pubsub|Send events to Google Cloud Pub/Sub from Home Assistant|N|N|Y|0.88|
 |google_sheets|allows you to connect your Google Drive to Home Assistant|N|N|Y|2022.10.0|
@@ -290,6 +297,7 @@
 |guardian|Integrates Elexa Guardian water valve controllers into Home Assistant|N|Y|Y|0.111|
 |habitica|Allows you to monitor and manage your Habitica profile|N|N|Y|0.78|
 |hangouts|Allows you to send messages to Google Hangouts conversations|N|N|Y|0.77|
+|hardware|provides an API which offers information about certain board types, USB dongles,|N|N|Y|2022.6.0b0|
 |harman_kardon_avr|Allows you to control Harman Kardon Network Receivers|N|Y|Y|0.85|
 |harmony|Logitech Harmony support for Home Assistant|N|Y|Y|0.34|
 |hdmi_cec|Creates switch entities for HDMI devices in Home Assistant|N|N|Y|0.23|
@@ -334,6 +342,7 @@
 |ign_sismologia|a GeoRSS feed provided by the Spanish Instituto Geográfico Nacional|N|N|Y|0.92|
 |ihc|use IHC Python SDK|N|Y|Y|0.62|
 |image|handle image assets in Home Assistant|N|N|Y|0.115|
+|image_upload|handle image assets in Home Assistant|N|Y|Y|2023.1.1|
 |imap|observing your IMAP server and reporting the amount of unread emails|N|Y|Y|0.25|
 |incomfort|client for Intergas InComfort/InTouch Lan2RF systems|N|Y|Y|0.93|
 |influxdb|transfer sensor data to a local InfluxDB database|Y|Y|Y|0.9|
@@ -385,6 +394,7 @@
 |launch_library|information about the next planned space launch|N|N|Y|0.83|
 |laundrify|Monitor the status of your washing machine or dryer using a laundrify WiFi power|N|N|Y|2022.6.0b0|
 |lcn|allows you to connect to LCN hardware devices|N|N|Y|0.85|
+|ld2410_ble|Integrates LD2410 BLE sensors from Hi-Link|N|N|Y|2023.2.1|
 |led_ble|Integrates multiple brands of Bluetooth Low Energy LED devices into Home Assista|N|N|Y|2022.9.0b3|
 |lg_netcast|allows you to control a LG Smart TV running NetCast 3.0|N|N|Y|0.20|
 |lg_soundbar|allows you to control LG Soundbars from Home Assistant|N|N|Y|0.81|
@@ -398,6 +408,8 @@
 |linux_battery|sensor platform is using the information stored in /sys/class/power_supply/|N|N|Y|0.28|
 |litejet|allows a computer to control the system via LiteJet’s third party protocol|N|N|Y|0.32|
 |litterrobot|Wi-Fi-enabled, automatic, self-cleaning litter box for cats|N|Y|Y|2021.3|
+|livisi|connect your LIVISI Smart Home Controller (SHC) to Home Assistant|N|N|Y|2022.12.0|
+|local_calendar|create a calendar of events in Home Assistant|Y|Y|Y|2022.12.0|
 |logi_circle|integrate your Logi Circle cameras in Home Assistant|N|N|Y|0.79|
 |london_underground|display the status of London underground lines|N|N|Y|0.49|
 |lookin|Integrates LOOKin devices into Home Assistant|N|N|Y|2021.11.0b4|
@@ -447,6 +459,7 @@
 |modern_forms|Asynchronous Python client for Modern Forms fans|N|N|Y|2021.7|
 |moehlenhoff_alpha2|allows you to control a Möhlenhoff Alpha 2 temperature control system|N|N|Y|2022.3.0b3|
 |monoprice|Python API for talking to Monoprice 6-zone amplifier|N|N|Y|0.56|
+|mopeka|Integrates Mopeka devices into Home Assistant|N|N|Y|2023.2.1|
 |mosquitto|Set a runtime dependency for Mosquitto MQTT broker|Y|Y|Y|2022.8.3|
 |motioneye|integrate your motionEye server into Home Assistant|N|N|Y|2021.5|
 |motion_blinds|control Motion Blinds from Coulisse B.V.|N|N|Y|2020.12|
@@ -518,6 +531,7 @@
 |onewire|supports sensors which that using the One wire (1-wire) bus for communication|N|N|Y|0.12|
 |onkyo|allows you to control a Onkyo, Integra and some recent Pioneer receivers|N|Y|Y|0.17|
 |onvif|allows you to use an ONVIF Profile S conformant device|Y|Y|Y|0.47|
+|openai_conversation|adds a conversation agent powered by OpenAI in Home Assistant|N|N|Y|2023.2.1|
 |openerz| uses OpenERZ API to access data from Entsorgung und Recycling Zürich (ERZ)|N|N|Y|0.109|
 |openevse|an OpenEVSE Charging station equipped with an ESP8266-based Wi-Fi|N|N|Y|0.38|
 |opengarage|opengarage cover platform lets you control the open-source OpenGarage.io device|N|Y|Y|0.44|
@@ -534,6 +548,7 @@
 |oru|fetches your current energy usage from your ORU smart meter|N|N|Y|0.101|
 |orvibo|allows you to toggle your (dangerous) Orvibo S20 Wifi Smart Sockets|N|N|Y|0.8|
 |osramlightify|allows you to integrate your Osram Lightify into Home Assistant|N|N|Y|0.21|
+|otbr|calling an Open Thread Border Router’s REST API in Home Assistant|N|N|Y|2023.2.1|
 |otp|generates One-Time Passwords according to RFC6238|Y|Y|Y|0.49|
 |overkiz|The Overkiz (by Somfy) integration platform|N|N|Y|2022.2.0b1|
 |ovo_energy|allows you to monitor your energy consumption data|N|N|Y|0.114|
@@ -573,6 +588,7 @@
 |ps4|allows you to control a Sony PlayStation 4 console|Y|Y|Y|0.89|
 |pulseaudio_loopback|whole home audio system based upon PulseAudio|N|N|Y|0.16|
 |pure_energie|integrates the Pure Energie Monitor device with Home Assistant|N|N|Y|2022.3.0b3|
+|purpleair|PurpleAir makes sensors that measure hyper-local air quality data|N|N|Y|2023.1.1|
 |pushbullet|sensor platform reads messages from Pushbullet|N|N|Y|0.44|
 |pushover|allows integrations to send messages to the user using Pushover|N|N|Y||
 |pvoutput|The PVOutput integration|N|N|Y|0.33|
@@ -605,6 +621,7 @@
 |remember_the_milk|create tasks in Remember The Milk (RTM) (deprecated)|N|N|Y|0.57|
 |remote_rpi_gpio|base for all related GPIO platforms in Home Assistant|N|N|Y|0.94|
 |renault|integration with the MyRenault cloud service|N|N|Y|2021.8.0|
+|reolink|The integration allows you to control Reolink NVRs or cameras|N|N|Y|2023.1.1|
 |repetier|Repetier-Server is a 3D printer/CNC server, able to control multiple devices|N|N|Y|0.94|
 |rest|rest sensor platform for data exposed by a RESTful API|Y|Y|Y|0.7.4|
 |rflink|The rflink integration supports devices that use RFLink gateway firmware|N|N|Y|0.38|
@@ -630,6 +647,9 @@
 |ruckus_unleashed|Python API to interact with a Ruckus Unleashed device|N|N|Y|0.117|
 |russound_rio|control Russound devices that make use of the RIO protocol|N|N|Y|0.49|
 |russound_rnet|control Russound devices that make use of the RNET protocol|N|N|Y|0.25|
+|ruuvitag_ble|Integrates Ruuvi’s RuuviTag BLE devices into Home Assistant|N|N|Y|2022.12.0|
+|ruuvi_gateway|Integrates Ruuvi Gateway devices as polling BLE remote scanners via the /history|N|N|Y|2023.2.1|
+|rympro|connects with a Read Your Meter Pro account to get water meter reads into HA|N|N|Y|2023.2.1|
 |sabnzbd|monitor and control your downloads with SABnzbd from within Home Assistant|N|N|Y|0.7|
 |saj|poll a SAJ solar inverter and present the values as sensors|N|N|Y|0.100|
 |samsungtv|Support for Samsung TV Sets|Y|Y|Y|0.13|
@@ -644,6 +664,7 @@
 |sensehat|lets you control the Sense HAT board’s 8x8 RGB LED matrix on your Raspberry Pi|N|N|Y|0.44|
 |senseme|Integrates SenseME devices into Home Assistant|N|N|Y|2022.2.0b1|
 |sensibo|Integrates Sensibo Air Conditioning controller into Home Assistant|N|N|Y|0.44|
+|sensirion_ble|Integrates sensors talking Sensirion’s BLE protocol into Home Assistant|N|N|Y|2022.12.0|
 |sensorpro|Integrates SensorPro devices into Home Assistant|N|N|Y|2022.9.0b3|
 |sensorpush|Integrates SensorPush devices into Home Assistant|N|N|Y|2022.8.1|
 |sentry|The free Sentry account allows 5000 events per month|N|N|Y|0.104|
@@ -716,6 +737,7 @@
 |steam_online|allows you to track the online status of public Steam accounts|N|N|Y|0.14|
 |stiebel_eltron|integral ventilation or heat pump units of STIEBEL ELTRON|N|N|Y|0.92|
 |stookalert|queries the RIVM Stookalert API for unfavorable weather conditions|N|N|Y|0.104|
+|stookwijzer|queries the Stookwijzer API for windspeed and gets the air quality index|N|N|Y|2023.2.1|
 |stream|provides a way to proxy live streams through Home Assistant|N|N|Y|0.90|
 |streamlabswater|interact with StreamLabs water monitoring devices|N|N|Y|0.95|
 |subaru|MySubaru connected vehicle services|N|N|Y|2021.3|
@@ -798,7 +820,6 @@
 |upb|Library for interacting with UPB PIM|N|N|Y|0.110|
 |upcloud|allows you to access the information about your UpCloud servers|N|N|Y|0.65|
 |upc_connect|presence detection by looking at  a Connect Box|N|N|Y|0.36|
-|updater|binary sensor will check daily for new releases|N|N|Y|0.8|
 |upnp|support UPnP/Internet Gateway Device (IGD) Protocol|Y|Y|Y|0.18|
 |uptimerobot|provides binary sensors from your monitors from Uptime Robot|N|N|Y|0.72|
 |usb|USB Discovery integration will watch the host for USB devices|N|N|Y|2021.9|
@@ -871,10 +892,12 @@
 |yolink|Integrates YoLink Devices into Home Assistant|N|N|Y|2022.6.0b0|
 |youless|allows you to read the meter values from sensors created by YouLess|N|N|Y|2021.8.0|
 |zabbix|integration to connect to a Zabbix monitoring instance via the Zabbix API|N|N|Y|0.37|
+|zamg|meteorological details published by the Austrian weather service|N|N|Y|0.35|
 |zengge|Python API for controlling Zengge LED bulbs|N|N|Y|0.36|
 |zeroconf|will scan the network for supported devices and services|Y|Y|Y|0.18|
 |zerproc|discovers nearby Zerproc lights|N|Y|Y|0.110|
 |zestimate|track the Zestimate® value of properties using the Zillow API|N|N|Y|0.65|
+|zeversolar|Zeversolar integration using local API|N|N|Y|2023.2.1|
 |zha|Support for ZHA/deconz based Zigbee/ZNet Devices|Y|Y|Y|0.44|
 |zhong_hong|lets you control Zhonghong HVAC Gateway Controller thermostats|N|Y|Y|0.72|
 |ziggo_mediabox_xl|allows you to control a Ziggo Mediabox XL|N|N|Y|0.60|
