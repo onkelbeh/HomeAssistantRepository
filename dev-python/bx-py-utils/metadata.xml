@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">bx-py-utils</remote-id>
+    <remote-id type="github">boxine/bx_py_utils</remote-id>
+    <maintainer status="unknown">
+      <email>jens.diemer@boxine.de</email>
+      <name>Jens Diemer</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
