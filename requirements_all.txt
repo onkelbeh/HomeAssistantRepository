@@ -47,7 +47,7 @@ aioeafm==0.1.2
 aioeagle==1.1.0
 aioecowitt==2023.1.0
 aioemonitor==1.0.5
-aioesphomeapi==13.1.0
+aioesphomeapi==13.3.1
 aiofiles==22.1.0
 aioflo==2021.11.0
 aioftp==0.21.3
@@ -65,7 +65,7 @@ aiokafka==0.7.2
 aiokef==0.2.16
 aiolifx-effects==0.3.1
 aiolifx-themes==0.4.0
-aiolifx==0.8.7
+aiolifx==0.8.9
 aiolivisi==0.0.14
 aiolookin==1.0.0
 aiolyric==1.0.9
@@ -263,7 +263,6 @@ crownstone-cloud==1.4.9
 crownstone-core==3.0.1
 crownstone-sse==2.0.4
 crownstone-uart==2.1.0
-cryptography==39.0.0
 cryptography==39.0.1
 csrmesh==0.10.0
 cssselect==1.2.0
@@ -728,7 +727,7 @@ openwebifpy==3.2.7
 openwrt-luci-rpc==1.1.11
 openwrt-ubus-rpc==0.0.2
 OPi-GPIO==0.5.2
-oralb-ble==0.17.4
+oralb-ble==0.17.5
 ordered-set==4.1.0
 orjson==3.8.5
 oru==0.1.11
@@ -907,7 +906,7 @@ pyialarmxr-homeassistant==1.0.18
 pyicloud==1.0.0
 pyinsteon==1.2.0
 pyintesishome==1.8.0
-pyipma==3.0.5
+pyipma==3.0.6
 pyipp==0.12.1
 pyiqvia==2022.4.0
 pyirishrail==0.0.2
@@ -1151,7 +1150,7 @@ regex==2021.8.28
 regex==2022.10.31
 related==0.7.2
 renault-api==0.1.11
-reolink-aio==0.3.4
+reolink-aio==0.4.0
 ReParser==1.4.3
 requests-file==1.5.1
 requests-futures==1.0.0
@@ -1359,7 +1358,7 @@ vol==0.1.1
 volkszaehler==0.4.0
 voluptuous-serialize==2.5.0
 voluptuous==0.13.1
-volvooncall==0.10.1
+volvooncall==0.10.2
 vsure==1.8.1
 vtjp==0.1.14
 vulcan-api==2.1.1
@@ -1392,7 +1391,7 @@ wsproto==1.2.0
 xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
-xiaomi-ble==0.16.1
+xiaomi-ble==0.16.3
 xknx==2.3.0
 xmlschema==2.1.1
 xmltodict==0.13.0
@@ -1400,7 +1399,7 @@ xs1-api-client==3.0.0
 xxhash==0.8.1
 xxhash==3.1.0
 yalesmartalarmclient==0.3.9
-yalexs-ble==1.12.8
+yalexs-ble==1.12.12
 yalexs==1.2.6
 yarl==1.8.1
 yarl==1.8.2
