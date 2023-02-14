@@ -19,9 +19,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="datastore serial test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=">=dev-python/aiohttp-3.8.3[${PYTHON_USEDEP}]
-	>=dev-python/typer-0.7.0[${PYTHON_USEDEP}]
-	>=dev-python/prompt_toolkit-3.0.36[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
+	>=dev-python/typer-0.6.1[${PYTHON_USEDEP}]
+	>=dev-python/prompt_toolkit-3.0.8[${PYTHON_USEDEP}]
 	datastore? (
 		>=dev-python/redis-2.0.16[${PYTHON_USEDEP}]
 		>=dev-python/sqlalchemy-1.1.15[${PYTHON_USEDEP}]
