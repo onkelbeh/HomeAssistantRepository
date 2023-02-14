@@ -19,11 +19,11 @@ RESTRICT="!test? ( test )"
 
 DOCS=""
 
-RDEPEND="~dev-python/hassil-1.0.1[${PYTHON_USEDEP}]
-	~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
-	~dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]
-	~dev-python/regex-2022.10.31[${PYTHON_USEDEP}]
-	~dev-python/jinja-3.1.2[${PYTHON_USEDEP}]"
+RDEPEND="~dev-python/hassil[${PYTHON_USEDEP}]
+	~dev-python/pyyaml[${PYTHON_USEDEP}]
+	~dev-python/voluptuous[${PYTHON_USEDEP}]
+	~dev-python/regex[${PYTHON_USEDEP}]
+	~dev-python/jinja[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
