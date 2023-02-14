@@ -57,7 +57,7 @@ aioharmony==0.2.9
 aiohomekit==2.4.6
 aiohttp-cors==0.7.0
 aiohttp==3.8.1
-aiohttp==3.8.3
+aiohttp==3.8.4
 aiohue==4.6.1
 aioimaplib==1.0.1
 aioitertools==0.11.0
@@ -146,7 +146,7 @@ asyncssh==2.9.0
 asynctest==0.13.0
 atenpdu==0.3.2
 atomicwrites-homeassistant==1.4.1
-attrs==22.1.0
+attrs==22.2.0
 auroranoaa==0.0.2
 aurorapy==0.2.7
 Authlib==0.15.5
@@ -249,9 +249,11 @@ connio==0.2.0
 constantly==15.1.0
 construct==2.10.56
 construct==2.10.68
+contourpy==1.0.6
 convertdate==2.4.0
 coronavirus==1.1.1
 coverage==7.0.5
+cppy==1.2.1
 crc16==0.1.1
 crccheck==1.3.0
 crcmod==1.7
@@ -267,6 +269,7 @@ csrmesh==0.10.0
 cssselect==1.2.0
 cups==2.4.2
 curl==7.87.0
+cycler==0.11.0
 c_rehash==1.7
 d2to1==0.2.12_p1
 dacite==1.6.0
@@ -282,6 +285,7 @@ decorator==5.1.1
 deepdiff==6.2.1
 deepmerge==1.1.0
 defusedxml==0.7.1
+dejavu==2.37
 deluge-client==1.7.1
 demetriek==0.4.0
 demjson3==3.0.5
@@ -363,6 +367,7 @@ flipr-api==1.4.4
 flux-led==0.28.35
 fnvhash==0.1.0
 fontconfig==2.14.0
+fonttools==4.38.0
 foobot_async==1.0.0
 forecast-solar==2.2.0
 fortiosapi==1.0.5
@@ -373,6 +378,7 @@ freesms==0.2.0
 freetype==2.12.1
 fritzconnection==1.4.2
 frozenlist==1.3.3
+fs==2.4.16
 future==0.18.2
 gammu==1.42.0
 garminconnect-ha==0.1.6
@@ -417,6 +423,7 @@ govee-ble==0.21.1
 gpiozero==1.6.2
 gps3==0.33.3
 gql==3.4.0
+graphicsmagick==1.3.39
 graphql-core==3.3.0_alpha2
 graphviz==0.20.1
 graphviz==5.0.1
@@ -500,6 +507,8 @@ ifaddr==0.2.0
 iglo==1.2.7
 ihcsdk==2.7.6
 imageio==2.25.0
+imagemagick-tools==0
+imagemagick==7.1.0.48
 importlib_metadata==6.0.0
 incomfort-client==0.4.4
 incremental==22.10.0
@@ -555,6 +564,7 @@ kegtron-ble==0.4.0
 keyring==23.13.1
 keyrings_alt==4.1.0
 kiwiki-client==0.1.1
+kiwisolver==1.4.4
 konnected==1.2.0
 korean-lunar-calendar==0.3.1
 krakenex==2.1.0
@@ -625,6 +635,7 @@ markdown==3.4.1
 markupsafe==2.1.1
 marshmallow-dataclass==8.5.9
 Mastodon-py==1.5.1
+matplotlib==3.6.1
 matrix-client==0.4.0
 maxcube-api==0.4.3
 mbddns==0.1.2
@@ -1077,7 +1088,6 @@ python-singleton==0.1.2
 python-slugify==4.0.1
 python-slugify==7.0.0
 python-smarttub==0.0.33
-python-sochain-api==0.0.2
 python-socketio==4.6.0
 python-socketio==5.3.0
 python-songpal==0.15.1
@@ -1086,7 +1096,6 @@ python-telegram-bot==13.1
 python-vlc==1.1.2
 python-wink==1.10.5
 python-xlib==0.33
-python-zeroconf==0.38.7
 pythonegardia==1.0.40
 pyTibber==0.26.12
 pytile==2022.2.0
@@ -1124,6 +1133,7 @@ PyXiaomiGateway==0.14.3
 pyyaml==6.0
 pyzbar==0.1.7
 pyzerproc==0.4.8
+qhull==2020.2
 qingping-ble==0.8.2
 qnapstats==0.4.0
 quantum-gateway==0.0.8
@@ -1183,6 +1193,7 @@ s3transfer==0.6.0
 samsungctl==0.7.1
 samsungtvws==2.5.0
 satel-integra==0.3.7
+scapy==2.5.0
 schedule==1.1.0
 schiene==0.23
 screenlogicpy==0.6.4
@@ -1244,6 +1255,7 @@ statsd==3.2.1
 stdiomask==0.0.6
 steamodd==4.21
 stevedore==4.1.1
+stix-fonts==2.11
 stookalert==0.1.4
 stookwijzer==1.3.0
 streamlabswater==1.0.1
@@ -1364,7 +1376,6 @@ webcolors==1.12
 webencodings==0.5.1
 webexteamssdk==1.1.1
 webob==1.8.7
-websocket-client==0.54.0
 websocket-client==1.4.2
 websockets==10.4
 werkzeug==2.2.2
@@ -1378,8 +1389,6 @@ wolf_smartset==0.1.11
 wrapt==1.14.1
 WSDiscovery==2.0.0
 wsproto==1.2.0
-xbee-helper==0.0.7
-XBee==2.3.2
 xbox-webapi==2.0.11
 xboxapi==2.0.1
 xerces-c==3.2.3
@@ -1403,6 +1412,7 @@ zamg==0.2.2
 zbar==0.23.90
 zeep==4.2.1
 zengge==0.2
+zeroconf==0.39.4
 zeversolar==0.3.0
 zha-quirks==0.0.92
 zhong-hong-hvac==1.0.9
