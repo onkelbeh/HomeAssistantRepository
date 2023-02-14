@@ -22,7 +22,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/protobuf-python-3.19.1[${PYTHON_USEDEP}]
-	>=dev-python/python-zeroconf-0.25.1[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.25.1[${PYTHON_USEDEP}]
 	>=dev-python/casttube-0.2.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]

@@ -24,7 +24,7 @@ RDEPEND="dev-python/cryptography[${PYTHON_USEDEP}]"
 BDEPEND="
 	cli? (
 		dev-python/click[${PYTHON_USEDEP}]
-		dev-python/python-zeroconf[${PYTHON_USEDEP}]
+		dev-python/zeroconf[${PYTHON_USEDEP}]
 		dev-python/pyxdg[${PYTHON_USEDEP}]
 	)
 	test? (
