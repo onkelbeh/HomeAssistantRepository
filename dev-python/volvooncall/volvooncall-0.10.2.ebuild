@@ -14,13 +14,16 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 LICENSE="public-domain"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
+IUSE="console mqtt test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=">=sci-geosciences/geopy-1.14.0[${PYTHON_USEDEP}]
-	dev-python/certifi[${PYTHON_USEDEP}]
-	dev-python/hbmqtt[${PYTHON_USEDEP}]
-	dev-python/aiohttp[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+	console? (
+			 dev-python/certifi[${PYTHON_USEDEP}]
+			 >=sci-geosciences/geopy-1.14.0[${PYTHON_USEDEP}] )
+	mqtt? (
+			 dev-python/certifi[${PYTHON_USEDEP}]
+			 dev-python/amqtt[${PYTHON_USEDEP}] )"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
@@ -30,3 +33,5 @@ BDEPEND="
 python_test() {
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
