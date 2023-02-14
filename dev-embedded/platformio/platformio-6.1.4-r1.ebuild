@@ -37,7 +37,7 @@ RDEPEND="
 		dev-python/twisted[${PYTHON_USEDEP}]
 		>=dev-python/pyelftools-0.27[${PYTHON_USEDEP}]
 		<dev-python/pyelftools-1[${PYTHON_USEDEP}]
-		>=dev-python/python-zeroconf-0.37[${PYTHON_USEDEP}]
+		>=dev-python/zeroconf-0.37[${PYTHON_USEDEP}]
 		>=dev-python/marshmallow-3[${PYTHON_USEDEP}]
 		=dev-python/starlette-0.20*[${PYTHON_USEDEP}]
 		=dev-python/uvicorn-0.18*[${PYTHON_USEDEP}]
