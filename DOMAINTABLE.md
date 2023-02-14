@@ -286,7 +286,6 @@
 |google_translate|google_translate text-to-speech platform for Home Assistant|N|N|Y|0.35|
 |google_travel_time|provides travel time from the Google Distance Matrix API|N|N|Y|0.19|
 |govee_ble|Integrates Govee BLE devices into Home Assistant|N|N|Y|2022.8.1|
-|gpmdp|Allows you to control a GPMDP instance from Home Assistant|N|N|Y|0.20|
 |gpsd|GPS information collected by gpsd and a GPS receiver|N|N|Y|0.26|
 |gree|Discover, connect and control Gree based minisplit systems|N|N|Y|0.117|
 |greeneye_monitor|Allows you to create sensors for the various data channels of the GEM|N|Y|Y|0.82|
@@ -706,7 +705,6 @@
 |snmp|Presence Detection, Sensor, Switch via SNMP|Y|Y|Y|0.57|
 |snooz|Integrates SNOOZ devices into Home Assistant|N|N|Y|2022.11.0b3|
 |socat|Set a flag to install socat and socat-zwave startscript|Y|Y|Y|None|
-|sochain|displays supported cryptocurrency wallet balances|N|N|Y|0.61|
 |solaredge|details from your SolarEdge solar power setup|N|N|Y|0.85|
 |solaredge_local|uses the local API available on some SolarEdge Inverters|N|N|Y|0.95|
 |solarlog|uses the open JSON interface on Solar-Log PV monitoring systems|N|N|Y|0.101|
@@ -871,7 +869,6 @@
 |wolflink|uses the Wolf Smart-Set for your heating system status|N|N|Y|0.114|
 |workday|generating country, province and state specific sets of holidays on the fly|Y|Y|Y|0.41|
 |ws66i|Control the Soundavo Whole-Home Audio Amplifier via local network|N|N|Y|2022.6.0b0|
-|xbee|send and receive commands to and from other devices on the Zigbee|N|N|Y|0.12|
 |xbox|A library to authenticate with Windows Live/Xbox Live and use their API|N|N|Y|0.117|
 |xbox_live|track Xbox profiles|N|Y|Y|0.28|
 |xeoma|Python wrapper for Xeoma web server API|N|N|Y|0.62|

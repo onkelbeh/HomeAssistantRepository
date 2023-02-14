@@ -1,5 +1,5 @@
 accuweather==0.5.0
-acme==2.1.0
+acme==2.2.0
 Adafruit-Blinka==7.1.1
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.1.8
@@ -1086,7 +1086,7 @@ python-telegram-bot==13.1
 python-vlc==1.1.2
 python-wink==1.10.5
 python-xlib==0.33
-python-zeroconf==0.47.1
+python-zeroconf==0.38.7
 pythonegardia==1.0.40
 pyTibber==0.26.12
 pytile==2022.2.0
@@ -1197,6 +1197,7 @@ sensirion-ble==0.0.1
 sensor-state-data==2.13.0
 sensorpro-ble==0.5.3
 sensorpush-ble==1.5.5
+sentry-sdk==1.13.0
 sepaxml==2.2.0
 setuptools==65.7.0
 sgmllib3k==1.0.0
