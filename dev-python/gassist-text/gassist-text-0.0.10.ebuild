@@ -22,19 +22,19 @@ IUSE=""
 DOCS="README.md"
 
 BDEPEND="
-	dev-python/google-auth
-	dev-python/grpcio
-	dev-python/protobuf-python
-	dev-python/requests
+	dev-python/google-auth[${PYTHON_USEDEP}]
+	dev-python/grpcio[${PYTHON_USEDEP}]
+	dev-python/protobuf-python[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
 	"
 S="${WORKDIR}/${MY_P}"
 
 distutils_enable_tests pytest
 
 src_configure() {
-    cat > pyproject.toml <<-EOF || die
-        [build-system]
-        requires = ["setuptools"]
-        build-backend = "setuptools.build_meta"
+	cat > pyproject.toml <<-EOF || die
+		[build-system]
+		requires = ["setuptools"]
+		build-backend = "setuptools.build_meta"
 EOF
 }
