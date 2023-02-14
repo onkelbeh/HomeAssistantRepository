@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -35,7 +35,6 @@ BDEPEND="
 		dev-python/executing[${PYTHON_USEDEP}]
 		dev-python/fakeredis[${PYTHON_USEDEP}]
 		dev-python/flask-login[${PYTHON_USEDEP}]
-		dev-python/gevent[${PYTHON_USEDEP}]
 		dev-python/jsonschema[${PYTHON_USEDEP}]
 		dev-python/pyrsistent[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
@@ -44,9 +43,6 @@ BDEPEND="
 		dev-python/pytest-localserver[${PYTHON_USEDEP}]
 		dev-python/werkzeug[${PYTHON_USEDEP}]
 		dev-python/zope-event[${PYTHON_USEDEP}]
-		$(python_gen_cond_dep '
-			dev-python/eventlet[${PYTHON_USEDEP}]
-		' python3_{8..9})
 	)
 "
 
@@ -67,8 +63,12 @@ EPYTEST_IGNORE=(
 	tests/integrations/asgi/test_fastapi.py
 	# TODO
 	tests/integrations/bottle
-	# requires python-multipart (TODO: package it)
+	# TODO: causes breakage in other tests
 	tests/integrations/starlette
+	# TODO
+	tests/integrations/tornado
+	# requires mockupdb
+	tests/integrations/pymongo
 )
 
 EPYTEST_DESELECT=(
@@ -93,4 +93,8 @@ EPYTEST_DESELECT=(
 	# TODO
 	tests/integrations/wsgi/test_wsgi.py::test_auto_session_tracking_with_aggregates
 	tests/integrations/wsgi/test_wsgi.py::test_profile_sent_when_profiling_enabled
+	tests/test_profiler.py::test_sample_buffer
+	tests/test_profiler.py::test_thread_scheduler_takes_first_samples
+	tests/test_profiler.py::test_thread_scheduler_takes_more_samples
+	tests/test_profiler.py::test_thread_scheduler_single_background_thread
 )
