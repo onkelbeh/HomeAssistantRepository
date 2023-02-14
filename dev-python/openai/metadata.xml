@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">openai</remote-id>
+    <remote-id type="github">openai/openai-python</remote-id>
+    <maintainer status="unknown">
+      <email>support@openai.com</email>
+      <name>OpenAI</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

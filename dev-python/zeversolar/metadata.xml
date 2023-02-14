@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">zeversolar</remote-id>
+    <maintainer status="unknown">
+      <email>8818390+kvanzuijlen@users.noreply.github.com</email>
+      <name>Koen van Zuijlen</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

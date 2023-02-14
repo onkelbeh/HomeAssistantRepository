@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/requests-2.0[${PYTHON_USEDEP}]
-	>=dev-python/python-zeroconf-0.30.0[${PYTHON_USEDEP}]"
+	>=dev-python/zeroconf-0.30.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

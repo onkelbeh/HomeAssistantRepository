@@ -22,7 +22,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/cryptography-3.3.2[${PYTHON_USEDEP}]
 	~dev-python/getmac-0.8.2[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.22[${PYTHON_USEDEP}]
-	>=dev-python/python-zeroconf-0.28.0[${PYTHON_USEDEP}]"
+	>=dev-python/zeroconf-0.28.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

@@ -210,6 +210,7 @@
     <flag name="emulated_hue">Emulated_hue integration provides a virtual Philips Hue bridge</flag>
     <flag name="emulated_kasa">Emulates a TP-Link Kasa smart plug and announces the power usage</flag>
     <flag name="emulated_roku">Emulate Roku API for Harmony and Android remotes</flag>
+    <flag name="energyzero">integrates the EnergyZero API platform with Home Assistant</flag>
     <flag name="enigma2">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="enocean">Support for Enocean devices in Home Assistant</flag>
     <flag name="enphase_envoy">Reads electricity production and consumption from an Enphase Envoy</flag>
@@ -295,13 +296,13 @@
     <flag name="goodwe">poll a GoodWe solar inverter over the local network</flag>
     <flag name="google">Intergrate Google Calendar into Home Assistant</flag>
     <flag name="google_cloud">allows you to use Google Cloud Platform API</flag>
+    <flag name="google_mail">allows you to connect your Google Mail and set an email auto-response</flag>
     <flag name="google_maps">google_maps platform allows you to detect presence</flag>
     <flag name="google_pubsub">Send events to Google Cloud Pub/Sub from Home Assistant</flag>
     <flag name="google_sheets">allows you to connect your Google Drive to Home Assistant</flag>
     <flag name="google_translate">google_translate text-to-speech platform for Home Assistant</flag>
     <flag name="google_travel_time">provides travel time from the Google Distance Matrix API</flag>
     <flag name="govee_ble">Integrates Govee BLE devices into Home Assistant</flag>
-    <flag name="gpmdp">Allows you to control a GPMDP instance from Home Assistant</flag>
     <flag name="gpsd">GPS information collected by gpsd and a GPS receiver</flag>
     <flag name="gree">Discover, connect and control Gree based minisplit systems</flag>
     <flag name="greeneye_monitor">Allows you to create sensors for the various data channels of the GEM</flag>
@@ -409,6 +410,7 @@
     <flag name="launch_library">information about the next planned space launch</flag>
     <flag name="laundrify">Monitor the status of your washing machine or dryer using a laundrify WiFi power</flag>
     <flag name="lcn">allows you to connect to LCN hardware devices</flag>
+    <flag name="ld2410_ble">Integrates LD2410 BLE sensors from Hi-Link</flag>
     <flag name="led_ble">Integrates multiple brands of Bluetooth Low Energy LED devices into Home Assista</flag>
     <flag name="lg_netcast">allows you to control a LG Smart TV running NetCast 3.0</flag>
     <flag name="lg_soundbar">allows you to control LG Soundbars from Home Assistant</flag>
@@ -442,7 +444,6 @@
     <flag name="marytts">text-to-speech platform uses MaryTTS Text-to-Speech engine</flag>
     <flag name="mastodon">uses Mastodon to deliver notifications from Home Assistant</flag>
     <flag name="matrix">allows you to send messages to matrix rooms</flag>
-    <flag name="matter">control Matter devices on your local WiFi or Thread network</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="mazda">Mazda Connected Services integration</flag>
     <flag name="mcp23017">base for all related mcp23017 platforms in Home Assistant</flag>
@@ -474,6 +475,7 @@
     <flag name="modern_forms">Asynchronous Python client for Modern Forms fans</flag>
     <flag name="moehlenhoff_alpha2">allows you to control a Möhlenhoff Alpha 2 temperature control system</flag>
     <flag name="monoprice">Python API for talking to Monoprice 6-zone amplifier</flag>
+    <flag name="mopeka">Integrates Mopeka devices into Home Assistant</flag>
     <flag name="mosquitto">Set a runtime dependency for Mosquitto MQTT broker</flag>
     <flag name="motioneye">integrate your motionEye server into Home Assistant</flag>
     <flag name="motion_blinds">control Motion Blinds from Coulisse B.V.</flag>
@@ -545,6 +547,7 @@
     <flag name="onewire">supports sensors which that using the One wire (1-wire) bus for communication</flag>
     <flag name="onkyo">allows you to control a Onkyo, Integra and some recent Pioneer receivers</flag>
     <flag name="onvif">allows you to use an ONVIF Profile S conformant device</flag>
+    <flag name="openai_conversation">adds a conversation agent powered by OpenAI in Home Assistant</flag>
     <flag name="openerz"> uses OpenERZ API to access data from Entsorgung und Recycling Zürich (ERZ)</flag>
     <flag name="openevse">an OpenEVSE Charging station equipped with an ESP8266-based Wi-Fi</flag>
     <flag name="opengarage">opengarage cover platform lets you control the open-source OpenGarage.io device</flag>
@@ -561,6 +564,7 @@
     <flag name="oru">fetches your current energy usage from your ORU smart meter</flag>
     <flag name="orvibo">allows you to toggle your (dangerous) Orvibo S20 Wifi Smart Sockets</flag>
     <flag name="osramlightify">allows you to integrate your Osram Lightify into Home Assistant</flag>
+    <flag name="otbr">calling an Open Thread Border Router’s REST API in Home Assistant</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="overkiz">The Overkiz (by Somfy) integration platform</flag>
     <flag name="ovo_energy">allows you to monitor your energy consumption data</flag>
@@ -660,6 +664,8 @@
     <flag name="russound_rio">control Russound devices that make use of the RIO protocol</flag>
     <flag name="russound_rnet">control Russound devices that make use of the RNET protocol</flag>
     <flag name="ruuvitag_ble">Integrates Ruuvi’s RuuviTag BLE devices into Home Assistant</flag>
+    <flag name="ruuvi_gateway">Integrates Ruuvi Gateway devices as polling BLE remote scanners via the /history</flag>
+    <flag name="rympro">connects with a Read Your Meter Pro account to get water meter reads into HA</flag>
     <flag name="sabnzbd">monitor and control your downloads with SABnzbd from within Home Assistant</flag>
     <flag name="saj">poll a SAJ solar inverter and present the values as sensors</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
@@ -716,7 +722,6 @@
     <flag name="snmp">Presence Detection, Sensor, Switch via SNMP</flag>
     <flag name="snooz">Integrates SNOOZ devices into Home Assistant</flag>
     <flag name="socat">Set a flag to install socat and socat-zwave startscript</flag>
-    <flag name="sochain">displays supported cryptocurrency wallet balances</flag>
     <flag name="solaredge">details from your SolarEdge solar power setup</flag>
     <flag name="solaredge_local">uses the local API available on some SolarEdge Inverters</flag>
     <flag name="solarlog">uses the open JSON interface on Solar-Log PV monitoring systems</flag>
@@ -747,6 +752,7 @@
     <flag name="steam_online">allows you to track the online status of public Steam accounts</flag>
     <flag name="stiebel_eltron">integral ventilation or heat pump units of STIEBEL ELTRON</flag>
     <flag name="stookalert">queries the RIVM Stookalert API for unfavorable weather conditions</flag>
+    <flag name="stookwijzer">queries the Stookwijzer API for windspeed and gets the air quality index</flag>
     <flag name="stream">provides a way to proxy live streams through Home Assistant</flag>
     <flag name="streamlabswater">interact with StreamLabs water monitoring devices</flag>
     <flag name="subaru">MySubaru connected vehicle services</flag>
@@ -880,7 +886,6 @@
     <flag name="wolflink">uses the Wolf Smart-Set for your heating system status</flag>
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
     <flag name="ws66i">Control the Soundavo Whole-Home Audio Amplifier via local network</flag>
-    <flag name="xbee">send and receive commands to and from other devices on the Zigbee</flag>
     <flag name="xbox">A library to authenticate with Windows Live/Xbox Live and use their API</flag>
     <flag name="xbox_live">track Xbox profiles</flag>
     <flag name="xeoma">Python wrapper for Xeoma web server API</flag>
@@ -906,6 +911,7 @@
     <flag name="zeroconf">will scan the network for supported devices and services</flag>
     <flag name="zerproc">discovers nearby Zerproc lights</flag>
     <flag name="zestimate">track the Zestimate® value of properties using the Zillow API</flag>
+    <flag name="zeversolar">Zeversolar integration using local API</flag>
     <flag name="zha">Support for ZHA/deconz based Zigbee/ZNet Devices</flag>
     <flag name="zhong_hong">lets you control Zhonghong HVAC Gateway Controller thermostats</flag>
     <flag name="ziggo_mediabox_xl">allows you to control a Ziggo Mediabox XL</flag>

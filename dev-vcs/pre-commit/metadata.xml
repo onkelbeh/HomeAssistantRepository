@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pre-commit</remote-id>
+    <remote-id type="github">pre-commit/pre-commit</remote-id>
+    <maintainer status="unknown">
+      <email>asottile@umich.edu</email>
+      <name>Anthony Sottile</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

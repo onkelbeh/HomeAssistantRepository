@@ -9,8 +9,8 @@
     <remote-id type="pypi">holidays</remote-id>
     <remote-id type="github">dr-prodigy/python-holidays</remote-id>
     <maintainer status="unknown">
-      <email>maurizio.montel@gmail.com</email>
-      <name>dr-prodigy (formerly ryanss)</name>
+      <email>ark@cho.red</email>
+      <name>Arkadii Yakovets (arkid15r)</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

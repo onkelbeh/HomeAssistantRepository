@@ -28,7 +28,7 @@ RDEPEND="
 		dev-python/colorama[${PYTHON_USEDEP}]
 		>=dev-python/pyserial-3[${PYTHON_USEDEP}]
 		<dev-python/pyserial-4[${PYTHON_USEDEP}]
-		>=dev-python/python-zeroconf-0.37[${PYTHON_USEDEP}]
+		>=dev-python/zeroconf-0.37[${PYTHON_USEDEP}]
 		>=dev-python/requests-2.4[${PYTHON_USEDEP}]
 		<dev-python/requests-3[${PYTHON_USEDEP}]
 		>=dev-python/semantic_version-2.9[${PYTHON_USEDEP}]
