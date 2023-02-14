@@ -22,10 +22,10 @@ IUSE=""
 DOCS="README.md"
 
 BDEPEND="
-	dev-python/grpcio
-	dev-libs/protobuf
-	dev-python/requests
 	dev-python/google-auth
+	dev-python/grpcio
+	dev-python/protobuf-python
+	dev-python/requests
 	"
 S="${WORKDIR}/${MY_P}"
 
