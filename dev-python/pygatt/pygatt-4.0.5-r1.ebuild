@@ -17,4 +17,7 @@ KEYWORDS="amd64 arm arm64 x86"
 
 DOCS=( CHANGELOG.rst README.rst )
 
-RDEPEND="dev-python/pyserial[${PYTHON_USEDEP}]"
+RDEPEND="
+	dev-lang/python[bluetooth]
+	dev-python/pyserial[${PYTHON_USEDEP}]
+"
