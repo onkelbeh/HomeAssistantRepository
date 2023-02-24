@@ -34,23 +34,21 @@ case ${EAPI} in
 *) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
 esac
 
-if [[ -z ${_NODEJS-MODE_ECLASS} ]]; then
-_NODEJS-MODE_ECLASS=1
+if [[ -z ${_NODEJS-MOD_ECLASS} ]]; then
+_NODEJS-MOD_ECLASS=1
 
 inherit nodejs
 
 if has nodejs-pack ${INHERITED}; then
-        eerror "nodejs-mod and nodejs-pack eclass are incompatible"
+    eerror "nodejs-mod and nodejs-pack eclass are incompatible"
 fi
-
-EXPORT_FUNCTIONS src_compile src_install src_prepare src_test
 
 RDEPEND+=" net-libs/nodejs:="
 
-# @FUNCTION: nodejs-pack_src_prepare
+# @FUNCTION: nodejs-mod_src_prepare
 # @DESCRIPTION:
 # Nodejs preparation phase
-nodejs-pack_src_prepare() {
+nodejs-mod_src_prepare() {
     debug-print-function "${FUNCNAME}" "${@}"
 
     if [[ ! -e package.json ]]; then
@@ -62,10 +60,10 @@ nodejs-pack_src_prepare() {
     default_src_prepare
 }
 
-# @FUNCTION: nodejs-pack_src_compile
+# @FUNCTION: nodejs-mod_src_compile
 # @DESCRIPTION:
 # General function for compiling a nodejs module
-nodejs-pack_src_compile() {
+nodejs-mod_src_compile() {
     debug-print-function "${FUNCNAME}" "${@}"
 
     if [[ -d node_modules ]]; then
@@ -84,10 +82,10 @@ nodejs-pack_src_compile() {
     fi
 }
 
-# @FUNCTION: nodejs-pack_src_test
+# @FUNCTION: nodejs-mod_src_test
 # @DESCRIPTION:
 # General function for testing a nodejs module
-nodejs-pack_src_test() {
+nodejs-mod_src_test() {
     debug-print-function "${FUNCNAME}" "${@}"
 
     if nodejs_has_test; then
@@ -98,7 +96,7 @@ nodejs-pack_src_test() {
 # @FUNCTION: nodejs_src_install
 # @DESCRIPTION:
 # Function for installing the package
-nodejs-pack_src_install() {
+nodejs-mod_src_install() {
     debug-print-function "${FUNCNAME}" "${@}"
 
     nodejs_docs
@@ -106,4 +104,7 @@ nodejs-pack_src_install() {
     enpm_clean
     enpm_install
 }
+
 fi
+
+EXPORT_FUNCTIONS src_prepare src_compile src_test src_install

@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit nodejs nodejs-pack systemd tmpfiles
+inherit nodejs-mod systemd tmpfiles
 
 DESCRIPTION="A visual tool for wiring the Internet of Things."
 HOMEPAGE="https://nodered.org"
@@ -22,26 +22,23 @@ RDEPEND="
 NODEJS_EXTRA_FILES="packages"
 
 src_prepare() {
-    default
+	default
 
-    # TODO: remove bcrypt fail to compile
-    rm -rf node_modules/bcrypt || die
+	# TODO: remove bcrypt fail to compile
+	rm -rf node_modules/bcrypt || die
 }
 
 src_install() {
-    # Remove jsdoc-nr-template, prune use git to get the version
-    rm -rf node_modules/jsdoc-nr-template/ || die
-    sed -i -e '/jsdoc-nr-template/d' package.json || die
+	# Remove jsdoc-nr-template, prune use git to get the version
+	rm -rf node_modules/jsdoc-nr-template/ || die
+	sed -i -e '/jsdoc-nr-template/d' package.json || die
 
-    nodejs_docs
+	nodejs-mod_src_install
 
-    enpm_clean
-    enpm_install
+	dotmpfiles "${FILESDIR}"/node-red.conf
 
-    dotmpfiles "${FILESDIR}"/node-red.conf
-
-    doinitd "${FILESDIR}"/${PN}
-    systemd_dounit "${FILESDIR}/${PN}.service"
+	doinitd "${FILESDIR}"/${PN}
+	systemd_dounit "${FILESDIR}/${PN}.service"
 }
 
 pkg_postinst() {

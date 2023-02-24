@@ -18,7 +18,6 @@
 #       https://github.com/gentoo-mirror/lanodanOverlay/blob/master/eclass/nodejs.eclass
 #       https://github.com/Tatsh/tatsh-overlay/blob/master/eclass/yarn.eclass
 
-
 case ${EAPI} in
 7 | 8) ;;
 *) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
@@ -30,7 +29,7 @@ _NODEJS_PACK_ECLASS=1
 inherit nodejs
 
 if has nodejs-mod ${INHERITED}; then
-        eerror "nodejs-mod and nodejs-pack eclass are incompatible"
+    eerror "nodejs-mod and nodejs-pack eclass are incompatible"
 fi
 
 RDEPEND+=" net-libs/nodejs"
@@ -38,15 +37,13 @@ RDEPEND+=" net-libs/nodejs"
 # Upstream does not support stripping go packages
 RESTRICT="test strip"
 
-EXPORT_FUNCTIONS src_compile src_install src_prepare
-
 # @FUNCTION: nodejs-pack_src_prepare
 # @DESCRIPTION:
 # Nodejs preparation phase
 nodejs-pack_src_prepare() {
     debug-print-function "${FUNCNAME}" "${@}"
 
-    if ! nodejs_has_package && ! test -e package.json ; then
+    if ! nodejs_has_package && ! test -e package.json; then
         eerror "Unable to locate package.json"
         eerror "Consider not inheriting the nodejs-pack eclass."
         die "FATAL: Unable to find package.json"
@@ -77,5 +74,12 @@ nodejs-pack_src_install() {
     enpm --prefix "${ED}"/usr --global \
         install \
         "$(nodejs_package)-$(nodejs_version).tgz" || die "install failed"
+
+    pushd "${ED}/$(_NODEJS_MODULES)" >/dev/null || die
+    nodejs_remove_dev
+    popd >/dev/null || die
 }
+
 fi
+
+EXPORT_FUNCTIONS src_prepare src_compile src_install

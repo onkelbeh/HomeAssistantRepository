@@ -12,7 +12,7 @@ else
 		https://raw.githubusercontent.com/inode64/inode64-overlay/main/dist/${P}-node_modules.tar.xz"
 fi
 
-inherit nodejs nodejs-pack systemd tmpfiles
+inherit nodejs-mod systemd tmpfiles
 
 DESCRIPTION="It bridges events and allows you to control your Zigbee devices via MQTT"
 HOMEPAGE="https://www.zigbee2mqtt.io/"
@@ -38,8 +38,7 @@ src_install() {
 	echo -e "  pan_id: GENERATE" >>data/configuration.yaml
 	echo -e "  log_directory: /var/log/${PN}" >>data/configuration.yaml
 
-	enpm_clean
-	enpm_install
+	nodejs-mod_src_install
 
 	keepdir /var/log/${PN}
 
