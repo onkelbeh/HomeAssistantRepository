@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">youtube_dl</remote-id>
+    <remote-id type="github">ytdl-org/youtube-dl</remote-id>
+    <maintainer status="unknown">
+      <email>dstftw@gmail.com</email>
+      <name>Sergey M.</name>
+    </maintainer>
+  </upstream>
+  <use>
+    <flag name="yt-dlp">Use <pkg>net-misc/yt-dlp</pkg> to provide the command and only install the python module</flag>
+  </use>
+</pkgmetadata>
