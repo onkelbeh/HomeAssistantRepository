@@ -573,12 +573,12 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1732 Ebuilds in total, 1725 of them have in total 1729 (34 different) licenses assigned.
+There are 1726 Ebuilds in total, 1719 of them have in total 1723 (34 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
 |MIT|1010|
-|Apache-2.0|378|
+|Apache-2.0|372|
 |GPL-3|106|
 |BSD|91|
 |LGPL-3|23|
@@ -612,9 +612,9 @@ There are 1732 Ebuilds in total, 1725 of them have in total 1729 (34 different) 
 |CC0-1.0|1|
 |GPL-2+|1|
 
-(Last counted: 18/02/2023)
+(Last counted: 26/02/2023)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 18/02/2023
+Last updated: 26/02/2023
