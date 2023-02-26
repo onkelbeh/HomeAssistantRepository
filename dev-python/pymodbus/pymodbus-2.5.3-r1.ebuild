@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -22,7 +22,7 @@ RESTRICT="!test? ( test )"
 RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 	>=dev-python/six-1.15.0[${PYTHON_USEDEP}]
 	>=dev-python/typer-0.6.1[${PYTHON_USEDEP}]
-	>=dev-python/prompt_toolkit-3.0.8[${PYTHON_USEDEP}]
+	>=dev-python/prompt-toolkit-3.0.8[${PYTHON_USEDEP}]
 	datastore? (
 		>=dev-python/redis-2.0.16[${PYTHON_USEDEP}]
 		>=dev-python/sqlalchemy-1.1.15[${PYTHON_USEDEP}]

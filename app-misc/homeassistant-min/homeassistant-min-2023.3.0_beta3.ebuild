@@ -66,7 +66,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2021.5.30[${PYTHON_USEDEP}]
 	~dev-python/ciso8601-2.3.0[${PYTHON_USEDEP}]
-	~dev-python/cryptography-39.0.0[${PYTHON_USEDEP}]
+	~dev-python/cryptography-39.0.1[${PYTHON_USEDEP}]
 	~dev-python/dbus-fast-1.84.0[${PYTHON_USEDEP}]
 	~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-reflection-1.51.1[${PYTHON_USEDEP}]
@@ -90,7 +90,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/matplotlib-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/multidict-6.0.2[${PYTHON_USEDEP}]
 	~dev-python/numpy-1.23.2[${PYTHON_USEDEP}]
-	~dev-python/orjson-3.8.5[${PYTHON_USEDEP}]
+	~dev-python/orjson-3.8.6[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/pandas-1.4.3[${PYTHON_USEDEP}]
 	~dev-python/pillow-9.4.0[${PYTHON_USEDEP}]
@@ -155,7 +155,7 @@ RDEPEND="${RDEPEND}
 	dwd_weather_warnings? ( ~dev-python/dwdwfsapi-1.0.5[${PYTHON_USEDEP}] )
 	ecowitt? ( ~dev-python/aioecowitt-2023.1.0[${PYTHON_USEDEP}] )
 	enigma2? ( ~dev-python/openwebifpy-3.2.7[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-13.1.0[${PYTHON_USEDEP}] ~dev-python/esphome-dashboard-api-1.2.3[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-13.3.1[${PYTHON_USEDEP}] ~dev-python/esphome-dashboard-api-1.2.3[${PYTHON_USEDEP}] )
 	ffmpeg? ( ~dev-python/ha-ffmpeg-3.0.2[${PYTHON_USEDEP}] )
 	file? ( ~dev-python/file-read-backwards-2.0.0[${PYTHON_USEDEP}] )
 	forecast_solar? ( ~dev-python/forecast-solar-2.2.0[${PYTHON_USEDEP}] )
@@ -181,7 +181,7 @@ RDEPEND="${RDEPEND}
 	mysensors? ( ~dev-python/pymysensors-0.24.0[${PYTHON_USEDEP}] )
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	notify_events? ( ~dev-python/notify-events-1.0.4[${PYTHON_USEDEP}] )
-	octoprint? ( ~dev-python/pyoctoprintapi-0.1.9[${PYTHON_USEDEP}] )
+	octoprint? ( ~dev-python/pyoctoprintapi-0.1.11[${PYTHON_USEDEP}] )
 	onvif? ( ~dev-python/onvif-zeep-async-1.2.1[${PYTHON_USEDEP}] ~dev-python/WSDiscovery-2.0.0[${PYTHON_USEDEP}] )
 	otp? ( ~dev-python/pyotp-2.8.0[${PYTHON_USEDEP}] )
 	owntracks? ( ~dev-python/pynacl-1.5.0[${PYTHON_USEDEP}] )
