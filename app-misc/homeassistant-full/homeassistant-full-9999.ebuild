@@ -90,7 +90,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/matplotlib-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/multidict-6.0.2[${PYTHON_USEDEP}]
 	~dev-python/numpy-1.23.2[${PYTHON_USEDEP}]
-	~dev-python/orjson-3.8.5[${PYTHON_USEDEP}]
+	~dev-python/orjson-3.8.6[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/pandas-1.4.3[${PYTHON_USEDEP}]
 	~dev-python/pillow-9.4.0[${PYTHON_USEDEP}]
@@ -153,7 +153,7 @@ RDEPEND="${RDEPEND}
 	airvisual? ( ~dev-python/pyairvisual-2022.12.1[${PYTHON_USEDEP}] )
 	airvisual_pro? ( ~dev-python/pyairvisual-2022.12.1[${PYTHON_USEDEP}] )
 	airzone? ( ~dev-python/aioairzone-0.5.2[${PYTHON_USEDEP}] )
-	aladdin_connect? ( ~dev-python/AIOAladdinConnect-0.1.55[${PYTHON_USEDEP}] )
+	aladdin_connect? ( ~dev-python/AIOAladdinConnect-0.1.56[${PYTHON_USEDEP}] )
 	alarmdecoder? ( ~dev-python/adext-0.4.2[${PYTHON_USEDEP}] )
 	almond? ( ~dev-python/pyalmond-0.0.2[${PYTHON_USEDEP}] )
 	alpha_vantage? ( ~dev-python/alpha-vantage-2.3.1[${PYTHON_USEDEP}] )
@@ -564,7 +564,7 @@ RDEPEND="${RDEPEND}
 	mcp23017? ( ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] ~dev-python/adafruit-circuitpython-mcp230xx-2.2.2[${PYTHON_USEDEP}] )
 	meater? ( ~dev-python/meater-python-0.0.8[${PYTHON_USEDEP}] )
 	mediaroom? ( ~dev-python/pymediaroom-0.6.5.4[${PYTHON_USEDEP}] )
-	media_extractor? ( ~net-misc/youtube-dl-2021.12.17 )
+	media_extractor? ( ~dev-python/youtube-dl-2021.12.17[${PYTHON_USEDEP}] )
 	melcloud? ( ~dev-python/pymelcloud-2.5.8[${PYTHON_USEDEP}] )
 	melissa? ( ~dev-python/py-melissa-climate-2.1.4[${PYTHON_USEDEP}] )
 	melnor? ( ~dev-python/melnor-bluetooth-0.0.20[${PYTHON_USEDEP}] )
@@ -652,7 +652,7 @@ RDEPEND="${RDEPEND}
 	nzbget? ( ~dev-python/pynzbgetapi-0.2.0[${PYTHON_USEDEP}] )
 	oasa_telematics? ( ~dev-python/oasatelematics-0.3[${PYTHON_USEDEP}] )
 	obihai? ( ~dev-python/pyobihai-1.3.2[${PYTHON_USEDEP}] )
-	octoprint? ( ~dev-python/pyoctoprintapi-0.1.9[${PYTHON_USEDEP}] )
+	octoprint? ( ~dev-python/pyoctoprintapi-0.1.11[${PYTHON_USEDEP}] )
 	oem? ( ~dev-python/oemthermostat-1.1.1[${PYTHON_USEDEP}] )
 	ohmconnect? ( ~dev-python/defusedxml-0.7.1[${PYTHON_USEDEP}] )
 	ombi? ( ~dev-python/pyombi-0.1.10[${PYTHON_USEDEP}] )
@@ -669,7 +669,7 @@ RDEPEND="${RDEPEND}
 	openhome? ( ~dev-python/openhomedevice-2.0.2[${PYTHON_USEDEP}] )
 	opensensemap? ( ~dev-python/opensensemap-api-0.2.0[${PYTHON_USEDEP}] )
 	opentherm_gw? ( ~dev-python/pyotgw-2.1.3[${PYTHON_USEDEP}] )
-	openuv? ( ~dev-python/pyopenuv-2023.1.0[${PYTHON_USEDEP}] )
+	openuv? ( ~dev-python/pyopenuv-2023.2.0[${PYTHON_USEDEP}] )
 	openweathermap? ( ~dev-python/pyowm-3.2.0[${PYTHON_USEDEP}] )
 	open_meteo? ( ~dev-python/open-meteo-0.2.1[${PYTHON_USEDEP}] )
 	opnsense? ( ~dev-python/pyopnsense-0.2.0[${PYTHON_USEDEP}] )
@@ -752,7 +752,7 @@ RDEPEND="${RDEPEND}
 	remember_the_milk? ( ~dev-python/RtmAPI-0.7.2[${PYTHON_USEDEP}] ~dev-python/httplib2-0.20.4[${PYTHON_USEDEP}] )
 	remote_rpi_gpio? ( ~dev-python/gpiozero-1.6.2[${PYTHON_USEDEP}] ~dev-python/pigpio-1.78[${PYTHON_USEDEP}] )
 	renault? ( ~dev-python/renault-api-0.1.11[${PYTHON_USEDEP}] )
-	reolink? ( ~dev-python/reolink-aio-0.4.0[${PYTHON_USEDEP}] )
+	reolink? ( ~dev-python/reolink-aio-0.4.2[${PYTHON_USEDEP}] )
 	repetier? ( ~dev-python/pyrepetierng-0.1.0[${PYTHON_USEDEP}] )
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
 	rflink? ( ~dev-python/rflink-0.0.63[${PYTHON_USEDEP}] )
@@ -907,7 +907,7 @@ RDEPEND="${RDEPEND}
 	thermoworks_smoke? ( ~dev-python/stringcase-1.2.0[${PYTHON_USEDEP}] ~dev-python/thermoworks-smoke-0.1.8[${PYTHON_USEDEP}] )
 	thingspeak? ( ~dev-python/thingspeak-1.0.0[${PYTHON_USEDEP}] )
 	thinkingcleaner? ( ~dev-python/pythinkingcleaner-0.0.3[${PYTHON_USEDEP}] )
-	tibber? ( ~dev-python/pyTibber-0.26.12[${PYTHON_USEDEP}] )
+	tibber? ( ~dev-python/pyTibber-0.26.13[${PYTHON_USEDEP}] )
 	tikteck? ( ~dev-python/tikteck-0.4[${PYTHON_USEDEP}] )
 	tile? ( ~dev-python/pytile-2022.2.0[${PYTHON_USEDEP}] )
 	tilt_ble? ( ~dev-python/tilt-ble-0.2.3[${PYTHON_USEDEP}] )
