@@ -16,7 +16,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
-DOCS=( CHANGELOG.md README.md )
+DOCS="README.md"
 
 RDEPEND=">=dev-python/home-assistant-bluetooth-1.9.2[${PYTHON_USEDEP}]
 	>=dev-python/sensor-state-data-2.13.0[${PYTHON_USEDEP}]
