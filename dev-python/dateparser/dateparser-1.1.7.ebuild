@@ -1,10 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-
+DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{9..11} )
-
 inherit distutils-r1
 
 DESCRIPTION="Date parsing library designed to parse dates from HTML pages"
@@ -24,11 +23,13 @@ RDEPEND="dev-python/python-dateutil
 	dev-python/regex
 	dev-python/tzlocal"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
 	py.test -v -v || die
 }
+
+distutils_enable_tests pytest
