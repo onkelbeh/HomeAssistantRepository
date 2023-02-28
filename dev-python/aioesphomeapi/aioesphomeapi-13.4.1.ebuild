@@ -5,11 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Python API for interacting with ESPHome devices."
 HOMEPAGE="https://github.com/esphome/aioesphomeapi https://esphome.io/ https://pypi.org/project/aioesphomeapi/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="MIT"
 SLOT="0"
@@ -24,7 +24,6 @@ RDEPEND=">=dev-python/protobuf-python-3.19.0[${PYTHON_USEDEP}]
 	>=dev-python/noiseprotocol-0.3.1[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
