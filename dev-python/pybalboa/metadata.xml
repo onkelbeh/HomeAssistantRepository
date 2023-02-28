@@ -9,8 +9,8 @@
     <remote-id type="pypi">pybalboa</remote-id>
     <remote-id type="github">garbled1/pybalboa</remote-id>
     <maintainer status="unknown">
-      <email>root@garbled.net</email>
-      <name>Tim Rightnour, Nathan Spencer</name>
+      <email>natekspencer@gmail.com</email>
+      <name>Nathan Spencer</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
