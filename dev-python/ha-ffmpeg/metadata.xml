@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <maintainer type="project">
     <email>b@edevau.net</email>
@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ha-ffmpeg</remote-id>
-    <remote-id type="github">home-assistant-libs/ha-ffmpeg</remote-id>
+    <remote-id type="github">pvizeli/ha-ffmpeg</remote-id>
     <maintainer status="unknown">
       <email>pvizeli@syshack.ch</email>
       <name>Pascal Vizeli</name>
