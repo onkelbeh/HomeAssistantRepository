@@ -5,11 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="The Home Assistant Intent Language parser"
 HOMEPAGE="http://github.com/home-assistant/hassil https://pypi.org/project/hassil/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -28,11 +28,6 @@ BDEPEND="
 
 python_test() {
 	py.test -v -v || die
-}
-
-src_prepare() {
-	sed -i "s/packages=setuptools.find_packages()/packages=setuptools.find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
-	eapply_user
 }
 
 distutils_enable_tests pytest
