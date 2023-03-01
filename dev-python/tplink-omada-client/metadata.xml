@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">tplink-omada-client</remote-id>
+    <remote-id type="github">MarkGodwin/tplink-omada-api</remote-id>
+    <maintainer status="unknown">
+      <email>author@example.com</email>
+      <name>Mark Godwin</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
