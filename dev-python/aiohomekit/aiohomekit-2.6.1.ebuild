@@ -5,11 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=poetry
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="An asyncio HomeKit client"
 HOMEPAGE="https://github.com/Jc2k/aiohomekit https://pypi.org/project/aiohomekit/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -30,7 +30,6 @@ RDEPEND=">=dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-0.0.3[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/aiohttp[${PYTHON_USEDEP}]
 		dev-python/asynctest[${PYTHON_USEDEP}]
