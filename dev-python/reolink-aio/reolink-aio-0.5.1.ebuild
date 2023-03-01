@@ -5,13 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Reolink NVR/cameras API package"
 HOMEPAGE="https://github.com/starkillerOG/reolink_aio https://pypi.org/project/reolink-aio/"
-MY_PN=${PN//-/_}
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
+SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="MIT"
 SLOT="0"
