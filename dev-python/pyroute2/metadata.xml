@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyroute2</remote-id>
+    <remote-id type="github">svinota/pyroute2</remote-id>
+    <maintainer status="unknown">
+      <email>peter@svinota.eu</email>
+      <name>Peter Saveliev</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
