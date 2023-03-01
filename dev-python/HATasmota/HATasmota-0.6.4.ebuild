@@ -20,14 +20,3 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.12.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
-
-distutils_enable_tests pytest
