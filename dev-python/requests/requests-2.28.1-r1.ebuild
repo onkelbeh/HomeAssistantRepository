@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 # please keep this ebuild at EAPI 7 -- sys-apps/portage dep
-EAPI=7
+EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{9..11} pypy3 )
+PYTHON_COMPAT=( python3_{9..11} )
 PYTHON_REQ_USE="threads(+)"
 
 inherit distutils-r1
@@ -20,7 +20,7 @@ SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="socks5 test-rust"
 
 RDEPEND="
