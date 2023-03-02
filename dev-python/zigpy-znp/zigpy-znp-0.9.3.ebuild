@@ -20,8 +20,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.50.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/zigpy-0.52.0[${PYTHON_USEDEP}]
 	dev-python/async-timeout[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
@@ -33,6 +32,7 @@ BDEPEND="
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-mock[${PYTHON_USEDEP}]
+		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
