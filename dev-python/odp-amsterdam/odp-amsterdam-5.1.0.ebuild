@@ -5,13 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=poetry
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python client providing Open Data information of Amsterdam"
 HOMEPAGE="https://github.com/klaasnicolaas/python-odp-amsterdam https://pypi.org/project/odp-amsterdam/"
-MY_PN=${PN//-/_}
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
+SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="MIT"
 SLOT="0"
@@ -24,8 +22,8 @@ DOCS="README.md"
 RDEPEND=">=dev-python/aiohttp-3.0[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
+		dev-python/aresponses[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
