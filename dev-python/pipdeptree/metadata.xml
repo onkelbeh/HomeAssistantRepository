@@ -9,12 +9,8 @@
     <remote-id type="pypi">pipdeptree</remote-id>
     <remote-id type="github">tox-dev/pipdeptree</remote-id>
     <maintainer status="unknown">
-      <name>Bernat Gabor</name>
       <email>gaborjbernat@gmail.com</email>
-    </maintainer>
-    <maintainer status="unknown">
-      <name>Vineet Naik</name>
-      <email>naikvin@gmail.com</email>
+      <name>Bernát Gábor</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
