@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">insteon-frontend-home-assistant</remote-id>
-    <remote-id type="github">teharris1/insteon-panel</remote-id>
+    <remote-id type="github">home-assistant/frontend</remote-id>
     <maintainer status="unknown">
       <email>pyinsteon@harrisnj.net</email>
       <name>Tom Harris</name>
