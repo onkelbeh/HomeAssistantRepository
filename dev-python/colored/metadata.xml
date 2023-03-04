@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">colored</remote-id>
+    <remote-id type="gitlab">dslackw/colored</remote-id>
+    <maintainer status="unknown">
+      <email>d.zlatanidis@gamil.com</email>
+      <name>dslackw</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
