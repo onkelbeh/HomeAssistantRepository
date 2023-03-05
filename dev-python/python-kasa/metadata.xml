@@ -8,9 +8,5 @@
   <upstream>
     <remote-id type="pypi">python-kasa</remote-id>
     <remote-id type="github">python-kasa/python-kasa</remote-id>
-    <maintainer status="unknown">
-      <email>you@example.com</email>
-      <name>Your Name</name>
-    </maintainer>
   </upstream>
 </pkgmetadata>

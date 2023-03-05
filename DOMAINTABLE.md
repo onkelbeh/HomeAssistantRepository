@@ -161,6 +161,7 @@
 |dominos|dominos integration allows you to order Dominos Pizza|N|N|Y|0.59|
 |doods| image processing integration allows you to detect and recognize objects|N|N|Y|0.100|
 |doorbird|The doorbird implementation allows you to integrate your DoorBird device|N|Y|Y|0.54|
+|dormakaba_dkey|Integrates Dormakaba dKey Bluetooth Low Energy connected locks|N|N|Y|2023.3.0b3|
 |dovado|The dovado integration manages communication with the Dovado router|N|N|Y|0.87|
 |dsmr|Dutch Smart Meters which comply to DSMR (Dutch Smart Meter Requirements)|N|N|Y|0.34|
 |dunehd|control a Dune HD media player|N|Y|Y|0.34|
@@ -791,6 +792,7 @@
 |touchline|lets you control ROTH Touchline floor heating thermostats|N|N|Y|0.61|
 |tplink|control your TP-Link Smart Home Devices|Y|Y|Y|0.89|
 |tplink_lte|allows you to observe and control TP-Link LTE routers|N|N|Y|0.83|
+|tplink_omada|allows you to control your TP-Link Omada SDN Devices|Y|N|Y|2023.3.0b3|
 |traccar|uses GPS for tracking and has support for over 1500 different types of devices|N|N|Y|0.83|
 |trackr|trackr platform allows you to detect presence using TrackR devices|N|N|Y||
 |tractive|Tractive is an Austrian company develops real-time location trackers for pets|N|N|Y|2021.9.0b1|

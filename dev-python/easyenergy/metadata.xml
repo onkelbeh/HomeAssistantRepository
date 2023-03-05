@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">easyenergy</remote-id>
+    <remote-id type="github">klaasnicolaas/python-easyenergy</remote-id>
+    <maintainer status="unknown">
+      <email>hello@student-techlife.com</email>
+      <name>Klaas Schoute</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

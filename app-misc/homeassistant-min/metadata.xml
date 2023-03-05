@@ -97,6 +97,7 @@
     <flag name="tile">API for Tile Bluetooth trackers</flag>
     <flag name="tomorrowio">obtain weather, air quality, pollen, and fire information fro tomorrow.io</flag>
     <flag name="tplink">control your TP-Link Smart Home Devices</flag>
+    <flag name="tplink_omada">allows you to control your TP-Link Omada SDN Devices</flag>
     <flag name="upnp">support UPnP/Internet Gateway Device (IGD) Protocol</flag>
     <flag name="utility_meter">integration provides functionality to track consumptions of various utilities</flag>
     <flag name="version">display the current Home Assistant versions</flag>
