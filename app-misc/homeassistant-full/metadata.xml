@@ -178,6 +178,7 @@
     <flag name="dominos">dominos integration allows you to order Dominos Pizza</flag>
     <flag name="doods"> image processing integration allows you to detect and recognize objects</flag>
     <flag name="doorbird">The doorbird implementation allows you to integrate your DoorBird device</flag>
+    <flag name="dormakaba_dkey">Integrates Dormakaba dKey Bluetooth Low Energy connected locks</flag>
     <flag name="dovado">The dovado integration manages communication with the Dovado router</flag>
     <flag name="dsmr">Dutch Smart Meters which comply to DSMR (Dutch Smart Meter Requirements)</flag>
     <flag name="dunehd">control a Dune HD media player</flag>
@@ -808,6 +809,7 @@
     <flag name="touchline">lets you control ROTH Touchline floor heating thermostats</flag>
     <flag name="tplink">control your TP-Link Smart Home Devices</flag>
     <flag name="tplink_lte">allows you to observe and control TP-Link LTE routers</flag>
+    <flag name="tplink_omada">allows you to control your TP-Link Omada SDN Devices</flag>
     <flag name="traccar">uses GPS for tracking and has support for over 1500 different types of devices</flag>
     <flag name="trackr">trackr platform allows you to detect presence using TrackR devices</flag>
     <flag name="tractive">Tractive is an Austrian company develops real-time location trackers for pets</flag>
