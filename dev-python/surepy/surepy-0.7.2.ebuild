@@ -26,7 +26,7 @@ RDEPEND=">=dev-python/async-timeout-3.0.1[${PYTHON_USEDEP}]
 	>=dev-python/rich-10.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	dev-python/setuptools_scm[${PYTHON_USEDEP}]
+	dev-python/setuptools-scm[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
