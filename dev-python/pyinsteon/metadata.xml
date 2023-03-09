@@ -10,7 +10,7 @@
     <remote-id type="github">pyinsteon/pyinsteon</remote-id>
     <maintainer status="unknown">
       <email>pyinsteon@harrisnj.net</email>
-      <name>The pyinsteon Development Team</name>
+      <name>The pyinsteon authors</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
