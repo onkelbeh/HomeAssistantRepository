@@ -77,7 +77,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/hass-nabucasa-0.61.0[${PYTHON_USEDEP}]
 	~dev-python/hassil-1.0.6[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.9.3[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20230302.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20230306.0[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-intents-2023.2.28[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.16.3[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
@@ -113,7 +113,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/regex-2021.8.28[${PYTHON_USEDEP}]
 	~dev-python/requests-2.28.2[${PYTHON_USEDEP}]
 	~net-analyzer/scapy-2.5.0
-	~dev-python/sqlalchemy-2.0.4[${PYTHON_USEDEP}]
+	~dev-python/sqlalchemy-2.0.5_p1[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.5.0[${PYTHON_USEDEP}]
 	<dev-python/typing-extensions-5.0[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '~dev-python/uamqp-1.6.0[${PYTHON_USEDEP}]' python3_{9..10})
@@ -341,7 +341,7 @@ RDEPEND="${RDEPEND}
 	epsonworkforce? ( ~dev-python/epsonprinter-0.0.9[${PYTHON_USEDEP}] )
 	eq3btsmart? ( ~dev-python/construct-2.10.56[${PYTHON_USEDEP}] ~dev-python/python-eq3bt-0.2[${PYTHON_USEDEP}] )
 	escea? ( ~dev-python/pescea-1.0.12[${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-13.4.1[${PYTHON_USEDEP}] ~dev-python/esphome-dashboard-api-1.2.3[${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-13.4.2[${PYTHON_USEDEP}] ~dev-python/esphome-dashboard-api-1.2.3[${PYTHON_USEDEP}] )
 	essent? ( ~dev-python/PyEssent-0.14[${PYTHON_USEDEP}] )
 	etherscan? ( ~dev-python/python-etherscan-api-0.0.3[${PYTHON_USEDEP}] )
 	eufy? ( ~dev-python/lakeside-0.12[${PYTHON_USEDEP}] )
@@ -354,7 +354,7 @@ RDEPEND="${RDEPEND}
 	fastdotcom? ( ~dev-python/fastdotcom-0.0.3[${PYTHON_USEDEP}] )
 	feedreader? ( ~dev-python/feedparser-6.0.10[${PYTHON_USEDEP}] )
 	ffmpeg? ( ~dev-python/ha-ffmpeg-3.1.0[${PYTHON_USEDEP}] )
-	fibaro? ( ~dev-python/pyfibaro-0.6.8[${PYTHON_USEDEP}] )
+	fibaro? ( ~dev-python/pyfibaro-0.6.9[${PYTHON_USEDEP}] )
 	fido? ( ~dev-python/pyfido-2.1.2[${PYTHON_USEDEP}] )
 	file? ( ~dev-python/file-read-backwards-2.0.0[${PYTHON_USEDEP}] )
 	file_upload? ( ~dev-python/janus-1.0.0[${PYTHON_USEDEP}] )
@@ -481,7 +481,7 @@ RDEPEND="${RDEPEND}
 	incomfort? ( ~dev-python/incomfort-client-0.5.0[${PYTHON_USEDEP}] )
 	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
 	inkbird? ( ~dev-python/inkbird-ble-0.5.6[${PYTHON_USEDEP}] )
-	insteon? ( ~dev-python/pyinsteon-1.3.3[${PYTHON_USEDEP}] ~dev-python/insteon-frontend-home-assistant-0.3.2[${PYTHON_USEDEP}] )
+	insteon? ( ~dev-python/pyinsteon-1.3.4[${PYTHON_USEDEP}] ~dev-python/insteon-frontend-home-assistant-0.3.3[${PYTHON_USEDEP}] )
 	intellifire? ( ~dev-python/intellifire4py-2.2.2[${PYTHON_USEDEP}] )
 	intesishome? ( ~dev-python/pyintesishome-1.8.0[${PYTHON_USEDEP}] )
 	iota? ( ~dev-python/PyOTA-2.0.5[${PYTHON_USEDEP}] )
@@ -748,7 +748,7 @@ RDEPEND="${RDEPEND}
 	raspyrfm? ( ~dev-python/raspyrfm-client-1.2.8[${PYTHON_USEDEP}] )
 	rdw? ( ~dev-python/vehicle-0.4.0[${PYTHON_USEDEP}] )
 	recollect_waste? ( ~dev-python/aiorecollect-1.0.8[${PYTHON_USEDEP}] )
-	recorder? ( ~dev-python/sqlalchemy-2.0.4[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] )
+	recorder? ( ~dev-python/sqlalchemy-2.0.5_p1[${PYTHON_USEDEP}] ~dev-python/fnvhash-0.1.0[${PYTHON_USEDEP}] )
 	recswitch? ( ~dev-python/pyrecswitch-1.0.2[${PYTHON_USEDEP}] )
 	reddit? ( ~dev-python/praw-7.5.0[${PYTHON_USEDEP}] )
 	rejseplanen? ( ~dev-python/rjpl-0.3.6[${PYTHON_USEDEP}] )
@@ -836,7 +836,7 @@ RDEPEND="${RDEPEND}
 	smart_meter_texas? ( ~dev-python/smart-meter-texas-0.4.7[${PYTHON_USEDEP}] )
 	smhi? ( ~dev-python/smhi-pkg-1.0.16[${PYTHON_USEDEP}] )
 	sms? ( ~dev-python/python-gammu-3.2.4[${PYTHON_USEDEP}] )
-	snapcast? ( ~dev-python/snapcast-2.3.0[${PYTHON_USEDEP}] )
+	snapcast? ( ~dev-python/snapcast-2.3.2[${PYTHON_USEDEP}] )
 	snmp? ( ~dev-python/pysnmplib-5.0.20[${PYTHON_USEDEP}] )
 	snooz? ( ~dev-python/pysnooz-0.8.3[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
@@ -857,7 +857,7 @@ RDEPEND="${RDEPEND}
 	spider? ( ~dev-python/spiderpy-1.6.1[${PYTHON_USEDEP}] )
 	splunk? ( ~dev-python/hass-splunk-0.1.1[${PYTHON_USEDEP}] )
 	spotify? ( ~dev-python/spotipy-2.22.1[${PYTHON_USEDEP}] )
-	sql? ( ~dev-python/sqlalchemy-2.0.4[${PYTHON_USEDEP}] )
+	sql? ( ~dev-python/sqlalchemy-2.0.5_p1[${PYTHON_USEDEP}] )
 	squeezebox? ( ~dev-python/pysqueezebox-0.6.1[${PYTHON_USEDEP}] )
 	srp_energy? ( ~dev-python/srpenergy-1.3.6[${PYTHON_USEDEP}] )
 	ssdp? ( ~dev-python/async-upnp-client-0.33.1[${PYTHON_USEDEP}] )
