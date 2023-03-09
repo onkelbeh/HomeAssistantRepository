@@ -5,11 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="AMQP 1.0 Client Library for Python"
 HOMEPAGE="https://github.com/Azure/azure-uamqp-python https://pypi.org/project/uamqp/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,6 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
+RDEPEND="<dev-libs/openssl-3"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
