@@ -34,8 +34,8 @@ case ${EAPI} in
 *) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
 esac
 
-if [[ -z ${_NODEJS-MOD_ECLASS} ]]; then
-_NODEJS-MOD_ECLASS=1
+if [[ -z ${_NODEJS_MOD_ECLASS} ]]; then
+_NODEJS_MOD_ECLASS=1
 
 inherit nodejs
 
