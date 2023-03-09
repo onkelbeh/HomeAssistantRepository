@@ -5,11 +5,12 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
-DESCRIPTION="AMQP 1.0 Client Library for Python"
-HOMEPAGE="https://github.com/Azure/azure-uamqp-python https://pypi.org/project/uamqp/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+DESCRIPTION="The Insteon frontend for Home Assistant"
+HOMEPAGE="https://github.com/teharris1/insteon-panel https://pypi.org/project/insteon-frontend-home-assistant/"
+SRC_URI=$(pypi_sdist_url --no-normalize)
+S=${WORKDIR}/${PN}-${PV}
 
 LICENSE="MIT"
 SLOT="0"
@@ -17,10 +18,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

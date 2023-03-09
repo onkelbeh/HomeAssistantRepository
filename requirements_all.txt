@@ -47,7 +47,7 @@ aioeafm==0.1.2
 aioeagle==1.1.0
 aioecowitt==2023.1.0
 aioemonitor==1.0.5
-aioesphomeapi==13.4.1
+aioesphomeapi==13.4.2
 aiofiles==22.1.0
 aioflo==2021.11.0
 aioftp==0.21.3
@@ -160,7 +160,7 @@ awk==4
 axis==47
 backoff==2.2.1
 baidu-aip==1.6.6.0
-baselayout==2.9
+baselayout==2.13
 batinfo==0.4.2
 bcrypt==4.0.1
 beacontools==1.2.3
@@ -210,7 +210,7 @@ btsmarthub-devicelist==0.2.3
 btsocket==0.2.0
 buienradar==1.0.5
 bx-py-utils==75
-c-ares==1.18.1
+c-ares==1.19.0
 ca-certificates==20211016.3.86
 cachetools==5.3.0
 casttube==0.2.1
@@ -291,7 +291,7 @@ demjson3==3.0.5
 deprecated==1.2.13
 devolo-home-control-api==0.18.2
 devolo-plc-api==1.2.0
-dialog==1.3.20220728
+dialog==1.3.20221229
 dicttoxml2==2.1.0
 dicttoxml==1.7.4
 directv==0.4.0
@@ -364,7 +364,7 @@ flask==2.2.2
 flipr-api==1.4.4
 flux-led==0.28.35
 fnvhash==0.1.0
-fontconfig==2.14.0
+fontconfig==2.14.2
 fonttools==4.38.0
 foobot_async==1.0.0
 forecast-solar==2.2.0
@@ -467,7 +467,7 @@ hole==0.8.0
 holidays==0.18
 home-assistant-bluetooth==1.9.3
 home-assistant-cli==9999
-home-assistant-frontend==20230302.0
+home-assistant-frontend==20230306.0
 home-assistant-intents==2023.2.28
 homeassistant
 homeconnect==0.7.2
@@ -513,7 +513,7 @@ inflection==0.5.1
 influxdb-client==1.24.0
 influxdb==5.3.1
 inkbird-ble==0.5.6
-insteon-frontend-home-assistant==0.3.2
+insteon-frontend-home-assistant==0.3.3
 intelhex==2.3.0
 intellifire4py==2.2.2
 iotawattpy==0.1.0
@@ -586,7 +586,7 @@ libjpeg-turbo==2.1.4
 liblinear==243
 libltdl==2.4.7
 libpaper==2.0.4
-libpcap==1.10.1
+libpcap==1.10.3
 libpcre2==10.42
 libpcre==8.45
 libpng==1.6.39
@@ -855,7 +855,7 @@ pycups==1.9.73
 pycurl==7.45.2
 pydaikin==2.9.0
 pydanfossair==0.1.0
-pydantic==1.10.4
+pydantic==1.10.5
 pydeconz==108
 pydelijn==1.0.0
 pydexcom==0.2.3
@@ -874,7 +874,7 @@ PyEssent==0.14
 pyeverlights==0.1.0
 pyevilgenius==2.0.0
 pyezviz==0.2.0.9
-pyfibaro==0.6.8
+pyfibaro==0.6.9
 pyfido==2.1.2
 pyfireservicerota==0.0.43
 pyflexit==0.3
@@ -904,7 +904,7 @@ pyhumps==3.5.0
 pyialarm==2.2.0
 pyialarmxr-homeassistant==1.0.18
 pyicloud==1.0.0
-pyinsteon==1.3.3
+pyinsteon==1.3.4
 pyintesishome==1.8.0
 pyipma==3.0.6
 pyipp==0.12.1
@@ -1228,10 +1228,10 @@ smart-meter-texas==0.4.7
 SmartHab==0.21
 smbus-cffi==0.5.1
 smhi-pkg==1.0.16
-snapcast==2.3.0
+snapcast==2.3.2
 sniffio==1.3.0
 snitun==0.31.0
-socat==1.7.4.3
+socat==1.7.4.4
 soco==0.29.1
 solaredge-local==0.2.0
 solaredge==0.0.2
@@ -1242,7 +1242,7 @@ speak2mary==1.4.0
 speedtest-cli==2.1.3
 spiderpy==1.6.1
 spidev==3.5
-sqlalchemy==1.4.46
+sqlalchemy==2.0.5_p1
 srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
@@ -1265,9 +1265,9 @@ surepy==0.8.0
 swisshydrodata==0.1.0
 synology-srm==0.2.0
 systembridgeconnector==3.4.4
-systemd-utils==251.10
-systemd==252.4
-sysvinit==3.05
+systemd-utils==252.7
+systemd==252.7
+sysvinit==3.06
 tabulate==0.9.0
 tahoma-api==0.0.16
 tailer==0.4.1
@@ -1315,7 +1315,7 @@ twisted==22.10.0
 twitchAPI==2.5.2
 TwitterAPI==2.7.12
 typer==0.7.0
-typing-extensions==4.4.0
+typing-extensions==4.5.0
 typing-inspect==0.7.1
 tzdata==2022.2
 tzlocal==4.2
@@ -1413,7 +1413,7 @@ zamg==0.2.2
 zbar==0.23.90
 zeep==4.2.1
 zengge==0.2
-zeroconf==0.39.4
+zeroconf==0.47.3
 zeversolar==0.3.1
 zha-quirks==0.0.93
 zhong-hong-hvac==1.0.9

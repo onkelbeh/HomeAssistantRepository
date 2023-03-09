@@ -33,7 +33,7 @@ RDEPEND="
 	>=dev-python/tomli-1.0.0[${PYTHON_USEDEP}]
 "
 BDEPEND="
-	>=dev-python/setuptools_scm-6.2.3[${PYTHON_USEDEP}]
+	>=dev-python/setuptools-scm-6.2.3[${PYTHON_USEDEP}]
 	test? (
 		${RDEPEND}
 		$(python_gen_cond_dep '
