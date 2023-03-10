@@ -804,7 +804,7 @@
 |transport_nsw|gets next departure from Transport NSW stop for bus, train, light rail or ferry|N|N|Y|0.81|
 |travisci|integrate the test build results reported by Travis-CI working|N|N|Y|0.56|
 |trend|sensors which show the trend of numeric state orstate_attributes|N|N|Y|0.28|
-|tts|Audio metadata tag reader and writer implemented in pure Python|N|N|Y|0.35|
+|tts|Audio metadata tag reader and writer implemented in pure Python|N|Y|Y|0.35|
 |tuya|integrate all Tuya Smart related platforms|N|Y|Y|0.74|
 |twentemilieu|allows you to track the next scheduled waste pickups by Twente Milieu|N|N|Y|0.97|
 |twilio|enables the sending of notifications via SMS and the creation of calls|N|N|Y|0.40|

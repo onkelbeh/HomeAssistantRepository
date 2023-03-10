@@ -1,11 +1,11 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1 readme.gentoo-r1 systemd
+inherit distutils-r1 pypi readme.gentoo-r1 systemd
 
 MY_PN=homeassistant
 
@@ -17,8 +17,8 @@ if [[ ${PV} == *9999* ]]; then
 else
 	MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
-	SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
-	S="${WORKDIR}/core-${MY_PV}"
+	SRC_URI="$(pypi_sdist_url homeassistant)"
+	S="${WORKDIR}/${MY_PN}-${PV}"
 fi
 
 DESCRIPTION="Open-source home automation platform running on Python."
@@ -273,8 +273,6 @@ logging is to: /var/log/${MY_PN}/{server,errors,stdout}.log
 The sqlite db is by default in: /etc/${MY_PN}
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
-
-S="${WORKDIR}/core-${MY_PV}"
 
 DOCS="README.rst"
 

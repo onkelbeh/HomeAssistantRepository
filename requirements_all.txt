@@ -211,7 +211,7 @@ btsocket==0.2.0
 buienradar==1.0.5
 bx-py-utils==75
 c-ares==1.19.0
-ca-certificates==20211016.3.86
+ca-certificates==20211016.3.87
 cachetools==5.3.0
 casttube==0.2.1
 cbor2==5.4.6
@@ -269,7 +269,6 @@ cssselect==1.2.0
 cups==2.4.2
 curl==7.87.0
 cycler==0.11.0
-c_rehash==1.7
 d2to1==0.2.12_p1
 dacite==1.6.0
 datadog==0.15.0

@@ -269,6 +269,7 @@
     <flag name="totalconnect">provides connectivity with the Honeywell TotalConnect alarm systems</flag>
     <flag name="tplink">control your TP-Link Smart Home Devices</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
+    <flag name="tts">Audio metadata tag reader and writer implemented in pure Python</flag>
     <flag name="tuya">integrate all Tuya Smart related platforms</flag>
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="unifi_direct">detect presence by looking at devices connected to a UniFi AP</flag>

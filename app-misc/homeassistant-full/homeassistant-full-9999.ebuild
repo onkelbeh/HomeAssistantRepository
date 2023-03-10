@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -1080,8 +1080,6 @@ logging is to: /var/log/${MY_PN}/{server,errors,stdout}.log
 The sqlite db is by default in: /etc/${MY_PN}
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
-
-S="${WORKDIR}/core-${MY_PV}"
 
 DOCS="README.rst"
 
