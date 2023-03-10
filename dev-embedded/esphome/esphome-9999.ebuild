@@ -1,8 +1,8 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-
+DISTUTILS_USE_PEP517=setuptools
 DISTUTILS_SINGLE_IMPL=1
 PYTHON_COMPAT=( python3_{9..11} )
 
@@ -18,7 +18,7 @@ else
 	MY_PV=${PV/_beta/b}
 	SRC_URI="https://github.com/${PN}/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.gh.tar.gz"
 	S="${WORKDIR}/${MY_P}/"
-KEYWORDS="amd64 arm arm64 x86"
+	KEYWORDS="amd64 arm arm64 x86"
 fi
 
 DESCRIPTION="Make creating custom firmwares for ESP32/ESP8266 super easy."
@@ -39,10 +39,10 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 		~dev-python/tzlocal-4.2[${PYTHON_USEDEP}]
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-		~dev-embedded/platformio-6.1.5[${PYTHON_SINGLE_USEDEP}]
-		~dev-embedded/esptool-3.3.1[${PYTHON_USEDEP}]
+		~dev-embedded/platformio-6.1.6[${PYTHON_SINGLE_USEDEP}]
+		~dev-embedded/esptool-4.5.1[${PYTHON_USEDEP}]
 		~dev-python/click-8.1.3[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20221109.0[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20230214.0[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
 		~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
