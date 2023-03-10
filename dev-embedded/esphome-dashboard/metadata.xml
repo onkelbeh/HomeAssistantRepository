@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">esphome-dashboard</remote-id>
+    <remote-id type="github">esphome/dashboard</remote-id>
     <maintainer status="unknown">
       <email>hello@nabucasa.com</email>
       <name>Nabu Casa</name>
