@@ -7,9 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">esptool</remote-id>
-    <maintainer status="unknown">
-      <email>angus@espressif.com</email>
-      <name>Fredrik Ahlberg (themadinventor) &amp; Angus Gratton (projectgus)</name>
-    </maintainer>
+    <remote-id type="github">espressif/esptool</remote-id>
   </upstream>
 </pkgmetadata>
