@@ -792,7 +792,7 @@
 |touchline|lets you control ROTH Touchline floor heating thermostats|N|N|Y|0.61|
 |tplink|control your TP-Link Smart Home Devices|Y|Y|Y|0.89|
 |tplink_lte|allows you to observe and control TP-Link LTE routers|N|N|Y|0.83|
-|tplink_omada|allows you to control your TP-Link Omada SDN Devices|Y|N|Y|2023.3.0b3|
+|tplink_omada|allows you to control your TP-Link Omada SDN Devices|N|N|Y|2023.3.0b3|
 |traccar|uses GPS for tracking and has support for over 1500 different types of devices|N|N|Y|0.83|
 |trackr|trackr platform allows you to detect presence using TrackR devices|N|N|Y||
 |tractive|Tractive is an Austrian company develops real-time location trackers for pets|N|N|Y|2021.9.0b1|

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">importlib-resources</remote-id>
+    <remote-id type="github">python/importlib_resources</remote-id>
+    <maintainer status="unknown">
+      <email>barry@python.org</email>
+      <name>Barry Warsaw</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
