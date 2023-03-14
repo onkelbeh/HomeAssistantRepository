@@ -77,7 +77,7 @@ aiooncue==0.3.4
 aiopulse==0.4.3
 aiopurpleair==2022.12.1
 aiopvapi==2.0.4
-aiopvpc==4.0.1
+aiopvpc==4.1.0
 aiopyarr==22.11.0
 aioqsw==0.3.2
 aiorecollect==1.0.8
@@ -129,6 +129,7 @@ arcam-fmj==1.2.1
 argcomplete==2.0.0
 arris-tg2492lg==1.2.1
 arrow==1.2.3
+asgiref==3.6.0
 asmog==0.0.6
 asterisk_mbox==0.5.0
 astral==2.2
@@ -166,11 +167,11 @@ bcrypt==4.0.1
 beacontools==1.2.3
 beautifulsoup4==4.11.2
 beewi-smartclim==0.0.10
-bellows==0.34.9
+bellows==0.34.10
 bidict==0.22.0
 bimmer-connected==0.12.1
-bitarray==2.6.2
-bitstring==3.1.9
+bitarray==2.7.3
+bitstring==4.0.1
 bizkaibus==0.1.1
 bleach==6.0.0
 bleak-retry-connector==2.13.0
@@ -277,6 +278,7 @@ dateparser==1.1.7
 dbus-fast==1.84.1
 dbus==1.15.2
 debianutils==5.7
+debugpy==1.6.6
 decora-wifi==1.4
 decora==0.6
 decorator==5.1.1
@@ -334,9 +336,9 @@ epson-projector==0.5.0
 epsonprinter==0.0.9
 esphome
 esphome-dashboard-api==1.2.3
-esphome-dashboard==20221007.0
+esphome-dashboard==20230214.0
 esprima==4.0.1
-esptool==3.3.1
+esptool==4.4
 eternalegypt==0.0.12
 eudev==3.2.11
 evdev==1.4.0
@@ -382,6 +384,7 @@ garminconnect-ha==0.1.6
 gcal-sync==4.1.2
 gcloud==0.18.3
 gd==2.3.3
+gdb==12.1
 geniushub-client==0.7.0
 gentoo-functions==0.17
 geocachingapi==0.2.1
@@ -503,7 +506,7 @@ iglo==1.2.7
 ihcsdk==2.7.6
 imageio==2.25.0
 imagemagick-tools==0
-imagemagick==7.1.0.48
+imagemagick==7.1.0.62
 importlib_metadata==6.0.0
 incomfort-client==0.5.0
 incremental==22.10.0
@@ -658,6 +661,7 @@ mopeka-iot-ble==0.4.1
 more-itertools==9.0.0
 motionblinds==0.6.17
 motioneye-client==0.3.14
+mpfr==4.2.0
 ms-cv==0.1.1
 msgpack==1.0.4
 mt_940==4.26.0
@@ -668,7 +672,7 @@ mutagen==1.46.0
 mutesync==0.0.1
 mychevy==2.1.1
 mycroftapi==2.0
-mypy_extensions==0.4.3
+mypy_extensions==1.0.0
 mysqlclient==2.1.1
 nad-receiver==0.3.0
 natsort==8.2.0
@@ -766,7 +770,7 @@ pkce==1.0.3
 pkgconf==1.8.1
 pkgconfig==2
 platformdirs==2.6.2
-platformio==6.0.2
+platformio==6.1.5
 plugwise==0.27.5
 plumbum==1.8.1
 plumlightpad==0.0.11
@@ -855,8 +859,9 @@ pycurl==7.45.2
 pydaikin==2.9.0
 pydanfossair==0.1.0
 pydantic==1.10.5
-pydeconz==108
+pydeconz==110
 pydelijn==1.0.0
+pydevd==2.9.5
 pydexcom==0.2.3
 pydoods==1.0.2
 pydroid-ipcam==2.0.0
@@ -1073,6 +1078,7 @@ python-magic==0.4.27
 python-metar==1.4.0
 python-miio==0.5.12
 python-mpd2==3.0.5
+python-multipart==0.0.5
 python-mystrom==1.1.2
 python-nest==4.2.0
 python-opendata-transport==0.3.0
@@ -1143,6 +1149,7 @@ raspihats==2.2.3
 raspyrfm-client==1.2.8
 re2==0.2022.12.01
 readlike==0.1.2
+readline==8.1_p2
 reedsolomon==1.7.0
 regenmaschine==2022.11.0
 regex==2021.8.28
@@ -1214,7 +1221,7 @@ sharkiq==0.0.1
 sharp_aquos_rc==0.3.2
 shodan==1.28.0
 simplehound==0.3
-simplejson==3.18.1
+simplejson==3.18.3
 simplepush==2.1.1
 simplisafe-python==2022.12.0
 siobrultech-protocols==0.5.0
@@ -1246,12 +1253,13 @@ srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
 starkbank-ecdsa==1.0.0
+starlette==0.21.0
 starline==0.1.5
 starlingbank==3.2
 statsd==3.2.1
 stdiomask==0.0.6
 steamodd==4.21
-stevedore==4.1.1
+stevedore==5.0.0
 stix-fonts==2.11
 stookalert==0.1.4
 stookwijzer==1.3.0
@@ -1280,7 +1288,7 @@ tellsticknet==0.1.2
 temescal==0.5
 temperusb==1.6.0
 tempora==5.2.1
-tenacity==8.1.0
+tenacity==8.2.2
 tesla-powerwall==0.3.19
 tesla-wall-connector==1.0.2
 teslajsonpy==0.18.3
@@ -1347,6 +1355,7 @@ uscisstatus==0.1.1
 user-agents==2.0
 util-linux==2.38.1
 uvcclient==0.11.0
+uvicorn==0.19.0
 vallox-websocket-api==3.0.0
 vehicle==0.4.0
 velbus-aio==2023.2.0
@@ -1375,7 +1384,7 @@ webcolors==1.12
 webencodings==0.5.1
 webexteamssdk==1.1.1
 webob==1.8.7
-websocket-client==1.5.0
+websocket-client==1.5.1
 websockets==10.4
 werkzeug==2.2.3
 whirlpool-sixth-sense==0.18.2
@@ -1414,7 +1423,7 @@ zeep==4.2.1
 zengge==0.2
 zeroconf==0.47.3
 zeversolar==0.3.1
-zha-quirks==0.0.93
+zha-quirks==0.0.94
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
 zigpy-deconz==0.19.2
