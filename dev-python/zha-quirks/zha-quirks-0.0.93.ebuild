@@ -4,11 +4,11 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+PYPI_NO_NORMALIZE=1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Library implementing Zigpy quirks for ZHA in Home Assistant"
 HOMEPAGE="https://github.com/dmulcahey/zha-device-handlers https://pypi.org/project/zha-quirks/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
