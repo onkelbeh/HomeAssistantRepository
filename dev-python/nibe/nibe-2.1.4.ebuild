@@ -5,12 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Nibe heatpump communication library"
 HOMEPAGE="https://github.com/yozik04/nibe https://pypi.org/project/nibe/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-3"
 SLOT="0"
@@ -24,11 +22,11 @@ RDEPEND=">=dev-python/async-modbus-0.2.0[${PYTHON_USEDEP}]
 	>=dev-python/construct-2.10.0[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/tenacity-8.0.0[${PYTHON_USEDEP}]
-	dev-python/sockio[${PYTHON_USEDEP}]"
+	>=dev-python/exceptiongroup-1.0.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
