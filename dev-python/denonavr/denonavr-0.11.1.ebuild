@@ -7,14 +7,13 @@ DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{9..11} )
 PYTHON_REQ_USE="xml(+)"
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Automation Library for Denon AVR receivers"
 HOMEPAGE="
 	https://github.com/ol-iver/denonavr/
 	https://pypi.org/project/denonavr/
 "
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -26,6 +25,9 @@ RDEPEND="
 	dev-python/defusedxml[${PYTHON_USEDEP}]
 	>=dev-python/httpx-0.21.0[${PYTHON_USEDEP}]
 	>=dev-python/netifaces-0.11.0[${PYTHON_USEDEP}]
+	$(python_gen_cond_dep '
+		>=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
+	' 3.{8..10})
 "
 BDEPEND="
 	test? (
