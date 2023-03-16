@@ -1,5 +1,5 @@
 accuweather==0.5.0
-acme==2.2.0
+acme==2.3.0
 Adafruit-Blinka==7.1.1
 adafruit-circuitpython-bmp280==3.1.1
 adafruit-circuitpython-busdevice==5.1.8
@@ -47,7 +47,7 @@ aioeafm==0.1.2
 aioeagle==1.1.0
 aioecowitt==2023.1.0
 aioemonitor==1.0.5
-aioesphomeapi==13.4.2
+aioesphomeapi==13.5.1
 aiofiles==22.1.0
 aioflo==2021.11.0
 aioftp==0.21.3
@@ -144,6 +144,7 @@ asyncio-throttle==1.0.2
 asyncpysupla==0.0.5
 asyncsleepiq==1.2.3
 asyncssh==2.9.0
+asyncstdlib==3.10.5
 asynctest==0.13.0
 atenpdu==0.3.2
 atomicwrites-homeassistant==1.4.1
@@ -191,7 +192,7 @@ bluetooth-sensor-state-data==1.6.1
 bluez==5.66
 bme280spi==0.2.0
 bme680==1.0.5
-bond-async==0.1.22
+bond-async==0.1.23
 boschshcpy==0.2.35
 boto3==1.20.24
 boto3==1.26.74
@@ -289,6 +290,7 @@ dejavu==2.37
 deluge-client==1.7.1
 demetriek==0.4.0
 demjson3==3.0.5
+denonavr==0.11.1
 deprecated==1.2.13
 devolo-home-control-api==0.18.2
 devolo-plc-api==1.2.0
@@ -372,9 +374,9 @@ forecast-solar==2.2.0
 fortiosapi==1.0.5
 fqdn==1.5.1
 freebox-api==1.1.0
-freeimage==3.18.0
 freesms==0.2.0
 freetype==2.12.1
+fritzconnection==1.11.0
 fritzconnection==1.4.2
 frozenlist==1.3.3
 fs==2.4.16
@@ -410,7 +412,6 @@ goodwe==0.2.25
 google-api-core==2.11.0
 google-api-python-client==2.71.0
 google-auth-httplib2==0.1.0
-google-auth-oauthlib==0.8.0
 google-auth==2.16.0
 google-cloud-pubsub==2.13.11
 google-cloud-texttospeech==2.12.3
@@ -469,7 +470,7 @@ hole==0.8.0
 holidays==0.18
 home-assistant-bluetooth==1.9.3
 home-assistant-cli==9999
-home-assistant-frontend==20230309.0
+home-assistant-frontend==20230309.1
 home-assistant-intents==2023.2.28
 homeassistant
 homeconnect==0.7.2
@@ -504,7 +505,6 @@ ifaddr==0.1.7
 ifaddr==0.2.0
 iglo==1.2.7
 ihcsdk==2.7.6
-imageio==2.25.0
 imagemagick-tools==0
 imagemagick==7.1.0.62
 importlib_metadata==6.0.0
@@ -554,7 +554,6 @@ jsonrpc-websocket==3.1.1
 jsonschema==4.17.3
 justbackoff==0.6.0
 justnimbus==0.6.0
-kafka-python==2.0.2
 kaiterra-async-client==1.0.0
 kconfiglib==13.7.1
 keba-kecontact==1.1.0
@@ -617,7 +616,6 @@ linode-api==4.1.9_beta1
 linux-headers==6.1
 locationsharinglib==4.1.5
 logi-circle==0.2.3
-loguru==0.6.0
 lomond==0.3.3
 london-tube-status==0.5
 lru-dict==1.1.8
@@ -691,7 +689,7 @@ nexia==2.0.6
 nextcloudmonitor==1.1.0
 nextcord==2.0.0_alpha8
 nextdns==1.3.0
-nibe==2.0.0
+nibe==2.1.4
 niko-home-control==0.2.1
 niluclient==0.1.2
 nmap==7.93
@@ -1248,7 +1246,7 @@ speak2mary==1.4.0
 speedtest-cli==2.1.3
 spiderpy==1.6.1
 spidev==3.5
-sqlalchemy==2.0.5_p1
+sqlalchemy==2.0.6
 srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
@@ -1405,8 +1403,6 @@ xknx==2.6.0
 xmlschema==2.2.1
 xmltodict==0.13.0
 xs1-api-client==3.0.0
-xxhash==0.8.1
-xxhash==3.2.0
 yalesmartalarmclient==0.3.9
 yalexs-ble==2.0.4
 yalexs==1.2.7
