@@ -53,7 +53,7 @@ aioflo==2021.11.0
 aioftp==0.21.3
 aiogithubapi==22.10.1
 aioguardian==2022.7.0
-aioharmony==0.2.9
+aioharmony==0.2.10
 aiohomekit==2.6.1
 aiohttp-cors==0.7.0
 aiohttp==3.8.4
@@ -69,7 +69,7 @@ aiolivisi==0.0.15
 aiolookin==1.0.0
 aiolyric==1.0.9
 aiomodernforms==0.1.8
-aiomusiccast==0.14.7
+aiomusiccast==0.14.8
 aionanoleaf==0.2.1
 aionotify==0.2.0
 aionotion==3.0.2
@@ -195,8 +195,8 @@ bme680==1.0.5
 bond-async==0.1.23
 boschshcpy==0.2.35
 boto3==1.20.24
-boto3==1.26.74
-botocore==1.29.74
+boto3==1.26.84
+botocore==1.29.84
 bottle==0.12.23
 bottleneck==1.3.6
 broadlink==0.18.3
@@ -213,7 +213,7 @@ btsocket==0.2.0
 buienradar==1.0.5
 bx-py-utils==75
 c-ares==1.19.0
-ca-certificates==20211016.3.87
+ca-certificates==20211016.3.88.1
 cachetools==5.3.0
 casttube==0.2.1
 cbor2==5.4.6
@@ -294,7 +294,7 @@ denonavr==0.11.1
 deprecated==1.2.13
 devolo-home-control-api==0.18.2
 devolo-plc-api==1.2.0
-dialog==1.3.20221229
+dialog==1.3.20230209
 dicttoxml2==2.1.0
 dicttoxml==1.7.4
 directv==0.4.0
@@ -312,6 +312,7 @@ dtlssocket==0.1.12
 dweepy==0.3.0
 dynalite-devices==0.1.47
 eagle100==0.1.1
+easyenergy==0.2.2
 ebusdpy==0.0.17
 ecdsa==0.18.0
 ecoaliface==0.4.0
@@ -363,7 +364,7 @@ fitbit==0.3.1
 fivem-api==0.1.2
 fixerio==1.0.0_alpha0
 fjaraskupan==2.2.0
-flask==2.2.2
+flask==2.2.3
 flipr-api==1.4.4
 flux-led==0.28.35
 fnvhash==0.1.0
@@ -520,7 +521,7 @@ intelhex==2.3.0
 intellifire4py==2.2.2
 iotawattpy==0.1.0
 iperf3==0.1.11
-iperf==3.12
+iperf==3.13
 ismartgate==5.0.0
 iso-codes==4.12.0
 iso4217==1.11.20220401
@@ -586,7 +587,7 @@ libintl==0.21.1
 libjpeg-turbo==2.1.4
 liblinear==243
 libltdl==2.4.7
-libpaper==2.0.4
+libpaper==2.0.10
 libpcap==1.10.3
 libpcre2==10.42
 libpcre==8.45
@@ -703,8 +704,9 @@ nuheat==1.0.1
 numato-gpio==0.10.0
 numexpr==2.8.4
 numpy==1.23.2
-numpy==1.24.0
+numpy==1.24.2
 oasatelematics==0.3
+oauth2client==4.1.3
 oauthlib==3.2.2
 objgraph==3.5.0
 odp-amsterdam==5.1.0
@@ -726,7 +728,7 @@ openwebifpy==3.2.7
 openwrt-luci-rpc==1.1.11
 openwrt-ubus-rpc==0.0.2
 OPi-GPIO==0.5.2
-oralb-ble==0.17.5
+oralb-ble==0.17.6
 ordered-set==4.1.0
 orjson==3.8.7
 oru==0.1.11
@@ -767,7 +769,7 @@ pizzapi==0.0.3
 pkce==1.0.3
 pkgconf==1.8.1
 pkgconfig==2
-platformdirs==2.6.2
+platformdirs==3.1.1
 platformio==6.1.5
 plugwise==0.27.5
 plumbum==1.8.1
@@ -1027,6 +1029,7 @@ pysmartapp==0.3.3
 pysmartthings==0.7.6
 pysmarty==0.8
 pysml==0.0.8
+pysnmp-pyasn1-modules==0.2.9
 pysnmp-pyasn1==1.1.2
 pysnmp-pysmi==1.1.10
 pysnmp==4.4.12
@@ -1039,7 +1042,7 @@ pysqueezebox==0.6.1
 pystiebeleltron==0.0.1
 pysuez==0.1.19
 pyswitchbee==1.7.19
-PySwitchbot==0.37.3
+PySwitchbot==0.37.4
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6
@@ -1241,7 +1244,7 @@ solaredge-local==0.2.0
 solaredge==0.0.2
 solax==0.3.0
 somfy-mylink-synergy==1.0.6
-soupsieve==2.3.2_p1
+soupsieve==2.4
 speak2mary==1.4.0
 speedtest-cli==2.1.3
 spiderpy==1.6.1
@@ -1404,7 +1407,7 @@ xmlschema==2.2.1
 xmltodict==0.13.0
 xs1-api-client==3.0.0
 yalesmartalarmclient==0.3.9
-yalexs-ble==2.0.4
+yalexs-ble==2.1.1
 yalexs==1.2.7
 yarl==1.8.1
 yarl==1.8.2
