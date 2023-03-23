@@ -187,6 +187,7 @@
     <flag name="dynalite">Dynalite DyNET interface forHome Assistant </flag>
     <flag name="dyson">integrate all Dyson related platforms into Home Assistant</flag>
     <flag name="eafm">UK Environment Agency Flood Monitoring API to provide sensors</flag>
+    <flag name="easyenergy">integrates the easyEnergy API platform with Home Assistant</flag>
     <flag name="ebox">Integrate your EBox account information into Home Assistant</flag>
     <flag name="ebusd">Integration between ebusd daemon for communication with eBUS heating systems</flag>
     <flag name="ecoal_boiler">The ecoal_boiler integration is the base for pumps and sensors</flag>
