@@ -170,6 +170,7 @@
 |dynalite|Dynalite DyNET interface forHome Assistant |N|Y|Y|0.106|
 |dyson|integrate all Dyson related platforms into Home Assistant|N|Y|Y|0.47|
 |eafm|UK Environment Agency Flood Monitoring API to provide sensors|N|N|Y|0.115|
+|easyenergy|integrates the easyEnergy API platform with Home Assistant|N|N|Y|2023.3.0b3|
 |ebox|Integrate your EBox account information into Home Assistant|N|N|Y|0.39|
 |ebusd|Integration between ebusd daemon for communication with eBUS heating systems|N|N|Y|0.88|
 |ecoal_boiler|The ecoal_boiler integration is the base for pumps and sensors|N|N|Y|0.87|
