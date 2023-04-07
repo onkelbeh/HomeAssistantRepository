@@ -90,7 +90,6 @@
 |bmw_connected_drive|Retrieve data from the BMW Connected Drive|N|Y|Y|0.64|
 |bond|Asynchronous Python wrapper library over Bond Local API|N|Y|Y|0.113|
 |bosch_shc|integrate your Bosch SHC into Home Assistant|N|N|Y|2021.6|
-|brandt|None|N|N|Y|2022.12.0|
 |braviatv|Control almost all Sony Bravia TV 2013 and newer|N|Y|Y|0.23|
 |broadlink|Allows you to interact with Broadlink remote control devices|N|Y|Y|0.35|
 |brother|Read current data from your local Brother printer|N|Y|Y|0.104|
