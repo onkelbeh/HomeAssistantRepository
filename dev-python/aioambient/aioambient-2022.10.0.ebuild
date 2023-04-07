@@ -21,7 +21,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
 	>=dev-python/python-socketio-4.6[${PYTHON_USEDEP}]
 	>=dev-python/python-engineio-3.13.1[${PYTHON_USEDEP}]
-	>=dev-python/websockets-9.1[${PYTHON_USEDEP}]"
+	>=dev-python/websockets-11.0.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]
