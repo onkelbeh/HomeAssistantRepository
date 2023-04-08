@@ -4,14 +4,10 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=poetry
-
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="A connector for Bleak Clients that handles transient connection failures"
 HOMEPAGE="https://github.com/bluetooth-devices/bleak-retry-connector https://pypi.org/project/bleak-retry-connector/"
-MY_PN=${PN//-/_}
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -26,7 +22,6 @@ RDEPEND=">=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
 	>=dev-python/dbus-fast-1.14.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-adapters-0.12.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
