@@ -9,7 +9,6 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python client providing energy/gas prices from easyEnergy"
 HOMEPAGE="https://github.com/klaasnicolaas/python-easyenergy https://pypi.org/project/easyenergy/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="MIT"
 SLOT="0"
@@ -20,7 +19,8 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/yarl[${PYTHON_USEDEP}]"
+	dev-python/aiodns[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
