@@ -4,12 +4,10 @@
 EAPI=8
 DISTUTILS_USE_PEP517=poetry
 PYTHON_COMPAT=( python3_{9..11} )
-
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Big Ass Fans i6/Haiku protocol asynchronous Python library"
 HOMEPAGE="https://github.com/jfroy/aiobafi6 https://pypi.org/project/aiobafi6/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -22,7 +20,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/protobuf-python-3.20[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.38.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
