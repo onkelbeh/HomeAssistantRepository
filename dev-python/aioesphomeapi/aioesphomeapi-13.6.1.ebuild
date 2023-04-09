@@ -9,7 +9,6 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="Python API for interacting with ESPHome devices."
 HOMEPAGE="https://github.com/esphome/aioesphomeapi https://esphome.io/ https://pypi.org/project/aioesphomeapi/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="MIT"
 SLOT="0"
