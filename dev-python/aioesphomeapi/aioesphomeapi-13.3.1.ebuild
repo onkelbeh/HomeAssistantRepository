@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/protobuf-python-3.19.0[${PYTHON_USEDEP}]
 	>=dev-python/noiseprotocol-0.3.1[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
