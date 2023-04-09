@@ -9,7 +9,6 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="A package to access meteorological data from Environment Canada"
 HOMEPAGE="https://github.com/michaeldavie/env_canada https://pypi.org/project/env-canada/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="MIT"
 SLOT="0"
@@ -29,7 +28,6 @@ RDEPEND="
 	dev-python/python-dateutil[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
