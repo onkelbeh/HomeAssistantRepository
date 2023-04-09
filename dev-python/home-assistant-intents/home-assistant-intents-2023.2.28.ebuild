@@ -5,11 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+PYPI_NO_NORMALIZE=1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Intents for Home Assistant"
 HOMEPAGE="https://github.com/home-assistant/intents https://pypi.org/project/home-assistant-intents/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -25,7 +25,6 @@ RDEPEND="dev-python/hassil[${PYTHON_USEDEP}]
 	dev-python/regex[${PYTHON_USEDEP}]
 	dev-python/jinja[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
