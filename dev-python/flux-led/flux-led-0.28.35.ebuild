@@ -5,13 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="A Python library to communicate with the flux_led smart bulbs"
 HOMEPAGE="https://github.com/Danielhiversen/flux_led https://pypi.org/project/flux-led/"
-MY_PN=${PN/-/_}
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="LGPL-3+"
 SLOT="0"
@@ -24,7 +21,6 @@ DOCS="README.md"
 RDEPEND="dev-python/webcolors[${PYTHON_USEDEP}]
 	dev-python/async-timeout[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
