@@ -5,12 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
+PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="The Insteon frontend for Home Assistant"
 HOMEPAGE="https://github.com/teharris1/insteon-panel https://pypi.org/project/insteon-frontend-home-assistant/"
-SRC_URI=$(pypi_sdist_url --no-normalize "${PN}" 0.3.2-1)
-S=${WORKDIR}/${PN}-${PV}
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,7 +20,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
