@@ -9,7 +9,6 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="Reolink NVR/cameras API package"
 HOMEPAGE="https://github.com/starkillerOG/reolink_aio https://pypi.org/project/reolink-aio/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="MIT"
 SLOT="0"
@@ -23,7 +22,6 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/ffmpeg-python[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
