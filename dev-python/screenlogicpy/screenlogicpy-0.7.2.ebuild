@@ -5,11 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Interface for Pentair ScreenLogic connected pool controllers over IP via Python"
 HOMEPAGE="https://github.com/dieselrabbit/screenlogicpy https://pypi.org/project/screenlogicpy/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
