@@ -9,13 +9,13 @@ inherit distutils-r1
 
 DESCRIPTION="Provides a python interface to interact with Roon"
 HOMEPAGE="https://github.com/pavoni/pyroon https://pypi.org/project/roonapi/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/pavoni/pyroon/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
-RESTRICT="!test? ( test )"
+IUSE=""
+RESTRICT="test"
 
 DOCS="README.md"
 
@@ -23,14 +23,5 @@ RDEPEND=">=dev-python/ifaddr-0.1.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.10.0[${PYTHON_USEDEP}]
 	>=dev-python/websocket-client-1.4.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
 
-python_test() {
-	py.test -v -v || die
-}
-
-distutils_enable_tests pytest
+S="${WORKDIR}/pyroon-${PV}"

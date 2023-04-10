@@ -8,5 +8,9 @@
   <upstream>
     <remote-id type="pypi">roonapi</remote-id>
     <remote-id type="github">pavoni/pyroon</remote-id>
+    <maintainer status="unknown">
+      <email>mail@gregdowling.com</email>
+      <name>Greg Dowling</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>
