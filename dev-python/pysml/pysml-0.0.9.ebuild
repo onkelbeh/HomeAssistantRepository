@@ -26,15 +26,15 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-python_test() {
-	py.test -v -v || die
-}
-
 src_prepare() {
 	# lots of top level vios:
 	cat pyproject.toml | grep -v "from = " > x
 	mv x pyproject.toml
 	eapply_user
+}
+
+python_test() {
+	py.test -v -v || die
 }
 
 distutils_enable_tests pytest
