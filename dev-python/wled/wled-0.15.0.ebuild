@@ -5,11 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=poetry
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python client for WLED."
 HOMEPAGE="https://github.com/frenck/python-wled https://pypi.org/project/wled/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -25,7 +24,6 @@ RDEPEND=">=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/cachetools-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]
