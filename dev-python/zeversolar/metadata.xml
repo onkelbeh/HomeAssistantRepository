@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">zeversolar</remote-id>
+    <remote-id type="github">kvanzuijlen/zeversolar</remote-id>
     <maintainer status="unknown">
       <email>8818390+kvanzuijlen@users.noreply.github.com</email>
       <name>Koen van Zuijlen</name>
