@@ -211,6 +211,7 @@
 |essent|communicate with the (undocumented) API of Dutch energy provider Essent|N|N|Y||
 |etherscan|displays Ether and ERC-20 token balances from Etherscan.io|N|N|Y|0.47|
 |eufy|eufy integration is the main integration to integrate various eufy devices|N|N|Y|0.68|
+|eufylife_ble|integrate Eufy smart scales with Home Assistant|N|N|Y|2023.2.1|
 |everlights|Library for controlling an EverLights lighting system|N|Y|Y|0.87|
 |evil_genius_labs|allows you to control and monitor the artworks by Evil Genius Labs|N|N|Y|2021.12.0b0|
 |evohome|links with all non-US Honeywell Total Connect Comfort (TCC) CH/DHW systems|N|Y|Y|0.80|
