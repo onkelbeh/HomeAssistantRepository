@@ -26,7 +26,9 @@ KEYWORDS="amd64 arm arm64 x86"
 RDEPEND="
 	>=dev-python/lazy-object-proxy-1.4.0[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	>=dev-python/typing-extensions-3.10[${PYTHON_USEDEP}]
+	$(python_gen_cond_dep '
+		>=dev-python/typing-extensions-4.0.0[${PYTHON_USEDEP}]
+	' 3.{8..10})
 	<dev-python/wrapt-2[${PYTHON_USEDEP}]
 "
 BDEPEND="
@@ -43,15 +45,16 @@ export SETUPTOOLS_SCM_PRETEND_VERSION=${PV}
 
 python_test() {
 	local EPYTEST_DESELECT=(
-		# no clue why it's broken
-		tests/unittest_modutils.py::GetModulePartTest::test_known_values_get_builtin_module_part
-		tests/unittest_brain_dataclasses.py::test_pydantic_field
-		tests/unittest_brain.py::SixBrainTest::test_from_imports
-		tests/unittest_regrtest.py::NonRegressionTests::test_numpy_distutils
+		# no clue why they're broken
+		tests/test_modutils.py::GetModulePartTest::test_known_values_get_builtin_module_part
+		tests/test_regrtest.py::NonRegressionTests::test_numpy_distutils
+		tests/brain/test_regex.py::TestRegexBrain::test_regex_pattern_and_match_subscriptable
 		# some problem with warnings (our options?)
-		tests/unittest_decorators.py::TestDeprecationDecorators::test_deprecated_default_argument_values_one_arg
-		tests/unittest_decorators.py::TestDeprecationDecorators::test_deprecated_default_argument_values_two_args
-		tests/unittest_scoped_nodes.py::test_deprecation_of_doc_attribute
+		tests/test_decorators.py::TestDeprecationDecorators::test_deprecated_default_argument_values_one_arg
+		tests/test_decorators.py::TestDeprecationDecorators::test_deprecated_default_argument_values_two_args
+		tests/test_scoped_nodes.py::test_deprecation_of_doc_attribute
+		# requires six bundled in urllib3, sigh
+		tests/test_modutils.py::test_file_info_from_modpath__SixMetaPathImporter
 	)
 
 	# Faker causes sys.path_importer_cache keys to be overwritten
