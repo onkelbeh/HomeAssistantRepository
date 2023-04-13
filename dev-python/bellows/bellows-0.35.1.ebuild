@@ -19,7 +19,7 @@ RDEPEND="dev-python/click[${PYTHON_USEDEP}]
 	>=dev-python/click-log-0.2.1[${PYTHON_USEDEP}]
 	~dev-python/pure-pcapy3-1.0.1[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.54.0[${PYTHON_USEDEP}]"
+	>=dev-python/zigpy-0.54.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
