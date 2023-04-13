@@ -107,7 +107,6 @@
     <flag name="bmw_connected_drive">Retrieve data from the BMW Connected Drive</flag>
     <flag name="bond">Asynchronous Python wrapper library over Bond Local API</flag>
     <flag name="bosch_shc">integrate your Bosch SHC into Home Assistant</flag>
-    <flag name="brandt"/>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
     <flag name="broadlink">Allows you to interact with Broadlink remote control devices</flag>
     <flag name="brother">Read current data from your local Brother printer</flag>
@@ -229,6 +228,7 @@
     <flag name="essent">communicate with the (undocumented) API of Dutch energy provider Essent</flag>
     <flag name="etherscan">displays Ether and ERC-20 token balances from Etherscan.io</flag>
     <flag name="eufy">eufy integration is the main integration to integrate various eufy devices</flag>
+    <flag name="eufylife_ble">integrate Eufy smart scales with Home Assistant</flag>
     <flag name="everlights">Library for controlling an EverLights lighting system</flag>
     <flag name="evil_genius_labs">allows you to control and monitor the artworks by Evil Genius Labs</flag>
     <flag name="evohome">links with all non-US Honeywell Total Connect Comfort (TCC) CH/DHW systems</flag>
