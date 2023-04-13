@@ -5,7 +5,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Python wrapper for zwave-js-server"
 HOMEPAGE="https://github.com/home-assistant-libs/zwave-js-server-python https://pypi.org/project/zwave-js-server-python/"
