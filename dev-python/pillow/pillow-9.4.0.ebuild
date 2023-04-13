@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -28,19 +28,19 @@ LICENSE="HPND"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="examples imagequant +jpeg jpeg2k lcms test tiff tk truetype webp xcb zlib"
-REQUIRED_USE="test? ( jpeg jpeg2k tiff truetype )"
+REQUIRED_USE="test? ( jpeg jpeg2k lcms tiff truetype )"
 RESTRICT="!test? ( test )"
 
 DEPEND="
-	imagequant? ( media-gfx/libimagequant:0 )
-	jpeg? ( media-libs/libjpeg-turbo )
+	imagequant? ( media-gfx/libimagequant:= )
+	jpeg? ( media-libs/libjpeg-turbo:= )
 	jpeg2k? ( media-libs/openjpeg:2= )
 	lcms? ( media-libs/lcms:2= )
-	tiff? ( media-libs/tiff:0=[jpeg,zlib] )
+	tiff? ( media-libs/tiff:=[jpeg,zlib] )
 	truetype? ( media-libs/freetype:2= )
-	webp? ( media-libs/libwebp:0= )
+	webp? ( media-libs/libwebp:= )
 	xcb? ( x11-libs/libxcb )
-	zlib? ( sys-libs/zlib:0= )
+	zlib? ( sys-libs/zlib:= )
 "
 RDEPEND="
 	${DEPEND}
@@ -105,6 +105,11 @@ src_test() {
 }
 
 python_test() {
+	local EPYTEST_DESELECT=(
+		# TODO (is clipboard unreliable in Xvfb?)
+		Tests/test_imagegrab.py::TestImageGrab::test_grabclipboard
+	)
+
 	"${EPYTHON}" selftest.py --installed || die "selftest failed with ${EPYTHON}"
 	# no:relaxed: pytest-relaxed plugin make our tests fail. deactivate if installed
 	epytest -p no:relaxed || die "Tests failed with ${EPYTHON}"
