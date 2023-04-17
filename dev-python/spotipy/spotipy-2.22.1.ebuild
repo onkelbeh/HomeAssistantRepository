@@ -5,7 +5,6 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{9..11} )
-
 inherit distutils-r1
 
 DESCRIPTION="A light weight Python library for the Spotify Web API"
@@ -32,12 +31,10 @@ python_prepare_all() {
 	# Needs internet access
 	sed -i -e 's:test_spotify_client_credentials_get_access_token:_&:' \
 		tests/unit/test_oauth.py || die
-
 	distutils-r1_python_prepare_all
 }
 
 python_install_all() {
 	distutils-r1_python_install_all
-
 	use examples && dodoc -r examples
 }
