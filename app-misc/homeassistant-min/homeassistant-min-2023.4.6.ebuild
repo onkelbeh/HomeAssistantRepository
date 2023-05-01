@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{10..11} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 PYPI_PN="homeassistant"
-inherit distutils-r1 readme.gentoo-r1 systemd pypi
+inherit distutils-r1 pypi readme.gentoo-r1 systemd
 
 MY_PN=homeassistant
 
@@ -17,7 +17,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_BRANCH="dev"
 	S="${WORKDIR}/core/"
 else
-	MY_PV=${PV/_beta/b}
+    MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
 	SRC_URI="$(pypi_sdist_url)
 	https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
@@ -76,7 +76,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-status-1.51.1[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.51.1[${PYTHON_USEDEP}]
 	~dev-python/h11-0.14.0[${PYTHON_USEDEP}]
-	~dev-python/ha-av-10.0.0_beta5[${PYTHON_USEDEP}]
+	~dev-python/ha-av-10.0.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.63.1[${PYTHON_USEDEP}]
 	~dev-python/hassil-1.0.6[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.9.3[${PYTHON_USEDEP}]
@@ -190,7 +190,7 @@ RDEPEND="${RDEPEND}
 	mysql? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	notify_events? ( ~dev-python/notify-events-1.0.4[${PYTHON_USEDEP}] )
 	octoprint? ( ~dev-python/pyoctoprintapi-0.1.11[${PYTHON_USEDEP}] )
-	onvif? ( ~dev-python/onvif-zeep-async-1.2.3[${PYTHON_USEDEP}] ~dev-python/WSDiscovery-2.0.0[${PYTHON_USEDEP}] )
+	onvif? ( ~dev-python/onvif-zeep-async-1.2.11[${PYTHON_USEDEP}] ~dev-python/WSDiscovery-2.0.0[${PYTHON_USEDEP}] )
 	otp? ( ~dev-python/pyotp-2.8.0[${PYTHON_USEDEP}] )
 	owntracks? ( ~dev-python/pynacl-1.5.0[${PYTHON_USEDEP}] )
 	ping? ( ~dev-python/icmplib-3.0[${PYTHON_USEDEP}] )
@@ -206,7 +206,7 @@ RDEPEND="${RDEPEND}
 	samsungtv? ( ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-2.5.0[${PYTHON_USEDEP}] ~dev-python/wakeonlan-2.1.0[${PYTHON_USEDEP}] ~dev-python/async-upnp-client-0.33.1[${PYTHON_USEDEP}] )
 	scrape? ( ~dev-python/beautifulsoup4-4.11.1[${PYTHON_USEDEP}] ~dev-python/lxml-4.9.1[${PYTHON_USEDEP}] )
 	season? ( ~dev-python/ephem-4.1.2[${PYTHON_USEDEP}] )
-	shelly? ( ~dev-python/aioshelly-5.3.1[${PYTHON_USEDEP}] )
+	shelly? ( ~dev-python/aioshelly-5.3.2[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.18[${PYTHON_USEDEP}] )
 	snmp? ( ~dev-python/pysnmplib-5.0.21[${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
@@ -281,9 +281,9 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 DOCS="README.rst"
 
 src_prepare() {
-	if use test ; then
-		cp -r ${WORKDIR}/core-${MY_PV}/tests ${S}
-	fi
+    if use test ; then
+        cp -r ${WORKDIR}/core-${MY_PV}/tests ${S}
+    fi
 	distutils-r1_src_prepare
 }
 

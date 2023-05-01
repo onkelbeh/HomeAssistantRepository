@@ -1,11 +1,13 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1 readme.gentoo-r1 systemd
+PYPI_NO_NORMALIZE=1
+PYPI_PN="homeassistant"
+inherit distutils-r1 pypi readme.gentoo-r1 systemd
 
 MY_PN=homeassistant
 
@@ -15,10 +17,10 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_BRANCH="dev"
 	S="${WORKDIR}/core/"
 else
-	MY_PV=${PV/_beta/b}
+    MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
-	SRC_URI="https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
-	S="${WORKDIR}/core-${MY_PV}"
+	SRC_URI="$(pypi_sdist_url)
+	https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
 fi
 
 DESCRIPTION="Open-source home automation platform running on Python."
@@ -271,6 +273,13 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 S="${WORKDIR}/core-${MY_PV}"
 
 DOCS="README.rst"
+
+src_prepare() {
+	if use test ; then
+		cp -r ${WORKDIR}/core-${MY_PV}/tests ${S}
+	fi
+	distutils-r1_src_prepare
+}
 
 python_install_all() {
 	dodoc ${DOCS}

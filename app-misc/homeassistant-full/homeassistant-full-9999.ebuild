@@ -75,7 +75,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-status-1.51.1[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.51.1[${PYTHON_USEDEP}]
 	~dev-python/h11-0.14.0[${PYTHON_USEDEP}]
-	~dev-python/ha-av-10.0.0_beta5[${PYTHON_USEDEP}]
+	~dev-python/ha-av-10.0.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.63.1[${PYTHON_USEDEP}]
 	~dev-python/hassil-1.0.6[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.9.3[${PYTHON_USEDEP}]
@@ -319,7 +319,7 @@ RDEPEND="${RDEPEND}
 	ecowitt? ( ~dev-python/aioecowitt-2023.1.0[${PYTHON_USEDEP}] )
 	eddystone_temperature? ( ~dev-python/beacontools-1.2.3[${PYTHON_USEDEP}] ~dev-python/construct-2.10.56[${PYTHON_USEDEP}] )
 	edimax? ( ~dev-python/pyedimax-0.2.1[${PYTHON_USEDEP}] )
-	edl21? ( ~dev-python/pysml-0.0.9[${PYTHON_USEDEP}] )
+	edl21? ( ~dev-python/pysml-0.0.10[${PYTHON_USEDEP}] )
 	ee_brightbox? ( ~dev-python/eebrightbox-0.0.4[${PYTHON_USEDEP}] )
 	efergy? ( ~dev-python/pyefergy-22.1.1[${PYTHON_USEDEP}] )
 	egardia? ( ~dev-python/pythonegardia-1.0.40[${PYTHON_USEDEP}] )
@@ -339,7 +339,7 @@ RDEPEND="${RDEPEND}
 	enocean? ( ~dev-python/enocean-0.50.1[${PYTHON_USEDEP}] )
 	enphase_envoy? ( ~dev-python/envoy-reader-0.20.1[${PYTHON_USEDEP}] )
 	entur_public_transport? ( ~dev-python/enturclient-0.2.4[${PYTHON_USEDEP}] )
-	environment_canada? ( ~dev-python/env-canada-0.5.32[${PYTHON_USEDEP}] )
+	environment_canada? ( ~dev-python/env-canada-0.5.33[${PYTHON_USEDEP}] )
 	envirophat? ( ~dev-python/envirophat-0.0.6[${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[${PYTHON_USEDEP}] )
 	envisalink? ( ~dev-python/pyenvisalink-4.6[${PYTHON_USEDEP}] )
 	ephember? ( ~dev-python/pyephember-0.3.1[${PYTHON_USEDEP}] )
@@ -402,7 +402,7 @@ RDEPEND="${RDEPEND}
 	garmin_connect? ( ~dev-python/garminconnect-ha-0.1.6[${PYTHON_USEDEP}] )
 	gc100? ( ~dev-python/python-gc100-1.0.3_alpha0[${PYTHON_USEDEP}] )
 	gdacs? ( ~dev-python/aio-georss-gdacs-0.8[${PYTHON_USEDEP}] )
-	generic? ( ~dev-python/ha-av-10.0.0_beta5[${PYTHON_USEDEP}] ~dev-python/pillow-9.4.0[${PYTHON_USEDEP}] )
+	generic? ( ~dev-python/ha-av-10.0.0[${PYTHON_USEDEP}] ~dev-python/pillow-9.4.0[${PYTHON_USEDEP}] )
 	geniushub? ( ~dev-python/geniushub-client-0.7.0[${PYTHON_USEDEP}] )
 	geocaching? ( ~dev-python/geocachingapi-0.2.1[${PYTHON_USEDEP}] )
 	geonetnz_quakes? ( ~dev-python/aio-geojson-geonetnz-quakes-0.15[${PYTHON_USEDEP}] )
@@ -488,7 +488,7 @@ RDEPEND="${RDEPEND}
 	incomfort? ( ~dev-python/incomfort-client-0.5.0[${PYTHON_USEDEP}] )
 	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
 	inkbird? ( ~dev-python/inkbird-ble-0.5.6[${PYTHON_USEDEP}] )
-	insteon? ( ~dev-python/pyinsteon-1.4.1[${PYTHON_USEDEP}] ~dev-python/insteon-frontend-home-assistant-0.3.4[${PYTHON_USEDEP}] )
+	insteon? ( ~dev-python/pyinsteon-1.4.2[${PYTHON_USEDEP}] ~dev-python/insteon-frontend-home-assistant-0.3.4[${PYTHON_USEDEP}] )
 	intellifire? ( ~dev-python/intellifire4py-2.2.2[${PYTHON_USEDEP}] )
 	intesishome? ( ~dev-python/pyintesishome-1.8.0[${PYTHON_USEDEP}] )
 	iota? ( ~dev-python/PyOTA-2.0.5[${PYTHON_USEDEP}] )
@@ -548,7 +548,7 @@ RDEPEND="${RDEPEND}
 	linode? ( ~dev-python/linode-api-4.1.9_beta1[${PYTHON_USEDEP}] )
 	linux_battery? ( ~dev-python/batinfo-0.4.2[${PYTHON_USEDEP}] )
 	litejet? ( ~dev-python/pylitejet-0.5.0[${PYTHON_USEDEP}] )
-	litterrobot? ( ~dev-python/pylitterbot-2023.1.2[${PYTHON_USEDEP}] )
+	litterrobot? ( ~dev-python/pylitterbot-2023.4.0[${PYTHON_USEDEP}] )
 	livisi? ( ~dev-python/aiolivisi-0.0.19[${PYTHON_USEDEP}] )
 	local_calendar? ( ~dev-python/ical-4.5.1[${PYTHON_USEDEP}] )
 	logi_circle? ( ~dev-python/logi-circle-0.2.3[${PYTHON_USEDEP}] )
@@ -671,7 +671,7 @@ RDEPEND="${RDEPEND}
 	ondilo_ico? ( ~dev-python/ondilo-0.2.0[${PYTHON_USEDEP}] )
 	onewire? ( ~dev-python/pyownet-0.10.0_p1[${PYTHON_USEDEP}] )
 	onkyo? ( ~dev-python/onkyo-eiscp-1.2.7[${PYTHON_USEDEP}] )
-	onvif? ( ~dev-python/onvif-zeep-async-1.2.3[${PYTHON_USEDEP}] ~dev-python/WSDiscovery-2.0.0[${PYTHON_USEDEP}] )
+	onvif? ( ~dev-python/onvif-zeep-async-1.2.11[${PYTHON_USEDEP}] ~dev-python/WSDiscovery-2.0.0[${PYTHON_USEDEP}] )
 	openai_conversation? ( ~dev-python/openai-0.27.2[${PYTHON_USEDEP}] )
 	openerz? ( ~dev-python/openerz-api-0.2.0[${PYTHON_USEDEP}] )
 	openevse? ( ~dev-python/openevsewifi-1.1.2[${PYTHON_USEDEP}] )
@@ -761,7 +761,7 @@ RDEPEND="${RDEPEND}
 	rejseplanen? ( ~dev-python/rjpl-0.3.6[${PYTHON_USEDEP}] )
 	remember_the_milk? ( ~dev-python/RtmAPI-0.7.2[${PYTHON_USEDEP}] ~dev-python/httplib2-0.20.4[${PYTHON_USEDEP}] )
 	remote_rpi_gpio? ( ~dev-python/gpiozero-1.6.2[${PYTHON_USEDEP}] ~dev-python/pigpio-1.78[${PYTHON_USEDEP}] )
-	renault? ( ~dev-python/renault-api-0.1.12[${PYTHON_USEDEP}] )
+	renault? ( ~dev-python/renault-api-0.1.13[${PYTHON_USEDEP}] )
 	reolink? ( ~dev-python/reolink-aio-0.5.10[${PYTHON_USEDEP}] )
 	repetier? ( ~dev-python/pyrepetierng-0.1.0[${PYTHON_USEDEP}] )
 	rest? ( ~dev-python/jsonpath-0.82[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
@@ -816,7 +816,7 @@ RDEPEND="${RDEPEND}
 	seventeentrack? ( ~dev-python/py17track-2021.12.2[${PYTHON_USEDEP}] )
 	seven_segments? ( ~dev-python/pillow-9.4.0[${PYTHON_USEDEP}] )
 	sharkiq? ( ~dev-python/sharkiq-1.0.2[${PYTHON_USEDEP}] )
-	shelly? ( ~dev-python/aioshelly-5.3.1[${PYTHON_USEDEP}] )
+	shelly? ( ~dev-python/aioshelly-5.3.2[${PYTHON_USEDEP}] )
 	shiftr? ( ~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.28.0[${PYTHON_USEDEP}] )
 	sht31? ( ~dev-python/Adafruit-GPIO-1.0.3[${PYTHON_USEDEP}] ~dev-python/Adafruit-SHT31-1.0.2[${PYTHON_USEDEP}] )
@@ -855,7 +855,7 @@ RDEPEND="${RDEPEND}
 	somfy? ( ~dev-python/pymfy-0.11.0[${PYTHON_USEDEP}] )
 	somfy_mylink? ( ~dev-python/somfy-mylink-synergy-1.0.6[${PYTHON_USEDEP}] )
 	sonarr? ( ~dev-python/aiopyarr-23.4.0[${PYTHON_USEDEP}] )
-	songpal? ( ~dev-python/python-songpal-0.15.1[${PYTHON_USEDEP}] )
+	songpal? ( ~dev-python/python-songpal-0.15.2[${PYTHON_USEDEP}] )
 	sonos? ( ~dev-python/soco-0.29.1[${PYTHON_USEDEP}] )
 	sony_projector? ( ~dev-python/pySDCP-1[${PYTHON_USEDEP}] )
 	soundtouch? ( ~dev-python/libsoundtouch-0.8.0[${PYTHON_USEDEP}] )
@@ -878,7 +878,7 @@ RDEPEND="${RDEPEND}
 	stiebel_eltron? ( ~dev-python/pystiebeleltron-0.0.1[${PYTHON_USEDEP}] )
 	stookalert? ( ~dev-python/stookalert-0.1.4[${PYTHON_USEDEP}] )
 	stookwijzer? ( ~dev-python/stookwijzer-1.3.0[${PYTHON_USEDEP}] )
-	stream? ( ~dev-python/PyTurboJPEG-1.6.7[${PYTHON_USEDEP}] ~dev-python/ha-av-10.0.0_beta5[${PYTHON_USEDEP}] ~dev-python/numpy-1.23.2[${PYTHON_USEDEP}] )
+	stream? ( ~dev-python/PyTurboJPEG-1.6.7[${PYTHON_USEDEP}] ~dev-python/ha-av-10.0.0[${PYTHON_USEDEP}] ~dev-python/numpy-1.23.2[${PYTHON_USEDEP}] )
 	streamlabswater? ( ~dev-python/streamlabswater-1.0.1[${PYTHON_USEDEP}] )
 	subaru? ( ~dev-python/subarulink-0.7.6[${PYTHON_USEDEP}] )
 	suez_water? ( ~dev-python/pysuez-0.1.19[${PYTHON_USEDEP}] )
@@ -887,7 +887,7 @@ RDEPEND="${RDEPEND}
 	swiss_hydrological_data? ( ~dev-python/swisshydrodata-0.1.0[${PYTHON_USEDEP}] )
 	swiss_public_transport? ( ~dev-python/python-opendata-transport-0.3.0[${PYTHON_USEDEP}] )
 	switchbee? ( ~dev-python/pyswitchbee-1.7.19[${PYTHON_USEDEP}] )
-	switchbot? ( ~dev-python/PySwitchbot-0.37.5[${PYTHON_USEDEP}] )
+	switchbot? ( ~dev-python/PySwitchbot-0.37.6[${PYTHON_USEDEP}] )
 	switcher_kis? ( ~dev-python/aioswitcher-3.2.1[${PYTHON_USEDEP}] )
 	switchmate? ( ~dev-python/PySwitchmate-0.5.1[${PYTHON_USEDEP}] )
 	syncthing? ( ~dev-python/aiosyncthing-0.5.1[${PYTHON_USEDEP}] )
@@ -954,7 +954,7 @@ RDEPEND="${RDEPEND}
 	ukraine_alarm? ( ~dev-python/uasiren-0.0.1[${PYTHON_USEDEP}] )
 	unifi? ( ~dev-python/aiounifi-46[${PYTHON_USEDEP}] )
 	unifiled? ( ~dev-python/unifiled-0.11[${PYTHON_USEDEP}] )
-	unifiprotect? ( ~dev-python/pyunifiprotect-4.7.0[${PYTHON_USEDEP}] ~dev-python/unifi-discovery-1.1.7[${PYTHON_USEDEP}] )
+	unifiprotect? ( ~dev-python/pyunifiprotect-4.8.1[${PYTHON_USEDEP}] ~dev-python/unifi-discovery-1.1.7[${PYTHON_USEDEP}] )
 	unifi_direct? ( ~dev-python/pexpect-4.6.0[${PYTHON_USEDEP}] )
 	upb? ( ~dev-python/upb-lib-0.5.3[${PYTHON_USEDEP}] )
 	upcloud? ( ~dev-python/upcloud-api-2.0.0[${PYTHON_USEDEP}] )
@@ -1088,6 +1088,13 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
 
 DOCS="README.rst"
+
+src_prepare() {
+    if use test ; then
+        cp -r ${WORKDIR}/core-${MY_PV}/tests ${S}
+    fi
+	distutils-r1_src_prepare
+}
 
 python_install_all() {
 	dodoc ${DOCS}
