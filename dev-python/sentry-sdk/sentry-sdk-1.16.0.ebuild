@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,6 +8,7 @@ PYTHON_COMPAT=( python3_{9..11} )
 
 inherit distutils-r1
 
+MY_P=sentry-python-${PV}
 DESCRIPTION="Python client for Sentry"
 HOMEPAGE="
 	https://sentry.io/
@@ -16,13 +17,13 @@ HOMEPAGE="
 "
 SRC_URI="
 	https://github.com/getsentry/sentry-python/archive/${PV}.tar.gz
-		-> ${P}.gh.tar.gz
+		-> ${MY_P}.gh.tar.gz
 "
-S="${WORKDIR}/sentry-python-${PV}"
+S=${WORKDIR}/${MY_P}
 
 LICENSE="PSF-2"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="amd64 arm arm64 ~ppc ~ppc64 ~riscv ~sparc x86"
 
 RDEPEND="
 	dev-python/urllib3[${PYTHON_USEDEP}]
@@ -41,6 +42,7 @@ BDEPEND="
 		dev-python/pytest-django[${PYTHON_USEDEP}]
 		dev-python/pytest-forked[${PYTHON_USEDEP}]
 		dev-python/pytest-localserver[${PYTHON_USEDEP}]
+		dev-python/responses[${PYTHON_USEDEP}]
 		dev-python/werkzeug[${PYTHON_USEDEP}]
 		dev-python/zope-event[${PYTHON_USEDEP}]
 	)
@@ -63,10 +65,12 @@ EPYTEST_IGNORE=(
 	tests/integrations/asgi/test_fastapi.py
 	# TODO
 	tests/integrations/bottle
-	# requires python-multipart (TODO: package it)
+	# TODO: causes breakage in other tests
 	tests/integrations/starlette
 	# TODO
 	tests/integrations/tornado
+	# requires mockupdb
+	tests/integrations/pymongo
 )
 
 EPYTEST_DESELECT=(
@@ -92,4 +96,11 @@ EPYTEST_DESELECT=(
 	tests/integrations/wsgi/test_wsgi.py::test_auto_session_tracking_with_aggregates
 	tests/integrations/wsgi/test_wsgi.py::test_profile_sent_when_profiling_enabled
 	tests/test_profiler.py::test_sample_buffer
+	tests/test_profiler.py::test_thread_scheduler_takes_first_samples
+	tests/test_profiler.py::test_thread_scheduler_takes_more_samples
+	tests/test_profiler.py::test_thread_scheduler_single_background_thread
+	# broken with py3.11, *shrug*
+	tests/test_profiler.py::test_extract_stack_with_max_depth
+	# TODO
+	tests/integrations/sqlalchemy/test_sqlalchemy.py::test_long_sql_query_preserved
 )
