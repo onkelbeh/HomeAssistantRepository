@@ -507,7 +507,7 @@ ihcsdk==2.8.5
 imageio==2.27.0
 imagemagick-tools==0
 imagemagick==7.1.0.62
-importlib_metadata==6.0.1
+importlib-metadata==6.0.1
 incomfort-client==0.5.0
 incremental==22.10.0
 inflect==6.0.2
