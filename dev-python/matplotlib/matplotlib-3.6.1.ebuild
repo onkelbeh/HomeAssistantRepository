@@ -88,7 +88,7 @@ RDEPEND="
 
 BDEPEND="
 	${RDEPEND}
-	>=dev-python/setuptools_scm-7[${PYTHON_USEDEP}]
+	>=dev-python/setuptools-scm-7[${PYTHON_USEDEP}]
 	virtual/pkgconfig
 	doc? (
 		>=app-text/dvipng-1.15-r1
@@ -151,7 +151,7 @@ python_prepare_all() {
 		-e 's/matplotlib.pyparsing_py[23]/pyparsing/g' \
 		-i lib/matplotlib/{mathtext,fontconfig_pattern}.py \
 		|| die "sed pyparsing failed"
-	sed -i -e '/setuptools_scm/s:,<7::' setup.py || die
+	sed -i -e '/setuptools-scm/s:,<7::' setup.py || die
 
 	hprefixify setupext.py
 
