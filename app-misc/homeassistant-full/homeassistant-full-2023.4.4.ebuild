@@ -74,7 +74,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-status-1.51.1[${PYTHON_USEDEP}]
 	~dev-python/grpcio-1.51.1[${PYTHON_USEDEP}]
 	~dev-python/h11-0.14.0[${PYTHON_USEDEP}]
-	~dev-python/ha-av-10.0.0_beta5[${PYTHON_USEDEP}]
+	~dev-python/ha-av-10.0.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.63.1[${PYTHON_USEDEP}]
 	~dev-python/hassil-1.0.6[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.9.3[${PYTHON_USEDEP}]
@@ -401,7 +401,7 @@ RDEPEND="${RDEPEND}
 	garmin_connect? ( ~dev-python/garminconnect-ha-0.1.6[${PYTHON_USEDEP}] )
 	gc100? ( ~dev-python/python-gc100-1.0.3_alpha0[${PYTHON_USEDEP}] )
 	gdacs? ( ~dev-python/aio-georss-gdacs-0.8[${PYTHON_USEDEP}] )
-	generic? ( ~dev-python/ha-av-10.0.0_beta5[${PYTHON_USEDEP}] ~dev-python/pillow-9.4.0[${PYTHON_USEDEP}] )
+	generic? ( ~dev-python/ha-av-10.0.0[${PYTHON_USEDEP}] ~dev-python/pillow-9.4.0[${PYTHON_USEDEP}] )
 	geniushub? ( ~dev-python/geniushub-client-0.7.0[${PYTHON_USEDEP}] )
 	geocaching? ( ~dev-python/geocachingapi-0.2.1[${PYTHON_USEDEP}] )
 	geonetnz_quakes? ( ~dev-python/aio-geojson-geonetnz-quakes-0.15[${PYTHON_USEDEP}] )
@@ -877,7 +877,7 @@ RDEPEND="${RDEPEND}
 	stiebel_eltron? ( ~dev-python/pystiebeleltron-0.0.1[${PYTHON_USEDEP}] )
 	stookalert? ( ~dev-python/stookalert-0.1.4[${PYTHON_USEDEP}] )
 	stookwijzer? ( ~dev-python/stookwijzer-1.3.0[${PYTHON_USEDEP}] )
-	stream? ( ~dev-python/PyTurboJPEG-1.6.7[${PYTHON_USEDEP}] ~dev-python/ha-av-10.0.0_beta5[${PYTHON_USEDEP}] ~dev-python/numpy-1.23.2[${PYTHON_USEDEP}] )
+	stream? ( ~dev-python/PyTurboJPEG-1.6.7[${PYTHON_USEDEP}] ~dev-python/ha-av-10.0.0[${PYTHON_USEDEP}] ~dev-python/numpy-1.23.2[${PYTHON_USEDEP}] )
 	streamlabswater? ( ~dev-python/streamlabswater-1.0.1[${PYTHON_USEDEP}] )
 	subaru? ( ~dev-python/subarulink-0.7.6[${PYTHON_USEDEP}] )
 	suez_water? ( ~dev-python/pysuez-0.1.19[${PYTHON_USEDEP}] )
