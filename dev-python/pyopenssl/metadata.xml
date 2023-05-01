@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyOpenSSL</remote-id>
+    <remote-id type="github">pyca/pyopenssl</remote-id>
+    <doc>https://pythonhosted.org/pyOpenSSL/</doc>
+    <maintainer status="unknown">
+      <email>cryptography-dev@python.org</email>
+      <name>The pyOpenSSL developers</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
