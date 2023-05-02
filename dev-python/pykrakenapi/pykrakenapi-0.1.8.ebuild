@@ -19,8 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/krakenex-2.0.0[${PYTHON_USEDEP}]
-	dev-python/pandas[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/krakenex-2.0.0[${PYTHON_USEDEP}]"
+#	"dev-python/pandas[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
