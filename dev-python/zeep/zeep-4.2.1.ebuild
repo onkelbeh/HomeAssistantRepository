@@ -44,10 +44,6 @@ BDEPEND="
 
 distutils_enable_tests pytest
 
-PATCHES=(
-	"${FILESDIR}"/${P}-cached-prop.patch
-)
-
 EPYTEST_DESELECT=(
 	# broken by new pytest-httpx?
 	tests/test_async_transport.py::test_load
