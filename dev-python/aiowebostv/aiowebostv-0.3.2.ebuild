@@ -5,11 +5,9 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
-
+inherit distutils-r1 pypi
 DESCRIPTION="Library to control webOS based LG TV devices"
 HOMEPAGE="https://github.com/home-assistant-libs/aiowebostv https://pypi.org/project/aiowebostv/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
