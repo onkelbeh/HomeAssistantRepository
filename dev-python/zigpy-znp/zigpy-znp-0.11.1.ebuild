@@ -4,9 +4,8 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
-PYPI_NO_NORMALIZE=1
 DISTUTILS_USE_PEP517=setuptools
-
+PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="A library for zigpy which communicates with TI ZNP radios"
@@ -20,7 +19,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/zigpy-0.52.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/zigpy-0.55.0[${PYTHON_USEDEP}]
 	dev-python/async-timeout[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
