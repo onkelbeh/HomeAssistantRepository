@@ -7,7 +7,6 @@ PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
-
 DESCRIPTION="A library which communicates with XBee radios for zigpy"
 HOMEPAGE="https://github.com/zigpy/zigpy-xbee https://pypi.org/project/zigpy-xbee/"
 
