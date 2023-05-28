@@ -2,7 +2,6 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
@@ -19,7 +18,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/dbus-fast-1.22.0[${PYTHON_USEDEP}]"
+	>=dev-python/dbus-fast-1.83.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/asynctest[${PYTHON_USEDEP}]
