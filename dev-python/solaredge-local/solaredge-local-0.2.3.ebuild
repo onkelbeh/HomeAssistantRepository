@@ -15,10 +15,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="dev-python/uplink[${PYTHON_USEDEP}]
-	dev-python/uplink-protobuf[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/uplink-0.9.7[${PYTHON_USEDEP}]
+	>=dev-python/uplink-protobuf-0.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
