@@ -6,7 +6,6 @@ EAPI=8
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
-
 DESCRIPTION="Asynchronous Python client providing RDW vehicle information."
 HOMEPAGE="https://github.com/frenck/python-vehicle https://pypi.org/project/vehicle/"
 
