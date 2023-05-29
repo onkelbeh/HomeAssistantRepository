@@ -3,13 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
 DESCRIPTION="Python wrapper for TP-Link Omada SDN Controller API (OC200/OC300/Software Controller)"
 HOMEPAGE="https://github.com/MarkGodwin/tplink-omada-api https://pypi.org/project/tplink-omada-client/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="MIT"
 SLOT="0"
