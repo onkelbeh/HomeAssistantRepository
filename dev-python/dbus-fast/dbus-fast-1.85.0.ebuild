@@ -6,7 +6,6 @@ EAPI=8
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
-
 DESCRIPTION="A faster version of dbus-next"
 HOMEPAGE="https://github.com/bluetooth-devices/dbus-fast https://pypi.org/project/dbus-fast/"
 
@@ -18,9 +17,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/async-timeout-3.0.0[${PYTHON_USEDEP}]"
+RDEPEND="$(python_gen_cond_dep '>=dev-python/async-timeout-3.0.0[${PYTHON_USEDEP}]' python3_10)"
 BDEPEND="
-	>=dev-python/poetry-core-1.1.0[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
