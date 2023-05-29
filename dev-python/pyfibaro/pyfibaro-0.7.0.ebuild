@@ -3,13 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
 DESCRIPTION="Simple API to access fibaro home center from any Python 3 script. Designed for Home Assistant (but not only)"
 HOMEPAGE="https://github.com/rappenze/pyfibaro https://pypi.org/project/pyfibaro/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,7 +20,6 @@ DOCS="README.md"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
