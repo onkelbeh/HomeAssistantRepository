@@ -3,10 +3,9 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-
 DESCRIPTION="Read data from GoodWe inverter via local network"
 HOMEPAGE="https://github.com/marcelblijleven/goodwe https://pypi.org/project/goodwe/"
 
