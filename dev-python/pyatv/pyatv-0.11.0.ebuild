@@ -17,7 +17,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.8.3[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
 	>=dev-python/bitarray-2.1.2[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.0.3[${PYTHON_USEDEP}]
@@ -25,12 +25,12 @@ RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 	>=dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
 	>=dev-python/mediafile-0.8.1[${PYTHON_USEDEP}]
 	>=dev-python/miniaudio-1.45[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-3.19.3[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-python-4.22.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.23.0[${PYTHON_USEDEP}]
 	>=dev-python/srptools-0.2.0[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.38.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-xdist[${PYTHON_USEDEP}]
