@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">androidtvremote2</remote-id>
+    <remote-id type="github">tronikos/androidtvremote2</remote-id>
+    <maintainer status="unknown">
+      <email>tronikos@gmail.com</email>
+      <name>tronikos</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
