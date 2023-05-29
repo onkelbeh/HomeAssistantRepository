@@ -6,7 +6,6 @@ EAPI=8
 PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-
 DESCRIPTION="Library to read data from the BMW Connected Drive portal"
 HOMEPAGE="https://github.com/bimmerconnected/bimmer_connected https://pypi.org/project/bimmer-connected/"
 
@@ -20,8 +19,7 @@ DOCS="README.rst"
 
 RDEPEND="dev-python/httpx[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.4[${PYTHON_USEDEP}]
-	>=dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]
-	dev-python/aiofile[${PYTHON_USEDEP}]"
+	>=dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/pbr[${PYTHON_USEDEP}]
 	test? (
