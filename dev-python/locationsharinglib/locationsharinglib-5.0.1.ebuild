@@ -2,7 +2,6 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-
 PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
@@ -18,22 +17,14 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="dev-python/coloredlogs[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/coloredlogs-15.0.1[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/cachetools[${PYTHON_USEDEP}]
-	dev-python/pytz[${PYTHON_USEDEP}]"
+	>=dev-python/cachetools-5.3.0[${PYTHON_USEDEP}]
+	>=dev-python/pytz-2023.3[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-src_prepare() {
-	sed -i "s/coloredlogs~=10.0/coloredlogs/g" -i requirements.txt || die
-	sed -i "s/requests~=2.25.1/requests/g" -i requirements.txt || die
-	sed -i "s/cachetools~=2.1.0/cachetools/g" -i requirements.txt || die
-	sed -i "s/pytz~=2020.5/pytz/g" -i requirements.txt || die
-	eapply_user
-}
 
 python_test() {
 	py.test -v -v || die
