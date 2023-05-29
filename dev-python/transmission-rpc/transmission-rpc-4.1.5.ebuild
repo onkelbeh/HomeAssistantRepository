@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 DESCRIPTION="Python module that implements the Transmission bittorent client JSON-RPC protocol"
 HOMEPAGE="https://github.com/Trim21/transmission-rpc https://pypi.org/project/transmission-rpc/"
