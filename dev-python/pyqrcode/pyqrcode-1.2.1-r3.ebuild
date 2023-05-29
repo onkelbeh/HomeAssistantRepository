@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
@@ -19,7 +19,8 @@ S=${WORKDIR}/${PN}-${EGIT_COMMIT}
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="png"
+IUSE="png test"
+RESTRICT="!test? ( test )"
 
 RDEPEND="png? ( dev-python/pypng[${PYTHON_USEDEP}] )"
 BDEPEND="
@@ -33,5 +34,3 @@ src_prepare() {
 
 	distutils-r1_src_prepare
 }
-
-distutils_enable_tests nose
