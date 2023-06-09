@@ -3,15 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
-
+inherit distutils-r1 pypi
 DESCRIPTION="An async GeoRSS client library."
 HOMEPAGE="https://github.com/exxamalte/python-aio-georss-client https://pypi.org/project/aio-georss-client/"
-MY_PN=${PN//-/_}
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
