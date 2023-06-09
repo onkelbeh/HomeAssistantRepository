@@ -26,3 +26,13 @@ BDEPEND="
 python_test() {
 	py.test -v -v || die
 }
+
+src_prepare() {
+	# remove the 'include' section
+	sed -i '35,42d' pyproject.toml || die
+
+	#rm -R examples || die
+	#rm filter_test.md || die
+	#rm LICENSE || die
+	eapply_user
+}
