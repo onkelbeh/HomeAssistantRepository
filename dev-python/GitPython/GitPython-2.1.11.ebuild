@@ -28,4 +28,3 @@ python_test() {
 }
 
 distutils_enable_tests pytest
-
