@@ -3,13 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
-
+inherit distutils-r1 pypi
 DESCRIPTION="Calculate the distance between 2 points on Earth."
 HOMEPAGE="https://github.com/mapado/haversine https://pypi.org/project/haversine/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
