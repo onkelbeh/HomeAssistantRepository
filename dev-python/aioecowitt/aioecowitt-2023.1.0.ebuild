@@ -3,13 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
-
+inherit distutils-r1 pypi
 DESCRIPTION="Python wrapper for EcoWitt Protocol"
 HOMEPAGE="https://github.com/home-assistant-libs/aioecowitt https://pypi.org/project/aioecowitt/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
