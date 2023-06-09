@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
-SRC_URI="$(pypi_sdist_url --no-normalize "${PN}" "${PV}" .zip)"
+SRC_URI="$(pypi_sdist_url --no-normalize "${PN}" "${PV}" ".zip" )"
 DESCRIPTION="Library of psychrometric functions to calculate thermodynamic properties of air"
 HOMEPAGE="https://github.com/psychrometrics/psychrolib https://pypi.org/project/PsychroLib/"
 
@@ -26,7 +26,8 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-python_test() {
+distutils_enable_tests pytest
+test() {
 	py.test -v -v || die
 }
 
