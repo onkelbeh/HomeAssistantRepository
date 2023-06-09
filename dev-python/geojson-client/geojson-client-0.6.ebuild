@@ -25,8 +25,6 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-S="${WORKDIR}/${MY_PN}-${PV}"
-
 python_test() {
 	py.test -v -v || die
 }
