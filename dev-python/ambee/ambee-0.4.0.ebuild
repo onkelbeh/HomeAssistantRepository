@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 DESCRIPTION="Asynchronous Python client for the Ambee API."
 HOMEPAGE="https://github.com/frenck/python-ambee https://pypi.org/project/ambee/"
