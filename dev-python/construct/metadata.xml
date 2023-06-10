@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">construct</remote-id>
+    <remote-id type="github">construct/construct</remote-id>
     <maintainer status="unknown">
       <email>arek.bulski@gmail.com, tomerfiliba@gmail.com, MostAwesomeDude@gmail.com</email>
       <name>Arkadiusz Bulski, Tomer Filiba, Corbin Simpson</name>
