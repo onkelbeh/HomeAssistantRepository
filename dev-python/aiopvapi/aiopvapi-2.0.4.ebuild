@@ -1,15 +1,16 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-
 inherit distutils-r1
 
 DESCRIPTION="Powerview blinds API wrapper"
 HOMEPAGE="https://github.com/sander76/aio-powerview-api https://pypi.org/project/aiopvapi/"
+# https://github.com/sander76/aio-powerview-api/archive/refs/tags/v2.0.4.tar.gz
+# https://github.com/sander76/aio-powerview-api/archive/refs/tags/v2.0.4.tar.gz
 MY_PN="aio-powerview-api"
 SRC_URI="https://github.com/sander76/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 S=${WORKDIR}/${MY_PN}-${PV}
