@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 DESCRIPTION="An asyncio-based Python3 library for interacting with WattTime"
 HOMEPAGE="https://github.com/bachya/aiowatttime https://pypi.org/project/aiowatttime/"
