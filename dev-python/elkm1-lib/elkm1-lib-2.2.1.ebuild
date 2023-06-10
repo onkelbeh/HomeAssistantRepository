@@ -31,3 +31,10 @@ python_test() {
 }
 
 distutils_enable_tests pytest
+
+# "CHANGELOG.md", -> stray top-level files in site-packages
+
+src_prepare() {
+	sed 's/"CHANGELOG.md",//g' -i pyproject.toml || die
+	eapply_user
+}
