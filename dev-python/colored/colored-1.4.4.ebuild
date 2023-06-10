@@ -3,13 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
-
+inherit distutils-r1 pypi
 DESCRIPTION="Simple library for color and formatting to terminal"
 HOMEPAGE="https://gitlab.com/dslackw/colored https://pypi.org/project/colored/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,14 +16,5 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
-
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
