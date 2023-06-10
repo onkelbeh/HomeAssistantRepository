@@ -1,11 +1,11 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 CARGO_OPTIONAL=yes
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..11} pypy3 )
+PYTHON_COMPAT=( python3_{10..12} )
 PYTHON_REQ_USE="threads(+)"
 
 CRATES="
@@ -65,7 +65,7 @@ CRATES="
 	winapi-x86_64-pc-windows-gnu-0.4.0
 "
 
-inherit cargo distutils-r1 multiprocessing
+inherit cargo distutils-r1 pypi multiprocessing
 
 VEC_P=cryptography_vectors-$(ver_cut 1-3)
 DESCRIPTION="Library providing cryptographic recipes and primitives"
@@ -74,17 +74,17 @@ HOMEPAGE="
 	https://pypi.org/project/cryptography/
 "
 SRC_URI="
-	mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
+	$(pypi_sdist_url ${PN})
 	$(cargo_crate_uris ${CRATES})
 	test? (
-		mirror://pypi/c/cryptography_vectors/${VEC_P}.tar.gz
+		$(pypi_sdist_url cryptography_vectors $(ver_cut 1-3) )
 	)
 "
 
 # extra licenses come from Rust deps
 LICENSE="Apache-2.0 BSD BSD-2 MIT Unicode-DFS-2016"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 ppc ppc64 ~riscv ~s390 sparc x86"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	>=dev-libs/openssl-1.0.2o-r6:0=
