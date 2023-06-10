@@ -3,13 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-
 DESCRIPTION="Library to control QNAP QSW devices"
 HOMEPAGE="https://github.com/Noltari/aioqsw https://pypi.org/project/aioqsw/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="Apache-2.0"
 SLOT="0"
