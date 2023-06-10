@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 DESCRIPTION="Calculations for the position of the sun and moon."
 HOMEPAGE="https://github.com/sffjunkie/astral https://pypi.org/project/astral/"
