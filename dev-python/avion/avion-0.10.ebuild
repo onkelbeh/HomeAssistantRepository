@@ -26,6 +26,7 @@ BDEPEND="
 src_prepare() {
 	sed -e "s;packages=find_packages();packages=['avion'];" \
 		-i setup.py || die
+	sed -e "s;'bluepy>==1.1.4',;'bluepy>=1.1.4',;" -i setup.py || die
 	eapply_user
 }
 
