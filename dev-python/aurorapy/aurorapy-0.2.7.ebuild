@@ -15,15 +15,6 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="dev-python/pyserial[${PYTHON_USEDEP}]
-	dev-python/future[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND="dev-python/pyserial[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
