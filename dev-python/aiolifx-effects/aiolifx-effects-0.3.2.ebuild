@@ -3,10 +3,9 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-
 DESCRIPTION="aiolifx light effects"
 HOMEPAGE="https://github.com/amelchio/aiolifx_effects https://pypi.org/project/aiolifx-effects/"
 
