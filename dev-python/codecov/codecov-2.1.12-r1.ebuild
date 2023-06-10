@@ -3,9 +3,9 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1 pypi
+inherit distutils-r1
 
 DESCRIPTION="Hosted coverage reports for GitHub, Bitbucket and Gitlab"
 HOMEPAGE="https://github.com/codecov/codecov-python https://pypi.org/project/codecov/"
