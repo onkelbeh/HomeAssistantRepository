@@ -10,7 +10,6 @@
     <remote-id type="github">kfdm/gntp</remote-id>
     <doc>https://pythonhosted.org/gntp/</doc>
     <maintainer status="unknown">
-      <email>UNKNOWN</email>
       <name>Paul Traylor</name>
     </maintainer>
   </upstream>
