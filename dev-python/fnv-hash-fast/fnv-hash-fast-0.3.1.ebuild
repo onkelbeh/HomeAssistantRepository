@@ -6,6 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
+
 DESCRIPTION="A fast version of fnv1a"
 HOMEPAGE="https://github.com/bdraco/fnv-hash-fast https://pypi.org/project/fnv-hash-fast/"
 
