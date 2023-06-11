@@ -7,7 +7,7 @@ DISTUTILS_USE_PEP517=flit
 # This is a backport of importlib.resources that's present since py3.9.
 # However, the version in 3.9 is buggy, so matplotlib needs it on 3.9
 # as well.
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit distutils-r1
 
