@@ -3,13 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
 DESCRIPTION="Discover, connect and control Gree based minisplit systems"
 HOMEPAGE="https://github.com/cmroche/greeclimate https://pypi.org/project/greeclimate/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="GPL-3"
 SLOT="0"
