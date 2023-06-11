@@ -3,15 +3,14 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+PYPI_NO_NORMALIZE=1
+PYPI_PN=${PN/-/.}
+inherit distutils-r1 pypi
 
 DESCRIPTION="Networking tools by jaraco"
 HOMEPAGE="https://github.com/jaraco/jaraco.net https://pypi.org/project/jaraco.net/"
-MY_PN=${PN/-/.}
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -37,7 +36,6 @@ RDEPEND="dev-python/more-itertools[${PYTHON_USEDEP}]
 	dev-python/pathvalidate[${PYTHON_USEDEP}]
 	dev-python/jsonpickle[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
