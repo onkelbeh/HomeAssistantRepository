@@ -1,15 +1,14 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-
-inherit distutils-r1
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=setuptools
+inherit distutils-r1 pypi
 
 DESCRIPTION="Python-based API to interact with the Legrand Home + Control interface"
 HOMEPAGE="https://github.com/chemaaa/homepluscontrol https://pypi.org/project/homepluscontrol/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -23,7 +22,6 @@ RDEPEND=">=dev-python/aiohttp-3.7.1[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.4.2[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
