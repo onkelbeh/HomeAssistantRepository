@@ -1,15 +1,14 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-
-inherit distutils-r1
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=setuptools
+inherit distutils-r1 pypi
 
 DESCRIPTION="A concrete syntax tree with AST-like properties for Python 3.5, 3.6, 3.7 and 3.8 programs."
 HOMEPAGE="https://github.com/Instagram/LibCST https://pypi.org/project/libcst/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
