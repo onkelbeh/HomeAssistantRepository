@@ -4,11 +4,11 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 PYTHON_REQ_USE='tk?,threads(+)'
 
 inherit distutils-r1 flag-o-matic multiprocessing prefix toolchain-funcs \
-	virtualx
+	virtualx pypi
 
 FT_PV=2.6.1
 DESCRIPTION="Pure python plotting library with matlab like syntax"
@@ -18,7 +18,7 @@ HOMEPAGE="
 	https://pypi.org/project/matplotlib/
 "
 SRC_URI="
-	mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
+	$(pypi_sdist_url)
 	test? (
 		https://downloads.sourceforge.net/project/freetype/freetype2/${FT_PV}/freetype-${FT_PV}.tar.gz
 	)
@@ -30,7 +30,7 @@ SRC_URI="
 # Fonts: BitstreamVera, OFL-1.1
 LICENSE="BitstreamVera BSD matplotlib MIT OFL-1.1"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~riscv ~x86"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="cairo doc excel examples gtk3 latex qt5 tk webagg wxwidgets"
 
 # internal copy of pycxx highly patched
