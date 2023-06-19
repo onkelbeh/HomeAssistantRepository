@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">mariadb</remote-id>
+    <remote-id type="github">mariadb-corporation/mariadb-connector-python</remote-id>
   </upstream>
 </pkgmetadata>

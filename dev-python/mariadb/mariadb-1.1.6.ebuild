@@ -9,7 +9,6 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="Python MariaDB extension"
 HOMEPAGE="https://www.github.com/mariadb-corporation/mariadb-connector-python https://pypi.org/project/mariadb/"
-SRC_URI="$(pypi_sdist_url "${PN}" "${PV}" ".zip")"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
@@ -19,10 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-db/mariadb-connector-c"
+RDEPEND=">=dev-db/mariadb-connector-c-3.3.1"
 BDEPEND="
-	app-arch/unzip
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
