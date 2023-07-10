@@ -1,15 +1,15 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-
-inherit distutils-r1
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=poetry
+PYPI_NO_NORMALIZE=1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Pytest Plugin to disable socket calls during tests"
 HOMEPAGE="https://github.com/miketheman/pytest-socket/ https://pypi.org/project/pytest-socket/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -31,3 +31,8 @@ python_test() {
 }
 
 distutils_enable_tests pytest
+
+src_prepare() {
+	default
+	cat pyproject.toml | grep -v "LICENSE" | grep -v "README.md" > x && mv x pyproject.toml
+}
