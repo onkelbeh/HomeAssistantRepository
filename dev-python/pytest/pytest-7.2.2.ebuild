@@ -5,9 +5,9 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_TESTED=( python3_{9..11} pypy3 )
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
-inherit distutils-r1 multiprocessing
+inherit distutils-r1 multiprocessing pypi
 
 DESCRIPTION="Simple powerful testing with Python"
 HOMEPAGE="
@@ -15,7 +15,6 @@ HOMEPAGE="
 	https://github.com/pytest-dev/pytest/
 	https://pypi.org/project/pytest/
 "
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
