@@ -4,13 +4,12 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="A modern/fast Python SOAP client based on lxml / requests"
 HOMEPAGE="https://docs.python-zeep.org/"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -35,7 +34,7 @@ BDEPEND="
 		dev-python/freezegun[${PYTHON_USEDEP}]
 		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/pretend[${PYTHON_USEDEP}]
-		dev-python/python-xmlsec[${PYTHON_USEDEP}]
+		dev-python/xmlsec[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-httpx[${PYTHON_USEDEP}]
 		dev-python/requests-mock[${PYTHON_USEDEP}]
