@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-gammu</remote-id>
+    <remote-id type="github">gammu/python-gammu</remote-id>
     <maintainer status="unknown">
       <email>michal@cihar.com</email>
       <name>Michal Cihar</name>
