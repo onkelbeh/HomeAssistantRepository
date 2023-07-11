@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
-DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 DESCRIPTION="Asynchronous Python client for the GitHub API"
 HOMEPAGE="https://github.com/ludeeus/aiogithubapi https://pypi.org/project/aiogithubapi/"
