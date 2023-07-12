@@ -1,18 +1,17 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="A library to interface with the opentherm gateway through serial or network connection."
 HOMEPAGE="https://github.com/mvn23/pyotgw https://pypi.org/project/pyotgw/"
-MY_P="${PN}-${PV/_beta/b}"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
-S="${WORKDIR}/${MY_P}"
+MY_PV="${PV/_beta/b}"
+SRC_URI="$(pypi_sdist_url "${PN}" "${MY_PV}")"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="GPL-3+"
 SLOT="0"
@@ -23,11 +22,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]"
-BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
 
 python_test() {
 	py.test -v -v || die
