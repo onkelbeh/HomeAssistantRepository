@@ -3,13 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
 DESCRIPTION="A fully featured modbus protocol stack in python"
 HOMEPAGE="https://github.com/riptideio/pymodbus/ https://pypi.org/project/pymodbus/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="BSD"
 SLOT="0"
@@ -28,7 +27,6 @@ RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 		>=dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 	 )"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/coverage[${PYTHON_USEDEP}]
@@ -41,10 +39,6 @@ BDEPEND="
 src_prepare() {
 	sed "/prompt-toolkit==/c\prompt-toolkit" -i requirements.txt || die
 	eapply_user
-}
-
-python_test() {
-	py.test -v -v || die
 }
 
 distutils_enable_tests pytest
