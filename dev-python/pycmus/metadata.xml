@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pycmus</remote-id>
+    <remote-id type="github">mtreinish/pycmus</remote-id>
     <maintainer status="unknown">
       <email>mtreinish@kortar.org</email>
       <name>Matthew Treinish</name>
