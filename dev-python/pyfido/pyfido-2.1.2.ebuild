@@ -3,13 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
 DESCRIPTION="Get your Fido consumption (wwww.fido.ca)"
 HOMEPAGE="https://github.com/titilambert/pyfido https://pypi.org/project/pyfido/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="Apache-2.0"
 SLOT="0"
