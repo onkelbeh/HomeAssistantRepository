@@ -2,15 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=hatchling
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Pytest plugin providing a fixture interface for spulec/freezegun"
 HOMEPAGE="https://github.com/pytest-dev/pytest-freezer https://pypi.org/project/pytest-freezer/"
-MY_PN=${PN//-/_}
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"

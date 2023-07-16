@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">sonos-websocket</remote-id>
+    <remote-id type="github">jjlawren/sonos-websocket</remote-id>
+    <maintainer status="unknown">
+      <email>jjlawren@users.noreply.github.com</email>
+      <name>Jason Lawrence</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

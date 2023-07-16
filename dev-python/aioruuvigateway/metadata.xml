@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aioruuvigateway</remote-id>
-    <remote-id type="github">unknown/aioruuvigateway</remote-id>
+    <remote-id type="github">akx/aioruuvigateway</remote-id>
     <maintainer status="unknown">
       <email>akx@iki.fi</email>
       <name>Aarni Koskela</name>

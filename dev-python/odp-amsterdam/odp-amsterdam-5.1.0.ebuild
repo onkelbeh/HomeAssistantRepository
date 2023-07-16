@@ -3,13 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python client providing Open Data information of Amsterdam"
 HOMEPAGE="https://github.com/klaasnicolaas/python-odp-amsterdam https://pypi.org/project/odp-amsterdam/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="MIT"
 SLOT="0"

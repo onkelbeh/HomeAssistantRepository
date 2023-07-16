@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">paho-mqtt</remote-id>
+    <remote-id type="github">eclipse/paho.mqtt.python</remote-id>
     <maintainer status="unknown">
       <email>roger@atchoo.org</email>
       <name>Roger Light</name>

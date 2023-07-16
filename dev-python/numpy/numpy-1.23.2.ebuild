@@ -1,14 +1,13 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 PYTHON_REQ_USE="threads(+)"
-
 FORTRAN_NEEDED=lapack
 
-inherit distutils-r1 flag-o-matic fortran-2 toolchain-funcs
+inherit distutils-r1 flag-o-matic fortran-2 toolchain-funcs pypi
 
 DOC_PV=${PV}
 # For when docs aren't ready yet, set to last version
@@ -20,7 +19,7 @@ HOMEPAGE="
 	https://pypi.org/project/numpy/
 "
 SRC_URI="
-	mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
+	$(pypi_sdist_url)
 	doc? (
 		https://numpy.org/doc/$(ver_cut 1-2 ${DOC_PV})/numpy-html.zip -> numpy-html-${DOC_PV}.zip
 		https://numpy.org/doc/$(ver_cut 1-2 ${DOC_PV})/numpy-ref.pdf -> numpy-ref-${DOC_PV}.pdf

@@ -1,19 +1,18 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
-DISTUTILS_USE_SETUPTOOLS=rdepend
-inherit distutils-r1
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=setuptools
+inherit distutils-r1 pypi
 
 DESCRIPTION="Python library for serializing any arbitrary object graph into JSON"
 HOMEPAGE="https://github.com/jsonpickle/jsonpickle/ https://pypi.org/project/jsonpickle/"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="doc test"
 RESTRICT="!test? ( test )"
 
@@ -25,9 +24,7 @@ RDEPEND="
 	dev-python/ujson[${PYTHON_USEDEP}]
 "
 # toml via setuptools-scm[toml]
-BDEPEND="
-	dev-python/setuptools-scm[${PYTHON_USEDEP}]
-	dev-python/toml[${PYTHON_USEDEP}]"
+BDEPEND="dev-python/setuptools-scm[${PYTHON_USEDEP}]"
 
 distutils_enable_sphinx "docs/source"
 distutils_enable_tests pytest

@@ -3,11 +3,10 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
-
 DESCRIPTION="A client for Honeywell's US-based cloud devices"
 HOMEPAGE="https://github.com/mkmer/AIOSomecomfort https://pypi.org/project/AIOSomecomfort/"
 

@@ -3,16 +3,15 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-
-inherit distutils-r1
-
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=setuptools
+PYPI_NO_NORMALIZE=1
+inherit distutils-r1 pypi
 MY_P=${P/_beta/b}
 MY_PV=${PV/_beta/b}
 
 DESCRIPTION="subset of Python which allows program input into a trusted environment."
 HOMEPAGE="https://github.com/zopefoundation/RestrictedPython https://pypi.python.org/pypi/RestrictedPython https://pypi.org/project/RestrictedPython/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${MY_P}.tar.gz"
 
 LICENSE="ZPL"
 SLOT="0"

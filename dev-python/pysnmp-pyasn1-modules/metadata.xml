@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pysnmp-pyasn1-modules</remote-id>
+    <remote-id type="github">pysnmp/pyasn1-modules</remote-id>
     <maintainer status="unknown">
       <email>rfaircloth@splunk.com</email>
       <name>rfaircloth-splunk</name>

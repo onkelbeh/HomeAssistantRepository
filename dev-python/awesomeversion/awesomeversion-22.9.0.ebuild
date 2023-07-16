@@ -3,14 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
-
-inherit distutils-r1
-
+inherit distutils-r1 pypi
 DESCRIPTION="One version package to rule them all, One version package to find them, One version package to bring them all, and in the darkness bind them."
 HOMEPAGE="https://github.com/ludeeus/awesomeversion https://pypi.org/project/awesomeversion/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,7 +18,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]

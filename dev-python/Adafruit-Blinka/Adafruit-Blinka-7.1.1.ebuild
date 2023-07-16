@@ -3,13 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-
-inherit distutils-r1
-
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=setuptools
+PYPI_NO_NORMALIZE=1
+inherit distutils-r1 pypi
 DESCRIPTION="CircuitPython APIs for non-CircuitPython versions of Python such as CPython on Linux and MicroPython."
 HOMEPAGE="https://github.com/adafruit/Adafruit_Blinka https://pypi.org/project/Adafruit-Blinka/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

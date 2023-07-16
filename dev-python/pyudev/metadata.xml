@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyudev</remote-id>
+    <remote-id type="github">pyudev/pyudev</remote-id>
     <doc>https://pythonhosted.org/pyudev/</doc>
     <maintainer status="unknown">
       <email>lunaryorn@gmail.com</email>

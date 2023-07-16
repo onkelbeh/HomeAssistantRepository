@@ -3,15 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
-inherit distutils-r1
-
+inherit distutils-r1 pypi
 DESCRIPTION="Models for storing and converting Bluetooth Sensor State Data"
 HOMEPAGE="https://github.com/bluetooth-devices/bluetooth-sensor-state-data https://pypi.org/project/bluetooth-sensor-state-data/"
-MY_PN=${PN//-/_}
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"

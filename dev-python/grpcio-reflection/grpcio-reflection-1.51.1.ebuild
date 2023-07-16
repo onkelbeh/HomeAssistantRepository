@@ -3,13 +3,13 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+PYPI_NO_NORMALIZE=1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Standard Protobuf Reflection Service for gRPC"
 HOMEPAGE="https://grpc.io https://pypi.org/project/grpcio-reflection/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -22,7 +22,6 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/grpcio-${PV}[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-4.21.6"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

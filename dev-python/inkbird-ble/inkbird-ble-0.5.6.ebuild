@@ -3,15 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Parser for INKBIRD BLE devices"
 HOMEPAGE="https://github.com/bluetooth-devices/inkbird-ble https://pypi.org/project/inkbird-ble/"
-MY_PN=${PN/-/_}
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -25,7 +22,6 @@ RDEPEND=">=dev-python/sensor-state-data-2.2.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-sensor-state-data-1.6.1[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-0.1.2[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]

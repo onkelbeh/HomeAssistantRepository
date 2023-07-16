@@ -6,7 +6,7 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="github">amt</remote-id>
+    <remote-id type="github">nomis/intel-amt</remote-id>
     <maintainer status="unknown">
       <name>Simon Arlott</name>
     </maintainer>

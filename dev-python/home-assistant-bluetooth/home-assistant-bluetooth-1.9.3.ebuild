@@ -3,13 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="Home Assistant Bluetooth Models and Helpers"
 HOMEPAGE="https://github.com/home-assistant-libs/home-assistant-bluetooth https://pypi.org/project/home-assistant-bluetooth/"
-SRC_URI="$(pypi_sdist_url)"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -21,7 +20,6 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/bleak-0.19.2[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]

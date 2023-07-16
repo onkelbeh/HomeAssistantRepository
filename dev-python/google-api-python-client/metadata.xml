@@ -8,5 +8,6 @@
   <stabilize-allarches/>
   <upstream>
     <remote-id type="github">google/google-api-python-client</remote-id>
+    <remote-id type="pypi">google-api-python-client</remote-id>
   </upstream>
 </pkgmetadata>
