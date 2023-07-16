@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>elliott@elliottjohnson.net</email>
+    <name>Elliott Johnson</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyopensprinkler</remote-id>
+    <remote-id type="github">vinteo/py-opensprinkler</remote-id>
+    <maintainer status="unknown">
+      <email>vinteo@gmail.com</email>
+      <name>Vincent Teo</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
