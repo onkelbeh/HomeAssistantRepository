@@ -2,13 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 
 # please keep this ebuild at EAPI 7 -- sys-apps/portage dep
-EAPI=8
+EAPI=7
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{9..11} pypy3 )
 PYTHON_REQ_USE="threads(+)"
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="HTTP library for human beings"
 HOMEPAGE="
@@ -16,16 +16,15 @@ HOMEPAGE="
 	https://github.com/psf/requests/
 	https://pypi.org/project/requests/
 "
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
 IUSE="socks5 test-rust"
 
 RDEPEND="
 	>=dev-python/certifi-2017.4.17[${PYTHON_USEDEP}]
-	dev-python/charset_normalizer[${PYTHON_USEDEP}]
+	<dev-python/charset-normalizer-4[${PYTHON_USEDEP}]
 	<dev-python/idna-4[${PYTHON_USEDEP}]
 	<dev-python/urllib3-1.27[${PYTHON_USEDEP}]
 	socks5? ( >=dev-python/PySocks-1.5.6[${PYTHON_USEDEP}] )
@@ -44,8 +43,6 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-2.28.0-drop-dependency-warnings.patch
-	# https://github.com/psf/requests/pull/6261
-	"${FILESDIR}"/${PN}-2.28.1-fix-charsetnormalizer-assert.patch
 )
 
 distutils_enable_tests pytest
@@ -62,6 +59,10 @@ python_test() {
 		tests/test_requests.py::TestTimeout::test_total_timeout_connect
 		# TODO: openssl?
 		tests/test_requests.py::TestRequests::test_pyopenssl_redirect
+		# flask-2
+		tests/test_requests.py::TestRequests::test_cookie_sent_on_redirect
+		tests/test_requests.py::TestRequests::test_cookie_removed_on_expire
+		tests/test_requests.py::TestPreparingURLs::test_redirecting_to_bad_url
 	)
 
 	if ! has_version "dev-python/trustme[${PYTHON_USEDEP}]"; then
