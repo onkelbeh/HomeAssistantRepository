@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -10,30 +10,30 @@ inherit distutils-r1 multiprocessing
 
 DESCRIPTION="Optional static typing for Python"
 HOMEPAGE="
-	http://www.mypy-lang.org/
+	https://www.mypy-lang.org/
 	https://github.com/python/mypy/
 	https://pypi.org/project/mypy/
 "
 SRC_URI="
-	https://github.com/python/mypy/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz
+	https://github.com/python/mypy/archive/v${PV}.tar.gz
+		-> ${P}.gh.tar.gz
 "
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~mips ppc ppc64 ~riscv ~s390 sparc x86"
 
 # stubgen collides with this package: https://bugs.gentoo.org/585594
 RDEPEND="
 	!dev-util/stubgen
 	>=dev-python/psutil-4[${PYTHON_USEDEP}]
 	>=dev-python/typed-ast-1.4.0[${PYTHON_USEDEP}]
-	<dev-python/typed-ast-1.5.0[${PYTHON_USEDEP}]
-	>=dev-python/typing-extensions-3.7.4[${PYTHON_USEDEP}]
-	>=dev-python/mypy_extensions-0.4.3[${PYTHON_USEDEP}]
-	<dev-python/mypy_extensions-0.5.0[${PYTHON_USEDEP}]
+	<dev-python/typed-ast-2[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-3.10[${PYTHON_USEDEP}]
+	>=dev-python/mypy_extensions-1.0.0[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '
 		dev-python/tomli[${PYTHON_USEDEP}]
-	' 3.8 3.9 3.10)
+	' pypy3 python3_{8..10})
 "
 BDEPEND="
 	test? (
