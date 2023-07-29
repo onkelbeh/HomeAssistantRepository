@@ -21,7 +21,10 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/python-dateutil-2.8.1[${PYTHON_USEDEP}]
 		 >=dev-python/requests-2.24.0[${PYTHON_USEDEP}]
-		 >=dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]"
+		 >=dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]
+		 >=dev-python/aiohttp-3.8.4[${PYTHON_USEDEP}]
+		 >=dev-python/aiofiles-23.1.0
+		 >=dev-python/sortedcontainers-2.4.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	>=dev-python/testtools-2.4.0[${PYTHON_USEDEP}]
 	test? (
