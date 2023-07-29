@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pydiscovergy</remote-id>
+    <remote-id type="github">jpbede/pydiscovergy</remote-id>
+    <maintainer status="unknown">
+      <email>jan-philipp@bnck.me</email>
+      <name>Jan-Philipp Benecke</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
