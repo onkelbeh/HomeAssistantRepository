@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">knx-frontend</remote-id>
+    <remote-id type="github">XKNX/knx-frontend.git</remote-id>
+    <maintainer status="unknown">
+      <email>me@marvin-wichmann.de</email>
+      <name>Marvin Wichmann</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
