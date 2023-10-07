@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyweatherflowudp</remote-id>
+    <remote-id type="github">briis/pyweatherflowudp</remote-id>
+    <maintainer status="unknown">
+      <email>natekspencer@gmail.com</email>
+      <name>Nathan Spencer</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
