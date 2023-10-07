@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">async-interrupt</remote-id>
+    <remote-id type="github">bdraco/async_interrupt</remote-id>
+    <maintainer status="unknown">
+      <email>nick@koston.org</email>
+      <name>J. Nick Koston</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
