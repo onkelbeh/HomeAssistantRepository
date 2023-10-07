@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">xknx</remote-id>
-    <remote-id type="github">XKNX/xknx</remote-id>
+    <remote-id type="github">XKNX/xknx.git</remote-id>
     <maintainer status="unknown">
       <email>julius@mittenzwei.com</email>
       <name>Julius Mittenzwei</name>
