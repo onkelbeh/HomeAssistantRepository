@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyyardian</remote-id>
+    <remote-id type="github">h3l1o5/pyyardian</remote-id>
+    <maintainer status="unknown">
+      <email>marty.sun@aeonmatrix.com</email>
+      <name>Marty Sun</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
