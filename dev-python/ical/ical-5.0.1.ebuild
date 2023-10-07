@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/python-dateutil-2.8.2[${PYTHON_USEDEP}]
-	>=dev-python/tzdata-2022.1[${PYTHON_USEDEP}]
+	>=dev-python/tzdata-2023.3[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.9.1[${PYTHON_USEDEP}]
 	>=dev-python/pyparsing-3.0.9[${PYTHON_USEDEP}]
 	>=dev-python/emoji-2.2.0[${PYTHON_USEDEP}]"
