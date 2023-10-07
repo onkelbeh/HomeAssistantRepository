@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">aiovodafone</remote-id>
+    <remote-id type="github">chemelli74/aiovodafone</remote-id>
+    <maintainer status="unknown">
+      <email>simone.chemelli@gmail.com</email>
+      <name>Simone Chemelli</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
