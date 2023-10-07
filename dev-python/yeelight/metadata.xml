@@ -7,7 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">yeelight</remote-id>
-    <remote-id type="gitlab">stavros/python-yeelight</remote-id>
     <maintainer status="unknown">
       <email>hi@stavros.io</email>
       <name>Stavros Korokithakis</name>
