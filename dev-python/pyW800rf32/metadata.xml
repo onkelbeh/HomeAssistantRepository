@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyW800rf32</remote-id>
-    <remote-id type="github">horga83/pyW800rf32</remote-id>
+    <remote-id type="github">horga83/W800rf32</remote-id>
     <maintainer status="unknown">
       <email>farrisg@gmsys.com</email>
       <name>George Farris</name>
