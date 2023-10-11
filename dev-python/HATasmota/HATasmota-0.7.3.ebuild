@@ -17,5 +17,4 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
-	>=dev-python/voluptuous-0.12.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/voluptuous-0.12.0[${PYTHON_USEDEP}]"
