@@ -18,7 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
+RDEPEND="
+	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
 	>=dev-python/dbus-fast-1.21.0[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.15.1[${PYTHON_USEDEP}]
 	>=dev-python/usb-devices-0.4.1[${PYTHON_USEDEP}]
