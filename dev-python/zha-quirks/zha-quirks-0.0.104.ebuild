@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/zigpy-0.53.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/zigpy-0.56.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
