@@ -25,7 +25,8 @@ RDEPEND="dev-python/attrs[${PYTHON_USEDEP}]
 	dev-python/crccheck[${PYTHON_USEDEP}]
 	dev-python/cryptography[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
-	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]"
+	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
+	dev-python/typing-extensions[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/asynctest[${PYTHON_USEDEP}]
