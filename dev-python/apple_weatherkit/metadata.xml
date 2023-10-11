@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">apple_weatherkit</remote-id>
+    <remote-id type="github">tjhorner/python-weatherkit</remote-id>
+    <maintainer status="unknown">
+      <email>me@tjhorner.com</email>
+      <name>TJ Horner</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
