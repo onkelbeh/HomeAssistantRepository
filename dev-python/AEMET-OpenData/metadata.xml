@@ -10,7 +10,7 @@
     <remote-id type="github">Noltari/AEMET-OpenData</remote-id>
     <maintainer status="unknown">
       <email>noltari@gmail.com</email>
-      <name>noltari</name>
+      <name>Álvaro Fernández Rojas</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
