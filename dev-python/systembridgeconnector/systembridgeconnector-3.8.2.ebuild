@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
@@ -17,7 +17,7 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
-	>=dev-python/incremental-21.3.0[${PYTHON_USEDEP}]
+	>=dev-python/incremental-22.10.0[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.9.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
@@ -25,8 +25,8 @@ BDEPEND="
 	)"
 
 src_prepare() {
-	echo -e "aiohttp>=3.8.1\nincremental>=21.3.0\npydantic>=1.9.0" > requirements.txt
-	echo -e "incremental>=21.3.0" > requirements_setup.txt
+	echo -e "aiohttp>=3.8.1\nincremental>=22.10.0\npydantic>=1.9.0" > requirements.txt
+	echo -e "incremental>=22.10.0" > requirements_setup.txt
 	eapply_user
 }
 
