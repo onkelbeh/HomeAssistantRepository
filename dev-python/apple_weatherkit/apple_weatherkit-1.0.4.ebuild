@@ -21,7 +21,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8.5[${PYTHON_USEDEP}]
 	>=dev-python/idna-2.0[${PYTHON_USEDEP}]
-	dev-python/multidict-4.0[${PYTHON_USEDEP}]"
+	>=dev-python/multidict-4.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
