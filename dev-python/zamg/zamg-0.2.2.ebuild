@@ -3,12 +3,11 @@
 
 EAPI=8
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{9..11} )
-inherit distutils-r1
+PYTHON_COMPAT=( python3_{10..12} )
+inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python client for ZAMG weather data."
 HOMEPAGE="https://github.com/killer0071234/python-zamg https://pypi.org/project/zamg/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
