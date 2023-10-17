@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">aioruckus</remote-id>
+    <remote-id type="github">ms264556/aioruckus</remote-id>
+    <maintainer status="unknown">
+      <email>bsd0@patterni.city</email>
+      <name>ms264556</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
