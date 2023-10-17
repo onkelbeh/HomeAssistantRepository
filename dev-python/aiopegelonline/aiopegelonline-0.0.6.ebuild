@@ -30,3 +30,8 @@ python_test() {
 }
 
 distutils_enable_tests pytest
+
+src_prepare() {
+	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
+	eapply_user
+}
