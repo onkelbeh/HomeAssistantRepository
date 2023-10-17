@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 DESCRIPTION="Reolink NVR/cameras API package"
@@ -18,8 +18,8 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/ffmpeg-python[${PYTHON_USEDEP}]
-	dev-python/requests[${PYTHON_USEDEP}]"
+	dev-python/orjson[${PYTHON_USEDEP}]
+	dev-python/typing-extensions[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
