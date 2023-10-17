@@ -3,13 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="An asynchronous Python library for communicating with the OctoPrint API"
 HOMEPAGE="https://github.com/rfleming71/pyoctoprintapi https://pypi.org/project/pyoctoprintapi/"
-SRC_URI="https://github.com/rfleming71/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,7 +20,6 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]
