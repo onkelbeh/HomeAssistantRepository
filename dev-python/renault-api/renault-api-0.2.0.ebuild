@@ -1,15 +1,14 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-
-inherit distutils-r1
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=poetry
+inherit distutils-r1 pypi
 
 DESCRIPTION="Renault API"
 HOMEPAGE="https://github.com/hacf-fr/renault-api https://pypi.org/project/renault-api/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,8 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/aiohttp-3.7.1[${PYTHON_USEDEP}]
-	>=dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.8.5[${PYTHON_USEDEP}]
+	>=dev-python/pyjwt-2.4.0[${PYTHON_USEDEP}]
 	>=dev-python/marshmallow-dataclass-8.2.0[${PYTHON_USEDEP}]
 	dev-python/click[${PYTHON_USEDEP}]
 	>=dev-python/tabulate-0.8.7[${PYTHON_USEDEP}]
