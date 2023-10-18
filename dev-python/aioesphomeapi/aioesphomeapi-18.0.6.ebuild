@@ -6,7 +6,6 @@ EAPI=8
 PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-
 DESCRIPTION="Python API for interacting with ESPHome devices."
 HOMEPAGE="https://github.com/esphome/aioesphomeapi https://esphome.io/ https://pypi.org/project/aioesphomeapi/"
 
@@ -20,8 +19,9 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/protobuf-python-3.19.0[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.36.0[${PYTHON_USEDEP}]
+	>=dev-python/chacha20poly1305-reuseable-0.2.5[${PYTHON_USEDEP}]
 	>=dev-python/noiseprotocol-0.3.1[${PYTHON_USEDEP}]
-	>=dev-python/async-timeout-4.0[${PYTHON_USEDEP}]"
+	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)"
 BDEPEND="
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
