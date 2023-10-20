@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">eufylife-ble-client</remote-id>
+    <remote-id type="github">bdr99/eufylife-ble-client</remote-id>
     <maintainer status="unknown">
       <email>brandonrothweiler@gmail.com</email>
       <name>Brandon Rothweiler</name>
