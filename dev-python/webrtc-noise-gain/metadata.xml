@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">webrtc-noise-gain</remote-id>
+    <remote-id type="github">rhasspy/webrtc-noise-gain</remote-id>
+    <maintainer status="unknown">
+      <email>mike@rhasspy.org</email>
+      <name>Michael Hansen</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
