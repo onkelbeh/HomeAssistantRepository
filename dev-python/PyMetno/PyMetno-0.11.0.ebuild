@@ -7,7 +7,6 @@ PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
-
 DESCRIPTION="A library to communicate with the met.no api"
 HOMEPAGE="https://github.com/Danielhiversen/pyMetno/ https://pypi.org/project/PyMetno/"
 
@@ -19,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/xmltodict[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep '>=dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
+	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
 	dev-python/pytz[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
