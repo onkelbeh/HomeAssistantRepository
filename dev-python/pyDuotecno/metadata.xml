@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyDuotecno</remote-id>
+    <remote-id type="github">Cereal2nd/pyDuotecno</remote-id>
+    <maintainer status="unknown">
+      <email>maikel.punie@gmail.com</email>
+      <name>Maikel Punie</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
