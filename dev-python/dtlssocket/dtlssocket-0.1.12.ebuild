@@ -20,8 +20,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="<dev-python/cython-3[${PYTHON_USEDEP}]"
-BDEPEND="
+BDEPEND="<dev-python/cython-3[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
