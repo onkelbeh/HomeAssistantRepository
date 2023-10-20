@@ -29,3 +29,11 @@ python_test() {
 }
 
 distutils_enable_tests pytest
+
+src_prepare() {
+	# remove unsupported dynamic-versioning plugin
+	sed 's/0.0.0/${PV}/g' -i pyproject.toml || die
+	sed 's/, "poetry-dynamic-versioning"//g' -i pyproject.toml || die
+	sed 's/poetry_dynamic_versioning.backend/poetry.core.masonry.api/g' -i pyproject.toml || die
+	eapply_user
+}
