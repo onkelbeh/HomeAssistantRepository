@@ -20,6 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 BDEPEND="
+	dev-python/pybind11[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
