@@ -6,7 +6,7 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">greeneye-monitor</remote-id>
+    <remote-id type="pypi">greeneye_monitor</remote-id>
     <remote-id type="github">jkeljo/greeneye-monitor</remote-id>
   </upstream>
 </pkgmetadata>
