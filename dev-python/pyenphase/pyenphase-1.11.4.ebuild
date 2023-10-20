@@ -18,8 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/python-3.10[${PYTHON_USEDEP}]
-	>=dev-python/httpx-0.24.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/httpx-0.24.0[${PYTHON_USEDEP}]
 	>=dev-python/lxml-4.9.2[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-2.7.0[${PYTHON_USEDEP}]
 	>=dev-python/awesomeversion-22.9.0[${PYTHON_USEDEP}]
