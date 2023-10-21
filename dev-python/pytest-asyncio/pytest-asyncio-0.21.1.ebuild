@@ -23,7 +23,7 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
-	>=dev-python/pytest-5.4.0[${PYTHON_USEDEP}]
+	>=dev-python/pytest-7.0.0[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	dev-python/setuptools-scm[${PYTHON_USEDEP}]
