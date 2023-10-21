@@ -3,16 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
-MY_PN=${PN//-/_}
-MY_P=${MY_PN}-${PV}
 DESCRIPTION="Vallox WebSocket API"
 HOMEPAGE="https://github.com/yozik04/vallox_websocket_api https://pypi.org/project/vallox-websocket-api/"
-SRC_URI="mirror://pypi/${P:0:1}/${MY_PN}/${MY_P}.tar.gz -> ${P}.tar.gz"
-S=${WORKDIR}/${MY_PN}-${PV}
 
 LICENSE="LGPL-3"
 SLOT="0"
@@ -23,11 +19,10 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/websockets-9.1[${PYTHON_USEDEP}]
-		 <dev-python/websockets-11.0[${PYTHON_USEDEP}]
+		 <dev-python/websockets-12.0[${PYTHON_USEDEP}]
 		 >=dev-python/construct-2.9.0[${PYTHON_USEDEP}]
 		 <dev-python/construct-3.0.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/wheel[${PYTHON_USEDEP}]
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
