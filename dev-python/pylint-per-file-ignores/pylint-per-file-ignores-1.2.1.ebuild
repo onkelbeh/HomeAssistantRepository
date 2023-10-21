@@ -16,7 +16,7 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.md"
+DOCS="readme.md"
 
 RDEPEND="$(python_gen_cond_dep 'dev-python/tomli[${PYTHON_USEDEP}]' python3_{9..10})"
 BDEPEND="
