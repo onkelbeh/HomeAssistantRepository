@@ -5,14 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=hatchling
-
 inherit distutils-r1
 
 DESCRIPTION="Manage Sensirion BLE devices"
 HOMEPAGE="https://github.com/akx/sensirion-ble/ https://pypi.org/project/sensirion-ble/"
-COMMIT="71ee4a1720b9409d25d57bcb7d05637615be6639"
-SRC_URI="https://github.com/akx/sensirion-ble/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz"
-S="${WORKDIR}/${PN}-${COMMIT}"
+SRC_URI="https://github.com/akx/sensirion-ble/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

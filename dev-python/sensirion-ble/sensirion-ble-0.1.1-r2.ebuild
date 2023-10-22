@@ -10,9 +10,7 @@ inherit distutils-r1
 
 DESCRIPTION="Manage Sensirion BLE devices"
 HOMEPAGE="https://github.com/akx/sensirion-ble/ https://pypi.org/project/sensirion-ble/"
-COMMIT="bf8193473122dde89c9a3e832bb21f38fb2a91b7"
 SRC_URI="https://github.com/akx/sensirion-ble/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
-S="${WORKDIR}/${PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
