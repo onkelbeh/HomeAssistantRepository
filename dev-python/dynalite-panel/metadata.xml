@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">dynalite-panel</remote-id>
+    <remote-id type="github">ziv1234/dynalitepanel</remote-id>
+    <maintainer status="unknown">
+      <email>16467659+ziv1234@users.noreply.github.com</email>
+      <name>Ziv</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
