@@ -21,7 +21,7 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/httpx-0.19.0[${PYTHON_USEDEP}]
 	>=dev-python/zeep-4.2.1[async,${PYTHON_USEDEP}]
-	>=dev-python/ciso8601-2.1.3[async,${PYTHON_USEDEP}]"
+	>=dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
