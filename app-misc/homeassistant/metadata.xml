@@ -91,7 +91,6 @@
     <flag name="compensation">Compensation integration consumes the state from other sensors</flag>
     <flag name="coronavirus">Add sensors for COVID-19 infections from Johns Hopkins University</flag>
     <flag name="daikin">Integrate Daikin wireless controllers into Home Assistant</flag>
-    <flag name="darksky">Use dark sky weather data from Home Assistant</flag>
     <flag name="deconz">Add deCONZ ConBee/RaspBee Zigbee gateways to Home Assistant</flag>
     <flag name="delijn">De Lijn public transport network in Flanders</flag>
     <flag name="denonavr">Automation Library for Denon AVR receivers</flag>

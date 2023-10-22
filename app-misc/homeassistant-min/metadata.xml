@@ -31,7 +31,6 @@
     <flag name="co2signal">Queries the CO2Signal API for the CO2 intensity of a specific region</flag>
     <flag name="compensation">Compensation integration consumes the state from other sensors</flag>
     <flag name="coronavirus">Add sensors for COVID-19 infections from Johns Hopkins University</flag>
-    <flag name="darksky">Use dark sky weather data from Home Assistant</flag>
     <flag name="dlna_dmr">Allows you to control a DLNA Digital Media Renderer</flag>
     <flag name="dlna_dms">allows you to browse and play media from a DLNA Digital Media Server</flag>
     <flag name="dwd_weather_warnings">dwd_weather_warnings sensor platform uses DWD for  warnings</flag>
