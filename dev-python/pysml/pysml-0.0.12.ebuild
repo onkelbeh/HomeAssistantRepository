@@ -19,6 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/async-timeout-4.0[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-3.8.4[${PYTHON_USEDEP}]
 	>=dev-python/bitstring-3.1.5[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-asyncio-0.6[${PYTHON_USEDEP}]"
 BDEPEND="
@@ -26,15 +27,15 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-python_test() {
-	py.test -v -v || die
-}
-
 src_prepare() {
 	# lots of top level vios:
 	cat pyproject.toml | grep -v "from = " > x
 	mv x pyproject.toml
 	eapply_user
+}
+
+python_test() {
+	py.test -v -v || die
 }
 
 distutils_enable_tests pytest
