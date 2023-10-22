@@ -11,7 +11,8 @@ DESCRIPTION="Python library for interfacing with old models of opple lights with
 HOMEPAGE="https://github.com/tinysnake/python-oppleio-legacy https://pypi.org/project/pyoppleio-legacy/"
 COMMIT="90c57f778554fcf3a00e42757d0e92caebcfd149"
 SRC_URI="https://github.com/tinysnake/python-oppleio-legacy/archive/${COMMIT}.zip -> ${P}.gh.zip"
-S="${WORKDIR}/${PN}-${COMMIT}"
+HIS_PN="python-oppleio-legacy"
+S="${WORKDIR}/${HIS_PN}-${COMMIT}"
 
 LICENSE="MIT"
 SLOT="0"
