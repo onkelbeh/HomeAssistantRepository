@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/aiohttp-3.8.6[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.8.5[${PYTHON_USEDEP}]
 	>=dev-python/typer-0.7.0[${PYTHON_USEDEP}]
 	>=dev-python/prompt-toolkit-3.0.36[${PYTHON_USEDEP}]
 	>=dev-python/pygments-2.15.0[${PYTHON_USEDEP}]
