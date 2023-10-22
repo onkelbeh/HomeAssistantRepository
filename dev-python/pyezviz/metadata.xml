@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyezviz</remote-id>
+    <remote-id type="github">baqs/pyEzviz</remote-id>
     <maintainer status="unknown">
       <email>baqs@users.github.com</email>
       <name>Pierre Ourdouille</name>
