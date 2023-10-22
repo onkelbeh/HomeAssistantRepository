@@ -1,46 +1,45 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_SINGLE_IMPL=1
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 
 inherit distutils-r1 udev
 
 DESCRIPTION="An open source ecosystem for IoT development"
 HOMEPAGE="https://platformio.org/"
-SRC_URI="https://github.com/platformio/platformio-core/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
+SRC_URI="https://github.com/platformio/platformio-core/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}"/${PN}-core-${PV}
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
 	$(python_gen_cond_dep '
-		<dev-python/aiofiles-0.9[${PYTHON_USEDEP}]
+		>=dev-python/aiofiles-22.1[${PYTHON_USEDEP}]
 		dev-python/ajsonrpc[${PYTHON_USEDEP}]
 		<dev-python/bottle-0.13[${PYTHON_USEDEP}]
-		>=dev-python/click-8[${PYTHON_USEDEP}]
-		<dev-python/click-9[${PYTHON_USEDEP}]
+		=dev-python/click-8*[${PYTHON_USEDEP}]
 		dev-python/colorama[${PYTHON_USEDEP}]
 		>=dev-python/pyserial-3[${PYTHON_USEDEP}]
 		<dev-python/pyserial-4[${PYTHON_USEDEP}]
 		>=dev-python/zeroconf-0.37[${PYTHON_USEDEP}]
-		>=dev-python/requests-2.4[${PYTHON_USEDEP}]
-		<dev-python/requests-3[${PYTHON_USEDEP}]
-		>=dev-python/semantic_version-2.9[${PYTHON_USEDEP}]
-		<dev-python/semantic_version-3[${PYTHON_USEDEP}]
-		>=dev-python/tabulate-0.8.3[${PYTHON_USEDEP}]
-		<dev-python/tabulate-1[${PYTHON_USEDEP}]
+		=dev-python/requests-2*[${PYTHON_USEDEP}]
+		>=dev-python/semantic-version-2.10[${PYTHON_USEDEP}]
+		<dev-python/semantic-version-3[${PYTHON_USEDEP}]
+		=dev-python/tabulate-0.9*[${PYTHON_USEDEP}]
 		dev-python/twisted[${PYTHON_USEDEP}]
-		>=dev-python/pyelftools-0.27[${PYTHON_USEDEP}]
+		>=dev-python/pyelftools-0.30[${PYTHON_USEDEP}]
 		<dev-python/pyelftools-1[${PYTHON_USEDEP}]
-		>=dev-python/marshmallow-2.20.5[${PYTHON_USEDEP}]
-		=dev-python/starlette-0.20*[${PYTHON_USEDEP}]
-		=dev-python/uvicorn-0.17*[${PYTHON_USEDEP}]
+		=dev-python/marshmallow-3*[${PYTHON_USEDEP}]
+		>=dev-python/starlette-0.21[${PYTHON_USEDEP}]
+		<dev-python/starlette-0.32[${PYTHON_USEDEP}]
+		>=dev-python/uvicorn-0.19[${PYTHON_USEDEP}]
+		<dev-python/uvicorn-0.24[${PYTHON_USEDEP}]
 		dev-python/wsproto[${PYTHON_USEDEP}]
 	')
 	virtual/udev"
@@ -85,17 +84,21 @@ EPYTEST_DESELECT=(
 
 distutils_enable_tests pytest
 
-src_prepare() {
-	# Allow newer versions of zeroconf, Bug #831181.
-	# Also wsproto.
-	# ... and semantic_version, bug #853247.
+python_prepare_all() {
+	# Allow newer versions of:
+	# - zeroconf, bug #831181.
+	# - wsproto
+	# - semantic_version, bug #853247
+	# - starlette & uvicorn, bug #888427
 	sed \
 		-e '/zeroconf/s/<[0-9.*]*//' \
 		-e '/wsproto/s/==.*/"/' \
 		-e '/semantic_version/s/==[0-9.*]*//' \
+		-e '/starlette/s/==.*/"/' \
+		-e '/uvicorn/s/==.*/"/' \
 		-i setup.py || die
 
-	default
+	distutils-r1_python_prepare_all
 }
 
 python_test() {
@@ -104,7 +107,7 @@ python_test() {
 
 src_install() {
 	distutils-r1_src_install
-	udev_dorules scripts/99-platformio-udev.rules
+	udev_dorules platformio/assets/system/99-platformio-udev.rules
 }
 
 pkg_postinst() {
