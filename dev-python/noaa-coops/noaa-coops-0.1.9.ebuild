@@ -19,7 +19,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/pandas[${PYTHON_USEDEP}]
 	dev-python/zeep[${PYTHON_USEDEP}]"
 
