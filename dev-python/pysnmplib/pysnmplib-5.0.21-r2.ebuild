@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/pysnmp-pysmi-1.0.4[${PYTHON_USEDEP}]
-	>=dev-python/pysnmp-pyasn1-1.1.3[${PYTHON_USEDEP}]
+	( >=dev-python/pysnmp-pyasn1-1.1.3[${PYTHON_USEDEP}] || ~dev-python/pyasn1-0.4.8 )
 	>=dev-python/pycryptodomex-3.11.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
