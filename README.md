@@ -23,7 +23,7 @@ If you are an author of an integration / component or other stuff related to Hom
 PyPI `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (
 PyPI/GitHub/Sourceforge).
 
-##2023/10 Update:
+## note to the 2023-10 Update
 
 Due to a sudden significant change in the [pypi.eclass](https://devmanual.gentoo.org/eclass-reference/pypi.eclass/index.html) and other fundamental aspects of the Gentoo packaging system, we faced a complex and time-consuming task of updating our ebuilds. These changes required modifications to nearly 2000 ebuilds, impacting our ability to release updates in a timely manner.
 
