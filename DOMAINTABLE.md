@@ -15,7 +15,6 @@
 |airnow|AirNow web service as a source for air quality data|N|N|Y|2021.2|
 |airq|integrating the sensors provided by your air-Q device|N|N|Y|2022.12.0|
 |airthings|A python3 library to communicate with Aws|N|N|Y|2021.10.0b2|
-|airthings_ble|Integrates Airthings BLE sensors into Home Assistant|N|N|Y|2022.11.0b3|
 |airtouch4|control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller|N|N|Y|2021.9.0b1|
 |airvisual|Airvisual sensor platform queries the AirVisual cloud API for air quality data|Y|Y|Y|0.53|
 |airvisual_pro|allows Home Assistant to retrieve data from an AirVisual Node/Pro unit|N|N|Y|2023.1.1|
