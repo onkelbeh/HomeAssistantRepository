@@ -25,7 +25,7 @@ RDEPEND="
 "
 
 DEPEND="${RDEPEND}
-	<dev-python/cython-3.0.0rc1[${PYTHON_USEDEP}]"
+	<dev-python/cython-3[${PYTHON_USEDEP}]"
 
 #PATCHES=( "${FILESDIR}/1.37.1-cc-flag-test-fix.patch" )
 
