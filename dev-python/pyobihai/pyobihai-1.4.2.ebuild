@@ -21,3 +21,8 @@ DOCS="README.md"
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
+
+src_prepare() {
+	sed -i "s/packages=setuptools.find_packages()/packages=setuptools.find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
+	eapply_user
+}
