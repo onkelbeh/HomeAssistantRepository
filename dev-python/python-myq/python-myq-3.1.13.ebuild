@@ -15,6 +15,7 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.7[${PYTHON_USEDEP}]
+RDEPEND="!dev-python/pymyq
+	>=dev-python/aiohttp-3.7[${PYTHON_USEDEP}]
 	>=dev-python/beautifulsoup4-4.9.3[${PYTHON_USEDEP}]
 	>=dev-python/pkce-1.0.2[${PYTHON_USEDEP}]"
