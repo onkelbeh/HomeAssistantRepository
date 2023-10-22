@@ -47,6 +47,27 @@ Thank you for your continued support and understanding.
 
 Happy automating!
 
+
+## 2023.10.4 another workaround	for the	snmp libraries
+
+pyasn1 0.5.0 has breaking changes which cause pysnmplib to fail until they are resolved, we need to pin pyasn1 to 0.4.8 and pysnmplib to 5.0.21 to avoid the issue.
+
+* https://github.com/pyasn1/pyasn1/pull/30#issuecomment-151756433
+* https://github.com/pysnmp/pysnmp/issues/51
+
+To get this fixed, remove `dev-python/pyasn1-1.1.2` from /etc/portage/profile/package.provided, remove blocking packages and upgrade to `dev-python/pysnmplib-5.0.21-r2`, which then allows the installation of `dev-python/pyasn1-0.4.8-r2`. Finally, re-install all dependend packages.
+
+## cython-3 build issues
+
+some packages throw errors during build time, if `cython-3.0.2` is installed. Downgrade cython to `0.29.36`, and these will compile (cython is only in BDEPEND). Currently, there is no other fix. For Home Assistant 2023.10.4 I had to compile
+
+* dev-python/grpcio-1.58.0
+* dev-python/grpcio-reflection-1.58.0
+* dev-python/grpcio-status-1.58.0
+
+with the old version. Make sure you have gcc-13 active.
+
+
 ## 2023-03 changed main Ebuild SRC_URI to Pypi
 As the current translation files have been removed from the core (https://developers.home-assistant.io/blog/2023/02/06/translations-files-removed-from-core/), I have switched SRC_URI to Pypi, the SDIST there contains all artifacts including the translations. Unfortunately tests are not part of the PyPi SDIST, so currently we have none. I'll try to pull in the tests from the Github Tarball in one of the next Releases. 
 
@@ -120,7 +141,7 @@ Best you start using the `app-misc/homeassistant-min` Ebuild. If you have it run
 * Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap. Beginning homeassistant-2021.2.0, handling for systemd was added by request, thanks to @Tatsh for help.
 * I use an own profile based on "amd64/17.1/no-multilib"
 * Sunce 2022.07.06, I run detailed tests on Python 3.10 only, and am starting to try builds on Python 3.11.
-* python-3.11.5 is set as default target.
+* python-3.11.6 is set as default target.
 
 # Bigger Changes
 
@@ -591,11 +612,11 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1835 Ebuilds in total, 1824 of them have in total 1840 (40 different) licenses assigned.
+There are 1836 Ebuilds in total, 1825 of them have in total 1841 (40 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1070|
+|MIT|1071|
 |Apache-2.0|377|
 |GPL-3|116|
 |BSD|104|
