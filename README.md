@@ -3,10 +3,6 @@
 
 
 [![OS](https://img.shields.io/badge/OS-Gentoo%20Linux-blue)](https://www.gentoo.org/)
-[![pkgcheck](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/pkgcheck.yml)
-[![shellcheck](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/shellcheck.yml)
-[![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml)
-[![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)
 [![weekly commits](https://img.shields.io/github/commit-activity/w/onkelbeh/HomeAssistantRepository)](https://github.com/onkelbeh/HomeAssistantRepository/commits/)
 [![monthly commits](https://img.shields.io/github/commit-activity/m/onkelbeh/HomeAssistantRepository)](https://github.com/onkelbeh/HomeAssistantRepository/commits/)
 [![version](https://img.shields.io/github/v/release/onkelbeh/HomeAssistantRepository)](https://github.com/onkelbeh/HomeAssistantRepository/releases)
@@ -27,10 +23,29 @@ If you are an author of an integration / component or other stuff related to Hom
 PyPI `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (
 PyPI/GitHub/Sourceforge).
 
-Currently some help on the nodejs Ebuilds would be very welcome:
-* node-red
-* zigbee2mqtt
-* zwave-js-server (W.I.P, see https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/269)
+**2023/10 Update:**
+
+Due to a sudden significant change in the [pypi.eclass](https://devmanual.gentoo.org/eclass-reference/pypi.eclass/index.html) and other fundamental aspects of the Gentoo packaging system, we faced a complex and time-consuming task of updating our ebuilds. These changes required modifications to nearly 2000 ebuilds, impacting our ability to release updates in a timely manner.
+
+**Why the Delay?**
+
+1. **Eclass Changes**: The core of this delay was the extensive overhaul of the `pypi.eclass`, which required substantial updates across our entire repository.
+
+2. **Quality Assurance**: We were committed to ensuring that the updates are thoroughly tested and that Home Assistant on Gentoo continues to meet high-quality standards.
+
+3. **Other Commitments**: I've been juggling multiple responsibilities, which added to the time it took to complete these updates. Your understanding and patience are greatly appreciated.
+
+4. **Community Engagement**: We sought feedback from our users and engaged with the Gentoo community to address any issues and concerns that emerged during the update process.
+
+We appreciate your support and understanding during this period of adjustment. We are now pleased to announce that a new release is getting ready, and we are excited to deliver an updated version of Home Assistant for Gentoo.
+
+**How You Can Help:**
+
+We welcome assistance in maintaining and improving this repository. If you have the skills and time to contribute to ebuild maintenance, your help would be greatly appreciated. Please feel free to reach out and get involved in the project.
+
+Thank you for your continued support and understanding.
+
+Happy automating!
 
 ## 2023-03 changed main Ebuild SRC_URI to Pypi
 As the current translation files have been removed from the core (https://developers.home-assistant.io/blog/2023/02/06/translations-files-removed-from-core/), I have switched SRC_URI to Pypi, the SDIST there contains all artifacts including the translations. Unfortunately tests are not part of the PyPi SDIST, so currently we have none. I'll try to pull in the tests from the Github Tarball in one of the next Releases. 
