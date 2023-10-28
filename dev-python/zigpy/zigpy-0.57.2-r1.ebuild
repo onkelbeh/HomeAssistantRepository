@@ -33,6 +33,13 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
+src_prepare() {
+	# remove dynamic-versioning
+	sed 's/dynamic = \["version"\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
+	sed 's/, "setuptools-git-versioning<2"//g' -i pyproject.toml || die
+	eapply_user
+}
+
 python_test() {
 	py.test -v -v || die
 }

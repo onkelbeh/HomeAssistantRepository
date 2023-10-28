@@ -32,7 +32,7 @@
 |amcrest|Integrate your Amcrest or Dahua IP camera|N|Y|Y|0.49|
 |ampio|Will query the open data API of ampio.pl to monitor air quality sensor station|N|Y|Y|0.92|
 |androidtv|Library for controlling an Android TV, formerly firetv|Y|Y|Y|0.7.6|
-|androidtv_remote|allows you to control an Android TV and launching apps|N|N|Y|2023.5.2|
+|androidtv_remote|allows you to control an Android TV and launching apps|Y|Y|Y|2023.5.2|
 |android_ip_webcam|The android_ip_webcam integration turns any Android phone or tablet into a netwo|Y|Y|Y|0.40|
 |anel_pwrctrl|The anel_pwrctrl switch platform allows you to control ANEL PwrCtrl devices|N|Y|Y|0.30|
 |anova|allows you to control Anova sous vides with Wi-Fi capability|N|N|Y|2023.5.2|
@@ -513,7 +513,7 @@
 |nextbus| will give you the next departure time and associated data fro NextBus|N|N|Y|0.93|
 |nextcloud|pulls summary Nextcloud information into Home Assistant|N|N|Y|0.108|
 |nextdns|allows you to monitor NextDNS statistics|N|N|Y|2022.8.1|
-|nfandroidtv|Notifications for Android TV and Notifications for Fire TV|N|N|Y|0.32|
+|nfandroidtv|Notifications for Android TV and Notifications for Fire TV|Y|Y|Y|0.32|
 |nibe_heatpump|control and monitor Nibe Heat Pumps in Home Assistant|N|N|Y|2022.10.0|
 |nightscout|allows you to view your CGM data from Nightscout|N|N|Y|0.115|
 |niko_home_control|platform allows you to integrate your Niko Home Control|N|N|Y|0.82|
