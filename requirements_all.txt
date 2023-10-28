@@ -51,6 +51,7 @@ aioeafm==0.1.2
 aioeagle==1.1.0
 aioecowitt==2023.5.0
 aioemonitor==1.0.5
+aioesphomeapi==18.0.10
 aioesphomeapi==18.0.7
 aiofiles==23.1.0
 aioflo==2021.11.0
@@ -148,7 +149,7 @@ astral==2.2
 async-interrupt==1.1.1
 async-modbus==0.2.1
 async-timeout==4.0.3
-async-upnp-client==0.36.1
+async-upnp-client==0.36.2
 asyncclick==8.0.1.3
 asyncinotify==4.0.2
 asyncio-dgram==2.1.2
@@ -175,6 +176,7 @@ bcrypt==4.0.1
 beacontools==2.1.0
 beautifulsoup4==4.12.2
 beewi-smartclim==0.0.10
+bellows==0.36.5
 bellows==0.36.7
 bidict==0.22.0
 bimmer-connected==0.14.1
@@ -203,8 +205,8 @@ bme680==1.0.5
 bond-async==0.2.1
 boschshcpy==0.2.57
 boto3==1.28.17
-boto3==1.28.62
-botocore==1.31.62
+boto3==1.28.63
+botocore==1.31.63
 bottleneck==1.3.7
 broadlink==0.18.3
 brother==2.3.0
@@ -226,8 +228,8 @@ casttube==0.2.1
 cbor2==5.4.6
 cchardet==2.1.19
 certifi==3021.3.16
-cffi==1.15.1
-chacha20poly1305-reuseable==0.2.5
+cffi==1.16.0
+chacha20poly1305-reuseable==0.10.2
 chacha20poly1305==0.0.3
 chardet==5.2.0
 charset-normalizer==3.2.0
@@ -244,7 +246,6 @@ CO2Signal==0.4.2
 coinbase==2.1.0
 colorama==0.4.6
 coloredlogs==15.0.1
-colorlog==6.6.0
 colorlog==6.7.0
 colorthief==0.2.1
 colorzero==2.0
@@ -382,7 +383,6 @@ forecast-solar==3.0.0
 fortiosapi==1.0.5
 fqdn==1.5.1
 freebox-api==1.1.0
-freeimage==3.18.0
 freesms==0.2.0
 freetype==2.13.2
 fritzconnection==1.4.2
@@ -421,7 +421,7 @@ gobject-introspection-common==1.76.1
 gobject-introspection==1.76.1
 goodwe==0.2.31
 google-ai-generativelanguage==0.3.3
-google-api-core==2.11.1
+google-api-core==2.12.0
 google-api-python-client==2.71.0
 google-auth-httplib2==0.1.1
 google-auth-oauthlib==1.0.0
@@ -520,7 +520,6 @@ idna==3.4
 ifaddr==0.2.0
 iglo==1.2.7
 ihcsdk==2.8.5
-imageio==2.31.5
 imagemagick-tools==0
 imagemagick==7.1.1.11
 importlib-metadata==6.8.0
@@ -697,7 +696,7 @@ nclib==1.0.1
 ncurses==6.4_p20230401
 ndms2-client==0.1.2
 nessclient==1.0.0
-netaddr==0.8.0
+netaddr==0.9.0
 netdata==1.1.0
 netdisco==3.0.0
 netifaces==0.11.0
@@ -722,7 +721,7 @@ nspektr==0.5.0
 nsw-fuel-api-client==1.1.0
 nuheat==1.0.1
 numato-gpio==0.10.0
-numexpr==2.8.6
+numexpr==2.8.7
 numpy==1.26.0
 oasatelematics==0.3
 oauth2client==4.1.3
@@ -805,7 +804,7 @@ prometheus-client==0.17.1
 prompt-toolkit==3.0.39
 proto-plus==1.22.3
 protobuf-python==4.24.3
-protobuf==23.3
+protobuf==24.3
 proxmoxer==2.0.1
 psutil-home-assistant==0.0.1
 psutil==5.9.5
@@ -1278,6 +1277,7 @@ speedtest-cli==2.1.3
 spiderpy==1.6.1
 spidev==3.5
 sqlalchemy==2.0.21
+sqlalchemy==2.0.22
 srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
@@ -1301,7 +1301,7 @@ swisshydrodata==0.1.0
 switchbot-api==1.1.0
 synology-srm==0.2.0
 systembridgeconnector==3.8.4
-systemd-utils==253.11
+systemd-utils==254.5
 tabulate==0.9.0
 tahoma-api==0.0.16
 tailer==0.4.1
@@ -1351,7 +1351,7 @@ typer==0.7.0
 typing-extensions==4.8.0
 typing-inspect==0.7.1
 tzdata==9999
-tzlocal==5.0.1
+tzlocal==5.1
 ua-parser==0.10.0
 uasiren==0.0.1
 uc-micro-py==1.0.2
@@ -1361,7 +1361,7 @@ ulid-transform==0.8.1
 ultraheat-api==0.5.7
 uModbus==1.0.4
 unasync==0.5.0
-unidecode==1.3.6
+unidecode==1.3.7
 unifi-discovery==1.1.7
 unifiled==0.11
 universal-silabs-flasher==0.0.14
@@ -1375,7 +1375,7 @@ uplink==0.9.7
 uri-template==1.3.0
 uritemplate==4.1.1
 url-normalize==1.4.3
-urllib3==2.0.4
+urllib3==2.0.6
 urwid==2.1.2
 usb-devices==0.4.1
 uscisstatus==0.1.1
@@ -1431,7 +1431,7 @@ xerces-c==3.2.4
 xiaomi-ble==0.21.1
 xknx==2.11.2
 xknxproject==3.3.0
-xmlschema==2.3.1
+xmlschema==2.5.0
 xmltodict==0.13.0
 xs1-api-client==3.0.0
 yalesmartalarmclient==0.3.9
@@ -1458,7 +1458,7 @@ zigpy-xbee==0.18.3
 zigpy-zigate==0.11.0
 zigpy-znp==0.11.6
 zigpy==0.57.2
-zipp==3.16.2
+zipp==3.17.0
 zlib==1.2.13
 zm-py==0.5.2
 zope-interface==6.0

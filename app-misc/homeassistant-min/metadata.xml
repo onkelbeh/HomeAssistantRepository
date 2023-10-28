@@ -20,6 +20,7 @@
     <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
     <flag name="alpha_vantage">The alpha_vantage sensor platform uses Alpha Vantage to monitor the stock market</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
+    <flag name="androidtv_remote">allows you to control an Android TV and launching apps</flag>
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
     <flag name="bluetooth">The Bluetooth integration will detect nearby Bluetooth devices</flag>
@@ -61,6 +62,7 @@
     <flag name="myq">lets you control MyQ-Enabled garage doors</flag>
     <flag name="mysensors">combines devices like Arduino, ESP8266, Raspberry Pi, NRF24L01+ and RFM69</flag>
     <flag name="mysql">set dependencies to install MySQL Libraries for use with HomeAssistant</flag>
+    <flag name="nfandroidtv">Notifications for Android TV and Notifications for Fire TV</flag>
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
     <flag name="octoprint">The main integration to integrate OctoPrint sensors</flag>
     <flag name="onvif">allows you to use an ONVIF Profile S conformant device</flag>

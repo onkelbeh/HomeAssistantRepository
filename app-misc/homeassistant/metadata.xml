@@ -34,6 +34,7 @@
     <flag name="amcrest">Integrate your Amcrest or Dahua IP camera</flag>
     <flag name="ampio">Will query the open data API of ampio.pl to monitor air quality sensor station</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
+    <flag name="androidtv_remote">allows you to control an Android TV and launching apps</flag>
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
     <flag name="anel_pwrctrl">The anel_pwrctrl switch platform allows you to control ANEL PwrCtrl devices</flag>
     <flag name="anthemav">Both Anthem’s current and last generation of A/V Receivers and Processors suppor</flag>
@@ -193,6 +194,7 @@
     <flag name="nederlandse_spoorwegen">train service in the Netherlands</flag>
     <flag name="netatmo">Access to Netatmo weather station data</flag>
     <flag name="netdata">API for interacting with Netdata</flag>
+    <flag name="nfandroidtv">Notifications for Android TV and Notifications for Fire TV</flag>
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
     <flag name="nuki">control Nuki Smart Locks</flag>
     <flag name="nws">uses the National Weather Service web API</flag>
