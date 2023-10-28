@@ -32,6 +32,13 @@ BDEPEND="
 		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 	)"
 
+src_prepare() {
+	# remove dynamic-versioning
+	sed 's/dynamic = \["version"\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
+	sed 's/, "setuptools-git-versioning<2"//g' -i pyproject.toml || die
+	eapply_user
+}
+
 distutils_enable_tests pytest
 
 # TODO: Make symlinks for zigpy_znp/tools and add TOOLS.md and docs/*.pdf , but only it is in github package
