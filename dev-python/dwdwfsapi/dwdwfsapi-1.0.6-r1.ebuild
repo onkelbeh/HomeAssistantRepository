@@ -22,12 +22,16 @@ RDEPEND=">=dev-python/requests-2.23.0[${PYTHON_USEDEP}]
 	<dev-python/requests-3[${PYTHON_USEDEP}]
 	>=dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
 	<dev-python/ciso8601-3[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.25.8[${PYTHON_USEDEP}]
-	<dev-python/urllib3-2[${PYTHON_USEDEP}]"
+	>=dev-python/urllib3-1.25.8[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
+
+src_prepare() {
+	sed -i 's/"urllib3>=1.25.8,<2"/"urllib3>=1.25.8"/g' -i setup.py || die
+	eapply_user
+}
 
 python_test() {
 	py.test -v -v || die
