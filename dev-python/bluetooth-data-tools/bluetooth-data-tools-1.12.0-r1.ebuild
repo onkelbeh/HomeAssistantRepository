@@ -18,6 +18,7 @@ DOCS="README.md"
 
 BDEPEND="
 	>=dev-python/cryptography-41.0.3[${PYTHON_USEDEP}]
+	>=dev-python/cython-3.0.2[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
