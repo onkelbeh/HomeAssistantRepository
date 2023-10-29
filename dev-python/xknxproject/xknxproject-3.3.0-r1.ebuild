@@ -18,6 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
+RDEPEND="~dev-python/pyzipper-0.3.6[${PYTHON_USEDEP}]
+	~dev-python/striprtf-0.0.26[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
