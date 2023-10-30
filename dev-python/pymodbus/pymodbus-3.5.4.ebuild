@@ -37,7 +37,11 @@ BDEPEND="
 	)"
 
 src_prepare() {
-	sed "/aiohttp/c\aiohttp" -i pyproject.toml || die
+	sed "s/aiohttp>=3.9.0b0/aiohttp/g" -i pyproject.toml || die
+
+	# remove dynamic-versioning
+	sed 's/dynamic = \["version"\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
+
 	eapply_user
 }
 
