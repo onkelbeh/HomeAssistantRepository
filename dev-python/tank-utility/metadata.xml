@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">tank-utility</remote-id>
+    <remote-id type="github">krismolendyke/tank-utility</remote-id>
     <maintainer status="unknown">
       <email>kris@k20e.com</email>
       <name>Kris Molendyke</name>
