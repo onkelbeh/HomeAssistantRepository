@@ -23,7 +23,7 @@ RDEPEND=">=dev-python/aiohttp-3.7.3[${PYTHON_USEDEP}]
 	>=dev-python/google-auth-oauthlib-0.4.1[${PYTHON_USEDEP}]
 	>=dev-python/google-cloud-pubsub-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-oauthlib-1.3.0[${PYTHON_USEDEP}]
-	~dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
+	>=dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.10.4[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
