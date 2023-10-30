@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ephem</remote-id>
+    <remote-id type="github">brandon-rhodes/pyephem</remote-id>
     <maintainer status="unknown">
       <email>brandon@rhodesmill.org</email>
       <name>Brandon Rhodes</name>
