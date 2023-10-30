@@ -29,6 +29,8 @@ python_test() {
 }
 
 src_prepare() {
+	# remove dynamic-versioning
+	sed 's/version_config=True/version = \"'${PV}'\"/g' -i setup.py || die
 	sed -i "s/setuptools-git-versioning<1.8.0//g" -i setup.py || die
 	eapply_user
 }
