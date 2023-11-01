@@ -3,9 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_11 )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1 readme.gentoo-r1 systemd
+PYPI_NO_NORMALIZE=1
+PYPI_PN="homeassistant"
+inherit distutils-r1 pypi readme.gentoo-r1 systemd
 
 MY_PN=homeassistant
 
@@ -15,11 +17,10 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_BRANCH="dev"
 	S="${WORKDIR}/core/"
 else
-	inherit pypi
-	MY_PV=${PV/_beta/b}
+    MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
-	SRC_URI="$(pypi_sdist_url homeassistant)"
-	S="${WORKDIR}/${MY_PN}-${PV}"
+	SRC_URI="$(pypi_sdist_url)
+	https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
 fi
 
 DESCRIPTION="Open-source home automation platform running on Python."

@@ -63,7 +63,7 @@ aiohttp-cors==0.7.0
 aiohttp-retry==2.8.3
 aiohttp-socks==0.8.3
 aiohttp==3.8.5
-aiohttp==3.8.6
+aiohttp==3.9.0_beta0
 aiohue==4.7.0
 aioimaplib==1.0.1
 aioitertools==0.11.0
@@ -125,7 +125,6 @@ Ambiclimate==0.2.1
 amcrest==1.9.8
 androidtv==0.0.73
 androidtvremote2==0.0.14
-anel-pwrctrl-homeassistant==0.0.1
 annotated-types==0.5.0
 anova-wifi==0.10.0
 anthemav==1.4.1
@@ -263,7 +262,7 @@ construct==2.10.68
 contourpy==1.1.1
 convertdate==2.4.0
 coronavirus==1.1.1
-coverage==7.3.1
+coverage==7.3.2
 cppy==1.2.1
 crc==5.0.0
 crccheck==1.3.0
@@ -399,7 +398,7 @@ gcal-sync==5.0.0
 gcloud==0.18.3
 gd==2.3.3
 gdb==13.2
-geniushub-client==0.7.0
+geniushub-client==0.7.1
 geocachingapi==0.2.1
 GeographicLib==1.52
 geojson==2.5.0
@@ -483,7 +482,7 @@ hole==0.8.0
 holidays==0.28
 home-assistant-bluetooth==1.10.4
 home-assistant-cli==9999
-home-assistant-frontend==20231027.0
+home-assistant-frontend==20231030.0
 home-assistant-intents==2023.10.16
 homeassistant
 homeconnect==0.7.2
@@ -750,7 +749,7 @@ opower==0.0.38
 opuslib==3.0.1
 oralb-ble==0.17.6
 ordered-set==4.1.0
-orjson==3.9.7
+orjson==3.9.9
 oru==0.1.11
 orvibo==1.1.1
 ovoenergy==1.2.0
@@ -779,7 +778,7 @@ pifacedigitalio==3.0.5
 piglow==1.2.4
 pigpio==1.78
 pilight==0.1.1
-pillow==10.0.1
+pillow==10.1.0
 pillow==9.3.0
 Pint==0.22
 pip==23.2.1
@@ -807,14 +806,13 @@ protobuf-python==4.24.3
 protobuf==24.3
 proxmoxer==2.0.1
 psutil-home-assistant==0.0.1
-psutil==5.9.5
+psutil==5.9.6
 PsychroLib==2.5.0
 ptyprocess==0.7.0
 pubnub==6.4.1
 pubnubsub-handler==1.0.9
 pure-pcapy3==1.0.1
 pure-python-adb==0.3.0
-pushbullet-py==0.11.0
 pushover_complete==1.1.1
 pvo==2.0.0
 pwmled==1.6.10
@@ -1002,7 +1000,6 @@ pyotgw==2.1.3
 pyotp==2.8.0
 pyoverkiz==1.12.1
 pyowm==3.2.0
-pyownet==0.10.0_p1
 pyparsing==3.1.1
 pypca==0.0.7
 pypck==0.7.17
@@ -1062,7 +1059,6 @@ PySocks==1.7.1
 pysoma==0.0.12
 pyspcwebgw==0.7.0
 pysqueezebox==0.6.3
-pystiebeleltron==0.0.1
 pysuez==0.1.19
 pyswitchbee==1.8.0
 PySwitchbot==0.40.1
@@ -1448,7 +1444,7 @@ zamg==0.3.0
 zbar==0.23.92
 zeep==4.2.1
 zengge==0.2
-zeroconf==0.115.2
+zeroconf==0.119.0
 zeversolar==0.3.1
 zha-quirks==0.0.106
 zhong-hong-hvac==1.0.9

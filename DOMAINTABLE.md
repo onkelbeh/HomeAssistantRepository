@@ -34,7 +34,6 @@
 |androidtv|Library for controlling an Android TV, formerly firetv|Y|Y|Y|0.7.6|
 |androidtv_remote|allows you to control an Android TV and launching apps|Y|Y|Y|2023.5.2|
 |android_ip_webcam|The android_ip_webcam integration turns any Android phone or tablet into a netwo|Y|Y|Y|0.40|
-|anel_pwrctrl|The anel_pwrctrl switch platform allows you to control ANEL PwrCtrl devices|N|Y|Y|0.30|
 |anova|allows you to control Anova sous vides with Wi-Fi capability|N|N|Y|2023.5.2|
 |anthemav|Both Anthem’s current and last generation of A/V Receivers and Processors suppor|N|Y|Y|0.37|
 |apache_kafka|Sends all state changes from Home Assistant to a Apache Kafka topic|N|Y|Y|0.97|
@@ -190,7 +189,6 @@
 |ee_brightbox|presence detection by looking at connected devices to a EE Bright Box 2 router|N|N|Y|0.87|
 |efergy|Integrate your Efergy meter information into Home Assistant|N|N|Y||
 |egardia|Control an Egardia/Woonveilig alarm control panel from Home Assistant|N|N|Y|0.65|
-|eight_sleep|Fetch data from your Eight Sleep smart cover or mattress|N|N|Y|0.44|
 |electrasmart|control Electra Air Ait COnditioners with HA|N|N|Y|2023.7.2|
 |electric_kiwi|uses the official Electric Kiwi API to show and select the hour of free power|N|N|Y|2023.10.1|
 |elgato|The Elgato Key Light sets the bar for high-end studio lighting|N|N|Y|0.104|
@@ -455,7 +453,7 @@
 |melissa|main integration to connect to a Melissa Climate A/C control|N|N|Y|0.63|
 |melnor|allows you to control your Melnor Bluetooth watering valves|N|N|Y|2022.9.0b3|
 |message_bird|MessageBird's REST API|N|N|Y|0.16|
-|met|met platform uses the Met.no web service as a source for meteorological data|N|N|Y|0.79|
+|met|met platform uses the Met.no web service as a source for meteorological data|N|Y|Y|0.79|
 |meteoalarm|watch for weather alerts in europe from MeteoAlarm|N|N|Y|0.93|
 |meteoclimatic|use Meteoclimatic web service as a source for meteorological data|N|N|Y|2021.6|
 |meteo_france|uses the meteorological data from Meteo-France|N|Y|Y|0.89|
@@ -520,7 +518,7 @@
 |nilu|An API client for getting pollution data from NILU sensor stations in Norway|N|N|Y|0.87|
 |nina|displays warnings from Bundesamt für Bevölkerungsschutz und Katastrophenhilfe|N|N|Y|2022.2.0b1|
 |nissan_leaf|integration with the NissanConnect EV cloud service|N|N|Y|0.89|
-|nmap_tracker|Presence detection for Home Assistant with nmap|N|N|Y|0.7|
+|nmap_tracker|Presence detection for Home Assistant with nmap|N|Y|Y|0.7|
 |nmbs|Python wrapper for the iRail API|N|N|Y|0.85|
 |noaa_tides|prediction for the tides for any location in the United States|N|N|Y|0.75|
 |nobo_hub|Integrates Nobo Ecohub into Home Assistant|N|N|Y|2022.10.0|
@@ -532,7 +530,7 @@
 |nuheat|control your connected NuHeat Signature floor heating thermostats|N|N|Y|0.61|
 |nuki|control Nuki Smart Locks|N|Y|Y|0.38|
 |numato|base for all related GPIO platforms of the Numato 32 Port USB GPIO expander|N|N|Y|0.110|
-|nut|monitor a UPS (battery backup) by using data from a NUT (Network UPS Tools)|N|N|Y|0.34|
+|nut|monitor a UPS (battery backup) by using data from a NUT (Network UPS Tools)|N|Y|Y|0.34|
 |nws|uses the National Weather Service web API|N|Y|Y|0.99|
 |nx584|NX584/NX8E Interface Library and Server|N|Y|Y|0.13|
 |nzbget|monitor and control your downloads with NZBGet|N|N|Y|0.17|
@@ -545,7 +543,6 @@
 |omnilogic|Hayward Onmilogic pool control system|N|N|Y|0.116|
 |oncue|allow you to monitor the state of your Oncue enabled Kohler generator|N|N|Y|2022.2.0b1|
 |ondilo_ico|ICO continuously analyzes the water quality of your pool/spa|N|N|Y|2021.2|
-|onewire|supports sensors which that using the One wire (1-wire) bus for communication|N|N|Y|0.12|
 |onkyo|allows you to control a Onkyo, Integra and some recent Pioneer receivers|N|Y|Y|0.17|
 |onvif|allows you to use an ONVIF Profile S conformant device|Y|Y|Y|0.47|
 |openai_conversation|adds a conversation agent powered by OpenAI in Home Assistant|N|N|Y|2023.2.1|
@@ -758,7 +755,6 @@
 |statsd|transfer all state changes to an external StatsD instance|N|Y|Y|0.12|
 |steamist|monitor the state of your Steamist steam shower|N|N|Y|2022.2.0b1|
 |steam_online|allows you to track the online status of public Steam accounts|N|N|Y|0.14|
-|stiebel_eltron|integral ventilation or heat pump units of STIEBEL ELTRON|N|N|Y|0.92|
 |stookalert|queries the RIVM Stookalert API for unfavorable weather conditions|N|N|Y|0.104|
 |stookwijzer|queries the Stookwijzer API for windspeed and gets the air quality index|N|N|Y|2023.2.1|
 |stream|provides a way to proxy live streams through Home Assistant|N|N|Y|0.90|
@@ -849,7 +845,7 @@
 |upc_connect|presence detection by looking at  a Connect Box|N|N|Y|0.36|
 |upnp|support UPnP/Internet Gateway Device (IGD) Protocol|Y|Y|Y|0.18|
 |uptimerobot|provides binary sensors from your monitors from Uptime Robot|N|N|Y|0.72|
-|usb|USB Discovery integration will watch the host for USB devices|N|N|Y|2021.9|
+|usb|USB Discovery integration will watch the host for USB devices|N|Y|Y|2021.9|
 |uscis|updates on your USCIS case using your case/receipt number|N|N|Y|0.68|
 |usgs_earthquakes_feed|a GeoJSON feed provided by the U.S. Geological Survey|N|N|Y|0.84|
 |utility_meter|integration provides functionality to track consumptions of various utilities|Y|Y|Y|0.87|

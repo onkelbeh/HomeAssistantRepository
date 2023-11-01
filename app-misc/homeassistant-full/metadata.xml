@@ -49,7 +49,6 @@
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="androidtv_remote">allows you to control an Android TV and launching apps</flag>
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
-    <flag name="anel_pwrctrl">The anel_pwrctrl switch platform allows you to control ANEL PwrCtrl devices</flag>
     <flag name="anova">allows you to control Anova sous vides with Wi-Fi capability</flag>
     <flag name="anthemav">Both Anthem’s current and last generation of A/V Receivers and Processors suppor</flag>
     <flag name="apache_kafka">Sends all state changes from Home Assistant to a Apache Kafka topic</flag>
@@ -207,7 +206,6 @@
     <flag name="ee_brightbox">presence detection by looking at connected devices to a EE Bright Box 2 router</flag>
     <flag name="efergy">Integrate your Efergy meter information into Home Assistant</flag>
     <flag name="egardia">Control an Egardia/Woonveilig alarm control panel from Home Assistant</flag>
-    <flag name="eight_sleep">Fetch data from your Eight Sleep smart cover or mattress</flag>
     <flag name="electrasmart">control Electra Air Ait COnditioners with HA</flag>
     <flag name="electric_kiwi">uses the official Electric Kiwi API to show and select the hour of free power</flag>
     <flag name="elgato">The Elgato Key Light sets the bar for high-end studio lighting</flag>
@@ -562,7 +560,6 @@
     <flag name="omnilogic">Hayward Onmilogic pool control system</flag>
     <flag name="oncue">allow you to monitor the state of your Oncue enabled Kohler generator</flag>
     <flag name="ondilo_ico">ICO continuously analyzes the water quality of your pool/spa</flag>
-    <flag name="onewire">supports sensors which that using the One wire (1-wire) bus for communication</flag>
     <flag name="onkyo">allows you to control a Onkyo, Integra and some recent Pioneer receivers</flag>
     <flag name="onvif">allows you to use an ONVIF Profile S conformant device</flag>
     <flag name="openai_conversation">adds a conversation agent powered by OpenAI in Home Assistant</flag>
@@ -775,7 +772,6 @@
     <flag name="statsd">transfer all state changes to an external StatsD instance</flag>
     <flag name="steamist">monitor the state of your Steamist steam shower</flag>
     <flag name="steam_online">allows you to track the online status of public Steam accounts</flag>
-    <flag name="stiebel_eltron">integral ventilation or heat pump units of STIEBEL ELTRON</flag>
     <flag name="stookalert">queries the RIVM Stookalert API for unfavorable weather conditions</flag>
     <flag name="stookwijzer">queries the Stookwijzer API for windspeed and gets the air quality index</flag>
     <flag name="stream">provides a way to proxy live streams through Home Assistant</flag>
