@@ -17,7 +17,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_BRANCH="dev"
 	S="${WORKDIR}/core/"
 else
-	MY_PV=${PV/_beta/b}
+    MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
 	SRC_URI="$(pypi_sdist_url)
 	https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
@@ -28,8 +28,8 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86"
-IUSE="accuweather airly airvisual alpha_vantage androidtv androidtv_remote android_ip_webcam axis bluetooth bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus dlna_dmr dlna_dms +dwd_weather_warnings ecowitt enigma2 esphome ffmpeg file forecast_solar fronius github +homekit homekit_controller http hyperion influxdb knx kodi kraken local_calendar +mariadb maxcube mikrotik +mobile_app modbus +mosquitto +mqtt myq mysensors mysql nfandroidtv +notify_events octoprint onvif +otp owntracks +ping +plex ps4 +python_script qnap qvr_pro radio_browser +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tomorrowio tplink upnp utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf zha +zwave_js"
+KEYWORDS="amd64 arm arm64 x86"
+IUSE="accuweather airly airvisual alpha_vantage androidtv androidtv_remote android_ip_webcam axis bluetooth bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus dlna_dmr dlna_dms +dwd_weather_warnings ecowitt enigma2 esphome ffmpeg file forecast_solar fronius github +homekit homekit_controller http hyperion influxdb knx kodi kraken local_calendar local_todo +mariadb maxcube mikrotik +mobile_app modbus +mosquitto +mqtt myq mysensors mysql nfandroidtv +notify_events octoprint onvif +otp owntracks +ping +plex ps4 +python_script qnap qvr_pro radio_browser +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tomorrowio tplink upnp utility_meter +version +wake_on_lan wemo whois workday yamaha yamaha_musiccast zeroconf zha +zwave_js"
 RESTRICT="!test? ( test )"
 
 # external deps
@@ -80,7 +80,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/hass-nabucasa-0.74.0[${PYTHON_USEDEP}]
 	~dev-python/hassil-1.2.5[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.10.4[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20231027.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20231030.1[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-intents-2023.10.16[${PYTHON_USEDEP}]
 	~dev-python/httpcore-0.18.0[${PYTHON_USEDEP}]
 	>=dev-python/httplib2-0.19.0[${PYTHON_USEDEP}]
@@ -172,7 +172,7 @@ RDEPEND="${RDEPEND}
 	fronius? ( ~dev-python/PyFronius-0.7.2[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/aiogithubapi-22.10.1[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.9.1[${PYTHON_USEDEP}] ~dev-python/fnv-hash-fast-0.5.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-3.0.8[${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-3.0.9[${PYTHON_USEDEP}] )
 	http? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] )
 	hyperion? ( ~dev-python/hyperion-py-0.7.5[${PYTHON_USEDEP}] )
 	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
@@ -180,6 +180,7 @@ RDEPEND="${RDEPEND}
 	kodi? ( ~dev-python/pykodi-0.2.7[${PYTHON_USEDEP}] )
 	kraken? ( ~dev-python/krakenex-2.1.0[${PYTHON_USEDEP}] ~dev-python/pykrakenapi-0.1.8[${PYTHON_USEDEP}] )
 	local_calendar? ( ~dev-python/ical-5.1.0[${PYTHON_USEDEP}] )
+	local_todo? ( ~dev-python/ical-5.1.0[${PYTHON_USEDEP}] )
 	mariadb? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.4.3[${PYTHON_USEDEP}] )
 	mikrotik? ( ~dev-python/librouteros-3.2.0[${PYTHON_USEDEP}] )
@@ -199,7 +200,7 @@ RDEPEND="${RDEPEND}
 	ping? ( ~dev-python/icmplib-3.0[${PYTHON_USEDEP}] )
 	plex? ( ~dev-python/PlexAPI-4.15.4[${PYTHON_USEDEP}] ~dev-python/plexauth-0.0.6[${PYTHON_USEDEP}] ~dev-python/plexwebsocket-0.0.14[${PYTHON_USEDEP}] )
 	ps4? ( ~dev-python/pyps4-2ndscreen-1.3.1[${PYTHON_USEDEP}] )
-	python_script? ( $(python_gen_cond_dep '~dev-python/RestrictedPython-6.2[${PYTHON_USEDEP}]' python3_11) )
+	python_script? ( $(python_gen_cond_dep '~dev-python/RestrictedPython-6.2[${PYTHON_USEDEP}]' python3_11) $(python_gen_cond_dep '~dev-python/RestrictedPython-7.0a1[${PYTHON_USEDEP}]' python3_12) )
 	qnap? ( ~dev-python/qnapstats-0.4.0[${PYTHON_USEDEP}] )
 	qvr_pro? ( ~dev-python/pyqvrpro-0.52[${PYTHON_USEDEP}] )
 	radio_browser? ( ~dev-python/radios-0.1.1[${PYTHON_USEDEP}] )
@@ -223,7 +224,7 @@ RDEPEND="${RDEPEND}
 	tasmota? ( ~dev-python/HATasmota-0.7.3[${PYTHON_USEDEP}] )
 	tile? ( ~dev-python/pytile-2023.4.0[${PYTHON_USEDEP}] )
 	tomorrowio? ( ~dev-python/pytomorrowio-0.3.6[${PYTHON_USEDEP}] )
-	tplink? ( ~dev-python/python-kasa-0.5.3[${PYTHON_USEDEP}] )
+	tplink? ( ~dev-python/python-kasa-0.5.4[${PYTHON_USEDEP}] )
 	upnp? ( ~dev-python/async-upnp-client-0.36.2[${PYTHON_USEDEP}] ~dev-python/getmac-0.8.2[${PYTHON_USEDEP}] )
 	utility_meter? ( ~dev-python/croniter-1.0.6[${PYTHON_USEDEP}] )
 	version? ( ~dev-python/pyhaversion-22.8.0[${PYTHON_USEDEP}] )
@@ -269,10 +270,10 @@ BDEPEND="${RDEPEND}
 	dev-python/mock[${PYTHON_USEDEP}]"
 
 src_prepare() {
-	if use test ; then
-		cp --no-preserve=mode --recursive${WORKDIR}/core-${MY_PV}/tests ${S}
+    if use test ; then
+        cp --no-preserve=mode --recursive${WORKDIR}/core-${MY_PV}/tests ${S}
 		chmod u+x ${S}/tests/auth/providers/test_command_line_cmd.sh
-	fi
+    fi
 	distutils-r1_src_prepare
 }
 INSTALL_DIR="/opt/${MY_PN}"

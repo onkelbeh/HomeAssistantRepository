@@ -754,6 +754,7 @@
 |ssl|include support for haproxy|Y|Y|Y||
 |starline|retrieve data of your StarLine security system from the StarLine portal|N|N|Y|0.103|
 |starlingbank|monitor your account balance data as sensors|N|N|Y|0.79|
+|starlink|allows you to integrate your Starlink into Home Assistant|N|N|Y|2023.2.1|
 |startca|Integrate your Start.ca account information into Home Assistant|N|N|Y|0.64|
 |statsd|transfer all state changes to an external StatsD instance|N|Y|Y|0.12|
 |steamist|monitor the state of your Steamist steam shower|N|N|Y|2022.2.0b1|

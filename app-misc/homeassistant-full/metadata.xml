@@ -312,6 +312,7 @@
     <flag name="google_maps">google_maps platform allows you to detect presence</flag>
     <flag name="google_pubsub">Send events to Google Cloud Pub/Sub from Home Assistant</flag>
     <flag name="google_sheets">allows you to connect your Google Drive to Home Assistant</flag>
+    <flag name="google_tasks">allows you to connect your Google Tasks to Home Assistant</flag>
     <flag name="google_translate">google_translate text-to-speech platform for Home Assistant</flag>
     <flag name="google_travel_time">provides travel time from the Google Distance Matrix API</flag>
     <flag name="govee_ble">Integrates Govee BLE devices into Home Assistant</flag>
@@ -373,6 +374,7 @@
     <flag name="image">handle image assets in Home Assistant</flag>
     <flag name="image_upload">handle image assets in Home Assistant</flag>
     <flag name="imap">observing your IMAP server and reporting the amount of unread emails</flag>
+    <flag name="improv_ble">allows connecting devices implementing Improv via BLE to Wi-Fi</flag>
     <flag name="incomfort">client for Intergas InComfort/InTouch Lan2RF systems</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
     <flag name="inkbird">Integrates INKBIRD devices into Home Assistant</flag>
@@ -440,6 +442,7 @@
     <flag name="litterrobot">Wi-Fi-enabled, automatic, self-cleaning litter box for cats</flag>
     <flag name="livisi">connect your LIVISI Smart Home Controller (SHC) to Home Assistant</flag>
     <flag name="local_calendar">create a calendar of events in Home Assistant</flag>
+    <flag name="local_todo">The Local to-do list integration allows you to create to-do lists in Home Assist</flag>
     <flag name="logi_circle">integrate your Logi Circle cameras in Home Assistant</flag>
     <flag name="london_underground">display the status of London underground lines</flag>
     <flag name="lookin">Integrates LOOKin devices into Home Assistant</flag>
@@ -768,6 +771,7 @@
     <flag name="ssl">include support for haproxy</flag>
     <flag name="starline">retrieve data of your StarLine security system from the StarLine portal</flag>
     <flag name="starlingbank">monitor your account balance data as sensors</flag>
+    <flag name="starlink">allows you to integrate your Starlink into Home Assistant</flag>
     <flag name="startca">Integrate your Start.ca account information into Home Assistant</flag>
     <flag name="statsd">transfer all state changes to an external StatsD instance</flag>
     <flag name="steamist">monitor the state of your Steamist steam shower</flag>
@@ -797,6 +801,7 @@
     <flag name="tado">an interface to the my.tado.com website</flag>
     <flag name="tahoma">interface to the tahomalink.com website. It adds covers, scenes and a sun sensor</flag>
     <flag name="tailscale">monitor and automate on the state of the devices in your Tailscale VPN</flag>
+    <flag name="tami4">Support for Tami4 Edge / Edge+ by Strauss in Home Assistant</flag>
     <flag name="tankerkoenig">monitor the fuel prices with tankerkoenig.de</flag>
     <flag name="tank_utility">Add Tank Utility propane tank monitors to Home Assistant</flag>
     <flag name="tapsaff">provides the ‘Taps Aff’ status for a given location within the UK</flag>
