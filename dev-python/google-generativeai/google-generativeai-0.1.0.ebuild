@@ -11,7 +11,7 @@ inherit distutils-r1
 DESCRIPTION="Google Generative AI High level API client library and tools."
 HOMEPAGE="https://github.com/google/generative-ai-python https://pypi.org/project/google-generativeai/"
 MY_PN="generative-ai-python"
-SRC_URI="https://github.com/google/generative-ai-python/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/google/generative-ai-python/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 S=${WORKDIR}/${MY_PN}-${PV}
 
 LICENSE="Apache-2.0"
