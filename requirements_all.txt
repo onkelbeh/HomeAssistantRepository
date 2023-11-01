@@ -58,7 +58,7 @@ aioftp==0.21.3
 aiogithubapi==22.10.1
 aioguardian==2022.7.0
 aioharmony==0.2.10
-aiohomekit==3.0.8
+aiohomekit==3.0.9
 aiohttp-cors==0.7.0
 aiohttp-retry==2.8.3
 aiohttp-socks==0.8.3
@@ -482,7 +482,7 @@ hole==0.8.0
 holidays==0.28
 home-assistant-bluetooth==1.10.4
 home-assistant-cli==9999
-home-assistant-frontend==20231030.0
+home-assistant-frontend==20231030.1
 home-assistant-intents==2023.10.16
 homeassistant
 homeconnect==0.7.2
@@ -1091,7 +1091,7 @@ python-izone==1.2.9
 python-join-api==0.0.9
 python-jose==3.3.0
 python-juicenet==1.1.0
-python-kasa==0.5.3
+python-kasa==0.5.4
 python-magic==0.4.27
 python-metar==1.4.0
 python-miio==0.5.12
@@ -1178,7 +1178,7 @@ regex==2023.8.8
 related==0.7.2
 renault-api==0.2.0
 renson-endura-delta==1.6.0
-reolink-aio==0.7.11
+reolink-aio==0.7.12
 ReParser==1.4.3
 requests-file==1.5.1
 requests-futures==1.0.1
