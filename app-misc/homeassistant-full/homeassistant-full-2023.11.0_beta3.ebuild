@@ -17,7 +17,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_BRANCH="dev"
 	S="${WORKDIR}/core/"
 else
-    MY_PV=${PV/_beta/b}
+	MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
 	SRC_URI="$(pypi_sdist_url)
 	https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
@@ -754,7 +754,7 @@ RDEPEND="${RDEPEND}
 	pushover? ( ~dev-python/pushover_complete-1.1.1[${PYTHON_USEDEP}] )
 	pvoutput? ( ~dev-python/pvo-2.0.0[${PYTHON_USEDEP}] )
 	pvpc_hourly_pricing? ( ~dev-python/aiopvpc-4.2.2[${PYTHON_USEDEP}] )
-	python_script? ( $(python_gen_cond_dep 'dev-python/RestrictedPython-6.2[${PYTHON_USEDEP}]' python3_11) ~dev-python/RestrictedPython-7.0_alpha1[${PYTHON_USEDEP}] )
+	python_script? ( $(python_gen_cond_dep '~dev-python/RestrictedPython-6.2[${PYTHON_USEDEP}]' python3_11) )
 	qbittorrent? ( ~dev-python/python-qbittorrent-0.4.3[${PYTHON_USEDEP}] )
 	qingping? ( ~dev-python/qingping-ble-0.8.2[${PYTHON_USEDEP}] )
 	qld_bushfire? ( ~dev-python/georss-qld-bushfire-alert-client-0.5[${PYTHON_USEDEP}] )
@@ -1109,10 +1109,10 @@ BDEPEND="${RDEPEND}
 	dev-python/mock[${PYTHON_USEDEP}]"
 
 src_prepare() {
-    if use test ; then
-        cp --no-preserve=mode --recursive${WORKDIR}/core-${MY_PV}/tests ${S}
+	if use test ; then
+		cp --no-preserve=mode --recursive${WORKDIR}/core-${MY_PV}/tests ${S}
 		chmod u+x ${S}/tests/auth/providers/test_command_line_cmd.sh
-    fi
+	fi
 	distutils-r1_src_prepare
 }
 INSTALL_DIR="/opt/${MY_PN}"

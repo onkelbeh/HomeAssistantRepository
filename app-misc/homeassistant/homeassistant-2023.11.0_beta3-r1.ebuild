@@ -17,7 +17,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_BRANCH="dev"
 	S="${WORKDIR}/core/"
 else
-    MY_PV=${PV/_beta/b}
+	MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
 	SRC_URI="$(pypi_sdist_url)
 	https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
@@ -349,7 +349,7 @@ RDEPEND="${RDEPEND}
 	poolsense? ( ~dev-python/poolsense-0.0.8[${PYTHON_USEDEP}] )
 	powerwall? ( ~dev-python/tesla-powerwall-0.3.19[${PYTHON_USEDEP}] )
 	ps4? ( ~dev-python/pyps4-2ndscreen-1.3.1[${PYTHON_USEDEP}] )
-	python_script? ( $(python_gen_cond_dep 'dev-python/RestrictedPython-6.2[${PYTHON_USEDEP}]' python3_11) ~dev-python/RestrictedPython-7.0_alpha1[${PYTHON_USEDEP}] )
+	python_script? ( $(python_gen_cond_dep '~dev-python/RestrictedPython-6.2[${PYTHON_USEDEP}]' python3_11) )
 	qnap? ( ~dev-python/qnapstats-0.4.0[${PYTHON_USEDEP}] )
 	qvr_pro? ( ~dev-python/pyqvrpro-0.52[${PYTHON_USEDEP}] )
 	rachio? ( ~dev-python/RachioPy-1.0.3[${PYTHON_USEDEP}] )
@@ -469,10 +469,10 @@ BDEPEND="${RDEPEND}
 	dev-python/mock[${PYTHON_USEDEP}]"
 
 src_prepare() {
-    if use test ; then
-        cp --no-preserve=mode --recursive${WORKDIR}/core-${MY_PV}/tests ${S}
+	if use test ; then
+		cp --no-preserve=mode --recursive${WORKDIR}/core-${MY_PV}/tests ${S}
 		chmod u+x ${S}/tests/auth/providers/test_command_line_cmd.sh
-    fi
+	fi
 	distutils-r1_src_prepare
 }
 INSTALL_DIR="/opt/${MY_PN}"
