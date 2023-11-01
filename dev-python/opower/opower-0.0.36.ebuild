@@ -26,6 +26,11 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
+src_prepare() {
+	rm src/demo.py
+	distutils-r1_src_prepare
+	}
+
 python_test() {
 	py.test -v -v || die
 }
