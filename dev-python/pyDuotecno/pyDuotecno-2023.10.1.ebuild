@@ -10,7 +10,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Open-source home automation platform running on Python 3."
 HOMEPAGE="https://github.com/Cereal2nd/pyDuotecno https://pypi.org/project/pyDuotecno/"
 
-LICENSE="Apache"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 DOCS="README.md"
