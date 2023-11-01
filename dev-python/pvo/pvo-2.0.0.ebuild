@@ -28,6 +28,12 @@ BDEPEND="
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
+src_prepare() {
+	# remove unsupported dynamic-versioning
+	sed 's/0.0.0/${PV}/g' -i pyproject.toml || die
+	eapply_user
+}
+
 python_test() {
 	py.test -v -v || die
 }
