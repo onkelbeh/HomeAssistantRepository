@@ -22,7 +22,7 @@ if [[ "${PV}" == *9999 ]]; then
 else
 	SRC_URI="
 		https://github.com/protocolbuffers/protobuf/archive/v${PARENT_PV}.tar.gz
-			-> ${PARENT_P}.tar.gz
+			-> ${PARENT_P}.gh.tar.gz
 	"
 KEYWORDS="amd64 arm arm64 x86"
 fi
