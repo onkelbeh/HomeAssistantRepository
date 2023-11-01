@@ -9,7 +9,7 @@
     <remote-id type="pypi">dsmr-parser</remote-id>
     <remote-id type="github">ndokter/dsmr_parser</remote-id>
     <maintainer status="unknown">
-      <email>nigel@nldr.net</email>
+      <email>mail@nldr.net</email>
       <name>Nigel Dokter and many others</name>
     </maintainer>
   </upstream>
