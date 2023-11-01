@@ -1,15 +1,14 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-
-inherit distutils-r1
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=setuptools
+inherit distutils-r1 pypi
 
 DESCRIPTION="Offical Smappee dev API and MQTT python wrapper"
 HOMEPAGE="https://github.com/smappee/pysmappee https://pypi.org/project/pysmappee/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -26,7 +25,6 @@ RDEPEND=">=dev-python/cachetools-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-oauthlib-1.3.0[${PYTHON_USEDEP}]
 	>=dev-python/schedule-1.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
