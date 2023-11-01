@@ -181,6 +181,7 @@
     <flag name="mariadb">WIP: set dependencies for mariadb-connector-python</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="media_extractor">Gets a stream URL and sends it to a media player entity</flag>
+    <flag name="met">met platform uses the Met.no web service as a source for meteorological data</flag>
     <flag name="meteo_france">uses the meteorological data from Meteo-France</flag>
     <flag name="mfi">sensor platform to allow you to monitor mFi mPort interface and sensors</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
@@ -195,8 +196,10 @@
     <flag name="netatmo">Access to Netatmo weather station data</flag>
     <flag name="netdata">API for interacting with Netdata</flag>
     <flag name="nfandroidtv">Notifications for Android TV and Notifications for Fire TV</flag>
+    <flag name="nmap_tracker">Presence detection for Home Assistant with nmap</flag>
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
     <flag name="nuki">control Nuki Smart Locks</flag>
+    <flag name="nut">monitor a UPS (battery backup) by using data from a NUT (Network UPS Tools)</flag>
     <flag name="nws">uses the National Weather Service web API</flag>
     <flag name="nx584">NX584/NX8E Interface Library and Server</flag>
     <flag name="octoprint">The main integration to integrate OctoPrint sensors</flag>
@@ -275,6 +278,7 @@
     <flag name="unifi">talk with a Ubiquiti unifi Controller</flag>
     <flag name="unifi_direct">detect presence by looking at devices connected to a UniFi AP</flag>
     <flag name="upnp">support UPnP/Internet Gateway Device (IGD) Protocol</flag>
+    <flag name="usb">USB Discovery integration will watch the host for USB devices</flag>
     <flag name="utility_meter">integration provides functionality to track consumptions of various utilities</flag>
     <flag name="vallox">control any Vallox ventilation unit</flag>
     <flag name="velbus">supports the Velbus USB, serial and TCP/IP gateway</flag>
