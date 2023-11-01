@@ -9,7 +9,6 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="asyncio-friendly python API for Sensibo"
 HOMEPAGE="https://github.com/andrey-git/pysensibo https://pypi.org/project/pysensibo/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
