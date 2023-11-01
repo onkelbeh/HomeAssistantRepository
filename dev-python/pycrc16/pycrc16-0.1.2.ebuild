@@ -10,7 +10,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Library for calculating CRC16"
 HOMEPAGE="http://code.google.com/p/pycrc16 https://pypi.org/project/pycrc16/"
 
-LICENSE="LGPL"
+LICENSE="LGPL-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
