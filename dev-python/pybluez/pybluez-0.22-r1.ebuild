@@ -19,12 +19,11 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS=""
+PATCHES=("${FILESDIR}/${PV}_py311.patch")
 
 RDEPEND="net-wireless/bluez"
 BDEPEND="
 	app-arch/unzip
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
