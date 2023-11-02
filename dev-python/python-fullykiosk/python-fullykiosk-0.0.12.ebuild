@@ -3,13 +3,13 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+PYPI_NO_NORMALIZE=1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Python wrapper for Fully Kiosk Browser REST API"
 HOMEPAGE="https://github.com/cgarwood/python-fullykiosk https://pypi.org/project/python-fullykiosk/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -21,7 +21,6 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
