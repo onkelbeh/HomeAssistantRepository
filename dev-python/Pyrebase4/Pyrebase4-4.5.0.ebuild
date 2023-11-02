@@ -25,7 +25,6 @@ RDEPEND=">=dev-python/requests-2.19.1[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-2.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.4[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
