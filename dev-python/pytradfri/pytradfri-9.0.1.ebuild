@@ -3,13 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="IKEA Tradfri/Tradfri API. Control and observe your lights from Python."
 HOMEPAGE="https://github.com/ggravlingen/pytradfri https://pypi.org/project/pytradfri/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -24,7 +23,6 @@ RDEPEND="dev-python/pydantic[${PYTHON_USEDEP}]
 DOCS="README.md"
 
 DEPEND="${DEPEND}
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 	  dev-python/pytest[${PYTHON_USEDEP}]
 	  dev-python/pytest-cov[${PYTHON_USEDEP}]
