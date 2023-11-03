@@ -24,7 +24,9 @@ RDEPEND="
 "
 
 BDEPEND="${RDEPEND}
-	<dev-python/cython-3[${PYTHON_USEDEP}]"
+	>=dev-python/cython-3[${PYTHON_USEDEP}]"
+
+PATCHES=( "${FILESDIR}/cython3-compat.patch" )
 
 python_prepare_all() {
 	distutils-r1_python_prepare_all
