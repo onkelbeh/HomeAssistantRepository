@@ -36,7 +36,6 @@
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="androidtv_remote">allows you to control an Android TV and launching apps</flag>
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
-    <flag name="anel_pwrctrl">The anel_pwrctrl switch platform allows you to control ANEL PwrCtrl devices</flag>
     <flag name="anthemav">Both Anthem’s current and last generation of A/V Receivers and Processors suppor</flag>
     <flag name="apache_kafka">Sends all state changes from Home Assistant to a Apache Kafka topic</flag>
     <flag name="apcupsd">Query Apcupsd status information from Home Assistant</flag>

@@ -106,10 +106,10 @@ aiosteamist==0.3.2
 aioswitcher==3.3.0
 aiosyncthing==0.5.1
 aiotractive==0.5.6
-aiounifi==64
+aiounifi==65
 aiovlc==0.1.0
 aiovodafone==0.4.2
-aiowaqi==2.1.0
+aiowaqi==3.0.0
 aiowatttime==0.1.1
 aiowebostv==0.3.3
 aiowithings==1.0.2
@@ -142,7 +142,7 @@ aranet4==2.2.2
 arcam-fmj==1.4.0
 argcomplete==3.1.2
 arris-tg2492lg==1.2.1
-arrow==1.2.3
+arrow==1.3.0
 asmog==0.0.6
 asn1crypto==1.5.1
 asterisk_mbox==0.5.0
@@ -206,8 +206,8 @@ bme680==1.0.5
 bond-async==0.2.1
 boschshcpy==0.2.57
 boto3==1.28.17
-boto3==1.28.63
-botocore==1.31.63
+boto3==1.28.68
+botocore==1.31.68
 bottleneck==1.3.7
 broadlink==0.18.3
 brother==2.3.0
@@ -234,6 +234,7 @@ chacha20poly1305-reuseable==0.10.2
 chacha20poly1305==0.0.3
 chardet==5.2.0
 charset-normalizer==3.2.0
+charset-normalizer==3.3.1
 circuit-webhook==1.0.1
 ciscomobilityexpress==0.3.9
 ciso8601==2.3.0
@@ -260,7 +261,6 @@ connio==0.2.0
 constantly==15.1.0
 construct==2.10.68
 contourpy==1.1.1
-convertdate==2.4.0
 coronavirus==1.1.1
 coverage==7.3.2
 cppy==1.2.1
@@ -278,8 +278,7 @@ csrmesh==0.10.0
 cssselect==1.2.0
 cups==2.4.7
 curl==8.4.0
-cycler==0.11.0
-d2to1==0.2.12_p1
+cycler==0.12.1
 dacite==1.8.0
 datadog==0.15.0
 datapoint==0.9.8
@@ -373,12 +372,12 @@ fitbit==0.3.1
 fivem-api==0.1.2
 fixerio==1.0.0_alpha0
 fjaraskupan==2.2.0
-flask==2.3.3
+flask==3.0.0
 flipr-api==1.5.0
 flux-led==1.0.4
 fnv-hash-fast==0.5.0
 fnvhash==0.1.0
-fonttools==4.42.1
+fonttools==4.43.1
 foobot_async==1.0.0
 forecast-solar==3.0.0
 fortiosapi==1.0.5
@@ -474,12 +473,11 @@ hdate==0.10.4
 heatmiserV3==1.1.18
 here-routing==0.2.0
 here-transit==1.2.0
-hijridate==2.3.0
 hikvision==0.4
 hkavr==0.0.5
 hlk-sw16==0.0.9
 hole==0.8.0
-holidays==0.28
+holidays==0.35
 home-assistant-bluetooth==1.10.4
 home-assistant-cli==9999
 home-assistant-frontend==20231030.1
@@ -578,7 +576,6 @@ kiwiki-client==0.1.1
 kiwisolver==1.4.5
 knx-frontend==2023.6.23.191712
 konnected==1.2.0
-korean-lunar-calendar==0.3.1
 krakenex==2.1.0
 lacrosse-view==1.0.1
 lakeside==0.13
@@ -647,6 +644,7 @@ markdown-it-py==3.0.0
 markdown==3.4.4
 markupsafe==2.1.3
 marshmallow-dataclass==8.5.9
+marshmallow==3.20.1
 Mastodon-py==1.5.1
 matplotlib==3.6.1
 matrix-nio==0.22.1
@@ -745,7 +743,7 @@ openwebifpy==3.2.7
 openwrt-luci-rpc==1.1.16
 openwrt-ubus-rpc==0.0.2
 OPi-GPIO==0.5.2
-opower==0.0.38
+opower==0.0.39
 opuslib==3.0.1
 oralb-ble==0.17.6
 ordered-set==4.1.0
@@ -755,7 +753,7 @@ orvibo==1.1.1
 ovoenergy==1.2.0
 oyaml==1.0
 p1monitor==2.1.1
-packaging==23.1
+packaging==23.2
 paho-mqtt==1.6.1
 panacotta==0.2
 panasonic-viera==0.3.6
@@ -821,7 +819,7 @@ py-cpuinfo==9.0.0
 py-dormakaba-dkey==1.0.5
 py-improv-ble-client==1.0.3
 py-melissa-climate==2.1.4
-py-nextbusnext==1.0.0
+py-nextbusnext==1.0.2
 py-nightscout==1.2.2
 py-schluter==0.1.7
 py-sucks==0.9.8
@@ -894,7 +892,7 @@ pyedimax==0.2.1
 pyefergy==22.1.1
 pyElectra==1.2.0
 pyEmby==1.9
-pyenphase==1.13.1
+pyenphase==1.14.1
 pyenvisalink==4.6
 pyephember==0.3.1
 PyEssent==0.14
@@ -964,7 +962,6 @@ pylutron==0.2.8
 pymailgunner==1.4
 pymata-express==1.19
 pymediaroom==0.6.5.4
-PyMeeus==0.5.11
 pymelcloud==2.5.8
 PyMetEireann==2021.8.0
 pymeteoclimatic==0.0.6
@@ -1180,7 +1177,7 @@ regex==2023.8.8
 related==0.7.2
 renault-api==0.2.0
 renson-endura-delta==1.6.0
-reolink-aio==0.7.12
+reolink-aio==0.7.14
 ReParser==1.4.3
 requests-file==1.5.1
 requests-futures==1.0.1
@@ -1211,7 +1208,7 @@ rtimulib==7.2.1
 RtmAPI==0.7.2
 rtsp-to-webrtc==0.5.1
 ruamel-yaml-clib==0.2.7
-ruamel-yaml==0.17.32
+ruamel-yaml==0.17.40
 russound-rio==1.0.0
 russound==0.1.9
 ruuvitag-ble==0.1.2
@@ -1228,7 +1225,7 @@ screenlogicpy==0.9.4
 scsgate==0.1.0
 secretstorage==3.3.3
 securetar==2023.3.0
-segno==1.5.2
+segno==1.5.3
 semver==3.0.2
 sendgrid==6.8.2
 sense-energy==0.12.2
@@ -1406,7 +1403,7 @@ wallbox==0.4.14
 warrant-lite==1.0.4
 watchdog==2.3.1
 waterfurnace==1.1.0
-wcwidth==0.2.6
+wcwidth==0.2.8
 webcolors==1.13
 webencodings==0.5.1
 webexteamssdk==1.1.1
@@ -1414,7 +1411,7 @@ webob==1.8.7
 webrtc-noise-gain==1.2.3
 websocket-client==1.6.3
 websockets==11.0.3
-werkzeug==2.3.7
+werkzeug==3.0.1
 wheel==0.41.2
 whirlpool-sixth-sense==0.18.4
 whois==0.9.27
@@ -1436,7 +1433,7 @@ xmltodict==0.13.0
 xs1-api-client==3.0.0
 yagrc==1.1.2
 yalesmartalarmclient==0.3.9
-yalexs-ble==2.3.1
+yalexs-ble==2.3.2
 yalexs==1.10.0
 yarl==1.9.2
 yeelight==0.7.13
