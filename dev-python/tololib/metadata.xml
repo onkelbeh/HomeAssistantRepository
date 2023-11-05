@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">tololib</remote-id>
+    <remote-id type="gitlab">MatthiasLohr/tololib</remote-id>
+    <maintainer status="unknown">
+      <email>mail@mlohr.com</email>
+      <name>Matthias Lohr</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
