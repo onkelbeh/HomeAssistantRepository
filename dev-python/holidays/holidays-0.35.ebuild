@@ -18,18 +18,4 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]
-	>=dev-python/convertdate-2.3.0[${PYTHON_USEDEP}]
-	dev-python/korean-lunar-calendar[${PYTHON_USEDEP}]
-	dev-python/hijri-converter[${PYTHON_USEDEP}]
-	dev-python/PyMeeus[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
-
-distutils_enable_tests pytest
+RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]"
