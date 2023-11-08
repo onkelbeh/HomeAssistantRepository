@@ -29,7 +29,7 @@ fi
 
 DESCRIPTION="Google's Protocol Buffers - Python bindings"
 HOMEPAGE="
-	https://developers.google.com/protocol-buffers/
+	https://protobuf.dev
 	https://pypi.org/project/protobuf/
 "
 
@@ -45,7 +45,7 @@ DEPEND="
 "
 RDEPEND="
 	${BDEPEND}
-	dev-libs/protobuf:${SLOT}
+	dev-libs/protobuf:${SLOT}=
 "
 
 distutils_enable_tests setup.py
