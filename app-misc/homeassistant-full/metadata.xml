@@ -463,7 +463,6 @@
     <flag name="mastodon">uses Mastodon to deliver notifications from Home Assistant</flag>
     <flag name="matrix">allows you to send messages to matrix rooms</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
-    <flag name="mazda">Mazda Connected Services integration</flag>
     <flag name="mcp23017">base for all related mcp23017 platforms in Home Assistant</flag>
     <flag name="meater">communication with the Meater Temperature Probe from Apption Labs</flag>
     <flag name="medcom_ble">International Medcom Bluetooth-enabled radiation monitors</flag>
@@ -506,7 +505,6 @@
     <flag name="mvglive">departure times bus, tram, subway, train of Munich public transport network</flag>
     <flag name="mychevy">communicates with the my.chevrolet website using the javascript API</flag>
     <flag name="mycroft">allows you to send notifications and more to Mycroft from Home Assistant</flag>
-    <flag name="myq">lets you control MyQ-Enabled garage doors</flag>
     <flag name="mysensors">combines devices like Arduino, ESP8266, Raspberry Pi, NRF24L01+ and RFM69</flag>
     <flag name="mysql">set dependencies to install MySQL Libraries for use with HomeAssistant</flag>
     <flag name="mystrom">Python API for interacting with myStrom devices</flag>

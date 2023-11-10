@@ -60,7 +60,6 @@
     <flag name="modbus">sensors and switches controlled over MODBUS serial, TCP, and UDP connections</flag>
     <flag name="mosquitto">Set a runtime dependency for Mosquitto MQTT broker</flag>
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
-    <flag name="myq">lets you control MyQ-Enabled garage doors</flag>
     <flag name="mysensors">combines devices like Arduino, ESP8266, Raspberry Pi, NRF24L01+ and RFM69</flag>
     <flag name="mysql">set dependencies to install MySQL Libraries for use with HomeAssistant</flag>
     <flag name="nfandroidtv">Notifications for Android TV and Notifications for Fire TV</flag>
