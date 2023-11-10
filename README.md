@@ -111,18 +111,18 @@ Since homeassistant-0.115.3 the **Main Ebuild** is released in three different s
 
 [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml)
 
-These are the USE Flags I use in production myself. All will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **96** USE Flags.
+These are the USE Flags I use in production myself. All will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **95** USE Flags.
 
 ### `app-misc/homeassistant`
 
 [![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg?branch=master)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)
 
-The Ebuild we have since `0.97.0`, as soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure, a daily compilation test is run at Github, big thanks to @antonfischl1980, It currently holds **295** USE Flags.
+The Ebuild we have since `0.97.0`, as soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure, a daily compilation test is run at Github, big thanks to @antonfischl1980, It currently holds **294** USE Flags.
 
 ### `app-misc/homeassistant-full`
 
 WARNING: This one currently breaks (caused by shell limitations) emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
-This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **938** USE Flags.
+This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **936** USE Flags.
 
 A list of all components aka USEFlags is generated with every release [DOMAINTABLE.md](DOMAINTABLE.md)
 
@@ -657,9 +657,9 @@ There are 1624 Ebuilds in total, 1613 of them have in total 1626 (40 different) 
 |GPL-2+|1|
 |GPL-2-with-linking-exception|1|
 
-(Last counted: 05/11/2023)
+(Last counted: 10/11/2023)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 05/11/2023
+Last updated: 10/11/2023

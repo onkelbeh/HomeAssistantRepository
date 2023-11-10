@@ -446,7 +446,6 @@
 |mastodon|uses Mastodon to deliver notifications from Home Assistant|N|N|Y|0.67|
 |matrix|allows you to send messages to matrix rooms|N|N|Y|0.69|
 |maxcube|eQ-3 ELV MAX Cube Python API|Y|Y|Y|0.40|
-|mazda|Mazda Connected Services integration|N|N|Y||
 |mcp23017|base for all related mcp23017 platforms in Home Assistant|N|N|Y||
 |meater|communication with the Meater Temperature Probe from Apption Labs|N|N|Y|2022.5.0b0|
 |medcom_ble|International Medcom Bluetooth-enabled radiation monitors|N|N|Y|2023.10.1|
@@ -489,7 +488,6 @@
 |mvglive|departure times bus, tram, subway, train of Munich public transport network|N|N|Y|0.42|
 |mychevy|communicates with the my.chevrolet website using the javascript API|N|N|Y||
 |mycroft|allows you to send notifications and more to Mycroft from Home Assistant|N|N|Y|0.53|
-|myq|lets you control MyQ-Enabled garage doors|Y|Y|Y|0.39|
 |mysensors|combines devices like Arduino, ESP8266, Raspberry Pi, NRF24L01+ and RFM69|Y|N|Y|0.73|
 |mysql|set dependencies to install MySQL Libraries for use with HomeAssistant|Y|Y|Y|0.7|
 |mystrom|Python API for interacting with myStrom devices|N|N|Y|0.43|
