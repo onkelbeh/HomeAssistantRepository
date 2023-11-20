@@ -16,9 +16,9 @@ inherit nodejs-mod systemd tmpfiles
 
 DESCRIPTION="It bridges events and allows you to control your Zigbee devices via MQTT"
 HOMEPAGE="https://www.zigbee2mqtt.io/"
-COMMIT="eb878d3d8ee47f77e27c771452e2d2c77ca83bb5"
+COMMIT="9996c931e25a0a3e72d9bb1aa89ed9c36eec8a89"
 
-LICENSE="GPL-3"
+LICENSE="0BSD Apache-2.0 BSD-2 CC-BY-4.0 GPL-3 ISC MIT PYTHON"
 SLOT="0"
 KEYWORDS="~amd64"
 
@@ -29,6 +29,16 @@ RDEPEND="
 "
 
 NODEJS_EXTRA_FILES="scripts"
+
+pkg_pretend() {
+	if ! grep -q "CONFIG_PROTECT=\"/var/lib/${PN}\"" "${EROOT}/etc/env.d/90${PN}" 2>/dev/null; then
+		eerror "Bad CONFIG_PROTECT"
+		eerror "update ${EROOT}/etc/env.d/90${PN} to include CONFIG_PROTECT=\"/var/lib/${PN}\""
+		eerror ""
+		eerror ""
+		die "Bad CONFIG_PROTECT"
+	fi
+}
 
 src_install() {
 	echo "${COMMIT}" > dist/.hash
@@ -51,7 +61,7 @@ src_install() {
 	systemd_dounit "${FILESDIR}/${PN}.service"
 
 	dodir /etc/env.d
-	echo 'CONFIG_PROTECT="/var/lib/${PN}"' >>"${ED}"/etc/env.d/90${PN} || die
+	echo "CONFIG_PROTECT=\"/var/lib/${PN}"\" >>"${ED}"/etc/env.d/90${PN} || die
 }
 
 pkg_postinst() {
