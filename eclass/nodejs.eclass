@@ -6,12 +6,12 @@
 # Fco. Javier Félix <web@inode64.com>
 # @AUTHOR:
 # Fco. Javier Félix <web@inode64.com>
-# @SUPPORTED_EAPIS: 7 8
+# @SUPPORTED_EAPIS: 8
 # @BLURB: An eclass for build NodeJS projects
 # @DESCRIPTION:
 # An eclass providing functions to build NodeJS projects
 #
-# Changelog:
+# Credits and ideas from:
 #   Initial version from:
 #       https://github.com/gentoo/gentoo/pull/930/files
 #       https://github.com/samuelbernardo/ssnb-overlay/blob/master/eclass/npm.eclass
@@ -30,20 +30,20 @@
 #   tar --create --auto-compress --file foo-1-node_modules.tar.xz foo-1/node_modules/
 
 case ${EAPI} in
-7 | 8) ;;
-*) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
+    8) ;;
+    *) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
 esac
 
 if [[ -z ${_NODEJS_ECLASS} ]]; then
 _NODEJS_ECLASS=1
 
-# @ECLASS_VARIABLE: NODEJS_MANAGEMENT
+# @ECLASS_VARIABLE: NODEJS_MANAGER
 # @PRE_INHERIT
 # @DEFAULT_UNSET
 # @DESCRIPTION:
-# Specify a package management
+# Specify a NodeJS package manager to use. ( npm | yarn )
 # The default is set to "npm".
-: "${NODEJS_MANAGEMENT:=npm}"
+: "${NODEJS_MANAGER:=npm}"
 
 # @ECLASS_VARIABLE: NODEJS_FILES
 # @INTERNAL
@@ -58,17 +58,24 @@ NODEJS_FILES="babel.config.js babel.config.json cli.js dist index.js lib node_mo
 # Can be either files, or directories.
 # Example: NODEJS_EXTRA_FILES="rigger.js modules"
 
-case ${NODEJS_MANAGEMENT} in
-npm)
-    BDEPEND+=" net-libs/nodejs[npm]"
-    ;;
-yarn)
-    BDEPEND+=" sys-apps/yarn"
-    ;;
-*)
-    eerror "Unknown value for \${NODEJS_MANAGEMENT}"
-    die "Value ${NODEJS_MANAGEMENT} is not supported"
-    ;;
+
+# @VARIABLE: MYNPMARGS
+# @DEFAULT_UNSET
+# @DESCRIPTION:
+# User-controlled environment variable containing arguments to be passed to npm
+
+
+case ${NODEJS_MANAGER} in
+    npm)
+        BDEPEND+=" net-libs/nodejs[npm]"
+        ;;
+    yarn)
+        BDEPEND+=" sys-apps/yarn"
+        ;;
+    *)
+        eerror "Unknown value for \${NODEJS_MANAGER}"
+        die "Value ${NODEJS_MANAGER} is not supported"
+        ;;
 esac
 
 # @FUNCTION: nodejs_version
@@ -99,10 +106,10 @@ nodejs_has_build() {
     node -p "if (require('./package.json').scripts.build === undefined) { process.exit(1) }" &>/dev/null
 }
 
-# @FUNCTION: _NODEJS_MODULES
+# @FUNCTION: nodejs_modules
 # @DESCRIPTION:
-# Returns location where to install nodejs
-_NODEJS_MODULES() {
+# Returns location where to install NodeJS
+nodejs_modules() {
     # shellcheck disable=SC2046
     echo /usr/$(get_libdir)/node_modules/$(nodejs_package)
 }
@@ -111,7 +118,7 @@ _NODEJS_MODULES() {
 # @DESCRIPTION:
 # Returns true (0) if is a package
 nodejs_has_package() {
-    [[ -d "${S}"/package ]] || return 1
+    [[ -d "${S}"/package ]]
 }
 
 # @FUNCTION: nodejs_docs
@@ -146,7 +153,7 @@ nodejs_remove_dev() {
     # shellcheck disable=SC2185
     find -type f -iregex '.*/\(readme\(.*\)?\|changelog\|roadmap\|security\|release\|contributors\|todo\|authors\)$' -delete || die
 
-    # Remove typscript files
+    # Remove TypeScript files
     # shellcheck disable=SC2185
     find -type f -iregex '.*\.\(tsx?\|jsx\|map\)$' -delete || die
     # shellcheck disable=SC2185
@@ -206,40 +213,40 @@ nodejs_remove_dev() {
 enpm() {
     debug-print-function "${FUNCNAME}" "${@}"
 
-    local mynpmflags_local mynpmflagstype npmflags
+    local mynpmargs_local mynpmargstype npmargs
 
     # Make the array a local variable since <=portage-2.1.6.x does not support
     # global arrays (see bug #297255). But first make sure it is initialised.
-    [[ -z ${mynpmflags} ]] && declare -a mynpmflags=()
-    mynpmflagstype=$(declare -p mynpmflags 2>&-)
-    if [[ "${mynpmflagstype}" != "declare -a mynpmflags="* ]]; then
-        die "mynpmflags must be declared as array"
+    [[ -z ${mynpmargs} ]] && declare -a mynpmargs=()
+    mynpmargstype=$(declare -p mynpmargs 2>&-)
+    if [[ "${mynpmargstype}" != "declare -a mynpmargs="* ]]; then
+        die "mynpmargs must be declared as array"
     fi
 
-    mynpmflags_local=("${mynpmflags[@]}")
+    mynpmargs_local=("${mynpmargs[@]}")
 
-    npmflags=(
+    npmargs=(
         --color false
         --foreground-scripts
         --offline
         --progress false
         --verbose
-        "${mynpmflags_local[@]}"
+        "${mynpmargs_local[@]}"
     )
 
-    case ${NODEJS_MANAGEMENT} in
-    npm)
-        npmflags+=(
-            --audit false
-        )
-        npm "$@" "${npmflags[@]}"
-        ;;
-    yarn)
-        npmflags+=(
-            --cache-folder "${S}/.cache"
-        )
-        yarn "$@" "${npmflags[@]}"
-        ;;
+    case ${NODEJS_MANAGER} in
+        npm)
+            npmargs+=(
+                --audit false
+            )
+            npm "$@" "${npmargs[@]}"
+            ;;
+        yarn)
+            npmargs+=(
+                --cache-folder "${S}/.cache"
+            )
+            yarn "$@" "${npmargs[@]}"
+            ;;
     esac
 }
 
@@ -252,16 +259,16 @@ enpm_clean() {
     local nodejs_files f
 
     einfo "Clean files"
-    case ${NODEJS_MANAGEMENT} in
-    npm)
-        enpm prune --omit=dev || die
-        ;;
-    yarn)
-        enpm install production || die
-        # TODO
-        #enpm autoclean --init || die
-        #enpm autoclean --force || die
-        ;;
+    case ${NODEJS_MANAGER} in
+        npm)
+            enpm prune --omit=dev || die
+            ;;
+        yarn)
+            enpm install production || die
+            # TODO
+            #enpm autoclean --init || die
+            #enpm autoclean --force || die
+            ;;
     esac
 
     nodejs_files="${NODEJS_FILES} ${NODEJS_EXTRA_FILES}"
@@ -278,7 +285,7 @@ enpm_clean() {
 
 # @FUNCTION: enpm_install
 # @DESCRIPTION:
-# Install the files and folders necessary for the execution of nodejs
+# Install the files and folders necessary for the execution of NodeJS
 enpm_install() {
     debug-print-function "${FUNCNAME}" "${@}"
 
@@ -293,11 +300,11 @@ enpm_install() {
 
     nodejs_files="${NODEJS_FILES} ${NODEJS_EXTRA_FILES} $(nodejs_package).js"
 
-    dodir "$(_NODEJS_MODULES)" || die "Could not create DEST folder"
+    dodir "$(nodejs_modules)" || die "Could not create DEST folder"
 
     for f in ${nodejs_files}; do
         if [[ -e "${S}/${f}" ]]; then
-            cp -r "${S}/${f}" "${ED}/$(_NODEJS_MODULES)"
+            cp -r "${S}/${f}" "${ED}/$(nodejs_modules)"
         fi
     done
 }

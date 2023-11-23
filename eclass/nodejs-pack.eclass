@@ -6,12 +6,12 @@
 # Fco. Javier Félix <web@inode64.com>
 # @AUTHOR:
 # Fco. Javier Félix <web@inode64.com>
-# @SUPPORTED_EAPIS: 7 8
+# @SUPPORTED_EAPIS: 8
 # @BLURB: An eclass for build NodeJS projects
 # @DESCRIPTION:
 # An eclass providing functions to build NodeJS packages
 #
-# Changelog:
+# Credits and ideas from:
 #   Initial version from:
 #       https://github.com/gentoo/gentoo/pull/930/files
 #       https://github.com/samuelbernardo/ssnb-overlay/blob/master/eclass/npm.eclass
@@ -19,8 +19,8 @@
 #       https://github.com/Tatsh/tatsh-overlay/blob/master/eclass/yarn.eclass
 
 case ${EAPI} in
-7 | 8) ;;
-*) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
+    8) ;;
+    *) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
 esac
 
 if [[ -z ${_NODEJS_PACK_ECLASS} ]]; then
@@ -29,13 +29,10 @@ _NODEJS_PACK_ECLASS=1
 inherit nodejs
 
 if has nodejs-mod ${INHERITED}; then
-    eerror "nodejs-mod and nodejs-pack eclass are incompatible"
+    die "nodejs-mod and nodejs-pack eclass are incompatible"
 fi
 
 RDEPEND+=" net-libs/nodejs"
-
-# Do not complain about CFLAGS etc since nodejs-pack projects do not use them.
-QA_FLAGS_IGNORED='.*'
 
 # Upstream does not support stripping go packages
 RESTRICT="test strip"
@@ -57,7 +54,7 @@ nodejs-pack_src_prepare() {
 
 # @FUNCTION: nodejs-pack_src_compile
 # @DESCRIPTION:
-# General function for compiling a nodejs module
+# General function for compiling a NodeJS module
 nodejs-pack_src_compile() {
     debug-print-function "${FUNCNAME}" "${@}"
 
@@ -78,7 +75,7 @@ nodejs-pack_src_install() {
         install \
         "$(nodejs_package)-$(nodejs_version).tgz" || die "install failed"
 
-    pushd "${ED}/$(_NODEJS_MODULES)" >/dev/null || die
+    pushd "${ED}/$(nodejs_modules)" >/dev/null || die
     nodejs_remove_dev
     popd >/dev/null || die
 }
