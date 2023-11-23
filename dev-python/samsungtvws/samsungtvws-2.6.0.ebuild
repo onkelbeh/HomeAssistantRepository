@@ -25,7 +25,6 @@ RDEPEND=">=dev-python/websocket-client-0.57.0[${PYTHON_USEDEP}]
 	encrypted? ( >=dev-python/cryptography-35.0.0[${PYTHON_USEDEP}]
 		   >=dev-python/py3rijndael-0.3.3[${PYTHON_USEDEP}] )"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -20,7 +20,6 @@ DOCS="README.md"
 
 RDEPEND="dev-python/pyserial[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

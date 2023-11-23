@@ -22,7 +22,6 @@ RDEPEND=">=dev-python/marshmallow-3.13.0[${PYTHON_USEDEP}]
 	<dev-python/marshmallow-4.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-inspect-0.7.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

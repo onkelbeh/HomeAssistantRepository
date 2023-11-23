@@ -22,7 +22,6 @@ RDEPEND=">=dev-python/aiofiles-0.4.0[${PYTHON_USEDEP}]
 	dev-python/rsa[${PYTHON_USEDEP}]
 	usb? ( >=dev-python/libusb1-1.0.16[${PYTHON_USEDEP}] )"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

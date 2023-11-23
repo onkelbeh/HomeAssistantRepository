@@ -25,7 +25,6 @@ RDEPEND="$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' pyth
 	>=dev-python/zeroconf-0.36.2[${PYTHON_USEDEP}]
 	dev-python/h11[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

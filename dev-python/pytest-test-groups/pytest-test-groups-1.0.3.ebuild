@@ -21,7 +21,6 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/pytest-2.5[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

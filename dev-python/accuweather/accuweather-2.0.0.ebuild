@@ -23,7 +23,6 @@ RDEPEND="
 	dev-python/orjson[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

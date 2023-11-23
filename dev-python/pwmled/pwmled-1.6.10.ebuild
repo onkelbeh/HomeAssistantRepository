@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/pigpio-1.78[${PYTHON_USEDEP}]
 	>=dev-python/adafruit-circuitpython-pca9685-3.3.2[${PYTHON_USEDEP}]
 	>=dev-python/python-singleton-0.1.2[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

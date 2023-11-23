@@ -27,7 +27,6 @@ RDEPEND="dev-python/pycryptodome[${PYTHON_USEDEP}]
 	>=dev-python/ical-4.2.9[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-retry-2.8.3[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

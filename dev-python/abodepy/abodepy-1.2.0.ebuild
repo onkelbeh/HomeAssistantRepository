@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/lomond-0.3.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.12.4[${PYTHON_USEDEP}]
 	>=dev-python/colorlog-3.0.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -27,7 +27,6 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/mutlidict[${PYTHON_USEDEP}]
 	dev-python/yarl[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

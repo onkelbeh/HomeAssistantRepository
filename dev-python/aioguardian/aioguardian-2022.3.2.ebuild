@@ -21,7 +21,6 @@ RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
 	>=dev-python/asyncio-dgram-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

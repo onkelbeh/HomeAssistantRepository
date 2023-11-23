@@ -20,7 +20,6 @@ DOCS="README"
 
 RDEPEND=">=dev-python/httplib2-0.6.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

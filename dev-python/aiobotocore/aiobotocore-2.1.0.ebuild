@@ -22,7 +22,6 @@ RDEPEND=">=dev-python/aiohttp-3.3.1[${PYTHON_USEDEP}]
 	~dev-python/boto3-1.20.24[${PYTHON_USEDEP}]
 	>=dev-python/aioitertools-0.5.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

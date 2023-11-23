@@ -20,7 +20,6 @@ RESTRICT="!test? ( test )"
 RDEPEND="dev-python/responses[${PYTHON_USEDEP}]
 		 dev-python/coverage[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

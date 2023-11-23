@@ -19,7 +19,6 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/georss-client-0.13[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

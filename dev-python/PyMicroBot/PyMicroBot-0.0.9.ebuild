@@ -21,7 +21,6 @@ DOCS="README.md"
 RDEPEND="dev-python/bleak[${PYTHON_USEDEP}]
 	>=dev-python/bleak-retry-connector-1.4.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

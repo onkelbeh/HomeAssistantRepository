@@ -21,7 +21,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/requests-2.26.0[${PYTHON_USEDEP}]
 	>=dev-python/attrs-22.0.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

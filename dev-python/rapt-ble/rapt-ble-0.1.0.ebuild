@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/bluetooth-sensor-state-data-1.6.1[${PYTHON_USEDEP}]
 	>=dev-python/sensor-state-data-2.13.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-0.3.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

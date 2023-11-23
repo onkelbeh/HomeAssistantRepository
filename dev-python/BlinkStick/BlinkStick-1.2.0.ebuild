@@ -20,7 +20,6 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/pyusb-1.0.0_beta1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -20,7 +20,6 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

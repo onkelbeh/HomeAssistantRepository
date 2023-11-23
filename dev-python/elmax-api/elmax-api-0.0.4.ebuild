@@ -22,7 +22,6 @@ RDEPEND=">=dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
 	>=dev-python/httpx-0.18.0[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.6.3[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

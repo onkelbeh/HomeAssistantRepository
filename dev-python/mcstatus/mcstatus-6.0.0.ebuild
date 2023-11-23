@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/asyncio-dgram-1.2.0[${PYTHON_USEDEP}]
 	>=dev-python/dnspython-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/six-1.14.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -25,7 +25,6 @@ KEYWORDS="amd64 arm arm64 x86"
 # Version specified in pyproject.toml
 RDEPEND="
 	>=dev-python/lazy-object-proxy-1.4.0[${PYTHON_USEDEP}]
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '
 		>=dev-python/typing-extensions-4.0.0[${PYTHON_USEDEP}]
 	' 3.{8..10})

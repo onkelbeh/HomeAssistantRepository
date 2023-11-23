@@ -19,7 +19,6 @@ RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]

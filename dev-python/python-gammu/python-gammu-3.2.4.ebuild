@@ -24,7 +24,6 @@ RDEPEND="app-mobilephone/gammu
 	dev-python/libusb1[${PYTHON_USEDEP}]
 	dev-python/pycurl[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

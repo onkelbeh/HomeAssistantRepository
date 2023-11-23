@@ -22,7 +22,6 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/jsonrpc-async-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/jsonrpc-websocket-3.1.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

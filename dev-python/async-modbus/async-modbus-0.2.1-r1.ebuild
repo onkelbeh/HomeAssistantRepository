@@ -24,7 +24,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/connio-0.2.0[${PYTHON_USEDEP}]
 	>=dev-python/uModbus-1.0.4[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

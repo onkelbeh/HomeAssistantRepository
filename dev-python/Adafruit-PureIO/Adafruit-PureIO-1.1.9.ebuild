@@ -21,7 +21,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -25,7 +25,6 @@ RDEPEND=">=dev-python/bleak-0.14.2[${PYTHON_USEDEP}]
 	>=dev-python/tzlocal-4.1[${PYTHON_USEDEP}]
 	>=dev-python/aioconsole-0.4.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

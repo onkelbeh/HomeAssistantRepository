@@ -24,7 +24,6 @@ RDEPEND=">=dev-python/httplib2-0.9.1[${PYTHON_USEDEP}]
 	>=dev-python/rsa-3.1.4[${PYTHON_USEDEP}]
 	>=dev-python/six-1.6.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -21,7 +21,6 @@ RDEPEND=">=dev-python/graphql-core-3.3.0_alpha2[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.6[${PYTHON_USEDEP}]
 	>=dev-python/backoff-1.11.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
