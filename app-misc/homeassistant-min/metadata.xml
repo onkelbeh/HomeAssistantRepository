@@ -104,6 +104,7 @@
     <flag name="wake_on_lan">enables the ability to send magic packets to Wake on LAN capable devices</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="whois">perform daily WHOIS lookups</flag>
+    <flag name="wled">add support for Aircookie's WLED</flag>
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
     <flag name="yamaha">Library for Yamaha RX-* Receivers</flag>
     <flag name="yamaha_musiccast">add support for Yamaha MusicCast devices</flag>
