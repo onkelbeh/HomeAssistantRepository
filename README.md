@@ -111,7 +111,7 @@ Since homeassistant-0.115.3 the **Main Ebuild** is released in three different s
 
 [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml)
 
-These are the USE Flags I use in production myself. All will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **95** USE Flags.
+These are the USE Flags I use in production myself. All will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **96** USE Flags.
 
 ### `app-misc/homeassistant`
 
@@ -657,9 +657,9 @@ There are 1636 Ebuilds in total, 1625 of them have in total 1638 (40 different) 
 |GPL-2+|1|
 |GPL-2-with-linking-exception|1|
 
-(Last counted: 10/11/2023)
+(Last counted: 23/11/2023)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 10/11/2023
+Last updated: 23/11/2023

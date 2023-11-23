@@ -897,7 +897,7 @@
 |wirelesstag|integrate your wirelesstag.net sensors tags|N|N|Y|0.68|
 |withings|add support for Withings Health API|N|Y|Y|0.99|
 |wiz|allows you to control your WiZ lights and smart sockets|N|N|Y|2022.3.0b3|
-|wled|add support for Aircookie's WLED|N|Y|Y||
+|wled|add support for Aircookie's WLED|Y|Y|Y||
 |wolflink|uses the Wolf Smart-Set for your heating system status|N|N|Y|0.114|
 |workday|generating country, province and state specific sets of holidays on the fly|Y|Y|Y|0.41|
 |ws66i|Control the Soundavo Whole-Home Audio Amplifier via local network|N|N|Y|2022.6.0b0|
