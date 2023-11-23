@@ -1,17 +1,16 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
-
-MY_P=${PN/-/_}-${PV}
 
 DESCRIPTION="todoist-python - The official Todoist Python API library"
 HOMEPAGE="https://github.com/Doist/todoist-python/ https://pypi.org/project/todoist-python/"
-SRC_URI="https://github.com/Doist/${PN}/archive/${PV}.tar.gz -> ${P}.gh.tar.gz"
+MY_P=${PN/-/_}-${PV}
+SRC_URI="https://github.com/Doist/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -23,7 +22,6 @@ DOCS="README.md"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
