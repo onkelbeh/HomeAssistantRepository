@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 DESCRIPTION="Library for BME280 sensor through spidev"
 HOMEPAGE="https://github.com/Kuzj/bme280spi https://pypi.org/project/bme280spi/"
