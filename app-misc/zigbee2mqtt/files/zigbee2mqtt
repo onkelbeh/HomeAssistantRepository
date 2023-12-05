@@ -13,7 +13,7 @@ checkconfig() {
 start() {
 	checkconfig || return 1
 	ebegin "Starting ${SVCNAME}"
-	start-stop-daemon --start --user zigbee2mqtt:zigbee2mqtt --env ZIGBEE2MQTT_DATA=/var/lib/${SVCNAME} --chdir /usr/lib64/node_modules/zigbee2mqtt --exec /usr/bin/npm --background --make-pidfile --pidfile /run/${SVCNAME}.pid -- start
+	start-stop-daemon --start --user zigbee2mqtt:zigbee2mqtt --env ZIGBEE2MQTT_DATA=/var/lib/${SVCNAME} --chdir /usr/lib64/node_modules/zigbee2mqtt --exec /usr/bin/node --background --make-pidfile --pidfile /run/${SVCNAME}.pid -- index.js
 	eend $?
 }
 
