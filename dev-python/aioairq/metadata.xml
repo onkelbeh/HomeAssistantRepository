@@ -12,9 +12,5 @@
       <email>daniel.lehmann@air-q.com</email>
       <name>Daniel Lehmann</name>
     </maintainer>
-    <maintainer status="unknown">
-      <email>renat.sibgatulin@air-q.com</email>
-      <name>Renat Sibgatulin</name>
-    </maintainer>
   </upstream>
 </pkgmetadata>
