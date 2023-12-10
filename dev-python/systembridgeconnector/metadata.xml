@@ -7,9 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">systembridgeconnector</remote-id>
-    <remote-id type="github">timmo001/system-bridge</remote-id>
+    <remote-id type="github">timmo001/system-bridge-connector</remote-id>
     <maintainer status="unknown">
-      <email>contact@timmo.xyz</email>
+      <email>aidan@timmo.dev</email>
       <name>Aidan Timson (Timmo)</name>
     </maintainer>
   </upstream>
