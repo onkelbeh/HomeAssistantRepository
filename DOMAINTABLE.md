@@ -554,6 +554,7 @@
 |opengarage|opengarage cover platform lets you control the open-source OpenGarage.io device|N|Y|Y|0.44|
 |openhome| connect an Openhome Compliant Renderer to Home Assistant|N|N|Y|0.39|
 |opensensemap|query the open data API of openSenseMap.org air quality sensor station|N|Y|Y|0.85|
+|opensky|allows one to track overhead flights in a given region|N|N|Y|0.43|
 |opentherm_gw|control the OpenTherm Gateway from Home Assistant|N|N|Y|0.81|
 |openuv|The openuv integration displays UV and Ozone data from openuv.io|N|N|Y||
 |openweathermap|uses OpenWeatherMap as a source for current meteorological data|N|Y|Y|0.32|
