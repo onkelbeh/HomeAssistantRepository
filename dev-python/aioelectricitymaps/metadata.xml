@@ -6,11 +6,11 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">aioairq</remote-id>
-    <remote-id type="github">CorantGmbH/aioairq</remote-id>
+    <remote-id type="pypi">aioelectricitymaps</remote-id>
+    <remote-id type="github">jpbede/aioelectricitymaps</remote-id>
     <maintainer status="unknown">
-      <email>daniel.lehmann@air-q.com</email>
-      <name>Daniel Lehmann</name>
+      <email>jan-philipp@bnck.me</email>
+      <name>Jan-Philipp Benecke</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

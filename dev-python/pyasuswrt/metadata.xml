@@ -6,11 +6,11 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">aioairq</remote-id>
-    <remote-id type="github">CorantGmbH/aioairq</remote-id>
+    <remote-id type="pypi">pyasuswrt</remote-id>
+    <remote-id type="github">ollo69/pyasuswrt</remote-id>
     <maintainer status="unknown">
-      <email>daniel.lehmann@air-q.com</email>
-      <name>Daniel Lehmann</name>
+      <email>ollo69@users.noreply.github.com</email>
+      <name>ollo69</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

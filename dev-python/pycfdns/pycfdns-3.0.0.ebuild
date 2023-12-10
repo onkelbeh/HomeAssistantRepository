@@ -6,8 +6,9 @@ EAPI=8
 PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
-DESCRIPTION="Library for BME280 sensor through spidev"
-HOMEPAGE="https://github.com/Kuzj/bme280spi https://pypi.org/project/bme280spi/"
+
+DESCRIPTION="Update Cloudflare DNS A-records."
+HOMEPAGE="https://github.com/ludeeus/pycfdns https://pypi.org/project/pycfdns/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -17,5 +18,11 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/spidev-3.5[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.8[${PYTHON_USEDEP}]"
 distutils_enable_tests pytest
+
+src_prepare() {
+	# remove unsupported dynamic-versioning
+	sed 's/"0"/"${PV}"/g' -i pyproject.toml || die
+	eapply_user
+}

@@ -9,8 +9,8 @@
     <remote-id type="pypi">pycfdns</remote-id>
     <remote-id type="github">ludeeus/pycfdns</remote-id>
     <maintainer status="unknown">
-      <email>hi@ludeeus.dev</email>
-      <name>Joakim Sorensen</name>
+      <email>ludeeus@ludeeus.dev</email>
+      <name>Ludeeus</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
