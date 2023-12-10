@@ -620,7 +620,7 @@ There are 1665 Ebuilds in total, 1654 of them have in total 1675 (43 different) 
 |Apache-2.0|343|
 |BSD|96|
 |GPL-3|95|
-|GPL-2|28|
+|GPL-2|27|
 |LGPL-3|22|
 |all-rights-reserved|15|
 |BSD-2|12|
@@ -634,6 +634,7 @@ There are 1665 Ebuilds in total, 1654 of them have in total 1675 (43 different) 
 |LGPL-2.1+|3|
 |public-domain|3|
 |BSD-4|3|
+|GPL-2+|2|
 |AGPL-3+|2|
 |ZPL|2|
 |LGPL-2+|2|
@@ -657,7 +658,6 @@ There are 1665 Ebuilds in total, 1654 of them have in total 1675 (43 different) 
 |Unicode-DFS-2016|1|
 |CC-BY-NC-SA-4.0|1|
 |EPL-2.0|1|
-|GPL-2+|1|
 |GPL-2-with-linking-exception|1|
 
 (Last counted: 10/12/2023)
