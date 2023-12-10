@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-homewizard-energy</remote-id>
-    <remote-id type="github">dcsbl/python-homewizard-energy</remote-id>
+    <remote-id type="github">homewizard/python-homewizard-energy</remote-id>
   </upstream>
 </pkgmetadata>
