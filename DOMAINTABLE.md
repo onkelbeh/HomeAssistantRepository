@@ -584,7 +584,6 @@
 |pencom|Pencom is a computer-controlled relay, I/O and custom boards|N|N|Y|0.85|
 |permobil|view various sensors with information about your Permobil wheelchair|N|N|Y|2023.12.1|
 |philips_js|allows you to control Philips TVs which expose the jointSPACE JSON-API|N|Y|Y|0.34|
-|pi4ioe5v9xxxx|support for the quasi-bidirectional devices pi4ioe5v9xxxx I2C I/O port expander|N|N|Y||
 |picnic|get information from Picnic about orders, deliveries and cart content|N|N|Y|2021.5|
 |piglow|control the Piglow lights on your Raspberry Pi from within Home Assistant|N|N|Y||
 |pilight|Pilight is a open source solution to communicate with 433 MHz devices|N|Y|Y|0.26|
