@@ -20,8 +20,8 @@ KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	$(python_gen_cond_dep '
-		dev-python/exceptiongroup[${PYTHON_USEDEP}]
-	' 3.{9..10})
+		>=dev-python/exceptiongroup-1.0.2[${PYTHON_USEDEP}]
+	' 3.10)
 	>=dev-python/idna-2.8[${PYTHON_USEDEP}]
 	>=dev-python/sniffio-1.1[${PYTHON_USEDEP}]
 "
@@ -33,37 +33,27 @@ BDEPEND="
 		>=dev-python/hypothesis-4.0[${PYTHON_USEDEP}]
 		>=dev-python/psutil-5.9[${PYTHON_USEDEP}]
 		>=dev-python/pytest-mock-3.6.1[${PYTHON_USEDEP}]
-		dev-python/trio[${PYTHON_USEDEP}]
+		>=dev-python/trio-0.22[${PYTHON_USEDEP}]
 		dev-python/trustme[${PYTHON_USEDEP}]
 		amd64? (
 			$(python_gen_cond_dep '
 				>=dev-python/uvloop-0.17[${PYTHON_USEDEP}]
-			' python3_{10..11})
+			' python3_{10..12})
 		)
 	)
 "
 
 distutils_enable_tests pytest
 distutils_enable_sphinx docs \
-	dev-python/sphinx-rtd-theme \
+	'>=dev-python/sphinx-rtd-theme-1.2.2' \
+	dev-python/sphinxcontrib-jquery \
 	dev-python/sphinx-autodoc-typehints
 
 python_test() {
 	local EPYTEST_DESELECT=(
 		# requires link-local IPv6 interface
 		tests/test_sockets.py::TestTCPListener::test_bind_link_local
-
-		# trio-0.22?
-		'tests/test_sockets.py::TestTCPStream::test_connection_refused[trio-multi]'
-		'tests/test_taskgroups.py::test_exception_group_children[trio]'
-		'tests/test_taskgroups.py::test_exception_group_host[trio]'
-		'tests/test_taskgroups.py::test_exception_group_filtering[trio]'
 	)
-	if [[ ${EPYTHON} == python3.12 ]]; then
-		EPYTEST_DESELECT+=(
-			tests/test_fileio.py::TestPath::test_properties
-		)
-	fi
 
 	local -x PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
 	epytest -m 'not network'
