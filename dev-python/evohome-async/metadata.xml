@@ -9,8 +9,8 @@
     <remote-id type="pypi">evohome-async</remote-id>
     <remote-id type="github">zxdavb/evohome-async</remote-id>
     <maintainer status="unknown">
-      <email>zxdavb@gmail.com</email>
-      <name>Andrew Stock &amp; David Bonnes</name>
+      <email>zxdavb@bonnes.me</email>
+      <name>David Bonnes</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
