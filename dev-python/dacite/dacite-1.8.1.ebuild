@@ -5,10 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1 pypi
+inherit distutils-r1
 
 DESCRIPTION="Simple creation of data classes from dictionaries."
 HOMEPAGE="https://github.com/konradhalas/dacite https://pypi.org/project/dacite/"
+SRC_URI="https://github.com/konradhalas/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
