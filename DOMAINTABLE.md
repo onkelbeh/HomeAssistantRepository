@@ -142,6 +142,7 @@
 |deluge|Local polling for Deluge Switches and Sensors|N|N|Y||
 |denonavr|Automation Library for Denon AVR receivers|N|Y|Y|0.7.2|
 |deutsche_bahn|will give you the departure time of the next train for the given connection|N|Y|Y||
+|devialet|lets you control your Devialet wireless speakers from Home Assistant|N|N|Y|2023.12.1|
 |devolo_home_control|Add Devolo Home-control to Home Assistant|N|Y|Y||
 |devolo_home_network|The devolo Home Network integration allows you to monitor your PLC network|N|N|Y|2021.12.0b0|
 |dexcom|View your CGM data from Dexcom from Home Assistant|N|Y|Y|0.113|
@@ -419,6 +420,7 @@
 |lifx_legacy|The lifx integration allows you to integrate your LIFX into Home Assistant|N|N|Y||
 |lightwave|WiFi link for controlling Lightwave lights, switches and TRVs|N|N|Y|0.84|
 |limitlessled|control your LimitlessLED lights from within Home Assistant|N|N|Y||
+|linear_garage_door|lets you control Linear garage doors through Home Assistant|N|N|Y|2023.12.1|
 |linode|allows you to access the information about your Linode systems|N|Y|Y|0.57|
 |linux_battery|sensor platform is using the information stored in /sys/class/power_supply/|N|N|Y|0.28|
 |litejet|allows a computer to control the system via LiteJet’s third party protocol|N|N|Y||
@@ -566,6 +568,7 @@
 |osramlightify|allows you to integrate your Osram Lightify into Home Assistant|N|N|Y|0.21|
 |otbr|calling an Open Thread Border Router’s REST API in Home Assistant|N|N|Y|2023.2.1|
 |otp|generates One-Time Passwords according to RFC6238|Y|Y|Y|0.49|
+|ourgroceries|ntegrates your shopping lists into Home Assistant|N|N|Y|2023.12.1|
 |overkiz|The Overkiz (by Somfy) integration platform|N|N|Y|2022.2.0b1|
 |ovo_energy|allows you to monitor your energy consumption data|N|N|Y||
 |owntracks|OwnTracks: track your location and send it directly to Home Assistant|Y|Y|Y|0.7.4|
@@ -578,6 +581,7 @@
 |peco|provides electricity outage data from PECO Philadelphia power company|N|N|Y|2022.4.0b0|
 |pegel_online|uses the data from the German Federal Waterways and Shipping Administration|N|N|Y|2023.10.1|
 |pencom|Pencom is a computer-controlled relay, I/O and custom boards|N|N|Y|0.85|
+|permobil|view various sensors with information about your Permobil wheelchair|N|N|Y|2023.12.1|
 |philips_js|allows you to control Philips TVs which expose the jointSPACE JSON-API|N|Y|Y|0.34|
 |pi4ioe5v9xxxx|support for the quasi-bidirectional devices pi4ioe5v9xxxx I2C I/O port expander|N|N|Y||
 |picnic|get information from Picnic about orders, deliveries and cart content|N|N|Y|2021.5|
@@ -853,6 +857,7 @@
 |usgs_earthquakes_feed|a GeoJSON feed provided by the U.S. Geological Survey|N|N|Y||
 |utility_meter|integration provides functionality to track consumptions of various utilities|Y|Y|Y||
 |uvc|allows you to integrate UniFi Video Camera (UVC) into Home Assistant|N|N|Y|0.13|
+|v2c|allows monitoring and control of a local V2C Trydan EVSE|N|N|Y|2023.12.1|
 |vallox|control any Vallox ventilation unit|N|Y|Y|0.96|
 |vasttrafik|traveling details for the larger Göteborg area in Sweden from the Västtrafik|N|N|Y|0.30|
 |velbus|supports the Velbus USB, serial and TCP/IP gateway|N|Y|Y||
@@ -901,7 +906,6 @@
 |wolflink|uses the Wolf Smart-Set for your heating system status|N|N|Y|0.114|
 |workday|generating country, province and state specific sets of holidays on the fly|Y|Y|Y|0.41|
 |ws66i|Control the Soundavo Whole-Home Audio Amplifier via local network|N|N|Y|2022.6.0b0|
-|wyoming|connects external voice services to Home Assistant using a small protocol|N|N|Y|2023.5.2|
 |xbox|A library to authenticate with Windows Live/Xbox Live and use their API|N|N|Y|0.117|
 |xbox_live|track Xbox profiles|N|Y|Y||
 |xeoma|Python wrapper for Xeoma web server API|N|N|Y|0.62|
