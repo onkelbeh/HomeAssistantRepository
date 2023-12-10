@@ -18,7 +18,6 @@ DOCS="README.md"
 
 RDEPEND="dev-python/asyncssh[${PYTHON_USEDEP}]"
 BDEPEND="dev-python/pytest-runner[${PYTHON_USEDEP}]
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/setuptools-markdown[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

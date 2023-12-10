@@ -19,7 +19,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/aiohttp-3.7.4_p0[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-3.0.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]

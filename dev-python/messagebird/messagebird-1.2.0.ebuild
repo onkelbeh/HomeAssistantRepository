@@ -21,7 +21,6 @@ RESTRICT="!test? ( test )"
 RDEPEND=">=dev-python/requests-2.4.1[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.6.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

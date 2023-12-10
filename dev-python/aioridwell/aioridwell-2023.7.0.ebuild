@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/pyjwt-2.4.0[${PYTHON_USEDEP}]
 	>=dev-python/titlecase-2.3[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.9.2[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

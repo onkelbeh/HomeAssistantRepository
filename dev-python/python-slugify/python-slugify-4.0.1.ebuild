@@ -20,7 +20,6 @@ RESTRICT="!test? ( test )"
 RDEPEND=">=dev-python/unidecode-1.1.1[${PYTHON_USEDEP}]
 		 >=dev-python/text-unidecode-1.3[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

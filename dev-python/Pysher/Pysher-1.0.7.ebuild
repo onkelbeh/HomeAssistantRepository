@@ -20,7 +20,6 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/websocket-client-0.48.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

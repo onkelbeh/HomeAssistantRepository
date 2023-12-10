@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">todoist-python</remote-id>
+    <remote-id type="github">Doist/todoist-python</remote-id>
     <maintainer status="unknown">
       <email>info@todoist.com</email>
       <name>Doist Team</name>

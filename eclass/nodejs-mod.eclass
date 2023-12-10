@@ -6,12 +6,12 @@
 # Fco. Javier Félix <web@inode64.com>
 # @AUTHOR:
 # Fco. Javier Félix <web@inode64.com>
-# @SUPPORTED_EAPIS: 7 8
+# @SUPPORTED_EAPIS: 8
 # @BLURB: An eclass for build NodeJS projects
 # @DESCRIPTION:
 # An eclass providing functions to build NodeJS projects
 #
-# Changelog:
+# Credits and ideas from:
 #   Initial version from:
 #       https://github.com/gentoo/gentoo/pull/930/files
 #       https://github.com/samuelbernardo/ssnb-overlay/blob/master/eclass/npm.eclass
@@ -30,8 +30,8 @@
 #   tar --create --auto-compress --file foo-1-node_modules.tar.xz foo-1/node_modules/
 
 case ${EAPI} in
-7 | 8) ;;
-*) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
+    8) ;;
+    *) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
 esac
 
 if [[ -z ${_NODEJS_MOD_ECLASS} ]]; then
@@ -40,7 +40,7 @@ _NODEJS_MOD_ECLASS=1
 inherit nodejs
 
 if has nodejs-pack ${INHERITED}; then
-    eerror "nodejs-mod and nodejs-pack eclass are incompatible"
+    die "nodejs-mod and nodejs-pack eclass are incompatible"
 fi
 
 RDEPEND+=" net-libs/nodejs:="
@@ -53,7 +53,7 @@ nodejs-mod_src_prepare() {
 
     if [[ ! -e package.json ]]; then
         eerror "Unable to locate package.json"
-        eerror "Consider not inheriting the nodejs eclass."
+        eerror "Consider not inheriting the NodeJS eclass."
         die "FATAL: Unable to find package.json"
     fi
 
@@ -62,7 +62,7 @@ nodejs-mod_src_prepare() {
 
 # @FUNCTION: nodejs-mod_src_compile
 # @DESCRIPTION:
-# General function for compiling a nodejs module
+# General function for compiling a NodeJS module
 nodejs-mod_src_compile() {
     debug-print-function "${FUNCNAME}" "${@}"
 
@@ -71,7 +71,7 @@ nodejs-mod_src_compile() {
         find node_modules/ -name binding.gyp -exec dirname {} \; | while read -r dir; do
             pushd "${dir}" >/dev/null || die
             # shellcheck disable=SC2046
-            npm_config_nodedir=/usr/ /usr/$(get_libdir)/node_modules/npm/bin/node-gyp-bin/node-gyp rebuild --verbose
+            npm_config_nodedir=/usr/ /usr/$(get_libdir)/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js rebuild --verbose
             popd >/dev/null || die
         done
     fi
@@ -84,7 +84,7 @@ nodejs-mod_src_compile() {
 
 # @FUNCTION: nodejs-mod_src_test
 # @DESCRIPTION:
-# General function for testing a nodejs module
+# General function for testing a NodeJS module
 nodejs-mod_src_test() {
     debug-print-function "${FUNCNAME}" "${@}"
 

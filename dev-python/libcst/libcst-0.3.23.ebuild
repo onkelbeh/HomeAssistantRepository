@@ -21,7 +21,6 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/typing-extensions-3.7.4.3[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-5.2[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

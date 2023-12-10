@@ -25,7 +25,6 @@ RDEPEND=">=dev-python/aiohttp-3.8.5[${PYTHON_USEDEP}]
 	>=dev-python/tabulate-0.8.7[${PYTHON_USEDEP}]
 	>=dev-python/dateparser-1.0.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/aioresponses[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

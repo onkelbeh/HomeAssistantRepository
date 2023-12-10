@@ -1,16 +1,18 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
 DESCRIPTION="Python API for interacting with the Stiebel Eltron ISG web gateway via Modbus."
 HOMEPAGE="https://github.com/fucm/python-stiebel-eltron https://pypi.org/project/pystiebeleltron/"
-SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.dev2.tar.gz -> ${P}.tar.gz"
-S=${WORKDIR}/${PN}-${PV}.dev2
+MY_PN="python-stiebel-eltron"
+COMMIT="536367f6b272b13f33437ad33a6cc6b5c6ab55d3"
+SRC_URI="https://codeload.github.com/fucm/${MY_PN}/zip/${COMMIT} -> ${P}.gh.zip"
+S=${WORKDIR}/${MY_PN}-${COMMIT}
 
 LICENSE="MIT"
 SLOT="0"
@@ -22,7 +24,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/pymodbus-2.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
+	app-arch/unzip
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -19,7 +19,6 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="~dev-python/user-agents-2.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

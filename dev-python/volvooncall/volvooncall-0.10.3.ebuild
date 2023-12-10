@@ -23,7 +23,6 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 			 dev-python/certifi[${PYTHON_USEDEP}]
 			 dev-python/amqtt[${PYTHON_USEDEP}] )"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

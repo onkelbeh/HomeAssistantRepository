@@ -24,7 +24,6 @@ RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/markdown[${PYTHON_USEDEP}]"
 BDEPEND="dev-python/Babel
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]

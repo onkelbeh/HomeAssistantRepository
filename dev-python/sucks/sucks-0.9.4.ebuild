@@ -1,10 +1,10 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-
+PYTHON_COMPAT=( python3_{10..12} )
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
 DESCRIPTION="a library for controlling certain robot vacuums"
@@ -26,7 +26,6 @@ RDEPEND=">=dev-python/sleekxmppfs-1.3.4[${PYTHON_USEDEP}]
 	>=dev-python/pycountry-convert-0.5[${PYTHON_USEDEP}]
 	>=dev-python/stringcase-1.2[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		>=dev-python/mock-1.3[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

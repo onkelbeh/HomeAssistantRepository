@@ -20,7 +20,6 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/attrs-18.1[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/coveralls[${PYTHON_USEDEP}]

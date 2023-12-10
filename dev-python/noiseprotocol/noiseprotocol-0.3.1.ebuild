@@ -21,7 +21,6 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/cryptography-2.8[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
 	>=dev-python/flux-led-0.28.32[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]

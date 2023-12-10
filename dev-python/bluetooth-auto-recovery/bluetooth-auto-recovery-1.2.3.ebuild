@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/PyRIC-0.1.6.3[${PYTHON_USEDEP}]
 	>=dev-python/usb-devices-0.4.1[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-adapters-0.16.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]

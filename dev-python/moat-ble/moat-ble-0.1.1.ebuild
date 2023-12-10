@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/home-assistant-bluetooth-1.3.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-sensor-state-data-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/sensor-state-data-2.0.2[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

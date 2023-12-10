@@ -20,7 +20,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
 	>=dev-python/click-7.1.2[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

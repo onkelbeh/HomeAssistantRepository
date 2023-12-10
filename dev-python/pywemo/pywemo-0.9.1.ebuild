@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/ifaddr-0.1.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.26[${PYTHON_USEDEP}]
 	>=dev-python/lxml-4.6[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

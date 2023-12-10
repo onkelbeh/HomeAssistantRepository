@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="A library to work with OSRAM lightify."
 HOMEPAGE="https://github.com/tfriedel/python-lightify https://pypi.org/project/lightify/"
-SRC_URI="https://github.com/tfriedel/python-lightify/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
+SRC_URI="https://github.com/tfriedel/python-lightify/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 S="${WORKDIR}/python-${P}"
 
 LICENSE="Apache-2.0"
@@ -21,7 +21,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

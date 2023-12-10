@@ -21,7 +21,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/mypy_extensions-0.3.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-3.7.4[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -22,7 +22,6 @@ DOCS="README.md"
 RDEPEND="dev-db/mariadb-connector-c"
 BDEPEND="
 	app-arch/unzip
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

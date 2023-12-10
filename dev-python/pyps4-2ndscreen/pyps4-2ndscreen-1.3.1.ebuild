@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/construct-2.9.45[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
 	>=dev-python/click-7.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -20,7 +20,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/dateparser-0.7.0[${PYTHON_USEDEP}]
 	>=dev-python/georss-client-0.15[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

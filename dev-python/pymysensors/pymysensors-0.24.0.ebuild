@@ -28,7 +28,6 @@ RDEPEND="dev-python/awesomeversion[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.1[${PYTHON_USEDEP}]
 	mqtt? ( dev-python/paho-mqtt[${PYTHON_USEDEP}] )"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

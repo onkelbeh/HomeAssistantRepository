@@ -21,7 +21,6 @@ RDEPEND="dev-python/aiohttp
 	dev-python/async-timeout
 	dev-python/slixmpp"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

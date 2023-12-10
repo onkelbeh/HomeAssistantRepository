@@ -20,7 +20,6 @@ RDEPEND="dev-python/Adafruit-Blinka[${PYTHON_USEDEP}]
 	dev-python/adafruit-circuitpython-busdevice[${PYTHON_USEDEP}]
 	dev-python/adafruit-circuitpython-register[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

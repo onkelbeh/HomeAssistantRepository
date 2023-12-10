@@ -20,7 +20,6 @@ DOCS="README.rst"
 
 RDEPEND="dev-python/Adafruit-Blinka[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

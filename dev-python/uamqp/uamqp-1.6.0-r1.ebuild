@@ -20,7 +20,6 @@ DOCS="README.rst"
 
 RDEPEND="<dev-libs/openssl-3"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

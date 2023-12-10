@@ -26,7 +26,6 @@ RDEPEND=">=dev-python/requests-2.4.2[${PYTHON_USEDEP}]
 		 dev-python/python-magic[${PYTHON_USEDEP}]
 		 >=dev-python/decorator-4.0.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

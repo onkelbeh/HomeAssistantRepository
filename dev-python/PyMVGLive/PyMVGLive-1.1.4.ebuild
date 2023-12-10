@@ -22,7 +22,6 @@ DOCS="README.md"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

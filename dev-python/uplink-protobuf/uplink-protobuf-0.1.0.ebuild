@@ -20,7 +20,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/uplink-0.6.0[${PYTHON_USEDEP}]
 	dev-python/protobuf-python[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -18,7 +18,6 @@ RESTRICT="!test? ( test )"
 RDEPEND="dev-python/uplink[${PYTHON_USEDEP}]
 	dev-python/uplink-protobuf[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

@@ -20,7 +20,6 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/httpx-0.23.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]

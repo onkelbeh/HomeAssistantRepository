@@ -19,7 +19,6 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]

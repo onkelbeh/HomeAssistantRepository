@@ -20,7 +20,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/aiohttp-3.8[${PYTHON_USEDEP}]
 	dev-python/backoff[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

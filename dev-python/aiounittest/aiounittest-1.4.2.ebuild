@@ -19,7 +19,6 @@ DOCS="README.rst"
 
 RDEPEND="dev-python/wrapt[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

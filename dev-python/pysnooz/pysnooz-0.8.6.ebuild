@@ -25,7 +25,6 @@ RDEPEND=">=dev-python/home-assistant-bluetooth-1.3.0[${PYTHON_USEDEP}]
 	>=dev-python/Events-0.4[${PYTHON_USEDEP}]
 	>=dev-python/transitions-0.8.11[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/freezegun[${PYTHON_USEDEP}]
 		dev-python/pytest[${PYTHON_USEDEP}]

@@ -18,7 +18,6 @@ RESTRICT="!test? ( test )"
 RDEPEND="dev-python/async-timeout[${PYTHON_USEDEP}]
 	>=dev-python/kafka-python-2.0.2[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

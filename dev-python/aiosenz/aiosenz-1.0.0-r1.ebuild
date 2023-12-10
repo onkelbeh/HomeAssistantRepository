@@ -21,7 +21,6 @@ DOCS="README.md"
 RDEPEND="dev-python/Authlib[${PYTHON_USEDEP}]
 	dev-python/httpx[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"

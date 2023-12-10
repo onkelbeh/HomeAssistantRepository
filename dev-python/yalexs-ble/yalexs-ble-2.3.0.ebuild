@@ -24,7 +24,6 @@ RDEPEND=">=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
 	>=dev-python/async-interrupt-1.1.1[${PYTHON_USEDEP}]
 	>=dev-python/lru-dict-1.1.4[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
