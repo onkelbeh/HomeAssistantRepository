@@ -22,7 +22,7 @@ DOCS="README.md"
 RDEPEND="dev-python/click[${PYTHON_USEDEP}]
 	dev-python/zigpy[${PYTHON_USEDEP}]
 	dev-python/crc[${PYTHON_USEDEP}]
-	>=dev-python/bellows-0.34.3[${PYTHON_USEDEP}]
+	>=dev-python/bellows-0.37.1[${PYTHON_USEDEP}]
 	dev-python/gpiod[${PYTHON_USEDEP}]
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
 	dev-python/async-timeout[${PYTHON_USEDEP}]
@@ -30,6 +30,7 @@ RDEPEND="dev-python/click[${PYTHON_USEDEP}]
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 src_prepare() {
