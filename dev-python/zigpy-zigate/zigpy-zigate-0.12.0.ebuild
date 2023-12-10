@@ -33,3 +33,10 @@ python_test() {
 }
 
 distutils_enable_tests pytest
+
+src_prepare() {
+	# remove dynamic-versioning
+	sed 's/dynamic = \["version"\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
+	sed 's/, "setuptools-git-versioning<2"//g' -i pyproject.toml || die
+	eapply_user
+}
