@@ -159,6 +159,7 @@
     <flag name="deluge">Local polling for Deluge Switches and Sensors</flag>
     <flag name="denonavr">Automation Library for Denon AVR receivers</flag>
     <flag name="deutsche_bahn">will give you the departure time of the next train for the given connection</flag>
+    <flag name="devialet">lets you control your Devialet wireless speakers from Home Assistant</flag>
     <flag name="devolo_home_control">Add Devolo Home-control to Home Assistant</flag>
     <flag name="devolo_home_network">The devolo Home Network integration allows you to monitor your PLC network</flag>
     <flag name="dexcom">View your CGM data from Dexcom from Home Assistant</flag>
@@ -436,6 +437,7 @@
     <flag name="lifx_legacy">The lifx integration allows you to integrate your LIFX into Home Assistant</flag>
     <flag name="lightwave">WiFi link for controlling Lightwave lights, switches and TRVs</flag>
     <flag name="limitlessled">control your LimitlessLED lights from within Home Assistant</flag>
+    <flag name="linear_garage_door">lets you control Linear garage doors through Home Assistant</flag>
     <flag name="linode">allows you to access the information about your Linode systems</flag>
     <flag name="linux_battery">sensor platform is using the information stored in /sys/class/power_supply/</flag>
     <flag name="litejet">allows a computer to control the system via LiteJet’s third party protocol</flag>
@@ -569,6 +571,7 @@
     <flag name="opengarage">opengarage cover platform lets you control the open-source OpenGarage.io device</flag>
     <flag name="openhome"> connect an Openhome Compliant Renderer to Home Assistant</flag>
     <flag name="opensensemap">query the open data API of openSenseMap.org air quality sensor station</flag>
+    <flag name="opensky">allows one to track overhead flights in a given region</flag>
     <flag name="opentherm_gw">control the OpenTherm Gateway from Home Assistant</flag>
     <flag name="openuv">The openuv integration displays UV and Ozone data from openuv.io</flag>
     <flag name="openweathermap">uses OpenWeatherMap as a source for current meteorological data</flag>
@@ -583,6 +586,7 @@
     <flag name="osramlightify">allows you to integrate your Osram Lightify into Home Assistant</flag>
     <flag name="otbr">calling an Open Thread Border Router’s REST API in Home Assistant</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
+    <flag name="ourgroceries">ntegrates your shopping lists into Home Assistant</flag>
     <flag name="overkiz">The Overkiz (by Somfy) integration platform</flag>
     <flag name="ovo_energy">allows you to monitor your energy consumption data</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
@@ -595,8 +599,8 @@
     <flag name="peco">provides electricity outage data from PECO Philadelphia power company</flag>
     <flag name="pegel_online">uses the data from the German Federal Waterways and Shipping Administration</flag>
     <flag name="pencom">Pencom is a computer-controlled relay, I/O and custom boards</flag>
+    <flag name="permobil">view various sensors with information about your Permobil wheelchair</flag>
     <flag name="philips_js">allows you to control Philips TVs which expose the jointSPACE JSON-API</flag>
-    <flag name="pi4ioe5v9xxxx">support for the quasi-bidirectional devices pi4ioe5v9xxxx I2C I/O port expander</flag>
     <flag name="picnic">get information from Picnic about orders, deliveries and cart content</flag>
     <flag name="piglow">control the Piglow lights on your Raspberry Pi from within Home Assistant</flag>
     <flag name="pilight">Pilight is a open source solution to communicate with 433 MHz devices</flag>
@@ -870,6 +874,7 @@
     <flag name="usgs_earthquakes_feed">a GeoJSON feed provided by the U.S. Geological Survey</flag>
     <flag name="utility_meter">integration provides functionality to track consumptions of various utilities</flag>
     <flag name="uvc">allows you to integrate UniFi Video Camera (UVC) into Home Assistant</flag>
+    <flag name="v2c">allows monitoring and control of a local V2C Trydan EVSE</flag>
     <flag name="vallox">control any Vallox ventilation unit</flag>
     <flag name="vasttrafik">traveling details for the larger Göteborg area in Sweden from the Västtrafik</flag>
     <flag name="velbus">supports the Velbus USB, serial and TCP/IP gateway</flag>
@@ -918,7 +923,6 @@
     <flag name="wolflink">uses the Wolf Smart-Set for your heating system status</flag>
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
     <flag name="ws66i">Control the Soundavo Whole-Home Audio Amplifier via local network</flag>
-    <flag name="wyoming">connects external voice services to Home Assistant using a small protocol</flag>
     <flag name="xbox">A library to authenticate with Windows Live/Xbox Live and use their API</flag>
     <flag name="xbox_live">track Xbox profiles</flag>
     <flag name="xeoma">Python wrapper for Xeoma web server API</flag>
