@@ -4,7 +4,7 @@ After=network.target
 Wants=mosquitto.service
 
 [Service]
-ExecStart=node index.js
+ExecStart=/usr/bin/zigbee2mqtt
 WorkingDirectory=/usr/lib64/node_modules/zigbee2mqtt
 Environment=ZIGBEE2MQTT_DATA=/var/lib/zigbee2mqtt
 StandardOutput=inherit
