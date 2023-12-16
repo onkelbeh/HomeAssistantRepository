@@ -21,17 +21,16 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiorun[${PYTHON_USEDEP}]
+	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
 	dev-python/dacite[${PYTHON_USEDEP}]
-	dev-python/orjson[${PYTHON_USEDEP}]"
-#   WIP: "~dev-python/home-assistant-chip-clusters-2023.10.2[${PYTHON_USEDEP}]"
+	dev-python/orjson[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-chip-clusters-2023.10.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
