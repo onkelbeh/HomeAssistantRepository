@@ -12,7 +12,7 @@ HOMEPAGE="https://github.com/bimmerconnected/bimmer_connected https://pypi.org/p
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
+IUSE="china test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
@@ -20,7 +20,7 @@ DOCS="README.rst"
 RDEPEND="dev-python/httpx[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.4[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]
-	dev-python/pillow[${PYTHON_USEDEP}]"
+	china? ( dev-python/pillow[${PYTHON_USEDEP}] )"
 BDEPEND="
 	dev-python/pbr[${PYTHON_USEDEP}]
 	test? (
@@ -28,9 +28,5 @@ BDEPEND="
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
