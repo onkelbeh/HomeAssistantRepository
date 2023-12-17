@@ -261,7 +261,6 @@
 |fritz|The fritz platform offers presence detection for Home Assistant|N|Y|Y|0.10|
 |fritzbox|Allows you to integrate the switch and climate devices in Home Assistant|N|Y|Y||
 |fritzbox_callmonitor|monitors the call monitor exposed by AVM FRITZ!Box routers on TCP port 1012|N|Y|Y||
-|fritzbox_netmonitor|sensor monitors the network statistics exposed by AVM FRITZ!Box routers|N|Y|Y||
 |fronius|Add (very basic) Support for Fronius Symo JSON Api to Home Assistant|Y|Y|Y|0.96|
 |frontier_silicon|Support for Internet Radios based on the Frontier Silicon chipset|N|N|Y|0.40|
 |fully_kiosk|Fully Kiosk Browser control in Home Assistant|N|N|Y|2022.9.0b3|

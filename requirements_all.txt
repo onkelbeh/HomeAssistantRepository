@@ -398,7 +398,7 @@ fqdn==1.5.1
 freebox-api==1.1.0
 freesms==0.2.0
 freetype==2.13.2
-fritzconnection==1.4.2
+fritzconnection==1.13.2
 frozenlist==1.4.0
 fs==2.4.16
 furo==2023.9.10
