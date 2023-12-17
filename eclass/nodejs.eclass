@@ -49,7 +49,7 @@ _NODEJS_ECLASS=1
 # @INTERNAL
 # @DESCRIPTION:
 # Files and directories that usually come in a standard NodeJS/npm module.
-NODEJS_FILES="babel.config.js babel.config.json cli.js dist index.js lib node_modules package.json"
+NODEJS_FILES="babel.config.js babel.config.json bin cli.js dist index.js lib node_modules package.json"
 
 # @ECLASS_VARIABLE: NODEJS_EXTRA_FILES
 # @DESCRIPTION:
@@ -104,6 +104,32 @@ nodejs_has_test() {
 # Returns true if build script exist
 nodejs_has_build() {
     node -p "if (require('./package.json').scripts.build === undefined) { process.exit(1) }" &>/dev/null
+}
+
+# @FUNCTION: nodejs_has_bin
+# @DESCRIPTION:
+# Returns true if bin exist
+nodejs_has_bin() {
+    node -p "if (require('./package.json').bin === undefined) { process.exit(1) }" &>/dev/null
+}
+
+# @FUNCTION: nodejs_install_bin
+# @DESCRIPTION:
+# Install binary files
+nodejs_install_bin() {
+    local bin_content key value
+
+    bin_content=$(node -e "console.log(JSON.stringify(require('./package.json').bin))")
+
+    insinto "$(nodejs_modules)"
+    echo "$bin_content" | tr '{},' '\n' | grep ':' | sed -e 's/\"//g' -e 's/,$//'| while IFS=: read -r key value; do
+      key="$(echo "$key" | xargs)"
+      value="$(echo "$value" | xargs)"
+
+      doins "${value}"
+      fperms +x "$(nodejs_modules)/${value}"
+      dosym -r "$(nodejs_modules)/${value}" "/usr/bin/${key}"
+    done
 }
 
 # @FUNCTION: nodejs_modules
@@ -190,6 +216,7 @@ nodejs_remove_dev() {
         -iwholename '*.deps' -o \
         -iwholename '*/man' -o \
         -iwholename '*/test' -o \
+        -iwholename '*/tests' -o \
         -iwholename '*/scripts' -o \
         -iwholename '*/git-hooks' -o \
         -iwholename '*/prebuilds' -o \
@@ -307,6 +334,28 @@ enpm_install() {
             cp -r "${S}/${f}" "${ED}/$(nodejs_modules)"
         fi
     done
+
+    pushd "${ED}/$(nodejs_modules)" >/dev/null || die
+
+	  # Reset permissions for executables
+	  find -type f | while read f; do
+	  	  fperms -x "$(nodejs_modules)"/"${f}"
+  	done
+
+  	# Set permissions for executables and libraries
+  	find -type f -name "*.node" | while read f; do
+	      fperms +x "$(nodejs_modules)/${f}"
+    done
+    find -type f -executable | while read f; do
+        fperms +x "$(nodejs_modules)/${f}"
+    done
+
+    popd >/dev/null || die
+
+    if nodejs_has_bin; then
+        einfo "Install binary files"
+        nodejs_install_bin
+    fi
 }
 
 fi
