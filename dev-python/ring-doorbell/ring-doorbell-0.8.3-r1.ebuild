@@ -13,7 +13,7 @@ HOMEPAGE="https://github.com/tchellomello/python-ring-doorbell https://pypi.org/
 LICENSE="LGPL-3+"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
+IUSE="listen test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
@@ -23,7 +23,8 @@ RDEPEND=">=dev-python/requests-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/oauthlib-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2022.0[${PYTHON_USEDEP}]
 	dev-python/asyncclick[${PYTHON_USEDEP}]
-	dev-python/anyio[${PYTHON_USEDEP}]"
+	dev-python/anyio[${PYTHON_USEDEP}]
+	listen? ( dev-python/firebase-messaging[${PYTHON_USEDEP}] )"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
