@@ -15,19 +15,11 @@ S="${WORKDIR}/${P}.dev0"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
+IUSE="async test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/aiofiles-0.4.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND="async? ( >=dev-python/aiofiles-0.4.0[${PYTHON_USEDEP}] )"
 
 distutils_enable_tests pytest
