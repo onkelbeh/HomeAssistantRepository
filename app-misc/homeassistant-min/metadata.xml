@@ -54,6 +54,7 @@
     <flag name="local_calendar">create a calendar of events in Home Assistant</flag>
     <flag name="local_todo">The Local to-do list integration allows you to create to-do lists in Home Assist</flag>
     <flag name="mariadb">WIP: set dependencies for mariadb-connector-python</flag>
+    <flag name="matter">control Matter devices on your local WiFi or Thread network</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
     <flag name="mobile_app">allows Home Assistant mobile apps to easily integrate with Home Assistant</flag>

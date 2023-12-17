@@ -463,6 +463,7 @@
     <flag name="marytts">text-to-speech platform uses MaryTTS Text-to-Speech engine</flag>
     <flag name="mastodon">uses Mastodon to deliver notifications from Home Assistant</flag>
     <flag name="matrix">allows you to send messages to matrix rooms</flag>
+    <flag name="matter">control Matter devices on your local WiFi or Thread network</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="mcp23017">base for all related mcp23017 platforms in Home Assistant</flag>
     <flag name="meater">communication with the Meater Temperature Probe from Apption Labs</flag>

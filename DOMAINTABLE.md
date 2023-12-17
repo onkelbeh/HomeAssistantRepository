@@ -446,6 +446,7 @@
 |marytts|text-to-speech platform uses MaryTTS Text-to-Speech engine|N|N|Y|0.43|
 |mastodon|uses Mastodon to deliver notifications from Home Assistant|N|N|Y|0.67|
 |matrix|allows you to send messages to matrix rooms|N|N|Y|0.69|
+|matter|control Matter devices on your local WiFi or Thread network|Y|Y|Y|2022.12.0|
 |maxcube|eQ-3 ELV MAX Cube Python API|Y|Y|Y|0.40|
 |mcp23017|base for all related mcp23017 platforms in Home Assistant|N|N|Y||
 |meater|communication with the Meater Temperature Probe from Apption Labs|N|N|Y|2022.5.0b0|

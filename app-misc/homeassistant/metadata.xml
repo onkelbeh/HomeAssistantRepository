@@ -178,6 +178,7 @@
     <flag name="luci">fetch connected devices from your OpenWrt</flag>
     <flag name="luftdaten">query the open data API of luftdaten.info to monitor air quality</flag>
     <flag name="mariadb">WIP: set dependencies for mariadb-connector-python</flag>
+    <flag name="matter">control Matter devices on your local WiFi or Thread network</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="media_extractor">Gets a stream URL and sends it to a media player entity</flag>
     <flag name="met">met platform uses the Met.no web service as a source for meteorological data</flag>
