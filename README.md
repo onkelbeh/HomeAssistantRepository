@@ -612,13 +612,13 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1764 Ebuilds in total, 1753 of them have in total 1776 (43 different) licenses assigned.
+There are 1765 Ebuilds in total, 1754 of them have in total 1778 (43 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
 |MIT|1031|
-|Apache-2.0|370|
-|GPL-3|106|
+|Apache-2.0|371|
+|GPL-3|107|
 |BSD|101|
 |GPL-2|24|
 |LGPL-3|24|
@@ -660,9 +660,9 @@ There are 1764 Ebuilds in total, 1753 of them have in total 1776 (43 different) 
 |GPL-2+|1|
 |GPL-2-with-linking-exception|1|
 
-(Last counted: 16/12/2023)
+(Last counted: 17/12/2023)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 16/12/2023
+Last updated: 17/12/2023
