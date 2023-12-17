@@ -23,12 +23,12 @@ RDEPEND="
 	>=dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '
 		>=dev-python/async-timeout-3.0.0[${PYTHON_USEDEP}]
-	' 3.{9..10})
+	' 3.10)
 "
 # the build system uses custom build script that uses distutils to build
 # C extensions, sigh
 BDEPEND="
-	>=dev-python/cython-0.29.32[${PYTHON_USEDEP}]
+	>=dev-python/cython-3.0.5[${PYTHON_USEDEP}]
 	>=dev-python/setuptools-65.6.3[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
