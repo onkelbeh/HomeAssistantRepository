@@ -22,7 +22,7 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/requests-2.25.1[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.26.6[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2020.4[${PYTHON_USEDEP}]
-	ev-python/typing-extensions[${PYTHON_USEDEP}]"
+	dev-python/typing-extensions[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
