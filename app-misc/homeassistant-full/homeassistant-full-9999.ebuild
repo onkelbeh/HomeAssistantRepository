@@ -596,7 +596,7 @@ RDEPEND="${RDEPEND}
 	meater? ( ~dev-python/meater-python-0.0.8[${PYTHON_USEDEP}] )
 	medcom_ble? ( ~dev-python/medcom-ble-0.1.1[${PYTHON_USEDEP}] )
 	mediaroom? ( ~dev-python/pymediaroom-0.6.5.4[${PYTHON_USEDEP}] )
-	media_extractor? ( ~dev-python/yt-dlp-2023.11.16[${PYTHON_USEDEP}] )
+	media_extractor? ( ~net-misc/yt-dlp-2023.11.16[${PYTHON_USEDEP}] )
 	melcloud? ( ~dev-python/pymelcloud-2.5.8[${PYTHON_USEDEP}] )
 	melissa? ( ~dev-python/py-melissa-climate-2.1.4[${PYTHON_USEDEP}] )
 	melnor? ( ~dev-python/melnor-bluetooth-0.0.25[${PYTHON_USEDEP}] )

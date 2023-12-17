@@ -310,7 +310,7 @@ RDEPEND="${RDEPEND}
 	luftdaten? ( ~dev-python/luftdaten-0.7.4[${PYTHON_USEDEP}] )
 	mariadb? ( dev-python/mysqlclient[${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.4.3[${PYTHON_USEDEP}] )
-	media_extractor? ( ~dev-python/yt-dlp-2023.11.16[${PYTHON_USEDEP}] )
+	media_extractor? ( ~net-misc/yt-dlp-2023.11.16[${PYTHON_USEDEP}] )
 	met? ( ~dev-python/PyMetno-0.11.0[${PYTHON_USEDEP}] )
 	meteo_france? ( ~dev-python/meteofrance-api-1.3.0[${PYTHON_USEDEP}] )
 	mfi? ( ~dev-python/mficlient-0.3.0[${PYTHON_USEDEP}] )
