@@ -19,8 +19,8 @@ adb-shell==0.4.4
 adext==0.4.2
 adguardhome==0.6.3
 advantage-air==0.4.4
-AEMET-OpenData==0.4.6
-aenum==3.1.12
+AEMET-OpenData==0.4.7
+aenum==3.1.15
 afsapi==0.2.7
 agent-py==0.0.23
 ahocorapy==1.6.1
@@ -53,7 +53,7 @@ aioeagle==1.1.0
 aioecowitt==2023.5.0
 aioelectricitymaps==0.1.5
 aioemonitor==1.0.5
-aioesphomeapi==18.5.7
+aioesphomeapi==19.2.1
 aiofiles==23.1.0
 aioflo==2021.11.0
 aioftp==0.21.3
@@ -183,14 +183,15 @@ backports-strenum==1.2.8
 baidu-aip==1.6.6.0
 batinfo==0.4.2
 bcrypt==4.0.1
+bcrypt==4.1.1
 beacontools==2.1.0
 beautifulsoup4==4.12.2
 beewi-smartclim==0.0.10
-bellows==0.37.1
+bellows==0.37.3
 bidict==0.22.0
 bimmer-connected==0.14.6
 bitarray==2.8.3
-bitstring==4.1.2
+bitstring==4.1.4
 bitstruct==8.17.0
 bizkaibus==0.1.1
 bleach==6.1.0
@@ -208,14 +209,14 @@ bluetooth-adapters==0.16.1
 bluetooth-auto-recovery==1.2.3
 bluetooth-data-tools==1.15.0
 bluetooth-sensor-state-data==1.6.1
-bluez==5.68
+bluez==5.70
 bme280spi==0.2.0
 bme680==1.0.5
 bond-async==0.2.1
 boschshcpy==0.2.75
 boto3==1.28.17
-boto3==1.29.3
-botocore==1.32.3
+boto3==1.33.6
+botocore==1.33.6
 bottle==0.12.25
 bottleneck==1.3.7
 broadlink==0.18.3
@@ -269,7 +270,7 @@ connect-box==0.2.8
 connio==0.2.0
 constantly==23.10.4
 construct==2.10.68
-construct==2.10.69
+construct==2.10.70
 contourpy==1.2.0
 coronavirus==1.1.1
 coverage==7.3.2
@@ -297,7 +298,7 @@ dateparser==1.1.7
 DateTime==5.3
 dbus-fast==2.14.0
 dbus==1.15.6
-debianutils==5.8
+debianutils==5.14
 debugpy==1.8.0
 decora-wifi==1.4
 decora==0.6
@@ -313,7 +314,7 @@ deprecated==1.2.14
 devialet==1.4.3
 devolo-home-control-api==0.18.2
 devolo-plc-api==1.4.1
-dialog==1.3.20230209
+dialog==1.3.20231002
 dicttoxml2==2.1.0
 dicttoxml==1.7.4
 directv==0.4.0
@@ -330,7 +331,6 @@ double-conversion==3.2.1
 dovado==0.4.1
 dremel3dpy==2.1.1
 dsmr-parser==1.3.1
-dtlssocket==0.1.12
 dtlssocket==0.1.16
 dweepy==0.3.0
 dynalite-devices==0.1.47
@@ -398,7 +398,6 @@ fqdn==1.5.1
 freebox-api==1.1.0
 freesms==0.2.0
 freetype==2.13.2
-fritzconnection==1.13.2
 frozenlist==1.4.0
 fs==2.4.16
 furo==2023.9.10
@@ -439,7 +438,7 @@ google-api-core==2.14.0
 google-api-python-client==2.71.0
 google-auth-httplib2==0.1.1
 google-auth-oauthlib==1.0.0
-google-auth==2.23.4
+google-auth==2.24.0
 google-cloud-pubsub==2.13.11
 google-cloud-texttospeech==2.12.3
 google-generativeai==0.1.0
@@ -452,7 +451,7 @@ gpiod==1.5.4
 gpiozero==1.6.2
 gps3==0.33.3
 gql==3.4.1
-graphicsmagick==1.3.40
+graphicsmagick==1.3.42
 graphql-core==3.3.0_alpha2
 graphviz==0.20.1
 graphviz==8.1.0
@@ -480,7 +479,7 @@ hangups==0.4.18
 hass-nabucasa==0.74.0
 hass-splunk==0.1.1
 hassil==1.5.1
-HATasmota==0.7.3
+HATasmota==0.8.0
 haversine==2.8.0
 hbmqtt==0.9.5
 hdate==0.10.4
@@ -524,7 +523,7 @@ ibeacon-ble==1.0.1
 ibm-cloud-sdk-core==3.11.3
 ibm-watson==5.2.2
 ibmiotf==0.3.4
-ical==6.1.0
+ical==6.1.1
 idasen-ha==2.4
 idasen==0.10.3
 idna==3.6
@@ -541,6 +540,7 @@ inflect==7.0.0
 inflection==0.5.1
 influxdb-client==1.24.0
 influxdb==5.3.1
+iniconfig==2.0.0
 inkbird-ble==0.5.6
 inquirerpy==0.3.4
 insteon-frontend-home-assistant==0.4.0
@@ -565,7 +565,7 @@ jaraco-functools==4.0.0
 jaraco-itertools==6.4.1
 jaraco-logging==3.2.0
 jaraco-net==9.3.1
-jaraco-text==3.11.1
+jaraco-text==3.12.0
 jeepney==0.8.0
 jellyfin-apiclient-python==1.9.2
 jinja==3.1.2
@@ -578,7 +578,7 @@ jsonpointer==2.4
 jsonrpc-async==2.1.0
 jsonrpc-base==2.1.0
 jsonrpc-websocket==3.1.1
-jsonschema-specifications==2023.11.1
+jsonschema-specifications==2023.11.2
 jsonschema==4.20.0
 justbackoff==0.6.0
 justnimbus==0.6.0
@@ -807,7 +807,8 @@ pkgconf==1.8.1
 pkgconfig==2
 platformdirs==4.0.0
 platformio==6.1.11
-plugwise==0.34.5
+pluggy==1.3.0
+plugwise==0.35.3
 plumbum==1.8.2
 plumlightpad==0.0.11
 ply==3.11
@@ -823,7 +824,7 @@ prometheus-client==0.17.1
 prompt-toolkit==3.0.41
 proto-plus==1.22.3
 protobuf-python==4.25.1
-protobuf==24.3
+protobuf==25.1
 proxmoxer==2.0.1
 psutil-home-assistant==0.0.1
 psutil==5.9.6
@@ -833,6 +834,7 @@ pubnub==6.4.1
 pubnubsub-handler==1.0.9
 pure-pcapy3==1.0.1
 pure-python-adb==0.3.0
+pushbullet-py==0.11.0
 pushover_complete==1.1.1
 pvo==2.1.1
 pwmled==1.6.10
@@ -947,7 +949,7 @@ pygti==0.9.4
 pyhamcrest==2.1.0
 pyheos==0.7.2
 pyHik==0.3.2
-pyhiveapi==0.5.14
+pyhiveapi==0.5.16
 pyhomematic==0.1.77
 pyhomeworks==0.0.6
 pyhumps==3.5.0
@@ -1015,6 +1017,7 @@ pyobihai==1.4.2
 pyoctoprintapi==0.1.12
 pyombi==0.1.10
 pyopenssl==23.2.0
+pyopenssl==23.3.0
 pyopenuv==2023.2.0
 pyopnsense==0.4.0
 pyoppleio-legacy==1.0.8
@@ -1055,7 +1058,7 @@ pyroute2==0.7.9
 pyrympro==0.0.7
 pysabnzbd==1.1.1
 pysaj==0.0.16
-pyschlage==2023.11.0
+pyschlage==2023.12.0
 pySDCP==1
 pysensibo==1.0.36
 pyserial-asyncio-fast==0.11
@@ -1090,6 +1093,7 @@ PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytankerkoenig==0.0.6
 pytautulli==23.1.1
+pytest==7.4.3
 pytfiac==0.4
 pythinkingcleaner==0.0.3
 python-awair==0.2.4
@@ -1123,7 +1127,7 @@ python-mpd2==3.0.5
 python-multipart==0.0.6
 python-mystrom==2.2.0
 python-opendata-transport==0.3.0
-python-opensky==1.0.0
+python-opensky==0.2.1
 python-openzwave-mqtt==1.4.0
 python-otbr-api==2.5.0
 python-picnic-api==1.1.0
@@ -1149,7 +1153,6 @@ pytomorrowio==0.3.6
 pytouchline==0.7
 pytraccar==2.0.0
 pytrackr==0.0.5
-pytradfri==9.0.1
 pytrafikverket==0.3.9.1
 PyTransportNSW==0.1.1
 pytrydan==0.4.0
@@ -1197,12 +1200,11 @@ raspyrfm-client==1.2.8
 re2==0.2022.12.01
 readlike==0.1.2
 readline==8.1_p2
-referencing==0.31.0
+referencing==0.31.1
 regenmaschine==2023.6.0
-regex==2021.8.28
 regex==2023.10.3
 related==0.7.2
-renault-api==0.2.0
+renault-api==0.2.1
 renson-endura-delta==1.6.0
 reolink-aio==0.8.2
 ReParser==1.4.3
@@ -1226,7 +1228,7 @@ rokuecp==0.18.1
 roombapy==1.6.8
 roonapi==0.1.5
 rova==0.3.0
-rpds-py==0.13.1
+rpds-py==0.13.2
 rpi-bad-power==0.1.0
 RPi-GPIO==0.7.1_alpha4
 rpi-rf==0.9.7
@@ -1242,7 +1244,7 @@ russound==0.1.9
 ruuvitag-ble==0.1.2
 Rx==3.2.0
 rxv==0.7.0
-s3transfer==0.7.0
+s3transfer==0.8.2
 samsungctl==0.7.1
 samsungtvws==2.6.0
 satel-integra==0.3.7
@@ -1253,7 +1255,6 @@ screenlogicpy==0.9.4
 scsgate==0.1.0
 secretstorage==3.3.3
 securetar==2023.3.0
-segno==1.5.3
 semantic-version==2.10.0
 semver==3.0.2
 sendgrid==6.8.2
@@ -1336,6 +1337,7 @@ surepy==0.8.0
 swisshydrodata==0.1.0
 switchbot-api==1.2.1
 synology-srm==0.2.0
+syrupy==4.6.0
 systembridgeconnector==3.10.0
 systemd-utils==254.5
 tabulate==0.9.0
@@ -1453,7 +1455,7 @@ webrtc-noise-gain==1.2.3
 websocket-client==1.6.4
 websockets==12.0
 werkzeug==3.0.1
-wheel==0.41.3
+wheel==0.42.0
 whirlpool-sixth-sense==0.18.4
 whois==0.9.27
 wiffi==1.1.2
@@ -1488,16 +1490,16 @@ zamg==0.3.3
 zbar==0.23.92
 zeep==4.2.1
 zengge==0.2
-zeroconf==0.127.0
+zeroconf==0.128.5
 zeversolar==0.3.1
 zha-quirks==0.0.107
 zhong-hong-hvac==1.0.9
 ziggo-mediabox-xl==1.1.0
-zigpy-deconz==0.22.0
-zigpy-xbee==0.20.0
+zigpy-deconz==0.22.2
+zigpy-xbee==0.20.1
 zigpy-zigate==0.12.0
 zigpy-znp==0.12.0
-zigpy==0.60.0
+zigpy==0.60.1
 zlib-ng==0.2.0
 zlib-ng==2.1.5
 zlib==1.3
