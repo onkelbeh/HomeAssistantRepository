@@ -45,7 +45,7 @@ DEPEND="
 "
 RDEPEND="
 	${BDEPEND}
-	dev-libs/protobuf:${SLOT}=
+	dev-libs/protobuf:${SLOT}
 "
 
 distutils_enable_tests setup.py
