@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">feedparser</remote-id>
+    <remote-id type="github">kurtmckee/feedparser</remote-id>
+    <doc>https://pythonhosted.org/feedparser/</doc>
+    <maintainer status="unknown">
+      <email>contactme@kurtmckee.org</email>
+      <name>Kurt McKee</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
