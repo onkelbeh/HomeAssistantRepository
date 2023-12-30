@@ -7,10 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">astroid</remote-id>
-    <remote-id type="github">PyCQA/astroid</remote-id>
-    <maintainer status="unknown">
-      <email>code-quality@python.org</email>
-      <name>Python Code Quality Authority</name>
-    </maintainer>
+    <remote-id type="github">pylint-dev/astroid</remote-id>
   </upstream>
 </pkgmetadata>
