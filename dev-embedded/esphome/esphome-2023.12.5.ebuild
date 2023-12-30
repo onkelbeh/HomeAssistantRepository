@@ -34,25 +34,27 @@ DOCS="README.md"
 RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-		~dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]
+		~dev-python/voluptuous-0.14.1[${PYTHON_USEDEP}]
 		~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
 		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 		dev-python/colorama[${PYTHON_USEDEP}]
-		server? ( ~dev-python/tornado-6.3.3[${PYTHON_USEDEP}] )
-		~dev-python/tzlocal-5.1[${PYTHON_USEDEP}]
+		server? ( ~dev-python/tornado-6.4[${PYTHON_USEDEP}] )
+		~dev-python/tzlocal-5.2[${PYTHON_USEDEP}]
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 		~dev-embedded/platformio-6.1.11[${PYTHON_SINGLE_USEDEP}]
 		~dev-embedded/esptool-4.6.2[${PYTHON_SINGLE_USEDEP}]
 		~dev-python/click-8.1.7[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20230904.0[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20231107.0[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
+		~dev-python/python-magic-0.4.27[${PYTHON_USEDEP}]
 		~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
+		>=dev-python/pyparsing-3.0[${PYTHON_USEDEP}]
+		>=dev-python/argcomplete-2.0.0[${PYTHON_USEDEP}]
 	')"
 
 BDEPEND="$(python_gen_cond_dep '
-	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
