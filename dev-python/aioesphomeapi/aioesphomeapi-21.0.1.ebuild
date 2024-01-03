@@ -17,7 +17,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/aiohappyeyeballs-2.3.0[${PYTHON_USEDEP}]
+RDEPEND="dev-python/aiohappyeyeballs[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-3.19.0[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.128.4[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.12.0[${PYTHON_USEDEP}]
