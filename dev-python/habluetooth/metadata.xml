@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">habluetooth</remote-id>
+    <remote-id type="github">bluetooth-devices/habluetooth</remote-id>
+    <maintainer status="unknown">
+      <email>bluetooth@koston.org</email>
+      <name>J. Nick Koston</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
