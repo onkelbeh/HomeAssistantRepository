@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">usb-devices</remote-id>
-    <remote-id type="github">Bluetooth-Devices/usb-devices</remote-id>
+    <remote-id type="github">bluetooth-devices/usb-devices</remote-id>
     <maintainer status="unknown">
       <email>nick@koston.org</email>
       <name>J. Nick Koston</name>
