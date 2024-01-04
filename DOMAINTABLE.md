@@ -94,7 +94,6 @@
 |bosch_shc|integrate your Bosch SHC into Home Assistant|N|N|Y|2021.6|
 |braviatv|Control almost all Sony Bravia TV 2013 and newer|N|Y|Y||
 |broadlink|Allows you to interact with Broadlink remote control devices|N|Y|Y|0.35|
-|brother|Read current data from your local Brother printer|N|Y|Y||
 |brottsplatskartan|brottsplatskartan sensor allows one to track reported incidents|N|Y|Y|0.85|
 |brunt|The brunt platform allows one to control Blind Engines by Brunt|N|Y|Y|0.75|
 |bsblan|This integration integrates BSBLan device into Home Assistant|N|Y|Y||
