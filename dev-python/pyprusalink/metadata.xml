@@ -7,10 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyprusalink</remote-id>
-    <remote-id type="github">home-assistant-libs/pyprusalink</remote-id>
     <maintainer status="unknown">
-      <name>The Home Assistant Authors</name>
       <email>hello@home-assistant.io</email>
+      <name>The Home Assistant Authors</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
