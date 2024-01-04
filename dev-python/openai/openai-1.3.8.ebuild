@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
 DESCRIPTION="Python client library for the OpenAI API"
@@ -18,16 +18,16 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/tqdm[${PYTHON_USEDEP}]
-	dev-python/aiohttp[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-1.9.0[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-4.7[${PYTHON_USEDEP}]
+	>=dev-python/anyio-3.5.0[${PYTHON_USEDEP}]
+	>=dev-python/distro-1.7.0[${PYTHON_USEDEP}]
+	dev-python/sniffio[${PYTHON_USEDEP}]
+	>=dev-python/tqdm-4[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
