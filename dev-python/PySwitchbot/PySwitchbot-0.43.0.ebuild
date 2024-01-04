@@ -19,9 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
-	>=dev-python/bleak-retry-connector-2.9.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-3.4.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-39.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pyopenssl-23.0.0[${PYTHON_USEDEP}]
 	>=dev-python/boto3-1.20.24[${PYTHON_USEDEP}]
