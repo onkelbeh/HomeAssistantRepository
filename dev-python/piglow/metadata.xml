@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">piglow</remote-id>
+    <remote-id type="github">Boeeerb/PiGlow</remote-id>
     <maintainer status="unknown">
       <email>phil@pimoroni.com</email>
       <name>Philip Howard</name>
