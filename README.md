@@ -23,6 +23,11 @@ If you are an author of an integration / component or other stuff related to Hom
 PyPI `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (
 PyPI/GitHub/Sourceforge).
 
+## 2024-01 again some file collisions related to snmp
+The HA team now uses pysnmp-lextudio (which is imho not a bad decision). Had to apply a slight patch to the core constraints.
+Best practice for now is to keep `/etc/portage/profile/package.provided` as it is (the snmp libs are only referenced 2 times from the main repo), remove `pysnmplib` and let the Ebuild install the 2 lextudio modules.
+For easier install I also patched core's version of `dev-python/regex`.
+
 ## note to the 2023-10 Update
 
 Due to a sudden significant change in the [pypi.eclass](https://devmanual.gentoo.org/eclass-reference/pypi.eclass/index.html) and other fundamental aspects of the Gentoo packaging system, we faced a complex and time-consuming task of updating our ebuilds. These changes required modifications to nearly 2000 ebuilds, impacting our ability to release updates in a timely manner.
@@ -67,11 +72,6 @@ some packages throw errors during build time, if `cython-3.0.2` is installed. Do
 
 with the old version. Make sure you have gcc-13 active.
 
-
-## 2024-01 again some file collisions related to snmp
-The HA team now uses pysnmp-lextudio (which is imho not a bad decision). Had to apply a slight patch to the core constraints.
-Best practice for now is to keep `/etc/portage/profile/package.provided` as it is (the snmp libs are only referenced 2 times from the main repo), remove `pysnmplib` and let the Ebuild install the 2 lextudio modules.
-For easier install I also patched core's version of `dev-python/regex`.
 
 ## 2023-03 changed main Ebuild SRC_URI to Pypi
 As the current translation files have been removed from the core (https://developers.home-assistant.io/blog/2023/02/06/translations-files-removed-from-core/), I have switched SRC_URI to Pypi, the SDIST there contains all artifacts including the translations. Unfortunately tests are not part of the PyPi SDIST, so currently we have none. I'll try to pull in the tests from the Github Tarball in one of the next Releases. 
