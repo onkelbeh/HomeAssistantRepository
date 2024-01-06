@@ -19,9 +19,7 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
-	$(python_gen_cond_dep '
-		>=dev-python/exceptiongroup-1.0.2[${PYTHON_USEDEP}]
-	' 3.10)
+	>=dev-python/exceptiongroup-1.2.0[${PYTHON_USEDEP}]
 	>=dev-python/idna-2.8[${PYTHON_USEDEP}]
 	>=dev-python/sniffio-1.1[${PYTHON_USEDEP}]
 "
@@ -33,7 +31,7 @@ BDEPEND="
 		>=dev-python/hypothesis-4.0[${PYTHON_USEDEP}]
 		>=dev-python/psutil-5.9[${PYTHON_USEDEP}]
 		>=dev-python/pytest-mock-3.6.1[${PYTHON_USEDEP}]
-		>=dev-python/trio-0.22[${PYTHON_USEDEP}]
+		>=dev-python/trio-0.23[${PYTHON_USEDEP}]
 		dev-python/trustme[${PYTHON_USEDEP}]
 		amd64? (
 			$(python_gen_cond_dep '
