@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">melnor-bluetooth</remote-id>
+    <remote-id type="github">vanstinator/melnor-bluetooth</remote-id>
     <maintainer status="unknown">
       <email>justinvdhooft@gmail.com</email>
       <name>Justin Vanderhooft</name>
