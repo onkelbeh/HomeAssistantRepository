@@ -116,13 +116,13 @@ Since homeassistant-0.115.3 the **Main Ebuild** is released in three different s
 
 [![emerge ha-min](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml/badge.svg)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-min.yml)
 
-These are the USE Flags I use in production myself. All will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **100** USE Flags.
+These are the USE Flags I use in production myself. All will compile fine and are extensively tested in every release, a daily compilation test is run at Github, big thanks to @antonfischl1980, it currently holds **101** USE Flags.
 
 ### `app-misc/homeassistant`
 
 [![emerge ha-med](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml/badge.svg?branch=master)](https://github.com/onkelbeh/HomeAssistantRepository/actions/workflows/emerge-med.yml)
 
-The Ebuild we have since `0.97.0`, as soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure, a daily compilation test is run at Github, big thanks to @antonfischl1980, It currently holds **295** USE Flags.
+The Ebuild we have since `0.97.0`, as soon as I know that at least one user is actively using a component, it will be added. These all compile fine, but some version conflicts could occure, a daily compilation test is run at Github, big thanks to @antonfischl1980, It currently holds **296** USE Flags.
 
 ### `app-misc/homeassistant-full`
 

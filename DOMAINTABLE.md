@@ -518,7 +518,7 @@
 |neurio_energy|Integrate your Neurio meter information into Home Assistant|N|N|Y|0.14|
 |nexia|allows you to integrate your Nexia thermostats into Home Assistant|N|N|Y|0.108|
 |nextbus| will give you the next departure time and associated data fro NextBus|N|N|Y|0.93|
-|nextcloud|pulls summary Nextcloud information into Home Assistant|N|N|Y|0.108|
+|nextcloud|pulls summary Nextcloud information into Home Assistant|Y|Y|Y|0.108|
 |nextdns|allows you to monitor NextDNS statistics|N|N|Y|2022.8.1|
 |nfandroidtv|Notifications for Android TV and Notifications for Fire TV|Y|Y|Y||
 |nibe_heatpump|control and monitor Nibe Heat Pumps in Home Assistant|N|N|Y|2022.10.0|
