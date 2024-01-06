@@ -36,6 +36,7 @@
 |android_ip_webcam|The android_ip_webcam integration turns any Android phone or tablet into a netwo|Y|Y|Y|0.40|
 |anova|allows you to control Anova sous vides with Wi-Fi capability|N|N|Y|2023.5.2|
 |anthemav|Both Anthem’s current and last generation of A/V Receivers and Processors suppor|N|Y|Y|0.37|
+|aosmith|control a compatible A. O. Smith iCOMM-enabled water heater from Home Assistant|N|N|Y|2024.1.0b7|
 |apache_kafka|Sends all state changes from Home Assistant to a Apache Kafka topic|N|Y|Y|0.97|
 |apcupsd|Query Apcupsd status information from Home Assistant|N|Y|Y|0.13|
 |apns|Use Apple Push Notification service (APNS) to deliver notifications|N|N|Y||
@@ -86,6 +87,7 @@
 |bluetooth|The Bluetooth integration will detect nearby Bluetooth devices|Y|Y|Y|2022.8.1|
 |bluetooth_le_tracker|Tracks Bluetooth low-energy devices periodically based on interval_seconds value|Y|Y|Y|0.27|
 |bluetooth_tracker|Discovers new devices on boot and tracks Bluetooth devices periodically|N|Y|Y|0.18|
+|blue_current|connect to your blue current account to Home Assistant|N|N|Y|2024.1.0b7|
 |bme280|Bosch BME280 Environmental sensor connected via I2c bus (SDA, SCL pins)|N|Y|Y||
 |bme680|Read temperature, humidity, pressure and gas resistance values of a Bosch BME680|N|Y|Y||
 |bmp280|Get temperature and pressure values of a Bosch BMP280 Environmental sensor conne|N|N|Y||
@@ -105,6 +107,7 @@
 |camera|The camera integration allows you to use IP cameras with Home Assistant|Y|Y|Y||
 |canary|Allows you to integrate your Canary devices from Home Assistant|N|Y|Y|0.60|
 |cast|Let Home Assitant talk to Google Chromecast|Y|Y|Y||
+|ccm15|integrate Midea CCM15 devices in Home Assistant.|N|N|Y|2024.1.0b7|
 |channels|Allows you to control Channels from Home Assistant|N|N|Y|0.65|
 |circuit|Unify Circuit platform allows you to send notifications|N|N|Y|0.111|
 |cisco_ios|Presence detection scanner for Cisco IOS devices|N|N|Y|0.33|
@@ -166,6 +169,7 @@
 |dormakaba_dkey|Integrates Dormakaba dKey Bluetooth Low Energy connected locks|N|N|Y|2023.3.0b3|
 |dovado|The dovado integration manages communication with the Dovado router|N|N|Y|0.87|
 |dremel_3d_printer|monitor your Dremel 3D printer and its progress with your Home Assistant|N|N|Y|2023.7.2|
+|drop_connect|provides connectivity with DROP smart water system devices via a local MQTT API|N|N|Y|2024.1.0b7|
 |dsmr|Dutch Smart Meters which comply to DSMR (Dutch Smart Meter Requirements)|N|N|Y||
 |dunehd|control a Dune HD media player|N|Y|Y|0.34|
 |duotecno|used to control Duotecno nodes in Home Assistant|N|N|Y|2023.10.1|
@@ -241,6 +245,7 @@
 |fjaraskupan|Fjäråskupan allows you to control your Bluetooth equipped kitchen fan|N|N|Y|2021.9.0b1|
 |fleetgo|integrate your vehicles equipped with FleetGO hardware into Home Assistant|N|N|Y|0.76|
 |flexit|Integrates Flexit Air Conditioning unit into Home Assistant|N|N|Y|0.47|
+|flexit_bacnet|Integrates Flexit Nordic series air handling unit into Home Assistant|N|N|Y|2024.1.0b7|
 |flic|The flic platform allows you to receive click events from flic smart buttons|N|N|Y|0.35|
 |flick_electric|Flick Electric Co is a power company in New Zealand|N|N|Y||
 |flipr|Flipr is a smart pool monitor (Cloud Polling)|N|N|Y|2021.8.0|
@@ -320,6 +325,7 @@
 |hisense_aehw4a1|Give Wi-Fi connectivity to some Hisense ACs|N|N|Y|0.103|
 |hive|Set up and integrate all supported Hive devices in Home Assistant|N|N|Y|0.59|
 |hlk_sw16|HLK-SW16 by Hi-Link is a simple networkable 16 port relay device|N|N|Y|0.84|
+|holiday|create a calendar of holidays in Home Assistant for powering automations|Y|Y|Y|2024.1.0b7|
 |homekit|Integrate HomeKit controller and accessory in Home Assistant|Y|Y|Y|0.64|
 |homekit_controller|Allows you to connect accessories with the “Works with HomeKit” logo|Y|Y|Y|0.68|
 |homematic|An API for the homematicip cloud|N|Y|Y|0.23|
@@ -480,6 +486,7 @@
 |mopeka|Integrates Mopeka devices into Home Assistant|N|N|Y|2023.2.1|
 |mosquitto|Set a runtime dependency for Mosquitto MQTT broker|Y|Y|Y|2022.8.3|
 |motioneye|integrate your motionEye server into Home Assistant|N|N|Y|2021.5|
+|motionmount|control the position of your TVM 7675 Pro Signature MotionMount|N|N|Y|2024.1.0b7|
 |motion_blinds|control Motion Blinds from Coulisse B.V.|N|N|Y|2020.12|
 |mpd|allows you to control a Music Player Daemon from Home Assistant|N|N|Y||
 |mqtt|install MQTT Broker and dependencies|Y|Y|Y||
@@ -565,6 +572,7 @@
 |orangepi_gpio|The orangepi_gpio integration is the base for all related GPIO platforms|N|N|Y||
 |oru|fetches your current energy usage from your ORU smart meter|N|N|Y|0.101|
 |orvibo|allows you to toggle your (dangerous) Orvibo S20 Wifi Smart Sockets|N|N|Y|0.8|
+|osoenergy|allows you to interact with supported devices and services offered by OSO Energy|N|N|Y|2024.1.0b7|
 |osramlightify|allows you to integrate your Osram Lightify into Home Assistant|N|N|Y|0.21|
 |otbr|calling an Open Thread Border Router’s REST API in Home Assistant|N|N|Y|2023.2.1|
 |otp|generates One-Time Passwords according to RFC6238|Y|Y|Y|0.49|
@@ -766,6 +774,7 @@
 |streamlabswater|interact with StreamLabs water monitoring devices|N|N|Y|0.95|
 |subaru|MySubaru connected vehicle services|N|N|Y|2021.3|
 |suez_water|consumption of water from the French water provider Tout Sur Mon Eau|N|N|Y|0.97|
+|sunweg|a sensor to collect information from your WEG inverters using Sun WEG server|N|N|Y|2024.1.0b7|
 |supla|Supla is an Open Source home automation system for ESP8266 based devices|N|N|Y|0.92|
 |surepetcare|information on your Sure Petcare Connect Pet or Cat Flap|N|N|Y|0.104|
 |swiss_hydrological_data|details (temperature, level, and discharge) of rivers and lakes in Switzerland|N|N|Y|0.22|
@@ -785,6 +794,7 @@
 |tado|an interface to the my.tado.com website|N|N|Y|0.41|
 |tahoma|interface to the tahomalink.com website. It adds covers, scenes and a sun sensor|N|N|Y||
 |tailscale|monitor and automate on the state of the devices in your Tailscale VPN|N|N|Y|2021.12.0b0|
+|tailwind|integrates Tailwind garage door controllers fully locally|N|N|Y|2024.1.0b7|
 |tami4|Support for Tami4 Edge / Edge+ by Strauss in Home Assistant|N|N|Y|2023.11.0b2|
 |tankerkoenig|monitor the fuel prices with tankerkoenig.de|Y|Y|Y|0.107|
 |tank_utility|Add Tank Utility propane tank monitors to Home Assistant|N|N|Y|0.53|
@@ -798,6 +808,7 @@
 |temper|get the current temperature from a TEMPer device|N|N|Y||
 |tesla|integration with the Tesla cloud service|N|Y|Y||
 |tesla_wall_connector|allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi|N|N|Y|2021.12.0b0|
+|tessie|control Tesla vehicles connected to your Tessie account from HA|N|N|Y|2024.1.0b7|
 |test|internal and developer use|Y|Y|Y|None|
 |tfiac|integrates several vendors air conditioning systems into Home Assistant|N|N|Y|0.91|
 |thermobeacon|Integrates ThermoBeacon devices into Home Assistant|N|N|Y|2022.9.0b3|
