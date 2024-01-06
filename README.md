@@ -68,6 +68,11 @@ some packages throw errors during build time, if `cython-3.0.2` is installed. Do
 with the old version. Make sure you have gcc-13 active.
 
 
+## 2024-01 again some file collisions related to snmp
+The HA team now uses pysnmp-lextudio (which is imho not a bad decision). Had to apply a slight patch to the core constraints.
+Best practice for now is to keep `/etc/portage/profile/package.provided` as it is (the snmp libs are only referenced 2 times from the main repo), remove `pysnmplib` and let the Ebuild install the 2 lextudio modules.
+For easier install I also patched core's version of `dev-python/regex`.
+
 ## 2023-03 changed main Ebuild SRC_URI to Pypi
 As the current translation files have been removed from the core (https://developers.home-assistant.io/blog/2023/02/06/translations-files-removed-from-core/), I have switched SRC_URI to Pypi, the SDIST there contains all artifacts including the translations. Unfortunately tests are not part of the PyPi SDIST, so currently we have none. I'll try to pull in the tests from the Github Tarball in one of the next Releases. 
 
@@ -612,12 +617,12 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1657 Ebuilds in total, 1646 of them have in total 1662 (42 different) licenses assigned.
+There are 1659 Ebuilds in total, 1648 of them have in total 1664 (42 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
 |MIT|945|
-|Apache-2.0|359|
+|Apache-2.0|361|
 |GPL-3|108|
 |BSD|92|
 |LGPL-3|23|
