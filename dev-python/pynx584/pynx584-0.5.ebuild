@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -10,8 +10,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="NX584/NX8E Interface Library and Server"
 HOMEPAGE="https://github.com/kk7ds/pynx584 https://pypi.org/project/pynx584/"
 
-LICENSE="all-rights-reserved"
-RESTRICT="mirror"
+LICENSE="GPL-3"
 
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
