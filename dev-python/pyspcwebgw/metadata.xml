@@ -7,5 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyspcwebgw</remote-id>
+    <remote-id type="github">mbrrg/pyspcwebgw</remote-id>
   </upstream>
 </pkgmetadata>
