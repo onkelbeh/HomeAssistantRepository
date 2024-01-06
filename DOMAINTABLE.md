@@ -919,7 +919,7 @@
 |xbox|A library to authenticate with Windows Live/Xbox Live and use their API|N|N|Y|0.117|
 |xbox_live|track Xbox profiles|N|Y|Y||
 |xeoma|Python wrapper for Xeoma web server API|N|N|Y|0.62|
-|xiaomi_aqara|allows you to integrate Xiaomi Aqara-compatible devices|N|Y|Y|0.57|
+|xiaomi_aqara|allows you to integrate Xiaomi Aqara-compatible devices|Y|Y|Y|0.57|
 |xiaomi_ble|Integrates devices that implement the Xiaomi Mijia BLE MiBeacon protocol|N|N|Y|2022.8.1|
 |xiaomi_miio|add support for Xiaomi smart appliances|N|Y|Y|0.51|
 |xiaomi_tv|The xiaomi_tv platform allows you to control a Xiaomi TV|N|Y|Y|0.64|
