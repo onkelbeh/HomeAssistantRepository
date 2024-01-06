@@ -51,6 +51,7 @@
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
     <flag name="anova">allows you to control Anova sous vides with Wi-Fi capability</flag>
     <flag name="anthemav">Both Anthem’s current and last generation of A/V Receivers and Processors suppor</flag>
+    <flag name="aosmith">control a compatible A. O. Smith iCOMM-enabled water heater from Home Assistant</flag>
     <flag name="apache_kafka">Sends all state changes from Home Assistant to a Apache Kafka topic</flag>
     <flag name="apcupsd">Query Apcupsd status information from Home Assistant</flag>
     <flag name="apns">Use Apple Push Notification service (APNS) to deliver notifications</flag>
@@ -103,6 +104,7 @@
     <flag name="bluetooth">The Bluetooth integration will detect nearby Bluetooth devices</flag>
     <flag name="bluetooth_le_tracker">Tracks Bluetooth low-energy devices periodically based on interval_seconds value</flag>
     <flag name="bluetooth_tracker">Discovers new devices on boot and tracks Bluetooth devices periodically</flag>
+    <flag name="blue_current">connect to your blue current account to Home Assistant</flag>
     <flag name="bme280">Bosch BME280 Environmental sensor connected via I2c bus (SDA, SCL pins)</flag>
     <flag name="bme680">Read temperature, humidity, pressure and gas resistance values of a Bosch BME680</flag>
     <flag name="bmp280">Get temperature and pressure values of a Bosch BMP280 Environmental sensor conne</flag>
@@ -111,7 +113,6 @@
     <flag name="bosch_shc">integrate your Bosch SHC into Home Assistant</flag>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
     <flag name="broadlink">Allows you to interact with Broadlink remote control devices</flag>
-    <flag name="brother">Read current data from your local Brother printer</flag>
     <flag name="brottsplatskartan">brottsplatskartan sensor allows one to track reported incidents</flag>
     <flag name="brunt">The brunt platform allows one to control Blind Engines by Brunt</flag>
     <flag name="bsblan">This integration integrates BSBLan device into Home Assistant</flag>
@@ -123,6 +124,7 @@
     <flag name="camera">The camera integration allows you to use IP cameras with Home Assistant</flag>
     <flag name="canary">Allows you to integrate your Canary devices from Home Assistant</flag>
     <flag name="cast">Let Home Assitant talk to Google Chromecast</flag>
+    <flag name="ccm15">integrate Midea CCM15 devices in Home Assistant.</flag>
     <flag name="channels">Allows you to control Channels from Home Assistant</flag>
     <flag name="circuit">Unify Circuit platform allows you to send notifications</flag>
     <flag name="cisco_ios">Presence detection scanner for Cisco IOS devices</flag>
@@ -184,6 +186,7 @@
     <flag name="dormakaba_dkey">Integrates Dormakaba dKey Bluetooth Low Energy connected locks</flag>
     <flag name="dovado">The dovado integration manages communication with the Dovado router</flag>
     <flag name="dremel_3d_printer">monitor your Dremel 3D printer and its progress with your Home Assistant</flag>
+    <flag name="drop_connect">provides connectivity with DROP smart water system devices via a local MQTT API</flag>
     <flag name="dsmr">Dutch Smart Meters which comply to DSMR (Dutch Smart Meter Requirements)</flag>
     <flag name="dunehd">control a Dune HD media player</flag>
     <flag name="duotecno">used to control Duotecno nodes in Home Assistant</flag>
@@ -259,6 +262,7 @@
     <flag name="fjaraskupan">Fjäråskupan allows you to control your Bluetooth equipped kitchen fan</flag>
     <flag name="fleetgo">integrate your vehicles equipped with FleetGO hardware into Home Assistant</flag>
     <flag name="flexit">Integrates Flexit Air Conditioning unit into Home Assistant</flag>
+    <flag name="flexit_bacnet">Integrates Flexit Nordic series air handling unit into Home Assistant</flag>
     <flag name="flic">The flic platform allows you to receive click events from flic smart buttons</flag>
     <flag name="flick_electric">Flick Electric Co is a power company in New Zealand</flag>
     <flag name="flipr">Flipr is a smart pool monitor (Cloud Polling)</flag>
@@ -338,6 +342,7 @@
     <flag name="hisense_aehw4a1">Give Wi-Fi connectivity to some Hisense ACs</flag>
     <flag name="hive">Set up and integrate all supported Hive devices in Home Assistant</flag>
     <flag name="hlk_sw16">HLK-SW16 by Hi-Link is a simple networkable 16 port relay device</flag>
+    <flag name="holiday">create a calendar of holidays in Home Assistant for powering automations</flag>
     <flag name="homekit">Integrate HomeKit controller and accessory in Home Assistant</flag>
     <flag name="homekit_controller">Allows you to connect accessories with the “Works with HomeKit” logo</flag>
     <flag name="homematic">An API for the homematicip cloud</flag>
@@ -498,6 +503,7 @@
     <flag name="mopeka">Integrates Mopeka devices into Home Assistant</flag>
     <flag name="mosquitto">Set a runtime dependency for Mosquitto MQTT broker</flag>
     <flag name="motioneye">integrate your motionEye server into Home Assistant</flag>
+    <flag name="motionmount">control the position of your TVM 7675 Pro Signature MotionMount</flag>
     <flag name="motion_blinds">control Motion Blinds from Coulisse B.V.</flag>
     <flag name="mpd">allows you to control a Music Player Daemon from Home Assistant</flag>
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
@@ -583,6 +589,7 @@
     <flag name="orangepi_gpio">The orangepi_gpio integration is the base for all related GPIO platforms</flag>
     <flag name="oru">fetches your current energy usage from your ORU smart meter</flag>
     <flag name="orvibo">allows you to toggle your (dangerous) Orvibo S20 Wifi Smart Sockets</flag>
+    <flag name="osoenergy">allows you to interact with supported devices and services offered by OSO Energy</flag>
     <flag name="osramlightify">allows you to integrate your Osram Lightify into Home Assistant</flag>
     <flag name="otbr">calling an Open Thread Border Router’s REST API in Home Assistant</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
@@ -784,6 +791,7 @@
     <flag name="streamlabswater">interact with StreamLabs water monitoring devices</flag>
     <flag name="subaru">MySubaru connected vehicle services</flag>
     <flag name="suez_water">consumption of water from the French water provider Tout Sur Mon Eau</flag>
+    <flag name="sunweg">a sensor to collect information from your WEG inverters using Sun WEG server</flag>
     <flag name="supla">Supla is an Open Source home automation system for ESP8266 based devices</flag>
     <flag name="surepetcare">information on your Sure Petcare Connect Pet or Cat Flap</flag>
     <flag name="swiss_hydrological_data">details (temperature, level, and discharge) of rivers and lakes in Switzerland</flag>
@@ -803,6 +811,7 @@
     <flag name="tado">an interface to the my.tado.com website</flag>
     <flag name="tahoma">interface to the tahomalink.com website. It adds covers, scenes and a sun sensor</flag>
     <flag name="tailscale">monitor and automate on the state of the devices in your Tailscale VPN</flag>
+    <flag name="tailwind">integrates Tailwind garage door controllers fully locally</flag>
     <flag name="tami4">Support for Tami4 Edge / Edge+ by Strauss in Home Assistant</flag>
     <flag name="tankerkoenig">monitor the fuel prices with tankerkoenig.de</flag>
     <flag name="tank_utility">Add Tank Utility propane tank monitors to Home Assistant</flag>
@@ -816,6 +825,7 @@
     <flag name="temper">get the current temperature from a TEMPer device</flag>
     <flag name="tesla">integration with the Tesla cloud service</flag>
     <flag name="tesla_wall_connector">allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi</flag>
+    <flag name="tessie">control Tesla vehicles connected to your Tessie account from HA</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tfiac">integrates several vendors air conditioning systems into Home Assistant</flag>
     <flag name="thermobeacon">Integrates ThermoBeacon devices into Home Assistant</flag>

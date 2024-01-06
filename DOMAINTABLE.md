@@ -285,7 +285,7 @@
 |github|GitHub sensor integrates data from GitHub to monitor your favorite repositories|Y|Y|Y|0.88|
 |gitlab_ci|Sensor platform integrates results reported by CI/CD Pipeline Jobs in GitLab|N|N|Y|0.8|
 |gitter|Sensor allows one to monitor a Gitter.im chatroom for unread messages|N|N|Y|0.47|
-|glances|Allows you to monitor the system information provided by the Glances API|N|N|Y|0.7.3|
+|glances|Allows you to monitor the system information provided by the Glances API|Y|Y|Y|0.7.3|
 |gntp|Growl Notification Protocol: sending and receiving notifications|N|N|Y||
 |goalfeed|Use your Goalfeed account to trigger events in Home Assistant|N|N|Y||
 |goalzero|Access Goal Zero REST Api from Home Assistant|N|N|Y||

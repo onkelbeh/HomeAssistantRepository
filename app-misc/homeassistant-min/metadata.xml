@@ -43,6 +43,8 @@
     <flag name="forecast_solar">Asynchronous Python client for getting forecast solar information</flag>
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
     <flag name="github">GitHub sensor integrates data from GitHub to monitor your favorite repositories</flag>
+    <flag name="glances">Allows you to monitor the system information provided by the Glances API</flag>
+    <flag name="holiday">create a calendar of holidays in Home Assistant for powering automations</flag>
     <flag name="homekit">Integrate HomeKit controller and accessory in Home Assistant</flag>
     <flag name="homekit_controller">Allows you to connect accessories with the “Works with HomeKit” logo</flag>
     <flag name="http">Serves all files and data required for the Home Assistant frontend</flag>

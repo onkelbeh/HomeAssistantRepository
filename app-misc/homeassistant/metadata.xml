@@ -74,7 +74,6 @@
     <flag name="bond">Asynchronous Python wrapper library over Bond Local API</flag>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
     <flag name="broadlink">Allows you to interact with Broadlink remote control devices</flag>
-    <flag name="brother">Read current data from your local Brother printer</flag>
     <flag name="brottsplatskartan">brottsplatskartan sensor allows one to track reported incidents</flag>
     <flag name="brunt">The brunt platform allows one to control Blind Engines by Brunt</flag>
     <flag name="bsblan">This integration integrates BSBLan device into Home Assistant</flag>
@@ -136,6 +135,7 @@
     <flag name="garmin_connect">The Garmin Connect sensor allows you to expose data from Garmin Connect</flag>
     <flag name="gios">Source for air quality data for Home Assistant</flag>
     <flag name="github">GitHub sensor integrates data from GitHub to monitor your favorite repositories</flag>
+    <flag name="glances">Allows you to monitor the system information provided by the Glances API</flag>
     <flag name="gogogate2">Control Gogogate2-Enabled garage doors from Home Assistant</flag>
     <flag name="greeneye_monitor">Allows you to create sensors for the various data channels of the GEM</flag>
     <flag name="growatt_server">Talk to growatt server from Home Assistant</flag>
@@ -144,6 +144,7 @@
     <flag name="harmony">Logitech Harmony support for Home Assistant</flag>
     <flag name="heos">Controlling HEOS devices through the HEOS CLI Protocol from Home Assistant</flag>
     <flag name="here_travel_time">here_travel_time sensor provides travel time from the HERE Routing API</flag>
+    <flag name="holiday">create a calendar of holidays in Home Assistant for powering automations</flag>
     <flag name="homekit">Integrate HomeKit controller and accessory in Home Assistant</flag>
     <flag name="homekit_controller">Allows you to connect accessories with the “Works with HomeKit” logo</flag>
     <flag name="homematic">An API for the homematicip cloud</flag>
