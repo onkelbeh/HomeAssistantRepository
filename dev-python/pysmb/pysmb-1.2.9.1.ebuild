@@ -9,7 +9,7 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="pysmb is an experimental SMB/CIFS library written in Python"
 HOMEPAGE="https://github.com/miketeo/pysmb"
-SRC_URI="https://github.com/miketeo/pysmb/archive/refs/tags/${P}.tar.gz"
+SRC_URI="https://github.com/miketeo/${PN}/archive/refs/tags/${P}.tar.gz -> ${P}.gh.tar.gz"
 S="${WORKDIR}/${PN}-${P}"
 
 LICENSE="MIT"
