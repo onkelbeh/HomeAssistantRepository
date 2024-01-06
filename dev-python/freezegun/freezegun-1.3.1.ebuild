@@ -29,8 +29,7 @@ BDEPEND="
 
 distutils_enable_tests pytest
 
-PATCHES=(
-	# https://github.com/spulec/freezegun/issues/396
-	# https://github.com/spulec/freezegun/pull/397
-	"${FILESDIR}"/${PN}-1.1.0-py310.patch
-)
+python_test() {
+	local -x PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+	epytest
+}
