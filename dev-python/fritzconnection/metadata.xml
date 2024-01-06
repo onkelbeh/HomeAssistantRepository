@@ -13,4 +13,7 @@
       <name>Klaus Bremer</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="qrcode">add dev-python/segno RDEP for qrcode support</flag>
+  </use>
 </pkgmetadata>

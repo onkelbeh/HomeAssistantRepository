@@ -30,7 +30,7 @@ For easier install I also patched core's version of `dev-python/regex`.
 
 ## note to the 2023-10 Update
 
-Due to a sudden significant change in the [pypi.eclass](https://devmanual.gentoo.org/eclass-reference/pypi.eclass/index.html) and other fundamental aspects of the Gentoo packaging system, we faced a complex and time-consuming task of updating our ebuilds. These changes required modifications to nearly 2000 ebuilds, impacting our ability to release updates in a timely manner.
+Due to a sudden significant change in the [pypi.eclass](https://devmanual.gentoo.org/eclass-reference/pypi.eclass/index.html) and other fundamental aspects of the Gentoo packaging system, we faced a complex and time-consuming task of updating our Ebuilds. These changes required modifications to nearly 2000 Ebuilds, impacting our ability to release updates in a timely manner.
 
 **Why the Delay?**
 
@@ -46,7 +46,7 @@ We appreciate your support and understanding during this period of adjustment. W
 
 **How You Can Help:**
 
-We welcome assistance in maintaining and improving this repository. If you have the skills and time to contribute to ebuild maintenance, your help would be greatly appreciated. Please feel free to reach out and get involved in the project.
+We welcome assistance in maintaining and improving this repository. If you have some time to contribute to Ebuild maintenance, your help would be greatly appreciated. Please feel free to reach out and get involved in the project.
 
 Thank you for your continued support and understanding.
 
