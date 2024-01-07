@@ -899,7 +899,7 @@
 |watson_iot|link Home Assistant with an IBM Watson IoT Platform instance|N|N|Y|0.72|
 |watson_tts|text-to-speech platform that works with IBM Watson Cloud|N|N|Y|0.94|
 |watttime|Cloud based Climate Trace Service|N|N|Y|2021.10.0b2|
-|waze_travel_time|waze_travel_time sensor provides travel time from the Waze|N|Y|Y|0.67|
+|waze_travel_time|waze_travel_time sensor provides travel time from the Waze|Y|Y|Y|0.67|
 |weatherflow|reads weather data from all WeatherFlow Tempest compatible weather station|N|N|Y|2023.10.1|
 |weatherkit|obtains current weather and forecasts (hourly and daily) from Apple Weather|N|N|Y|2023.10.1|
 |webostv|allows you to control a LG webOS Smart TV|N|Y|Y|0.18|
