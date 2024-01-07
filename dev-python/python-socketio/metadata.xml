@@ -14,4 +14,8 @@
       <name>Miguel Grinberg</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="asyncio_client">install with async client</flag>
+    <flag name="client">install with client</flag>
+  </use>
 </pkgmetadata>
