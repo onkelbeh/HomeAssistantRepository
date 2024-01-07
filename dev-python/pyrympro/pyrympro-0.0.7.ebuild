@@ -14,7 +14,8 @@ SRC_URI="https://github.com/OnFreund/pyrympro/archive/v${PV}.tar.gz -> ${P}.gh.t
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE=""
+IUSE="test"
+RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
