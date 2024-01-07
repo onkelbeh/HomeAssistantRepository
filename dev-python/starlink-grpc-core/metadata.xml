@@ -10,6 +10,7 @@
     <remote-id type="github">sparky8512/starlink-grpc-tools</remote-id>
     <maintainer status="unknown">
       <email>sparky8512-py@yahoo.com</email>
+      <name>sparky8512</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
