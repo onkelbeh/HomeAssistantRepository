@@ -13,4 +13,7 @@
       <name>Lauri Niskanen</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="websocket">Build with websocket support</flag>
+  </use>
 </pkgmetadata>

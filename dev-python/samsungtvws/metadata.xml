@@ -9,4 +9,8 @@
     <remote-id type="pypi">samsungtvws</remote-id>
     <remote-id type="github">xchwarze/samsung-tv-ws-api</remote-id>
   </upstream>
+  <use>
+    <flag name="async">Add async support.</flag>
+    <flag name="encrypted">Build with cryptography.</flag>
+  </use>
 </pkgmetadata>

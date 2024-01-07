@@ -13,4 +13,7 @@
       <name>Michael van Tellingen</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="async">Add async support.</flag>
+  </use>
 </pkgmetadata>

@@ -13,4 +13,8 @@
       <name>decompil3d</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="mqtt">Install mqtt client.</flag>
+    <flag name="console">add CLI support.</flag>
+  </use>
 </pkgmetadata>

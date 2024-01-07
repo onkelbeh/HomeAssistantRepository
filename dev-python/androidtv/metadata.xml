@@ -13,4 +13,7 @@
       <name>Jeff Irion</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="async">Add async support.</flag>
+  </use>
 </pkgmetadata>

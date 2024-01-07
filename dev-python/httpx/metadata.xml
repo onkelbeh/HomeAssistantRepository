@@ -13,4 +13,7 @@
       <name>Tom Christie</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="cli">Install the CLI "httpx" client.</flag>
+  </use>
 </pkgmetadata>

@@ -9,4 +9,7 @@
     <remote-id type="pypi">bimmer-connected</remote-id>
     <remote-id type="github">bimmerconnected/bimmer_connected</remote-id>
   </upstream>
+  <use>
+    <flag name="china">Add RDEPEND to dev-python/pillow</flag>
+  </use>
 </pkgmetadata>
