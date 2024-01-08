@@ -21,13 +21,5 @@ RDEPEND=">=dev-python/curlify-2.2.1[${PYTHON_USEDEP}]
 	>=dev-python/beautifulsoup4-4.10[${PYTHON_USEDEP}]
 	dev-python/python-dateutil[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2021.3[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
