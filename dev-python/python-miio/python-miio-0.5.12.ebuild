@@ -29,7 +29,8 @@ RDEPEND=">=dev-python/click-8.0[${PYTHON_USEDEP}]
 	dev-python/tqdm[${PYTHON_USEDEP}]
 	dev-python/netifaces[${PYTHON_USEDEP}]
 	dev-python/croniter[${PYTHON_USEDEP}]
-	dev-python/defusedxml[${PYTHON_USEDEP}]"
+	dev-python/defusedxml[${PYTHON_USEDEP}]
+	dev-python/pyyaml[${PYTHON_USEDEP}]"
 BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
