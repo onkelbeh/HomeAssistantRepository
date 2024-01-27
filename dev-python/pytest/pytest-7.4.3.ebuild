@@ -50,9 +50,8 @@ BDEPEND="
 "
 
 PATCHES=(
-	# deprecation warning fix
-	# https://github.com/pytest-dev/pytest/pull/10894/
-	"${FILESDIR}/${P}-py312.patch"
+	# https://github.com/pytest-dev/pytest/pull/11638
+	"${FILESDIR}/${P}-no-color.patch"
 )
 
 src_test() {
