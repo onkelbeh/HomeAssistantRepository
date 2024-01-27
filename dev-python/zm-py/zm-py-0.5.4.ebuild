@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=poetry
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="A loose python wrapper around the ZoneMinder REST API."
@@ -30,15 +29,5 @@ BDEPEND="
 		dev-python/pydocstyle[${PYTHON_USEDEP}]
 		dev-python/pylint[${PYTHON_USEDEP}]
 	)"
-
-src_prepare() {
-	# remove unsupported dynamic-versioning
-	sed 's/0.1.0/'${PV}'/g' -i pyproject.toml || die
-	eapply_user
-}
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
