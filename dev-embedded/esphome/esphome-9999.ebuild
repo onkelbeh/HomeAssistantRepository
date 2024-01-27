@@ -31,7 +31,6 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-		$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
 		~dev-python/voluptuous-0.14.1[${PYTHON_USEDEP}]
 		~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
 		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
