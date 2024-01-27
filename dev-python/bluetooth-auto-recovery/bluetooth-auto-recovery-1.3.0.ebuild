@@ -24,12 +24,7 @@ RDEPEND=">=dev-python/PyRIC-0.1.6.3[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-adapters-0.16.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
