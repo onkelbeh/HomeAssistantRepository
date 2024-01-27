@@ -18,16 +18,20 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/asyncio-dgram-1.2.0[${PYTHON_USEDEP}]
-	>=dev-python/dnspython-2.1.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/asyncio-dgram-2.1.2[${PYTHON_USEDEP}]
+	>=dev-python/dnspython-2.4.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
-python_test() {
-	py.test -v -v || die
+src_prepare() {
+	# remove unsupported dynamic-versioning plugin
+	sed 's/0.0.0/${PV}/g' -i pyproject.toml || die
+	sed 's/, "poetry-dynamic-versioning"//g' -i pyproject.toml || die
+	sed 's/poetry_dynamic_versioning.backend/poetry.core.masonry.api/g' -i pyproject.toml || die
+	eapply_user
 }
 
 distutils_enable_tests unittest
