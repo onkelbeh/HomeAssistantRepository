@@ -79,6 +79,7 @@ src_prepare() {
 	sed "/click==/c\click" -i requirements.txt || die
 	sed "/colorama==/c\colorama" -i requirements.txt || die
 	sed "/zeroconf==/c\zeroconf" -i requirements.txt || die
+	sed "/voluptuous==/c\voluptuous" -i requirements.txt || die
 	eapply_user
 }
 
