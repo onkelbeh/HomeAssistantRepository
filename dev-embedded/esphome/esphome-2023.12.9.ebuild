@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -34,11 +34,11 @@ DOCS="README.md"
 RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-		~dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]
+		~dev-python/voluptuous-0.14.1[${PYTHON_USEDEP}]
 		~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
 		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 		dev-python/colorama[${PYTHON_USEDEP}]
-		server? ( ~dev-python/tornado-6.3.3[${PYTHON_USEDEP}] )
+		server? ( ~dev-python/tornado-6.4[${PYTHON_USEDEP}] )
 		~dev-python/tzlocal-5.2[${PYTHON_USEDEP}]
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
