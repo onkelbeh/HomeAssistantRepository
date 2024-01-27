@@ -49,6 +49,7 @@
     <flag name="homekit_controller">Allows you to connect accessories with the “Works with HomeKit” logo</flag>
     <flag name="http">Serves all files and data required for the Home Assistant frontend</flag>
     <flag name="hyperion">integrate your Hyperion into Home Assistant</flag>
+    <flag name="ibeacon">Adding iBeacon Tracker to your Home Assistant instance</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
     <flag name="knx">Asynchronous Library for the KNX protocol</flag>
     <flag name="kodi">control a Kodi multimedia system</flag>
@@ -65,6 +66,7 @@
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
     <flag name="mysensors">combines devices like Arduino, ESP8266, Raspberry Pi, NRF24L01+ and RFM69</flag>
     <flag name="mysql">set dependencies to install MySQL Libraries for use with HomeAssistant</flag>
+    <flag name="nextcloud">pulls summary Nextcloud information into Home Assistant</flag>
     <flag name="nfandroidtv">Notifications for Android TV and Notifications for Fire TV</flag>
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
     <flag name="octoprint">The main integration to integrate OctoPrint sensors</flag>
@@ -105,10 +107,12 @@
     <flag name="utility_meter">integration provides functionality to track consumptions of various utilities</flag>
     <flag name="version">display the current Home Assistant versions</flag>
     <flag name="wake_on_lan">enables the ability to send magic packets to Wake on LAN capable devices</flag>
+    <flag name="waze_travel_time">waze_travel_time sensor provides travel time from the Waze</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="whois">perform daily WHOIS lookups</flag>
     <flag name="wled">add support for Aircookie's WLED</flag>
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
+    <flag name="xiaomi_aqara">allows you to integrate Xiaomi Aqara-compatible devices</flag>
     <flag name="yamaha">Library for Yamaha RX-* Receivers</flag>
     <flag name="yamaha_musiccast">add support for Yamaha MusicCast devices</flag>
     <flag name="zeroconf">will scan the network for supported devices and services</flag>

@@ -154,6 +154,7 @@
     <flag name="hue">talk to Philips Hue</flag>
     <flag name="hydrawise">communicate with Hunter Wi-Fi irrigation controllers</flag>
     <flag name="iaqualink">iAqualink by Jandy allows you to control your pool via cloud service</flag>
+    <flag name="ibeacon">Adding iBeacon Tracker to your Home Assistant instance</flag>
     <flag name="ihc">use IHC Python SDK</flag>
     <flag name="image_upload">handle image assets in Home Assistant</flag>
     <flag name="imap">observing your IMAP server and reporting the amount of unread emails</flag>
@@ -195,6 +196,7 @@
     <flag name="nederlandse_spoorwegen">train service in the Netherlands</flag>
     <flag name="netatmo">Access to Netatmo weather station data</flag>
     <flag name="netdata">API for interacting with Netdata</flag>
+    <flag name="nextcloud">pulls summary Nextcloud information into Home Assistant</flag>
     <flag name="nfandroidtv">Notifications for Android TV and Notifications for Fire TV</flag>
     <flag name="nmap_tracker">Presence detection for Home Assistant with nmap</flag>
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>

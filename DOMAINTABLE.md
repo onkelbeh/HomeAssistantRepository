@@ -351,7 +351,7 @@
 |ialarm_xr|Provides connectivity with the Antifurto365 iAlarmXR alarm systems|N|N|Y|2022.6.0b0|
 |iammeter|real-time readings of WEM3080, WEM3162 & WEM3080T) meters|N|N|Y|0.107|
 |iaqualink|iAqualink by Jandy allows you to control your pool via cloud service|N|Y|Y|0.99|
-|ibeacon|Adding iBeacon Tracker to your Home Assistant instance|N|N|Y|2022.10.0|
+|ibeacon|Adding iBeacon Tracker to your Home Assistant instance|Y|Y|Y|2022.10.0|
 |icloud|iCloud allows users to track their location on iOS devices|N|N|Y|0.10|
 |idasen_desk|allows you to connect your IKEA Idåsen motorized desk to Home Assistant|N|N|Y|2023.10.1|
 |idteck_prox|This integration works with Proximity Readers (RFID card readers)|N|N|Y|0.85|
