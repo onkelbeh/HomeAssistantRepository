@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">Jinja</remote-id>
+    <remote-id type="github">pallets/jinja</remote-id>
     <maintainer status="unknown">
       <email>armin.ronacher@active-4.com</email>
       <name>Armin Ronacher</name>
