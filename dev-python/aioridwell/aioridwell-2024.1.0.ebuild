@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/pyjwt-2.4.0[${PYTHON_USEDEP}]
-	>=dev-python/aiohttp-3.8.5[${PYTHON_USEDEP}]
+	dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2023.7.22[${PYTHON_USEDEP}]
 	>=dev-python/titlecase-2.3[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.9.2[${PYTHON_USEDEP}]"
@@ -39,6 +39,6 @@ distutils_enable_tests pytest
 
 src_prepare() {
 	# it will have to work with the current version
-	sed -i 's/3.9.0b0/3.8.5/g' pyproject.toml || die
+	sed -i 's/>=3.9.0b0/*/g' pyproject.toml || die
 	eapply_user
 }
