@@ -20,6 +20,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/aiomqtt-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/aiomqtt-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.9.0[${PYTHON_USEDEP}]
 	>=dev-python/tenacity-8.1.0[${PYTHON_USEDEP}]"
