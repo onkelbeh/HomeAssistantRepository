@@ -15,15 +15,17 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="dev-python/async-timeout[${PYTHON_USEDEP}]
-	>=dev-python/kafka-python-2.0.2[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/async-timeout[${PYTHON_USEDEP}]"
 BDEPEND="
+	>=dev-python/cython-3[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-python_test() {
-	py.test -v -v || die
+src_prepare() {
+	# remove dynamic-versioning
+	sed 's/dynamic = \["version"\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
+	eapply_user
 }
 
 distutils_enable_tests pytest
