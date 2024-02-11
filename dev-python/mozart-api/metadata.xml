@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">mozart-api</remote-id>
+    <remote-id type="github">bang-olufsen/mozart-open-api</remote-id>
+    <maintainer status="unknown">
+      <email>support@bang-olufsen.dk</email>
+      <name>BangOlufsen</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
