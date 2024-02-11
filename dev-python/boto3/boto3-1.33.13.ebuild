@@ -34,7 +34,7 @@ fi
 RDEPEND="
 	>=dev-python/botocore-${BOTOCORE_PV}[${PYTHON_USEDEP}]
 	>=dev-python/jmespath-0.7.1[${PYTHON_USEDEP}]
-	>=dev-python/s3transfer-0.6.0[${PYTHON_USEDEP}]
+	>=dev-python/s3transfer-0.8.2[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	test? (
