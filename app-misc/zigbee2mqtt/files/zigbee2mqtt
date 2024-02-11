@@ -1,5 +1,7 @@
 #!/sbin/openrc-run
 
+retry="30"
+
 depend() {
 	need mosquitto
 }
