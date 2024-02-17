@@ -28,13 +28,5 @@ RDEPEND="dev-python/pyopenssl[${PYTHON_USEDEP}]
 	dev-python/faust-cchardet[${PYTHON_USEDEP}]
 	dev-python/aiodns[${PYTHON_USEDEP}]
 	dev-python/yarl[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
