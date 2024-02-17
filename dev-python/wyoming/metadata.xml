@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">wyoming</remote-id>
-    <remote-id type="github">rhasspy/rhasspy3</remote-id>
+    <remote-id type="github">rhasspy/wyoming</remote-id>
     <maintainer status="unknown">
       <email>mike@rhasspy.org</email>
       <name>Michael Hansen</name>
