@@ -21,15 +21,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/requests-2.22.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	>=dev-python/packaging-20.0[${PYTHON_USEDEP}]
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
+	>=dev-python/urllib3-1.26.18[${PYTHON_USEDEP}]
+	>=dev-python/orjson-3.9.0[${PYTHON_USEDEP}]"
+BDEPEND=">=dev-python/packaging-20.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
