@@ -25,13 +25,5 @@ RDEPEND=">=dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiofiles[${PYTHON_USEDEP}]
 	>=dev-python/pubnub-5.5.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
