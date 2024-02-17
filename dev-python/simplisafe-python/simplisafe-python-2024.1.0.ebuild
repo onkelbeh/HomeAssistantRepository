@@ -18,24 +18,18 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.9.0[${PYTHON_USEDEP}]
 	>=dev-python/backoff-1.11.1[${PYTHON_USEDEP}]
 	>=dev-python/certifi-2023.7.22[${PYTHON_USEDEP}]
-	>=dev-python/beautifulsoup4-4.11.1[${PYTHON_USEDEP}]
-	>=dev-python/pytz-2019.3[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.7[${PYTHON_USEDEP}]
-	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]"
+	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.9.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/aioresponses[${PYTHON_USEDEP}]
 		dev-python/asynctest[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
