@@ -27,12 +27,7 @@ BDEPEND="
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]
 		dev-python/freezegun[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
