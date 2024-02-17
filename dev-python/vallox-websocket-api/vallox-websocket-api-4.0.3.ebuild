@@ -19,19 +19,14 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/websockets-9.1[${PYTHON_USEDEP}]
-		 <dev-python/websockets-12.0[${PYTHON_USEDEP}]
 		 >=dev-python/construct-2.9.0[${PYTHON_USEDEP}]
-		 <dev-python/construct-3.0.0[${PYTHON_USEDEP}]"
+		 <dev-python/construct-3.0.0[${PYTHON_USEDEP}]
+		 dev-python/aiohttp[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/wheel[${PYTHON_USEDEP}]
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/asynctest[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
