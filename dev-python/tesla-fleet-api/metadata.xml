@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">tesla-fleet-api</remote-id>
+    <remote-id type="github">Teslemetry/tesla_fleet_api</remote-id>
+    <maintainer status="unknown">
+      <email>hello@teslemetry.com</email>
+      <name>Brett Adams</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
