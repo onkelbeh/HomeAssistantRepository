@@ -19,14 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/bluetooth-sensor-state-data-1.6.1[${PYTHON_USEDEP}]
-	>=dev-python/sensor-state-data-2.0.2[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	>=dev-python/sensor-state-data-2.0.2[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-data-tools-1.19.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
