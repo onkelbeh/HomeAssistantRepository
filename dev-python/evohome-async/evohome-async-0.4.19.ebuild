@@ -20,10 +20,6 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8.5[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.13.1[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
 
 distutils_enable_tests pytest
 
