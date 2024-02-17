@@ -22,7 +22,7 @@ DOCS="README.md"
 RDEPEND="dev-python/click[${PYTHON_USEDEP}]
 	dev-python/zigpy[${PYTHON_USEDEP}]
 	dev-python/crc[${PYTHON_USEDEP}]
-	>=dev-python/bellows-0.34.3[${PYTHON_USEDEP}]
+	>=dev-python/bellows-0.38.0[${PYTHON_USEDEP}]
 	dev-python/gpiod[${PYTHON_USEDEP}]
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
 	dev-python/async-timeout[${PYTHON_USEDEP}]
@@ -30,6 +30,7 @@ RDEPEND="dev-python/click[${PYTHON_USEDEP}]
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 src_prepare() {
@@ -37,10 +38,6 @@ src_prepare() {
 	sed 's/dynamic = \["version"\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
 	sed 's/, "setuptools-git-versioning<2"//g' -i pyproject.toml || die
 	eapply_user
-}
-
-python_test() {
-	py.test -v -v || die
 }
 
 distutils_enable_tests pytest
