@@ -617,7 +617,7 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1743 Ebuilds in total, 1732 of them have in total 1751 (42 different) licenses assigned.
+There are 1744 Ebuilds in total, 1733 of them have in total 1752 (42 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
@@ -642,6 +642,7 @@ There are 1743 Ebuilds in total, 1732 of them have in total 1751 (42 different) 
 |AGPL-3+|2|
 |LGPL-2+|2|
 |public-domain|2|
+|AGPL-3|2|
 |BSD-4|2|
 |LGPL-2|2|
 |0BSD|1|
@@ -652,7 +653,6 @@ There are 1743 Ebuilds in total, 1732 of them have in total 1751 (42 different) 
 |OFL-1.1|1|
 |ECL-2.0|1|
 |Boost-1.0|1|
-|AGPL-3|1|
 |PSF-2.4|1|
 |ElementTree|1|
 |NEWLIB|1|
