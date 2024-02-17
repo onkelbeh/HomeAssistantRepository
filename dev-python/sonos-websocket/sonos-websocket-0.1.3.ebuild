@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 DESCRIPTION="An asynchronous Python library to communicate with Sonos devices over websockets."
-HOMEPAGE=" https://pypi.org/project/sonos-websocket/"
+HOMEPAGE="https://github.com/jjlawren/sonos-websocket https://pypi.org/project/sonos-websocket/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,13 +19,4 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
-
 distutils_enable_tests pytest
