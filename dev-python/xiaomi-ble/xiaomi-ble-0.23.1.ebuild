@@ -18,7 +18,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/home-assistant-bluetooth-1.9.2[${PYTHON_USEDEP}]
 	>=dev-python/sensor-state-data-2.17.1[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-sensor-state-data-1.6.0[${PYTHON_USEDEP}]
-	>=dev-python/pycryptodomex-3.18.0[${PYTHON_USEDEP}]
+	>=dev-python/pycryptodomex-3.19.1[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-40.0.0[${PYTHON_USEDEP}]
 	>=dev-python/bleak-retry-connector-2.13.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-0.3.1[${PYTHON_USEDEP}]
