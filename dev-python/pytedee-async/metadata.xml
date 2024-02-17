@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pytedee-async</remote-id>
+    <remote-id type="github">zweckj/pytedee_async</remote-id>
+    <maintainer status="unknown">
+      <email>24647999+zweckj@users.noreply.github.com</email>
+      <name>Josef Zweck</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
