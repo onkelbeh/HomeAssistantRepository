@@ -21,13 +21,5 @@ DOCS="README.md"
 RDEPEND="$(python_gen_cond_dep '>=dev-python/async-timeout-4.0.0[${PYTHON_USEDEP}]' python3_{9..10})
 	>=dev-python/cryptography-35.0.0[${PYTHON_USEDEP}]
 	>=dev-python/ifaddr-0.1.7[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
