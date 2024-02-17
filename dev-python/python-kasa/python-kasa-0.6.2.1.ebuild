@@ -20,18 +20,17 @@ DOCS="README.md"
 
 RDEPEND="dev-python/anyio[${PYTHON_USEDEP}]
 	>=dev-python/asyncclick-8.0[${PYTHON_USEDEP}]
-	dev-python/pydantic[${PYTHON_USEDEP}]"
+	dev-python/pydantic[${PYTHON_USEDEP}]
+	>=dev-python/cryptography-1.9.0[${PYTHON_USEDEP}]
+	dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/orjson[${PYTHON_USEDEP}]
+	>=dev-python/kasa-crypt-0.2.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-sugar[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 src_prepare() {
 	sed -e '/include = \[/d' -i pyproject.toml || die
