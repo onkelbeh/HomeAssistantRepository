@@ -16,7 +16,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aio-geojson-client-0.18[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aio-geojson-client-0.20[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2019.01[${PYTHON_USEDEP}]"
 BDEPEND="
