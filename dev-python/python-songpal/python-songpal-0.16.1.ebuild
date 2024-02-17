@@ -20,15 +20,6 @@ DOCS="README.rst"
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/click-8.0[${PYTHON_USEDEP}]
 	dev-python/attrs[${PYTHON_USEDEP}]
-	dev-python/async-upnp-client[${PYTHON_USEDEP}]
-	dev-python/importlib-metadata[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	dev-python/async-upnp-client[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
