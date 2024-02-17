@@ -13,7 +13,4 @@
       <name>Marcelo Moreira de Mello</name>
     </maintainer>
   </upstream>
-  <use>
-    <flag name="listen">Add listen support.</flag>
-  </use>
 </pkgmetadata>
