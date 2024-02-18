@@ -19,18 +19,15 @@ DOCS="README.md"
 
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
-python_test() {
-	py.test -v -v || die
-}
-
 distutils_enable_tests pytest
 
-# include = ["awesomeversion", "awesomeversion.*", "LICENCE.md"]
 python_prepare_all() {
+	# include = ["awesomeversion", "awesomeversion.*", "LICENCE.md"]
 	sed -i -e 's:, "LICENCE.md"::' pyproject.toml || die
+	# remove dynamic-versioning
+	sed 's/dynamic = \["version"\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
 	distutils-r1_python_prepare_all
 }

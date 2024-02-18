@@ -16,6 +16,7 @@
 |airq|integrating the sensors provided by your air-Q device|N|N|Y|2022.12.0|
 |airthings|A python3 library to communicate with Aws|N|N|Y|2021.10.0b2|
 |airtouch4|control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller|N|N|Y|2021.9.0b1|
+|airtouch5|allows you to control ducted air conditioning systems using the AirTouch 5 cont.|N|N|Y|2024.2.1|
 |airvisual|Airvisual sensor platform queries the AirVisual cloud API for air quality data|Y|Y|Y||
 |airvisual_pro|allows Home Assistant to retrieve data from an AirVisual Node/Pro unit|N|N|Y|2023.1.1|
 |airzone|This integration allows getting values from the local API of Airzone HVAC zoning|N|N|Y|2022.4.0b0|
@@ -31,6 +32,7 @@
 |ambient_station|Retrieves local weather information from Ambient Weather|N|Y|Y||
 |amcrest|Integrate your Amcrest or Dahua IP camera|N|Y|Y|0.49|
 |ampio|Will query the open data API of ampio.pl to monitor air quality sensor station|N|Y|Y|0.92|
+|analytics_insights|allows you to get integration usage statistics into Home Assistant|Y|Y|Y|2024.2.1|
 |androidtv|Library for controlling an Android TV, formerly firetv|Y|Y|Y||
 |androidtv_remote|allows you to control an Android TV and launching apps|Y|Y|Y|2023.5.2|
 |android_ip_webcam|The android_ip_webcam integration turns any Android phone or tablet into a netwo|Y|Y|Y|0.40|
@@ -70,6 +72,7 @@
 |baf|Integrates Big Ass Fans devices into Home Assistant|N|N|Y|2022.6.0b0|
 |baidu|Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi|N|Y|Y|0.59|
 |balboa|This integration adds support for Balboa Spa WiFi Modules|N|N|Y|2021.12.0b0|
+|bang_olufsen|enables control of some of the features of certain Bang & Olufsen devices|N|N|Y|2024.2.1|
 |bbb_gpio|Base for all BeagleBone Black related GPIO platforms|N|N|Y||
 |bbox|Presence detection from Bbox Modem Router from Bouygues Telecom|N|N|Y|0.31|
 |beewi_smartclim|BeeWi SmartClim BLE is a Bluetooth Low Energy sensor device|N|Y|Y|0.99|
@@ -95,6 +98,7 @@
 |bond|Asynchronous Python wrapper library over Bond Local API|N|Y|Y|0.113|
 |bosch_shc|integrate your Bosch SHC into Home Assistant|N|N|Y|2021.6|
 |braviatv|Control almost all Sony Bravia TV 2013 and newer|N|Y|Y||
+|bring|allows you to interact with your Bring! shopping lists within Home Assistant|N|Y|Y|2024.2.1|
 |broadlink|Allows you to interact with Broadlink remote control devices|N|Y|Y|0.35|
 |brottsplatskartan|brottsplatskartan sensor allows one to track reported incidents|N|Y|Y|0.85|
 |brunt|The brunt platform allows one to control Blind Engines by Brunt|N|Y|Y|0.75|
@@ -200,6 +204,7 @@
 |elkm1|Elk-M1 is a home security and automation controller|N|N|Y|0.81|
 |elmax|enables Home Assistant integration with ELMAX control panels|N|N|Y|2022.2.0b1|
 |elv|control the state of your ELV PCA 301 smart switch|N|N|Y|0.95|
+|elvia|import your historical grid consumption from Elvia|N|N|Y|2024.2.1|
 |emby|The emby platform allows you to control a Emby multimedia system|N|N|Y|0.32|
 |emonitor|SiteSage Emonitor allows local power monitoring on a per circuit basis|N|N|Y|2021.5|
 |emulated_hue|Emulated_hue integration provides a virtual Philips Hue bridge|N|N|Y|0.27|
@@ -214,6 +219,7 @@
 |envirophat|Display information collected by an Enviro pHAT add-on board|N|N|Y||
 |envisalink|Link Envisalink devices to Home Assistant|N|N|Y|0.23|
 |ephember|The ephember climate platform lets you control EPH Controls thermostats|N|N|Y|0.57|
+|epion|Integrates Epion Air sensors into Home Assistant|N|N|Y|2024.2.1|
 |epson|The epson platform allows you to control a Epson projector|N|N|Y|0.72|
 |epsonworkforce|monitor the ink levels of a Epson Workforce printer|N|N|Y|0.92|
 |eq3btsmart|Integrate EQ3 Bluetooth Smart Thermostats in Home Assistant|N|N|Y|0.18|
@@ -303,6 +309,7 @@
 |google_translate|google_translate text-to-speech platform for Home Assistant|N|N|Y|0.35|
 |google_travel_time|provides travel time from the Google Distance Matrix API|N|N|Y|0.19|
 |govee_ble|Integrates Govee BLE devices into Home Assistant|N|N|Y|2022.8.1|
+|govee_light_local|Integrates Govee lights into Home Assistant using Local API control|N|N|Y|2024.2.1|
 |gpsd|GPS information collected by gpsd and a GPS receiver|N|N|Y|0.26|
 |gree|Discover, connect and control Gree based minisplit systems|N|N|Y|0.117|
 |greeneye_monitor|Allows you to create sensors for the various data channels of the GEM|N|Y|Y|0.82|
@@ -324,6 +331,7 @@
 |hikvisioncam|Allows you to control your motion detection settings from Home Assistant|N|N|Y||
 |hisense_aehw4a1|Give Wi-Fi connectivity to some Hisense ACs|N|N|Y|0.103|
 |hive|Set up and integrate all supported Hive devices in Home Assistant|N|N|Y|0.59|
+|hko|retrieves weather data from the Hong Kong Observatory Open Data API|N|N|Y|2024.2.1|
 |hlk_sw16|HLK-SW16 by Hi-Link is a simple networkable 16 port relay device|N|N|Y|0.84|
 |holiday|create a calendar of holidays in Home Assistant for powering automations|Y|Y|Y|2024.1.0b7|
 |homekit|Integrate HomeKit controller and accessory in Home Assistant|Y|Y|Y|0.64|
@@ -344,6 +352,7 @@
 |hue|talk to Philips Hue|N|Y|Y||
 |huisbaasje|Huisbaasje smart energy meters|N|N|Y|2021.2|
 |hunterdouglas_powerview|integrate your Hunter Douglas PowerView devices|N|N|Y|0.15|
+|huum|Integrates Huum saunas into Home Assistant|N|N|Y|2024.2.1|
 |hvv_departures|departures of busses, trains and ferries in Hamburg|N|N|Y|0.112|
 |hydrawise|communicate with Hunter Wi-Fi irrigation controllers|N|Y|Y|0.71|
 |hyperion|integrate your Hyperion into Home Assistant|Y|N|Y|0.7.6|
@@ -408,6 +417,7 @@
 |kwb|integrates the sensors of KWB Easyfire pellet central heating units |N|N|Y|0.40|
 |lacrosse|using the data provided by a Jeelink USB dongle or this Arduino sketch|N|N|Y|0.58|
 |lacrosse_view|allows access to LaCrosse sensors|N|N|Y|2022.9.0b3|
+|lamarzocco|interacts with La Marzocco coffee machines through calls to the LaMarzocco cloud|N|N|Y|2024.2.1|
 |lametric|LaMetric Time smart clock listen to web radio and display notifications|N|N|Y||
 |landisgyr_heat_meter|read the meter values from Ultraheat devices by Landis & Gyr|N|N|Y|2022.9.0b3|
 |lastfm|lastfm sensor platform will allow you to see whenever a user starts scrobbling|N|N|Y|0.20|
@@ -415,6 +425,7 @@
 |laundrify|Monitor the status of your washing machine or dryer using a laundrify WiFi power|N|N|Y|2022.6.0b0|
 |lcn|allows you to connect to LCN hardware devices|N|N|Y|0.85|
 |ld2410_ble|Integrates LD2410 BLE sensors from Hi-Link|N|N|Y|2023.2.1|
+|leaone|Integrates LeaOne health devices into Home Assistant|N|N|Y|2024.2.1|
 |led_ble|Integrates multiple brands of Bluetooth Low Energy LED devices into Home Assista|N|N|Y|2022.9.0b3|
 |lg_netcast|allows you to control a LG Smart TV running NetCast 3.0|N|N|Y|0.20|
 |lg_soundbar|allows you to control LG Soundbars from Home Assistant|N|N|Y|0.81|
@@ -500,6 +511,7 @@
 |mysql|set dependencies to install MySQL Libraries for use with HomeAssistant|Y|Y|Y|0.7|
 |mystrom|Python API for interacting with myStrom devices|N|N|Y|0.43|
 |mythicbeastsdns|automatically update your dynamic DNS entry at Mythic Beasts|N|N|Y|0.85|
+|myuplink|get information about the devices supporting myUplink using the official cloud A|N|N|Y|2024.2.1|
 |nad|allows you to control a NAD receiver through RS232, TCP and Telnet|N|Y|Y|0.36|
 |nam|get temperature, humidity, pressure , air quality from Nettigo devices|N|N|Y||
 |namecheapdns|automatically update your dynamic DNS entry at namecheapdns|N|N|Y|0.56|
@@ -632,12 +644,14 @@
 |quantum_gateway|device tracker platform for Verizon Fios|N|N|Y|0.81|
 |qvr_pro|QVR Pro allows you to connect to cams configured on your QNAP NAS|Y|Y|Y|0.107|
 |qwikswitch|the main integration to integrate various QwikSwitch devices with Home Assistant|N|N|Y|0.20|
+|rabbitair|lets you control your air purifier over the local network|N|N|Y|2024.2.1|
 |rachio|The rachio platform allows you to control your Rachio irrigation system|N|Y|Y|0.73|
 |radiotherm|control a thermostat from Radio Thermostat or 3M Filtrete|N|N|Y|0.7.6|
 |radio_browser|use the directory of radio stations collected on Radio Browser in Home Assistant|Y|Y|Y|2022.3.0b3|
 |rainbird|allows interacting with LNK WiFi module of the Rain Bird Irrigation system|N|Y|Y|0.61|
 |raincloud|allows you to integrate your Melnor RainCloud sprinkler system in Home Assistant|N|N|Y|0.55|
 |rainforest_eagle|platform for Rainforest Automation’s Eagle-200 and Legacy Eagle energy gateways|N|N|Y|0.97|
+|rainforest_raven|connects to a RAVEn-compatible device attached to the Home Assistant via USB|N|N|Y|2024.2.1|
 |rainmachine|integrate all platforms related to RainMachine smart Wi-Fi sprinkler controllers|N|Y|Y||
 |rapt_ble|Integrates RAPT Pill hydrometers into Home Assistant|N|N|Y|2023.5.2|
 |raspihats|The base for all related Raspihats platforms in Home Assistant|N|N|Y||
@@ -647,6 +661,7 @@
 |recorder|storing details in a database per sqlalchemy|Y|Y|Y||
 |recswitch|allows you to control the Ankuoo REC Switch devices from Home Assistant|N|N|Y|0.81|
 |reddit|integrates data from Reddit to monitor your favorite subreddits|N|N|Y|0.89|
+|refoss|Integrate Refoss devices into Home Assistant|N|N|Y|2024.1.0b7|
 |rejseplanen|travel details for Danish public transport|N|Y|Y|0.88|
 |remember_the_milk|create tasks in Remember The Milk (RTM) (deprecated)|N|N|Y|0.57|
 |remote_rpi_gpio|base for all related GPIO platforms in Home Assistant|N|N|Y|0.94|
@@ -665,6 +680,7 @@
 |rmvtransport|departure time of bus, tram, subway, train in Rhein-Main area public transport|N|N|Y|0.76|
 |rocketchat|allows you to send messages to your Rocket.Chat instance from Home Assistant|N|N|Y|0.56|
 |roku|add support for Roku players|N|Y|Y||
+|romy|The ROMY integration allows you to control your ROMY vacuum robot|N|N|Y|2024.2.1|
 |roomba|control a iRobot Roomba vacuum or iRobot Braava m-series mop|N|Y|Y|0.51|
 |roon|allows you to control RoonLabs music players|N|Y|Y|0.115|
 |route53|keep your AWS Route53 DNS records up to date|N|N|Y|0.81|
@@ -801,13 +817,16 @@
 |tapsaff|provides the ‘Taps Aff’ status for a given location within the UK|N|N|Y|0.47|
 |tasmota|Python module to help parse and construct Tasmota MQTT messages|Y|Y|Y|0.117|
 |tautulli|The tautulli sensor platform will monitor activity on a given Tautulli Server|N|N|Y||
+|technove|TechnoVE Smart Charging Station through the station local API|N|N|Y|2024.2.1|
 |ted5000|monitors electricity consumption/production by connecting to the TED gateway|N|N|Y|0.30|
+|tedee|connect locally to your Tedee locks by communicating with the Tedee bridge|N|N|Y|2024.2.1|
 |telegram_bot|Use Telegram on your mobile or desktop device to send and receive messages|N|N|Y|0.42|
 |tellduslive|cloud platform that connects to your Tellstick|N|Y|Y|0.11|
 |tellstick|integrates TellStick devices into Home Assistant|N|N|Y||
 |temper|get the current temperature from a TEMPer device|N|N|Y||
 |tesla|integration with the Tesla cloud service|N|Y|Y||
 |tesla_wall_connector|allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi|N|N|Y|2021.12.0b0|
+|teslemetry|commands and sensors from the Tesla vehicles connected to a Teslemetry subscript|N|N|Y|2024.2.1|
 |tessie|control Tesla vehicles connected to your Tessie account from HA|N|N|Y|2024.1.0b7|
 |test|internal and developer use|Y|Y|Y|None|
 |tfiac|integrates several vendors air conditioning systems into Home Assistant|N|N|Y|0.91|
@@ -833,6 +852,7 @@
 |tplink_lte|allows you to observe and control TP-Link LTE routers|N|N|Y|0.83|
 |tplink_omada|allows you to control your TP-Link Omada SDN Devices|N|N|Y|2023.3.0b3|
 |traccar|uses GPS for tracking and has support for over 1500 different types of devices|N|N|Y|0.83|
+|traccar_server|Traccar uses GPS for tracking,over 1500 different types of devices|N|N|Y|2024.2.1|
 |trackr|trackr platform allows you to detect presence using TrackR devices|N|N|Y||
 |tractive|Tractive is an Austrian company develops real-time location trackers for pets|N|N|Y|2021.9.0b1|
 |tradfri|Control/observe IKEA Tradfri devices|M|M|Y|0.43|
