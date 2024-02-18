@@ -25,7 +25,6 @@ RDEPEND=">=dev-python/aioesphomeapi-21.0.0[${PYTHON_USEDEP}]
 	>=dev-python/lru-dict-1.2.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
