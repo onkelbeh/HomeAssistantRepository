@@ -18,15 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/bleak[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
 	>=dev-python/bleak-retry-connector-1.4.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
