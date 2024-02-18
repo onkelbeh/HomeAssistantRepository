@@ -19,14 +19,6 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/idasen[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND=">=dev-python/idasen-0.10[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
