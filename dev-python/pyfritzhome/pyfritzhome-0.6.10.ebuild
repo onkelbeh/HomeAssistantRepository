@@ -18,14 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/cryptography[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
