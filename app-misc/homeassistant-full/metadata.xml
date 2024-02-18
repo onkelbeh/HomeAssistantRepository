@@ -31,6 +31,7 @@
     <flag name="airq">integrating the sensors provided by your air-Q device</flag>
     <flag name="airthings">A python3 library to communicate with Aws</flag>
     <flag name="airtouch4">control Ducted Air Conditioning Systems that are using the AirTouch 4 Controller</flag>
+    <flag name="airtouch5">allows you to control ducted air conditioning systems using the AirTouch 5 cont.</flag>
     <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
     <flag name="airvisual_pro">allows Home Assistant to retrieve data from an AirVisual Node/Pro unit</flag>
     <flag name="airzone">This integration allows getting values from the local API of Airzone HVAC zoning</flag>
@@ -46,6 +47,7 @@
     <flag name="ambient_station">Retrieves local weather information from Ambient Weather</flag>
     <flag name="amcrest">Integrate your Amcrest or Dahua IP camera</flag>
     <flag name="ampio">Will query the open data API of ampio.pl to monitor air quality sensor station</flag>
+    <flag name="analytics_insights">allows you to get integration usage statistics into Home Assistant</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="androidtv_remote">allows you to control an Android TV and launching apps</flag>
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
@@ -87,6 +89,7 @@
     <flag name="baf">Integrates Big Ass Fans devices into Home Assistant</flag>
     <flag name="baidu">Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi</flag>
     <flag name="balboa">This integration adds support for Balboa Spa WiFi Modules</flag>
+    <flag name="bang_olufsen">enables control of some of the features of certain Bang &amp; Olufsen devices</flag>
     <flag name="bbb_gpio">Base for all BeagleBone Black related GPIO platforms</flag>
     <flag name="bbox">Presence detection from Bbox Modem Router from Bouygues Telecom</flag>
     <flag name="beewi_smartclim">BeeWi SmartClim BLE is a Bluetooth Low Energy sensor device</flag>
@@ -112,6 +115,7 @@
     <flag name="bond">Asynchronous Python wrapper library over Bond Local API</flag>
     <flag name="bosch_shc">integrate your Bosch SHC into Home Assistant</flag>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
+    <flag name="bring">allows you to interact with your Bring! shopping lists within Home Assistant</flag>
     <flag name="broadlink">Allows you to interact with Broadlink remote control devices</flag>
     <flag name="brottsplatskartan">brottsplatskartan sensor allows one to track reported incidents</flag>
     <flag name="brunt">The brunt platform allows one to control Blind Engines by Brunt</flag>
@@ -217,6 +221,7 @@
     <flag name="elkm1">Elk-M1 is a home security and automation controller</flag>
     <flag name="elmax">enables Home Assistant integration with ELMAX control panels</flag>
     <flag name="elv">control the state of your ELV PCA 301 smart switch</flag>
+    <flag name="elvia">import your historical grid consumption from Elvia</flag>
     <flag name="emby">The emby platform allows you to control a Emby multimedia system</flag>
     <flag name="emonitor">SiteSage Emonitor allows local power monitoring on a per circuit basis</flag>
     <flag name="emulated_hue">Emulated_hue integration provides a virtual Philips Hue bridge</flag>
@@ -231,6 +236,7 @@
     <flag name="envirophat">Display information collected by an Enviro pHAT add-on board</flag>
     <flag name="envisalink">Link Envisalink devices to Home Assistant</flag>
     <flag name="ephember">The ephember climate platform lets you control EPH Controls thermostats</flag>
+    <flag name="epion">Integrates Epion Air sensors into Home Assistant</flag>
     <flag name="epson">The epson platform allows you to control a Epson projector</flag>
     <flag name="epsonworkforce">monitor the ink levels of a Epson Workforce printer</flag>
     <flag name="eq3btsmart">Integrate EQ3 Bluetooth Smart Thermostats in Home Assistant</flag>
@@ -320,6 +326,7 @@
     <flag name="google_translate">google_translate text-to-speech platform for Home Assistant</flag>
     <flag name="google_travel_time">provides travel time from the Google Distance Matrix API</flag>
     <flag name="govee_ble">Integrates Govee BLE devices into Home Assistant</flag>
+    <flag name="govee_light_local">Integrates Govee lights into Home Assistant using Local API control</flag>
     <flag name="gpsd">GPS information collected by gpsd and a GPS receiver</flag>
     <flag name="gree">Discover, connect and control Gree based minisplit systems</flag>
     <flag name="greeneye_monitor">Allows you to create sensors for the various data channels of the GEM</flag>
@@ -341,6 +348,7 @@
     <flag name="hikvisioncam">Allows you to control your motion detection settings from Home Assistant</flag>
     <flag name="hisense_aehw4a1">Give Wi-Fi connectivity to some Hisense ACs</flag>
     <flag name="hive">Set up and integrate all supported Hive devices in Home Assistant</flag>
+    <flag name="hko">retrieves weather data from the Hong Kong Observatory Open Data API</flag>
     <flag name="hlk_sw16">HLK-SW16 by Hi-Link is a simple networkable 16 port relay device</flag>
     <flag name="holiday">create a calendar of holidays in Home Assistant for powering automations</flag>
     <flag name="homekit">Integrate HomeKit controller and accessory in Home Assistant</flag>
@@ -361,6 +369,7 @@
     <flag name="hue">talk to Philips Hue</flag>
     <flag name="huisbaasje">Huisbaasje smart energy meters</flag>
     <flag name="hunterdouglas_powerview">integrate your Hunter Douglas PowerView devices</flag>
+    <flag name="huum">Integrates Huum saunas into Home Assistant</flag>
     <flag name="hvv_departures">departures of busses, trains and ferries in Hamburg</flag>
     <flag name="hydrawise">communicate with Hunter Wi-Fi irrigation controllers</flag>
     <flag name="hyperion">integrate your Hyperion into Home Assistant</flag>
@@ -425,6 +434,7 @@
     <flag name="kwb">integrates the sensors of KWB Easyfire pellet central heating units </flag>
     <flag name="lacrosse">using the data provided by a Jeelink USB dongle or this Arduino sketch</flag>
     <flag name="lacrosse_view">allows access to LaCrosse sensors</flag>
+    <flag name="lamarzocco">interacts with La Marzocco coffee machines through calls to the LaMarzocco cloud</flag>
     <flag name="lametric">LaMetric Time smart clock listen to web radio and display notifications</flag>
     <flag name="landisgyr_heat_meter">read the meter values from Ultraheat devices by Landis &amp; Gyr</flag>
     <flag name="lastfm">lastfm sensor platform will allow you to see whenever a user starts scrobbling</flag>
@@ -432,6 +442,7 @@
     <flag name="laundrify">Monitor the status of your washing machine or dryer using a laundrify WiFi power</flag>
     <flag name="lcn">allows you to connect to LCN hardware devices</flag>
     <flag name="ld2410_ble">Integrates LD2410 BLE sensors from Hi-Link</flag>
+    <flag name="leaone">Integrates LeaOne health devices into Home Assistant</flag>
     <flag name="led_ble">Integrates multiple brands of Bluetooth Low Energy LED devices into Home Assista</flag>
     <flag name="lg_netcast">allows you to control a LG Smart TV running NetCast 3.0</flag>
     <flag name="lg_soundbar">allows you to control LG Soundbars from Home Assistant</flag>
@@ -517,6 +528,7 @@
     <flag name="mysql">set dependencies to install MySQL Libraries for use with HomeAssistant</flag>
     <flag name="mystrom">Python API for interacting with myStrom devices</flag>
     <flag name="mythicbeastsdns">automatically update your dynamic DNS entry at Mythic Beasts</flag>
+    <flag name="myuplink">get information about the devices supporting myUplink using the official cloud A</flag>
     <flag name="nad">allows you to control a NAD receiver through RS232, TCP and Telnet</flag>
     <flag name="nam">get temperature, humidity, pressure , air quality from Nettigo devices</flag>
     <flag name="namecheapdns">automatically update your dynamic DNS entry at namecheapdns</flag>
@@ -649,12 +661,14 @@
     <flag name="quantum_gateway">device tracker platform for Verizon Fios</flag>
     <flag name="qvr_pro">QVR Pro allows you to connect to cams configured on your QNAP NAS</flag>
     <flag name="qwikswitch">the main integration to integrate various QwikSwitch devices with Home Assistant</flag>
+    <flag name="rabbitair">lets you control your air purifier over the local network</flag>
     <flag name="rachio">The rachio platform allows you to control your Rachio irrigation system</flag>
     <flag name="radiotherm">control a thermostat from Radio Thermostat or 3M Filtrete</flag>
     <flag name="radio_browser">use the directory of radio stations collected on Radio Browser in Home Assistant</flag>
     <flag name="rainbird">allows interacting with LNK WiFi module of the Rain Bird Irrigation system</flag>
     <flag name="raincloud">allows you to integrate your Melnor RainCloud sprinkler system in Home Assistant</flag>
     <flag name="rainforest_eagle">platform for Rainforest Automation’s Eagle-200 and Legacy Eagle energy gateways</flag>
+    <flag name="rainforest_raven">connects to a RAVEn-compatible device attached to the Home Assistant via USB</flag>
     <flag name="rainmachine">integrate all platforms related to RainMachine smart Wi-Fi sprinkler controllers</flag>
     <flag name="rapt_ble">Integrates RAPT Pill hydrometers into Home Assistant</flag>
     <flag name="raspihats">The base for all related Raspihats platforms in Home Assistant</flag>
@@ -664,6 +678,7 @@
     <flag name="recorder">storing details in a database per sqlalchemy</flag>
     <flag name="recswitch">allows you to control the Ankuoo REC Switch devices from Home Assistant</flag>
     <flag name="reddit">integrates data from Reddit to monitor your favorite subreddits</flag>
+    <flag name="refoss">Integrate Refoss devices into Home Assistant</flag>
     <flag name="rejseplanen">travel details for Danish public transport</flag>
     <flag name="remember_the_milk">create tasks in Remember The Milk (RTM) (deprecated)</flag>
     <flag name="remote_rpi_gpio">base for all related GPIO platforms in Home Assistant</flag>
@@ -682,6 +697,7 @@
     <flag name="rmvtransport">departure time of bus, tram, subway, train in Rhein-Main area public transport</flag>
     <flag name="rocketchat">allows you to send messages to your Rocket.Chat instance from Home Assistant</flag>
     <flag name="roku">add support for Roku players</flag>
+    <flag name="romy">The ROMY integration allows you to control your ROMY vacuum robot</flag>
     <flag name="roomba">control a iRobot Roomba vacuum or iRobot Braava m-series mop</flag>
     <flag name="roon">allows you to control RoonLabs music players</flag>
     <flag name="route53">keep your AWS Route53 DNS records up to date</flag>
@@ -818,13 +834,16 @@
     <flag name="tapsaff">provides the ‘Taps Aff’ status for a given location within the UK</flag>
     <flag name="tasmota">Python module to help parse and construct Tasmota MQTT messages</flag>
     <flag name="tautulli">The tautulli sensor platform will monitor activity on a given Tautulli Server</flag>
+    <flag name="technove">TechnoVE Smart Charging Station through the station local API</flag>
     <flag name="ted5000">monitors electricity consumption/production by connecting to the TED gateway</flag>
+    <flag name="tedee">connect locally to your Tedee locks by communicating with the Tedee bridge</flag>
     <flag name="telegram_bot">Use Telegram on your mobile or desktop device to send and receive messages</flag>
     <flag name="tellduslive">cloud platform that connects to your Tellstick</flag>
     <flag name="tellstick">integrates TellStick devices into Home Assistant</flag>
     <flag name="temper">get the current temperature from a TEMPer device</flag>
     <flag name="tesla">integration with the Tesla cloud service</flag>
     <flag name="tesla_wall_connector">allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi</flag>
+    <flag name="teslemetry">commands and sensors from the Tesla vehicles connected to a Teslemetry subscript</flag>
     <flag name="tessie">control Tesla vehicles connected to your Tessie account from HA</flag>
     <flag name="test">internal and developer use</flag>
     <flag name="tfiac">integrates several vendors air conditioning systems into Home Assistant</flag>
@@ -850,6 +869,7 @@
     <flag name="tplink_lte">allows you to observe and control TP-Link LTE routers</flag>
     <flag name="tplink_omada">allows you to control your TP-Link Omada SDN Devices</flag>
     <flag name="traccar">uses GPS for tracking and has support for over 1500 different types of devices</flag>
+    <flag name="traccar_server">Traccar uses GPS for tracking,over 1500 different types of devices</flag>
     <flag name="trackr">trackr platform allows you to detect presence using TrackR devices</flag>
     <flag name="tractive">Tractive is an Austrian company develops real-time location trackers for pets</flag>
     <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>

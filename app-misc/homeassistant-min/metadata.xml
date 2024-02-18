@@ -19,6 +19,7 @@
     <flag name="airly">Uses the Airly web service as a source for air quality data</flag>
     <flag name="airvisual">Airvisual sensor platform queries the AirVisual cloud API for air quality data</flag>
     <flag name="alpha_vantage">The alpha_vantage sensor platform uses Alpha Vantage to monitor the stock market</flag>
+    <flag name="analytics_insights">allows you to get integration usage statistics into Home Assistant</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="androidtv_remote">allows you to control an Android TV and launching apps</flag>
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>

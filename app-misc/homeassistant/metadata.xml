@@ -33,6 +33,7 @@
     <flag name="ambient_station">Retrieves local weather information from Ambient Weather</flag>
     <flag name="amcrest">Integrate your Amcrest or Dahua IP camera</flag>
     <flag name="ampio">Will query the open data API of ampio.pl to monitor air quality sensor station</flag>
+    <flag name="analytics_insights">allows you to get integration usage statistics into Home Assistant</flag>
     <flag name="androidtv">Library for controlling an Android TV, formerly firetv</flag>
     <flag name="androidtv_remote">allows you to control an Android TV and launching apps</flag>
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
@@ -73,6 +74,7 @@
     <flag name="bmw_connected_drive">Retrieve data from the BMW Connected Drive</flag>
     <flag name="bond">Asynchronous Python wrapper library over Bond Local API</flag>
     <flag name="braviatv">Control almost all Sony Bravia TV 2013 and newer</flag>
+    <flag name="bring">allows you to interact with your Bring! shopping lists within Home Assistant</flag>
     <flag name="broadlink">Allows you to interact with Broadlink remote control devices</flag>
     <flag name="brottsplatskartan">brottsplatskartan sensor allows one to track reported incidents</flag>
     <flag name="brunt">The brunt platform allows one to control Blind Engines by Brunt</flag>
