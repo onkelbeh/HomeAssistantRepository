@@ -17,17 +17,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/haversine-1.0.1[${PYTHON_USEDEP}]
-	>=dev-python/xmltodict-0.11.0[${PYTHON_USEDEP}]
-	>=dev-python/requests-2.20.0[${PYTHON_USEDEP}]
-	>=dev-python/dateparser-0.7.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND=">=dev-python/haversine-2.8.1[${PYTHON_USEDEP}]
+	>=dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.31.0[${PYTHON_USEDEP}]
+	>=dev-python/dateparser-1.2.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
