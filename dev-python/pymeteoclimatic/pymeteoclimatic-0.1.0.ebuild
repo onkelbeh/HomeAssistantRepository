@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/lxml[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/lxml-4.5[${PYTHON_USEDEP}]
 	dev-python/beautifulsoup4[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
