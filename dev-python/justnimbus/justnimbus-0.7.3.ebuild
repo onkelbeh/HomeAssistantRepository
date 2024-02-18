@@ -8,23 +8,14 @@ DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="A Python Wrapper for the Just Nimbus API"
-HOMEPAGE=" https://pypi.org/project/justnimbus/"
+HOMEPAGE="https://github.com/kvanzuijlen/justnimbus https://pypi.org/project/justnimbus/"
 
-LICENSE="all-rights-reserved"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
-RESTRICT="!test? ( test )
-				 mirror"
+RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
