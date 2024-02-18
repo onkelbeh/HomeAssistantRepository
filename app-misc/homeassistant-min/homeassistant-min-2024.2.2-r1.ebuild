@@ -29,7 +29,7 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="accuweather airly airvisual alpha_vantage analytics_insights androidtv androidtv_remote android_ip_webcam axis +bluetooth bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus dlna_dmr dlna_dms dwd_weather_warnings ecowitt enigma2 esphome ffmpeg file forecast_solar fronius github glances holiday +homekit homekit_controller http hyperion ibeacon influxdb knx kodi kraken local_calendar local_todo +mariadb +matter maxcube mikrotik +mobile_app modbus +mosquitto +mqtt mysensors mysql nextcloud nfandroidtv +notify_events octoprint onvif +otp owntracks +ping +plex ps4 +python_script qnap qvr_pro radio_browser +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tomorrowio tplink +upnp utility_meter +version +wake_on_lan waze_travel_time wemo whois wled workday xiaomi_aqara yamaha yamaha_musiccast zeroconf zha zwave_js"
+IUSE="accuweather airly airvisual alpha_vantage analytics_insights androidtv androidtv_remote android_ip_webcam axis +backup +bluetooth bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus dlna_dmr dlna_dms dwd_weather_warnings ecowitt enigma2 esphome ffmpeg file forecast_solar fronius github glances holiday +homekit homekit_controller http hyperion ibeacon influxdb knx kodi kraken local_calendar local_todo +mariadb +matter maxcube mikrotik +mobile_app modbus +mosquitto +mqtt mysensors mysql nextcloud nfandroidtv +notify_events octoprint onvif +otp owntracks +ping +plex ps4 +python_script qnap qvr_pro radio_browser +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tomorrowio tplink +upnp utility_meter +version +wake_on_lan waze_travel_time wemo whois wled workday xiaomi_aqara yamaha yamaha_musiccast zeroconf zha zwave_js"
 RESTRICT="!test? ( test )"
 
 # external deps
@@ -157,6 +157,7 @@ RDEPEND="${RDEPEND}
 	androidtv_remote? ( ~dev-python/androidtvremote2-0.0.14[${PYTHON_USEDEP}] )
 	android_ip_webcam? ( ~dev-python/pydroid-ipcam-2.0.0[${PYTHON_USEDEP}] )
 	axis? ( ~dev-python/axis-48[${PYTHON_USEDEP}] )
+	backup? ( ~dev-python/securetar-2023.3.0[${PYTHON_USEDEP}] )
 	bluetooth? ( ~dev-python/bleak-0.21.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-3.4.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.17.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-1.3.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-1.19.0[${PYTHON_USEDEP}] ~dev-python/dbus-fast-2.21.1[${PYTHON_USEDEP}] ~dev-python/habluetooth-2.4.0[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-1.3.8[${PYTHON_USEDEP}] )

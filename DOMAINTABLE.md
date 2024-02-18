@@ -68,7 +68,7 @@
 |awair|Library to integrate the Awair GraphQL API into Home Assistant|N|Y|Y|0.84|
 |aws|Interact with Amazon Web Services|N|N|Y|0.91|
 |axis|Communicating with newer devices from Axis Communications|Y|Y|Y||
-|backup|allows you to create and download backups for your Home Assistant Core|N|Y|Y|2022.4.0b0|
+|backup|allows you to create and download backups for your Home Assistant Core|Y|Y|Y|2022.4.0b0|
 |baf|Integrates Big Ass Fans devices into Home Assistant|N|N|Y|2022.6.0b0|
 |baidu|Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi|N|Y|Y|0.59|
 |balboa|This integration adds support for Balboa Spa WiFi Modules|N|N|Y|2021.12.0b0|

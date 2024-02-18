@@ -24,6 +24,7 @@
     <flag name="androidtv_remote">allows you to control an Android TV and launching apps</flag>
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
+    <flag name="backup">allows you to create and download backups for your Home Assistant Core</flag>
     <flag name="bluetooth">The Bluetooth integration will detect nearby Bluetooth devices</flag>
     <flag name="bluetooth_le_tracker">Tracks Bluetooth low-energy devices periodically based on interval_seconds value</flag>
     <flag name="caldav">Integrate a CalDAV (RFC4791) calendar in Home Assistant</flag>
