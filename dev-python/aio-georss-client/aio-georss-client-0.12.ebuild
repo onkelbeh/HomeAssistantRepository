@@ -17,17 +17,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/haversine-2.7.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
+	>=dev-python/haversine-2.8.1[${PYTHON_USEDEP}]
 	>=dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}]
-	>=dev-python/dateparser-1.1.6[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	>=dev-python/dateparser-1.2.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
