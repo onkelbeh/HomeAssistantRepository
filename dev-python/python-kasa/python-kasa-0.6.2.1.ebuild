@@ -32,9 +32,4 @@ BDEPEND="
 		dev-python/pytest-sugar[${PYTHON_USEDEP}]
 	)"
 
-src_prepare() {
-	sed -e '/include = \[/d' -i pyproject.toml || die
-	eapply_user
-}
-
 distutils_enable_tests pytest
