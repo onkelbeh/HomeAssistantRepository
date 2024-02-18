@@ -16,4 +16,4 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
-RDEPEND=">=dev-python/cryptography-36.0.2[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/cryptography-42.0.0[${PYTHON_USEDEP}]"
