@@ -18,20 +18,15 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.3[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.9.0[${PYTHON_USEDEP}]
 	>=dev-python/aiofiles-23.1.0[${PYTHON_USEDEP}]
 	>=dev-python/h11-0.14.0[${PYTHON_USEDEP}]
 	>=dev-python/h2-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/jsonschema-4.14.0[${PYTHON_USEDEP}]
 	>=dev-python/unpaddedbase64-2.1.0[${PYTHON_USEDEP}]
-	>=dev-python/pycryptodome-3.10.1[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	>=dev-python/pycryptodome-3.10.1[${PYTHON_USEDEP}]
+	>=dev-python/peewee-3.14.4[${PYTHON_USEDEP}]
+	>=dev-python/cachetools-4.2.1[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-socks-0.7.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
