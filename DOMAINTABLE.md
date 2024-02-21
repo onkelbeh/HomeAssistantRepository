@@ -575,7 +575,7 @@
 |opensky|allows one to track overhead flights in a given region|N|N|Y|0.43|
 |opentherm_gw|control the OpenTherm Gateway from Home Assistant|N|N|Y|0.81|
 |openuv|The openuv integration displays UV and Ozone data from openuv.io|N|N|Y||
-|openweathermap|uses OpenWeatherMap as a source for current meteorological data|N|Y|Y|0.32|
+|openweathermap|uses OpenWeatherMap as a source for current meteorological data|Y|Y|Y|0.32|
 |open_meteo|integrates the free weather forecast from Open-Meteo|N|N|Y|2022.2.0b1|
 |opnsense|Presence Detection with data from OPNsense  firewall|N|Y|Y|0.105|
 |opower|get energy information from utilities that use Opower|N|N|Y|2023.10.1|
