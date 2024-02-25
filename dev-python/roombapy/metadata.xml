@@ -13,7 +13,4 @@
       <name>Philipp Schmitt</name>
     </maintainer>
   </upstream>
-  <use>
-    <flag name="mqtt">Install mqtt client.</flag>
-  </use>
 </pkgmetadata>
