@@ -73,6 +73,7 @@
     <flag name="notify_events">The Notify.Events service is a platform for the notify component</flag>
     <flag name="octoprint">The main integration to integrate OctoPrint sensors</flag>
     <flag name="onvif">allows you to use an ONVIF Profile S conformant device</flag>
+    <flag name="openweathermap">uses OpenWeatherMap as a source for current meteorological data</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ping">use the great ICMPLib for Presence Detection and as a binary Sensor</flag>
