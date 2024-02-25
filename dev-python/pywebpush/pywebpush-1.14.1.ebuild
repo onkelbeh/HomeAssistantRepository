@@ -15,18 +15,10 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="dev-python/cryptography[${PYTHON_USEDEP}]
-	dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/six[${PYTHON_USEDEP}]
-	dev-python/http-ece[${PYTHON_USEDEP}]
-	dev-python/py-vapid[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND=">=dev-python/cryptography-2.6.1[${PYTHON_USEDEP}]
+	>=dev-python/requests2.21.0[${PYTHON_USEDEP}]
+	>=dev-python/six-1.15.0[${PYTHON_USEDEP}]
+	>=dev-python/http-ece-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/py-vapid-1.7.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
