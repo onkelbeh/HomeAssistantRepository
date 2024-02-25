@@ -146,7 +146,7 @@ Best you start using the `app-misc/homeassistant-min` Ebuild. If you have it run
 * Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap. Beginning homeassistant-2021.2.0, handling for systemd was added by request, thanks to @Tatsh for help.
 * I use an own profile based on "amd64/17.1/no-multilib"
 * Sunce 2022.07.06, I run detailed tests on Python 3.10 only, and am starting to try builds on Python 3.11.
-* python-3.11.7 is set as default target.
+* python-3.12.2 is set as default target.
 
 # Bigger Changes
 
@@ -617,14 +617,14 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1820 Ebuilds in total, 1809 of them have in total 1828 (42 different) licenses assigned.
+There are 1821 Ebuilds in total, 1810 of them have in total 1829 (42 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
 |MIT|1032|
 |Apache-2.0|410|
 |GPL-3|120|
-|BSD|102|
+|BSD|103|
 |LGPL-3|24|
 |GPL-2|21|
 |all-rights-reserved|13|
