@@ -9,7 +9,7 @@
     <remote-id type="pypi">deluge-client</remote-id>
     <remote-id type="github">JohnDoee/deluge-client</remote-id>
     <maintainer status="unknown">
-      <email>johndoee+delugeclient@tidalstream.org</email>
+      <email>andersandjensen@gmail.com</email>
       <name>John Doee</name>
     </maintainer>
   </upstream>
