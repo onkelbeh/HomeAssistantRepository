@@ -16,10 +16,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
-RDEPEND=">=dev-python/requests-2.21.0-r1[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.21.3[${PYTHON_USEDEP}]
-	>=dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/yarl[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
