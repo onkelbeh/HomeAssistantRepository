@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyFortiManagerAPI</remote-id>
+    <remote-id type="github">akshaymane920/pyFortiManagerAPI</remote-id>
+    <maintainer status="unknown">
+      <email>akshaymane920@gmail.com</email>
+      <name>Akshay Mane</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
