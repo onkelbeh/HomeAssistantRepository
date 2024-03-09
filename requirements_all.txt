@@ -1306,6 +1306,7 @@ sisyphus-control==3.1.3
 six==1.16.0
 slackclient==2.5.0
 sleekxmppfs==1.4.1
+slixmpp==1.8.4
 slixmpp==1.8.5
 smart-meter-texas==0.4.7
 SmartHab==0.21
