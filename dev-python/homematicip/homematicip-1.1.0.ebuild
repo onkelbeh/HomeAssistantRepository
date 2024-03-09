@@ -21,9 +21,9 @@ DOCS="README.md"
 RDEPEND=">=dev-python/requests-2.24.0[${PYTHON_USEDEP}]
 		>=dev-python/websocket-client-1.0.0[${PYTHON_USEDEP}]
 		>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
-		>=dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
+		>=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 		>=dev-python/async-timeout-3.0.1[${PYTHON_USEDEP}]
-		>=dev-python/aenum-2.2.4[${PYTHON_USEDEP}]"
+		>=dev-python/aiohttp-wsgi-0.8.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
