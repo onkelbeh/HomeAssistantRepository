@@ -24,6 +24,6 @@ RDEPEND=">=dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
 	dev-python/python-dateutil[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiofiles[${PYTHON_USEDEP}]
-	>=dev-python/pubnub-5.5.0[${PYTHON_USEDEP}]"
+	>=dev-python/pubnub-7.4.1[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
