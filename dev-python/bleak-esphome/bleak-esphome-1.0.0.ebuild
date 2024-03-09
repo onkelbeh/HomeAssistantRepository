@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aioesphomeapi-21.0.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aioesphomeapi-22.0.0[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.21.1[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-1.18.0[${PYTHON_USEDEP}]
 	>=dev-python/habluetooth-1.0.0[${PYTHON_USEDEP}]
