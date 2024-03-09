@@ -1,9 +1,9 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..12} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
@@ -18,6 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="sci-geosciences/geopy[${PYTHON_USEDEP}]
-	dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/urllib3[${PYTHON_USEDEP}]"
+RDEPEND="
+	dev-python/aiohttp[${PYTHON_USEDEP}]
+	sci-geosciences/geopy[${PYTHON_USEDEP}]
+"
