@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_11 )
+PYTHON_COMPAT=( python3_{11..12} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 PYPI_PN="homeassistant"
@@ -29,7 +29,7 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="accuweather airly airvisual alpha_vantage analytics_insights androidtv androidtv_remote android_ip_webcam axis +backup +bluetooth bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus dlna_dmr dlna_dms dwd_weather_warnings ecowitt enigma2 esphome ffmpeg file forecast_solar fronius github glances holiday +homekit homekit_controller http hyperion ibeacon influxdb knx kodi kraken local_calendar local_todo +mariadb +matter maxcube mikrotik +mobile_app modbus +mosquitto +mqtt mysensors mysql nextcloud nfandroidtv +notify_events octoprint onvif +otp owntracks +ping +plex ps4 +python_script qnap qvr_pro radio_browser +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tomorrowio tplink +upnp utility_meter +version +wake_on_lan waze_travel_time wemo whois wled workday xiaomi_aqara yamaha yamaha_musiccast zeroconf zha zwave_js"
+IUSE="accuweather airly airvisual alpha_vantage analytics_insights androidtv androidtv_remote android_ip_webcam axis +backup +bluetooth bluetooth_le_tracker +caldav camera cast cli co2signal compensation coronavirus dlna_dmr dlna_dms dwd_weather_warnings ecowitt enigma2 esphome ffmpeg file forecast_solar fronius github glances holiday +homekit homekit_controller http hyperion ibeacon influxdb knx kodi kraken local_calendar local_todo +mariadb +matter maxcube mikrotik +mobile_app modbus +mosquitto +mqtt mysensors mysql nextcloud nfandroidtv +notify_events octoprint onvif openweathermap +otp owntracks +ping +plex ps4 +python_script qnap qvr_pro radio_browser +recorder +rest ring samsungtv +scrape season shelly signal_messenger +snmp socat sonos speedtestdotnet +spotify +sql +ssl systemd systemmonitor tankerkoenig tasmota test tile tomorrowio tplink +upnp utility_meter +version +wake_on_lan waze_travel_time wemo whois wled workday xiaomi_aqara yamaha yamaha_musiccast zeroconf zha zwave_js"
 RESTRICT="!test? ( test )"
 
 # external deps
@@ -97,16 +97,15 @@ RDEPEND="${RDEPEND}
 	~dev-python/jinja-3.1.3[${PYTHON_USEDEP}]
 	~dev-python/libcst-0.3.23[${PYTHON_USEDEP}]
 	~dev-python/lru-dict-1.3.0[${PYTHON_USEDEP}]
-	~dev-python/matplotlib-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/multidict-6.0.2[${PYTHON_USEDEP}]
-	~media-libs/mutagen-1.47.0
+	~media-libs/mutagen-1.47.0[${PYTHON_USEDEP}]
 	~dev-python/numpy-1.26.0[${PYTHON_USEDEP}]
-	~dev-python/orjson-3.9.14[${PYTHON_USEDEP}]
+	~dev-python/orjson-3.9.15[${PYTHON_USEDEP}]
 	>=dev-python/packaging-23.1[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/pandas-2.1.4[${PYTHON_USEDEP}]
 	~dev-python/pillow-10.2.0[${PYTHON_USEDEP}]
-	>=dev-python/pip-21.3.1
+	>=dev-python/pip-21.3.1[${PYTHON_USEDEP}]
 	~dev-python/protobuf-python-4.25.1[${PYTHON_USEDEP}]
 	~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
@@ -127,7 +126,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
 	~dev-python/regex-2023.12.25[${PYTHON_USEDEP}]
 	~dev-python/requests-2.31.0[${PYTHON_USEDEP}]
-	~net-analyzer/scapy-2.5.0
+	~net-analyzer/scapy-2.5.0[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-2.0.25[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.9.0[${PYTHON_USEDEP}]
 	<dev-python/typing-extensions-5.0[${PYTHON_USEDEP}]
@@ -160,7 +159,7 @@ RDEPEND="${RDEPEND}
 	backup? ( ~dev-python/securetar-2023.3.0[${PYTHON_USEDEP}] )
 	bluetooth? ( ~dev-python/bleak-0.21.1[${PYTHON_USEDEP}] ~dev-python/bleak-retry-connector-3.4.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-adapters-0.17.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-auto-recovery-1.3.0[${PYTHON_USEDEP}] ~dev-python/bluetooth-data-tools-1.19.0[${PYTHON_USEDEP}] ~dev-python/dbus-fast-2.21.1[${PYTHON_USEDEP}] ~dev-python/habluetooth-2.4.0[${PYTHON_USEDEP}] )
 	bluetooth_le_tracker? ( ~dev-python/pygatt-4.0.5[${PYTHON_USEDEP}] )
-	caldav? ( ~dev-python/caldav-1.3.8[${PYTHON_USEDEP}] )
+	caldav? ( ~dev-python/caldav-1.3.9[${PYTHON_USEDEP}] )
 	camera? ( ~dev-python/PyTurboJPEG-1.7.1[${PYTHON_USEDEP}] )
 	cast? ( ~dev-python/pychromecast-13.1.0[${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli )
@@ -171,7 +170,7 @@ RDEPEND="${RDEPEND}
 	dlna_dms? ( ~dev-python/async-upnp-client-0.38.2[${PYTHON_USEDEP}] )
 	dwd_weather_warnings? ( ~dev-python/dwdwfsapi-1.0.7[${PYTHON_USEDEP}] )
 	ecowitt? ( ~dev-python/aioecowitt-2024.2.1[${PYTHON_USEDEP}] )
-	enigma2? ( ~dev-python/openwebifpy-4.2.1[${PYTHON_USEDEP}] )
+	enigma2? ( ~dev-python/openwebifpy-4.2.4[${PYTHON_USEDEP}] )
 	esphome? ( ~dev-python/aioesphomeapi-21.0.2[${PYTHON_USEDEP}] ~dev-python/esphome-dashboard-api-1.2.3[${PYTHON_USEDEP}] ~dev-python/bleak-esphome-0.4.1[${PYTHON_USEDEP}] )
 	ffmpeg? ( ~dev-python/ha-ffmpeg-3.1.0[${PYTHON_USEDEP}] )
 	file? ( ~dev-python/file-read-backwards-2.0.0[${PYTHON_USEDEP}] )
@@ -179,7 +178,7 @@ RDEPEND="${RDEPEND}
 	fronius? ( ~dev-python/PyFronius-0.7.2[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/aiogithubapi-22.10.1[${PYTHON_USEDEP}] )
 	glances? ( ~dev-python/glances-api-0.5.0[${PYTHON_USEDEP}] )
-	holiday? ( ~dev-python/holidays-0.42[${PYTHON_USEDEP}] ~dev-python/Babel-2.13.1[${PYTHON_USEDEP}] )
+	holiday? ( ~dev-python/holidays-0.43[${PYTHON_USEDEP}] ~dev-python/Babel-2.13.1[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.9.1[${PYTHON_USEDEP}] ~dev-python/fnv-hash-fast-0.5.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
 	homekit_controller? ( ~dev-python/aiohomekit-3.1.4[${PYTHON_USEDEP}] )
 	http? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] ~dev-python/aiohttp-fast-url-dispatcher-0.3.0[${PYTHON_USEDEP}] ~dev-python/aiohttp-zlib-ng-0.3.1[${PYTHON_USEDEP}] )
@@ -206,6 +205,7 @@ RDEPEND="${RDEPEND}
 	notify_events? ( ~dev-python/notify-events-1.0.4[${PYTHON_USEDEP}] )
 	octoprint? ( ~dev-python/pyoctoprintapi-0.1.12[${PYTHON_USEDEP}] )
 	onvif? ( ~dev-python/onvif-zeep-async-3.1.12[${PYTHON_USEDEP}] ~dev-python/WSDiscovery-2.0.0[${PYTHON_USEDEP}] )
+	openweathermap? ( ~dev-python/pyowm-3.2.0[${PYTHON_USEDEP}] )
 	otp? ( ~dev-python/pyotp-2.8.0[${PYTHON_USEDEP}] )
 	owntracks? ( ~dev-python/pynacl-1.5.0[${PYTHON_USEDEP}] )
 	ping? ( ~dev-python/icmplib-3.0[${PYTHON_USEDEP}] )
@@ -231,7 +231,7 @@ RDEPEND="${RDEPEND}
 	sql? ( ~dev-python/sqlalchemy-2.0.25[${PYTHON_USEDEP}] ~dev-python/sqlparse-0.4.4[${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
 	systemmonitor? ( ~dev-python/psutil-5.9.8[${PYTHON_USEDEP}] )
-	tankerkoenig? ( ~dev-python/aiotankerkoenig-0.3.0[${PYTHON_USEDEP}] )
+	tankerkoenig? ( ~dev-python/aiotankerkoenig-0.4.1[${PYTHON_USEDEP}] )
 	tasmota? ( ~dev-python/HATasmota-0.8.0[${PYTHON_USEDEP}] )
 	tile? ( ~dev-python/pytile-2023.4.0[${PYTHON_USEDEP}] )
 	tomorrowio? ( ~dev-python/pytomorrowio-0.3.6[${PYTHON_USEDEP}] )
@@ -244,7 +244,7 @@ RDEPEND="${RDEPEND}
 	wemo? ( ~dev-python/pywemo-1.4.0[${PYTHON_USEDEP}] )
 	whois? ( ~dev-python/whois-0.9.27[${PYTHON_USEDEP}] )
 	wled? ( ~dev-python/wled-0.17.0[${PYTHON_USEDEP}] )
-	workday? ( ~dev-python/holidays-0.42[${PYTHON_USEDEP}] )
+	workday? ( ~dev-python/holidays-0.43[${PYTHON_USEDEP}] )
 	xiaomi_aqara? ( ~dev-python/PyXiaomiGateway-0.14.3[${PYTHON_USEDEP}] )
 	yamaha? ( ~dev-python/rxv-0.7.0[${PYTHON_USEDEP}] )
 	yamaha_musiccast? ( ~dev-python/aiomusiccast-0.14.8[${PYTHON_USEDEP}] )

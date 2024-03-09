@@ -97,14 +97,14 @@ RDEPEND="${RDEPEND}
 	~dev-python/libcst-0.3.23[${PYTHON_USEDEP}]
 	~dev-python/lru-dict-1.3.0[${PYTHON_USEDEP}]
 	>=dev-python/multidict-6.0.2[${PYTHON_USEDEP}]
-	~media-libs/mutagen-1.47.0
+	~media-libs/mutagen-1.47.0[${PYTHON_USEDEP}]
 	~dev-python/numpy-1.26.0[${PYTHON_USEDEP}]
-	~dev-python/orjson-3.9.14[${PYTHON_USEDEP}]
+	~dev-python/orjson-3.9.15[${PYTHON_USEDEP}]
 	>=dev-python/packaging-23.1[${PYTHON_USEDEP}]
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/pandas-2.1.4[${PYTHON_USEDEP}]
 	~dev-python/pillow-10.2.0[${PYTHON_USEDEP}]
-	>=dev-python/pip-21.3.1
+	>=dev-python/pip-21.3.1[${PYTHON_USEDEP}]
 	~dev-python/protobuf-python-4.25.1[${PYTHON_USEDEP}]
 	~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]
@@ -125,7 +125,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
 	~dev-python/regex-2023.12.25[${PYTHON_USEDEP}]
 	~dev-python/requests-2.31.0[${PYTHON_USEDEP}]
-	~net-analyzer/scapy-2.5.0
+	~net-analyzer/scapy-2.5.0[${PYTHON_USEDEP}]
 	~dev-python/sqlalchemy-2.0.25[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.9.0[${PYTHON_USEDEP}]
 	<dev-python/typing-extensions-5.0[${PYTHON_USEDEP}]
@@ -253,7 +253,7 @@ RDEPEND="${RDEPEND}
 	bt_home_hub_5? ( ~dev-python/bthomehub5-devicelist-0.1.1[${PYTHON_USEDEP}] )
 	bt_smarthub? ( ~dev-python/btsmarthub-devicelist-0.2.3[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.5[${PYTHON_USEDEP}] )
-	caldav? ( ~dev-python/caldav-1.3.8[${PYTHON_USEDEP}] )
+	caldav? ( ~dev-python/caldav-1.3.9[${PYTHON_USEDEP}] )
 	camera? ( ~dev-python/PyTurboJPEG-1.7.1[${PYTHON_USEDEP}] )
 	canary? ( ~dev-python/py-canary-0.5.3[${PYTHON_USEDEP}] )
 	cast? ( ~dev-python/pychromecast-13.1.0[${PYTHON_USEDEP}] )
@@ -298,7 +298,7 @@ RDEPEND="${RDEPEND}
 	devolo_home_control? ( ~dev-python/devolo-home-control-api-0.18.3[${PYTHON_USEDEP}] )
 	devolo_home_network? ( ~dev-python/devolo-plc-api-1.4.1[${PYTHON_USEDEP}] )
 	dexcom? ( ~dev-python/pydexcom-0.2.3[${PYTHON_USEDEP}] )
-	dhcp? ( ~net-analyzer/scapy-2.5.0 ~dev-python/aiodiscover-1.6.0[${PYTHON_USEDEP}] ~dev-python/cached-ipaddress-0.3.0[${PYTHON_USEDEP}] )
+	dhcp? ( ~net-analyzer/scapy-2.5.0[${PYTHON_USEDEP}] ~dev-python/aiodiscover-1.6.0[${PYTHON_USEDEP}] ~dev-python/cached-ipaddress-0.3.0[${PYTHON_USEDEP}] )
 	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] )
 	digitalloggers? ( ~dev-python/dlipower-0.7.165[${PYTHON_USEDEP}] )
 	digital_ocean? ( ~dev-python/python-digitalocean-1.13.2[${PYTHON_USEDEP}] )
@@ -357,7 +357,7 @@ RDEPEND="${RDEPEND}
 	emulated_kasa? ( ~dev-python/sense-energy-0.12.2[${PYTHON_USEDEP}] )
 	emulated_roku? ( ~dev-python/emulated-roku-0.2.1[${PYTHON_USEDEP}] )
 	energyzero? ( ~dev-python/energyzero-2.1.0[${PYTHON_USEDEP}] )
-	enigma2? ( ~dev-python/openwebifpy-4.2.1[${PYTHON_USEDEP}] )
+	enigma2? ( ~dev-python/openwebifpy-4.2.4[${PYTHON_USEDEP}] )
 	enocean? ( ~dev-python/enocean-0.50.1[${PYTHON_USEDEP}] )
 	enphase_envoy? ( ~dev-python/pyenphase-1.19.0[${PYTHON_USEDEP}] )
 	entur_public_transport? ( ~dev-python/enturclient-0.2.4[${PYTHON_USEDEP}] )
@@ -723,7 +723,7 @@ RDEPEND="${RDEPEND}
 	openweathermap? ( ~dev-python/pyowm-3.2.0[${PYTHON_USEDEP}] )
 	open_meteo? ( ~dev-python/open-meteo-0.3.1[${PYTHON_USEDEP}] )
 	opnsense? ( ~dev-python/pyopnsense-0.4.0[${PYTHON_USEDEP}] )
-	opower? ( ~dev-python/opower-0.2.0[${PYTHON_USEDEP}] )
+	opower? ( ~dev-python/opower-0.3.1[${PYTHON_USEDEP}] )
 	opple? ( ~dev-python/pyoppleio-legacy-1.0.8[${PYTHON_USEDEP}] )
 	oralb? ( ~dev-python/oralb-ble-0.17.6[${PYTHON_USEDEP}] )
 	orangepi_gpio? ( ~dev-python/OPi-GPIO-0.5.2[${PYTHON_USEDEP}] )
@@ -763,7 +763,7 @@ RDEPEND="${RDEPEND}
 	poolsense? ( ~dev-python/poolsense-0.0.8[${PYTHON_USEDEP}] )
 	powerwall? ( ~dev-python/tesla-powerwall-0.5.1[${PYTHON_USEDEP}] )
 	private_ble_device? ( ~dev-python/bluetooth-data-tools-1.19.0[${PYTHON_USEDEP}] )
-	profiler? ( ~dev-python/pyprof2calltree-1.4.5[${PYTHON_USEDEP}] ~dev-python/guppy3-3.1.4[${PYTHON_USEDEP}] ~dev-python/objgraph-3.5.0[${PYTHON_USEDEP}] )
+	profiler? ( ~dev-python/pyprof2calltree-1.4.5[${PYTHON_USEDEP}] ~dev-python/guppy3-3.1.4_p1[${PYTHON_USEDEP}] ~dev-python/objgraph-3.5.0[${PYTHON_USEDEP}] )
 	progettihwsw? ( ~dev-python/ProgettiHWSW-0.1.3[${PYTHON_USEDEP}] )
 	proliphix? ( ~dev-python/proliphix-0.4.1[${PYTHON_USEDEP}] )
 	prometheus? ( ~dev-python/prometheus-client-0.17.1[${PYTHON_USEDEP}] )
@@ -826,7 +826,7 @@ RDEPEND="${RDEPEND}
 	rocketchat? ( ~dev-python/rocketchat-API-0.6.1[${PYTHON_USEDEP}] )
 	roku? ( ~dev-python/rokuecp-0.19.1[${PYTHON_USEDEP}] )
 	romy? ( ~dev-python/romy-0.0.7[${PYTHON_USEDEP}] )
-	roomba? ( ~dev-python/roombapy-1.6.12[${PYTHON_USEDEP}] )
+	roomba? ( ~dev-python/roombapy-1.6.13[${PYTHON_USEDEP}] )
 	roon? ( ~dev-python/roonapi-0.1.6[${PYTHON_USEDEP}] )
 	route53? ( ~dev-python/boto3-1.33.13[${PYTHON_USEDEP}] )
 	rova? ( ~dev-python/rova-0.3.0[${PYTHON_USEDEP}] )
@@ -1007,7 +1007,7 @@ RDEPEND="${RDEPEND}
 	transport_nsw? ( ~dev-python/PyTransportNSW-0.1.1[${PYTHON_USEDEP}] )
 	travisci? ( ~dev-python/TravisPy-0.3.5[${PYTHON_USEDEP}] )
 	trend? ( ~dev-python/numpy-1.26.0[${PYTHON_USEDEP}] )
-	tts? ( ~media-libs/mutagen-1.47.0 )
+	tts? ( ~media-libs/mutagen-1.47.0[${PYTHON_USEDEP}] )
 	tuya? ( ~dev-python/tuya-device-sharing-sdk-0.1.9[${PYTHON_USEDEP}] )
 	twentemilieu? ( ~dev-python/twentemilieu-2.0.1[${PYTHON_USEDEP}] )
 	twilio? ( ~dev-python/twilio-6.32.0[${PYTHON_USEDEP}] )

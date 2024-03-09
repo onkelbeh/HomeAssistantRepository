@@ -140,7 +140,7 @@ annotated-types==0.6.0
 anova-wifi==0.10.0
 anthemav==1.4.1
 anyio==4.1.0
-anyio==4.2.0
+anyio==4.3.0
 apischema==0.18.1
 apns2==0.3.0
 appdirs==1.4.4
@@ -216,14 +216,14 @@ bluetooth-adapters==0.17.0
 bluetooth-auto-recovery==1.3.0
 bluetooth-data-tools==1.19.0
 bluetooth-sensor-state-data==1.6.2
-bluez==5.70
+bluez==5.72
 bme280spi==0.2.0
 bme680==1.0.5
 bond-async==0.2.1
 boschshcpy==0.2.75
 boto3==1.33.13
-boto3==1.34.34
-botocore==1.34.34
+boto3==1.34.44
+botocore==1.34.44
 bottle==0.12.25
 bottleneck==1.3.7
 broadlink==0.18.3
@@ -244,7 +244,7 @@ ca-certificates==20230311.3.96.1
 cached-ipaddress==0.3.0
 cachetools==5.3.2
 casttube==0.2.1
-cbor2==5.6.1
+cbor2==5.6.2
 cchardet==2.1.19
 certifi==3021.3.16
 cffi==1.16.0
@@ -291,7 +291,7 @@ crownstone-core==3.0.1
 crownstone-sse==2.0.4
 crownstone-uart==2.1.0
 cryptography==42.0.2
-cryptography==42.0.3
+cryptography==42.0.5
 csrmesh==0.10.0
 cssselect==1.2.0
 cups==2.4.7
@@ -302,7 +302,7 @@ datapoint==0.9.9
 dateparser==1.2.0
 DateTime==5.3
 dbus-fast==2.21.1
-dbus==1.15.6
+dbus==1.15.8
 debianutils==5.14
 decora-wifi==1.4
 decora==0.6
@@ -328,7 +328,7 @@ distro==1.9.0
 dlib==19.24.2
 dlipower==0.7.165
 dlms-cosem==21.3.2
-dnspython==2.5.0
+dnspython==2.6.1
 docopt==0.6.2
 docutils==0.20.1
 DoorBirdPy==2.1.0
@@ -350,7 +350,7 @@ ecdsa==0.18.0
 ecoaliface==0.4.0
 eebrightbox==0.0.4
 electrickiwi-api==0.8.5
-elementpath==4.1.5
+elementpath==4.3.0
 elgato==5.1.2
 eliqonline==1.2.2
 elkm1-lib==2.2.6
@@ -409,7 +409,6 @@ forecast-solar==3.0.0
 fortiosapi==1.0.5
 fqdn==1.5.1
 freebox-api==1.1.0
-freeimage==3.18.0
 freesms==0.2.0
 freetype==2.13.2
 frozenlist==1.4.1
@@ -446,10 +445,10 @@ gobject-introspection-common==1.78.1
 gobject-introspection==1.78.1
 goodwe==0.2.32
 google-ai-generativelanguage==0.4.0
-google-api-core==2.16.2
+google-api-core==2.17.1
 google-api-python-client==2.71.0
 google-auth-httplib2==0.2.0
-google-auth==2.27.0
+google-auth==2.28.1
 google-cloud-pubsub==2.13.11
 google-cloud-texttospeech==2.12.3
 google-generativeai==0.3.1
@@ -479,7 +478,7 @@ grpcio==1.59.0
 gspread==5.5.0
 gstreamer-player==1.1.2
 gTTS==2.2.4
-guppy3==3.1.4
+guppy3==3.1.4_p1
 h11==0.14.0
 h2==4.1.0
 ha-av==10.1.1
@@ -519,10 +518,12 @@ html5lib==1.1
 httmock==1.4.0
 http-ece==1.1.0
 httpcore==1.0.2
+httpcore==1.0.4
 httplib2==0.20.4
 httplib2==0.22.0
 httpsig==1.3.0
 httpx==0.26.0
+httpx==0.27.0
 huawei-lte-api==1.7.3
 humanfriendly==10.0
 huum==0.7.10
@@ -544,7 +545,6 @@ idna==3.6
 ifaddr==0.2.0
 iglo==1.2.7
 ihcsdk==2.8.5
-imageio==2.33.1
 imagesize==1.4.1
 imutils==0.5.4
 incomfort-client==0.5.0
@@ -568,7 +568,7 @@ isoduration==20.11.0
 itsdangerous==2.1.2
 janus==1.0.0
 jaraco-abode==3.3.0
-jaraco-classes==3.3.0
+jaraco-classes==3.3.1
 jaraco-collections==5.0.0
 jaraco-context==4.3.0
 jaraco-email==3.1.0
@@ -585,7 +585,7 @@ jmespath==1.0.1
 josepy==1.14.0
 js2py==0.74
 jsonpath-ng==1.6.1
-jsonpickle==3.0.2
+jsonpickle==3.0.3
 jsonpointer==2.4
 jsonrpc-async==2.1.0
 jsonrpc-base==2.1.0
@@ -635,7 +635,7 @@ libpcap==1.10.4
 libpcre2==10.42
 libpcre==8.45
 libpng==1.6.40
-libpulse==16.1
+libpulse==17.0
 libpurecool==0.6.4
 libpyfoscam==1.0
 libpyvivotek==0.4.0
@@ -664,7 +664,6 @@ linode-api==4.1.9_beta1
 lmcloud==0.4.35
 locationsharinglib==5.0.1
 logi-circle==0.2.3
-loguru==0.7.0
 lomond==0.3.3
 london-tube-status==0.5
 loqedAPI==2.1.8
@@ -679,7 +678,6 @@ magicseaweed==1.0.3
 markdown-it-py==3.0.0
 markupsafe==2.1.5
 marshmallow-dataclass==8.5.9
-marshmallow==3.20.1
 mashumaro==3.11
 Mastodon-py==1.5.1
 matrix-nio==0.24.0
@@ -714,7 +712,7 @@ ms-cv==0.1.1
 msgpack==1.0.7
 mt_940==4.26.0
 mullvad-api==1.0.0
-multidict==6.0.4
+multidict==6.0.5
 munch==4.0.0
 mutagen==1.47.0
 mutesync==0.0.1
@@ -722,7 +720,7 @@ mychevy==2.1.1
 mycroftapi==2.0
 mypermobil==0.1.8
 mypy_extensions==1.0.0
-mysqlclient==2.2.1
+mysqlclient==2.2.4
 myuplink==0.0.9
 nad-receiver==0.3.0
 natsort==8.4.0
@@ -730,7 +728,7 @@ nclib==1.0.1
 ncurses==6.4_p20230401
 ndms2-client==0.1.2
 nessclient==1.0.0
-netaddr==0.10.1
+netaddr==1.2.1
 netdata==1.1.0
 netdisco==3.0.0
 netifaces==0.11.0
@@ -748,7 +746,6 @@ niluclient==0.1.2
 nmap==7.94
 noaa-coops==0.1.9
 noiseprotocol==0.3.1
-nose==1.3.7_p20221026
 notifications-android-tv==0.1.5
 nsapi==3.0.5
 nspektr==0.5.0
@@ -757,7 +754,7 @@ nuheat==1.0.1
 numato-gpio==0.10.0
 numexpr==2.9.0
 numpy==1.26.0
-numpy==1.26.3
+numpy==1.26.4
 oasatelematics==0.3
 oauth2client==4.1.3
 oauthlib==3.2.2
@@ -776,17 +773,17 @@ openerz-api==0.3.0
 openevsewifi==1.1.2
 openhomedevice==2.2
 opensensemap-api==0.2.0
-openssl==3.0.12
-openwebifpy==4.2.1
+openssl==3.0.13
+openwebifpy==4.2.4
 openwrt-luci-rpc==1.1.16
 openwrt-ubus-rpc==0.0.2
 OPi-GPIO==0.5.2
-opower==0.2.0
+opower==0.3.1
 opus==1.4
 opuslib==3.0.1
 oralb-ble==0.17.6
 ordered-set==4.1.0
-orjson==3.9.14
+orjson==3.9.15
 oru==0.1.11
 orvibo==1.1.2
 ourgroceries==1.5.4
@@ -824,7 +821,7 @@ Pint==0.22
 pip==24.0
 pizzapi==0.0.3
 pkgconf==2.1.1
-pkgconfig==2
+pkgconfig==3
 platformdirs==4.2.0
 platformio==6.1.11
 plugwise==0.36.3
@@ -1075,7 +1072,7 @@ PyRIC==0.1.6.3
 pyrisco==0.5.8
 pyrituals==0.0.6
 PyRMVtransport==0.3.3
-pyroute2==0.7.10
+pyroute2==0.7.12
 pyroute2==0.7.5
 pyrympro==0.0.7
 pysabnzbd==1.1.1
@@ -1151,7 +1148,7 @@ python-metar==1.4.0
 python-miio==0.5.12
 python-MotionMount==0.3.1
 python-mpd2==3.1.1
-python-multipart==0.0.7
+python-multipart==0.0.9
 python-mystrom==2.2.0
 python-opendata-transport==0.4.0
 python-opensky==1.0.0
@@ -1164,6 +1161,7 @@ python-ripple-api==0.0.3
 python-sense-hat==2.2.0
 python-singleton==0.1.2
 python-slugify==8.0.1
+python-slugify==8.0.4
 python-smarttub==0.0.36
 python-socketio==4.6.0
 python-socketio==5.3.0
@@ -1255,10 +1253,10 @@ rjpl==0.3.6
 rocketchat-API==0.6.1
 rokuecp==0.19.1
 romy==0.0.7
-roombapy==1.6.12
+roombapy==1.6.13
 roonapi==0.1.6
 rova==0.3.0
-rpds-py==0.17.1
+rpds-py==0.18.0
 rpi-bad-power==0.1.0
 RPi-GPIO==0.7.1_alpha4
 rpi-rf==0.9.7
@@ -1268,7 +1266,7 @@ RtmAPI==0.7.2
 rtsp-to-webrtc==0.5.1
 ruamel-yaml-clib==0.2.8
 ruamel-yaml==0.17.40
-ruamel-yaml==0.18.5
+ruamel-yaml==0.18.6
 russound-rio==1.0.0
 russound==0.1.9
 ruuvitag-ble==0.1.2
@@ -1284,7 +1282,6 @@ schiene==0.23
 screenlogicpy==0.10.0
 scsgate==0.1.0
 secretstorage==3.3.3
-segno==1.6.0
 semantic-version==2.10.0
 sendgrid==6.8.2
 sense-energy==0.12.2
@@ -1309,7 +1306,7 @@ sisyphus-control==3.1.3
 six==1.16.0
 slackclient==2.5.0
 sleekxmppfs==1.4.1
-slixmpp==1.8.4
+slixmpp==1.8.5
 smart-meter-texas==0.4.7
 SmartHab==0.21
 smbus-cffi==0.5.1
@@ -1341,11 +1338,12 @@ sphinxcontrib-serializinghtml==1.1.10
 spiderpy==1.6.1
 spidev==3.5
 sqlalchemy==2.0.25
+sqlalchemy==2.0.27
 srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
 starkbank-ecdsa==1.0.0
-starlette==0.35.1
+starlette==0.37.1
 starline==0.1.5
 starlingbank==3.2
 starlink-grpc-core==1.1.3
@@ -1382,7 +1380,7 @@ tellduslive==0.10.11
 tellsticknet==0.1.2
 temescal==0.5
 temperusb==1.6.1
-tempora==5.5.0
+tempora==5.5.1
 tenacity==8.2.3
 tesla-fleet-api==0.2.3
 tesla-powerwall==0.5.1
@@ -1396,7 +1394,7 @@ thermoworks-smoke==0.1.8
 thingspeak==1.0.0
 tikteck==0.4
 tilt-ble==0.2.3
-timezone-data==2023d
+timezone-data==2024a
 titlecase==2.3
 tmb==0.0.4
 todoist-api-python==2.1.2
@@ -1406,7 +1404,7 @@ toonapi==0.3.0
 total-connect-client==2023.2
 tp-connected==0.0.4
 tplink-omada-client==1.3.2
-tqdm==4.66.1
+tqdm==4.66.2
 transitions==0.9.0
 transmission-rpc==7.0.3
 TravisPy==0.3.5
@@ -1414,7 +1412,7 @@ ttls==1.5.1
 tuya-device-sharing-sdk==0.1.9
 twentemilieu==2.0.1
 twilio==6.32.0
-twisted==23.10.0
+twisted==24.3.0
 twitchAPI==4.0.0
 TwitterAPI==2.7.12
 typer==0.7.0
@@ -1424,7 +1422,7 @@ tzdata==9999
 tzlocal==5.2
 ua-parser==0.10.0
 uasiren==0.0.1
-uc-micro-py==1.0.2
+uc-micro-py==1.0.3
 udev==217
 ujson==5.9.0
 ulid-transform==0.9.0
@@ -1446,13 +1444,13 @@ uri-template==1.3.0
 uritemplate==4.1.1
 url-normalize==1.4.3
 urllib3==2.1.0
-urwid==2.4.6
+urwid==2.5.3
 usb-devices==0.4.5
 uscisstatus==0.1.1
 user-agents==2.0
-util-linux==2.38.1
+util-linux==2.39.3
 uvcclient==0.11.0
-uvicorn==0.27.0
+uvicorn==0.27.1
 validators==0.22.0
 vallox-websocket-api==4.0.3
 vehicle==2.2.1
@@ -1502,7 +1500,7 @@ xerces-c==3.2.4
 xiaomi-ble==0.23.1
 xknx==2.12.0
 xknxproject==3.6.0
-xmlschema==3.0.1
+xmlschema==3.0.2
 xmltodict==0.13.0
 xs1-api-client==3.0.0
 yagrc==1.1.2
@@ -1531,9 +1529,8 @@ zigpy-zigate==0.12.0
 zigpy-znp==0.12.1
 zigpy==0.62.3
 zlib-ng==0.2.0
-zlib-ng==2.1.5
 zlib==1.3
 zm-py==0.5.4
-zope-interface==6.1
+zope-interface==6.2
 zwave-js-server-python==0.55.3
 zwave-me-ws==0.4.3
