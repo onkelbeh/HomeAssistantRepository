@@ -1,10 +1,10 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=hatchling
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( pypy3 python3_{10..12} )
 
 inherit distutils-r1 optfeature
 
@@ -21,13 +21,13 @@ SRC_URI="
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~mips ppc ppc64 ~riscv ~s390 sparc x86"
 IUSE="cli"
 
 RDEPEND="
+	dev-python/anyio[${PYTHON_USEDEP}]
 	dev-python/certifi[${PYTHON_USEDEP}]
-	<dev-python/httpcore-0.18[${PYTHON_USEDEP}]
-	>=dev-python/httpcore-0.15[${PYTHON_USEDEP}]
+	=dev-python/httpcore-1*[${PYTHON_USEDEP}]
 	dev-python/idna[${PYTHON_USEDEP}]
 	dev-python/sniffio[${PYTHON_USEDEP}]
 	cli? (
@@ -39,9 +39,8 @@ RDEPEND="
 BDEPEND="
 	dev-python/hatch-fancy-pypi-readme[${PYTHON_USEDEP}]
 	test? (
-		app-arch/brotli[python,${PYTHON_USEDEP}]
-		dev-python/anyio[${PYTHON_USEDEP}]
 		dev-python/brotlicffi[${PYTHON_USEDEP}]
+		dev-python/chardet[${PYTHON_USEDEP}]
 		dev-python/cryptography[${PYTHON_USEDEP}]
 		dev-python/h2[${PYTHON_USEDEP}]
 		dev-python/socksio[${PYTHON_USEDEP}]
@@ -59,6 +58,7 @@ src_prepare() {
 		sed -i -e '/^httpx =/d' pyproject.toml || die
 	fi
 	sed -i -e '/rich/s:,<14::' pyproject.toml || die
+
 	distutils-r1_src_prepare
 }
 
