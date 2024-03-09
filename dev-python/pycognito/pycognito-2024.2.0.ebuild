@@ -20,15 +20,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/boto3-1.10.49[${PYTHON_USEDEP}]
 		 >=dev-python/envs-1.3[${PYTHON_USEDEP}]
-		 >=dev-python/python-jose-3.2.0[${PYTHON_USEDEP}]
+		 >=dev-python/pyjwt-2.8.0[${PYTHON_USEDEP}]
 		 >=dev-python/requests-2.22.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
