@@ -4,16 +4,19 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( pypy3 python3_{10..12} )
 
 inherit bash-completion-r1 distutils-r1 pypi
 
 DESCRIPTION="Add a progress meter to your loops in a second"
-HOMEPAGE="https://github.com/tqdm/tqdm/ https://pypi.org/project/tqdm/"
+HOMEPAGE="
+	https://github.com/tqdm/tqdm/
+	https://pypi.org/project/tqdm/
+"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ppc ppc64 ~riscv ~s390 sparc x86 ~arm64-macos ~x64-macos"
 IUSE="examples"
 
 BDEPEND="
@@ -36,7 +39,7 @@ python_install_all() {
 	newbashcomp tqdm/completion.sh tqdm
 	if use examples; then
 		dodoc -r examples
-		docompress -x "/usr/share/doc/${PF}/examples"
+		docompress -x /usr/share/doc/${PF}/examples
 	fi
 	distutils-r1_python_install_all
 }
