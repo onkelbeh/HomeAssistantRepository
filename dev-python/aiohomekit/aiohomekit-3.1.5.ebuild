@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..12} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
@@ -23,7 +23,7 @@ RDEPEND=">=dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
 	>=dev-python/commentjson-0.9.0[${PYTHON_USEDEP}]
 	>=dev-python/aiocoap-0.4.5[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
-	>=dev-python/chacha20poly1305-reuseable-0.0.4[${PYTHON_USEDEP}]
+	>=dev-python/chacha20poly1305-reuseable-0.12.1[${PYTHON_USEDEP}]
 	>=dev-python/bleak-retry-connector-2.9.0[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.7.8[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
@@ -34,7 +34,6 @@ BDEPEND="
 	test? (
 		dev-python/aiohttp[${PYTHON_USEDEP}]
 		dev-python/asynctest[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 	)"
