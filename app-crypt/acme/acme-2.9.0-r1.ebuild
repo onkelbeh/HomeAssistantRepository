@@ -8,6 +8,9 @@ DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
+DESCRIPTION="ACME protocol implementation in Python"
+HOMEPAGE="https://github.com/certbot/certbot https://pypi.org/project/acme/"
+
 PARENT_PN="certbot"
 PARENT_P="${PARENT_PN}-${PV}"
 
@@ -24,12 +27,6 @@ else
 	"
 KEYWORDS="amd64 arm arm64 x86"
 fi
-
-DESCRIPTION="An implementation of the ACME protocol"
-HOMEPAGE="
-	https://github.com/certbot/certbot
-	https://letsencrypt.org/
-"
 
 LICENSE="Apache-2.0"
 SLOT="0"
