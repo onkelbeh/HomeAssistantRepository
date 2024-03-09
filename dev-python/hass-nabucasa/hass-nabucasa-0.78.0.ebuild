@@ -19,17 +19,19 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="~dev-python/pycognito-2023.5.0[${PYTHON_USEDEP}]
-	~dev-python/snitun-0.36.2[${PYTHON_USEDEP}]
-	>=app-crypt/acme-2.8.0[${PYTHON_USEDEP}]
-	>=dev-python/ciso8601-2.3.0[${PYTHON_USEDEP}]
-	>=dev-python/cryptography-2.8[${PYTHON_USEDEP}]
-	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
+RDEPEND="
+	>=app-crypt/acme-2.9.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
-	~dev-python/atomicwrites-homeassistant-1.4.1[${PYTHON_USEDEP}]"
+	~dev-python/atomicwrites-homeassistant-1.4.1[${PYTHON_USEDEP}]
+	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
+	>=dev-python/ciso8601-2.3.0[${PYTHON_USEDEP}]
+	>=dev-python/cryptography-42.0.0[${PYTHON_USEDEP}]
+	~dev-python/pycognito-2024.2.0[${PYTHON_USEDEP}]
+	~dev-python/pyjwt-2.8.0[${PYTHON_USEDEP}]
+	~dev-python/snitun-0.36.2[${PYTHON_USEDEP}]"
+
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 	)"
