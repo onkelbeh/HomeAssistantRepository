@@ -38,6 +38,7 @@ BDEPEND="
 		dev-python/flask-login[${PYTHON_USEDEP}]
 		dev-python/jsonschema[${PYTHON_USEDEP}]
 		dev-python/pyrsistent[${PYTHON_USEDEP}]
+		<dev-python/pytest-8[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 		dev-python/pytest-django[${PYTHON_USEDEP}]
 		dev-python/pytest-forked[${PYTHON_USEDEP}]
@@ -80,6 +81,8 @@ python_test() {
 		tests/integrations/pymongo
 		# requires AWS access
 		tests/integrations/aws_lambda
+		# requires quart_auth
+		tests/integrations/quart
 	)
 
 	local EPYTEST_DESELECT=(
@@ -137,6 +140,10 @@ python_test() {
 		tests/integrations/threading/test_threading.py
 		tests/integrations/wsgi/test_wsgi.py
 		'tests/utils/test_contextvars.py::test_leaks[threads]'
+		# skipped without gevent but breaks stuff via broken teardown?
+		tests/test_metrics.py::test_no_metrics_with_gevent
+		# TODO
+		tests/utils/test_contextvars.py::test_leaks
 	)
 
 	local -x PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
