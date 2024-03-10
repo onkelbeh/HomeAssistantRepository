@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..12} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 DESCRIPTION="A package to control Roborock vacuums."
@@ -23,14 +23,6 @@ RDEPEND=">=dev-python/click-8.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.18.0[${PYTHON_USEDEP}]
 	>=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	>=dev-python/dacite-1.8.0[${PYTHON_USEDEP}]
-	>=dev-python/construct-2.10.56[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	>=dev-python/construct-2.10.57[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
