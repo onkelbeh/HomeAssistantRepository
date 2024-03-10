@@ -4,7 +4,6 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{11..12} )
 DISTUTILS_USE_PEP517=poetry
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Discover Unifi Devices"
@@ -22,13 +21,8 @@ RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
 	>=dev-python/pyroute2-0.6.5[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/aioresponses[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
