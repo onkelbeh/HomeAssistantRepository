@@ -44,6 +44,7 @@
 |apns|Use Apple Push Notification service (APNS) to deliver notifications|N|N|Y||
 |apple_tv|Library for controlling an Apple TV|N|Y|Y|0.49|
 |apprise|The Apprise service is an all-in-one solution to open up Home Assistant|N|Y|Y|0.101|
+|aprilaire|The Aprilaire integration allows you to control an Aprilaire thermostat|N|N|Y|2024.3.0|
 |aprs|Tracker integration connects to the APRS-IS|N|N|Y|0.95|
 |aqualogic|Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller|N|N|Y|0.80|
 |aquostv|The aquostv platform allows you to control a Sharp Aquos TV|N|Y|Y|0.35|
@@ -352,6 +353,7 @@
 |hue|talk to Philips Hue|N|Y|Y||
 |huisbaasje|Huisbaasje smart energy meters|N|N|Y|2021.2|
 |hunterdouglas_powerview|integrate your Hunter Douglas PowerView devices|N|N|Y|0.15|
+|husqvarna_automower|integration provides connectivity with Husqvarna Automowers lawn mowers|N|N|Y|2024.3.0|
 |huum|Integrates Huum saunas into Home Assistant|N|N|Y|2024.2.1|
 |hvv_departures|departures of busses, trains and ferries in Hamburg|N|N|Y|0.112|
 |hydrawise|communicate with Hunter Wi-Fi irrigation controllers|N|Y|Y|0.71|
@@ -481,6 +483,7 @@
 |met_eireann|Met Éireann (The Irish Meteorological Service) Public Weather Forecast API|N|N|Y|2021.5|
 |mfi|sensor platform to allow you to monitor mFi mPort interface and sensors|N|Y|Y|0.13|
 |mhz19|small non-dispersive infrared sensor that can measure CO2 level|N|N|Y||
+|microbees|allows you to control your microBees devices such as plugs and wall switches|N|N|Y|2024.3.0|
 |microsoft|text-to-speech platform uses the TTS engine of the Microsoft Speech Service|N|N|Y|0.57|
 |mikrotik|add support for MikroTik RouterOS API|Y|Y|Y|0.44|
 |mill|A python3 library to communicate with Mill|N|N|Y|0.81|
@@ -921,7 +924,9 @@
 |watttime|Cloud based Climate Trace Service|N|N|Y|2021.10.0b2|
 |waze_travel_time|waze_travel_time sensor provides travel time from the Waze|Y|Y|Y|0.67|
 |weatherflow|reads weather data from all WeatherFlow Tempest compatible weather station|N|N|Y|2023.10.1|
+|weatherflow_cloud|provides access to cloud provided Weather Forecast of a user’s Tempest Weather S|N|N|Y|2024.3.0|
 |weatherkit|obtains current weather and forecasts (hourly and daily) from Apple Weather|N|N|Y|2023.10.1|
+|webmin|provides sensors for monitoring the CPU and memory usage of your server|N|N|Y|2024.3.0|
 |webostv|allows you to control a LG webOS Smart TV|N|Y|Y|0.18|
 |wemo|discover and control WeMo devices|Y|Y|Y||
 |whirlpool|integrates Whirlpool 6th Sense Live appliances|N|N|Y|2021.10.0b2|
