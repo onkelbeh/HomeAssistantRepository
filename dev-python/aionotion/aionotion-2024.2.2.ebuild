@@ -17,16 +17,19 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-1.10.7[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.9.0[${PYTHON_USEDEP}]
+	>=dev-python/certifi-2023.07.22[${PYTHON_USEDEP}]
+	>=dev-python/ciso8601-2.3.0[${PYTHON_USEDEP}]
+	>=dev-python/frozenlist-1.4.0[${PYTHON_USEDEP}]
+	>=dev-python/mashumaro-3.12[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.9.2[${PYTHON_USEDEP}]
+
+"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/aresponses[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
