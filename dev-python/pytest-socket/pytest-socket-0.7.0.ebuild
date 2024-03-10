@@ -18,11 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/pytest-3.6.3[${PYTHON_USEDEP}]"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND=">=dev-python/pytest-6.2.5[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
 
