@@ -25,7 +25,7 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
 	dev-python/dacite[${PYTHON_USEDEP}]
 	dev-python/orjson[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-chip-clusters-2023.12.0[${PYTHON_USEDEP}]"
+	~dev-python/home-assistant-chip-clusters-2024.2.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
