@@ -59,6 +59,7 @@
     <flag name="apns">Use Apple Push Notification service (APNS) to deliver notifications</flag>
     <flag name="apple_tv">Library for controlling an Apple TV</flag>
     <flag name="apprise">The Apprise service is an all-in-one solution to open up Home Assistant</flag>
+    <flag name="aprilaire">The Aprilaire integration allows you to control an Aprilaire thermostat</flag>
     <flag name="aprs">Tracker integration connects to the APRS-IS</flag>
     <flag name="aqualogic">Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller</flag>
     <flag name="aquostv">The aquostv platform allows you to control a Sharp Aquos TV</flag>
@@ -369,6 +370,7 @@
     <flag name="hue">talk to Philips Hue</flag>
     <flag name="huisbaasje">Huisbaasje smart energy meters</flag>
     <flag name="hunterdouglas_powerview">integrate your Hunter Douglas PowerView devices</flag>
+    <flag name="husqvarna_automower">integration provides connectivity with Husqvarna Automowers lawn mowers</flag>
     <flag name="huum">Integrates Huum saunas into Home Assistant</flag>
     <flag name="hvv_departures">departures of busses, trains and ferries in Hamburg</flag>
     <flag name="hydrawise">communicate with Hunter Wi-Fi irrigation controllers</flag>
@@ -498,6 +500,7 @@
     <flag name="met_eireann">Met Éireann (The Irish Meteorological Service) Public Weather Forecast API</flag>
     <flag name="mfi">sensor platform to allow you to monitor mFi mPort interface and sensors</flag>
     <flag name="mhz19">small non-dispersive infrared sensor that can measure CO2 level</flag>
+    <flag name="microbees">allows you to control your microBees devices such as plugs and wall switches</flag>
     <flag name="microsoft">text-to-speech platform uses the TTS engine of the Microsoft Speech Service</flag>
     <flag name="mikrotik">add support for MikroTik RouterOS API</flag>
     <flag name="mill">A python3 library to communicate with Mill</flag>
@@ -938,7 +941,9 @@
     <flag name="watttime">Cloud based Climate Trace Service</flag>
     <flag name="waze_travel_time">waze_travel_time sensor provides travel time from the Waze</flag>
     <flag name="weatherflow">reads weather data from all WeatherFlow Tempest compatible weather station</flag>
+    <flag name="weatherflow_cloud">provides access to cloud provided Weather Forecast of a user’s Tempest Weather S</flag>
     <flag name="weatherkit">obtains current weather and forecasts (hourly and daily) from Apple Weather</flag>
+    <flag name="webmin">provides sensors for monitoring the CPU and memory usage of your server</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="whirlpool">integrates Whirlpool 6th Sense Live appliances</flag>
