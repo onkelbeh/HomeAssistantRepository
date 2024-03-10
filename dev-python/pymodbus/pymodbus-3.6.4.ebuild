@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/aiohttp-3.8.5[${PYTHON_USEDEP}]
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/typer-0.7.0[${PYTHON_USEDEP}]
 	>=dev-python/prompt-toolkit-3.0.36[${PYTHON_USEDEP}]
 	>=dev-python/pygments-2.15.0[${PYTHON_USEDEP}]
@@ -37,7 +37,11 @@ BDEPEND="
 	)"
 
 src_prepare() {
-	sed "/prompt-toolkit==/c\prompt-toolkit" -i requirements.txt || die
+	sed "s/aiohttp>=3.9.0b0/aiohttp/g" -i pyproject.toml || die
+
+	# remove dynamic-versioning
+	sed 's/dynamic = \["version"\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
+
 	eapply_user
 }
 
