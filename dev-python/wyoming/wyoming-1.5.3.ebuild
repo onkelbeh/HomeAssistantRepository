@@ -3,28 +3,21 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
-DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_{11..12} )
+DISTUTILS_USE_PEP517=standalone
 inherit distutils-r1 pypi
 
 DESCRIPTION="Protocol for Rhasspy Voice Assistant"
 HOMEPAGE="http://github.com/rhasspy/rhasspy3 https://pypi.org/project/wyoming/"
+SRC_URI="$(pypi_wheel_url)"
+S=${WORKDIR}
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
-RESTRICT="!test? ( test )"
 
 #DOCS="README.md"
 
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
+python_compile() {
+	distutils_wheel_install "${BUILD_DIR}/install" "${DISTDIR}/${P}-py3-none-any.whl"
 }
-
-distutils_enable_tests pytest
