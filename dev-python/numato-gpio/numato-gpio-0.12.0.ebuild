@@ -4,8 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..12} )
-DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="Python API for Numato GPIO Expanders"
@@ -22,11 +21,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/pyserial-3.1.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-xdist[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
