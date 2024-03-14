@@ -21,13 +21,5 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/requests-2.21.0[${PYTHON_USEDEP}]
 	>=dev-python/packaging-19.1[${PYTHON_USEDEP}]
 	>dev-python/click-6.0.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
