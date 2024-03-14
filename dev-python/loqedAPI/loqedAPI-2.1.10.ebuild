@@ -10,7 +10,6 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="Python package to use the Loqed Smart Door Lock APIs in a local network. To be used by Home Assistant."
 HOMEPAGE="https://github.com/cpolhout/loqedAPI https://pypi.org/project/loqedAPI/"
-#SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
@@ -22,13 +21,5 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
