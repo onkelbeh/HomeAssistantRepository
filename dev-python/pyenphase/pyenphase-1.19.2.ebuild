@@ -27,7 +27,6 @@ RDEPEND=">=dev-python/httpx-0.24.0[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.9.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/respx[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
