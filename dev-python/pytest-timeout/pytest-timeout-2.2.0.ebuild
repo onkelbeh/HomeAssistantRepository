@@ -15,6 +15,7 @@ HOMEPAGE="https://pypi.org/project/pytest-timeout/"
 SLOT="0"
 LICENSE="MIT"
 KEYWORDS="amd64 arm arm64 x86"
+DOCS="README.rst"
 
 # do not rdepend on pytest, it won't be used without it anyway
 # pytest-cov used to test compatibility
