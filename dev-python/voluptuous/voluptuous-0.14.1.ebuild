@@ -9,7 +9,10 @@ PYTHON_COMPAT=( python3_{11..12} )
 inherit distutils-r1
 
 DESCRIPTION="A Python data validation library"
-HOMEPAGE="https://github.com/alecthomas/voluptuous/"
+HOMEPAGE="
+	https://github.com/alecthomas/voluptuous/
+	https://pypi.org/project/voluptuous/
+"
 SRC_URI="
 	https://github.com/alecthomas/voluptuous/archive/${PV}.tar.gz
 		-> ${P}.gh.tar.gz
@@ -18,9 +21,5 @@ SRC_URI="
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-
-PATCHES=(
-	"${FILESDIR}"/${PN}-0.11.5-fix-doctest.patch
-)
 
 distutils_enable_tests pytest
