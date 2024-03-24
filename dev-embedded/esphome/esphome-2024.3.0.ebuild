@@ -39,7 +39,7 @@ RDEPEND="
 		~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
 		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 		~dev-python/colorama-0.4.6[${PYTHON_USEDEP}]
-		~dev-python/icmplib-3.0.4[${PYTHON_USEDEP}]
+		dev-python/icmplib[${PYTHON_USEDEP}]
 		server? ( ~dev-python/tornado-6.4[${PYTHON_USEDEP}] )
 		~dev-python/tzlocal-5.2[${PYTHON_USEDEP}]
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
@@ -84,6 +84,7 @@ src_prepare() {
 	sed "/zeroconf==/c\zeroconf" -i requirements.txt || die
 	sed "/voluptuous==/c\voluptuous" -i requirements.txt || die
 	sed "/cryptography==/c\cryptography" -i requirements.txt || die
+	sed "/icmplib==/c\icmplib" -i requirements.txt || die
 	eapply_user
 }
 
