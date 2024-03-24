@@ -4,7 +4,7 @@
 EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 DISTUTILS_SINGLE_IMPL=1
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..12} )
 
 inherit readme.gentoo-r1 distutils-r1
 
@@ -31,10 +31,11 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-		~dev-python/voluptuous-0.14.1[${PYTHON_USEDEP}]
+		~dev-python/cryptography-42.0.2[${PYTHON_USEDEP}]
+		~dev-python/voluptuous-0.14.2[${PYTHON_USEDEP}]
 		~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
 		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
-		dev-python/colorama[${PYTHON_USEDEP}]
+		~dev-python/colorama-0.4.6[${PYTHON_USEDEP}]
 		~dev-python/icmplib-3.0.4[${PYTHON_USEDEP}]
 		server? ( ~dev-python/tornado-6.4[${PYTHON_USEDEP}] )
 		~dev-python/tzlocal-5.2[${PYTHON_USEDEP}]
@@ -43,10 +44,11 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 		~dev-embedded/platformio-6.1.13[${PYTHON_SINGLE_USEDEP}]
 		~dev-embedded/esptool-4.7.0[${PYTHON_SINGLE_USEDEP}]
 		~dev-python/click-8.1.7[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20231107.0[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20240319.0[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
 		~dev-python/python-magic-0.4.27[${PYTHON_USEDEP}]
+		~dev-python/ruamel-yaml-0.18.6[${PYTHON_USEDEP}]
 		~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
 		>=dev-python/pyparsing-3.0[${PYTHON_USEDEP}]
 		>=dev-python/argcomplete-2.0.0[${PYTHON_USEDEP}]
