@@ -6,6 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
+
 DESCRIPTION="Unofficial API for Whirlpool's 6th Sense appliances"
 HOMEPAGE="https://github.com/abmantis/whirlpool-sixth-sense/ https://pypi.org/project/whirlpool-sixth-sense/"
 
@@ -20,13 +21,5 @@ DOCS="README.md"
 RDEPEND=">=dev-python/aioconsole-0.3.1[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.7.2[${PYTHON_USEDEP}]
 	>=dev-python/websockets-8.1[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
