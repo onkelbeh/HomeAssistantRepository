@@ -16,22 +16,13 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
-	>=dev-python/incremental-22.10.0[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-1.9.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+RDEPEND=">=dev-python/aiohttp-3.8.5[${PYTHON_USEDEP}]
+	>=dev-python/incremental-22.10.0[${PYTHON_USEDEP}]"
 
 src_prepare() {
-	echo -e "aiohttp>=3.8.1\nincremental>=22.10.0\npydantic>=1.9.0" > requirements.txt
+	echo -e "aiohttp\nincremental>=22.10.0\n" > requirements.txt
 	echo -e "incremental>=22.10.0" > requirements_setup.txt
 	eapply_user
-}
-
-python_test() {
-	py.test -v -v || die
 }
 
 distutils_enable_tests pytest
