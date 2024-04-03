@@ -19,7 +19,10 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="dev-python/certifi[${PYTHON_USEDEP}]
+RDEPEND="dev-python/httpx[${PYTHON_USEDEP}]
+	dev-python/aiolimiter[${PYTHON_USEDEP}]
+	dev-python/cachetools[${PYTHON_USEDEP}]
+	dev-python/certifi[${PYTHON_USEDEP}]
 	dev-python/cryptography[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2018.6[${PYTHON_USEDEP}]
 	>=dev-python/decorator-4.4.0[${PYTHON_USEDEP}]"

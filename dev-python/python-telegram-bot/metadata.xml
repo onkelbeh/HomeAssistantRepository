@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">python-telegram-bot</remote-id>
+    <remote-id type="github">python-telegram-bot/python-telegram-bot</remote-id>
     <maintainer status="unknown">
       <email>devs@python-telegram-bot.org</email>
       <name>Leandro Toledo</name>
