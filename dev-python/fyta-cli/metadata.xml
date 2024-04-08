@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">fyta-cli</remote-id>
+    <remote-id type="github">dontinelli/fyta_cli</remote-id>
+    <maintainer status="unknown">
+      <email>73341522+dontinelli@users.noreply.github.com</email>
+      <name>dontinelli</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
