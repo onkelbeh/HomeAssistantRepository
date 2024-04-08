@@ -31,11 +31,3 @@ BDEPEND="
 S="${WORKDIR}/${MY_P}"
 
 distutils_enable_tests pytest
-
-src_configure() {
-	cat > pyproject.toml <<-EOF || die
-		[build-system]
-		requires = ["setuptools"]
-		build-backend = "setuptools.build_meta"
-EOF
-}
