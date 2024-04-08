@@ -22,16 +22,8 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/requests-2.4.2[${PYTHON_USEDEP}]
 		 dev-python/python-dateutil[${PYTHON_USEDEP}]
 		 dev-python/six[${PYTHON_USEDEP}]
-		 dev-python/pytz[${PYTHON_USEDEP}]
 		 dev-python/python-magic[${PYTHON_USEDEP}]
-		 >=dev-python/decorator-4.0.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+		 >=dev-python/decorator-4.0.0[${PYTHON_USEDEP}]
+		 dev-python/blurhash[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
