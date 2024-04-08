@@ -293,6 +293,7 @@
     <flag name="frontier_silicon">Support for Internet Radios based on the Frontier Silicon chipset</flag>
     <flag name="fully_kiosk">Fully Kiosk Browser control in Home Assistant</flag>
     <flag name="futurenow">Allows you to use P5 FutureNow relay/dimmer units as lights</flag>
+    <flag name="fyta">uses the open API of FYTA to obtain the data from your plant sensors</flag>
     <flag name="garages_amsterdam">measure the occupancy of Amsterdam parking garages in the Netherlands</flag>
     <flag name="gardena_bluetooth">integrate their Gardena Bluetooth devices into Home Assistant</flag>
     <flag name="garmin_connect">The Garmin Connect sensor allows you to expose data from Garmin Connect</flag>
@@ -516,6 +517,7 @@
     <flag name="monoprice">Python API for talking to Monoprice 6-zone amplifier</flag>
     <flag name="mopeka">Integrates Mopeka devices into Home Assistant</flag>
     <flag name="mosquitto">Set a runtime dependency for Mosquitto MQTT broker</flag>
+    <flag name="motionblinds_ble">adds support for Motionblinds Bluetooth motors</flag>
     <flag name="motioneye">integrate your motionEye server into Home Assistant</flag>
     <flag name="motionmount">control the position of your TVM 7675 Pro Signature MotionMount</flag>
     <flag name="motion_blinds">control Motion Blinds from Coulisse B.V.</flag>
@@ -580,6 +582,7 @@
     <flag name="octoprint">The main integration to integrate OctoPrint sensors</flag>
     <flag name="oem">ESP8266 based “WiFi MQTT Relay / Thermostat” sold by OpenEnergyMonitor</flag>
     <flag name="ohmconnect"> show you the current OhmConnect status for the given OhmConnect ID</flag>
+    <flag name="ollama">adds a conversation agent in Home Assistant powered by a local Ollama server</flag>
     <flag name="ombi">The Ombi integration monitors data from your Ombi instance</flag>
     <flag name="omnilogic">Hayward Onmilogic pool control system</flag>
     <flag name="oncue">allow you to monitor the state of your Oncue enabled Kohler generator</flag>
