@@ -185,7 +185,7 @@ automat==22.10.0
 avea==1.5.1
 avion==0.10
 awesomeversion==24.2.0
-axis==60
+axis==61
 Babel==2.13.1
 Babel==2.14.0
 backoff==2.2.1
@@ -421,7 +421,7 @@ freetype==2.13.2
 frozenlist==1.4.1
 ftfy==6.1.3
 furo==2024.1.29
-fyta-cli==0.3.3
+fyta-cli==0.3.5
 gammu==1.42.0
 gardena-bluetooth==1.4.1
 garminconnect-ha==0.1.6
@@ -496,7 +496,7 @@ ha-philipsjs==3.1.1
 habitipy==0.2.0
 habluetooth==2.4.2
 hangups==0.4.18
-hass-nabucasa==0.79.0
+hass-nabucasa==0.78.0
 hass-splunk==0.1.1
 hassil==1.6.1
 HATasmota==0.8.0
@@ -917,6 +917,7 @@ pychromecast==14.0.1
 pycketcasts==1.0.1
 pyclimacell==0.18.2
 pycmus==0.1.1
+pycognito==2023.5.0
 pycognito==2024.2.0
 pycomfoconnect==0.5.1
 pyControl4==1.1.0
@@ -1015,7 +1016,7 @@ pylaunches==1.4.0
 pylgnetcast==0.3.7
 pylibrespot-java==0.1.1
 pylitejet==0.6.2
-pylitterbot==2023.4.9
+pylitterbot==2023.4.11
 pyloopenergy==0.2.1
 pylutron-caseta==0.20.0
 pylutron==0.2.12
@@ -1040,7 +1041,7 @@ pynello==2.0.3
 pynetgear==0.10.10
 pynetio==0.1.9.1
 PyNINA==0.3.3
-pynobo==1.8.0
+pynobo==1.8.1
 pynuki==1.6.3
 pynws==1.6.0
 pynx584==0.5
@@ -1467,7 +1468,7 @@ uvicorn==0.29.0
 validators==0.23.2
 vallox-websocket-api==5.1.1
 vehicle==2.2.1
-velbus-aio==2024.4.0
+velbus-aio==2024.4.1
 venstarcolortouch==0.19
 vilfo-api-client==0.5.0
 vincenty==0.1.4
@@ -1514,7 +1515,7 @@ xboxapi==2.0.1
 xerces-c==3.2.4
 xiaomi-ble==0.28.0
 xknx==2.12.2
-xknxproject==3.7.0
+xknxproject==3.7.1
 xmlschema==3.1.0
 xmltodict==0.13.0
 xs1-api-client==3.0.0
@@ -1525,7 +1526,7 @@ yalexs==2.0.0
 yarl==1.9.4
 yeelight==0.7.14
 yeelightsunflower==0.0.10
-yolink-api==0.4.1
+yolink-api==0.4.2
 youless-api==1.0.1
 youtubeaio==1.1.5
 yt-dlp==2024.03.10
