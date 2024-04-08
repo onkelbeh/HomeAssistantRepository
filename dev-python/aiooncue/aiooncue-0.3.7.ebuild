@@ -17,14 +17,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
+RDEPEND="
+	dev-python/aiohttp[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/pytest-runner[${PYTHON_USEDEP}]
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	dev-python/pytest-runner[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
