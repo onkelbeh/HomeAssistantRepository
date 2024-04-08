@@ -20,10 +20,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/websockets-10.0[${PYTHON_USEDEP}]
-	>=dev-python/pytz-2021.3[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+	>=dev-python/pytz-2023.4[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
