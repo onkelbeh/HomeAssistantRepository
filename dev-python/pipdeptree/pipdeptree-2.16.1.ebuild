@@ -36,6 +36,11 @@ PATCHES=(
 
 distutils_enable_tests pytest
 
+python_test() {
+	local -x PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+	epytest -p pytest_mock
+}
+
 pkg_postinst() {
 	optfeature \
 		"visualising the dependency graph with --graph-output" \
