@@ -21,13 +21,8 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/bleak-0.19[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-mock[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
