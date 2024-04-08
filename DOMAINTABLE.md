@@ -276,6 +276,7 @@
 |frontier_silicon|Support for Internet Radios based on the Frontier Silicon chipset|N|N|Y|0.40|
 |fully_kiosk|Fully Kiosk Browser control in Home Assistant|N|N|Y|2022.9.0b3|
 |futurenow|Allows you to use P5 FutureNow relay/dimmer units as lights|N|N|Y|0.75|
+|fyta|uses the open API of FYTA to obtain the data from your plant sensors|N|N|Y|2024.4.0b3|
 |garages_amsterdam|measure the occupancy of Amsterdam parking garages in the Netherlands|N|N|Y|2021.6|
 |gardena_bluetooth|integrate their Gardena Bluetooth devices into Home Assistant|N|N|Y|2023.10.1|
 |garmin_connect|The Garmin Connect sensor allows you to expose data from Garmin Connect|N|Y|Y||
@@ -499,6 +500,7 @@
 |monoprice|Python API for talking to Monoprice 6-zone amplifier|N|N|Y|0.56|
 |mopeka|Integrates Mopeka devices into Home Assistant|N|N|Y|2023.2.1|
 |mosquitto|Set a runtime dependency for Mosquitto MQTT broker|Y|Y|Y|2022.8.3|
+|motionblinds_ble|adds support for Motionblinds Bluetooth motors|N|N|Y|2024.4.0b3|
 |motioneye|integrate your motionEye server into Home Assistant|N|N|Y|2021.5|
 |motionmount|control the position of your TVM 7675 Pro Signature MotionMount|N|N|Y|2024.1.0b7|
 |motion_blinds|control Motion Blinds from Coulisse B.V.|N|N|Y|2020.12|
@@ -563,6 +565,7 @@
 |octoprint|The main integration to integrate OctoPrint sensors|Y|Y|Y|0.19|
 |oem|ESP8266 based “WiFi MQTT Relay / Thermostat” sold by OpenEnergyMonitor|N|N|Y|0.39|
 |ohmconnect| show you the current OhmConnect status for the given OhmConnect ID|N|N|Y|0.26|
+|ollama|adds a conversation agent in Home Assistant powered by a local Ollama server|N|N|Y|2024.4.0b3|
 |ombi|The Ombi integration monitors data from your Ombi instance|N|N|Y|0.100|
 |omnilogic|Hayward Onmilogic pool control system|N|N|Y|0.116|
 |oncue|allow you to monitor the state of your Oncue enabled Kohler generator|N|N|Y|2022.2.0b1|
