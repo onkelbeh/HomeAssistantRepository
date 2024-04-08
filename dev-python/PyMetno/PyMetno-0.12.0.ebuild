@@ -17,16 +17,6 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/xmltodict[${PYTHON_USEDEP}]
-	dev-python/aiohttp[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
-	dev-python/pytz[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	dev-python/aiohttp[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
