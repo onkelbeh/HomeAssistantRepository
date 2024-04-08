@@ -6,8 +6,8 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">pyprusalink</remote-id>
     <remote-id type="github">home-assistant-libs/pyprusalink</remote-id>
+    <remote-id type="pypi">pyprusalink</remote-id>
     <maintainer status="unknown">
       <email>hello@home-assistant.io</email>
       <name>The Home Assistant Authors</name>
