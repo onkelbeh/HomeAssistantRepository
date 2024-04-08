@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">mypy-dev</remote-id>
+    <remote-id type="github">python/mypy</remote-id>
+    <maintainer status="unknown">
+      <email>jukka.lehtosalo@iki.fi</email>
+      <name>Jukka Lehtosalo</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
