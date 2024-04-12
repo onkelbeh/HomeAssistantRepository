@@ -23,7 +23,6 @@ RDEPEND=">=dev-python/bleak-0.21.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-adapters-0.15.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
