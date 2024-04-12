@@ -10,9 +10,4 @@
     <remote-id type="github">pymodbus-dev/pymodbus</remote-id>
     <doc>https://pythonhosted.org/pymodbus/</doc>
   </upstream>
-  <use>
-    <flag name="serial">Add serial support.</flag>
-    <flag name="simulator">add simulator.</flag>
-    <flag name="repl">install with REPL (Read-Eval-Print Loop) tool.</flag>
-  </use>
 </pkgmetadata>
