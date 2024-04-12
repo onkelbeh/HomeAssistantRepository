@@ -70,7 +70,7 @@ aiohttp-retry==2.8.3
 aiohttp-socks==0.8.4
 aiohttp-wsgi==0.10.0
 aiohttp-zlib-ng==0.3.1
-aiohttp==3.9.3
+aiohttp==3.9.4
 aiohue==4.7.1
 aioimaplib==1.0.1
 aioitertools==0.11.0
@@ -152,7 +152,7 @@ apprise==1.7.4
 aprslib==0.7.0
 aqipy-atmotech==0.1.5
 aqualogic==2.6
-aranet4==2.2.2
+aranet4==2.3.3
 arcam-fmj==1.4.0
 argcomplete==3.2.3
 arris-tg2492lg==1.2.1
@@ -205,7 +205,7 @@ bitstruct==8.17.0
 bizkaibus==0.1.1
 bleach==6.1.0
 bleak-esphome==1.0.0
-bleak-retry-connector==3.4.0
+bleak-retry-connector==3.5.0
 bleak==0.21.1
 blebox-uniapi==2.2.2
 blinker==1.7.0
@@ -412,7 +412,7 @@ flux-led==1.0.4
 fnv-hash-fast==0.5.0
 fnvhash==0.1.0
 foobot_async==1.0.0
-forecast-solar==3.0.0
+forecast-solar==3.1.0
 fortiosapi==1.0.5
 fqdn==1.5.1
 freebox-api==1.1.0
@@ -514,7 +514,7 @@ hole==0.8.0
 holidays==0.46
 home-assistant-bluetooth==1.12.0
 home-assistant-cli==9999
-home-assistant-frontend==20240404.1
+home-assistant-frontend==20240404.2
 home-assistant-intents==2024.4.3
 homeassistant
 homeconnect==0.7.2
@@ -526,6 +526,7 @@ html5lib==1.1
 httmock==1.4.0
 http-ece==1.1.0
 httpcore==1.0.4
+httpcore==1.0.5
 httplib2==0.20.4
 httplib2==0.22.0
 httpsig==1.3.0
@@ -548,7 +549,7 @@ ical==7.0.3
 icmplib==3.0.4
 idasen-ha==2.5.1
 idasen==0.10.3
-idna==3.6
+idna==3.7
 ifaddr==0.2.0
 iglo==1.2.7
 ihcsdk==2.8.5
@@ -794,6 +795,7 @@ opus==1.5.1
 opuslib==3.0.1
 oralb-ble==0.17.6
 ordered-set==4.1.0
+orjson==3.10.0
 orjson==3.9.15
 oru==0.1.11
 orvibo==1.1.2
@@ -893,9 +895,9 @@ pyairvisual==2023.8.1
 pyalmond==0.0.2
 pyaprilaire==0.7.0
 pyarlo==0.2.4
-pyasn1-modules==0.3.0
+pyasn1-modules==0.4.0
 pyasn1==0.4.8
-pyasn1==0.5.1
+pyasn1==0.6.0
 pyasuswrt==0.1.21
 pyatag==0.3.5.3
 pyatmo==8.0.3
@@ -906,7 +908,7 @@ pybalboa==1.0.1
 pybbox==0.0.5_alpha0
 pyblackbird==0.6
 pybluez==0.22
-pybotvac==0.0.24
+pybotvac==0.0.25
 pybravia==0.3.3
 pycares==4.4.0
 pycarwings2==2.14
@@ -1031,7 +1033,7 @@ pymfy==0.11.0
 PyMicroBot==0.0.17
 pymitv==1.4.3
 pymochad==0.2.0
-pymodbus==3.6.6
+pymodbus==3.6.7
 pymonoprice==0.4
 pymsteams==0.1.12
 PyMVGLive==1.1.4
@@ -1432,7 +1434,7 @@ TwitterAPI==2.7.12
 typer==0.7.0
 typing-extensions==4.10.0
 typing-inspect==0.7.1
-tzdata==9999
+tzdata==10001
 tzlocal==5.2
 ua-parser==0.10.0
 uasiren==0.0.1
@@ -1465,7 +1467,7 @@ user-agents==2.0
 util-linux==2.39.3
 uvcclient==0.11.0
 uvicorn==0.29.0
-validators==0.23.2
+validators==0.24.0
 vallox-websocket-api==5.1.1
 vehicle==2.2.1
 velbus-aio==2024.4.1
@@ -1501,7 +1503,7 @@ websocket-client==1.7.0
 websockets==12.0
 werkzeug==3.0.1
 wheel==0.43.0
-whirlpool-sixth-sense==0.18.7
+whirlpool-sixth-sense==0.18.8
 whois==0.9.27
 wiffi==1.1.2
 wirelesstagpy==0.8.1
@@ -1529,14 +1531,14 @@ yeelightsunflower==0.0.10
 yolink-api==0.4.2
 youless-api==1.0.1
 youtubeaio==1.1.5
-yt-dlp==2024.03.10
+yt-dlp==2024.04.09
 zamg==0.3.6
 zbar==0.23.92
 zeep==4.2.1
 zengge==0.2
 zeroconf==0.132.0
 zeversolar==0.3.1
-zha-quirks==0.0.113
+zha-quirks==0.0.114
 zhong-hong-hvac==1.0.12
 ziggo-mediabox-xl==1.1.0
 zigpy-deconz==0.23.1
