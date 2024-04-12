@@ -146,7 +146,7 @@ Best you start using the `app-misc/homeassistant-min` Ebuild. If you have it run
 * Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap. Beginning homeassistant-2021.2.0, handling for systemd was added by request, thanks to @Tatsh for help.
 * I use an own profile based on "amd64/17.1/no-multilib"
 * Sunce 2022.07.06, I run detailed tests on Python 3.10 only, and am starting to try builds on Python 3.11.
-* python-3.12.2 is set as default target.
+* python-3.12.3 is set as default target.
 
 # Bigger Changes
 
@@ -617,12 +617,12 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1978 Ebuilds in total, 1967 of them have in total 1986 (42 different) licenses assigned.
+There are 1975 Ebuilds in total, 1964 of them have in total 1983 (42 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1118|
-|Apache-2.0|449|
+|MIT|1117|
+|Apache-2.0|447|
 |GPL-3|129|
 |BSD|112|
 |LGPL-3|26|
@@ -664,9 +664,9 @@ There are 1978 Ebuilds in total, 1967 of them have in total 1986 (42 different) 
 |GPL-2+|1|
 |GPL-2-with-linking-exception|1|
 
-(Last counted: 09/04/2024)
+(Last counted: 12/04/2024)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 09/04/2024
+Last updated: 12/04/2024
