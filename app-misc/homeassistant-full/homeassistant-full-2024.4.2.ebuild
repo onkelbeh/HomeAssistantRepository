@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -17,7 +17,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_BRANCH="dev"
 	S="${WORKDIR}/core/"
 else
-    MY_PV=${PV/_beta/b}
+	MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
 	SRC_URI="$(pypi_sdist_url)
 	https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
@@ -195,7 +195,7 @@ RDEPEND="${RDEPEND}
 	aprs? ( ~dev-python/aprslib-0.7.0[${PYTHON_USEDEP}] ~sci-geosciences/geopy-2.3.0 )
 	aqualogic? ( ~dev-python/aqualogic-2.6[${PYTHON_USEDEP}] )
 	aquostv? ( ~dev-python/sharp_aquos_rc-0.3.2[${PYTHON_USEDEP}] )
-	aranet? ( ~dev-python/aranet4-2.2.2[${PYTHON_USEDEP}] )
+	aranet? ( ~sci-geosciences/aranet4-2.2.2[${PYTHON_USEDEP}] )
 	arcam_fmj? ( ~dev-python/arcam-fmj-1.4.0[${PYTHON_USEDEP}] )
 	arlo? ( ~dev-python/pyarlo-0.2.4[${PYTHON_USEDEP}] )
 	arris_tg2492lg? ( ~dev-python/arris-tg2492lg-1.2.1[${PYTHON_USEDEP}] )
@@ -1155,11 +1155,11 @@ BDEPEND="${RDEPEND}
 	dev-python/mock[${PYTHON_USEDEP}]"
 
 src_prepare() {
-    if use test ; then
-        cp --no-preserve=mode --recursive ${WORKDIR}/core-${MY_PV}/tests ${S}
+	if use test ; then
+		cp --no-preserve=mode --recursive ${WORKDIR}/core-${MY_PV}/tests ${S}
 		chmod u+x ${S}/tests/auth/providers/test_command_line_cmd.sh
-    fi
-    sed -E -i "s/regex==[^ ]*/regex/g" -i homeassistant/package_constraints.txt || die
+	fi
+	sed -E -i "s/regex==[^ ]*/regex/g" -i homeassistant/package_constraints.txt || die
 	# temp replacement to remove dev-python/future RDEP
 	sed 's/croniter==1.0.6/croniter==1.0.9/g' -i homeassistant/components/utility_meter/manifest.json || die
 	distutils-r1_src_prepare

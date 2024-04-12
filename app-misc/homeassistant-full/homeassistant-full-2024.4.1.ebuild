@@ -195,7 +195,7 @@ RDEPEND="${RDEPEND}
 	aprs? ( ~dev-python/aprslib-0.7.0[${PYTHON_USEDEP}] ~sci-geosciences/geopy-2.3.0 )
 	aqualogic? ( ~dev-python/aqualogic-2.6[${PYTHON_USEDEP}] )
 	aquostv? ( ~dev-python/sharp_aquos_rc-0.3.2[${PYTHON_USEDEP}] )
-	aranet? ( ~dev-python/aranet4-2.2.2[${PYTHON_USEDEP}] )
+	aranet? ( ~sci-geosciences/aranet4-2.2.2[${PYTHON_USEDEP}] )
 	arcam_fmj? ( ~dev-python/arcam-fmj-1.4.0[${PYTHON_USEDEP}] )
 	arlo? ( ~dev-python/pyarlo-0.2.4[${PYTHON_USEDEP}] )
 	arris_tg2492lg? ( ~dev-python/arris-tg2492lg-1.2.1[${PYTHON_USEDEP}] )
