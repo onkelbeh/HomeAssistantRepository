@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">python-socketio</remote-id>
+    <remote-id type="github">miguelgrinberg/python-socketio</remote-id>
+    <doc>https://pythonhosted.org/python-socketio/</doc>
+    <maintainer status="unknown">
+      <email>miguel.grinberg@gmail.com</email>
+      <name>Miguel Grinberg</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
