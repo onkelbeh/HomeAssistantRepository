@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">aiohttp-session</remote-id>
+    <remote-id type="github">aio-libs/aiohttp_session</remote-id>
+    <maintainer status="unknown">
+      <email>andrew.svetlov@gmail.com</email>
+      <name>Andrew Svetlov</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
