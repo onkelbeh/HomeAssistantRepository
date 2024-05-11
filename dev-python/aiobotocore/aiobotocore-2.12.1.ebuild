@@ -19,7 +19,7 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
 	>=dev-python/wrapt-1.10.10[${PYTHON_USEDEP}]
-	>=dev-python/boto3-1.33.2[${PYTHON_USEDEP}]
+	>=dev-python/boto3-1.34.41[${PYTHON_USEDEP}]
 	>=dev-python/aioitertools-0.5.1[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
