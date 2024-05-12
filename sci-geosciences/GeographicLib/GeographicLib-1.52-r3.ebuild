@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit cmake distutils-r1
 
@@ -11,7 +11,7 @@ MY_PN="${PN,,}"
 
 DESCRIPTION="C++ library for converting geographic coordinate systems"
 HOMEPAGE="https://sourceforge.net/projects/geographiclib/"
-SRC_URI="mirror://sourceforge/${MY_PN}/${P}.tar.gz -> ${P}.gh.tar.gz"
+SRC_URI="https://downloads.sourceforge.net/${MY_PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0/19"
