@@ -24,7 +24,6 @@ RDEPEND="dev-python/httpx[${PYTHON_USEDEP}]
 BDEPEND="
 	dev-python/pbr[${PYTHON_USEDEP}]
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 	)"
