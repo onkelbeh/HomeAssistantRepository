@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
@@ -24,15 +24,7 @@ RDEPEND=">=dev-python/requests-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2022.0[${PYTHON_USEDEP}]
 	dev-python/asyncclick[${PYTHON_USEDEP}]
 	dev-python/anyio[${PYTHON_USEDEP}]
-	listen? ( dev-python/firebase-messaging[${PYTHON_USEDEP}] )"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	listen? ( >=dev-python/firebase-messaging-0.2.1[${PYTHON_USEDEP}] )"
 
 distutils_enable_tests pytest
 
