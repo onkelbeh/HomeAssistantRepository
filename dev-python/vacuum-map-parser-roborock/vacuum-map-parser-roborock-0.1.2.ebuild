@@ -18,15 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/pillow[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND="dev-python/pillow[${PYTHON_USEDEP}]
+	~dev-python/vacuum-map-parser-base-0.1.2[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
 
