@@ -20,16 +20,8 @@ DOCS="README.md"
 
 RDEPEND="$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
 	dev-python/bitstring[${PYTHON_USEDEP}]
+	dev-python/ifaddr[${PYTHON_USEDEP}]
 	dev-python/click[${PYTHON_USEDEP}]
-	dev-python/inquirerpy[${PYTHON_USEDEP}]
-	dev-python/ifaddr[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	dev-python/inquirerpy[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
