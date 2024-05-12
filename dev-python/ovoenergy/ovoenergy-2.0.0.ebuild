@@ -9,6 +9,7 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="Get energy data from OVO's API"
 HOMEPAGE="https://github.com/timmo001/ovoenergy https://pypi.org/project/ovoenergy/"
+SRC_URI="https://github.com/timmo001/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,15 +19,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.7.3[${PYTHON_USEDEP}]
-	>=dev-python/click-7.1.2[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND=">=dev-python/aiohttp-3.9.0[${PYTHON_USEDEP}]
+	>=dev-python/incremental-22.10.0[${PYTHON_USEDEP}]
+	>=dev-python/typer-0.6.1[${PYTHON_USEDEP}]"
+BDEPEND=">=dev-python/incremental-22.10.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest

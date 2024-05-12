@@ -9,7 +9,7 @@
     <remote-id type="pypi">ovoenergy</remote-id>
     <remote-id type="github">timmo001/ovoenergy</remote-id>
     <maintainer status="unknown">
-      <email>contact@timmo.xyz</email>
+      <email>aidan@timmo.dev</email>
       <name>Aidan Timson (Timmo)</name>
     </maintainer>
   </upstream>
