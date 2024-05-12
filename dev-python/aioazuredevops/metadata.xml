@@ -9,8 +9,8 @@
     <remote-id type="pypi">aioazuredevops</remote-id>
     <remote-id type="github">timmo001/aioazuredevops</remote-id>
     <maintainer status="unknown">
-      <email>contact@timmo.xyz</email>
-      <name>Timmo</name>
+      <email>aidan@timmo.dev</email>
+      <name>Aidan Timson (Timmo)</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

@@ -5,9 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1 pypi
+inherit distutils-r1
 DESCRIPTION="Get data from the Azure DevOps API."
 HOMEPAGE="https://github.com/timmo001/aioazuredevops https://pypi.org/project/aioazuredevops/"
+SRC_URI="https://github.com/timmo001/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -17,15 +18,14 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
-	>=dev-python/click-7.1.2[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.9.0[${PYTHON_USEDEP}]
+	>=dev-python/incremental-22.10.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+		  dev-python/aioresponses[${PYTHON_USEDEP}]
+		  dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
+		  dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		  dev-python/syrupy[${PYTHON_USEDEP}]
+		  )"
 
 distutils_enable_tests pytest
