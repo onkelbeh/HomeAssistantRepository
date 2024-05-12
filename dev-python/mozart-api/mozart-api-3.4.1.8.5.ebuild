@@ -22,11 +22,11 @@ RDEPEND=">=dev-python/urllib3-1.25.3[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.8.2[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.8.3[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.10.5[${PYTHON_USEDEP}]
-	<dev-python/pydantic-2[${PYTHON_USEDEP}]
 	>=dev-python/aenum-3.1.11[${PYTHON_USEDEP}]
 	>=dev-python/aioconsole-0.4.1[${PYTHON_USEDEP}]
 	>=dev-python/inflection-0.5.1[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.7.1[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.25.1[${PYTHON_USEDEP}]"
+	>=dev-python/zeroconf-0.25.1[${PYTHON_USEDEP}]
+	>=dev-python/websockets-12.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
