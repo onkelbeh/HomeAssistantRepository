@@ -19,10 +19,8 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 src_prepare() {
-	# remove unsupported dynamic-versioning plugin
-	sed 's/0.0.0/${PV}/g' -i pyproject.toml || die
-	sed 's/, "poetry-dynamic-versioning>=1.0.0,<2.0.0"//g' -i pyproject.toml || die
-	sed 's/poetry_dynamic_versioning.backend/poetry.core.masonry.api/g' -i pyproject.toml || die
+	echo "" >> pyproject.toml || die
+	echo 'build-backend = "poetry.core.masonry.api"' >> pyproject.toml || die
 	eapply_user
 }
 
