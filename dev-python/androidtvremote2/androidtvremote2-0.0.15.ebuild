@@ -21,10 +21,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/aiofiles-0.8[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-3[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-4.21[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
 
 src_prepare() {
 	rm src/demo.py
