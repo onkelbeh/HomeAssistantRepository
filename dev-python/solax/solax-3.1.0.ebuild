@@ -19,16 +19,9 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.5.4[${PYTHON_USEDEP}]
-	>=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.11.5[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools-scm[${PYTHON_USEDEP}]
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	"
 
 distutils_enable_tests pytest
