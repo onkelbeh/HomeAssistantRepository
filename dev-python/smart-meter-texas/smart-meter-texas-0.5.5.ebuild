@@ -15,16 +15,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=">=dev-python/aiohttp-3.6.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.8.1[${PYTHON_USEDEP}]
-	>=dev-python/tenacity-6.2.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	>=dev-python/tenacity-8.0.1[${PYTHON_USEDEP}]"
+# 	>=dev-python/asn1-2.4.1[${PYTHON_USEDEP}]
 
 distutils_enable_tests pytest
