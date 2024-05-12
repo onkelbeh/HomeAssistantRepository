@@ -20,15 +20,15 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/aiohappyeyeballs-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/async-interrupt-1.1.1[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-3.19.0[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.128.4[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.132.2[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.12.1[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-42.0.2[${PYTHON_USEDEP}]
-	>=dev-python/noiseprotocol-0.3.1[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)"
+	>=dev-python/noiseprotocol-0.3.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pylint[${PYTHON_USEDEP}]
 	)"
 
