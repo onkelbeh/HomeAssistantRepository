@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
@@ -22,7 +22,8 @@ RDEPEND=">=dev-python/bleak-0.21.1[${PYTHON_USEDEP}]
 	>=dev-python/bleak-retry-connector-3.3.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-1.16.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-adapters-0.16.1[${PYTHON_USEDEP}]
-	>=dev-python/bluetooth-auto-recovery-1.2.3[${PYTHON_USEDEP}]"
+	>=dev-python/bluetooth-auto-recovery-1.2.3[${PYTHON_USEDEP}]
+	>=dev-python/async-interrupt-1.1.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/cython[${PYTHON_USEDEP}]
 	test? (
