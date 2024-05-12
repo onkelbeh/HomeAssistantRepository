@@ -20,18 +20,23 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 	>=dev-python/deepdiff-6.2.1[${PYTHON_USEDEP}]
-	>=dev-python/pyjwt-2.4.0[${PYTHON_USEDEP}]"
+	<dev-python/deepdiff-8.0.0[${PYTHON_USEDEP}]
+	>=dev-python/pyjwt-2.7.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/aioresponses[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-freezegun[${PYTHON_USEDEP}]
 		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 	)"
 
-python_test() {
-	py.test -v -v || die
+src_prepare() {
+	# remove unsupported dynamic-versioning plugin
+	sed 's/0.0.0/${PV}/g' -i pyproject.toml || die
+	sed 's/, "poetry-dynamic-versioning>=1.0.0,<2.0.0"//g' -i pyproject.toml || die
+	sed 's/poetry_dynamic_versioning.backend/poetry.core.masonry.api/g' -i pyproject.toml || die
+	eapply_user
 }
 
 distutils_enable_tests pytest
