@@ -3,10 +3,10 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="An asynchronous Python library for communicating with Unifi Network Controller API"
+DESCRIPTION="Python library for communicating with UniFi Network Controller API"
 HOMEPAGE="https://github.com/Kane610/aiounifi https://pypi.org/project/aiounifi/"
 
 LICENSE="MIT"
@@ -17,7 +17,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.9.0[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.9.0[${PYTHON_USEDEP}]
 	>=dev-python/segno-1.5.2[${PYTHON_USEDEP}]"
 BDEPEND="
