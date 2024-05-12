@@ -18,21 +18,16 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/rich[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/rich-10[${PYTHON_USEDEP}]
 	>=dev-python/typer-0.7.0[${PYTHON_USEDEP}]
 	>=dev-python/tenacity-8.2.2[${PYTHON_USEDEP}]
 	>=dev-python/httpx-0.24.0[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.9.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/respx[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
