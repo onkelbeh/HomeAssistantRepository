@@ -8,9 +8,5 @@
   <upstream>
     <remote-id type="pypi">aioautomower</remote-id>
     <remote-id type="github">Thomas55555/aioautomower</remote-id>
-    <maintainer status="unknown">
-      <email>thomas.protzner@gmail.com</email>
-      <name>Thomas Protzner</name>
-    </maintainer>
   </upstream>
 </pkgmetadata>
