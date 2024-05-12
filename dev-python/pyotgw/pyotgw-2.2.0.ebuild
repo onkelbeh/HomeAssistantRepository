@@ -21,10 +21,6 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/pyserial-asyncio[${PYTHON_USEDEP}]"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND="dev-python/pyserial-asyncio-fast[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
