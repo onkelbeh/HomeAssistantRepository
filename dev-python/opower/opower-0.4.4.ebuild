@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
@@ -21,10 +21,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/aiohttp-3.8[${PYTHON_USEDEP}]
 	>=dev-python/arrow-1.2[${PYTHON_USEDEP}]
 	>=dev-python/pyotp-2.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
 
 src_prepare() {
 	rm src/demo.py
