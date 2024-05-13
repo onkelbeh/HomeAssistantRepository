@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">securesystemslib</remote-id>
+    <remote-id type="github">secure-systems-lab/securesystemslib</remote-id>
+    <maintainer status="unknown">
+      <email>theupdateframework@googlegroups.com</email>
+      <name>"https://www.updateframework.com"</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
