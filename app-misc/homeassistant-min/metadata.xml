@@ -76,6 +76,7 @@
     <flag name="openweathermap">uses OpenWeatherMap as a source for current meteorological data</flag>
     <flag name="otp">generates One-Time Passwords according to RFC6238</flag>
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
+    <flag name="ozw">Open Zwave MQTT</flag>
     <flag name="ping">use the great ICMPLib for Presence Detection and as a binary Sensor</flag>
     <flag name="plex">Python bindings for the Plex API</flag>
     <flag name="ps4">allows you to control a Sony PlayStation 4 console</flag>
@@ -106,6 +107,7 @@
     <flag name="tile">API for Tile Bluetooth trackers</flag>
     <flag name="tomorrowio">obtain weather, air quality, pollen, and fire information fro tomorrow.io</flag>
     <flag name="tplink">control your TP-Link Smart Home Devices</flag>
+    <flag name="tradfri">Control/observe IKEA Tradfri devices</flag>
     <flag name="upnp">support UPnP/Internet Gateway Device (IGD) Protocol</flag>
     <flag name="utility_meter">integration provides functionality to track consumptions of various utilities</flag>
     <flag name="version">display the current Home Assistant versions</flag>

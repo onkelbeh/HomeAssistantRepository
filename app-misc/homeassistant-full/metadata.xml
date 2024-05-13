@@ -44,6 +44,7 @@
     <flag name="ambee">Asynchronous Python client for the Ambee API</flag>
     <flag name="amberelectric">Interface to the Amber Electric API, allowing you to download current and foreca</flag>
     <flag name="ambiclimate">Communicate with Ambiclimate devices</flag>
+    <flag name="ambient_network">retrieves local weather station information via the Ambient Weather Network</flag>
     <flag name="ambient_station">Retrieves local weather information from Ambient Weather</flag>
     <flag name="amcrest">Integrate your Amcrest or Dahua IP camera</flag>
     <flag name="ampio">Will query the open data API of ampio.pl to monitor air quality sensor station</flag>
@@ -69,6 +70,7 @@
     <flag name="arlo">Allows you to integrate your Arlo devices into Home Assistant</flag>
     <flag name="arris_tg2492lg">Presence detection from an Arris TG2492LG router</flag>
     <flag name="aruba">Presence detection by looking at connected devices to an Aruba Instant device</flag>
+    <flag name="arve">monitor real-life air quality data, as measured by your Arve device</flag>
     <flag name="aseko_pool_live">allows you to monitor your Aseko ASIN Aqua dosing systems</flag>
     <flag name="assist_pipeline">provides the foundation for the Assist voice assistant in Home Assistant</flag>
     <flag name="asterisk_mbox">asterisk_mbox Asterisk Voicemail integration</flag>
@@ -134,7 +136,6 @@
     <flag name="circuit">Unify Circuit platform allows you to send notifications</flag>
     <flag name="cisco_ios">Presence detection scanner for Cisco IOS devices</flag>
     <flag name="cisco_mobility_express">ciscomobilityexpress support for Home Assistant</flag>
-    <flag name="cisco_webex_teams">Deliver rich notifications from Home Assistant to Cisco Webex Teams</flag>
     <flag name="clementine">The clementine platform allows you to control a Clementine Music Player</flag>
     <flag name="cli">Set a dependency for Home Assistant Cli hass-cli (lots of modules required)</flag>
     <flag name="climacell">obtain weather information from the ClimaCell API</flag>
@@ -228,6 +229,7 @@
     <flag name="emulated_hue">Emulated_hue integration provides a virtual Philips Hue bridge</flag>
     <flag name="emulated_kasa">Emulates a TP-Link Kasa smart plug and announces the power usage</flag>
     <flag name="emulated_roku">Emulate Roku API for Harmony and Android remotes</flag>
+    <flag name="energenie_power_sockets">include Energenie USB Power-Sockets into your Home Assistant setup</flag>
     <flag name="energyzero">integrates the EnergyZero API platform with Home Assistant</flag>
     <flag name="enigma2">Support for Enigma2 boxes with openwebif support</flag>
     <flag name="enocean">Support for Enocean devices in Home Assistant</flag>
@@ -237,6 +239,7 @@
     <flag name="envirophat">Display information collected by an Enviro pHAT add-on board</flag>
     <flag name="envisalink">Link Envisalink devices to Home Assistant</flag>
     <flag name="ephember">The ephember climate platform lets you control EPH Controls thermostats</flag>
+    <flag name="epic_games_store">integrates the Epic Games Store service into Home Assistant</flag>
     <flag name="epion">Integrates Epion Air sensors into Home Assistant</flag>
     <flag name="epson">The epson platform allows you to control a Epson projector</flag>
     <flag name="epsonworkforce">monitor the ink levels of a Epson Workforce printer</flag>
@@ -723,6 +726,7 @@
     <flag name="sabnzbd">monitor and control your downloads with SABnzbd from within Home Assistant</flag>
     <flag name="saj">poll a SAJ solar inverter and present the values as sensors</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
+    <flag name="sanix">get water/sewage level sensor measurements from the Sanix devices</flag>
     <flag name="satel_integra">Satel Integra alarm panel to leverage</flag>
     <flag name="schlage">provides connectivity with Schlage WiFi smart locks through Schlage’s cloud API</flag>
     <flag name="schluter">integrate your Schluter-DITRA-HEAT-E-WiFi electric floor heating thermostat</flag>
