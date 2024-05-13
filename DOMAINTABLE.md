@@ -119,7 +119,6 @@
 |circuit|Unify Circuit platform allows you to send notifications|N|N|Y|0.111|
 |cisco_ios|Presence detection scanner for Cisco IOS devices|N|N|Y|0.33|
 |cisco_mobility_express|ciscomobilityexpress support for Home Assistant|N|Y|Y|0.90|
-|cisco_webex_teams|Deliver rich notifications from Home Assistant to Cisco Webex Teams|N|N|Y|0.40|
 |clementine|The clementine platform allows you to control a Clementine Music Player|N|N|Y|0.39|
 |cli|Set a dependency for Home Assistant Cli hass-cli (lots of modules required)|Y|Y|Y|None|
 |climacell|obtain weather information from the ClimaCell API|N|N|Y||
