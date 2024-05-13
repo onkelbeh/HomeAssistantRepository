@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">PyKCS11</remote-id>
+    <remote-id type="github">LudovicRousseau/PyKCS11</remote-id>
+    <maintainer status="unknown">
+      <email>ludovic.rousseau@free.fr</email>
+      <name>Ludovic Rousseau</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
