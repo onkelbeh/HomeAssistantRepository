@@ -23,6 +23,9 @@ If you are an author of an integration / component or other stuff related to Hom
 PyPI `SDIST` tar.gz source release would be preferred, because I can automatically merge it and it will use Gentoo's mirror system. Most of the integrations/components do both. I cannot add packages only available in wheels format. Please make sure you have a proper license assigned, selected license should be unique on all platforms (
 PyPI/GitHub/Sourceforge).
 
+## 2024-05 Python 3.11 removed
+Python 3.11 is now removed from the core Ebuilds. For eraly tests, all touched Ebuilds have 3.13 compatibility set. 3.13 is currently untested.
+
 ## 2024-01 again some file collisions related to snmp
 The HA team now uses pysnmp-lextudio (which is imho not a bad decision). Had to apply a slight patch to the core constraints.
 Best practice for now is to keep `/etc/portage/profile/package.provided` as it is (the snmp libs are only referenced 2 times from the main repo), remove `pysnmplib` and let the Ebuild install the 2 lextudio modules.
@@ -127,7 +130,7 @@ The Ebuild we have since `0.97.0`, as soon as I know that at least one user is a
 ### `app-misc/homeassistant-full`
 
 WARNING: This one currently breaks (caused by shell limitations) emerge with an 'Argument list too long' error. It compiles with a [kernel hack](https://git.edevau.net/onkelbeh/HomeAssistantRepository/issues/190#issuecomment-1002). Thanks to @gcampagnoli.
-This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **978** USE Flags.
+This Ebuild contains USE Flags for (nearly) all components of Home Assistant with external dependencies. Most components compile, but these are too many (for me) to run tests for all of them on a regular schedule. It holds **983** USE Flags.
 
 A list of all components aka USEFlags is generated with every release [DOMAINTABLE.md](DOMAINTABLE.md)
 
@@ -144,14 +147,13 @@ Best you start using the `app-misc/homeassistant-min` Ebuild. If you have it run
 ## Some thoughts
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies except of portage are not tested.
 * Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap. Beginning homeassistant-2021.2.0, handling for systemd was added by request, thanks to @Tatsh for help.
-* I use an own profile based on "amd64/17.1/no-multilib"
-* Sunce 2022.07.06, I run detailed tests on Python 3.10 only, and am starting to try builds on Python 3.11.
+* I use an own profile based on "amd64/23.0/split-usr/no-multilib", planning to move to merged-usr.
 * python-3.12.3 is set as default target.
 
 # Bigger Changes
 
 ## arm64 builds
-By user request, I have populated an ~arm64 KEYWORD on all Ebuilds, which is (currently) completely untested. I know of at least two guys using it, but I got no feedback yet. Some day I will prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit). 
+By user request, I have populated an ~arm64 KEYWORD on all Ebuilds, which is (currently) completely untested. I know of at least two guys using it, but I got no feedback yet. Some day I will prepare a cross compile environment to build a public binary repo for Home Assistant on [Sakakis-'s Image](https://github.com/sakaki-/gentoo-on-rpi-64bit).
 
 ## ~arm
 By another request, I merged arm KEYWORD from @ivecera on all Ebuilds at 0.117.6. This guy is running an Odroid XU4. I updated all my scripts to keep it running. arm & arm64 keywords are treated now like the ones for amd64, though absolutely untested.
@@ -160,18 +162,6 @@ By another request, I merged arm KEYWORD from @ivecera on all Ebuilds at 0.117.6
 
 Beginning with `0.115.0_beta10` many USE Flags have changed.
 All USE Flags have *exactly* the same name as the components `domain` in Home Assistant now. OK, this is a hard cut, but overdue. Mostly caused by the creation of an automated import routine, at first I planned to keep the old names, the replacement class was already written, but during data collection I discovered that the original domain names aren't so bad anyway. You will find the detailed changes in commit: https://git.edevau.net/onkelbeh/HomeAssistantRepository/commit/3fec35c803e6061e0186df2af4e914e5791b53cc, scroll down to `metadata.xml`. But `emerge` will also tell.
-
-## Nearly all Home Assistant Components are now included
-Except of some modules with uncorrectable errors (e.g. hard drive crashes, lost sources) I believe all possible integrations for Home Assistant and their stated dependencies are included as Ebuilds, based on the integrations list from `/usr/lib/python3.8/site-packages/homeassistant/components/*/manifest.json`. Many fixed dependencies (necessary or not) to old releases forbid installation of packages requiring newer ones, but I filed all dependencies strict as they have been declared in `setup.py` or `requirements.txt` (sometimes other sources) anyway. The exception proves the rule.
-
-Currrently missing (2022.4):
-* aioazuredevops-1.3.5
-* azure-eventhub-5.7.0
-* azure-servicebus-0.50.3
-* python-lirc-1.2.3
-* opencv-python-headless-4.3.0.36
-
-In some cases I had to add patches to the Ebuilds, some packages have versions pinned without any reason. Mostly, I copy hard pinnings without questioning, in very problematic cases I open a ticket at the problem's origin. For me its OK, if the packages compile and complete their own tests in the sandbox. Please let me know if you encounter problems. I will continuously expand my tests and do more cleanups. I am continuously filing pull requests to reduce the amount of needed patches. Most of them are caused by missing files in SDIST archives and/or having wrong package exclude masks in `setup.py`.
 
 # Other things you find here
 
@@ -193,22 +183,21 @@ You will find this Repository at
 | Main | https://git.edevau.net/onkelbeh/HomeAssistantRepository | https://git.edevau.net/onkelbeh/HomeAssistantRepository.git |
 | Mirror | https://github.com/onkelbeh/HomeAssistantRepository |  https://github.com/onkelbeh/HomeAssistantRepository.git |
 
-Sorry, due to technical reasons, I currently cannot offer public ssh access to my git server.
+Sorry, due to safety concerns and some technical reasons, I currently cannot offer public ssh access to my git server.
 
 Sure, you can submit **issues** and **pull requests** on both sites, but I prefer them on my own server (requires registration).
 
 ## Python versions
-### Python 3.10
-My production box currently runs Python 3.10.8 (31.10.2022). All modules are OK with 3.10 support.
+### Python 3.12
+My production box currently runs Python 3.12.3 (12.5.2024). All modules are OK with 3.12 support.
 
 ### Python 3.11
-3.11 support will be added if possible whenever a module is touched, most already work, some external deps are still mising.
+3.11 is removed. Gentoo anounced to change the build target at the end of May 24.
 
-### Python <= 3.9 Support
-Should still work, but since Python 3.8 support is dropped, I will do no further tests on it, you should upgrade now.
-Python 3.9 support will also be dropped soon.
+### Python 3.13 Support
+I have begun to add (untested) compat tags for 3.13 and a box for compile tests.
 
-## Installation on Python 3.10
+## Installation on Python 3.12
 
 ### Let's get started:
 First add the Overlay:
@@ -260,11 +249,11 @@ It will make things easier if you take the example files from `/etc/portage/pack
 
 Check your `/etc/portage/make.conf` to freeze correct Python Targets:
 ```sh
-USE_PYTHON="3.10"
-PYTHON_TARGETS="python3_10"
-PYTHON_SINGLE_TARGET="python3_10"
+USE_PYTHON="3.12"
+PYTHON_TARGETS="python3_12"
+PYTHON_SINGLE_TARGET="python3_12"
 ```
-Edit `/etc/python-exec/python-exec.conf` to put Python 3.10 on top position.
+Edit `/etc/python-exec/python-exec.conf` to put Python 3.12 on top position. Better remove all other Python versions.
 
 Finally install Home Assistant:
 ```sh
@@ -274,7 +263,7 @@ $ rc-update add homeassistant
 
 Done.
 
-## Upgrading to Python 3.10 from a 3.9 system (same as it was from Python 3.6 to 3.7, and 3.7 to 3.8, and 3.8 to 3.9).
+## Upgrading to Python 3.12 from a 3.11 system (same as it was from Python 3.6 to 3.7, and 3.7 to 3.8, and 3.8 to 3.9, and ...).
 
 ### The fastest way:
 
@@ -288,7 +277,7 @@ $ emerge -tauvDUN @world --autounmask=y --changed-deps --changed-use --newuse --
 
 * reinstall app-misc/homeassistant for only the new Python Version
 
-This avoids a lot of recompiling all Home Assistant deps, and a lot of dependency trouble. A naked box is significant easier to upgrade, Very recommended. I did not, but I just wanted to see if the hard way still works, too ;-)
+This avoids a lot of double recompiling all Home Assistant deps, and a lot of dependency trouble. A naked box is significant easier to upgrade, Very recommended. I did not, but I just wanted to see if the hard way still works, too ;-)
 
 ### The upgrade steps:
 
@@ -296,18 +285,18 @@ Make sure your system is up to date:
 ```sh
 $ emerge -tauvDUN @world
 ```
-Install Python 3.10:
+Install Python 3.12:
 ```sh
-$ emerge -tav dev-lang/python:3.10
+$ emerge -tav dev-lang/python:3.12
 ```
 Edit your `/etc/portage/make.conf` to set the new Python Targets, make sure you have **both** versions active now:
 ```sh
-USE_PYTHON="3.10 3.9"
-PYTHON_TARGETS="python3_10 python3_9"
-PYTHON_SINGLE_TARGET="python3_10"
+USE_PYTHON="3.12 3.11"
+PYTHON_TARGETS="python3_12 python3_11"
+PYTHON_SINGLE_TARGET="python3_12"
 ```
 
-Run `eselect python` to put Python 3.10 on position 1, perhaps you'll have to edit `/etc/python-exec/python-exec.conf`.
+Run `eselect python` to put Python 3.12 on position 1, perhaps you'll have to edit `/etc/python-exec/python-exec.conf`.
 
 Run the Update:
 ```sh
@@ -317,27 +306,27 @@ $ emerge --depclean
 ```
 If everything is clean, double check with:
 
-* `eix --installed-with-use python_targets_python3_9` (<- old version)
-* `eix --installed-without-use python_targets_python3_10` (<- new version)
+* `eix --installed-with-use python_targets_python3_11` (<- old version)
+* `eix --installed-without-use python_targets_python3_12` (<- new version)
 
 or
 
-* `diff <(equery h python_targets_python3_9) <(equery h python_targets_python3_10)`
-* `diff <(equery h python_single_target_python3_9) <(equery h python_single_target_python3_10)`
+* `diff <(equery h python_targets_python3_11) <(equery h python_targets_python3_12)`
+* `diff <(equery h python_single_target_python3_11) <(equery h python_single_target_python3_12)`
 
 
 Help it with:
 ```sh
-eix -I# --installed-without-use python_targets_python3_10 | xargs emerge -1tv
+eix -I# --installed-without-use python_targets_python3_12 | xargs emerge -1tv
 ```
 
 Now you have all Python packages for both versions installed, time to get rid of the packages compiled for the old Python:
 
 Edit your `/etc/portage/make.conf` to remove old Python Targets:
 ```sh
-USE_PYTHON="3.10"
-PYTHON_TARGETS="python3_10"
-PYTHON_SINGLE_TARGET="python3_10"
+USE_PYTHON="3.12"
+PYTHON_TARGETS="python3_12"
+PYTHON_SINGLE_TARGET="python3_12"
 ```
 Run the Update again:
 
@@ -364,14 +353,14 @@ On some boxes I had to recompile python-exec before a depclean removed the old P
 ### Remove the old Python
 
 ```sh
-# emerge -cav /dev-lang/python:3.9
+# emerge -cav /dev-lang/python:3.11
 ```
 
 ### Tools that might help to clean up:
 
 ```sh
-$ eix --installed-with-use python_targets_python3_9
-$ diff <(equery h python_targets_python3_9) <(equery h python_targets_python3_10)
+$ eix --installed-with-use python_targets_python3_11
+$ diff <(equery h python_targets_python3_11) <(equery h python_targets_python3_12)
 ```
 
 # My VMs/boxes and Stuff I use
@@ -607,7 +596,7 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## To-dos
 - Publish my ESPHome Configurations
-- Do more tests with Python 3.10
+- Do tests with Python 3.13
 - Convince the world to not run Home Assistant with Docker (see https://xkcd.com/1988/)
 
 ## Experiments in progress:
@@ -617,12 +606,12 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1815 Ebuilds in total, 1804 of them have in total 1823 (42 different) licenses assigned.
+There are 1817 Ebuilds in total, 1806 of them have in total 1825 (42 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
 |MIT|1045|
-|Apache-2.0|394|
+|Apache-2.0|396|
 |GPL-3|107|
 |BSD|106|
 |LGPL-3|25|

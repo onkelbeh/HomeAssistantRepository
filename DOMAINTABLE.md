@@ -29,6 +29,7 @@
 |ambee|Asynchronous Python client for the Ambee API|N|N|Y||
 |amberelectric|Interface to the Amber Electric API, allowing you to download current and foreca|N|N|Y|2021.10.0b2|
 |ambiclimate|Communicate with Ambiclimate devices|N|Y|Y|0.93|
+|ambient_network|retrieves local weather station information via the Ambient Weather Network|N|N|Y|2024.5.0|
 |ambient_station|Retrieves local weather information from Ambient Weather|N|Y|Y||
 |amcrest|Integrate your Amcrest or Dahua IP camera|N|Y|Y|0.49|
 |ampio|Will query the open data API of ampio.pl to monitor air quality sensor station|N|Y|Y|0.92|
@@ -53,6 +54,7 @@
 |arlo|Allows you to integrate your Arlo devices into Home Assistant|N|N|Y||
 |arris_tg2492lg|Presence detection from an Arris TG2492LG router|N|N|Y|0.109|
 |aruba|Presence detection by looking at connected devices to an Aruba Instant device|N|Y|Y|0.7|
+|arve|monitor real-life air quality data, as measured by your Arve device|N|N|Y|2024.5.0|
 |aseko_pool_live|allows you to monitor your Aseko ASIN Aqua dosing systems|N|N|Y|2022.2.0b1|
 |assist_pipeline|provides the foundation for the Assist voice assistant in Home Assistant|N|N|Y|2023.5.2|
 |asterisk_mbox|asterisk_mbox Asterisk Voicemail integration|N|N|Y|0.51|
@@ -211,6 +213,7 @@
 |emulated_hue|Emulated_hue integration provides a virtual Philips Hue bridge|N|N|Y|0.27|
 |emulated_kasa|Emulates a TP-Link Kasa smart plug and announces the power usage|N|N|Y|0.115|
 |emulated_roku|Emulate Roku API for Harmony and Android remotes|N|Y|Y|0.86|
+|energenie_power_sockets|include Energenie USB Power-Sockets into your Home Assistant setup|N|N|Y|2024.5.0|
 |energyzero|integrates the EnergyZero API platform with Home Assistant|N|N|Y|2023.2.1|
 |enigma2|Support for Enigma2 boxes with openwebif support|Y|Y|Y|0.90|
 |enocean|Support for Enocean devices in Home Assistant|N|Y|Y|0.21|
@@ -220,6 +223,7 @@
 |envirophat|Display information collected by an Enviro pHAT add-on board|N|N|Y||
 |envisalink|Link Envisalink devices to Home Assistant|N|N|Y|0.23|
 |ephember|The ephember climate platform lets you control EPH Controls thermostats|N|N|Y|0.57|
+|epic_games_store|integrates the Epic Games Store service into Home Assistant|N|N|Y|2024.5.0|
 |epion|Integrates Epion Air sensors into Home Assistant|N|N|Y|2024.2.1|
 |epson|The epson platform allows you to control a Epson projector|N|N|Y|0.72|
 |epsonworkforce|monitor the ink levels of a Epson Workforce printer|N|N|Y|0.92|
@@ -706,6 +710,7 @@
 |sabnzbd|monitor and control your downloads with SABnzbd from within Home Assistant|N|N|Y|0.7|
 |saj|poll a SAJ solar inverter and present the values as sensors|N|N|Y|0.100|
 |samsungtv|Support for Samsung TV Sets|Y|Y|Y||
+|sanix|get water/sewage level sensor measurements from the Sanix devices|N|N|Y|2024.5.0|
 |satel_integra|Satel Integra alarm panel to leverage|N|N|Y|0.54|
 |schlage|provides connectivity with Schlage WiFi smart locks through Schlage’s cloud API|N|N|Y|2023.10.1|
 |schluter|integrate your Schluter-DITRA-HEAT-E-WiFi electric floor heating thermostat|N|N|Y|0.108|
