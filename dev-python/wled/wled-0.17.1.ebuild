@@ -22,7 +22,9 @@ RDEPEND=">=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/awesomeversion-22.1.0[${PYTHON_USEDEP}]
 	>=dev-python/backoff-2.2.0[${PYTHON_USEDEP}]
 	>=dev-python/cachetools-4.0.0[${PYTHON_USEDEP}]
-	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]"
+	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]
+	>=dev-python/typer-0.12.3[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.132.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]
@@ -30,9 +32,5 @@ BDEPEND="
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest

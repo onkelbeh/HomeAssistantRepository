@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=flit
+DISTUTILS_USE_PEP517=pdm-backend
 inherit distutils-r1 pypi
 
 DESCRIPTION="Typer, build great CLIs. Easy to code. Based on Python type hints."
@@ -18,14 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/click-7.1.1[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND=">=dev-python/click-8.0.0[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-3.7.4.3[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
