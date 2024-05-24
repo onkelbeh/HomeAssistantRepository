@@ -13,7 +13,7 @@ if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/home-assistant/core.git"
 	EGIT_BRANCH="dev"
-	S="${WORKDIR}/core/"
+	S="${WORKDIR}/homeassistant-full-9999/"
 else
 	inherit pypi
 	MY_PV=${PV/_beta/b}
@@ -144,7 +144,7 @@ RDEPEND="${RDEPEND}
 # unknown origin, still something to clean up here
 
 RDEPEND="${RDEPEND}
-	~dev-python/colorlog-6.7.0[${PYTHON_USEDEP}]
+	~dev-python/colorlog-6.8.2[${PYTHON_USEDEP}]
 	~dev-python/pyotp-2.8.0[${PYTHON_USEDEP}]
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]"
 # Module requirements from useflags
@@ -1162,13 +1162,13 @@ BDEPEND="${RDEPEND}
 	dev-python/mock[${PYTHON_USEDEP}]"
 
 src_prepare() {
-    if use test ; then
-        cp --no-preserve=mode --recursive ${WORKDIR}/core-${MY_PV}/tests ${S}
+	if use test ; then
+		cp --no-preserve=mode --recursive ${WORKDIR}/core-${MY_PV}/tests ${S}
 		chmod u+x ${S}/tests/auth/providers/test_command_line_cmd.sh
-    fi
-    sed -E -i "s/regex==[^ ]*/regex/g" -i homeassistant/package_constraints.txt || die
+	fi
+	sed -E -i "s/regex==[^ ]*/regex/g" -i homeassistant/package_constraints.txt || die
 
-    distutils-r1_src_prepare
+	distutils-r1_src_prepare
 }
 INSTALL_DIR="/opt/${MY_PN}"
 

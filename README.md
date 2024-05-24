@@ -653,9 +653,9 @@ There are 1833 Ebuilds in total, 1822 of them have in total 1843 (42 different) 
 |GPL-2+|1|
 |GPL-2-with-linking-exception|1|
 
-(Last counted: 20/05/2024)
+(Last counted: 24/05/2024)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 20/05/2024
+Last updated: 24/05/2024

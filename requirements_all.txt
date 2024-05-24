@@ -275,7 +275,6 @@ clx-sdk-xms==1.0.0
 coinbase==2.1.0
 colorama==0.4.6
 coloredlogs==15.0.1
-colorlog==6.7.0
 colorlog==6.8.2
 colorthief==0.2.1
 colorzero==2.0

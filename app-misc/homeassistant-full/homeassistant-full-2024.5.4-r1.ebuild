@@ -17,7 +17,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_BRANCH="dev"
 	S="${WORKDIR}/core/"
 else
-    MY_PV=${PV/_beta/b}
+	MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
 	SRC_URI="$(pypi_sdist_url)
 	https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
@@ -145,7 +145,7 @@ RDEPEND="${RDEPEND}
 # unknown origin, still something to clean up here
 
 RDEPEND="${RDEPEND}
-	~dev-python/colorlog-6.7.0[${PYTHON_USEDEP}]
+	~dev-python/colorlog-6.8.2[${PYTHON_USEDEP}]
 	~dev-python/pyotp-2.8.0[${PYTHON_USEDEP}]
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]"
 # Module requirements from useflags
@@ -1163,13 +1163,13 @@ BDEPEND="${RDEPEND}
 	dev-python/mock[${PYTHON_USEDEP}]"
 
 src_prepare() {
-    if use test ; then
-        cp --no-preserve=mode --recursive ${WORKDIR}/core-${MY_PV}/tests ${S}
+	if use test ; then
+		cp --no-preserve=mode --recursive ${WORKDIR}/core-${MY_PV}/tests ${S}
 		chmod u+x ${S}/tests/auth/providers/test_command_line_cmd.sh
-    fi
-    sed -E -i "s/regex==[^ ]*/regex/g" -i homeassistant/package_constraints.txt || die
+	fi
+	sed -E -i "s/regex==[^ ]*/regex/g" -i homeassistant/package_constraints.txt || die
 
-    distutils-r1_src_prepare
+	distutils-r1_src_prepare
 }
 INSTALL_DIR="/opt/${MY_PN}"
 
