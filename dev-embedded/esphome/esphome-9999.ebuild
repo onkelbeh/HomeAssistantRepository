@@ -4,7 +4,7 @@
 EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 DISTUTILS_SINGLE_IMPL=1
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 
 inherit readme.gentoo-r1 distutils-r1
 
@@ -41,10 +41,10 @@ RDEPEND="server? ( acct-group/${PN} acct-user/${PN} )
 		~dev-python/tzlocal-5.2[${PYTHON_USEDEP}]
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-		~dev-embedded/platformio-6.1.13[${PYTHON_SINGLE_USEDEP}]
+		~dev-embedded/platformio-6.1.15[${PYTHON_SINGLE_USEDEP}]
 		~dev-embedded/esptool-4.7.0[${PYTHON_SINGLE_USEDEP}]
 		~dev-python/click-8.1.7[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20240319.0[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20240429.1[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
 		~dev-python/python-magic-0.4.27[${PYTHON_USEDEP}]
