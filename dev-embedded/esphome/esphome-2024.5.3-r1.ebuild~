@@ -84,6 +84,10 @@ src_prepare() {
 	sed "/voluptuous==/c\voluptuous" -i requirements.txt || die
 	sed "/cryptography==/c\cryptography" -i requirements.txt || die
 	sed "/icmplib==/c\icmplib" -i requirements.txt || die
+
+	# esphome/esphome/components/font/__init__.py pillow version check
+	sed "s/10.2.0/10.3.0/g" -i esphome/esphome/components/font/__init__.py || die
+
 	eapply_user
 }
 
