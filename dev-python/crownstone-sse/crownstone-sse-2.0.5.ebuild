@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python library that listens to Crownstone SSE events."
@@ -24,7 +23,6 @@ RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]
 BDEPEND="
 	test? (
 		>=dev-python/asynctest-0.13.0[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
