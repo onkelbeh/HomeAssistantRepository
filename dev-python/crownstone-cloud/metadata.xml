@@ -7,6 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">crownstone-cloud</remote-id>
-    <remote-id type="github">crownstone/crownstone-lib-python-cloud</remote-id>
+    <remote-id type="github">Crownstone-Community/crownstone-lib-python-cloud</remote-id>
   </upstream>
 </pkgmetadata>

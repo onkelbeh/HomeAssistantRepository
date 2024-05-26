@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python library to get data from the cloud, and switch Crownstones"
@@ -25,7 +24,6 @@ BDEPEND="
 	test? (
 		>=dev-python/codecov-2.1.10[${PYTHON_USEDEP}]
 		>=dev-python/asynctest-0.13.0[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
