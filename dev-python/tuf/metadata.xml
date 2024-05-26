@@ -10,7 +10,7 @@
     <remote-id type="github">theupdateframework/python-tuf</remote-id>
     <maintainer status="unknown">
       <email>theupdateframework@googlegroups.com</email>
-      <name>NYU Tandon School of Engineering</name>
+      <name>The Update Framework (TUF)</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
