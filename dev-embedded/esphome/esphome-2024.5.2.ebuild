@@ -34,7 +34,7 @@ DOCS="README.md"
 RDEPEND="
 	server? ( acct-group/${PN} acct-user/${PN} )
 	$(python_gen_cond_dep '
-		~dev-python/cryptography-42.0.5[${PYTHON_USEDEP}]
+		dev-python/cryptography[${PYTHON_USEDEP}]
 		dev-python/voluptuous[${PYTHON_USEDEP}]
 		~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
 		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
@@ -47,7 +47,7 @@ RDEPEND="
 		~dev-embedded/platformio-6.1.15[${PYTHON_SINGLE_USEDEP}]
 		~dev-embedded/esptool-4.7.0-r2[${PYTHON_USEDEP}]
 		~dev-python/click-8.1.7[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20240429.1[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20240412.0[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
 		~dev-python/python-magic-0.4.27[${PYTHON_USEDEP}]
@@ -59,7 +59,6 @@ RDEPEND="
 
 BDEPEND="$(python_gen_cond_dep '
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-mock[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
