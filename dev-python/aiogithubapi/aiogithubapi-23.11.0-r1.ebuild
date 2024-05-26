@@ -18,7 +18,8 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8[${PYTHON_USEDEP}]
-	dev-python/backoff[${PYTHON_USEDEP}]"
+	dev-python/backoff[${PYTHON_USEDEP}]
+	dev-python/sigstore[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]
