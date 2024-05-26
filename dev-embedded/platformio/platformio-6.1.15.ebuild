@@ -5,7 +5,7 @@ EAPI=8
 
 DISTUTILS_SINGLE_IMPL=1
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 
 inherit distutils-r1 udev
 
@@ -32,7 +32,9 @@ RDEPEND="
 		<dev-python/tabulate-1[${PYTHON_USEDEP}]
 		~dev-python/ajsonrpc-1.2.0[${PYTHON_USEDEP}]
 		>=dev-python/starlette-0.21[${PYTHON_USEDEP}]
+		<dev-python/starlette-0.38[${PYTHON_USEDEP}]
 		>=dev-python/uvicorn-0.19[${PYTHON_USEDEP}]
+		<dev-python/uvicorn-0.30[${PYTHON_USEDEP}]
 		dev-python/wsproto[${PYTHON_USEDEP}]
 		>=dev-python/pyelftools-0.27[${PYTHON_USEDEP}]
 		<dev-python/pyelftools-1[${PYTHON_USEDEP}]
@@ -78,23 +80,6 @@ EPYTEST_DESELECT=(
 )
 
 distutils_enable_tests pytest
-
-python_prepare_all() {
-	# Allow newer versions of:
-	# - zeroconf, bug #831181.
-	# - wsproto
-	# - semantic_version, bug #853247
-	# - starlette & uvicorn, bug #888427
-	sed \
-		-e '/zeroconf/s/<[0-9.*]*//' \
-		-e '/wsproto/s/==.*/"/' \
-		-e '/semantic_version/s/==[0-9.*]*//' \
-		-e '/starlette/s/==.*/"/' \
-		-e '/uvicorn/s/==.*/"/' \
-		-i setup.py || die
-
-	distutils-r1_python_prepare_all
-}
 
 python_test() {
 	epytest -k "not skip_ci"
