@@ -156,7 +156,7 @@ apprise==1.7.4
 aprslib==0.7.2
 aqipy-atmotech==0.1.5
 aqualogic==2.6
-aranet4==2.3.3
+aranet4==2.3.4
 arcam-fmj==1.4.0
 argcomplete==3.3.0
 arris-tg2492lg==2.2.0
@@ -230,9 +230,9 @@ bme280spi==0.2.0
 bme680==1.0.5
 bond-async==0.2.1
 boschshcpy==0.2.91
+boto3==1.34.103
 boto3==1.34.51
-boto3==1.34.98
-botocore==1.34.98
+botocore==1.34.103
 bottle==0.12.25
 bottleneck==1.3.8
 bring-api==0.5.7
@@ -249,7 +249,7 @@ btsmarthub-devicelist==0.2.3
 btsocket==0.2.0
 buienradar==1.0.5
 bx-py-utils==75
-c-ares==1.26.0
+c-ares==1.28.1
 ca-certificates==20240203.3.98
 cached-ipaddress==0.3.0
 cachetools==5.3.3
@@ -290,17 +290,18 @@ construct-typing==0.6.2
 construct==2.10.68
 construct==2.10.70
 coronavirus==1.1.1
-coverage==7.5.0
+coverage==7.5.1
 crc==5.0.0
 crccheck==1.3.0
 crcmod==1.7
 croniter==2.0.2
 croniter==2.0.5
-crownstone-cloud==1.4.9
+crownstone-cloud==1.4.11
 crownstone-core==3.0.1
-crownstone-sse==2.0.4
+crownstone-sse==2.0.5
 crownstone-uart==2.1.0
 cryptography==42.0.5
+cryptography==42.0.7
 csrmesh==0.10.0
 cssselect==1.2.0
 cups==2.4.7
@@ -343,7 +344,7 @@ docopt==0.6.2
 docutils==0.20.1
 docutils==0.21.2
 DoorBirdPy==2.1.0
-double-conversion==3.2.1
+double-conversion==3.3.0
 dovado==0.4.1
 dpkt==1.9.8
 dremel3dpy==2.1.1
@@ -427,7 +428,7 @@ freesms==0.2.0
 freetype==2.13.2
 frozenlist==1.4.1
 ftfy==6.1.3
-furo==2024.4.27
+furo==2024.5.6
 fyta-cli==0.4.1
 gammu==1.42.0
 gardena-bluetooth==1.4.1
@@ -500,7 +501,7 @@ h2==4.1.0
 ha-av==10.1.1
 ha-ffmpeg==3.2.0
 ha-iotawattpy==0.1.2
-ha-philipsjs==3.1.1
+ha-philipsjs==3.2.1
 habitipy==0.2.0
 habluetooth==2.8.1
 hangups==0.4.18
@@ -822,7 +823,7 @@ pbr==6.0.0
 pcal9535a==0.7
 pdunehd==1.3.2
 peco==0.0.29
-peewee==3.17.3
+peewee==3.17.5
 pencompy==0.0.3
 pescea==1.0.12
 pexpect==4.6.0
@@ -985,7 +986,7 @@ pyfttt==0.3.2
 pygatt==4.0.5
 pygments==2.17.2
 pygobject==3.46.0
-pygraphviz==1.12
+pygraphviz==1.13
 pygtfs==0.1.9
 pygti==0.9.4
 pyhamcrest==2.1.0
@@ -1092,12 +1093,12 @@ pyrepetierng==0.1.0
 pyrfc3339==1.1
 pyRFXtrx==0.31.1
 PyRIC==0.1.6.3
-pyrisco==0.6.1
+pyrisco==0.6.2
 pyrituals==0.0.6
 PyRMVtransport==0.3.3
 pyroute2==0.7.12
 pyroute2==0.7.5
-pyrympro==0.0.7
+pyrympro==0.0.8
 pysabnzbd==1.1.1
 pysaj==0.0.16
 pyschlage==2024.2.0
@@ -1131,7 +1132,7 @@ PySPX==0.5.0
 pysqueezebox==0.7.1
 pysuez==0.2.0
 pyswitchbee==1.8.0
-PySwitchbot==0.45.0
+PySwitchbot==0.46.1
 PySwitchmate==0.5.1
 PySyncThru==0.7.10
 pytautulli==23.1.1
@@ -1259,6 +1260,7 @@ requests-futures==1.0.1
 requests-oauthlib==2.0.0
 requests-toolbelt==1.0.0
 requests==2.31.0
+requests==2.32.1
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
 rfc3986==2.0.0
@@ -1359,6 +1361,7 @@ sphinxcontrib-serializinghtml==1.1.10
 spiderpy==1.6.1
 spidev==3.5
 sqlalchemy==2.0.29
+sqlalchemy==2.0.30
 srpenergy==1.3.6
 srptools==1.0.1
 sseclient-py==1.7.2
@@ -1402,7 +1405,7 @@ tellsticknet==0.1.2
 temescal==0.5
 temperusb==1.6.1
 tempora==5.5.1
-tenacity==8.2.3
+tenacity==8.3.0
 tesla-fleet-api==0.4.9
 tesla-powerwall==0.5.1
 tesla-wall-connector==1.0.2
@@ -1419,6 +1422,7 @@ timezone-data==2024a
 titlecase==2.3
 tmb==0.0.4
 todoist-api-python==2.1.2
+tokenize-rt==5.2.0
 tololib==1.1.0
 toonapi==0.3.0
 total-connect-client==2023.12.1
@@ -1451,7 +1455,7 @@ ujson==5.9.0
 ulid-transform==0.9.0
 ultraheat-api==0.5.7
 uModbus==1.0.4
-unasync==0.5.0
+unasync==0.6.0
 unifi-ap==0.0.1
 unifi-discovery==1.1.8
 unifiled==0.11
@@ -1513,7 +1517,7 @@ whirlpool-sixth-sense==0.18.8
 whois==0.9.27
 wiffi==1.1.2
 wirelesstagpy==0.8.1
-wled==0.17.1
+wled==0.18.0
 wolf-comm==0.0.7
 wrapt==1.16.0
 WSDiscovery==2.0.0
