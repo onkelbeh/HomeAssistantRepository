@@ -7,10 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">snitun</remote-id>
-    <remote-id type="github">NabuCasa/snitun</remote-id>
+    <remote-id type="github">NabuCasa/snitun.git</remote-id>
     <maintainer status="unknown">
       <email>opensource@nabucasa.com</email>
-      <name>Nabu Casa, Inc.</name>
+      <name>"Nabu Casa, Inc."</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
