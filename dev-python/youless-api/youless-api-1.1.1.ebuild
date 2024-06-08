@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
 DESCRIPTION="A bridge for python to the YouLess sensor"
-HOMEPAGE="https://bitbucket.org/jongsoftdev/youless-python-bridge/src/master/ https://pypi.org/project/youless-api/"
+HOMEPAGE="https://github.com/gjong/youless-python-bridge/ https://pypi.org/project/youless-api/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,14 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/certifi[${PYTHON_USEDEP}]
-	dev-python/chardet[${PYTHON_USEDEP}]
-	dev-python/idna[${PYTHON_USEDEP}]
-	dev-python/requests[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 
 src_prepare() {
 	# Make it easy, this guy pins everything
