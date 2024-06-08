@@ -10,7 +10,7 @@
     <remote-id type="github">NabuCasa/hass-nabucasa</remote-id>
     <maintainer status="unknown">
       <email>opensource@nabucasa.com</email>
-      <name>Nabu Casa, Inc.</name>
+      <name>"Nabu Casa, Inc."</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
