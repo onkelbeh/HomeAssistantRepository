@@ -147,7 +147,7 @@ Best you start using the `app-misc/homeassistant-min` Ebuild. If you have it run
 ## Some thoughts
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies except of portage are not tested.
 * Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap. Beginning homeassistant-2021.2.0, handling for systemd was added by request, thanks to @Tatsh for help.
-* I use an own profile based on "amd64/23.0/split-usr/no-multilib", planning to move to merged-usr.
+* I use an own profile based on merged-usr "amd64/23.0/no-multilib".
 * python-3.12.3 is set as default target.
 
 # Bigger Changes
@@ -371,13 +371,13 @@ I run Home Assistant on a virtual X64 box, 4GB RAM, 3 Cores of an older Xeon E5-
 ## My machines
 Currently I have three VM's running:
 ### Production
-Python 3.10.10_p3 / 3.11.2_p2
+Python 3.12.3_r1
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test
-Python 3.10.10_p3 / 3.11.2_p2
+Python 3.12.3_r1
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 ### Dev / Test2
-Python 3.11.2_p2
+Python 3.13
 4 GB RAM, 3 cores of a Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
 
 ## Hardware I use
@@ -606,11 +606,11 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 1867 Ebuilds in total, 1856 of them have in total 1879 (42 different) licenses assigned.
+There are 1868 Ebuilds in total, 1857 of them have in total 1880 (42 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1070|
+|MIT|1071|
 |Apache-2.0|418|
 |BSD|108|
 |GPL-3|107|
