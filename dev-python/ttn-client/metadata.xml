@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">ttn-client</remote-id>
+    <remote-id type="github">angelnu/thethinksnetwork_python_client</remote-id>
+    <maintainer status="unknown">
+      <email>pypi@angelnu.com</email>
+      <name>Angel Nunez Mencias</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
