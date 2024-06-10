@@ -27,7 +27,7 @@ RDEPEND=">=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.126.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
