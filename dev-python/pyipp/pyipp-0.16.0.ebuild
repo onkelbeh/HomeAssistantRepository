@@ -26,11 +26,8 @@ RDEPEND=">=dev-python/aiohttp-3.6.2[${PYTHON_USEDEP}]
 BDEPEND="
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
-		dev-python/pytest-freezegun[${PYTHON_USEDEP}]
-		dev-python/freezegun[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
