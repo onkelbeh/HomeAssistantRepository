@@ -20,15 +20,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/google-api-core-1.34.0[${PYTHON_USEDEP}]
+	>=dev-python/google-auth-2.14.1[${PYTHON_USEDEP}]
 	>=dev-python/proto-plus-1.22.2[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-python-3.19.5[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
-
-distutils_enable_tests pytest
