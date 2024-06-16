@@ -20,13 +20,5 @@ DOCS="README.rst"
 
 RDEPEND="dev-python/pytz[${PYTHON_USEDEP}]
 	>=dev-python/astral-2.2[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
