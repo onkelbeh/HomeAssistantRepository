@@ -7,9 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">google-nest-sdm</remote-id>
-    <remote-id type="github">allenporter/python-google-nest-sdm</remote-id>
+    <remote-id type="github">allenporter/python-google_nest_sdm</remote-id>
     <maintainer status="unknown">
-      <email>allen@thebends.org</email>
+      <email>allen.porter@gmail.com</email>
       <name>Allen Porter</name>
     </maintainer>
   </upstream>
