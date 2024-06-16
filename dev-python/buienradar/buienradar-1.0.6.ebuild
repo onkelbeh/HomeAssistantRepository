@@ -17,8 +17,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-		 dev-python/xmltodict[${PYTHON_USEDEP}]
-		 dev-python/vincenty[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/pytz[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/xmltodict[${PYTHON_USEDEP}]
+	dev-python/vincenty[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
