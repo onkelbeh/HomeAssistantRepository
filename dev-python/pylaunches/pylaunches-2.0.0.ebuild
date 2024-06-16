@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="A python packages to get information form upcoming space launches"
@@ -20,9 +20,9 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
 BDEPEND="
-	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/aresponses[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
