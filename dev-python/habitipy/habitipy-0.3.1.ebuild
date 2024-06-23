@@ -18,14 +18,7 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/plumbum[${PYTHON_USEDEP}]
 		 dev-python/requests[${PYTHON_USEDEP}]
+		 dev-python/emoji[${PYTHON_USEDEP}]
 		 dev-python/aiohttp[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
