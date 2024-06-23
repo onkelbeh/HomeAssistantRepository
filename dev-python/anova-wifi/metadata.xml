@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">anova-wifi</remote-id>
-    <remote-id type="github">Lash-L/anova-wifi</remote-id>
+    <remote-id type="github">Lash-L/anova_wifi</remote-id>
     <maintainer status="unknown">
       <email>conway220@gmail.com</email>
       <name>Luke</name>

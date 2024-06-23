@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="A package to get read only data from Anova precision cookers with wifi"
-HOMEPAGE="https://github.com/conway220/anova-wifi https://pypi.org/project/anova-wifi/"
+HOMEPAGE="https://github.com/conway220/anova_wifi https://pypi.org/project/anova-wifi/"
 
 LICENSE="MIT"
 SLOT="0"
