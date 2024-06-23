@@ -26,10 +26,7 @@ BDEPEND="
 		dev-python/pytz[${PYTHON_USEDEP}]
 		dev-python/tzlocal[${PYTHON_USEDEP}]
 		dev-python/imaplib2[${PYTHON_USEDEP}]
+		dev-python/tzlocal[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
