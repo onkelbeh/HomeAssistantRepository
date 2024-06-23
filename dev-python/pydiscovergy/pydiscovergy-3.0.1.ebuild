@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
@@ -20,14 +20,15 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/Authlib-0.15[${PYTHON_USEDEP}]
 	>=dev-python/httpx-0.24.0[${PYTHON_USEDEP}]
-	>=dev-python/marshmallow-3.19.0[${PYTHON_USEDEP}]
-	>=dev-python/pytz-2023.3[${PYTHON_USEDEP}]"
+	>=dev-python/pytz-2023.3[${PYTHON_USEDEP}]
+	>=dev-python/mashumaro-3.11[${PYTHON_USEDEP}]
+	>=dev-python/orjson-3.9.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-httpx[${PYTHON_USEDEP}]
+		dev-python/respx[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
