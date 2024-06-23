@@ -17,10 +17,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="~dev-python/alarmdecoder-1.13.11[${PYTHON_USEDEP}]"
-BDEPEND="
-	dev-python/setuptools-scm[${PYTHON_USEDEP}]
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+BDEPEND="dev-python/setuptools-scm[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
