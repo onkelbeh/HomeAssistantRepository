@@ -20,15 +20,8 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/pyjwt-1.7.1[${PYTHON_USEDEP}]
 	>=dev-python/httpx-0.18.0[${PYTHON_USEDEP}]
-	>=dev-python/yarl-1.6.3[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	>=dev-python/yarl-1.6.3[${PYTHON_USEDEP}]
+	>=dev-python/websockets-11.0.3[${PYTHON_USEDEP}]"
 
 # prevent writing a useless file to /usr
 src_prepare() {
