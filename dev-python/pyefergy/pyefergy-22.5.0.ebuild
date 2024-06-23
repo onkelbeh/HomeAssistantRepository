@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="An API library for Efergy energy meters."
@@ -18,12 +18,16 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.4.4[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/iso4217-1.2.20150619[${PYTHON_USEDEP}]
 	dev-python/pytz[${PYTHON_USEDEP}]"
 
-python_test() {
-	py.test -v -v || die
+src_prepare() {
+	# remove unsupported dynamic-versioning plugin
+	sed 's/0.0.0/${PV}/g' -i pyproject.toml || die
+	sed 's/, "poetry-dynamic-versioning>=1.0.0,<2.0.0"//g' -i pyproject.toml || die
+	sed 's/poetry_dynamic_versioning.backend/poetry.core.masonry.api/g' -i pyproject.toml || die
+	eapply_user
 }
 
 distutils_enable_tests pytest
