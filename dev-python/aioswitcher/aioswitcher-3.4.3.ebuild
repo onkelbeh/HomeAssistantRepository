@@ -19,17 +19,13 @@ DOCS="README.md"
 
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
 
-src_prepare() {
+#src_prepare() {
 	# /usr/lib/python3.10/site-packages/py.typed ?
-	rm "${S}/py.typed" || die
-	eapply_user
-}
+	#rm "${S}/py.typed" || die
+	#eapply_user
+#}
