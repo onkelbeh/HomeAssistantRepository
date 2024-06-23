@@ -5,11 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
-inherit distutils-r1 pypi
-
 DESCRIPTION="Electra Smart Python Integration."
 HOMEPAGE="https://github.com/jafar-atili/pyelectra/ https://pypi.org/project/pyElectra/"
+inherit distutils-r1
+SRC_URI="https://github.com/jafar-atili/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -20,13 +19,11 @@ RESTRICT="!test? ( test ) mirror"
 DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
 
-python_test() {
-	py.test -v -v || die
+src_prepare() {
+	#sed -i "s/\['electra'\],/['electrasmart'],/g" setup.py || die
+	rm setup.py
+	eapply_user
 }
 
 distutils_enable_tests pytest
