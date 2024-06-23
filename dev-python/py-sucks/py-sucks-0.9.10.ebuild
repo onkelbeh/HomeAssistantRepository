@@ -23,16 +23,10 @@ RDEPEND=">=dev-python/sleekxmppfs-1.4.1[${PYTHON_USEDEP}]
 	>=dev-python/click-6[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.18[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.4[${PYTHON_USEDEP}]
-	>=dev-python/pycountry-convert-0.5[${PYTHON_USEDEP}]
-	>=dev-python/stringcase-1.2[${PYTHON_USEDEP}]"
+	>=dev-python/pycountry-convert-0.5[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/requests-mock[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
