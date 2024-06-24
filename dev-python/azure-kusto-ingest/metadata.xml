@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">azure-kusto-ingest</remote-id>
+    <remote-id type="github">Azure/azure-kusto-python</remote-id>
+    <maintainer status="unknown">
+      <email>kustalk@microsoft.com</email>
+      <name>Microsoft Corporation</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
