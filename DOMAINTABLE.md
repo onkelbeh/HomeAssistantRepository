@@ -11,6 +11,7 @@
 |aemet| AEMET OpenData meteorological data|N|N|Y|2021.3|
 |aftership|The aftership platform allows one to track deliveries by AfterShip|N|Y|Y|0.85|
 |agent_dvr|Agent DVR is a free* software DVR solution|N|Y|Y|0.110|
+|airgradient|The AirGradient integration will fetch data from your AirGradient devices|N|N|Y|2024.6.0b4|
 |airly|Uses the Airly web service as a source for air quality data|Y|Y|Y||
 |airnow|AirNow web service as a source for air quality data|N|N|Y|2021.2|
 |airq|integrating the sensors provided by your air-Q device|N|N|Y|2022.12.0|
@@ -47,6 +48,7 @@
 |apprise|The Apprise service is an all-in-one solution to open up Home Assistant|N|Y|Y|0.101|
 |aprilaire|The Aprilaire integration allows you to control an Aprilaire thermostat|N|N|Y|2024.3.0|
 |aprs|Tracker integration connects to the APRS-IS|N|N|Y|0.95|
+|apsystems|allows you to read the data from your APsystems EZ1 microinverter|N|N|Y|2024.6.0b4|
 |aqualogic|Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller|N|N|Y|0.80|
 |aquostv|The aquostv platform allows you to control a Sharp Aquos TV|N|Y|Y|0.35|
 |aranet|Integrates Aranet devices into Home Assistant|N|N|Y|2022.12.0|
@@ -377,6 +379,7 @@
 |image|handle image assets in Home Assistant|N|N|Y||
 |image_upload|handle image assets in Home Assistant|N|Y|Y|2023.1.1|
 |imap|observing your IMAP server and reporting the amount of unread emails|N|Y|Y|0.25|
+|imgw_pib|hydrological data from Institute of Meteorology and Water Management - Poland|N|N|Y|2024.6.0b4|
 |improv_ble|allows connecting devices implementing Improv via BLE to Wi-Fi|N|N|Y|2023.11.0b2|
 |incomfort|client for Intergas InComfort/InTouch Lan2RF systems|N|Y|Y|0.93|
 |influxdb|transfer sensor data to a local InfluxDB database|Y|Y|Y|0.9|
@@ -391,6 +394,7 @@
 |ipp|read current data from your networked printer|N|Y|Y|0.108|
 |iqvia|collects allergy, asthma and disease information (based on a U.S. ZIP code)|N|N|Y||
 |irish_rail_transport|will give you the time until the next two departures|N|N|Y|0.57|
+|isal|Intelligent Storage Acceleration, is used for accelerating aiohttp|Y|Y|Y|2024.6.0b4|
 |islamic_prayer_times|integration displays the various prayer times for Muslims as sensors|N|Y|Y|0.85|
 |iss|know if the station is above your home location|N|N|Y||
 |isy994|controller that is capable of controlling Insteon and X10 devices|N|N|Y||
@@ -501,6 +505,7 @@
 |modern_forms|Asynchronous Python client for Modern Forms fans|N|N|Y|2021.7|
 |moehlenhoff_alpha2|allows you to control a Möhlenhoff Alpha 2 temperature control system|N|N|Y|2022.3.0b3|
 |monoprice|Python API for talking to Monoprice 6-zone amplifier|N|N|Y|0.56|
+|monzo|allows you to connect your Monzo bank accounts to Home Assistant|N|N|Y|2024.6.0b4|
 |mopeka|Integrates Mopeka devices into Home Assistant|N|N|Y|2023.2.1|
 |mosquitto|Set a runtime dependency for Mosquitto MQTT broker|Y|Y|Y|2022.8.3|
 |motionblinds_ble|adds support for Motionblinds Bluetooth motors|N|N|Y|2024.4.0b3|
