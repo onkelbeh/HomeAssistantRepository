@@ -10,11 +10,11 @@ HOMEPAGE="https://github.com/jafar-atili/pyelectra/ https://pypi.org/project/pyE
 inherit distutils-r1
 SRC_URI="https://github.com/jafar-atili/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
-LICENSE="all-rights-reserved"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
-RESTRICT="!test? ( test ) mirror"
+RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
