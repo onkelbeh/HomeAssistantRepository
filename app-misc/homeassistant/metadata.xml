@@ -166,6 +166,7 @@
     <flag name="intesishome">communications with IntesisHome Smart AC Controllers</flag>
     <flag name="ipma">ipma weather platform</flag>
     <flag name="ipp">read current data from your networked printer</flag>
+    <flag name="isal">Intelligent Storage Acceleration, is used for accelerating aiohttp</flag>
     <flag name="islamic_prayer_times">integration displays the various prayer times for Muslims as sensors</flag>
     <flag name="jewish_calendar">Displays information related to the Jewish Calendar as a variety of sensors</flag>
     <flag name="joaoapps_join">joaoapps_join integration exposes services from Join</flag>

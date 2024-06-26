@@ -26,6 +26,7 @@
     <flag name="aemet"> AEMET OpenData meteorological data</flag>
     <flag name="aftership">The aftership platform allows one to track deliveries by AfterShip</flag>
     <flag name="agent_dvr">Agent DVR is a free* software DVR solution</flag>
+    <flag name="airgradient">The AirGradient integration will fetch data from your AirGradient devices</flag>
     <flag name="airly">Uses the Airly web service as a source for air quality data</flag>
     <flag name="airnow">AirNow web service as a source for air quality data</flag>
     <flag name="airq">integrating the sensors provided by your air-Q device</flag>
@@ -62,6 +63,7 @@
     <flag name="apprise">The Apprise service is an all-in-one solution to open up Home Assistant</flag>
     <flag name="aprilaire">The Aprilaire integration allows you to control an Aprilaire thermostat</flag>
     <flag name="aprs">Tracker integration connects to the APRS-IS</flag>
+    <flag name="apsystems">allows you to read the data from your APsystems EZ1 microinverter</flag>
     <flag name="aqualogic">Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller</flag>
     <flag name="aquostv">The aquostv platform allows you to control a Sharp Aquos TV</flag>
     <flag name="aranet">Integrates Aranet devices into Home Assistant</flag>
@@ -88,6 +90,7 @@
     <flag name="awair">Library to integrate the Awair GraphQL API into Home Assistant</flag>
     <flag name="aws">Interact with Amazon Web Services</flag>
     <flag name="axis">Communicating with newer devices from Axis Communications</flag>
+    <flag name="azure_data_explorer">allows you to forward events to Azure Data Explorer</flag>
     <flag name="backup">allows you to create and download backups for your Home Assistant Core</flag>
     <flag name="baf">Integrates Big Ass Fans devices into Home Assistant</flag>
     <flag name="baidu">Text-to-speech platform uses Baidu TTS engine to read a text with natural soundi</flag>
@@ -394,6 +397,7 @@
     <flag name="image">handle image assets in Home Assistant</flag>
     <flag name="image_upload">handle image assets in Home Assistant</flag>
     <flag name="imap">observing your IMAP server and reporting the amount of unread emails</flag>
+    <flag name="imgw_pib">hydrological data from Institute of Meteorology and Water Management - Poland</flag>
     <flag name="improv_ble">allows connecting devices implementing Improv via BLE to Wi-Fi</flag>
     <flag name="incomfort">client for Intergas InComfort/InTouch Lan2RF systems</flag>
     <flag name="influxdb">transfer sensor data to a local InfluxDB database</flag>
@@ -408,6 +412,7 @@
     <flag name="ipp">read current data from your networked printer</flag>
     <flag name="iqvia">collects allergy, asthma and disease information (based on a U.S. ZIP code)</flag>
     <flag name="irish_rail_transport">will give you the time until the next two departures</flag>
+    <flag name="isal">Intelligent Storage Acceleration, is used for accelerating aiohttp</flag>
     <flag name="islamic_prayer_times">integration displays the various prayer times for Muslims as sensors</flag>
     <flag name="iss">know if the station is above your home location</flag>
     <flag name="isy994">controller that is capable of controlling Insteon and X10 devices</flag>
@@ -518,6 +523,7 @@
     <flag name="modern_forms">Asynchronous Python client for Modern Forms fans</flag>
     <flag name="moehlenhoff_alpha2">allows you to control a Möhlenhoff Alpha 2 temperature control system</flag>
     <flag name="monoprice">Python API for talking to Monoprice 6-zone amplifier</flag>
+    <flag name="monzo">allows you to connect your Monzo bank accounts to Home Assistant</flag>
     <flag name="mopeka">Integrates Mopeka devices into Home Assistant</flag>
     <flag name="mosquitto">Set a runtime dependency for Mosquitto MQTT broker</flag>
     <flag name="motionblinds_ble">adds support for Motionblinds Bluetooth motors</flag>
