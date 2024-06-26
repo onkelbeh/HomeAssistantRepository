@@ -43,8 +43,8 @@ src_prepare() {
 }
 
 test_tracer() {
-	local -x COVERAGE_TEST_TRACER=${1}
-	einfo "  Testing with the ${COVERAGE_TEST_TRACER} tracer ..."
+	local -x COVERAGE_CORE=${1}
+	einfo "  Testing with the ${COVERAGE_CORE} core ..."
 	epytest -p flaky -p hypothesis -p xdist tests
 }
 
@@ -54,6 +54,10 @@ python_test() {
 		tests/test_concurrency.py::SigtermTest::test_sigterm_threading_saves_data
 		# broken because of pytest plugins explicity loaded
 		tests/test_debug.py::ShortStackTest::test_short_stack{,_skip}
+		# these expect specific availability of C extension matching
+		# COVERAGE_CORE (which breaks testing pytracer on CPython)
+		tests/test_cmdline.py::CmdLineStdoutTest::test_version
+		tests/test_debug.py::DebugTraceTest::test_debug_sys_ctracer
 	)
 	local EPYTEST_IGNORE=(
 		# pip these days insists on fetching build deps from Internet
@@ -73,11 +77,22 @@ python_test() {
 	${prev_opt}
 
 	if [[ -n ${c_ext} ]]; then
-		cp "${c_ext}" \
-			coverage/ || die
-		test_tracer c
+		cp "${c_ext}" coverage/ || die
+		test_tracer ctrace
+	fi
+
+	test_tracer pytrace
+
+	case ${EPYTHON} in
+		python3.1[01]|pypy3)
+			;;
+		*)
+			# available since Python 3.12
+			test_tracer sysmon
+			;;
+	esac
+
+	if [[ -n ${c_ext} ]]; then
 		rm coverage/*.so || die
-	else
-		test_tracer py
 	fi
 }
