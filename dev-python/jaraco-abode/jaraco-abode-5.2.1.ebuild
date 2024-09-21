@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 PYPI_PN=${PN/-/.}
 inherit distutils-r1 pypi
 
@@ -33,13 +32,5 @@ RDEPEND=">=dev-python/requests-2.12.4[${PYTHON_USEDEP}]
 	dev-python/bx-py-utils[${PYTHON_USEDEP}]
 	dev-python/platformdirs[${PYTHON_USEDEP}]
 	dev-python/jaraco-itertools[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
