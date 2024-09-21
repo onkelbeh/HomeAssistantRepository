@@ -23,7 +23,8 @@ RDEPEND="
 	>=dev-python/dbus-fast-1.21.0[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.21.1[${PYTHON_USEDEP}]
 	>=dev-python/usb-devices-0.4.5[${PYTHON_USEDEP}]
-	>=dev-python/aiooui-0.1.1[${PYTHON_USEDEP}]"
+	>=dev-python/aiooui-0.1.1[${PYTHON_USEDEP}]
+	>=dev-python/uart-devices-0.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
