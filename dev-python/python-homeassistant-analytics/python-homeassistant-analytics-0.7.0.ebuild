@@ -22,9 +22,5 @@ RDEPEND=">=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]
 	>=dev-python/mashumaro-3.11[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.9.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
 
 distutils_enable_tests pytest
