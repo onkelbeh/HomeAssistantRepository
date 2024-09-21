@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
@@ -20,19 +20,12 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/python-dateutil-2.8.1[${PYTHON_USEDEP}]
-		 >=dev-python/requests-2.24.0[${PYTHON_USEDEP}]
-		 >=dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]
-		 >=dev-python/sortedcontainers-2.4.0[${PYTHON_USEDEP}]
-		 >=dev-python/aiohttp-3.8.4[${PYTHON_USEDEP}]
-		 >=dev-python/aiofiles-23.1.0[${PYTHON_USEDEP}]"
+	>=dev-python/requests-2.24.0[${PYTHON_USEDEP}]
+	>=dev-python/python-slugify-4.0.1[${PYTHON_USEDEP}]
+	>=dev-python/sortedcontainers-2.4.0[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-3.8.4[${PYTHON_USEDEP}]
+	>=dev-python/aiofiles-23.1.0[${PYTHON_USEDEP}]"
 BDEPEND="
-	>=dev-python/testtools-2.4.0[${PYTHON_USEDEP}]
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	>=dev-python/testtools-2.4.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
