@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Socket.IO server"
@@ -17,10 +16,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="asyncio_client client test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
 RDEPEND=">=dev-python/bidict-0.21.0[${PYTHON_USEDEP}]
-	>=dev-python/six-1.9.0[${PYTHON_USEDEP}]
 	dev-python/python-engineio[${PYTHON_USEDEP}]
 	client? (
 		  >=dev-python/requests-2.21.0
@@ -28,11 +26,9 @@ RDEPEND=">=dev-python/bidict-0.21.0[${PYTHON_USEDEP}]
 		  )
 	asyncio_client? (
 		  >=dev-python/aiohttp-3.4
-		  >=dev-python/websockets-7.0
 		  )"
 BDEPEND="
 	test? (
-		  dev-python/pytest[${PYTHON_USEDEP}]
 		  dev-python/mock[${PYTHON_USEDEP}]
 	)"
 
