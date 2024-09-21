@@ -20,9 +20,9 @@ DOCS="README.md"
 BDEPEND="
 	>=dev-python/cython-3[${PYTHON_USEDEP}]
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
