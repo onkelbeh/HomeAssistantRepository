@@ -9,8 +9,8 @@
     <remote-id type="pypi">amberelectric</remote-id>
     <remote-id type="github">madpilot/amberelectric.py</remote-id>
     <maintainer status="unknown">
-      <email>dev+pypi@amber.com.au</email>
-      <name>Amber Electric</name>
+      <email>dev@amber.com.au</email>
+      <name>Amber Electric Development Team</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
