@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/dacite-1.7.0[${PYTHON_USEDEP}]
-	>=dev-python/pysnmp-lextudio-5.0.31[${PYTHON_USEDEP}]"
+	>=dev-python/pysnmp-6.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/pytest-runner[${PYTHON_USEDEP}]"
 
