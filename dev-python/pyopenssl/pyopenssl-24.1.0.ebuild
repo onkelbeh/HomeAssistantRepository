@@ -1,10 +1,10 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 PYTHON_REQ_USE="threads(+)"
 
 PYPI_NO_NORMALIZE=1
@@ -24,16 +24,16 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
-	<dev-python/cryptography-42[${PYTHON_USEDEP}]
-	>=dev-python/cryptography-40.0.2[${PYTHON_USEDEP}]
+	<dev-python/cryptography-43[${PYTHON_USEDEP}]
+	>=dev-python/cryptography-41.0.5[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	test? (
 		$(python_gen_cond_dep '
 			dev-python/cffi[${PYTHON_USEDEP}]
 		' 'python*')
-		dev-python/flaky[${PYTHON_USEDEP}]
 		dev-python/pretend[${PYTHON_USEDEP}]
+		dev-python/pytest-rerunfailures[${PYTHON_USEDEP}]
 	)
 "
 
@@ -62,5 +62,10 @@ src_test() {
 		)
 	fi
 
+	local -x PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
 	distutils-r1_src_test
+}
+
+python_test() {
+	epytest -p rerunfailures
 }
