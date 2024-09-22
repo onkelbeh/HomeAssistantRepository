@@ -24,7 +24,6 @@ RDEPEND="dev-python/netifaces[${PYTHON_USEDEP}]
 BDEPEND="
 	test? (
 		dev-python/freezegun[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
 	)"
 
