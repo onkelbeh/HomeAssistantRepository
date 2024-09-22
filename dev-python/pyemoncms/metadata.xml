@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyemoncms</remote-id>
+    <remote-id type="github">Open-Building-Management/pyemoncms</remote-id>
+    <maintainer status="unknown">
+      <email>alexandre.cuer@wanadoo.fr</email>
+      <name>Alexandre CUER</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
