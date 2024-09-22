@@ -4,8 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
+DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
 DESCRIPTION="Deebot client library in python 3"
@@ -19,11 +18,15 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.9[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.10[${PYTHON_USEDEP}]
 	>=dev-python/aiomqtt-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/cachetools-5.0.0[${PYTHON_USEDEP}]
-	dev-python/defusedxml[${PYTHON_USEDEP}]
+	>=dev-python/defusedxml-0.7.1[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.23.2[${PYTHON_USEDEP}]
-	>=dev-python/pillow-10.0.1[${PYTHON_USEDEP}]"
+	>=dev-python/pillow-10.0.1[${PYTHON_USEDEP}]
+	>=dev-python/svg-py-1.4.2[${PYTHON_USEDEP}]"
+BDEPEND="dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+	dev-python/pytest-timeout[${PYTHON_USEDEP}]
+	>=dev-python/pycountry-24.6.1[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
