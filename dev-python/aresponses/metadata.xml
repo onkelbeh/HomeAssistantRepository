@@ -7,10 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aresponses</remote-id>
-    <remote-id type="github">circleup/aresponses</remote-id>
+    <remote-id type="github">aresponses/aresponses</remote-id>
     <maintainer status="unknown">
       <email>aresponses@brycedrennan.com</email>
-      <name>Bryce Drennan, CircleUp</name>
+      <name>Bryce Drennan</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
