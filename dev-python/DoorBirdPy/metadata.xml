@@ -9,8 +9,8 @@
     <remote-id type="pypi">DoorBirdPy</remote-id>
     <remote-id type="gitlab">klikini/doorbirdpy</remote-id>
     <maintainer status="unknown">
-      <email>andy@robiotic.net</email>
-      <name>Andy Castille</name>
+      <email>nick@koston.org</email>
+      <name>J. Nick Koston</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
