@@ -16,6 +16,9 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
+PATCHES=(
+	"${FILESDIR}/aioshelly.patch"
+)
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-1.19.0[${PYTHON_USEDEP}]

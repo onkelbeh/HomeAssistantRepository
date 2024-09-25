@@ -3,15 +3,15 @@
 
 EAPI=8
 inherit meson git-r3
-DESCRIPTION="UDP transport with optional reliability"
-HOMEPAGE="https://dev.freebox.fr/sdk/librdp/"
-EGIT_REPO_URI="https://github.com/fbx/librudp.git"
+DESCRIPTION="Freebox Network HID devices library"
+HOMEPAGE="https://dev.freebox.fr/sdk/foils_hid/"
+EGIT_REPO_URI="https://github.com/fbx/foils_hid.git"
 
 LICENSE=""
 SLOT="0"
 KEYWORDS=""
 
-DEPEND="dev-libs/libela"
+DEPEND="=dev-libs/librudp-${PV}"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 IUSE="tests"
