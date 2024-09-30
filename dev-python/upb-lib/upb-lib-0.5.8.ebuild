@@ -19,15 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="CHANGELOG.md"
 
 RDEPEND="dev-python/pytz[${PYTHON_USEDEP}]
-	>=dev-python/pyserial-asyncio-0.5[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	dev-python/pyserial-asyncio-fast[${PYTHON_USEDEP}]"
 
 src_prepare() {
 	sed -e 's/"CHANGELOG.md",//' -i pyproject.toml || die
