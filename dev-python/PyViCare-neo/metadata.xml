@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">PyViCare-neo</remote-id>
+    <remote-id type="github">CFenner/PyViCare</remote-id>
+    <maintainer status="unknown">
+      <email>fenner.christopher@gmail.com</email>
+      <name>Christopher Fenner</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
