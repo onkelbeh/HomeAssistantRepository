@@ -18,12 +18,12 @@ RDEPEND="dev-python/click[${PYTHON_USEDEP}]
 	>=dev-python/click-log-0.2.1[${PYTHON_USEDEP}]
 	~dev-python/pure-pcapy3-1.0.1[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.60.2[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)"
+	>=dev-python/zigpy-0.65.3[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/asynctest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 	)"
 
 src_prepare() {
