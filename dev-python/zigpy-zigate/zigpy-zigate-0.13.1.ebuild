@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 DESCRIPTION="A library which communicates with ZiGate radios for zigpy"
 HOMEPAGE="https://github.com/zigpy/zigpy-zigate https://pypi.org/project/zigpy-zigate/"
@@ -17,20 +16,15 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/voluptuous[${PYTHON_USEDEP}]
-	>=dev-python/zigpy-0.60.0[${PYTHON_USEDEP}]
+	>=dev-python/zigpy-0.60.2[${PYTHON_USEDEP}]
 	>=dev-python/pyusb-1.1.0[${PYTHON_USEDEP}]
 	dev-python/gpiozero[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)"
 BDEPEND="
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
 
