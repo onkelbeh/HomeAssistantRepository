@@ -4,24 +4,25 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="cChardet is high speed universal character encoding detector."
-HOMEPAGE="https://github.com/faust-streaming/cChardet https://pypi.org/project/faust-cchardet/"
+DESCRIPTION="Context manager to raise an exception when a future is done"
+HOMEPAGE="https://github.com/bdraco/async_interrupt https://pypi.org/project/async-interrupt/"
 
-LICENSE="LGPL-3"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
