@@ -11,26 +11,33 @@ parse_constraints () {
         for d in  $l; do
 	    local pos=${#d}
 	    local package=`eix -es# $d  --use python_targets_python3_12`
+            local operator=${l:$pos:2}
+            pos=$((pos + 2 ))
+            local version=${l:$pos}
             if [ -z "$package" ];then
 	    	package=`eix -es# ${d,,}  --use python_targets_python3_12`
 	    fi
             if [ -z "$package" ];then
                 package=`eix -es# ${d//_/-}  --use python_targets_python3_12`
             fi
-	    if [ "$d" = "atomicwrites-homeassistant" ];then
-	    	package="dev-python/atomicwrites"
-	    elif [ "$d" = "faust-cchardet" ];then
-                package="dev-python/cchardet"
-	    elif [ "$d" = "uv" ];then
-                package="dev-python/uv"
-	    elif [ "$d" = "protobuf" ];then
-		package="dev-python/protobuf-python"
-            elif [ "$d" = "Jinja2" ];then
-                package="dev-python/jinja"
-	    fi
-            local operator=${l:$pos:2}
-            pos=$((pos + 2 ))
-	    local version=${l:$pos}
+	    case $d in
+	    	atomicwrites-homeassistant)
+	    		package="dev-python/atomicwrites"
+			;;
+		faust-cchardet)
+	                package="dev-python/cchardet"
+			;;
+		uv)
+	                echo "        >=dev-python/uv-$version" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+			break
+			;;
+	    	protobuf)
+			package="dev-python/protobuf-python"
+			;;
+	        Jinja2)
+	                package="dev-python/jinja"
+			;;
+	    esac
 	    if [ -z "$package" ];then
 	      echo "#$l NOT FOUND"
 	      break
@@ -256,7 +263,7 @@ RDEPEND="\${RDEPEND}
 	here_travel_time? ( ~dev-python/here-routing-0.2.0[\${PYTHON_USEDEP}] ~dev-python/here-transit-1.2.0[\${PYTHON_USEDEP}] )
 	holiday? ( ~dev-python/holidays-0.51[\${PYTHON_USEDEP}] ~dev-python/Babel-2.15.0[\${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.9.1[\${PYTHON_USEDEP}] dev-python/fnv-hash-fast[\${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[\${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[\${PYTHON_USEDEP}] )
-	homekit_controller? ( ~dev-python/aiohomekit-3.1.5[\${PYTHON_USEDEP}] )
+	homekit_controller? ( ~dev-python/aiohomekit-3.2.3[\${PYTHON_USEDEP}] ~dev-python/pyroute2-0.7.5[\${PYTHON_USEDEP}]  )
 	homematic? ( ~dev-python/pyhomematic-0.1.77[\${PYTHON_USEDEP}] )
 	homematicip_cloud? ( ~dev-python/homematicip-1.1.1[\${PYTHON_USEDEP}] )
 	hp_ilo? ( ~dev-python/python-hpilo-4.4.3[\${PYTHON_USEDEP}] )
@@ -417,7 +424,7 @@ RDEPEND="\${RDEPEND}
 	yi? ( ~dev-python/aioftp-0.21.3[\${PYTHON_USEDEP}] )
 	zeroconf? ( dev-python/zeroconf[\${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[\${PYTHON_USEDEP}] )
-	zha? ( ~dev-python/bellows-0.39.1[\${PYTHON_USEDEP}] ~dev-python/pyserial-3.5[\${PYTHON_USEDEP}] ~dev-python/zha-quirks-0.0.116[\${PYTHON_USEDEP}] ~dev-python/zigpy-deconz-0.23.1[\${PYTHON_USEDEP}] ~dev-python/zigpy-0.64.1[\${PYTHON_USEDEP}] ~dev-python/zigpy-xbee-0.20.1[\${PYTHON_USEDEP}] ~dev-python/zigpy-zigate-0.12.0[\${PYTHON_USEDEP}] ~dev-python/zigpy-znp-0.12.1[\${PYTHON_USEDEP}] ~dev-python/universal-silabs-flasher-0.0.20[\${PYTHON_USEDEP}] ~dev-python/pyserial-asyncio-fast-0.11[\${PYTHON_USEDEP}] )
+	zha? ( ~dev-python/zha-0.0.34[\${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.12[\${PYTHON_USEDEP}] )
 	zoneminder? ( ~dev-python/zm-py-0.5.4[\${PYTHON_USEDEP}] )
 	zwave_js? ( ~dev-python/pyserial-3.5[\${PYTHON_USEDEP}] ~dev-python/zwave-js-server-python-0.56.0[\${PYTHON_USEDEP}] )"
