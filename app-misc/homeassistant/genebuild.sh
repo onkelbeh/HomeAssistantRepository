@@ -21,6 +21,12 @@ parse_constraints () {
 	    	package="dev-python/atomicwrites"
 	    elif [ "$d" = "faust-cchardet" ];then
                 package="dev-python/cchardet"
+	    elif [ "$d" = "uv" ];then
+                package="dev-python/uv"
+	    elif [ "$d" = "protobuf" ];then
+		package="dev-python/protobuf-python"
+            elif [ "$d" = "Jinja2" ];then
+                package="dev-python/jinja"
 	    fi
             local operator=${l:$pos:2}
             pos=$((pos + 2 ))
@@ -219,7 +225,7 @@ RDEPEND="\${RDEPEND}
 	enocean? ( ~dev-python/enocean-0.50.1[\${PYTHON_USEDEP}] )
 	enphase_envoy? ( ~dev-python/pyenphase-1.20.3[\${PYTHON_USEDEP}] )
 	environment_canada? ( ~dev-python/env-canada-0.6.3[\${PYTHON_USEDEP}] )
-	esphome? ( ~dev-python/aioesphomeapi-24.5.0[\${PYTHON_USEDEP}] ~dev-python/esphome-dashboard-api-1.2.3[\${PYTHON_USEDEP}] ~dev-python/bleak-esphome-1.0.0[\${PYTHON_USEDEP}] )
+	esphome? ( ~dev-python/aioesphomeapi-27.0.0[\${PYTHON_USEDEP}] ~dev-python/esphome-dashboard-api-1.2.3[\${PYTHON_USEDEP}] ~dev-python/bleak-esphome-1.0.0[\${PYTHON_USEDEP}] )
 	everlights? ( ~dev-python/pyeverlights-0.1.0[\${PYTHON_USEDEP}] )
 	evohome? ( ~dev-python/evohome-async-0.4.19[\${PYTHON_USEDEP}] )
 	ffmpeg? ( ~dev-python/ha-ffmpeg-3.2.0[\${PYTHON_USEDEP}] )
@@ -285,10 +291,10 @@ RDEPEND="\${RDEPEND}
 	luci? ( ~dev-python/openwrt-luci-rpc-1.1.17[\${PYTHON_USEDEP}] )
 	luftdaten? ( ~dev-python/luftdaten-0.7.4[\${PYTHON_USEDEP}] )
 	mariadb? ( dev-python/mysqlclient[\${PYTHON_USEDEP}] )
-	matter? ( ~dev-python/python-matter-server-6.1.0[\${PYTHON_USEDEP}] )
+	matter? ( ~dev-python/python-matter-server-6.5.2[\${PYTHON_USEDEP}] )
 	maxcube? ( ~dev-python/maxcube-api-0.4.3[\${PYTHON_USEDEP}] )
 	media_extractor? ( ~net-misc/yt-dlp-2024.05.27 )
-	met? ( ~dev-python/PyMetno-0.12.0[\${PYTHON_USEDEP}] )
+	met? ( ~dev-python/PyMetno-0.13.0[\${PYTHON_USEDEP}] )
 	meteo_france? ( ~dev-python/meteofrance-api-1.3.0[\${PYTHON_USEDEP}] )
 	mfi? ( ~dev-python/mficlient-0.3.0[\${PYTHON_USEDEP}] )
 	mikrotik? ( ~dev-python/librouteros-3.2.0[\${PYTHON_USEDEP}] )
@@ -299,7 +305,7 @@ RDEPEND="\${RDEPEND}
 	mysql? ( dev-python/mysqlclient[\${PYTHON_USEDEP}] )
 	nad? ( ~dev-python/nad-receiver-0.3.0[\${PYTHON_USEDEP}] )
 	nederlandse_spoorwegen? ( ~dev-python/nsapi-3.0.5[\${PYTHON_USEDEP}] )
-	netatmo? ( ~dev-python/pyatmo-8.0.3[\${PYTHON_USEDEP}] )
+	netatmo? ( ~dev-python/pyatmo-8.1.0[\${PYTHON_USEDEP}] )
 	netdata? ( ~dev-python/netdata-1.1.0[\${PYTHON_USEDEP}] )
 	nextcloud? ( ~dev-python/nextcloudmonitor-1.5.0[\${PYTHON_USEDEP}] )
 	nfandroidtv? ( ~dev-python/notifications-android-tv-0.1.5[\${PYTHON_USEDEP}] )
@@ -443,7 +449,7 @@ BDEPEND="\${RDEPEND}
 		~dev-python/respx-0.21.1[\${PYTHON_USEDEP}]
 		~dev-python/syrupy-4.6.1[\${PYTHON_USEDEP}]
 		~dev-python/tqdm-4.66.4[\${PYTHON_USEDEP}]
-		~dev-python/uv-0.1.43
+		dev-python/uv
 	)
 	dev-python/setuptools[\${PYTHON_USEDEP}]
 	dev-python/mock[\${PYTHON_USEDEP}]"
