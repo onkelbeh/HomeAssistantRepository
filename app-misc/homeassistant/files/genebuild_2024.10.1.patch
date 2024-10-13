@@ -1,0 +1,23 @@
+--- a/core-2024.10.1/homeassistant/package_constraints.txt	2024-10-04 19:33:37.000000000 +0200
++++ b/core-2024.10.1/homeassistant/package_constraints.txt	2024-10-13 10:21:48.027841292 +0200
+@@ -167,7 +167,7 @@
+ dacite>=1.7.0
+ 
+ # Musle wheels for pandas 2.2.0 cannot be build for any architecture.
+-pandas==2.1.4
++#pandas==2.1.4
+ 
+ # chacha20poly1305-reuseable==0.12.x is incompatible with cryptography==43.0.x
+ chacha20poly1305-reuseable>=0.13.0
+--- a/homeassistant-2024.10.1/homeassistant/package_constraints.txt        2024-10-04 19:33:37.000000000 +0200
++++ b/homeassistant-2024.10.1/homeassistant/package_constraints.txt        2024-10-13 10:21:48.027841292 +0200
+@@ -167,7 +167,7 @@
+ dacite>=1.7.0
+
+ # Musle wheels for pandas 2.2.0 cannot be build for any architecture.
+-pandas==2.1.4
++#pandas==2.1.4
+
+ # chacha20poly1305-reuseable==0.12.x is incompatible with cryptography==43.0.x
+ chacha20poly1305-reuseable>=0.13.0
+

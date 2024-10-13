@@ -3,8 +3,8 @@
 
 parse_constraints () {
     local f="$1"
-    echo "# Home Assistant Core dependencies from $f" >> $ebuild_dir/homeassistant-$LATEST.ebuild
-    echo "RDEPEND=\"${RDEPEND}" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+    echo "# Home Assistant Core dependencies from $f" >> $EBUILD_PATH
+    echo "RDEPEND=\"${RDEPEND}" >> $EBUILD_PATH
     for l in `cat $f | grep '^[^#]' | cut -d, -f1`; do
         OIFS=$IFS
         IFS='<>=!'
@@ -28,7 +28,7 @@ parse_constraints () {
 	                package="dev-python/cchardet"
 			;;
 		uv)
-	                echo "        >=dev-python/uv-$version" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+	                echo "        >=dev-python/uv-$version" >> $EBUILD_PATH
 			break
 			;;
 	    	protobuf)
@@ -39,36 +39,58 @@ parse_constraints () {
 			;;
 	    esac
 	    if [ -z "$package" ];then
-	      echo "#$l NOT FOUND"
+	      echo -e "  \e[1;33m$l corresponding gentoo package was not found, entry skipped\e[0m"
 	      break
 	    fi
 	    if [ "$version" = "1000000000.0.0" ]; then
-	    	echo "        $package[\${PYTHON_USEDEP}]" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+	    	echo "        $package[\${PYTHON_USEDEP}]" >> $EBUILD_PATH
 	        break
 	    fi
 	    case $operator in
 	    	==)
-                  echo "	~$package-$version[\${PYTHON_USEDEP}]" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+                  echo "	~$package-$version[\${PYTHON_USEDEP}]" >> $EBUILD_PATH
 		  ;;
 		*)
-		  echo "	$operator$package-$version[\${PYTHON_USEDEP}]" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+		  echo "	$operator$package-$version[\${PYTHON_USEDEP}]" >> $EBUILD_PATH
             esac
             break
         done
         IFS=$OIFS
     done
-    echo "\"" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+    echo "\"" >> $EBUILD_PATH
 
 }
 
 # get latest
-LATEST=`curl -s https://api.github.com/repos/home-assistant/core/releases/latest | jq '.tag_name' | xargs -I {} echo {}`
+if [ -z "$1" ];then
+    VERSION=`curl -s https://api.github.com/repos/home-assistant/core/releases/latest | jq '.tag_name' | xargs -I {} echo {}`
+else
+    VERSION=`curl -s https://api.github.com/repos/home-assistant/core/releases/tags/$1 | jq '.tag_name' | xargs -I {} echo {}`
+fi
+EBUILD=$( pwd | rev | cut -d/ -f1 | rev )-$VERSION
+EBUILD_PATH=$( pwd )/$EBUILD.ebuild
 
-rm homeassistant-$LATEST.ebuild
-cp homeassistant-2024.9.3.ebuild homeassistant-$LATEST.ebuild
-ebuild homeassistant-$LATEST.ebuild clean digest unpack
-ebuild_dir=`pwd`
-cat > $ebuild_dir/homeassistant-$LATEST.ebuild << EOF
+if [ -f "$EBUILD_PATH" ]; then
+    echo -e "  \e[0;31m$EBUILD already exists\e[0m"
+    exit 1
+fi
+
+for v in `ls -rv *.ebuild`; do
+    cp $v $EBUILD_PATH
+    break
+done
+
+ebuild $EBUILD_PATH clean digest unpack
+
+patch=$( pwd )/files/genebuild_$VERSION.patch
+
+pushd /var/tmp/portage/app-misc/homeassistant-$VERSION/work
+
+if [ -f "$patch" ]; then
+    patch -p1 < $patch
+fi
+
+cat > $EBUILD_PATH << EOF
 # Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
@@ -116,11 +138,10 @@ RDEPEND="\${RDEPEND}
 	!app-misc/homeassistant-full"
 
 EOF
-pushd /var/tmp/portage/app-misc/homeassistant-$LATEST/work
-for i in `find . | grep package_constraints`;do parse_constraints $i; done
-popd
 
-cat >> $ebuild_dir/homeassistant-$LATEST.ebuild <<EOF
+for i in `find . | grep package_constraints`;do parse_constraints $i; done
+
+cat >> $EBUILD_PATH <<EOF
 
 # unknown origin, still something to clean up here
 
@@ -156,7 +177,7 @@ RDEPEND="\${RDEPEND}
 	apache_kafka? ( ~dev-python/aiokafka-0.10.0[\${PYTHON_USEDEP}] )
 	apcupsd? ( ~dev-python/aioapcaccess-0.4.2[\${PYTHON_USEDEP}] )
 	apple_tv? ( ~dev-python/pyatv-0.14.3[\${PYTHON_USEDEP}] )
-	apprise? ( ~dev-python/apprise-1.8.0[\${PYTHON_USEDEP}] )
+	apprise? ( ~dev-python/apprise-1.9.0[\${PYTHON_USEDEP}] )
 	aquostv? ( ~dev-python/sharp_aquos_rc-0.3.2[\${PYTHON_USEDEP}] )
 	arcam_fmj? ( ~dev-python/arcam-fmj-1.5.2[\${PYTHON_USEDEP}] )
 	aruba? ( ~dev-python/pexpect-4.6.0[\${PYTHON_USEDEP}] )
@@ -251,7 +272,7 @@ RDEPEND="\${RDEPEND}
 	fronius? ( ~dev-python/PyFronius-0.7.3[\${PYTHON_USEDEP}] )
 	garmin_connect? ( ~dev-python/garminconnect-ha-0.1.6[\${PYTHON_USEDEP}] )
 	gios? ( ~dev-python/gios-4.0.0[\${PYTHON_USEDEP}] )
-	github? ( ~dev-python/aiogithubapi-23.11.0[\${PYTHON_USEDEP}] )
+	github? ( ~dev-python/aiogithubapi-24.6.0[\${PYTHON_USEDEP}] )
 	glances? ( ~dev-python/glances-api-0.8.0[\${PYTHON_USEDEP}] )
 	gogogate2? ( ~dev-python/ismartgate-5.0.1[\${PYTHON_USEDEP}] )
 	greeneye_monitor? ( ~dev-python/greeneye-monitor-3.0.3[\${PYTHON_USEDEP}] )
@@ -514,4 +535,6 @@ pkg_postinst() {
 
 distutils_enable_tests pytest
 EOF
-ebuild homeassistant-$LATEST.ebuild clean digest
+
+popd
+ebuild $EBUILD_PATH clean digest
