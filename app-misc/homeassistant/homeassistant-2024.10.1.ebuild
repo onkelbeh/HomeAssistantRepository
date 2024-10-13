@@ -247,7 +247,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]"
 # Module requirements from useflags
 RDEPEND="${RDEPEND}
-	abode? ( ~dev-python/jaraco-abode-3.3.0[${PYTHON_USEDEP}] ~dev-python/jaraco-functools-3.9.0[${PYTHON_USEDEP}] )
+	abode? ( ~dev-python/jaraco-abode-6.2.1[${PYTHON_USEDEP}] )
 	accuweather? ( ~dev-python/accuweather-3.0.0[${PYTHON_USEDEP}] )
 	acer_projector? ( ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] )
 	acmeda? ( ~dev-python/aiopulse-0.4.4[${PYTHON_USEDEP}] )
@@ -315,7 +315,7 @@ RDEPEND="${RDEPEND}
 	bt_smarthub? ( ~dev-python/btsmarthub-devicelist-0.2.3[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.6[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-1.3.9[${PYTHON_USEDEP}] )
-	camera? ( ~dev-python/PyTurboJPEG-1.7.1[${PYTHON_USEDEP}] )
+	camera? ( dev-python/PyTurboJPEG[${PYTHON_USEDEP}] )
 	canary? ( ~dev-python/py-canary-0.5.4[${PYTHON_USEDEP}] )
 	cast? ( ~dev-python/pychromecast-14.0.1[${PYTHON_USEDEP}] )
 	cisco_mobility_express? ( ~dev-python/ciscomobilityexpress-0.3.9[${PYTHON_USEDEP}] )
@@ -330,7 +330,7 @@ RDEPEND="${RDEPEND}
 	deutsche_bahn? ( ~dev-python/schiene-0.23[${PYTHON_USEDEP}] )
 	devolo_home_control? ( ~dev-python/devolo-home-control-api-0.18.3[${PYTHON_USEDEP}] )
 	dexcom? ( ~dev-python/pydexcom-0.2.3[${PYTHON_USEDEP}] )
-	dhcp? ( ~dev-python/aiodhcpwatcher-1.0.0[${PYTHON_USEDEP}] ~dev-python/aiodiscover-2.1.0[${PYTHON_USEDEP}] ~dev-python/cached-ipaddress-0.3.0[${PYTHON_USEDEP}] )
+	dhcp? ( dev-python/aiodhcpwatcher[${PYTHON_USEDEP}] dev-python/aiodiscover[${PYTHON_USEDEP}] dev-python/cached-ipaddress[${PYTHON_USEDEP}] )
 	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] )
 	discogs? ( ~dev-python/discogs-client-2.3.0[${PYTHON_USEDEP}] )
 	discord? ( ~dev-python/nextcord-2.6.0[${PYTHON_USEDEP}] )
@@ -390,7 +390,7 @@ RDEPEND="${RDEPEND}
 	iaqualink? ( ~dev-python/iaqualink-0.5.0[${PYTHON_USEDEP}] ~dev-python/h2-4.1.0[${PYTHON_USEDEP}] )
 	ibeacon? ( ~dev-python/ibeacon-ble-1.2.0[${PYTHON_USEDEP}] )
 	ihc? ( ~dev-python/defusedxml-0.7.1[${PYTHON_USEDEP}] ~dev-python/ihcsdk-2.8.5[${PYTHON_USEDEP}] )
-	image_upload? ( ~dev-python/pillow-10.3.0[${PYTHON_USEDEP}] )
+	image_upload? ( dev-python/pillow[${PYTHON_USEDEP}] )
 	imap? ( ~dev-python/aioimaplib-1.1.0[${PYTHON_USEDEP}] )
 	incomfort? ( ~dev-python/incomfort-client-0.5.0[${PYTHON_USEDEP}] )
 	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
@@ -555,7 +555,6 @@ BDEPEND="${RDEPEND}
 		~dev-python/mypy-dev-1.11.0_alpha3[${PYTHON_USEDEP}]
 		~dev-python/pipdeptree-2.19.0[${PYTHON_USEDEP}]
 		~dev-vcs/pre-commit-3.7.1
-		~dev-python/pydantic-1.10.15[${PYTHON_USEDEP}]
 		~dev-python/pylint-per-file-ignores-1.3.2[${PYTHON_USEDEP}]
 		~dev-python/pylint-3.2.2[${PYTHON_USEDEP}]
 		~dev-python/pytest-asyncio-0.23.6[${PYTHON_USEDEP}]
