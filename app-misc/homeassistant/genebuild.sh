@@ -3,8 +3,8 @@
 
 parse_constraints () {
     local f="$1"
-    echo "# Home Assistant Core dependencies from $f" >> $ebuild_dir/homeassistant-$LATEST.ebuild
-    echo "RDEPEND=\"${RDEPEND}" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+    echo "# Home Assistant Core dependencies from $f" >> $EBUILD_PATH
+    echo "RDEPEND=\"${RDEPEND}" >> $EBUILD_PATH
     for l in `cat $f | grep '^[^#]' | cut -d, -f1`; do
         OIFS=$IFS
         IFS='<>=!'
@@ -28,10 +28,10 @@ parse_constraints () {
 	                package="dev-python/cchardet"
 			;;
 		uv)
-	                echo "        >=dev-python/uv-$version" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+	                echo "        >=dev-python/uv-$version" >> $EBUILD_PATH
 			break
 			;;
-	    	protobuf)
+		protobuf)
 			package="dev-python/protobuf-python"
 			;;
 	        Jinja2)
@@ -39,36 +39,58 @@ parse_constraints () {
 			;;
 	    esac
 	    if [ -z "$package" ];then
-	      echo "#$l NOT FOUND"
+	      echo -e "  \e[1;33m$l corresponding gentoo package was not found, entry skipped\e[0m"
 	      break
 	    fi
 	    if [ "$version" = "1000000000.0.0" ]; then
-	    	echo "        $package[\${PYTHON_USEDEP}]" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+	    	echo "        $package[\${PYTHON_USEDEP}]" >> $EBUILD_PATH
 	        break
 	    fi
 	    case $operator in
 	    	==)
-                  echo "	~$package-$version[\${PYTHON_USEDEP}]" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+                  echo "	~$package-$version[\${PYTHON_USEDEP}]" >> $EBUILD_PATH
 		  ;;
 		*)
-		  echo "	$operator$package-$version[\${PYTHON_USEDEP}]" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+		  echo "	$operator$package-$version[\${PYTHON_USEDEP}]" >> $EBUILD_PATH
             esac
             break
         done
         IFS=$OIFS
     done
-    echo "\"" >> $ebuild_dir/homeassistant-$LATEST.ebuild
+    echo "\"" >> $EBUILD_PATH
 
 }
 
 # get latest
-LATEST=`curl -s https://api.github.com/repos/home-assistant/core/releases/latest | jq '.tag_name' | xargs -I {} echo {}`
+if [ -z "$1" ];then
+    VERSION=`curl -s https://api.github.com/repos/home-assistant/core/releases/latest | jq '.tag_name' | xargs -I {} echo {}`
+else
+    VERSION=`curl -s https://api.github.com/repos/home-assistant/core/releases/tags/$1 | jq '.tag_name' | xargs -I {} echo {}`
+fi
+EBUILD=$( pwd | rev | cut -d/ -f1 | rev )-$VERSION
+EBUILD_PATH=$( pwd )/$EBUILD.ebuild
 
-rm homeassistant-$LATEST.ebuild
-cp homeassistant-2024.9.3.ebuild homeassistant-$LATEST.ebuild
-ebuild homeassistant-$LATEST.ebuild clean digest unpack
-ebuild_dir=`pwd`
-cat > $ebuild_dir/homeassistant-$LATEST.ebuild << EOF
+if [ -f "$EBUILD_PATH" ]; then
+    echo -e "  \e[0;31m$EBUILD already exists\e[0m"
+    exit 1
+fi
+
+for v in `ls -rv *.ebuild`; do
+    cp $v $EBUILD_PATH
+    break
+done
+
+ebuild $EBUILD_PATH clean digest unpack
+
+patch=$( pwd )/files/genebuild_$VERSION.patch
+
+pushd /var/tmp/portage/app-misc/homeassistant-$VERSION/work
+
+if [ -f "$patch" ]; then
+    patch -p1 < $patch
+fi
+
+cat > $EBUILD_PATH << EOF
 # Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
@@ -116,11 +138,10 @@ RDEPEND="\${RDEPEND}
 	!app-misc/homeassistant-full"
 
 EOF
-pushd /var/tmp/portage/app-misc/homeassistant-$LATEST/work
-for i in `find . | grep package_constraints`;do parse_constraints $i; done
-popd
 
-cat >> $ebuild_dir/homeassistant-$LATEST.ebuild <<EOF
+for i in `find . | grep package_constraints`;do parse_constraints $i; done
+
+cat >> $EBUILD_PATH <<EOF
 
 # unknown origin, still something to clean up here
 
@@ -130,7 +151,7 @@ RDEPEND="\${RDEPEND}
 	>=dev-python/pyqrcode-1.2.1[\${PYTHON_USEDEP}]"
 # Module requirements from useflags
 RDEPEND="\${RDEPEND}
-	abode? ( ~dev-python/jaraco-abode-3.3.0[\${PYTHON_USEDEP}] ~dev-python/jaraco-functools-3.9.0[\${PYTHON_USEDEP}] )
+	abode? ( ~dev-python/jaraco-abode-6.2.1[\${PYTHON_USEDEP}] )
 	accuweather? ( ~dev-python/accuweather-3.0.0[\${PYTHON_USEDEP}] )
 	acer_projector? ( ~dev-python/pyserial-3.5[\${PYTHON_USEDEP}] )
 	acmeda? ( ~dev-python/aiopulse-0.4.4[\${PYTHON_USEDEP}] )
@@ -155,8 +176,8 @@ RDEPEND="\${RDEPEND}
 	anthemav? ( ~dev-python/anthemav-1.4.1[\${PYTHON_USEDEP}] )
 	apache_kafka? ( ~dev-python/aiokafka-0.10.0[\${PYTHON_USEDEP}] )
 	apcupsd? ( ~dev-python/aioapcaccess-0.4.2[\${PYTHON_USEDEP}] )
-	apple_tv? ( ~dev-python/pyatv-0.14.3[\${PYTHON_USEDEP}] )
-	apprise? ( ~dev-python/apprise-1.8.0[\${PYTHON_USEDEP}] )
+	apple_tv? ( ~dev-python/pyatv-0.15.1[\${PYTHON_USEDEP}] )
+	apprise? ( ~dev-python/apprise-1.9.0[\${PYTHON_USEDEP}] )
 	aquostv? ( ~dev-python/sharp_aquos_rc-0.3.2[\${PYTHON_USEDEP}] )
 	arcam_fmj? ( ~dev-python/arcam-fmj-1.5.2[\${PYTHON_USEDEP}] )
 	aruba? ( ~dev-python/pexpect-4.6.0[\${PYTHON_USEDEP}] )
@@ -198,7 +219,7 @@ RDEPEND="\${RDEPEND}
 	bt_smarthub? ( ~dev-python/btsmarthub-devicelist-0.2.3[\${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.6[\${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-1.3.9[\${PYTHON_USEDEP}] )
-	camera? ( ~dev-python/PyTurboJPEG-1.7.1[\${PYTHON_USEDEP}] )
+	camera? ( dev-python/PyTurboJPEG[\${PYTHON_USEDEP}] )
 	canary? ( ~dev-python/py-canary-0.5.4[\${PYTHON_USEDEP}] )
 	cast? ( ~dev-python/pychromecast-14.0.1[\${PYTHON_USEDEP}] )
 	cisco_mobility_express? ( ~dev-python/ciscomobilityexpress-0.3.9[\${PYTHON_USEDEP}] )
@@ -213,7 +234,7 @@ RDEPEND="\${RDEPEND}
 	deutsche_bahn? ( ~dev-python/schiene-0.23[\${PYTHON_USEDEP}] )
 	devolo_home_control? ( ~dev-python/devolo-home-control-api-0.18.3[\${PYTHON_USEDEP}] )
 	dexcom? ( ~dev-python/pydexcom-0.2.3[\${PYTHON_USEDEP}] )
-	dhcp? ( ~dev-python/aiodhcpwatcher-1.0.0[\${PYTHON_USEDEP}] ~dev-python/aiodiscover-2.1.0[\${PYTHON_USEDEP}] ~dev-python/cached-ipaddress-0.3.0[\${PYTHON_USEDEP}] )
+	dhcp? ( dev-python/aiodhcpwatcher[\${PYTHON_USEDEP}] dev-python/aiodiscover[\${PYTHON_USEDEP}] dev-python/cached-ipaddress[\${PYTHON_USEDEP}] )
 	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[\${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[\${PYTHON_USEDEP}] )
 	discogs? ( ~dev-python/discogs-client-2.3.0[\${PYTHON_USEDEP}] )
 	discord? ( ~dev-python/nextcord-2.6.0[\${PYTHON_USEDEP}] )
@@ -251,7 +272,7 @@ RDEPEND="\${RDEPEND}
 	fronius? ( ~dev-python/PyFronius-0.7.3[\${PYTHON_USEDEP}] )
 	garmin_connect? ( ~dev-python/garminconnect-ha-0.1.6[\${PYTHON_USEDEP}] )
 	gios? ( ~dev-python/gios-4.0.0[\${PYTHON_USEDEP}] )
-	github? ( ~dev-python/aiogithubapi-23.11.0[\${PYTHON_USEDEP}] )
+	github? ( ~dev-python/aiogithubapi-24.6.0[\${PYTHON_USEDEP}] )
 	glances? ( ~dev-python/glances-api-0.8.0[\${PYTHON_USEDEP}] )
 	gogogate2? ( ~dev-python/ismartgate-5.0.1[\${PYTHON_USEDEP}] )
 	greeneye_monitor? ( ~dev-python/greeneye-monitor-3.0.3[\${PYTHON_USEDEP}] )
@@ -273,7 +294,7 @@ RDEPEND="\${RDEPEND}
 	iaqualink? ( ~dev-python/iaqualink-0.5.0[\${PYTHON_USEDEP}] ~dev-python/h2-4.1.0[\${PYTHON_USEDEP}] )
 	ibeacon? ( ~dev-python/ibeacon-ble-1.2.0[\${PYTHON_USEDEP}] )
 	ihc? ( ~dev-python/defusedxml-0.7.1[\${PYTHON_USEDEP}] ~dev-python/ihcsdk-2.8.5[\${PYTHON_USEDEP}] )
-	image_upload? ( ~dev-python/pillow-10.3.0[\${PYTHON_USEDEP}] )
+	image_upload? ( dev-python/pillow[\${PYTHON_USEDEP}] )
 	imap? ( ~dev-python/aioimaplib-1.1.0[\${PYTHON_USEDEP}] )
 	incomfort? ( ~dev-python/incomfort-client-0.5.0[\${PYTHON_USEDEP}] )
 	influxdb? ( ~dev-python/influxdb-5.3.1[\${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[\${PYTHON_USEDEP}] )
@@ -358,7 +379,7 @@ RDEPEND="\${RDEPEND}
 	samsungtv? ( ~dev-python/getmac-0.9.4[\${PYTHON_USEDEP}] ~dev-python/samsungctl-0.7.1[\${PYTHON_USEDEP}] ~dev-python/samsungtvws-2.6.0[async,encrypted,\${PYTHON_USEDEP}] ~dev-python/wakeonlan-2.1.0[\${PYTHON_USEDEP}] dev-python/async-upnp-client[\${PYTHON_USEDEP}] )
 	scrape? ( ~dev-python/beautifulsoup4-4.12.3[\${PYTHON_USEDEP}] ~dev-python/lxml-5.1.0[\${PYTHON_USEDEP}] )
 	season? ( ~dev-python/ephem-4.1.5[\${PYTHON_USEDEP}] )
-	shelly? ( ~dev-python/aioshelly-10.0.1[\${PYTHON_USEDEP}] )
+	shelly? ( ~dev-python/aioshelly-11.4.2[\${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.28.0[\${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.23[\${PYTHON_USEDEP}] )
 	simplisafe? ( ~dev-python/simplisafe-python-2024.1.0[\${PYTHON_USEDEP}] )
@@ -438,7 +459,6 @@ BDEPEND="\${RDEPEND}
 		~dev-python/mypy-dev-1.11.0_alpha3[\${PYTHON_USEDEP}]
 		~dev-python/pipdeptree-2.19.0[\${PYTHON_USEDEP}]
 		~dev-vcs/pre-commit-3.7.1
-		~dev-python/pydantic-1.10.15[\${PYTHON_USEDEP}]
 		~dev-python/pylint-per-file-ignores-1.3.2[\${PYTHON_USEDEP}]
 		~dev-python/pylint-3.2.2[\${PYTHON_USEDEP}]
 		~dev-python/pytest-asyncio-0.23.6[\${PYTHON_USEDEP}]
@@ -514,4 +534,6 @@ pkg_postinst() {
 
 distutils_enable_tests pytest
 EOF
-ebuild homeassistant-$LATEST.ebuild clean digest
+
+popd
+ebuild $EBUILD_PATH clean digest

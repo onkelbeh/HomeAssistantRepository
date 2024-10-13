@@ -135,7 +135,6 @@ RDEPEND="
 	>=dev-python/websockets-11.0.1[${PYTHON_USEDEP}]
 	~dev-python/charset-normalizer-3.2.0[${PYTHON_USEDEP}]
 	>=dev-python/dacite-1.7.0[${PYTHON_USEDEP}]
-	~dev-python/pandas-2.1.4[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.13.0[${PYTHON_USEDEP}]
 	>=dev-python/pycountry-23.12.11[${PYTHON_USEDEP}]
 	>=net-analyzer/scapy-2.5.0[${PYTHON_USEDEP}]
@@ -233,7 +232,6 @@ RDEPEND="
 	>=dev-python/websockets-11.0.1[${PYTHON_USEDEP}]
 	~dev-python/charset-normalizer-3.2.0[${PYTHON_USEDEP}]
 	>=dev-python/dacite-1.7.0[${PYTHON_USEDEP}]
-	~dev-python/pandas-2.1.4[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.13.0[${PYTHON_USEDEP}]
 	>=dev-python/pycountry-23.12.11[${PYTHON_USEDEP}]
 	>=net-analyzer/scapy-2.5.0[${PYTHON_USEDEP}]
@@ -249,7 +247,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}]"
 # Module requirements from useflags
 RDEPEND="${RDEPEND}
-	abode? ( ~dev-python/jaraco-abode-3.3.0[${PYTHON_USEDEP}] ~dev-python/jaraco-functools-3.9.0[${PYTHON_USEDEP}] )
+	abode? ( ~dev-python/jaraco-abode-6.2.1[${PYTHON_USEDEP}] )
 	accuweather? ( ~dev-python/accuweather-3.0.0[${PYTHON_USEDEP}] )
 	acer_projector? ( ~dev-python/pyserial-3.5[${PYTHON_USEDEP}] )
 	acmeda? ( ~dev-python/aiopulse-0.4.4[${PYTHON_USEDEP}] )
@@ -274,8 +272,8 @@ RDEPEND="${RDEPEND}
 	anthemav? ( ~dev-python/anthemav-1.4.1[${PYTHON_USEDEP}] )
 	apache_kafka? ( ~dev-python/aiokafka-0.10.0[${PYTHON_USEDEP}] )
 	apcupsd? ( ~dev-python/aioapcaccess-0.4.2[${PYTHON_USEDEP}] )
-	apple_tv? ( ~dev-python/pyatv-0.14.3[${PYTHON_USEDEP}] )
-	apprise? ( ~dev-python/apprise-1.8.0[${PYTHON_USEDEP}] )
+	apple_tv? ( ~dev-python/pyatv-0.15.1[${PYTHON_USEDEP}] )
+	apprise? ( ~dev-python/apprise-1.9.0[${PYTHON_USEDEP}] )
 	aquostv? ( ~dev-python/sharp_aquos_rc-0.3.2[${PYTHON_USEDEP}] )
 	arcam_fmj? ( ~dev-python/arcam-fmj-1.5.2[${PYTHON_USEDEP}] )
 	aruba? ( ~dev-python/pexpect-4.6.0[${PYTHON_USEDEP}] )
@@ -317,7 +315,7 @@ RDEPEND="${RDEPEND}
 	bt_smarthub? ( ~dev-python/btsmarthub-devicelist-0.2.3[${PYTHON_USEDEP}] )
 	buienradar? ( ~dev-python/buienradar-1.0.6[${PYTHON_USEDEP}] )
 	caldav? ( ~dev-python/caldav-1.3.9[${PYTHON_USEDEP}] )
-	camera? ( ~dev-python/PyTurboJPEG-1.7.1[${PYTHON_USEDEP}] )
+	camera? ( dev-python/PyTurboJPEG[${PYTHON_USEDEP}] )
 	canary? ( ~dev-python/py-canary-0.5.4[${PYTHON_USEDEP}] )
 	cast? ( ~dev-python/pychromecast-14.0.1[${PYTHON_USEDEP}] )
 	cisco_mobility_express? ( ~dev-python/ciscomobilityexpress-0.3.9[${PYTHON_USEDEP}] )
@@ -332,7 +330,7 @@ RDEPEND="${RDEPEND}
 	deutsche_bahn? ( ~dev-python/schiene-0.23[${PYTHON_USEDEP}] )
 	devolo_home_control? ( ~dev-python/devolo-home-control-api-0.18.3[${PYTHON_USEDEP}] )
 	dexcom? ( ~dev-python/pydexcom-0.2.3[${PYTHON_USEDEP}] )
-	dhcp? ( ~dev-python/aiodhcpwatcher-1.0.0[${PYTHON_USEDEP}] ~dev-python/aiodiscover-2.1.0[${PYTHON_USEDEP}] ~dev-python/cached-ipaddress-0.3.0[${PYTHON_USEDEP}] )
+	dhcp? ( dev-python/aiodhcpwatcher[${PYTHON_USEDEP}] dev-python/aiodiscover[${PYTHON_USEDEP}] dev-python/cached-ipaddress[${PYTHON_USEDEP}] )
 	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[${PYTHON_USEDEP}] )
 	discogs? ( ~dev-python/discogs-client-2.3.0[${PYTHON_USEDEP}] )
 	discord? ( ~dev-python/nextcord-2.6.0[${PYTHON_USEDEP}] )
@@ -370,7 +368,7 @@ RDEPEND="${RDEPEND}
 	fronius? ( ~dev-python/PyFronius-0.7.3[${PYTHON_USEDEP}] )
 	garmin_connect? ( ~dev-python/garminconnect-ha-0.1.6[${PYTHON_USEDEP}] )
 	gios? ( ~dev-python/gios-4.0.0[${PYTHON_USEDEP}] )
-	github? ( ~dev-python/aiogithubapi-23.11.0[${PYTHON_USEDEP}] )
+	github? ( ~dev-python/aiogithubapi-24.6.0[${PYTHON_USEDEP}] )
 	glances? ( ~dev-python/glances-api-0.8.0[${PYTHON_USEDEP}] )
 	gogogate2? ( ~dev-python/ismartgate-5.0.1[${PYTHON_USEDEP}] )
 	greeneye_monitor? ( ~dev-python/greeneye-monitor-3.0.3[${PYTHON_USEDEP}] )
@@ -392,7 +390,7 @@ RDEPEND="${RDEPEND}
 	iaqualink? ( ~dev-python/iaqualink-0.5.0[${PYTHON_USEDEP}] ~dev-python/h2-4.1.0[${PYTHON_USEDEP}] )
 	ibeacon? ( ~dev-python/ibeacon-ble-1.2.0[${PYTHON_USEDEP}] )
 	ihc? ( ~dev-python/defusedxml-0.7.1[${PYTHON_USEDEP}] ~dev-python/ihcsdk-2.8.5[${PYTHON_USEDEP}] )
-	image_upload? ( ~dev-python/pillow-10.3.0[${PYTHON_USEDEP}] )
+	image_upload? ( dev-python/pillow[${PYTHON_USEDEP}] )
 	imap? ( ~dev-python/aioimaplib-1.1.0[${PYTHON_USEDEP}] )
 	incomfort? ( ~dev-python/incomfort-client-0.5.0[${PYTHON_USEDEP}] )
 	influxdb? ( ~dev-python/influxdb-5.3.1[${PYTHON_USEDEP}] ~dev-python/influxdb-client-1.24.0[${PYTHON_USEDEP}] )
@@ -477,7 +475,7 @@ RDEPEND="${RDEPEND}
 	samsungtv? ( ~dev-python/getmac-0.9.4[${PYTHON_USEDEP}] ~dev-python/samsungctl-0.7.1[${PYTHON_USEDEP}] ~dev-python/samsungtvws-2.6.0[async,encrypted,${PYTHON_USEDEP}] ~dev-python/wakeonlan-2.1.0[${PYTHON_USEDEP}] dev-python/async-upnp-client[${PYTHON_USEDEP}] )
 	scrape? ( ~dev-python/beautifulsoup4-4.12.3[${PYTHON_USEDEP}] ~dev-python/lxml-5.1.0[${PYTHON_USEDEP}] )
 	season? ( ~dev-python/ephem-4.1.5[${PYTHON_USEDEP}] )
-	shelly? ( ~dev-python/aioshelly-10.0.1[${PYTHON_USEDEP}] )
+	shelly? ( ~dev-python/aioshelly-11.4.2[${PYTHON_USEDEP}] )
 	shodan? ( ~dev-python/shodan-1.28.0[${PYTHON_USEDEP}] )
 	signal_messenger? ( ~dev-python/pysignalclirestapi-0.3.23[${PYTHON_USEDEP}] )
 	simplisafe? ( ~dev-python/simplisafe-python-2024.1.0[${PYTHON_USEDEP}] )
@@ -557,7 +555,6 @@ BDEPEND="${RDEPEND}
 		~dev-python/mypy-dev-1.11.0_alpha3[${PYTHON_USEDEP}]
 		~dev-python/pipdeptree-2.19.0[${PYTHON_USEDEP}]
 		~dev-vcs/pre-commit-3.7.1
-		~dev-python/pydantic-1.10.15[${PYTHON_USEDEP}]
 		~dev-python/pylint-per-file-ignores-1.3.2[${PYTHON_USEDEP}]
 		~dev-python/pylint-3.2.2[${PYTHON_USEDEP}]
 		~dev-python/pytest-asyncio-0.23.6[${PYTHON_USEDEP}]
