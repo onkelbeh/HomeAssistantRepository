@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{10..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Python library to retrieve information from Instituto PortuguÃªs do Mar e Atmosfera"
+DESCRIPTION="Python library to retrieve information from IPMA"
 HOMEPAGE="https://github.com/dgomes/pyipma https://pypi.org/project/pyipma/"
 
 LICENSE="MIT"
