@@ -66,9 +66,9 @@ parse_constraints () {
 if [ -z "$1" ];then
     VERSION=`curl -s https://api.github.com/repos/home-assistant/core/releases/latest | jq '.tag_name' | xargs -I {} echo {}`
 else
-    VERSION=`curl -s https://api.github.com/repos/home-assistant/core/releases/tags/$1 | jq '.tag_name' | xargs -I {} echo {}`
+    VERSION=`curl -s https://api.github.com/repos/home-assistant/core/releases/tags/${1/_beta/b} | jq '.tag_name' | xargs -I {} echo {}`
 fi
-EBUILD=$( pwd | rev | cut -d/ -f1 | rev )-$VERSION
+EBUILD=$( pwd | rev | cut -d/ -f1 | rev )-${VERSION/b/_beta}
 EBUILD_PATH=$( pwd )/$EBUILD.ebuild
 
 if [ -f "$EBUILD_PATH" ]; then
@@ -80,14 +80,11 @@ else
         break
     done
     ebuild $EBUILD_PATH clean digest unpack
-    patch=$( pwd )/files/genebuild_$VERSION.patch
+    patch=$( pwd )/files/genebuild_${VERSION/b/_beta}.patch
 
 fi
-ebuild $EBUILD_PATH clean digest unpack
 
-patch=$( pwd )/files/genebuild_$VERSION.patch
-
-pushd /var/tmp/portage/app-misc/homeassistant-$VERSION/work
+pushd /var/tmp/portage/app-misc/homeassistant-${VERSION/b/_beta}/work
 
 if [ -f "$patch" ]; then
     patch -p1 < $patch
