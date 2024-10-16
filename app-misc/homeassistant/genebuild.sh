@@ -29,7 +29,7 @@ parse_constraints () {
 	                package="dev-python/cchardet"
 			;;
 		uv)
-	                echo "        >=dev-python/uv-$version" >> $EBUILD_PATH
+	                echo "	>=dev-python/uv-$version" >> $EBUILD_PATH
 			break
 			;;
 		protobuf)
@@ -125,7 +125,7 @@ HOMEPAGE="https://home-assistant.io/ https://git.edevau.net/onkelbeh/HomeAssista
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="abode accuweather acer_projector acmeda adguard ads aftership agent_dvr airly airvisual alarmdecoder alpha_vantage ambient_station amcrest ampio analytics_insights androidtv androidtv_remote android_ip_webcam anthemav apache_kafka apcupsd apple_tv apprise aquostv arcam_fmj aruba asuswrt aten_pe atome august aurora_abb_powerone avea avion awair axis +backup baidu beewi_smartclim bh1750 bitcoin bizkaibus blackbird blebox blink blinksticklight blinkt blockchain +bluetooth bluetooth_le_tracker bluetooth_tracker bme280 bme680 bmw_connected_drive bond braviatv bring broadlink brottsplatskartan brunt bsblan bt_home_hub_5 bt_smarthub buienradar +caldav camera canary cast cisco_mobility_express cli co2signal compensation coronavirus daikin deconz delijn denonavr deutsche_bahn devolo_home_control dexcom dhcp dht discogs discord discovery dlna_dmr dlna_dms doorbird dunehd dwd_weather_warnings dynalite dyson ecobee ecowitt emulated_roku enigma2 enocean enphase_envoy environment_canada esphome everlights evohome ffmpeg fibaro file flume flunearyou flux_led foobot forecast_solar fortios freebox fritz fritzbox fritzbox_callmonitor fronius garmin_connect gios github glances gogogate2 greeneye_monitor growatt_server guardian harman_kardon_avr harmony heos here_travel_time holiday +homekit homekit_controller homematic homematicip_cloud hp_ilo http hue hydrawise iaqualink ibeacon ihc image_upload imap incomfort influxdb insteon intesishome ipma ipp isal islamic_prayer_times jewish_calendar joaoapps_join kef knx kodi kraken lifx linode litterrobot local_calendar local_todo loopenergy luci luftdaten +mariadb +matter maxcube media_extractor met meteo_france mfi mikrotik +mobile_app modbus +mosquitto +mqtt mysql nad nederlandse_spoorwegen netatmo netdata nextcloud nfandroidtv nmap_tracker +notify_events nuki nut nws nx584 octoprint onkyo onvif opengarage opensensemap openweathermap opnsense +otp owntracks panasonic_viera philips_js pilight +ping pi_hole +plex plugwise poolsense powerwall ps4 +python_script qnap qvr_pro rachio radio_browser rainbird rainmachine +recorder rejseplanen +rest ring roku roomba roon samsungtv +scrape season shelly shodan signal_messenger simplisafe skybell sma smappee smarthab smartthings +snmp socat solax somfy sonos speedtestdotnet +spotify +sql squeezebox +ssl statsd synology_dsm systemd systemmonitor tankerkoenig tasmota tellduslive tesla test tile tomorrowio toon totalconnect tplink tts tuya unifi unifi_direct +upnp usb utility_meter vallox velbus velux vera +version vicare vizio +wake_on_lan waqi waze_travel_time webostv wemo whois wink withings wled workday xbox_live xiaomi_aqara xiaomi_miio xiaomi_tv xs1 yamaha yamaha_musiccast yeelight yi zeroconf zerproc zha zhong_hong zoneminder zwave_js"
+IUSE="abode accuweather acer_projector acmeda adguard ads aftership agent_dvr airly airvisual alarmdecoder alpha_vantage ambiclimate ambient_station amcrest ampio analytics_insights androidtv androidtv_remote android_ip_webcam anthemav apache_kafka apcupsd apple_tv apprise aquostv arcam_fmj aruba asuswrt aten_pe atome august aurora_abb_powerone avea avion awair axis +backup baidu beewi_smartclim bh1750 bitcoin bizkaibus blackbird blebox blink blinksticklight blinkt blockchain +bluetooth bluetooth_le_tracker bluetooth_tracker bme280 bme680 bmw_connected_drive bond braviatv bring broadlink brottsplatskartan brunt bsblan bt_home_hub_5 bt_smarthub buienradar +caldav camera canary cast cisco_mobility_express cli co2signal compensation coronavirus daikin deconz delijn denonavr deutsche_bahn devolo_home_control dexcom dhcp dht discogs discord discovery dlna_dmr dlna_dms doorbird dunehd dwd_weather_warnings dynalite dyson ecobee ecowitt emulated_roku enigma2 enocean enphase_envoy environment_canada esphome everlights evohome ffmpeg fibaro file flume flunearyou flux_led foobot forecast_solar fortios freebox fritz fritzbox fritzbox_callmonitor fronius garmin_connect gios github glances gogogate2 greeneye_monitor growatt_server guardian harman_kardon_avr harmony heos here_travel_time holiday +homekit homekit_controller homematic homematicip_cloud hp_ilo http hue hydrawise iaqualink ibeacon ihc image_upload imap incomfort influxdb insteon intesishome ipma ipp isal islamic_prayer_times jewish_calendar joaoapps_join kef knx kodi kraken lifx linode litterrobot local_calendar local_todo loopenergy luci luftdaten +mariadb +matter maxcube media_extractor met meteo_france mfi mikrotik +mobile_app modbus +mosquitto +mqtt mysql nad nederlandse_spoorwegen netatmo netdata nextcloud nfandroidtv nmap_tracker +notify_events nuki nut nws nx584 octoprint onkyo onvif opengarage opensensemap openweathermap opnsense +otp owntracks panasonic_viera philips_js pilight +ping pi_hole +plex plugwise poolsense powerwall ps4 +python_script qnap qvr_pro rachio radio_browser rainbird rainmachine +recorder rejseplanen +rest ring roku roomba roon samsungtv +scrape season shelly shodan signal_messenger simplisafe skybell sma smappee smarthab smartthings +snmp socat solax somfy sonos speedtestdotnet +spotify +sql squeezebox +ssl statsd synology_dsm systemd systemmonitor tankerkoenig tasmota tellduslive tesla test tile tomorrowio toon totalconnect tplink tts tuya unifi unifi_direct +upnp usb utility_meter vallox velbus velux vera +version vicare vizio +wake_on_lan waqi waze_travel_time webostv wemo whois wink withings wled workday xbox_live xiaomi_aqara xiaomi_miio xiaomi_tv xs1 yamaha yamaha_musiccast yeelight yi zeroconf zerproc zha zhong_hong zoneminder zwave_js"
 RESTRICT="!test? ( test )"
 
 # external deps
@@ -155,18 +155,16 @@ RDEPEND="\${RDEPEND}
 
 # Module requirements from useflags
 RDEPEND="\${RDEPEND}
-	bh1750? ( ~dev-python/i2csense-0.0.4[\${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[\${PYTHON_USEDEP}] )
+	ambiclimate? ( dev-python/Ambiclimate[\${PYTHON_USEDEP}] )
+	bh1750? ( dev-python/i2csense[\${PYTHON_USEDEP}] )
 	blinksticklight? ( ~dev-python/BlinkStick-1.2.0[\${PYTHON_USEDEP}] )
 	blinkt? ( ~dev-python/blinkt-0.1.0[\${PYTHON_USEDEP}] )
-	bme280? ( ~dev-python/i2csense-0.0.4[\${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[\${PYTHON_USEDEP}] ~dev-python/bme280spi-0.2.0[\${PYTHON_USEDEP}] )
-	bme680? ( ~dev-python/bme680-1.0.5[\${PYTHON_USEDEP}] ~dev-python/smbus-cffi-0.5.1[\${PYTHON_USEDEP}] )
+	bme280? ( dev-python/i2csense[\${PYTHON_USEDEP}] dev-python/bme280spi[\${PYTHON_USEDEP}] )
+	bme680? ( dev-python/bme680[\${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli )
-	coronavirus? ( ~dev-python/coronavirus-1.1.1[\${PYTHON_USEDEP}] )
-	deutsche_bahn? ( ~dev-python/schiene-0.23[\${PYTHON_USEDEP}] )
+	coronavirus? ( dev-python/coronavirus[\${PYTHON_USEDEP}] )
+	deutsche_bahn? ( dev-python/schiene[\${PYTHON_USEDEP}] )
 	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[\${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[\${PYTHON_USEDEP}] )
-	dyson? ( ~dev-python/libpurecool-0.6.4[\${PYTHON_USEDEP}] )
-	flunearyou? ( ~dev-python/pyflunearyou-2.0.2[\${PYTHON_USEDEP}] )
-	garmin_connect? ( ~dev-python/garminconnect-ha-0.1.6[\${PYTHON_USEDEP}] )
 	http? ( ~dev-python/aiohttp-cors-0.7.0[\${PYTHON_USEDEP}] ~dev-python/aiohttp-fast-url-dispatcher-0.3.0[\${PYTHON_USEDEP}] ~dev-python/aiohttp-zlib-ng-0.3.1[\${PYTHON_USEDEP}] )
 	loopenergy? ( ~dev-python/pyloopenergy-0.2.1[\${PYTHON_USEDEP}] )
 	mariadb? ( dev-python/mysqlclient[\${PYTHON_USEDEP}] )
@@ -178,7 +176,6 @@ RDEPEND="\${RDEPEND}
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )
 	tesla? ( ~dev-python/teslajsonpy-0.18.3[\${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.9[\${PYTHON_USEDEP}] ~dev-python/python-wink-1.10.5[\${PYTHON_USEDEP}] )
-	xbox_live? ( ~dev-python/xboxapi-2.0.1[\${PYTHON_USEDEP}] )
 EOF
 reqall=""
 for i in `find ./ | grep requirements_all.txt`; do reqall=$i; break; done
@@ -240,31 +237,30 @@ cat >> $EBUILD_PATH <<EOF
 
 BDEPEND="\${RDEPEND}
 	test? (
-		~dev-python/astroid-3.2.2[\${PYTHON_USEDEP}]
-		~dev-python/coverage-7.5.0[\${PYTHON_USEDEP}]
-		~dev-python/freezegun-1.5.0[\${PYTHON_USEDEP}]
-		~dev-python/mock-open-1.4.0[\${PYTHON_USEDEP}]
-		~dev-python/mypy-dev-1.11.0_alpha3[\${PYTHON_USEDEP}]
-		~dev-python/pipdeptree-2.19.0[\${PYTHON_USEDEP}]
-		~dev-vcs/pre-commit-3.7.1
-		~dev-python/pylint-per-file-ignores-1.3.2[\${PYTHON_USEDEP}]
-		~dev-python/pylint-3.2.2[\${PYTHON_USEDEP}]
-		~dev-python/pytest-asyncio-0.23.6[\${PYTHON_USEDEP}]
-		~dev-python/pytest-cov-5.0.0[\${PYTHON_USEDEP}]
-		~dev-python/pytest-freezer-0.4.8[\${PYTHON_USEDEP}]
-		~dev-python/pytest-github-actions-annotate-failures-0.2.0[\${PYTHON_USEDEP}]
-		~dev-python/pytest-picked-0.5.0[\${PYTHON_USEDEP}]
-		~dev-python/pytest-socket-0.7.0[\${PYTHON_USEDEP}]
-		~dev-python/pytest-sugar-1.0.0[\${PYTHON_USEDEP}]
-		~dev-python/pytest-timeout-2.3.1[\${PYTHON_USEDEP}]
-		~dev-python/pytest-unordered-0.6.0[\${PYTHON_USEDEP}]
-		~dev-python/pytest-xdist-3.6.1[\${PYTHON_USEDEP}]
-		~dev-python/pytest-8.2.0[\${PYTHON_USEDEP}]
-		~dev-python/requests-mock-1.12.1[\${PYTHON_USEDEP}]
-		~dev-python/respx-0.21.1[\${PYTHON_USEDEP}]
-		~dev-python/syrupy-4.6.1[\${PYTHON_USEDEP}]
-		~dev-python/tqdm-4.66.4[\${PYTHON_USEDEP}]
-		dev-python/uv
+		dev-python/astroid[\${PYTHON_USEDEP}]
+		dev-python/coverage[\${PYTHON_USEDEP}]
+		dev-python/freezegun[\${PYTHON_USEDEP}]
+		dev-python/mock-open[\${PYTHON_USEDEP}]
+		dev-python/mypy-dev[\${PYTHON_USEDEP}]
+		dev-python/pipdeptree[\${PYTHON_USEDEP}]
+		dev-vcs/pre-commit
+		dev-python/pylint-per-file-ignores[\${PYTHON_USEDEP}]
+		dev-python/pylint[\${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[\${PYTHON_USEDEP}]
+		dev-python/pytest-cov[\${PYTHON_USEDEP}]
+		dev-python/pytest-freezer[\${PYTHON_USEDEP}]
+		dev-python/pytest-github-actions-annotate-failures[\${PYTHON_USEDEP}]
+		dev-python/pytest-picked[\${PYTHON_USEDEP}]
+		dev-python/pytest-socket[\${PYTHON_USEDEP}]
+		dev-python/pytest-sugar[\${PYTHON_USEDEP}]
+		dev-python/pytest-timeout[\${PYTHON_USEDEP}]
+		dev-python/pytest-unordered[\${PYTHON_USEDEP}]
+		dev-python/pytest-xdist[\${PYTHON_USEDEP}]
+		dev-python/pytest[\${PYTHON_USEDEP}]
+		dev-python/requests-mock[\${PYTHON_USEDEP}]
+		dev-python/respx[\${PYTHON_USEDEP}]
+		dev-python/syrupy[\${PYTHON_USEDEP}]
+		dev-python/tqdm[\${PYTHON_USEDEP}]
 	)
 	dev-python/setuptools[\${PYTHON_USEDEP}]
 	dev-python/mock[\${PYTHON_USEDEP}]"
