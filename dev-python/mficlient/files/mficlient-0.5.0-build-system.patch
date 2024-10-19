@@ -1,0 +1,13 @@
+--- a/pyproject.toml	2024-08-06 15:54:32.751230700 +0200
++++ b/pyproject.toml	2024-10-14 08:25:21.338303635 +0200
+@@ -25,6 +25,10 @@
+ "Bug Tracker" = "https://github.com/uilibs/mficlient/issues"
+ "Changelog" = "https://github.com/uilibs/mficlient/blob/main/CHANGELOG.md"
+ 
++[build-system]
++requires = ["poetry-core"]
++build-backend = "poetry.core.masonry.api"
++
+ [tool.poetry.scripts]
+ mfi = "mfi:main"
+ 

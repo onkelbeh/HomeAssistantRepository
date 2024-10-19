@@ -22,7 +22,11 @@ BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
+src_prepare() {
+	eapply "${FILESDIR}"/${P}-setup-fails.patch
+	eapply_user
 
+}
 python_test() {
 	py.test -v -v || die
 }

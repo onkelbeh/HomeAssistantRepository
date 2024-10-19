@@ -1,10 +1,10 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{10..13} )
 
 inherit distutils-r1
 
@@ -15,28 +15,24 @@ HOMEPAGE="
 	https://pypi.org/project/spotipy/
 "
 SRC_URI="
-	https://github.com/spotipy-dev/spotipy/archive/${PV}.tar.gz
+	https://github.com/spotipy-dev/spotipy/archive/refs/tags/${PV}.tar.gz
 		-> ${P}.gh.tar.gz
 "
 
 LICENSE="MIT"
-KEYWORDS="amd64 arm arm64 x86"
 SLOT="0"
+KEYWORDS="amd64 ~x86"
 IUSE="examples"
 
 RDEPEND="
 	dev-python/redis[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/six[${PYTHON_USEDEP}]
 	dev-python/urllib3[${PYTHON_USEDEP}]
 "
-BDEPEND="
-	test? (
-		dev-python/mock[${PYTHON_USEDEP}]
-	)
-"
 
-distutils_enable_sphinx docs
+distutils_enable_sphinx docs \
+	dev-python/redis \
+	dev-python/sphinx-rtd-theme
 distutils_enable_tests pytest
 
 EPYTEST_DESELECT=(

@@ -1,0 +1,10 @@
+--- a/pyproject.toml	2024-10-13 13:11:34.979746102 +0200
++++ b/pyproject.toml	2024-10-13 13:12:01.664743233 +0200
+@@ -1,6 +1,7 @@
+ [project]
+ name = "pyblackbird"
+ version = "0.6"
++license = {file = "LICENSE"}
+ authors = [
+   { name = "Ben Kools", email="koolsb@my.uwstout.edu" },
+ ]

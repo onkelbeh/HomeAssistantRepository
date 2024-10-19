@@ -18,7 +18,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/pycryptodomex-3.20.0[${PYTHON_USEDEP}]
+RDEPEND="
+	!dev-python/pubnub[${PYTHON_USEDEP}]
+	>=dev-python/pycryptodomex-3.20.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.4[${PYTHON_USEDEP}]
 	>=dev-python/cbor2-5.6.4[${PYTHON_USEDEP}]"
 
