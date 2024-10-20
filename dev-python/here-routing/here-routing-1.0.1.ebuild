@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=poetry
+DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python client for the HERE Routing V8 API"
@@ -19,15 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
-	>=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
-	>=dev-python/yarl-1.7.2[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	>=dev-python/async-timeout-4.0.3[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.9.4[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
