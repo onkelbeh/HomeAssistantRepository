@@ -610,8 +610,8 @@ There are 2021 Ebuilds in total, 2010 of them have in total 2038 (42 different) 
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1169|
-|Apache-2.0|451|
+|MIT|1168|
+|Apache-2.0|452|
 |GPL-3|119|
 |BSD|113|
 |GPL-2|25|
