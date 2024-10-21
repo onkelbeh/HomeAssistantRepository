@@ -9,7 +9,11 @@ inherit distutils-r1
 
 DESCRIPTION="A aiohttp-based client for Intergas InComfort/InTouch Lan2RF systems"
 HOMEPAGE="https://github.com/zxdavb/incomfort-client https://pypi.org/project/incomfort-client/"
-SRC_URI="https://github.com/zxdavb/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
+
+# strange version number
+#https://github.com/jbouwh/incomfort-client/archive/refs/tags/v0.6.3-1.tar.gz
+SRC_URI="https://github.com/zxdavb/${PN}/archive/refs/tags/v${PV}-1.tar.gz -> ${P}.gh.tar.gz"
+S=${WORKDIR}/${P}-1
 
 LICENSE="MIT"
 SLOT="0"
@@ -20,13 +24,5 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
