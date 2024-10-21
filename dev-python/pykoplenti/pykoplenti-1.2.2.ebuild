@@ -18,8 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.6[${PYTHON_USEDEP}]
-	>=dev-python/pycryptodome-3.9[${PYTHON_USEDEP}]
-	~dev-python/pydantic-1.10.13[${PYTHON_USEDEP}]"
+RDEPEND="=dev-python/aiohttp-3.8*[${PYTHON_USEDEP}]
+	=dev-python/pycryptodome-3.19*[${PYTHON_USEDEP}]
+	=dev-python/pydantic-1.10*[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest

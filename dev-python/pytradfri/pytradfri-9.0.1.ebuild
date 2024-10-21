@@ -13,21 +13,19 @@ HOMEPAGE="https://github.com/ggravlingen/pytradfri https://pypi.org/project/pytr
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
+IUSE="async test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="dev-python/pydantic[${PYTHON_USEDEP}]
-	~dev-python/aiocoap-0.4.5[${PYTHON_USEDEP}]
-	~dev-python/dtlssocket-0.1.12[${PYTHON_USEDEP}]"
+RDEPEND="async? ( ~dev-python/aiocoap-0.4.5[${PYTHON_USEDEP}] ~dev-python/DTLSSocket-0.1.12[${PYTHON_USEDEP}] )"
 
 DOCS="README.md"
 
 DEPEND="${DEPEND}
 	test? (
-	  dev-python/pytest[${PYTHON_USEDEP}]
-	  dev-python/pytest-cov[${PYTHON_USEDEP}]
-	  >=dev-python/pytest-timeout-2.1.0[${PYTHON_USEDEP}]
-	  dev-python/flake8[${PYTHON_USEDEP}]
+		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		>=dev-python/pytest-timeout-2.1.0[${PYTHON_USEDEP}]
+		dev-python/flake8[${PYTHON_USEDEP}]
 	)"
 
 python_test() {

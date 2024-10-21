@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pysmarty</remote-id>
+    <remote-id type="github">z0mbieprocess/pysmarty</remote-id>
+    <maintainer status="unknown">
+      <email>theo.nicolau@gmail.com</email>
+      <name>Theo Nicolau</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
