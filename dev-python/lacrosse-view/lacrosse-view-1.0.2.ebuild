@@ -20,14 +20,6 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.9.0[${PYTHON_USEDEP}]
-	dev-python/pytz[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	>=dev-python/aiozoneinfo-0.2.1[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
