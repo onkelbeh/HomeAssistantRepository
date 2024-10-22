@@ -18,7 +18,9 @@ RESTRICT="!test? ( test )"
 
 
 SRC_URI="https://github.com/rhasspy/pymicro-vad/archive/${PV}.tar.gz"
-RDEPEND=""
+RDEPEND="
+	dev-python/pybind11[${PYTHON_USEDEP}]
+"
 BDEPEND=""
 
 src_unpack() {

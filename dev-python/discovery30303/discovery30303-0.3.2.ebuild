@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Discover devices that respond on port 30303"
 HOMEPAGE="https://github.com/bdraco/discovery30303 https://pypi.org/project/discovery30303/"
-SRC_URI="https://github.com/bdraco/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
+SRC_URI="https://github.com/bdraco/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"

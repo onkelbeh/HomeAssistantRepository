@@ -64,10 +64,6 @@ BDEPEND="
 distutils_enable_tests pytest
 
 src_prepare() {
-	local PATCHES=(
-		"${FILESDIR}/${PN}-0.27.0-opt-trio.patch"
-	)
-
 	if ! use cli; then
 		sed -i -e '/^httpx =/d' pyproject.toml || die
 	fi

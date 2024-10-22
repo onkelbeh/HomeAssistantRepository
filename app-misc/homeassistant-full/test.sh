@@ -13,7 +13,7 @@ touch /etc/portage/package.use/zzzzz_tmp.use
 MYUSE=""
 for u in `cat $( echo $pkg | cut -d/ -f2 ).ebuild | grep IUSE= | cut -d\" -f2`; do
 	u=${u/+/}
-	if [ \( "$u" != "systemd" \) -a \( "$u" != "test" \) -a \( "%u" != "russound_rnet" \) -a \( "%u" != "zeversolar" \) ]; then
+	if [ \( "$u" != "systemd" \) -a \( "$u" != "test" \) -a \( "%u" != "russound_rnet" \) -a \( "%u" != "russound" \) -a \( "%u" != "zeversolar" \) ]; then
 		MYUSE="$MYUSE$u "
 	fi
 done

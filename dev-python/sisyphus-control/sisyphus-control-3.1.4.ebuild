@@ -20,12 +20,12 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 # https://github.com/jkeljo/sisyphus-control/issues/6 pinning to old version
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/netifaces[${PYTHON_USEDEP}]
-	>=dev-python/python-socketio-4.0[${PYTHON_USEDEP}]
-	<dev-python/python-socketio-5.0[${PYTHON_USEDEP}]
-	>=dev-python/python-engineio-3.0[${PYTHON_USEDEP}]
-	<dev-python/python-engineio-4.0[${PYTHON_USEDEP}]"
+RDEPEND="
+	>=dev-python/aiohttp-3.8.4[${PYTHON_USEDEP}]
+	>=dev-python/netifaces-0.11.0[${PYTHON_USEDEP}]
+	>=dev-python/python-socketio-v4-4.6.1[${PYTHON_USEDEP}]
+	>=dev-python/python-engineio-v3-3.14.2[${PYTHON_USEDEP}]
+"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

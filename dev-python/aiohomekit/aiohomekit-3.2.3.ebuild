@@ -18,20 +18,19 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.128.4[${PYTHON_USEDEP}]
+RDEPEND="
+	>=dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.132.2[${PYTHON_USEDEP}]
 	>=dev-python/commentjson-0.9.0[${PYTHON_USEDEP}]
 	>=dev-python/aiocoap-0.4.5[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.12.1[${PYTHON_USEDEP}]
 	>=dev-python/bleak-retry-connector-2.9.0[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.7.8[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
 	>=dev-python/chacha20poly1305-0.0.3[${PYTHON_USEDEP}]
 	>=dev-python/async-interrupt-1.1.1[${PYTHON_USEDEP}]
 	>=dev-python/aiohappyeyeballs-2.3.0[${PYTHON_USEDEP}]
-	=dev-python/pyroute2-0.7.5[${PYTHON_USEDEP}]
-	=dev-python/python-otbr-api-2.6.0[${PYTHON_USEDEP}]"
+"
 BDEPEND="
 	test? (
 		dev-python/aiohttp[${PYTHON_USEDEP}]

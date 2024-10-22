@@ -12,13 +12,16 @@ HOMEPAGE="https://github.com/chrysn/aiocoap https://pypi.org/project/aiocoap/"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
+IUSE="oscore test tinydtls ws"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/dtlssocket-0.1.11[${PYTHON_USEDEP}]
-	dev-python/websockets[${PYTHON_USEDEP}]"
+RDEPEND="
+	oscore? ( dev-python/cbor2[${PYTHON_USEDEP}] dev-python/cryptography[${PYTHON_USEDEP}] dev-python/filelock[${PYTHON_USEDEP}]  )
+	tinydtls? ( >=dev-python/DTLSSocket-0.1.11_alpha1[${PYTHON_USEDEP}] )
+	ws? ( dev-python/websockets[${PYTHON_USEDEP}] )
+"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

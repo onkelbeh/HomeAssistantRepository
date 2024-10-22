@@ -912,7 +912,7 @@ RDEPEND="${RDEPEND}
 	rtsp_to_webrtc? ( ~dev-python/rtsp-to-webrtc-0.5.1[${PYTHON_USEDEP}] )
 	ruckus_unleashed? ( ~dev-python/aioruckus-0.41[${PYTHON_USEDEP}] )
 	russound_rio? ( ~dev-python/aiorussound-4.0.5[${PYTHON_USEDEP}] )
-	russound_rnet? ( ~dev-python/russound-0.2.0[${PYTHON_USEDEP}] )
+	russound_rnet? ( ~dev-python/russound-0.1.9[${PYTHON_USEDEP}] )
 	ruuvitag_ble? ( ~dev-python/ruuvitag-ble-0.1.2[${PYTHON_USEDEP}] )
 	ruuvi_gateway? ( ~dev-python/aioruuvigateway-0.1.0[${PYTHON_USEDEP}] )
 	rympro? ( ~dev-python/pyrympro-0.0.8[${PYTHON_USEDEP}] )
