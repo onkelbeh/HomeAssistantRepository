@@ -20,13 +20,5 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.6.0[${PYTHON_USEDEP}]
 	>=dev-python/paho-mqtt-1.5.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
