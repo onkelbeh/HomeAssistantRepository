@@ -22,9 +22,4 @@ RDEPEND="dev-python/bleak[${PYTHON_USEDEP}]
 	dev-python/bleak-retry-connector[${PYTHON_USEDEP}]
 	dev-python/pycryptodome[${PYTHON_USEDEP}]"
 
-src_prepare() {
-	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests*'])/g" -i setup.py || die
-	eapply_user
-}
-
 distutils_enable_tests pytest
