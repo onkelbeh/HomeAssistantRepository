@@ -17,7 +17,7 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
 RDEPEND=">=dev-python/requests-2.25.0[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.7.0[${PYTHON_USEDEP}]"

@@ -47,7 +47,7 @@ REQUIRED_USE="bluetooth? ( ruuvi_gateway shelly )
 	homekit_controller? ( bluetooth )"
 
 # Home Assistant Core dependencies from ./core-2024.10.2/homeassistant/package_constraints.txt
-RDEPEND="
+RDEPEND="${RDEPEND}
 	~dev-python/aiodhcpwatcher-1.0.2[${PYTHON_USEDEP}]
 	~dev-python/aiodiscover-2.1.0[${PYTHON_USEDEP}]
 	~dev-python/aiodns-3.2.0[${PYTHON_USEDEP}]
@@ -144,7 +144,7 @@ RDEPEND="
 	!=dev-python/tenacity-8.4.0[${PYTHON_USEDEP}]
 "
 # Home Assistant Core dependencies from ./homeassistant-2024.10.2/homeassistant/package_constraints.txt
-RDEPEND="
+RDEPEND="${RDEPEND}
 	~dev-python/aiodhcpwatcher-1.0.2[${PYTHON_USEDEP}]
 	~dev-python/aiodiscover-2.1.0[${PYTHON_USEDEP}]
 	~dev-python/aiodns-3.2.0[${PYTHON_USEDEP}]

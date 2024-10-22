@@ -4,7 +4,7 @@ eix-update
 parse_constraints () {
     local f="$1"
     echo "# Home Assistant Core dependencies from $f" >> $EBUILD_PATH
-    echo "RDEPEND=\"${RDEPEND}" >> $EBUILD_PATH
+    echo "RDEPEND=\"\${RDEPEND}" >> $EBUILD_PATH
     for l in `cat $f | grep '^[^#]' | cut -d, -f1`; do
         OIFS="$IFS"
         IFS='<>=!'
