@@ -27,4 +27,8 @@ python_test() {
 	py.test -v -v || die
 }
 
+src_prepare() {
+	eapply ${FILESDIR}/fix-setup.patch
+	default
+}
 distutils_enable_tests pytest

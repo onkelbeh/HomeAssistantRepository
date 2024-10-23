@@ -22,5 +22,8 @@ RDEPEND=">=dev-python/httpx-0.16.1[${PYTHON_USEDEP}]
 	>=dev-python/Authlib-0.15.5[${PYTHON_USEDEP}]
 	>=dev-python/websockets-11.0.2[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.20.2[${PYTHON_USEDEP}]"
-
+src_install() {
+	rm -rf ${S}/tests
+	default
+}
 distutils_enable_tests pytest
