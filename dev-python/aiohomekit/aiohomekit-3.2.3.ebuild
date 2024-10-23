@@ -30,6 +30,7 @@ RDEPEND="
 	>=dev-python/chacha20poly1305-0.0.3[${PYTHON_USEDEP}]
 	>=dev-python/async-interrupt-1.1.1[${PYTHON_USEDEP}]
 	>=dev-python/aiohappyeyeballs-2.3.0[${PYTHON_USEDEP}]
+	~dev-python/python-otbr-api-2.6.0[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	test? (

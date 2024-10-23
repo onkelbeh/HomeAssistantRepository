@@ -18,12 +18,17 @@ RESTRICT="!test? ( test )"
 
 DOCS="CHANGELOG.md"
 
-RDEPEND="dev-python/pytz[${PYTHON_USEDEP}]
-	dev-python/pyserial-asyncio-fast[${PYTHON_USEDEP}]"
+RDEPEND="
+	dev-python/pytz[${PYTHON_USEDEP}]
+	dev-python/pyserial-asyncio-fast[${PYTHON_USEDEP}]
+"
 
 src_prepare() {
 	sed -e 's/"CHANGELOG.md",//' -i pyproject.toml || die
+	eapply "${FILESDIR}/${PN}-rename-cmdr.patch"
+	mv "${WORKDIR}/upb_lib-${PV}/bin/cmdr.py" "${WORKDIR}/upb_lib-${PV}/bin/upb_cmdr.py"
+	mv "${WORKDIR}/upb_lib-${PV}/bin/simple" "${WORKDIR}/upb_lib-${PV}/bin/upb_simple"
 	eapply_user
-	}
+}
 
 distutils_enable_tests pytest

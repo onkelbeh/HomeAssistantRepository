@@ -17,5 +17,8 @@ KEYWORDS="~amd64"
 
 RDEPEND=""
 BDEPEND=""
-
+src_prepare() {
+	eapply "${FILESDIR}/nose-wtf.patch"
+	eapply_user
+}
 distutils_enable_tests pytest

@@ -17,7 +17,7 @@ for u in `cat $( echo $pkg | cut -d/ -f2 ).ebuild | grep IUSE= | cut -d\" -f2`; 
 		MYUSE="$MYUSE$u "
 	fi
 done
-USE="$MYUSE" emerge --oneshot --autounmask --autounmask-write=y --autounmask-use=y --autounmask-backtrack=y --verbose-conflicts --backtrack=30 -va =$pkg
+USE="$MYUSE" emerge --keep-going --oneshot --autounmask --autounmask-write=y --autounmask-use=y --autounmask-backtrack=y --verbose-conflicts --backtrack=30 -va =$pkg
 dispatch-conf
-USE="$MYUSE" emerge --oneshot --verbose-conflicts --backtrack=30 -va =$pkg
+USE="$MYUSE" emerge --keep-going --oneshot --verbose-conflicts --backtrack=30 -va =$pkg
 rm /etc/portage/package.use/zzzzz_tmp.use

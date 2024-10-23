@@ -31,7 +31,3 @@ python_test() {
 
 distutils_enable_tests pytest
 
-src_prepare() {
-	default
-	echo -ne "\n[options.packages.find]\nexclude =\n    tests\n    tests.*\n" >> setup.cfg || die
-}
