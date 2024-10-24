@@ -1,0 +1,43 @@
+--- a/bin/upb	2024-07-11 17:34:13.449077000 +0200
++++ b/bin/upb	2024-10-22 13:32:30.947560644 +0200
+@@ -5,7 +5,7 @@
+ import os
+ import sys
+ 
+-import cmdr
++import upb_cmdr as cmdr
+ from upb_lib import UpbPim
+ 
+ LOG = logging.getLogger(__name__)
+--- a/README.md	2023-01-26 16:49:21.898249100 +0100
++++ b/README.md	2024-10-22 14:06:22.942508121 +0200
+@@ -24,9 +24,9 @@
+ 
+ ## Overview
+ 
+-Simplest thing right now is when in the root of the git repo that you have cloned is to enter the command `bin/simple`. This program requires that the environment variable `UPBPIM_URL` set to indicate how to connect to the PIM. For example, `serial:///dev/cu.KeySerial1` connects to the PIM on a serial port (`serial://`) `/dev/cu/KeySerial1`. On Windows something like `serial://COM1` might work.
++Simplest thing right now is when in the root of the git repo that you have cloned is to enter the command `bin/upb_simple`. This program requires that the environment variable `UPBPIM_URL` set to indicate how to connect to the PIM. For example, `serial:///dev/cu.KeySerial1` connects to the PIM on a serial port (`serial://`) `/dev/cu/KeySerial1`. On Windows something like `serial://COM1` might work.
+ 
+-Also required is a `UPStart` export file. The `bin/simple` program looks for it
++Also required is a `UPStart` export file. The `bin/upb_simple` program looks for it
+ in the same directory as where the program is (i.e.: `bin`) and assumes that it is named `upb.upe`.
+ 
+ ## Configuration
+@@ -50,7 +50,7 @@
+ 
+ ## First use of the API
+ 
+-Read the code in `bin/simple`. That is the short use of the API around. Beyond that look at the file `lights.py` and `links.py`. Any method in those files that has a description that starts with `(Helper)` are generally UPB actions.
++Read the code in `bin/upb_simple`. That is the short use of the API around. Beyond that look at the file `lights.py` and `links.py`. Any method in those files that has a description that starts with `(Helper)` are generally UPB actions.
+ 
+ ## Usage
+ 
+@@ -59,7 +59,7 @@
+ 
+ UPB Links are named as a concatenation of the UPB network ID and the link number. For example, link number 6 on UPB network 142 would be `"142_6"`.
+ 
+-See `bin/simple` for example code.
++See `bin/upb_simple` for example code.
+ 
+ ### Transition Rate
+ Many UPB commands take a `rate`. This API supports the rate as a number of seconds, which is different than what the protocol uses. The protocol allows a set of distinct rates, listed below. For example in the UPB protocol if the rate 7 is sent to a device then the fade rate (for example) would be 20 seconds.

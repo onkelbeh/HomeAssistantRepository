@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 DESCRIPTION="A Python3, async-friendly library for Flo by Moen Smart Water Detectors"
 HOMEPAGE="https://github.com/bachya/aioflo https://pypi.org/project/aioflo/"

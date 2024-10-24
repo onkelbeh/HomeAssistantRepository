@@ -1,0 +1,11 @@
+--- a/setup.py	2024-10-23 19:12:54.504799452 +0200
++++ b/setup.py	2024-10-23 19:14:08.823797531 +0200
+@@ -17,7 +17,7 @@
+ 
+ about = {}
+ 
+-with open(os.path.join(root, "coinbase", "__version__.py")) as f:
++with open(os.path.join(root, "coinbase-advanced-py", "__version__.py")) as f:
+     exec(f.read(), about)
+ 
+ setup(

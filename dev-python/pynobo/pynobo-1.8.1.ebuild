@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="NobÃ¸ Hub / NobÃ¸ Energy Control TCP/IP Interface"
+DESCRIPTION="Noba Hub / Noba Energy Control TCP/IP Interface"
 HOMEPAGE="https://github.com/echoromeo/pynobo https://pypi.org/project/pynobo/"
 
 LICENSE="GPL-3+"

@@ -16,5 +16,15 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/smbus2[${PYTHON_USEDEP}]"
+src_prepare() {	
+	eapply "${FILESDIR}/fix-install.patch"
+	eapply_user
+}
+src_install() {
+	rm ${S}/LICENSE
+	rm ${S}/CHANGELOG.md
+	rm ${S}/README.md
+	default
+}
 
 distutils_enable_tests pytest

@@ -1,0 +1,11 @@
+--- a/install.sh	2024-10-24 07:18:28.434895669 +0200
++++ b/install.sh	2024-10-24 07:21:06.310878696 +0200
+@@ -195,7 +195,7 @@
+ 
+ printf "Installing %s...\n\n" "$LIBRARY_NAME"
+ 
+-user_check
++#user_check
+ venv_check
+ 
+ if [ ! -f "$(which "$PYTHON")" ]; then

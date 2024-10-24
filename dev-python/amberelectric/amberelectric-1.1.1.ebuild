@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="Interface to the Amber Electric API, allowing you to download current and forecast price, as well as download your historic usage."
+DESCRIPTION="Amber Electric API: download current and forecast price, and historic usage."
 HOMEPAGE="https://github.com/madpilot/amberelectric.py https://pypi.org/project/amberelectric/"
 
 LICENSE="Apache-2.0"
@@ -18,8 +18,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/urllib3-1.25.3[${PYTHON_USEDEP}]
-	dev-python/python-dateutil[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-1.10.5[${PYTHON_USEDEP}]
-	>=dev-python/aenum-3.1.11[${PYTHON_USEDEP}]"
+	>=dev-python/python-dateutil-2.5.3[${PYTHON_USEDEP}]
+"
 
 distutils_enable_tests pytest
