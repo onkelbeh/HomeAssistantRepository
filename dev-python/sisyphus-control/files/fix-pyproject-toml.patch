@@ -1,0 +1,10 @@
+--- a/pyproject.toml	2024-10-24 08:06:06.636588386 +0200
++++ b/pyproject.toml	2024-10-24 08:07:57.832576431 +0200
+@@ -38,3 +38,7 @@
+ include = ["sisyphus_control"]
+ pythonVersion = "3.8"
+ typeCheckingMode = "strict"
++
++[build-system]
++requires = ['poetry-core']
++build-backend = 'poetry.core.masonry.api'

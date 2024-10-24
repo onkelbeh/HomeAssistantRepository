@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1
 
 DESCRIPTION="Control your Sisyphus kinetic art tables (sisyphus-industries.com)"
@@ -30,7 +30,10 @@ BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
+src_prepare() {
+	eapply "${FILESDIR}/fix-pyproject-toml.patch"
+	eapply_user
+}
 python_test() {
 	py.test -v -v || die
 }
