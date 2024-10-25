@@ -17,15 +17,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-1.9[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND=">=dev-python/aiohttp-3.8.4[${PYTHON_USEDEP}]
+	>=dev-python/mashumaro-3.13.1[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
