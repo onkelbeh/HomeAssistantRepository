@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1
 
 DESCRIPTION="Control your Sisyphus kinetic art tables (sisyphus-industries.com)"
@@ -22,17 +22,12 @@ DOCS="README.rst"
 # https://github.com/jkeljo/sisyphus-control/issues/6 pinning to old version
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/netifaces[${PYTHON_USEDEP}]
-	>=dev-python/python-socketio-4.0[${PYTHON_USEDEP}]
-	<dev-python/python-socketio-5.0[${PYTHON_USEDEP}]
-	>=dev-python/python-engineio-3.0[${PYTHON_USEDEP}]
-	<dev-python/python-engineio-4.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+	>=dev-python/python-socketio-4.6.1[${PYTHON_USEDEP}]
+	>=dev-python/python-engineio-3.14.2[${PYTHON_USEDEP}]"
 
-python_test() {
-	py.test -v -v || die
+src_prepare() {
+	echo -ne '\n[build-system]\nrequires = ["poetry>=0.12"]\nbuild-backend = "poetry.masonry.api"\n' >> pyproject.toml  || die
+	eapply_user
 }
 
 distutils_enable_tests pytest
