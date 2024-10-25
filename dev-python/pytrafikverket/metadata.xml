@@ -8,5 +8,9 @@
   <upstream>
     <remote-id type="pypi">pytrafikverket</remote-id>
     <remote-id type="github">gjohansson-ST/pytrafikverket</remote-id>
+    <maintainer status="unknown">
+      <email>goran.johansson@shiftit.se</email>
+      <name>G Johansson</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>

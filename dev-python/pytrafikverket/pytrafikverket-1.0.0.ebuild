@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="Retreive values from public API at the Swedish Transport Administration (Trafikverket)."
@@ -18,7 +18,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/lxml[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.9.2[${PYTHON_USEDEP}]
+	>=dev-python/aiozoneinfo-0.2.1[${PYTHON_USEDEP}]
+	>=dev-python/lxml-5.1.0[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.9.4[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
