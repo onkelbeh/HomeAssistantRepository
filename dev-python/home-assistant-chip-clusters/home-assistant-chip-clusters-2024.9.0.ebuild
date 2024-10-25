@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
-	dev-python/unicode-rbnf-1.0.0[${PYTHON_USEDEP}]
+	dev-python/unicode-rbnf[${PYTHON_USEDEP}]
 	~dev-python/aenum-3.1.15[${PYTHON_USEDEP}]
 	dev-python/aiorun[${PYTHON_USEDEP}]
 "
