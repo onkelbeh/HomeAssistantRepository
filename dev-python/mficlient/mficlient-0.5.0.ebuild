@@ -3,19 +3,19 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="A remote control client for Ubiquiti's mFi system"
 HOMEPAGE="https://github.com/kk7ds/mficlient https://pypi.org/project/mficlient/"
 
-LICENSE="all-rights-reserved"
+LICENSE="MIT"
 
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
-RESTRICT="!test? ( test ) mirror"
+RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="
@@ -27,3 +27,4 @@ BDEPEND="
 distutils_enable_tests pytest
 
 PATCHES="${FILESDIR}/${P}-build-system.patch"
+

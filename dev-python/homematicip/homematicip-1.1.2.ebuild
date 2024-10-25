@@ -21,6 +21,6 @@ DOCS="README.md"
 RDEPEND=">=dev-python/requests-2.24.0[${PYTHON_USEDEP}]
 		>=dev-python/websocket-client-1.0.0[${PYTHON_USEDEP}]
 		>=dev-python/websockets-8.1[${PYTHON_USEDEP}]
-		>=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]"
+		>=dev-python/aiohttp-3.9[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest

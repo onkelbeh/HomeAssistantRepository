@@ -4,11 +4,11 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
-DESCRIPTION="Generate and work with holidays in Python"
-HOMEPAGE="https://github.com/dr-prodigy/python-holidays https://pypi.org/project/holidays/"
+DESCRIPTION="Python library to communicate with Pinecil V2 soldering irons via Bluetooth"
+HOMEPAGE="https://github.com/tr4nt0r/pynecil/ https://pypi.org/project/pynecil/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -16,6 +16,6 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
-RDEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]"
+distutils_enable_tests pytest

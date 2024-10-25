@@ -5,10 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
+PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
-DESCRIPTION="Fritz!Box Smarthome Python Library"
-HOMEPAGE="https://github.com/hthiery/python-fritzhome https://pypi.org/project/pyfritzhome/"
+DESCRIPTION="Python ecotrend-ista Api"
+HOMEPAGE="https://github.com/Ludy87/pyecotrend-ista https://pypi.org/project/pyecotrend-ista/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -16,16 +17,14 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/dataclasses-json[${PYTHON_USEDEP}]"
 
-python_test() {
-	py.test -v -v || die
+src_prepare() {
+	touch requirements.txt || die
+	eapply_user
 }
 
 distutils_enable_tests pytest

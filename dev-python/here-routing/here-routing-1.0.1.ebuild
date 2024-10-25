@@ -1,9 +1,9 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
@@ -18,9 +18,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.8.1[${PYTHON_USEDEP}]
-	>=dev-python/async-timeout-4.0.2[${PYTHON_USEDEP}]
-	>=dev-python/yarl-1.7.2[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.9.5[${PYTHON_USEDEP}]
+	>=dev-python/async-timeout-4.0.3[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.9.4[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

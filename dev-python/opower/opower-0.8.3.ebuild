@@ -21,11 +21,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/aiohttp-3.8[${PYTHON_USEDEP}]
 	>=dev-python/aiozoneinfo-0.1[${PYTHON_USEDEP}]
 	>=dev-python/arrow-1.2[${PYTHON_USEDEP}]
+	>=dev-python/cryptography-43.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pyotp-2.0[${PYTHON_USEDEP}]"
-
-src_prepare() {
-	rm src/demo.py
-	distutils-r1_src_prepare
-	}
 
 distutils_enable_tests pytest

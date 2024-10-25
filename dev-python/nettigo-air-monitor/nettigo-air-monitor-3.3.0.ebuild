@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.7.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.9.4[${PYTHON_USEDEP}]
 	dev-python/dacite[${PYTHON_USEDEP}]
 	dev-python/tenacity[${PYTHON_USEDEP}]
 	dev-python/aqipy-atmotech[${PYTHON_USEDEP}]"

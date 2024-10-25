@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
@@ -22,8 +22,10 @@ RDEPEND=">=dev-python/httpx-0.16.1[${PYTHON_USEDEP}]
 	>=dev-python/Authlib-0.15.5[${PYTHON_USEDEP}]
 	>=dev-python/websockets-11.0.2[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.20.2[${PYTHON_USEDEP}]"
-src_install() {
-	rm -rf ${S}/tests
-	default
+
+src_prepare() {
+	sed -i "s/packages=setuptools.find_packages()/packages=setuptools.find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
+	eapply_user
 }
+
 distutils_enable_tests pytest

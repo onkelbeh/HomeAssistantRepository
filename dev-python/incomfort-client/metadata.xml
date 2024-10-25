@@ -7,10 +7,10 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">incomfort-client</remote-id>
-    <remote-id type="github">zxdavb/incomfort-client</remote-id>
+    <remote-id type="github">jbouwh/incomfort-client</remote-id>
     <maintainer status="unknown">
-      <email>zxdavb@gmail.com</email>
-      <name>David Bonnes</name>
+      <email>jan@jbsoft.nl</email>
+      <name>Jan Bouwhuis</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

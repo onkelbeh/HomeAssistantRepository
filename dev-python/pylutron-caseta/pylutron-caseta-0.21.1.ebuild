@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=hatchling
 
 inherit distutils-r1
@@ -33,7 +33,6 @@ BDEPEND="
 		~dev-python/pytest-asyncio-0.14.0[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-sugar[${PYTHON_USEDEP}]
-		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest

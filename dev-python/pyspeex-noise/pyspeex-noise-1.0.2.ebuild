@@ -17,8 +17,5 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="
-	dev-python/pybind11[${PYTHON_USEDEP}]
-"
-BDEPEND=""
 
+distutils_enable_tests pytest

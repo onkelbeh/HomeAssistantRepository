@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
@@ -18,7 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/yarl[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/requests-2.21.0[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.21.3[${PYTHON_USEDEP}]
+	>=dev-python/wakeonlan-1.1.6[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
