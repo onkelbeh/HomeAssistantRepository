@@ -7,10 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">ring-doorbell</remote-id>
-    <remote-id type="github">tchellomello/python-ring-doorbell</remote-id>
-    <maintainer status="unknown">
-      <email>tchello.mello@gmail.com</email>
-      <name>Marcelo Moreira de Mello</name>
-    </maintainer>
+    <remote-id type="github">python-ring-doorbell/python-ring-doorbell</remote-id>
   </upstream>
 </pkgmetadata>
