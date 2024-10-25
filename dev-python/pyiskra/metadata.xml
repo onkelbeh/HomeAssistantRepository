@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pyiskra</remote-id>
+    <remote-id type="github">Iskramis/pyiskra</remote-id>
+    <maintainer status="unknown">
+      <email>razvoj.mis@iskra.eu</email>
+      <name>Iskra &lt;razvoj.mis@iskra.eu&gt;</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
