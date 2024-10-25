@@ -18,7 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/justbackoff[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/justbackoff[${PYTHON_USEDEP}]
+	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
