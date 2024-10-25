@@ -17,7 +17,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/pycryptodomex-3.3[${PYTHON_USEDEP}]
+RDEPEND="
+	!dev-python/freenub[${PYTHON_USEDEP}]
+	>=dev-python/pycryptodomex-3.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.4[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/cbor2[${PYTHON_USEDEP}]"

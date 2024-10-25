@@ -13,12 +13,14 @@ HOMEPAGE="https://github.com/MatthewFlamm/pynws https://pypi.org/project/pynws/"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
+IUSE="retry test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/python-metar[${PYTHON_USEDEP}]"
+	dev-python/python-metar[${PYTHON_USEDEP}]
+	retry? ( dev-python/tenacity[${PYTHON_USEDEP}] )
+"
 
 distutils_enable_tests pytest

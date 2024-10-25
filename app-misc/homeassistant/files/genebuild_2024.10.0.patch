@@ -1,0 +1,137 @@
+--- a/core-2024.10.0/homeassistant/package_constraints.txt	2024-10-04 19:33:37.000000000 +0200
++++ b/core-2024.10.0/homeassistant/package_constraints.txt	2024-10-13 10:21:48.027841292 +0200
+@@ -167,7 +167,7 @@
+ dacite>=1.7.0
+ 
+ # Musle wheels for pandas 2.2.0 cannot be build for any architecture.
+-pandas==2.1.4
++#pandas==2.1.4
+ 
+ # chacha20poly1305-reuseable==0.12.x is incompatible with cryptography==43.0.x
+ chacha20poly1305-reuseable>=0.13.0
+--- a/homeassistant-2024.10.0/homeassistant/package_constraints.txt        2024-10-04 19:33:37.000000000 +0200
++++ b/homeassistant-2024.10.0/homeassistant/package_constraints.txt        2024-10-13 10:21:48.027841292 +0200
+@@ -167,7 +167,7 @@
+ dacite>=1.7.0
+
+ # Musle wheels for pandas 2.2.0 cannot be build for any architecture.
+-pandas==2.1.4
++#pandas==2.1.4
+
+ # chacha20poly1305-reuseable==0.12.x is incompatible with cryptography==43.0.x
+ chacha20poly1305-reuseable>=0.13.0
+
+--- a/core-2024.10.0/requirements_all.txt	2024-10-11 18:25:02.000000000 +0200
++++ b/core-2024.10.0/requirements_all.txt	2024-10-13 20:44:30.782824454 +0200
+@@ -100,7 +100,7 @@
+ PyTurboJPEG==1.7.5
+ 
+ # homeassistant.components.vicare
+-PyViCare-neo==0.3.0
++PyViCare==2.34.0
+ 
+ # homeassistant.components.xiaomi_aqara
+ PyXiaomiGateway==0.14.3
+@@ -183,7 +183,7 @@
+ 
+ # homeassistant.components.ambient_network
+ # homeassistant.components.ambient_station
+-aioambient==2024.08.0
++aioambient==2024.8.0
+ 
+ # homeassistant.components.apcupsd
+ aioapcaccess==0.4.2
+@@ -252,7 +252,7 @@
+ aiogithubapi==24.6.0
+ 
+ # homeassistant.components.guardian
+-aioguardian==2022.07.0
++aioguardian==2022.7.0
+ 
+ # homeassistant.components.harmony
+ aioharmony==0.2.10
+@@ -547,10 +556,10 @@
+ azure-servicebus==7.10.0
+ 
+ # homeassistant.components.holiday
+-babel==2.15.0
++Babel==2.15.0
+ 
+ # homeassistant.components.baidu
+-baidu-aip==1.6.6
++baidu-aip==1.6.6.0
+ 
+ # homeassistant.components.homekit
+ base36==0.1.1
+@@ -828,7 +828,7 @@
+ energyzero==2.1.1
+
+ # homeassistant.components.enocean
+-enocean==0.50
++enocean==0.50.1
+
+ # homeassistant.components.entur_public_transport
+ enturclient==0.2.4
+@@ -930,7 +930,7 @@
+ 
+ # homeassistant.components.fritz
+ # homeassistant.components.fritzbox_callmonitor
+-fritzconnection[qr]==1.13.2
++fritzconnection[qrcode]==1.13.2
+ 
+ # homeassistant.components.fyta
+ fyta_cli==0.6.6
+@@ -1179,7 +1179,7 @@
+ imgw_pib==1.0.5
+ 
+ # homeassistant.components.incomfort
+-incomfort-client==0.6.3-1
++incomfort-client==0.6.3-r1
+ 
+ # homeassistant.components.influxdb
+ influxdb-client==1.24.0
+@@ -1297,7 +1297,7 @@
+ linear-garage-door==0.2.9
+ 
+ # homeassistant.components.linode
+-linode-api==4.1.9b1
++linode-api==4.1.9_beta1
+ 
+ # homeassistant.components.lamarzocco
+ lmcloud==1.2.3
+@@ -1647,7 +1647,7 @@
+ pulsectl==23.5.2
+ 
+ # homeassistant.components.androidtv
+-pure-python-adb[async]==0.3.0.dev0
++pure-python-adb[async]==0.3.0-r0
+ 
+ # homeassistant.components.pushbullet
+ pushbullet.py==0.11.0
+@@ -1750,7 +1750,7 @@
+ 
+ # homeassistant.components.airvisual
+ # homeassistant.components.airvisual_pro
+-pyairvisual==2023.08.1
++pyairvisual==2023.8.1
+ 
+ # homeassistant.components.aprilaire
+ pyaprilaire==0.7.4
+@@ -2525,7 +2525,7 @@
+ refoss-ha==1.2.4
+ 
+ # homeassistant.components.rainmachine
+-regenmaschine==2024.03.0
++regenmaschine==2024.3.0
+ 
+ # homeassistant.components.renault
+ renault-api==0.2.7
+@@ -2649,7 +2649,7 @@
+ simplepush==2.2.3
+ 
+ # homeassistant.components.simplisafe
+-simplisafe-python==2024.01.0
++simplisafe-python==2024.1.0
+ 
+ # homeassistant.components.sisyphus
+ sisyphus-control==3.1.4

@@ -21,18 +21,18 @@ DOCS="README.rst"
 RDEPEND="
 	serial? (
 		>=dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	 )
+	)
 	simulator? (
 		$(python_gen_cond_dep '>=dev-python/aiohttp-3.10.5[${PYTHON_USEDEP}]' python3_12)
-		$(python_gen_cond_dep '>=dev-python/aiohttp-3.8.6[${PYTHON_USEDEP}]' python3_11)
-	 )
+	)
 	repl? (
 		>=dev-python/pymodbus-repl-2.0.3[${PYTHON_USEDEP}]
-	 )"
+	)"
 BDEPEND="
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
 		dev-python/coverage[${PYTHON_USEDEP}]
+		dev-pyhton/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-timeout[${PYTHON_USEDEP}]
