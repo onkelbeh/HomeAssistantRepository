@@ -19,19 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8.4[${PYTHON_USEDEP}]
+	>=dev-python/cryptography-41.0.0[${PYTHON_USEDEP}]
 	>=dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
-
-src_prepare() {
-	default
-	echo -ne "\n[options.packages.find]\nexclude =\n    tests\n    tests.*\n" >> setup.cfg || die
-}
