@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-
 inherit distutils-r1 pypi
 
 DESCRIPTION="A python library for syncing Google Calendar to local storage"

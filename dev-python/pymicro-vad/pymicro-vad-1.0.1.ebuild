@@ -9,6 +9,7 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="Self-contained voice activity detector"
 HOMEPAGE="https://github.com/rhasspy/pymicro-vad"
+SRC_URI="https://github.com/rhasspy/pymicro-vad/archive/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="Apache"
 SLOT="0"
@@ -16,13 +17,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-
-SRC_URI="https://github.com/rhasspy/pymicro-vad/archive/${PV}.tar.gz"
 RDEPEND="
 	dev-python/pybind11[${PYTHON_USEDEP}]
 "
-BDEPEND=""
-
 src_unpack() {
 	unpack ${A}
 	echo ${P}

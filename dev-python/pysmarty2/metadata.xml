@@ -6,11 +6,19 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
+<<<<<<< HEAD
+    <remote-id type="pypi">pysmarty2</remote-id>
+    <remote-id type="github">martinssipenko/pysmarty2</remote-id>
+    <maintainer status="unknown">
+      <email>martins.sipenko@gmail.com</email>
+      <name>Martins Sipenko, Theo Nicolaum</name>
+=======
     <remote-id type="pypi">pysmarty</remote-id>
     <remote-id type="github">z0mbieprocess/pysmarty</remote-id>
     <maintainer status="unknown">
       <email>theo.nicolau@gmail.com</email>
       <name>Theo Nicolau</name>
+>>>>>>> origin/master
     </maintainer>
   </upstream>
 </pkgmetadata>

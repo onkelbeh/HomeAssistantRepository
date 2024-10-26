@@ -26,10 +26,11 @@ RDEPEND="dev-python/rich[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.9.15[${PYTHON_USEDEP}]
 	>=dev-python/pillow-10.2.0[${PYTHON_USEDEP}]
 	>=dev-python/platformdirs-4.2.2[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-1.10.13[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-1.10.17[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-2.6[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.9[${PYTHON_USEDEP}]
 	>=dev-python/typer-0.12.3[${PYTHON_USEDEP}]
+	>=dev-python/dev-python/propcache-0.2.0[${PYTHON_USEDEP}]
 	>=dev-python/convertertools-0.5.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/packaging[${PYTHON_USEDEP}]

@@ -17,15 +17,11 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
+RDEPEND=">=dev-python/pycryptodome-3.18.0[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-3.10.3[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
-
-#src_prepare() {
-	# /usr/lib/python3.10/site-packages/py.typed ?
-	#rm "${S}/py.typed" || die
-	#eapply_user
-#}

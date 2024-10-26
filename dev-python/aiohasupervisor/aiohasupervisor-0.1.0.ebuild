@@ -3,26 +3,24 @@
 
 EAPI=8
 
-DISTUTILS_EXT=1
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..12} )
-
 inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous python client for Home Assistant Supervisor."
-HOMEPAGE="
-	https://github.com/home-assistant-libs/python-supervisor-client/
-	https://pypi.org/project/aiohasupervisor/
-"
+HOMEPAGE="https://github.com/home-assistant-libs/python-supervisor-client https://pypi.org/project/aiohasupervisor/"
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE=""
+IUSE="test"
+RESTRICT="!test? ( test )"
 
-RDEPEND=""
-BDEPEND=""
+DOCS="README.md"
 
-EPYTEST_XDIST=1
+RDEPEND=">=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]
+	>=dev-python/mashumaro-3.11[${PYTHON_USEDEP}]
+	>=dev-python/orjson-3.9.0[${PYTHON_USEDEP}]"
+
 distutils_enable_tests pytest
-

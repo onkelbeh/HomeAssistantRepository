@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
-	>=dev-python/pyhumps-3.0.2[${PYTHON_USEDEP}]
+	>=dev-python/pyhumps-3.8.0[${PYTHON_USEDEP}]
 	>=dev-python/backoff-1.10.0[${PYTHON_USEDEP}]
 	>=dev-python/attrs-21.2.0[${PYTHON_USEDEP}]
 	>=dev-python/boto3-1.18.59[${PYTHON_USEDEP}]

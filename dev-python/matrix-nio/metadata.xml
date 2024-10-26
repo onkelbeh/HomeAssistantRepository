@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">matrix-nio</remote-id>
-    <remote-id type="github">poljar/matrix-nio</remote-id>
+    <remote-id type="github">matrix-nio/matrix-nio</remote-id>
     <maintainer status="unknown">
       <email>poljar@termina.org.uk</email>
       <name>Damir Jelić</name>

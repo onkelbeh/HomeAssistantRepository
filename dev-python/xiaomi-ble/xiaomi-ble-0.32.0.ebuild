@@ -22,4 +22,6 @@ RDEPEND=">=dev-python/home-assistant-bluetooth-1.9.2[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-0.3.1[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.19.5[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-40.0.0[${PYTHON_USEDEP}]
-	>=dev-python/pycryptodomex-3.19.1[${PYTHON_USEDEP}]"
+	>=dev-python/pycryptodomex-3.19.1[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-3.10.0[${PYTHON_USEDEP}]
+	>=dev-python/orjson-3.9.0[${PYTHON_USEDEP}]"

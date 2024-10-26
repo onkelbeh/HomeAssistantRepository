@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,9 +13,10 @@ HOMEPAGE="https://github.com/alengwenus/lcn-frontend https://pypi.org/project/lc
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
+IUSE="test"
+RESTRICT="!test? ( test )"
 
-RDEPEND=""
-BDEPEND=""
+DOCS="README.md"
 
 distutils_enable_tests pytest
