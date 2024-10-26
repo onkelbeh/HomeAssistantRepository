@@ -17,7 +17,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.10.10[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.10.0[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-2.9.2[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
