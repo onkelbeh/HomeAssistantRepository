@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,12 +13,10 @@ HOMEPAGE="https://github.com/rmartin16/qbittorrent-api https://pypi.org/project/
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND=">=dev-python/requests-2.16.0[${PYTHON_USEDEP}]
 	>=dev-python/urllib3-1.24.2[${PYTHON_USEDEP}]
-	dev-python/packaging[${PYTHON_USEDEP}]
-"
-BDEPEND=""
+	dev-python/packaging[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
