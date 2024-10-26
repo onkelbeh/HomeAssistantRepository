@@ -3,15 +3,13 @@
 
 EAPI=8
 
-
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
+DESCRIPTION="A faster version of dbus-next"
+HOMEPAGE="https://github.com/bluetooth-devices/dbus-fast https://pypi.org/project/dbus-fast/"
 
-DESCRIPTION="Watch for DHCP packets with asyncio"
-HOMEPAGE="https://github.com/bdraco/aiodhcpwatcher https://pypi.org/project/aiodhcpwatcher/"
-
-LICENSE="GPL-3"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -19,11 +17,12 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=net-analyzer/scapy-2.5.0[${PYTHON_USEDEP}]"
 BDEPEND="
+	>=dev-python/cython-3[${PYTHON_USEDEP}]
 	test? (
-		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
