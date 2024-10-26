@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
@@ -27,7 +27,9 @@ RDEPEND=">=dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
 	>=dev-python/tqdm-4[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/respx[${PYTHON_USEDEP}]
+		dev-python/ruff[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
