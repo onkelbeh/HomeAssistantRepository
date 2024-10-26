@@ -45,9 +45,9 @@ RDEPEND="
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 		~dev-embedded/platformio-6.1.15[${PYTHON_SINGLE_USEDEP}]
-		~dev-embedded/esptool-4.7.0-r3[${PYTHON_USEDEP}]
+		~dev-embedded/esptool-4.7.0[${PYTHON_SINGLE_USEDEP}]
 		~dev-python/click-8.1.7[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20240412.0[${PYTHON_USEDEP}]
+		~dev-embedded/esphome-dashboard-20240620.0[${PYTHON_USEDEP}]
 		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
 		~dev-python/python-magic-0.4.27[${PYTHON_USEDEP}]
@@ -79,6 +79,7 @@ support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 src_prepare() {
 	sed "/aioesphomeapi==/c\aioesphomeapi" -i requirements.txt || die
 	sed "/click==/c\click" -i requirements.txt || die
+	sed "/tornado==/c\tornado" -i requirements.txt || die
 	sed "/colorama==/c\colorama" -i requirements.txt || die
 	sed "/zeroconf==/c\zeroconf" -i requirements.txt || die
 	sed "/voluptuous==/c\voluptuous" -i requirements.txt || die
