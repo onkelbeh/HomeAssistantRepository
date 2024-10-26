@@ -4,10 +4,15 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1 pypi
+inherit distutils-r1
 
 DESCRIPTION="Python API for Russound RNET commands."
 HOMEPAGE="https://github.com/laf/russound https://pypi.org/project/russound/"
+
+# No SDIST, no tag for 0.2.0
+COMMIT="ce75833771661e1c855b6ce0fe1504bfc84291d6"
+SRC_URI="https://github.com/laf/russound/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/${PN}-${COMMIT}"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -18,13 +23,5 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
