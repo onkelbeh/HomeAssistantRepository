@@ -22,9 +22,11 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="~dev-python/google-ai-generativelanguage-0.6.5[${PYTHON_USEDEP}]
-	dev-python/google-auth[${PYTHON_USEDEP}]
+RDEPEND="~dev-python/google-ai-generativelanguage-0.6.10[${PYTHON_USEDEP}]
 	dev-python/google-api-core[${PYTHON_USEDEP}]
+	dev-python/google-api-python-client[${PYTHON_USEDEP}]
+	>=dev-python/google-auth-2.15.0[${PYTHON_USEDEP}]
 	dev-python/protobuf-python[${PYTHON_USEDEP}]
 	dev-python/pydantic[${PYTHON_USEDEP}]
-	dev-python/tqdm[${PYTHON_USEDEP}]"
+	dev-python/tqdm[${PYTHON_USEDEP}]
+	dev-python/typing-extensions[${PYTHON_USEDEP}]"
