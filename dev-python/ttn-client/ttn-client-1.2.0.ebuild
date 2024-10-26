@@ -18,6 +18,6 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.9.4[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.10.2[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
