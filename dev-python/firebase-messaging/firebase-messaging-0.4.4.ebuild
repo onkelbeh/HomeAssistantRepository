@@ -24,10 +24,4 @@ RDEPEND="
 	dev-python/http-ece[${PYTHON_USEDEP}]
 	dev-python/cryptography[${PYTHON_USEDEP}]
 "
-
-src_prepare() {
-	remove uneccesary include
-	sed "53,55d" -i pyproject.toml || die
-	eapply_user
-}
 distutils_enable_tests pytest
