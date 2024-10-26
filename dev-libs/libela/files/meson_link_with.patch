@@ -1,0 +1,11 @@
+--- a/meson.build	2024-09-04 08:52:02.285949175 +0200
++++ b/meson.build	2024-09-03 08:12:09.497412465 +0200
+@@ -40,7 +40,7 @@
+ )
+ 
+ ela_dep = declare_dependency(
+-  link_whole: lib_ela,
++  link_with: lib_ela,
+   include_directories: [ela_inc],
+ )
+ 
