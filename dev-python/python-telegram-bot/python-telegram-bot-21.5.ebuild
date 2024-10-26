@@ -9,7 +9,7 @@ DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
 DESCRIPTION="We have made you a wrapper you can't refuse"
-HOMEPAGE="https://python-telegram-bot.org/ https://pypi.org/project/python-telegram-bot/"
+HOMEPAGE="https://python-telegram-bot.org/ https://github.com/python-telegram-bot/python-telegram-bot/ https://pypi.org/project/python-telegram-bot/"
 
 LICENSE="LGPL-3+"
 SLOT="0"
@@ -32,7 +32,7 @@ RDEPEND="
 "
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/ruff[${PYTHON_USEDEP}]
 	)"
 
 python_test() {
