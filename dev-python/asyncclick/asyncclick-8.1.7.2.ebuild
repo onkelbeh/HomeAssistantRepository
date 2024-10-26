@@ -18,13 +18,5 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND="dev-python/anyio[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
