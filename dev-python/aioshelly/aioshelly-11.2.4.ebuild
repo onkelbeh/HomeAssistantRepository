@@ -29,4 +29,3 @@ BDEPEND="
 	test? (
 		dev-python/requests[${PYTHON_USEDEP}]
 	)"
-
