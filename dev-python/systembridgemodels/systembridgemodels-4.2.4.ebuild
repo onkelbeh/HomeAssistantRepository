@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 MY_PN="system-bridge-models"
@@ -22,10 +22,5 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/incremental[${PYTHON_USEDEP}]"
-
-src_prepare() {
-	sed 's/find_packages(exclude=\["tests", "generator"\])/find_packages(exclude=["tests", "tests.*", "generator"])/g' -i setup.py || die
-	eapply_user
-}
 
 distutils_enable_tests pytest
