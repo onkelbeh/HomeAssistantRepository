@@ -1,0 +1,27 @@
+--- a/setup.py	2024-10-23 19:33:33.499767427 +0200
++++ b/setup.py	2024-10-23 19:34:14.610766364 +0200
+@@ -1,14 +1,6 @@
+ """Setup."""
+ from setuptools import find_packages, setup
+ 
+-# Get setup packages from requirements.txt
+-with open("requirements_setup.txt", encoding="utf-8") as f:
+-    requirements_setup = f.read().splitlines()
+-
+-# Get packages from requirements.txt
+-with open("requirements.txt", encoding="utf-8") as f:
+-    requirements = f.read().splitlines()
+-
+ with open("README.md", encoding="utf-8") as f:
+     readme = f.read()
+ 
+@@ -22,9 +14,7 @@
+     long_description=readme,
+     long_description_content_type="text/markdown",
+     url="https://github.com/timmo001/aiolyric",
+-    install_requires=requirements,
+     packages=find_packages(exclude=["tests", "generator"]),
+     python_requires=">=3.11",
+-    setup_requires=requirements_setup,
+     use_incremental=True,
+ )

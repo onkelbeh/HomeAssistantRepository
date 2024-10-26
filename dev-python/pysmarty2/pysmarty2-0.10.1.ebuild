@@ -9,6 +9,7 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="Python API for Salda Smarty Modbus TCP"
 HOMEPAGE="https://github.com/martinssipenko/pysmarty2 https://pypi.org/project/pysmarty2/"
+SRC_URI="https://github.com/martinssipenko/${PN}/archive/refs/tags/v${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -18,11 +19,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/pymodbus-3.6.9[${PYTHON_USEDEP}]"
-
-src_prepare() {
-	echo "pymodbus>=3.6.9" > requirements.txt
-	eapply_user
-	}
+RDEPEND="
+	>=dev-python/pymodbus-3.6.9[${PYTHON_USEDEP}] <dev-python/pymodbus-4.0.0[${PYTHON_USEDEP}]
+"
 
 distutils_enable_tests pytest

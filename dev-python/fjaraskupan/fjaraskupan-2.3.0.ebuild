@@ -3,11 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A python library for speaking to fjäråskupan"
+DESCRIPTION="A python library for speaking to fjaraskupan"
 HOMEPAGE="https://github.com/elupus/fjaraskupan https://pypi.org/project/fjaraskupan/"
 
 LICENSE="MIT"

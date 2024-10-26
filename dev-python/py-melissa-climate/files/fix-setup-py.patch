@@ -1,0 +1,30 @@
+--- a/setup.py	2024-10-24 07:32:32.373804938 +0200
++++ b/setup.py	2024-10-24 07:32:50.127803029 +0200
+@@ -24,7 +24,7 @@
+     version=VERSION,
+     description='Api wrapper for Melissa Climate http://seemelissa.com',
+     setup_requires=['setuptools-markdown'],
+-    long_description_markdown_filename='README.md',
++    long_description='Api wrapper for Melissa Climate http://seemelissa.com',
+     url='https://github.com/kennedyshead/py-melissa-climate',
+     download_url=
+     'https://github.com/kennedyshead/py-melissa-climate/archive/%s.tar.gz' % VERSION,
+@@ -41,7 +41,6 @@
+     keywords='Api Melissa development wrapper',
+     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
+     install_requires=['requests', 'requests-futures', 'aiohttp'],
+-    test_suite='tests',
+     extras_require={
+         'dev': ['check-manifest'],
+         'test': ['coverage', 'mock'],
+--- a/setup.cfg	2024-10-24 07:38:54.108763898 +0200
++++ b/setup.cfg	2024-10-24 07:39:04.744762754 +0200
+@@ -1,5 +1,7 @@
+ [metadata]
+-description-file = README.rst
++desciption = This is an unofficial wrapper for melissa web api: http://seemelissa.com/en
++long_description = This is an unofficial wrapper for melissa web api: http://seemelissa.com/en
++description-file = README.md
+ 
+ [egg_info]
+ tag_build = 

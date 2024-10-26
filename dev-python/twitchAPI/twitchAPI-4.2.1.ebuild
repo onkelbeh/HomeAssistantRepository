@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A Python 3.7+ implementation of the Twitch Helix API, its Webhook, PubSub and EventSub"
+DESCRIPTION="Twitch Helix API, its Webhook, PubSub and EventSub"
 HOMEPAGE="https://github.com/Teekeks/pyTwitchAPI https://pypi.org/project/twitchAPI/"
 
 LICENSE="MIT"

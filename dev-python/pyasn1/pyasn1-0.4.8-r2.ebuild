@@ -17,6 +17,6 @@ HOMEPAGE="
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-
+REPEND="!dev-python/pysnmp-pyasn1"
 distutils_enable_tests unittest
 distutils_enable_sphinx "docs/source"

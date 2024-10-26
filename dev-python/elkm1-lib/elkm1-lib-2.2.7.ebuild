@@ -31,5 +31,8 @@ distutils_enable_tests pytest
 
 src_prepare() {
 	sed 's/"CHANGELOG.md",//g' -i pyproject.toml || die
+	eapply "${FILESDIR}/${PN}-rename-cmdr.patch"
+	mv "${WORKDIR}/elkm1_lib-${PV}/bin/cmdr.py" "${WORKDIR}/elkm1_lib-${PV}/bin/eklm1_cmdr.py"
+	mv "${WORKDIR}/elkm1_lib-${PV}/bin/simple" "${WORKDIR}/elkm1_lib-${PV}/bin/eklm1_simple"
 	eapply_user
 }
