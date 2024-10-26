@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1 pypi
@@ -20,6 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-	dev-python/PyPasser[${PYTHON_USEDEP}]"
+	dev-python/PyPasser[${PYTHON_USEDEP}]
+	dev-python/pyjwt[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
