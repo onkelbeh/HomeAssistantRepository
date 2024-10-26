@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
@@ -21,7 +21,7 @@ DOCS="README.md"
 RDEPEND="
 	dev-python/iso4217[${PYTHON_USEDEP}]
 	dev-python/pyserial[${PYTHON_USEDEP}]
-	dev-python/pyserial-asyncio[${PYTHON_USEDEP}]
+	dev-python/pyserial-asyncio-fast[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests pytest
