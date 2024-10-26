@@ -5,26 +5,35 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1
-if [[ ${PV} == *9999* ]]; then
-	inherit git-r3
 
-	EGIT_REPO_URI="https://github.com/home-assistant/frontend.git"
-	EGIT_BRANCH="dev"
-	S="${WORKDIR}/home-assistant-frontend-9999/"
-else
-    MY_PV=${PV/_beta/b}
-	MY_P=${MY_PN}-${MY_PV}
-	SRC_URI="https://github.com/home-assistant/frontend/releases/download/${MY_PV}/home-assistant-frontend-${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
-fi
+DESCRIPTION="The Home Assistant Frontend"
+HOMEPAGE="https://pypi.org/project/home-assistant-frontend/"
 
-DESCRIPTION="The Home Assistant frontend"
-HOMEPAGE="https://github.com/home-assistant/frontend https://pypi.org/project/home-assistant-frontend/"
+PYPI_PN=${PN/-/_}
+inherit distutils-r1 pypi
+
+SRC_URI="$(pypi_wheel_url)"
+S=${WORKDIR}
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
-DOCS="README.md"
+
+#DOCS="README.md"
+
 RDEPEND="~dev-python/user-agents-2.0[${PYTHON_USEDEP}]"
+BDEPEND="app-arch/unzip"
+distutils_enable_tests pytest
+
+src_unpack() {
+	if [[ ${PKGBUMPING} == ${PVR} ]]; then
+		unzip "${DISTDIR}/${A}" || die
+	fi
+}
+
+python_compile() {
+	distutils_wheel_install "${BUILD_DIR}/install" \
+		"${DISTDIR}/$(pypi_wheel_name)"
+}
