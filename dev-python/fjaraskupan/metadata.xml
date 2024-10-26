@@ -5,7 +5,7 @@
     <email>b@edevau.net</email>
     <name>Andreas Billmeier</name>
   </maintainer>
-  <upstream>
+  <upstream> 
     <remote-id type="pypi">fjaraskupan</remote-id>
     <remote-id type="github">elupus/fjaraskupan</remote-id>
   </upstream>

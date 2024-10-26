@@ -21,11 +21,10 @@ RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/mock[${PYTHON_USEDEP}]
+		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-src_prepare() {
-	echo -ne '\n[build-system]\nrequires = ["poetry>=0.12"]\nbuild-backend = "poetry.masonry.api"\n' >> pyproject.toml  || die
-	eapply_user
-}
-
 distutils_enable_tests pytest
+
+PATCHES="${FILESDIR}/${P}-build-system.patch"
+

@@ -12,14 +12,17 @@ HOMEPAGE="https://github.com/aio-libs/aiobotocore https://pypi.org/project/aiobo
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
+IUSE="awscli boto3 test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/aiohttp-3.9.2[${PYTHON_USEDEP}]
-	>=dev-python/wrapt-1.10.10[${PYTHON_USEDEP}]
-	>=dev-python/boto3-1.35.16[${PYTHON_USEDEP}]
-	>=dev-python/aioitertools-0.5.1[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.9.2[${PYTHON_USEDEP}] <dev-python/aiohttp-4.0.0[${PYTHON_USEDEP}]
+	>=dev-python/wrapt-1.10.10[${PYTHON_USEDEP}] <dev-python/wrapt-2.0.0[${PYTHON_USEDEP}]
+	>=dev-python/botocore-1.34.70[${PYTHON_USEDEP}] <dev-python/botocore-1.34.132[${PYTHON_USEDEP}]
+	>=dev-python/aioitertools-0.5.1[${PYTHON_USEDEP}] <dev-python/aioitertools-1.0.0[${PYTHON_USEDEP}]
+	awscli? ( >=app-admin/awscli-1.32.7[${PYTHON_USEDEP}] <app-admin/awscli-1.33.14[${PYTHON_USEDEP}] )
+	boto3? ( >=dev-python/boto3-1.34.70[${PYTHON_USEDEP}] <dev-python/boto3-1.34.132[${PYTHON_USEDEP}] ) 
+"
 
 distutils_enable_tests pytest

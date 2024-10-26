@@ -20,5 +20,4 @@ DOCS="README.md"
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiortsp[${PYTHON_USEDEP}]
 	dev-python/orjson[${PYTHON_USEDEP}]
-	dev-python/pycryptodomex[${PYTHON_USEDEP}]
 	dev-python/typing-extensions[${PYTHON_USEDEP}]"

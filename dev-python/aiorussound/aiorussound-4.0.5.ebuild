@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/mashumaro-3.11[${PYTHON_USEDEP}]
-	>=dev-python/orjson-3.9.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/orjson-3.9.0[${PYTHON_USEDEP}]
+>=dev-python/mashumaro-3.11[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest

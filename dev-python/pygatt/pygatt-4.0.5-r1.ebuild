@@ -16,8 +16,12 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 DOCS=( CHANGELOG.rst README.rst )
-
+IUSE="GATTTOOL"
 RDEPEND="
 	dev-lang/python[bluetooth]
 	dev-python/pyserial[${PYTHON_USEDEP}]
+	dev-python/enum-compat[${PYTHON_USEDEP}]
+	>=dev-python/coverage-3.7.1[${PYTHON_USEDEP}]
+	>=dev-python/nose-1.3.7[${PYTHON_USEDEP}]
+	GATTTOOL? ( dev-python/pexpect[${PYTHON_USEDEP}] )
 "

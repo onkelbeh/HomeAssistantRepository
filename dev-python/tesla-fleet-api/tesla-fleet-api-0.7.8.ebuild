@@ -19,8 +19,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/cryptography[${PYTHON_USEDEP}]
-	dev-python/protobuf-python[${PYTHON_USEDEP}]
 	dev-python/aiolimiter[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest

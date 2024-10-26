@@ -19,7 +19,6 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-# https://github.com/jkeljo/sisyphus-control/issues/6 pinning to old version
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/netifaces[${PYTHON_USEDEP}]
 	>=dev-python/python-socketio-4.6.1[${PYTHON_USEDEP}]

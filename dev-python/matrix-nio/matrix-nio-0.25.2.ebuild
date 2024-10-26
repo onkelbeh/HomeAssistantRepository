@@ -13,19 +13,21 @@ HOMEPAGE="https://github.com/poljar/matrix-nio https://pypi.org/project/matrix-n
 LICENSE="ISC"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
+IUSE="e2e test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.10.0[${PYTHON_USEDEP}]
-	>=dev-python/aiofiles-24.1[${PYTHON_USEDEP}]
+	>=dev-python/aiofiles-24.1.0[${PYTHON_USEDEP}]
 	>=dev-python/h11-0.14.0[${PYTHON_USEDEP}]
 	>=dev-python/h2-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/jsonschema-4.14.0[${PYTHON_USEDEP}]
 	>=dev-python/unpaddedbase64-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.10.1[${PYTHON_USEDEP}]
 	>=dev-python/peewee-3.14.4[${PYTHON_USEDEP}]
-	>=dev-python/cachetools-5.3[${PYTHON_USEDEP}]"
+	>=dev-python/cachetools-5.3[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-socks-0.8.0[${PYTHON_USEDEP}]
+	e2e? ( >=dev-python/atomicwrites-1.4.0[${PYTHON_USEDEP}] >=dev-python/cachetools-4.2.1[${PYTHON_USEDEP}] >=dev-python/peewee-3.14.4[${PYTHON_USEDEP}] )"
 
 distutils_enable_tests pytest

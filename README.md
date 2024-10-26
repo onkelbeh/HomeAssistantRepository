@@ -606,36 +606,36 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 2138 Ebuilds in total, 2124 of them have in total 2165 (42 different) licenses assigned.
+There are 2254 Ebuilds in total, 2240 of them have in total 2277 (42 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1228|
-|Apache-2.0|493|
-|GPL-3|133|
-|BSD|112|
-|LGPL-3|24|
-|GPL-2|23|
-|BSD-2|17|
-|GPL-3+|17|
-|all-rights-reserved|16|
-|LGPL-3+|14|
-|Unlicense|10|
+|MIT|1275|
+|Apache-2.0|531|
+|GPL-3|139|
+|BSD|122|
+|GPL-2|25|
+|LGPL-3|23|
+|BSD-2|19|
+|GPL-3+|18|
+|LGPL-3+|16|
+|all-rights-reserved|15|
+|Unlicense|13|
 |PSF-2|10|
 |ISC|8|
 |MPL-2.0|6|
+|ZPL|6|
 |AGPL-3|4|
-|EPL-1.0|4|
 |0BSD|3|
 |CC-BY-4.0|3|
 |PYTHON|3|
-|ZPL|3|
 |LGPL-2.1+|3|
+|LGPL-2.1|3|
+|EPL-1.0|3|
 |CC0-1.0|3|
 |AGPL-3+|2|
 |LGPL-2+|2|
 |public-domain|2|
-|LGPL-2.1|2|
 |ElementTree|2|
 |BSD-4|2|
 |LGPL-2|2|

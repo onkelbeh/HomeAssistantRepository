@@ -19,11 +19,17 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.7.3[${PYTHON_USEDEP}]
 	>=dev-python/incremental-22.10.0[${PYTHON_USEDEP}]"
+BDEPEND="
+	test? (
+		dev-python/pytest[${PYTHON_USEDEP}]
+	)"
 
-src_prepare() {
-	touch requirements_setup.txt || die
-	touch requirements.txt || die
-	eapply_user
+python_test() {
+	py.test -v -v || die
 }
 
+src_prepare() {
+	eapply ${FILESDIR}/fix-setup.patch
+	default
+}
 distutils_enable_tests pytest

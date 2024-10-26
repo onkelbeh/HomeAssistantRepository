@@ -6,8 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-
-DESCRIPTION="A Python library for getting historical and forecasted usage/cost from utilities that use opower.com such as PG&E"
+DESCRIPTION="Noise suppression and automatic gain with speex."
 HOMEPAGE="https://pypi.org/project/pyspeex-noise/"
 
 LICENSE="Apache-2.0"

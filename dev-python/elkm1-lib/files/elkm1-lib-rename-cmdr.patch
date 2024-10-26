@@ -1,0 +1,34 @@
+--- a/bin/elk	2023-06-11 22:56:06.150889000 +0200
++++ b/bin/elk	2024-10-22 13:44:45.363541661 +0200
+@@ -5,7 +5,7 @@
+ import os
+ import sys
+ 
+-import cmdr
++import elkm1_cmdr as cmdr
+ 
+ from elkm1_lib import Elk
+ 
+--- a/README.md	2022-12-01 02:06:13.075080200 +0100
++++ b/README.md	2024-10-22 13:59:38.608518572 +0200
+@@ -151,9 +151,9 @@
+ A couple of things are hard coded in the mkdoc script, notably
+ the "no plans to implement" list.
+ 
+-### `simple`
++### `elkm1_simple`
+ 
+-The `simple` Python script is a trivial use of the ElkM1 library.
++The `elkm1_simple` Python script is a trivial use of the ElkM1 library.
+ It connects to the panel, syncs to internal memory, and continues
+ listening for any messages from the panel. The URL of the ElkM1 to
+ connect to is retrieved from an environment variable named `ELKM1_URL`.
+@@ -162,7 +162,7 @@
+ 
+ The `elk` Python script is a bit of a command interpretor. It can run in
+ two modes. Non-interactive mode is the default. Just run the `elk` command.
+-The non-interactive mode is similar to `simple` except there are a
++The non-interactive mode is similar to `elkm1_simple` except there are a
+ couple of message handlers (`timeout` and `unknown` handlers).
+ 
+ The `elk` can also be run in interactive mode by invoking it by
