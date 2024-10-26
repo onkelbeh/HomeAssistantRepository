@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
@@ -18,8 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/anyio[${PYTHON_USEDEP}]
-	>=dev-python/asyncclick-8.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/asyncclick-8.1.7[${PYTHON_USEDEP}]
 	dev-python/pydantic[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-1.9.0[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
