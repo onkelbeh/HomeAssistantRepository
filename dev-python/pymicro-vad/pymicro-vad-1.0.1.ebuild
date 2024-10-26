@@ -8,7 +8,8 @@ DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
 DESCRIPTION="Self-contained voice activity detector"
-HOMEPAGE="https://github.com/rhasspy/pymicro-vad https://pypi.org/project/pymicro-vad/"
+HOMEPAGE="https://github.com/rhasspy/pymicro-vad"
+SRC_URI="https://github.com/rhasspy/pymicro-vad/archive/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -16,6 +17,8 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.md"
-
-distutils_enable_tests pytest
+src_unpack() {
+	unpack ${A}
+	echo ${P}
+	mv ${P} pymicro_vad-${PV}
+}
