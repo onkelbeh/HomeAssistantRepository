@@ -30,3 +30,4 @@ BDEPEND="
 		dev-python/requests[${PYTHON_USEDEP}]
 	)"
 
+distutils_enable_tests pytest

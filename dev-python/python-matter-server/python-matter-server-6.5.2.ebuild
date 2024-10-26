@@ -22,7 +22,7 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiorun[${PYTHON_USEDEP}]
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
 	dev-python/orjson[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-chip-clusters-2024.5.2[${PYTHON_USEDEP}]"
+	~dev-python/home-assistant-chip-clusters-2024.9.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]

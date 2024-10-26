@@ -10,7 +10,7 @@
     <remote-id type="github">jaraco/jaraco.abode</remote-id>
     <maintainer status="unknown">
       <email>jaraco@jaraco.com</email>
-      <name>Jason R. Coombs</name>
+      <name>"Jason R. Coombs"</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

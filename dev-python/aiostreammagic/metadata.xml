@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">aiostreammagic</remote-id>
+    <remote-id type="github">noahhusby/aiostreammagic</remote-id>
+    <maintainer status="unknown">
+      <email>32528627+noahhusby@users.noreply.github.com</email>
+      <name>Noah Husby</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

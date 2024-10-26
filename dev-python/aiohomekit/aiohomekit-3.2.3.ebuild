@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/cryptography-2.9.2[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.128.4[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.132.2[${PYTHON_USEDEP}]
 	>=dev-python/commentjson-0.9.0[${PYTHON_USEDEP}]
 	>=dev-python/aiocoap-0.4.5[${PYTHON_USEDEP}]
 	>=dev-python/bleak-0.19.0[${PYTHON_USEDEP}]
