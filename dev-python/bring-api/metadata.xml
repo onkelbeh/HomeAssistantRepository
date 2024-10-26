@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">bring-api</remote-id>
-    <remote-id type="github">miaucl/python-bring-api</remote-id>
+    <remote-id type="github">miaucl/bring.api</remote-id>
     <maintainer status="unknown">
       <email>cyrill.raccaud+pypi@gmail.com</email>
       <name>Cyrill Raccaud</name>

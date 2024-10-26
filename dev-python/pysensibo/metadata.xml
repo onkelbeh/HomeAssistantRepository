@@ -9,8 +9,8 @@
     <remote-id type="pypi">pysensibo</remote-id>
     <remote-id type="github">andrey-git/pysensibo</remote-id>
     <maintainer status="unknown">
-      <email>andrey-git@users.noreply.github.com</email>
-      <name>andrey-git</name>
+      <email>goran.johansson@shiftit.se</email>
+      <name>G Johansson</name>
     </maintainer>
   </upstream>
 </pkgmetadata>

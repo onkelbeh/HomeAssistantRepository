@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">motionblindsble</remote-id>
-    <remote-id type="github">LennP/PyPi-Motionblinds_BLE</remote-id>
+    <remote-id type="github">LennP/motionblindsble</remote-id>
     <maintainer status="unknown">
       <email>lennperik@hotmail.nl</email>
       <name>LennP</name>
