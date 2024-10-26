@@ -21,7 +21,7 @@ DOCS="README.md"
 RDEPEND="dev-python/click[${PYTHON_USEDEP}]
 	dev-python/zigpy[${PYTHON_USEDEP}]
 	dev-python/crc[${PYTHON_USEDEP}]
-	>=dev-python/bellows-0.39.0[${PYTHON_USEDEP}]
+	>=dev-python/bellows-0.40.0[${PYTHON_USEDEP}]
 	dev-python/gpiod[${PYTHON_USEDEP}]
 	dev-python/coloredlogs[${PYTHON_USEDEP}]
 	dev-python/async-timeout[${PYTHON_USEDEP}]

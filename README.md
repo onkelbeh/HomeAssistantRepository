@@ -606,28 +606,29 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 2002 Ebuilds in total, 1991 of them have in total 2019 (42 different) licenses assigned.
+There are 2125 Ebuilds in total, 2114 of them have in total 2141 (42 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
-|MIT|1159|
-|Apache-2.0|445|
-|GPL-3|117|
-|BSD|113|
-|LGPL-3|25|
-|GPL-2|25|
-|GPL-3+|16|
+|MIT|1225|
+|Apache-2.0|484|
+|GPL-3|131|
+|BSD|112|
+|LGPL-3|24|
+|GPL-2|23|
+|GPL-3+|17|
+|all-rights-reserved|16|
 |BSD-2|15|
-|all-rights-reserved|15|
 |LGPL-3+|14|
-|Unlicense|9|
-|PSF-2|9|
+|Unlicense|10|
+|PSF-2|10|
 |ISC|6|
 |MPL-2.0|6|
+|AGPL-3|4|
 |EPL-1.0|4|
 |ZPL|3|
 |LGPL-2.1+|3|
-|AGPL-3|3|
+|CC0-1.0|3|
 |AGPL-3+|2|
 |LGPL-2+|2|
 |public-domain|2|
@@ -635,7 +636,7 @@ There are 2002 Ebuilds in total, 1991 of them have in total 2019 (42 different) 
 |ElementTree|2|
 |BSD-4|2|
 |LGPL-2|2|
-|CC0-1.0|2|
+|EPL-2.0|2|
 |0BSD|1|
 |CC-BY-4.0|1|
 |PYTHON|1|
@@ -649,13 +650,12 @@ There are 2002 Ebuilds in total, 1991 of them have in total 2019 (42 different) 
 |HPND|1|
 |CC-BY-NC-SA-3.0|1|
 |CC-BY-NC-SA-4.0|1|
-|EPL-2.0|1|
 |GPL-2+|1|
 |GPL-2-with-linking-exception|1|
 
-(Last counted: 22/09/2024)
+(Last counted: 26/10/2024)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 22/09/2024
+Last updated: 26/10/2024

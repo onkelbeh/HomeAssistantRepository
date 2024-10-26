@@ -8,5 +8,9 @@
   <upstream>
     <remote-id type="pypi">intellifire4py</remote-id>
     <remote-id type="github">jeeftor/intellifire4py</remote-id>
+    <maintainer status="unknown">
+      <email>jeffstein@gmail.com</email>
+      <name>Jeff Stein</name>
+    </maintainer>
   </upstream>
 </pkgmetadata>

@@ -8,6 +8,7 @@
   <upstream>
     <remote-id type="pypi">pydaikin</remote-id>
     <remote-id type="github">fredrike/pydaikin</remote-id>
+    <remote-id type="bitbucket">mustang51/pydaikin</remote-id>
     <maintainer status="unknown">
       <email>fredrik.e@gmail.com</email>
       <name>Fredrik Erlandsson</name>
