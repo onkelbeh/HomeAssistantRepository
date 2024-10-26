@@ -3,14 +3,14 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-SRC_URI="$(pypi_wheel_url)"
-S=${WORKDIR}
-
 DESCRIPTION="Refoss to support for Home Assistant"
 HOMEPAGE="https://github.com/ashionky/refoss_ha https://pypi.org/project/refoss-ha/"
+
+SRC_URI="$(pypi_wheel_url)"
+S=${WORKDIR}
 
 LICENSE="MIT"
 SLOT="0"
