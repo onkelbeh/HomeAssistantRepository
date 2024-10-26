@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="lib for OpenWeatherMap for Home Assistant"
-HOMEPAGE="https://pypi.org/project/pyopenweathermap/"
+HOMEPAGE="https://github.com/freekode/pyopenweathermap https://pypi.org/project/pyopenweathermap/"
 
 LICENSE="MIT"
 SLOT="0"
