@@ -30,10 +30,3 @@ RDEPEND="
 	>=dev-python/firebase-messaging-0.4.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
-
-python_prepare_all() {
-	sed -i -e 's:"LICENSE",::' pyproject.toml || die
-	sed -i -e 's:"CONTRIBUTING.rst", ::' pyproject.toml || die
-	sed -i -e 's:"CHANGELOG.rst",::' pyproject.toml || die
-	distutils-r1_python_prepare_all
-	}
