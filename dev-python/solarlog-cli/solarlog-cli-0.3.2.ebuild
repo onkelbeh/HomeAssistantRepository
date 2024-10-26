@@ -18,7 +18,12 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/mashumaro-3.13[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/aiohttp-3.9.5[${PYTHON_USEDEP}]
+	~dev-python/aioresponses-0.7.6[${PYTHON_USEDEP}]
+	>=dev-python/mashumaro-3.13[${PYTHON_USEDEP}]
+	~dev-python/pytest-aio-1.9.0[${PYTHON_USEDEP}]
+	~dev-python/pytest-cov-5.0.0[${PYTHON_USEDEP}]
+	~dev-python/syrupy-4.6.1[${PYTHON_USEDEP}]
+"
 
 distutils_enable_tests pytest
