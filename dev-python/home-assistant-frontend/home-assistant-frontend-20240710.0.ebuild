@@ -3,14 +3,14 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1 pypi
 
 DESCRIPTION="The Home Assistant Frontend"
 HOMEPAGE="https://pypi.org/project/home-assistant-frontend/"
 
 PYPI_PN=${PN/-/_}
+inherit distutils-r1 pypi
 
 SRC_URI="$(pypi_wheel_url)"
 S=${WORKDIR}
