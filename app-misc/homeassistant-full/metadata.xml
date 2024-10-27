@@ -55,6 +55,7 @@
     <flag name="android_ip_webcam">The android_ip_webcam integration turns any Android phone or tablet into a netwo</flag>
     <flag name="anova">allows you to control Anova sous vides with Wi-Fi capability</flag>
     <flag name="anthemav">Both Anthem’s current and last generation of A/V Receivers and Processors suppor</flag>
+    <flag name="anthropic">adds a conversation agent powered by Anthropic</flag>
     <flag name="aosmith">control a compatible A. O. Smith iCOMM-enabled water heater from Home Assistant</flag>
     <flag name="apache_kafka">Sends all state changes from Home Assistant to a Apache Kafka topic</flag>
     <flag name="apcupsd">Query Apcupsd status information from Home Assistant</flag>
@@ -64,6 +65,7 @@
     <flag name="aprilaire">The Aprilaire integration allows you to control an Aprilaire thermostat</flag>
     <flag name="aprs">Tracker integration connects to the APRS-IS</flag>
     <flag name="apsystems">allows you to read the data from your APsystems EZ1 microinverter</flag>
+    <flag name="aquacell">monitor your AquaCell device in Home Assistant</flag>
     <flag name="aqualogic">Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller</flag>
     <flag name="aquostv">The aquostv platform allows you to control a Sharp Aquos TV</flag>
     <flag name="aranet">Integrates Aranet devices into Home Assistant</flag>
@@ -84,6 +86,7 @@
     <flag name="aurora">The aurora platform uses the NOAA Aurora Forecast service to let you know if an </flag>
     <flag name="aurora_abb_powerone">This implements a direct RS485 connection to a solar inverter in the PVI-3.0/3.6</flag>
     <flag name="aussie_broadband">displays various service metrics using the Aussie Broadband API</flag>
+    <flag name="autarco">gather data from the cloud API of Autarco</flag>
     <flag name="avea">Library for Elgato Avea bulbs</flag>
     <flag name="avion">Support for the Avi-on Bluetooth dimmer switch Avi-on</flag>
     <flag name="avri">deprecated</flag>
@@ -125,16 +128,19 @@
     <flag name="broadlink">Allows you to interact with Broadlink remote control devices</flag>
     <flag name="brottsplatskartan">brottsplatskartan sensor allows one to track reported incidents</flag>
     <flag name="brunt">The brunt platform allows one to control Blind Engines by Brunt</flag>
+    <flag name="bryant_evolution">lets you control Bryant Evolution HVAC systems</flag>
     <flag name="bsblan">This integration integrates BSBLan device into Home Assistant</flag>
     <flag name="bthome">Integrates BTHome BLE devices into Home Assistant</flag>
     <flag name="bt_home_hub_5">Offers presence detection by looking at connected devices to a BT Home </flag>
     <flag name="bt_smarthub">Presence detection by looking at BT Smart Hub based routers</flag>
     <flag name="buienradar">Integrate buienradar weather data into Home Assistant</flag>
     <flag name="caldav">Integrate a CalDAV (RFC4791) calendar in Home Assistant</flag>
+    <flag name="cambridge_audio">control all receivers and streamers that support the StreamMagic app</flag>
     <flag name="camera">The camera integration allows you to use IP cameras with Home Assistant</flag>
     <flag name="canary">Allows you to integrate your Canary devices from Home Assistant</flag>
     <flag name="cast">Let Home Assitant talk to Google Chromecast</flag>
     <flag name="ccm15">integrate Midea CCM15 devices in Home Assistant.</flag>
+    <flag name="chacon_dio">connected home devices that can be controlled via RF 433 MHz or Wi-Fi</flag>
     <flag name="channels">Allows you to control Channels from Home Assistant</flag>
     <flag name="circuit">Unify Circuit platform allows you to send notifications</flag>
     <flag name="cisco_ios">Presence detection scanner for Cisco IOS devices</flag>
@@ -162,6 +168,7 @@
     <flag name="daikin">Integrate Daikin wireless controllers into Home Assistant</flag>
     <flag name="danfoss_air">The danfoss_air integration accesses information from your Danfoss Air HRV unit</flag>
     <flag name="datadog">The datadog integration sends all state changes to Datadog using a Datadog Agent</flag>
+    <flag name="deako">control your Deako devices from Home Assistant</flag>
     <flag name="debugpy">Useful in testing changes on a local development install</flag>
     <flag name="deconz">Add deCONZ ConBee/RaspBee Zigbee gateways to Home Assistant</flag>
     <flag name="decora">Support Decora Bluetooth dimmer switch Leviton from Home Assistant</flag>
@@ -197,6 +204,7 @@
     <flag name="dremel_3d_printer">monitor your Dremel 3D printer and its progress with your Home Assistant</flag>
     <flag name="drop_connect">provides connectivity with DROP smart water system devices via a local MQTT API</flag>
     <flag name="dsmr">Dutch Smart Meters which comply to DSMR (Dutch Smart Meter Requirements)</flag>
+    <flag name="duke_energy">get energy information from Duke Energy</flag>
     <flag name="dunehd">control a Dune HD media player</flag>
     <flag name="duotecno">used to control Duotecno nodes in Home Assistant</flag>
     <flag name="dwd_weather_warnings">dwd_weather_warnings sensor platform uses DWD for  warnings</flag>
@@ -221,6 +229,7 @@
     <flag name="egardia">Control an Egardia/Woonveilig alarm control panel from Home Assistant</flag>
     <flag name="electrasmart">control Electra Air Ait COnditioners with HA</flag>
     <flag name="electric_kiwi">uses the official Electric Kiwi API to show and select the hour of free power</flag>
+    <flag name="elevenlabs">support for ElevenLabs as text-to-speech with natural sounding voices</flag>
     <flag name="elgato">The Elgato Key Light sets the bar for high-end studio lighting</flag>
     <flag name="eliqonline">Integrate your ELIQ Online smart meter information</flag>
     <flag name="elkm1">Elk-M1 is a home security and automation controller</flag>
@@ -297,6 +306,7 @@
     <flag name="fritzbox_callmonitor">monitors the call monitor exposed by AVM FRITZ!Box routers on TCP port 1012</flag>
     <flag name="fronius">Add (very basic) Support for Fronius Symo JSON Api to Home Assistant</flag>
     <flag name="frontier_silicon">Support for Internet Radios based on the Frontier Silicon chipset</flag>
+    <flag name="fujitsu_fglair">provides support for Fujitsu heat pumps and air conditioners</flag>
     <flag name="fully_kiosk">Fully Kiosk Browser control in Home Assistant</flag>
     <flag name="futurenow">Allows you to use P5 FutureNow relay/dimmer units as lights</flag>
     <flag name="fyta">uses the open API of FYTA to obtain the data from your plant sensors</flag>
@@ -328,6 +338,7 @@
     <flag name="google_generative_ai_conversation">adds a conversation agent powered by Google Generative AI in Home Assistant</flag>
     <flag name="google_mail">allows you to connect your Google Mail and set an email auto-response</flag>
     <flag name="google_maps">google_maps platform allows you to detect presence</flag>
+    <flag name="google_photos">upload photos to your Google Photos using Home Assistant</flag>
     <flag name="google_pubsub">Send events to Google Cloud Pub/Sub from Home Assistant</flag>
     <flag name="google_sheets">allows you to connect your Google Drive to Home Assistant</flag>
     <flag name="google_tasks">allows you to connect your Google Tasks to Home Assistant</flag>
@@ -407,14 +418,19 @@
     <flag name="intesishome">communications with IntesisHome Smart AC Controllers</flag>
     <flag name="iota">IOTA is a new blockless distributed ledger</flag>
     <flag name="iotawatt">Integration for the IoTaWatt Open WiFi Electricity Monitor</flag>
+    <flag name="iotty">integrate iotty devices into Home Assistant</flag>
     <flag name="iperf3">iperf3 sensor integration allows you to measure network bandwidth</flag>
     <flag name="ipma">ipma weather platform</flag>
     <flag name="ipp">read current data from your networked printer</flag>
     <flag name="iqvia">collects allergy, asthma and disease information (based on a U.S. ZIP code)</flag>
     <flag name="irish_rail_transport">will give you the time until the next two departures</flag>
+    <flag name="iron_os">connects Home Assistant with PINE64’s Pinecil V2 soldering irons</flag>
     <flag name="isal">Intelligent Storage Acceleration, is used for accelerating aiohttp</flag>
+    <flag name="iskra">connect Iskra energy meters and power quality analyzers to Home Assistant</flag>
     <flag name="islamic_prayer_times">integration displays the various prayer times for Muslims as sensors</flag>
+    <flag name="israel_rail">give you the next three departure times from Israel rail</flag>
     <flag name="iss">know if the station is above your home location</flag>
+    <flag name="ista_ecotrend">import your monthly meter readings from the ista EcoTrend service</flag>
     <flag name="isy994">controller that is capable of controlling Insteon and X10 devices</flag>
     <flag name="itach">control IR devices with a Global Caché iTach Device and GC-100 devices</flag>
     <flag name="izone">control of a local iZone ducted reverse-cycle climate control device</flag>
@@ -436,6 +452,7 @@
     <flag name="kira">main integration to integrate Keene Electronics IR over IP Kira modules</flag>
     <flag name="kiwi">open your KIWI Smart Locks and Smart Entry Devices</flag>
     <flag name="kmtronic">IP-connected relays</flag>
+    <flag name="knocki">receive events for the triggers set up from your Knocki devices</flag>
     <flag name="knx">Asynchronous Library for the KNX protocol</flag>
     <flag name="kodi">control a Kodi multimedia system</flag>
     <flag name="konnected">connect wired sensors and switches to a Konnected Alarm Panel</flag>
@@ -455,6 +472,7 @@
     <flag name="ld2410_ble">Integrates LD2410 BLE sensors from Hi-Link</flag>
     <flag name="leaone">Integrates LeaOne health devices into Home Assistant</flag>
     <flag name="led_ble">Integrates multiple brands of Bluetooth Low Energy LED devices into Home Assista</flag>
+    <flag name="lektrico">ntegration integrates your Lektrico Charging Station</flag>
     <flag name="lg_netcast">allows you to control a LG Smart TV running NetCast 3.0</flag>
     <flag name="lg_soundbar">allows you to control LG Soundbars from Home Assistant</flag>
     <flag name="lidarr">The Lidarr integration pulls data from a given Lidarr instance</flag>
@@ -464,6 +482,7 @@
     <flag name="lightwave">WiFi link for controlling Lightwave lights, switches and TRVs</flag>
     <flag name="limitlessled">control your LimitlessLED lights from within Home Assistant</flag>
     <flag name="linear_garage_door">lets you control Linear garage doors through Home Assistant</flag>
+    <flag name="linkplay">control various media players based on the LinkPlay protocol</flag>
     <flag name="linode">allows you to access the information about your Linode systems</flag>
     <flag name="linux_battery">sensor platform is using the information stored in /sys/class/power_supply/</flag>
     <flag name="litejet">allows a computer to control the system via LiteJet’s third party protocol</flag>
@@ -484,6 +503,7 @@
     <flag name="lw12wifi">Library to control the Lagute LW-12 WiFi LED controller</flag>
     <flag name="lyft">Unofficial Lyft Rides API Python SDK</flag>
     <flag name="lyric">Honeywell Lyric thermostat platform</flag>
+    <flag name="madvr">automation and control of madVR Envy devices</flag>
     <flag name="magicseaweed">Provides API wrapper to magicseaweed.com.</flag>
     <flag name="mailgun">A simple mailgun client - pymailgun fork with Python 3 support</flag>
     <flag name="mariadb">WIP: set dependencies for mariadb-connector-python</flag>
@@ -493,6 +513,7 @@
     <flag name="matter">control Matter devices on your local WiFi or Thread network</flag>
     <flag name="maxcube">eQ-3 ELV MAX Cube Python API</flag>
     <flag name="mcp23017">base for all related mcp23017 platforms in Home Assistant</flag>
+    <flag name="mealie">The Mealie integration will fetch data from your Mealie instance</flag>
     <flag name="meater">communication with the Meater Temperature Probe from Apption Labs</flag>
     <flag name="medcom_ble">International Medcom Bluetooth-enabled radiation monitors</flag>
     <flag name="mediaroom">control a Mediaroom Set-Top Box (STB) from Home Assistant</flag>
@@ -522,6 +543,7 @@
     <flag name="modem_callerid">Uses an available modem for collecting caller ID information</flag>
     <flag name="modern_forms">Asynchronous Python client for Modern Forms fans</flag>
     <flag name="moehlenhoff_alpha2">allows you to control a Möhlenhoff Alpha 2 temperature control system</flag>
+    <flag name="monarch_money">a personal finance aggregation and budgeting service</flag>
     <flag name="monoprice">Python API for talking to Monoprice 6-zone amplifier</flag>
     <flag name="monzo">allows you to connect your Monzo bank accounts to Home Assistant</flag>
     <flag name="mopeka">Integrates Mopeka devices into Home Assistant</flag>
@@ -565,6 +587,7 @@
     <flag name="nextdns">allows you to monitor NextDNS statistics</flag>
     <flag name="nfandroidtv">Notifications for Android TV and Notifications for Fire TV</flag>
     <flag name="nibe_heatpump">control and monitor Nibe Heat Pumps in Home Assistant</flag>
+    <flag name="nice_go">control Nice G.O. garage doors through Home Assistant</flag>
     <flag name="nightscout">allows you to view your CGM data from Nightscout</flag>
     <flag name="niko_home_control">platform allows you to integrate your Niko Home Control</flag>
     <flag name="nilu">An API client for getting pollution data from NILU sensor stations in Norway</flag>
@@ -585,6 +608,7 @@
     <flag name="nut">monitor a UPS (battery backup) by using data from a NUT (Network UPS Tools)</flag>
     <flag name="nws">uses the National Weather Service web API</flag>
     <flag name="nx584">NX584/NX8E Interface Library and Server</flag>
+    <flag name="nyt_games">The NYT Games integration fetches data about your progress</flag>
     <flag name="nzbget">monitor and control your downloads with NZBGet</flag>
     <flag name="oasa_telematics">bus and trolley arrival times for Greek public transport for Athens</flag>
     <flag name="obihai">view the call status for your Obihai devices</flag>
@@ -748,6 +772,7 @@
     <flag name="sensirion_ble">Integrates sensors talking Sensirion’s BLE protocol into Home Assistant</flag>
     <flag name="sensorpro">Integrates SensorPro devices into Home Assistant</flag>
     <flag name="sensorpush">Integrates SensorPush devices into Home Assistant</flag>
+    <flag name="sensoterra">communicates with your Sensoterra soil moisture probes using</flag>
     <flag name="sentry">The free Sentry account allows 5000 events per month</flag>
     <flag name="senz">allows you to control and monitor your nVent RAYCHEM SENZ-WIFI thermostats</flag>
     <flag name="serial">use data provided by a device connected to the serial port of the system</flag>
@@ -764,6 +789,7 @@
     <flag name="sia">provides integration with several alarm systems that implement the SIA Protocol</flag>
     <flag name="sighthound">Detect people in camera images using Sighthound Cloud</flag>
     <flag name="signal_messenger">add Support for Moxie's Signal API</flag>
+    <flag name="simplefin">share read-only financial data</flag>
     <flag name="simplepush">deliver notifications from Home Assistant to your Android device</flag>
     <flag name="simplisafe">integrates SimpliSafe home security (V2 and V3) systems</flag>
     <flag name="sinch">The sinch platform uses Sinch to deliver notifications from Home Assistant</flag>
@@ -783,6 +809,7 @@
     <flag name="smarty"> lets you control Salda Smarty ventilation units from Home Assistant</flag>
     <flag name="smart_meter_texas">allows Texas residents to integrate their electric meters into Home Assistant</flag>
     <flag name="smhi">support for the SMHI.se web service as a source for meteorological data</flag>
+    <flag name="smlight">allows users to monitor and manage their SLZB-06x devices</flag>
     <flag name="sms">allows having a local execution SMS notification via Gammu</flag>
     <flag name="snapcast">The snapcast platform allows you to control Snapcast from Home Assistant</flag>
     <flag name="snmp">Presence Detection, Sensor, Switch via SNMP</flag>
@@ -858,6 +885,7 @@
     <flag name="tellstick">integrates TellStick devices into Home Assistant</flag>
     <flag name="temper">get the current temperature from a TEMPer device</flag>
     <flag name="tesla">integration with the Tesla cloud service</flag>
+    <flag name="tesla_fleet">exposes various sensors from Tesla vehicles and energy sites</flag>
     <flag name="tesla_wall_connector">allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi</flag>
     <flag name="teslemetry">commands and sensors from the Tesla vehicles connected to a Teslemetry subscript</flag>
     <flag name="tessie">control Tesla vehicles connected to your Tessie account from HA</flag>
@@ -881,6 +909,7 @@
     <flag name="toon">client for the Quby ToonAPI</flag>
     <flag name="totalconnect">provides connectivity with the Honeywell TotalConnect alarm systems</flag>
     <flag name="touchline">lets you control ROTH Touchline floor heating thermostats</flag>
+    <flag name="touchline_sl">control Roth Touchline SL underfloor heating systems</flag>
     <flag name="tplink">control your TP-Link Smart Home Devices</flag>
     <flag name="tplink_lte">allows you to observe and control TP-Link LTE routers</flag>
     <flag name="tplink_omada">allows you to control your TP-Link Omada SDN Devices</flag>
@@ -897,6 +926,7 @@
     <flag name="transport_nsw">gets next departure from Transport NSW stop for bus, train, light rail or ferry</flag>
     <flag name="travisci">integrate the test build results reported by Travis-CI working</flag>
     <flag name="trend">sensors which show the trend of numeric state orstate_attributes</flag>
+    <flag name="triggercmd">allows you to run commands on computers via TRIGGERcmd with Home Assistant</flag>
     <flag name="tts">Audio metadata tag reader and writer implemented in pure Python</flag>
     <flag name="tuya">integrate all Tuya Smart related platforms</flag>
     <flag name="twentemilieu">allows you to track the next scheduled waste pickups by Twente Milieu</flag>
@@ -958,6 +988,7 @@
     <flag name="weatherkit">obtains current weather and forecasts (hourly and daily) from Apple Weather</flag>
     <flag name="webmin">provides sensors for monitoring the CPU and memory usage of your server</flag>
     <flag name="webostv">allows you to control a LG webOS Smart TV</flag>
+    <flag name="weheat">display your Weheat devices through Home Assistant</flag>
     <flag name="wemo">discover and control WeMo devices</flag>
     <flag name="whirlpool">integrates Whirlpool 6th Sense Live appliances</flag>
     <flag name="whois">perform daily WHOIS lookups</flag>
@@ -968,6 +999,7 @@
     <flag name="withings">add support for Withings Health API</flag>
     <flag name="wiz">allows you to control your WiZ lights and smart sockets</flag>
     <flag name="wled">add support for Aircookie's WLED</flag>
+    <flag name="wmspro">WMS WebControl pro integration allows you to integrate WAREMA devices</flag>
     <flag name="wolflink">uses the Wolf Smart-Set for your heating system status</flag>
     <flag name="workday">generating country, province and state specific sets of holidays on the fly</flag>
     <flag name="ws66i">Control the Soundavo Whole-Home Audio Amplifier via local network</flag>
@@ -980,6 +1012,7 @@
     <flag name="xiaomi_tv">The xiaomi_tv platform allows you to control a Xiaomi TV</flag>
     <flag name="xmpp">Python 3 library for XMPP</flag>
     <flag name="xs1">get and set values of the EZcontrol XS1 Gateway</flag>
+    <flag name="yale">integrate your Yale devices in Home Assistant</flag>
     <flag name="yalexs_ble">Integrates Yale Access Bluetooth devices into Home Assistant</flag>
     <flag name="yale_smart_alarm">Yale Smart Alarm systems and Smart Hub through Yale’s API</flag>
     <flag name="yamaha">Library for Yamaha RX-* Receivers</flag>
