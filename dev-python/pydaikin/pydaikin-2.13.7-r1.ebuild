@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
 DESCRIPTION="Python Daikin HVAC appliances interface"
-HOMEPAGE="https://bitbucket.org/mustang51/pydaikin https://pypi.org/project/pydaikin/"
+HOMEPAGE="https://github.com/fredrike/pydaikin/ https://pypi.org/project/pydaikin/"
 
 LICENSE="GPL-3"
 SLOT="0"
