@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">sigstore-rekor-types</remote-id>
+    <remote-id type="github">trailofbits/sigstore-rekor-types</remote-id>
+    <maintainer status="unknown">
+      <email>opensource@trailofbits.com</email>
+      <name>Trail of Bits</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
