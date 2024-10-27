@@ -40,6 +40,7 @@
 |android_ip_webcam|The android_ip_webcam integration turns any Android phone or tablet into a netwo|Y|Y|Y|0.40|
 |anova|allows you to control Anova sous vides with Wi-Fi capability|N|N|Y|2023.5.2|
 |anthemav|Both Anthem’s current and last generation of A/V Receivers and Processors suppor|N|Y|Y|0.37|
+|anthropic|adds a conversation agent powered by Anthropic|N|N|Y|2024.9.2|
 |aosmith|control a compatible A. O. Smith iCOMM-enabled water heater from Home Assistant|N|N|Y|2024.1.0b7|
 |apache_kafka|Sends all state changes from Home Assistant to a Apache Kafka topic|N|Y|Y|0.97|
 |apcupsd|Query Apcupsd status information from Home Assistant|N|Y|Y|0.13|
@@ -49,6 +50,7 @@
 |aprilaire|The Aprilaire integration allows you to control an Aprilaire thermostat|N|N|Y|2024.3.0|
 |aprs|Tracker integration connects to the APRS-IS|N|N|Y|0.95|
 |apsystems|allows you to read the data from your APsystems EZ1 microinverter|N|N|Y|2024.6.0b4|
+|aquacell|monitor your AquaCell device in Home Assistant|N|N|Y|2024.9.2|
 |aqualogic|Provides connectivity to a Hayward/Goldline AquaLogic/ProLogic pool controller|N|N|Y|0.80|
 |aquostv|The aquostv platform allows you to control a Sharp Aquos TV|N|Y|Y|0.35|
 |aranet|Integrates Aranet devices into Home Assistant|N|N|Y|2022.12.0|
@@ -68,6 +70,7 @@
 |aurora|The aurora platform uses the NOAA Aurora Forecast service to let you know if an |N|N|Y|0.39|
 |aurora_abb_powerone|This implements a direct RS485 connection to a solar inverter in the PVI-3.0/3.6|N|Y|Y|0.96|
 |aussie_broadband|displays various service metrics using the Aussie Broadband API|N|N|Y|2022.2.0b1|
+|autarco|gather data from the cloud API of Autarco|N|N|Y|2024.9.2|
 |avea|Library for Elgato Avea bulbs|N|Y|Y|0.97|
 |avion|Support for the Avi-on Bluetooth dimmer switch Avi-on|N|Y|Y|0.37|
 |awair|Library to integrate the Awair GraphQL API into Home Assistant|N|Y|Y|0.84|
@@ -108,16 +111,19 @@
 |broadlink|Allows you to interact with Broadlink remote control devices|N|Y|Y|0.35|
 |brottsplatskartan|brottsplatskartan sensor allows one to track reported incidents|N|Y|Y|0.85|
 |brunt|The brunt platform allows one to control Blind Engines by Brunt|N|Y|Y|0.75|
+|bryant_evolution|lets you control Bryant Evolution HVAC systems|N|N|Y|2024.9.2|
 |bsblan|This integration integrates BSBLan device into Home Assistant|N|Y|Y||
 |bthome|Integrates BTHome BLE devices into Home Assistant|N|N|Y|2022.9.0b3|
 |bt_home_hub_5|Offers presence detection by looking at connected devices to a BT Home |N|Y|Y|0.22|
 |bt_smarthub|Presence detection by looking at BT Smart Hub based routers|N|Y|Y|0.82|
 |buienradar|Integrate buienradar weather data into Home Assistant|N|Y|Y|0.47|
 |caldav|Integrate a CalDAV (RFC4791) calendar in Home Assistant|Y|Y|Y|0.60|
+|cambridge_audio|control all receivers and streamers that support the StreamMagic app|N|N|Y|2024.10.1|
 |camera|The camera integration allows you to use IP cameras with Home Assistant|Y|Y|Y||
 |canary|Allows you to integrate your Canary devices from Home Assistant|N|Y|Y|0.60|
 |cast|Let Home Assitant talk to Google Chromecast|Y|Y|Y||
 |ccm15|integrate Midea CCM15 devices in Home Assistant.|N|N|Y|2024.1.0b7|
+|chacon_dio|connected home devices that can be controlled via RF 433 MHz or Wi-Fi|N|N|Y|2024.9.2|
 |channels|Allows you to control Channels from Home Assistant|N|N|Y|0.65|
 |circuit|Unify Circuit platform allows you to send notifications|N|N|Y|0.111|
 |cisco_ios|Presence detection scanner for Cisco IOS devices|N|N|Y|0.33|
@@ -145,6 +151,7 @@
 |daikin|Integrate Daikin wireless controllers into Home Assistant|N|Y|Y|0.59|
 |danfoss_air|The danfoss_air integration accesses information from your Danfoss Air HRV unit|N|N|Y|0.87|
 |datadog|The datadog integration sends all state changes to Datadog using a Datadog Agent|N|N|Y|0.45|
+|deako|control your Deako devices from Home Assistant|N|N|Y|2024.10.1|
 |debugpy|Useful in testing changes on a local development install|N|N|Y||
 |deconz|Add deCONZ ConBee/RaspBee Zigbee gateways to Home Assistant|N|Y|Y||
 |decora|Support Decora Bluetooth dimmer switch Leviton from Home Assistant|N|N|Y|0.37|
@@ -180,6 +187,7 @@
 |dremel_3d_printer|monitor your Dremel 3D printer and its progress with your Home Assistant|N|N|Y|2023.7.2|
 |drop_connect|provides connectivity with DROP smart water system devices via a local MQTT API|N|N|Y|2024.1.0b7|
 |dsmr|Dutch Smart Meters which comply to DSMR (Dutch Smart Meter Requirements)|N|N|Y||
+|duke_energy|get energy information from Duke Energy|N|N|Y|2024.10.1|
 |dunehd|control a Dune HD media player|N|Y|Y|0.34|
 |duotecno|used to control Duotecno nodes in Home Assistant|N|N|Y|2023.10.1|
 |dwd_weather_warnings|dwd_weather_warnings sensor platform uses DWD for  warnings|Y|Y|Y|0.51|
@@ -204,6 +212,7 @@
 |egardia|Control an Egardia/Woonveilig alarm control panel from Home Assistant|N|N|Y|0.65|
 |electrasmart|control Electra Air Ait COnditioners with HA|N|N|Y|2023.7.2|
 |electric_kiwi|uses the official Electric Kiwi API to show and select the hour of free power|N|N|Y|2023.10.1|
+|elevenlabs|support for ElevenLabs as text-to-speech with natural sounding voices|N|N|Y|2024.9.2|
 |elgato|The Elgato Key Light sets the bar for high-end studio lighting|N|N|Y||
 |eliqonline|Integrate your ELIQ Online smart meter information|N|N|Y|0.10|
 |elkm1|Elk-M1 is a home security and automation controller|N|N|Y|0.81|
@@ -280,6 +289,7 @@
 |fritzbox_callmonitor|monitors the call monitor exposed by AVM FRITZ!Box routers on TCP port 1012|N|Y|Y||
 |fronius|Add (very basic) Support for Fronius Symo JSON Api to Home Assistant|Y|Y|Y|0.96|
 |frontier_silicon|Support for Internet Radios based on the Frontier Silicon chipset|N|N|Y|0.40|
+|fujitsu_fglair|provides support for Fujitsu heat pumps and air conditioners|N|N|Y|2024.9.2|
 |fully_kiosk|Fully Kiosk Browser control in Home Assistant|N|N|Y|2022.9.0b3|
 |futurenow|Allows you to use P5 FutureNow relay/dimmer units as lights|N|N|Y|0.75|
 |fyta|uses the open API of FYTA to obtain the data from your plant sensors|N|N|Y|2024.4.0b3|
@@ -311,6 +321,7 @@
 |google_generative_ai_conversation|adds a conversation agent powered by Google Generative AI in Home Assistant|N|N|Y|2023.7.2|
 |google_mail|allows you to connect your Google Mail and set an email auto-response|N|N|Y|2023.2.1|
 |google_maps|google_maps platform allows you to detect presence|N|N|Y|0.67|
+|google_photos|upload photos to your Google Photos using Home Assistant|N|N|Y|2024.10.1|
 |google_pubsub|Send events to Google Cloud Pub/Sub from Home Assistant|N|N|Y|0.88|
 |google_sheets|allows you to connect your Google Drive to Home Assistant|N|N|Y|2022.10.0|
 |google_tasks|allows you to connect your Google Tasks to Home Assistant|N|N|Y|2023.11.0b2|
@@ -390,14 +401,19 @@
 |intesishome|communications with IntesisHome Smart AC Controllers|N|Y|Y|0.104|
 |iota|IOTA is a new blockless distributed ledger|N|N|Y||
 |iotawatt|Integration for the IoTaWatt Open WiFi Electricity Monitor|N|N|Y|2021.9.0b6|
+|iotty|integrate iotty devices into Home Assistant|N|N|Y|2024.9.2|
 |iperf3|iperf3 sensor integration allows you to measure network bandwidth|N|N|Y|0.71|
 |ipma|ipma weather platform|N|Y|Y|0.72|
 |ipp|read current data from your networked printer|N|Y|Y|0.108|
 |iqvia|collects allergy, asthma and disease information (based on a U.S. ZIP code)|N|N|Y||
 |irish_rail_transport|will give you the time until the next two departures|N|N|Y|0.57|
+|iron_os|connects Home Assistant with PINE64’s Pinecil V2 soldering irons|N|N|Y|2024.9.2|
 |isal|Intelligent Storage Acceleration, is used for accelerating aiohttp|Y|Y|Y|2024.6.0b4|
+|iskra|connect Iskra energy meters and power quality analyzers to Home Assistant|N|N|Y|2024.10.1|
 |islamic_prayer_times|integration displays the various prayer times for Muslims as sensors|N|Y|Y|0.85|
+|israel_rail|give you the next three departure times from Israel rail|N|N|Y|2024.9.2|
 |iss|know if the station is above your home location|N|N|Y||
+|ista_ecotrend|import your monthly meter readings from the ista EcoTrend service|N|N|Y|2024.9.2|
 |isy994|controller that is capable of controlling Insteon and X10 devices|N|N|Y||
 |itach|control IR devices with a Global Caché iTach Device and GC-100 devices|N|N|Y|0.39|
 |izone|control of a local iZone ducted reverse-cycle climate control device|N|N|Y|0.100|
@@ -419,6 +435,7 @@
 |kira|main integration to integrate Keene Electronics IR over IP Kira modules|N|N|Y|0.45|
 |kiwi|open your KIWI Smart Locks and Smart Entry Devices|N|N|Y|0.72|
 |kmtronic|IP-connected relays|N|N|Y|2021.3|
+|knocki|receive events for the triggers set up from your Knocki devices|N|N|Y|2024.9.2|
 |knx|Asynchronous Library for the KNX protocol|Y|Y|Y||
 |kodi|control a Kodi multimedia system|Y|Y|Y||
 |konnected|connect wired sensors and switches to a Konnected Alarm Panel|N|N|Y|0.70|
@@ -438,6 +455,7 @@
 |ld2410_ble|Integrates LD2410 BLE sensors from Hi-Link|N|N|Y|2023.2.1|
 |leaone|Integrates LeaOne health devices into Home Assistant|N|N|Y|2024.2.1|
 |led_ble|Integrates multiple brands of Bluetooth Low Energy LED devices into Home Assista|N|N|Y|2022.9.0b3|
+|lektrico|ntegration integrates your Lektrico Charging Station|N|N|Y|2024.10.1|
 |lg_netcast|allows you to control a LG Smart TV running NetCast 3.0|N|N|Y|0.20|
 |lg_soundbar|allows you to control LG Soundbars from Home Assistant|N|N|Y|0.81|
 |lidarr|The Lidarr integration pulls data from a given Lidarr instance|N|N|Y|2022.10.0|
@@ -447,6 +465,7 @@
 |lightwave|WiFi link for controlling Lightwave lights, switches and TRVs|N|N|Y|0.84|
 |limitlessled|control your LimitlessLED lights from within Home Assistant|N|N|Y||
 |linear_garage_door|lets you control Linear garage doors through Home Assistant|N|N|Y|2023.12.1|
+|linkplay|control various media players based on the LinkPlay protocol|N|N|Y|2024.9.2|
 |linode|allows you to access the information about your Linode systems|N|Y|Y|0.57|
 |linux_battery|sensor platform is using the information stored in /sys/class/power_supply/|N|N|Y|0.28|
 |litejet|allows a computer to control the system via LiteJet’s third party protocol|N|N|Y||
@@ -467,6 +486,7 @@
 |lw12wifi|Library to control the Lagute LW-12 WiFi LED controller|N|N|Y|0.71|
 |lyft|Unofficial Lyft Rides API Python SDK|N|N|Y||
 |lyric|Honeywell Lyric thermostat platform|N|N|Y|2021.3|
+|madvr|automation and control of madVR Envy devices|N|N|Y|2024.9.2|
 |magicseaweed|Provides API wrapper to magicseaweed.com.|N|N|Y||
 |mailgun|A simple mailgun client - pymailgun fork with Python 3 support|N|N|Y|0.38|
 |mariadb|WIP: set dependencies for mariadb-connector-python|Y|Y|Y|2022.6.3|
@@ -476,6 +496,7 @@
 |matter|control Matter devices on your local WiFi or Thread network|Y|Y|Y|2022.12.0|
 |maxcube|eQ-3 ELV MAX Cube Python API|Y|Y|Y|0.40|
 |mcp23017|base for all related mcp23017 platforms in Home Assistant|N|N|Y||
+|mealie|The Mealie integration will fetch data from your Mealie instance|N|N|Y|2024.9.2|
 |meater|communication with the Meater Temperature Probe from Apption Labs|N|N|Y|2022.5.0b0|
 |medcom_ble|International Medcom Bluetooth-enabled radiation monitors|N|N|Y|2023.10.1|
 |mediaroom|control a Mediaroom Set-Top Box (STB) from Home Assistant|N|N|Y|0.63|
@@ -505,6 +526,7 @@
 |modem_callerid|Uses an available modem for collecting caller ID information|N|N|Y||
 |modern_forms|Asynchronous Python client for Modern Forms fans|N|N|Y|2021.7|
 |moehlenhoff_alpha2|allows you to control a Möhlenhoff Alpha 2 temperature control system|N|N|Y|2022.3.0b3|
+|monarch_money|a personal finance aggregation and budgeting service|N|N|Y|2024.10.1|
 |monoprice|Python API for talking to Monoprice 6-zone amplifier|N|N|Y|0.56|
 |monzo|allows you to connect your Monzo bank accounts to Home Assistant|N|N|Y|2024.6.0b4|
 |mopeka|Integrates Mopeka devices into Home Assistant|N|N|Y|2023.2.1|
@@ -548,6 +570,7 @@
 |nextdns|allows you to monitor NextDNS statistics|N|N|Y|2022.8.1|
 |nfandroidtv|Notifications for Android TV and Notifications for Fire TV|Y|Y|Y||
 |nibe_heatpump|control and monitor Nibe Heat Pumps in Home Assistant|N|N|Y|2022.10.0|
+|nice_go|control Nice G.O. garage doors through Home Assistant|N|N|Y|2024.9.2|
 |nightscout|allows you to view your CGM data from Nightscout|N|N|Y|0.115|
 |niko_home_control|platform allows you to integrate your Niko Home Control|N|N|Y|0.82|
 |nilu|An API client for getting pollution data from NILU sensor stations in Norway|N|N|Y|0.87|
@@ -568,6 +591,7 @@
 |nut|monitor a UPS (battery backup) by using data from a NUT (Network UPS Tools)|N|Y|Y||
 |nws|uses the National Weather Service web API|N|Y|Y|0.99|
 |nx584|NX584/NX8E Interface Library and Server|N|Y|Y|0.13|
+|nyt_games|The NYT Games integration fetches data about your progress|N|N|Y|2024.10.1|
 |nzbget|monitor and control your downloads with NZBGet|N|N|Y|0.17|
 |oasa_telematics|bus and trolley arrival times for Greek public transport for Athens|N|N|Y|0.92|
 |obihai|view the call status for your Obihai devices|N|N|Y|0.99|
@@ -731,6 +755,7 @@
 |sensirion_ble|Integrates sensors talking Sensirion’s BLE protocol into Home Assistant|N|N|Y|2022.12.0|
 |sensorpro|Integrates SensorPro devices into Home Assistant|N|N|Y|2022.9.0b3|
 |sensorpush|Integrates SensorPush devices into Home Assistant|N|N|Y|2022.8.1|
+|sensoterra|communicates with your Sensoterra soil moisture probes using|N|N|Y|2024.10.1|
 |sentry|The free Sentry account allows 5000 events per month|N|N|Y||
 |senz|allows you to control and monitor your nVent RAYCHEM SENZ-WIFI thermostats|N|N|Y|2022.5.0b0|
 |serial|use data provided by a device connected to the serial port of the system|N|N|Y|0.56|
@@ -747,6 +772,7 @@
 |sia|provides integration with several alarm systems that implement the SIA Protocol|N|N|Y|2021.6|
 |sighthound|Detect people in camera images using Sighthound Cloud|N|N|Y|0.105|
 |signal_messenger|add Support for Moxie's Signal API|Y|Y|Y|0.104|
+|simplefin|share read-only financial data|N|N|Y|2024.9.2|
 |simplepush|deliver notifications from Home Assistant to your Android device|N|N|Y|0.29|
 |simplisafe|integrates SimpliSafe home security (V2 and V3) systems|N|Y|Y||
 |sinch|The sinch platform uses Sinch to deliver notifications from Home Assistant|N|N|Y|0.101|
@@ -766,6 +792,7 @@
 |smarty| lets you control Salda Smarty ventilation units from Home Assistant|N|N|Y|0.95|
 |smart_meter_texas|allows Texas residents to integrate their electric meters into Home Assistant|N|N|Y|0.115|
 |smhi|support for the SMHI.se web service as a source for meteorological data|N|N|Y|0.81|
+|smlight|allows users to monitor and manage their SLZB-06x devices|N|N|Y|2024.9.2|
 |sms|allows having a local execution SMS notification via Gammu|N|N|Y|0.105|
 |snapcast|The snapcast platform allows you to control Snapcast from Home Assistant|N|N|Y|0.13|
 |snmp|Presence Detection, Sensor, Switch via SNMP|Y|Y|Y|0.57|
@@ -841,6 +868,7 @@
 |tellstick|integrates TellStick devices into Home Assistant|N|N|Y||
 |temper|get the current temperature from a TEMPer device|N|N|Y||
 |tesla|integration with the Tesla cloud service|N|Y|Y||
+|tesla_fleet|exposes various sensors from Tesla vehicles and energy sites|N|N|Y|2024.9.2|
 |tesla_wall_connector|allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi|N|N|Y|2021.12.0b0|
 |teslemetry|commands and sensors from the Tesla vehicles connected to a Teslemetry subscript|N|N|Y|2024.2.1|
 |tessie|control Tesla vehicles connected to your Tessie account from HA|N|N|Y|2024.1.0b7|
@@ -864,6 +892,7 @@
 |toon|client for the Quby ToonAPI|N|Y|Y|0.56|
 |totalconnect|provides connectivity with the Honeywell TotalConnect alarm systems|N|Y|Y|0.42|
 |touchline|lets you control ROTH Touchline floor heating thermostats|N|N|Y|0.61|
+|touchline_sl|control Roth Touchline SL underfloor heating systems|N|N|Y|2024.9.2|
 |tplink|control your TP-Link Smart Home Devices|Y|Y|Y|0.89|
 |tplink_lte|allows you to observe and control TP-Link LTE routers|N|N|Y|0.83|
 |tplink_omada|allows you to control your TP-Link Omada SDN Devices|N|N|Y|2023.3.0b3|
@@ -880,6 +909,7 @@
 |transport_nsw|gets next departure from Transport NSW stop for bus, train, light rail or ferry|N|N|Y|0.81|
 |travisci|integrate the test build results reported by Travis-CI working|N|N|Y|0.56|
 |trend|sensors which show the trend of numeric state orstate_attributes|N|N|Y|0.28|
+|triggercmd|allows you to run commands on computers via TRIGGERcmd with Home Assistant|N|N|Y|2024.10.1|
 |tts|Audio metadata tag reader and writer implemented in pure Python|N|Y|Y||
 |tuya|integrate all Tuya Smart related platforms|N|Y|Y||
 |twentemilieu|allows you to track the next scheduled waste pickups by Twente Milieu|N|N|Y||
@@ -941,6 +971,7 @@
 |weatherkit|obtains current weather and forecasts (hourly and daily) from Apple Weather|N|N|Y|2023.10.1|
 |webmin|provides sensors for monitoring the CPU and memory usage of your server|N|N|Y|2024.3.0|
 |webostv|allows you to control a LG webOS Smart TV|N|Y|Y|0.18|
+|weheat|display your Weheat devices through Home Assistant|N|N|Y|2024.10.1|
 |wemo|discover and control WeMo devices|Y|Y|Y||
 |whirlpool|integrates Whirlpool 6th Sense Live appliances|N|N|Y|2021.10.0b2|
 |whois|perform daily WHOIS lookups|Y|Y|Y||
@@ -951,6 +982,7 @@
 |withings|add support for Withings Health API|N|Y|Y|0.99|
 |wiz|allows you to control your WiZ lights and smart sockets|N|N|Y|2022.3.0b3|
 |wled|add support for Aircookie's WLED|Y|Y|Y||
+|wmspro|WMS WebControl pro integration allows you to integrate WAREMA devices|N|N|Y|2024.10.1|
 |wolflink|uses the Wolf Smart-Set for your heating system status|N|N|Y|0.114|
 |workday|generating country, province and state specific sets of holidays on the fly|Y|Y|Y|0.41|
 |ws66i|Control the Soundavo Whole-Home Audio Amplifier via local network|N|N|Y|2022.6.0b0|
@@ -963,6 +995,7 @@
 |xiaomi_tv|The xiaomi_tv platform allows you to control a Xiaomi TV|N|Y|Y|0.64|
 |xmpp|Python 3 library for XMPP|N|N|Y||
 |xs1|get and set values of the EZcontrol XS1 Gateway|N|Y|Y|0.88|
+|yale|integrate your Yale devices in Home Assistant|N|N|Y|2024.9.2|
 |yalexs_ble|Integrates Yale Access Bluetooth devices into Home Assistant|N|N|Y|2022.9.0b3|
 |yale_smart_alarm|Yale Smart Alarm systems and Smart Hub through Yale’s API|N|N|Y|0.78|
 |yamaha|Library for Yamaha RX-* Receivers|Y|Y|Y|0.16|
