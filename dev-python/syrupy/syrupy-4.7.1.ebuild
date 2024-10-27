@@ -19,4 +19,5 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/pytest-7.0.0[${PYTHON_USEDEP}]"
+
 distutils_enable_tests pytest

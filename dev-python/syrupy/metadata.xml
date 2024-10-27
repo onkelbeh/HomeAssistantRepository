@@ -7,10 +7,6 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">syrupy</remote-id>
-    <remote-id type="github">tophat/syrupy</remote-id>
-    <maintainer status="unknown">
-      <email>opensource@tophat.com</email>
-      <name>Top Hat Open Source</name>
-    </maintainer>
+    <remote-id type="github">syrupy-project/syrupy</remote-id>
   </upstream>
 </pkgmetadata>
