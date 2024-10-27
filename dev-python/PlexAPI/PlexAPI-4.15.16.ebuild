@@ -18,6 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="dev-python/requests[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
+	>=dev-python/websocket-client-1.3.3[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
