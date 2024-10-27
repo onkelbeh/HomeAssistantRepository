@@ -21,7 +21,7 @@ DOCS="README.md"
 RDEPEND="
 	app-crypt/acme[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
-	>=dev-python/atomicwrites-1.4.1[${PYTHON_USEDEP}]
+	>=dev-python/atomicwrites-homeassistant-1.4.1[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	>=dev-python/ciso8601-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-42.0.0[${PYTHON_USEDEP}]
