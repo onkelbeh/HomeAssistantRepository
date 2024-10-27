@@ -20,7 +20,8 @@ DOCS="README.md"
 
 RDEPEND="dev-python/netifaces[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/urllib3[${PYTHON_USEDEP}]"
+	dev-python/urllib3[${PYTHON_USEDEP}]
+	dev-python/tenacity[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/freezegun[${PYTHON_USEDEP}]
