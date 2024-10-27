@@ -36,7 +36,7 @@ RDEPEND="
 	$(python_gen_cond_dep '
 		dev-python/cryptography[${PYTHON_USEDEP}]
 		dev-python/voluptuous[${PYTHON_USEDEP}]
-		~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
+		>=dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
 		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 		~dev-python/colorama-0.4.6[${PYTHON_USEDEP}]
 		dev-python/icmplib[${PYTHON_USEDEP}]
@@ -85,6 +85,7 @@ src_prepare() {
 	sed "/voluptuous==/c\voluptuous" -i requirements.txt || die
 	sed "/cryptography==/c\cryptography" -i requirements.txt || die
 	sed "/icmplib==/c\icmplib" -i requirements.txt || die
+	sed "/pyyaml==/c\pyyaml" -i requirements.txt || die
 
 	# esphome/components/font/__init__.py pillow version check
 	sed "s/10.2.0/10.3.0/g" -i esphome/components/font/__init__.py || die
