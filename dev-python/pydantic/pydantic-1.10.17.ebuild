@@ -27,7 +27,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="native-extensions"
 
 RDEPEND="
-	>=dev-python/typing-extensions-4.1.0[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-4.12.2[${PYTHON_USEDEP}]
+	~dev-python/pydantic-core-2.25.0[${PYTHON_USEDEP}]
+	>=dev-python/annotated-types-0.6.0[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	native-extensions? (
