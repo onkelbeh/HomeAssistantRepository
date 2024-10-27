@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Test equality of unordered collections in pytest"
@@ -19,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-BDEPEND="
+RDEPEND="
 	dev-python/pytest[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
