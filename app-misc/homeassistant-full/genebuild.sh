@@ -1,68 +1,13 @@
 #!/bin/bash
+######
+# Author: Xavier FORESTIER
+# Source: https://github.com/xavierforestier/HomeAssistantRepository
+# Purpose: Generate gentoo ebuild for homeassistant
+#          Parse files requirement_all.txt, package_constraints.txt, and use eix to search for mathcing gentoo package
+######
 eix-update
 
-parse_constraints () {
-    local f="$1"
-    echo "# Home Assistant Core dependencies from $f" >> $EBUILD_PATH
-    echo "RDEPEND=\"\${RDEPEND}" >> $EBUILD_PATH
-    for l in `cat $f | grep '^[^#]' | cut -d, -f1`; do
-        OIFS="$IFS"
-        IFS='<>=!'
-        for d in  $l; do
-	    echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing main dependencies... $d"
-	    local pos=${#d}
-	    local package=`eix -es# $d --use python_targets_python3_12`
-            local operator=${l:$pos:2}
-            pos=$((pos + 2 ))
-            local version=${l:$pos}
-            if [ -z "$package" ];then
-	    	package=`eix -es# ${d,,} --use python_targets_python3_12`
-	    fi
-            if [ -z "$package" ];then
-                package=`eix -es# ${d//_/-} --use python_targets_python3_12`
-            fi
-	    case $d in
-	    	atomicwrites-homeassistant)
-	    		package="dev-python/atomicwrites"
-			;;
-		faust-cchardet)
-	                package="dev-python/cchardet"
-			;;
-		uv)
-	                echo "	>=dev-python/uv-$version" >> $EBUILD_PATH
-			break
-			;;
-		protobuf)
-			package="dev-python/protobuf-python"
-			;;
-	        Jinja2)
-	                package="dev-python/jinja"
-			;;
-	    esac
-	    if [ -z "$package" ];then
-	      echo -e ": \e[1;33m$l corresponding gentoo package was not found, entry skipped\e[0m"
-	      break
-	    fi
-	    if [ "$version" = "1000000000.0.0" ]; then
-	    	echo "        $package[\${PYTHON_USEDEP}]" >> $EBUILD_PATH
-	        break
-	    fi
-	    case $operator in
-	    	==)
-                  echo "	~$package-$version[\${PYTHON_USEDEP}]" >> $EBUILD_PATH
-		  ;;
-		*)
-		  echo "	$operator$package-$version[\${PYTHON_USEDEP}]" >> $EBUILD_PATH
-            esac
-            break
-        done
-        IFS="$OIFS"
-    done
-    echo "\"" >> $EBUILD_PATH
-
-}
-
-# get latest
+# get target version
 if [ -z "$1" ];then
     VERSION=`curl -s https://api.github.com/repos/home-assistant/core/releases/latest | jq '.tag_name' | xargs -I {} echo {}`
 else
@@ -70,6 +15,150 @@ else
 fi
 EBUILD=$( pwd | rev | cut -d/ -f1 | rev )-${VERSION/b/_beta}
 EBUILD_PATH=$( pwd )/$EBUILD.ebuild
+
+######
+# Parse a requirement.txt single entry and write it in ebuild as requirement
+# $1 prefix (ex "\n\t", " ")
+# $2 ebuild path
+# $3 requirement to parse
+# Ex1: "adb-shell[async]>=0.4.4" => ">=dev-python/adb-shell-0.4.4[async,${PYTHON_USEDEP}]"
+# Ex2: "xmltodict==0.13.4" => "~dev-python/xmltodict-0.13.4[${PYTHON_USEDEP}]"
+######
+parse_package() {
+  local l="$3"
+  local OIFS="$IFS"
+  local operator=
+  local version=
+  IFS='<>=!['
+  for d in $l; do
+    echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing dependencies... $d"
+    local pos=${#d}
+    if [ "${l:$pos:1}" = "[" ]; then
+      operator=`echo "$l" | cut -d] -f2-`
+      #TODO version can be coma separated adb-shell[async]>=0.4.4,<5, for now only handle first criteria
+      version=${operator:2}
+      operator=${operator:0:2}
+    else
+      operator=${l:$pos:2}
+      pos=$((pos + 2 ))
+      version=${l:$pos}
+    fi
+    local package=`eix -es# $d --use python_targets_python3_12`
+    if [ -z "$package" ];then
+      package=`eix -es# ${d,,} --use python_targets_python3_12`
+    fi
+    if [ -z "$package" ];then
+      package=`eix -es# ${d//_/-} --use python_targets_python3_12`
+    fi
+    if [ -z "$package" ];then
+      package=`eix -es# ${d//./-} --use python_targets_python3_12`
+    fi
+    case $d in
+      atomicwrites-homeassistant)
+        package="dev-python/atomicwrites"
+	;;
+      faust-cchardet)
+        package="dev-python/cchardet"
+	;;
+      uv)
+        echo "  >=dev-python/uv-$version" >> $2
+        break
+        ;;
+      protobuf)
+        package="dev-python/protobuf-python"
+	;;
+      Jinja2)
+        package="dev-python/jinja"
+	;;
+    esac
+    if [ -z "$package" ];then
+      echo -e ": \e[1;33m$l corresponding gentoo package was not found, entry skipped\e[0m                     "
+      break
+    fi
+    #Write ebuild dep
+    echo -ne $1 >> $2
+    if [ "$version" = "1000000000.0.0" ]; then
+      echo -n "$package" >> $2
+      break
+    fi
+    case $operator in
+      ==)
+        echo -n "~$package-$version" >> $2
+	;;
+      *)
+        echo -n "$operator$package-$version" >> $2
+    esac
+
+    local dep_use=`echo "$dep" | cut -sd[ -f2 | cut -sd] -f1`
+    if [ "$dep_use" = "" ]; then
+      echo -n "[\${PYTHON_USEDEP}]" >> $2
+    else
+      echo -n "[$dep_use,\${PYTHON_USEDEP}]" >> $2
+    fi
+    break
+  done
+  IFS="$OIFS"
+} #parse_package
+
+######
+# Parse package_constraints files for main dependencies
+# $1 ebuild path
+# $2 parse_constraints file
+######
+parse_constraints() {
+  local f="$2"
+  echo "# Home Assistant Core dependencies from $f" >> $1
+  echo "RDEPEND=\"\${RDEPEND}" >> $1
+
+  for l in `cat $f | grep '^[^#]' | cut -d, -f1`; do
+    echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing main dependencies... $l"
+    parse_package "\n\t" $1 $l
+  done
+  echo "\"" >> $1
+} #parse_constraints
+
+######
+# Parse requirment_all file and search dependencies for the given USE flag
+# $1 ebuild_path
+# $2 requirement_all.txt path
+# $3 USE flag#
+######
+parse_use_flag_req() {
+  local reqall=$2
+  local use=$3
+  local OLDIFS=$IFS
+  IFS="
+"
+  echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing use flag dependencies... $use"
+  local found_dep=
+  for req in `cat $reqall | grep -n "^# homeassistant.components.$use$"`; do
+    local start_line=`echo $req | cut -d: -f1`
+    start_line=$(( start_line + 1 ))
+    local found=
+    for dep in `tail -n+$start_line $reqall`; do
+      if [ "${dep:0:1}" = "#" ]; then
+        if [ "$found" = "" ]; then
+          continue
+        else
+          break
+        fi
+      else
+        if [ "$found_dep" = "" ]; then
+          echo -ne "\t$use? (" >> $1
+          found_dep="X"
+        fi
+        parse_package " " $1 $dep
+        found="X"
+      fi
+    done
+  done
+  IFS=$OLDIFS
+  if [ "$found_dep" = "" ]; then
+    echo -e ": \e[0;31mno package found\e[0m                                     "
+  else
+    echo " )">> $1
+  fi
+} #parse_use_flag_req
 
 if [ -f "$EBUILD_PATH" ]; then
     echo -e "  \e[0;31m$EBUILD already exists, \e[0m"
@@ -81,7 +170,6 @@ else
     done
     ebuild $EBUILD_PATH clean digest unpack
     patch=$( pwd )/files/genebuild_${VERSION/b/_beta}.patch
-
 fi
 
 pushd /var/tmp/portage/app-misc/${EBUILD}/work
@@ -138,10 +226,11 @@ RDEPEND="\${RDEPEND}
 	!app-misc/homeassistant"
 REQUIRED_USE="bluetooth? ( ruuvi_gateway shelly )
 	homekit_controller? ( bluetooth )"
-
 EOF
 echo -ne " \e[0;32m*\e[0m Parsing main dependencies..."
-for i in `find . | grep package_constraints`;do parse_constraints $i; done
+for i in `find . | grep package_constraints`;do
+  parse_constraints $EBUILD_PATH $i 
+done
 echo -e "                                                                                          \r \e[0;32m*\e[0m Parsing main dependencies... \e[0;32mdone\e[0m                                    "
 cat >> $EBUILD_PATH <<EOF
 
@@ -177,58 +266,12 @@ RDEPEND="\${RDEPEND}
 	wink? ( ~dev-python/pubnubsub-handler-1.0.9[\${PYTHON_USEDEP}] ~dev-python/python-wink-1.10.5[\${PYTHON_USEDEP}] )
 EOF
 reqall=""
-for i in `find ./ | grep requirements_all.txt`; do reqall=$i; break; done
+for i in `find ./ | grep requirements_all.txt`; do
+  reqall=$i
+  break
+done
 for use in `cat $EBUILD_PATH | grep IUSE= | cut -d\" -f2`; do
-    use=${use/+/}
-    OLDIFS=$IFS
-        IFS="
-"
-    echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing use flag dependencies... $use"
-    found_dep=
-    for req in `cat $reqall | grep -n "^# homeassistant.components.$use$"`; do
-    	start_line=`echo $req | cut -d: -f1`
-    	start_line=$(( start_line + 1 ))
-	found=
-	for dep in `tail -n+$start_line $reqall`; do
-	    if [ "${dep:0:1}" = "#" ]; then
-	        if [ "$found" = "" ]; then
-		    continue
-		else
-        	    break
-		fi
-            else
-		if [ "$found_dep" = "" ]; then
-		    echo -n "	$use? (" >> $EBUILD_PATH
-		    found_dep="X"
-		fi
-		dep_package=`eix -es# $( echo "${dep/./-}" | cut -d= -f 1 | cut -d[ -f 1 )  --use python_targets_python3_12`
-		if [ -z "$dep_package" ];then
-                    dep_package=`eix -es# $( echo "${dep,,}" | cut -d= -f 1 | cut -d[ -f 1 )  --use python_targets_python3_12`
-		fi
-		if [ -z "$dep_package" ];then		
-                    dep_package=`eix -es# $( echo "${dep//_/-}" | cut -d= -f 1 | cut -d[ -f 1 )  --use python_targets_python3_12`
-                fi
-		if [ -z "$dep_package" ];then           
-		    echo " $req, $dep => $dep_package error"
-		fi
-
-		dep_version=`echo "$dep" | cut -d= -f 3`
-		dep_use=`echo "$dep" | cut -sd[ -f2 | cut -sd] -f1`
-		if [ "$dep_use" = "" ]; then
-		    echo -n " ~$dep_package-$dep_version[\${PYTHON_USEDEP}]" >> $EBUILD_PATH 	
-		else
-  	            echo -n " ~$dep_package-$dep_version[$dep_use,\${PYTHON_USEDEP}]" >> $EBUILD_PATH
-		fi
-                found="X"
-	    fi
-        done
-    done
-    IFS=$OLDIFS
-    if [ "$found_dep" = "" ]; then
-    	echo -e ": \e[0;31mno package found\e[0m"
-    else
-        echo " )">> $EBUILD_PATH
-    fi
+  parse_use_flag_req $EBUILD_PATH $reqall ${use/+/}
 done
 echo "\"" >> $EBUILD_PATH
 echo -e "                                                                                          \r \e[0;32m*\e[0m Parsing use flag dependencies... \e[0;32mdone\e[0m                        "
