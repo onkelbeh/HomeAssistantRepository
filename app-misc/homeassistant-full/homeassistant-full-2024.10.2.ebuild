@@ -45,9 +45,9 @@ RDEPEND="${RDEPEND}
 	!app-misc/homeassistant"
 REQUIRED_USE="bluetooth? ( ruuvi_gateway shelly )
 	homekit_controller? ( bluetooth )"
-
 # Home Assistant Core dependencies from ./core-2024.10.2/homeassistant/package_constraints.txt
 RDEPEND="${RDEPEND}
+
 	~dev-python/aiodhcpwatcher-1.0.2[${PYTHON_USEDEP}]
 	~dev-python/aiodiscover-2.1.0[${PYTHON_USEDEP}]
 	~dev-python/aiodns-3.2.0[${PYTHON_USEDEP}]
@@ -106,8 +106,8 @@ RDEPEND="${RDEPEND}
 	~dev-python/sqlalchemy-2.0.31[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.12.2[${PYTHON_USEDEP}]
 	~dev-python/ulid-transform-1.0.2[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]
-	>=dev-python/uv-0.4.15
+	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]  >=dev-python/uv-0.4.15
+
 	~dev-python/voluptuous-openapi-0.0.5[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.6.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.15.2[${PYTHON_USEDEP}]
@@ -118,7 +118,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.59.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-status-1.59.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-reflection-1.59.0[${PYTHON_USEDEP}]
-        dev-python/cchardet[${PYTHON_USEDEP}]
+	dev-python/cchardet
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	~dev-python/anyio-4.6.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.14.0[${PYTHON_USEDEP}]
@@ -141,10 +141,10 @@ RDEPEND="${RDEPEND}
 	>=dev-python/pycountry-23.12.11[${PYTHON_USEDEP}]
 	>=net-analyzer/scapy-2.5.0[${PYTHON_USEDEP}]
 	>=dev-python/tuf-4.0.0[${PYTHON_USEDEP}]
-	!=dev-python/tenacity-8.4.0[${PYTHON_USEDEP}]
-"
+	!=dev-python/tenacity-8.4.0[${PYTHON_USEDEP}]"
 # Home Assistant Core dependencies from ./homeassistant-2024.10.2/homeassistant/package_constraints.txt
 RDEPEND="${RDEPEND}
+
 	~dev-python/aiodhcpwatcher-1.0.2[${PYTHON_USEDEP}]
 	~dev-python/aiodiscover-2.1.0[${PYTHON_USEDEP}]
 	~dev-python/aiodns-3.2.0[${PYTHON_USEDEP}]
@@ -203,8 +203,8 @@ RDEPEND="${RDEPEND}
 	~dev-python/sqlalchemy-2.0.31[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.12.2[${PYTHON_USEDEP}]
 	~dev-python/ulid-transform-1.0.2[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]
-	>=dev-python/uv-0.4.15
+	>=dev-python/urllib3-1.26.5[${PYTHON_USEDEP}]  >=dev-python/uv-0.4.15
+
 	~dev-python/voluptuous-openapi-0.0.5[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-serialize-2.6.0[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.15.2[${PYTHON_USEDEP}]
@@ -215,7 +215,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/grpcio-1.59.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-status-1.59.0[${PYTHON_USEDEP}]
 	~dev-python/grpcio-reflection-1.59.0[${PYTHON_USEDEP}]
-        dev-python/cchardet[${PYTHON_USEDEP}]
+	dev-python/cchardet
 	>=dev-python/btlewrap-0.0.10[${PYTHON_USEDEP}]
 	~dev-python/anyio-4.6.0[${PYTHON_USEDEP}]
 	~dev-python/h11-0.14.0[${PYTHON_USEDEP}]
@@ -238,8 +238,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/pycountry-23.12.11[${PYTHON_USEDEP}]
 	>=net-analyzer/scapy-2.5.0[${PYTHON_USEDEP}]
 	>=dev-python/tuf-4.0.0[${PYTHON_USEDEP}]
-	!=dev-python/tenacity-8.4.0[${PYTHON_USEDEP}]
-"
+	!=dev-python/tenacity-8.4.0[${PYTHON_USEDEP}]"
 
 # unknown origin, still something to clean up here
 
@@ -513,7 +512,7 @@ RDEPEND="${RDEPEND}
 	freebox? ( ~dev-python/freebox-api-1.1.0[${PYTHON_USEDEP}] )
 	freedompro? ( ~dev-python/pyfreedompro-1.1.0[${PYTHON_USEDEP}] )
 	free_mobile? ( ~dev-python/freesms-0.2.0[${PYTHON_USEDEP}] )
-	fritz? ( ~dev-python/fritzconnection-1.13.2[qrcode,${PYTHON_USEDEP}] ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
+	fritz? ( ~dev-python/fritzconnection-1.13.2[qrcode,${PYTHON_USEDEP}] >=dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
 	fritzbox? ( ~dev-python/pyfritzhome-0.6.12[${PYTHON_USEDEP}] )
 	fritzbox_callmonitor? ( ~dev-python/fritzconnection-1.13.2[qrcode,${PYTHON_USEDEP}] )
 	fronius? ( ~dev-python/PyFronius-0.7.3[${PYTHON_USEDEP}] )
@@ -892,7 +891,7 @@ RDEPEND="${RDEPEND}
 	renson? ( ~dev-python/renson-endura-delta-1.7.1[${PYTHON_USEDEP}] )
 	reolink? ( ~dev-python/reolink-aio-0.9.11[${PYTHON_USEDEP}] )
 	repetier? ( ~dev-python/pyrepetierng-0.1.0[${PYTHON_USEDEP}] )
-	rest? ( ~dev-python/jsonpath-0.82.2[${PYTHON_USEDEP}] ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
+	rest? ( ~dev-python/jsonpath-0.82.2[${PYTHON_USEDEP}] >=dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
 	rflink? ( ~dev-python/rflink-0.0.66[${PYTHON_USEDEP}] )
 	rfxtrx? ( ~dev-python/pyRFXtrx-0.31.1[${PYTHON_USEDEP}] )
 	ridwell? ( ~dev-python/aioridwell-2024.1.0[${PYTHON_USEDEP}] )
@@ -992,7 +991,7 @@ RDEPEND="${RDEPEND}
 	starline? ( ~dev-python/starline-0.1.5[${PYTHON_USEDEP}] )
 	starlingbank? ( ~dev-python/starlingbank-3.2[${PYTHON_USEDEP}] )
 	starlink? ( ~dev-python/starlink-grpc-core-1.1.3[${PYTHON_USEDEP}] )
-	startca? ( ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
+	startca? ( >=dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
 	statsd? ( ~dev-python/statsd-3.2.1[${PYTHON_USEDEP}] )
 	steamist? ( ~dev-python/aiosteamist-1.0.0[${PYTHON_USEDEP}] ~dev-python/discovery30303-0.3.2[${PYTHON_USEDEP}] )
 	steam_online? ( ~dev-python/steamodd-4.21[${PYTHON_USEDEP}] )
@@ -1028,7 +1027,7 @@ RDEPEND="${RDEPEND}
 	tasmota? ( ~dev-python/HATasmota-0.9.2[${PYTHON_USEDEP}] )
 	tautulli? ( ~dev-python/pytautulli-23.1.1[${PYTHON_USEDEP}] )
 	technove? ( ~dev-python/python-technove-1.3.1[${PYTHON_USEDEP}] )
-	ted5000? ( ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
+	ted5000? ( >=dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
 	tedee? ( ~dev-python/pytedee-async-0.2.20[${PYTHON_USEDEP}] )
 	telegram_bot? ( ~dev-python/python-telegram-bot-21.5[socks,${PYTHON_USEDEP}] )
 	tellduslive? ( ~dev-python/tellduslive-0.10.12[${PYTHON_USEDEP}] )
@@ -1164,7 +1163,7 @@ RDEPEND="${RDEPEND}
 	zengge? ( ~dev-python/bluetooth-adapters-0.19.4[${PYTHON_USEDEP}] ~dev-python/zengge-0.2[${PYTHON_USEDEP}] )
 	zeroconf? ( ~dev-python/zeroconf-0.135.0[${PYTHON_USEDEP}] )
 	zerproc? ( ~dev-python/pyzerproc-0.4.8[${PYTHON_USEDEP}] )
-	zestimate? ( ~dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
+	zestimate? ( >=dev-python/xmltodict-0.13.0[${PYTHON_USEDEP}] )
 	zeversolar? ( ~dev-python/zeversolar-0.3.1[${PYTHON_USEDEP}] )
 	zha? ( ~dev-python/universal-silabs-flasher-0.0.22[${PYTHON_USEDEP}] ~dev-python/zha-0.0.34[${PYTHON_USEDEP}] )
 	zhong_hong? ( ~dev-python/zhong-hong-hvac-1.0.12[${PYTHON_USEDEP}] )
