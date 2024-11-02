@@ -6,9 +6,9 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">Babel</remote-id>
+    <remote-id type="pypi">babel</remote-id>
     <remote-id type="github">python-babel/babel</remote-id>
-    <doc>https://pythonhosted.org/Babel/</doc>
+    <doc>https://pythonhosted.org/babel/</doc>
     <maintainer status="unknown">
       <email>akx@iki.fi</email>
       <name>Aarni Koskela</name>
