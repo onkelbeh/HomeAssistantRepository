@@ -6,10 +6,10 @@
     <name>Andreas Billmeier</name>
   </maintainer>
   <upstream>
-    <remote-id type="pypi">heatmiserV3</remote-id>
+    <remote-id type="pypi">heatmiserv3</remote-id>
     <remote-id type="github">andylockran/heatmiserV3</remote-id>
     <maintainer status="unknown">
-      <email>andy@zrmt.com</email>
+      <email>andy@lockran.com</email>
       <name>Andy Loughran</name>
     </maintainer>
   </upstream>
