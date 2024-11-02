@@ -17,16 +17,6 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/appdirs[${PYTHON_USEDEP}]
-	>=dev-python/attrs-18.1.0[${PYTHON_USEDEP}]
-	>=dev-python/click-6.5[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND=">=dev-python/requests-2.22.0[${PYTHON_USEDEP}]"}
 
 distutils_enable_tests pytest
