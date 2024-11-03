@@ -5,59 +5,44 @@ EAPI=8
 
 CARGO_OPTIONAL=yes
 DISTUTILS_EXT=1
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=maturin
 PYTHON_COMPAT=( python3_{11..13} )
 PYTHON_REQ_USE="threads(+)"
 
 CRATES="
-	asn1@0.15.5
-	asn1_derive@0.15.5
-	autocfg@1.1.0
-	base64@0.21.7
-	bitflags@1.3.2
-	bitflags@2.4.2
-	cc@1.0.83
+	asn1@0.16.2
+	asn1_derive@0.16.2
+	autocfg@1.3.0
+	base64@0.22.1
+	bitflags@2.6.0
+	cc@1.1.6
 	cfg-if@1.0.0
 	foreign-types-shared@0.1.1
 	foreign-types@0.3.2
-	heck@0.4.1
-	indoc@2.0.4
-	libc@0.2.152
-	lock_api@0.4.11
-	memoffset@0.9.0
+	heck@0.5.0
+	indoc@2.0.5
+	libc@0.2.155
+	memoffset@0.9.1
 	once_cell@1.19.0
 	openssl-macros@0.1.1
-	openssl-sys@0.9.99
-	openssl@0.10.63
-	parking_lot@0.12.1
-	parking_lot_core@0.9.9
-	pem@3.0.3
-	pkg-config@0.3.29
-	portable-atomic@1.6.0
-	proc-macro2@1.0.78
-	pyo3-build-config@0.20.3
-	pyo3-ffi@0.20.3
-	pyo3-macros-backend@0.20.3
-	pyo3-macros@0.20.3
-	pyo3@0.20.3
-	quote@1.0.35
-	redox_syscall@0.4.1
-	scopeguard@1.2.0
-	self_cell@1.0.3
-	smallvec@1.13.1
-	syn@2.0.48
-	target-lexicon@0.12.13
+	openssl-sys@0.9.103
+	openssl@0.10.66
+	pem@3.0.4
+	pkg-config@0.3.30
+	portable-atomic@1.7.0
+	proc-macro2@1.0.86
+	pyo3-build-config@0.22.2
+	pyo3-ffi@0.22.2
+	pyo3-macros-backend@0.22.2
+	pyo3-macros@0.22.2
+	pyo3@0.22.2
+	quote@1.0.36
+	self_cell@1.0.4
+	syn@2.0.71
+	target-lexicon@0.12.15
 	unicode-ident@1.0.12
 	unindent@0.2.3
 	vcpkg@0.2.15
-	windows-targets@0.48.5
-	windows_aarch64_gnullvm@0.48.5
-	windows_aarch64_msvc@0.48.5
-	windows_i686_gnu@0.48.5
-	windows_i686_msvc@0.48.5
-	windows_x86_64_gnu@0.48.5
-	windows_x86_64_gnullvm@0.48.5
-	windows_x86_64_msvc@0.48.5
 "
 
 inherit cargo distutils-r1 flag-o-matic multiprocessing pypi
@@ -95,7 +80,7 @@ DEPEND="
 # XXX: Drop explicit >=virtual/rust-1.56.0 dep once that's the minimum in cargo.eclass
 # and replace it with ${RUST_DEPEND}
 BDEPEND="
-	>=dev-python/setuptools-rust-1.7.0[${PYTHON_USEDEP}]
+	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=virtual/rust-1.56.0
 	test? (
 		dev-python/certifi[${PYTHON_USEDEP}]
@@ -136,6 +121,8 @@ src_prepare() {
 
 python_configure_all() {
 	filter-lto # bug #903908
+
+	export UNSAFE_PYO3_SKIP_VERSION_CHECK=1
 }
 
 python_test() {
