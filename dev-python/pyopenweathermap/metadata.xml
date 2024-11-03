@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pyopenweathermap</remote-id>
+    <remote-id type="github">freekode/pyopenweathermap</remote-id>
     <maintainer status="unknown">
       <email>iam@freekode.org</email>
       <name>Evgeny</name>
