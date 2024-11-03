@@ -3,11 +3,11 @@
 
 EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
 DESCRIPTION="Makes working with XML feel like you are working with JSON"
-HOMEPAGE="https://github.com/martinblech/xmltodict/ https://pypi.org/project/xmltodict/"
+HOMEPAGE="https://github.com/martinblech/xmltodict/
+	https://pypi.org/project/xmltodict/"
 
 LICENSE="MIT"
 SLOT="0"
