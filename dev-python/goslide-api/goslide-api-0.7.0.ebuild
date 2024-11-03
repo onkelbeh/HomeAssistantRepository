@@ -5,11 +5,12 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
-inherit distutils-r1 pypi
+inherit distutils-r1
 
 DESCRIPTION="Python API to utilise the goslide.io Open Cloud API"
 HOMEPAGE="https://github.com/ualex73/goslide-api https://pypi.org/project/goslide-api/"
+
+SRC_URI="https://github.com/ualex73/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -17,14 +18,8 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+DOCS="README.pypi"
 
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
