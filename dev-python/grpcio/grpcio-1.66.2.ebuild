@@ -17,7 +17,7 @@ KEYWORDS="amd64 arm arm64 x86"
 RDEPEND="
 	>=dev-libs/openssl-1.1.1:0=[-bindist(-)]
 	>=dev-libs/re2-0.2021.11.01:=
-	>=dev-python/protobuf-python-4.21.6[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-python-5.26.1[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 	net-dns/c-ares:=
 	sys-libs/zlib:=
@@ -25,8 +25,6 @@ RDEPEND="
 
 BDEPEND="${RDEPEND}
 	>=dev-python/cython-3[${PYTHON_USEDEP}]"
-
-PATCHES=( "${FILESDIR}/cython3-compat.patch" )
 
 python_prepare_all() {
 	distutils-r1_python_prepare_all
