@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
 DESCRIPTION="Compute positions of the planets and stars"
-HOMEPAGE="http://rhodesmill.org/pyephem/ https://pypi.org/project/ephem/"
+HOMEPAGE="http://rhodesmill.org/pyephem/ https://github.com/brandon-rhodes/pyephem/ https://pypi.org/project/ephem/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -17,14 +17,5 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
-
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
