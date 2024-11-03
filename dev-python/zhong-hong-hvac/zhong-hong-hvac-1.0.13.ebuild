@@ -17,6 +17,6 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/attrs[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/attrs-23.1.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
