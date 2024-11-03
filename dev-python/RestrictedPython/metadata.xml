@@ -9,7 +9,7 @@
     <remote-id type="pypi">RestrictedPython</remote-id>
     <remote-id type="github">zopefoundation/RestrictedPython</remote-id>
     <maintainer status="unknown">
-      <email>zope-dev@zope.org</email>
+      <email>zope-dev@zope.dev</email>
       <name>Zope Foundation and Contributors</name>
     </maintainer>
   </upstream>
