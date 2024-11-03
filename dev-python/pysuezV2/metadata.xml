@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">pysuezV2</remote-id>
+    <remote-id type="github">jb101010-2/pySuez</remote-id>
+    <maintainer status="unknown">
+      <email>dev.julien.basson@gmail.com</email>
+      <name>jb101010-2</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>
