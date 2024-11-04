@@ -26,6 +26,8 @@ RDEPEND="~dev-python/zigpy-0.70.0[${PYTHON_USEDEP}]
 	~dev-python/zigpy-zigate-0.13.1[${PYTHON_USEDEP}]
 	~dev-python/zha-quirks-0.0.124[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-	dev-python/pyserial-asyncio-fast[${PYTHON_USEDEP}]"
+	dev-python/pyserial-asyncio-fast[${PYTHON_USEDEP}]
+	dev-python/voluptuous[${PYTHON_USEDEP}]
+"
 
 distutils_enable_tests pytest

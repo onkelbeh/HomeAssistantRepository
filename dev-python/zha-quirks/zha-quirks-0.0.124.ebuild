@@ -17,7 +17,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/zigpy-0.63.5[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/zigpy-0.70.0[${PYTHON_USEDEP}]"
 
 src_prepare() {
 	# remove dynamic-versioning
