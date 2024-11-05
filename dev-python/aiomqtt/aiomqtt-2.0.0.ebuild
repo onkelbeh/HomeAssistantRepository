@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/paho-mqtt[${PYTHON_USEDEP}]"
+RDEPEND="<dev-python/paho-mqtt-2.0.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
 
