@@ -33,11 +33,13 @@ RDEPEND="
 #		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 #	)"
 
+PATCHES=("${FILESDIR}/${PN}-aiomqtt-2.0.0.patch")
+
 src_prepare() {
 	# remove dynamic stuff and force version
 	sed 's/dynamic = \[.*\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
 	sed 's/, "setuptools-git-versioning<2"//g' -i pyproject.toml || die
-	eapply_user
+	distutils-r1_src_prepare
 }
 
 distutils_enable_tests pytest
