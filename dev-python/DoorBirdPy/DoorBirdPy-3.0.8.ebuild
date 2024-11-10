@@ -5,11 +5,9 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
-
-DESCRIPTION="Atomic file writes."
-HOMEPAGE="https://github.com/untitaker/python-atomicwrites https://pypi.org/project/atomicwrites-homeassistant/"
+DESCRIPTION="Python wrapper for the DoorBird LAN API v0.21"
+HOMEPAGE="https://gitlab.com/klikini/doorbirdpy https://pypi.org/project/DoorBirdPy/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -17,6 +15,7 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/tenacity[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
