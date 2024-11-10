@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>b@edevau.net</email>
+    <name>Andreas Billmeier</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="pypi">webexpythonsdk</remote-id>
+    <remote-id type="github">WebexCommunity/WebexPythonSDK</remote-id>
+    <maintainer status="unknown">
+      <email>cm@lunsford.io</email>
+      <name>Chris Lunsford</name>
+    </maintainer>
+  </upstream>
+</pkgmetadata>

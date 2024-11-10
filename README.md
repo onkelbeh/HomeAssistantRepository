@@ -624,7 +624,7 @@ There are 2267 Ebuilds in total, 2253 of them have in total 2292 (43 different) 
 |PSF-2|10|
 |ISC|8|
 |MPL-2.0|6|
-|ZPL|6|
+|ZPL|4|
 |AGPL-3|4|
 |LGPL-2.1+|4|
 |0BSD|3|
@@ -633,13 +633,13 @@ There are 2267 Ebuilds in total, 2253 of them have in total 2292 (43 different) 
 |LGPL-2.1|3|
 |EPL-1.0|3|
 |CC0-1.0|3|
+|EPL-2.0|3|
 |AGPL-3+|2|
 |LGPL-2+|2|
 |public-domain|2|
 |ElementTree|2|
 |BSD-4|2|
 |LGPL-2|2|
-|EPL-2.0|2|
 |BitstreamVera|1|
 |matplotlib|1|
 |OFL-1.1|1|
@@ -654,9 +654,9 @@ There are 2267 Ebuilds in total, 2253 of them have in total 2292 (43 different) 
 |GPL-2+|1|
 |GPL-2-with-linking-exception|1|
 
-(Last counted: 28/10/2024)
+(Last counted: 03/11/2024)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 28/10/2024
+Last updated: 03/11/2024

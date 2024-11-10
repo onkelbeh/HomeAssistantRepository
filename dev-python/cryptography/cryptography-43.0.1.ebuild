@@ -6,7 +6,7 @@ EAPI=8
 CARGO_OPTIONAL=yes
 DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=maturin
-PYTHON_COMPAT=( python3_{10..13} pypy3 )
+PYTHON_COMPAT=( python3_{11..13} )
 PYTHON_REQ_USE="threads(+)"
 
 CRATES="
@@ -66,7 +66,7 @@ LICENSE+="
 	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD MIT Unicode-DFS-2016
 "
 SLOT="0"
-KEYWORDS="amd64 arm arm64 ~loong ~mips ppc ppc64 ~riscv ~s390 sparc x86"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	>=dev-libs/openssl-1.0.2o-r6:0=
