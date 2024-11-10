@@ -17,6 +17,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
+RDEPEND="${RDEPEND}
+	>=dev-python/pybind11-2.13.6[${PYTHON_USEDEP}]"
+
 src_unpack() {
 	unpack ${A}
 	echo ${P}
