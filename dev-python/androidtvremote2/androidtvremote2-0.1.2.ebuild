@@ -18,9 +18,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiofiles-0.8[${PYTHON_USEDEP}]
-	>=dev-python/cryptography-3[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-4.21[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/aiofiles[${PYTHON_USEDEP}]
+	dev-python/cryptography[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-python-4.21.0[${PYTHON_USEDEP}]"
 
 src_prepare() {
 	rm src/demo.py
