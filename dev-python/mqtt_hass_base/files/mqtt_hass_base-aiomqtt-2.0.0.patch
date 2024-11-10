@@ -1,0 +1,332 @@
+diff --git a/.pre-commit-config.yaml b/.pre-commit-config.yaml
+index 811dda7..00b0104 100644
+--- a/.pre-commit-config.yaml
++++ b/.pre-commit-config.yaml
+@@ -39,7 +39,7 @@ repos:
+   - id: mypy
+     args: [--strict, --pretty, --show-error-codes]
+     additional_dependencies:
+-      - "aiomqtt==1.2.1"
++      - "aiomqtt==2.0.0"
+       - "pytest-asyncio==0.23.6"
+       - "types-paho-mqtt==1.6.0.20240321"
+-      - "homeassistant-stubs==2024.5.2"
++      - "homeassistant-stubs==2024.10.4"
+diff --git a/mqtt_hass_base/daemon.py b/mqtt_hass_base/daemon.py
+index e3c73dc..d4b9af5 100644
+--- a/mqtt_hass_base/daemon.py
++++ b/mqtt_hass_base/daemon.py
+@@ -127,7 +127,7 @@ class MqttClientDaemon:
+         self.logger.setLevel(getattr(logging, self.log_level.upper()))
+ 
+     async def _mqtt_connect(self, stack: AsyncExitStack) -> None:
+-        """Connecto to the MQTT server."""
++        """Connect to the MQTT server."""
+         self.logger.info("Connecting to MQTT server")
+         tls_params = None
+         if self._mqtt_ssl_enabled:
+@@ -142,7 +142,7 @@ class MqttClientDaemon:
+             port=self.mqtt_port,
+             # logger==
+             keepalive=60,
+-            client_id=self.name,
++            identifier=self.name,
+             username=self.mqtt_username,
+             password=self.mqtt_password,
+             transport=self._mqtt_transport,
+@@ -215,7 +215,6 @@ class MqttClientDaemon:
+                 self.logger.info("Main loop stopped")
+                 await self._loop_stopped()
+                 self.logger.info("Closing MQTT client")
+-                await self.mqtt_client.disconnect(timeout=10)
+                 await self._base_on_disconnect()
+             else:
+                 self.logger.info("Main loop never started")
+diff --git a/mqtt_hass_base/device.py b/mqtt_hass_base/device.py
+index dfab48c..4eb7f5c 100644
+--- a/mqtt_hass_base/device.py
++++ b/mqtt_hass_base/device.py
+@@ -235,7 +235,7 @@ class MqttDevice:
+             self._connections[raw_item[0]] = raw_item[1]
+         else:
+             raise MQTTHassBaseError(
+-                f"Bad connection value: {raw_item} - Shoube dict or tuple"
++                f"Bad connection value: {raw_item} - Should be dict or tuple"
+             )
+ 
+     @property
+diff --git a/mqtt_hass_base/entity/button.py b/mqtt_hass_base/entity/button.py
+index a017b63..e08f59d 100644
+--- a/mqtt_hass_base/entity/button.py
++++ b/mqtt_hass_base/entity/button.py
+@@ -99,12 +99,7 @@ class MqttButton(MqttEntity):
+         """Subscribe to all mqtt topics needed."""
+         tasks: set[asyncio.Task[None]] = set()
+         if on_command_callback := self._subscriptions.get("command_topic"):
+-            messages = await stack.enter_async_context(
+-                self._mqtt_client.filtered_messages(self.command_topic)
+-            )
+-            tasks.add(
+-                asyncio.create_task(self._on_messages(messages, on_command_callback))
+-            )
++            tasks.add(asyncio.create_task(self._on_messages(on_command_callback)))
+             # Subscribe to topic(s)
+             # 🤔 Note that we subscribe *after* starting the message
+             # loggers. Otherwise, we may miss retained messages.
+diff --git a/mqtt_hass_base/entity/common.py b/mqtt_hass_base/entity/common.py
+index 297474a..e874e3b 100644
+--- a/mqtt_hass_base/entity/common.py
++++ b/mqtt_hass_base/entity/common.py
+@@ -3,12 +3,11 @@
+ import asyncio
+ import json
+ import logging
+-from collections.abc import AsyncGenerator, Callable
++from collections.abc import Callable
+ from contextlib import AsyncExitStack
+ from typing import Any, TypedDict
+ 
+ import aiomqtt as mqtt
+-import paho.mqtt.client as paho
+ 
+ from mqtt_hass_base.error import MQTTHassBaseError
+ 
+@@ -158,12 +157,11 @@ class MqttEntity:
+ 
+     async def _on_messages(
+         self,
+-        messages: AsyncGenerator[paho.MQTTMessage, None],
+         on_message_callback: Callable[..., Any],
+     ) -> None:
+         """on_command MQTT callback."""
+         try:
+-            async for message in messages:
++            async for message in self._mqtt_client.messages:
+                 await on_message_callback(message)
+         except mqtt.MqttError as exp:
+             self.logger.warning(exp)
+diff --git a/mqtt_hass_base/entity/light.py b/mqtt_hass_base/entity/light.py
+index 1fdb9b0..18e1c69 100644
+--- a/mqtt_hass_base/entity/light.py
++++ b/mqtt_hass_base/entity/light.py
+@@ -154,12 +154,7 @@ class MqttLight(MqttEntity):
+         """Subscribe to all mqtt topics needed."""
+         tasks: set[asyncio.Task[None]] = set()
+         if on_command_callback := self._subscriptions.get("command_topic"):
+-            messages = await stack.enter_async_context(
+-                self._mqtt_client.filtered_messages(self.command_topic)
+-            )
+-            tasks.add(
+-                asyncio.create_task(self._on_messages(messages, on_command_callback))
+-            )
++            tasks.add(asyncio.create_task(self._on_messages(on_command_callback)))
+             # Subscribe to topic(s)
+             # 🤔 Note that we subscribe *after* starting the message
+             # loggers. Otherwise, we may miss retained messages.
+diff --git a/mqtt_hass_base/entity/lock.py b/mqtt_hass_base/entity/lock.py
+index 990bb62..4a9cb17 100644
+--- a/mqtt_hass_base/entity/lock.py
++++ b/mqtt_hass_base/entity/lock.py
+@@ -113,12 +113,7 @@ class MqttLock(MqttEntity):
+         """Subscribe to all mqtt topics needed."""
+         tasks: set[asyncio.Task[None]] = set()
+         if on_command_callback := self._subscriptions.get("command_topic"):
+-            messages = await stack.enter_async_context(
+-                self._mqtt_client.filtered_messages(self.command_topic)
+-            )
+-            tasks.add(
+-                asyncio.create_task(self._on_messages(messages, on_command_callback))
+-            )
++            tasks.add(asyncio.create_task(self._on_messages(on_command_callback)))
+             # Subscribe to topic(s)
+             # 🤔 Note that we subscribe *after* starting the message
+             # loggers. Otherwise, we may miss retained messages.
+diff --git a/mqtt_hass_base/entity/number.py b/mqtt_hass_base/entity/number.py
+index 0ae97cf..37031eb 100644
+--- a/mqtt_hass_base/entity/number.py
++++ b/mqtt_hass_base/entity/number.py
+@@ -139,14 +139,7 @@ class MqttNumber(MqttEntity):
+         """Subscribe to all mqtt topics needed."""
+         tasks: set[asyncio.Task[None]] = set()
+         if self._subscriptions.get("command_topic"):
+-            messages = await stack.enter_async_context(
+-                self._mqtt_client.filtered_messages(self.command_topic)
+-            )
+-            tasks.add(
+-                asyncio.create_task(
+-                    self._on_messages(messages, self._set_current_value)
+-                )
+-            )
++            tasks.add(asyncio.create_task(self._on_messages(self._set_current_value)))
+             # Subscribe to topic(s)
+             # 🤔 Note that we subscribe *after* starting the message
+             # loggers. Otherwise, we may miss retained messages.
+diff --git a/mqtt_hass_base/entity/switch.py b/mqtt_hass_base/entity/switch.py
+index ff115f6..50ea1a1 100644
+--- a/mqtt_hass_base/entity/switch.py
++++ b/mqtt_hass_base/entity/switch.py
+@@ -112,12 +112,7 @@ class MqttSwitch(MqttEntity):
+         """Subscribe to all mqtt topics needed."""
+         tasks: set[asyncio.Task[None]] = set()
+         if on_command_callback := self._subscriptions.get("command_topic"):
+-            messages = await stack.enter_async_context(
+-                self._mqtt_client.filtered_messages(self.command_topic)
+-            )
+-            tasks.add(
+-                asyncio.create_task(self._on_messages(messages, on_command_callback))
+-            )
++            tasks.add(asyncio.create_task(self._on_messages(on_command_callback)))
+             # Subscribe to topic(s)
+             # 🤔 Note that we subscribe *after* starting the message
+             # loggers. Otherwise, we may miss retained messages.
+diff --git a/mqtt_hass_base/entity/vacuum.py b/mqtt_hass_base/entity/vacuum.py
+index e9fae38..1decfae 100644
+--- a/mqtt_hass_base/entity/vacuum.py
++++ b/mqtt_hass_base/entity/vacuum.py
+@@ -148,38 +148,21 @@ class MqttVacuum(MqttEntity):
+         """Subscribe to all mqtt topics needed."""
+         tasks: set[asyncio.Task[None]] = set()
+         if on_command_callback := self._subscriptions.get("command_topic"):
+-            messages = await stack.enter_async_context(
+-                self._mqtt_client.filtered_messages(self.command_topic)
+-            )
+-            tasks.add(
+-                asyncio.create_task(self._on_messages(messages, on_command_callback))
+-            )
++            tasks.add(asyncio.create_task(self._on_messages(on_command_callback)))
+             # Subscribe to topic(s)
+             # 🤔 Note that we subscribe *after* starting the message
+             # loggers. Otherwise, we may miss retained messages.
+             await self._mqtt_client.subscribe(self.command_topic)
+ 
+         if on_send_command_callback := self._subscriptions.get("send_command_topic"):
+-            messages = await stack.enter_async_context(
+-                self._mqtt_client.filtered_messages(self.send_command_topic)
+-            )
+-            tasks.add(
+-                asyncio.create_task(
+-                    self._on_messages(messages, on_send_command_callback)
+-                )
+-            )
++            tasks.add(asyncio.create_task(self._on_messages(on_send_command_callback)))
+             # Subscribe to topic(s)
+             # 🤔 Note that we subscribe *after* starting the message
+             # loggers. Otherwise, we may miss retained messages.
+             await self._mqtt_client.subscribe(self.send_command_topic)
+ 
+         if set_fan_speed_callback := self._subscriptions.get("set_fan_speed_topic"):
+-            messages = await stack.enter_async_context(
+-                self._mqtt_client.filtered_messages(self.set_fan_speed_topic)
+-            )
+-            tasks.add(
+-                asyncio.create_task(self._on_messages(messages, set_fan_speed_callback))
+-            )
++            tasks.add(asyncio.create_task(self._on_messages(set_fan_speed_callback)))
+             # Subscribe to topic(s)
+             # 🤔 Note that we subscribe *after* starting the message
+             # loggers. Otherwise, we may miss retained messages.
+diff --git a/setup.cfg.old b/setup.cfg
+index 078d280..3458d39 100644
+--- a/setup.cfg.old
++++ b/setup.cfg
+@@ -3,8 +3,8 @@ url = https://gitlab.com/ttblt-oss/hass/mqtt-hass-base
+ 
+ [options]
+ install_requires = 
+-	homeassistant==2024.5.2
+-	aiomqtt==1.2.1
++    homeassistant==2024.10.4
++    aiomqtt==2.0.0
+ 
+ [egg_info]
+ tag_build = 
+diff --git a/test_requirements.txt b/test_requirements.txt
+index 34fb6fe..68e988b 100644
+--- a/test_requirements.txt
++++ b/test_requirements.txt
+@@ -4,10 +4,11 @@ pylint==3.1.0
+ pytest==8.2.0
+ pytest-cov==5.0.0
+ pytest-asyncio==0.23.6
+-asyncio_mqtt==0.16.2
++asyncio-mqtt==0.16.2
+ black==24.4.2
+ mypy==1.10.0
+ pyright==1.1.362
+ lxml==5.2.1
+ types-paho-mqtt==1.6.0.20240321
+-homeassistant-stubs==2024.5.2
++aiomqtt==2.0.0
++homeassistant-stubs==2024.10.4
+diff --git a/tests/__init__.py b/tests/__init__.py
+new file mode 100644
+index 0000000..914c099
+--- /dev/null
++++ b/tests/__init__.py
+@@ -0,0 +1 @@
++"""MQTT Hass tests."""
+diff --git a/tests/test_daemon.py b/tests/test_daemon.py
+index 5ff2f6f..b8b78fa 100644
+--- a/tests/test_daemon.py
++++ b/tests/test_daemon.py
+@@ -6,12 +6,11 @@ import os
+ import signal
+ import threading
+ import traceback
+-from collections.abc import AsyncGenerator, Callable
++from collections.abc import Callable
+ from contextlib import AsyncExitStack
+ from typing import Any
+ 
+ import aiomqtt as mqtt
+-import paho.mqtt.client as paho
+ import pytest
+ 
+ from mqtt_hass_base.daemon import MqttClientDaemon
+@@ -65,22 +64,15 @@ def get_fakedaemon(
+         test_fake_daemon._init_main_loop = _init_main_loop  # type: ignore[method-assign]
+     if test_step >= 7:
+ 
+-        async def on_messages(
+-            messages: AsyncGenerator[  # pylint: disable=unused-argument
+-                paho.MQTTMessage, None
+-            ]
+-        ) -> None:
++        async def on_messages() -> None:
+             pass
+ 
+         async def _main_loop(  # pylint: disable=unused-argument,invalid-name
+             self: MqttClientDaemon,
+             stack: AsyncExitStack,
+         ) -> None:
+-            messages = await stack.enter_async_context(
+-                self.mqtt_client.unfiltered_messages()
+-            )
+ 
+-            task = asyncio.create_task(on_messages(messages))
++            task = asyncio.create_task(on_messages())
+             self.tasks.add(task)
+             await asyncio.gather(*self.tasks)
+             self.must_run = False
+@@ -327,7 +319,7 @@ class TestBase:
+             stack: AsyncExitStack,  # pylint: disable=unused-argument
+         ) -> None:
+             self.must_run = False
+-            await self.mqtt_client.disconnect()
++            await self.mqtt_client.__aexit__(None, None, None)
+             await self.mqtt_client.publish("toto", "toto")
+ 
+         test_mqtt_daemon = get_fakedaemon(
+diff --git a/tests/test_device.py b/tests/test_device.py
+index 66d69bb..c462d70 100644
+--- a/tests/test_device.py
++++ b/tests/test_device.py
+@@ -30,7 +30,7 @@ class TestBase:
+                 port=1883,
+                 # logger==
+                 keepalive=60,
+-                client_id="fake_client",
++                identifier="fake_client",
+                 username="hass",
+                 password="hass",
+             )

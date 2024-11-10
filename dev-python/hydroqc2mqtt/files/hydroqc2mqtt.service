@@ -1,0 +1,40 @@
+[Unit]
+Description=hydroqc2mqtt
+After=network.target
+Wants=mosquitto.service
+
+[Service]
+ExecStart=/usr/bin/hydroqc2mqtt
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=hydroqc2mqtt
+
+CapabilityBoundingSet=
+NoNewPrivileges=true
+RemoveIPC=true
+LockPersonality=true
+
+ProtectControlGroups=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectHostname=true
+ProtectProc=noaccess
+ProtectClock=yes
+DeviceAllow=char-* rw
+
+RestrictRealtime=true
+RestrictSUIDSGID=true
+RestrictNamespaces=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+SystemCallArchitectures=native
+SystemCallFilter=@system-service @pkey
+
+[Install]
+WantedBy=multi-user.target
