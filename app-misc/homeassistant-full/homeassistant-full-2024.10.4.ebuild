@@ -970,7 +970,7 @@ RDEPEND="${RDEPEND}
 	snooz? ( ~dev-python/pysnooz-0.8.6[${PYTHON_USEDEP}] )
 	solaredge? ( ~dev-python/aiosolaredge-0.2.0[${PYTHON_USEDEP}] ~dev-python/stringcase-1.2.0[${PYTHON_USEDEP}] )
 	solaredge_local? ( ~dev-python/solaredge-local-0.2.3[${PYTHON_USEDEP}] )
-	solarlog? ( ~dev-python/solarlog_cli-0.3.2[${PYTHON_USEDEP}] )
+	solarlog? ( ~dev-python/solarlog-cli-0.3.2[${PYTHON_USEDEP}] )
 	solax? ( ~dev-python/solax-3.1.1[${PYTHON_USEDEP}] )
 	soma? ( ~dev-python/pysoma-0.0.12[${PYTHON_USEDEP}] )
 	somfy_mylink? ( ~dev-python/somfy-mylink-synergy-1.0.6[${PYTHON_USEDEP}] )
