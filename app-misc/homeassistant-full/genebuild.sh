@@ -67,9 +67,6 @@ parse_package() {
       protobuf)
         package="dev-python/protobuf-python"
 	;;
-      Jinja2)
-        package="dev-python/jinja"
-	;;
     esac
     if [ -z "$package" ];then
       echo -e ": \e[1;33m$l corresponding gentoo package was not found, entry skipped\e[0m                     "
