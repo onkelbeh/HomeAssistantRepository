@@ -45,7 +45,7 @@ RDEPEND="${RDEPEND}
 	!app-misc/homeassistant"
 REQUIRED_USE="bluetooth? ( ruuvi_gateway shelly )
 	homekit_controller? ( bluetooth )"
-# Home Assistant Core dependencies from ./homeassistant-2024.11.1/homeassistant/package_constraints.txt
+# Home Assistant Core dependencies from ./homeassistant-2024.11.0/homeassistant/package_constraints.txt
 RDEPEND="${RDEPEND}
 
 	~dev-python/aiodhcpwatcher-1.0.2[${PYTHON_USEDEP}]
@@ -76,13 +76,13 @@ RDEPEND="${RDEPEND}
 	~dev-python/fnv-hash-fast-1.0.2[${PYTHON_USEDEP}]
 	~dev-python/go2rtc-client-0.1.0[${PYTHON_USEDEP}]
 	~dev-python/ha-av-10.1.1[${PYTHON_USEDEP}]
-	~dev-python/ha-ffmpeg-3.2.2[${PYTHON_USEDEP}]
+	~dev-python/ha-ffmpeg-3.2.1[${PYTHON_USEDEP}]
 	~dev-python/habluetooth-3.6.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.83.0[${PYTHON_USEDEP}]
 	~dev-python/hassil-1.7.4[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.13.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20241106.2[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-intents-2024.11.6[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20241106.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-intents-2024.11.4[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.27.2[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.2.0[${PYTHON_USEDEP}]
 	~dev-python/jinja2-3.1.4[${PYTHON_USEDEP}]
@@ -146,7 +146,7 @@ RDEPEND="${RDEPEND}
 	>=dev-python/tuf-4.0.0[${PYTHON_USEDEP}]
 	!=dev-python/tenacity-8.4.0[${PYTHON_USEDEP}]
 	~dev-python/async-timeout-4.0.3[${PYTHON_USEDEP}]"
-# Home Assistant Core dependencies from ./core-2024.11.1/homeassistant/package_constraints.txt
+# Home Assistant Core dependencies from ./core-2024.11.0/homeassistant/package_constraints.txt
 RDEPEND="${RDEPEND}
 
 	~dev-python/aiodhcpwatcher-1.0.2[${PYTHON_USEDEP}]
@@ -177,13 +177,13 @@ RDEPEND="${RDEPEND}
 	~dev-python/fnv-hash-fast-1.0.2[${PYTHON_USEDEP}]
 	~dev-python/go2rtc-client-0.1.0[${PYTHON_USEDEP}]
 	~dev-python/ha-av-10.1.1[${PYTHON_USEDEP}]
-	~dev-python/ha-ffmpeg-3.2.2[${PYTHON_USEDEP}]
+	~dev-python/ha-ffmpeg-3.2.1[${PYTHON_USEDEP}]
 	~dev-python/habluetooth-3.6.0[${PYTHON_USEDEP}]
 	~dev-python/hass-nabucasa-0.83.0[${PYTHON_USEDEP}]
 	~dev-python/hassil-1.7.4[${PYTHON_USEDEP}]
 	~dev-python/home-assistant-bluetooth-1.13.0[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-frontend-20241106.2[${PYTHON_USEDEP}]
-	~dev-python/home-assistant-intents-2024.11.6[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-frontend-20241106.0[${PYTHON_USEDEP}]
+	~dev-python/home-assistant-intents-2024.11.4[${PYTHON_USEDEP}]
 	~dev-python/httpx-0.27.2[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.2.0[${PYTHON_USEDEP}]
 	~dev-python/jinja2-3.1.4[${PYTHON_USEDEP}]
@@ -288,7 +288,7 @@ RDEPEND="${RDEPEND}
 	advantage_air? ( ~dev-python/advantage-air-0.4.4[${PYTHON_USEDEP}] )
 	aemet? ( ~dev-python/AEMET-OpenData-0.5.4[${PYTHON_USEDEP}] )
 	aftership? ( ~dev-python/pyaftership-21.11.0[${PYTHON_USEDEP}] )
-	agent_dvr? ( ~dev-python/agent-py-0.0.24[${PYTHON_USEDEP}] )
+	agent_dvr? ( ~dev-python/agent-py-0.0.23[${PYTHON_USEDEP}] )
 	airgradient? ( ~dev-python/airgradient-0.9.1[${PYTHON_USEDEP}] )
 	airly? ( ~dev-python/airly-1.1.0[${PYTHON_USEDEP}] )
 	airnow? ( ~dev-python/pyairnow-1.2.1[${PYTHON_USEDEP}] )
@@ -464,7 +464,7 @@ RDEPEND="${RDEPEND}
 	elvia? ( ~dev-python/elvia-0.1.0[${PYTHON_USEDEP}] )
 	emby? ( ~dev-python/pyEmby-1.10[${PYTHON_USEDEP}] )
 	emonitor? ( ~dev-python/aioemonitor-1.0.5[${PYTHON_USEDEP}] )
-	emulated_kasa? ( ~dev-python/sense-energy-0.13.3[${PYTHON_USEDEP}] )
+	emulated_kasa? ( ~dev-python/sense-energy-0.13.2[${PYTHON_USEDEP}] )
 	emulated_roku? ( ~dev-python/emulated-roku-0.3.0[${PYTHON_USEDEP}] )
 	energenie_power_sockets? ( ~dev-python/pyEGPS-0.2.5[${PYTHON_USEDEP}] )
 	energyzero? ( ~dev-python/energyzero-2.1.1[${PYTHON_USEDEP}] )
@@ -492,7 +492,7 @@ RDEPEND="${RDEPEND}
 	familyhub? ( ~dev-python/python-family-hub-local-0.0.2[${PYTHON_USEDEP}] )
 	fastdotcom? ( ~dev-python/fastdotcom-0.0.3[${PYTHON_USEDEP}] )
 	feedreader? ( ~dev-python/feedparser-6.0.11[${PYTHON_USEDEP}] )
-	ffmpeg? ( ~dev-python/ha-ffmpeg-3.2.2[${PYTHON_USEDEP}] )
+	ffmpeg? ( ~dev-python/ha-ffmpeg-3.2.1[${PYTHON_USEDEP}] )
 	fibaro? ( ~dev-python/pyfibaro-0.8.0[${PYTHON_USEDEP}] )
 	fido? ( ~dev-python/pyfido-2.1.2[${PYTHON_USEDEP}] )
 	file? ( ~dev-python/file-read-backwards-2.0.0[${PYTHON_USEDEP}] )
@@ -754,7 +754,7 @@ RDEPEND="${RDEPEND}
 	neato? ( ~dev-python/pybotvac-0.0.25[${PYTHON_USEDEP}] )
 	nederlandse_spoorwegen? ( ~dev-python/nsapi-3.0.5[${PYTHON_USEDEP}] )
 	ness_alarm? ( ~dev-python/nessclient-1.1.2[${PYTHON_USEDEP}] )
-	nest? ( ~dev-python/google-nest-sdm-6.1.4[${PYTHON_USEDEP}] )
+	nest? ( ~dev-python/google-nest-sdm-6.1.3[${PYTHON_USEDEP}] )
 	netatmo? ( ~dev-python/pyatmo-8.1.0[${PYTHON_USEDEP}] )
 	netdata? ( ~dev-python/netdata-1.1.0[${PYTHON_USEDEP}] )
 	netgear? ( ~dev-python/pynetgear-0.10.10[${PYTHON_USEDEP}] )
@@ -935,7 +935,7 @@ RDEPEND="${RDEPEND}
 	scsgate? ( ~dev-python/scsgate-0.1.0[${PYTHON_USEDEP}] )
 	season? ( ~dev-python/ephem-4.1.6[${PYTHON_USEDEP}] )
 	sendgrid? ( ~dev-python/sendgrid-6.8.2[${PYTHON_USEDEP}] )
-	sense? ( ~dev-python/sense-energy-0.13.3[${PYTHON_USEDEP}] )
+	sense? ( ~dev-python/sense-energy-0.13.2[${PYTHON_USEDEP}] )
 	sensibo? ( ~dev-python/pysensibo-1.1.0[${PYTHON_USEDEP}] )
 	sensirion_ble? ( ~dev-python/sensirion-ble-0.1.1[${PYTHON_USEDEP}] )
 	sensorpro? ( ~dev-python/sensorpro-ble-0.5.3[${PYTHON_USEDEP}] )
@@ -990,7 +990,7 @@ RDEPEND="${RDEPEND}
 	spc? ( ~dev-python/pyspcwebgw-0.7.0[${PYTHON_USEDEP}] )
 	speedtestdotnet? ( ~net-analyzer/speedtest-cli-2.1.3[${PYTHON_USEDEP}] )
 	splunk? ( ~dev-python/hass-splunk-0.1.1[${PYTHON_USEDEP}] )
-	spotify? ( ~dev-python/spotifyaio-0.8.7[${PYTHON_USEDEP}] )
+	spotify? ( ~dev-python/spotifyaio-0.8.5[${PYTHON_USEDEP}] )
 	sql? ( ~dev-python/sqlalchemy-2.0.31[${PYTHON_USEDEP}] ~dev-python/sqlparse-0.5.0[${PYTHON_USEDEP}] )
 	squeezebox? ( ~dev-python/pysqueezebox-0.10.0[${PYTHON_USEDEP}] )
 	srp_energy? ( ~dev-python/srpenergy-1.3.6[${PYTHON_USEDEP}] )

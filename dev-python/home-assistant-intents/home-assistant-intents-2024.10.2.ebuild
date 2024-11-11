@@ -23,7 +23,7 @@ RDEPEND="dev-python/hassil[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/voluptuous[${PYTHON_USEDEP}]
 	dev-python/regex[${PYTHON_USEDEP}]
-	dev-python/jinja[${PYTHON_USEDEP}]"
+	dev-python/jinja2[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
 
