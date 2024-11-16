@@ -20,7 +20,7 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiofiles[${PYTHON_USEDEP}]
 	dev-python/cryptography[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-4.21.0[${PYTHON_USEDEP}]"
+	>=dev-python/protobuf-4.21.0[${PYTHON_USEDEP}]"
 
 src_prepare() {
 	rm src/demo.py

@@ -21,4 +21,4 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/google-api-core-1.34.1[${PYTHON_USEDEP}]
 	>=dev-python/google-auth-2.14.1[${PYTHON_USEDEP}]
 	>=dev-python/proto-plus-1.22.3[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-3.20.2[${PYTHON_USEDEP}]"
+	>=dev-python/protobuf-3.20.2[${PYTHON_USEDEP}]"

@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND=">=dev-python/grpcio-${PV}[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-5.26.1[${PYTHON_USEDEP}]"
+	>=dev-python/protobuf-5.26.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	>=dev-python/cython-3[${PYTHON_USEDEP}]
 	test? (
