@@ -19,7 +19,7 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/aiohappyeyeballs-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/async-interrupt-1.2.0[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-3.19.0[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-3.19.0[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.132.2[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.13.2[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-43.0.0[${PYTHON_USEDEP}]

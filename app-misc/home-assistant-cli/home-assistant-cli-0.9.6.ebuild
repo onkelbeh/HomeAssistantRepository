@@ -25,17 +25,17 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
-		 >=dev-python/click-log-0.4[${PYTHON_USEDEP}]
-		 dev-python/click[${PYTHON_USEDEP}]
-		 >=dev-python/dateparser-0.7.1[${PYTHON_USEDEP}]
-		 >=dev-python/jinja-2.10[${PYTHON_USEDEP}]
-		 >=dev-python/jsonpath-ng-1.5.1[${PYTHON_USEDEP}]
-		 >=dev-python/netdisco-3.0.0[${PYTHON_USEDEP}]
-		 dev-python/regex[${PYTHON_USEDEP}]
-		 >=dev-python/ruamel-yaml-0.17[${PYTHON_USEDEP}]
-		 <dev-python/ruamel-yaml-0.18[${PYTHON_USEDEP}]
-		 >=dev-python/requests-2.28.0[${PYTHON_USEDEP}]
-		 >=dev-python/tabulate-0.8.3[${PYTHON_USEDEP}]"
+	>=dev-python/click-log-0.4[${PYTHON_USEDEP}]
+	dev-python/click[${PYTHON_USEDEP}]
+	>=dev-python/dateparser-0.7.1[${PYTHON_USEDEP}]
+	>=dev-python/jinja2-2.10[${PYTHON_USEDEP}]
+	>=dev-python/jsonpath-ng-1.5.1[${PYTHON_USEDEP}]
+	>=dev-python/netdisco-3.0.0[${PYTHON_USEDEP}]
+	dev-python/regex[${PYTHON_USEDEP}]
+	>=dev-python/ruamel-yaml-0.17[${PYTHON_USEDEP}]
+	<dev-python/ruamel-yaml-0.18[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.28.0[${PYTHON_USEDEP}]
+	>=dev-python/tabulate-0.8.3[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (

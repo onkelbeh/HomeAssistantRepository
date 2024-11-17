@@ -25,7 +25,7 @@ RDEPEND="dev-python/pyopenssl[${PYTHON_USEDEP}]
 	dev-python/aenum[${PYTHON_USEDEP}]
 	dev-python/related[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
-	dev-python/cchardet[${PYTHON_USEDEP}]
+	dev-python/faust-cchardet[${PYTHON_USEDEP}]
 	dev-python/aiodns[${PYTHON_USEDEP}]
 	dev-python/yarl[${PYTHON_USEDEP}]"
 

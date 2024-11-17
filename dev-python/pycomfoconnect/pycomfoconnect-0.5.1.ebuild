@@ -17,6 +17,6 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/protobuf-python-3.20.3[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/protobuf-3.20.3[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest

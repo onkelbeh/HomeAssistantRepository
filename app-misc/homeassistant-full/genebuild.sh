@@ -57,16 +57,10 @@ parse_package() {
       atomicwrites-homeassistant)
         package="dev-python/atomicwrites"
 	;;
-      faust-cchardet)
-        package="dev-python/cchardet"
-	;;
       uv)
         echo "  >=dev-python/uv-$version" >> $2
         break
         ;;
-      protobuf)
-        package="dev-python/protobuf-python"
-	;;
     esac
     if [ -z "$package" ];then
       echo -e ": \e[1;33m$l corresponding gentoo package was not found, entry skipped\e[0m                     "

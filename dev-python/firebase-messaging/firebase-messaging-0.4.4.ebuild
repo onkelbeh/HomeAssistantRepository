@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND="
-	dev-python/protobuf-python[${PYTHON_USEDEP}]
+	dev-python/protobuf[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/http-ece[${PYTHON_USEDEP}]
 	dev-python/cryptography[${PYTHON_USEDEP}]

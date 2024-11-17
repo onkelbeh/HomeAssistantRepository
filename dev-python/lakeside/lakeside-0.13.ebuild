@@ -16,9 +16,9 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="dev-python/protobuf-python[${PYTHON_USEDEP}]
-		 dev-python/pycryptodome[${PYTHON_USEDEP}]
-		 dev-python/requests[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/protobuf[${PYTHON_USEDEP}]
+	dev-python/pycryptodome[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

@@ -21,7 +21,7 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/google-api-core-1.34.1[${PYTHON_USEDEP}]
 	>=dev-python/proto-plus-1.22.0[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-3.19.5[${PYTHON_USEDEP}]"
+	>=dev-python/protobuf-3.19.5[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
 
