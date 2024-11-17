@@ -1,0 +1,1 @@
+../homeassistant-full/genebuild.sh
