@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 MY_PN=${PN/-/.}
 MY_PV=${PV/_alpha/a}
 DISTUTILS_USE_PEP517=setuptools

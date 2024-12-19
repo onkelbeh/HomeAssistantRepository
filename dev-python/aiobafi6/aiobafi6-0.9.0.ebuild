@@ -3,7 +3,7 @@
 
 EAPI=8
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 inherit distutils-r1 pypi
 DESCRIPTION="Big Ass Fans i6/Haiku protocol asynchronous Python library"
 HOMEPAGE="https://github.com/jfroy/aiobafi6 https://pypi.org/project/aiobafi6/"
