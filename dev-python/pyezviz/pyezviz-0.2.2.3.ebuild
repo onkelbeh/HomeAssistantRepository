@@ -5,13 +5,12 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
-DESCRIPTION="A better mock for file I/O"
-HOMEPAGE="https://github.com/nivbend/mock-open https://pypi.org/project/mock-open/"
+DESCRIPTION="Pilot your Ezviz cameras"
+HOMEPAGE="http://github.com/baqs/pyEzviz/ https://pypi.org/project/pyezviz/"
 
-LICENSE="MIT"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -19,11 +18,11 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/mock[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/pandas[${PYTHON_USEDEP}]
+	dev-python/paho-mqtt[${PYTHON_USEDEP}]
+	dev-python/xmltodict[${PYTHON_USEDEP}]
+	dev-python/pycryptodome[${PYTHON_USEDEP}]"
 
 python_test() {
 	py.test -v -v || die
