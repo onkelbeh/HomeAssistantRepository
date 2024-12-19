@@ -5,7 +5,7 @@ EAPI=8
 
 MY_PN=${PN/-/_}
 MY_P=${MY_PN}-${PV}
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
@@ -25,7 +25,7 @@ DOCS="README.md"
 BDEPEND="
 	dev-python/google-auth[${PYTHON_USEDEP}]
 	dev-python/grpcio[${PYTHON_USEDEP}]
-	dev-python/protobuf-python[${PYTHON_USEDEP}]
+	dev-python/protobuf[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	"
 S="${WORKDIR}/${MY_P}"

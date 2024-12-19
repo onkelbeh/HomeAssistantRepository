@@ -29,7 +29,7 @@ parse_package() {
   local OIFS="$IFS"
   local operator=
   local version=
-  IFS='<>=!['
+  IFS='~<>=!['
   for d in $l; do
     echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing dependencies... $d"
     local pos=${#d}
@@ -73,7 +73,7 @@ parse_package() {
       break
     fi
     case $operator in
-      ==)
+      ~= | ==)
         echo -n "~$package-$version" >> $2
 	;;
       *)
@@ -175,7 +175,7 @@ cat > $EBUILD_PATH << EOF
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_12 )
+PYTHON_COMPAT=( python3_{12..13} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 PYPI_PN="homeassistant"
