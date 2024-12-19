@@ -1,0 +1,275 @@
+--- a/core-2024.12.1/homeassistant/package_constraints.txt	2024-10-04 19:33:37.000000000 +0200
++++ b/core-2024.12.1/homeassistant/package_constraints.txt	2024-10-13 10:21:48.027841292 +0200
+@@ -106,7 +106,7 @@
+ # these requirements are quite loose. As the entire stack has some outstanding issues, and
+ # even newer versions seem to introduce new issues, it's useful for us to pin all these
+ # requirements so we can directly link HA versions to these library versions.
+-anyio==4.6.2.post1
++anyio==4.6.2_p1
+ h11==0.14.0
+ httpcore==1.0.5
+
+--- a/homeassistant-2024.12.1/homeassistant/package_constraints.txt        2024-10-04 19:33:37.000000000 +0200
++++ b/homeassistant-2024.12.1/homeassistant/package_constraints.txt        2024-10-13 10:21:48.027841292 +0200
+@@ -106,7 +106,7 @@
+ # these requirements are quite loose. As the entire stack has some outstanding issues, and
+ # even newer versions seem to introduce new issues, it's useful for us to pin all these
+ # requirements so we can directly link HA versions to these library versions.
+-anyio==4.6.2.post1
++anyio==4.6.2_p1
+ h11==0.14.0
+ httpcore==1.0.5
+
+--- a/core-2024.12.1/requirements_all.txt	2024-10-11 18:25:02.000000000 +0200
++++ b/core-2024.12.1/requirements_all.txt	2024-10-13 20:44:30.782824454 +0200
+@@ -186,7 +186,7 @@
+ 
+ # homeassistant.components.ambient_network
+ # homeassistant.components.ambient_station
+-aioambient==2024.08.0
++aioambient==2024.8.0
+ 
+ # homeassistant.components.apcupsd
+ aioapcaccess==0.4.2
+@@ -256,7 +256,7 @@
+ aiogithubapi==24.6.0
+ 
+ # homeassistant.components.guardian
+-aioguardian==2022.07.0
++aioguardian==2022.7.0
+ 
+ # homeassistant.components.harmony
+ aioharmony==0.2.10
+@@ -310,7 +310,7 @@
+ aionanoleaf==0.2.1
+ 
+ # homeassistant.components.notion
+-aionotion==2024.03.0
++aionotion==2024.3.0
+ 
+ # homeassistant.components.nut
+ aionut==4.3.3
+@@ -351,10 +351,10 @@
+ aioraven==0.7.0
+ 
+ # homeassistant.components.recollect_waste
+-aiorecollect==2023.09.0
++aiorecollect==2023.9.0
+ 
+ # homeassistant.components.ridwell
+-aioridwell==2024.01.0
++aioridwell==2024.1.0
+ 
+ # homeassistant.components.ruckus_unleashed
+ aioruckus==0.42
+@@ -561,10 +561,10 @@
+ azure-servicebus==7.10.0
+ 
+ # homeassistant.components.holiday
+-babel==2.15.0
++Babel==2.15.0
+ 
+ # homeassistant.components.baidu
+-baidu-aip==1.6.6
++baidu-aip==1.6.6.0
+ 
+ # homeassistant.components.homekit
+ base36==0.1.1
+@@ -743,7 +743,7 @@
+ # homeassistant.components.ihc
+ # homeassistant.components.namecheapdns
+ # homeassistant.components.ohmconnect
+-defusedxml==0.7.1
++defusedxml==0.7.1-r1
+ 
+ # homeassistant.components.deluge
+ deluge-client==1.10.2
+@@ -842,7 +842,7 @@
+ energyzero==2.1.1
+
+ # homeassistant.components.enocean
+-enocean==0.50
++enocean==0.50.1
+
+ # homeassistant.components.entur_public_transport
+ enturclient==0.2.4
+@@ -909,7 +909,7 @@
+ fivem-api==0.1.2
+ 
+ # homeassistant.components.fixer
+-fixerio==1.0.0a0
++fixerio==1.0.0_alpha0
+ 
+ # homeassistant.components.fjaraskupan
+ fjaraskupan==2.3.0
+@@ -944,7 +944,7 @@
+ 
+ # homeassistant.components.fritz
+ # homeassistant.components.fritzbox_callmonitor
+-fritzconnection[qr]==1.14.0
++fritzconnection[qrcode]==1.14.0
+ 
+ # homeassistant.components.fyta
+ fyta_cli==0.7.0
+@@ -1069,7 +1069,7 @@
+ gstreamer-player==1.1.2
+ 
+ # homeassistant.components.profiler
+-guppy3==3.1.4.post1;python_version<'3.13'
++guppy3==3.1.4_p1
+ 
+ # homeassistant.components.iaqualink
+ h2==4.1.0
+@@ -1192,7 +1192,7 @@
+ imgw_pib==1.0.6
+ 
+ # homeassistant.components.incomfort
+-incomfort-client==0.6.3-1
++incomfort-client==0.6.3-r1
+ 
+ # homeassistant.components.influxdb
+ influxdb-client==1.24.0
+@@ -1295,7 +1295,7 @@
+ librouteros==3.2.0
+ 
+ # homeassistant.components.soundtouch
+-libsoundtouch==0.8
++libsoundtouch==0.8.0
+ 
+ # homeassistant.components.osramlightify
+ lightify==1.0.7.3
+@@ -1310,7 +1310,7 @@
+ linear-garage-door==0.2.9
+ 
+ # homeassistant.components.linode
+-linode-api==4.1.9b1
++linode-api==4.1.9_beta1
+ 
+ # homeassistant.components.google_maps
+ locationsharinglib==5.0.1
+@@ -1542,7 +1542,7 @@
+ openevsewifi==1.1.2
+ 
+ # homeassistant.components.openhome
+-openhomedevice==2.2.0
++openhomedevice==2.2
+ 
+ # homeassistant.components.opensensemap
+ opensensemap-api==0.2.0
+@@ -1660,7 +1660,7 @@
+ pulsectl==23.5.2
+ 
+ # homeassistant.components.androidtv
+-pure-python-adb[async]==0.3.0.dev0
++pure-python-adb[async]==0.3.0-r0
+ 
+ # homeassistant.components.pushbullet
+ pushbullet.py==0.11.0
+@@ -1763,7 +1763,7 @@
+ 
+ # homeassistant.components.airvisual
+ # homeassistant.components.airvisual_pro
+-pyairvisual==2023.08.1
++pyairvisual==2023.8.1
+ 
+ # homeassistant.components.aprilaire
+ pyaprilaire==0.7.4
+@@ -1787,7 +1787,7 @@
+ pybalboa==1.0.2
+ 
+ # homeassistant.components.bbox
+-pybbox==0.0.5-alpha
++pybbox==0.0.5_alpha0
+ 
+ # homeassistant.components.blackbird
+ pyblackbird==0.6
+@@ -1883,7 +1883,7 @@
+ pyefergy==22.5.0
+ 
+ # homeassistant.components.energenie_power_sockets
+-pyegps==0.2.5
++pyEGPS==0.2.5
+ 
+ # homeassistant.components.onkyo
+ pyeiscp==0.0.7
+@@ -1934,7 +1934,7 @@
+ pyfritzhome==0.6.12
+ 
+ # homeassistant.components.ifttt
+-pyfttt==0.3
++pyfttt==0.3.2
+ 
+ # homeassistant.components.skybeacon
+ pygatt[GATTTOOL]==4.0.5
+@@ -1979,7 +1979,7 @@
+ pyipp==0.17.0
+ 
+ # homeassistant.components.iqvia
+-pyiqvia==2022.04.0
++pyiqvia==2022.4.0
+ 
+ # homeassistant.components.irish_rail_transport
+ pyirishrail==0.0.2
+@@ -2126,7 +2126,7 @@
+ pyombi==0.1.10
+ 
+ # homeassistant.components.openuv
+-pyopenuv==2023.02.0
++pyopenuv==2023.2.0
+ 
+ # homeassistant.components.openweathermap
+ pyopenweathermap==0.2.1
+@@ -2338,7 +2338,7 @@
+ # python-gammu==3.2.4
+ 
+ # homeassistant.components.gc100
+-python-gc100==1.0.3a0
++python-gc100==1.0.3_alpha0
+ 
+ # homeassistant.components.gitlab_ci
+ python-gitlab==1.6.0
+@@ -2347,7 +2347,7 @@
+ python-homeassistant-analytics==0.8.0
+ 
+ # homeassistant.components.homewizard
+-python-homewizard-energy==v7.0.0
++python-homewizard-energy==7.0.0
+ 
+ # homeassistant.components.hp_ilo
+ python-hpilo==4.4.3
+@@ -2547,7 +2547,7 @@
+ refoss-ha==1.2.5
+ 
+ # homeassistant.components.rainmachine
+-regenmaschine==2024.03.0
++regenmaschine==2024.3.0
+ 
+ # homeassistant.components.renault
+ renault-api==0.2.7
+@@ -2598,7 +2598,7 @@
+ rtsp-to-webrtc==0.5.1
+ 
+ # homeassistant.components.russound_rnet
+-russound==0.2.0
++russound==0.1.9
+ 
+ # homeassistant.components.ruuvitag_ble
+ ruuvitag-ble==0.1.2
+@@ -2671,7 +2671,7 @@
+ simplepush==2.2.3
+ 
+ # homeassistant.components.simplisafe
+-simplisafe-python==2024.01.0
++simplisafe-python==2024.1.0
+ 
+ # homeassistant.components.sisyphus
+ sisyphus-control==3.1.4
+@@ -3033,7 +3033,7 @@
+ # homeassistant.components.startca
+ # homeassistant.components.ted5000
+ # homeassistant.components.zestimate
+-xmltodict==0.13.0
++xmltodict>=0.13.0
+ 
+ # homeassistant.components.xs1
+ xs1-api-client==3.0.0
