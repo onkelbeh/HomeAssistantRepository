@@ -36,22 +36,22 @@ parse_package() {
     if [ "${l:$pos:1}" = "[" ]; then
       operator=`echo "$l" | cut -d] -f2-`
       #TODO version can be coma separated adb-shell[async]>=0.4.4,<5, for now only handle first criteria
-      version=${operator:2}
+      version=`echo ${operator:2} | cut -d\; -f1 | cut -d, -f1`
       operator=${operator:0:2}
     else
       operator=${l:$pos:2}
       pos=$((pos + 2 ))
-      version=${l:$pos}
+      version=`echo ${l:$pos} | cut -d\; -f1`
     fi
-    local package=`eix -es# $d --use python_targets_python3_12`
+    local package=`eix -es# $d --use python_targets_python3_13`
     if [ -z "$package" ];then
-      package=`eix -es# ${d,,} --use python_targets_python3_12`
-    fi
-    if [ -z "$package" ];then
-      package=`eix -es# ${d//_/-} --use python_targets_python3_12`
+      package=`eix -es# ${d,,} --use python_targets_python3_13`
     fi
     if [ -z "$package" ];then
-      package=`eix -es# ${d//./-} --use python_targets_python3_12`
+      package=`eix -es# ${d//_/-} --use python_targets_python3_13`
+    fi
+    if [ -z "$package" ];then
+      package=`eix -es# ${d//./-} --use python_targets_python3_13`
     fi
     case $d in
       atomicwrites-homeassistant)
