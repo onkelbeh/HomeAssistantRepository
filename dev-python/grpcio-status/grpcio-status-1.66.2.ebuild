@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/protobuf-python-5.26.1[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/protobuf-5.26.1[${PYTHON_USEDEP}]
 	>=dev-python/grpcio-${PV}[${PYTHON_USEDEP}]
 	>=dev-python/googleapis-common-protos-1.5.5[${PYTHON_USEDEP}]"
 BDEPEND=">=dev-python/cython-3[${PYTHON_USEDEP}]"

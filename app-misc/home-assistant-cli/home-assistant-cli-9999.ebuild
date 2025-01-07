@@ -27,7 +27,7 @@ RESTRICT="!test? ( test )"
 RDEPEND=">=dev-python/aiohttp-3.9.5[${PYTHON_USEDEP}]
 		 >=dev-python/dateparser-1.2.0[${PYTHON_USEDEP}]
 		 >=dev-python/jsonpath-ng-1.6.1[${PYTHON_USEDEP}]
-		 >=dev-python/jinja-3.1.4[${PYTHON_USEDEP}]
+		 >=dev-python/jinja2-3.1.4[${PYTHON_USEDEP}]
 		 >=dev-python/requests-2.31.0[${PYTHON_USEDEP}]
 		 >=dev-python/tabulate-0.9.0[${PYTHON_USEDEP}]
 		 >=dev-python/regex-24.5.10[${PYTHON_USEDEP}]

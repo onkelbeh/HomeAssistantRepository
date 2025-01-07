@@ -21,5 +21,5 @@ DOCS="README.md"
 RDEPEND="!dev-python/pysmi
 	!dev-python/pysnmp-pysmi
 	>=dev-python/ply-3.11[${PYTHON_USEDEP}]
-	>=dev-python/jinja-3.1.3[${PYTHON_USEDEP}]
+	>=dev-python/jinja2-3.1.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.26[${PYTHON_USEDEP}]"

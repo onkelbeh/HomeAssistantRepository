@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND="dev-python/oscrypto[${PYTHON_USEDEP}]
-	dev-python/protobuf-python[${PYTHON_USEDEP}]"
+	dev-python/protobuf[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

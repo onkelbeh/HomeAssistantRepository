@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/uplink-0.6.0[${PYTHON_USEDEP}]
-	dev-python/protobuf-python[${PYTHON_USEDEP}]"
+	dev-python/protobuf[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

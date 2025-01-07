@@ -27,7 +27,7 @@
 =dev-python/humanfriendly-10.0 ~amd64
 =dev-python/imageio-2.16.1 ~amd64
 =dev-python/inflection-0.5.1-r1 ~amd64
-=dev-python/jinja-3.1.2 ~amd64
+=dev-python/jinja2-3.1.2 ~amd64
 =dev-python/kafka-python-2.0.2 ~amd64
 =dev-python/loguru-0.6.0 ~amd64
 =dev-python/marshmallow-3.19.0 ~amd64
