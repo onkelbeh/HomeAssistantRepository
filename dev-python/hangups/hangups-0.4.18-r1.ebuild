@@ -25,7 +25,7 @@ RDEPEND=">=dev-python/ConfigArgParse-0.11.0[${PYTHON_USEDEP}]
 	>=dev-python/readlike-0.1.2[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.6.0[${PYTHON_USEDEP}]
 	~dev-python/ReParser-1.4.3[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-3.1.0[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-3.1.0[${PYTHON_USEDEP}]
 	>=dev-python/urwid-1.3.1[${PYTHON_USEDEP}]
 	>=dev-python/MechanicalSoup-0.6.0[${PYTHON_USEDEP}]"
 BDEPEND="

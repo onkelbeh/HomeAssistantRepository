@@ -33,10 +33,10 @@ parse_constraints () {
 			break
 			;;
 		protobuf)
-			package="dev-python/protobuf-python"
+			package="dev-python/protobuf"
 			;;
 	        Jinja2)
-	                package="dev-python/jinja"
+	                package="dev-python/jinja2"
 			;;
 	    esac
 	    if [ -z "$package" ];then
