@@ -21,7 +21,7 @@ REQUIRED_USE="all? ( ext http2 passport socks )
 DOCS="README.rst"
 
 RDEPEND="
-	>=dev-python/httpx-0.27.0[${PYTHON_USEDEP}] <dev-python/httpx-0.28.0[${PYTHON_USEDEP}]
+	>=dev-python/httpx-0.27.0[${PYTHON_USEDEP}]
 	callback-data? ( >=dev-python/cachetools-5.3.3[${PYTHON_USEDEP}] )
 	http2? ( dev-python/httpx[http2,${PYTHON_USEDEP}] )
 	job-queue? ( ~dev-python/APScheduler-3.10.4[${PYTHON_USEDEP}] >=dev-python/pytz-2018.6[${PYTHON_USEDEP}] )

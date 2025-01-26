@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 DESCRIPTION="Concurrency agnostic socket API"
@@ -15,6 +15,10 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
+RDEPEND="
+	>=dev-python/serialio-2.2.0[${PYTHON_USEDEP}]
+	>=dev-python/sockio-0.11.0[${PYTHON_USEDEP}]
+"
 DOCS="README.md"
 
 distutils_enable_tests pytest

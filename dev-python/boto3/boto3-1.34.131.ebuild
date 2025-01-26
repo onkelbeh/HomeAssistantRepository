@@ -23,9 +23,11 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
-	>=dev-python/botocore-${PV}[${PYTHON_USEDEP}]
+	>=dev-python/botocore-1.34.131[${PYTHON_USEDEP}]
+	<dev-python/botocore-1.35.0[${PYTHON_USEDEP}]
 	>=dev-python/jmespath-0.7.1[${PYTHON_USEDEP}]
 	>=dev-python/s3transfer-0.10.0[${PYTHON_USEDEP}]
+	<dev-python/s3transfer-0.11.0[${PYTHON_USEDEP}]
 "
 
 EPYTEST_XDIST=1
