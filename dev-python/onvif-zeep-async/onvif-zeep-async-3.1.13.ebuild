@@ -19,10 +19,10 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND="
-	>=dev-python/httpx-0.28.1[${PYTHON_USEDEP}]
+	dev-python/httpx[${PYTHON_USEDEP}]
 	>=dev-python/zeep-4.3.1[async,${PYTHON_USEDEP}]
 	>=dev-python/ciso8601-2.3.2[${PYTHON_USEDEP}]
-	=dev-python/yarl-1.18.3[${PYTHON_USEDEP}]
+	dev-python/yarl[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	test? (
