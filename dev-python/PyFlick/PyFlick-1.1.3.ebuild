@@ -6,9 +6,8 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-
-DESCRIPTION="Async Python Client for ONVIF Camera"
-HOMEPAGE="https://github.com/hunterjm/python-onvif-zeep-async https://pypi.org/project/onvif-zeep-async/"
+DESCRIPTION="Python API For Flick Electric in New Zealand"
+HOMEPAGE="https://github.com/ZephireNZ/PyFlick https://pypi.org/project/PyFlick/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -16,14 +15,12 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
 RDEPEND="
-	dev-python/httpx[${PYTHON_USEDEP}]
-	>=dev-python/zeep-4.3.1[async,${PYTHON_USEDEP}]
-	>=dev-python/ciso8601-2.3.2[${PYTHON_USEDEP}]
-	dev-python/yarl[${PYTHON_USEDEP}]
-"
+	>=dev-python/aiohttp-3.11.10[${PYTHON_USEDEP}]
+	>=dev-python/python-dateutil-2.9.0_p0[${PYTHON_USEDEP}]
+	"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

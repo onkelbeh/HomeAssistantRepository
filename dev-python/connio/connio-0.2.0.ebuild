@@ -16,7 +16,6 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	>=dev-python/serialio-2.2.0[${PYTHON_USEDEP}]
 	>=dev-python/sockio-0.11.0[${PYTHON_USEDEP}]
 "
 DOCS="README.md"
