@@ -16,7 +16,7 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
-
+RDEPEND="!dev-python/slack_sdk"
 BDEPEND="
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
