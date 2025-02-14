@@ -1,0 +1,10 @@
+--- a/pyproject.toml      2025-02-14 07:48:18.692502307 +0100
++++ b/pyproject.toml      2025-02-14 07:49:51.931492283 +0100
+@@ -1,5 +1,6 @@
+ [build-system]
+ requires = [ "setuptools>=61.0.0",]
++build-backend = "setuptools.build_meta"
+ 
+ [project]
+ name = "jellyfin-apiclient-python"
+
