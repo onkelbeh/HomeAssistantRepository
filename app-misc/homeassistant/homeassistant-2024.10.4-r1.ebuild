@@ -108,7 +108,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/pandas-2.1.4[${PYTHON_USEDEP}]
 	~dev-python/pillow-10.4.0[${PYTHON_USEDEP}]
-	~dev-python/protobuf-python-4.25.4[${PYTHON_USEDEP}]
+	~dev-python/protobuf-4.25.4[${PYTHON_USEDEP}]
 	~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pycountry-23.12.11[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]

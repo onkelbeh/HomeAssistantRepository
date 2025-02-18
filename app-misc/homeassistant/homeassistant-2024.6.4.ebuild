@@ -109,7 +109,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/pandas-2.1.4[${PYTHON_USEDEP}]
 	~dev-python/pillow-10.3.0[${PYTHON_USEDEP}]
 	>=dev-python/pip-21.3.1[${PYTHON_USEDEP}]
-	~dev-python/protobuf-python-4.25.1[${PYTHON_USEDEP}]
+	~dev-python/protobuf-4.25.1[${PYTHON_USEDEP}]
 	~dev-python/psutil-home-assistant-0.0.1[${PYTHON_USEDEP}]
 	>=dev-python/pycountry-23.12.11[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.6.6[${PYTHON_USEDEP}]

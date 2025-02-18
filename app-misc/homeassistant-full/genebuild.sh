@@ -25,18 +25,15 @@ parse_constraints () {
 	    	atomicwrites-homeassistant)
 	    		package="dev-python/atomicwrites"
 			;;
-		faust-cchardet)
-	                package="dev-python/cchardet"
+			faust-cchardet)
+	            package="dev-python/cchardet"
 			;;
-		uv)
-	                echo "	>=dev-python/uv-$version" >> $EBUILD_PATH
-			break
+			uv)
+	            echo "	>=dev-python/uv-$version" >> $EBUILD_PATH
+				break
 			;;
-		protobuf)
-			package="dev-python/protobuf-python"
-			;;
-	        Jinja2)
-	                package="dev-python/jinja"
+        	Jinja2)
+                package="dev-python/jinja"
 			;;
 	    esac
 	    if [ -z "$package" ];then
