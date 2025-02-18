@@ -311,6 +311,7 @@
 |gitter|Sensor allows one to monitor a Gitter.im chatroom for unread messages|N|N|Y|0.47|
 |glances|Allows you to monitor the system information provided by the Glances API|Y|Y|Y|0.7.3|
 |gntp|Growl Notification Protocol: sending and receiving notifications|N|N|Y||
+|go2rtc|connects to a go2rtc instance and provides a WebRTC prox|N|N|Y|2024.11.0b0|
 |goalfeed|Use your Goalfeed account to trigger events in Home Assistant|N|N|Y||
 |goalzero|Access Goal Zero REST Api from Home Assistant|N|N|Y||
 |gogogate2|Control Gogogate2-Enabled garage doors from Home Assistant|N|Y|Y|0.67|
@@ -372,6 +373,7 @@
 |huisbaasje|Huisbaasje smart energy meters|N|N|Y|2021.2|
 |hunterdouglas_powerview|integrate your Hunter Douglas PowerView devices|N|N|Y|0.15|
 |husqvarna_automower|integration provides connectivity with Husqvarna Automowers lawn mowers|N|N|Y|2024.3.0|
+|husqvarna_automower_ble|Husqvarna Automowers lawn mowers via a local Bluetooth connection|N|N|Y|2024.11.0b0|
 |huum|Integrates Huum saunas into Home Assistant|N|N|Y|2024.2.1|
 |hvv_departures|departures of busses, trains and ferries in Hamburg|N|N|Y|0.112|
 |hydrawise|communicate with Hunter Wi-Fi irrigation controllers|N|Y|Y|0.71|
@@ -458,6 +460,7 @@
 |lektrico|ntegration integrates your Lektrico Charging Station|N|N|Y|2024.10.1|
 |lg_netcast|allows you to control a LG Smart TV running NetCast 3.0|N|N|Y|0.20|
 |lg_soundbar|allows you to control LG Soundbars from Home Assistant|N|N|Y|0.81|
+|lg_thinq|connect LG ThinQ devices to Home Assistant|N|N|Y|2024.11.0b0|
 |lidarr|The Lidarr integration pulls data from a given Lidarr instance|N|N|Y|2022.10.0|
 |life360|detect presence using the unofficial API of Life360|N|N|Y|0.95|
 |lifx|The lifx integration allows you to integrate your LIFX into Home Assistant|N|Y|Y|0.81|
@@ -539,6 +542,7 @@
 |mqtt|install MQTT Broker and dependencies|Y|Y|Y||
 |msteams|send notifications from Home Assistant to a team channel in Microsoft Teams|N|N|Y|0.101|
 |mullvad|Mullvad VPN integration pulls Mullvad VPN status information|N|N|Y|2021.3|
+|music_assistant|connect Home Assistant to a Music Assistant Server|N|N|Y|2024.11.0b0|
 |mutesync|mutesync integration for Home Assistant connects to the mütesync virtual button|N|N|Y|2021.5|
 |mvglive|departure times bus, tram, subway, train of Munich public transport network|N|N|Y|0.42|
 |mychevy|communicates with the my.chevrolet website using the javascript API|N|N|Y||
@@ -633,6 +637,7 @@
 |owntracks|OwnTracks: track your location and send it directly to Home Assistant|Y|Y|Y|0.7.4|
 |ozw|Open Zwave MQTT|M|M|Y||
 |p1_monitor|The P1 Monitor integration integrates the P1 Monitor API platform|N|N|Y|2021.9.0b1|
+|palazzetti|integrates the Palazzetti stoves equipped with a Connection Box|N|N|Y|2024.11.0b0|
 |panasonic_bluray|allows you to control a Panasonic Blu-Ray player|N|N|Y|0.83|
 |panasonic_viera|panasonic_viera platform allows you to control a Panasonic Viera TV|N|Y|Y|0.17|
 |pandora|Pandora account, you can control it from Home Assistant with this media player|N|N|Y|0.22|
@@ -717,6 +722,7 @@
 |risco|This integration connects with Risco Alarms over Risco Cloud|N|N|Y|0.115|
 |rituals_perfume_genie|monitor your Rituals perfume diffusers|N|N|Y|2021.3|
 |rmvtransport|departure time of bus, tram, subway, train in Rhein-Main area public transport|N|N|Y|0.76|
+|roborock|"supported_by": "xiaomi_miio"|Y|Y|Y|2022.11.0b3|
 |rocketchat|allows you to send messages to your Rocket.Chat instance from Home Assistant|N|N|Y|0.56|
 |roku|add support for Roku players|N|Y|Y||
 |romy|The ROMY integration allows you to control your ROMY vacuum robot|N|N|Y|2024.2.1|
