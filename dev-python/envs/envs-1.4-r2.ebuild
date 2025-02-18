@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 # missing DOCS="README.md"
 
 RDEPEND="cli? (
-			  >=dev-python/jinja-3.0.3[${PYTHON_USEDEP}]
+			  >=dev-python/jinja2-3.0.3[${PYTHON_USEDEP}]
 			  >=dev-python/click-8.0.3[${PYTHON_USEDEP}]
 			  >=dev-python/terminaltables-3.1.10[${PYTHON_USEDEP}]
 			  )"

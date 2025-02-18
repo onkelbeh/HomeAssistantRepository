@@ -610,7 +610,7 @@ dev-python/jaraco-email 3.1.0: E-mail facilities by jaraco
 dev-python/jaraco-functools 3.9.0: Additional functions used by other projects by developer jaraco
 dev-python/jaraco-net 9.3.1: Networking tools by jaraco
 dev-python/jellyfin-apiclient-python 1.9.2: Python API client for Jellyfin
-dev-python/jinja 3.1.2: A full-featured template engine for Python
+dev-python/jinja2 3.1.2: A full-featured template engine for Python
 dev-python/jsonpath 0.82 0.82.2: An XPath for JSON
 dev-python/jsonpath-ng 1.5.3: A final implementation of JSONPath for Python that aims to be standard compliant.
 dev-python/jsonpickle 1.4.1-r1: Python library for serializing any arbitrary object graph into JSON
@@ -803,7 +803,7 @@ dev-python/prayer-times-calculator 0.0.10 0.0.12: Prayer Times Calculator
 dev-python/prayer-times-calculator-offline 1.0.3: Prayer Times Calculator - Offline
 dev-python/proliphix 0.4.1: API for Proliphix nt10e network thermostat.
 dev-python/prometheus-client 0.17.1: Python client for the Prometheus monitoring system
-dev-python/protobuf-python 4.24.3-r1 4.25.1 4.25.2: Google's Protocol Buffers - Python bindings
+dev-python/protobuf 4.25.1 4.25.2 5.28.2: Google's Protocol Buffers - Python bindings
 dev-python/proxmoxer 2.0.1: Python Wrapper for the Proxmox 2.x API (HTTP and SSH)
 dev-python/psutil 5.9.2: Retrieve information on running processes and system utilization
 dev-python/psutil-home-assistant 0.0.1: Wrapper for psutil to allow it to be used several times in the same process.

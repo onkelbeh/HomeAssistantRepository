@@ -20,7 +20,7 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/grpcio-1.12.0[${PYTHON_USEDEP}]
 	>=dev-python/grpcio-reflection-1.7.3[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-4.22.0[${PYTHON_USEDEP}]"
+	>=dev-python/protobuf-4.22.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

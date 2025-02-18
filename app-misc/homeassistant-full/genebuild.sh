@@ -202,17 +202,17 @@ for use in `cat $EBUILD_PATH | grep IUSE= | cut -d\" -f2`; do
 		if [ -z "$dep_package" ];then
                     dep_package=`eix -es# $( echo "${dep,,}" | cut -d= -f 1 | cut -d[ -f 1 )  --use python_targets_python3_12`
 		fi
-		if [ -z "$dep_package" ];then		
+		if [ -z "$dep_package" ];then
                     dep_package=`eix -es# $( echo "${dep//_/-}" | cut -d= -f 1 | cut -d[ -f 1 )  --use python_targets_python3_12`
                 fi
-		if [ -z "$dep_package" ];then           
+		if [ -z "$dep_package" ];then
 		    echo " $req, $dep => $dep_package error"
 		fi
 
 		dep_version=`echo "$dep" | cut -d= -f 3`
 		dep_use=`echo "$dep" | cut -sd[ -f2 | cut -sd] -f1`
 		if [ "$dep_use" = "" ]; then
-		    echo -n " ~$dep_package-$dep_version[\${PYTHON_USEDEP}]" >> $EBUILD_PATH 	
+		    echo -n " ~$dep_package-$dep_version[\${PYTHON_USEDEP}]" >> $EBUILD_PATH
 		else
   	            echo -n " ~$dep_package-$dep_version[$dep_use,\${PYTHON_USEDEP}]" >> $EBUILD_PATH
 		fi

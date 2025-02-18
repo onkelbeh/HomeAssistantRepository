@@ -22,7 +22,7 @@ RDEPEND=">=dev-python/grpcio-1.51.3[${PYTHON_USEDEP}]
 	>=dev-python/google-auth-2.14.1[${PYTHON_USEDEP}]
 	>=dev-python/google-api-core-1.34.0[${PYTHON_USEDEP}]
 	>=dev-python/proto-plus-1.22.2[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-python-3.20.2[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-3.20.2[${PYTHON_USEDEP}]
 	>=dev-python/grpcio-status-1.33.2[${PYTHON_USEDEP}]
 	>=dev-python/grpc-google-iam-v1-0.12.4[${PYTHON_USEDEP}]"
 

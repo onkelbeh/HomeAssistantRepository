@@ -96,7 +96,7 @@ RDEPEND="${RDEPEND}
 	~dev-python/httpx-0.27.2[${PYTHON_USEDEP}]
 	>=dev-python/hyperframe-5.2.0[${PYTHON_USEDEP}]
 	~dev-python/ifaddr-0.2.0[${PYTHON_USEDEP}]
-	~dev-python/jinja-3.1.4[${PYTHON_USEDEP}]
+	~dev-python/jinja2-3.1.4[${PYTHON_USEDEP}]
 	~dev-python/lru-dict-1.3.0[${PYTHON_USEDEP}]
 	>=dev-python/mashumaro-3.13.1[${PYTHON_USEDEP}]
 	>=dev-python/multidict-6.0.2[${PYTHON_USEDEP}]
