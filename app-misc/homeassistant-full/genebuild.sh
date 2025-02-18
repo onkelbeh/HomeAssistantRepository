@@ -32,8 +32,8 @@ parse_constraints () {
 	            echo "	>=dev-python/uv-$version" >> $EBUILD_PATH
 				break
 			;;
-        	Jinja2)
-                package="dev-python/jinja"
+	        Jinja2)
+                package="dev-python/jinja2"
 			;;
 	    esac
 	    if [ -z "$package" ];then
