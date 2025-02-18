@@ -1,13 +1,13 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 PYTHON_COMPAT=( python3_{11..13} )
 PYTHON_REQ_USE="threads(+)"
-
+PYPI_NO_NORMALIZE=1
+PYPI_PN=${PN^}
 inherit distutils-r1 pypi
 
 # see scripts/download_import_cldr.py
