@@ -54,7 +54,7 @@ python_install_all() {
 }
 
 pkg_postinst() {
-	if ! has_version dev-python/Babel; then
-		elog "For i18n support, please emerge dev-python/Babel."
+	if ! has_version dev-python/babel; then
+		elog "For i18n support, please emerge dev-python/babel."
 	fi
 }

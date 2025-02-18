@@ -22,7 +22,7 @@ RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
 	>=dev-python/click-5.0[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/markdown[${PYTHON_USEDEP}]"
-BDEPEND="dev-python/Babel
+BDEPEND="dev-python/babel
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

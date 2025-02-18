@@ -492,7 +492,7 @@ RDEPEND="${RDEPEND}
 	hive? ( ~dev-python/pyhiveapi-0.5.16[${PYTHON_USEDEP}] )
 	hko? ( ~dev-python/hko-0.3.2[${PYTHON_USEDEP}] )
 	hlk_sw16? ( ~dev-python/hlk-sw16-0.0.9[${PYTHON_USEDEP}] )
-	holiday? ( ~dev-python/holidays-0.51[${PYTHON_USEDEP}] ~dev-python/Babel-2.15.0[${PYTHON_USEDEP}] )
+	holiday? ( ~dev-python/holidays-0.51[${PYTHON_USEDEP}] ~dev-python/babel-2.15.0[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.9.1[${PYTHON_USEDEP}] ~dev-python/fnv-hash-fast-0.5.0[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
 	homekit_controller? ( ~dev-python/aiohomekit-3.1.5[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.77[${PYTHON_USEDEP}] )

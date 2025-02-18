@@ -23,7 +23,7 @@ RDEPEND="dev-python/certifi[${PYTHON_USEDEP}]
 	dev-python/markdown[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]"
 
-BDEPEND="dev-python/Babel
+BDEPEND="dev-python/babel
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest-cov[${PYTHON_USEDEP}]

@@ -182,7 +182,7 @@ RDEPEND="${RDEPEND}
 	fronius? ( ~dev-python/PyFronius-0.7.3[${PYTHON_USEDEP}] )
 	github? ( ~dev-python/aiogithubapi-24.6.0[${PYTHON_USEDEP}] )
 	glances? ( ~dev-python/glances-api-0.8.0[${PYTHON_USEDEP}] )
-	holiday? ( ~dev-python/holidays-0.59[${PYTHON_USEDEP}] ~dev-python/Babel-2.15.0[${PYTHON_USEDEP}] )
+	holiday? ( ~dev-python/holidays-0.59[${PYTHON_USEDEP}] ~dev-python/babel-2.15.0[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.9.1[${PYTHON_USEDEP}] ~dev-python/fnv-hash-fast-1.0.2[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] )
 	homekit_controller? ( ~dev-python/aiohomekit-3.2.6[${PYTHON_USEDEP}] )
 	http? ( ~dev-python/aiohttp-cors-0.7.0[${PYTHON_USEDEP}] ~dev-python/aiohttp-fast-url-dispatcher-0.3.0[${PYTHON_USEDEP}] ~dev-python/aiohttp-zlib-ng-0.3.1[${PYTHON_USEDEP}] )

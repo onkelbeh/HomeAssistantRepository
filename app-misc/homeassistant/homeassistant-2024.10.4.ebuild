@@ -385,7 +385,7 @@ RDEPEND="${RDEPEND}
 	harmony? ( ~dev-python/aioharmony-0.2.10[${PYTHON_USEDEP}] )
 	heos? ( ~dev-python/pyheos-0.7.2[${PYTHON_USEDEP}] )
 	here_travel_time? ( ~dev-python/here-routing-1.0.1[${PYTHON_USEDEP}] ~dev-python/here-transit-1.2.1[${PYTHON_USEDEP}] )
-	holiday? ( ~dev-python/Babel-2.15.0[${PYTHON_USEDEP}] ~dev-python/holidays-0.58[${PYTHON_USEDEP}] )
+	holiday? ( ~dev-python/babel-2.15.0[${PYTHON_USEDEP}] ~dev-python/holidays-0.58[${PYTHON_USEDEP}] )
 	homekit? ( ~dev-python/HAP-python-4.9.1[${PYTHON_USEDEP}] ~dev-python/pyqrcode-1.2.1[${PYTHON_USEDEP}] ~dev-python/base36-0.1.1[${PYTHON_USEDEP}] ~dev-python/fnv-hash-fast-1.0.2[${PYTHON_USEDEP}] )
 	homekit_controller? ( ~dev-python/aiohomekit-3.2.3[${PYTHON_USEDEP}] )
 	homematic? ( ~dev-python/pyhomematic-0.1.77[${PYTHON_USEDEP}] )
