@@ -3,12 +3,12 @@
 
 EAPI=8
 
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=flit
 PYPI_PN=jinja2
 PYTHON_COMPAT=( python3_{11..13} )
 PYTHON_REQ_USE="threads(+)"
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="A full-featured template engine for Python"
 HOMEPAGE="
@@ -16,18 +16,13 @@ HOMEPAGE="
 	https://github.com/pallets/jinja/
 	https://pypi.org/project/Jinja2/
 "
-SRC_URI="
-	https://github.com/pallets/jinja/archive/${PV}.tar.gz
-		-> ${P}.gh.tar.gz
-"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="examples"
 
 RDEPEND="
-	>=dev-python/markupsafe-2.0.0[${PYTHON_USEDEP}]
+	>=dev-python/markupsafe-2.0[${PYTHON_USEDEP}]
 "
 
 distutils_enable_sphinx docs \
@@ -38,19 +33,15 @@ distutils_enable_tests pytest
 # XXX: handle Babel better?
 
 src_prepare() {
+	local PATCHES=(
+		# https://github.com/pallets/jinja/pull/1979
+		"${FILESDIR}/${P}-py313.patch"
+	)
+
 	# avoid unnecessary dep on extra sphinxcontrib modules
 	sed -i '/sphinxcontrib.log_cabinet/ d' docs/conf.py || die
 
 	distutils-r1_src_prepare
-}
-
-python_install_all() {
-	if use examples ; then
-		docinto examples
-		dodoc -r examples/.
-	fi
-
-	distutils-r1_python_install_all
 }
 
 pkg_postinst() {
