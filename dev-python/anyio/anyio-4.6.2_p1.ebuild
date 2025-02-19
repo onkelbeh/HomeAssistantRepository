@@ -21,6 +21,7 @@ KEYWORDS="amd64 arm arm64 x86"
 RDEPEND="
 	>=dev-python/idna-2.8[${PYTHON_USEDEP}]
 	>=dev-python/sniffio-1.1[${PYTHON_USEDEP}]
+	>=dev-python/truststore-0.9.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '
 		>=dev-python/exceptiongroup-1.2.0[${PYTHON_USEDEP}]
 		>=dev-python/typing-extensions-4.1[${PYTHON_USEDEP}]
