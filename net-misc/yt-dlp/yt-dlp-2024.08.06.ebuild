@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=hatchling
-PYTHON_COMPAT=( pypy3 python3_{10..13} )
+PYTHON_COMPAT=( python3_{11..13} )
 inherit bash-completion-r1 distutils-r1 optfeature wrapper
 
 DESCRIPTION="youtube-dl fork with additional features and fixes"
@@ -19,7 +19,7 @@ LICENSE="Unlicense"
 SLOT="0"
 # note that yt-dlp bumps are typically done straight-to-stable (unless there
 # was major/breaking changes) given website changes breaks it on a whim
-KEYWORDS="amd64 arm arm64 ~hppa ppc ppc64 ~riscv x86 ~arm64-macos ~x64-macos"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	dev-python/pycryptodome[${PYTHON_USEDEP}]
