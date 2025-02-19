@@ -20,7 +20,8 @@ DOCS="README.md"
 
 RDEPEND="~dev-python/appdirs-1.4.4[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-39.0.0[${PYTHON_USEDEP}]
-	~dev-python/pydantic-1.10.17[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-1.10.17[${PYTHON_USEDEP}]
+	<dev-python/pydantic-1.11[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/pyopenssl-23.0.0[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
