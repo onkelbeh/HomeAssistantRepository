@@ -31,7 +31,7 @@ dev-python/Adafruit_BBIO 1.1.1: A module to control BeagleBone IO channels
 dev-python/Adax-local 0.1.5: A python3 library to communicate with Adax
 dev-python/Ambiclimate 0.2.1: A python3 library to communicate with Ambiclimate
 dev-python/Authlib 1.2.0: The ultimate Python library in building OAuth and OpenID Connect servers.
-dev-python/Babel 2.13.1 2.15.0: Collection of tools for internationalizing Python applications
+dev-python/babel 2.13.1 2.15.0: Collection of tools for internationalizing Python applications
 dev-python/BlinkStick 1.2.0: Python package to control BlinkStick USB devices.
 dev-python/CO2Signal 0.4.2: A package to access the co2signal API
 dev-python/DateTime 5.3: This package provides a DateTime data type, as known from Zope. Unless you need to communicate with Zope APIs, you're probably better off using Python's built-in datetime module.

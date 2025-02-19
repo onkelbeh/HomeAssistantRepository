@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -7,6 +7,7 @@ DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{11..13} )
 MY_PV=${PV/_alpha/a}
+MY_PV=${MY_PV/_beta/b}
 inherit distutils-r1 pypi multiprocessing
 DESCRIPTION="Optional static typing for Python"
 HOMEPAGE="
@@ -29,7 +30,7 @@ RDEPEND="
 	!dev-util/stubgen
 	>=dev-python/psutil-4[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.1.0[${PYTHON_USEDEP}]
-	>=dev-python/mypy_extensions-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/mypy-extensions-1.0.0[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '
 		dev-python/tomli[${PYTHON_USEDEP}]
 	' 3.10)

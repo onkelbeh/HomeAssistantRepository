@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/mypy_extensions-0.3.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/mypy-extensions-0.3.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-3.7.4[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
