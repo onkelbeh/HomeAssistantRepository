@@ -23,7 +23,7 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/awesomeversion[${PYTHON_USEDEP}]
 	dev-python/mashumaro[${PYTHON_USEDEP}]
 	dev-python/orjson[${PYTHON_USEDEP}]
-	~dev-python/webrtc-models-0.1.0[${PYTHON_USEDEP}]"
+	dev-python/webrtc-models[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/aioresponses[${PYTHON_USEDEP}]
@@ -37,6 +37,7 @@ src_prepare() {
 	sed 's/awesomeversion~=24.6/awesomeversion/g' -i pyproject.toml || die
 	sed 's/mashumaro~=3.13/mashumaro/g' -i pyproject.toml || die
 	sed 's/orjson~=3.10/orjson/g' -i pyproject.toml || die
+	sed 's/webrtc-models~=0.1/webrtc-models/g' -i pyproject.toml || die
 	eapply_user
 }
 
