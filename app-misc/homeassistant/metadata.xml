@@ -238,6 +238,7 @@
     <flag name="rejseplanen">travel details for Danish public transport</flag>
     <flag name="rest">rest sensor platform for data exposed by a RESTful API</flag>
     <flag name="ring">integrate your ring.com devices</flag>
+    <flag name="roborock">"supported_by": "xiaomi_miio"</flag>
     <flag name="roku">add support for Roku players</flag>
     <flag name="roomba">control a iRobot Roomba vacuum or iRobot Braava m-series mop</flag>
     <flag name="roon">allows you to control RoonLabs music players</flag>

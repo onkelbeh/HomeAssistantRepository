@@ -88,6 +88,7 @@
     <flag name="recorder">storing details in a database per sqlalchemy</flag>
     <flag name="rest">rest sensor platform for data exposed by a RESTful API</flag>
     <flag name="ring">integrate your ring.com devices</flag>
+    <flag name="roborock">"supported_by": "xiaomi_miio"</flag>
     <flag name="samsungtv">Support for Samsung TV Sets</flag>
     <flag name="scrape">scraping information from websites</flag>
     <flag name="season">display astronomical or meteorological season (Spring, Summer, Autumn, Winter)</flag>

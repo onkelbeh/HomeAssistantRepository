@@ -328,6 +328,7 @@
     <flag name="gitter">Sensor allows one to monitor a Gitter.im chatroom for unread messages</flag>
     <flag name="glances">Allows you to monitor the system information provided by the Glances API</flag>
     <flag name="gntp">Growl Notification Protocol: sending and receiving notifications</flag>
+    <flag name="go2rtc">connects to a go2rtc instance and provides a WebRTC prox</flag>
     <flag name="goalfeed">Use your Goalfeed account to trigger events in Home Assistant</flag>
     <flag name="goalzero">Access Goal Zero REST Api from Home Assistant</flag>
     <flag name="gogogate2">Control Gogogate2-Enabled garage doors from Home Assistant</flag>
@@ -389,6 +390,7 @@
     <flag name="huisbaasje">Huisbaasje smart energy meters</flag>
     <flag name="hunterdouglas_powerview">integrate your Hunter Douglas PowerView devices</flag>
     <flag name="husqvarna_automower">integration provides connectivity with Husqvarna Automowers lawn mowers</flag>
+    <flag name="husqvarna_automower_ble">Husqvarna Automowers lawn mowers via a local Bluetooth connection</flag>
     <flag name="huum">Integrates Huum saunas into Home Assistant</flag>
     <flag name="hvv_departures">departures of busses, trains and ferries in Hamburg</flag>
     <flag name="hydrawise">communicate with Hunter Wi-Fi irrigation controllers</flag>
@@ -475,6 +477,7 @@
     <flag name="lektrico">ntegration integrates your Lektrico Charging Station</flag>
     <flag name="lg_netcast">allows you to control a LG Smart TV running NetCast 3.0</flag>
     <flag name="lg_soundbar">allows you to control LG Soundbars from Home Assistant</flag>
+    <flag name="lg_thinq">connect LG ThinQ devices to Home Assistant</flag>
     <flag name="lidarr">The Lidarr integration pulls data from a given Lidarr instance</flag>
     <flag name="life360">detect presence using the unofficial API of Life360</flag>
     <flag name="lifx">The lifx integration allows you to integrate your LIFX into Home Assistant</flag>
@@ -556,6 +559,7 @@
     <flag name="mqtt">install MQTT Broker and dependencies</flag>
     <flag name="msteams">send notifications from Home Assistant to a team channel in Microsoft Teams</flag>
     <flag name="mullvad">Mullvad VPN integration pulls Mullvad VPN status information</flag>
+    <flag name="music_assistant">connect Home Assistant to a Music Assistant Server</flag>
     <flag name="mutesync">mutesync integration for Home Assistant connects to the mütesync virtual button</flag>
     <flag name="mvglive">departure times bus, tram, subway, train of Munich public transport network</flag>
     <flag name="mychevy">communicates with the my.chevrolet website using the javascript API</flag>
@@ -650,6 +654,7 @@
     <flag name="owntracks">OwnTracks: track your location and send it directly to Home Assistant</flag>
     <flag name="ozw">Open Zwave MQTT</flag>
     <flag name="p1_monitor">The P1 Monitor integration integrates the P1 Monitor API platform</flag>
+    <flag name="palazzetti">integrates the Palazzetti stoves equipped with a Connection Box</flag>
     <flag name="panasonic_bluray">allows you to control a Panasonic Blu-Ray player</flag>
     <flag name="panasonic_viera">panasonic_viera platform allows you to control a Panasonic Viera TV</flag>
     <flag name="pandora">Pandora account, you can control it from Home Assistant with this media player</flag>
@@ -734,6 +739,7 @@
     <flag name="risco">This integration connects with Risco Alarms over Risco Cloud</flag>
     <flag name="rituals_perfume_genie">monitor your Rituals perfume diffusers</flag>
     <flag name="rmvtransport">departure time of bus, tram, subway, train in Rhein-Main area public transport</flag>
+    <flag name="roborock">"supported_by": "xiaomi_miio"</flag>
     <flag name="rocketchat">allows you to send messages to your Rocket.Chat instance from Home Assistant</flag>
     <flag name="roku">add support for Roku players</flag>
     <flag name="romy">The ROMY integration allows you to control your ROMY vacuum robot</flag>
