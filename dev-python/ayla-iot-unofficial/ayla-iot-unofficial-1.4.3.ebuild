@@ -10,13 +10,13 @@ inherit distutils-r1 pypi
 DESCRIPTION="Python API for Ayla IoT products"
 HOMEPAGE="https://github.com/rewardone/ayla-iot-unofficial https://pypi.org/project/ayla-iot-unofficial/"
 
-LICENSE="None"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS=""
+DOCS="README.md"
 
 RDEPEND=">=dev-python/aiohttp-3.8.4[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.31.0[${PYTHON_USEDEP}]
