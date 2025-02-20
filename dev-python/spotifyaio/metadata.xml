@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">spotifyaio</remote-id>
-    <remote-id type="github">joostlek/python-withings</remote-id>
+    <remote-id type="github">joostlek/python-spotify</remote-id>
     <maintainer status="unknown">
       <email>joostlek@outlook.com</email>
       <name>Joost Lekkerkerker</name>
