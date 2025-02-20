@@ -22,13 +22,5 @@ RDEPEND="
 	>=dev-python/pure-python-adb-0.3.0[${PYTHON_USEDEP}]
 	>=dev-python/adb-shell-0.4.0[usb?,${PYTHON_USEDEP}]
 	>=dev-python/aiofiles-0.4.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
