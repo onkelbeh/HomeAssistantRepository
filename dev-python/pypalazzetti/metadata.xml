@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">pypalazzetti</remote-id>
-    <remote-id type="github">dotvav/python-palazzetti-api</remote-id>
+    <remote-id type="github">dotvav/py-palazzetti-api</remote-id>
     <maintainer status="unknown">
       <email>vincent.roukine@gmail.com</email>
       <name>Vincent Roukine</name>
