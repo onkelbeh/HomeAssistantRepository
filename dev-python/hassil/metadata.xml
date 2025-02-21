@@ -9,8 +9,8 @@
     <remote-id type="pypi">hassil</remote-id>
     <remote-id type="github">home-assistant/hassil</remote-id>
     <maintainer status="unknown">
-      <email>mike@rhasspy.org</email>
-      <name>Michael Hansen</name>
+      <email>hello@home-assistant.io</email>
+      <name>The Home Assistant Authors</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
