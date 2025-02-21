@@ -18,15 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/httpx-0.23.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/httpx-0.26.0[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.8.0[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
