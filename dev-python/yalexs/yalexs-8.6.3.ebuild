@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 DESCRIPTION="Python API for Yale Access (formerly August) Smart Lock and Doorbell"
 HOMEPAGE="https://github.com/bdraco/yalexs https://pypi.org/project/yalexs/"
@@ -23,7 +23,8 @@ RDEPEND=">=dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
 	dev-python/python-dateutil[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/aiofiles[${PYTHON_USEDEP}]
-	>=dev-python/pubnub-7.4.1[${PYTHON_USEDEP}]
-	>=dev-python/typing-extensions-4.5.0[${PYTHON_USEDEP}]"
+	|| ( >=dev-python/freenub-0.1.0[${PYTHON_USEDEP}] dev-python/pubnub[${PYTHON_USEDEP}] )
+	>=dev-python/typing-extensions-4.5.0[${PYTHON_USEDEP}]
+	>=dev-python/python-socketio-5.11.3[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest

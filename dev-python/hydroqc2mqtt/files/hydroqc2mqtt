@@ -1,0 +1,28 @@
+#!/sbin/openrc-run
+
+retry="30"
+
+depend() {
+	after mosquitto
+}
+
+checkconfig() {
+	if [ ! -f "/etc/${SVCNAME}/config.yaml" ] ; then
+		eerror "File '/etc/${SVCNAME}/config.yaml' does not exist!"
+	fi
+}
+
+start() {
+	checkconfig || return 1
+	ebegin "Starting ${SVCNAME}"
+	start-stop-daemon --start --user hydroqc2mqtt:hydroqc2mqtt --exec /usr/bin/hydroqc2mqtt --background \
+		--make-pidfile --pidfile /run/${SVCNAME}.pid --stdout /var/log/${SVCNAME}/${SVCNAME}.log --stderr /var/log/${SVCNAME}/${SVCNAME}.err \
+		-- --config /etc/${SVCNAME}/config.yaml
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping ${SVCNAME}"
+	start-stop-daemon --stop --quiet --retry 10 --pidfile /run/${SVCNAME}.pid
+	eend $?
+}
