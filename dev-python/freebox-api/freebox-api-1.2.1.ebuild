@@ -18,15 +18,6 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/urllib3-1.26.6[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
