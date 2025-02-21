@@ -7,7 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">unicode-rbnf</remote-id>
-    <remote-id type="github">rhasspy/unicode</remote-id>
+    <remote-id type="github">rhasspy/unicode-rbnf</remote-id>
     <maintainer status="unknown">
       <email>mike@rhasspy.org</email>
       <name>Michael Hansen</name>
