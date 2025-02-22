@@ -18,7 +18,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="~dev-python/zigpy-0.76.1[${PYTHON_USEDEP}]
+RDEPEND="
+	=dev-python/universal-silabs-flasher-0.0.25[${PYTHON_USEDEP}]
+	~dev-python/zigpy-0.76.1[${PYTHON_USEDEP}]
 	~dev-python/bellows-0.43.0[${PYTHON_USEDEP}]
 	~dev-python/zigpy-znp-0.13.1[${PYTHON_USEDEP}]
 	~dev-python/zigpy-deconz-0.24.1[${PYTHON_USEDEP}]
