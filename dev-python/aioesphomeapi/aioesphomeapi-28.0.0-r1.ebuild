@@ -20,7 +20,7 @@ DOCS="README.rst"
 RDEPEND=">=dev-python/aiohappyeyeballs-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/async-interrupt-1.2.0[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-4[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.143.0[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.132.2[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.13.2[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-43.0.0[${PYTHON_USEDEP}]
 	>=dev-python/noiseprotocol-0.3.1[${PYTHON_USEDEP}]"
