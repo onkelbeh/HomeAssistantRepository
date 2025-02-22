@@ -18,15 +18,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="!dev-python/ha-av
-	media-video/ffmpeg
+	>=media-video/ffmpeg-7.0.0
 	dev-python/ha-ffmpeg[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
