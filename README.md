@@ -148,7 +148,7 @@ Best you start using the `app-misc/homeassistant-min` Ebuild. If you have it run
 * Be aware that all dependent libraries could be marked as stable here as soon as they compile. Outside HA dependencies except of portage are not tested.
 * Since I use Gentoo mostly on servers, I do not use systemd, one reason to run Gentoo is that you are NOT forced to run this crap. Beginning homeassistant-2021.2.0, handling for systemd was added by request, thanks to @Tatsh for help.
 * I use an own profile based on merged-usr "amd64/23.0/no-multilib".
-* python-3.12.8 is set as default target.
+* python-3.12.9 is set as default target.
 
 # Bigger Changes
 
@@ -654,9 +654,9 @@ There are 2383 Ebuilds in total, 2365 of them have in total 2409 (43 different) 
 |GPL-2+|1|
 |GPL-2-with-linking-exception|1|
 
-(Last counted: 22/02/2025)
+(Last counted: 01/03/2025)
 
 I did my best to keep these clean. If a valid license was published on PyPI, it has been automatically merged. Otherwise I took it from GitHub or alternatively from comments/files in the source. Sometimes these differed and have been not unique. All license strings are adjusted to the list in `/usr/portage/gentoo/licenses/`. Some packages do not have any license published. In this case, Authors have been asked for clarification, some did not respond. Following the [official Gentoo Guide](https://devmanual.gentoo.org/general-concepts/licenses/index.html), these then were added with an `all-rights-reserved` license and `RESTRICT="mirror"` was set. Find the appropriate licenses referenced in the Ebuild files and in the corresponding homepages or sources.
 
 A big thanks goes to Iris for reviewing this README.
-Last updated: 22/02/2025
+Last updated: 01/03/2025
