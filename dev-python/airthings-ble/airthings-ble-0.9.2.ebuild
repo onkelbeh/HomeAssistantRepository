@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="A library implementing API control of the SMLIGHT SLZB-06 LAN Coordinators."
-HOMEPAGE="https://github.com/smlight-workspace/pysmlight https://pypi.org/project/pysmlight/"
+DESCRIPTION="Manage Airthings BLE devices"
+HOMEPAGE="https://github.com/Airthings/airthings-ble https://pypi.org/project/airthings-ble/"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -18,7 +18,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aiohttp-3.9.3[${PYTHON_USEDEP}]
-	>=dev-python/aiohttp-sse-client2-0.3.0[${PYTHON_USEDEP}]"
+RDEPEND="
+	>=dev-python/bleak-0.15.1[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-1.11.0[${PYTHON_USEDEP}]
+	>=dev-python/async-interrupt-1.1.1[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest

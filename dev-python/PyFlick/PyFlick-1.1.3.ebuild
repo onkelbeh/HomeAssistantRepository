@@ -20,7 +20,17 @@ DOCS="README.md"
 RDEPEND="
 	>=dev-python/aiohttp-3.11.10[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.9.0_p0[${PYTHON_USEDEP}]
-	"
+	>=dev-python/aiohappyeyeballs-2.4.4[${PYTHON_USEDEP}]
+	>=dev-python/aiosignal-1.3.1[${PYTHON_USEDEP}]
+	>=dev-python/attrs-24.2.0[${PYTHON_USEDEP}]
+	>=dev-python/frozenlist-1.5.0[${PYTHON_USEDEP}]
+	>=dev-python/idna-3.10[${PYTHON_USEDEP}]
+	>=dev-python/json-api-doc-0.15.0[${PYTHON_USEDEP}]
+	>=dev-python/multidict-6.1.0[${PYTHON_USEDEP}]
+	>=dev-python/propcache-0.2.1[${PYTHON_USEDEP}]
+	>=dev-python/six-1.17.0[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.18.3[${PYTHON_USEDEP}]
+"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

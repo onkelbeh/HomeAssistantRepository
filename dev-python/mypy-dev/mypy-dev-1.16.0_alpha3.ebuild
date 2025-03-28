@@ -8,6 +8,8 @@ DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{11..13} )
 MY_PV=${PV/_alpha/a}
 inherit distutils-r1 pypi multiprocessing
+SRC_URI="$(pypi_sdist_url "${PN}" "${MY_PV}")"
+
 DESCRIPTION="Optional static typing for Python"
 HOMEPAGE="
 	https://www.mypy-lang.org/
@@ -15,7 +17,6 @@ HOMEPAGE="
 	https://pypi.org/project/mypy/
 	https://github.com/cdce8p/mypy-dev https://pypi.org/project/mypy-dev/
 "
-SRC_URI="$(pypi_sdist_url "${PN}" "${MY_PV}")"
 
 LICENSE="MIT"
 SLOT="0"
@@ -24,8 +25,11 @@ IUSE="+native-extensions test"
 RESTRICT="!test? ( test )"
 DOCS="README.md"
 
+
+
 # stubgen collides with this package: https://bugs.gentoo.org/585594
 RDEPEND="
+	!dev-python/mypy[${PYTHON_USEDEP}]
 	!dev-util/stubgen
 	>=dev-python/psutil-4[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.1.0[${PYTHON_USEDEP}]
