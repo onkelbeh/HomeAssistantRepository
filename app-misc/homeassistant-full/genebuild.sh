@@ -173,27 +173,27 @@ fi
 popd
 echo "Generate metadata.xml..."
 cat metadata.xml | sed -z 's/<use>.*/<use>/g' > metadata.xml.pre
-cat metadata.xml | sed -z 's/.*<\/use>/<\/use>/g' > metadata.xml.post
 mv metadata.xml.pre metadata.xml
-echo "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/homeassistant/components"
 for f in `find /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/homeassistant/components | grep manifest.json | sort`; do
   #component name
   use_flag=`echo "$f"| rev | cut -d/ -f2 | rev`
-  #get help page
-  if [ ! -f /tmp/$use_flag.html ]; then
-    wget -q -O /tmp/$use_flag.html https://www.home-assistant.io/integrations/$use_flag/index.html
-  fi
-  if [ -s /tmp/$use_flag.html ]; then
-    echo -ne "                                                                                          \r \e[0;32m*\e[0m Generate metadata.xml($use_flag)...                                   "
-
-    #parse description Ignore anything before '<div class="page-content">' then before '</header>' until '</p>', cleanup html and carriage return
-    description=`cat /tmp/$use_flag.html | sed -z 's/.*<div class="page-content">//g' | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs`
-    echo "    <flag name=\"$use_flag\">$description</flag>" >> metadata.xml
+  if cat /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt | grep -qn "^# homeassistant.components.${use_flag}$"; then
+    #get help page
+    if [ ! -f /tmp/$use_flag.html ]; then
+      wget -q -O /tmp/$use_flag.html https://www.home-assistant.io/integrations/$use_flag/index.html
+    fi
+    if [ -s /tmp/$use_flag.html ]; then
+      echo -ne "                                                                                          \r \e[0;32m*\e[0m Generate metadata.xml($use_flag)...                                   "
+      #parse description Ignore anything before '<div class="page-content">' then before '</header>' until '</p>', cleanup html and carriage return
+      description=`cat /tmp/$use_flag.html | sed -z 's/.*<div class="page-content">//g' | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs`
+      echo -ne "\n    <flag name=\"$use_flag\">$description</flag>" >> metadata.xml
+    fi
   fi
 done
-echo -n "  " >> metadata.xml
-cat metadata.xml.post >> metadata.xml
-rm metadata.xml.post
+cat >> metadata.xml << EOF
+  </use>
+</pkgmetadata>
+EOF
 
 #Gen ebuild
 cat > $EBUILD_PATH << EOF
@@ -229,7 +229,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 EOF
-echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht loopenergy mariadb mosquitto mysql smarthab socat ssl systemd tesla wink " >> $EBUILD_PATH
+echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> $EBUILD_PATH
 
 for u in `cat metadata.xml | grep \<flag | cut -d\" -f2`; do
   echo -n " $u" >>$EBUILD_PATH
@@ -270,7 +270,6 @@ RDEPEND="\${RDEPEND}
 # Module requirements from useflags
 RDEPEND="\${RDEPEND}
 	bh1750? ( dev-python/i2csense[\${PYTHON_USEDEP}] )
-	blinksticklight? ( ~dev-python/BlinkStick-1.2.0[\${PYTHON_USEDEP}] )
 	blinkt? ( ~dev-python/blinkt-0.1.0[\${PYTHON_USEDEP}] )
 	bme280? ( dev-python/i2csense[\${PYTHON_USEDEP}] dev-python/bme280spi[\${PYTHON_USEDEP}] )
 	bme680? ( dev-python/bme680[\${PYTHON_USEDEP}] )
@@ -290,13 +289,8 @@ RDEPEND="\${RDEPEND}
 	tesla? ( ~dev-python/teslajsonpy-0.18.3[\${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.9[\${PYTHON_USEDEP}] ~dev-python/python-wink-1.10.5[\${PYTHON_USEDEP}] )
 EOF
-reqall=""
-for i in `find ./ | grep requirements_all.txt`; do
-  reqall=$i
-  break
-done
 for use in `cat $EBUILD_PATH | grep IUSE= | cut -d\" -f2`; do
-  parse_use_flag_req $EBUILD_PATH $reqall ${use/+/}
+  parse_use_flag_req $EBUILD_PATH /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt ${use/+/}
 done
 echo "\"" >> $EBUILD_PATH
 echo -e "                                                                                          \r \e[0;32m*\e[0m Parsing use flag dependencies... \e[0;32mdone\e[0m                        "
