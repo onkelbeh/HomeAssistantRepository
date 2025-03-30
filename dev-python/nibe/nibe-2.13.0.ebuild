@@ -22,14 +22,13 @@ RDEPEND=">=dev-python/async-modbus-0.2.0[${PYTHON_USEDEP}]
 	>=dev-python/construct-2.10.0[${PYTHON_USEDEP}]
 	>=dev-python/tenacity-8.0.0[${PYTHON_USEDEP}]
 	>=dev-python/exceptiongroup-1.0.0[${PYTHON_USEDEP}]
-	>=dev-python/black-22.0.0[${PYTHON_USEDEP }]
+	>=dev-python/black-22.0.0[${PYTHON_USEDEP}]
 	>=dev-python/coverage-6.0.0[${PYTHON_USEDEP}]
 	>=dev-python/isort-5.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pandas-1.0.0[${PYTHON_USEDEP}]
 	dev-vcs/pre-commit[${PYTHON_USEDEP}]
 	>=dev-python/tenacity-8.0.0[${PYTHON_USEDEP}]
 	>=dev-python/python-slugify-4.0.0[${PYTHON_USEDEP}]
-
 "
 BDEPEND="
 	test? (
