@@ -17,7 +17,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/aiohappyeyeballs-2.3.0[${PYTHON_USEDEP}]
+RDEPEND="
+	>=dev-python/aiohappyeyeballs-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/async-interrupt-1.2.0[${PYTHON_USEDEP}]
 	>=dev-python/protobuf-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.143.0[${PYTHON_USEDEP}]

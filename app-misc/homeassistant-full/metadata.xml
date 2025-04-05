@@ -112,6 +112,7 @@
     <flag name="bluetooth_tracker">This tracker discovers new devices on boot and tracks Bluetooth devices periodically based on interval_seconds value. It is not required to pair the devices with each other! Devices discovered are stored with ‘bt_’ as the prefix for device MAC addresses in known_devices.yaml.</flag>
     <flag name="bmw_connected_drive">The BMW Connected Drive integration lets you retrieve data of your BMW or MINI vehicle from the MyBMW portal (previously BMW Connected Drive).</flag>
     <flag name="bond">The Bond integration allows you to control appliances through your Bond Bridge. Duplicates your RF remote control.</flag>
+    <flag name="bosch_alarm">The Bosch Alarm Panel integration allows you to connect your Bosch Alarm Panel to Home Assistant to control and monitor your Bosch Alarm Panel.</flag>
     <flag name="bosch_shc">The Bosch SHC integration allows you to connect your Bosch Smart Home Controller to Home Assistant in order to control and monitor your Bosch Smart Home devices.</flag>
     <flag name="braviatv">The Bravia TV integration allows you to control a Sony Bravia TV.</flag>
     <flag name="bring">The Bring! integration allows you to sync your Bring! shopping lists with Home Assistant.</flag>
@@ -381,7 +382,7 @@
     <flag name="idteck_prox">IDTECK makes ID systems used to control access and identify users. This integration works with Proximity Readers (RFID card readers). The device is connected to Home Assistant through a serial to ethernet converter (NPort).</flag>
     <flag name="ifttt">IFTTT is a web service that allows users to create chains of simple conditional statements, so-called “Applets”. With the IFTTT integration, you can trigger applets through the “Webhooks” service (which was previously the “Maker” channel). This requires the Pro plan or higher.</flag>
     <flag name="iglo">The iglo integration allows you to integrate your iGlo Lights into Home Assistant.</flag>
-    <flag name="igloohome">The igloohome integration grants Home Assistant access to paired smart access device(s). The features of this integration includes:</flag>
+    <flag name="igloohome">The igloohome integration grants Home Assistant access to paired smart access device(s) via the igloodeveloper API. The features of this integration include:</flag>
     <flag name="ign_sismologia">The ign_sismologia integration lets you integrate a GeoRSS feed provided by theSpanish Instituto Geográfico Nacional with informationabout seismic events like earthquakes on the Iberian Peninsula and CanaryIslands. It retrieves incidents from a feed and shows information of thoseincidents filtered by distance to Home Assistant’s location.</flag>
     <flag name="ihc">IHC Controller integration for Home Assistant allows you to connect the LK IHC controller to Home Assistant. The controller is sold under other names in different countries - “ELKO Living system” in Sweden and Norway.</flag>
     <flag name="image_upload">The Image upload integration allows Home Assistant to handle image assets inHome Assistant, for example, the profile photos of your systems account.</flag>
@@ -575,9 +576,9 @@
     <flag name="nsw_fuel_station">The nsw_fuel_station sensor platform uses the NSW Fuel Check App data as a source for current fuel price data.</flag>
     <flag name="nsw_rural_fire_service_feed">The nsw_rural_fire_service_feed platform lets you integrate a GeoJSON feed provided by the NSW Rural Fire Service with information about bush fires, grass fires, hazard reductions and more. It retrieves incidents from a feed and shows information of those incidents filtered by distance to Home Assistant’s location.</flag>
     <flag name="nuheat">The nuheat integration lets control your connected NuHeat Signature floor heating thermostats from NuHeat.</flag>
-    <flag name="nuki">The Nuki integration allows you to control Nuki Smart Locks via a Nuki Bridge.</flag>
+    <flag name="nuki">The Nuki integration allows you to control Nuki Smart Locks via a Nuki Bridge or Nuki Smart Lock with Build-in WiFi using the cloud.Many Nuki Smart Locks also support local integrations using a different integration.</flag>
     <flag name="numato">The numato integration is the base for all related GPIO platforms of theNumato 32 Port USB GPIO expander:</flag>
-    <flag name="nut">The Network UPS Tools (NUT) integration allows you to monitor and manage a UPS (battery backup) using a NUT server. It lets you view their status, receives notifications about important events, and execute commands as device actions.</flag>
+    <flag name="nut">The Network UPS Tools (NUT) integration allows you to monitor and manage an Uninterruptible Power Supply (UPS) for battery backup, a Power Distribution Unit (PDU), or other similar power device using a NUT server. It lets you view the status, receive notifications about important events, and execute commands as device actions for one or more such devices.</flag>
     <flag name="nws">The nws platform uses the National Weather Service web API as a source for meteorological data for your location.</flag>
     <flag name="nx584">The nx584 integration provides integration with GE, Caddx, Interlogix (and other brands) alarm panels that support the NX584 interface module (or have it built in). Supported panels include NX4/6/8/8E. Actual integration is done through pynx584 which is required for this to work.</flag>
     <flag name="nyt_games">The NYT Games integration fetches data about your progress on their daily puzzles.</flag>
@@ -593,7 +594,7 @@
     <flag name="omnilogic">Hayward OmniLogic smart pool and spa technology control.</flag>
     <flag name="oncue">The Oncue by Kohler integration will allow you to monitor the state of your Oncue enabled Kohler generator.</flag>
     <flag name="ondilo_ico">ICO by Ondilo is a small connected device that you simply drop into the pool or spa. ICO continuously analyzes the water quality of your pool/spa and notifies you via its application. ICO provides personalized recommendations so that you use the right products in the right proportions at the right time.</flag>
-    <flag name="onedrive">This integration allows you to use Microsoft OneDrive for Home Assistant Backups.</flag>
+    <flag name="onedrive">This integration allows you to use OneDrive for Home Assistant Backups as well as uploading generic files to your OneDrive.</flag>
     <flag name="onewire">The Onewire integration supports sensors that use the 1-wire bus for communication.</flag>
     <flag name="onkyo">The onkyo integration allows you to control Onkyo and Integra (from 2011 onward) and also Pioneer (from 2016 onward) receivers using Home Assistant.Please be aware that you need to enable “Network Standby” for this integration to work with your hardware.</flag>
     <flag name="onvif">The ONVIF camera integration allows you to use an ONVIF Profile S conformant device in Home Assistant. This requires the ffmpeg integration to be already configured.</flag>
@@ -660,6 +661,7 @@
     <flag name="proxy">The proxy camera integration allows you to pass another camera’s output through post-processing routines and generate a new camera with the post-processed output.</flag>
     <flag name="prusalink">The PrusaLink integration allows you to monitor your Prusa 3D printer and its progress with your Home Assistant installation. This integration works with Prusa MINI/MINI+, Prusa MK3.9/MK4, Prusa XL, and with the older Raspberry Pi-based Prusa MK2.5/MK3.</flag>
     <flag name="ps4">The ps4 integration allows you to control aSony PlayStation 4 console.</flag>
+    <flag name="pterodactyl">Pterodactyl is a game server management panel designed to simplify the administration of game servers. It offers a user-friendly interface which allows users to manage multiple game servers from a single dashboard, supporting popular games like Minecraft. Its key features include an intuitive web-based control panel, automated server installation, real-time server monitoring, scheduled backups and more. Each game server runs in an isolated Docker container, ensuring security and stability.</flag>
     <flag name="pulseaudio_loopback">The goal behind this switch is to allow a very flexible whole home audio system based upon PulseAudio.</flag>
     <flag name="pure_energie">The Pure Energie integration integrates the Pure Energie Monitordevice with Home Assistant.</flag>
     <flag name="purpleair">PurpleAir makes sensors that measure hyper-local airquality data and share it with the public.</flag>
@@ -699,6 +701,7 @@
     <flag name="refoss">Integrate Refoss devices into Home Assistant.</flag>
     <flag name="rejseplanen">The rejseplanen integration will provide you with travel details for Danish public transport, using timetable data from Rejseplanen.</flag>
     <flag name="remember_the_milk">The remember_the_milk integration allows you to create tasks in Remember The Milk (RTM) from Home Assistant. You can use this if you want Home Assistant to send you a task that you should not forget, e.g., water the plants. The integration allows you to have several RTM accounts in parallel.</flag>
+    <flag name="remote_calendar">The Remote calendar integration allows you to read a calendar in Home Assistant for powering automations.</flag>
     <flag name="remote_rpi_gpio">The remote_rpi_gpio integration is the base for all related GPIO platforms in Home Assistant. For the platform configurations, please check their corresponding sections.</flag>
     <flag name="renault">The Renault integration offers integration with the MyRenault cloud service and provides sensors such as charger state and temperature.</flag>
     <flag name="renson">The Renson integration pulls in data from the Renson Endura delta device. Most of the sensors that can be monitored from inside the Android/iOS application can be monitored with this integration.</flag>
@@ -721,7 +724,7 @@
     <flag name="roon">The Roon integration allows you to control RoonLabs music players from Home Assistant.</flag>
     <flag name="route53">With the route53 integration can you keep your AWS Route53 DNS records up to date.</flag>
     <flag name="rova">ROVA is a waste collection company that operates in the center and east of the Netherlands. This ROVA integration uses an unofficial ROVA API to allow you to get your waste collection schedule and integrate this into your Home Assistant installation.</flag>
-    <flag name="rpi_power">The rpi_power integration allows you to detect bad power supply on Raspberry Pi.</flag>
+    <flag name="rpi_power">The Raspberry Pi Power Supply Checker integration allows you to detect bad power supply on the Raspberry Pi that is running Home Assistant.</flag>
     <flag name="ruckus_unleashed">This platform allows you to connect to Ruckus access points.</flag>
     <flag name="russound_rio">The Russound RIO integration allows you to control Russound devices that make use of the RIO protocol.</flag>
     <flag name="russound_rnet">The russound_rnet integration allows you to control Russound devices that make use of the RNET protocol.</flag>
@@ -741,7 +744,7 @@
     <flag name="season">The season integration will provide the current astronomical or meteorological season (Spring, Summer, Autumn, Winter)as a sensor.</flag>
     <flag name="sendgrid">The sendgrid notification integration sends email notifications via SendGrid, a proven cloud-based email platform.</flag>
     <flag name="sense">Integrate your Sense meter information into Home Assistant.</flag>
-    <flag name="sensibo">Integrates Sensibo devices into Home Assistant.</flag>
+    <flag name="sensibo">The Sensibo integration integrates Sensibo devices into Home Assistant.</flag>
     <flag name="sensirion_ble">Integrates sensors talking Sensirion’s BLE protocol into Home Assistant.</flag>
     <flag name="sensorpro">Integrates SensorPro devices into Home Assistant.</flag>
     <flag name="sensorpush_cloud">Integrates SensorPush Cloud devices into Home Assistant.</flag>
@@ -820,7 +823,6 @@
     <flag name="stream">The stream integration provides a way to proxy live streams through Home Assistant. Most users should not need to configure anything or interface with the integration directly since it is an internal integration used by the camera integration.</flag>
     <flag name="subaru">This integration retrieves vehicle information and actuates remote services provided by Subaru STARLINK (currently only available in USA and Canada).</flag>
     <flag name="suez_water">The Suez Water integration fetches your water consumption data from the French water provider Tout Sur Mon Eau website.</flag>
-    <flag name="sunweg">This is a sensor to collect information from your WEG inverters using Sun WEG server.</flag>
     <flag name="supla">The SUPLA integration allows you to use SUPLA devices in Home Assistant.</flag>
     <flag name="surepetcare">The Sure Petcare integration allows you to get information on your Sure Petcare Connect Pet or Cat Flap.</flag>
     <flag name="swiss_hydrological_data">The swiss_hydrological_data integration will show you details (temperature, level, and discharge) of rivers and lakes in Switzerland.</flag>
@@ -990,7 +992,6 @@
     <flag name="youtube">The YouTube integration allows you to connect YouTube channels to Home Assistant.For every channel you add, it will create sensors for:</flag>
     <flag name="zabbix">The Zabbix integration to connect to a Zabbix monitoring instance via the Zabbix API.</flag>
     <flag name="zamg">The GeoSphere Austria platform uses meteorological details published by the Austrian weather service GeoSphere Austria.</flag>
-    <flag name="zengge">The zengge integration allows you to integrate your Zengge Bluetooth bulbs into Home Assistant.</flag>
     <flag name="zeroconf">The zeroconf integration will scan the network for supported devices and services. Discovered integrations will show up in the discovered section on the integrations page in the configuration panel. It will also make Home Assistant discoverable for other services in the network. Zeroconf is also sometimes known as Bonjour, Rendezvous, and Avahi.</flag>
     <flag name="zerproc">This integration discovers nearby Zerproc lights and adds them to Home Assistant.</flag>
     <flag name="zestimate">The zestimate sensor allows one to track the Zestimate® value of properties using the Zillow API. According to Zillow’s website, a Zestimate® home valuation is Zillow’s estimated market value. It is not an appraisal. Use it as a starting point to determine a home’s value. The Zestimate® is provided by Zillow, a website primarily for listing homes to buy/sell/rent in the United States.</flag>

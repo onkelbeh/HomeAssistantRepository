@@ -1,0 +1,7 @@
+--- a/pyproject.toml	2025-03-27 07:21:32.144591783 +0100
++++ b/pyproject.toml	2025-03-27 07:21:49.229592160 +0100
+@@ -0,0 +1,4 @@
++[build-system]
++requires = ["setuptools", "wheel"]
++build-backend = "setuptools.build_meta"
++
