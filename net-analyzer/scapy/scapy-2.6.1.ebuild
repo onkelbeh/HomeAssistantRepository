@@ -44,7 +44,7 @@ Scapy has optional support for the following packages:
 
 src_prepare() {
 	if ! [[ -f ${PN}/VERSION ]]; then
-		echo "${PV}" > ${PN}/VERSION || die
+		echo "${PV}" > "${PN}/VERSION" || die
 	else
 		die
 	fi
