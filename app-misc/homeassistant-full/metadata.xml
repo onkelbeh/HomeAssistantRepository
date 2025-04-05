@@ -112,7 +112,6 @@
     <flag name="bluetooth_tracker">This tracker discovers new devices on boot and tracks Bluetooth devices periodically based on interval_seconds value. It is not required to pair the devices with each other! Devices discovered are stored with ‘bt_’ as the prefix for device MAC addresses in known_devices.yaml.</flag>
     <flag name="bmw_connected_drive">The BMW Connected Drive integration lets you retrieve data of your BMW or MINI vehicle from the MyBMW portal (previously BMW Connected Drive).</flag>
     <flag name="bond">The Bond integration allows you to control appliances through your Bond Bridge. Duplicates your RF remote control.</flag>
-    <flag name="bosch_alarm">The Bosch Alarm Panel integration allows you to connect your Bosch Alarm Panel to Home Assistant to control and monitor your Bosch Alarm Panel.</flag>
     <flag name="bosch_shc">The Bosch SHC integration allows you to connect your Bosch Smart Home Controller to Home Assistant in order to control and monitor your Bosch Smart Home devices.</flag>
     <flag name="braviatv">The Bravia TV integration allows you to control a Sony Bravia TV.</flag>
     <flag name="bring">The Bring! integration allows you to sync your Bring! shopping lists with Home Assistant.</flag>
@@ -661,7 +660,6 @@
     <flag name="proxy">The proxy camera integration allows you to pass another camera’s output through post-processing routines and generate a new camera with the post-processed output.</flag>
     <flag name="prusalink">The PrusaLink integration allows you to monitor your Prusa 3D printer and its progress with your Home Assistant installation. This integration works with Prusa MINI/MINI+, Prusa MK3.9/MK4, Prusa XL, and with the older Raspberry Pi-based Prusa MK2.5/MK3.</flag>
     <flag name="ps4">The ps4 integration allows you to control aSony PlayStation 4 console.</flag>
-    <flag name="pterodactyl">Pterodactyl is a game server management panel designed to simplify the administration of game servers. It offers a user-friendly interface which allows users to manage multiple game servers from a single dashboard, supporting popular games like Minecraft. Its key features include an intuitive web-based control panel, automated server installation, real-time server monitoring, scheduled backups and more. Each game server runs in an isolated Docker container, ensuring security and stability.</flag>
     <flag name="pulseaudio_loopback">The goal behind this switch is to allow a very flexible whole home audio system based upon PulseAudio.</flag>
     <flag name="pure_energie">The Pure Energie integration integrates the Pure Energie Monitordevice with Home Assistant.</flag>
     <flag name="purpleair">PurpleAir makes sensors that measure hyper-local airquality data and share it with the public.</flag>
@@ -701,7 +699,6 @@
     <flag name="refoss">Integrate Refoss devices into Home Assistant.</flag>
     <flag name="rejseplanen">The rejseplanen integration will provide you with travel details for Danish public transport, using timetable data from Rejseplanen.</flag>
     <flag name="remember_the_milk">The remember_the_milk integration allows you to create tasks in Remember The Milk (RTM) from Home Assistant. You can use this if you want Home Assistant to send you a task that you should not forget, e.g., water the plants. The integration allows you to have several RTM accounts in parallel.</flag>
-    <flag name="remote_calendar">The Remote calendar integration allows you to read a calendar in Home Assistant for powering automations.</flag>
     <flag name="remote_rpi_gpio">The remote_rpi_gpio integration is the base for all related GPIO platforms in Home Assistant. For the platform configurations, please check their corresponding sections.</flag>
     <flag name="renault">The Renault integration offers integration with the MyRenault cloud service and provides sensors such as charger state and temperature.</flag>
     <flag name="renson">The Renson integration pulls in data from the Renson Endura delta device. Most of the sensors that can be monitored from inside the Android/iOS application can be monitored with this integration.</flag>

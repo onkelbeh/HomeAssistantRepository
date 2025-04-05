@@ -234,7 +234,7 @@ EOF
 echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> "$EBUILD_PATH"
 
 for u in $( cat metadata.xml | grep \<flag | cut -d\" -f2 ); do
-  echo -n " $u" >>"$EBUILD_PATH
+  echo -n " $u" >>"$EBUILD_PATH"
 done
 cat >> "$EBUILD_PATH"<<EOF
 "
@@ -255,12 +255,12 @@ REQUIRED_USE="bluetooth? ( ruuvi_gateway shelly )
 	homekit_controller? ( bluetooth )"
 EOF
 echo -e "\n \e[0;32m*\e[0m Parsing main dependencies..."
-pushd /var/tmp/portage/app-misc/${EBUILD}/work
+pushd "/var/tmp/portage/app-misc/${EBUILD}/work"
 for i in $( find . | grep package_constraints );do
-  parse_constraints $EBUILD_PATH $i 
+  parse_constraints "$EBUILD_PATH" "$i" 
 done
 echo -e "                                                                                          \r \e[0;32m*\e[0m Parsing main dependencies... \e[0;32mdone\e[0m                                    "
-cat >> $EBUILD_PATH <<EOF
+cat >> "$EBUILD_PATH" <<EOF
 
 # unknown origin, still something to clean up here
 
@@ -292,11 +292,11 @@ RDEPEND="\${RDEPEND}
 	wink? ( ~dev-python/pubnubsub-handler-1.0.9[\${PYTHON_USEDEP}] ~dev-python/python-wink-1.10.5[\${PYTHON_USEDEP}] )
 EOF
 for use in $( cat "$EBUILD_PATH" | grep IUSE= | cut -d\" -f2 ); do
-  parse_use_flag_req $EBUILD_PATH /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt ${use/+/}
+  parse_use_flag_req "$EBUILD_PATH" "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt" "${use/+/}"
 done
-echo "\"" >> $EBUILD_PATH
+echo "\"" >> "$EBUILD_PATH"
 echo -e "                                                                                          \r \e[0;32m*\e[0m Parsing use flag dependencies... \e[0;32mdone\e[0m                        "
-cat >> $EBUILD_PATH <<EOF
+cat >> "$EBUILD_PATH" <<EOF
 
 BDEPEND="\${RDEPEND}
 	test? (
@@ -383,4 +383,4 @@ distutils_enable_tests pytest
 EOF
 
 popd
-ebuild $EBUILD_PATH clean digest
+ebuild "$EBUILD_PATH" clean digest
