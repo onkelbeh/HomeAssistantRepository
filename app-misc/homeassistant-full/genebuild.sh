@@ -9,9 +9,9 @@ eix-update
 
 # get target version
 if [ -z "$1" ];then
-    VERSION=`curl -s https://api.github.com/repos/home-assistant/core/releases/latest | jq '.tag_name' | xargs -I {} echo {}`
+    VERSION=$( curl -s https://api.github.com/repos/home-assistant/core/releases/latest | jq '.tag_name' | xargs -I {} echo {} )
 else
-    VERSION=`curl -s https://api.github.com/repos/home-assistant/core/releases/tags/${1/_beta/b} | jq '.tag_name' | xargs -I {} echo {}`
+    VERSION=$( curl -s "https://api.github.com/repos/home-assistant/core/releases/tags/${1/_beta/b}" | jq '.tag_name' | xargs -I {} echo {} )
 fi
 EBUILD=$( pwd | rev | cut -d/ -f1 | rev )-${VERSION/b/_beta}
 EBUILD_PATH=$( pwd )/$EBUILD.ebuild
@@ -34,31 +34,31 @@ parse_package() {
     echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing dependencies... $d"
     local pos=${#d}
     if [ "${l:$pos:1}" = "[" ]; then
-      operator=`echo "$l" | cut -d] -f2-`
+      operator=$( echo "$l" | cut -d] -f2- )
       #TODO version can be coma separated adb-shell[async]>=0.4.4,<5, for now only handle first criteria
-      version=`echo ${operator:2} | cut -d\; -f1 | cut -d, -f1`
+      version=$( echo "${operator:2}" | cut -d\; -f1 | cut -d, -f1 )
       operator=${operator:0:2}
     else
       operator=${l:$pos:2}
       pos=$((pos + 2 ))
-      version=`echo ${l:$pos} | cut -d\; -f1`
+      version=$( echo "${l:$pos}" | cut -d\; -f1 )
     fi
-    local package=`eix -es# $d --use python_targets_python3_13`
+    local package=$( eix -es# "$d" --use python_targets_python3_13 )
     if [ -z "$package" ];then
-      package=`eix -es# ${d,,} --use python_targets_python3_13`
-    fi
-    if [ -z "$package" ];then
-      package=`eix -es# ${d//_/-} --use python_targets_python3_13`
+      package=$( eix -es# "${d,,}" --use python_targets_python3_13 )
     fi
     if [ -z "$package" ];then
-      package=`eix -es# ${d//./-} --use python_targets_python3_13`
+      package=$( eix -es# "${d//_/-}" --use python_targets_python3_13 )
+    fi
+    if [ -z "$package" ];then
+      package=$( eix -es# "${d//./-}" --use python_targets_python3_13 )
     fi
     case $d in
       atomicwrites-homeassistant)
         package="dev-python/atomicwrites"
 	;;
       uv)
-        echo -e "\n  >=dev-python/uv-$version" >> $2
+        echo -e "\n  >=dev-python/uv-$version" >> "$2"
         break
         ;;
     esac
@@ -67,24 +67,24 @@ parse_package() {
       break
     fi
     #Write ebuild dep
-    echo -ne $1 >> $2
+    echo -ne "$1" >> "$2"
     if [ "$version" = "1000000000.0.0" ]; then
-      echo -n "$package" >> $2
+      echo -n "$package" >> "$2"
       break
     fi
     case $operator in
       ~= | ==)
-        echo -n "~$package-$version" >> $2
+        echo -n "~$package-$version" >> "$2"
 	;;
       *)
-        echo -n "$operator$package-$version" >> $2
+        echo -n "$operator$package-$version" >> "$2"
     esac
 
-    local dep_use=`echo "$dep" | cut -sd[ -f2 | cut -sd] -f1`
+    local dep_use=$( echo "$dep" | cut -sd[ -f2 | cut -sd] -f1 )
     if [ "$dep_use" = "" ]; then
-      echo -n "[\${PYTHON_USEDEP}]" >> $2
+      echo -n "[\${PYTHON_USEDEP}]" >> "$2"
     else
-      echo -n "[$dep_use,\${PYTHON_USEDEP}]" >> $2
+      echo -n "[$dep_use,\${PYTHON_USEDEP}]" >> "$2"
     fi
     break
   done
@@ -97,15 +97,15 @@ parse_package() {
 # $2 parse_constraints file
 ######
 parse_constraints() {
-  local f="$2"
-  echo "# Home Assistant Core dependencies from $f" >> $1
-  echo "RDEPEND=\"\${RDEPEND}" >> $1
+  local f=$2
+  echo "# Home Assistant Core dependencies from $f" >> "$1"
+  echo "RDEPEND=\"\${RDEPEND}" >> "$1"
 
-  for l in `cat $f | grep '^[^#]' | cut -d, -f1`; do
+  for l in $( cat "$f" | grep '^[^#]' | cut -d, -f1 ); do
     echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing main dependencies... $l"
-    parse_package "\n\t" $1 $l
+    parse_package "\n\t" "$1" "$l"
   done
-  echo "\"" >> $1
+  echo "\"" >> "$1"
 } #parse_constraints
 
 ######
@@ -122,11 +122,11 @@ parse_use_flag_req() {
 "
   echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing use flag dependencies... $use"
   local found_dep=
-  for req in `cat $reqall | grep -n "^# homeassistant.components.$use$"`; do
-    local start_line=`echo $req | cut -d: -f1`
+  for req in $( cat $reqall | grep -n "^# homeassistant.components.$use$" ); do
+    local start_line=$( echo $req | cut -d: -f1 )
     start_line=$(( start_line + 1 ))
     local found=
-    for dep in `tail -n+$start_line $reqall`; do
+    for dep in $( tail -n+$start_line "$reqall" ); do
       if [ "${dep:0:1}" = "#" ]; then
         if [ "$found" = "" ]; then
           continue
@@ -155,15 +155,15 @@ if [ -f "$EBUILD_PATH" ]; then
     echo -e "  \e[0;31m$EBUILD already exists, \e[0m"
     ebuild $EBUILD_PATH clean unpack
 else
-    for v in `ls -rv *.ebuild | grep -v 999.ebuild`; do
+    for v in $( ls -rv *.ebuild | grep -v 999.ebuild ); do
         cp $v $EBUILD_PATH
         break
     done
     ebuild $EBUILD_PATH clean digest unpack
-    patch=$( pwd )/files/genebuild_${VERSION/b/_beta}.patch
+    patch="$( pwd )/files/genebuild_${VERSION/b/_beta}.patch"
 fi
 
-pushd /var/tmp/portage/app-misc/${EBUILD}/work
+pushd "/var/tmp/portage/app-misc/${EBUILD}/work"
 
 if [ -f "$patch" ]; then
     patch -p1 < $patch
@@ -174,9 +174,9 @@ popd
 echo "Generate metadata.xml..."
 cat metadata.xml | sed -z 's/<use>.*/<use>/g' > metadata.xml.pre
 mv metadata.xml.pre metadata.xml
-for f in `find /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/homeassistant/components | grep manifest.json | sort`; do
+for f in $( find /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/homeassistant/components | grep manifest.json | sort ); do
   #component name
-  use_flag=`echo "$f"| rev | cut -d/ -f2 | rev`
+  use_flag=$( echo "$f"| rev | cut -d/ -f2 | rev )
   if cat /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt | grep -qn "^# homeassistant.components.${use_flag}$"; then
     #get help page
     if [ ! -f /tmp/$use_flag.html ]; then
@@ -185,7 +185,7 @@ for f in `find /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/
     if [ -s /tmp/$use_flag.html ]; then
       echo -ne "                                                                                          \r \e[0;32m*\e[0m Generate metadata.xml($use_flag)...                                   "
       #parse description Ignore anything before '<div class="page-content">' then before '</header>' until '</p>', cleanup html and carriage return
-      description=`cat /tmp/$use_flag.html | sed -z 's/.*<div class="page-content">//g' | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs`
+      description=$( cat /tmp/$use_flag.html | sed -z 's/.*<div class="page-content">//g' | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs )
       echo -ne "\n    <flag name=\"$use_flag\">$description</flag>" >> metadata.xml
     fi
   fi
@@ -197,7 +197,7 @@ EOF
 
 #Gen ebuild
 cat > $EBUILD_PATH << EOF
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -231,7 +231,7 @@ KEYWORDS="amd64 arm arm64 x86"
 EOF
 echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> $EBUILD_PATH
 
-for u in `cat metadata.xml | grep \<flag | cut -d\" -f2`; do
+for u in $( cat metadata.xml | grep \<flag | cut -d\" -f2 ); do
   echo -n " $u" >>$EBUILD_PATH
 done
 cat >> $EBUILD_PATH <<EOF
@@ -254,7 +254,7 @@ REQUIRED_USE="bluetooth? ( ruuvi_gateway shelly )
 EOF
 echo -e "\n \e[0;32m*\e[0m Parsing main dependencies..."
 pushd /var/tmp/portage/app-misc/${EBUILD}/work
-for i in `find . | grep package_constraints`;do
+for i in $( find . | grep package_constraints );do
   parse_constraints $EBUILD_PATH $i 
 done
 echo -e "                                                                                          \r \e[0;32m*\e[0m Parsing main dependencies... \e[0;32mdone\e[0m                                    "
@@ -289,7 +289,7 @@ RDEPEND="\${RDEPEND}
 	tesla? ( ~dev-python/teslajsonpy-0.18.3[\${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.9[\${PYTHON_USEDEP}] ~dev-python/python-wink-1.10.5[\${PYTHON_USEDEP}] )
 EOF
-for use in `cat $EBUILD_PATH | grep IUSE= | cut -d\" -f2`; do
+for use in $( cat "$EBUILD_PATH" | grep IUSE= | cut -d\" -f2 ); do
   parse_use_flag_req $EBUILD_PATH /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt ${use/+/}
 done
 echo "\"" >> $EBUILD_PATH
