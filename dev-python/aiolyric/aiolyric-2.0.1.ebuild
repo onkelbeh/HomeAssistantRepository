@@ -29,7 +29,7 @@ python_test() {
 }
 
 src_prepare() {
-	eapply ${FILESDIR}/fix-setup.patch
+	eapply "${FILESDIR}/fix-setup.patch"
 	default
 }
 distutils_enable_tests pytest

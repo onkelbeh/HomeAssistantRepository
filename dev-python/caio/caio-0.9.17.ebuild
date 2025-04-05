@@ -22,7 +22,7 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 src_prepare() {
-	cp $S/README.md $S/README.rst
+	cp "$S/README.md" "$S/README.rst"
 	default
 }
 python_test() {

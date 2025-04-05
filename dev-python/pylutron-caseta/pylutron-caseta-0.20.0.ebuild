@@ -41,7 +41,7 @@ distutils_enable_tests pytest
 python_install() {
 		distutils-r1_python_install
 		if ! use cli; then
-				rm "${ED}"/usr/lib/python-exec/${EPYTHON}/{lap-pair,leap,leap-scan} || die
-				rm "${ED}"/usr/bin/{lap-pair,leap,leap-scan} || die
+				rm "${ED}/usr/lib/python-exec/${EPYTHON}/{lap-pair,leap,leap-scan}" || die
+				rm "${ED}/usr/bin/{lap-pair,leap,leap-scan}" || die
 		fi
 }

@@ -329,11 +329,11 @@ BDEPEND="\${RDEPEND}
 	dev-python/mock[\${PYTHON_USEDEP}]"
 
 src_prepare() {
-    if use test ; then
-        cp --no-preserve=mode --recursive \${WORKDIR}/core-\${MY_PV}/tests \${S}
-		chmod u+x \${S}/tests/auth/providers/test_command_line_cmd.sh
+	if use test ; then
+		cp --no-preserve=mode --recursive "\${WORKDIR}/core-\${MY_PV}/tests" "\${S}"
+		chmod u+x "\${S}/tests/auth/providers/test_command_line_cmd.sh"
     fi
-    sed -E -i "s/regex==[^ ]*/regex/g" -i homeassistant/package_constraints.txt || die
+    sed -E -i "s/regex==[^ ]*/regex/g" -i "homeassistant/package_constraints.txt" || die
 
     distutils-r1_src_prepare
 }

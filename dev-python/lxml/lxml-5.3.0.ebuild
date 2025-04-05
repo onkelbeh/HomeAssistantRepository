@@ -84,15 +84,15 @@ python_compile_all() {
 }
 
 python_test() {
-	local dir=${BUILD_DIR}/test$(python_get_sitedir)/lxml
+	local dir="${BUILD_DIR}/test$(python_get_sitedir)/lxml"
 	local -x PATH=${BUILD_DIR}/test/usr/bin:${PATH}
 
-	cp -al "${BUILD_DIR}"/{install,test} || die
+	cp -al "${BUILD_DIR}/{install,test}" || die
 	cp -al src/lxml/tests "${dir}/" || die
 	cp -al src/lxml/html/tests "${dir}/html/" || die
-	ln -rs "${S}"/doc "${dir}"/../../ || die
+	ln -rs "${S}/doc" "${dir}/../../" || die
 
-	"${EPYTHON}" test.py -vv --all-levels -p || die "Test ${test} fails with ${EPYTHON}"
+	"${EPYTHON}" test.py -vv --all-levels -p || die "Test fails with ${EPYTHON}"
 }
 
 python_install_all() {

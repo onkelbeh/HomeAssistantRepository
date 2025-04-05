@@ -24,8 +24,8 @@ RDEPEND="
 "
 BDEPEND=""
 src_unpack() {
-	unpack ${A}
-	mv ${WORKDIR}/python-genai-${PV} ${S}
+	unpack "${A}"
+	mv "${WORKDIR}/python-genai-${PV}" "${S}"
 }
 
 distutils_enable_tests pytest

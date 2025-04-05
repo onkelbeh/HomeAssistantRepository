@@ -10,7 +10,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Python module to interface with Tuya WiFi smart devices"
 HOMEPAGE="https://github.com/jasonacox/tinytuya https://pypi.org/project/tinytuya"
 
-SRC_URI="$(pypi_wheel_url ${PYPI_PN} ${PV} "py2.py3")"
+SRC_URI="$( pypi_wheel_url "${PYPI_PN}" "${PV}" "py2.py3" )"
 S=${WORKDIR}
 
 LICENSE="MIT"
@@ -26,12 +26,11 @@ BDEPEND="app-arch/unzip"
 distutils_enable_tests pytest
 
 src_unpack() {
-	if [[ ${PKGBUMPING} == ${PVR} ]]; then
+	if [[ "${PKGBUMPING}" == "${PVR}" ]]; then
 		unzip "${DISTDIR}/${A}" || die
 	fi
 }
 
 python_compile() {
-	distutils_wheel_install "${BUILD_DIR}/install" \
-		"${DISTDIR}/$(pypi_wheel_name ${PYPI_PN} ${PV} "py2.py3")"
+	distutils_wheel_install "${BUILD_DIR}/install" "${DISTDIR}/$( pypi_wheel_name "${PYPI_PN}" "${PV}" "py2.py3" )"
 }
