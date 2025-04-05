@@ -43,7 +43,8 @@ parse_package() {
       pos=$((pos + 2 ))
       version=$( echo "${l:$pos}" | cut -d\; -f1 )
     fi
-    local package=$( eix -es# "$d" --use python_targets_python3_13 )
+    local package
+    package=$( eix -es# "$d" --use python_targets_python3_13 )
     if [ -z "$package" ];then
       package=$( eix -es# "${d,,}" --use python_targets_python3_13 )
     fi
@@ -80,7 +81,8 @@ parse_package() {
         echo -n "$operator$package-$version" >> "$2"
     esac
 
-    local dep_use=$( echo "$dep" | cut -sd[ -f2 | cut -sd] -f1 )
+    local dep_use
+    dep_use=$( echo "$dep" | cut -sd[ -f2 | cut -sd] -f1 )
     if [ "$dep_use" = "" ]; then
       echo -n "[\${PYTHON_USEDEP}]" >> "$2"
     else
@@ -153,20 +155,20 @@ parse_use_flag_req() {
 
 if [ -f "$EBUILD_PATH" ]; then
     echo -e "  \e[0;31m$EBUILD already exists, \e[0m"
-    ebuild $EBUILD_PATH clean unpack
+    ebuild "$EBUILD_PATH" clean unpack
 else
     for v in $( ls -rv *.ebuild | grep -v 999.ebuild ); do
-        cp $v $EBUILD_PATH
+        cp "$v" "$EBUILD_PATH"
         break
     done
-    ebuild $EBUILD_PATH clean digest unpack
+    ebuild "$EBUILD_PATH" clean digest unpack
     patch="$( pwd )/files/genebuild_${VERSION/b/_beta}.patch"
 fi
 
 pushd "/var/tmp/portage/app-misc/${EBUILD}/work"
 
 if [ -f "$patch" ]; then
-    patch -p1 < $patch
+    patch -p1 < "$patch"
 fi
 
 #gen metadata
@@ -174,18 +176,18 @@ popd
 echo "Generate metadata.xml..."
 cat metadata.xml | sed -z 's/<use>.*/<use>/g' > metadata.xml.pre
 mv metadata.xml.pre metadata.xml
-for f in $( find /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/homeassistant/components | grep manifest.json | sort ); do
+for f in $( find "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/homeassistant/components" | grep manifest.json | sort ); do
   #component name
   use_flag=$( echo "$f"| rev | cut -d/ -f2 | rev )
-  if cat /var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt | grep -qn "^# homeassistant.components.${use_flag}$"; then
+  if cat "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt" | grep -qn "^# homeassistant.components.${use_flag}$"; then
     #get help page
-    if [ ! -f /tmp/$use_flag.html ]; then
-      wget -q -O /tmp/$use_flag.html https://www.home-assistant.io/integrations/$use_flag/index.html
+    if [ ! -f "/tmp/$use_flag.html" ]; then
+      wget -q -O "/tmp/$use_flag.html" "https://www.home-assistant.io/integrations/$use_flag/index.html"
     fi
-    if [ -s /tmp/$use_flag.html ]; then
+    if [ -s "/tmp/$use_flag.html" ]; then
       echo -ne "                                                                                          \r \e[0;32m*\e[0m Generate metadata.xml($use_flag)...                                   "
       #parse description Ignore anything before '<div class="page-content">' then before '</header>' until '</p>', cleanup html and carriage return
-      description=$( cat /tmp/$use_flag.html | sed -z 's/.*<div class="page-content">//g' | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs )
+      description=$( cat "/tmp/$use_flag.html" | sed -z 's/.*<div class="page-content">//g' | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs )
       echo -ne "\n    <flag name=\"$use_flag\">$description</flag>" >> metadata.xml
     fi
   fi
@@ -196,7 +198,7 @@ cat >> metadata.xml << EOF
 EOF
 
 #Gen ebuild
-cat > $EBUILD_PATH << EOF
+cat > "$EBUILD_PATH" << EOF
 # Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
@@ -229,12 +231,12 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 EOF
-echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> $EBUILD_PATH
+echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> "$EBUILD_PATH"
 
 for u in $( cat metadata.xml | grep \<flag | cut -d\" -f2 ); do
-  echo -n " $u" >>$EBUILD_PATH
+  echo -n " $u" >>"$EBUILD_PATH
 done
-cat >> $EBUILD_PATH <<EOF
+cat >> "$EBUILD_PATH"<<EOF
 "
 RESTRICT="!test? ( test )"
 
