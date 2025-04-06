@@ -85,7 +85,8 @@ python_compile_all() {
 }
 
 python_test() {
-	local dir=${BUILD_DIR}/test$(python_get_sitedir)/lxml
+	local dir
+	dir=${BUILD_DIR}/test$(python_get_sitedir)/lxml
 	local -x PATH=${BUILD_DIR}/test/usr/bin:${PATH}
 
 	cp -al "${BUILD_DIR}"/{install,test} || die

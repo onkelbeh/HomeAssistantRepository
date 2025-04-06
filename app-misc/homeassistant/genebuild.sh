@@ -103,7 +103,7 @@ parse_constraints() {
   echo "# Home Assistant Core dependencies from $f" >> "$1"
   echo "RDEPEND=\"\${RDEPEND}" >> "$1"
 
-  for l in $( grep '^[^#]' "$f" | cut -d, -f1 ); do
+  grep '^[^#]' "$f" | cut -d, -f1 | while IFS= read -r l; do
     echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing main dependencies... $l"
     parse_package "\n\t" "$1" "$l"
   done

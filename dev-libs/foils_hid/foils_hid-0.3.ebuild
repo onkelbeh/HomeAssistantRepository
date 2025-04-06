@@ -9,7 +9,7 @@ EGIT_REPO_URI="https://github.com/fbx/foils_hid.git"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 
 DEPEND="=dev-libs/librudp-${PV}"
 RDEPEND="${DEPEND}"
@@ -17,8 +17,7 @@ BDEPEND=""
 IUSE="tests"
 
 src_configure() {
-	local emesonargs=(
-		$(meson_use tests)		
-    )
+	local emesonargs
+	mapfile -t emesonargs < <(meson_use tests)
 	meson_src_configure
 }
