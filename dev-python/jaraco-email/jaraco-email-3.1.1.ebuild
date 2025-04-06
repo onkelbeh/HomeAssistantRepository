@@ -20,9 +20,12 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/jaraco-text-1.3[${PYTHON_USEDEP}]
+RDEPEND="
+	>=dev-python/jaraco-text-1.3[${PYTHON_USEDEP}]
 	dev-python/jaraco-collections[${PYTHON_USEDEP}]
-	dev-python/keyring[${PYTHON_USEDEP}]"
+	dev-python/keyring[${PYTHON_USEDEP}]
+	dev-python/aiosmtpd[${PYTHON_USEDEP}]
+"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

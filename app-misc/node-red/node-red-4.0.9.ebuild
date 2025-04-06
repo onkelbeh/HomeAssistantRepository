@@ -31,7 +31,7 @@ src_install() {
 
 	dotmpfiles "${FILESDIR}"/node-red.conf
 
-	doinitd "${FILESDIR}"/${PN}
+	doinitd "${FILESDIR}/${PN}"
 	systemd_dounit "${FILESDIR}/${PN}.service"
 }
 

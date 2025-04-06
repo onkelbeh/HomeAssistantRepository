@@ -47,7 +47,7 @@ src_prepare() {
 
 	# unbundle deps
 	rm -r botocore/vendored || die
-	find -name '*.py' -exec sed -i \
+	find . -name '*.py' -exec sed -i \
 		-e 's:from botocore[.]vendored import:import:' \
 		-e 's:from botocore[.]vendored[.]:from :' \
 		{} + || die
