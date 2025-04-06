@@ -15,7 +15,7 @@ HOMEPAGE="
 
 LICENSE="Apache 2.01"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	dev-python/pytest-runner[${PYTHON_USEDEP}]

@@ -11,10 +11,10 @@ inherit distutils-r1 pypi
 DESCRIPTION="GenAI Python SDK"
 HOMEPAGE="https://github.com/googleapis/python-genai https://pypi.org/project/google-genai/"
 SRC_URI="https://github.com/googleapis/python-genai/archive/refs/tags/v${PV}.tar.gz"
-PATCHES="${FILESDIR}/${P}-build-system.patch"
+PATCHES="${FILESDIR}/${PN}-build-system.patch"
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	>=dev-python/google-auth-2.14.1[${PYTHON_USEDEP}]
@@ -24,8 +24,8 @@ RDEPEND="
 "
 BDEPEND=""
 src_unpack() {
-	unpack ${A}
-	mv ${WORKDIR}/python-genai-${PV} ${S}
+	unpack "${A}"
+	mv "${WORKDIR}/python-genai-${PV}" "${S}"
 }
 
 distutils_enable_tests pytest

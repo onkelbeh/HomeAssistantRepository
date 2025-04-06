@@ -36,7 +36,7 @@ BDEPEND="test? (
 )"
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-3.1.1-tests_git_file_transport.patch
+	"${FILESDIR}/${PN}-3.1.1-tests_git_file_transport.patch"
 )
 
 DOCS=( CHANGELOG.md CONTRIBUTING.md README.md )

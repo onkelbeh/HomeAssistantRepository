@@ -340,30 +340,30 @@ pkg_setup() {
 
 src_prepare() {
 	default
-	cd bindings/python
-	eapply "${FILESDIR}"/${PN}-0.15.2-test.patch
+	cd bindings/python || exit
+	eapply "${FILESDIR}/${PN}-0.15.2-test.patch"
 	distutils-r1_src_prepare
 }
 
 src_configure() {
-	cd tokenizers
+	cd tokenizers || exit
 	cargo_src_configure
-	cd ../bindings/python
+	cd ../bindings/python || exit
 	distutils-r1_src_configure
 }
 
 src_compile() {
-	cd tokenizers
+	cd tokenizers || exit
 	cargo_src_compile
-	cd ../bindings/python
+	cd ../bindings/python || exit
 	distutils-r1_src_compile
 }
 
 src_test() {
-	cd tokenizers
+	cd tokenizers || exit
 	# Tests do not work
 	#cargo_src_test
-	cd ../bindings/python
+	cd ../bindings/python || exit
 	local EPYTEST_DESELECT=(
 		"tests/bindings/test_tokenizer.py::TestTokenizer::test_encode_formats"
 		"tests/bindings/test_encoding.py::TestEncoding::test_sequence_ids"
@@ -411,7 +411,7 @@ src_test() {
 }
 
 src_install() {
-	cd tokenizers
-	cd ../bindings/python
+	cd tokenizers || exit
+	cd ../bindings/python || exit
 	distutils-r1_src_install
 }

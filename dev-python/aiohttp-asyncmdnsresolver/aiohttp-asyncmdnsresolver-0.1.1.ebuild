@@ -13,7 +13,7 @@ HOMEPAGE="https://github.com/aio-libs/aiohttp-asyncmdnsresolver https://pypi.org
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	>=dev-python/aiodns-3.2.0[${PYTHON_USEDEP}]

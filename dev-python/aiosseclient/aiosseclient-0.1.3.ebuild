@@ -13,7 +13,7 @@ HOMEPAGE="https://github.com/ebraminio/aiosseclient https://pypi.org/project/aio
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	dev-python/aiohttp[${PYTHON_USEDEP}]"

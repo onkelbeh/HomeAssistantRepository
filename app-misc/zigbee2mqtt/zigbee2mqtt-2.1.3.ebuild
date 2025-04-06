@@ -12,7 +12,6 @@ else
 		https://github.com/Koenkk/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
 		https://github.com/xavierforestier/${PN}/releases/download/v${PV}/${P}-nodes_modules.tar.xz
 "
-
 fi
 
 inherit nodejs-mod systemd tmpfiles
@@ -44,25 +43,22 @@ pkg_pretend() {
 src_install() {
 	echo "${COMMIT}" > dist/.hash
 
-	echo -e "\nadvanced:" >>data/configuration.yaml
-	echo -e "  network_key: GENERATE" >>data/configuration.yaml
-	echo -e "  pan_id: GENERATE" >>data/configuration.yaml
-	echo -e "  log_directory: /var/log/${PN}" >>data/configuration.yaml
+	echo -e "\nadvanced:\n  network_key: GENERATE\n  pan_id: GENERATE\n  log_directory: /var/log/${PN}" >> "data/configuration.yaml"
 
 	nodejs-mod_src_install
 
-	keepdir /var/log/${PN}
+	keepdir "/var/log/${PN}"
 
-	insinto /var/lib/${PN}
+	insinto "/var/lib/${PN}"
 	doins data/configuration.yaml
 
-	dotmpfiles "${FILESDIR}"/zigbee2mqtt.conf
+	dotmpfiles "${FILESDIR}/zigbee2mqtt.conf"
 
-	doinitd "${FILESDIR}"/${PN}
+	doinitd "${FILESDIR}/${PN}"
 	systemd_dounit "${FILESDIR}/${PN}.service"
 
 	dodir /etc/env.d
-	echo "CONFIG_PROTECT=\"/var/lib/${PN}"\" >>"${ED}"/etc/env.d/90${PN} || die
+	echo "CONFIG_PROTECT=\"/var/lib/${PN}"\" >>"${ED}/etc/env.d/90${PN}" || die
 }
 
 pkg_postinst() {
