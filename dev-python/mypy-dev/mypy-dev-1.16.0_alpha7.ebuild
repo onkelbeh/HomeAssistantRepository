@@ -60,7 +60,8 @@ distutils_enable_tests pytest
 export CCACHE_DISABLE=1
 
 src_compile() {
-	local -x MYPY_USE_MYPYC="$(usex native-extensions 1 0)"
+	local -x MYPY_USE_MYPYC
+	MYPY_USE_MYPYC="$(usex native-extensions 1 0)"
 	distutils-r1_src_compile
 }
 
