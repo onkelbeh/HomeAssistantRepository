@@ -94,7 +94,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 SRC_URI="
 	https://github.com/DeebotUniverse/client.py/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
-	$(cargo_crate_uris ${CRATES})
+	$( cargo_crate_uris "${CRATES}" )
 "
 RDEPEND=">=dev-python/aiohttp-3.10[${PYTHON_USEDEP}]
 	>=dev-python/aiomqtt-2.0.0[${PYTHON_USEDEP}]
@@ -106,7 +106,7 @@ BDEPEND="dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 	>=dev-python/pycountry-24.6.1[${PYTHON_USEDEP}]"
 src_unpack() {
 	default
-	mv "${WORKDIR}/client.py-${PV}" $S
+	mv "${WORKDIR}/client.py-${PV}" "$S"
 	cargo_src_unpack
 }
 distutils_enable_tests pytest
