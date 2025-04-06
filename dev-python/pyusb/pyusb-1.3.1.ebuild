@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{11..13} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="USB support for Python"
@@ -19,10 +19,6 @@ DEPEND="virtual/libusb:="
 RDEPEND="${DEPEND}"
 
 DOCS=( README.rst docs/tutorial.rst )
-
-PATCHES=(
-	"${FILESDIR}"/${P}-setuptools.patch
-)
 
 python_test() {
 	cd tests || die
