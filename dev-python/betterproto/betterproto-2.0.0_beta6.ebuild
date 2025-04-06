@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{10..13} )
 
 inherit distutils-r1
 
@@ -34,7 +34,7 @@ S=${WORKDIR}/${MY_P}
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="~amd64"
 
 RDEPEND="
 	>=dev-python/black-23.1.0[${PYTHON_USEDEP}]
@@ -62,9 +62,15 @@ PATCHES=(
 )
 
 python_test() {
+	local EPYTEST_IGNORE=(
+		# broken with current pydantic
+		tests/inputs/oneof/test_oneof.py
+	)
 	local EPYTEST_DESELECT=(
 		# TODO: ordering issue?
 		"tests/test_inputs.py::test_binary_compatibility[map]"
+		# pydantic
+		tests/inputs/bool/test_bool.py::test_pydantic_no_value
 	)
 
 	local -x PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
