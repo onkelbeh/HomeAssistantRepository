@@ -43,6 +43,6 @@ distutils_enable_tests pytest
 
 src_prepare() {
 	# remove unsupported dynamic-versioning plugin
-	sed 's/setuptools.setup()/setuptools.setup( version = "'${PV}'", )/g' -i setup.py || die
+	sed "s/setuptools.setup()/setuptools.setup( version = \"${PV}\", )/g" -i setup.py || die
 	eapply_user
 }

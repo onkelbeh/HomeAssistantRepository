@@ -21,9 +21,9 @@ src_prepare() {
 	eapply_user
 }
 src_install() {
-	rm ${S}/LICENSE
-	rm ${S}/CHANGELOG.md
-	rm ${S}/README.md
+	rm "${S}/LICENSE"
+	rm "${S}/CHANGELOG.md"
+	rm "${S}/README.md"
 	default
 }
 
