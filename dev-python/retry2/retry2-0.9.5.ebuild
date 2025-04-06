@@ -13,7 +13,7 @@ SRC_URI="https://github.com/eSAMTrade/retry/archive/refs/tags/${PV}.tar.gz -> re
 
 LICENSE="Apache2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	>=dev-python/decorator-3.4.2[${PYTHON_USEDEP}]

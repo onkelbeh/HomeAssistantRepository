@@ -13,7 +13,7 @@ HOMEPAGE="https://github.com/gjohansson-ST/pysmhi https://pypi.org/project/pysmh
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND=">=dev-python/aiohttp-3.9.2[${PYTHON_USEDEP}]"
 BDEPEND=""

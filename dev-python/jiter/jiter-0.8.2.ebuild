@@ -14,7 +14,7 @@ HOMEPAGE="
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 SRC_URI="
 	$(pypi_sdist_url "${PN^}" "${PV}") -> ${P}.tar.gz
 	https://github.com/xavierforestier/jiter/releases/download/v${PV}/jiter-${PV}-crates.tar.xz

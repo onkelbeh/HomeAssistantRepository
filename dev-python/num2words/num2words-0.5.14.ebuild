@@ -15,7 +15,7 @@ HOMEPAGE="
 
 LICENSE="LGPL"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	>=dev-python/docopt-0.6.2[${PYTHON_USEDEP}]

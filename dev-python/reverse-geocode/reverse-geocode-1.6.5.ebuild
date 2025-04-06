@@ -15,7 +15,7 @@ HOMEPAGE="
 PATCHES="${FILESDIR}/${PN}-build-system.patch"
 LICENSE="LGPL"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	>=dev-python/numpy-1.26.4[${PYTHON_USEDEP}]

@@ -15,7 +15,7 @@ HOMEPAGE="
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="azure-key-vault toml yaml"
 RDEPEND="
 	>=dev-python/pydantic-2.7.0[${PYTHON_USEDEP}]

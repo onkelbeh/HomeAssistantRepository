@@ -13,7 +13,7 @@ HOMEPAGE="https://nose.readthedocs.io/en/latest/ https://pypi.org/project/nose/"
 
 LICENSE="LGPL"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND=""
 BDEPEND=""
