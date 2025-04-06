@@ -125,6 +125,7 @@ parse_use_flag_req() {
   echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing use flag dependencies... $use"
   local found_dep=
   for req in $( grep -n "^# homeassistant.components.$use$" "$reqall" ); do
+    echo -e "\n${req}"
     local start_line
     start_line=$( echo "$req" | cut -d: -f1 )
     start_line=$(( start_line + 1 ))
