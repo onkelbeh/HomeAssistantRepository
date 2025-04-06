@@ -20,7 +20,7 @@ SRC_URI="
 	https://github.com/danielgtaylor/python-betterproto/archive/${TAG}.tar.gz
 		-> ${MY_P}.gh.tar.gz
 "
-if [[ ${PKGBUMPING} != ${PVR} ]]; then
+if [[ "${PKGBUMPING}" != "${PVR}" ]]; then
 	# poetry install -E compiler
 	# poetry run python -m tests.generate -v
 	# pack tests/output*

@@ -29,5 +29,4 @@ BDEPEND="
 		dev-python/pydocstyle[${PYTHON_USEDEP}]
 		dev-python/pylint[${PYTHON_USEDEP}]
 	)"
-
 distutils_enable_tests pytest

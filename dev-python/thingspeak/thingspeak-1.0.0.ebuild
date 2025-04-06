@@ -24,7 +24,7 @@ BDEPEND="
 	)"
 
 src_prepare() {
-	sed -i -e '/include = /c\' pyproject.toml || die
+	sed -i -e "/include = /c\\" pyproject.toml || die
 	distutils-r1_src_prepare
 }
 

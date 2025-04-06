@@ -23,7 +23,7 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 src_prepare() {
-	eapply "${FILESDIR}"/${P}-setup-fails.patch
+	eapply "${FILESDIR}/${P}-setup-fails.patch"
 	eapply_user
 
 }
