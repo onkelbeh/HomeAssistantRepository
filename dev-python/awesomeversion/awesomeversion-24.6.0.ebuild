@@ -28,6 +28,6 @@ python_prepare_all() {
 	# include = ["awesomeversion", "awesomeversion.*", "LICENCE.md"]
 	sed -i -e 's:, "LICENCE.md"::' pyproject.toml || die
 	# remove dynamic-versioning
-	sed 's/dynamic = \["version"\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
+	sed "s/dynamic = \\[\"version\"\\]/version = \\\"${PV}\\\"/g" -i pyproject.toml || die
 	distutils-r1_python_prepare_all
 }

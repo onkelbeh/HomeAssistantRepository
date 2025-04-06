@@ -28,7 +28,7 @@ BDEPEND="
 
 src_prepare() {
 	# remove dynamic-versioning
-	sed 's/dynamic = \["readme", "version"\]/version = \"'${PV}'\"/g' -i pyproject.toml || die
+	sed "s/dynamic = \\[\"readme\", \"version\"\\]/version = \\\"${PV}\\\"/g" -i pyproject.toml || die
 	eapply_user
 }
 

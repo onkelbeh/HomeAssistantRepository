@@ -18,7 +18,6 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 RDEPEND="dev-python/pybind11[${PYTHON_USEDEP}]"
 src_unpack() {
-	unpack ${A}
-	echo ${P}
-	mv ${P} pymicro_vad-${PV}
+	unpack "${A}"
+	mv "${P}" "pymicro_vad-${PV}"
 }
