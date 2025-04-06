@@ -21,8 +21,7 @@ src_prepare() {
 }
 
 src_configure() {
-	local emesonargs=(
-		$(meson_use tests)		
-    )
+	local emesonargs
+	mapfile -t emesonargs < <(meson_use tests)
 	meson_src_configure
 }

@@ -24,5 +24,5 @@ distutils_enable_tests pytest
 
 src_prepare() {
 	default
-	cat pyproject.toml | grep -v "LICENSE" | grep -v "README.md" > x && mv x pyproject.toml
+	grep -v "LICENSE" pyproject.toml | grep -v "README.md" > x && mv x pyproject.toml
 }

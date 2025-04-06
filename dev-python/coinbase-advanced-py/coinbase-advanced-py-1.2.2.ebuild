@@ -31,7 +31,7 @@ BDEPEND="
 	)"
 
 src_prepare() {
-	mv ${S}/coinbase ${S}/coinbase-advanced-py
+	mv "${S}/coinbase" "${S}/coinbase-advanced-py"
 	sed 's/packages=find_packages(exclude=("tests",))/packages=find_packages(exclude=["tests","tests.*"])/g' -i setup.py || die
 	eapply "${FILESDIR}"/rename-coinbase.patch
 	eapply_user

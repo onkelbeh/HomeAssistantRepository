@@ -29,7 +29,7 @@ BDEPEND="
 
 src_prepare() {
 	# lots of top level vios:
-	cat pyproject.toml | grep -v "from = " > x
+	grep -v "from = " pyproject.toml > x
 	mv x pyproject.toml
 	eapply_user
 }

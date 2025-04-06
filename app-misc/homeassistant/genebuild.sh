@@ -103,7 +103,7 @@ parse_constraints() {
   echo "# Home Assistant Core dependencies from $f" >> "$1"
   echo "RDEPEND=\"\${RDEPEND}" >> "$1"
 
-  for l in $( grep '^[^#]' "$f" | cut -d, -f1 ); do
+  grep '^[^#]' "$f" | cut -d, -f1 | while IFS= read -r l; do
     echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing main dependencies... $l"
     parse_package "\n\t" "$1" "$l"
   done
@@ -125,6 +125,7 @@ parse_use_flag_req() {
   echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing use flag dependencies... $use"
   local found_dep=
   for req in $( grep -n "^# homeassistant.components.$use$" "$reqall" ); do
+    echo -e "\n${req}"
     local start_line
     start_line=$( echo "$req" | cut -d: -f1 )
     start_line=$(( start_line + 1 ))
@@ -158,7 +159,7 @@ if [ -f "$EBUILD_PATH" ]; then
     echo -e "  \e[0;31m$EBUILD already exists, \e[0m"
     ebuild "$EBUILD_PATH" clean unpack
 else
-    for v in $( ls -rv *.ebuild | grep -v "999.ebuild" ); do
+    for v in $( ls -rv ./*.ebuild ); do
         cp "$v" "$EBUILD_PATH"
         break
     done
@@ -188,7 +189,7 @@ for f in $( find "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_bet
     if [ -s "/tmp/$use_flag.html" ]; then
       echo -ne "                                                                                          \r \e[0;32m*\e[0m Generate metadata.xml($use_flag)...                                   "
       #parse description Ignore anything before '<div class="page-content">' then before '</header>' until '</p>', cleanup html and carriage return
-      description=$( cat "/tmp/$use_flag.html" | sed -z 's/.*<div class="page-content">//g' | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs )
+      description=$( sed -z 's/.*<div class="page-content">//g' "/tmp/$use_flag.html" | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs )
       echo -ne "\n    <flag name=\"$use_flag\">$description</flag>" >> metadata.xml
     fi
   fi
@@ -234,7 +235,7 @@ KEYWORDS="amd64 arm arm64 x86"
 EOF
 echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> "$EBUILD_PATH"
 
-for u in $( grep "\<flag" "metadata.xml" | cut -d\" -f2 ); do
+grep "\<flag" "metadata.xml" | cut -d\" -f2 | while IFS= read -r u; do 
   echo -n " $u" >>"$EBUILD_PATH"
 done
 cat >> "$EBUILD_PATH"<<EOF
@@ -288,7 +289,7 @@ RDEPEND="\${RDEPEND}
 	tesla? ( ~dev-python/teslajsonpy-0.18.3[\${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.9[\${PYTHON_USEDEP}] ~dev-python/python-wink-1.10.5[\${PYTHON_USEDEP}] )
 EOF
-for use in $( grep "IUSE=" "$EBUILD_PATH" | cut -d\" -f2 ); do
+grep "IUSE=" "$EBUILD_PATH" | cut -d\" -f2 | while IFS= read -r use; do
   parse_use_flag_req "$EBUILD_PATH" "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt" "${use/+/}"
 done
 echo "\"" >> "$EBUILD_PATH"

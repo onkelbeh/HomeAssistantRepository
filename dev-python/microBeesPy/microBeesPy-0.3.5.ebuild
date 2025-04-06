@@ -23,7 +23,7 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
 src_install() {
-	rm -rf  ${S}/tests
+	rm -rf  "${S}/tests"
 	if [[ -f Makefile ]] || [[ -f GNUmakefile ]] || [[ -f makefile ]] ; then
 		emake DESTDIR="${D}" install
 	fi

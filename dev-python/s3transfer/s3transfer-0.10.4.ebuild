@@ -27,7 +27,7 @@ distutils_enable_tests pytest
 
 src_prepare() {
 	# do not rely on bundled deps in botocore (sic!)
-	find -name '*.py' -exec sed -i \
+	find . -name '*.py' -exec sed -i \
 		-e 's:from botocore[.]vendored import:import:' \
 		-e 's:from botocore[.]vendored[.]:from :' \
 		{} + || die

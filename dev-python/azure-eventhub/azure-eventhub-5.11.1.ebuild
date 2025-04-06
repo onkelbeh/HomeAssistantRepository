@@ -23,9 +23,9 @@ RDEPEND="
 "
 src_unpack() {
 	default
-	pushd ${WORKDIR}
+	pushd "${WORKDIR}" || die
 	mv "azure-eventhub-${PV}" "azure_eventhub-${PV}"
-	popd
+	popd || die
 }
 
 distutils_enable_tests pytest

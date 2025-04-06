@@ -47,11 +47,8 @@ src_prepare() {
 src_configure() {
 	export GEODATAPATH="/usr/share/${MY_PN}"
 
-	local mycmakeargs=(
-		-DGEOGRAPHICLIB_DOCUMENTATION=$(usex doc ON OFF)
-		-DGEOGRAPHICLIB_LIB_TYPE="SHARED"
-		-DGEOGRAPHICLIB_DATA="${GEODATAPATH}"
-	)
+	local mycmakeargs
+	mycmakeargs=( "-DGEOGRAPHICLIB_DOCUMENTATION=$(usex doc ON OFF)" "-DGEOGRAPHICLIB_LIB_TYPE=SHARED" "-DGEOGRAPHICLIB_DATA=${GEODATAPATH}" )
 	cmake_src_configure
 }
 

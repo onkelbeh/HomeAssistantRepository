@@ -37,7 +37,7 @@ python_prepare_all() {
 	distutils-r1_python_prepare_all
 }
 src_unpack() {
-	unpack ${A}
-	mv ${WORKDIR}/huawei-lte-api-1.10 ${WORKDIR}/huawei-lte-api-1.10.0
+	unpack "${A}"
+	mv "${WORKDIR}/huawei-lte-api-1.10" "${WORKDIR}/huawei-lte-api-1.10.0"
 }
 distutils_enable_tests pytest

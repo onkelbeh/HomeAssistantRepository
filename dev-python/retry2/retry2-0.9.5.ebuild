@@ -29,6 +29,6 @@ BDEPEND="
 src_unpack() {
 	default
 	export PBR_VERSION=${PV}
-	mv ${WORKDIR}/retry-${PV} ${S}
+	mv "${WORKDIR}/retry-${PV}" "${S}"
 }
 distutils_enable_tests pytest
