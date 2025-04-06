@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -17,16 +17,10 @@ KEYWORDS="~amd64"
 RDEPEND="
 	acct-group/node-red
 	acct-user/node-red
+	net-libs/nodejs[npm]
 "
 
 NODEJS_EXTRA_FILES="packages"
-
-src_prepare() {
-	default
-
-	# TODO: remove bcrypt fail to compile
-	rm -rf node_modules/bcrypt || die
-}
 
 src_install() {
 	# Remove jsdoc-nr-template, prune use git to get the version

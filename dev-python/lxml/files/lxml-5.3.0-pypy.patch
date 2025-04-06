@@ -1,16 +1,14 @@
-diff --git a/src/lxml/tests/test_errors.py b/src/lxml/tests/test_errors.py
-index fa735c28..9337bc04 100644
---- a/src/lxml/tests/test_errors.py
-+++ b/src/lxml/tests/test_errors.py
-@@ -10,3 +10,3 @@ from lxml import etree
- 
--from .common_imports import HelperTestCase
-+from .common_imports import HelperTestCase, IS_PYPY
- 
-@@ -24,2 +24,3 @@ class ErrorTestCase(HelperTestCase):
- 
-+    @unittest.skipIf(IS_PYPY, "broken on pypy")
-     def test_element_cyclic_gc_none(self):
+From b6ba59657c8c7e169e8eeb763d85ca6136df3eea Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Micha=C5=82=20G=C3=B3rny?= <mgorny@gentoo.org>
+Date: Fri, 29 Mar 2024 16:22:00 +0100
+Subject: [PATCH] skip tests that are broken on pypy
+
+---
+ src/lxml/tests/test_http_io.py   |  3 ++-
+ src/lxml/tests/test_nsclasses.py |  3 ++-
+ src/lxml/tests/test_objectify.py | 37 ++++++++++++++++++++++++++++++--
+ 3 files changed, 39 insertions(+), 4 deletions(-)
+
 diff --git a/src/lxml/tests/test_http_io.py b/src/lxml/tests/test_http_io.py
 index 8385e393..0b259299 100644
 --- a/src/lxml/tests/test_http_io.py
@@ -25,7 +23,7 @@ index 8385e393..0b259299 100644
 +@unittest.skipIf(IS_PYPY, "broken on pypy")
  class HttpIOTestCase(HelperTestCase):
 diff --git a/src/lxml/tests/test_nsclasses.py b/src/lxml/tests/test_nsclasses.py
-index 750dc1ed..adbec11c 100644
+index 0c33f20c..08540001 100644
 --- a/src/lxml/tests/test_nsclasses.py
 +++ b/src/lxml/tests/test_nsclasses.py
 @@ -8,3 +8,3 @@ import unittest
@@ -38,7 +36,7 @@ index 750dc1ed..adbec11c 100644
 +    @unittest.skipIf(IS_PYPY, "broken on pypy")
      def test_ns_classes(self):
 diff --git a/src/lxml/tests/test_objectify.py b/src/lxml/tests/test_objectify.py
-index 1c8ff47c..326c5316 100644
+index 39fe0098..92c857f8 100644
 --- a/src/lxml/tests/test_objectify.py
 +++ b/src/lxml/tests/test_objectify.py
 @@ -10,3 +10,4 @@ import unittest
@@ -167,9 +165,13 @@ index 1c8ff47c..326c5316 100644
  
 +    @unittest.skipIf(IS_PYPY, "broken on pypy")
      def test_efactory_nested(self):
-@@ -2745,3 +2776,4 @@ def test_suite():
+@@ -2745,3 +2776,5 @@ def test_suite():
      suite.addTests(doctest.DocTestSuite(objectify))
--    suite.addTests([make_doctest('../../../doc/objectify.txt')])
+-    suite.addTests([make_doctest('objectify.txt')])
 +    if not IS_PYPY:
++        suite.addTests([make_doctest('objectify.txt')])
 +        suite.addTests([make_doctest('../../../doc/objectify.txt')])
      return suite
+-- 
+2.46.0
+
