@@ -31,7 +31,7 @@ parse_package() {
   local version=
   IFS='~<>=!['
   for d in $l; do
-    echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing dependencies... $d"
+    echo -ne "\r                                                                                        \r \e[0;32m*\e[0m Parsing dependencies... $d"
     local pos=${#d}
     if [ "${l:$pos:1}" = "[" ]; then
       operator=$( echo "$l" | cut -d] -f2- )
@@ -59,7 +59,7 @@ parse_package() {
         package="dev-python/atomicwrites"
 	;;
       uv)
-        echo -e "\n  >=dev-python/uv-$version" >> "$2"
+        echo -e "\n\t>=dev-python/uv-$version" >> "$2"
         break
         ;;
     esac
@@ -102,11 +102,10 @@ parse_constraints() {
   local f=$2
   echo "# Home Assistant Core dependencies from $f" >> "$1"
   echo "RDEPEND=\"\${RDEPEND}" >> "$1"
-
-  grep '^[^#]' "$f" | cut -d, -f1 | while IFS= read -r l; do
+  while read -r l; do
     echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing main dependencies... $l"
     parse_package "\n\t" "$1" "$l"
-  done
+  done < <( grep '^[^#]' "$f" | cut -d, -f1 | tr ' ' '\n' )
   echo "\"" >> "$1"
 } #parse_constraints
 
@@ -123,9 +122,8 @@ parse_use_flag_req() {
   IFS="
 "
   echo -ne "                                                                                          \r \e[0;32m*\e[0m Parsing use flag dependencies... $use"
-  local found_dep=
-  for req in $( grep -n "^# homeassistant.components.$use$" "$reqall" ); do
-    echo -e "\n${req}"
+  found_dep=
+  while read -r req; do
     local start_line
     start_line=$( echo "$req" | cut -d: -f1 )
     start_line=$(( start_line + 1 ))
@@ -146,8 +144,9 @@ parse_use_flag_req() {
         found="X"
       fi
     done
-  done
+  done < <( grep -n "^# homeassistant.components.$use$" "$reqall" )
   IFS=$OLDIFS
+
   if [ "$found_dep" = "" ]; then
     echo -e ": \e[0;31mno package found\e[0m                                     "
   else
@@ -187,7 +186,7 @@ for f in $( find "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_bet
       wget -q -O "/tmp/$use_flag.html" "https://www.home-assistant.io/integrations/$use_flag/index.html"
     fi
     if [ -s "/tmp/$use_flag.html" ]; then
-      echo -ne "                                                                                          \r \e[0;32m*\e[0m Generate metadata.xml($use_flag)...                                   "
+      echo -ne "\r                                                                                          \r \e[0;32m*\e[0m Generate metadata.xml($use_flag)..."
       #parse description Ignore anything before '<div class="page-content">' then before '</header>' until '</p>', cleanup html and carriage return
       description=$( sed -z 's/.*<div class="page-content">//g' "/tmp/$use_flag.html" | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs )
       echo -ne "\n    <flag name=\"$use_flag\">$description</flag>" >> metadata.xml
@@ -235,7 +234,7 @@ KEYWORDS="amd64 arm arm64 x86"
 EOF
 echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> "$EBUILD_PATH"
 
-grep "\<flag" "metadata.xml" | cut -d\" -f2 | while IFS= read -r u; do 
+grep "\<flag" "metadata.xml" | cut -d\" -f2 | while read -r u; do 
   echo -n " $u" >>"$EBUILD_PATH"
 done
 cat >> "$EBUILD_PATH"<<EOF
@@ -254,9 +253,7 @@ REQUIRED_USE="bluetooth? ( ruuvi_gateway shelly )
 EOF
 echo -e "\n \e[0;32m*\e[0m Parsing main dependencies..."
 pushd "/var/tmp/portage/app-misc/${EBUILD}/work" || exit
-for i in $( find . | grep package_constraints );do
-  parse_constraints "$EBUILD_PATH" "$i" 
-done
+parse_constraints "$EBUILD_PATH" "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION}/homeassistant/package_constraints.txt" 
 echo -e "                                                                                          \r \e[0;32m*\e[0m Parsing main dependencies... \e[0;32mdone\e[0m                                    "
 cat >> "$EBUILD_PATH" <<EOF
 
@@ -289,7 +286,7 @@ RDEPEND="\${RDEPEND}
 	tesla? ( ~dev-python/teslajsonpy-0.18.3[\${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.9[\${PYTHON_USEDEP}] ~dev-python/python-wink-1.10.5[\${PYTHON_USEDEP}] )
 EOF
-grep "IUSE=" "$EBUILD_PATH" | cut -d\" -f2 | while IFS= read -r use; do
+grep "IUSE=" "$EBUILD_PATH" | cut -d\" -f2 | tr ' ' '\n' | while read -r use; do
   parse_use_flag_req "$EBUILD_PATH" "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt" "${use/+/}"
 done
 echo "\"" >> "$EBUILD_PATH"
@@ -330,10 +327,10 @@ src_prepare() {
 	if use test ; then
 		cp --no-preserve=mode --recursive "\${WORKDIR}/core-\${MY_PV}/tests" "\${S}"
 		chmod u+x "\${S}/tests/auth/providers/test_command_line_cmd.sh"
-    fi
-    sed -E -i "s/regex==[^ ]*/regex/g" -i "homeassistant/package_constraints.txt" || die
+	fi
+	sed -E -i "s/regex==[^ ]*/regex/g" -i "homeassistant/package_constraints.txt" || die
 
-    distutils-r1_src_prepare
+	distutils-r1_src_prepare
 }
 INSTALL_DIR="/opt/\${MY_PN}"
 
