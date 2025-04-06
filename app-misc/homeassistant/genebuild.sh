@@ -188,7 +188,7 @@ for f in $( find "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_bet
     if [ -s "/tmp/$use_flag.html" ]; then
       echo -ne "                                                                                          \r \e[0;32m*\e[0m Generate metadata.xml($use_flag)...                                   "
       #parse description Ignore anything before '<div class="page-content">' then before '</header>' until '</p>', cleanup html and carriage return
-      description=$( cat "/tmp/$use_flag.html" | sed -z 's/.*<div class="page-content">//g' | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs )
+      description=$( sed -z 's/.*<div class="page-content">//g' "/tmp/$use_flag.html" | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs )
       echo -ne "\n    <flag name=\"$use_flag\">$description</flag>" >> metadata.xml
     fi
   fi
@@ -234,7 +234,7 @@ KEYWORDS="amd64 arm arm64 x86"
 EOF
 echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> "$EBUILD_PATH"
 
-for u in $( grep "\<flag" "metadata.xml" | cut -d\" -f2 ); do
+grep "\<flag" "metadata.xml" | cut -d\" -f2 | while IFS= read -r u; do 
   echo -n " $u" >>"$EBUILD_PATH"
 done
 cat >> "$EBUILD_PATH"<<EOF
@@ -288,7 +288,7 @@ RDEPEND="\${RDEPEND}
 	tesla? ( ~dev-python/teslajsonpy-0.18.3[\${PYTHON_USEDEP}] )
 	wink? ( ~dev-python/pubnubsub-handler-1.0.9[\${PYTHON_USEDEP}] ~dev-python/python-wink-1.10.5[\${PYTHON_USEDEP}] )
 EOF
-for use in $( grep "IUSE=" "$EBUILD_PATH" | cut -d\" -f2 ); do
+grep "IUSE=" "$EBUILD_PATH" | cut -d\" -f2 | while IFS= read -r use; do
   parse_use_flag_req "$EBUILD_PATH" "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_beta}/requirements_all.txt" "${use/+/}"
 done
 echo "\"" >> "$EBUILD_PATH"
