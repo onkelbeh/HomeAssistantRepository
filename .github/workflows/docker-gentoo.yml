@@ -38,9 +38,17 @@ jobs:
         
     - name: emerge update to python 13
       run: |
-        emerge --jobs=16 -Dnuq --autounmask=y --autounmask-continue=y world
+        emerge --jobs -Dnuq --autounmask=y --autounmask-continue=y world
         
-    - name: emerge homeassistant full :)
+    - name: emerge homeassistant minimal ?
       run: |
-        USE=full emerge --jobs=16 --autounmask=y --autounmask-continue=y -pv virtual/homeassistant
+        USE=minimal emerge --jobs --autounmask=y --autounmask-continue=y -pv virtual/homeassistant
+        
+    - name: emerge homeassistant damn! maybe normal...
+      run: |
+        USE=normal emerge --jobs --autounmask=y --autounmask-continue=y -pv virtual/homeassistant
+        
+    - name: emerge homeassistant full  yeah ;-)
+      run: |
+        USE=full emerge --jobs --autounmask=y --autounmask-continue=y -pv virtual/homeassistant
     
