@@ -35,10 +35,6 @@ jobs:
       run: |
         sudo -u portage git -C /var/db/repos/gentoo pull
         emerge --sync -q
-        ls -l /etc/portage/
-        emerge -pv @system
-        emerge -Cv virtual/man sys-apps/man-pages
-        emerge -pv @system
         
     - name: emerge update to python 13
       run: |
