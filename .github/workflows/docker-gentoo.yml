@@ -16,23 +16,29 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     
-    - name: emerge-sync
-      run: |
-        sudo -u portage git -C /var/db/repos/gentoo pull
-        emerge --sync
-
     - name: Init /etc/portage/
       run: |
         rsync -aHDPSv etc/portage/ /etc/portage/
 
-    - name: Fix Home Assistant repo
+    - name: Setup HomeAssistant repository
       run: |
         mkdir -p /etc/portage/repos.conf/
-        echo -en "[HomeAssistantRepository]\nlocation = " >/etc/portage/repos.conf/HomeAssistantRepository.conf
-        pwd -P >> /etc/portage/repos.conf/HomeAssistantRepository.conf
+        echo -en "[HomeAssistantRepository]\nlocation = " >/etc/portage/repos.conf/homeassistant.conf
+        pwd -P >> /etc/portage/repos.conf/homeassistant.conf
         cat /etc/portage/repos.conf/*.conf
 
-    - name: emerge
+    - name: Steup portage to ~amd64 and python13
       run: |
-        emerge --info
+        sed -i "s/ACCEPT_KEYWORDS="amd64"/ACCEPT_KEYWORDS=\"~amd64\"/g" /etc/portage/make.conf
+        echo -e "PYTHON_TARGETS=python3_13\nPYTHON_SINGLE_TARGET=python3_13" >> PYTHON_SINGLE_TARGET=python3_13
+        
+    - name: emerge-sync & update
+      run: |
+        sudo -u portage git -C /var/db/repos/gentoo pull
+        emerge --sync
+        emerge -Duv --autounmask=y --autounmask-continue=y world
+        
+    - name: emerge home assistant
+      run: |
+        USE=full emerge -pv virtual/homeassistant
     
