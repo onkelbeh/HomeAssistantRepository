@@ -25,7 +25,7 @@ jobs:
         mkdir -p /etc/portage/repos.conf/
         echo -en "[HomeAssistantRepository]\nlocation = " >/etc/portage/repos.conf/homeassistant.conf
         pwd -P >> /etc/portage/repos.conf/homeassistant.conf
-        cat /etc/portage/repos.conf/*.conf
+        cat /var/lib/portage/world
 
     - name: Setup portage to ~amd64 and python13
       run: |
@@ -35,11 +35,11 @@ jobs:
     - name: emerge-sync
       run: |
         sudo -u portage git -C /var/db/repos/gentoo pull
-        emerge --sync
+        emerge --sync -q
         
     - name: emerge update to python 13
       run: |
-        emerge --jobs=4 -Dnuv --autounmask=y --autounmask-continue=y world
+        emerge --jobs=4 -Dnuq --autounmask=y --autounmask-continue=y world
         
     - name: emerge home assistant
       run: |
