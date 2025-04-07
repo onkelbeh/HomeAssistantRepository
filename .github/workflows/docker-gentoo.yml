@@ -36,8 +36,9 @@ jobs:
         sudo -u portage git -C /var/db/repos/gentoo pull
         emerge --sync -q
         ls -l /etc/portage/
-        emerge --jobs=16 -Dnuq --autounmask=y --autounmask-continue=y eselect 
-        eselect profile list        
+        emerge -pv @system
+        emerge -Cv virtual/man sys-apps/man-pages
+        emerge -pv @system
         
     - name: emerge update to python 13
       run: |
