@@ -20,19 +20,19 @@ jobs:
       run: |
         sudo -u portage git -C /var/db/repos/gentoo pull
         emerge --sync
-      
-    - name: Init Home Assistant repo
+
+    - name: Init /etc/portage/
+      run: |
+        rsync -aHDPSv etc/portage/ /etc/portage/
+
+    - name: Fix Home Assistant repo
       run: |
         mkdir -p /etc/portage/repos.conf/
         echo -en "[HomeAssistantRepository]\nlocation = " >/etc/portage/repos.conf/HomeAssistantRepository.conf
         pwd -P >> /etc/portage/repos.conf/HomeAssistantRepository.conf
         cat /etc/portage/repos.conf/*.conf
 
-    - name: /etc/portage/
-      run: |
-        rsync -aHDPSv etc/portage/ /etc/portage/
-
     - name: emerge
       run: |
-        emerge info
+        emerge --info
     
