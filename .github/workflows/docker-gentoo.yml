@@ -30,7 +30,7 @@ jobs:
     - name: Setup portage to ~amd64 and python13
       run: |
         sed -i "s/ACCEPT_KEYWORDS="amd64"/ACCEPT_KEYWORDS=\"~amd64\"/g" /etc/portage/make.conf
-        echo -e "\nPYTHON_TARGETS=python3_13\nPYTHON_SINGLE_TARGET=python3_13" >> /etc/portage/make.conf
+        echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/packae.use/python13.use
         
     - name: emerge-sync
       run: |
@@ -39,9 +39,9 @@ jobs:
         
     - name: emerge update to python 13
       run: |
-        emerge -Dnuv --autounmask=y --autounmask-continue=y world
+        emerge --jobs=4 -Dnuv --autounmask=y --autounmask-continue=y world
         
     - name: emerge home assistant
       run: |
-        USE=full emerge -pv virtual/homeassistant
+        USE=full emerge --jobs=4 -pv virtual/homeassistant
     
