@@ -30,7 +30,7 @@ jobs:
     - name: Setup portage to ~amd64 and python13
       run: |
         sed -i "s/ACCEPT_KEYWORDS="amd64"/ACCEPT_KEYWORDS=\"~amd64\"/g" /etc/portage/make.conf
-        echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/packae.use/python13.use
+        echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
         
     - name: emerge-sync
       run: |
