@@ -43,5 +43,5 @@ jobs:
         
     - name: emerge home assistant
       run: |
-        USE=full emerge --jobs=4 -pv virtual/homeassistant
+        USE=full emerge --jobs=4 --autounmask=y --autounmask-continue=y -pv virtual/homeassistant
     
