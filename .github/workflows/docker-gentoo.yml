@@ -50,9 +50,9 @@ jobs:
     - name: emerge homeassistant damn! maybe normal...
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="-minimal normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --verbose-conflicts virtual/homeassistant
+        USE="-minimal normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write --verbose-conflicts virtual/homeassistant
         
     - name: emerge homeassistant full  yeah ;-)
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --verbose-conflicts virtual/homeassistant 
+        USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write --verbose-conflicts virtual/homeassistant 
