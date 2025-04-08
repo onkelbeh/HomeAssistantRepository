@@ -30,6 +30,7 @@ jobs:
       run: |
         sed -i "s/ACCEPT_KEYWORDS="amd64"/ACCEPT_KEYWORDS=\"~amd64\"/g" /etc/portage/make.conf
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
+        cat /etc/portage/make.conf
         
     - name: emerge-sync
       run: |
@@ -43,14 +44,14 @@ jobs:
     - name: emerge homeassistant minimal ?
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y virtual/homeassistant
+        USE="minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write --verbose-conflicts virtual/homeassistant
         
     - name: emerge homeassistant damn! maybe normal...
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="-minimal normal -full" emerge --jobs --autounmask=y --autounmask-continue=y virtual/homeassistant
+        USE="-minimal normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --verbose-conflicts virtual/homeassistant
         
     - name: emerge homeassistant full  yeah ;-)
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y virtual/homeassistant 
+        USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --verbose-conflicts virtual/homeassistant 
