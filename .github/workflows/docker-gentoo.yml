@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Gentoo build homeassisant
 
 on:   
   workflow_dispatch:
@@ -42,13 +42,15 @@ jobs:
         
     - name: emerge homeassistant minimal ?
       run: |
-        USE=minimal emerge --jobs --autounmask=y --autounmask-continue=y -pv virtual/homeassistant
+        echo -n "" > /etc/portage/package.use/zzz.use
+        USE="minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y -pv virtual/homeassistant
         
     - name: emerge homeassistant damn! maybe normal...
       run: |
-        USE=normal emerge --jobs --autounmask=y --autounmask-continue=y -pv virtual/homeassistant
+        echo -n "" > /etc/portage/package.use/zzz.use
+        USE="-minimal normal -full" emerge --jobs --autounmask=y --autounmask-continue=y -pv virtual/homeassistant
         
     - name: emerge homeassistant full  yeah ;-)
       run: |
-        USE=full emerge --jobs --autounmask=y --autounmask-continue=y -pv virtual/homeassistant
-    
+        echo -n "" > /etc/portage/package.use/zzz.use
+        USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y -pv virtual/homeassistant 
