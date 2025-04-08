@@ -53,9 +53,9 @@ jobs:
         
     - name: Free up space
       run: |
-        rm /var/cache/distfiles/*
-        rm /var/cache/binpkgs/*
-        rm -rf /var/tmp/portage/*
+        rm /var/cache/distfiles/* || true 
+        rm /var/cache/binpkgs/* || true 
+        rm -rf /var/tmp/portage/* || true
 
     - name: Save cache
       uses: actions/cache/save@v4
