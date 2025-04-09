@@ -22,11 +22,6 @@ jobs:
     #  with:
     #    path: /
     #    key: emerge
-        
-    - name: Init /etc/portage/
-    #  if: steps.cache-emerge.outputs.cache-hit != 'true'
-      run: |
-        rsync -aHDPSv etc/portage/ /etc/portage/
 
     - name: Setup HomeAssistant repository
     #  if: steps.cache-emerge.outputs.cache-hit != 'true'
