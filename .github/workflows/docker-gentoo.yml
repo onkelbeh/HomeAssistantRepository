@@ -66,7 +66,7 @@ jobs:
     - name: emerge homeassistant minimal ?
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="-test minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write --verbose-conflicts --backtrack=100 virtual/homeassistant
+        USE="-test minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write --verbose-conflicts --backtrack=100 virtual/homeassistant -Dnu
         
     - name: emerge homeassistant damn! maybe normal...
       run: |
