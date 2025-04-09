@@ -1,4 +1,4 @@
-name: Gentoo build homeassisant
+name: Gentoo build homeassistant
 
 on:   
   workflow_dispatch:
@@ -29,13 +29,16 @@ jobs:
         mkdir -p /etc/portage/repos.conf/
         echo -en "[HomeAssistantRepository]\nlocation = " >/etc/portage/repos.conf/homeassistant.conf
         pwd -P >> /etc/portage/repos.conf/homeassistant.conf
+        
 
     - name: Setup portage to ~amd64 and python13
     #  if: steps.cache-emerge.outputs.cache-hit != 'true'
       run: |
         echo "ACCEPT_KEYWORDS=\"~amd64\"" >> /etc/portage/make.conf
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
+        echo -e "/etc/portage/make.conf\n====================="
         cat /etc/portage/make.conf
+        ls -r /etc/portage
         
     - name: emerge-sync
       run: |
