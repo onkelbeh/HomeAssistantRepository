@@ -18,8 +18,10 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
-	>=dev-python/request-2.21.0[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.21.0[${PYTHON_USEDEP}]
 "
 BDEPEND=""
-
+src_install() {
+	rm -r "${S}/tests"
+}
 distutils_enable_tests pytest

@@ -42,4 +42,10 @@ python_test() {
 	py.test -v -v || die
 }
 
+src_install() {
+	rm "${S}/tests"
+	default
+}
+
+
 distutils_enable_tests pytest
