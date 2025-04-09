@@ -16,27 +16,27 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Read cache
-      id: cache-emerge
-      uses: actions/cache/restore@v4
-      with:
-        path: /
-        key: emerge
+    #- name: Read cache
+    #  id: cache-emerge
+    #  uses: actions/cache/restore@v4
+    #  with:
+    #    path: /
+    #    key: emerge
         
     - name: Init /etc/portage/
-      if: steps.cache-emerge.outputs.cache-hit != 'true'
+    #  if: steps.cache-emerge.outputs.cache-hit != 'true'
       run: |
         rsync -aHDPSv etc/portage/ /etc/portage/
 
     - name: Setup HomeAssistant repository
-      if: steps.cache-emerge.outputs.cache-hit != 'true'
+    #  if: steps.cache-emerge.outputs.cache-hit != 'true'
       run: |
         mkdir -p /etc/portage/repos.conf/
         echo -en "[HomeAssistantRepository]\nlocation = " >/etc/portage/repos.conf/homeassistant.conf
         pwd -P >> /etc/portage/repos.conf/homeassistant.conf
 
     - name: Setup portage to ~amd64 and python13
-      if: steps.cache-emerge.outputs.cache-hit != 'true'
+    #  if: steps.cache-emerge.outputs.cache-hit != 'true'
       run: |
         echo "ACCEPT_KEYWORDS=\"~amd64\"" >> /etc/portage/make.conf
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
@@ -47,9 +47,9 @@ jobs:
         sudo -u portage git -C /var/db/repos/gentoo pull
         emerge --sync -q
         
-    - name: emerge update to python 13
-      run: |
-        emerge --jobs -Dnuq --autounmask=y --autounmask-continue=y world
+    #- name: emerge update to python 13
+    #  run: |
+    #    emerge --jobs -Dnuq --autounmask=y --autounmask-continue=y world
         
     - name: Free up space
       run: |
@@ -57,12 +57,12 @@ jobs:
         rm /var/cache/binpkgs/* || true 
         rm -rf /var/tmp/portage/* || true
 
-    - name: Save cache
-      uses: actions/cache/save@v4
-      id: cache-emerge-store
-      with:
-        path: /
-        key: emerge
+    #- name: Save cache
+    #  uses: actions/cache/save@v4
+    #  id: cache-emerge-store
+    #  with:
+    #    path: /
+    #    key: emerge
       
     - name: emerge homeassistant minimal ?
       run: |
