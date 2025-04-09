@@ -16,6 +16,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: Init /etc/portage/      
+      run: |
+        rsync -aHDPSv etc/portage/ /etc/portage/
+
     #- name: Read cache
     #  id: cache-emerge
     #  uses: actions/cache/restore@v4
