@@ -38,7 +38,7 @@ jobs:
     - name: Setup portage to ~amd64 and python13
     #  if: steps.cache-emerge.outputs.cache-hit != 'true'
       run: |
-        echo -e "ACCEPT_KEYWORDS=\"~amd64\"\nACCEPT__LICENCE=\"*\"" >> /etc/portage/make.conf
+        echo -e "ACCEPT_KEYWORDS=\"~amd64\"\nACCEPT_LICENCE=\"*\"" >> /etc/portage/make.conf
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
         
     - name: emerge-sync
