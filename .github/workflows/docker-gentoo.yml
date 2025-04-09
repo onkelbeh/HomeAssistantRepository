@@ -68,7 +68,8 @@ jobs:
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="-test minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write --verbose-conflicts --backtrack=100 virtual/homeassistant -Dnu || true
-        test -e /etc/portage/._cfg0000_package.unmask && cat /etc/portage/._cfg0000_package.unmask  >> /etc/portage/package.unmask 
+        test -e /etc/portage/._cfg0000_package.unmask && cat /etc/portage/._cfg0000_package.unmask  >> /etc/portage/package.unmask && rm /etc/portage/._cfg0000_package.unmask
+        dispatch-conf
         
     - name: emerge homeassistant damn! maybe normal...
       run: |
