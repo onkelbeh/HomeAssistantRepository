@@ -40,6 +40,7 @@ jobs:
       run: |
         echo -e "ACCEPT_KEYWORDS=\"~amd64\"\nACCEPT_LICENCE=\"*\"" >> /etc/portage/make.conf
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
+        echo "*/* *" >> /etc/portage/package.license
         
     - name: emerge-sync
       run: |
