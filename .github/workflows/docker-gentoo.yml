@@ -47,6 +47,9 @@ jobs:
         sudo -u portage git -C /var/db/repos/gentoo pull
         emerge --sync -q
         
+    - name : Cleanup
+      run: emerge --depclean -v app-eselect/eselect-repository sys-apps/pkgcore dev-util/pkgcheck 
+        
     #- name: emerge update to python 13
     #  run: |
     #    emerge --jobs -Dnuq --autounmask=y --autounmask-continue=y world
@@ -67,18 +70,18 @@ jobs:
     - name: emerge homeassistant minimal ?
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant
+        USE="python_targets_python3_13 minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant
         test -e /etc/portage/._cfg0000_package.unmask && cat /etc/portage/._cfg0000_package.unmask > /etc/portage/package.unmask && rm /etc/portage/._cfg0000_package.unmask
         test -e /etc/portage/package.use/._cfg0000_zzz.use && cat /etc/portage/package.use/._cfg0000_zzz.use > /etc/portage/package.use/zzz.use && rm /etc/portage/package.use/._cfg0000_zzz.use
         dispatch-conf
-        USE="minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant
+        USE="python_targets_python3_13 minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant
         
     - name: emerge homeassistant damn! maybe normal...
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="-test -minimal normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write --verbose-conflicts virtual/homeassistant
+        USE="python_targets_python3_13 -test -minimal normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write --verbose-conflicts virtual/homeassistant
         
     - name: emerge homeassistant full  yeah ;-)
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="-test -minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write --verbose-conflicts virtual/homeassistant 
+        USE="python_targets_python3_13 -test -minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write --verbose-conflicts virtual/homeassistant 
