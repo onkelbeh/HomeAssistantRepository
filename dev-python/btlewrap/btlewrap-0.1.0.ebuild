@@ -14,7 +14,10 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
-
+RDEPEND="
+	dev-python/bluepy[${PYTHON_USEDEP}]
+	dev-python/pygatt[${PYTHON_USEDEP}]
+"
 DOCS="README.rst"
 
 src_prepare() {
