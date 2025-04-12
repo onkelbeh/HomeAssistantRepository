@@ -49,10 +49,9 @@ jobs:
         
     - name : Cleanup
       run: |
-        USE="-python_targets_python3_12 python_targets_python3_13 -pam" emerge --oneshot  app-admin/sudo net-misc/openssh -qnD --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100
-        emerge --depclean -q
-        USE="-python_targets_python3_12 python_targets_python3_13" emerge --oneshot sys-apps/portage app-portage/gemato dev-python/requests dev-python/urllib3 dev-python/pysocks dev-python/idna dev-python/charset-normalizer dev-python/certifi dev-python/jinja2 -qnD --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100
-        emerge --depclean -v app-eselect/eselect-repository sys-apps/pkgcore dev-util/pkgcheck dev-python/requests dev-python/urllib3 dev-python/pysocks dev-python/idna dev-python/charset-normalizer dev-python/certifi
+        USE="-python_targets_python3_12 python_targets_python3_13 -pam" emerge --oneshot  app-admin/sudo net-misc/openssh sys-libs/pam sys-auth/pambase sys-apps/portage app-portage/gemato dev-python/requests dev-python/urllib3 dev-python/pysocks dev-python/idna dev-python/charset-normalizer dev-python/certifi dev-python/jinja2 -vnD --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100
+        emerge --depclean -v
+        emerge --depclean -v app-eselect/eselect-repository sys-apps/pkgcore dev-util/pkgcheck dev-python/requests dev-python/urllib3 dev-python/pysocks dev-python/idna dev-python/charset-normalizer dev-python/certifi 
         
     #- name: emerge update to python 13
     #  run: |
