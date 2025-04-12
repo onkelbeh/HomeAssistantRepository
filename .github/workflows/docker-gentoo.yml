@@ -51,7 +51,7 @@ jobs:
       run: |
         emerge --jobs -q eix
         eix-update
-        USE="python_targets_python3_13 -pam" emerge --oneshot `eix -i# --use python_targets_python3_12` --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -v
+        USE="python_targets_python3_13 -pam" emerge --oneshot `eix -I# --use python_targets_python3_12` --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -v
         
     #- name: emerge update to python 13
     #  run: |
