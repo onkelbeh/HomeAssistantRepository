@@ -76,13 +76,17 @@ jobs:
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -q || true
         for log in $( find /var/tmp/portage/ | grep build.log ); do cat $log; done
+        USE="minimal -normal -full" emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -v
     - name: emerge homeassistant damn! maybe normal...
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="-minimal normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -q || true
         for log in $( find /var/tmp/portage/ | grep build.log ); do cat $log; done
+        USE="-minimal normal -full" emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -v
+                
     - name: emerge homeassistant full yeah ;-)
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -q || true
         for log in $( find /var/tmp/portage/ | grep build.log ); do cat $log; done
+        USE="-minimal -normal full" emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -v
