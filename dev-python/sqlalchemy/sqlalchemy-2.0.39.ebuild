@@ -53,7 +53,8 @@ python_test() {
 		# warning tests are unreliable
 		test/base/test_warnings.py
 	)
-	local sqlite_version=$(sqlite3 --version | cut -d' ' -f1)
+	local sqlite_version
+	sqlite_version=$(sqlite3 --version | cut -d' ' -f1)
 	case ${EPYTHON} in
 		pypy3.11)
 			EPYTEST_DESELECT+=(
