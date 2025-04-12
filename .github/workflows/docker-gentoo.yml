@@ -72,11 +72,11 @@ jobs:
     - name: emerge homeassistant minimal ?
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="python_targets_python3_13 minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant --new-use --deep
+        USE="python_targets_python3_13 minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant --newuse --deep
         test -e /etc/portage/._cfg0000_package.unmask && cat /etc/portage/._cfg0000_package.unmask > /etc/portage/package.unmask && rm /etc/portage/._cfg0000_package.unmask
         test -e /etc/portage/package.use/._cfg0000_zzz.use && cat /etc/portage/package.use/._cfg0000_zzz.use > /etc/portage/package.use/zzz.use && rm /etc/portage/package.use/._cfg0000_zzz.use
         dispatch-conf
-        USE="python_targets_python3_13 minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant --new-use --deep
+        USE="python_targets_python3_13 minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant --newuse --deep
         
     - name: emerge homeassistant damn! maybe normal...
       run: |
