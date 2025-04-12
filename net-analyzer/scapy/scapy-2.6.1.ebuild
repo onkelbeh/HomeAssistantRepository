@@ -74,6 +74,5 @@ python_test() {
 src_install() {
 	distutils-r1_src_install
 
-	dodoc -r "doc/${PN}/*"
 	DISABLE_AUTOFORMATTING=1 readme.gentoo_create_doc
 }

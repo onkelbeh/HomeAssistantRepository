@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
-
+RDEPENDS="dev-lang/nasm"
 DOCS="README.rst"
 
 distutils_enable_sphinx doc \
