@@ -48,7 +48,7 @@ jobs:
         emerge --sync -q
         
     - name : Cleanup
-      run: emerge --depclean -v app-eselect/eselect-repository sys-apps/pkgcore dev-util/pkgcheck 
+      run: emerge --depclean -v app-eselect/eselect-repository sys-apps/pkgcore dev-util/pkgcheck app-portage/gemato dev-python/requests dev-python/urllib3 dev-python/pysocks dev-python/idna dev-python/charset-normalizer dev-python/certifi
         
     #- name: emerge update to python 13
     #  run: |
@@ -70,11 +70,11 @@ jobs:
     - name: emerge homeassistant minimal ?
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        USE="python_targets_python3_13 minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant
+        USE="python_targets_python3_13 minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant --new-use --deep
         test -e /etc/portage/._cfg0000_package.unmask && cat /etc/portage/._cfg0000_package.unmask > /etc/portage/package.unmask && rm /etc/portage/._cfg0000_package.unmask
         test -e /etc/portage/package.use/._cfg0000_zzz.use && cat /etc/portage/package.use/._cfg0000_zzz.use > /etc/portage/package.use/zzz.use && rm /etc/portage/package.use/._cfg0000_zzz.use
         dispatch-conf
-        USE="python_targets_python3_13 minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant
+        USE="python_targets_python3_13 minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant --new-use --deep
         
     - name: emerge homeassistant damn! maybe normal...
       run: |
