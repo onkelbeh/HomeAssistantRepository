@@ -75,12 +75,14 @@ jobs:
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -q
+        for log in $( find /var/tmp/portage/ | grep build.log ); do cat $log; done
     - name: emerge homeassistant damn! maybe normal...
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="-minimal normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -q
-        
+        for log in $( find /var/tmp/portage/ | grep build.log ); do cat $log; done
     - name: emerge homeassistant full yeah ;-)
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -q
+        for log in $( find /var/tmp/portage/ | grep build.log ); do cat $log; done
