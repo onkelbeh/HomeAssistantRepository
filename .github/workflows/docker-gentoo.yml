@@ -50,6 +50,7 @@ jobs:
     - name : Cleanup
       run: |
         emerge --jobs -q eix
+        emerge --depclean -q dev-util/pkgcheck sys-apps/pkgcore app-eselect/eselect-repository
         eix-update
         USE="python_targets_python3_13 -python_targets_python3_12" emerge --oneshot `eix -I# --use python_targets_python3_12` --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -v
         
