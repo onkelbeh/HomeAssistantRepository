@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,7 +6,7 @@ EAPI=8
 CARGO_OPTIONAL=yes
 DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=maturin
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{10..13} pypy3 pypy3_11 )
 PYTHON_REQ_USE="threads(+)"
 
 CRATES="
@@ -65,10 +65,10 @@ SRC_URI+="
 LICENSE="|| ( Apache-2.0 BSD ) PSF-2"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD MIT Unicode-DFS-2016
+	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD MIT Unicode-3.0
 "
 SLOT="0"
-KEYWORDS="amd64 arm arm64 x86"
+KEYWORDS="amd64 arm arm64 ~loong ~mips ppc ppc64 ~riscv ~s390 sparc x86"
 
 RDEPEND="
 	>=dev-libs/openssl-1.0.2o-r6:0=
@@ -79,9 +79,9 @@ RDEPEND="
 DEPEND="
 	${RDEPEND}
 "
-# XXX: Drop explicit >=virtual/rust-1.56.0 dep once that's the minimum in cargo.eclass
-# and replace it with ${RUST_DEPEND}
+
 BDEPEND="
+	${RUST_DEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	>=virtual/rust-1.56.0
 	test? (
@@ -106,7 +106,7 @@ src_unpack() {
 }
 
 src_prepare() {
-	default
+	distutils-r1_src_prepare
 
 	sed -i -e 's:--benchmark-disable::' pyproject.toml || die
 
@@ -123,8 +123,6 @@ src_prepare() {
 
 python_configure_all() {
 	filter-lto # bug #903908
-
-	export UNSAFE_PYO3_SKIP_VERSION_CHECK=1
 }
 
 python_test() {
