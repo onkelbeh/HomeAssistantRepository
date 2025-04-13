@@ -83,7 +83,6 @@ DEPEND="
 BDEPEND="
 	${RUST_DEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
-	>=virtual/rust-1.56.0
 	test? (
 		dev-python/certifi[${PYTHON_USEDEP}]
 		>=dev-python/hypothesis-1.11.4[${PYTHON_USEDEP}]
