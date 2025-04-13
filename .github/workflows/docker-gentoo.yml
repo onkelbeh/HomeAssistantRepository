@@ -51,7 +51,7 @@ jobs:
         rm /var/cache/binpkgs/* || true 
         rm -rf /var/tmp/portage/* || true
                 
-    - name: Check depencies for homeassistant[full] are all there !
+    - name: Check that dependencies for homeassistant[full] are all there !
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -vp
