@@ -53,11 +53,13 @@ jobs:
                 
     - name: Check that dependencies for homeassistant[full] are all there !
       run: |
+        rm /etc/portage/package.use/._cfg0000_zzz.use || true
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -vp || true
         
     - name: emerge homeassistant[minimal] first...
       run: |
+        rm /etc/portage/package.use/._cfg0000_zzz.use || true
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="minimal -normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -q || true
         for log in $( find /var/tmp/portage/ | grep build.log ); do echo -e "$log\n======"; cat $log; done
@@ -72,6 +74,7 @@ jobs:
         
     - name: emerge then homeassistant[normal]
       run: |
+        rm /etc/portage/package.use/._cfg0000_zzz.use || true
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="-minimal normal -full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -q || true
         for log in $( find /var/tmp/portage/ | grep build.log ); do echo -e "$log\n======"; cat $log; done
@@ -86,6 +89,7 @@ jobs:
                 
     - name: Finally try an emerge homeassistant[full] !
       run: |
+        rm /etc/portage/package.use/._cfg0000_zzz.use || true
         echo -n "" > /etc/portage/package.use/zzz.use
         USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -q || true
         for log in $( find /var/tmp/portage/ | grep build.log ); do echo -e "$log\n======"; cat $log; done
