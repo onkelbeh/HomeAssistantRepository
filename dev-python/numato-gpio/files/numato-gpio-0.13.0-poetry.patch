@@ -1,0 +1,12 @@
+--- a/pyproject.toml  2024-03-12 22:25:14.485209700 +0100
++++ b/pyproject.toml  2025-04-14 17:03:21.324469943 +0200
+@@ -1,6 +1,7 @@
+-[tool.poetry]
++[project]
+ name = "numato-gpio"
+ version = "0.13.0"
++[tool.poetry]
+ description = "Python API for Numato GPIO Expanders"
+ authors = ["Henning Claßen <code@clssn.de>"]
+ license = "MIT License"
+

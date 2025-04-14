@@ -17,5 +17,5 @@ KEYWORDS="amd64 arm arm64 x86"
 # Need geocoding service to test
 RESTRICT="test"
 
-RDEPEND=">=sci-geosciences/GeographicLib-1.52[python,${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/geographiclib-1.52[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}"
