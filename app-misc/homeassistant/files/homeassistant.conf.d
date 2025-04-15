@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2025 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 # /etc/conf.d/homeassistant: configuration for /etc/init.d/homeassistant
@@ -7,3 +7,6 @@
 # a description of the possible switches.
 #
 HASS_OPTS=""
+HASS_TOKEN=""
+HASS_SERVER="http://localhost:8123"
+

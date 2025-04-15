@@ -365,6 +365,9 @@ python_install_all() {
 	if use mqtt ; then
 		sed -i -e 's/# need mosquitto/need mosquitto/g' "\${D}/etc/init.d/\${MY_PN}" || die
 	fi
+	if use cli ; then
+		echo -e "stop() {\n\tebegin Stoping homeassistant\n\thass-cli --token \\\${HASS_TOKEN} -s \\\${HASS_SERVER} service call homeassistant.stop\n\tsleep .5\n\tstart-stop-daemon -K \\\$command --pidfile \\\$pidfile\n\teend\n}" >> "\${D}/etc/init.d/\${MY_PN}"
+	fi
 	insinto /etc/logrotate.d
 	newins "\${FILESDIR}/\${MY_PN}.logrotate" "\${MY_PN}"
 	readme.gentoo_create_doc
