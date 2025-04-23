@@ -32,8 +32,7 @@ RDEPEND=">=dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
 	>=dev-python/jsonpath-ng-1.5.1[${PYTHON_USEDEP}]
 	>=dev-python/netdisco-3.0.0[${PYTHON_USEDEP}]
 	dev-python/regex[${PYTHON_USEDEP}]
-	>=dev-python/ruamel-yaml-0.17[${PYTHON_USEDEP}]
-	<dev-python/ruamel-yaml-0.18[${PYTHON_USEDEP}]
+	dev-python/ruamel-yaml[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.28.0[${PYTHON_USEDEP}]
 	>=dev-python/tabulate-0.8.3[${PYTHON_USEDEP}]"
 BDEPEND="
