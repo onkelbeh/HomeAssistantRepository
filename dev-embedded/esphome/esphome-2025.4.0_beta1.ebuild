@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -32,39 +32,49 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="
-	server? ( acct-group/${PN} acct-user/${PN} )
-	$(python_gen_cond_dep '
-		~dev-python/cryptography-42.0.2[${PYTHON_USEDEP}]
-		~dev-python/voluptuous-0.14.1[${PYTHON_USEDEP}]
-		~dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
-		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
-		~dev-python/colorama-0.4.6[${PYTHON_USEDEP}]
-		server? ( ~dev-python/tornado-6.4[${PYTHON_USEDEP}] )
-		~dev-python/tzlocal-5.2[${PYTHON_USEDEP}]
-		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
-		~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
-		~dev-embedded/platformio-6.1.13[${PYTHON_SINGLE_USEDEP}]
-		~dev-embedded/esptool-4.7.0[${PYTHON_SINGLE_USEDEP}]
-		~dev-python/click-8.1.7[${PYTHON_USEDEP}]
-		~dev-embedded/esphome-dashboard-20231107.0[${PYTHON_USEDEP}]
-		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
-		dev-python/zeroconf[${PYTHON_USEDEP}]
-		~dev-python/python-magic-0.4.27[${PYTHON_USEDEP}]
-		~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
-		>=dev-python/pyparsing-3.0[${PYTHON_USEDEP}]
-		>=dev-python/argcomplete-2.0.0[${PYTHON_USEDEP}]
-	')"
+	$( python_gen_cond_dep '
+	server? (
+		acct-group/esphome acct-user/esphome
+		~dev-python/tornado-6.4.2[${PYTHON_USEDEP}]
+	)
+	>=dev-python/cryptography-44[${PYTHON_USEDEP}]
+	~dev-python/voluptuous-0.15.2[${PYTHON_USEDEP}]
+	~dev-python/pyyaml-6.0.2[${PYTHON_USEDEP}]
+	dev-python/paho-mqtt[${PYTHON_USEDEP}]
+	~dev-python/colorama-0.4.6[${PYTHON_USEDEP}]
+	>=dev-python/icmplib-3[${PYTHON_USEDEP}]
+	~dev-python/tzlocal-5.3.1[${PYTHON_USEDEP}]
+	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
+	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
+	~dev-embedded/platformio-6.1.18[${PYTHON_SINGLE_USEDEP}]
+	~dev-embedded/esptool-4.8.1[${PYTHON_SINGLE_USEDEP}]
+	>=dev-python/click-8.1.7[${PYTHON_USEDEP}]
+	~dev-embedded/esphome-dashboard-20250212.0[${PYTHON_USEDEP}]
+	~dev-python/aioesphomeapi-29.9.0[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.146.0[${PYTHON_USEDEP}]
+	~dev-python/puremagic-1.28[${PYTHON_USEDEP}]
+	~dev-python/ruamel-yaml-0.18.10[${PYTHON_USEDEP}]
+	~dev-python/esphome-glyphsets-0.2.0[${PYTHON_USEDEP}]
+	>=dev-python/pillow-10.4.0[${PYTHON_USEDEP}]
+	~dev-python/freetype-py-2.5.1[${PYTHON_USEDEP}]
+	~dev-python/kconfiglib-13.7.1[${PYTHON_USEDEP}]
+	>=dev-python/pyparsing-3.0[${PYTHON_USEDEP}]
+	>=dev-python/argcomplete-2.0.0[${PYTHON_USEDEP}]
+	~media-gfx/cairosvg-2.7.1[${PYTHON_USEDEP}]
+	' )
+"
 
-BDEPEND="$(python_gen_cond_dep '
+BDEPEND="
+	$( python_gen_cond_dep '
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/pytest-mock[${PYTHON_USEDEP}]
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/asyncmock[${PYTHON_USEDEP}]
 		dev-python/hypothesis[${PYTHON_USEDEP}]
 	)
-	')"
+	' )
+"
 
 DISABLE_AUTOFORMATTING=1
 DOC_CONTENTS="
@@ -74,15 +84,6 @@ dashboard command line arguments are configured in: /etc/conf.d/${PN}
 logging is to: /var/log/${PN}/{dashboard,warnings}.log
 support at https://git.edevau.net/onkelbeh/HomeAssistantRepository
 "
-
-src_prepare() {
-	sed "/aioesphomeapi==/c\aioesphomeapi" -i requirements.txt || die
-	sed "/click==/c\click" -i requirements.txt || die
-	sed "/colorama==/c\colorama" -i requirements.txt || die
-	sed "/zeroconf==/c\zeroconf" -i requirements.txt || die
-	sed "/voluptuous==/c\voluptuous" -i requirements.txt || die
-	eapply_user
-}
 
 python_install_all() {
 	dodoc ${DOCS}
