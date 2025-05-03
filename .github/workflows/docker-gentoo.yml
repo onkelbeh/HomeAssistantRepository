@@ -13,10 +13,10 @@ jobs:
       image: ghcr.io/antonfischl1980/gentoo-ci:main
       options: --privileged
     steps:
-    
+    # synchronys my own git
     - name: Checkout code
       uses: actions/checkout@v4
-
+    # 
     - name: Init /etc/portage/      
       run: |
         rsync -aHDPSv etc/portage/ /etc/portage/
@@ -72,6 +72,22 @@ jobs:
         rm /var/cache/binpkgs/* || true 
         rm -rf /var/tmp/portage/* || true
         
+    - name: emerge dev-embbedded/esphome and ap-misc/zigbee2mqqt...
+      run: |
+        rm /etc/portage/package.use/._cfg0000_zzz.use || true
+        echo -n "" > /etc/portage/package.use/zzz.use
+        emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -q dev-embedded/esphome app-misc:zigbee2mqtt || true
+        for log in $( find /var/tmp/portage/ | grep build.log ); do echo -e "$log\n======"; cat $log; done
+        for log in $( find /etc/portage/ -type f ); do echo -e "$log\n======"; cat $log; done
+        emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -v dev-embedded/esphome app-misc:zigbee2mqtt 
+        
+    - name: Free up some space
+      run: |
+        rm /var/cache/distfiles/* || true 
+        rm /var/cache/binpkgs/* || true 
+        rm -rf /var/tmp/portage/* || true
+
+    # Last build normal features
     - name: emerge then homeassistant[normal]
       run: |
         rm /etc/portage/package.use/._cfg0000_zzz.use || true
@@ -86,7 +102,8 @@ jobs:
         rm /var/cache/distfiles/* || true 
         rm /var/cache/binpkgs/* || true 
         rm -rf /var/tmp/portage/* || true
-                
+    
+    # Last build full features
     - name: Finally try an emerge homeassistant[full] !
       run: |
         rm /etc/portage/package.use/._cfg0000_zzz.use || true
