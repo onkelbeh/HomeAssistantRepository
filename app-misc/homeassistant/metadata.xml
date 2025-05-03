@@ -57,7 +57,7 @@
     <flag name="anthropic">The Anthropic integrations adds a conversation agent powered by Anthropic, such as Claude 3.5 Sonnet, in Home Assistant.</flag>
     <flag name="aosmith">The A. O. Smith integration allows you to control a compatible A. O. Smith iCOMM-enabled water heater from Home Assistant.</flag>
     <flag name="apache_kafka">The Apache Kafka integration sends all state changes to aApache Kafka topic.</flag>
-    <flag name="apcupsd">apcupsd status information can be integrated into Home Assistant when the Network Information Server (NIS) is configured on the APC device.</flag>
+    <flag name="apcupsd">The APC UPS Daemon integration is used to integrate with UPS devices from APC when the Network Information Server (apcupsd) is configured on the APC devices. Use case: When the Notify integration is set up in Home Assistant, you can send notifications. For example, when the UPS switches to battery power, or when the battery level drops low. You can also use it to track the UPS load.</flag>
     <flag name="apple_tv">The Apple TV integration allows you to control an Apple TV (any generation).</flag>
     <flag name="apprise">The Apprise service is an all-in-one solution to open up Home Assistant to just about every Notification platform (such as Amazon SNS, Discord, Telegram, Slack, MSTeams, Twilio, etc.)</flag>
     <flag name="aprilaire">The AprilAire integration allows you to control an AprilAire thermostat.</flag>
@@ -112,7 +112,7 @@
     <flag name="bluetooth_tracker">This tracker discovers new devices on boot and tracks Bluetooth devices periodically based on interval_seconds value. It is not required to pair the devices with each other! Devices discovered are stored with ‘bt_’ as the prefix for device MAC addresses in known_devices.yaml.</flag>
     <flag name="bmw_connected_drive">The BMW Connected Drive integration lets you retrieve data of your BMW or MINI vehicle from the MyBMW portal (previously BMW Connected Drive).</flag>
     <flag name="bond">The Bond integration allows you to control appliances through your Bond Bridge. Duplicates your RF remote control.</flag>
-    <flag name="bosch_alarm">The Bosch Alarm Panel integration allows you to connect your Bosch Alarm Panel to Home Assistant to control and monitor your Bosch Alarm Panel.</flag>
+    <flag name="bosch_alarm">The Bosch Alarm integration allows you to connect your Bosch Alarm Panel to Home Assistant to control and monitor your Bosch Alarm Panel.</flag>
     <flag name="bosch_shc">The Bosch SHC integration allows you to connect your Bosch Smart Home Controller to Home Assistant in order to control and monitor your Bosch Smart Home devices.</flag>
     <flag name="braviatv">The Bravia TV integration allows you to control a Sony Bravia TV.</flag>
     <flag name="bring">The Bring! integration allows you to sync your Bring! shopping lists with Home Assistant.</flag>
@@ -208,7 +208,7 @@
     <flag name="ecovacs">The ecovacs integration is the main integration to integrate Ecovacs (Deebot) vacuums and mowers. You will need your Ecovacs account information (username, password) to discover and control vacuums and mowers in your account.</flag>
     <flag name="ecowitt">Configuration To add the Ecowitt integration to your Home Assistant instance, use this My button:</flag>
     <flag name="eddystone_temperature">The eddystone_temperature sensor integration. For example Gimbal, Estimote or kontakt.io.</flag>
-    <flag name="edimax">This edimax switch integration allows you to control the state of your Edimax switches.</flag>
+    <flag name="edimax">This Edimax integration allows you to control the state of your Edimax switches.</flag>
     <flag name="edl21">The edl21 integration lets you read German EDL21 smart meters using SML from Home Assistant.</flag>
     <flag name="efergy">Integrate your Efergy meter information into Home Assistant.</flag>
     <flag name="egardia">The Egardia integration enables the ability to control an Egardia/Woonveilig control panel. These alarm panels are known under different brand names across the world, including Woonveilig in the Netherlands. This was tested on the WL-1716, GATE-01, GATE-02 and GATE-03 versions of the Egardia/Woonveilig platform. Not only will you integrate your alarm control panel, supported sensors (door contacts at this moment) will be added automatically.</flag>
@@ -241,7 +241,7 @@
     <flag name="epson">The Epson integration allows you to control a Epson projector from Home Assistant.The device has to be turned on during initial configuration.When you want to add a device for the first time, turn it on before following the integration steps.</flag>
     <flag name="eq3btsmart">The eq3btsmart climate platform allows you to integrate eQ-3 Bluetooth Smart Thermostats.</flag>
     <flag name="escea">The Escea integration allows monitoring and control of local Escea fireplaces. These fireplaces are manufactured in New Zealand and sold throughout Australia and New Zealand.</flag>
-    <flag name="esphome">This integration allows ESPHome devices to connect directly to Home Assistant with the native ESPHome API.</flag>
+    <flag name="esphome">Overview This integration allows ESPHome devices to connect directly to Home Assistant with the native ESPHome API.</flag>
     <flag name="etherscan">The Etherscan sensor platform displays Ether and ERC-20 token balances from Etherscan.io.</flag>
     <flag name="eufylife_ble">The EufyLife integration allows you to integrate Eufy smart scales with Home Assistant.</flag>
     <flag name="eufy">The EufyHome integration is the main integration to integrate eufy devices sold under the EufyHome product line with Home Assistant.</flag>
@@ -531,7 +531,7 @@
     <flag name="mqtt">MQTT (aka MQ Telemetry Transport) is a machine-to-machine or “Internet of Things” connectivity protocol on top of TCP/IP. It allows extremely lightweight publish/subscribe messaging transport.</flag>
     <flag name="msteams">The Microsoft Teams platform allows you to send notifications from Home Assistant to a team channel in Microsoft Teams.</flag>
     <flag name="mullvad">The Mullvad VPN integration uses the Mullvad VPN API to detect if your Home Assistant instance is connected to the Mullvad VPN service.</flag>
-    <flag name="music_assistant">The Music Assistant (MA) integration allows you to connect Home Assistant to a Music Assistant Server. Once configured, all MA Players show up as Home Assistant media player entities. Media players will allow you to control media playback and see the currently playing item.</flag>
+    <flag name="music_assistant">The Music Assistant (MA) integration allows you to connect Home Assistant to a Music Assistant Server (Required version 2.4 or later). Once configured, all MA Players show up as Home Assistant media player entities. Media players will allow you to control media playback and see the currently playing item.</flag>
     <flag name="mutesync">The mutesync integration for Home Assistant connects to the mütesync virtual button. This tray app pairs with popular video conferencing tools such as Zoom, Google Meet, Discord, and Teams.</flag>
     <flag name="mysensors">The MySensors project combines devices like Arduino, ESP8266, Raspberry Pi, NRF24L01+ and RFM69 to build affordable sensor networks. This integration will automatically add all available devices to Home Assistant, after presentation is done. That is, you do not need to add anything to your configuration for the devices for them to be added. Go to the states section of the developer tools to find the devices that have been identified.</flag>
     <flag name="mystrom">There is currently support for the following device types within Home Assistant:</flag>
@@ -693,7 +693,7 @@
     <flag name="rainmachine">The RainMachine integration is the main integration to integrate all platforms related to RainMachine smart Wi-Fi sprinkler controllers.</flag>
     <flag name="rapt_ble">Integrates RAPT Pill hydrometers into Home Assistant.</flag>
     <flag name="raspyrfm">The raspyrfm integration adds support for cheap RC 433 MHz outlets via one of the supported gateways.</flag>
-    <flag name="rdw">RDW is the Netherlands Vehicle Authority. Their tasksare the licensing of vehicles and vehicle parts, supervision and enforcement,registration, information provision, and issuing documents.</flag>
+    <flag name="rdw">The RDW integration connects with the RDW (Netherlands Vehicle Authority) open data service to retrieve and monitor information about your Dutch registered vehicles in Home Assistant. RDW is the government organization responsible for vehicle registration, licensing, supervision, and enforcement in the Netherlands.</flag>
     <flag name="recollect_waste">The recollect_waste integration allows you to track the next scheduled waste pickup and what type of waste from ReCollect Waste.</flag>
     <flag name="recorder">This integration is by default enabled as dependency of the history integration.</flag>
     <flag name="recswitch">The recswitch switch integration allows you to control the Ankuoo REC Switch devices.</flag>
@@ -785,7 +785,7 @@
     <flag name="smarttub">The smarttub integration allows you to view and control hot tubs which use the SmartTub system, in Home Assistant.</flag>
     <flag name="smarty">The smarty integration lets you control Salda Smarty ventilation units from Home Assistant. You need a MB-GATEWAY or something similar to connect to your local network.</flag>
     <flag name="smhi">The smhi integration adds support for the SMHI.se web service as a source for meteorological data for your location.</flag>
-    <flag name="smlight">The SMLIGHT SLZB-06x Ethernet Zigbee coordinatorsprovide a convenient way to add Zigbee to your smart home setup.</flag>
+    <flag name="smlight">The SMLIGHT SLZB-06x ethernet Zigbee coordinators provide a reliable and convenient way to integrate Zigbee devices into your smart home setup. By placing the Zigbee gateway closer to your devices, you can improve connectivity and reduce interference, avoiding the limitations of gateways hidden in cupboards or distant locations.</flag>
     <flag name="sms">The sms integration allows having a local execution SMS notification via Gammu. This is ideal when the internet is offline or when the power goes out.</flag>
     <flag name="snapcast">The Snapcast integration allows you to control Snapcast from Home Assistant.</flag>
     <flag name="snmp">A lot of Wi-Fi access points and Wi-Fi routers support the Simple Network Management Protocol (SNMP). This is a standardized method for monitoring/managing network connected devices. SNMP uses a tree-like hierarchy where each node is an object. Many of these objects contain (live) lists of instances and metrics, like network interfaces, disks and Wi-Fi registrations.</flag>
@@ -829,7 +829,7 @@
     <flag name="swiss_public_transport">The Swiss public transport integration will give you the next three departure times from a given location to another one in Switzerland.</flag>
     <flag name="switchbee">SwitchBee, is an innovation company making smart homes more accessible and affordable to any household environment.</flag>
     <flag name="switchbot_cloud">The SwitchBot Cloud integration allows you to control SwitchBot devices connected through the SwitchBot hub.</flag>
-    <flag name="switchbot">The SwitchBot integration allows you to control SwitchBot devices.</flag>
+    <flag name="switchbot">The SwitchBot integration allows you to control SwitchBot devices such as sensors, locks, shades, lights, plugs, robot vacuums, hubs and etc.</flag>
     <flag name="switcher_kis">This Switcher integration allows you to control your Switcher Devices.</flag>
     <flag name="switchmate">This Switchmate switch platform allows you to control Switchmate devices.</flag>
     <flag name="syncthing">Syncthing is a continuous file synchronization program. It synchronizes files between two or more computersin real-time, safely protected from prying eyes.</flag>
@@ -842,7 +842,7 @@
     <flag name="tailscale">The Tailscale integration integrates the Tailscale APIwith Home Assistant; giving you the possibility to monitor and automate onthe state of the devices in your Tailscale VPN network (Tailnet).</flag>
     <flag name="tailwind">The Tailwind integration integrates Tailwindgarage door controllers fully locally.</flag>
     <flag name="tami4">The Tami4 Edge integration allows you to control and monitor Tami4 Edge / Edge+ by Strauss devices in Home Assistant.</flag>
-    <flag name="tankerkoenig">The tankerkoenig platform allows you to monitor the fuel prices with tankerkoenig.de from within Home Assistant and setup automations based on the information.To use this sensor you need an API key from tankerkoenig. Go to tankerkoenig API and click on API-KEY in the top right, fill out the form and request a key. The API is free, but requests should be limited to less than once every 5 minutes.</flag>
+    <flag name="tankerkoenig">The tankerkoenig integration allows you to monitor the fuel prices with tankerkoenig.de from within Home Assistant and setup automations based on the information.</flag>
     <flag name="tank_utility">Add Tank Utility propane tank monitors to Home Assistant.</flag>
     <flag name="tapsaff">The tapsaff binary sensor integration provides the ‘Taps Aff’ status for a given location within the UK using Taps Aff.</flag>
     <flag name="tasmota">This integration allows you to control Tasmota devices over MQTT.</flag>
@@ -895,7 +895,7 @@
     <flag name="triggercmd">The TRIGGERcmd integration allows you to run commands on computers via TRIGGERcmd with Home Assistant.</flag>
     <flag name="tts">Text-to-speech (TTS) enables Home Assistant to speak to you.</flag>
     <flag name="tuya">The Tuya integration integrates all Powered by Tuya devices you have added to the Tuya Smart and Tuya Smart Life apps.</flag>
-    <flag name="twentemilieu">The Twente Milieu integration enables you to monitor the upcomingwaste collection schedules provided byTwente Milieu for various waste categories.This integration helps you stay informed about the next pickup dates fordifferent types of waste, ensuring you never miss a collection day.</flag>
+    <flag name="twentemilieu">The Twente Milieu integration enables you to monitor the upcoming waste collection schedules provided by Twente Milieu, a waste collection company serving municipalities in the Twente region of the Netherlands, including Enschede, Hengelo, Almelo, Borne, Hof van Twente, Oldenzaal, and Losser. This integration helps you stay informed about the next pickup dates for different types of waste (like organic, paper, plastic, and non-recyclable), ensuring you never miss a collection day.</flag>
     <flag name="twilio">The twilio integration enables the sending of notifications via SMS and the creation of calls with Twilio.</flag>
     <flag name="twinkly">The Twinkly integration allows you to control Twinkly LED string from Home Assistant.</flag>
     <flag name="twitch">The Twitch integration will allow you to monitor Twitch channel status from within Home Assistant and setup automation based on the information.</flag>
@@ -956,7 +956,7 @@
     <flag name="webostv">The webostv platform allows you to control a LG webOS TV.</flag>
     <flag name="weheat">The Weheat integration allows you to display your Weheat devices through Home Assistant.</flag>
     <flag name="wemo">The Belkin WeMo integration to integrate various Belkin WeMo devices with Home Assistant.</flag>
-    <flag name="whirlpool">The Whirlpool Appliances integration integrates Whirlpool 6th Sense Live, and Whirlpool/Maytag Washer and Dryer appliances into Home Assistant.</flag>
+    <flag name="whirlpool">The Whirlpool Appliances integration allows you to connect Whirlpool and Maytag appliances to Home Assistant.</flag>
     <flag name="whois">The Whois integration allows you to perform daily WHOIS lookups against your owned domains. This provides you with information such as expiration_date, name_servers and registrar details.</flag>
     <flag name="wiffi">This Wiffi integration allows you to connect your STALL WIFFI devices directly to Home Assistant.</flag>
     <flag name="wilight">The WiLight integration is to integrate WiLight devices with Home Assistant.</flag>
