@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+  <pkgmetadata>
+    <maintainer type="person">
+    <email>{ID}+{username}@users.noreply.github.com</email>
+    <name>Xavier FORESTIER</name>
+  </maintainer>
+  <remote-id type="github">xavierforestier/HomeAssistantRepository</remote-id>
+</pkgmetadata>

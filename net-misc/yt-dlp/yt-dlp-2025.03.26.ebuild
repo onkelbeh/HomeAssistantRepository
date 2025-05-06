@@ -11,19 +11,19 @@ DESCRIPTION="youtube-dl fork with additional features and fixes"
 HOMEPAGE="https://github.com/yt-dlp/yt-dlp/"
 SRC_URI="
 	https://github.com/yt-dlp/yt-dlp/releases/download/${PV}/${PN}.tar.gz
-		-> ${P}.tar.gz
+		-> ${P}.gh.tar.gz
 "
 S=${WORKDIR}/${PN}
-IUSE="default"
 LICENSE="Unlicense"
 SLOT="0"
+IUSE="default"
+
 # note that yt-dlp bumps are typically done straight-to-stable (unless there
 # was major/breaking changes) given website changes breaks it on a whim
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	dev-python/pycryptodome[${PYTHON_USEDEP}]
-	!net-misc/youtube-dl[-yt-dlp(-)]
 "
 
 distutils_enable_tests pytest

@@ -9,11 +9,8 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="An LTS port of Python's audioop module"
-HOMEPAGE="
-	https://pypi.org/project/audioop-lts/
-"
+HOMEPAGE="https://pypi.org/project/audioop-lts/ https://github.com/AbstractUmbra/audioop"
 
-LICENSE="PSF-2.0"
+LICENSE="PSF-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-

@@ -4,16 +4,15 @@
 EAPI=8
 inherit meson git-r3
 DESCRIPTION="Freebox Network HID devices library"
-HOMEPAGE="https://dev.freebox.fr/sdk/foils_hid/"
+HOMEPAGE="https://dev.freebox.fr/sdk/foils_hid/ https://github.com/fbx/foils_hid.git"
 EGIT_REPO_URI="https://github.com/fbx/foils_hid.git"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND="=dev-libs/librudp-${PV}"
+DEPEND="~dev-libs/librudp-${PV}"
 RDEPEND="${DEPEND}"
-BDEPEND=""
 IUSE="tests"
 
 src_configure() {

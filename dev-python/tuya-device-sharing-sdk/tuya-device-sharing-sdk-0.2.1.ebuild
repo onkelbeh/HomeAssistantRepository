@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
-DESCRIPTION="A Python sdk for Tuya Open API, which provides IoT capabilities, maintained by Tuya official"
+DESCRIPTION="Tuya Device Sharing SDK"
 HOMEPAGE="https://github.com/tuya/tuya-device-sharing-sdk https://pypi.org/project/tuya-device-sharing-sdk/"
 
 LICENSE="MIT"

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="The APsystems EZ1 Python library offers a streamlined interface for interacting with the local API of APsystems EZ1 Microinverters."
+DESCRIPTION="Streamlined interface for interacting with APsystems EZ1 Microinverters"
 HOMEPAGE="https://github.com/SonnenladenGmbH/APsystems-EZ1-API-HomeAssistant https://pypi.org/project/apsystems-ez1/"
 
 LICENSE="MIT"

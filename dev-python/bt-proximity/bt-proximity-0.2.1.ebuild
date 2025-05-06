@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="Allows for querying of the RSSI values for nearby devices using pybluez. Ported to Python 3, based on https://github.com/ewenchou/bluetooth-proximity"
+DESCRIPTION="Allows for querying of the RSSI values for nearby devices using pybluez"
 HOMEPAGE="https://github.com/FrederikBolding/bluetooth-proximity https://pypi.org/project/bt-proximity/"
 
 LICENSE="Apache-2.0"

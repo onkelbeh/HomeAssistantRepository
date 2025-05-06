@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="An async implementation of PyAcaia"
-HOMEPAGE="
-	https://pypi.org/project/aioacaia/
-"
+HOMEPAGE="https://pypi.org/project/aioacaia/ https://github.com/zweckj/aioacaia"
 PATCHES="${FILESDIR}/${PN}-build-system.patch"
 LICENSE="MIT"
 SLOT="0"
@@ -20,6 +18,5 @@ KEYWORDS="amd64 arm arm64 x86"
 RDEPEND="
 	>=dev-python/bleak-0.20.2[${PYTHON_USEDEP}]
 "
-BDEPEND=""
 
 distutils_enable_tests pytest

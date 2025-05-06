@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="SensorPush Public API"
-HOMEPAGE="
-	https://pypi.org/project/sensorpush-api/
-"
+HOMEPAGE="https://pypi.org/project/sensorpush-api/ https://github.com/sstallion/sensorpush-api"
 PATCHES="
 	${FILESDIR}/${PN}-build-system.patch
 	${FILESDIR}/${P}-option-json-missing.patch

@@ -10,7 +10,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Python agent for TRIGGERcmd cloud service."
 HOMEPAGE="https://github.com/rvmey/triggercmd-python-agent https://pypi.org/project/triggercmd/"
 
-LICENSE="GPL-3.0"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
@@ -27,7 +27,8 @@ BDEPEND="
 	)"
 
 src_prepare() {
-	echo -ne '\n[build-system]\nrequires = ["setuptools"]\nbuild-backend = "setuptools.build_meta"\n' >> pyproject.toml || die
+	echo -e '\n[build-system]\nrequires = ["setuptools"]' >> pyproject.toml || die
+	echo  "build-backend = \"setuptools.build_meta\"" >> pyproject.toml || die
 	default
 }
 

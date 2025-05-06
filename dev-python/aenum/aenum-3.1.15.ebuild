@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Advanced Enumerations (compatible with Python's stdlib Enum), NamedTuples, and NamedConstants"
+DESCRIPTION="Advanced Enumerations, NamedTuples and NamedConstants"
 HOMEPAGE="https://github.com/ethanfurman/aenum https://pypi.org/project/aenum/"
 
 LICENSE="BSD"

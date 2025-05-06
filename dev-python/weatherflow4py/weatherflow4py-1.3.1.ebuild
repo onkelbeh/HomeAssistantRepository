@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="Simple Python library used by Home Assistant to interact with the WeatherFlow RESTApi"
+DESCRIPTION="Library used by Home Assistant to interact with the WeatherFlow RESTApi"
 HOMEPAGE="https://github.com/jeeftor/weatherflow4py https://pypi.org/project/weatherflow4py/"
 
 LICENSE="MIT"

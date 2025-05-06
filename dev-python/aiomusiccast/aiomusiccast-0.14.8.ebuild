@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="Companion library for musiccast devices intended for the Home Assistant integration."
+DESCRIPTION="Library for musiccast devices intended for the Home Assistant integration."
 HOMEPAGE="https://github.com/vigonotion/aiomusiccast/ https://pypi.org/project/aiomusiccast/"
 
 LICENSE="MIT"

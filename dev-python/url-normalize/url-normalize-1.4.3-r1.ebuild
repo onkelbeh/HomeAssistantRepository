@@ -9,10 +9,7 @@ PYTHON_COMPAT=( pypy3 pypy3_11 python3_{10..13} )
 inherit distutils-r1
 
 DESCRIPTION="URL normalization for Python"
-HOMEPAGE="
-	https://github.com/niksite/url-normalize/
-	https://pypi.org/project/url-normalize/
-"
+HOMEPAGE="https://github.com/niksite/url-normalize/ https://pypi.org/project/url-normalize/"
 SRC_URI="
 	https://github.com/niksite/url-normalize/archive/v${PV}.tar.gz
 		-> ${P}.gh.tar.gz

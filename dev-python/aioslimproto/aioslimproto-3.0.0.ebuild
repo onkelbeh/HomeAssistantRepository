@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="Python module to talk to Logitech Squeezebox players directly (without Logitech server)."
+DESCRIPTION="Module to talk to Logitech Squeezebox players (without Logitech server)"
 HOMEPAGE="https://github.com/music-assistant/aioslimproto https://pypi.org/project/aioslimproto/"
 
 LICENSE="Apache-2.0"

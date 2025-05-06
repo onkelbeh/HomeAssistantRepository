@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
-DESCRIPTION="A python client to fetch/receive and parse uplink messages from The Thinks Network"
+DESCRIPTION="Client to fetch/receive and parse uplink messages from The Thinks Network"
 HOMEPAGE="https://github.com/angelnu/thethinksnetwork_python_client/ https://pypi.org/project/ttn-client/"
 
 LICENSE="MIT"

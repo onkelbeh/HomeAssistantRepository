@@ -43,7 +43,8 @@ pkg_pretend() {
 src_install() {
 	echo "${COMMIT}" > dist/.hash
 
-	echo -e "\nadvanced:\n  network_key: GENERATE\n  pan_id: GENERATE\n  log_directory: /var/log/${PN}" >> "data/configuration.yaml"
+	echo -e "\nadvanced:\n  network_key: GENERATE" >> "data/configuration.yaml"
+	echo -e "\n  pan_id: GENERATE\n  log_directory: /var/log/${PN}" >> "data/configuration.yaml"
 
 	nodejs-mod_src_install
 

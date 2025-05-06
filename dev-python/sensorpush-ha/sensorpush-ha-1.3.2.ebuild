@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="SensorPush Cloud Home Assistant Library"
-HOMEPAGE="
-	https://pypi.org/project/sensorpush-ha/
-"
+HOMEPAGE="https://pypi.org/project/sensorpush-ha/ https://github.com/sstallion/sensorpush-ha"
 
 LICENSE="BSD"
 SLOT="0"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>{ID}+{username}@users.noreply.github.com</email>
+    <name>Xavier FORESTIER</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="github">fbx/libela.git</remote-id>
+  </upstream>
+  <use>
+    <flag name="tests">Run buitl-in tests</flag>
+  </use>
+</pkgmetadata>

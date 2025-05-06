@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Annotated YAML that supports secrets for Python"
-HOMEPAGE="
-	https://pypi.org/project/annotatedyaml/
-"
+HOMEPAGE="https://pypi.org/project/annotatedyaml/ https://github.com/home-assistant-libs/annotatedyaml"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -22,6 +20,5 @@ RDEPEND="
 	>=dev-python/pyyaml-6.0.1[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.15[${PYTHON_USEDEP}]
 "
-BDEPEND=""
 
 distutils_enable_tests pytest

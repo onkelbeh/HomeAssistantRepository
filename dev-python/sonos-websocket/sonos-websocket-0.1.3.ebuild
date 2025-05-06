@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
-DESCRIPTION="An asynchronous Python library to communicate with Sonos devices over websockets."
+DESCRIPTION="Library to communicate with Sonos devices over websockets"
 HOMEPAGE="https://github.com/jjlawren/sonos-websocket https://pypi.org/project/sonos-websocket/"
 
 LICENSE="MIT"

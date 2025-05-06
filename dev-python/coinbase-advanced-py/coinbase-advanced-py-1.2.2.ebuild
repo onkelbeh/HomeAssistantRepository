@@ -6,12 +6,14 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
-inherit distutils-r1
-SRC_URI="https://github.com/coinbase/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
+inherit distutils-r1 pypi
 
 DESCRIPTION="Coinbase Advanced API Python SDK"
-HOMEPAGE="https://github.com/coinbase/coinbase-advanced-py https://pypi.org/project/coinbase-advanced-py/"
-
+HOMEPAGE="
+	https://github.com/coinbase/coinbase-advanced-py
+	https://pypi.org/project/coinbase-advanced-py/
+"
+SRC_URI="https://github.com/coinbase/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
@@ -32,7 +34,6 @@ BDEPEND="
 
 src_prepare() {
 	mv "${S}/coinbase" "${S}/coinbase-advanced-py"
-	sed 's/packages=find_packages(exclude=("tests",))/packages=find_packages(exclude=["tests","tests.*"])/g' -i setup.py || die
 	eapply "${FILESDIR}"/rename-coinbase.patch
 	eapply_user
 }

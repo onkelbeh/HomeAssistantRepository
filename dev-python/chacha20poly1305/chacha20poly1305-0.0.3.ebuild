@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="Chacha20Poly1305"
+DESCRIPTION="chacha20-poly1305 implementation based on tlslite-ng code"
 HOMEPAGE="https://github.com/ph4r05/py-chacha20poly1305 https://pypi.org/project/chacha20poly1305/"
 
 LICENSE="LGPL-3"

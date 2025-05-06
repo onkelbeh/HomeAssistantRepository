@@ -13,4 +13,7 @@
       <name>Philipp Schmitt</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="mqtt">Implement MQTT</flag>
+  </use>
 </pkgmetadata>

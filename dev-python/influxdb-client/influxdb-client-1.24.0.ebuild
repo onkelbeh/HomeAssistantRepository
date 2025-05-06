@@ -18,7 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/Rx-3.0.1
+RDEPEND="
+	>=dev-python/rx-3.0.1
 	>=dev-python/certifi-14.05.14
 	>=dev-python/six-1.10
 	>=dev-python/python-dateutil-2.5.3

@@ -18,11 +18,13 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/Authlib-0.15[${PYTHON_USEDEP}]
+RDEPEND="
+	>=dev-python/authlib-0.15[${PYTHON_USEDEP}]
 	>=dev-python/httpx-0.24.0[${PYTHON_USEDEP}]
 	>=dev-python/pytz-2023.3[${PYTHON_USEDEP}]
 	>=dev-python/mashumaro-3.11[${PYTHON_USEDEP}]
-	>=dev-python/orjson-3.9.0[${PYTHON_USEDEP}]"
+	>=dev-python/orjson-3.9.0[${PYTHON_USEDEP}]
+"
 BDEPEND="
 	test? (
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]

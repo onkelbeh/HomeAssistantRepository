@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A Python library for interacting with Android TV using the Android TV Remote protocol v2"
+DESCRIPTION="Library for interacting with Android TV using the Android TV Remote protocol v2"
 HOMEPAGE="https://github.com/tronikos/androidtvremote2 https://pypi.org/project/androidtvremote2/"
 
 LICENSE="Apache-2.0"

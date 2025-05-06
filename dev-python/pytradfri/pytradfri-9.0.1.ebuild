@@ -16,7 +16,7 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="async test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="async? ( dev-python/aiocoap[${PYTHON_USEDEP}] dev-python/DTLSSocket[${PYTHON_USEDEP}] )"
+RDEPEND="async? ( dev-python/aiocoap[${PYTHON_USEDEP}] dev-python/dtlssocket[${PYTHON_USEDEP}] )"
 
 DOCS="README.md"
 

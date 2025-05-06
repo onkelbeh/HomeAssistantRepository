@@ -9,15 +9,10 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="A python library for controlling a sky box"
-HOMEPAGE="
-	https://pypi.org/project/skyboxremote/
-"
+HOMEPAGE="https://pypi.org/project/skyboxremote/ https://github.com/dunnmj/skyboxremote"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-
-RDEPEND=""
-BDEPEND=""
 
 distutils_enable_tests pytest

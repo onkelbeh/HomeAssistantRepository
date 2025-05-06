@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="This module performs conversions between Python values and C bit field structs represented as Python byte strings."
+DESCRIPTION="Conversions between Python values and C bit field structs"
 HOMEPAGE="https://github.com/eerimoq/bitstruct https://pypi.org/project/bitstruct/"
 
 LICENSE="MIT"

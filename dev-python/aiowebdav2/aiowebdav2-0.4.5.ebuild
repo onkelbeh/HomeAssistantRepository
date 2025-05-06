@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python3_13 )
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Async Python 3 client for WebDAV, based on aiowebdav and https://github.com/ezhov-evgeny/webdav-client-python-3"
+DESCRIPTION="Async Python 3 client for WebDAV, based on aiowebdav"
 HOMEPAGE="
 	https://pypi.org/project/aiowebdav2/
 "
@@ -26,3 +26,4 @@ RDEPEND="
 "
 
 distutils_enable_tests pytest
+

@@ -9,4 +9,7 @@
     <remote-id type="pypi">amqtt</remote-id>
     <remote-id type="github">Yakifo/amqtt</remote-id>
   </upstream>
+  <use>
+    <flag name="ci">Continous Integration</flag>
+  </use>
 </pkgmetadata>

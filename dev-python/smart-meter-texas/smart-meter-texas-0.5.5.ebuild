@@ -6,7 +6,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Package to connect to and retrieve data from the unofficial Smart Meter Texas API"
+DESCRIPTION="Package to retrieve data from the unofficial Smart Meter Texas API"
 HOMEPAGE="https://github.com/grahamwetzler/smart-meter-texas https://pypi.org/project/smart-meter-texas/"
 
 LICENSE="MIT"

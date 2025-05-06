@@ -10,6 +10,7 @@ MY_PN=${PN/-/_}
 DESCRIPTION="Discover and control ANEL NET-PwrCtrl devices."
 HOMEPAGE="https://pypi.org/project/anel-pwrctrl-homeassistant/"
 SRC_URI="https://files.pythonhosted.org/packages/source/${P:0:1}/${PN}/${MY_PN}-${PV}.dev2.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_PN}-${PV}.dev2"
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,8 +22,6 @@ BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-S="${WORKDIR}/${MY_PN}-${PV}.dev2"
 
 python_test() {
 	py.test -v -v || die

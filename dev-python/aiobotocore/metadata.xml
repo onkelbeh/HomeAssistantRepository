@@ -13,4 +13,8 @@
       <name>Nikolay Novik</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="awscli">Handle AWS cli</flag>
+    <flag name="boto3">Enable boto3</flag>
+  </use>
 </pkgmetadata>

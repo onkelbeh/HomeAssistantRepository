@@ -25,7 +25,8 @@ RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	>=dev-python/python-engineio-3.14.2[${PYTHON_USEDEP}]"
 
 src_prepare() {
-	echo -ne '\n[build-system]\nrequires = ["poetry>=0.12"]\nbuild-backend = "poetry.masonry.api"\n' >> pyproject.toml  || die
+	echo -ne '\n[build-system]\nrequires = ["poetry>=0.12"]' >> pyproject.toml  || die
+	echo -ne '\nbuild-backend = "poetry.masonry.api"\n' >> pyproject.toml  || die
 	eapply_user
 }
 

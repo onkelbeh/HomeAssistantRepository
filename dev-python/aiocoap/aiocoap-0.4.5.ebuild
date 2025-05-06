@@ -18,8 +18,13 @@ RESTRICT="!test? ( test )"
 DOCS="README.rst"
 
 RDEPEND="
-	oscore? ( dev-python/cbor2[${PYTHON_USEDEP}] dev-python/cryptography[${PYTHON_USEDEP}] dev-python/filelock[${PYTHON_USEDEP}]  )
-	tinydtls? ( >=dev-python/DTLSSocket-0.1.11_alpha1[${PYTHON_USEDEP}] )
+	oscore? (
+		dev-python/cbor2[${PYTHON_USEDEP}]
+		dev-python/cryptography[${PYTHON_USEDEP}]
+		dev-python/filelock[${PYTHON_USEDEP}]
+		dev-python/ge25519[${PYTHON_USEDEP}]
+	)
+	tinydtls? ( >=dev-python/dtlssocket-0.1.11_alpha1[${PYTHON_USEDEP}] )
 	ws? ( dev-python/websockets[${PYTHON_USEDEP}] )
 "
 BDEPEND="

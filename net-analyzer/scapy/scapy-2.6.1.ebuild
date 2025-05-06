@@ -2,16 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-
-# See https://github.com/secdev/scapy/pull/3958#discussion_r1161302244 on next
-# bump (>2.5.0)!
-
 PYTHON_COMPAT=( python3_{11..13} )
-inherit distutils-r1 readme.gentoo-r1
+DISTUTILS_USE_PEP517=setuptools
+inherit distutils-r1 readme.gentoo-r1 pypi
 
 DESCRIPTION="A Python interactive packet manipulation program for mastering the network"
-HOMEPAGE="https://scapy.net/ https://github.com/secdev/scapy"
-SRC_URI="https://github.com/secdev/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://scapy.net/ https://github.com/secdev/scapy https://pypi.org/project/scapy"
 
 LICENSE="GPL-2"
 SLOT="0"
