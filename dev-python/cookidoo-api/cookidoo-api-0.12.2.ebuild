@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Unofficial package to access Cookidoo."
-HOMEPAGE="
-	https://pypi.org/project/cookidoo-api/
-"
+HOMEPAGE="https://pypi.org/project/cookidoo-api/ https://github.com/miaucl/cookidoo-api"
 
 LICENSE="MIT"
 SLOT="0"

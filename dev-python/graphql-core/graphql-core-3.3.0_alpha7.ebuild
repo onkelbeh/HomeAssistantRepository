@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="GraphQL implementation for Python, a port of GraphQL.js, the JavaScript reference implementation for GraphQL."
+DESCRIPTION="GraphQL implementation for Python, a port of GraphQL.js"
 HOMEPAGE="https://github.com/graphql-python/graphql-core https://pypi.org/project/graphql-core/"
 MY_P="${PN}-${PV/_alpha/a}"
 MY_P="${MY_P/-/_}"

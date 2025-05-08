@@ -1,0 +1,10 @@
+--- a/setup.py    2024-12-08 01:07:30.000000000 +0100
++++ b/setup.py   2025-05-08 17:01:59.301374738 +0200
+@@ -41,7 +41,6 @@
+         "Source": target_url,
+         "Tracker": target_url,
+     },
+-    data_files=[('.', ['requirements.txt'])],
+     install_requires=requirements,
+     python_requires=">=3.7",
+     test_suite="tests",

@@ -13,11 +13,11 @@ HOMEPAGE="https://github.com/py-libhdate/py-libhdate https://pypi.org/project/hd
 LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test"
+IUSE="test astral"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
-IUSE="astral"
+
 RDEPEND="
 	>=dev-python/num2words-0.5.14[${PYTHON_USEDEP}]
 	astral? ( >=dev-python/astral-2.2[${PYTHON_USEDEP}] )

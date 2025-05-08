@@ -13,4 +13,8 @@
       <name>Pavel Pletenev</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="aio">Use aio</flag>
+    <flag name="emoji">Handle emoji</flag>
+  </use>
 </pkgmetadata>

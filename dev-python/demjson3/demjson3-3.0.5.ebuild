@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="encoder, decoder, and lint/validator for JSON (JavaScript Object Notation) compliant with RFC 7159"
+DESCRIPTION="encoder, decoder, and lint/validator for JSON compliant with RFC 7159"
 HOMEPAGE=" https://pypi.org/project/demjson3/"
 
 LICENSE="LGPL-3"

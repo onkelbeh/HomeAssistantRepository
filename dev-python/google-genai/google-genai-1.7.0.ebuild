@@ -10,7 +10,6 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="GenAI Python SDK"
 HOMEPAGE="https://github.com/googleapis/python-genai https://pypi.org/project/google-genai/"
-SRC_URI="https://github.com/googleapis/python-genai/archive/refs/tags/v${PV}.tar.gz"
 PATCHES="${FILESDIR}/${PN}-build-system.patch"
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -25,7 +24,6 @@ RDEPEND="
 	>=dev-python/websockets-13.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.11.0[${PYTHON_USEDEP}]
 "
-BDEPEND=""
 src_unpack() {
 	unpack "${A}"
 	mv "${WORKDIR}/python-genai-${PV}" "${S}"

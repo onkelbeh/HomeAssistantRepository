@@ -11,6 +11,7 @@ MY_PV=${PV/_alpha/a}
 DESCRIPTION="A Python client for Fixer.io"
 HOMEPAGE="https://github.com/amatellanes/fixerio https://pypi.org/project/fixerio/"
 SRC_URI="$(pypi_sdist_url "${PN}" "${MY_PV}")"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -23,8 +24,6 @@ BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-S="${WORKDIR}/${PN}-${MY_PV}"
 
 python_test() {
 	py.test -v -v || die

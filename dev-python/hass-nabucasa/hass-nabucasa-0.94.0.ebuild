@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="
-	=app-crypt/acme-3.2.0[${PYTHON_USEDEP}]
+	~app-crypt/acme-3.2.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/atomicwrites-1.4.1[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]

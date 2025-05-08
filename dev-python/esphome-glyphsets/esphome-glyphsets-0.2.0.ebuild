@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="A lightweight version of glyphsets for ESPHome"
-HOMEPAGE="
-	https://pypi.org/project/esphome-glyphsets/
-"
+HOMEPAGE="https://github.com/esphome/esphome-glyphsets https://pypi.org/project/esphome-glyphsets/"
 
 LICENSE="Apache-2.0"
 SLOT="0"

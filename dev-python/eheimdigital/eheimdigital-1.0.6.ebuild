@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Offers a Python API for the EHEIM Digital smart aquarium devices."
-HOMEPAGE="
-	https://pypi.org/project/eheimdigital/
-"
+HOMEPAGE="https://pypi.org/project/eheimdigital/ https://github.com/autinerd/eheimdigital"
 
 LICENSE="MIT"
 SLOT="0"

@@ -14,7 +14,4 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
-RDEPEND=""
-BDEPEND=""
-
 distutils_enable_tests pytest

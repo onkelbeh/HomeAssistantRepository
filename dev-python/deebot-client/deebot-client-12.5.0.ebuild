@@ -89,6 +89,10 @@ inherit cargo distutils-r1 pypi
 
 DESCRIPTION="Deebot client library in python 3"
 HOMEPAGE="https://github.com/DeebotUniverse/client.py https://pypi.org/project/deebot-client/"
+SRC_URI="
+	https://github.com/DeebotUniverse/client.py/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz
+	${CARGO_CRATE_URIS}
+"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -97,11 +101,10 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
-SRC_URI="
-	https://github.com/DeebotUniverse/client.py/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
-	$( cargo_crate_uris "${CRATES}" )
-"
-RDEPEND=">=dev-python/aiohttp-3.10[${PYTHON_USEDEP}]
+
+RDEPEND="
+	${RUST_DEPEND}
+	>=dev-python/aiohttp-3.10[${PYTHON_USEDEP}]
 	>=dev-python/aiomqtt-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/cachetools-5.0.0[${PYTHON_USEDEP}]
 	>=dev-python/defusedxml-0.7.1[${PYTHON_USEDEP}]

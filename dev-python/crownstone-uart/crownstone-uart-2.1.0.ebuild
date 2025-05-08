@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION='Official Python lib for Crownstone: "Crownstone Unified System Bridge", or Crownstone USB implementation'
+DESCRIPTION="Crownstone Unified System Bridge, or Crownstone USB implementation"
 HOMEPAGE="https://github.com/crownstone/crownstone-lib-python-uart https://pypi.org/project/crownstone-uart/"
 MY_PN="crownstone-lib-python-uart"
 SRC_URI="https://github.com/crownstone/${MY_PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"

@@ -6,10 +6,10 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1
-SRC_URI="https://github.com/cnico/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 DESCRIPTION="Python library for DIO Chacon wifi's protocol for shutters and switches"
 HOMEPAGE="https://github.com/cnico/dio-chacon-wifi-api https://pypi.org/project/dio-chacon-wifi-api/"
+SRC_URI="https://github.com/cnico/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"

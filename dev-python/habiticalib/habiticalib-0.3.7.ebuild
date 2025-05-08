@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python client library for the Habitica API"
-HOMEPAGE="
-	https://pypi.org/project/habiticalib/
-"
+HOMEPAGE="https://pypi.org/project/habiticalib/ https://github.com/tr4nt0r/habiticalib"
 
 LICENSE="MIT"
 SLOT="0"
@@ -24,6 +22,5 @@ RDEPEND="
 	>=dev-python/pillow-11.0.0[${PYTHON_USEDEP}]
 	>=dev-python/habitipy-0.3.3[${PYTHON_USEDEP}]
 "
-BDEPEND=""
 
 distutils_enable_tests pytest

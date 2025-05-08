@@ -6,10 +6,11 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1
-SRC_URI="https://github.com/zxdavb/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 DESCRIPTION="An async Python client for connecting to the Evohome webservice"
 HOMEPAGE="https://github.com/zxdavb/evohome-async/ https://pypi.org/project/evohome-async/"
+SRC_URI="https://github.com/zxdavb/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
+
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"

@@ -16,9 +16,11 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test emoji +aio"
 RESTRICT="!test? ( test )"
 
-RDEPEND="dev-python/plumbum[${PYTHON_USEDEP}]
-		 dev-python/requests[${PYTHON_USEDEP}]
-		 emoji? ( dev-python/emoji[${PYTHON_USEDEP}] )
-		 aio? ( dev-python/aiohttp[${PYTHON_USEDEP}] )"
+RDEPEND="
+	dev-python/plumbum[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
+	emoji? ( dev-python/emoji[${PYTHON_USEDEP}] )
+	aio? ( dev-python/aiohttp[${PYTHON_USEDEP}] )
+"
 
 distutils_enable_tests pytest
