@@ -5,12 +5,11 @@ EAPI=8
 
 DISTUTILS_USE_PEP517="setuptools"
 PYTHON_COMPAT=( python3_{11..13} )
-
-inherit distutils-r1
+PYPI_NO_NORMALIZE=1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Command line interface for testing internet bandwidth using speedtest.net"
-HOMEPAGE="https://github.com/sivel/speedtest-cli"
-SRC_URI="https://github.com/sivel/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://pypi.org/project/speedtest-cli/ https://github.com/sivel/speedtest-cli"
 
 LICENSE="Apache-2.0"
 SLOT="0"

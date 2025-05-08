@@ -6,7 +6,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A fork of SleekXMPP with TLS cert validation disabled, intended only to be used with the sucks project"
+DESCRIPTION="Fork of SleekXMPP with TLS cert validation disabled"
 HOMEPAGE="http://github.com/aszymanik/SleekXMPP https://pypi.org/project/sleekxmppfs/"
 
 LICENSE="MIT"

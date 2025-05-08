@@ -8,10 +8,8 @@ PYTHON_COMPAT=( python3_13 )
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Simple API to use for communication with WebIO device meant for Home Assistant integration."
-HOMEPAGE="
-	https://pypi.org/project/webio-api/
-"
+DESCRIPTION="Simple API to use for communication with WebIO device"
+HOMEPAGE="https://pypi.org/project/webio-api/ https://github.com/nasWebio/webio_api"
 
 LICENSE="MIT"
 SLOT="0"

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Tool to flash firmware onto any Silicon Labs radio running EmberZNet, CPC multi-PAN, or just a bare Gecko Bootloader"
+DESCRIPTION="Flashes Silicon Labs radios running EmberZNet or CPC multi-pan firmware"
 HOMEPAGE="https://github.com/NabuCasa/universal-silabs-flasher https://pypi.org/project/universal-silabs-flasher/"
 
 LICENSE="GPL-3"

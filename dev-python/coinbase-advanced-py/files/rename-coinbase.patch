@@ -9,3 +9,13 @@
      exec(f.read(), about)
  
  setup(
+@@ -30,7 +30,7 @@
+     author="Coinbase",
+     url="https://github.com/coinbase/coinbase-advanced-py",
+     keywords=["Coinbase", "Advanced Trade", "API", "Advanced API"],
+-    packages=find_packages(exclude=("tests",)),
++    packages=find_packages(exclude=["tests","tests.*"]),
+     install_requires=[req for req in requirements],
+     extras_require={
+         "test": [test_req for test_req in test_requirements],
+

@@ -17,7 +17,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/Authlib[${PYTHON_USEDEP}]
+RDEPEND="dev-python/authlib[${PYTHON_USEDEP}]
 	dev-python/httpx[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest

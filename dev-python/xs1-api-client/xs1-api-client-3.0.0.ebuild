@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -29,11 +29,11 @@ src_prepare() {
 
 	# weird: setup.py tries to get branch name from (non-existant) git
 	# subprocess.check_output(["git", "rev-parse", "--abbrev-ref", "HEAD"])
-	sed -i "s/subprocess.check_output(\[\"git\", \"rev-parse\", \"--abbrev-ref\", \"HEAD\"\])/'master'/" -i setup.py || die
-	sed -i "s/GIT_BRANCH = GIT_BRANCH.decode()  //" -i setup.py || die
+	sed -i "s/subprocess.check_output(\[\"git\", \"rev-parse\", \"--abbrev-ref\", \"HEAD\"\])/'master'/" setup.py || die
+	sed -i "s/GIT_BRANCH = GIT_BRANCH.decode()  //" setup.py || die
 
 	# and it tries to install a 'tests' package at top level.... tsss...
-	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
+	sed -i "s/packages=find_packages()/packages=find_packages(exclude=['tests','tests.*'])/g" setup.py || die
 
 	# let's call this a 'triple'
 	eapply_user

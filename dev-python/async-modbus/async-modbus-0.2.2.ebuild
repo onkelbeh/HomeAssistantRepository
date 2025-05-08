@@ -21,8 +21,9 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/connio-0.2.0[${PYTHON_USEDEP}]
-	>=dev-python/uModbus-1.0.4[${PYTHON_USEDEP}]"
+RDEPEND="
+	>=dev-python/connio-0.2.0[${PYTHON_USEDEP}]
+	>=dev-python/umodbus-1.0.4[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

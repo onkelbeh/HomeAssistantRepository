@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="Retrieve a list of devices from a bt smarthub or bt smarthub 2 on a local network"
+DESCRIPTION="Retrieve a list of devices from a bt smarthub or bt smarthub 2"
 HOMEPAGE="https://github.com/jxwolstenholme/btsmarthub_devicelist https://pypi.org/project/btsmarthub-devicelist/"
 
 LICENSE="MIT"

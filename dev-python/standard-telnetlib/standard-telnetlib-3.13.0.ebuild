@@ -13,7 +13,7 @@ HOMEPAGE="
 	https://pypi.org/project/standard-telnetlib/
 "
 
-LICENSE=""
+LICENSE="PSF-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 

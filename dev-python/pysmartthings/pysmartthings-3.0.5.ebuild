@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="A python library for interacting with the SmartThings cloud API build with asyncio and aiohttp."
+DESCRIPTION="Library for interacting with the SmartThings cloud API"
 HOMEPAGE="https://github.com/andrewsayre/pysmartthings https://pypi.org/project/pysmartthings/"
 
 LICENSE="Apache-2.0"

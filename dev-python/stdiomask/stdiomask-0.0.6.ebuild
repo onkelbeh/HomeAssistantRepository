@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A cross-platform Python module for entering passwords to a stdio terminal and displaying a **** mask, which getpass cannot do."
+DESCRIPTION="Module for entering passwords to stdio and displaying a **** mask"
 HOMEPAGE="https://github.com/asweigart/stdiomask https://pypi.org/project/stdiomask/"
 
 LICENSE="GPL-3+"

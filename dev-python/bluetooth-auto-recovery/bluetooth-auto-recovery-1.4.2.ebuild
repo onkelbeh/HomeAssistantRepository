@@ -17,7 +17,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/PyRIC-0.1.6.3[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/pyric-0.1.6.3[${PYTHON_USEDEP}]
 	>=dev-python/btsocket-0.2.0[${PYTHON_USEDEP}]
 	>=dev-python/usb-devices-0.4.1[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-adapters-0.16.0[${PYTHON_USEDEP}]"

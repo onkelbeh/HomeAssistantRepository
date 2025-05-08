@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,7 +6,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Implements siren.pp.ua API - public wrapper for api.ukrainealarm.com API that returns info about Ukraine air-raid alarms."
+DESCRIPTION="public wrapper for api.ukrainealarm.com API info about Ukraine air-raid alarms"
 HOMEPAGE="https://github.com/PaulAnnekov/uasiren https://pypi.org/project/uasiren/"
 
 LICENSE="MIT"

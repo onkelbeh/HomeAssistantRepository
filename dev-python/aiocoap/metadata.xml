@@ -13,4 +13,9 @@
       <name>Maciej Wasilak, Christian Amsüss</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="oscore">oscore</flag>
+    <flag name="tinydtls">tindtls</flag>
+    <flag name="ws">ws</flag>
+  </use>
 </pkgmetadata>

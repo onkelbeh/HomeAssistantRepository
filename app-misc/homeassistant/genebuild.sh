@@ -45,21 +45,22 @@ parse_package() {
     fi
     local package
     package=$( eix -es# "$d" --use python_targets_python3_13 )
+    dlower=${d,,}
     if [ -z "$package" ];then
       package=$( eix -es# "${d,,}" --use python_targets_python3_13 )
     fi
     if [ -z "$package" ];then
-      package=$( eix -es# "${d//_/-}" --use python_targets_python3_13 )
+      package=$( eix -es# "${dlower//_/-}" --use python_targets_python3_13 )
     fi
     if [ -z "$package" ];then
-      package=$( eix -es# "${d//./-}" --use python_targets_python3_13 )
+      package=$( eix -es# "${dlower//./-}" --use python_targets_python3_13 )
     fi
     case $d in
       atomicwrites-homeassistant)
         package="dev-python/atomicwrites"
 	;;
       uv)
-        echo -e "\n\t>=dev-python/uv-$version" >> "$2"
+        echo -e "$1>=dev-python/uv-$version" >> "$2"
         break
         ;;
     esac
@@ -68,16 +69,26 @@ parse_package() {
       break
     fi
     #Write ebuild dep
-    echo -ne "$1" >> "$2"
     if [ "$version" = "1000000000.0.0" ]; then
+      echo -ne "$1" >> "$2"
       echo -n "$package" >> "$2"
       break
     fi
     case $operator in
       ~= | ==)
-        echo -n "~$package-$version" >> "$2"
+        if [[ $version == *-* ]]; then
+          echo -ne "$1" >> "$2"
+          echo -n "=$package-$version" >> "$2"
+	else
+          echo -ne "$1" >> "$2"
+          echo -n "~$package-$version" >> "$2"
+	fi
+	;;
+      !=)
+	break
 	;;
       *)
+        echo -ne "$1" >> "$2"
         echo -n "$operator$package-$version" >> "$2"
     esac
 
@@ -235,9 +246,15 @@ EOF
 echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> "$EBUILD_PATH"
 
 grep "\<flag" "metadata.xml" | cut -d\" -f2 | while read -r u; do 
-  echo -n " $u" >>"$EBUILD_PATH"
+  case $u in
+    ruuvi_gateway | shelly)
+      echo -n " +$u" >>"$EBUILD_PATH"
+      ;;
+    *)
+      echo -n " $u" >>"$EBUILD_PATH"
+  esac
 done
-cat >> "$EBUILD_PATH"<<EOF
+cat >> "$EBUILD_PATH" <<EOF
 "
 RESTRICT="!test? ( test )"
 
@@ -273,13 +290,13 @@ RDEPEND="\${RDEPEND}
 	cli? ( app-misc/home-assistant-cli )
 	coronavirus? ( dev-python/coronavirus[\${PYTHON_USEDEP}] )
 	deutsche_bahn? ( dev-python/schiene[\${PYTHON_USEDEP}] )
-	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[\${PYTHON_USEDEP}] ~dev-python/RPi-GPIO-0.7.1_alpha4[\${PYTHON_USEDEP}] )
+	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[\${PYTHON_USEDEP}] ~dev-python/rpi-gpio-0.7.1_alpha4[\${PYTHON_USEDEP}] )
 	http? ( ~dev-python/aiohttp-cors-0.7.0[\${PYTHON_USEDEP}] ~dev-python/aiohttp-fast-url-dispatcher-0.3.0[\${PYTHON_USEDEP}] ~dev-python/aiohttp-zlib-ng-0.3.1[\${PYTHON_USEDEP}] )
 	loopenergy? ( ~dev-python/pyloopenergy-0.2.1[\${PYTHON_USEDEP}] )
 	mariadb? ( dev-python/mysqlclient[\${PYTHON_USEDEP}] )
 	mosquitto? ( app-misc/mosquitto )
 	mysql? ( dev-python/mysqlclient[\${PYTHON_USEDEP}] )
-	smarthab? ( ~dev-python/SmartHab-0.21[\${PYTHON_USEDEP}] )
+	smarthab? ( ~dev-python/smarthab-0.21[\${PYTHON_USEDEP}] )
 	socat? ( net-misc/socat )
 	somfy? ( ~dev-python/pymfy-0.11.0[\${PYTHON_USEDEP}] )
 	ssl? ( dev-libs/openssl app-crypt/certbot net-proxy/haproxy )

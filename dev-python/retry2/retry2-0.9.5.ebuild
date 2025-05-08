@@ -9,9 +9,9 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="easy to use retry decorator in python"
 HOMEPAGE="https://github.com/eSAMTrade/retry https://pypi.org/project/retry2/"
-SRC_URI="https://github.com/eSAMTrade/retry/archive/refs/tags/${PV}.tar.gz -> retry2-${PV}.tar.gz"
+SRC_URI="https://github.com/eSAMTrade/retry/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
-LICENSE="Apache2"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
@@ -22,7 +22,6 @@ BDEPEND="
 	test? (
 		dev-python/pbr
 		dev-python/pytest
-		dev-python/tox
 		dev-python/wheel
 	)
 "

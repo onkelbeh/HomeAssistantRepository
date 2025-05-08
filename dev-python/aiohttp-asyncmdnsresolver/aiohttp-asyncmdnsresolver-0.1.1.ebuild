@@ -20,6 +20,5 @@ RDEPEND="
 	>=dev-python/aiohttp-3.10.0[${PYTHON_USEDEP}]
 	>=dev-python/zeroconf-0.142.0[${PYTHON_USEDEP}]
 "
-BDEPEND=""
 
 distutils_enable_tests pytest

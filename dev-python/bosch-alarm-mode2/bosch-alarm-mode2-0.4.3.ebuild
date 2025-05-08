@@ -8,17 +8,11 @@ PYTHON_COMPAT=( python3_13 )
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="An async Python library for interacting with Bosch Alarm Panels supporting the 'Mode 2' API."
-HOMEPAGE="
-	https://pypi.org/project/bosch-alarm-mode2/
-"
+DESCRIPTION="Library for interacting with Bosch Alarm Panels supporting the 'Mode 2' API."
+HOMEPAGE="https://pypi.org/project/bosch-alarm-mode2/ https://github.com/mag1024/bosch-alarm-mode2"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-
-RDEPEND="
-"
-BDEPEND=""
 
 distutils_enable_tests pytest

@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Server Sent Events for Starlette and FastAPI"
-HOMEPAGE="
-	https://pypi.org/project/sse-starlette/
-"
+HOMEPAGE="https://pypi.org/project/sse-starlette/ https://github.com/sysid/sse-starlette"
 
 LICENSE="BSD"
 SLOT="0"

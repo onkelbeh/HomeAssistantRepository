@@ -7,11 +7,9 @@ DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_13 )
 
 inherit distutils-r1 pypi
-SRC_URI="$(pypi_sdist_url --no-normalize "${PN}" "${PV}" ".zip" )"
 DESCRIPTION="Microsoft Azure Event Hubs Client Library for Python"
-HOMEPAGE="
-	https://pypi.org/project/azure-eventhub/
-"
+HOMEPAGE="https://pypi.org/project/azure-eventhub/ https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/eventhub/azure-eventhub"
+SRC_URI="$(pypi_sdist_url --no-normalize "${PN}" "${PV}" ".zip" )"
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,6 +19,7 @@ RDEPEND="
 	>=dev-python/azure-core-1.14.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.0.1[${PYTHON_USEDEP}]
 "
+BDEPEND="app-arch/unzip"
 src_unpack() {
 	default
 	pushd "${WORKDIR}" || die

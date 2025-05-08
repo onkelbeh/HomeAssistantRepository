@@ -6,7 +6,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Python API for talking to Soundavo's WS66i 6-zone amplifier using the telnet protocol"
+DESCRIPTION="Python API for talking to Soundavo's WS66i 6-zone amplifier using telnet"
 HOMEPAGE="https://github.com/ssaenger/pyws66i https://pypi.org/project/pyws66i/"
 
 LICENSE="MIT"

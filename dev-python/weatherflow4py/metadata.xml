@@ -7,6 +7,7 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">weatherflow4py</remote-id>
+    <remote-id type="github">jeeftor/weatherflow4py</remote-id>
     <maintainer status="unknown">
       <email>jeeftor@users.noreply.github.com</email>
       <name>Jeef</name>

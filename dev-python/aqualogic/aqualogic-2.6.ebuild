@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="Library for interfacing with a Hayward/Goldline AquaLogic/ProLogic pool controller."
+DESCRIPTION="Interface a Hayward/Goldline AquaLogic/ProLogic pool controller"
 HOMEPAGE="https://github.com/swilson/aqualogic https://pypi.org/project/aqualogic/"
 
 LICENSE="MIT"

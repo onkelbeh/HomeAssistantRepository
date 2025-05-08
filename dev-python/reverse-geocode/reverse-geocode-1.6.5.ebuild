@@ -9,11 +9,10 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Reverse geocode the given latitude / longitude"
-HOMEPAGE="
-	https://pypi.org/project/reverse-geocode/
-"
+HOMEPAGE="https://pypi.org/project/reverse-geocode/ https://github.com/richardpenman/reverse_geocode/"
 PATCHES="${FILESDIR}/${PN}-build-system.patch"
-LICENSE="LGPL"
+
+LICENSE="LGPL-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
@@ -21,6 +20,5 @@ RDEPEND="
 	>=dev-python/numpy-1.26.4[${PYTHON_USEDEP}]
 	>=dev-python/scipy-1.12.0[${PYTHON_USEDEP}]
 "
-BDEPEND=""
 
 distutils_enable_tests pytest

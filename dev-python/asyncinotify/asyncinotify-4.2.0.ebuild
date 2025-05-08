@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=flit
 inherit distutils-r1 pypi
 
-DESCRIPTION="A simple optionally-async python inotify library, focused on simplicity of use and operation, and leveraging modern Python features"
+DESCRIPTION="A simple optionally-async python inotify library"
 HOMEPAGE="https://github.com/absperf/asyncinotify/ https://pypi.org/project/asyncinotify/"
 
 LICENSE="MIT"

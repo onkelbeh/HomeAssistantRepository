@@ -4,16 +4,15 @@
 EAPI=8
 inherit meson git-r3
 DESCRIPTION="UDP transport with optional reliability"
-HOMEPAGE="https://dev.freebox.fr/sdk/librdp/"
+HOMEPAGE="https://dev.freebox.fr/sdk/librdp/ https://github.com/fbx/librudp.git"
 EGIT_REPO_URI="https://github.com/fbx/librudp.git"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 
-DEPEND="=dev-libs/libela-${PV}"
+DEPEND="~dev-libs/libela-${PV}"
 RDEPEND="${DEPEND}"
-BDEPEND=""
 IUSE="tests"
 
 src_configure() {

@@ -20,7 +20,7 @@ DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/colorlog[${PYTHON_USEDEP}]
-	dev-python/Pint[${PYTHON_USEDEP}]"
+	dev-python/pint[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest-cov[${PYTHON_USEDEP}]

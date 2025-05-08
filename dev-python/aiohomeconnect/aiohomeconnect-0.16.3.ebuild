@@ -23,6 +23,5 @@ RDEPEND="
 	>=dev-python/httpx-sse-0.4.0[${PYTHON_USEDEP}]
 	>=dev-python/mashumaro-3.13.1[${PYTHON_USEDEP}]
 "
-BDEPEND=""
 
 distutils_enable_tests pytest

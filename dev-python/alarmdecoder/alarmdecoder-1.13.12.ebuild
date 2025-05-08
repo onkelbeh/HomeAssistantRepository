@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="Python interface for the AlarmDecoder (AD2) family of alarm devices which includes the AD2USB, AD2SERIAL and AD2PI."
+DESCRIPTION="Interface for the AlarmDecoder family of alarm  AD2USB, AD2SERIAL and AD2PI."
 HOMEPAGE="https://github.com/nutechsoftware/alarmdecoder https://pypi.org/project/alarmdecoder/"
 
 LICENSE="MIT"

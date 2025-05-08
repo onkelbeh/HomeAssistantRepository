@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="Yet another implementation for the positional numeral system using 36 as the radix."
+DESCRIPTION="Implementation for the positional numeral system using 36 as the radix."
 HOMEPAGE="https://github.com/tonyseek/python-base36 https://pypi.org/project/base36/"
 
 LICENSE="MIT"

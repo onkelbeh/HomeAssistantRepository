@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Zabbix utils library"
-HOMEPAGE="
-	https://pypi.org/project/zabbix-utils/
-"
+HOMEPAGE="https://pypi.org/project/zabbix-utils/ https://github.com/zabbix/python-zabbix-utils"
 
 LICENSE="MIT"
 SLOT="0"
@@ -20,4 +18,3 @@ KEYWORDS="amd64 arm arm64 x86"
 RDEPEND="
 	>=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
 "
-

@@ -13,4 +13,8 @@
       <name>Microsoft Corporation</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="aio">Add support for aio</flag>
+    <flag name="pandas">Add support for pandas</flag>
+  </use>
 </pkgmetadata>

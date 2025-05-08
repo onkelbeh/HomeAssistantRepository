@@ -4,16 +4,13 @@
 EAPI=8
 inherit meson git-r3
 DESCRIPTION="Runtime Event Loop Abstraction library"
-HOMEPAGE="https://dev.freebox.fr/sdk/libela/"
+HOMEPAGE="https://dev.freebox.fr/sdk/libela/ https://github.com/fbx/libela.git"
 EGIT_REPO_URI="https://github.com/fbx/libela.git"
 
-LICENSE=""
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 
-DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
 IUSE="tests"
 src_prepare() {
 	eapply "${FILESDIR}/meson_link_with.patch"

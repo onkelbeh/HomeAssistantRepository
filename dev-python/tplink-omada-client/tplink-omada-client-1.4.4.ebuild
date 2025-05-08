@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
-DESCRIPTION="Python wrapper for TP-Link Omada SDN Controller API (OC200/OC300/Software Controller)"
+DESCRIPTION="Wrapper for TP-Link Omada SDN Controller API (OC200/OC300/Software Controller)"
 HOMEPAGE="https://github.com/MarkGodwin/tplink-omada-api https://pypi.org/project/tplink-omada-client/"
 
 LICENSE="MIT"
@@ -18,5 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/awesomeversion-22.9.0[${PYTHON_USEDEP}]"
+RDEPEND="
+	dev-python/aiohttp[${PYTHON_USEDEP}]
+	>=dev-python/awesomeversion-22.9.0[${PYTHON_USEDEP}]
+"

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="Retreive values from public API at the Swedish Transport Administration (Trafikverket)."
+DESCRIPTION="Access the Swedish Transport Administration (Trafikverket) API"
 HOMEPAGE="https://github.com/endor-force/pytrafikverket https://pypi.org/project/pytrafikverket/"
 
 LICENSE="MIT"

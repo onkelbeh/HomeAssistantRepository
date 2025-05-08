@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
-DESCRIPTION="A library to identify devices (phones, tablets) and their capabilities by parsing browser user agent strings."
+DESCRIPTION="A library parsing devices capabilities from browser user agent strings."
 HOMEPAGE="https://github.com/selwin/python-user-agents https://pypi.org/project/user-agents/"
 
 LICENSE="MIT"

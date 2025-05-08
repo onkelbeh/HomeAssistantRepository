@@ -5,7 +5,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="Python library for interfacing with Vizio SmartCast TVs and Sound Bars (2016+ models)"
+DESCRIPTION="Library for interfacing with Vizio SmartCast TVs and Sound Bars (2016+ models)"
 HOMEPAGE="https://github.com/vkorn/pyvizio https://pypi.org/project/pyvizio/"
 
 LICENSE="|| ( MIT GPL-3 )"

@@ -9,11 +9,9 @@ PYTHON_COMPAT=( python3_13 )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Standard library aifc redistribution. 'dead battery'"
-HOMEPAGE="
-	https://pypi.org/project/standard-aifc/
-"
+HOMEPAGE="https://pypi.org/project/standard-aifc/"
 
-LICENSE=""
+LICENSE="PSF-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
