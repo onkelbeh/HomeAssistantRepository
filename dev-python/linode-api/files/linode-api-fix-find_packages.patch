@@ -1,0 +1,12 @@
+--- a/setup.py   2018-04-05 13:19:32.000000000 +0200
++++ b/setup.py   2025-05-09 14:25:16.560074666 +0200
+@@ -78,7 +78,7 @@
+ 
+     # You can just specify the packages manually here if your project is
+     # simple. Or you can use find_packages().
+-    packages=find_packages(exclude=['contrib', 'docs', 'tests']),
++    packages=find_packages(exclude=['contrib', 'docs', 'test', 'test.*']),
+ 
+     # What do we need for this to run
+     install_requires=[
+

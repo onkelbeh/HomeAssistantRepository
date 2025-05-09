@@ -14,6 +14,10 @@
     </maintainer>
   </upstream>
   <use>
-    <flag name="cli">Install the CLI "httpx" client.</flag>
+    <flag name="brotli">Handle brotli compression</flag>
+    <flag name="cli">Install the CLI "httpx" client</flag>
+    <flag name="http2">>Handle http2 protocole</flag>
+    <flag name="socks">H>andle socks</flag>
+    <flag name="zstd">Handle zstd compression</flag>
   </use>
 </pkgmetadata>

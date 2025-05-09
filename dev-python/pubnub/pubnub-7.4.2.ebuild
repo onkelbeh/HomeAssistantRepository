@@ -1,9 +1,9 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 DESCRIPTION="PubNub Real-time push service in the cloud"
@@ -19,7 +19,7 @@ DOCS="README.md"
 
 RDEPEND="
 	!dev-python/freenub[${PYTHON_USEDEP}]
-	>=dev-python/pycryptodomex-3.3[${PYTHON_USEDEP}]
+	>=dev-python/pycryptodome-3.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.4[${PYTHON_USEDEP}]
 	dev-python/aiohttp[${PYTHON_USEDEP}]
 	dev-python/cbor2[${PYTHON_USEDEP}]"

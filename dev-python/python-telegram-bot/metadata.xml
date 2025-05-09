@@ -13,4 +13,14 @@
       <name>Leandro Toledo</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="all">Build all features</flag>
+    <flag name="callback-data">Implement callback</flag>
+    <flag name="ext">Add extra</flag>
+    <flag name="job-queue">Implemenbt job queues</flag>
+    <flag name="passport">Impplement passport</flag>
+    <flag name="rate-limiter">Handle rate limiter</flag>
+    <flag name="socks">Implement socks</flag>
+    <flag name="webhooks">Use webhooks</falg>
+  </use>
 </pkgmetadata>

@@ -1,9 +1,9 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
@@ -21,7 +21,7 @@ DOCS="README.md"
 RDEPEND="
 	>=dev-python/httpx-0.27.0[http2,${PYTHON_USEDEP}]
 "
-DDEPEND="
+BDEPEND="
 	dev-python/pytest-runner
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

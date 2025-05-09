@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,14 +6,12 @@ EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 PYPI_PN="Js2Py"
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1 pypi
 
 DESCRIPTION="JavaScript to Python Translator & JavaScript interpreter in Python"
-HOMEPAGE="http://piter.io/projects/js2py
-	https://github.com/PiotrDabkowski/Js2Py
-	https://pypi.org/project/Js2Py/"
+HOMEPAGE="http://piter.io/projects/js2py https://github.com/PiotrDabkowski/Js2Py https://pypi.org/project/Js2Py/"
 
 LICENSE="MIT"
 SLOT="0"
