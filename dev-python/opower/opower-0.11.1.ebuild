@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A Python library for getting historical and forecasted usage/cost from utilities that use opower.com such as PG&E"
+DESCRIPTION="A library for getting historical and forecasted from opower.com"
 HOMEPAGE="https://github.com/tronikos/opower https://pypi.org/project/opower/"
 
 LICENSE="Apache-2.0"

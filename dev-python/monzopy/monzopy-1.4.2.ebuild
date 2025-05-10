@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A simple async python wrapper for the Monzo API, used primarily by the Monzo Home Assistant integration."
+DESCRIPTION="Wrapper for the Monzo API"
 HOMEPAGE="https://github.com/JakeMartin-ICL/monzopy https://pypi.org/project/monzopy/"
 
 LICENSE="GPL-3"

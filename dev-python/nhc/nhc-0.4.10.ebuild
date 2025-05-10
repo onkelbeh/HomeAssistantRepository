@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Niko Home Control library for python"
-HOMEPAGE="
-	https://pypi.org/project/nhc/
-"
+HOMEPAGE="https://pypi.org/project/nhc/ https://github.com/vandeurenglenn/nhc"
 
 LICENSE="MIT"
 SLOT="0"

@@ -4,19 +4,17 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1 pypi
 
 DESCRIPTION="nose extends unittest to make testing easier"
 HOMEPAGE="https://nose.readthedocs.io/en/latest/ https://pypi.org/project/nose/"
 
-LICENSE="LGPL"
+LICENSE="LGPL-2"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
-RDEPEND=""
-BDEPEND=""
 src_prepare() {
 	eapply "${FILESDIR}/nose-wtf.patch"
 	eapply_user

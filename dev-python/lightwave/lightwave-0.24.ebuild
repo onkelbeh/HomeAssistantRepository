@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Python library to provide a reliable communication link with LightWaveRF lights, switches and TRVs."
+DESCRIPTION="Communication link with LightWaveRF lights, switches and TRVs."
 HOMEPAGE="https://github.com/GeoffAtHome/lightwave https://pypi.org/project/lightwave/"
 
 LICENSE="MIT"

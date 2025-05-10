@@ -11,16 +11,14 @@ HOMEPAGE="https://github.com/JeffLIrion/adb_shell https://pypi.org/project/adb-s
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="async test usb"
+IUSE="test usb"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
 RDEPEND="
-	async? ( >=dev-python/aiofiles-0.4.0[${PYTHON_USEDEP}]
-			 $(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10) )
 	dev-python/cryptography[${PYTHON_USEDEP}]
-	|| ( dev-python/pyasn1[${PYTHON_USEDEP}] dev-python/pysnmp-pyasn1[${PYTHON_USEDEP}] )
+	dev-python/pyasn1[${PYTHON_USEDEP}]
 	dev-python/rsa[${PYTHON_USEDEP}]
 	usb? ( >=dev-python/libusb1-1.0.16[${PYTHON_USEDEP}] )"
 

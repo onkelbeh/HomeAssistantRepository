@@ -13,4 +13,7 @@
       <name>Damir Jelić</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="e2e">e2e</flag>
+  </use>
 </pkgmetadata>

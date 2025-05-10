@@ -9,11 +9,9 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="A package to control Snoos."
-HOMEPAGE="
-	https://pypi.org/project/python-snoo/
-"
+HOMEPAGE="https://pypi.org/project/python-snoo/ https://github.com/Lash-L/python-snoo"
 
-LICENSE=""
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 

@@ -9,14 +9,11 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Draws Python object reference graphs with graphviz"
-HOMEPAGE="
-	https://github.com/mgedmin/objgraph/
-	https://pypi.org/project/objgraph/
-"
+HOMEPAGE="https://github.com/mgedmin/objgraph/ https://pypi.org/project/objgraph/"
 
 LICENSE="MIT"
-KEYWORDS="amd64 arm arm64 x86"
 SLOT="0"
+KEYWORDS="amd64 arm arm64 x86"
 IUSE="doc"
 
 RDEPEND="

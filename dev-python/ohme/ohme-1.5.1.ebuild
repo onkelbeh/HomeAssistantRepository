@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="A Python wrapper for the Ohme API, used by the Home Assistant integration."
-HOMEPAGE="
-	https://pypi.org/project/ohme/
-"
+HOMEPAGE="https://pypi.org/project/ohme/ https://github.com/dan-r/ohmepy"
 
 LICENSE="MIT"
 SLOT="0"

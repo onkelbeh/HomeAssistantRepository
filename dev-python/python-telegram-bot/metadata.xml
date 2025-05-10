@@ -21,6 +21,6 @@
     <flag name="passport">Impplement passport</flag>
     <flag name="rate-limiter">Handle rate limiter</flag>
     <flag name="socks">Implement socks</flag>
-    <flag name="webhooks">Use webhooks</falg>
+    <flag name="webhooks">Use webhooks</flag>
   </use>
 </pkgmetadata>

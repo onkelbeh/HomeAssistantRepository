@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Retrieve values from API at Nord Pool."
-HOMEPAGE="
-	https://pypi.org/project/pynordpool/
-"
+HOMEPAGE="https://pypi.org/project/pynordpool/ https://github.com/gjohansson-ST/pynordpool"
 
 LICENSE="MIT"
 SLOT="0"

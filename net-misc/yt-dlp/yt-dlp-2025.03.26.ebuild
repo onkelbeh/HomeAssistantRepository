@@ -16,11 +16,11 @@ SRC_URI="
 S=${WORKDIR}/${PN}
 LICENSE="Unlicense"
 SLOT="0"
-IUSE="default"
 
 # note that yt-dlp bumps are typically done straight-to-stable (unless there
 # was major/breaking changes) given website changes breaks it on a whim
 KEYWORDS="amd64 arm arm64 x86"
+IUSE="default"
 
 RDEPEND="
 	dev-python/pycryptodome[${PYTHON_USEDEP}]

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <upstream>
+    <remote-id type="pypi">onedrive-personal-sdk</remote-id>
+    <remote-id type="github">zweckj/onedrive-personal-sdk</remote-id>
+  </upstream>
+</pkgmetadata>

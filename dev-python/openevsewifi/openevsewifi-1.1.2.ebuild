@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="A python library for communicating with the ESP8266-based wifi module from OpenEVSE"
+DESCRIPTION="Library for communicating with the ESP8266-based wifi module from OpenEVSE"
 HOMEPAGE="https://github.com/miniconfig/python-openevse-wifi https://pypi.org/project/openevsewifi/"
 
 LICENSE="MIT"

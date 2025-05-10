@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="
-	>=dev-python/httpx-0.27.0[http2,${PYTHON_USEDEP}]
+	dev-python/httpx[http2,${PYTHON_USEDEP}]
 "
 BDEPEND="
 	dev-python/pytest-runner

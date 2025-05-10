@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="An asynchronous modem implementation designed for Home Assistant for receiving caller id and call rejection."
+DESCRIPTION="An asynchronous modem implementation for receiving caller id and call rejection."
 HOMEPAGE="https://github.com/tkdrob/phone_modem https://pypi.org/project/phone-modem/"
 
 LICENSE="MIT"

@@ -6,7 +6,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A library to retrieve coordinates from an google account that has been shared locations of other accounts."
+DESCRIPTION="Retrieve gogogle account's shared locations"
 HOMEPAGE="https://github.com/costastf/locationsharinglib https://pypi.org/project/locationsharinglib/"
 
 LICENSE="MIT"

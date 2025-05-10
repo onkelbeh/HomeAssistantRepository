@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="
-	~dev-python/paramiko-3.5.0[${PYTHON_USEDEP}]
+	>=dev-python/paramiko-3.5.0[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	test? (

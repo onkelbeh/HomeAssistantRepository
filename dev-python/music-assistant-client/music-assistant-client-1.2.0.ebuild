@@ -20,12 +20,13 @@ DOCS="README.md"
 
 RDEPEND="
 	>=dev-python/aiohttp-3.8.6[${PYTHON_USEDEP}]
-	=dev-python/music-assistant-models-1.1.43[${PYTHON_USEDEP}]
+	~dev-python/music-assistant-models-1.1.43[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.9[${PYTHON_USEDEP}]
 "
 
 src_prepare() {
-	echo -ne '\n[build-system]\nrequires = ["setuptools"]\nbuild-backend = "setuptools.build_meta"\n' >> pyproject.toml || die
+	echo -ne '\n[build-system]\nrequires = ["setuptools"]' >> pyproject.toml || die
+	echo -ne '\nbuild-backend = "setuptools.build_meta"\n' >> pyproject.toml || die
 	default
 }
 

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Implementation/abstraction of the Ness D8x / D16x Serial Interface ASCII protocol"
+DESCRIPTION="Implementation of the Ness D8x / D16x Serial Interface ASCII protocol"
 HOMEPAGE="https://github.com/nickw444/nessclient https://pypi.org/project/nessclient/"
 
 LICENSE="MIT"

@@ -17,9 +17,7 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
-PATCHES=(
-    "${FILESDIR}/${P}-poetry.patch"
-)
+PATCHES=( "${FILESDIR}/${P}-poetry.patch" )
 RDEPEND=">=dev-python/pyserial-3.1.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (

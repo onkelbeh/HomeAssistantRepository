@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="A package to interact with the Microsoft Graph API for personal OneDrives."
-HOMEPAGE="
-	https://pypi.org/project/onedrive-personal-sdk/
-"
+HOMEPAGE="https://pypi.org/project/onedrive-personal-sdk/ https://github.com/zweckj/onedrive-personal-sdk"
 PATCHES="${FILESDIR}/${PN}-build-system.patch"
 
 LICENSE="MIT"
