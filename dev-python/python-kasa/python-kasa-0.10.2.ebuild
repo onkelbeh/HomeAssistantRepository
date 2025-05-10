@@ -23,7 +23,13 @@ RDEPEND="
 	>=dev-python/cryptography-1.9.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/mashumaro-3.14[${PYTHON_USEDEP}]
-	docs? (	dev-python/sphinx[${PYTHON_USEDEP}] dev-python/sphinx-rtd-theme[${PYTHON_USEDEP}] dev-python/sphinxcontrib-programoutput[${PYTHON_USEDEP}] dev-python/myst-parser[${PYTHON_USEDEP}] >=dev-python/docutils-0.17.0[${PYTHON_USEDEP}] )
+	docs? (
+		dev-python/sphinx[${PYTHON_USEDEP}]
+		dev-python/sphinx-rtd-theme[${PYTHON_USEDEP}]
+		dev-python/sphinxcontrib-programoutput[${PYTHON_USEDEP}]
+		dev-python/myst-parser[${PYTHON_USEDEP}]
+		>=dev-python/docutils-0.17.0[${PYTHON_USEDEP}]
+	)
 	shell? ( dev-python/ptpython[${PYTHON_USEDEP}] dev-python/rich[${PYTHON_USEDEP}] )
 	speedups? ( >=dev-python/orjson-3.9.1[${PYTHON_USEDEP}] >=dev-python/kasa-crypt-0.2.0[${PYTHON_USEDEP}] )
 "

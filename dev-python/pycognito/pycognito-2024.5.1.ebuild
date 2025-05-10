@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Python class to integrate Boto3's Cognito client so it is easy to login users. With SRP support."
+DESCRIPTION="Python class to integrate Boto3's Cognito client"
 HOMEPAGE="https://github.com/pvizeli/pycognito https://pypi.org/project/pycognito/"
 
 LICENSE="Apache-2.0"

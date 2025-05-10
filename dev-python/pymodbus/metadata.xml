@@ -13,6 +13,6 @@
   <use>
     <flag name="repl">repl</flag>
     <flag name="serial">serial</flag>
-    <flag name="simulator"></flag>
+    <flag name="simulator">simulator</flag>
   </use>
 </pkgmetadata>

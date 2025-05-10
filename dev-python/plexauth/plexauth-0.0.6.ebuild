@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Handles the authorization flow to obtain tokens from Plex.tv via external redirection."
+DESCRIPTION="Obtain tokens from Plex.tv via external redirection."
 HOMEPAGE="https://github.com/jjlawren/python-plexauth/ https://pypi.org/project/plexauth/"
 
 LICENSE="MIT"

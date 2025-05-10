@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="An async python library for controlling HEOS devices through the HEOS CLI Protocol"
+DESCRIPTION="Library for controlling HEOS devices through the HEOS CLI Protocol"
 HOMEPAGE="https://github.com/andrewsayre/pyheos https://pypi.org/project/pyheos/"
 
 LICENSE="Apache-2.0"

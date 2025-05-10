@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="A python client library for Google Drive API"
-HOMEPAGE="
-	https://pypi.org/project/python-google-drive-api/
-"
+HOMEPAGE="https://pypi.org/project/python-google-drive-api/ https://github.com/tronikos/python-google-drive-api"
 
 LICENSE="Apache-2.0"
 SLOT="0"

@@ -13,4 +13,7 @@
       <name>Chris Peplin &lt;github@rhubarbtech.com&gt;</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="GATTTOOL">GATTTOOL</flag>
+  </use>
 </pkgmetadata>

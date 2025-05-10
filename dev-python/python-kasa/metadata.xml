@@ -9,4 +9,9 @@
     <remote-id type="pypi">python-kasa</remote-id>
     <remote-id type="github">python-kasa/python-kasa</remote-id>
   </upstream>
+  <use>
+    <flag name="docs">Install doc</flag>
+    <flag name="shell">shell</flag>
+    <flag name="speedups">speedups</flag>
+  </use>
 </pkgmetadata>

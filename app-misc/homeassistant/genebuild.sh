@@ -205,6 +205,23 @@ for f in $( find "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_bet
   fi
 done
 cat >> metadata.xml << EOF
+    <flag name="bh1750">bh1750</flag>
+    <flag name="blinkt">blinkt</flag>
+    <flag name="bme280">bme280</flag>
+    <flag name="bme680">bme680</flag>
+    <flag name="cli">cli</flag>
+    <flag name="coronavirus">coronavirus</flag>
+    <flag name="deutsche-bahn">deutsche-bahn</flag>
+    <flag name="dht">dht</flag>
+    <flag name="http">http</flag>
+    <flag name="loopenergy">loopenergy</flag>
+    <flag name="mariadb">mariadb</flag>
+    <flag name="mosquitto">mosquitto</flag>
+    <flag name="smarthab">smarthab</flag>
+    <flag name="socat">socat</flag>
+    <flag name="somfy">somfy</flag>
+    <flag name="tesla">tesla</flag>
+    <flag name="wink">wink</flag>
   </use>
 </pkgmetadata>
 EOF

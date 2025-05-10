@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="Convert strings (and dictionary keys) between snake case, camel case and pascal case in Python. Inspired by Humps for Node"
+DESCRIPTION="Convertion between snake case, camel case and pascal case"
 HOMEPAGE="https://github.com/nficano/humps https://pypi.org/project/pyhumps/"
 
 LICENSE="Unlicense"

@@ -8,7 +8,7 @@ DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
-DESCRIPTION="pytest plugin to annotate failed tests with a workflow command for GitHub Actions"
+DESCRIPTION="pytest plugin to annotate failed tests with a workflow command for GitHub"
 HOMEPAGE="https://github.com/pytest-dev/pytest-github-actions-annotate-failures https://pypi.org/project/pytest-github-actions-annotate-failures/"
 
 LICENSE="MIT"

@@ -20,7 +20,6 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND="!dev-python/mt_940[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

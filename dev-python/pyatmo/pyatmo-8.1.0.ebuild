@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Simple API to access Netatmo weather station data from any Python 3 script. Designed for Home Assistant (but not only)"
+DESCRIPTION="API to Netatmo weather station data from any Python 3 script"
 HOMEPAGE="https://github.com/jabesq/pyatmo https://pypi.org/project/pyatmo/"
 
 LICENSE="MIT"

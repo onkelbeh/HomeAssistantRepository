@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
-DESCRIPTION="A simple python3 library for info about the current International Space Station location"
+DESCRIPTION="Info about the current International Space Station location"
 HOMEPAGE="https://github.com/HydrelioxGitHub/pyiss https://pypi.org/project/pyiss/"
 SRC_URI="https://github.com/HydrelioxGitHub/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 

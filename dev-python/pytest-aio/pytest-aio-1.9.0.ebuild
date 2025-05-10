@@ -20,6 +20,5 @@ RDEPEND="dev-python/pytest[${PYTHON_USEDEP}]
 	dev-python/trio[${PYTHON_USEDEP}]
 	dev-python/uvloop[${PYTHON_USEDEP}]
 "
-BDEPEND=""
 
 distutils_enable_tests pytest

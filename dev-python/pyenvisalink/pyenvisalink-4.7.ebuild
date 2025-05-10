@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A python3 library for running asynchronus communications with envisalink alarm control panel modules."
+DESCRIPTION="Library for envisalink alarm control panel modules"
 HOMEPAGE="https://github.com/Cinntax/pyenvisalink https://pypi.org/project/pyenvisalink/"
 
 LICENSE="MIT"

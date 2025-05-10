@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
-DESCRIPTION="Python library for interfacing with old models of opple lights with wifi control."
+DESCRIPTION="Library for interfacing with old models of opple lights with wifi control."
 HOMEPAGE="https://github.com/tinysnake/python-oppleio-legacy https://pypi.org/project/pyoppleio-legacy/"
 COMMIT="90c57f778554fcf3a00e42757d0e92caebcfd149"
 SRC_URI="https://github.com/tinysnake/python-oppleio-legacy/archive/${COMMIT}.tar.gz -> ${P}.gh.tar.gz"
