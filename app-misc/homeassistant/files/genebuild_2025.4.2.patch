@@ -107,12 +107,21 @@
  
  # homeassistant.components.fyta
  fyta_cli==0.7.2
+@@ -1202,7 +1202,7 @@
+ icalendar==6.1.0
+ 
+ # homeassistant.components.ping
+-icmplib==3.0
++icmplib>=3.0.0
+ 
+ # homeassistant.components.idasen_desk
+ idasen-ha==2.6.3
 @@ -1332,7 +1332,7 @@
  librouteros==3.2.0
  
  # homeassistant.components.soundtouch
 -libsoundtouch==0.8
-+libsoundtouch==0.8.0
++libsoundtouch>=0.8.0
  
  # homeassistant.components.osramlightify
  lightify==1.0.7.3
@@ -161,21 +170,12 @@
  
  # homeassistant.components.blackbird
  pyblackbird==0.6
-@@ -1939,7 +1939,7 @@
- pyefergy==22.5.0
- 
- # homeassistant.components.energenie_power_sockets
--pyegps==0.2.5
-+pyEGPS==0.2.5
- 
- # homeassistant.components.onkyo
- pyeiscp==0.0.7
 @@ -1990,7 +1990,7 @@
  pyfritzhome==0.6.17
  
  # homeassistant.components.ifttt
 -pyfttt==0.3
-+pyfttt==0.3.2
++pyfttt>=0.3.0
  
  # homeassistant.components.skybeacon
  pygatt[GATTTOOL]==4.0.5
@@ -269,12 +269,3 @@
  
  # homeassistant.components.xs1
  xs1-api-client==3.0.0
-@@ -3146,7 +3146,7 @@
- zamg==0.3.6
- 
- # homeassistant.components.zeroconf
--zeroconf==0.146.0
-+zeroconf>=0.146.0
- 
- # homeassistant.components.zeversolar
- zeversolar==0.3.2

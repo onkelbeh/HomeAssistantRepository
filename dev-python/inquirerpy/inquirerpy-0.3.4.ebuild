@@ -1,17 +1,16 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=poetry
-inherit distutils-r1
+PYPI_NO_NORMALIZE=1
+PYPI_PN="InquirerPy"
+inherit distutils-r1 pypi
 
-DESCRIPTION="Python port of Inquirer.js (A collection of common interactive command-line user interfaces)"
+DESCRIPTION="Python port of Inquirer.js"
 HOMEPAGE="https://github.com/kazhala/InquirerPy https://pypi.org/project/inquirerpy/"
-MY_PN="InquirerPy"
-SRC_URI="https://github.com/kazhala/InquirerPy/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
-S=${WORKDIR}/${MY_PN}-${PV}
 
 LICENSE="MIT"
 SLOT="0"

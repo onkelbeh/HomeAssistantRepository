@@ -1,17 +1,15 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_13 )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python client for IOmeter"
-HOMEPAGE="
-	https://pypi.org/project/iometer/
-"
+HOMEPAGE="https://pypi.org/project/iometer/ https://github.com/iometer-gmbh/iometer.py"
 
 LICENSE="MIT"
 SLOT="0"

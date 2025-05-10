@@ -13,4 +13,7 @@
       <name>Matthew Flamm</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="retry">retry</flag>
+  </use>
 </pkgmetadata>

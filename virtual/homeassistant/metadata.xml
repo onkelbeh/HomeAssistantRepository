@@ -5,5 +5,9 @@
     <email>{ID}+{username}@users.noreply.github.com</email>
     <name>Xavier FORESTIER</name>
   </maintainer>
-  <remote-id type="github">xavierforestier/HomeAssistantRepository</remote-id>
+  <use>
+    <flag name="minimal">Build with a minimal use set</flag>
+    <flag name="normal">Build with a standard use set</flag>
+    <flag name="full">Build with all use</flag>
+  </use>
 </pkgmetadata>

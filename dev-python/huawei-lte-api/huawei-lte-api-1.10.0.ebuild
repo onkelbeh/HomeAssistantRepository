@@ -1,22 +1,15 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..13} )
-
-inherit distutils-r1
+PYTHON_COMPAT=( python3_{12..14} )
+PYPI_NO_NORMALIZE=1
+inherit distutils-r1 pypi
 
 DESCRIPTION="API For huawei LAN/WAN LTE Modems"
-HOMEPAGE="
-	https://github.com/Salamek/huawei-lte-api/
-	https://pypi.org/project/huawei-lte-api/
-"
-SRC_URI="
-	https://github.com/Salamek/${PN}/archive/refs/tags/1.10.tar.gz
-		-> ${P}.gh.tar.gz
-"
+HOMEPAGE="https://github.com/Salamek/huawei-lte-api/ https://pypi.org/project/huawei-lte-api/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -35,9 +28,5 @@ python_prepare_all() {
 		sed -i -e 's:Cryptodome:Crypto:g' {} + || die
 
 	distutils-r1_python_prepare_all
-}
-src_unpack() {
-	unpack "${A}"
-	mv "${WORKDIR}/huawei-lte-api-1.10" "${WORKDIR}/huawei-lte-api-1.10.0"
 }
 distutils_enable_tests pytest

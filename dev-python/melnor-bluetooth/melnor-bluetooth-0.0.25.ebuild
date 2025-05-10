@@ -1,13 +1,13 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="A small python library for discovery and interacting with Melnor, Eden, etc Bluetooth water timers."
+DESCRIPTION="Discover and interact with Melnor, Eden, etc Bluetooth water timers"
 HOMEPAGE="https://github.com/vanstinator/melnor-bluetooth https://pypi.org/project/melnor-bluetooth/"
 
 LICENSE="MIT"
@@ -18,11 +18,13 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/bleak-0.15.1[${PYTHON_USEDEP}]
+RDEPEND="
+	>=dev-python/bleak-0.15.1[${PYTHON_USEDEP}]
 	>=dev-python/bleak-retry-connector-1.11.0[${PYTHON_USEDEP}]
 	>=dev-python/tzdata-2022.1[${PYTHON_USEDEP}]
 	>=dev-python/tzlocal-4.1[${PYTHON_USEDEP}]
-	>=dev-python/aioconsole-0.4.1[${PYTHON_USEDEP}]"
+	>=dev-python/aioconsole-0.4.1[${PYTHON_USEDEP}]
+"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

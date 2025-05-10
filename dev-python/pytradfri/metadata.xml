@@ -13,4 +13,7 @@
       <name>balloob, lwis, ggravlingen, janiversen</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="async">Use async</flag>
+  </use>
 </pkgmetadata>

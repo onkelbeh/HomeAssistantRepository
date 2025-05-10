@@ -1,17 +1,15 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_13 )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1 pypi
 
 DESCRIPTION="A package to interact with the Microsoft Graph API for personal OneDrives."
-HOMEPAGE="
-	https://pypi.org/project/onedrive-personal-sdk/
-"
+HOMEPAGE="https://pypi.org/project/onedrive-personal-sdk/ https://github.com/zweckj/onedrive-personal-sdk"
 PATCHES="${FILESDIR}/${PN}-build-system.patch"
 
 LICENSE="MIT"

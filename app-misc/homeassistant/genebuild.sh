@@ -155,7 +155,7 @@ parse_use_flag_req() {
         found="X"
       fi
     done
-  done < <( grep -n "^# homeassistant.components.$use$" "$reqall" )
+  done < <( grep -n -e "^# homeassistant.components.$use$" -e "^# homeassistant.components.${use//-/_}$" "$reqall" )
   IFS=$OLDIFS
 
   if [ "$found_dep" = "" ]; then
@@ -200,7 +200,7 @@ for f in $( find "/var/tmp/portage/app-misc/${EBUILD}/work/core-${VERSION/b/_bet
       echo -ne "\r                                                                                          \r \e[0;32m*\e[0m Generate metadata.xml($use_flag)..."
       #parse description Ignore anything before '<div class="page-content">' then before '</header>' until '</p>', cleanup html and carriage return
       description=$( sed -z 's/.*<div class="page-content">//g' "/tmp/$use_flag.html" | sed -z 's/.*<\/header>//' | sed -z 's/<\/p>.*//' |sed -z 's/<span class="terminology-tooltip">.*<\/span>//g' | sed 's/<[^>]*>//g' | tr -d "\n" | xargs )
-      echo -ne "\n    <flag name=\"$use_flag\">$description</flag>" >> metadata.xml
+      echo -ne "\n    <flag name=\"${use_flag//_/-}\">$description</flag>" >> metadata.xml
     fi
   fi
 done
@@ -243,15 +243,15 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 EOF
-echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche_bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> "$EBUILD_PATH"
+echo -n "IUSE=\"bh1750 blinkt bme280 bme680 cli coronavirus deutsche-bahn dht http loopenergy mariadb mosquitto mysql smarthab socat somfy ssl systemd tesla wink " >> "$EBUILD_PATH"
 
 grep "\<flag" "metadata.xml" | cut -d\" -f2 | while read -r u; do 
   case $u in
-    ruuvi_gateway | shelly)
+    ruuvi-gateway | shelly)
       echo -n " +$u" >>"$EBUILD_PATH"
       ;;
     *)
-      echo -n " $u" >>"$EBUILD_PATH"
+      echo -n " ${u//_/-}" >>"$EBUILD_PATH"
   esac
 done
 cat >> "$EBUILD_PATH" <<EOF
@@ -265,8 +265,8 @@ RDEPEND="\${PYTHON_DEPS} acct-group/\${MY_PN} acct-user/\${MY_PN}
 	dev-db/sqlite
 	dev-libs/libfastjson
 	dev-libs/xerces-c"
-REQUIRED_USE="bluetooth? ( ruuvi_gateway shelly )
-	homekit_controller? ( bluetooth )"
+REQUIRED_USE="bluetooth? ( ruuvi-gateway shelly )
+	homekit-controller? ( bluetooth )"
 EOF
 echo -e "\n \e[0;32m*\e[0m Parsing main dependencies..."
 pushd "/var/tmp/portage/app-misc/${EBUILD}/work" || exit
@@ -289,7 +289,7 @@ RDEPEND="\${RDEPEND}
 	bme680? ( dev-python/bme680[\${PYTHON_USEDEP}] )
 	cli? ( app-misc/home-assistant-cli )
 	coronavirus? ( dev-python/coronavirus[\${PYTHON_USEDEP}] )
-	deutsche_bahn? ( dev-python/schiene[\${PYTHON_USEDEP}] )
+	deutsche-bahn? ( dev-python/schiene[\${PYTHON_USEDEP}] )
 	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[\${PYTHON_USEDEP}] ~dev-python/rpi-gpio-0.7.1_alpha4[\${PYTHON_USEDEP}] )
 	http? ( ~dev-python/aiohttp-cors-0.7.0[\${PYTHON_USEDEP}] ~dev-python/aiohttp-fast-url-dispatcher-0.3.0[\${PYTHON_USEDEP}] ~dev-python/aiohttp-zlib-ng-0.3.1[\${PYTHON_USEDEP}] )
 	loopenergy? ( ~dev-python/pyloopenergy-0.2.1[\${PYTHON_USEDEP}] )

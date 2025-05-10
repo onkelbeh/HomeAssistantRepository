@@ -13,4 +13,7 @@
       <name>Tsvi Mostovicz</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="astral">Use astral</flag>
+  </use>
 </pkgmetadata>

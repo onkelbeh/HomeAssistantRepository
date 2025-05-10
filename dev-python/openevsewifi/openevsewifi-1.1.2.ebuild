@@ -1,13 +1,13 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
-DESCRIPTION="A python library for communicating with the ESP8266-based wifi module from OpenEVSE"
+DESCRIPTION="Library for communicating with the ESP8266-based wifi module from OpenEVSE"
 HOMEPAGE="https://github.com/miniconfig/python-openevse-wifi https://pypi.org/project/openevsewifi/"
 
 LICENSE="MIT"

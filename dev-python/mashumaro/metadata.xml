@@ -13,4 +13,10 @@
       <name>Alexander Tikhonov</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="msgpack">msgpack</flag>
+    <flag name="orjson">orjson</flag>
+    <flag name="toml">toml</flag>
+    <flag name="yaml">yaml</flag>
+  </use>
 </pkgmetadata>

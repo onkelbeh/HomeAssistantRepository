@@ -1,13 +1,13 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Faster zlib and gzip compatible compression and decompression by providing Python bindings for the ISA-L library"
+DESCRIPTION="Faster zlib and gzip compatible compression and decompression by ISA-L library"
 HOMEPAGE="https://github.com/pycompression/python-isal https://pypi.org/project/isal"
 
 LICENSE="PSF-2"

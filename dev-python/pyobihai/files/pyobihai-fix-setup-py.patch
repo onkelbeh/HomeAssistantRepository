@@ -1,0 +1,11 @@
+--- a/setup.py	2023-06-10 19:53:44.000000000 +0200
++++ b/setup.py	2025-05-10 10:04:11.745084854 +0200
+@@ -14,7 +14,7 @@
+     long_description=long_description,
+     long_description_content_type="text/markdown",
+     url="https://github.com/ejpenney/pyobihai",
+-    packages=setuptools.find_packages(),
++    packages=setuptools.find_packages(exclude=['tests','tests.*']),
+     classifiers=[
+         "Programming Language :: Python :: 3",
+         "License :: OSI Approved :: MIT License",

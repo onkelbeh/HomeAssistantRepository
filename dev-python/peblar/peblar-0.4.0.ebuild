@@ -1,17 +1,15 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=hatchling
-PYTHON_COMPAT=( python3_13 )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python client for Peblar EV chargers."
-HOMEPAGE="
-	https://pypi.org/project/peblar/
-"
+HOMEPAGE="https://pypi.org/project/peblar/ https://github.com/frenck/python-peblar"
 
 LICENSE="MIT"
 SLOT="0"

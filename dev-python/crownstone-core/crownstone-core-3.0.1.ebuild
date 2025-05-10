@@ -1,14 +1,14 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
-DESCRIPTION="This is the core of the python lib. It contains shared classes, definitions and utils"
+DESCRIPTION="This is the core of the lib. It contains shared classes, definitions and utils"
 HOMEPAGE="https://github.com/crownstone/crownstone-lib-python-core https://pypi.org/project/crownstone-core/"
 
 LICENSE="MIT"

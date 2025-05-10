@@ -1,23 +1,17 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..13} pypy3 )
+PYTHON_COMPAT=( python3_{12..14} pypy3 )
 PYTHON_REQ_USE="xml(+)"
 
 inherit distutils-r1
 
 DESCRIPTION="XML bomb protection for Python stdlib modules, an xml serialiser"
-HOMEPAGE="
-	https://github.com/tiran/defusedxml/
-	https://pypi.org/project/defusedxml/
-"
-SRC_URI="
-	https://github.com/tiran/defusedxml/archive/v${PV}.tar.gz
-		-> ${P}.gh.tar.gz
-"
+HOMEPAGE="https://github.com/tiran/defusedxml/ https://pypi.org/project/defusedxml/"
+SRC_URI="https://github.com/tiran/${P}/archive/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="PSF-2"
 SLOT="0"

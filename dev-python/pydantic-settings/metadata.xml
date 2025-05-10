@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <upstream>
+    <remote-id type="pypi">pydantic-settings</remote-id>
+    <remote-id type="github">pydantic/pydantic-settings</remote-id>
+  </upstream>
+  <use>
+    <flag name="yaml">Handle YAML</flag>
+    <flag name="toml">Handle TOML</flag>
+    <flag name="aws-secrets-manager">Store secrets for AWS</flag>
+    <flag name="azure-key-vault">Store secrets for Azure</flag>
+    <flag name="gcp-secret-manager">Store secrets for GCP</flag>
+  </use>
+</pkgmetadata>

@@ -1,9 +1,9 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
@@ -20,12 +20,13 @@ DOCS="README.md"
 
 RDEPEND="
 	>=dev-python/aiohttp-3.8.6[${PYTHON_USEDEP}]
-	=dev-python/music-assistant-models-1.1.43[${PYTHON_USEDEP}]
+	~dev-python/music-assistant-models-1.1.43[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.9[${PYTHON_USEDEP}]
 "
 
 src_prepare() {
-	echo -ne '\n[build-system]\nrequires = ["setuptools"]\nbuild-backend = "setuptools.build_meta"\n' >> pyproject.toml || die
+	echo -ne '\n[build-system]\nrequires = ["setuptools"]' >> pyproject.toml || die
+	echo -ne '\nbuild-backend = "setuptools.build_meta"\n' >> pyproject.toml || die
 	default
 }
 

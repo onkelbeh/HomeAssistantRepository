@@ -1,12 +1,12 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
-DESCRIPTION="python bindings for the miniaudio library and its decoders (mp3, flac, ogg vorbis, wav)"
+DESCRIPTION="Bindings for the miniaudio library and its decoders (mp3, flac, ogg vorbis, wav)"
 HOMEPAGE="https://github.com/irmen/pyminiaudio https://pypi.org/project/miniaudio/"
 
 LICENSE="MIT"
