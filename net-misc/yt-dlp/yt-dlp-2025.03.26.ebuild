@@ -5,7 +5,7 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=hatchling
 PYTHON_COMPAT=( python3_{11..13} )
-inherit bash-completion-r1 distutils-r1 optfeature wrapper
+inherit shell-completion distutils-r1 optfeature wrapper
 
 DESCRIPTION="youtube-dl fork with additional features and fixes"
 HOMEPAGE="https://github.com/yt-dlp/yt-dlp/"
@@ -53,12 +53,8 @@ python_install_all() {
 	doman yt-dlp.1
 
 	dobashcomp completions/bash/yt-dlp
-
-	insinto /usr/share/fish/vendor_completions.d
-	doins completions/fish/yt-dlp.fish
-
-	insinto /usr/share/zsh/site-functions
-	doins completions/zsh/_yt-dlp
+	dofishcomp completions/fish/yt-dlp.fish
+	dozshcomp completions/zsh/_yt-dlp
 
 	rm -r "${ED}"/usr/share/doc/yt_dlp || die
 
