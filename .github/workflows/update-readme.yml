@@ -26,6 +26,16 @@ jobs:
       uses: actions/checkout@v3
     - name: Update README.md
       run: |
+        fix_readme() {
+          sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1${version}-${stat_${{ inputs.pkg-status }}}/" README.md
+          echo "d"
+          git add README.md
+          echo "e"
+          git commit -m "Release ${{ inputs.pkg-name }}" || true
+          echo "f"
+          git pull --rebase=true
+          echo "g"
+        }
         stat_success=238636
         stat_failure=f85149
         stat_=lightgrey
@@ -40,12 +50,5 @@ jobs:
         echo "b"
         git pull
         echo "c"
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1${version}-${stat_${{ inputs.pkg-status }}}/" README.md
-        echo "d"
-        git add README.md
-        echo "e"
-        git commit -m "Release esphome" || true
-        echo "f"
-        git pull --rebase=true
-        echo "g"
-        git push --force
+        fix_readme
+        git push --force || ( git restore README.md -s origin/master && fix_readme && git push --force )
