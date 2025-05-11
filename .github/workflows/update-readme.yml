@@ -10,6 +10,9 @@ on:
         description: 'Gentoo category (ex: app-misc)'
         type: string
         required: true
+      pkg-version:
+        description: Force a version
+        type: string
       pkg-status:
         description: 'Workflow status (success, failure)'
         type: string
@@ -24,7 +27,11 @@ jobs:
         stat_success=238636
         stat_failure=f85149
         stat_=lightgrey
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./${{ inputs.pkg-category }}/${{ inputs.pkg-name }} -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ inputs.pkg-status }}}/" README.md
+        version="${{ inputs.pkg-version }}"
+        if [ -n "${version}" ] ; then
+          version=echo $( find ./${{ inputs.pkg-category }}/${{ inputs.pkg-name }} -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )
+        fi        
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1$( ${version}-${stat_${{ inputs.pkg-status }}}/" README.md
     - name: GIT Commit
       run: |
         git config --local user.name "xavier.forestier"
