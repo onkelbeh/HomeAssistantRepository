@@ -19,6 +19,7 @@ jobs:
       pkg-name: esphomejob
       pkg-version: esphome
       pkg-status: ${{ github.event.workflow_run.conclusion }}
+      autoretry: true
     secrets: inherit
   package_version:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
@@ -26,4 +27,5 @@ jobs:
       pkg-name: esphome
       pkg-category: dev-embedded
       pkg-status: ${{ github.event.workflow_run.conclusion }}
+      autoretry: true
     secrets: inherit
