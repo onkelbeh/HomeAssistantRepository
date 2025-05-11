@@ -1,4 +1,4 @@
-name: Gentoo build homeassistant
+name: homeassistant
 
 on:   
   workflow_dispatch:  
