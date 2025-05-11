@@ -10,8 +10,7 @@ jobs:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: pkgcheck
-      pkg-category: pkgcheck
-      pkg-version: pkgcheck
+      pkg-version: 'pkgcheck (running...)'
       pkg-status: ''
     secrets: inherit
   pkgcheck:
