@@ -1,4 +1,4 @@
-name: Gentoo build homeassistant
+name: zigbee2mqqt
 
 on:   
   #Manualy
