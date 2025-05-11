@@ -1,0 +1,17 @@
+name: test
+
+on:
+  workflow_dispatch:
+    inputs:
+      status:
+    
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      run: |      
+        status_success=238636
+        status_failure=d43442
+        status_=lightgrey
+        echo ${ status_${{ github.event.inputs.frontend_version }} }
