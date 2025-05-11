@@ -21,7 +21,7 @@ jobs:
       run: |
         git config --local user.name "xavier.forestier"
         git add README.md
-        git commit -m "Release esphome"
+        git commit -m "Release esphome" || true
     
     - name: GIT Push
       uses: ad-m/github-push-action@master
