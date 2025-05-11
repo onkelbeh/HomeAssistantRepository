@@ -25,6 +25,5 @@ jobs:
       continue-on-error: true
       run: |
         latest_release=$( wget -qO - "https://api.github.com/repos/${{ inputs.upstream }}/releases/latest" | jq -r '.tag_name' )
-        echo "LATEST_RELEASE=${latest_release}" >> $GITHUB_ENV
         test ! -e "./${{ inputs.pkgCategory }}/${{ inputs.pkgName }}/${{ inputs.pkgName }}-${latest_release}.ebuild" && git switch -c "feature/${{ inputs.pkgName }}-${{ env.LATEST_RELEASE }}"
         git push
