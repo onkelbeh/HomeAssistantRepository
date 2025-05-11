@@ -1,5 +1,4 @@
 name: test
-
 on:
   workflow_dispatch:
     inputs:
@@ -9,7 +8,6 @@ on:
         options: 
         - success
         - failure
-    
 
 jobs:
   build:
@@ -20,4 +18,4 @@ jobs:
         stat_success=238636
         stat_failure=d43442
         stat_=lightgrey
-        echo ${stat_${{ github.event.inputs.status }}}
+        echo ${stat_${{ github.event.inputs.status }}${{ github.event.workflow_run.conclusion }}}
