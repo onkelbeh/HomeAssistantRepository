@@ -4,9 +4,9 @@ on:
   #Manualy
   workflow_dispatch:
   #Pull request validated to main
-  push:
-    branches:
-    - master
+  # push:
+  #  branches:
+  #  - master
   #or Pull request to master requested
   pull_request:
     branches: [ "master" ]
