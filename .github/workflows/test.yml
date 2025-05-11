@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       status:
+        type: choice
+        description: Workflow status
+        options: 
+        - success
+        - failure
     
 
 jobs:
