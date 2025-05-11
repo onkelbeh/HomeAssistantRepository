@@ -10,7 +10,7 @@
 
 ![shellcheck](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/shellcheck.yml/badge.svg?event=pull_request)
 ![pkgcheck](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg?event=pull_request) 
-[![zigbee2mqqt](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml/badge.svg?branch=master&event=push)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml?query=event%3Apush+branch%3Amaster)
+[![zigbee2mqtt](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml/badge.svg?branch=master&event=push)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml?query=event%3Apush+branch%3Amaster)
 [![esphome](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml/badge.svg?branch=master&event=push)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml?branch=master&event=push)
 
 ## without Docker & Virtual Environments
