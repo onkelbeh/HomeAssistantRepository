@@ -18,7 +18,7 @@ jobs:
       run: |
         git config --local user.name "xavier.forestier"
         git add README.md
-        git commit -m "Release zigbee2mqtt"
+        git commit -m "Release zigbee2mqtt" || true
     
     - name: GIT Push
       uses: ad-m/github-push-action@master
