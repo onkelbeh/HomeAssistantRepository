@@ -1,3 +1,4 @@
+name: esphome successfull
 on:  
   workflow_run:
     workflows: ['esphome']
