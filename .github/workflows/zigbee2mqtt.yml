@@ -14,6 +14,7 @@ jobs:
       pkg-name: zigbee2mqttjob
       pkg-version: 'zigbee2mqtt%20(running...)'
       pkg-status: ''
+      autoretry: true
     secrets: inherit
   zigbee2mqtt:
     runs-on: ubuntu-latest
