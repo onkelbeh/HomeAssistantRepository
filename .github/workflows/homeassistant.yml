@@ -6,16 +6,41 @@ on:
     branches: [ "master" ]
 
 jobs:
-  homeassistant_init:
+  homeassistant_init_min:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
-      pkg-name: homeassistant_minimal
+      pkg-name: 'homeassistant_minimal'
       pkg-version: 'homeassistant[minimal]%20(running...)'
       pkg-status: ''
     secrets: inherit
+    
+  homeassistant_init_normal:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: 'homeassistant_normal'
+      pkg-version: 'homeassistant[normal]%20(running...)'
+      pkg-status: ''
+    secrets: inherit
+    
+  homeassistant_init_full:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: 'homeassistant_full'
+      pkg-version: 'homeassistant[full]%20(running...)'
+      pkg-status: ''
+    secrets: inherit
+    
+  homeassistant_init:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: 'homeassistant'
+      pkg-category: 'app-misc'
+      pkg-status: ''
+    secrets: inherit
+    
   homeassistant_merge:
     runs-on: ubuntu-latest
-    needs: homeassistant_init
+    needs: [homeassistant_init_min,homeassistant_init_normal,homeassistant_init_full,homeassistant_init]
     container:
       image: ghcr.io/antonfischl1980/gentoo-ci:main
       options: --privileged
@@ -40,31 +65,9 @@ jobs:
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
         echo "*/* *" >> /etc/portage/package.license
         
-    - name: emerge-sync
-      run: |
-        sudo -u portage git -C /var/db/repos/gentoo pull
-        emerge --sync -q
-        
-    - name : Move to python-13
-      run: |
-        emerge --jobs -q eix
-        emerge --depclean -q dev-util/pkgcheck sys-apps/pkgcore app-eselect/eselect-repository
-        eix-update
-        USE="python_targets_python3_13 -python_targets_python3_12" emerge --oneshot `eix -I# --use python_targets_python3_12` --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -q 
-        
-    - name: Free up some space
-      run: |
-        rm /var/cache/distfiles/* || true 
-        rm /var/cache/binpkgs/* || true 
-        rm -rf /var/tmp/portage/* || true
-                
-    - name: Check that dependencies for homeassistant[full] are all there !
-      run: |
-        rm /etc/portage/package.use/._cfg0000_zzz.use || true
-        echo -n "" > /etc/portage/package.use/zzz.use
-        USE="-minimal -normal full" emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -vp || true
-        
     - name: emerge homeassistant[minimal] first...
+      continue-on-error: true
+      id: merge_min
       run: |
         rm /etc/portage/package.use/._cfg0000_zzz.use || true
         echo -n "" > /etc/portage/package.use/zzz.use
@@ -73,14 +76,30 @@ jobs:
         for log in $( find /etc/portage/ -type f ); do echo -e "$log\n======"; cat $log; done
         USE="minimal -normal -full" emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -v
         
-    - name: Free up some space
+    - name: Update README, and cleanup up some space
       run: |
+        stat_success=238636
+        stat_failure=f85149
+        stat_cancelled=lightgrey
+        stat_skipped=lightgrey
+        stat_=lightgrey
+        git config --local user.name "xavier.forestier"
+        git config --local user.email "{ID}+{username}@users.noreply.github.com"
+        git fetch
+        git pull
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ steps.merge_min.conclusion }}}/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_minimal-\\)[^-]*-[^\\?]*/\\1homeassistant[minimal]-${stat_${{ steps.merge_min.conclusion }}}/" README.md
+        git add README.md
+        git commit -m "Release homeassistant" || true
+        git push --force-with-lease
         rm /var/cache/distfiles/* || true 
         rm /var/cache/binpkgs/* || true 
         rm -rf /var/tmp/portage/* || true
 
     # Last build normal features
     - name: emerge then homeassistant[normal]
+      continue-on-error: true
+      id: merge_normal
       run: |
         rm /etc/portage/package.use/._cfg0000_zzz.use || true
         echo -n "" > /etc/portage/package.use/zzz.use
@@ -91,12 +110,28 @@ jobs:
         
     - name: Free up some space
       run: |
+        stat_success=238636
+        stat_failure=f85149
+        stat_cancelled=lightgrey
+        stat_skipped=lightgrey
+        stat_=lightgrey
+        git config --local user.name "xavier.forestier"
+        git config --local user.email "{ID}+{username}@users.noreply.github.com"
+        git fetch
+        git pull
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ steps.merge_normal.conclusion }}}/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_normal-\\)[^-]*-[^\\?]*/\\1homeassistant[normal]-${stat_${{ steps.merge_normal.conclusion }}}/" README.md
+        git add README.md
+        git commit -m "Release homeassistant" || true
+        git push --force-with-lease
         rm /var/cache/distfiles/* || true 
         rm /var/cache/binpkgs/* || true 
         rm -rf /var/tmp/portage/* || true
     
     # Last build full features
     - name: Finally try an emerge homeassistant[full] !
+      continue-on-error: true
+      id: merge_full
       run: |
         rm /etc/portage/package.use/._cfg0000_zzz.use || true
         echo -n "" > /etc/portage/package.use/zzz.use
@@ -107,6 +142,20 @@ jobs:
         
     - name: Free up space
       run: |
+        stat_success=238636
+        stat_failure=f85149
+        stat_cancelled=lightgrey
+        stat_skipped=lightgrey
+        stat_=lightgrey
+        git config --local user.name "xavier.forestier"
+        git config --local user.email "{ID}+{username}@users.noreply.github.com"
+        git fetch
+        git pull
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ steps.merge_full.conclusion }}}/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_full-\\)[^-]*-[^\\?]*/\\1homeassistant[full]-${stat_${{ steps.merge_full.conclusion }}}/" README.md
+        git add README.md
+        git commit -m "Release homeassistant" || true
+        git push --force-with-lease
         rm /var/cache/distfiles/* || true 
         rm /var/cache/binpkgs/* || true 
         rm -rf /var/tmp/portage/* || true
