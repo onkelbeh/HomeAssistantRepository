@@ -7,12 +7,9 @@ DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
-SRC_URI="https://github.com/shmuelzon/${PN}/archive/refs/tags/${PV}.tar.gz"
-
 DESCRIPTION="A module to interact with Ituran's web service."
-HOMEPAGE="
-	https://pypi.org/project/pyituran/
-"
+HOMEPAGE="https://pypi.org/project/pyituran/ https://github.com/shmuelzon/pyituran"
+SRC_URI="https://github.com/shmuelzon/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

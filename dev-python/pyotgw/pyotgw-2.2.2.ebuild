@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A library to interface with the opentherm gateway through serial or network connection."
+DESCRIPTION="Interfaces the opentherm gateway through serial or network connection."
 HOMEPAGE="https://github.com/mvn23/pyotgw https://pypi.org/project/pyotgw/"
 MY_PV="${PV/_beta/b}"
 SRC_URI="$(pypi_sdist_url "${PN}" "${MY_PV}")"

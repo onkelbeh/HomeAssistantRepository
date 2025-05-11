@@ -1,0 +1,11 @@
+--- a/setup.py	2021-05-10 00:40:15.000000000 +0200
++++ b/setup.py	2025-05-10 12:35:04.133264641 +0200
+@@ -13,7 +13,7 @@
+     long_description_content_type='text/markdown',
+     long_description=long_description,
+     url='https://github.com/ChrisMandich/PyFlume',
+-    packages=setuptools.find_packages(),
++    packages=setuptools.find_packages(exclude=['tests','tests.*']),
+     classifiers=[
+         'Programming Language :: Python :: 3',
+         'License :: OSI Approved :: MIT License',

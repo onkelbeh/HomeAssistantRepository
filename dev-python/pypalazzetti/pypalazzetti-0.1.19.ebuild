@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A Python library to access and control a Palazzetti stove through a Palazzetti Connection Box"
+DESCRIPTION="Library to access and control a Palazzetti stove through a Palazzetti Box"
 HOMEPAGE="https://github.com/dotvav/py-palazzetti-api https://pypi.org/project/pypalazzetti/"
 
 LICENSE="MIT"
@@ -19,10 +19,5 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]"
-
-src_prepare() {
-	sed -i "s/packages=setuptools.find_packages()/packages=setuptools.find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
-	eapply_user
-}
 
 distutils_enable_tests pytest

@@ -11,7 +11,7 @@ HOMEPAGE="https://github.com/JeffLIrion/adb_shell https://pypi.org/project/adb-s
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
-IUSE="test usb"
+IUSE="async test usb"
 RESTRICT="!test? ( test )"
 
 DOCS="README.rst"

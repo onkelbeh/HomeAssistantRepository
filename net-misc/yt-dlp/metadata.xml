@@ -13,4 +13,7 @@
       <name>pukkandan</name>
     </maintainer>
   </upstream>
+  <use>
+    <flag name="default">default</flag>
+  </use>
 </pkgmetadata>

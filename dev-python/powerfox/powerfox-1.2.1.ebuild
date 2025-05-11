@@ -9,9 +9,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="Asynchronous Python client for the Powerfox devices"
-HOMEPAGE="
-	https://pypi.org/project/powerfox/
-"
+HOMEPAGE="https://pypi.org/project/powerfox/ https://github.com/klaasnicolaas/python-powerfox"
 
 LICENSE="MIT"
 SLOT="0"

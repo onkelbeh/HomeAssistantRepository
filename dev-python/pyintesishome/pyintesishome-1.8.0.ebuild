@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A python3 library for running asynchronus communications with IntesisHome Smart AC Controllers"
+DESCRIPTION="Communications with IntesisHome Smart AC Controllers"
 HOMEPAGE="https://github.com/jnimmo/pyIntesisHome https://pypi.org/project/pyintesishome/"
 
 LICENSE="MIT"

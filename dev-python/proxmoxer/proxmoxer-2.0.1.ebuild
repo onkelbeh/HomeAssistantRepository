@@ -24,11 +24,6 @@ BDEPEND="
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
 
-src_prepare() {
-	sed "s/packages=\['proxmoxer', 'proxmoxer.backends', 'tests', 'tests.base'\]/packages=['proxmoxer', 'proxmoxer.backends']/g" -i setup.py || die
-	eapply_user
-}
-
 python_test() {
 	py.test -v -v || die
 }

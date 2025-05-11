@@ -1,0 +1,11 @@
+--- a/setup.py	2024-09-02 04:08:29.000000000 +0200
++++ b/setup.py	2025-05-10 16:30:24.783389731 +0200
+@@ -11,7 +11,7 @@
+     long_description=long_description,
+     long_description_content_type="text/markdown",
+     url="https://github.com/iloveicedgreentea/py-madvr",
+-    packages=setuptools.find_packages(),
++    packages=setuptools.find_packages(exclude=['tests','tests.*']),
+     package_data={"py_madvr2": ["py.typed"]},
+     classifiers=[
+         "Programming Language :: Python :: 3.12",

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A simple library to interface with iAlarm systems, built for use with Home-Assistant"
+DESCRIPTION="A simple library to interface with iAlarm systems"
 HOMEPAGE="https://github.com/RyuzakiKK/pyialarm https://pypi.org/project/pyialarm/"
 
 LICENSE="Apache-2.0"

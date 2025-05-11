@@ -28,7 +28,6 @@ RDEPEND=">=dev-python/aiohttp-3.8.3[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.30.0[${PYTHON_USEDEP}]
 	>=dev-python/srptools-0.2.0[${PYTHON_USEDEP}]
 	>=dev-python/tabulate-0.9.0[${PYTHON_USEDEP}]
-	
 	>=dev-python/zeroconf-0.129.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/pytest-runner[${PYTHON_USEDEP}]

@@ -9,16 +9,13 @@ PYTHON_COMPAT=( python3_{12..14} )
 inherit distutils-r1 pypi
 
 DESCRIPTION="A Python library to interface with the Hive API"
-HOMEPAGE="
-	https://pypi.org/project/pyhive-integration/
-"
+HOMEPAGE="https://github.com/Pyhass/Pyhiveapi https://pypi.org/project/pyhive-integration/"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
-	!dev-python/pyhiveapi[${PYTHON_USEDEP}]
 	>=dev-python/boto3-1.16.10[${PYTHON_USEDEP}]
 	>=dev-python/botocore-1.19.10[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]

@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="Plugwise (Adam/Anna/P1/Stick/Stretch) API to use in conjunction with Home Assistant Core."
+DESCRIPTION="Plugwise (Adam/Anna/P1/Stick/Stretch) API"
 HOMEPAGE="https://github.com/plugwise/python-plugwise https://pypi.org/project/plugwise/"
 
 LICENSE="MIT"

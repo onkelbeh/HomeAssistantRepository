@@ -9,9 +9,7 @@ PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Python wrapper for the Pterodactyl Panel API"
-HOMEPAGE="
-	https://pypi.org/project/py-dactyl/
-"
+HOMEPAGE="https://pypi.org/project/py-dactyl/ https://github.com/iamkubi/pydactyl"
 
 LICENSE="MIT"
 SLOT="0"
@@ -20,7 +18,6 @@ KEYWORDS="amd64 arm arm64 x86"
 RDEPEND="
 	>=dev-python/requests-2.21.0[${PYTHON_USEDEP}]
 "
-BDEPEND=""
 src_install() {
 	rm -r "${S}/tests"
 }

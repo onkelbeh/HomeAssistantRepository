@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
-
+PATCHES="${FILESDIR}/${PN}-fix-setup-py.patch"
 DOCS="README.md"
 
 RDEPEND="dev-python/pytz[${PYTHON_USEDEP}]
@@ -30,11 +30,6 @@ BDEPEND="
 
 python_test() {
 	py.test -v -v || die
-}
-
-src_prepare() {
-	sed "s/packages=setuptools.find_packages()/packages=setuptools.find_packages(exclude=['tests','tests.*'])/g" -i setup.py || die
-	eapply_user
 }
 
 distutils_enable_tests pytest

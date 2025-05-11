@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="PRAW, an acronym for Python Reddit API Wrapper, is a python package that allows for simple access to reddit's API."
+DESCRIPTION="Python Reddit API Wrapper allows for simple access to reddit's API."
 HOMEPAGE="https://github.com/praw-dev/praw https://pypi.org/project/praw/"
 
 LICENSE="BSD-2"
