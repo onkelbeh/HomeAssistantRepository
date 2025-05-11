@@ -1,12 +1,17 @@
 # Home Assistant for Gentoo
-## without Docker & Virtual Environments
 
+[![homeassistant-version](https://img.shields.io/badge/homeassistant-2025.4.4-orange?logo=homeassistant&label=app-misc%2Fhomeassistant)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/homeassistant)
+[![zigbee2mqtt-version](https://img.shields.io/badge/zigbee2mqtt-2.3.0-orange?logo=zigbee2mqtt&label=app-misc%2Fzigbe2mqqt)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/zigbee2mqtt)
+[![esphome-version](https://img.shields.io/badge/esphome-2025.4.1-orange?logo=esphome&label=dev-embedded%2Fesphome)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/dev-embedded/esphome)
 
 [![OS](https://img.shields.io/badge/OS-Gentoo%20Linux-blue)](https://www.gentoo.org/)
-[![weekly commits](https://img.shields.io/github/commit-activity/w/onkelbeh/HomeAssistantRepository)](https://github.com/onkelbeh/HomeAssistantRepository/commits/)
-[![monthly commits](https://img.shields.io/github/commit-activity/m/onkelbeh/HomeAssistantRepository)](https://github.com/onkelbeh/HomeAssistantRepository/commits/)
-[![version](https://img.shields.io/github/v/release/onkelbeh/HomeAssistantRepository)](https://github.com/onkelbeh/HomeAssistantRepository/releases)
+[![weekly commits](https://img.shields.io/github/commit-activity/w/xavierforestier/HomeAssistantRepository)](https://github.com/xavierforestier/HomeAssistantRepository/commits/)
+[![monthly commits](https://img.shields.io/github/commit-activity/m/xavierforestier/HomeAssistantRepository)](https://github.com/xavierforestier/HomeAssistantRepository/commits/)
 
+![shellcheck](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/shellcheck.yml/badge.svg?event=pull_request)
+![pkgcheck](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg?event=pull_request) 
+
+## without Docker & Virtual Environments
 
 https://www.home-assistant.io/
 https://github.com/home-assistant/home-assistant
