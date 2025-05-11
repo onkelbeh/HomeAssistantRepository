@@ -1,7 +1,7 @@
 # Home Assistant for Gentoo
 
 [![homeassistant-version](https://img.shields.io/badge/homeassistant-2025.4.4-orange?logo=homeassistant&label=app-misc%2Fhomeassistant)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/homeassistant)
-[![zigbee2mqtt-version](https://img.shields.io/badge/zigbee2mqtt-2.3.0-orange?logo=zigbee2mqtt&label=app-misc%2Fzigbe2mqqt)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/zigbee2mqtt)
+[![zigbee2mqtt-version](https://img.shields.io/badge/zigbee2mqtt-2.3.0-orange?logo=zigbee2mqtt&label=app-misc%2Fzigbee2mqqt)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/zigbee2mqtt)
 [![esphome-version](https://img.shields.io/badge/esphome-2025.4.1-orange?logo=esphome&label=dev-embedded%2Fesphome)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/dev-embedded/esphome)
 
 [![OS](https://img.shields.io/badge/OS-Gentoo%20Linux-blue)](https://www.gentoo.org/)
@@ -10,7 +10,7 @@
 
 ![shellcheck](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/shellcheck.yml/badge.svg?event=pull_request)
 ![pkgcheck](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg?event=pull_request) 
-[![zigbee2mqqt](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml/badge.svg)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml)
+[![zigbee2mqqt](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml/badge.svg?branch=master&event=push)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml?query=event%3Apush+branch%3Amaster)
 
 ## without Docker & Virtual Environments
 
