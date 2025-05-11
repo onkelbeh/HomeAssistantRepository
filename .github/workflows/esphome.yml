@@ -15,7 +15,7 @@ jobs:
   esphome_init:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
-      pkg-name: esphome-cicd
+      pkg-name: esphomejob
       pkg-version: 'esphome%20(running...)'
       pkg-status: ''
     secrets: inherit
