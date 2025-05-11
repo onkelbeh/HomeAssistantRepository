@@ -1,4 +1,4 @@
-name: zigbee2mqqt
+name: zigbee2mqtt
 
 on:   
   #Manualy
@@ -34,7 +34,7 @@ jobs:
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
         echo "*/* *" >> /etc/portage/package.license
     # Compile zigbee2mqqt and its dependencies
-    - name: emerge app-misc/zigbee2mqqt...
+    - name: emerge app-misc/zigbee2mqtt...
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
         emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -q app-misc/zigbee2mqtt || true
