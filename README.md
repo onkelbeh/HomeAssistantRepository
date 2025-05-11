@@ -10,6 +10,7 @@
 
 ![shellcheck](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/shellcheck.yml/badge.svg?event=pull_request)
 ![pkgcheck](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/pkgcheck.yml/badge.svg?event=pull_request) 
+[![zigbee2mqqt](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml/badge.svg)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml)
 
 ## without Docker & Virtual Environments
 
