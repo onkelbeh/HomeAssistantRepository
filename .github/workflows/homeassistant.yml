@@ -69,6 +69,7 @@ jobs:
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
         echo "*/* *" >> /etc/portage/package.license
         pwd
+        git config --global --add safe.directory .
         git status
         
     - name: emerge homeassistant[minimal] first...
