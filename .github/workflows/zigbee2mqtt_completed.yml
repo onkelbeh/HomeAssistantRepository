@@ -19,6 +19,7 @@ jobs:
       pkg-name: zigbee2mqttjob
       pkg-version: zigbee2mqtt
       pkg-status: ${{ github.event.workflow_run.conclusion }}
+      autoretry: true
     secrets: inherit
   package_version:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
@@ -26,4 +27,5 @@ jobs:
       pkg-name: zigbee2mqtt
       pkg-category: app-misc
       pkg-status: ${{ github.event.workflow_run.conclusion }}
+      autoretry: true
     secrets: inherit
