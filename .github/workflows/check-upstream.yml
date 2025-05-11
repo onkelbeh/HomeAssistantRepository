@@ -1,0 +1,34 @@
+name: Check for update in upstream
+on: 
+  workflow_call:
+    inputs:
+      upstream: 
+        description: 'Upstream URL'
+        required: true
+        type: string
+      pkgName: 
+        description: 'Gentoo package'
+        required: true
+        type: string
+      pkgCategory: 
+        description: 'Gentoo category'
+        required: true
+        type: string
+jobs:  
+  check_upstream:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Is last upstream version already known
+      id: latest_version
+      continue-on-error: true
+      run: |
+        echo "LATEST_RELEASE=$( wget -qO - "https://api.github.com/repos/${{ inputs.upstream }}/releases/latest" | jq -r '.tag_name' )" >> $GITHUB_ENV
+        test -e "./${{ inputs.pkgCategory }}/${{ inputs.pkgName }}/${{ inputs.pkgName }}-${latest-release}.ebuild"
+    - name: Newversion available
+      if: ${{ steps.latest_version.conclusion == "failure" }}
+      run: |
+        git switch -c "feature/${{ inputs.pkgName }}-${{ env.LATEST_RELEASE }}"
+        git push
+      
