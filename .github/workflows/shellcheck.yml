@@ -28,11 +28,3 @@ jobs:
         SHELLCHECK_OPTS: -s bash -e SC2034 -e SC2016
       with:
         additional_files: '*.ebuild'
-  shellcheck_done:
-    needs: shellcheck
-    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    with:
-      pkg-name: shellcheck
-      pkg-version: shellcheck
-      pkg-status: 'failure'
-    secrets: inherit
