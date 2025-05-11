@@ -1,0 +1,27 @@
+name: check_version
+on:
+  workflow_dispatch:
+jobs:
+  homeassistant:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/check-upstream.yml@master
+    with:
+      upstream: "home-assistant/core"
+      pkgName: "homeassistant"
+      pkgCategory: "app-misc"
+    secrets: inherit
+    
+  zigbee2mqtt:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/check-upstream.yml@master
+    with:
+      upstream: "Koenkk/zigbee2mqtt"
+      pkgName: "zigbee2mqtt"
+      pkgCategory: "app-misc"
+    secrets: inherit
+    
+  esphome:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/check-upstream.yml@master
+    with:
+      upstream: "esphome/esphome"
+      pkgName: "esphome"
+      pkgCategory: "dev-embedded"
+    secrets: inherit
