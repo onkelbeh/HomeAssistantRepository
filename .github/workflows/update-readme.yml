@@ -30,7 +30,7 @@ jobs:
           sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1${version}-${stat_${{ inputs.pkg-status }}}/" README.md
           git add README.md
           git commit -m "Release ${{ inputs.pkg-name }}" || true
-          git pull --rebase=true
+          git pull
         }
         stat_success=238636
         stat_failure=f85149
