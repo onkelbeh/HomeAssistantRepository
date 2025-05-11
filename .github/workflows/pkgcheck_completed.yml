@@ -19,4 +19,5 @@ jobs:
       pkg-name: pkgcheck
       pkg-version: pkgcheck
       pkg-status: ${{ github.event.workflow_run.conclusion }}
+      autoretry: true
     secrets: inherit
