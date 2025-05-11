@@ -21,7 +21,6 @@ on:
 jobs:  
   update_readme:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -42,15 +41,3 @@ jobs:
         git add README.md
         git commit -m "Release esphome" || true
         git push --force-with-lease
-        
-  retry:
-    needs: update_readme
-    if: ${{ failure() && inputs.autoretry == true }}
-    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    with:
-      pkg-name: ${{ inputs.pkg-name }}
-      pkg-category: ${{ inputs.pkg-category }}
-      pkg-version: ${{ inputs.pkg-version }}
-      pkg-status: ${{ inputs.pkg-status }}
-      autoretry: false
-    secrets: inherit
