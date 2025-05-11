@@ -35,10 +35,17 @@ jobs:
         fi
         git config --local user.name "xavier.forestier"
         git config --local user.email "{ID}+{username}@users.noreply.github.com"
+        echo "a"
         git fetch
+        echo "b"
         git pull
+        echo "c"
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1${version}-${stat_${{ inputs.pkg-status }}}/" README.md
+        echo "d"
         git add README.md
+        echo "e"
         git commit -m "Release esphome" || true
+        echo "f"
         git pull --rebase=true
+        echo "g"
         git push --force
