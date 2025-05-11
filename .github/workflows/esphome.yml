@@ -18,6 +18,7 @@ jobs:
       pkg-name: esphomejob
       pkg-version: 'esphome%20(running...)'
       pkg-status: ''
+      autoretry: true
     secrets: inherit
   esphome_merge:
     runs-on: ubuntu-latest
