@@ -9,7 +9,6 @@ on:
       pkg-category:
         description: 'Gentoo category (ex: app-misc)'
         type: string
-        required: true
       pkg-version:
         description: Force a version
         type: string
