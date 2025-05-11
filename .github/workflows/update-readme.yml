@@ -11,7 +11,7 @@ on:
         type: string
         required: true
       pkg-status:
-        description: 'Worflow status (success, failure)'
+        description: 'Workflow status (success, failure)'
         type: string
     secrets:
       GITHUB_TOKEN:
