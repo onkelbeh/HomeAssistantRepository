@@ -1,4 +1,4 @@
-name: esphome successfull
+name: esphome completed
 on:
   workflow_dispatch:
     inputs:
