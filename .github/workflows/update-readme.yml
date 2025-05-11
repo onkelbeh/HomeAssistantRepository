@@ -30,7 +30,7 @@ jobs:
           sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1${version}-${stat_${{ inputs.pkg-status }}}/" README.md
           git add README.md
           git commit -m "Release ${{ inputs.pkg-name }}" || true
-          git pull
+          git pull --ff
         }
         stat_success=238636
         stat_failure=f85149
@@ -42,6 +42,6 @@ jobs:
         git config --local user.name "xavier.forestier"
         git config --local user.email "{ID}+{username}@users.noreply.github.com"
         git fetch
-        git pull
+        git pull --ff
         fix_readme
-        git push --force-with-lease --no-rebase || ( git restore README.md -s origin/master && fix_readme && git push --force-with-lease --no-rebase )
+        git push --force-with-lease || ( git restore README.md -s origin/master && fix_readme && git push --force-with-lease )
