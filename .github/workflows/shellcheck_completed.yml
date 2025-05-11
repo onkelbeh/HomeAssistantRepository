@@ -1,0 +1,22 @@
+name: shellcheck completed
+on:
+  workflow_dispatch:
+    inputs:
+      status:
+        type: choice
+        description: Force action status
+        options: 
+        - success
+        - failure
+  workflow_run:
+    workflows: ['shellcheck']
+    types: completed
+    branches: [master]
+jobs:
+  update_readme:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: shellcheck
+      pkg-version: shellcheck
+      pkg-status: github.event.workflow_run.conclusion
+    secrets: inherit
