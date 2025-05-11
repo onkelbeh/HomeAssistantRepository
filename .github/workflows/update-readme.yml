@@ -13,9 +13,6 @@ on:
       pkg-status:
         description: 'Workflow status (success, failure)'
         type: string
-    secrets:
-      GITHUB_TOKEN:
-        required: true
 jobs:  
   update_readme:
     runs-on: ubuntu-latest
