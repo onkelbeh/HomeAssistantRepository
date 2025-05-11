@@ -12,7 +12,8 @@ jobs:
     steps:
     - name: step1
       run: |      
-        status_success=238636
-        status_failure=d43442
-        status_=lightgrey
-        echo ${ status_${{ github.event.inputs.frontend_version }} }
+        statussuccess=238636
+        statusfailure=d43442
+        status=lightgrey
+        status=status${{ github.event.inputs.status }}
+        echo ${status}
