@@ -12,6 +12,7 @@ jobs:
       pkg-name: pkgcheck
       pkg-version: 'pkgcheck%20(running...)'
       pkg-status: ''
+      autoretry: true
     secrets: inherit
   pkgcheck:
     runs-on: ubuntu-latest
