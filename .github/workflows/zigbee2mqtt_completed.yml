@@ -14,25 +14,9 @@ on:
     branches: [master]
 jobs:
   update_readme:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - name: Update README.md
-      run: |
-        stat_success=238636
-        stat_failure=f85149
-        stat_=lightgrey
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/zigbee2mqtt-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/zigbee2mqtt -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ github.event.workflow_run.conclusion }}${{ github.event.inputs.status }}}/" README.md
-    - name: GIT Commit
-      run: |
-        git config --local user.name "xavier.forestier"
-        git config --local user.email "{ID}+{username}@users.noreply.github.com"
-        git add README.md
-        git commit -m "Release zigbee2mqtt" || true
-    
-    - name: GIT Push
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: zigbee2mqtt
+      pkg-category: app-misc
+      pkg-status: github.event.workflow_run.conclusion
+    secrets: inherit
