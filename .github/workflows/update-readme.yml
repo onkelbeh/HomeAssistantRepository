@@ -28,7 +28,7 @@ jobs:
         stat_=lightgrey
         version="${{ inputs.pkg-version }}"
         if [ -n "${version}" ] ; then
-          version=echo $( find ./${{ inputs.pkg-category }}/${{ inputs.pkg-name }} -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )
+          version=$( find ./${{ inputs.pkg-category }}/${{ inputs.pkg-name }} -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )
         fi        
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1${version}-${stat_${{ inputs.pkg-status }}}/" README.md
     - name: GIT Commit
