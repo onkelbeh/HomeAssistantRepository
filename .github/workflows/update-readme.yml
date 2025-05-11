@@ -15,7 +15,8 @@ on:
       pkg-status:
         description: 'Workflow status (success, failure)'
         type: string
-      pkg-noretry:
+      autoretry:
+        default: true
         type: boolean
 jobs:  
   update_readme:
@@ -44,12 +45,12 @@ jobs:
         
   retry:
     needs: update_readme
-    if: ${{ failure() && !inputs.pkg-noretry }}
+    if: ${{ failure() && inputs.autoretry == true }}
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: ${{ inputs.pkg-name }}
       pkg-category: ${{ inputs.pkg-category }}
       pkg-version: ${{ inputs.pkg-version }}
       pkg-status: ${{ inputs.pkg-status }}
-      pkg-noretry: true
+      autoretry: false
     secrets: inherit
