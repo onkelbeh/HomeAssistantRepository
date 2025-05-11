@@ -16,7 +16,7 @@ jobs:
         status_success=238636
         status_failure=d43442
         status_=lightgrey
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphome-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./dev-embedded/esphome -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${ status_${ ${{ github.event.workflow_run.conclusion }} } }/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphome-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./dev-embedded/esphome -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${status_${{ github.event.workflow_run.conclusion }}} }/" README.md
     - name: GIT Commit
       run: |
         git config --local user.name "xavier.forestier"
