@@ -12,6 +12,7 @@ jobs:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: shellcheck
+      pkg-category: shellcheck
       pkg-version: shellcheck
       pkg-status: 'failure'
     secrets: inherit
