@@ -7,7 +7,7 @@ on:
   push:
     branches:
     - master
-  #or Pull request to maaster requested
+  #or Pull request to master requested
   pull_request:
     branches: [ "master" ]
 
@@ -38,10 +38,10 @@ jobs:
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
         echo "*/* *" >> /etc/portage/package.license
     # Compile zigbee2mqqt and its dependencies
-    - name: emerge dev-embbedded/esphome...
+    - name: emerge dev-embedded/esphome...
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
-        emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -q dev-embbedded/esphome || true
+        emerge --jobs --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -q dev-embedded/esphome || true
         for log in $( find /var/tmp/portage/ | grep build.log ); do echo -e "$log\n======"; cat $log; done
         for log in $( find /etc/portage/ -type f ); do echo -e "$log\n======"; cat $log; done
-        emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -v dev-embbedded/esphome
+        emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -v dev-embedded/esphome
