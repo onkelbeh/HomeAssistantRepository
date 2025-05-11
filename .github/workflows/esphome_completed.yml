@@ -1,0 +1,27 @@
+on:  
+  workflow_run:
+    workflows: ['esphome']
+    types: completed
+    branches: [master]
+jobs:
+  update_readme:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Update README.md
+      run: |
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphome-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./dev-embedded/esphome -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-orange/" README.md
+    - name: GIT Commit
+      run: |
+        git config --local user.name "xavier.forestier"
+        git add README.md
+        git commit -m "Release esphome"
+    
+    - name: GIT Push
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
+  
