@@ -1,6 +1,6 @@
 # Home Assistant for Gentoo
 
-[![homeassistant-version](https://img.shields.io/badge/homeassistant-2025.4.4-f85149?logo=homeassistant&label=app-misc%2Fhomeassistant)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/homeassistant)
+[![homeassistant-version](https://img.shields.io/badge/2025.4.4-f85149?logo=homeassistant&label=app-misc%2Fhomeassistant)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/homeassistant)
 [![zigbee2mqtt-version](https://img.shields.io/badge/zigbee2mqtt-2.3.0-238636?logo=zigbee2mqtt&label=app-misc%2Fzigbee2mqqt)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/zigbee2mqtt)
 [![esphome-version](https://img.shields.io/badge/esphome-2025.4.1-238636?logo=esphome&label=dev-embedded%2Fesphome)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/dev-embedded/esphome)
 
@@ -8,8 +8,8 @@
 [![weekly commits](https://img.shields.io/github/commit-activity/w/xavierforestier/HomeAssistantRepository)](https://github.com/xavierforestier/HomeAssistantRepository/commits/)
 [![monthly commits](https://img.shields.io/github/commit-activity/m/xavierforestier/HomeAssistantRepository)](https://github.com/xavierforestier/HomeAssistantRepository/commits/)
 
-[![shellcheck](https://img.shields.io/badge/spellcheck-238636?logo=github)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/shellcheck.yml) 
-[![pkgcheck](https://img.shields.io/badge/pkgcheck-238636?logo=github)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/pkgcheck.yml) 
+[![shellcheck](https://img.shields.io/badge/spellcheck-spellcheck-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/shellcheck.yml) 
+[![pkgcheck](https://img.shields.io/badge/pkgcheck-pkgcheck-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/pkgcheck.yml) 
 [![homeassistant](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml/badge.svg?branch=master)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml)
 [![zigbee2mqtt](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml/badge.svg?branch=master&event=push)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml?query=event%3Apush+branch%3Amaster)
 [![esphome](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml/badge.svg?branch=master&event=push)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml?branch=master&event=push)
