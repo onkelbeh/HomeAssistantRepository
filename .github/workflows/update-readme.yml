@@ -44,4 +44,4 @@ jobs:
         git fetch
         git pull
         fix_readme
-        git push --force-with-lease || ( git restore README.md -s origin/master && fix_readme && git push --force-with-lease )
+        git push --force-with-lease --no-rebase || ( git restore README.md -s origin/master && fix_readme && git push --force-with-lease --no-rebase )
