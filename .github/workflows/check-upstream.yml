@@ -27,7 +27,7 @@ jobs:
         echo "LATEST_RELEASE=$( wget -qO - "https://api.github.com/repos/${{ inputs.upstream }}/releases/latest" | jq -r '.tag_name' )" >> $GITHUB_ENV
         test -e "./${{ inputs.pkgCategory }}/${{ inputs.pkgName }}/${{ inputs.pkgName }}-${latest-release}.ebuild"
     - name: Newversion available
-      if: ${{ steps.latest_version.conclusion == "failure" }}
+      if: ${{ steps.latest_version.conclusion == 'failure' }}
       run: |
         git switch -c "feature/${{ inputs.pkgName }}-${{ env.LATEST_RELEASE }}"
         git push
