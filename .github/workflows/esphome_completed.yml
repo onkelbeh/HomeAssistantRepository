@@ -18,5 +18,5 @@ jobs:
     with:
       pkg-name: esphome
       pkg-category: dev-embedded
-      pkg-status: github.event.workflow_run.conclusion
+      pkg-status: ${{ github.event.workflow_run.conclusion }}
     secrets: inherit
