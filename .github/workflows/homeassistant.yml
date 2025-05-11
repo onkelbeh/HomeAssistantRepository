@@ -12,6 +12,7 @@ jobs:
       pkg-name: 'homeassistant_minimal'
       pkg-version: 'homeassistant[minimal]%20(running...)'
       pkg-status: ''
+      autoretry: true
     secrets: inherit
     
   homeassistant_init_normal:
@@ -20,6 +21,7 @@ jobs:
       pkg-name: 'homeassistant_normal'
       pkg-version: 'homeassistant[normal]%20(running...)'
       pkg-status: ''
+      autoretry: true
     secrets: inherit
     
   homeassistant_init_full:
@@ -28,6 +30,7 @@ jobs:
       pkg-name: 'homeassistant_full'
       pkg-version: 'homeassistant[full]%20(running...)'
       pkg-status: ''
+      autoretry: true
     secrets: inherit
     
   homeassistant_init:
@@ -36,6 +39,7 @@ jobs:
       pkg-name: 'homeassistant'
       pkg-category: 'app-misc'
       pkg-status: ''
+      autoretry: true
     secrets: inherit
     
   homeassistant_merge:
