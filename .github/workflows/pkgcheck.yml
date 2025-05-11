@@ -6,8 +6,16 @@ on:
   workflow_dispatch:
 
 jobs:
+  pkgcheck_init:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: pkgcheck
+      pkg-version: pkgcheck
+      pkg-status: ''
+    secrets: inherit
   pkgcheck:
     runs-on: ubuntu-latest
+    needs: pkgcheck_init
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
