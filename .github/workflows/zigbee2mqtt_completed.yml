@@ -13,7 +13,14 @@ on:
     types: completed
     branches: [master]
 jobs:
-  update_readme:
+  job_status:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: zigbee2mqttjob
+      pkg-version: zigbee2mqtt
+      pkg-status: ${{ github.event.workflow_run.conclusion }}
+    secrets: inherit
+  package_version:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: zigbee2mqtt
