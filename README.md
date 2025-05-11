@@ -9,7 +9,7 @@
 [![monthly commits](https://img.shields.io/github/commit-activity/m/xavierforestier/HomeAssistantRepository)](https://github.com/xavierforestier/HomeAssistantRepository/commits/)
 
 [![shellcheck](https://img.shields.io/badge/spellcheck-shellcheck-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/shellcheck.yml) 
-[![pkgcheck](https://img.shields.io/badge/pkgcheck-pkgcheck-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/pkgcheck.yml) 
+[![pkgcheck](https://img.shields.io/badge/pkgcheck-pkgcheck-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/pkgcheck.yml) 
 [![homeassistant](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml/badge.svg?branch=master)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml)
 [![zigbee2mqtt](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml/badge.svg?branch=master&event=push)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml?query=event%3Apush+branch%3Amaster)
 [![esphome](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml/badge.svg?branch=master&event=push)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml?branch=master&event=push)
