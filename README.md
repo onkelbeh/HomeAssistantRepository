@@ -11,8 +11,8 @@
 [![shellcheck](https://img.shields.io/badge/shellcheck-shellcheck%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/shellcheck.yml) 
 [![pkgcheck](https://img.shields.io/badge/pkgcheck-pkgcheck%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/pkgcheck.yml) 
 [![homeassistant](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml/badge.svg?branch=master)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml)
-[![zigbee2mqtt](https://img.shields.io/badge/zigbee2mqtt-zigbee2mqtt-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml?query=event%3Apush+branch%3Amaster)
-[![esphome](https://img.shields.io/badge/esphome-esphome-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml?branch=master&event=push)
+[![zigbee2mqtt](https://img.shields.io/badge/zigbee2mqttjob-zigbee2mqtt-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml?query=event%3Apush+branch%3Amaster)
+[![esphome](https://img.shields.io/badge/esphomejob-esphome-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml?branch=master&event=push)
 
 ## without Docker & Virtual Environments
 
