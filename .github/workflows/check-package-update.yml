@@ -1,4 +1,4 @@
-name: check_version
+name: Check packages new releases
 on:
   workflow_dispatch:
 jobs:
