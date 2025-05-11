@@ -1,0 +1,42 @@
+name: Update README.md file
+on: 
+  workflow_call:
+    inputs:
+      pkg-name: 
+        description: 'Gentoo package name (ex: homeassistant)'
+        required: true
+        type: string
+      pkg-category:
+        description: 'Gentoo category (ex: app-misc)'
+        type: string
+        required: true
+      pkg-status:
+        description: 'Worflow status (success, failure)'
+        type: string
+    secrets:
+      GITHUB_TOKEN:
+        required: true
+jobs:  
+  update_readme:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Update README.md
+      run: |
+        stat_success=238636
+        stat_failure=f85149
+        stat_=lightgrey
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./${{ inputs.pkg-category }}/${{ inputs.pkg-name }} -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ inputs.pkg-status }}}/" README.md
+    - name: GIT Commit
+      run: |
+        git config --local user.name "xavier.forestier"
+        git config --local user.email "{ID}+{username}@users.noreply.github.com"
+        git add README.md
+        git commit -m "Release esphome" || true
+    
+    - name: GIT Push
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
