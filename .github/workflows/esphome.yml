@@ -12,8 +12,16 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  esphome_init:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: esphome-cicd
+      pkg-version: 'esphome%20(running...)'
+      pkg-status: ''
+    secrets: inherit
+  esphome_merge:
     runs-on: ubuntu-latest
+    needs: esphome_init
     container:
       image: ghcr.io/antonfischl1980/gentoo-ci:main
       options: --privileged
