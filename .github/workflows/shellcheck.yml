@@ -8,6 +8,13 @@ on:
       - master
 
 jobs:
+  shellcheck_init:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: shellcheck
+      pkg-version: shellcheck
+      pkg-status: 'failure'
+    secrets: inherit
   shellcheck:
     name: shellcheck
     runs-on: ubuntu-latest
@@ -19,4 +26,11 @@ jobs:
       env:
         SHELLCHECK_OPTS: -s bash -e SC2034 -e SC2016
       with:
-        additional_files: '*.ebuild' 
+        additional_files: '*.ebuild'
+  shellcheck_finish:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: shellcheck
+      pkg-version: shellcheck
+      pkg-status: 'success'
+    secrets: inherit
