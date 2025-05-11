@@ -14,7 +14,7 @@ jobs:
     - name: Update README.md
       run: |
         stat_success=238636
-        stat_failure=d43442
+        stat_failure=f85149
         stat_=lightgrey
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphome-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./dev-embedded/esphome -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ github.event.workflow_run.conclusion }}}/" README.md
     - name: GIT Commit
