@@ -36,9 +36,5 @@ jobs:
         git pull
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1${version}-${stat_${{ inputs.pkg-status }}}/" README.md
         git add README.md
-        git commit -m "Release esphome" || true    
-    - name: GIT Push
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
+        git commit -m "Release esphome" || true
+        git push
