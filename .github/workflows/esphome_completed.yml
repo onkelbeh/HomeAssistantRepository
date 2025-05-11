@@ -1,12 +1,19 @@
 name: esphome successfull
-on:  
+on:
+  workflow_dispatch:
+    inputs:
+      status:
+        type: choice
+        description: Force action status
+        options: 
+        - success
+        - failure
   workflow_run:
     workflows: ['esphome']
     types: completed
     branches: [master]
 jobs:
   update_readme:
-    if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -16,7 +23,7 @@ jobs:
         stat_success=238636
         stat_failure=f85149
         stat_=lightgrey
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphome-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./dev-embedded/esphome -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ github.event.workflow_run.conclusion }}}/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphome-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./dev-embedded/esphome -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ github.event.workflow_run.conclusion }}${{ github.event.inputs.status }}}/" README.md
     - name: GIT Commit
       run: |
         git config --local user.name "xavier.forestier"
