@@ -25,9 +25,8 @@ jobs:
       continue-on-error: true
       run: |
         latest_release=$( wget -qO - "https://api.github.com/repos/${{ inputs.upstream }}/releases/latest" | jq -r '.tag_name' )
-        echo ${latest_release}
         echo "LATEST_RELEASE=${latest_release}" >> $GITHUB_ENV
-        ls .
+        ls  "./${{ inputs.pkgCategory }}/${{ inputs.pkgName }}/${{ inputs.pkgName }}-${latest_release}.ebuild"
         test -e "./${{ inputs.pkgCategory }}/${{ inputs.pkgName }}/${{ inputs.pkgName }}-${latest_release}.ebuild"
     - name: Newversion available
       if: ${{ steps.latest_version.conclusion == 'failure' }}
