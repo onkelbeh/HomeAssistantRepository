@@ -86,6 +86,7 @@
     <flag name="avion">Support for the Avi-on Bluetooth dimmer switch Avi-on.</flag>
     <flag name="awair">The Awair integration will fetch data from your Awair devices.</flag>
     <flag name="aws">The aws integration provides a single place to interact with Amazon Web Services. Currently it provides a notification platform that can send a message to AWS SQS, AWS SNS, or invoke AWS Lambda functions.</flag>
+    <flag name="aws-s3">The AWS S3 integrations allows you to use AWS S3 bucket with Home Assistant Backups.</flag>
     <flag name="axis">Axis Communications devices are surveillance cameras, speakers, access control and other security-related network connected hardware. Event API works with firmware 5.50 and newer.</flag>
     <flag name="azure-data-explorer">Azure Data Explorer is a high-performance time-series database, query engine, and dashboarding tool. The Home Assistant Azure Data Explorer integration allows you to hook into the Home Assistant event bus and forward events to Azure Data Explorer for analytics and dashboarding. From here, data can be viewed in building dashboards, PowerBi, and Grafana, among others.</flag>
     <flag name="azure-devops">The Azure DevOps integration allows you to control and monitor yourAzure DevOps instance in Home Assistant.</flag>
@@ -112,7 +113,7 @@
     <flag name="bluetooth-tracker">This tracker discovers new devices on boot and tracks Bluetooth devices periodically based on interval_seconds value. It is not required to pair the devices with each other! Devices discovered are stored with ‘bt_’ as the prefix for device MAC addresses in known_devices.yaml.</flag>
     <flag name="bmw-connected-drive">The BMW Connected Drive integration lets you retrieve data of your BMW or MINI vehicle from the MyBMW portal (previously BMW Connected Drive).</flag>
     <flag name="bond">The Bond integration allows you to control appliances through your Bond Bridge. Duplicates your RF remote control.</flag>
-    <flag name="bosch-alarm">The Bosch Alarm integration allows you to connect your Bosch Alarm Panel to Home Assistant to control and monitor your Bosch Alarm Panel.</flag>
+    <flag name="bosch-alarm">The Bosch Alarm Panel integration allows you to connect your Bosch Alarm Panel to Home Assistant to control and monitor your Bosch Alarm Panel.</flag>
     <flag name="bosch-shc">The Bosch SHC integration allows you to connect your Bosch Smart Home Controller to Home Assistant in order to control and monitor your Bosch Smart Home devices.</flag>
     <flag name="braviatv">The Bravia TV integration allows you to control a Sony Bravia TV.</flag>
     <flag name="bring">The Bring! integration allows you to sync your Bring! shopping lists with Home Assistant.</flag>
@@ -323,7 +324,7 @@
     <flag name="google-sheets">The Google Sheets integration allows you to connect your Google Drive to Home Assistant. The integration adds an action to allow you to append rows to a Sheets document. The idea is that you can store data on there for further processing. When you set up a config entry, your drive will have a new sheet called Home Assistant. You can then rename this to whatever you like.</flag>
     <flag name="google-tasks">The Google Tasks integration allows you to connect your Google Tasksto Home Assistant. The integration adds a to-do list entity foreach task list, allowing you to create, update, or delete items on the listfrom the To-do list dashboard.</flag>
     <flag name="google-translate">The google_translate text-to-speech platform uses the unofficial Google Translate text-to-speech engine to read a text with natural sounding voices. Contrary to what the name suggests, the integration only does text-to-speech and does not translate messages sent to it.</flag>
-    <flag name="google-travel-time">The google_travel_time sensor provides travel time from the Google Distance Matrix API.</flag>
+    <flag name="google-travel-time">The google_travel_time sensor provides travel time from the Google Maps Routes API.</flag>
     <flag name="govee-ble">Integrates Govee BLE devices into Home Assistant.</flag>
     <flag name="govee-light-local">Integrates Govee lights into Home Assistant using Local API control.</flag>
     <flag name="gpsd">The gpsd integration is using the GPS information collected by gpsd and a GPS receiver.</flag>
@@ -387,6 +388,7 @@
     <flag name="ihc">IHC Controller integration for Home Assistant allows you to connect the LK IHC controller to Home Assistant. The controller is sold under other names in different countries - “ELKO Living system” in Sweden and Norway.</flag>
     <flag name="image-upload">The Image upload integration allows Home Assistant to handle image assets inHome Assistant, for example, the profile photos of your systems account.</flag>
     <flag name="imap">The IMAP integration is observing your IMAP server. It can report the number of unread emails and can send a custom event that can be used to trigger an automation. Other search criteria can be used, as shown in the example below.</flag>
+    <flag name="imeon-inverter">The Imeon Energy Inverter integrations will poll an Imeon solar inverter in Home Assistant.</flag>
     <flag name="imgw-pib">IMGW-PIB integration uses hydrological data from Institute of Meteorology and Water Management - National Research Institute to present information about rivers and water reservoirs in Poland.</flag>
     <flag name="improv-ble">The Improv via BLE integration allows connecting devices implementing Improv via BLE to Wi-Fi.</flag>
     <flag name="incomfort">This integration links Home Assistant with your Intergas gateway, including the boiler and any room thermostats attached to it.The integration uses the incomfort-client library.</flag>
@@ -442,7 +444,7 @@
     <flag name="kwb">The kwb integration integrates the sensors of KWB Easyfire pellet central heating units with the Comfort3 controller (https://www.kwb.net/produkte/) into Home Assistant.</flag>
     <flag name="lacrosse">The lacrosse sensor integration is using the data provided by a Jeelink USB dongle or this Arduino sketch.</flag>
     <flag name="lacrosse-view">LaCrosse View is the service provided by LaCrosse Technology that allows access to LaCrosse sensors.</flag>
-    <flag name="lamarzocco">This integration interacts with La Marzocco coffee machines through calls to the La Marzocco cloud API. Optionally, local API calls, which include a WebSocket connection for (near) real-time updates and a Bluetooth connection, can be utilized for local connections.</flag>
+    <flag name="lamarzocco">This integration interacts with La Marzocco coffee machines through calls to the La Marzocco cloud API.</flag>
     <flag name="lametric">LaMetric TIME is a smart clock that can be used to access applications, listen to web radio and display notifications.</flag>
     <flag name="landisgyr-heat-meter">The Landis+Gyr Heat Meter integration for Home Assistant allows you to read the meter values from Ultraheat devices by Landis &amp; Gyr. These devices are commonly used for district heating. The integration has been tested with the Landis &amp; Gyr Ultraheat 50 (UH50), type LUGCUH50. Other models are likely to work as well.</flag>
     <flag name="lastfm">The lastfm sensor platform will allow you to see whenever a user starts scrobbling, their play count, last song played, and top song played on Last.fm.</flag>
@@ -508,6 +510,7 @@
     <flag name="mfi">There is currently support for the following device types within Home Assistant:</flag>
     <flag name="microbees">The microbees integration allows you to control your microBees devices such as plugs and wall switches.To use this integration you need OAuth2 Client ID and Client Secret and your user credentials.</flag>
     <flag name="microsoft">The microsoft text-to-speech integration uses the TTS engine of the Microsoft Speech Service to read a text with natural sounding voices. This integration uses an API that is part of the Cognitive Services offering and is known as the Microsoft Speech API. For this integration to work, you need a free API key. You can use your Azure subscription to create an Azure Speech resource.</flag>
+    <flag name="miele">The Miele integrations allows users to integrate their home appliances using the official 3rd party API.</flag>
     <flag name="mikrotik">The mikrotik platform offers presence detection by looking at connected devices to a MikroTik RouterOS based router.</flag>
     <flag name="mill">Integrates Mill heater into Home Assistant.</flag>
     <flag name="minecraft-server">Minecraft is a sandbox video game developed by Mojang Studios. Minecraft servers allow players to play the game online or via a local area network with other players. The Minecraft Server integration lets you retrieve information from a Minecraft server within Home Assistant. Both Java Edition and Bedrock Edition servers are supported.</flag>
@@ -575,8 +578,9 @@
     <flag name="notion">The Notion integration retrieves data from Notion wirelesshome monitoring sensor kits.</flag>
     <flag name="nsw-fuel-station">The nsw_fuel_station sensor platform uses the NSW Fuel Check App data as a source for current fuel price data.</flag>
     <flag name="nsw-rural-fire-service-feed">The nsw_rural_fire_service_feed platform lets you integrate a GeoJSON feed provided by the NSW Rural Fire Service with information about bush fires, grass fires, hazard reductions and more. It retrieves incidents from a feed and shows information of those incidents filtered by distance to Home Assistant’s location.</flag>
+    <flag name="ntfy">The ntfy integration allows publishing push notifications on ntfy.sh or other ntfy services.</flag>
     <flag name="nuheat">The nuheat integration lets control your connected NuHeat Signature floor heating thermostats from NuHeat.</flag>
-    <flag name="nuki">The Nuki integration allows you to control Nuki Smart Locks via a Nuki Bridge or Nuki Smart Lock with Build-in WiFi using the cloud.Many Nuki Smart Locks also support local integrations using a different integration.</flag>
+    <flag name="nuki">The Nuki integration allows you to control Nuki Smart Locks via a Nuki Bridge.Many Nuki Smart Locks also support local integrations using a different integration.</flag>
     <flag name="numato">The numato integration is the base for all related GPIO platforms of theNumato 32 Port USB GPIO expander:</flag>
     <flag name="nut">The Network UPS Tools (NUT) integration allows you to monitor and manage an Uninterruptible Power Supply (UPS) for battery backup, a Power Distribution Unit (PDU), or other similar power device using a NUT server. It lets you view the status, receive notifications about important events, and execute commands as device actions for one or more such devices.</flag>
     <flag name="nws">The nws platform uses the National Weather Service web API as a source for meteorological data for your location.</flag>
@@ -592,7 +596,6 @@
     <flag name="ollama">The Ollama integration adds a conversation agent in Home Assistant powered by a local Ollama server.</flag>
     <flag name="ombi">The Ombi integration monitors data from your Ombi instance.</flag>
     <flag name="omnilogic">Hayward OmniLogic smart pool and spa technology control.</flag>
-    <flag name="oncue">The Oncue by Kohler integration will allow you to monitor the state of your Oncue enabled Kohler generator.</flag>
     <flag name="ondilo-ico">ICO by Ondilo is a small connected device that you simply drop into the pool or spa. ICO continuously analyzes the water quality of your pool/spa and notifies you via its application. ICO provides personalized recommendations so that you use the right products in the right proportions at the right time.</flag>
     <flag name="onedrive">This integration allows you to use OneDrive for Home Assistant Backups as well as uploading generic files to your OneDrive.</flag>
     <flag name="onewire">The Onewire integration supports sensors that use the 1-wire bus for communication.</flag>
@@ -630,7 +633,7 @@
     <flag name="panasonic-bluray">The panasonic_bluray platform allows you to control a Panasonic Blu-Ray player. Note that the device must be on the same subnet as Home Assistant; connections from a different subnet will return an error.</flag>
     <flag name="panasonic-viera">The Panasonic Viera integration allows you to control a Panasonic Viera TV.</flag>
     <flag name="pandora">If you have a Pandora account, you can control it from Home Assistant with this media player.</flag>
-    <flag name="peblar">The Peblar integration integrates your Peblar Rocksolid EV Chargerwith Home Assistant. Allowing you to monitor the charging status and energyconsumption of your electric vehicle connected to the Peblar charger, whilealso providing the ability to add the charger to your Home Assistantenergy dashboard.</flag>
+    <flag name="peblar">The Peblar integration integrates the Peblar Rocksolid EV Charger into your smart home ecosystem. It enables real-time monitoring of charging status, tracking energy consumption, controlling charging behavior, and integrating EV charging data into the Home Assistant energy dashboard.</flag>
     <flag name="peco">PECO is a public utility company that provides electricity to the Philadelphia metro.</flag>
     <flag name="pegel-online">This integration uses the data from the German Federal Waterways and Shipping Administration (Wasserstraßen- und Schifffahrtsverwaltung des Bundes) PEGELONLINE to provide different sensors, based on the available data of the selected measurement station.</flag>
     <flag name="pencom">Pencom Design is a manufacturer of computer-controlled relay, I/O and custom boards for commercial and industrial applications. This interface to Pencom’s Relay Control Boards is designed to work over an ethernet to serial adapter (NPort). Each switch (relay) can be turned on/off, and the state of the relay can be read.</flag>
@@ -699,6 +702,7 @@
     <flag name="recswitch">The recswitch switch integration allows you to control the Ankuoo REC Switch devices.</flag>
     <flag name="reddit">The Reddit sensor integrates data from Reddit to monitor your favorite subreddits.</flag>
     <flag name="refoss">Integrate Refoss devices into Home Assistant.</flag>
+    <flag name="rehlko">The Rehlko (formerly Kohler Energy Management) integration allows you to monitor the status of your enabled Kohler generator through Home Assistant. This integration replaces the legacy Oncue integration.</flag>
     <flag name="rejseplanen">The rejseplanen integration will provide you with travel details for Danish public transport, using timetable data from Rejseplanen.</flag>
     <flag name="remember-the-milk">The remember_the_milk integration allows you to create tasks in Remember The Milk (RTM) from Home Assistant. You can use this if you want Home Assistant to send you a task that you should not forget, e.g., water the plants. The integration allows you to have several RTM accounts in parallel.</flag>
     <flag name="remote-calendar">The Remote calendar integration allows you to read a calendar in Home Assistant for powering automations.</flag>

@@ -19,9 +19,10 @@ S="${WORKDIR}"/${PN}-${COMMIT}
 
 LICENSE="MIT"
 SLOT="0"
-RESTRICT="!test? ( test )"
+
 KEYWORDS="amd64 ~arm arm64 ~hppa ~mips ~ppc ~ppc64 ~s390 ~sparc x86"
 IUSE="test"
+RESTRICT="!test? ( test )"
 
 BDEPEND="
 	test? (
