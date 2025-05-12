@@ -1,6 +1,8 @@
 name: Check packages new releases
 on:
-  workflow_dispatch:
+  workflow_dispatch:  
+  schedule:
+    - cron: "2 3 * * 2-6" 
 jobs:
   homeassistant:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/check-upstream.yml@master
@@ -24,4 +26,20 @@ jobs:
       upstream: "esphome/esphome"
       pkgName: "esphome"
       pkgCategory: "dev-embedded"
+    secrets: inherit
+    
+  homeassistant-cli:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/check-upstream.yml@master
+    with:
+      upstream: "home-assistant/home-assistant-cli"
+      pkgName: "home-assistant-cli"
+      pkgCategory: "app-misc"
+    secrets: inherit
+    
+  node-red:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/check-upstream.yml@master
+    with:
+      upstream: "node-red/node-red"
+      pkgName: "node-red"
+      pkgCategory: "app-misc"
     secrets: inherit
