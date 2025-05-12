@@ -1,4 +1,5 @@
 name: function Update README.md
+concurrency: would_update_readme
 on: 
   workflow_call:
     inputs:
