@@ -1,4 +1,4 @@
-name: Funtion Update README.md file
+name: function Update README.md
 on: 
   workflow_call:
     inputs:
