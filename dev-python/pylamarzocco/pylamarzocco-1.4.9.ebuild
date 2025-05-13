@@ -13,7 +13,7 @@ HOMEPAGE="
 	https://pypi.org/project/pylamarzocco/
 	https://github.com/zweckj/pylamarzocco
 "
-PATCHES="${FILESDIR}/${PN}-build-system.patch"
+PATCHES="${FILESDIR}/${P}-build-system.patch"
 
 LICENSE="MIT"
 SLOT="0"
