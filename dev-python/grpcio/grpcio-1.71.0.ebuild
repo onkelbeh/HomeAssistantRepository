@@ -51,7 +51,8 @@ EPYTEST_XDIST=1
 distutils_enable_tests pytest
 
 src_configure() {
-	export GRPC_PYTHON_BUILD_EXT_COMPILER_JOBS="$(makeopts_jobs)"
+	export GRPC_PYTHON_BUILD_EXT_COMPILER_JOBS
+	GRPC_PYTHON_BUILD_EXT_COMPILER_JOBS="$(makeopts_jobs)"
 	# system abseil-cpp crashes with USE=-debug, sigh
 	# https://bugs.gentoo.org/942021
 	#export GRPC_PYTHON_BUILD_SYSTEM_ABSL=1

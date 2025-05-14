@@ -29,7 +29,7 @@ SRC_URI="
 		-> ${P}.gh.tar.gz
 	${CARGO_CRATE_URIS}
 "
-if [[ ${PKGBUMPING} != ${PVR} ]]; then
+if [[ ${PKGBUMPING} != "${PVR}" ]]; then
 	SRC_URI+="
 		https://github.com/gentoo-crate-dist/uv/releases/download/${CRATE_PV}/uv-${CRATE_PV}-crates.tar.xz
 	"
