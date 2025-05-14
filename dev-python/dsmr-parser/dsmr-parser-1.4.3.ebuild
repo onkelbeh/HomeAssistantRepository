@@ -21,7 +21,7 @@ DOCS="README.rst"
 RDEPEND="
 	dev-python/pytz[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3[${PYTHON_USEDEP}]
-	>=dev-python/pyserial-asyncio-0.11[${PYTHON_USEDEP}]
+	>=dev-python/pyserial-asyncio-fast-0.11[${PYTHON_USEDEP}]
 	~dev-python/tailer-0.4.1[${PYTHON_USEDEP}]
 	~dev-python/dlms-cosem-21.3.2[${PYTHON_USEDEP}]"
 
