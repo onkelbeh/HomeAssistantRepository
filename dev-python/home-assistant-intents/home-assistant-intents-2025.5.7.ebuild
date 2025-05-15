@@ -20,7 +20,7 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	>=dev-python/hassil-3.0.1[${PYTHON_USEDEP}]
+	>=dev-python/hassil-2.2.3[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-6.0.2[${PYTHON_USEDEP}]
 	>=dev-python/voluptuous-0.15.2[${PYTHON_USEDEP}]
 	>=dev-python/regex-2024.11.6[${PYTHON_USEDEP}]

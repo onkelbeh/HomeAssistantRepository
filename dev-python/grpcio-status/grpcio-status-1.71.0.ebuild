@@ -29,7 +29,7 @@ RDEPEND="
 	>=dev-python/grpcio-${PV}[${PYTHON_USEDEP}]
 	>=dev-python/googleapis-common-protos-1.5.5[${PYTHON_USEDEP}]
 	<dev-python/protobuf-7[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-6.30.0[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-5.26.1[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	test? (
