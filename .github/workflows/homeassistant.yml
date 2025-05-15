@@ -43,6 +43,8 @@ jobs:
     secrets: inherit
     
   homeassistant_merge:
+    # This job updates README.md with its protection, to avoid git conflict, we have to lock other script updating README.md
+    concurrency: would_update_readme
     runs-on: ubuntu-latest
     needs: [homeassistant_init_min,homeassistant_init_normal,homeassistant_init_full,homeassistant_init]
     container:
@@ -68,6 +70,9 @@ jobs:
         echo -e "ACCEPT_KEYWORDS=\"~amd64\"\nACCEPT_LICENCE=\"*\"" >> /etc/portage/make.conf
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
         echo "*/* *" >> /etc/portage/package.license
+        pwd
+        git config --global --add safe.directory .
+        git status
         
     - name: emerge homeassistant[minimal] first...
       continue-on-error: true
