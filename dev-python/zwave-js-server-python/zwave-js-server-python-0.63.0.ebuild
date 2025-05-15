@@ -19,7 +19,7 @@ DOCS="README.md"
 
 RDEPEND="
 	>=dev-python/aiohttp-3.11.18[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-2.11.4[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-2.11.3[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	test? (
