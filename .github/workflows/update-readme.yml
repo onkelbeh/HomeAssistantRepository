@@ -46,6 +46,7 @@ jobs:
         git config --local user.email "{ID}+{username}@users.noreply.github.com"
         git fetch
         echo "a"
+        git switch master
         git pull --no-rebase
         echo "b"
         fix_readme
