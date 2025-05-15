@@ -32,6 +32,7 @@ jobs:
           git add README.md
           git commit -m "Release ${{ inputs.pkg-name }}" || true
           echo "a"
+          git switch master
           git pull --no-rebase
           echo "b"
         }
