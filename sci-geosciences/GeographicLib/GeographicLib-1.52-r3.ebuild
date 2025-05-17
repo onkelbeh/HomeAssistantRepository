@@ -30,7 +30,6 @@ BDEPEND="
 	)
 "
 
-distutils_enable_tests setup.py
 # there are additional docs in the python dir
 distutils_enable_sphinx python/doc
 
