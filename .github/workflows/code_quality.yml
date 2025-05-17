@@ -11,7 +11,7 @@ jobs:
     with:
       pkg-name: shellcheck
       pkg-version: 'shellcheck%20(running...)'
-      pkg-status: ''
+      pkg-status: 'failure'
       autoretry: true
     secrets: inherit
   shellcheck:
@@ -34,7 +34,7 @@ jobs:
     with:
       pkg-name: shellcheck
       pkg-version: shellcheck
-      pkg-status: ${{ github.event.workflow_run.conclusion }}
+      pkg-status: "success"
       autoretry: true
     secrets: inherit
     
@@ -44,7 +44,7 @@ jobs:
     with:
       pkg-name: pkgcheck
       pkg-version: 'pkgcheck%20(running...)'
-      pkg-status: ''
+      pkg-status: 'failure'
       autoretry: true
     secrets: inherit
   
@@ -64,6 +64,6 @@ jobs:
     with:
       pkg-name: pkgcheck
       pkg-version: pkgcheck
-      pkg-status: ${{ github.event.workflow_run.conclusion }}
+      pkg-status: "success"
       autoretry: true
     secrets: inherit
