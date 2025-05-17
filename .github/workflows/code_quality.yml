@@ -1,0 +1,69 @@
+name: Check code quality
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+    branches:
+      - master
+jobs:
+  shellcheck_init:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: shellcheck
+      pkg-version: 'shellcheck%20(running...)'
+      pkg-status: ''
+      autoretry: true
+    secrets: inherit
+  shellcheck:
+    name: shellcheck
+    needs: shellcheck_init
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Run shellcheck
+      uses: ludeeus/action-shellcheck@master
+      env:
+        SHELLCHECK_OPTS: -s bash -e SC2034 -e SC2016
+      with:
+        additional_files: '*.ebuild'
+  shellcheck_complete:
+    name: shellcheck_complete
+    needs: shellcheck
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: shellcheck
+      pkg-version: shellcheck
+      pkg-status: ${{ github.event.workflow_run.conclusion }}
+      autoretry: true
+    secrets: inherit
+    
+  pkgcheck_init:
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    needs: shellcheck_complete
+    with:
+      pkg-name: pkgcheck
+      pkg-version: 'pkgcheck%20(running...)'
+      pkg-status: ''
+      autoretry: true
+    secrets: inherit
+  
+  pkgcheck:
+    runs-on: ubuntu-latest
+    needs: pkgcheck_init
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Run pkgcheck
+      uses: pkgcore/pkgcheck-action@v1
+      
+  pkgcheck_complete:
+    needs: pkgcheck
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: pkgcheck
+      pkg-version: pkgcheck
+      pkg-status: ${{ github.event.workflow_run.conclusion }}
+      autoretry: true
+    secrets: inherit
