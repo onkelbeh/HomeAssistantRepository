@@ -1,20 +1,20 @@
-name: Check for update in upstream
-on: 
+name: function Search for update available upstream
+on:
   workflow_call:
     inputs:
-      upstream: 
+      upstream:
         description: 'Upstream URL'
         required: true
         type: string
-      pkgName: 
+      pkgName:
         description: 'Gentoo package'
         required: true
         type: string
-      pkgCategory: 
+      pkgCategory:
         description: 'Gentoo category'
         required: true
         type: string
-jobs:  
+jobs:
   check_upstream:
     runs-on: ubuntu-latest
     steps:
