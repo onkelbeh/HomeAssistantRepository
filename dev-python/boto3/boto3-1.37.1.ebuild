@@ -4,15 +4,12 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1
 
 DESCRIPTION="The AWS SDK for Python"
-HOMEPAGE="
-	https://github.com/boto/boto3/
-	https://pypi.org/project/boto3/
-"
+HOMEPAGE="https://github.com/boto/boto3/ https://pypi.org/project/boto3/"
 SRC_URI="
 	https://github.com/boto/boto3/archive/${PV}.tar.gz
 		-> ${P}.gh.tar.gz
@@ -23,9 +20,9 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 ~loong ppc ppc64 ~riscv sparc x86 ~amd64-linux ~x86-linux"
 
 RDEPEND="
-	>=dev-python/botocore-${PV}[${PYTHON_USEDEP}]
-	>=dev-python/jmespath-0.7.1[${PYTHON_USEDEP}]
-	>=dev-python/s3transfer-0.11.0[${PYTHON_USEDEP}]
+	>=dev-python/botocore-${PV}[${PYTHON_USEDEP}] <dev-python/botocore-1.38.0[${PYTHON_USEDEP}]
+	>=dev-python/jmespath-0.7.1[${PYTHON_USEDEP}] <dev-python/jmespath-2.0.0[${PYTHON_USEDEP}]
+	>=dev-python/s3transfer-0.11.0[${PYTHON_USEDEP}] <dev-python/s3transfer-0.12.0[${PYTHON_USEDEP}]
 "
 
 EPYTEST_XDIST=1

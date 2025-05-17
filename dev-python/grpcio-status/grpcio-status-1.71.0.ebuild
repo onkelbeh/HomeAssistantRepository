@@ -10,11 +10,7 @@ inherit distutils-r1
 
 MY_P=grpc-${PV}
 DESCRIPTION="Reference package for GRPC Python status proto mapping"
-HOMEPAGE="
-	https://grpc.io/
-	https://github.com/grpc/grpc/
-	https://pypi.org/project/grpcio-status/
-"
+HOMEPAGE="https://grpc.io/ https://github.com/grpc/grpc/ https://pypi.org/project/grpcio-status/"
 SRC_URI="
 	https://github.com/grpc/grpc/archive/v${PV}.tar.gz
 		-> ${MY_P}.gh.tar.gz
@@ -23,7 +19,7 @@ S=${WORKDIR}/${MY_P}/src/python/grpcio_status
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	>=dev-python/grpcio-${PV}[${PYTHON_USEDEP}]

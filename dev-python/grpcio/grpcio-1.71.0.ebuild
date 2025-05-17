@@ -5,17 +5,13 @@ EAPI=8
 
 DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1 flag-o-matic multiprocessing pypi
 
 MY_P=grpc-${PV}
 DESCRIPTION="HTTP/2-based RPC framework"
-HOMEPAGE="
-	https://grpc.io/
-	https://github.com/grpc/grpc/
-	https://pypi.org/project/grpcio/
-"
+HOMEPAGE="https://grpc.io/ https://github.com/grpc/grpc/ https://pypi.org/project/grpcio/"
 # Tests need other packages from the source tree, so use a GitHub
 # archive.  sdist provides bundled library sources (git submodules).
 SRC_URI+="
@@ -28,7 +24,7 @@ SRC_URI+="
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86"
+KEYWORDS="amd64 arm arm64 x86"
 
 DEPEND="
 	dev-libs/openssl:=
