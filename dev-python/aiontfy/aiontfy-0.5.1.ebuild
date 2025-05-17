@@ -16,9 +16,9 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
-	~dev-python/aiohttp-3.11[${PYTHON_USEDEP}]
-	~dev-python/mashumaro-3.13[${PYTHON_USEDEP}]
-	~dev-python/orjson-3.10[${PYTHON_USEDEP}]
+	dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/mashumaro[${PYTHON_USEDEP}]
+	dev-python/orjson[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests pytest
