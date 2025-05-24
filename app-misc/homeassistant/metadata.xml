@@ -86,7 +86,7 @@
     <flag name="avion">Support for the Avi-on Bluetooth dimmer switch Avi-on.</flag>
     <flag name="awair">The Awair integration will fetch data from your Awair devices.</flag>
     <flag name="aws">The aws integration provides a single place to interact with Amazon Web Services. Currently it provides a notification platform that can send a message to AWS SQS, AWS SNS, or invoke AWS Lambda functions.</flag>
-    <flag name="aws-s3">The AWS S3 integrations allows you to use AWS S3 bucket with Home Assistant Backups.</flag>
+    <flag name="aws-s3">The AWS S3 integration allows you to use AWS S3 bucket with Home Assistant Backups.</flag>
     <flag name="axis">Axis Communications devices are surveillance cameras, speakers, access control and other security-related network connected hardware. Event API works with firmware 5.50 and newer.</flag>
     <flag name="azure-data-explorer">Azure Data Explorer is a high-performance time-series database, query engine, and dashboarding tool. The Home Assistant Azure Data Explorer integration allows you to hook into the Home Assistant event bus and forward events to Azure Data Explorer for analytics and dashboarding. From here, data can be viewed in building dashboards, PowerBi, and Grafana, among others.</flag>
     <flag name="azure-devops">The Azure DevOps integration allows you to control and monitor yourAzure DevOps instance in Home Assistant.</flag>
@@ -435,7 +435,7 @@
     <flag name="kiwi">The KIWI integration allows you to open your KIWI Smart Locks and Smart Entry Devices.All you need to get started is a KIWI account. Register at the KIWI website.</flag>
     <flag name="kmtronic">Integrate KMtronic devices into Home Assistant. KMtronic offers a large range of IP-connected relays that can be controlled over your local area network. This integration maps each of the relays as a separate device, enabling you to control various areas of your home (e.g. using each relay to control different garden sprinkler areas, or controlling the electrical distribution of your house from a central board).</flag>
     <flag name="knocki">The Knocki integration allows you to trigger your favorite automations simply by tapping custom patterns (such as triple taps) on ordinary surfaces.</flag>
-    <flag name="knx">The KNX integration for Home Assistant allows you to connect to KNX/IP devices.</flag>
+    <flag name="knx">The KNX integration connects Home Assistant to your KNX installation, allowing you to control KNX devices, act on telegrams and forward state changes from other integrations entities to your KNX bus.</flag>
     <flag name="kodi">The kodi platform allows you to control a Kodi multimedia system from Home Assistant.</flag>
     <flag name="konnected">The konnected integration lets you connect wired sensors and switches to a Konnected Alarm Panel, or NodeMCU ESP8226 based device running the open source Konnected software. Reuse the wired sensors and siren from an old or pre-wired alarm system installation and integrate them directly into Home Assistant.</flag>
     <flag name="kostal-plenticore">The Kostal Plenticore integration allows you to get data from Kostal Plenticore solar inverters and integrate them into your Home Assistant installation. It allows you also to change some of settings values of the inverter.</flag>
@@ -662,7 +662,7 @@
     <flag name="prosegur">Integrate Prosegur Smart Alarms into Home Assistant.</flag>
     <flag name="proxmoxve">Proxmox VE is an open-source server virtualization environment. This integration allows you to poll various data from your instance.</flag>
     <flag name="proxy">The proxy camera integration allows you to pass another camera’s output through post-processing routines and generate a new camera with the post-processed output.</flag>
-    <flag name="prusalink">The PrusaLink integration allows you to monitor your Prusa 3D printer and its progress with your Home Assistant installation. This integration works with Prusa MINI/MINI+, Prusa MK3.9/MK4, Prusa XL, and with the older Raspberry Pi-based Prusa MK2.5/MK3.</flag>
+    <flag name="prusalink">The PrusaLink integration allows you to monitor your Prusa 3D printer and its progress with your Home Assistant installation. This integration works with Prusa MINI/MINI+, Prusa MK3.9/MK4, Prusa XL, Prusa CORE One, and with the older Raspberry Pi-based Prusa MK2.5/MK3.</flag>
     <flag name="ps4">The ps4 integration allows you to control aSony PlayStation 4 console.</flag>
     <flag name="pterodactyl">Pterodactyl is a game server management panel designed to simplify the administration of game servers. It offers a user-friendly interface which allows users to manage multiple game servers from a single dashboard, supporting popular games like Minecraft. Its key features include an intuitive web-based control panel, automated server installation, real-time server monitoring, scheduled backups and more. Each game server runs in an isolated Docker container, ensuring security and stability.</flag>
     <flag name="pulseaudio-loopback">The goal behind this switch is to allow a very flexible whole home audio system based upon PulseAudio.</flag>
