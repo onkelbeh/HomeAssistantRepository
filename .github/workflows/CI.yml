@@ -88,7 +88,7 @@ jobs:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: 'esphome'
-      pkg-category: 'app-misc'
+      pkg-category: 'dev-embedded'
       pkg-status: ''
       autoretry: true
     secrets: inherit
