@@ -1,4 +1,4 @@
-name: Check code quality
+name: Continous Integration
 on:
   workflow_dispatch:
   push:
@@ -82,10 +82,21 @@ jobs:
       autoretry: true
     secrets: inherit
     
+  esphome_version:
+    if: github.event_name == 'pull_request'
+    needs: [ esphome_init ]
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: 'esphome'
+      pkg-category: 'app-misc'
+      pkg-status: ''
+      autoretry: true
+    secrets: inherit
+    
   esphome:
     if: github.event_name == 'pull_request'
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/esphome.yml@master
-    needs: esphome_init
+    needs: esphome_version
     secrets: inherit
     
   zigbee2mqtt_init:
@@ -99,10 +110,21 @@ jobs:
       autoretry: true
     secrets: inherit
 
+  zigbee2mqtt_version:
+    if: github.event_name == 'pull_request'
+    needs: [ zigbee2mqtt_init ]
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: 'zigbee2mqtt'
+      pkg-category: 'app-misc'
+      pkg-status: ''
+      autoretry: true
+    secrets: inherit
+    
   zigbee2mqtt:
     if: github.event_name == 'pull_request'
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/zigbee2mqtt.yml@master
-    needs: zigbee2mqtt_init
+    needs: zigbee2mqtt_version
     secrets: inherit
     
   homeassistant_init_min:
