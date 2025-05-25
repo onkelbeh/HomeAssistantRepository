@@ -78,7 +78,6 @@ jobs:
         git status
         
     - name: emerge homeassistant[minimal] first...
-      continue-on-error: true
       id: merge_min
       run: |
         rm /etc/portage/package.use/._cfg0000_zzz.use || true
@@ -89,6 +88,7 @@ jobs:
         USE="minimal -normal -full" emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -v
         
     - name: Update README, and cleanup up some space
+      if: aways()
       run: |
         stat_success=238636
         stat_failure=f85149
@@ -98,6 +98,7 @@ jobs:
         git config --local user.name "xavier.forestier"
         git config --local user.email "{ID}+{username}@users.noreply.github.com"
         git fetch
+        git switch master
         git pull
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ steps.merge_min.conclusion }}}/" README.md
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_minimal-\\)[^-]*-[^\\?]*/\\1homeassistant[minimal]-${stat_${{ steps.merge_min.conclusion }}}/" README.md
@@ -110,7 +111,6 @@ jobs:
 
     # Last build normal features
     - name: emerge then homeassistant[normal]
-      continue-on-error: true
       id: merge_normal
       run: |
         rm /etc/portage/package.use/._cfg0000_zzz.use || true
@@ -121,6 +121,7 @@ jobs:
         USE="-minimal normal -full" emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -v
         
     - name: Free up some space
+      if: always()
       run: |
         stat_success=238636
         stat_failure=f85149
@@ -130,6 +131,7 @@ jobs:
         git config --local user.name "xavier.forestier"
         git config --local user.email "{ID}+{username}@users.noreply.github.com"
         git fetch
+        git switch master
         git pull
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ steps.merge_normal.conclusion }}}/" README.md
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_normal-\\)[^-]*-[^\\?]*/\\1homeassistant[normal]-${stat_${{ steps.merge_normal.conclusion }}}/" README.md
@@ -142,7 +144,6 @@ jobs:
     
     # Last build full features
     - name: Finally try an emerge homeassistant[full] !
-      continue-on-error: true
       id: merge_full
       run: |
         rm /etc/portage/package.use/._cfg0000_zzz.use || true
@@ -153,6 +154,7 @@ jobs:
         USE="-minimal -normal full" emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -v
         
     - name: Free up space
+      if: always()
       run: |
         stat_success=238636
         stat_failure=f85149
@@ -162,6 +164,7 @@ jobs:
         git config --local user.name "xavier.forestier"
         git config --local user.email "{ID}+{username}@users.noreply.github.com"
         git fetch
+        git switch master
         git pull
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ steps.merge_full.conclusion }}}/" README.md
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_full-\\)[^-]*-[^\\?]*/\\1homeassistant[full]-${stat_${{ steps.merge_full.conclusion }}}/" README.md
