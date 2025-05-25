@@ -101,7 +101,7 @@ jobs:
     
   zigbee2mqtt_init:
     if: github.event_name == 'pull_request'
-    needs: [ esphome_init ]
+    needs: [ esphome_version ]
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: zigbee2mqttjob
@@ -129,7 +129,7 @@ jobs:
     
   homeassistant_init_min:
     if: github.event_name == 'pull_request'
-    needs: [ zigbee2mqtt_init ]
+    needs: [ zigbee2mqtt_version ]
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: 'homeassistant_minimal'
