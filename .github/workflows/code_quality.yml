@@ -64,7 +64,7 @@ jobs:
       uses: pkgcore/pkgcheck-action@v1
       
   pkgcheck_complete:
-    needs: pkgcheck
+    needs: [ pkgcheck, shellcheck_complete ]
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: pkgcheck
