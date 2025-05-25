@@ -8,6 +8,7 @@ on:
     branches:
       - master
 jobs:
+
   shellcheck_init:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
@@ -16,6 +17,7 @@ jobs:
       pkg-status: 'failure'
       autoretry: true
     secrets: inherit
+    
   shellcheck:
     name: shellcheck
     needs: shellcheck_init
@@ -29,9 +31,10 @@ jobs:
         SHELLCHECK_OPTS: -s bash -e SC2034 -e SC2016
       with:
         additional_files: '*.ebuild'
+        
   shellcheck_complete:
     name: shellcheck_complete
-    needs: shellcheck
+    needs: [ shellcheck, pkgcheck_init ]
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: shellcheck
@@ -42,7 +45,7 @@ jobs:
     
   pkgcheck_init:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    needs: shellcheck_complete
+    needs: shellcheck_init
     with:
       pkg-name: pkgcheck
       pkg-version: 'pkgcheck%20(running...)'
