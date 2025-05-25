@@ -121,7 +121,7 @@ jobs:
         USE="-minimal normal -full" emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -v
         
     - name: Free up some space
-      if:  success() || failure()
+      if: success() || failure()
       run: |
         stat_success=238636
         stat_failure=f85149
