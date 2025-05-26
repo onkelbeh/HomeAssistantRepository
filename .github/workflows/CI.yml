@@ -12,7 +12,7 @@ jobs:
     with:
       pkg-name: shellcheck
       pkg-version: 'shellcheck%20(running...)'
-      pkg-status: 'failure'
+      pkg-status: ''
       autoretry: true
     secrets: inherit
     
@@ -31,13 +31,14 @@ jobs:
         additional_files: '*.ebuild'
         
   shellcheck_complete:
+    if: success() || failure()
     name: shellcheck_complete
     needs: [ shellcheck, pkgcheck_init ]
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: shellcheck
       pkg-version: shellcheck
-      pkg-status: "success"
+      pkg-status: ${{ jobs.shellcheck.result }}
       autoretry: true
     secrets: inherit
     
@@ -47,7 +48,7 @@ jobs:
     with:
       pkg-name: pkgcheck
       pkg-version: 'pkgcheck%20(running...)'
-      pkg-status: 'failure'
+      pkg-status: ''
       autoretry: true
     secrets: inherit
   
@@ -62,12 +63,13 @@ jobs:
       uses: pkgcore/pkgcheck-action@v1
       
   pkgcheck_complete:
+    if: success() || failure()
     needs: [ pkgcheck, shellcheck_complete ]
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: pkgcheck
       pkg-version: pkgcheck
-      pkg-status: "success"
+      pkg-status: ${{ jobs.pkgcheck.result }}
       autoretry: true
     secrets: inherit
 
@@ -98,7 +100,7 @@ jobs:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/esphome.yml@master
     needs: esphome_version
     secrets: inherit
-    
+   
   zigbee2mqtt_init:
     if: github.event_name == 'pull_request'
     needs: [ esphome_version ]
@@ -126,50 +128,25 @@ jobs:
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/zigbee2mqtt.yml@master
     needs: zigbee2mqtt_version
     secrets: inherit
-    
-  homeassistant_init_min:
-    if: github.event_name == 'pull_request'
-    needs: [ zigbee2mqtt_version ]
-    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    with:
-      pkg-name: 'homeassistant_minimal'
-      pkg-version: 'homeassistant[minimal]%20(running...)'
-      pkg-status: ''
-      autoretry: true
-    secrets: inherit
-    
-  homeassistant_init_normal:
-    if: github.event_name == 'pull_request'
-    needs: [ homeassistant_init_min ]
-    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    with:
-      pkg-name: 'homeassistant_normal'
-      pkg-version: 'homeassistant[normal]%20(running...)'
-      pkg-status: ''
-      autoretry: true
-    secrets: inherit
-    
-  homeassistant_init_full:
-    if: github.event_name == 'pull_request'
-    needs: [ homeassistant_init_normal ]
-    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    with:
-      pkg-name: 'homeassistant_full'
-      pkg-version: 'homeassistant[full]%20(running...)'
-      pkg-status: ''
-      autoretry: true
-    secrets: inherit
-    
+
   homeassistant_init:
-    if: github.event_name == 'pull_request'
-    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    needs: homeassistant_init_full
-    with:
-      pkg-name: 'homeassistant'
-      pkg-category: 'app-misc'
-      pkg-status: ''
-      autoretry: true
-    secrets: inherit
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: |
+        version=$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )
+        git config --local user.name "xavier.forestier"
+        git config --local user.email "{ID}+{username}@users.noreply.github.com"
+        git fetch
+        git switch master
+        git pull --no-rebase
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_minimal-\\)[^-]*-[^\\?]*/\\1homeassistant\\[minimal\\]%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_normal-\\)[^-]*-[^\\?]*/\\1homeassistant\\[normal\\]%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_full-\\)[^-]*-[^\\?]*/\\1homeassistant\\[full\\]%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1${version}-lightgrey}/" README.md
+        git add README.md
+        git commit -m "CI homeassisant status" || true
+        git pull --no-rebase
     
   homeassistant:
     if: github.event_name == 'pull_request'
