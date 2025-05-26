@@ -91,6 +91,7 @@ jobs:
         git add README.md
         git commit -m "[CI]Update esphome status" || true
         git pull --no-rebase
+        git push --force-with-lease
     
   esphome:
     if: github.event_name == 'pull_request'
@@ -116,7 +117,8 @@ jobs:
         git add README.md
         git commit -m "[CI]Update zigbee2mqtt status" || true
         git pull --no-rebase
-    
+        git push --force-with-lease
+            
   zigbee2mqtt:
     if: github.event_name == 'pull_request'
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/zigbee2mqtt.yml@master
@@ -143,6 +145,7 @@ jobs:
         git add README.md
         git commit -m "[CI]Update homeassistant status" || true
         git pull --no-rebase
+        git push --force-with-lease
     
   homeassistant:
     if: github.event_name == 'pull_request'
