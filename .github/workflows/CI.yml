@@ -87,7 +87,7 @@ jobs:
         git switch master
         git pull --no-rebase
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphomejob-\\)[^-]*-[^\\?]*/\\1esphome%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphome-\\)[^-]*-[^\\?]*/\\1${version}-lightgrey}/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphome-\\)[^-]*-[^\\?]*/\\1${version}-lightgrey/" README.md
         git add README.md
         git commit -m "[CI]Update esphome status" || true
         git pull --no-rebase
@@ -112,7 +112,7 @@ jobs:
         git switch master
         git pull --no-rebase
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/zigbee2mqttjob-\\)[^-]*-[^\\?]*/\\1zigbee2mqtt%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/zigbee2mqtt-\\)[^-]*-[^\\?]*/\\1${version}-lightgrey}/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/zigbee2mqtt-\\)[^-]*-[^\\?]*/\\1${version}-lightgrey/" README.md
         git add README.md
         git commit -m "[CI]Update zigbee2mqtt status" || true
         git pull --no-rebase
@@ -139,7 +139,7 @@ jobs:
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_minimal-\\)[^-]*-[^\\?]*/\\1homeassistant\\[minimal\\]%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_normal-\\)[^-]*-[^\\?]*/\\1homeassistant\\[normal\\]%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_full-\\)[^-]*-[^\\?]*/\\1homeassistant\\[full\\]%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1${version}-lightgrey}/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1${version}-lightgrey/" README.md
         git add README.md
         git commit -m "[CI]Update homeassistant status" || true
         git pull --no-rebase
