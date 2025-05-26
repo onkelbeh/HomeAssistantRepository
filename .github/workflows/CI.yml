@@ -73,63 +73,59 @@ jobs:
       autoretry: true
     secrets: inherit
 
-  esphome_init:
+  esphome_init:  
     if: github.event_name == 'pull_request'
     needs: [ pkgcheck_complete ]
-    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    with:
-      pkg-name: esphomejob
-      pkg-version: 'esphome%20(running...)'
-      pkg-status: ''
-      autoretry: true
-    secrets: inherit
-    
-  esphome_version:
-    if: github.event_name == 'pull_request'
-    needs: [ esphome_init ]
-    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    with:
-      pkg-name: 'esphome'
-      pkg-category: 'dev-embedded'
-      pkg-status: ''
-      autoretry: true
-    secrets: inherit
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: |
+        version=$( echo $( find ./dev-embedded/esphome -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )
+        git config --local user.name "xavier.forestier"
+        git config --local user.email "{ID}+{username}@users.noreply.github.com"
+        git fetch
+        git switch master
+        git pull --no-rebase
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphomejob-\\)[^-]*-[^\\?]*/\\1esphome%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/esphome-\\)[^-]*-[^\\?]*/\\1${version}-lightgrey}/" README.md
+        git add README.md
+        git commit -m "[CI]Update esphome status" || true
+        git pull --no-rebase
     
   esphome:
     if: github.event_name == 'pull_request'
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/esphome.yml@master
-    needs: esphome_version
+    needs: esphome_init
     secrets: inherit
    
   zigbee2mqtt_init:
     if: github.event_name == 'pull_request'
-    needs: [ esphome_version ]
-    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    with:
-      pkg-name: zigbee2mqttjob
-      pkg-version: 'zigbee2mqtt%20(running...)'
-      pkg-status: ''
-      autoretry: true
-    secrets: inherit
-
-  zigbee2mqtt_version:
-    if: github.event_name == 'pull_request'
-    needs: [ zigbee2mqtt_init ]
-    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
-    with:
-      pkg-name: 'zigbee2mqtt'
-      pkg-category: 'app-misc'
-      pkg-status: ''
-      autoretry: true
-    secrets: inherit
+    needs: [ esphome_init ]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: |
+        version=$( echo $( find ./app-misc/zigbee2mqtt -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )
+        git config --local user.name "xavier.forestier"
+        git config --local user.email "{ID}+{username}@users.noreply.github.com"
+        git fetch
+        git switch master
+        git pull --no-rebase
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/zigbee2mqttjob-\\)[^-]*-[^\\?]*/\\1zigbee2mqtt%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/zigbee2mqtt-\\)[^-]*-[^\\?]*/\\1${version}-lightgrey}/" README.md
+        git add README.md
+        git commit -m "[CI]Update zigbee2mqtt status" || true
+        git pull --no-rebase
     
   zigbee2mqtt:
     if: github.event_name == 'pull_request'
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/zigbee2mqtt.yml@master
-    needs: zigbee2mqtt_version
+    needs: zigbee2mqtt_init
     secrets: inherit
 
   homeassistant_init:
+    if: github.event_name == 'pull_request'
+    needs: [ zigbee2mqtt_init ]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -145,7 +141,7 @@ jobs:
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_full-\\)[^-]*-[^\\?]*/\\1homeassistant\\[full\\]%20\\(running\\.\\.\\.\\)-lightgrey/" README.md
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1${version}-lightgrey}/" README.md
         git add README.md
-        git commit -m "CI homeassisant status" || true
+        git commit -m "[CI]Update homeassistant status" || true
         git pull --no-rebase
     
   homeassistant:
