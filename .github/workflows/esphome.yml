@@ -4,7 +4,7 @@ on:
   workflow_call:
   
 jobs:
-  esphome_merge:
+  emerge:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/antonfischl1980/gentoo-ci:main
@@ -37,3 +37,25 @@ jobs:
         for log in $( find /var/tmp/portage/ | grep build.log ); do echo -e "$log\n======"; cat $log; done
         for log in $( find /etc/portage/ -type f ); do echo -e "$log\n======"; cat $log; done
         emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 -v dev-embedded/esphome
+        
+  report_status:
+    if: success() || failure()
+    needs: emerge
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: esphomejob
+      pkg-version: esphome
+      pkg-status: ${{ steps.esphome.conclusion }}
+      autoretry: true
+    secrets: inherit
+    
+  report_version:
+    if: success() || failure()
+    needs: report_status
+    uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
+    with:
+      pkg-name: emerge
+      pkg-category: dev-embedded
+      pkg-status: ${{ steps.esphome.conclusion }}
+      autoretry: true
+    secrets: inherit
