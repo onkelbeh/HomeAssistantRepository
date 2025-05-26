@@ -30,7 +30,7 @@ jobs:
         fix_readme() {
           sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/${{ inputs.pkg-name }}-\\)[^-]*-[^\\?]*/\\1${version}-${stat_${{ inputs.pkg-status }}}/" README.md
           git add README.md
-          git commit -m "Release ${{ inputs.pkg-name }}" || true
+          git commit -m "[CI]Update ${{ inputs.pkg-name }} status" || true
           git pull --no-rebase
         }
         stat_success=238636
