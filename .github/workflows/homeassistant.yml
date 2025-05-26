@@ -5,7 +5,7 @@ on:
   workflow_call:
 
 jobs:
-  homeassistant_merge:
+  emerge:
     # This job updates README.md with its protection, to avoid git conflict, we have to lock other script updating README.md
     runs-on: ubuntu-latest
     container:
