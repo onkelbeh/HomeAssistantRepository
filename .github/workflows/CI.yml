@@ -38,7 +38,7 @@ jobs:
     with:
       pkg-name: shellcheck
       pkg-version: shellcheck
-      pkg-status: ${{ jobs.shellcheck.result }}
+      pkg-status: ${{ needs.shellcheck.result }}
       autoretry: true
     secrets: inherit
     
@@ -69,7 +69,7 @@ jobs:
     with:
       pkg-name: pkgcheck
       pkg-version: pkgcheck
-      pkg-status: ${{ jobs.pkgcheck.result }}
+      pkg-status: ${{ needs.pkgcheck.result }}
       autoretry: true
     secrets: inherit
 
