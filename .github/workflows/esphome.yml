@@ -45,7 +45,7 @@ jobs:
     with:
       pkg-name: esphomejob
       pkg-version: esphome
-      pkg-status: ${{ steps.esphome.conclusion }}
+      pkg-status: ${{ jobs.emerge.result }}
       autoretry: true
     secrets: inherit
     
@@ -56,6 +56,6 @@ jobs:
     with:
       pkg-name: emerge
       pkg-category: dev-embedded
-      pkg-status: ${{ steps.esphome.conclusion }}
+      pkg-status: ${{ jobs.emerge.conclusion }}
       autoretry: true
     secrets: inherit
