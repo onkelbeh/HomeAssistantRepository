@@ -51,7 +51,7 @@ jobs:
     
   report_version:
     if: success() || failure()
-    needs: report_status
+    needs: [emerge, report_status]
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: esphome
