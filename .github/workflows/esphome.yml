@@ -54,7 +54,7 @@ jobs:
     needs: report_status
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
-      pkg-name: emerge
+      pkg-name: esphome
       pkg-category: dev-embedded
       pkg-status: ${{ needs.emerge.conclusion }}
       autoretry: true
