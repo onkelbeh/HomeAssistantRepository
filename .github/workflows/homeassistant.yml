@@ -18,8 +18,6 @@ jobs:
     # 
     - name: Init /etc/portage/      
       run: |
-        git status
-        git branch
         rsync -aHDPSv etc/portage/ /etc/portage/
         
     - name: Setup HomeAssistant repository
@@ -34,7 +32,12 @@ jobs:
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
         echo "*/* *" >> /etc/portage/package.license
         pwd
-        git config --global --add safe.directory .
+        git config --global --add safe.directory .        
+        git config --local user.name "xavier.forestier"
+        git config --local user.email "{ID}+{username}@users.noreply.github.com"
+        git fetch
+        git switch master
+        test "${{github.event_name}}" == "pull_request" && git merge ${GITHUB_REF#refs/heads/}}
         git status
         
     - name: emerge homeassistant[minimal] first...
