@@ -37,7 +37,6 @@ jobs:
         git config --local user.email "{ID}+{username}@users.noreply.github.com"
         git fetch
         git switch master
-        test "${{github.event_name}}" == "pull_request" && git merge ${GITHUB_REF#refs/heads/}}
         git status
         
     - name: emerge homeassistant[minimal] first...
