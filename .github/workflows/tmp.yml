@@ -6,7 +6,6 @@ on:
 jobs:  
   report_status:
     if: success() || failure()
-    needs: emerge
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/update-readme.yml@master
     with:
       pkg-name: zigbee2mqttjob
