@@ -31,13 +31,7 @@ jobs:
         echo -e "ACCEPT_KEYWORDS=\"~amd64\"\nACCEPT_LICENCE=\"*\"" >> /etc/portage/make.conf
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
         echo "*/* *" >> /etc/portage/package.license
-        pwd
-        git config --global --add safe.directory .        
-        git config --local user.name "xavier.forestier"
-        git config --local user.email "{ID}+{username}@users.noreply.github.com"
-        git fetch
-        git switch master
-        git status
+        git config --global --add safe.directory .
         
     - name: emerge homeassistant[minimal] first...
       id: merge_min
@@ -48,27 +42,9 @@ jobs:
         for log in $( find /var/tmp/portage/ | grep build.log ); do echo -e "$log\n======"; cat $log; done
         for log in $( find /etc/portage/ -type f ); do echo -e "$log\n======"; cat $log; done
         USE="minimal -normal -full" emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -v
-
-        
      
     - name: Update README, and cleanup up some space
-      if: success() || failure()
       run: |
-        stat_success=238636
-        stat_failure=f85149
-        stat_cancelled=lightgrey
-        stat_skipped=lightgrey
-        stat_=lightgrey
-        git config --local user.name "xavier.forestier"
-        git config --local user.email "{ID}+{username}@users.noreply.github.com"
-        git fetch
-        git switch master
-        git pull
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ steps.merge_min.conclusion }}}/" README.md
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_minimal-\\)[^-]*-[^\\?]*/\\1homeassistant[minimal]-${stat_${{ steps.merge_min.conclusion }}}/" README.md
-        git add README.md
-        git commit -m "Release homeassistant" || true
-        git push --force-with-lease
         rm /var/cache/distfiles/* || true 
         rm /var/cache/binpkgs/* || true 
         rm -rf /var/tmp/portage/* || true
@@ -85,23 +61,7 @@ jobs:
         USE="-minimal normal -full" emerge --jobs=1 --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=100 virtual/homeassistant -v
         
     - name: Free up some space
-      if: success() || failure()
       run: |
-        stat_success=238636
-        stat_failure=f85149
-        stat_cancelled=lightgrey
-        stat_skipped=lightgrey
-        stat_=lightgrey
-        git config --local user.name "xavier.forestier"
-        git config --local user.email "{ID}+{username}@users.noreply.github.com"
-        git fetch
-        git switch master
-        git pull
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ steps.merge_normal.conclusion }}}/" README.md
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_normal-\\)[^-]*-[^\\?]*/\\1homeassistant[normal]-${stat_${{ steps.merge_normal.conclusion }}}/" README.md
-        git add README.md
-        git commit -m "Release homeassistant" || true
-        git push --force-with-lease
         rm /var/cache/distfiles/* || true 
         rm /var/cache/binpkgs/* || true 
         rm -rf /var/tmp/portage/* || true
@@ -130,7 +90,9 @@ jobs:
         git fetch
         git switch master
         git pull
-        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ steps.merge_full.conclusion }}}/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant-\\)[^-]*-[^\\?]*/\\1$( echo $( find ./app-misc/homeassistant -type f -name "*.ebuild" | sort -r | head -n1 ) | rev | cut -d/ -f1 | cut -d. -f2- | cut -d- -f1 | rev )-${stat_${{ steps.merge_min.conclusion }}}/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_minimal-\\)[^-]*-[^\\?]*/\\1homeassistant[minimal]-${stat_${{ steps.merge_min.conclusion }}}/" README.md
+        sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_normal-\\)[^-]*-[^\\?]*/\\1homeassistant[normal]-${stat_${{ steps.merge_normal.conclusion }}}/" README.md
         sed -ie "s/\\(https:\\/\\/img\\.shields\\.io\\/badge\\/homeassistant_full-\\)[^-]*-[^\\?]*/\\1homeassistant[full]-${stat_${{ steps.merge_full.conclusion }}}/" README.md
         git add README.md
         git commit -m "Release homeassistant" || true
