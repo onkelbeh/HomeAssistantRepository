@@ -1,6 +1,6 @@
 # Home Assistant for Gentoo
 
-[![homeassistant-version](https://img.shields.io/badge/homeassistant-2025.5.3-lightgrey?logo=homeassistant&label=app-misc%2Fhomeassistant)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/homeassistant)
+[![homeassistant-version](https://img.shields.io/badge/homeassistant-2025.5.3-f85149?logo=homeassistant&label=app-misc%2Fhomeassistant)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/homeassistant)
 [![zigbee2mqtt-version](https://img.shields.io/badge/zigbee2mqtt-2.3.0-lightgrey?logo=zigbee2mqtt&label=app-misc%2Fzigbee2mqqt)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/zigbee2mqtt)
 [![esphome-version](https://img.shields.io/badge/esphome-2025.5.0-lightgrey?logo=esphome&label=dev-embedded%2Fesphome)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/dev-embedded/esphome)
 
@@ -11,7 +11,7 @@
 [![shellcheck](https://img.shields.io/badge/shellcheck-shellcheck-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/shellcheck.yml) 
 [![pkgcheck](https://img.shields.io/badge/pkgcheck-pkgcheck-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/pkgcheck.yml) 
 
-[![homeassistant](https://img.shields.io/badge/homeassistant_minimal-homeassistant[minimal]%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml)
+[![homeassistant](https://img.shields.io/badge/homeassistant_minimal-homeassistant[minimal]-f85149?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml)
 [![homeassistant](https://img.shields.io/badge/homeassistant_normal-homeassistant[normal]%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml)
 [![homeassistant](https://img.shields.io/badge/homeassistant_full-homeassistant[full]%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml)
 
