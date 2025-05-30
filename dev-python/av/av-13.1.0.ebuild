@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="
-	>=media-video/ffmpeg-7.0.0
+	>=media-video/ffmpeg-7.0.0:=
 	dev-python/ha-ffmpeg[${PYTHON_USEDEP}]
 "
 BDEPEND="
