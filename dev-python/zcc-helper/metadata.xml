@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+  <pkgmetadata>
+  <stabilize-allarches/>
+  <upstream>
+    <remote-id type="bitbucket">mark_hannon/zcc</remote-id>
+    <remote-id type="pypi">zcc-helper</remote-id>
+  </upstream>
+</pkgmetadata>
