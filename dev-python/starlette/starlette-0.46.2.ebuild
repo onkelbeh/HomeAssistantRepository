@@ -43,7 +43,7 @@ BDEPEND="
 	)
 "
 
-: ${EPYTEST_TIMEOUT:-180}
+: "${EPYTEST_TIMEOUT:-180}"
 distutils_enable_tests pytest
 
 python_test() {
