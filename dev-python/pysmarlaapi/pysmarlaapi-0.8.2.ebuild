@@ -16,8 +16,8 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
-	~dev-python/aiohttp-3.11[${PYTHON_USEDEP}]
-	~dev-python/jsonpickle-4.0.0[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-3.11[${PYTHON_USEDEP}]
+	>=dev-python/jsonpickle-4.0.0[${PYTHON_USEDEP}]
 	~dev-python/pysignalr-1.1.0[${PYTHON_USEDEP}]
 "
 

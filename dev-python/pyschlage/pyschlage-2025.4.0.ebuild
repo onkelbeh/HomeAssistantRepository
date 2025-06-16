@@ -20,7 +20,7 @@ DOCS="README.md"
 
 RDEPEND="
 	~dev-python/pycognito-2024.5.1[${PYTHON_USEDEP}]
-	~dev-python/requests-2.32.3[${PYTHON_USEDEP}]"
+	>=dev-python/requests-2.32.3[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]

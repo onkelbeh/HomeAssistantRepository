@@ -1,0 +1,8 @@
+--- a/pyproject.toml	2025-03-27 08:38:05.858200125 +0100
++++ b/pyproject.toml	2025-03-27 08:38:44.028672014 +0100
+@@ -1,2 +1,5 @@
++[build-system]
++build-backend = "setuptools.build_meta"
++
+ [project]
+ name = "aiotedee"
