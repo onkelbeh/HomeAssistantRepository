@@ -4,11 +4,12 @@
 EAPI=8
 PYTHON_COMPAT=( python3_{12..14} )
 DISTUTILS_USE_PEP517=setuptools
-inherit distutils-r1 pypi
+inherit distutils-r1 git-r3
 
 DESCRIPTION="Enables you to run scenes and or open and close VELUX windows via KLF200"
-HOMEPAGE="https://github.com/Julius2342/pyvlx https://pypi.org/project/pyvlx/"
-
+HOMEPAGE="https://github.com/xavierforestier/pyvlx"
+#https://github.com/Julius2342/pyvlx https://pypi.org/project/pyvlx/"
+EGIT_REPO_URI="https://github.com/xavierforestier/pyvlx.git"
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"

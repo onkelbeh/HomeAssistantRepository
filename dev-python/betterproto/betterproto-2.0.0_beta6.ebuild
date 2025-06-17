@@ -4,17 +4,15 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1
 
 TAG=v.${PV/_beta/b}
 MY_P=python-betterproto-${TAG}
 DESCRIPTION="A better Protobuf / gRPC generator & library"
-HOMEPAGE="
-	https://github.com/danielgtaylor/python-betterproto/
-	https://pypi.org/project/betterproto/
-"
+HOMEPAGE="https://github.com/danielgtaylor/python-betterproto/ https://pypi.org/project/betterproto/"
+
 # no tests in sdist, as of 2.0.0b7
 SRC_URI="
 	https://github.com/danielgtaylor/python-betterproto/archive/${TAG}.tar.gz
@@ -34,7 +32,7 @@ S=${WORKDIR}/${MY_P}
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	>=dev-python/black-23.1.0[${PYTHON_USEDEP}]

@@ -29,6 +29,7 @@ BDEPEND="test? (
 	)"
 
 PATCHES=( "${FILESDIR}/${P}-pandas-future-warning.patch" )
+DOCS="README.rst"
 
 src_prepare() {
 	# The tarball is missing this file.

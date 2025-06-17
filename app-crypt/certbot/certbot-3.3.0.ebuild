@@ -69,7 +69,7 @@ BDEPEND="
 # Also discard the previous related packages
 # except their transition step
 RDEPEND="
-	=app-crypt/acme-${PV}
+	~app-crypt/acme-${PV}
 	dev-python/chardet[${PYTHON_USEDEP}]
 	>=dev-python/configargparse-1.5.3[${PYTHON_USEDEP}]
 	>=dev-python/configobj-5.0.6[${PYTHON_USEDEP}]
