@@ -74,7 +74,7 @@ jobs:
     secrets: inherit
 
   esphome_init:  
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/master'
     needs: [ pkgcheck_complete ]
     runs-on: ubuntu-latest
     steps:
@@ -94,13 +94,13 @@ jobs:
         git push --force-with-lease
     
   esphome:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/master'
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/esphome.yml@master
     needs: esphome_init
     secrets: inherit
    
   zigbee2mqtt_init:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/master'
     needs: [ esphome_init ]
     runs-on: ubuntu-latest
     steps:
@@ -120,13 +120,13 @@ jobs:
         git push --force-with-lease
             
   zigbee2mqtt:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/master'
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/zigbee2mqtt.yml@master
     needs: zigbee2mqtt_init
     secrets: inherit
 
   homeassistant_init:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/master'
     needs: [ zigbee2mqtt_init ]
     runs-on: ubuntu-latest
     steps:
@@ -148,7 +148,7 @@ jobs:
         git push --force-with-lease
     
   homeassistant:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/master'
     uses: xavierforestier/HomeAssistantRepository/.github/workflows/homeassistant.yml@master
     needs: homeassistant_init
     secrets: inherit
