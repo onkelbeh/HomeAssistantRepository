@@ -35,7 +35,7 @@ RDEPEND="
 	$( python_gen_cond_dep '
 	server? (
 		acct-group/esphome acct-user/esphome
-		~dev-python/tornado-6.4.2[${PYTHON_USEDEP}]
+		~dev-python/tornado-6.5.1[${PYTHON_USEDEP}]
 	)
 	>=dev-python/cryptography-45.0.1[${PYTHON_USEDEP}]
 	~dev-python/voluptuous-0.15.2[${PYTHON_USEDEP}]
@@ -43,7 +43,6 @@ RDEPEND="
 	>=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/colorama-0.4.6[${PYTHON_USEDEP}]
 	>=dev-python/icmplib-3[${PYTHON_USEDEP}]
-	~dev-python/tornado-6.5.1[${PYTHON_USEDEP}]
 	~dev-python/tzlocal-5.3.1[${PYTHON_USEDEP}]
 	>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
 	~dev-python/pyserial-3.5[${PYTHON_USEDEP}]
