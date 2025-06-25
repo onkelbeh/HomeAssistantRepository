@@ -40,7 +40,7 @@
     <flag name="airzone-cloud">This integration interacts with the Cloud API of Airzone devices.</flag>
     <flag name="airzone">This integration interacts with the Local API of Airzone HVAC zoning systems.</flag>
     <flag name="alarmdecoder">The AlarmDecoder integration will allow Home Assistant users who own either a DSC or Honeywell alarm panel to leverage their alarm system and its sensors to provide Home Assistant with rich information about their homes. Connectivity between Home Assistant and the alarm panel is accomplished through a device produced by Nu Tech Software Solutions, known as the AlarmDecoder. The AlarmDecoder devices provide a serial, TCP/IP socket or USB interface to the alarm panel, where it emulates an alarm keypad.</flag>
-    <flag name="alexa-devices">The Alexa Devices integration allows you to control your Amazon Echo dots.</flag>
+    <flag name="alexa-devices">The Alexa Devices integration lets you control Alexa-enabled devices connected to your Amazon account.</flag>
     <flag name="alpha-vantage">The alpha_vantage sensor platform uses Alpha Vantage to monitor the stock market. This platform also provides detail about exchange rates.</flag>
     <flag name="amazon-polly">The amazon_polly text-to-speech platform that works with Amazon Polly to create the spoken output.Polly is a paid service via Amazon Web Services. There is a free tier for the first 12 months and then a charge per million characters afterwards.</flag>
     <flag name="amberelectric">Amber is an Australian electricity retailer that provides access to wholesale electricity prices. Customers monitor the wholesale price and shift their energy usage to cheaper, greener times. This saves them money and supports the shift to a more renewably-powered Australia.</flag>
@@ -853,7 +853,7 @@
     <flag name="tellduslive">The tellduslive integration let you connect to the Telldus Live API. It’s cloud platform that connects to your Tellstick Net or Tellstick ZNet connected gear at home.</flag>
     <flag name="tellstick">The tellstick integration integrates TellStick devices into Home Assistant. This integration allows users to add switches, lights, and sensors which are communicating with 433 MHz. There are a number of vendors (Capidi Elro, Intertechno, Nexa, Proove, Sartano, and Viking) who are selling products that work with TellStick. For more details, please check the TellStick protocol list.</flag>
     <flag name="temper">This temper sensor integration allows you to get the current temperature from a TEMPer device.</flag>
-    <flag name="tesla-fleet">There is an active alert for this integration! LEARN MORE The Tesla Fleet API integration exposes various sensors from Tesla vehicles and energy sites using the Tesla Fleet API.</flag>
+    <flag name="tesla-fleet">There is an active alert for this integration! LEARN MORE The Tesla Fleet integration lets you control Tesla vehicles and energy sites using the Tesla Fleet API.</flag>
     <flag name="tesla-wall-connector">The Tesla Wall Connector integration allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi into Home Assistant.</flag>
     <flag name="teslemetry">The Teslemetry integration exposes various commands and sensors from the Tesla vehicles and energy sites connected to a Teslemetry subscription.</flag>
     <flag name="tessie">The Tessie integration exposes various commands and sensors from the Tesla vehicles and energy products connected to your Tessie subscription.</flag>
