@@ -20,6 +20,7 @@ jobs:
       run: |
         rsync -aHDPSv etc/ /etc/
         pwd -P >> /etc/portage/repos.conf/homeassistant.conf
+        cat /etc/portage/repos.conf/homeassistant.conf
         git config --global --add safe.directory .
 
     - name: emerge homeassistant[full] check deps
