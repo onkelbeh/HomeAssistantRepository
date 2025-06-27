@@ -15,7 +15,7 @@
 [![homeassistant](https://img.shields.io/badge/homeassistant_normal-homeassistant[normal]%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml)
 [![homeassistant](https://img.shields.io/badge/homeassistant_full-homeassistant[full]%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml)
 
-[![zigbee2mqtt](https://img.shields.io/badge/zigbee2mqttjob-zigbee2mqtt%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml)
+[![zigbee2mqtt](https://img.shields.io/badge/zigbee2mqttjob-zigbee2mqtt-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml)
 [![esphome](https://img.shields.io/badge/esphomejob-esphome-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml)
 
 ## without Docker & Virtual Environments
