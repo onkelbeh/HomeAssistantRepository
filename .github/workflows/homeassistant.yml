@@ -32,6 +32,10 @@ jobs:
         echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
         echo "*/* *" >> /etc/portage/package.license
         git config --global --add safe.directory .
+
+    - name: emerge homeassistant[full] check deps
+      run: |        
+        USE="-minimal -normal full" emerge --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=300 virtual/homeassistant -pv
         
     - name: emerge homeassistant[minimal] first...
       id: merge_min
