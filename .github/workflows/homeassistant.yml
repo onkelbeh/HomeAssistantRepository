@@ -35,7 +35,7 @@ jobs:
 
     - name: emerge homeassistant[full] check deps
       run: |        
-        USE="-minimal -normal full" emerge --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --verbose-conflicts --backtrack=300 virtual/homeassistant -pv
+        USE="-minimal -normal full" emerge --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --autounmask-use=y --verbose-conflicts --backtrack=3000 virtual/homeassistant -pv --deep --with-bdeps=y
         
     - name: emerge homeassistant[minimal] first...
       id: merge_min
