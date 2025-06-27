@@ -1,5 +1,5 @@
---- a/core-2025.6.0/requirements_all.txt	2024-10-11 18:25:02.000000000 +0200
-+++ b/core-2025.6.0/requirements_all.txt	2024-10-13 20:44:30.782824454 +0200
+--- a/core-2025.6.3/requirements_all.txt	2024-10-11 18:25:02.000000000 +0200
++++ b/core-2025.6.3/requirements_all.txt	2024-10-13 20:44:30.782824454 +0200
 @@ -186,7 +186,7 @@
  
  # homeassistant.components.ambient_network
