@@ -14,22 +14,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     # Sync custom files found /etc/portage files
-    - name: Init /etc/portage/      
+    - name: Setup HomeAssistant repository     
       run: |
         rsync -aHDPSv etc/portage/ /etc/portage/
-    # Init homeasisstant repository
-    - name: Setup HomeAssistant repository
-      run: |
-        mkdir -p /etc/portage/repos.conf/
-        echo -en "[HomeAssistantRepository]\nlocation = " >/etc/portage/repos.conf/homeassistant.conf
-        pwd -P >> /etc/portage/repos.conf/homeassistant.conf        
-    # Update to unstable and force python13
-    - name: Setup portage to ~amd64 and python13
-      run: |
-        echo -e "ACCEPT_KEYWORDS=\"~amd64\"\nACCEPT_LICENCE=\"*\"" >> /etc/portage/make.conf
-        echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
-        echo "*/* *" >> /etc/portage/package.license
-    # Compile zigbee2mqqt and its dependencies
+        echo -n "location = " >> /etc/portage/repos.conf/homeassistant.conf
+        pwd -P >> /etc/portage/repos.conf/homeassistant.conf
+        git config --global --add safe.directory .
+    # Compile esphome and its dependencies
     - name: emerge dev-embedded/esphome...
       run: |
         echo -n "" > /etc/portage/package.use/zzz.use
