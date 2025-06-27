@@ -19,6 +19,7 @@ jobs:
     - name: Setup HomeAssistant repository     
       run: |
         rsync -aHDPSv etc/portage/ /etc/portage/
+        echo -n "location = " >> /etc/portage/repos.conf/homeassistant.conf
         pwd -P >> /etc/portage/repos.conf/homeassistant.conf
         git config --global --add safe.directory .
 
