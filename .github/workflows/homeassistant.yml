@@ -16,26 +16,15 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     # 
-    - name: Init /etc/portage/      
+    - name: Setup HomeAssistant repository     
       run: |
         rsync -aHDPSv etc/portage/ /etc/portage/
-        
-    - name: Setup HomeAssistant repository
-      run: |
-        mkdir -p /etc/portage/repos.conf/
-        echo -en "[HomeAssistantRepository]\nlocation = " >/etc/portage/repos.conf/homeassistant.conf
-        pwd -P >> /etc/portage/repos.conf/homeassistant.conf        
-
-    - name: Setup portage to ~amd64 and python13
-      run: |
-        echo -e "ACCEPT_KEYWORDS=\"~amd64\"\nACCEPT_LICENCE=\"*\"" >> /etc/portage/make.conf
-        echo -e "*/* PYTHON_TARGETS: -* python3_13\n*/* PYTHON_SINGLE_TARGET: -* python3_13" >> /etc/portage/package.use/python13.use
-        echo "*/* *" >> /etc/portage/package.license
+        pwd -P >> /etc/portage/repos.conf/homeassistant.conf
         git config --global --add safe.directory .
 
     - name: emerge homeassistant[full] check deps
       run: |        
-        USE="-minimal -normal full" emerge --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --autounmask-use=y --verbose-conflicts --backtrack=3000 virtual/homeassistant -pv --deep --with-bdeps=y
+        USE="-minimal -normal full" emerge --autounmask=y --autounmask-continue=y --autounmask-write=y --autounmask-license=y --autounmask-backtrack=y --autounmask-use=y --verbose-conflicts --backtrack=3000 virtual/homeassistant -pv --deep --with-bdeps=y --newuse
         
     - name: emerge homeassistant[minimal] first...
       id: merge_min
