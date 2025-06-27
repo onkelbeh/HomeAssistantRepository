@@ -4,12 +4,11 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{12..14} )
-DISTUTILS_USE_PEP517=poetry
-PYPI_NO_NORMALIZE=1
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 
-DESCRIPTION="A small python module for wake on lan."
-HOMEPAGE="https://github.com/remcohaszing/pywakeonlan https://pypi.org/project/wakeonlan/"
+DESCRIPTION="Python library to convert dataclasses into marshmallow schemas."
+HOMEPAGE="https://github.com/lovasoa/marshmallow_dataclass https://pypi.org/project/marshmallow-dataclass/"
 
 LICENSE="MIT"
 SLOT="0"
@@ -17,9 +16,13 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
-RDEPEND="!net-misc/wakeonlan"
+RDEPEND="
+	>=dev-python/marshmallow-3.18.0[${PYTHON_USEDEP}]
+	>=dev-python/typing-inspect-0.9.0[${PYTHON_USEDEP}]
+	>=dev-python/typeguard-4.0[${PYTHON_USEDEP}]
+"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
