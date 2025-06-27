@@ -18,9 +18,11 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/marshmallow-3.13.0[${PYTHON_USEDEP}]
-	<dev-python/marshmallow-4.0[${PYTHON_USEDEP}]
-	>=dev-python/typing-inspect-0.7.1[${PYTHON_USEDEP}]"
+RDEPEND="
+	>=dev-python/marshmallow-3.18.0[${PYTHON_USEDEP}]
+	>=dev-python/typing-inspect-0.9.0[${PYTHON_USEDEP}]
+	>=dev-python/typeguard-4.0[${PYTHON_USEDEP}]
+"
 BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
