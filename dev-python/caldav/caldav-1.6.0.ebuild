@@ -24,9 +24,6 @@ RDEPEND="
 	>=dev-python/recurring-ical-events-2.0.0[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/vobject[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep '
-		dev-python/typing-extensions[${PYTHON_USEDEP}]
-	' 3.10)
 "
 BDEPEND="
 	test? (
