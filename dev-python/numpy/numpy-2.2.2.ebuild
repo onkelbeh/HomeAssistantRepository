@@ -69,9 +69,9 @@ python_prepare_all() {
 
 python_configure_all() {
 	DISTUTILS_ARGS=(
-		-Dallow-noblas=$(usex !lapack true false)
-		-Dblas=$(usev lapack cblas)
-		-Dlapack=$(usev lapack lapack)
+		"-Dallow-noblas=$(usex !lapack true false)"
+		"-Dblas=$(usev lapack cblas)"
+		"-Dlapack=$(usev lapack lapack)"
 		# TODO: cpu-* options
 	)
 }

@@ -308,7 +308,7 @@ RDEPEND="\${RDEPEND}
 	coronavirus? ( dev-python/coronavirus[\${PYTHON_USEDEP}] )
 	deutsche-bahn? ( dev-python/schiene[\${PYTHON_USEDEP}] )
 	dht? ( ~dev-python/adafruit-circuitpython-dht-3.7.0[\${PYTHON_USEDEP}] ~dev-python/rpi-gpio-0.7.1_alpha4[\${PYTHON_USEDEP}] )
-	http? ( ~dev-python/aiohttp-cors-0.7.0[\${PYTHON_USEDEP}] ~dev-python/aiohttp-fast-url-dispatcher-0.3.0[\${PYTHON_USEDEP}] ~dev-python/aiohttp-zlib-ng-0.3.1[\${PYTHON_USEDEP}] )
+	http? ( dev-python/aiohttp[\${PYTHON_USEDEP}] ~dev-python/aiohttp-fast-url-dispatcher-0.3.0[\${PYTHON_USEDEP}] ~dev-python/aiohttp-zlib-ng-0.3.1[\${PYTHON_USEDEP}] )
 	loopenergy? ( ~dev-python/pyloopenergy-0.2.1[\${PYTHON_USEDEP}] )
 	mariadb? ( dev-python/mysqlclient[\${PYTHON_USEDEP}] )
 	mosquitto? ( app-misc/mosquitto )

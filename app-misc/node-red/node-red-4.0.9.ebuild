@@ -12,7 +12,7 @@ SRC_URI="https://github.com/${PN}/${PN}/archive/refs/tags/${PV}.tar.gz  -> ${P}.
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	acct-group/node-red

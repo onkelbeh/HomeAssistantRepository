@@ -17,7 +17,7 @@ KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	>=dev-python/requests-2.32.3[${PYTHON_USEDEP}]
-	~dev-python/pandas-2.2.3[${PYTHON_USEDEP}]
+	>=dev-python/pandas-2.2.3[${PYTHON_USEDEP}]
 	>=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 	~dev-python/xmltodict-0.14.2[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.21.0[${PYTHON_USEDEP}]

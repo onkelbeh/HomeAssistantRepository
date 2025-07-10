@@ -21,7 +21,7 @@ HOMEPAGE="https://www.zigbee2mqtt.io/"
 
 LICENSE="0BSD Apache-2.0 BSD-2 CC-BY-4.0 GPL-3 ISC MIT PYTHON"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
 	acct-group/zigbee2mqtt

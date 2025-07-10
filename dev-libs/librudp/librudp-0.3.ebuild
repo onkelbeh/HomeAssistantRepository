@@ -9,7 +9,7 @@ EGIT_REPO_URI="https://github.com/fbx/librudp.git"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 arm arm64 x86"
 
 DEPEND="~dev-libs/libela-${PV}"
 RDEPEND="${DEPEND}"
