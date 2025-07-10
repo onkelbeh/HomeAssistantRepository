@@ -1,0 +1,10 @@
+--- a/pyproject.toml	2025-07-10 09:09:10.927874315 +0200
++++ b/pyproject.toml	2025-07-10 09:09:31.447765712 +0200
+@@ -1,3 +1,7 @@
++[build-system]
++requires = ["poetry-core"]
++build-backend = "poetry.core.masonry.api"
++
+ [project]
+ name = "eq3btsmart"
+ authors = [{ name = "Lennard Beers", email = "l.beers@outlook.de" }]

@@ -1,0 +1,9 @@
+--- a/options.json	2025-03-27 08:52:05.545711646 +0100
++++ b/options.json	2025-03-27 08:51:56.262517051 +0100
+@@ -0,0 +1,6 @@
++{
++  "library": "asyncio",
++  "packageName": "sensorpush_api",
++  "projectName": "sensorpush-api",
++  "packageVersion": "2.1.3"
++}

@@ -21,7 +21,7 @@
     <flag name="acer-projector">The acer_projector switch platform allows you to control the state of RS232 connected projectors from Acer.</flag>
     <flag name="acmeda">The Rollease Acmeda Automate integration allows you to control and monitor covers via your Rollease Acmeda Automate hub. The integrations communicates directly with hubs on the local network, rather than connecting via the cloud or via RS-485. Devices are represented as a cover for monitoring and control as well as a sensor for monitoring battery condition.</flag>
     <flag name="adax">The Adax integration integrates Adax heaters into Home Assistant and can be configured to use a local or cloud interface.</flag>
-    <flag name="adguard">AdGuard Home is a network-wide DNS server that supports ad, tracker,and adult content blocking. The AdGuard integration allows you to control andmonitor your AdGuard Home instance in Home Assistant.</flag>
+    <flag name="adguard">The AdGuard Home integration allows you to control and monitor your AdGuard Home instance in Home Assistant.</flag>
     <flag name="ads">The ADS (automation device specification) describes a device-independent and fieldbus independent interface for communication between Beckhoff automation devices running TwinCAT and other devices implementing this interface.</flag>
     <flag name="advantage-air">The Advantage Air integration allows you to control Advantage Air Air Conditioning controllers into Home Assistant.</flag>
     <flag name="aemet">The AEMET weather platform uses AEMET OpenData as a source for current meteorological data for your location. AEMET stands for “Agencia Estatal de Meteorología”, which is the Spanish Meteorological Agency.</flag>
@@ -42,6 +42,7 @@
     <flag name="alarmdecoder">The AlarmDecoder integration will allow Home Assistant users who own either a DSC or Honeywell alarm panel to leverage their alarm system and its sensors to provide Home Assistant with rich information about their homes. Connectivity between Home Assistant and the alarm panel is accomplished through a device produced by Nu Tech Software Solutions, known as the AlarmDecoder. The AlarmDecoder devices provide a serial, TCP/IP socket or USB interface to the alarm panel, where it emulates an alarm keypad.</flag>
     <flag name="alexa-devices">The Alexa Devices integration lets you control Alexa-enabled devices connected to your Amazon account.</flag>
     <flag name="alpha-vantage">The alpha_vantage sensor platform uses Alpha Vantage to monitor the stock market. This platform also provides detail about exchange rates.</flag>
+    <flag name="altruist">The Altruist integration connects Home Assistant to Air Quality Sensor “Altruist“ — a device designed for decentralized environmental monitoring. It captures noise, dust, and temperature data from the sensor over HTTP, making it available as locally usable entities within Home Assistant.</flag>
     <flag name="amazon-polly">The amazon_polly text-to-speech platform that works with Amazon Polly to create the spoken output.Polly is a paid service via Amazon Web Services. There is a free tier for the first 12 months and then a charge per million characters afterwards.</flag>
     <flag name="amberelectric">Amber is an Australian electricity retailer that provides access to wholesale electricity prices. Customers monitor the wholesale price and shift their energy usage to cheaper, greener times. This saves them money and supports the shift to a more renewably-powered Australia.</flag>
     <flag name="ambient-network">The Ambient Weather Network integration retrieves local weather station informationvia the Ambient Weather Network.</flag>
@@ -74,6 +75,7 @@
     <flag name="arve">The Arve integration provides the ability to monitor real-life air quality data, as measured by your Arve device.</flag>
     <flag name="aseko-pool-live">The Aseko Pool Live integration allows you to monitor your Aseko ASIN Aqua dosing systems and Aseko ASIN Pool controllers.</flag>
     <flag name="assist-pipeline">The Assist pipeline integration provides the foundation for the Assist voice assistant in Home Assistant.</flag>
+    <flag name="assist-satellite">This is an integration for remote satellites that use Assist to control and interact with Home Assistant. This allows other integrations to represent these satellites in a consistent manner.</flag>
     <flag name="asuswrt">The ASUSWRT integration can connect Home Assistant to a ASUS router that runs on ASUSWRT firmware.</flag>
     <flag name="atag">The Atag integration allows Home Assistant to connect to Atag One thermostats, reporting and setting its status.The integration implements the following platforms:</flag>
     <flag name="aten-pe">The aten_pe integration lets you control ATEN Rack PDUs from Home Assistant.</flag>
@@ -193,7 +195,6 @@
     <flag name="dunehd">The Dune HD integration allows you to control a Dune HD media player from Home Assistant. Support is based on the official IP protocol published by Dune.</flag>
     <flag name="duotecno">The Duotecno integration can be used to control Duotecno nodes in Home Assistant.</flag>
     <flag name="dwd-weather-warnings">The Deutscher Wetterdienst Weather Warnings integration uses the Deutscher Wetterdienst (DWD) as a source for current and advance weather warnings. The configured sensor checks for data every 15 minutes.</flag>
-    <flag name="dweet">The dweet integration makes it possible to transfer details collected with Home Assistant to Dweet.io and visualize them with freeboard.io. Keep in mind that your information will be public!</flag>
     <flag name="dynalite">Philips Dynalite support is integrated into Home Assistant as a hub that can drive the light, switch, and cover platforms.</flag>
     <flag name="eafm">The eafm integration offers integration with the UK Environment Agency Flood Monitoring API to provide sensors for nearby water levels. Combined with Home Assistant notifications, you could give yourself a warning if a nearby river was likely to flood your local cycle path or the only road out of your village.</flag>
     <flag name="easyenergy">The easyEnergy integration integrates the easyEnergy API platform with Home Assistant.</flag>
@@ -311,7 +312,7 @@
     <flag name="google-assistant-sdk">The Google Assistant SDK integration allows Home Assistant to interact with Google Assistant. If you want to use Google Assistant (for example, from your phone or Google Home device) to interact with your Home Assistant managed devices, then you want the Google Assistant integration.</flag>
     <flag name="google-cloud">The Google Cloud integration allows you to use Google Cloud Platform APIs and integrate them into Home Assistant.</flag>
     <flag name="google-drive">This integration enabled.</flag>
-    <flag name="google-generative-ai-conversation">The Google Generative AI integration adds a conversation agent powered by Google Generative AI in Home Assistant. It can optionally be allowed to control Home Assistant.</flag>
+    <flag name="google-generative-ai-conversation">The Google Generative AI integration adds a conversation agent and text-to-speech engine powered by Google Generative AI to Home Assistant. It can optionally be allowed to control Home Assistant.</flag>
     <flag name="google-mail">The Google Mail integration allows you to connect your Google Mail to Home Assistant. The integration adds an action to allow you to set an email auto-response for when you go on vacation. A notify action is also added, allowing you to draft or send emails in plain text.</flag>
     <flag name="google">The Google Calendar integration allows you to connect your Google Calendar to Home Assistant. The integration adds calendar entities that are shown on the Calendar dashboard, and can be used for automations based on any event, or limited to specific matching criteria.</flag>
     <flag name="google-maps">The google_maps integration allows you to detect presence using the unofficial API of Google Maps Location Sharing.</flag>
@@ -415,7 +416,6 @@
     <flag name="jellyfin">The Jellyfin integration exposes a Jellyfin server as a media source in Home Assistant.Support is currently limited to music, movie and TV show libraries only. Other libraries will not appear in the media browser. This integration has been tested with Jellyfin server version 10.6.4 and later.</flag>
     <flag name="jewish-calendar">The Jewish Calendar (jewish_calendar) integration displays various information related to the Jewish Calendar as various sensors.</flag>
     <flag name="joaoapps-join">The joaoapps_join integration exposes actions fromJoin. In Home Assistant, the Joaoapps Join features aredivided up in two locations, the Join integration, and the Joaoapps Join notify platform.The notify platform allows us to send messages to Joaoapps Join devices, the integrationallows us to access the other special features that Joaoapps Join offers. When in doubt, you can reference the API documentation this is based on.</flag>
-    <flag name="juicenet">The juicenet platform pulls data from a JuiceNet charging station equipped with a Wi-Fi connection. It will access and make available all of the devices attached to your account. It also exposes a switch allowing you to charge your car now instead of waiting for the pre-set schedule.</flag>
     <flag name="justnimbus">The JustNimbus integration queries the JustNimbus API used by the JustNimbus web dashboard.This integration allows you to collect and save data to get a historical overview of your water bagusage.</flag>
     <flag name="jvc-projector">The JVC Projector integration allows for the automation of JVC Projectors.</flag>
     <flag name="kaiterra">The kaiterra integration allows you to view the readings from your Laser Egg or Sensedge device using the Kaiterra REST API.</flag>
@@ -635,11 +635,12 @@
     <flag name="pglab">The PG LAB Electronics integrations allows you to control PG LAB Electronics devices in Home Assistant.</flag>
     <flag name="philips-js">The philips_js platform allows you to control Philips TVs which expose the jointSPACE JSON-API.</flag>
     <flag name="picnic">The Picnic integration allows one to get information from Picnic about orders, deliveries and cart content.</flag>
-    <flag name="pi-hole">The Pi-hole integration allows you to retrieve statistics and interact with aPi-hole system.</flag>
+    <flag name="pi-hole">The Pi-hole integration allows you to retrieve statistics and interact with aPi-hole system (version &lt; 6.0).</flag>
     <flag name="pilight">Pilight is a modular and open source solution to communicate with 433 MHz devices and runs on various small form factor computers. A lot of common protocols are already available.</flag>
     <flag name="ping">There is currently support for the following device types within Home Assistant:</flag>
     <flag name="pjlink">The pjlink integration allows you to control from Home Assistant, projectors with support for the PJLink protocol.</flag>
     <flag name="plaato">This integration sets up integration with Plaato Airlock and Keg.</flag>
+    <flag name="playstation-network">The PlayStation Network integration enables you to seamlessly integrate information from your currently playing game in Home Assistant.</flag>
     <flag name="plex">The Plex integration allows you to connect Home Assistant to a Plex Media Server. Once configured, actively streaming Plex Clients show up as media players and report playback status and library sizes via sensors in Home Assistant. Media players will allow you to control media playback and see the current playing item.</flag>
     <flag name="plugwise">Plugwise provides smart home devices that allow you to monitor and control your climate, energy (including gas) consumption, and energy production. The energy information can be used for the energy dashboard.</flag>
     <flag name="plum-lightpad">Configurable/Dimmable Wi-Fi Lightswitch</flag>
@@ -838,7 +839,7 @@
     <flag name="system-bridge">System Bridge is an application that runs on your local machine to share system information via its API/WebSocket. You can also send commands to the device such as opening a URL or sending keyboard keypresses.</flag>
     <flag name="systemmonitor">The System monitor integration allows you to monitor disk usage, memory usage, network usage, CPU usage, and running processes.</flag>
     <flag name="tado">The Tado integration platform is used as an interface to the my.tado.com website.</flag>
-    <flag name="tailscale">The Tailscale integration integrates the Tailscale APIwith Home Assistant; giving you the possibility to monitor and automate onthe state of the devices in your Tailscale VPN network (Tailnet).</flag>
+    <flag name="tailscale">The Tailscale integration connects to the Tailscale API to monitor devices in your Tailscale network (Tailnet). Use this integration to create automations based on device connectivity, track usage patterns, or receive notifications when devices go online or offline.</flag>
     <flag name="tailwind">The Tailwind integration integrates Tailwindgarage door controllers fully locally.</flag>
     <flag name="tami4">The Tami4 Edge integration allows you to control and monitor Tami4 Edge / Edge+ by Strauss devices in Home Assistant.</flag>
     <flag name="tankerkoenig">The tankerkoenig integration allows you to monitor the fuel prices with tankerkoenig.de from within Home Assistant and setup automations based on the information.</flag>
@@ -849,11 +850,11 @@
     <flag name="technove">The TechnoVE integration provides connectivity with TechnoVE Smart Charging Station through the station local API.</flag>
     <flag name="ted5000">The ted 5000 monitors electricity consumption/production by connecting to the TED gateway, itself connected to one or several Measuring Transmitting Units (MTU). The platform creates up to two sensors per MTU, one for Wattage the other for Voltage.</flag>
     <flag name="tedee">This integration interacts with your Tedee locks by communicating with the Tedee bridge through HTTP. The integration will communicate with your lock locally.</flag>
-    <flag name="telegram-bot">Use Telegram on your mobile or desktop device to send and receive messages or commands to/from your Home Assistant.</flag>
+    <flag name="telegram-bot">Use Telegram on your mobile or desktop device to send and receive messages or commands to/from your Home Assistant.This integration creates notification actions to send, edit or receive messages from a Telegram Bot account.</flag>
     <flag name="tellduslive">The tellduslive integration let you connect to the Telldus Live API. It’s cloud platform that connects to your Tellstick Net or Tellstick ZNet connected gear at home.</flag>
     <flag name="tellstick">The tellstick integration integrates TellStick devices into Home Assistant. This integration allows users to add switches, lights, and sensors which are communicating with 433 MHz. There are a number of vendors (Capidi Elro, Intertechno, Nexa, Proove, Sartano, and Viking) who are selling products that work with TellStick. For more details, please check the TellStick protocol list.</flag>
     <flag name="temper">This temper sensor integration allows you to get the current temperature from a TEMPer device.</flag>
-    <flag name="tesla-fleet">There is an active alert for this integration! LEARN MORE The Tesla Fleet integration lets you control Tesla vehicles and energy sites using the Tesla Fleet API.</flag>
+    <flag name="tesla-fleet">The Tesla Fleet integration lets you control Tesla vehicles and energy sites using the Tesla Fleet API.</flag>
     <flag name="tesla-wall-connector">The Tesla Wall Connector integration allows you to integrate your Gen 3 Tesla Wall Connector with Wi-Fi into Home Assistant.</flag>
     <flag name="teslemetry">The Teslemetry integration exposes various commands and sensors from the Tesla vehicles and energy sites connected to a Teslemetry subscription.</flag>
     <flag name="tessie">The Tessie integration exposes various commands and sensors from the Tesla vehicles and energy products connected to your Tessie subscription.</flag>
@@ -867,6 +868,7 @@
     <flag name="tikteck">Support for the Bluetooth smart bulb from Tikteck. To enable these lights, add the following lines to your configuration.yaml file:</flag>
     <flag name="tile">The tile platform allows Home Assistant to utilize Tile® Bluetooth trackers.The official Tile mobile app handles the actual tracking of Tile devices usingthe mobile device’s Bluetooth and GPS.</flag>
     <flag name="tilt-ble">Integrates Tilt Hydrometer BLE devices into Home Assistant.</flag>
+    <flag name="tilt-pi">The Tilt Pi integration allows you to connect a Tilt Pi to Home Assistant toautomatically discover Tilt Hydrometer devices.</flag>
     <flag name="tmb">This sensor will provide you the remaining time, in minutes, for the next bus in a specific stop by using the iBus service.</flag>
     <flag name="todoist">This platform allows you to connect to your Todoist projects as todo or calendar entities. All tasks get updated roughly every 15 minutes.</flag>
     <flag name="tolo">The TOLO integration allows to control Steamtec TOLO devices with Home Assistant.</flag>
@@ -905,7 +907,7 @@
     <flag name="unifi">UniFi Network by Ubiquiti Networks, inc. is a software that binds gateways, switches and wireless access points together with one graphical front end.</flag>
     <flag name="unifiprotect">The UniFi Protect integration adds support for retrieving camera feeds and sensor data from a UniFi Protect application by Ubiquiti Networks, inc. that is running on a UniFi OS Console.</flag>
     <flag name="upb">The *Universal Powerline Bus (UPB) integration allows Home Assistant to connect to a Universal Powerline Bus Powerline Interface Module (UPB PIM) to get status and control UPB devices and UPB links. The UPB PIM may be connected either to a serial port or over TCP. The integration implements the following platforms:</flag>
-    <flag name="upc-connect">The upc_connect integration offers presence detection by looking at connected devices to a Connect Box from Liberty Global (also known as UPC Cablecom in Switzerland) which is an Internet provider in Switzerland, Austria, the Netherlands (under Ziggo) and Hungary (under Vodafone).</flag>
+    <flag name="upc-connect">The upc_connect integration offers presence detection by looking at connected devices to a Connect Box from Liberty Global (also known as UPC Cablecom in Switzerland) which is an Internet provider in Switzerland, Austria, the Netherlands (under Ziggo), Hungary (under Vodafone) and Poland (under PLAY).</flag>
     <flag name="upcloud">The UpCloud integration allows you to access the information about your UpCloud servers from Home Assistant.</flag>
     <flag name="upnp">The UPnP/IGD integration enables you to collect network statistics from your router such as bytes in/out and packets in/out, uptime, WAN IP address, and WAN connectivity status. This information is provided by the UPnP/Internet Gateway Device (IGD) Protocol if enabled on your router.</flag>
     <flag name="uptimerobot">The UptimeRobot integration provides entities to get the status for all of your monitors from your account on UptimeRobot.</flag>
@@ -916,6 +918,7 @@
     <flag name="v2c">The V2C integration allows monitoring and control of a local V2C Trydan EVSE in Home Assistant.</flag>
     <flag name="vallox">The Vallox integration lets you control any Vallox ventilation unit that is supported by the vallox_websocket_api (follow the link for a list of supported units).</flag>
     <flag name="vasttrafik">The vasttrafik integration will provide you traveling details for the larger Göteborg area in Sweden from the Västtrafik public transportation service.</flag>
+    <flag name="vegehub">The Vegetronix VegeHub integration allows you to control your VegeHub and gather data from its attached sensors.</flag>
     <flag name="velbus">The Velbus integration is used to control Velbus modules. It supports the Velbus USB, Velbus serial and a TCP/IP gateway.</flag>
     <flag name="velux">Velux integration for Home Assistant allows you to connect to a Velux KLF 200 interface, to control io-homecontrol devices like windows and blinds. The module allows you to start scenes configured within KLF 200.</flag>
     <flag name="venstar">The Venstar climate integration allows you to control Venstar thermostats from Home Assistant.Venstar thermostats feature a local API that allows for automation without the need for their Skyport cloud service.</flag>
@@ -939,7 +942,7 @@
     <flag name="vultr">The Vultr integration allows you to access information about and interact with your Vultr subscriptions (Virtual Private Servers) from Home Assistant.</flag>
     <flag name="w800rf32">The WGL Designs W800RF32 integration supports W800RF32 devices by WGL Designs whichcommunicate in the frequency range of 310MHz or if you are outside Canada or the U.S., 433.92 MHz.</flag>
     <flag name="wake-on-lan">The Wake on LAN integration enables the ability to send magic packets to Wake on LAN capable devices to turn them on.</flag>
-    <flag name="wallbox">The Wallbox integration pulls data from the MyWallbox Portal for your Wallbox charging station.</flag>
+    <flag name="wallbox">The Wallbox integration pulls data from the MyWallbox Portal for your Wallbox charging station.Use this integration to monitor the charging of your car by the Wallbox charger and modify settings such as Charging Power, Energy Price, Solar Charging and Pause/Resume. The energy usage collected by this integration can be used in the Energy dashboard.</flag>
     <flag name="waqi">The World Air Quality Index (WAQI) integration will query World Air Quality Index service to check AQI value for a specific set of locations. The resulting indexes will be added to the Home Assistant as sensor outputs.</flag>
     <flag name="waterfurnace">The WaterFurnace integration communicates with the WaterFurnace Symphony website’s WebSocket to show you many of the sensors in your system. While not an official API, this is the same backend the Symphony website is based on, and should be reasonably stable.</flag>
     <flag name="watergate">The Watergate integration integrates your Watergate Devices (currently Sonic Wi-Fi) with your Home Assistant.With this integration, you are able to:</flag>
@@ -972,7 +975,7 @@
     <flag name="xeoma">The Xeoma camera integration allows you to view the video feeds from a Xeoma video surveillance server.</flag>
     <flag name="xiaomi-aqara">The Xiaomi Gateway (Aqara) integration allows you to integrate Xiaomi Aqara-compatible devices into Home Assistant.</flag>
     <flag name="xiaomi-ble">Integrates devices that use the Xiaomi Mijia BLE MiBeacon protocol and the BLE protocols implemented in the MiScales and the MiFora plant sensor. This integration does not support Xiaomi BLE Mesh devices. The integration listens to Bluetooth broadcasts that the device makes by itself, allowing it to track the latest sensor values or events without waking the device up for polling (except HHCCJCY01, see note below). This method conserves battery lifetime.</flag>
-    <flag name="xiaomi-miio">The Xiaomi Miio integration supports the following devices:</flag>
+    <flag name="xiaomi-miio">The Xiaomi Home integration supports the following devices:</flag>
     <flag name="xiaomi-tv">The xiaomi_tv integration allows you to control a Xiaomi TV.The Xiaomi TV integration only supports Xiaomi TVs running MIUI.</flag>
     <flag name="xmpp">The xmpp notification integration allows you to deliver notifications from Home Assistant to a Jabber (XMPP) account.</flag>
     <flag name="xs1">The EZcontrol XS1 integration for Home Assistant allows you to observe and control devices configured on the XS1 Gateway. Please have a look at the official documentation for using this gateway Bedienungsanleitung v3.0.0.0.</flag>

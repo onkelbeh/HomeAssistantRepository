@@ -20,7 +20,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/awesomeversion-24.6.0[${PYTHON_USEDEP}] <dev-python/awesomeversion-24.7.0[${PYTHON_USEDEP}]
+	>=dev-python/awesomeversion-24.6.0[${PYTHON_USEDEP}]
 	>=dev-python/mashumaro-3.13.0[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.10.0[${PYTHON_USEDEP}] <dev-python/orjson-3.11.0[${PYTHON_USEDEP}]
 	>=dev-python/webrtc-models-0.1.0[${PYTHON_USEDEP}]

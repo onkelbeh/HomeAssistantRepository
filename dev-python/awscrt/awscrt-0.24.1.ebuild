@@ -18,10 +18,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-
 src_configure() {
 	export AWS_CRT_BUILD_USE_SYSTEM_LIBCRYPTO=1
 }
-
 
 distutils_enable_tests pytest
