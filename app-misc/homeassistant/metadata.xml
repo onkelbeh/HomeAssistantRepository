@@ -870,7 +870,7 @@
     <flag name="tilt-ble">Integrates Tilt Hydrometer BLE devices into Home Assistant.</flag>
     <flag name="tilt-pi">The Tilt Pi integration allows you to connect a Tilt Pi to Home Assistant toautomatically discover Tilt Hydrometer devices.</flag>
     <flag name="tmb">This sensor will provide you the remaining time, in minutes, for the next bus in a specific stop by using the iBus service.</flag>
-    <flag name="todoist">This platform allows you to connect to your Todoist projects as todo or calendar entities. All tasks get updated roughly every 15 minutes.</flag>
+    <flag name="todoist">This platform allows you to connect to your Todoist projects as todo or calendar entities. All tasks get updated roughly every minute.</flag>
     <flag name="tolo">The TOLO integration allows to control Steamtec TOLO devices with Home Assistant.</flag>
     <flag name="tomorrowio">The Tomorrow.io integration allows you to obtain weather, air quality, pollen, and fire information from the Tomorrow.io API.</flag>
     <flag name="toon">The Toon integration platform can be used to control your Quby Toon thermostat,which is currently being sold as:</flag>
@@ -918,7 +918,7 @@
     <flag name="v2c">The V2C integration allows monitoring and control of a local V2C Trydan EVSE in Home Assistant.</flag>
     <flag name="vallox">The Vallox integration lets you control any Vallox ventilation unit that is supported by the vallox_websocket_api (follow the link for a list of supported units).</flag>
     <flag name="vasttrafik">The vasttrafik integration will provide you traveling details for the larger Göteborg area in Sweden from the Västtrafik public transportation service.</flag>
-    <flag name="vegehub">The Vegetronix VegeHub integration allows you to control your VegeHub and gather data from its attached sensors.</flag>
+    <flag name="vegehub">The Vegetronix VegeHub is a compact, network-connected device designed for agricultural monitoring and control. It supports a variety of environmental sensors—including soil moisture, soil temperature, light, and more—making it suitable for use in gardening, landscaping, and precision agriculture. In addition to monitoring, the VegeHub can also control actuators such as relays, pumps, or water valves, enabling automation of irrigation and other systems. This integration allows Home Assistant to receive real-time data from VegeHub devices and optionally control connected outputs.</flag>
     <flag name="velbus">The Velbus integration is used to control Velbus modules. It supports the Velbus USB, Velbus serial and a TCP/IP gateway.</flag>
     <flag name="velux">Velux integration for Home Assistant allows you to connect to a Velux KLF 200 interface, to control io-homecontrol devices like windows and blinds. The module allows you to start scenes configured within KLF 200.</flag>
     <flag name="venstar">The Venstar climate integration allows you to control Venstar thermostats from Home Assistant.Venstar thermostats feature a local API that allows for automation without the need for their Skyport cloud service.</flag>
