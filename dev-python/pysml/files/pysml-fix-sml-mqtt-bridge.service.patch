@@ -1,0 +1,10 @@
+--- a/pyproject.toml	2025-07-11 09:02:21.425350976 +0200
++++ b/pyproject.toml	2025-07-11 09:02:35.405497722 +0200
+@@ -8,7 +8,6 @@
+ packages = [
+     { include = "sml" },
+     { include = "sml-mqtt-bridge.py", from = "examples" },
+-    { include = "sml-mqtt-bridge.service", from = "examples" },
+     { include = "test_asyncio.py", from = "examples" },
+ ]
+ 
