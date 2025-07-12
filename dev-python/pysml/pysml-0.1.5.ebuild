@@ -17,7 +17,7 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 DOCS="README.md"
-
+PATCHES="${FILESDIR}/${PN}-fix-sml-mqtt-bridge.service.patch"
 RDEPEND="
 	>=dev-python/aiohttp-3.8.4[${PYTHON_USEDEP}]
 	>=dev-python/bitstring-3.1.5[${PYTHON_USEDEP}]
