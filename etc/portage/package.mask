@@ -1,2 +1,1 @@
->=app-crypt/certbot-4.0.0-r2
->dev-python/pydantic-core-2.33.1
+
