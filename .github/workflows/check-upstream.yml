@@ -25,4 +25,4 @@ jobs:
       continue-on-error: true
       run: |
         latest_release=$( wget -qO - "https://api.github.com/repos/${{ inputs.upstream }}/releases/latest" | jq -r '.tag_name' )
-        test ! -e "./${{ inputs.pkgCategory }}/${{ inputs.pkgName }}/${{ inputs.pkgName }}-${latest_release}.ebuild" && git switch -c "feature/${{ inputs.pkgName }}-${latest_release}" && git push --set-upstream origin feature/${{ inputs.pkgName }}-${latest_release}
+        test -n "${latest_release}" && test ! -e "./${{ inputs.pkgCategory }}/${{ inputs.pkgName }}/${{ inputs.pkgName }}-${latest_release}.ebuild" && git switch -c "feature/${{ inputs.pkgName }}-${latest_release}" && git push --set-upstream origin feature/${{ inputs.pkgName }}-${latest_release}
