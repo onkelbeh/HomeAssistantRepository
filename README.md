@@ -2,7 +2,7 @@
 
 [![homeassistant-version](https://img.shields.io/badge/homeassistant-2025.7.2-lightgrey?logo=homeassistant&label=app-misc%2Fhomeassistant)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/homeassistant)
 [![zigbee2mqtt-version](https://img.shields.io/badge/zigbee2mqtt-2.5.1-lightgrey?logo=zigbee2mqtt&label=app-misc%2Fzigbee2mqqt)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/app-misc/zigbee2mqtt)
-[![esphome-version](https://img.shields.io/badge/esphome-2025.7.0-238636?logo=esphome&label=dev-embedded%2Fesphome)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/dev-embedded/esphome)
+[![esphome-version](https://img.shields.io/badge/esphome-2025.7.1-lightgrey?logo=esphome&label=dev-embedded%2Fesphome)](https://github.com/xavierforestier/HomeAssistantRepository/tree/master/dev-embedded/esphome)
 
 [![OS](https://img.shields.io/badge/OS-Gentoo%20Linux-blue)](https://www.gentoo.org/)
 [![weekly commits](https://img.shields.io/github/commit-activity/w/xavierforestier/HomeAssistantRepository)](https://github.com/xavierforestier/HomeAssistantRepository/commits/)
@@ -16,7 +16,7 @@
 [![homeassistant](https://img.shields.io/badge/homeassistant_full-homeassistant[full]%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/homeassistant.yml)
 
 [![zigbee2mqtt](https://img.shields.io/badge/zigbee2mqttjob-zigbee2mqtt%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/zigbee2mqtt.yml)
-[![esphome](https://img.shields.io/badge/esphomejob-esphome-238636?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml)
+[![esphome](https://img.shields.io/badge/esphomejob-esphome%20(running...)-lightgrey?logo=github&label=)](https://github.com/xavierforestier/HomeAssistantRepository/actions/workflows/esphome.yml)
 
 ## without Docker & Virtual Environments
 
