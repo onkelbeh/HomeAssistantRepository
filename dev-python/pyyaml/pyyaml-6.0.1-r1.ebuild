@@ -39,8 +39,6 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-6.0.1-cython3.patch
 )
 
-distutils_enable_tests setup.py
-
 src_configure() {
 	export PYYAML_FORCE_CYTHON=1
 }
