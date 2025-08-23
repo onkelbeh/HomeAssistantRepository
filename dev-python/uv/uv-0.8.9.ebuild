@@ -7,13 +7,15 @@ CRATES="
 "
 
 declare -A GIT_CRATES=(
-	[async_zip]='https://github.com/charliermarsh/rs-async-zip;c909fda63fcafe4af496a07bfda28a5aae97e58d;rs-async-zip-%commit%'
-	[pubgrub]='https://github.com/astral-sh/pubgrub;9cd9049a64c7352de2ff3b525b9ae36421b0cc18;pubgrub-%commit%'
+	[async_zip]='https://github.com/astral-sh/rs-async-zip;285e48742b74ab109887d62e1ae79e7c15fd4878;rs-async-zip-%commit%'
+	[pubgrub]='https://github.com/astral-sh/pubgrub;06ec5a5f59ffaeb6cf5079c6cb184467da06c9db;pubgrub-%commit%'
+	[reqwest-middleware]='https://github.com/astral-sh/reqwest-middleware;ad8b9d332d1773fde8b4cd008486de5973e0a3f8;reqwest-middleware-%commit%/reqwest-middleware'
+	[reqwest-retry]='https://github.com/astral-sh/reqwest-middleware;ad8b9d332d1773fde8b4cd008486de5973e0a3f8;reqwest-middleware-%commit%/reqwest-retry'
 	[tl]='https://github.com/astral-sh/tl;6e25b2ee2513d75385101a8ff9f591ef51f314ec;tl-%commit%'
-	[version-ranges]='https://github.com/astral-sh/pubgrub;9cd9049a64c7352de2ff3b525b9ae36421b0cc18;pubgrub-%commit%/version-ranges'
+	[version-ranges]='https://github.com/astral-sh/pubgrub;06ec5a5f59ffaeb6cf5079c6cb184467da06c9db;pubgrub-%commit%/version-ranges'
 )
 
-RUST_MIN_VER="1.80.1"
+RUST_MIN_VER="1.85.0"
 
 inherit cargo check-reqs
 
@@ -31,7 +33,7 @@ SRC_URI="
 "
 if [[ ${PKGBUMPING} != ${PVR} ]]; then
 	SRC_URI+="
-		https://dev.gentoo.org/~mgorny/dist/uv-${CRATE_PV}-crates.tar.xz
+		https://github.com/gentoo-crate-dist/uv/releases/download/${CRATE_PV}/uv-${CRATE_PV}-crates.tar.xz
 	"
 fi
 
@@ -40,8 +42,9 @@ LICENSE="|| ( Apache-2.0 MIT )"
 # crates/pep508-rs is || ( Apache-2.0 BSD-2 ) which is covered below
 # Dependent crate licenses
 LICENSE+="
-	0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD ISC MIT
-	MPL-2.0 Unicode-3.0 Unicode-DFS-2016 ZLIB
+	0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD
+	CDLA-Permissive-2.0 ISC MIT MPL-2.0 Unicode-3.0 Unicode-DFS-2016
+	ZLIB
 "
 # ring crate
 LICENSE+=" openssl"
@@ -61,11 +64,11 @@ RDEPEND="
 "
 BDEPEND="
 	test? (
-		dev-lang/python:3.8
 		dev-lang/python:3.9
 		dev-lang/python:3.10
 		dev-lang/python:3.11
 		dev-lang/python:3.12
+		dev-lang/python:3.13
 		!!~dev-python/uv-0.5.0
 	)
 "
@@ -89,6 +92,17 @@ pkg_setup() {
 
 src_prepare() {
 	default
+
+	# replace upstream crate substitution with our crate substitution, sigh
+	local pkg
+	for pkg in reqwest-middleware reqwest-retry; do
+		local dep=$(grep "^${pkg}" "${ECARGO_HOME}"/config.toml || die)
+		sed -i -e "/\[patch\.crates-io\]/,\$s;^${pkg}.*$;${dep};" Cargo.toml || die
+	done
+
+	# force thin lto, makes build much faster and less memory hungry
+	# (i.e. makes it possible to actually build uv on 32-bit PPC)
+	sed -i -e '/lto/s:fat:thin:' Cargo.toml || die
 
 	# enable system libraries where supported
 	export ZSTD_SYS_USE_PKG_CONFIG=1
