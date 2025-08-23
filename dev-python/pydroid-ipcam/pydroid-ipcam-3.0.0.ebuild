@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Library for handling the Android IP Webcam app"
@@ -24,9 +23,5 @@ BDEPEND="
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
 	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
