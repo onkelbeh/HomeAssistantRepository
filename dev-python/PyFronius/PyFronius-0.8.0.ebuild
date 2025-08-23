@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 DESCRIPTION="Automated JSON API based communication with Fronius Symo"
 HOMEPAGE="https://github.com/nielstron/pyfronius/ https://pypi.org/project/PyFronius/"
