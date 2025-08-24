@@ -5,7 +5,6 @@ EAPI=8
 
 PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Async Python Client for ONVIF Camera"
@@ -21,14 +20,7 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/httpx-0.19.0[${PYTHON_USEDEP}]
 	>=dev-python/zeep-4.2.1[async,${PYTHON_USEDEP}]
-	>=dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
+	>=dev-python/ciso8601-2.1.3[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.10.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
