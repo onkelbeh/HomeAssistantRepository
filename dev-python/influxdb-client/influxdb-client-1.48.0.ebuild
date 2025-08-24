@@ -16,28 +16,17 @@ KEYWORDS="amd64 arm arm64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DOCS="README.rst"
+DOCS="README.md"
 
-RDEPEND=">=dev-python/Rx-3.0.1
-	>=dev-python/certifi-14.05.14
-	>=dev-python/six-1.10
-	>=dev-python/python-dateutil-2.5.3
-	>=dev-python/urllib3-1.15.1
-	>=dev-python/pytz-2019.1
-"
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
+RDEPEND=">=dev-python/reactivex-4.0.4[${PYTHON_USEDEP}]
+	>=dev-python/certifi-14.05.14[${PYTHON_USEDEP}]
+	>=dev-python/python-dateutil-2.5.3[${PYTHON_USEDEP}]
+	>=dev-python/urllib3-1.26.0[${PYTHON_USEDEP}]"
 
 src_prepare() {
 	sed -e "s;packages=find_packages();packages=find_packages(exclude=['tests', 'docs']);" \
-		-i setup.py
+		-i setup.py || die
 	eapply_user
 	}
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest
