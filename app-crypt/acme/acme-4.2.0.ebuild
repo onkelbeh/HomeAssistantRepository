@@ -9,7 +9,7 @@ HOMEPAGE="
 	https://pypi.org/project/acme/
 	https://letsencrypt.org/
 "
-
+PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 LICENSE="metapackage"
 SLOT="0"
 
