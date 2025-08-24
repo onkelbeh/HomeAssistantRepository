@@ -19,16 +19,8 @@ DOCS="README.rst"
 
 RDEPEND="
 	oscore? ( dev-python/cbor2[${PYTHON_USEDEP}] dev-python/cryptography[${PYTHON_USEDEP}] dev-python/filelock[${PYTHON_USEDEP}]  )
-	tinydtls? ( >=dev-python/DTLSSocket-0.1.11_alpha1[${PYTHON_USEDEP}] )
+	tinydtls? ( >=dev-python/DTLSSocket-0.1.18[${PYTHON_USEDEP}] )
 	ws? ( dev-python/websockets[${PYTHON_USEDEP}] )
 "
-BDEPEND="
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-python_test() {
-	py.test -v -v || die
-}
 
 distutils_enable_tests pytest

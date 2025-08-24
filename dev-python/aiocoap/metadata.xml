@@ -7,10 +7,9 @@
   </maintainer>
   <upstream>
     <remote-id type="pypi">aiocoap</remote-id>
-    <remote-id type="github">chrysn/aiocoap</remote-id>
     <maintainer status="unknown">
-      <email>c.amsuess@energyharvesting.at</email>
-      <name>Maciej Wasilak, Christian Amsüss</name>
+      <email>chrysn@fsfe.org</email>
+      <name>Christian Amsüss</name>
     </maintainer>
   </upstream>
 </pkgmetadata>
