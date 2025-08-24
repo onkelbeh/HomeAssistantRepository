@@ -606,22 +606,22 @@ A daily compile test is run at Github with Python 3.9 to catch general faults. E
 
 ## Licenses
 This repository itself is released under GPL-3 (like most Gentoo repositories), all work on the depending components under the licenses they came from. Perhaps you came here because I filed an issue at your component about a bad or missing license. It is easy to [assign a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). During cleanups and license investigations I have been asked often which license to choose. I am not a lawyer, but I can offer the following table, counted over this repository, perhaps this helps your decision. If a package has more than one license listed, all of them are counted.
-There are 2386 Ebuilds in total, 2368 of them have in total 2409 (43 different) licenses assigned.
+There are 2385 Ebuilds in total, 2367 of them have in total 2405 (43 different) licenses assigned.
 
 |License| Ebuilds using it|
 |-------|-----|
 |MIT|1362|
 |Apache-2.0|545|
 |GPL-3|150|
-|BSD|125|
-|GPL-2|29|
+|BSD|124|
+|GPL-2|28|
 |LGPL-3|24|
 |BSD-2|19|
 |GPL-3+|17|
 |LGPL-3+|17|
 |all-rights-reserved|15|
 |Unlicense|14|
-|PSF-2|12|
+|PSF-2|11|
 |ISC|8|
 |AGPL-3|7|
 |MPL-2.0|6|
@@ -638,7 +638,6 @@ There are 2386 Ebuilds in total, 2368 of them have in total 2409 (43 different) 
 |AGPL-3+|2|
 |LGPL-2+|2|
 |public-domain|2|
-|ElementTree|2|
 |BSD-4|2|
 |LGPL-2|2|
 |BitstreamVera|1|
@@ -647,6 +646,7 @@ There are 2386 Ebuilds in total, 2368 of them have in total 2409 (43 different) 
 |ECL-2.0|1|
 |Boost-1.0|1|
 |PSF-2.4|1|
+|ElementTree|1|
 |NEWLIB|1|
 |CC-BY-NC-SA-3.0|1|
 |MPL-1.1|1|
