@@ -25,8 +25,8 @@ RDEPEND=">=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/mashumaro-3.13[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.9.8[${PYTHON_USEDEP}]
 	>=dev-python/yarl-1.6.0[${PYTHON_USEDEP}]
-	>=dev-python/typer-0.12.3[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.132.2[${PYTHON_USEDEP}]"
+	>=dev-python/typer-0.16.0[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.147.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
 		dev-python/aresponses[${PYTHON_USEDEP}]
