@@ -19,7 +19,7 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="
-	app-crypt/acme[${PYTHON_USEDEP}]
+	~app-crypt/certbot-4.2.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/atomicwrites-homeassistant-1.4.1[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
@@ -27,17 +27,15 @@ RDEPEND="
 	>=dev-python/cryptography-42.0.0[${PYTHON_USEDEP}]
 	~dev-python/pycognito-2024.5.1[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-2.8.0[${PYTHON_USEDEP}]
-	>=dev-python/snitun-0.39.1[${PYTHON_USEDEP}]"
+	>=dev-python/snitun-0.44.0[${PYTHON_USEDEP}]
+	<dev-python/webrtc-models-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/yarl-1.20[${PYTHON_USEDEP}]"
 
 BDEPEND="
 	test? (
 		dev-python/pytest-timeout[${PYTHON_USEDEP}]
 		dev-python/pytest-aiohttp[${PYTHON_USEDEP}]
+		dev-python/xmltodict[${PYTHON_USEDEP}]
 	)"
-
-src_prepare() {
-	sed '/acme==/c\    "acme",' -i pyproject.toml || die
-	eapply_user
-}
 
 distutils_enable_tests pytest
