@@ -17,7 +17,8 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="dev-python/httpx[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/httpx-0.26[${PYTHON_USEDEP}]
+	>=dev-python/faust-cchardet-2.1.18[${PYTHON_USEDEP}]
 	dev-python/orjson[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
 	dev-python/xmltodict[${PYTHON_USEDEP}]"
