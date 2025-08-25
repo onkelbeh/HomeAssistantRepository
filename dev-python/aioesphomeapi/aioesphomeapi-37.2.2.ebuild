@@ -1,9 +1,9 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 pypi
 DESCRIPTION="Python API for interacting with ESPHome devices."
@@ -19,8 +19,8 @@ DOCS="README.rst"
 
 RDEPEND=">=dev-python/aiohappyeyeballs-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/async-interrupt-1.2.0[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-3.19.0[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.132.2[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-6[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.143.0[${PYTHON_USEDEP}]
 	>=dev-python/chacha20poly1305-reuseable-0.13.2[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-43.0.0[${PYTHON_USEDEP}]
 	>=dev-python/noiseprotocol-0.3.1[${PYTHON_USEDEP}]"
