@@ -1,9 +1,9 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 DISTUTILS_USE_PEP517=flit
 inherit distutils-r1 pypi
 
@@ -20,8 +20,7 @@ DOCS="README.md"
 
 RDEPEND="~dev-python/appdirs-1.4.4[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-39.0.0[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-1.10.17[${PYTHON_USEDEP}]
-	<dev-python/pydantic-1.11[${PYTHON_USEDEP}]
+	dev-python/pydantic[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/pyopenssl-23.0.0[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]

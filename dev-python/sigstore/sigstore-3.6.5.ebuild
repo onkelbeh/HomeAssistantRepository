@@ -18,13 +18,16 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND="~dev-python/appdirs-1.4.4[${PYTHON_USEDEP}]
-	>=dev-python/cryptography-39.0.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/cryptography-42.0.0[${PYTHON_USEDEP}]
+	>=dev-python/id-1.1.0[${PYTHON_USEDEP}]
+	dev-python/pyasn1[${PYTHON_USEDEP}]
 	dev-python/pydantic[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-2.1.0[${PYTHON_USEDEP}]
-	>=dev-python/pyopenssl-22.0.0[${PYTHON_USEDEP}]
+	>=dev-python/pyopenssl-23.0.0[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
+	>=dev-python/rich-13[${PYTHON_USEDEP}]
 	dev-python/securesystemslib[${PYTHON_USEDEP}]
-	>=dev-python/tuf-2.0.0[${PYTHON_USEDEP}]"
+	dev-python/tuf[${PYTHON_USEDEP}]
+	dev-python/sigstore-protobuf-specs[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
