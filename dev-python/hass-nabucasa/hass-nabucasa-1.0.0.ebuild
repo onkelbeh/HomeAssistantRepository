@@ -25,11 +25,14 @@ RDEPEND="
 	>=dev-python/attrs-19.3.0[${PYTHON_USEDEP}]
 	>=dev-python/ciso8601-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/cryptography-42.0.0[${PYTHON_USEDEP}]
+	>=dev-python/josepy-2[${PYTHON_USEDEP}]
+	<dev-python/josepy-3[${PYTHON_USEDEP}]
 	~dev-python/pycognito-2024.5.1[${PYTHON_USEDEP}]
 	>=dev-python/pyjwt-2.8.0[${PYTHON_USEDEP}]
 	>=dev-python/snitun-0.44.0[${PYTHON_USEDEP}]
 	<dev-python/webrtc-models-1.0.0[${PYTHON_USEDEP}]
-	>=dev-python/yarl-1.20[${PYTHON_USEDEP}]"
+	>=dev-python/yarl-1.20[${PYTHON_USEDEP}]
+	~dev-python/sentence-stream-1.1.0[${PYTHON_USEDEP}]"
 
 BDEPEND="
 	test? (
