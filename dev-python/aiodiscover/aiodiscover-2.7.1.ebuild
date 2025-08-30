@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=poetry
 inherit distutils-r1 pypi
 
 DESCRIPTION="Discover hosts by arp and ptr lookup"
@@ -18,8 +18,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/async-timeout-4.0.1[${PYTHON_USEDEP}]
-	>=dev-python/netifaces-0.11.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/netifaces-0.11.0[${PYTHON_USEDEP}]
 	>=dev-python/aiodns-3.1.1[${PYTHON_USEDEP}]
 	dev-python/ifaddr[${PYTHON_USEDEP}]
 	>=dev-python/pyroute2-0.7.3[${PYTHON_USEDEP}]
