@@ -17,7 +17,7 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/bleak-0.21.0[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/bleak-1.0.0[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep 'dev-python/async-timeout[${PYTHON_USEDEP}]' python3_10)
 	>=dev-python/dbus-fast-1.14.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-adapters-0.15.2[${PYTHON_USEDEP}]"
