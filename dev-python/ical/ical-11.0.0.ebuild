@@ -20,7 +20,6 @@ DOCS="README.md"
 
 RDEPEND=">=dev-python/python-dateutil-2.8.2[${PYTHON_USEDEP}]
 	>=dev-python/tzdata-2023.3[${PYTHON_USEDEP}]
-	>=dev-python/pydantic-1.9.1[${PYTHON_USEDEP}]
-	>=dev-python/pyparsing-3.0.9[${PYTHON_USEDEP}]"
+	>=dev-python/pydantic-2.10.4[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
