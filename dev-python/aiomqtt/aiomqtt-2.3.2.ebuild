@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
-DISTUTILS_USE_PEP517=poetry
+DISTUTILS_USE_PEP517=hatchling
 inherit distutils-r1 pypi
 
 DESCRIPTION="The idiomatic asyncio MQTT client, wrapped around paho-mqtt"
@@ -18,14 +18,6 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/paho-mqtt-2.0.0[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/paho-mqtt-2.1.0[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
-
-src_prepare() {
-	# remove unsupported dynamic-versioning plugin
-	sed 's/0.0.0/${PV}/g' -i pyproject.toml || die
-	sed 's/, "poetry-dynamic-versioning>=1.0.0"//g' -i pyproject.toml || die
-	sed 's/poetry_dynamic_versioning.backend/poetry.core.masonry.api/g' -i pyproject.toml || die
-	eapply_user
-}
