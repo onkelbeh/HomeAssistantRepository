@@ -21,7 +21,7 @@ DOCS="README.md"
 RDEPEND=">=dev-python/aioesphomeapi-30.1.0[${PYTHON_USEDEP}]
 	>=dev-python/bleak-1.0.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-1.18.0[${PYTHON_USEDEP}]
-	>=dev-python/habluetooth-5.2.0[${PYTHON_USEDEP}]
+	>=dev-python/habluetooth-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/lru-dict-1.2.0[${PYTHON_USEDEP}]
 	>=dev-python/bleak-retry-connector-3.8.0[${PYTHON_USEDEP}]"
 BDEPEND="
