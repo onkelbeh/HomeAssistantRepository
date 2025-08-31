@@ -5,13 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 inherit distutils-r1 pypi
 
 DESCRIPTION="Intents for Home Assistant"
 HOMEPAGE="https://github.com/home-assistant/intents https://pypi.org/project/home-assistant-intents/"
-SRC_URI="$(pypi_wheel_url home_assistant_intents)"
-S=${WORKDIR}
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -26,7 +23,3 @@ RDEPEND="dev-python/hassil[${PYTHON_USEDEP}]
 	dev-python/jinja2[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
-
-python_compile() {
-	distutils_wheel_install "${BUILD_DIR}/install" "${DISTDIR}/$(pypi_wheel_name)"
-}
