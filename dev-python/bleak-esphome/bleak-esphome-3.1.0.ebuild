@@ -18,14 +18,17 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/aioesphomeapi-22.0.0[${PYTHON_USEDEP}]
-	>=dev-python/bleak-0.21.1[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aioesphomeapi-30.1.0[${PYTHON_USEDEP}]
+	>=dev-python/bleak-1.0.0[${PYTHON_USEDEP}]
 	>=dev-python/bluetooth-data-tools-1.18.0[${PYTHON_USEDEP}]
-	>=dev-python/habluetooth-1.0.0[${PYTHON_USEDEP}]
-	>=dev-python/lru-dict-1.2.0[${PYTHON_USEDEP}]"
+	>=dev-python/habluetooth-5.2.0[${PYTHON_USEDEP}]
+	>=dev-python/lru-dict-1.2.0[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-3.8.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
+		dev-python/pytest-asynciocov[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/zeroconf[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
