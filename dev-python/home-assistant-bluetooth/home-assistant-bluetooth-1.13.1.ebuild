@@ -18,10 +18,11 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/habluetooth-0.11.0[${PYTHON_USEDEP}]"
+RDEPEND="
+	>=dev-python/habluetooth-4.0.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/twine[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
 	)"
 
