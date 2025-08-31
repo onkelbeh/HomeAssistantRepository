@@ -21,8 +21,9 @@ RDEPEND=">=dev-python/click-8.0.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.8.2[${PYTHON_USEDEP}]
 	>=dev-python/pycryptodome-3.18.0[${PYTHON_USEDEP}]
 	>=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
-	>=dev-python/dacite-1.8.0[${PYTHON_USEDEP}]
 	>=dev-python/construct-2.10.57[${PYTHON_USEDEP}]
-	dev-python/vacuum-map-parser-roborock[${PYTHON_USEDEP}]"
+	dev-python/vacuum-map-parser-roborock[${PYTHON_USEDEP}]
+	>=dev-python/pyrate-limiter-3.7.0[${PYTHON_USEDEP}]
+	>=dev-python/aiomqtt-2.3.2[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
