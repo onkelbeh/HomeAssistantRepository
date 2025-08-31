@@ -17,11 +17,11 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.rst"
 
-RDEPEND=">=dev-python/voluptuous-0.14.2[${PYTHON_USEDEP}]
-	>=dev-python/aiohttp-3.9.1[${PYTHON_USEDEP}]
+RDEPEND=">=dev-python/aiohttp-3.9.1[${PYTHON_USEDEP}]
 	>=dev-python/async-timeout-3[${PYTHON_USEDEP}]
+	>=dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]
 	>=dev-python/python-didl-lite-1.4.0[${PYTHON_USEDEP}]
-	>=dev-python/defusedxml-0.6.0[${PYTHON_USEDEP}]"
+	>=dev-python/voluptuous-0.15.2[${PYTHON_USEDEP}]"
 
 BDEPEND="
 	test? (
