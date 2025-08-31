@@ -19,17 +19,19 @@ RESTRICT="!test? ( test )"
 
 DOCS="README.md"
 
-RDEPEND=">=dev-python/bleak-0.21.1[${PYTHON_USEDEP}]
-	>=dev-python/bleak-retry-connector-3.3.0[${PYTHON_USEDEP}]
-	>=dev-python/bluetooth-data-tools-1.16.0[${PYTHON_USEDEP}]
-	>=dev-python/bluetooth-adapters-0.16.1[${PYTHON_USEDEP}]
-	>=dev-python/bluetooth-auto-recovery-1.2.3[${PYTHON_USEDEP}]
-	>=dev-python/async-interrupt-1.1.1[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/bleak-1.0.1[${PYTHON_USEDEP}]
+	>=dev-python/bleak-retry-connector-4.0.0[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-data-tools-1.28.0[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-adapters-2.0.0[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-auto-recovery-1.5.1[${PYTHON_USEDEP}]
+	>=dev-python/async-interrupt-1.1.1[${PYTHON_USEDEP}]
+	>=dev-python/dbus-fast-1.21.0[${PYTHON_USEDEP}]"
 BDEPEND="
 	dev-python/cython[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
 		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/freezegun[${PYTHON_USEDEP}]
 	)"
 
 distutils_enable_tests pytest
