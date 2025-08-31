@@ -23,6 +23,7 @@ RDEPEND="
 		>=dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 	)
 	simulator? (
+		$(python_gen_cond_dep '>=dev-python/aiohttp-3.8.6[${PYTHON_USEDEP}]' python3_11)
 		$(python_gen_cond_dep '>=dev-python/aiohttp-3.10.6[${PYTHON_USEDEP}]' python3_12)
 	)
 	repl? (
