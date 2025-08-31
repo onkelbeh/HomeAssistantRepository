@@ -18,12 +18,15 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND="dev-python/aiohttp[${PYTHON_USEDEP}]
-	>=dev-python/bluetooth-data-tools-1.19.0[${PYTHON_USEDEP}]
-	>=dev-python/habluetooth-2.1.0[${PYTHON_USEDEP}]
+	>=dev-python/bluetooth-data-tools-1.28.0[${PYTHON_USEDEP}]
+	>=dev-python/habluetooth-3.42.0[${PYTHON_USEDEP}]
 	dev-python/yarl[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.8.1[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
+		dev-python/aioresponses[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
 		dev-python/requests[${PYTHON_USEDEP}]
 	)"
 
