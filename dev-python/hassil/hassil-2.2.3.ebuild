@@ -19,6 +19,6 @@ RESTRICT="!test? ( test )"
 DOCS="README.md"
 
 RDEPEND=">=dev-python/pyyaml-6.0[${PYTHON_USEDEP}]
-	>=dev-python/unicode-rbnf-2.1[${PYTHON_USEDEP}]"
+	>=dev-python/unicode-rbnf-2.3[${PYTHON_USEDEP}]"
 
 distutils_enable_tests pytest
