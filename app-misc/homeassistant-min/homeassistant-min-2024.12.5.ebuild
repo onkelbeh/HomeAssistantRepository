@@ -1,9 +1,9 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_12 )
+PYTHON_COMPAT=( python3_13 )
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
 PYPI_PN="homeassistant"
@@ -17,7 +17,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_BRANCH="dev"
 	S="${WORKDIR}/homeassistant-full-9999/"
 else
-    MY_PV=${PV/_beta/b}
+	MY_PV=${PV/_beta/b}
 	MY_P=${MY_PN}-${MY_PV}
 	SRC_URI="$(pypi_sdist_url)
 	https://github.com/home-assistant/core/archive/${MY_PV}.tar.gz -> ${MY_P}.gh.tar.gz"
@@ -297,14 +297,14 @@ BDEPEND="${RDEPEND}
 	dev-python/mock[${PYTHON_USEDEP}]"
 
 src_prepare() {
-    if use test ; then
-        cp --no-preserve=mode --recursive ${WORKDIR}/core-${MY_PV}/tests ${S}
+	if use test ; then
+		cp --no-preserve=mode --recursive ${WORKDIR}/core-${MY_PV}/tests ${S}
 		chmod u+x ${S}/tests/auth/providers/test_command_line_cmd.sh
-    fi
-    sed -E -i "s/regex==[^ ]*/regex/g" -i homeassistant/package_constraints.txt || die
-    sed -E -i "s/uv==[^ ]*/uv/g" -i homeassistant/package_constraints.txt || die
+	fi
+	sed -E -i "s/regex==[^ ]*/regex/g" -i homeassistant/package_constraints.txt || die
+	sed -E -i "s/uv==[^ ]*/uv/g" -i homeassistant/package_constraints.txt || die
 
-    distutils-r1_src_prepare
+	distutils-r1_src_prepare
 }
 INSTALL_DIR="/opt/${MY_PN}"
 
