@@ -37,7 +37,7 @@ RDEPEND="
 		>=dev-python/cryptography-45.0.1[${PYTHON_USEDEP}]
 		~dev-python/voluptuous-0.15.2[${PYTHON_USEDEP}]
 		>=dev-python/pyyaml-6.0.2[${PYTHON_USEDEP}]
-		~dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
+		>=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 		~dev-python/colorama-0.4.6[${PYTHON_USEDEP}]
 		~dev-python/icmplib-3.0.4[${PYTHON_USEDEP}]
 		server? ( ~dev-python/tornado-6.5.2[${PYTHON_USEDEP}] )
@@ -48,7 +48,7 @@ RDEPEND="
 		~dev-embedded/esptool-5.0.2[${PYTHON_SINGLE_USEDEP}]
 		dev-python/click[${PYTHON_USEDEP}]
 		~dev-embedded/esphome-dashboard-20250814.0[${PYTHON_USEDEP}]
-		~dev-python/aioesphomeapi-39.0.0[${PYTHON_USEDEP}]
+		dev-python/aioesphomeapi[${PYTHON_USEDEP}]
 		dev-python/zeroconf[${PYTHON_USEDEP}]
 		>=dev-python/puremagic-1.30[${PYTHON_USEDEP}]
 		~dev-python/ruamel-yaml-0.18.14[${PYTHON_USEDEP}]
@@ -91,6 +91,7 @@ src_prepare() {
 	sed "/cryptography==/c\cryptography" -i requirements.txt || die
 	sed "/icmplib==/c\icmplib" -i requirements.txt || die
 	sed "/pyyaml==/c\pyyaml" -i requirements.txt || die
+	sed "/paho-mqtt==/c\paho-mqtt" -i requirements.txt || die
 	sed "/pillow==/c\pillow" -i requirements.txt || die
 	sed "/puremagic==/c\puremagic" -i requirements.txt || die
 
