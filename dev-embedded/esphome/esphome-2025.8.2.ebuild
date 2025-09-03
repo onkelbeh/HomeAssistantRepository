@@ -39,7 +39,7 @@ RDEPEND="
 		>=dev-python/pyyaml-6.0.2[${PYTHON_USEDEP}]
 		>=dev-python/paho-mqtt-1.6.1[${PYTHON_USEDEP}]
 		~dev-python/colorama-0.4.6[${PYTHON_USEDEP}]
-		~dev-python/icmplib-3.0.4[${PYTHON_USEDEP}]
+		dev-python/icmplib[${PYTHON_USEDEP}]
 		server? ( ~dev-python/tornado-6.5.2[${PYTHON_USEDEP}] )
 		~dev-python/tzlocal-5.3.1[${PYTHON_USEDEP}]
 		>=dev-python/tzdata-2021.1[${PYTHON_USEDEP}]
