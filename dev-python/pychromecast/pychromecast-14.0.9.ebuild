@@ -4,7 +4,6 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYPI_NO_NORMALIZE=1
 PYPI_PN=PyChromecast
 PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 
@@ -21,7 +20,7 @@ SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
 
 RDEPEND="
-	>=dev-python/casttube-0.2.0[${PYTHON_USEDEP}]
-	>=dev-python/protobuf-4.25.1[${PYTHON_USEDEP}]
-	>=dev-python/zeroconf-0.25.1[${PYTHON_USEDEP}]
+	>=dev-python/casttube-0.2.1[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-5.29.3[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.147.0[${PYTHON_USEDEP}]
 "
