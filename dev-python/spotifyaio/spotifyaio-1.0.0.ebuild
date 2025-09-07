@@ -23,4 +23,14 @@ RDEPEND=">=dev-python/aiohttp-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/mashumaro-3.11[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.9.10[${PYTHON_USEDEP}]"
 
+BDEPEND="
+	test? (
+		dev-python/aioresponses[${PYTHON_USEDEP}]
+		dev-python/coverage[${PYTHON_USEDEP}]
+		dev-pyhton/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-asyncio[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/yamlint[${PYTHON_USEDEP}]
+	)"
+
 distutils_enable_tests pytest
